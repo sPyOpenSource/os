@@ -143,7 +143,7 @@ public class MethodTable {
 	int len =  in.readInt();
 	Method[] mtable = new Method[len];
 	methodTable.mtable = mtable;
-	for(int i=0; i<len; i++) {
+	for(int i = 0; i < len; i++) {
 	    String className = in.readString();
 	    String methodName = in.readString();
 	    String typeName = in.readString();
@@ -163,18 +163,18 @@ public class MethodTable {
 		mtable[i].ifMethodIndex = ifMethodIndex;
 		if (type == TYPE_INTERFACE) {
 		} else {
-		    mtable[i].indices.addElement(new Integer(i));
+		    mtable[i].indices.addElement(i);
 		}
 	    } else {
 		ClassInfo cinf = (ClassInfo)classPool.get(className);
-		if (cinf==null) throw new Error("Cannot find class "+className);
+		if (cinf == null) throw new Error("Cannot find class " + className);
 		try {
-		    mtable[i] = cinf.mtable.getAt(cinf.mtable.getIndex(methodName+typeName));
+		    mtable[i] = cinf.mtable.getAt(cinf.mtable.getIndex(methodName + typeName));
 		} catch(ArrayIndexOutOfBoundsException e) {
 		    System.out.println(e.toString());
-		    System.out.println("While creating table for class "+info.className);
-		    System.out.println("    MTABLE method entry: "+i+": "+className+"::"+methodName+typeName+", ifmethodindex="+ifMethodIndex);
-		    System.out.println("    CLASS "+cinf.className+", mtable:"+cinf.mtable);
+		    System.out.println("While creating table for class " + info.className);
+		    System.out.println("    MTABLE method entry: " + i + ": " + className + "::" + methodName + typeName + ", ifmethodindex=" + ifMethodIndex);
+		    System.out.println("    CLASS " + cinf.className + ", mtable:" + cinf.mtable);
 		    System.out.println("    CLASS mtable:");
 		    cinf.mtable.print();
 		    System.out.println("    THIS mtable:");
@@ -183,7 +183,6 @@ public class MethodTable {
 		    System.out.println("    CINFCLASS mtable:");
 		    cininf.mtable.print();
 
-		    e.printStackTrace();
 		    throw e;
 		}
 	    }

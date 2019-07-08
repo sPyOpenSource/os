@@ -2,9 +2,10 @@ package jx.init;
 
 import jx.zero.*;
 import jx.zero.debug.*;
+import jx.bootrc.*;
+
 import java.io.*;
 import java.util.Vector;
-import jx.bootrc.*;
 
 public class MultiComponentStart {
 

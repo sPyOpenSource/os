@@ -5,7 +5,6 @@
  */
 package jx.compiler;
 
-import java.io.File;
 import jx.classfile.constantpool.*; 
 import jx.classfile.*; 
 
@@ -32,13 +31,6 @@ import jx.compiler.execenv.BCMethod;
 import jx.compiler.execenv.BCMethodWithCode;
 import jx.compiler.execenv.IOSystem;
 
-import java.util.Vector;
-import java.util.Enumeration;
-
-import java.io.PrintStream;
-import java.io.IOException;
-import java.io.RandomAccessFile;
-import java.util.Arrays;
 import static jx.compiler.CompileNative.memMgr;
 
 import jx.compspec.MetaInfo;
@@ -46,6 +38,13 @@ import jx.compspec.MetaInfo;
 import jx.compiler.execenv.NativeCodeContainer;
 import jx.compiler.execenv.BinaryCode;
 import jx.compspec.StartBuilder;
+
+import java.util.Vector;
+import java.util.Enumeration;
+import java.io.File;
+import java.io.PrintStream;
+import java.io.IOException;
+import java.io.RandomAccessFile;
 
 public class StaticCompiler implements ClassFinder {
     static final boolean dumpAll = false;
@@ -141,74 +140,151 @@ public class StaticCompiler implements ClassFinder {
 	    ReadOnlyMemory in;
 	    if (i == -1) {
                 //in = domainZip;
+                String base = "/home/spy/Java/OS/";
+                //String base = "/home/spy/Java/JDK/";
                 byte[] barr;
-                try (RandomAccessFile f = new RandomAccessFile("/home/spy/OS/jx/libs/META", "r")) {
+                try (RandomAccessFile f = new RandomAccessFile(base + "META", "r")) {
                     barr = new byte[(int)f.length()];
                     f.readFully(barr);
                 }
                 meta = new MetaInfo("", barr);
-                File subdir = new File("/home/spy/Java/OS/build/classes/jx/init");
-                String dirlist[] = subdir.list();
-
-                for (String dirlist1 : dirlist) {
-                    if (StartBuilder.hasExtension(new String[] {".class"}, dirlist1)) {
-                        try {
-                            byte[] data;
-                            try (RandomAccessFile file = new RandomAccessFile("/home/spy/Java/OS/build/classes/jx/init/" + dirlist1, "r")) {
-                                data = new byte[(int)file.length()];
-                                file.readFully(data);
+                String sd = meta.getVar("SUBDIRS");
+                String[] sds = MetaInfo.split(sd);
+                for(String sub : sds){
+                    File subdir = new File(base + "build/classes/" + sub);
+                    String dirlist[] = subdir.list();
+                    for (String dirlist1 : dirlist) {
+                        if ("GregorianCalendar.class".equals(dirlist1)) continue;
+                        if ("TimeZone.class".equals(dirlist1)) continue;
+                        if ("AbstractSet.class".equals(dirlist1)) continue;
+                        if ("AbstractMap$1.class".equals(dirlist1)) continue;
+                        if ("SimpleTimeZone.class".equals(dirlist1)) continue;
+                        if ("HashMap.class".equals(dirlist1)) continue;
+                        if ("HashMap$Null.class".equals(dirlist1)) continue;
+                        if ("HashMap$HashMapEntry.class".equals(dirlist1)) continue;
+                        if ("HashMap$HashMapSet.class".equals(dirlist1)) continue;
+                        if ("HashMap$HashMapIterator.class".equals(dirlist1)) continue;
+                        if ("HashMap$HashMapCollection.class".equals(dirlist1)) continue;
+                        if ("Calendar.class".equals(dirlist1)) continue;
+                        if ("AbstractMap.class".equals(dirlist1)) continue;
+                        if ("AbstractMap$2$1.class".equals(dirlist1)) continue;
+                        if ("AbstractMap$1$1.class".equals(dirlist1)) continue;
+                        if ("AbstractMap$1.class".equals(dirlist1)) continue;
+                        if ("AbstractMap$2.class".equals(dirlist1)) continue;
+                        if ("SubList.class".equals(dirlist1)) continue;
+                        if ("AbstractSequentialList.class".equals(dirlist1)) continue;
+                        if ("SubList$1.class".equals(dirlist1)) continue;
+                        if ("BufferedInputStream.class".equals(dirlist1)) continue;
+                        if ("Reader.class".equals(dirlist1)) continue;
+                        if ("StringReader.class".equals(dirlist1)) continue;
+                        if ("BufferedReader.class".equals(dirlist1)) continue;
+                        if ("PrintWriter.class".equals(dirlist1)) continue;
+                        if ("ThreadGroup.class".equals(dirlist1)) continue;
+                        if ("Thread.class".equals(dirlist1)) continue;
+                        if ("Thread$ThreadStarter.class".equals(dirlist1)) continue;
+                        if ("SecurityManager.class".equals(dirlist1)) continue;
+                        if (StartBuilder.hasExtension(new String[] {".class"}, dirlist1)) {
+                            try {
+                                byte[] data;
+                                try (RandomAccessFile file = new RandomAccessFile(base + "build/classes/" + sub + "/" + dirlist1, "r")) {
+                                    data = new byte[(int)file.length()];
+                                    file.readFully(data);
+                                }
+                                Memory m = memMgr.alloc(data.length);
+                                m.copyFromByteArray(data, 0, 0, data.length);
+                                domdata.addElement(m);
+                            } catch(IOException e) {
+                                //Debug.throwError("could not read classes.zip file: " + filename);
                             }
-                            Memory m = memMgr.alloc(data.length);
-                            m.copyFromByteArray(data, 0, 0, data.length);
-                            domdata.addElement(m);
-                        } catch(IOException e) {
-                            //Debug.throwError("could not read classes.zip file: " + filename);
-                        }
-                    }
-                }
-                subdir = new File("/home/spy/Java/OS/build/classes/jx/bootrc");
-                dirlist = subdir.list();
-                for (String dirlist1 : dirlist) {
-                    if (StartBuilder.hasExtension(new String[] {".class"}, dirlist1)) {
-                        try {
-                            byte[] data;
-                            try (RandomAccessFile file = new RandomAccessFile("/home/spy/Java/OS/build/classes/jx/bootrc/" + dirlist1, "r")) {
-                                data = new byte[(int)file.length()];
-                                file.readFully(data);
-                            }
-                            Memory m = memMgr.alloc(data.length);
-                            m.copyFromByteArray(data, 0, 0, data.length);
-                            domdata.addElement(m);
-                        } catch(IOException e) {
-                            //Debug.throwError("could not read classes.zip file: " + filename);
                         }
                     }
                 }
                 continue;
             }
 	    else in = libZip[i];
-	    ZipFile zip = new ZipFile(in);
-	    ZipEntry entry = null;
-	    while ((entry = zip.getNextEntry()) != null) {
-		if (entry.isDirectory())
-		    continue;
-		//if (entry.getName().indexOf(".class")>0) {		    
+            try {
+                ZipFile zip = new ZipFile(in);
+                ZipEntry entry = null;
+                while ((entry = zip.getNextEntry()) != null) {
+                    if (entry.isDirectory())
+                        continue;
+                    //if (entry.getName().indexOf(".class")>0) {		    
 
-		if (i == -1 && entry.getName().equals("META")) {
-		    ReadOnlyMemory mem = entry.getData();
-		    byte[] barr = new byte[mem.size()];
-		    mem.copyToByteArray(barr, 0, 0, mem.size());
-		    //meta = new MetaInfo("", barr);
-		    continue;
-		}
+                    if (i == -1 && entry.getName().equals("META")) {
+                        ReadOnlyMemory mem = entry.getData();
+                        byte[] barr = new byte[mem.size()];
+                        mem.copyToByteArray(barr, 0, 0, mem.size());
+                        //meta = new MetaInfo("", barr);
+                        continue;
+                    }
 
-		if (!entry.getName().equals("libs.dep") &&
-		    !entry.getName().equals("META")) {
-		    //Debug.out.println("classfile "+entry.getName());
-		    if (i == -1) domdata.addElement(entry.getData());
-		    else libdata.addElement(entry.getData());
-		}
-	    }
+                    if (!entry.getName().equals("libs.dep") &&
+                        !entry.getName().equals("META")) {
+                        //Debug.out.println("classfile "+entry.getName());
+                        if (i == -1) domdata.addElement(entry.getData());
+                        else libdata.addElement(entry.getData());
+                    }
+                }
+            } catch (NullPointerException e){
+                String base = "/home/spy/Java/JDK/";
+                byte[] barr;
+                try (RandomAccessFile f = new RandomAccessFile(base + "META", "r")) {
+                    barr = new byte[(int)f.length()];
+                    f.readFully(barr);
+                }
+                meta = new MetaInfo("", barr);
+                String sd = meta.getVar("SUBDIRS");
+                String[] sds = MetaInfo.split(sd);
+                for(String sub : sds){
+                    File subdir = new File(base + "build/classes/" + sub);
+                    String dirlist[] = subdir.list();
+                    for (String dirlist1 : dirlist) {
+                        if ("GregorianCalendar.class".equals(dirlist1)) continue;
+                        if ("TimeZone.class".equals(dirlist1)) continue;
+                        if ("AbstractSet.class".equals(dirlist1)) continue;
+                        if ("AbstractMap$1.class".equals(dirlist1)) continue;
+                        if ("SimpleTimeZone.class".equals(dirlist1)) continue;
+                        if ("HashMap.class".equals(dirlist1)) continue;
+                        if ("HashMap$Null.class".equals(dirlist1)) continue;
+                        if ("HashMap$HashMapEntry.class".equals(dirlist1)) continue;
+                        if ("HashMap$HashMapSet.class".equals(dirlist1)) continue;
+                        if ("HashMap$HashMapIterator.class".equals(dirlist1)) continue;
+                        if ("HashMap$HashMapCollection.class".equals(dirlist1)) continue;
+                        if ("Calendar.class".equals(dirlist1)) continue;
+                        if ("AbstractMap.class".equals(dirlist1)) continue;
+                        if ("AbstractMap$2$1.class".equals(dirlist1)) continue;
+                        if ("AbstractMap$1$1.class".equals(dirlist1)) continue;
+                        if ("AbstractMap$1.class".equals(dirlist1)) continue;
+                        if ("AbstractMap$2.class".equals(dirlist1)) continue;
+                        if ("SubList.class".equals(dirlist1)) continue;
+                        if ("AbstractSequentialList.class".equals(dirlist1)) continue;
+                        if ("SubList$1.class".equals(dirlist1)) continue;
+                        if ("BufferedInputStream.class".equals(dirlist1)) continue;
+                        if ("Reader.class".equals(dirlist1)) continue;
+                        if ("StringReader.class".equals(dirlist1)) continue;
+                        if ("BufferedReader.class".equals(dirlist1)) continue;
+                        if ("PrintWriter.class".equals(dirlist1)) continue;
+                        if ("ThreadGroup.class".equals(dirlist1)) continue;
+                        if ("Thread.class".equals(dirlist1)) continue;
+                        if ("Thread$ThreadStarter.class".equals(dirlist1)) continue;
+                        if ("SecurityManager.class".equals(dirlist1)) continue;
+                        if (StartBuilder.hasExtension(new String[] {".class"}, dirlist1)) {
+                            try {
+                                byte[] data;
+                                try (RandomAccessFile file = new RandomAccessFile(base + "build/classes/" + sub + "/" + dirlist1, "r")) {
+                                    data = new byte[(int)file.length()];
+                                    file.readFully(data);
+                                }
+                                Memory m = memMgr.alloc(data.length);
+                                m.copyFromByteArray(data, 0, 0, data.length);
+                                libdata.addElement(m);
+                            } catch(IOException ex) {
+                                //Debug.throwError("could not read classes.zip file: " + filename);
+                            }
+                        }
+                    }
+                }
+            }
 	}
 
 	this.codeFile = new CodeFile(options, meta);
@@ -285,7 +361,6 @@ public class StaticCompiler implements ClassFinder {
 	    }
 	}
     }
-
 
 
     private ClassStore sortClasses(ClassStore classStore) {
@@ -640,4 +715,3 @@ public class StaticCompiler implements ClassFinder {
 	return "1";
     }
 }
-

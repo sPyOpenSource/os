@@ -78,5 +78,3 @@ public class InitNaming implements Naming {
 	Debug.out.println("*****  InitNaming: THIS SERVICE TERMINATES NOW ***");
     }
 }
-
-

@@ -1,7 +1,6 @@
 package jx.compiler.vtable;
 
 import jx.classfile.ClassSource;
-import jx.classfile.MethodSource;
 import jx.compiler.persistent.ExtendedDataOutputStream;
 import jx.compiler.persistent.ExtendedDataInputStream;
 
@@ -61,8 +60,7 @@ public class ClassInfo {
 	String superClassName = in.readString();
 	if (superClassName.equals("")) superClass = null;
 	else superClass = (ClassInfo)classPool.get(superClassName);
-	isInterface = (in.readInt()==1);
+	isInterface = (in.readInt() == 1);
 	mtable = MethodTable.deserialize(in, this, classPool);
     }
-
 }

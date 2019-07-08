@@ -266,8 +266,11 @@ public class StartBuilder {
                     }
                 }
                 if (output.size() > 0) {
-                    if (firstout) {System.out.println(""); firstout=false;}
-                    System.out.print(dirname+": ");
+                    if (firstout) {
+                        System.out.println(""); 
+                        firstout = false;
+                    }
+                    System.out.print(dirname + ": ");
                     for(int o = 0; o < output.size(); o++)
                         System.out.print(((String)output.elementAt(o)) + " ");
                     System.out.println("");

@@ -34,6 +34,7 @@ public class CompileNative {
     }
 
     public static Memory getZIP(String filename) {
+        if (filename.equals("/home/spy/OS/jx/libs/jdk0.zip")) return null;
 	try {
 	    RandomAccessFile file = new RandomAccessFile(filename, "r");
 	    byte [] data = new byte[(int)file.length()];
@@ -63,6 +64,7 @@ public class CompileNative {
         MetaReader metaReader = new MetaReader(a);
         Vector metas = new Vector();
         metaReader.addMeta(metas, "init2");
+        //metaReader.addMeta(metas, "jdk0");
         MetaInfo s = (MetaInfo)metas.elementAt(0); // process this component
 	String libdir = "/home/spy/OS/jx/libs/";
 	if (!libdir.endsWith("/")) libdir = libdir + "/";
@@ -74,6 +76,7 @@ public class CompileNative {
 	Vector jlns = new Vector();
 
 	String[] neededLibs = "zero jdk0 zero_misc".split(" ");
+        //String[] neededLibs = "zero".split(" ");
         for (String neededLib : neededLibs) {
             libs.addElement(libdir + neededLib + ".zip");
             jlns.addElement(libdir + neededLib + ".jln");

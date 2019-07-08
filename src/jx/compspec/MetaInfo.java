@@ -19,7 +19,7 @@ final public class MetaInfo {
     final static int RPAREN = 0x5d;
     char data[] = new char[MAXLINE];
     int pos;
-    int linenumber=1;
+    int linenumber = 1;
     String filename;
 
     String [] vars = new String[20];
@@ -30,7 +30,7 @@ final public class MetaInfo {
 
     //ReadOnlyMemory meta;
     byte[] meta;
-    int metapos=0;
+    int metapos = 0;
 
     class Line {
 	String var;
@@ -44,18 +44,18 @@ final public class MetaInfo {
 	this.meta = meta;
 	//System.out.println("META: "+filename);
 	lineloop:
-	for(int j=0; ; j++) {
+	for(int j = 0; ; j++) {
 	    Line line = nextLine();
 	    if (line == null) return;
 	    if (line.op == 1) {
 		for(int i = 0; i < nvars; i++) {
 		    if (vars[i].equals(line.var)) {
-			vals[i] += " "+line.val;
+			vals[i] += " " + line.val;
 			//Debug.out.println("    ADDED VAR="+vars[i]+", VAL="+vals[i]);
 			continue lineloop;
 		    }
 		}
-		throw new Error("Var "+line.var+" not found (cannot perform += operation)");
+		throw new Error("Var " + line.var + " not found (cannot perform += operation)");
 	    }		
 	    vars[nvars] = line.var;
 	    vals[nvars] = line.val;
@@ -67,13 +67,13 @@ final public class MetaInfo {
     private Line nextLine() {
 	byte b;
 	int bi;
-	int i=0;
+	int i = 0;
 	Line line = new Line();
 	while((bi = nextchar()) != '=') {
-	    if (bi==-1) return null;
+	    if (bi == -1) return null;
 	    b = (byte)bi;
-	    if (i==0 && b == SPACE) continue; // skip leading spaces
-	    if (i==0 && b == COMMENT) {
+	    if (i == 0 && b == SPACE) continue; // skip leading spaces
+	    if (i == 0 && b == COMMENT) {
 		while((b = (byte)nextchar()) != NEWLINE);
 		continue; // skip comment line 
 	    }
@@ -81,15 +81,14 @@ final public class MetaInfo {
 
 	    data[i++] = (char)b;
 	}
-	if (data[i-1] == '+') {
+	if (data[i - 1] == '+') {
 	    line.op = 1;
 	    i--;
 	}
 
 	// remove trailing spaces
-	while (i>0 && (data[i-1] == ' ' || data[i-1] == '\t')) {
+	while (i > 0 && (data[i - 1] == ' ' || data[i - 1] == '\t'))
 	    i--;
-	}
 
 	line.var = new String(data, 0, i);
 
@@ -103,21 +102,21 @@ final public class MetaInfo {
 		i++;
 	    } while((b = (byte)nextchar()) != NEWLINE && b != -1 && b != COMMENT);
 	}
-	if (b==COMMENT)
-	    while((b = (byte)nextchar()) != NEWLINE && b!=-1);
+	if (b == COMMENT)
+	    while((b = (byte)nextchar()) != NEWLINE && b != -1);
 	pos++;
 	linenumber++;
 
 	// remove trailing spaces
-	while (i>0 && (data[i-1] == ' ' || data[i-1] == '\t'))
+	while (i > 0 && (data[i - 1] == ' ' || data[i - 1] == '\t'))
 	    i--;
 	line.val = new String(data, 0, i);
 	return line;
     }
 
     public void dump() {
-	for(int i=0; i<nvars;i++)
-	    Debug.out.println("    VAR="+vars[i]+", VAL="+vals[i]);
+	for(int i = 0; i < nvars; i++)
+	    Debug.out.println("    VAR=" + vars[i] + ", VAL=" + vals[i]);
     }
 
     public String getVar(String varname) {
@@ -157,9 +156,9 @@ final public class MetaInfo {
                 for (String neededLib : neededLibs)
                     buf.append("NEEDLIBS+=").append(neededLib).append("\n");
 		buf.append("JCLIBS=");
-		for(int j=0; j<neededLibs.length; j++) {
+		for(int j = 0; j < neededLibs.length; j++) {
 		    buf.append(neededLibs[j]);
-		    if (j<neededLibs.length-1) buf.append(":");
+		    if (j < neededLibs.length - 1) buf.append(":");
 		}
 		buf.append("\n");
 	    } else {
@@ -190,8 +189,8 @@ final public class MetaInfo {
 	if (dirname.equals("")) throw new Error();
 	String path = "..";
 	char[]d = dirname.toCharArray();
-	for(int i=0;i<d.length;i++) {
-	    if (d[i]=='/')
+	for(int i = 0; i < d.length; i++) {
+	    if (d[i] == '/')
 		path += "/..";
 	}
 
@@ -202,37 +201,37 @@ final public class MetaInfo {
 
 	buf.append("# LIBRARY BASE IS AT ").append(path).append("\n");
 
-	buf.append("default:"+"\n");
-	buf.append("\tcd ").append(path).append("; $(MAKE)"+"\n");
+	buf.append("default:" + "\n");
+	buf.append("\tcd ").append(path).append("; $(MAKE)" + "\n");
 
 	buf.append("\n");
 	    
-	buf.append("compile: decomp"+"\n");
-	buf.append("\t@echo \"Environment:\""+"\n");
-	buf.append("\t@echo \"CLASSPATH =\" $(CLASSPATH)"+"\n");
-	buf.append("\t@echo \"  JAVAC_FLAGS=${JAVAC_FLAGS}\""+"\n");
-	buf.append("\t@echo \"Files to compile: \""+"\n");
-	buf.append("\t@if $(PERL) $(LISTNEW) *.java; then \\"+"\n");
-	buf.append("\t$(JAVAC) $(JAVAC_FLAGS) `$(PERL) $(LISTNEW) *.java`; fi;  "+"\n");
+	buf.append("compile: decomp" + "\n");
+	buf.append("\t@echo \"Environment:\"" + "\n");
+	buf.append("\t@echo \"CLASSPATH =\" $(CLASSPATH)" + "\n");
+	buf.append("\t@echo \"  JAVAC_FLAGS=${JAVAC_FLAGS}\"" + "\n");
+	buf.append("\t@echo \"Files to compile: \"" + "\n");
+	buf.append("\t@if $(PERL) $(LISTNEW) *.java; then \\" + "\n");
+	buf.append("\t$(JAVAC) $(JAVAC_FLAGS) `$(PERL) $(LISTNEW) *.java`; fi;  " + "\n");
 	    
-	buf.append("complete allzip nat:"+"\n");
-	buf.append("\tcd ").append(path).append("; $(MAKE) $@"+"\n");
+	buf.append("complete allzip nat:" + "\n");
+	buf.append("\tcd ").append(path).append("; $(MAKE) $@" + "\n");
 	    
-	buf.append("decomp: "+"\n");
-	buf.append("\tsh -c 'for i in *.java.classes; do $(PERL) $(XDECOMP) $$i; done'"+"\n");
+	buf.append("decomp: " + "\n");
+	buf.append("\tsh -c 'for i in *.java.classes; do $(PERL) $(XDECOMP) $$i; done'" + "\n");
 	    
-	buf.append("clean: "+"\n");
-	buf.append("\t-rm -f *.class *.imcode"+"\n");
-	buf.append("\t-rm -f *~ "+"\n");
+	buf.append("clean: " + "\n");
+	buf.append("\t-rm -f *.class *.imcode" + "\n");
+	buf.append("\t-rm -f *~ " + "\n");
 	    
-	buf.append("rpcstubs: $(RPC_INTERFACES)"+"\n");
-	buf.append("\t@$(RPCGEN) $(ZIPS) $<"+"\n");
+	buf.append("rpcstubs: $(RPC_INTERFACES)" + "\n");
+	buf.append("\t@$(RPCGEN) $(ZIPS) $<" + "\n");
 	    
-	buf.append("docs:"+"\n");
-	buf.append("\tcd ").append(path).append("; $(MAKE) docs"+"\n");
+	buf.append("docs:" + "\n");
+	buf.append("\tcd ").append(path).append("; $(MAKE) docs" + "\n");
 
-	buf.append("javadoc:"+"\n");
-	buf.append("\tjavadoc -author -version -d $(JXROOT)/docs/$(LIBNAME) *.java"+"\n");
+	buf.append("javadoc:" + "\n");
+	buf.append("\tjavadoc -author -version -d $(JXROOT)/docs/$(LIBNAME) *.java" + "\n");
 
 	return buf.toString();
     }

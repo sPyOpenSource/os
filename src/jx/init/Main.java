@@ -1,12 +1,12 @@
 package jx.init;
 
+import AI.AI;
 import jx.zero.*;
 import jx.zero.debug.*;
-
 import jx.bootrc.*;
 
 public class Main {
-     private final static boolean debug = false;      
+     private final static boolean debug = false;
      private final static boolean javascheduler = true;      
      private static Naming initNaming;
 
@@ -17,9 +17,11 @@ public class Main {
 	//System.err = System.out;
 	 
 	Debug.out.println("Init running...");
-	
+	AI instance = new AI();
+        instance.start();
 	//main(new String[] {"boot.rc"});
      }
+     
      public static void main(String args[]) throws Exception {
 	Naming naming = InitialNaming.getInitialNaming();
 	initNaming = naming;
@@ -50,17 +52,22 @@ public class Main {
 	    try { domainSpec.getString("SchedulerClass"); } catch(NameNotFoundException e) {}
 	    try { 
 		String gcName = domainSpec.getString("GarbageCollector"); 
-		if (gcName.equals("copying")) {
-		    garbageCollector = 0;
-		} else if (gcName.equals("compacting")) {
-		    garbageCollector = 1;
-		} else if (gcName.equals("bitmap")) {
-		    garbageCollector = 2;
-		} else if (gcName.equals("chunked")) {
-		    garbageCollector = 3;
-		} else {
-		    throw new Error("unknown GC implementation");
-		}
+                switch (gcName) {
+                    case "copying":
+                        garbageCollector = 0;
+                        break;
+                    case "compacting":
+                        garbageCollector = 1;
+                        break;
+                    case "bitmap":
+                        garbageCollector = 2;
+                        break;
+                    case "chunked":
+                        garbageCollector = 3;
+                        break;
+                    default:
+                        throw new Error("unknown GC implementation");
+                }
 	    } catch(NameNotFoundException e) {}
 
 	    int gcinfo0 = 0;

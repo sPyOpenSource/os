@@ -26,9 +26,8 @@ public class MethodTableFactory {
 	    //System.out.println(info.className); // null pointer exception in jxcore
 	    MethodSource [] m =  source.getMethods();
 	    info.methods = new Method[m.length];
-	    for(int i=0; i<m.length; i++) {
+	    for(int i = 0; i < m.length; i++)
 		info.methods[i] = new Method(info, m[i]);
-	    }
 	    info.indexInAll = all.size();
 	    classFinder.put(info.className, info);
 	    all.addElement(info);
