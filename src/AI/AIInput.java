@@ -11,6 +11,7 @@ import AI.Models.Info;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import jx.zero.Naming;
 
 //import org.opencv.videoio.VideoCapture;
 //import org.opencv.videoio.VideoWriter;
@@ -42,6 +43,10 @@ public class AIInput extends AIBaseInput
         capDepthCamera.set(Videoio.CAP_PROP_FOURCC, fourcc);
         mem.addInfo(new Info(capColorCamera), "the webcam");
         mem.addInfo(new Info(capDepthCamera), "the webcam");*/
+    }
+
+    AIInput(AIMemory mem, Naming naming) {
+        super(mem, naming);    
     }
     
     private void ReadMessageFromArduino(){

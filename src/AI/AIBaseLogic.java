@@ -11,7 +11,7 @@ import java.util.logging.Logger;
  * @author X. Wang 
  * @version 1.0
  */
-public abstract class AIBaseLogic //implements Runnable
+public abstract class AIBaseLogic implements Runnable
 {
     // instance variables
     protected final AIBaseMemory mem;
@@ -115,7 +115,7 @@ public abstract class AIBaseLogic //implements Runnable
         });*/
     }
 
-    //@Override
+    @Override
     public void run() {
         /*Thread Mutation = new Thread(){
             @Override

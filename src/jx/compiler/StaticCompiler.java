@@ -175,13 +175,8 @@ public class StaticCompiler implements ClassFinder {
                         if ("AbstractSequentialList.class".equals(dirlist1)) continue;
                         if ("SubList$1.class".equals(dirlist1)) continue;
                         if ("BufferedInputStream.class".equals(dirlist1)) continue;
-                        if ("Reader.class".equals(dirlist1)) continue;
                         if ("StringReader.class".equals(dirlist1)) continue;
-                        if ("BufferedReader.class".equals(dirlist1)) continue;
                         if ("PrintWriter.class".equals(dirlist1)) continue;
-                        if ("ThreadGroup.class".equals(dirlist1)) continue;
-                        if ("Thread.class".equals(dirlist1)) continue;
-                        if ("Thread$ThreadStarter.class".equals(dirlist1)) continue;
                         if ("SecurityManager.class".equals(dirlist1)) continue;
                         if (StartBuilder.hasExtension(new String[] {".class"}, dirlist1)) {
                             try {
@@ -260,13 +255,8 @@ public class StaticCompiler implements ClassFinder {
                         if ("AbstractSequentialList.class".equals(dirlist1)) continue;
                         if ("SubList$1.class".equals(dirlist1)) continue;
                         if ("BufferedInputStream.class".equals(dirlist1)) continue;
-                        if ("Reader.class".equals(dirlist1)) continue;
                         if ("StringReader.class".equals(dirlist1)) continue;
-                        if ("BufferedReader.class".equals(dirlist1)) continue;
                         if ("PrintWriter.class".equals(dirlist1)) continue;
-                        if ("ThreadGroup.class".equals(dirlist1)) continue;
-                        if ("Thread.class".equals(dirlist1)) continue;
-                        if ("Thread$ThreadStarter.class".equals(dirlist1)) continue;
                         if ("SecurityManager.class".equals(dirlist1)) continue;
                         if (StartBuilder.hasExtension(new String[] {".class"}, dirlist1)) {
                             try {
@@ -492,7 +482,6 @@ public class StaticCompiler implements ClassFinder {
 		    if (options.doPrintIMCode()) imCode.writeCode(imOut);
 		    info.nativeCode[i] = imCode;
 		} catch (Exception ex) {
-                    ex.printStackTrace();
                     System.out.println(ex.toString());
 		    if (options.doInlining(aClass, method)) {
 			System.err.println("!! FAIL to inline !!!!!!!!!!!!!!!");
@@ -688,7 +677,7 @@ public class StaticCompiler implements ClassFinder {
      */
     @Override
     public BCClass findClass(String className) {
-	BCClass cc =  domClassStore.findClass(className);
+	BCClass cc = domClassStore.findClass(className);
 	if (cc == null) cc = libClassStore.findClass(className);
 	return cc;
     }

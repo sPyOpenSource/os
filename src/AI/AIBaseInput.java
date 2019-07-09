@@ -7,21 +7,25 @@ package AI;
  */
 
 
-//import java.io.BufferedReader;
+import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import jx.zero.Debug;
+import jx.zero.Naming;
+import jx.zero.debug.DebugChannel;
 
 //import org.opencv.core.Mat;
 //import org.opencv.videoio.VideoCapture;
 
-public abstract class AIBaseInput //implements Runnable
+public abstract class AIBaseInput implements Runnable
 {
     /**
      * This is the initialization of AIInput class 
      */
     protected final AIBaseMemory mem;
+    protected final Naming naming;
     private final static int BUFFER_SIZE = 1024;
     
     /**
@@ -31,6 +35,13 @@ public abstract class AIBaseInput //implements Runnable
     public AIBaseInput(AIBaseMemory mem)
     {
     	this.mem = mem;
+        naming = null;
+    }
+    
+    public AIBaseInput(AIBaseMemory mem, Naming naming)
+    {
+    	this.mem = mem;
+        this.naming = naming;
     }
     
     /*protected void getImageFromWebcam(VideoCapture cap, String name){
@@ -41,14 +52,14 @@ public abstract class AIBaseInput //implements Runnable
     }*/
     
     private void ImportMemoryTxt(){
-        /*try {
+        try {
             BufferedReader log = new BufferedReader(new FileReader(mem.getLogPath() + "LOG.TXT"));
             String memory = log.readLine();
-            if(memory != null)
-                mem.ImportTxt(mem.getLogPath() + memory);
+            /*if(memory != null)
+                mem.ImportTxt(mem.getLogPath() + memory);*/
         } catch (IOException ex) {
-            Logger.getLogger(AIBaseInput.class.getName()).log(Level.SEVERE, null, ex);
-        }*/
+            //Logger.getLogger(AIBaseInput.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
     
     private void ImportMemory(){
@@ -65,8 +76,11 @@ public abstract class AIBaseInput //implements Runnable
         }*/
     }
 
-    //@Override
+    @Override
     public void run() {
+        jx.zero.debug.DebugOutputStream out = new jx.zero.debug.DebugOutputStream((DebugChannel) naming.lookup("DebugChannel0"));
+	Debug.out = new jx.zero.debug.DebugPrintStream(out);
+        Debug.out.println("AIInput running...");
         ImportMemory();
         /*Thread ReceiveFromNetwork = new Thread(){
             @Override

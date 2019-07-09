@@ -1,8 +1,8 @@
 
 package jx.classfile.constantpool; 
+
 import java.io.*; 
-import jx.classfile.datatypes.*; 
-import jx.zero.Debug; 
+
 public class ClassCPEntry extends ConstantPoolEntry {
   private int classNameCPIndex; 
   private UTF8CPEntry classNameCPEntry; 

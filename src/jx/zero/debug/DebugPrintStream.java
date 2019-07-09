@@ -1,11 +1,7 @@
 package jx.zero.debug;
 
-import jx.zero.debug.DebugOutputStream;
-import jx.zero.debug.DebugChannel;
 import java.io.IOException;
 import java.io.OutputStream;
-
-//import java.lang.JXInteger;
 
 // cannot extend FilterOutputStream, because we dont want synchronized write methods!
 // use ONE StringBuffer with ONE char array, instead of allocating
@@ -272,6 +268,7 @@ public class JXStringBuffer
 		data = buff;
 	}
 
+        @Override
 	public synchronized String toString()
 	{
 		return new String(data, 0, length);

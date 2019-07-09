@@ -1516,6 +1516,8 @@ public class ExecEnvironmentIA32 implements ExecEnvironmentInterface {
 	    code.endBC();
 
 	} else {
+            System.out.println(className);
+            if(className.equals("[Ljava/lang/Object;")) className = "java/lang/Object";
 	    BCClass aClass = classStore.findClass(className);
 	    if (aClass == null) Debug.out.println("Can't find ClassInfo for " + className);
 	    BCClassInfo info = (BCClassInfo) aClass.getInfo();

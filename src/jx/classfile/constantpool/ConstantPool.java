@@ -148,7 +148,6 @@ public class ConstantPool {
 	  //Debug.out.println("!! skip longs in jx/classfile/constantpool/ConstantPool.java !!");
 	  newEntry.readDummyValue(input);
       } else {
-          //System.out.println(input);
 	  newEntry.readFromClassFile(input); 
       }
       newEntry.setCPIndex(i);  

@@ -57,7 +57,7 @@ public class CompilerOptions implements CompilerOptionsInterface {
     protected boolean doProfileNoIRQ       = false;
     protected Vector  profileMethods;
     protected boolean doFastMemoryAccess   = false;
-    protected boolean doPrintIMCode        = false;
+    protected boolean doPrintIMCode;
     protected boolean doVerbose            = true;
     protected Vector  verboseList          = null;
     protected Vector  optionList           = null;

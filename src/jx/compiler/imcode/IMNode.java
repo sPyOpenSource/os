@@ -28,7 +28,7 @@ public class IMNode {
     public static final int RETURN      = 1024;
     public static final int VARIABLE    = 2048;
 
-    public static final boolean verbose = true;
+    public static final boolean verbose = false;
 
     public IMNode prev;
     public IMNode next;
@@ -80,7 +80,8 @@ public class IMNode {
 	this.stat      = container.getStatisticInfo();
     }
 
-    /*********************** TAGS *************************/
+    /*********************** TAGS
+     * @return  *************************/
 
     public int getTag() {
 	return tag;
@@ -88,23 +89,23 @@ public class IMNode {
 
 
     public boolean isBasicBlock() {
-	return (tag & IMNode.BASICBLOCK)!=0;
+	return (tag & IMNode.BASICBLOCK) != 0;
     }
 
     public boolean isOperator() {
-	return (tag & IMNode.OPERATOR)!=0;
+	return (tag & IMNode.OPERATOR) != 0;
     }
 
     public boolean isInstruction() {
-	return (tag & IMNode.INSTRUCTION)!=0;
+	return (tag & IMNode.INSTRUCTION) != 0;
     }
 
     public boolean isConstant() {
-	return (tag & IMNode.CONSTANT)!=0;
+	return (tag & IMNode.CONSTANT) != 0;
     }
 
     public final boolean isRealConstant() {
-	return (tag & IMNode.CONSTANT)!=0;
+	return (tag & IMNode.CONSTANT) != 0;
     }
 
 
@@ -121,15 +122,15 @@ public class IMNode {
     }
 
     public boolean isReturn() {
-	return (tag & IMNode.RETURN)!=0;
+	return (tag & IMNode.RETURN) != 0;
     }
 
     public boolean isVariable() {
-	return (tag & IMNode.VARIABLE)!=0;
+	return (tag & IMNode.VARIABLE) != 0;
     }
 
     public boolean isBlockVariable() {
-	return (tag & IMNode.BLOCKVAR)!=0;
+	return (tag & IMNode.BLOCKVAR) != 0;
     }
 
     public boolean isThrow() {
@@ -137,7 +138,7 @@ public class IMNode {
     }
 
     public boolean isComperator() {
-	return (tag & IMNode.COMPERATOR)!=0;
+	return (tag & IMNode.COMPERATOR) != 0;
     }
 
     public boolean isThisPointer() {
@@ -161,7 +162,7 @@ public class IMNode {
     }
 
     public void setLowPriorityPath() {
-	lowPath=true;
+	lowPath = true;
     }
 
     public boolean isLowPriorityPath() {
@@ -169,8 +170,8 @@ public class IMNode {
     }
 
     public boolean isEndOfBasicBlock() {
-	if ((tag & IMNode.BB_END)!=0) return true;
-	if ((bc_next!=null)&&(bc_next.isBasicBlock())) {
+	if ((tag & IMNode.BB_END) != 0) return true;
+	if ((bc_next != null) && (bc_next.isBasicBlock())) {
 	    tag = tag | IMNode.BB_END;
 	    return true;
 	}
@@ -212,7 +213,7 @@ public class IMNode {
 
     public int getNrRegs() { return 0; }
 
-    public void getCollectVars(Vector vars) { return; }
+    public void getCollectVars(Vector vars) {}
 
     public String varList() {
 	return frame.varList();
@@ -223,10 +224,10 @@ public class IMNode {
 
 	getCollectVars(vars);
 
-	String str=" ";
-	for (int i=0;i<vars.size();i++) {
+	String str = " ";
+	for (int i = 0; i < vars.size(); i++) {
 	    //str += " "+((IMNode)vars.elementAt(i)).toReadableString();
-	    str += ((IMVarAccessInterface)vars.elementAt(i)).toSymbolname()+" ";
+	    str += ((IMVarAccessInterface)vars.elementAt(i)).toSymbolname() + " ";
 	}
 
 	return str;
@@ -234,8 +235,8 @@ public class IMNode {
 
     public String getLineInfo() {
 	BCMethod method = container.getBCMethod();
-	return " "+method.getClassName()+"."+method.getName()
-		+" (l:"+method.getLineNumber(bcPosition)+" bc:"+bcPosition+") ";
+	return " " + method.getClassName() + "." + method.getName()
+		+ " (l:" + method.getLineNumber(bcPosition) + " bc:" + bcPosition + ") ";
     }
 
     public int  getBytecode() {
@@ -267,14 +268,16 @@ public class IMNode {
     }
 
     public String whichCodeContainer() {
-	return " id:"+Integer.toString(container.getID());
+	return " id:" + Integer.toString(container.getID());
     }
 
+    @Override
     public String toString() {
-	return super.toString()+" Bytecode "+Integer.toString(bytecode);
+	return super.toString() + " Bytecode " + Integer.toString(bytecode);
     }
 
-    /*************************** compile **************************/
+    /*************************** compile
+     * @throws jx.compiler.CompileException **************************/
 
     // IMNode
     public void translateToPush() throws CompileException {
@@ -287,27 +290,27 @@ public class IMNode {
     public final void translate(RegObj result) throws CompileException {
 	if (result==null) translate((Reg)result);
 	switch (result.getDatatype()) {
-	case BCBasicDatatype.FLOAT:
-	case BCBasicDatatype.DOUBLE:
-	    execEnv.codeThrow(this,-11,bcPosition);
-	    break;
-	case BCBasicDatatype.LONG:
-	    translate((Reg64)result);
-	    break;	
-	case BCBasicDatatype.INT:
-	case BCBasicDatatype.BOOLEAN:
-	case BCBasicDatatype.REFERENCE:
-	case BCBasicDatatype.VOID:
-	    translate((Reg)result);
-	    break;
-	default:
-	    /*
-	       Debug.out.println("warn: unknown or unsupported datatype");
-	       Debug.out.println(toReadableString()+
-	       " type reg: "+BCBasicDatatype.toString(result.getDatatype())+
-	       " obj: "+BCBasicDatatype.toString(datatype));
-	     */
-	    translate((Reg)result);
+            case BCBasicDatatype.FLOAT:
+            case BCBasicDatatype.DOUBLE:
+                execEnv.codeThrow(this, -11, bcPosition);
+                break;
+            case BCBasicDatatype.LONG:
+                translate((Reg64)result);
+                break;	
+            case BCBasicDatatype.INT:
+            case BCBasicDatatype.BOOLEAN:
+            case BCBasicDatatype.REFERENCE:
+            case BCBasicDatatype.VOID:
+                translate((Reg)result);
+                break;
+            default:
+                /*
+                   Debug.out.println("warn: unknown or unsupported datatype");
+                   Debug.out.println(toReadableString()+
+                   " type reg: "+BCBasicDatatype.toString(result.getDatatype())+
+                   " obj: "+BCBasicDatatype.toString(datatype));
+                 */
+                translate((Reg)result);
 	}
     }
 

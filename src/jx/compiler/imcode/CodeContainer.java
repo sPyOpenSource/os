@@ -227,10 +227,9 @@ public class CodeContainer implements NativeCodeContainer {
 	}
 
 	while (bcStream.hasMore()) {
-
 	    current = bcStream.readUnsignedByte();
 
-	    ip = bcStream.getCurrentPosition()-1;
+	    ip = bcStream.getCurrentPosition() - 1;
 
 	    if (current == BC.WIDE) {
 		hasWidePrefix = true;
@@ -268,7 +267,7 @@ public class CodeContainer implements NativeCodeContainer {
 	    if (current >= BC.LDC && current <= BC.LDC2_W) {
 		int cpIndex;
 
-		if (current == BC.LDC) cpIndex=bcStream.readUnsignedByte();
+		if (current == BC.LDC) cpIndex = bcStream.readUnsignedByte();
 		else cpIndex = bcStream.readUnsignedShort();
 
 		//Debug.out.println("read constant "+cpIndex);
@@ -687,7 +686,7 @@ public class CodeContainer implements NativeCodeContainer {
 	// ===============================================
 
 	IMNode node = bc_list_top;
-	if (label_list!=null && label_list.getBCPosition() <= node.getBCPosition()) {
+	if (label_list != null && label_list.getBCPosition() <= node.getBCPosition()) {
 	    // remove from labellist
 	    basicBlock = label_list;
 	    label_list = (IMBasicBlock)label_list.bc_next;
@@ -697,9 +696,9 @@ public class CodeContainer implements NativeCodeContainer {
 	}
 
 	//System.err.println(node.toString());
-	while (node.bc_next!=null) {
+	while (node.bc_next != null) {
 	    int bcpos = node.bc_next.getBCPosition();
-	    while (label_list!=null) {
+	    while (label_list != null) {
 		if (label_list.getBCPosition() <= bcpos) {
 		    // remove from labellist
 		    basicBlock = label_list;
@@ -716,7 +715,7 @@ public class CodeContainer implements NativeCodeContainer {
 		}
 		numberOfBasicBlocks++;
 	    }
-	    node=node.bc_next;
+	    node = node.bc_next;
 	} 	
         
 	// ===============================================
@@ -753,7 +752,7 @@ public class CodeContainer implements NativeCodeContainer {
 	    if (nextBB != null) {
 		for (int i = nextBB.length - 1; i >= 0; i--) {
 		    if (nextBB[i] != null) {
-			System.err.println(" -> " + nextBB[i]);
+			//System.out.println(" -> " + nextBB[i]);
 			nextBB[i].setInitStack(leave);
 			stack.push(nextBB[i]);
 		    } else {
@@ -786,7 +785,7 @@ public class CodeContainer implements NativeCodeContainer {
 	int ic = 0;
 	smallMethod = true;
 	
-	while (inode!=null) {	    
+	while (inode != null) {	    
 	    if (inode.isBasicBlock()) {
 		basicBlock = (IMBasicBlock)inode;
 	    } else if (inode.isInstruction()) {
@@ -814,9 +813,8 @@ public class CodeContainer implements NativeCodeContainer {
 		// test if it is a "small method"
 		if (smallMethod) {
 		    // void-returns won't count
-		    if (inode.isReturn()) {
+		    if (inode.isReturn())
 			if (((IMReturn)inode).isVoidReturn()) ic--;
-		    }
 		    ic++;
 		    if (ic > 1) smallMethod = false;
 		}

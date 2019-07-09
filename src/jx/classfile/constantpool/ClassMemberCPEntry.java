@@ -1,8 +1,8 @@
 
 package jx.classfile.constantpool; 
+
 import java.io.*; 
-import jx.classfile.datatypes.*; 
-import jx.zero.Debug; 
+
 abstract public class ClassMemberCPEntry extends ConstantPoolEntry {
   protected int classCPIndex;
   protected int nameAndTypeCPIndex;

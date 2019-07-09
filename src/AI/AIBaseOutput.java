@@ -9,7 +9,7 @@ import java.util.Iterator;
  * @author X. Wang
  * @version 1.0
  */
-public abstract class AIBaseOutput //implements Runnable
+public abstract class AIBaseOutput implements Runnable
 {
     protected final AIBaseMemory mem;
     private final double dt = 0.01; // in s
@@ -63,7 +63,7 @@ public abstract class AIBaseOutput //implements Runnable
         }*/
     }
 
-    //@Override
+    @Override
     public void run() {
         /*Runtime.getRuntime().addShutdownHook(new Thread()
         {

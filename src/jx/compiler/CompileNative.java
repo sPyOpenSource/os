@@ -134,8 +134,8 @@ public class CompileNative {
 		public void set(String path) {this.path = path;}
 	    };
 
-	io.set(path);
-	
+	//io.set(path);
+	io.set("/home/spy/OS/jx/libs/jdk0");
 	StaticCompiler compiler = new StaticCompiler(null, codeFile, tableOut,
 						     domClasses,
 						     libClasses, tableIn,
@@ -163,4 +163,3 @@ public class CompileNative {
 	return libClasses;
     }
 }
-

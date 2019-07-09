@@ -17,8 +17,9 @@ public class Main {
 	//System.err = System.out;
 	 
 	Debug.out.println("Init running...");
-	AI instance = new AI();
+	AI instance = new AI(naming);
         instance.start();
+        while(true);
 	//main(new String[] {"boot.rc"});
      }
      

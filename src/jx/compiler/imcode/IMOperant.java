@@ -1,14 +1,9 @@
 
 package jx.compiler.imcode; 
-import jx.classfile.constantpool.*; 
+
 import jx.classfile.datatypes.*; 
-import jx.classfile.*;
-import jx.zero.Debug; 
 import jx.compiler.*;
-import jx.compiler.nativecode.*;
-import jx.compiler.symbols.*;
-import jx.compiler.execenv.*;
-import java.util.Vector;
+
 // ***** IMOperant *****
 
 public class IMOperant extends IMNode {
@@ -24,7 +19,7 @@ public class IMOperant extends IMNode {
     public boolean isMul() {return false;}
     
     public boolean isDouble() throws CompileException {
-	if (datatype==-1) throw new CompileException("wrong or unkown datatype on stack");
+	if (datatype == -1) throw new CompileException("wrong or unkown datatype on stack");
 	return BCBasicDatatype.isDouble(datatype);
     }
 
@@ -36,6 +31,7 @@ public class IMOperant extends IMNode {
 	return null;
     }
 
+    @Override
     public String toReadableString() {
 	return "<operant>";
     }

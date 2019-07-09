@@ -1,11 +1,13 @@
 
 package jx.compiler.imcode; 
 
+import java.util.Arrays;
 import jx.classfile.datatypes.*; 
 import jx.zero.Debug; 
 import jx.compiler.*;
 import jx.compiler.nativecode.*;
 import jx.compiler.symbols.*;
+
 // ***** IMBasicBlock *****
 
 public class IMBasicBlock extends IMNode {
@@ -48,7 +50,7 @@ public class IMBasicBlock extends IMNode {
 	labelText        = "END";  
     }	
 
-    public IMBasicBlock(CodeContainer container,int bcPosition) {
+    public IMBasicBlock(CodeContainer container, int bcPosition) {
 	super(container);
         tag = IMNode.BASICBLOCK;
 	this.bcPosition = bcPosition;
@@ -62,7 +64,7 @@ public class IMBasicBlock extends IMNode {
 	counter    = 1;
 	nextJumpTarget = 0;
 	if (bcPosition == 0) labelText = "START";
-	else labelText="B" + Integer.toString(bcPosition);
+	else labelText = "B" + Integer.toString(bcPosition);
     }
 
     public void setExceptionHandler(ExceptionTableSTEntry handler) {
@@ -113,14 +115,14 @@ public class IMBasicBlock extends IMNode {
 	IMNode node  = bc_next;
 	IMNode instr = null;
 
-	//System.err.println("process basic block: "+this.toReadableString());
-	//System.err.println("stack: "+stack.toTypeString());
+	//System.out.println("process basic block: " + this.toReadableString());
+	//System.out.println("stack: " + stack.toTypeString());
 	
 	while (node != null) {
 	    // first process stack for current bytecode
 
 	    try {
-		instr = ((IMNode)node).processStack(stack,this);
+		instr = ((IMNode)node).processStack(stack, this);
 	    } catch (Exception ex) {
 		if (verbose && System.err != null) {
 		    System.err.println("process basic block: " + this);
@@ -135,7 +137,7 @@ public class IMBasicBlock extends IMNode {
 	    try {
 		if (instr != null) {
 		    stack.join(instr);
-		    //if (verbose) System.err.println(instr.toReadableString());
+		    if (verbose) System.out.println(instr.toReadableString());
 		    // Return from Subroutine
 		    if (instr.isReturnSubroutine()) {
 			subroutine = true;
@@ -160,12 +162,15 @@ public class IMBasicBlock extends IMNode {
 	    if (node.isEndOfBasicBlock()) {
 		// node is no branch but end of basicblock
 		if (node.bc_next != null) {
+                    //System.out.println(Arrays.toString(successors));
 		    if (successors == null && node.bc_next.isBasicBlock()) {
 			successors = new IMBasicBlock[1];
 			successors[0] = (IMBasicBlock)node.bc_next;
 		    } else {
 			if (verbose && System.err != null) {
-			    System.err.println("warning: bad imcode !\n");
+			    System.err.println("warning: bad imcode !");
+                            //System.out.println(node.toString());
+                            //System.out.println(node.bc_next.toString());
 			    System.err.println("bytecode position: " + Integer.toString(node.getBCPosition()));
 			}
 			System.exit(-1);
@@ -189,24 +194,24 @@ public class IMBasicBlock extends IMNode {
     }
      
     public void setDebugString(String msg) {
-	dbgString=msg;
+	dbgString = msg;
     }
 
     public String getDebugString() {
-	String ret = " #"+Integer.toString(counter);
-	if (enterStack!=null) {
+	String ret = " #" + Integer.toString(counter);
+	if (enterStack != null) {
             for (IMOperant enterStack1 : enterStack) {
-                if (enterStack1 != null) {
+                if (enterStack1 != null)
                     ret += " " + BCBasicDatatype.toString(enterStack1.getDatatype());
-                }
             }
 	}
 	    
-	if (dbgString!=null) ret+=" "+dbgString;	
+	if (dbgString != null) ret += " " + dbgString;	
 	
 	return ret;
     }
 
+    @Override
     public String toReadableString() {
         String ret = toLabel();
 	if (isLowPriorityPath())
@@ -215,9 +220,8 @@ public class IMBasicBlock extends IMNode {
 	    ret = "+" + ret;
 	if (enterStack == null) return ret;
         for (IMOperant enterStack1 : enterStack) {
-            if (enterStack1 != null) {
+            if (enterStack1 != null)
                 ret = ret + enterStack1.toReadableString();
-            }
         }
 	return ret;
     }
@@ -226,16 +230,15 @@ public class IMBasicBlock extends IMNode {
 	return labelText;
     }
 
+    @Override
     public String toString() {
 	return super.toString() + "B #" + Integer.toString(counter);
     }
 
     public UnresolvedJump getNewJumpTarget() {
-	if (nextJumpTarget>=jumpTargets.length) {
+	if (nextJumpTarget >= jumpTargets.length) {
 	    UnresolvedJump newArray[] = new UnresolvedJump[nextJumpTarget+10];
-	    for (int i=0;i<jumpTargets.length;i++) {
-		newArray[i] = jumpTargets[i];
-	    }
+            System.arraycopy(jumpTargets, 0, newArray, 0, jumpTargets.length);
 	    jumpTargets = newArray;
 	}	    
 	jumpTargets[nextJumpTarget] = new UnresolvedJump();
@@ -244,14 +247,15 @@ public class IMBasicBlock extends IMNode {
     }
 
     public void removeJumpTarget(UnresolvedJump jumpTarget) {
-	for (int i=0;i<jumpTargets.length;i++) {
-	    if (jumpTarget==jumpTargets[i]) {
-		jumpTargets[i]=null;
+	for (int i = 0; i < jumpTargets.length; i++) {
+	    if (jumpTarget == jumpTargets[i]) {
+		jumpTargets[i] = null;
 		return;
 	    }
 	}
     }
 
+    @Override
     public IMNode assignNewVars(CodeContainer newContainer, int slots[], IMOperant opr[], int retval, int bcPos) throws CompileException {
 	//labelText = container.getBCMethod().getName()+":"+labelText;
 	bcPosition = bcPos;

@@ -132,6 +132,14 @@ public class AIBaseMemory
         return dict.keys();
     }*/
     
+    public void setLogPath(String path){
+        LOG = path;
+    }
+    
+    public String getLogPath(){
+        return LOG;
+    }
+    
     /*public void ReceiveFromNetwork(int bufferSize){
         byte[] buffer = new byte[bufferSize];
         DatagramPacket inPacket = new DatagramPacket(buffer, bufferSize);
@@ -145,14 +153,6 @@ public class AIBaseMemory
             addInfo(new Info(new Computer(inPacket.getSocketAddress())), "networkClients");
         else
             addInfo(new Info(info), "incomingMessages");
-    }
-    
-    public void setLogPath(String path){
-        LOG = path;
-    }
-    
-    public String getLogPath(){
-        return LOG;
     }
     
     public void AddWebsocketClient(){
