@@ -14,7 +14,7 @@ public class BootRC2 {
     int pos;
     int curDomainSpec=0;
     GlobalSpec global;
-    static final boolean verbose = false;
+    static final boolean verbose = true;
 
     public BootRC2(ReadOnlyMemory mem) {
 	this.mem = mem;
@@ -38,7 +38,7 @@ public class BootRC2 {
 		    spec = domain;
 		    domains.addElement(domain);
 		} else if (line.startsWith("[Component ")) {
-		    String name = (line.substring(10, line.length()-1)).trim();
+		    String name = (line.substring(10, line.length() - 1)).trim();
 		    if (verbose) Debug.out.println("Component: \"" + name + "\"");
 		    component = new ComponentSpec(name);
 		    spec = component;
@@ -49,10 +49,13 @@ public class BootRC2 {
 		continue;
 	    }
 	    String[] pair = splitByChar(line, '=');
+            Debug.out.println(pair[0]);
 	    Pair p = new Pair();
-	    p.name = pair[0].trim();
-	    if (verbose) Debug.out.println("Entry: \"" + p.name + "\"");
-	    p.value = pair[1].trim();
+            Debug.out.println("pair ok");
+	    p.name = pair[0];//.trim();
+	    //if (verbose) Debug.out.println("Entry: \"" + p.name + "\"");
+            Debug.out.println(pair[1]);
+	    p.value = pair[1];//.trim();
 	    if (spec != null) spec.pairs.addElement(p);
 	}
 	// link component specs to domains 
@@ -61,7 +64,7 @@ public class BootRC2 {
 	    try {
 		String[] c = d.getStringArray("Components");
 		ComponentSpec comps[] = new ComponentSpec[c.length];
-		for(int j=0; j<c.length; j++) {
+		for(int j = 0; j < c.length; j++) {
 		    comps[j] = (ComponentSpec) components.get(c[j]);
 		    if (comps[j] == null)
 			throw new Error("ComponentSpec \"" + c[j] + "\" not found.");
@@ -84,21 +87,23 @@ public class BootRC2 {
 
     static String[] splitByChar(String stringToParse, char separator) {
 	boolean exit = false;
-	Vector v = new Vector();
-	while(! exit){
+        String ret[] = new String[3];
+        int i = 0;
+	while(!exit){
 	    int c3 = stringToParse.indexOf(separator);
 	    String s;
-	    if (c3==-1) { 
+	    if (c3 == -1) { 
 		exit = true;
 		s = stringToParse;
 	    } else {
 		s = stringToParse.substring(0, c3);
-		stringToParse = stringToParse.substring(c3+1).trim();
+		stringToParse = stringToParse.substring(c3 + 1).trim();
 	    }
-	    v.addElement(s);
+            Debug.out.println(s);
+	    ret[i]=s;
+            i++;
 	}
-	String ret[] = new String[v.size()];
-	v.copyInto(ret);
+        Debug.out.println("ok");
 	return ret;
     }
 

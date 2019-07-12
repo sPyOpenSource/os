@@ -25,23 +25,23 @@ final public class ReadOnlyDirectoryImpl extends FSObjectImpl implements jx.fs.R
     public int length() throws Exception {return 0;}
 
     public FSObject openRO(String filename) throws Exception {
-	try {
+	//try {
 	    Inode nInode = inode.lookup(filename);
 	    if (nInode.isDirectory()) {
-		return fs_impl.registerFSObj(new ReadOnlyDirectoryImpl(fs_impl,fs,this,nInode));
+		return fs_impl.registerFSObj(new ReadOnlyDirectoryImpl(fs_impl, fs, this, nInode));
 	    } else if (nInode.isFile()) {
-		return fs_impl.registerFSObj(new ReadOnlyRegularFileImpl(fs_impl,fs,this,nInode));
+		return fs_impl.registerFSObj(new ReadOnlyRegularFileImpl(fs_impl, fs, this, nInode));
 	    } else {
 		return null;
 	    }
-	} catch (Exception ex) {
+	/*} catch (Exception ex) {
 	    Debug.verbose("exception caught (lookup)");
 	    return null;
-	}
+	}*/
     }
     
     public FSObject openRW(String filename) throws Exception {
-	try {
+	//try {
 	    Inode nInode = inode.lookup(filename);
 	    if (nInode.isDirectory()) {
 		return new DirectoryImpl(fs_impl,fs,this,nInode);
@@ -50,10 +50,10 @@ final public class ReadOnlyDirectoryImpl extends FSObjectImpl implements jx.fs.R
 	    } else {
 		return null;
 	    }
-	} catch (Exception ex) {
+	/*} catch (Exception ex) {
 	    Debug.verbose("exception caught (lookup)");
 	    return null;
-	}
+	}*/
     }
 
     @Override

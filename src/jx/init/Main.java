@@ -17,6 +17,7 @@ public class Main {
 	//System.err = System.out;
 	 
 	Debug.out.println("Init running...");
+Debug.out.println("Init finished.");
 	AI instance = new AI(naming);
         instance.start();
         while(true);
@@ -24,6 +25,7 @@ public class Main {
      }
      
      public static void main(String args[]) throws Exception {
+        Debug.out.println("main.");
 	Naming naming = InitialNaming.getInitialNaming();
 	initNaming = naming;
 	String filename = args[0];
@@ -36,12 +38,12 @@ public class Main {
 	}
 	ReadOnlyMemory startupScript = bootFS.getFile(filename);
 	if (startupScript == null) throw new Error("no startup script " + filename);
-	 
+	 Debug.out.println("startup.");
 	BootRC2 p = new BootRC2(startupScript);
 	
 	// global configuration
 	installGlobal(p.getGlobalSpec());
-
+Debug.out.println("global.");
 
 	// start domains
 	DomainSpec domainSpec;
@@ -93,7 +95,7 @@ public class Main {
                 default:
                         throw new Error("unknown GC implementation");		
 	    }
-
+Debug.out.println("spec.");
 	    ComponentSpec[] componentSpec = domainSpec.getComponents();
 
 	    //if (componentSpec.length == 1) {
@@ -114,7 +116,7 @@ public class Main {
 		DomainStarter.createDomain(domainName, initLib, startClass, gcinfo0, gcinfo1, gcinfo2, gcinfo3, gcinfo4, codeSize, initNaming, garbageCollector, new Object[]{componentSpec});
 		//}
 	}
-	Debug.out.println("Init finished.");
+	
     }
 
 

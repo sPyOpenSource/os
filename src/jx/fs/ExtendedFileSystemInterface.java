@@ -78,15 +78,15 @@ final public class ExtendedFileSystemInterface {
 	}
 	
 	while (n>0) {
-	    try {
+	    //try {
 		name  = rpath.substring(0,n);
 		rpath = rpath.substring(n+1);
 		if ((cFSObj=(ReadOnlyDirectory)cFSObj.openRO(name))==null) return null;
 		n = rpath.indexOf(separator);
-	    } catch (Exception ex) {
+	    /*} catch (Exception ex) {
 		Debug.message("file not fount ("+path+")");
 		return null;
-	    }
+	    }*/
 	}
 
 	return cFSObj;

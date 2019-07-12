@@ -17,9 +17,9 @@ public class LookupHelper {
 	for(;;) {
 	    p = naming.lookup(name);
 	    if (p != null) break;
-	    for(int i=0; i<20; i++) cpuManager.yield();
+	    for(int i = 0; i < 20; i++) cpuManager.yield();
 	}
-	if (verbose) Debug.out.println("    --> "+name);
+	if (verbose) Debug.out.println("    --> " + name);
 	return p;
     }
 }

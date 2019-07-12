@@ -71,7 +71,7 @@ public abstract class AIBaseInput implements Runnable
             if(memory != null)
                 mem.ImportTxt(mem.getLogPath() + memory);
         } catch (IOException ex) {
-            Logger.getLogger(AIBaseInput.class.getName()).log(Level.SEVERE, null, ex);
+            //Logger.getLogger(AIBaseInput.class.getName()).log(Level.SEVERE, null, ex);
             ImportMemoryTxt();
         }*/
     }

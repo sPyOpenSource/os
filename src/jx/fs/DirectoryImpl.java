@@ -23,7 +23,7 @@ final public class DirectoryImpl extends FSObjectImpl implements jx.fs.Directory
     public int length() throws Exception { return 0; }
 
     public FSObject openRO(String filename) throws Exception {
-	try {
+	//try {
 	    Inode nInode = inode.lookup(filename);
 	    if (nInode.isDirectory()) {		
 		return fs_impl.registerFSObj(new ReadOnlyDirectoryImpl(fs_impl,fs,this,nInode));
@@ -32,14 +32,14 @@ final public class DirectoryImpl extends FSObjectImpl implements jx.fs.Directory
 	    } else {
 		return null;
 	    }
-	} catch (Exception ex) {
+	/*} catch (Exception ex) {
 	    Debug.verbose("exception caught (lookup)");
 	    return null;
-	}
+	}*/
     }
 
     public FSObject openRW(String filename) throws Exception {
-	try {
+	//try {
 	    Inode nInode = inode.lookup(filename);
 	    if (nInode.isDirectory()) {
 		return fs_impl.registerFSObj(new DirectoryImpl(fs_impl,fs,this,nInode));
@@ -48,19 +48,19 @@ final public class DirectoryImpl extends FSObjectImpl implements jx.fs.Directory
 	    } else {
 		return null;
 	    }
-	} catch (Exception ex) {
+	/*} catch (Exception ex) {
 	    Debug.verbose("exception caught (lookup)");
 	    return null;
-	}
+	}*/
     }
 
     public RegularFile create(Permission perm, String filename) throws Exception {
-	try {
+	//try {
 	    Inode nInode = inode.create(filename, InodeImpl.S_IWUSR|InodeImpl.S_IRUGO);
 	    return new RegularFileImpl(fs_impl,fs,this,nInode);
-	} catch (Exception ex) {
+	/*} catch (Exception ex) {
 	    return null;
-	}
+	}*/
     }
 
     public boolean    link(Permission perm, String filename, FSObject file) throws Exception { return false; }

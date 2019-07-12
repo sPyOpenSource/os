@@ -32,27 +32,27 @@ public class Vector3D extends Vector<Double>{
             return 1;
     }
     
-    public Vector3D getUnitVector(){
+    /*public Vector3D getUnitVector(){
         double l = getLength();
         return new Vector3D(x / l, y / l, z / l);
-    }
+    }*/
     
-    public Vector3D cross(Vector3D vector){
+    /*public Vector3D cross(Vector3D vector){
         return new Vector3D(y * vector.z - z * vector.y, z * vector.x - x * vector.z, x * vector.y - y * vector.x);
-    }
+    }*/
     
-    public void Normalize(){
+    /*public void Normalize(){
         double l = getLength();
         x /= l;
         y /= l;
         z /= l;
-    }
+    }*/
     
-    public void Sub(Vector3D vector){
+    /*public void Sub(Vector3D vector){
         x -= vector.x;
         y -= vector.y;
         z -= vector.z;
-    }
+    }*/
     
     public double Dot(Vector3D vector){
         return x * vector.x + y * vector.y + z * vector.z;

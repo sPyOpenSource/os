@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Iterator;
 import java.util.List;
-//import java.util.concurrent.ConcurrentHashMap;
+import java.util.HashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -34,7 +34,7 @@ public class AIBaseMemory
 {
     // instance variables
     private double emotion = 0;
-    //private ConcurrentHashMap<String, List<Info>> dict = new ConcurrentHashMap<>();
+    //private HashMap<String, List<Info>> dict = new HashMap<>();
     //private DatagramSocket socket;
     private String LOG;
     private final String[] shortterm;
@@ -115,7 +115,8 @@ public class AIBaseMemory
     /*public List<Info> search(String key)
     {
         if (dict.containsKey(key)){
-            return dict.get(key);
+            //return dict.get(key);
+            return null;
         } else {
             List<Info> temp = new ArrayList<>();
             dict.put(key, temp);
@@ -202,8 +203,8 @@ public class AIBaseMemory
         }
     }*/
     
-    /*public void ImportTxt(String file){
-        try {
+    public void ImportTxt(String file){
+        /*try {
             BufferedReader memory = new BufferedReader(new FileReader(file + ".TXT"));
             String line;
             while((line = memory.readLine()) != null){
@@ -215,7 +216,7 @@ public class AIBaseMemory
             memory.close();
             }
         } catch (IOException ex) {
-            Logger.getLogger(AIBaseMemory.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }*/
+            //Logger.getLogger(AIBaseMemory.class.getName()).log(Level.SEVERE, null, ex);
+        }*/
+    }
 }

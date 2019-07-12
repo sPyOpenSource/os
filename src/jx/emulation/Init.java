@@ -27,12 +27,6 @@ public class Init {
 	//System.out.println(" XX"+method);
 	String a[] = new String[args.length-1];
 	System.arraycopy(args, 1, a, 0, a.length);
-	try {
-	    method.invoke(null, new Object[] {a});
-	} catch(InvocationTargetException ex) {
-	    Throwable e = ex.getTargetException();
-	    System.out.println("Exception: " + e);
-	    e.printStackTrace();
-	}
+        method.invoke(null, new Object[] {a});
     }
 }

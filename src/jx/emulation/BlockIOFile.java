@@ -55,6 +55,4 @@ class BlockIOFile implements BlockIO {
 	    throw new Error();
 	}
     }
-
-
 }
