@@ -49,6 +49,3 @@ public interface ReadOnlyMemory extends Portal {
     
     public int getStartAddress();
 }
-
-
-

@@ -17,7 +17,7 @@ public class Main {
 	//System.err = System.out;
 	 
 	Debug.out.println("Init running...");
-Debug.out.println("Init finished.");
+        
 	AI instance = new AI(naming);
         instance.start();
         while(true);
@@ -43,7 +43,7 @@ Debug.out.println("Init finished.");
 	
 	// global configuration
 	installGlobal(p.getGlobalSpec());
-Debug.out.println("global.");
+        Debug.out.println("global.");
 
 	// start domains
 	DomainSpec domainSpec;
@@ -95,7 +95,7 @@ Debug.out.println("global.");
                 default:
                         throw new Error("unknown GC implementation");		
 	    }
-Debug.out.println("spec.");
+            Debug.out.println("spec.");
 	    ComponentSpec[] componentSpec = domainSpec.getComponents();
 
 	    //if (componentSpec.length == 1) {
@@ -116,7 +116,7 @@ Debug.out.println("spec.");
 		DomainStarter.createDomain(domainName, initLib, startClass, gcinfo0, gcinfo1, gcinfo2, gcinfo3, gcinfo4, codeSize, initNaming, garbageCollector, new Object[]{componentSpec});
 		//}
 	}
-	
+	Debug.out.println("Init finished.");
     }
 
 
