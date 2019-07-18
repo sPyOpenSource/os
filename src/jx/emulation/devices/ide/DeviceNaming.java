@@ -27,9 +27,7 @@ public class DeviceNaming {
 	if (device == -1)
 	    return -1;
 	if (name.length() > 3)
-	    part = Integer.parseInt(name.substring(3,4)); // ohne -1, besser nur substring(3) ?
+	    part = Integer.parseInt(name.substring(3, 4)); // ohne -1, besser nur substring(3) ?
 	return ((part << 4) | device);
     }
-
-
 }

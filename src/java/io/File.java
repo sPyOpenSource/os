@@ -25,6 +25,7 @@ public final class File implements Comparable {
 
     /**
      * Creates a new File instance by converting the given pathname string into an abstract pathname.
+     * @param path
      */
 
     public File(String path) {  
@@ -35,11 +36,10 @@ public final class File implements Comparable {
 	    pathName = "";
 	} else {
 	    fileName = path.substring(n + 1);
-	    if (n==0) {
+	    if (n == 0)
 		pathName = pathSeparator;
-	    } else {
+	    else
 		pathName = path.substring(0, n);
-	    }
 	}
 	name = path;
 
@@ -57,6 +57,8 @@ public final class File implements Comparable {
 
     /**
      * Creates a new File instance from a parent pathname string and a child pathname string.
+     * @param path
+     * @param name
      */
 
     public File(String path, String name) {
@@ -65,10 +67,12 @@ public final class File implements Comparable {
 
     /**
      * Creates a new File instance from a parent abstract pathname and a child pathname string.
+     * @param dir
+     * @param name
      */
 
     public File(File dir, String name) { 
-	this.fileName=name;
+	this.fileName = name;
 	this.name = this.fileName;
 	this.pathName = dir.getPath() + separator + name;
     }
@@ -90,12 +94,12 @@ public final class File implements Comparable {
     }
 
     public boolean exists() {
-	if (fsobj==null) return false;
-	return true;
+	return fsobj != null;
     }
 
     /**
      * Tests whether the application can modify to the file denoted by this abstract pathname.
+     * @return 
      */
 
     public boolean canWrite() {	
@@ -105,6 +109,7 @@ public final class File implements Comparable {
 
     /**
      * Tests whether the application can read the file denoted by this abstract pathname.
+     * @return 
      */
 
     public boolean canRead() { 
@@ -185,6 +190,7 @@ public final class File implements Comparable {
 
     /**
      * Returns an array of strings naming the files and directories in the directory denoted by this abstract pathname.
+     * @return 
      */    
     public String[] list() {
 	try {
@@ -198,18 +204,23 @@ public final class File implements Comparable {
     /**
      * Returns an array of strings naming the files and directories in the directory denoted
      * by this abstract pathname that satisfy the specified filter.
+     * @param filter
+     * @return 
      */
 
     public String[] list(FilenameFilter filter) { return new String[] {""}; }
 
     public boolean delete() { return false; }
 
+    @Override
     public int hashCode() {
 	return 0; 
     }
 
+    @Override
     public boolean equals(Object obj) { return false; }
 
+    @Override
     public String toString() { 
 	return name; 
     }
@@ -220,12 +231,17 @@ public final class File implements Comparable {
 
     /**
      * Compares two abstract pathnames lexicographically.
+     * @param pathname
+     * @return 
      */
     public int compareTo(File pathname) { return 0; }
 
     /**
      * Compares this abstract pathname to another object.
+     * @param o
+     * @return 
      */
+    @Override
     public int compareTo(Object o) {return 0; }
 
     //  Atomically creates a new, empty file named by this abstract pathname if

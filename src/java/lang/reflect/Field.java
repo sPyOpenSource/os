@@ -1,4 +1,7 @@
 package java.lang.reflect;
+
+import java.lang.annotation.Annotation;
+
 public class Field {
    public boolean equals(java.lang.Object arg0) { throw new Error("NOT IMPLEMENTED"); }
    public java.lang.Object get(java.lang.Object arg0) { throw new Error("NOT IMPLEMENTED"); }
@@ -25,4 +28,13 @@ public class Field {
    public void setLong(java.lang.Object arg0, long arg1) { throw new Error("NOT IMPLEMENTED"); }
    public void setShort(java.lang.Object arg0, short arg1) { throw new Error("NOT IMPLEMENTED"); }
    public java.lang.String toString() { throw new Error("NOT IMPLEMENTED"); }
+
+    public boolean isAccessible() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public Annotation[] getDeclaredAnnotations()  {
+        //return AnnotationParser.toArray(declaredAnnotations());
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 }

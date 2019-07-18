@@ -62,8 +62,8 @@ public abstract class AIBaseInput implements Runnable
         }
     }
     
-    private void ImportMemory(){
-        /*try {
+    public void ImportMemory(){
+        try {
             String memory;
             try (BufferedReader log = new BufferedReader(new FileReader(mem.getLogPath() + "LOG.TXT"))) {
                 memory = log.readLine();
@@ -73,7 +73,7 @@ public abstract class AIBaseInput implements Runnable
         } catch (IOException ex) {
             //Logger.getLogger(AIBaseInput.class.getName()).log(Level.SEVERE, null, ex);
             ImportMemoryTxt();
-        }*/
+        }
     }
 
     @Override
@@ -81,7 +81,7 @@ public abstract class AIBaseInput implements Runnable
         jx.zero.debug.DebugOutputStream out = new jx.zero.debug.DebugOutputStream((DebugChannel) naming.lookup("DebugChannel0"));
 	Debug.out = new jx.zero.debug.DebugPrintStream(out);
         Debug.out.println("AIInput running...");
-        ImportMemory();
+        //ImportMemory();
         /*Thread ReceiveFromNetwork = new Thread(){
             @Override
             public void run(){

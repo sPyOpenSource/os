@@ -22,9 +22,9 @@ public class System {
     public static PrintStream out= new DebugPrintStream(new DebugOutputStream(debugChannel));
     public static PrintStream err= new DebugPrintStream(new DebugOutputStream(debugChannel));
     */
-    public static InputStream in= null;
-    public static PrintStream out= null;
-    public static PrintStream err= null;
+    public static InputStream in = null;
+    public static PrintStream out = null;
+    public static PrintStream err = null;
 
     private static Properties properties = null;
     private static final boolean usePlugin = false;
@@ -241,6 +241,10 @@ public class System {
     }
 
     public static SecurityManager getSecurityManager() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public static long nanoTime() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

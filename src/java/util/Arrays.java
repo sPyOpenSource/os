@@ -39,6 +39,9 @@ exception statement from your version. */
 package java.util;
 
 import java.io.Serializable;
+import java.lang.reflect.Array;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 /**
  * This class contains various static utility methods performing operations on
@@ -66,8 +69,105 @@ import java.io.Serializable;
 public class Arrays
 {
 
-    public static char[] copyOf(char[] value, int newCapacity) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    @SuppressWarnings("unchecked")
+    public static <T> T[] copyOf(T[] original, int newLength) {
+        return (T[]) copyOf(original, newLength, original.getClass());
+    }
+public static <T,U> T[] copyOf(U[] original, int newLength, Class<? extends T[]> newType) {
+        @SuppressWarnings("unchecked")
+        T[] copy = ((Object)newType == (Object)Object[].class)
+            ? (T[]) new Object[newLength]
+            : (T[]) Array.newInstance(newType.getComponentType(), newLength);
+        System.arraycopy(original, 0, copy, 0,
+                         Math.min(original.length, newLength));
+        return copy;
+    }
+    public static <T> Stream<T> stream(T[] array) {
+        //return stream(array, 0, array.length);
+        throw new java.lang.UnsupportedOperationException("Not supported yet.");
+    }
+
+    public static IntStream stream(int[] values) {
+        throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+ /**
+     * Copies the specified range of the specified array into a new array.
+     * The initial index of the range (<tt>from</tt>) must lie between zero
+     * and <tt>original.length</tt>, inclusive.  The value at
+     * <tt>original[from]</tt> is placed into the initial element of the copy
+     * (unless <tt>from == original.length</tt> or <tt>from == to</tt>).
+     * Values from subsequent elements in the original array are placed into
+     * subsequent elements in the copy.  The final index of the range
+     * (<tt>to</tt>), which must be greater than or equal to <tt>from</tt>,
+     * may be greater than <tt>original.length</tt>, in which case
+     * <tt>null</tt> is placed in all elements of the copy whose index is
+     * greater than or equal to <tt>original.length - from</tt>.  The length
+     * of the returned array will be <tt>to - from</tt>.
+     * <p>
+     * The resulting array is of exactly the same class as the original array.
+     *
+     * @param <T> the class of the objects in the array
+     * @param original the array from which a range is to be copied
+     * @param from the initial index of the range to be copied, inclusive
+     * @param to the final index of the range to be copied, exclusive.
+     *     (This index may lie outside the array.)
+     * @return a new array containing the specified range from the original array,
+     *     truncated or padded with nulls to obtain the required length
+     * @throws ArrayIndexOutOfBoundsException if {@code from < 0}
+     *     or {@code from > original.length}
+     * @throws IllegalArgumentException if <tt>from &gt; to</tt>
+     * @throws NullPointerException if <tt>original</tt> is null
+     * @since 1.6
+     */
+    @SuppressWarnings("unchecked")
+    public static <T> T[] copyOfRange(T[] original, int from, int to) {
+        return copyOfRange(original, from, to, (Class<? extends T[]>) original.getClass());
+    }
+
+    /**
+     * Copies the specified range of the specified array into a new array.
+     * The initial index of the range (<tt>from</tt>) must lie between zero
+     * and <tt>original.length</tt>, inclusive.  The value at
+     * <tt>original[from]</tt> is placed into the initial element of the copy
+     * (unless <tt>from == original.length</tt> or <tt>from == to</tt>).
+     * Values from subsequent elements in the original array are placed into
+     * subsequent elements in the copy.  The final index of the range
+     * (<tt>to</tt>), which must be greater than or equal to <tt>from</tt>,
+     * may be greater than <tt>original.length</tt>, in which case
+     * <tt>null</tt> is placed in all elements of the copy whose index is
+     * greater than or equal to <tt>original.length - from</tt>.  The length
+     * of the returned array will be <tt>to - from</tt>.
+     * The resulting array is of the class <tt>newType</tt>.
+     *
+     * @param <U> the class of the objects in the original array
+     * @param <T> the class of the objects in the returned array
+     * @param original the array from which a range is to be copied
+     * @param from the initial index of the range to be copied, inclusive
+     * @param to the final index of the range to be copied, exclusive.
+     *     (This index may lie outside the array.)
+     * @param newType the class of the copy to be returned
+     * @return a new array containing the specified range from the original array,
+     *     truncated or padded with nulls to obtain the required length
+     * @throws ArrayIndexOutOfBoundsException if {@code from < 0}
+     *     or {@code from > original.length}
+     * @throws IllegalArgumentException if <tt>from &gt; to</tt>
+     * @throws NullPointerException if <tt>original</tt> is null
+     * @throws ArrayStoreException if an element copied from
+     *     <tt>original</tt> is not of a runtime type that can be stored in
+     *     an array of class <tt>newType</tt>.
+     * @since 1.6
+     */
+    public static <T,U> T[] copyOfRange(U[] original, int from, int to, Class<? extends T[]> newType) {
+        int newLength = to - from;
+        if (newLength < 0)
+            throw new IllegalArgumentException(from + " > " + to);
+        @SuppressWarnings("unchecked")
+        T[] copy = ((Object)newType == (Object)Object[].class)
+            ? (T[]) new Object[newLength]
+            : (T[]) Array.newInstance(newType.getComponentType(), newLength);
+        System.arraycopy(original, from, copy, 0,
+                         Math.min(original.length - from, newLength));
+        return copy;
     }
   /**
    * This class is non-instantiable.
@@ -2426,7 +2526,7 @@ public class Arrays
    * @author Eric Blake <ebb9@email.byu.edu>
    * @status updated to 1.4
    */
-  private static final class ArrayList<E> extends AbstractList<E>
+  private static class ArrayList<E> extends AbstractList<E>
     implements Serializable, RandomAccess
   {
     // We override the necessary methods, plus others which will be much
@@ -2521,6 +2621,31 @@ public class Arrays
 
         @Override
         public E get(int index) {
+            throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        @Override
+        public ListIterator<E> listIterator() {
+            throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        @Override
+        public ListIterator listIterator(int size) {
+            throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        @Override
+        public void add(int index, E element) {
+            throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        @Override
+        public int lastIndexOf(Object o) {
+            throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        @Override
+        public List<E> subList(int fromIndex, int toIndex) {
             throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         }
   }

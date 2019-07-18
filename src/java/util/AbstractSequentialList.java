@@ -129,8 +129,4 @@ public abstract class AbstractSequentialList<E> extends AbstractList<E>
     /*private int size() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }*/
-
-    public Iterator<E> listIterator() {
-        throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 }

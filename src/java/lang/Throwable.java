@@ -3,6 +3,9 @@ package java.lang;
 import jx.zero.*;
 
 import java.io.PrintStream;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Objects;
 
 public class Throwable
@@ -15,7 +18,35 @@ public class Throwable
 	    return className + "." + methodName + ", bytecode " + bytecode + ", line " + line;
 	}
     }
+    
+    // Setting this static field introduces an acceptable
+    // initialization dependency on a few java.util classes.
+    private static final List<Throwable> SUPPRESSED_SENTINEL =
+        Collections.unmodifiableList(new ArrayList<Throwable>(0));
+    
+    /**
+     * The list of suppressed exceptions, as returned by {@link
+     * #getSuppressed()}.  The list is initialized to a zero-element
+     * unmodifiable sentinel list.  When a serialized Throwable is
+     * read in, if the {@code suppressedExceptions} field points to a
+     * zero-element list, the field is reset to the sentinel value.
+     *
+     * @serial
+     * @since 1.7
+     */
+    private List<Throwable> suppressedExceptions = SUPPRESSED_SENTINEL;
 
+    /** Message for trying to suppress a null exception. */
+    private static final String NULL_CAUSE_MESSAGE = "Cannot suppress a null exception.";
+
+    /** Message for trying to suppress oneself. */
+    private static final String SELF_SUPPRESSION_MESSAGE = "Self-suppression not permitted";
+
+    /** Caption  for labeling causative exception stack traces */
+    private static final String CAUSE_CAPTION = "Caused by: ";
+
+    /** Caption for labeling suppressed exception stack traces */
+    private static final String SUPPRESSED_CAPTION = "Suppressed: ";
     private StackFrame[] backtrace;
     private String message;
     private static final boolean createStackTrace = false;
@@ -33,7 +64,11 @@ public class Throwable
         this.message = message;
         this.cause = cause;
     }
-    
+    public Throwable(Throwable cause) {
+        fillInStackTrace();
+        message = (cause==null ? null : cause.toString());
+        this.cause = cause;
+    }
     public Throwable() {
 	this("");
     }
@@ -84,5 +119,21 @@ public class Throwable
             throw new IllegalArgumentException("Self-causation not permitted", this);
         this.cause = cause;
         return this;
+    }
+    
+    public final synchronized void addSuppressed(Throwable exception) {
+        if (exception == this)
+            throw new IllegalArgumentException(SELF_SUPPRESSION_MESSAGE, exception);
+
+        if (exception == null)
+            throw new NullPointerException(NULL_CAUSE_MESSAGE);
+
+        if (suppressedExceptions == null) // Suppressed exceptions not recorded
+            return;
+
+        if (suppressedExceptions == SUPPRESSED_SENTINEL)
+            suppressedExceptions = new ArrayList<>(1);
+
+        suppressedExceptions.add(exception);
     }
 }

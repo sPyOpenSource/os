@@ -38,6 +38,10 @@ public final class StringBuilder extends AbstractStringBuilder implements java.i
         super(str.length() + 16);
         append(str);
     }
+
+    public StringBuilder(StringBuilder mant) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     @Override
     public StringBuilder append(String str){
@@ -50,7 +54,7 @@ public final class StringBuilder extends AbstractStringBuilder implements java.i
     
     @Override
     public StringBuilder append(int i){return this;}
-    
+    public StringBuilder append(long i){return this;}
     @Override
     public StringBuilder append(char c) {
             super.append(c);

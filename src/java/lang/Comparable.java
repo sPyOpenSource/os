@@ -15,6 +15,6 @@ package java.lang;
  *         liefert >0, wenn this >  a
  */
 
-public interface Comparable {
-    public int compareTo(Object a);
+public interface Comparable<T> {
+    public int compareTo(T a);
 }

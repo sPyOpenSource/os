@@ -6,7 +6,6 @@ import jx.zero.debug.DebugPrintStream;
 import jx.zero.debug.DebugOutputStream;
 import jx.zero.debug.DebugInputStream;
 
-import java.lang.reflect.*;
 import java.lang.reflect.Method;
 
 public class Init {

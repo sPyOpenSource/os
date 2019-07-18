@@ -3,7 +3,7 @@
 #NEEDLIBS += secmgr_impl
 #NEEDLIBS += bootrc
 
-SUBDIRS = jx/init jx/bootrc AI AI/Models AI/util jx/zero jx/zero/debug jx/zero/scheduler jx/zero/memory jx/zero/timing jx/zero/env java/io java/lang java/util java/lang/reflect java/security java/security/spec java/security/cert gnu/java/security java/net jx/fs java/security/interfaces jx/net jx/bio javafs buffercache gnu/java/math jx/timer jx/devices/pci metaxa/os/devices/net jx/devices/net/emulation jx/devices/net jx/buffer/separator jx/fs/buffercache jx/buffer jx/collections timerpc jx/devices jx/buffer/multithread gnu/java/io gnu/java/io/decode jx/rtc gnu/java/io/encode java/util/function
+SUBDIRS = jx/init jx/bootrc AI AI/Models AI/util jx/zero jx/zero/debug jx/zero/scheduler jx/zero/memory jx/zero/timing jx/zero/env java/io java/lang java/util java/lang/reflect java/security java/security/spec java/security/cert gnu/java/security java/net jx/fs java/security/interfaces jx/net jx/bio javafs buffercache gnu/java/math jx/timer jx/devices/pci metaxa/os/devices/net jx/devices/net/emulation jx/devices/net jx/buffer/separator jx/fs/buffercache jx/buffer jx/collections timerpc jx/devices jx/buffer/multithread gnu/java/io gnu/java/io/decode jx/rtc gnu/java/io/encode java/util/function java/lang/invoke java/util/stream java/lang/ref
 
 LIBNAME = init2
 NUMBERENV = int

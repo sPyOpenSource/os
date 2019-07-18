@@ -55,4 +55,8 @@ public class LinkageError extends Error
     {
       super(s);
     }
+
+    public LinkageError(String message, Throwable ex) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

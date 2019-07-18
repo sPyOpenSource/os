@@ -61,7 +61,7 @@ package java.util;
  * @see java.util.Set
  * @see java.util.AbstractCollection
  */
-public interface Collection<E>
+public interface Collection<E> extends Iterable<E>
 {
   /**
    * Add an element to this collection.
@@ -75,7 +75,7 @@ public interface Collection<E>
    * @exception IllegalArgumentException if o cannot be added to this
    *   collection for some other reason.
    */
-  //boolean add(Object o);
+  boolean add(E o);
 
   /**
    * Add the contents of a given collection to this collection.
@@ -89,7 +89,7 @@ public interface Collection<E>
    * @exception IllegalArgumentException if some element of c cannot be added
    *   to this collection for some other reason.
    */
-  //boolean addAll(Collection c);
+  boolean addAll(Collection<? extends E> c);
 
   /**
    * Clear the collection, such that a subsequent call to isEmpty() would
@@ -98,7 +98,7 @@ public interface Collection<E>
    * @exception UnsupportedOperationException if this collection does not
    *   support the clear operation.
    */
-  //void clear();
+  void clear();
 
   /**
    * Test whether this collection contains a given object as one of its
@@ -108,7 +108,7 @@ public interface Collection<E>
    * @returns true if this collection contains at least one element e such that
    *   <code>o == null ? e == null : o.equals(e)</code>.
    */
-  boolean contains(E o);
+  boolean contains(Object o);
 
   /**
    * Test whether this collection contains every element in a given collection.
@@ -116,7 +116,7 @@ public interface Collection<E>
    * @param c the collection to test for.
    * @returns true if for every element o in c, contains(o) would return true.
    */
-  //boolean containsAll(Collection c);
+  boolean containsAll(Collection<?> c);
 
   /**
    * Test whether this collection is equal to some object. The Collection
@@ -157,7 +157,7 @@ public interface Collection<E>
    *
    * @returns true if this collection contains no elements.
    */
-  //boolean isEmpty();
+  boolean isEmpty();
 
   /**
    * Obtain an Iterator over this collection.
@@ -177,7 +177,7 @@ public interface Collection<E>
    * @exception UnsupportedOperationException if this collection does not
    *   support the remove operation.
    */
-  //boolean remove(Object o);
+  boolean remove(Object o);
 
   /**
    * Remove all elements of a given collection from this collection. That is,
@@ -187,7 +187,7 @@ public interface Collection<E>
    * @exception UnsupportedOperationException if this collection does not
    *   support the removeAll operation.
    */
-  //boolean removeAll(Collection c);
+  boolean removeAll(Collection<?> c);
 
   /**
    * Remove all elements of this collection that are not contained in a given
@@ -197,7 +197,7 @@ public interface Collection<E>
    * @exception UnsupportedOperationException if this collection does not
    *   support the retainAll operation.
    */
-  //boolean retainAll(Collection c);
+  boolean retainAll(Collection<?> c);
 
   /**
    * Get the number of elements in this collection.
@@ -205,6 +205,8 @@ public interface Collection<E>
    * @returns the number of elements in the collection.
    */
   int size();
+
+    public Object[] toArray();
 
   /**
    * Copy the current contents of this collection into an array.

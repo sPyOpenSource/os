@@ -1,8 +1,8 @@
 package java.util;
 
-public interface Enumeration
+public interface Enumeration<E>
 { 
     public boolean hasMoreElements();
-    public Object nextElement() throws NoSuchElementException;
+    public E nextElement();
 }
 

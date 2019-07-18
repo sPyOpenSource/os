@@ -30,28 +30,28 @@ executable file might be covered by the GNU General Public License. */
 
 package java.util;
 
-public interface Map
+public interface Map<K,V>
 {
   public void clear();
   public boolean containsKey(Object key);
   public boolean containsValue(Object value);
   public Set entrySet();
   public boolean equals(Object o);
-  public Object get(Object key);
-  public Object put(Object key, Object value);
+  public V get(Object key);
+  public V put(K key, V value);
   public int hashCode();
   public boolean isEmpty();
   public Set keySet();
-  public void putAll(Map m);
-  public Object remove(Object o);
+  public void putAll(Map<? extends K, ? extends V> m);
+  public V remove(Object o);
   public int size();
   public Collection values();
 
-  public static interface Entry
+  public static interface Entry<K,V>
   {
-    public Object getKey();
-    public Object getValue();
-    public Object setValue(Object value);
+    public K getKey();
+    public V getValue();
+    public V setValue(V value);
     public int hashCode();
     public boolean equals(Object o);
   }

@@ -29,7 +29,7 @@ public class Debug {
 
     public static final void message(String message) {
 	if (debug) {
-	    if (Debug.out!=null) {
+	    if (Debug.out != null) {
 		Debug.out.println(message);
 	    } else {
 		Naming dz = InitialNaming.getInitialNaming();

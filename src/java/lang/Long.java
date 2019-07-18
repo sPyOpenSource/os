@@ -14,6 +14,14 @@ public final class Long extends Number
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    public static long lowestOneBit(long l) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public static int numberOfTrailingZeros(long zeroBit) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 	private long value;
 
 	private static String toUnsignedString(long value, int shift)

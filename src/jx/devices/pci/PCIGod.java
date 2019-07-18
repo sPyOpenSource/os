@@ -19,7 +19,8 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
    Ports ports;
    Vector devices = new Vector();
    
-   /********************************************************************/
+   /**
+     * @param args******************************************************************/
    
    public static void main(String[] args){
        Naming naming =    InitialNaming.getInitialNaming();
@@ -70,7 +71,7 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
       
       if (mode1res != 0) {
 	 Debug.out.println("now checking pci bus");
-	 if (lookForDevices()) return true;;
+	 if (lookForDevices()) return true;
 	 Debug.out.println("found no devices on this pci bus");
       }
       
@@ -157,6 +158,9 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
    
    private static int createAddress(int bus, int device, int function, int register) {
       //Debug.assert(device < MAX_PCI_AGENTS, "device number out of range");
+      if(device >= MAX_PCI_AGENTS){
+          Debug.out.println("device number out of range");
+      }
       return ECD_MASK |
 	((bus      << BUS_OFFSET_BIT) & BUS_MASK) |
 	((device   << DEV_OFFSET_BIT) & DEV_MASK) |
@@ -194,8 +198,8 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
    
    @Override
    public PCIDevice[] getDevicesByID(short vendorID, short deviceID){
-      boolean compareVID = (vendorID == 0xffff || vendorID == 0x0000)? false : true;
-      boolean compareDID = (deviceID == 0xffff || deviceID == 0x0000)? false : true;
+      boolean compareVID = (vendorID != 0xffff && vendorID != 0x0000);
+      boolean compareDID = (deviceID != 0xffff && deviceID != 0x0000);
       
       PCIDevice dev;
       Vector v = new Vector(devices.size());
@@ -222,10 +226,12 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
       return DevVecToArray(v);
    }
    
+   @Override
    public int readDeviceConfig(PCIAddress devaddr, int reg){
       return readDeviceConfig(createAddress(devaddr, reg));
    }
    
+   @Override
    public void writeDeviceConfig(PCIAddress devaddr, int reg, int value){
       writeDeviceConfig(createAddress(devaddr, reg), value);
    }

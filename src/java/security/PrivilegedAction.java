@@ -37,7 +37,7 @@ package java.security;
   *
   * @author Aaron M. Renn (arenn@urbanophile.com)
   */
-public interface PrivilegedAction
+public interface PrivilegedAction<T>
 {
 
 /**
@@ -47,8 +47,7 @@ public interface PrivilegedAction
   *
   * @return obj An implementation dependent return value
   */
-public abstract Object
-run();
+T run();
 
 } // interface PrivilegedAction
 

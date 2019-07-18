@@ -5,8 +5,16 @@ public abstract class AbstractList<E> extends AbstractCollection<E> implements L
     protected int capacityIncrement;
     protected int elementCount;
     protected E[] elementData;
-
-    protected final void ensureCapacity(int minCapacity)
+public void sort(Comparator<? super E> c) {
+        Object[] a = this.toArray();
+        Arrays.sort(a, (Comparator) c);
+        ListIterator<E> i = this.listIterator();
+        for (Object e : a) {
+            i.next();
+            i.set((E) e);
+        }
+    }
+    protected void ensureCapacity(int minCapacity)
     {
 	if (minCapacity <= elementData.length) return;
 
@@ -43,7 +51,9 @@ public abstract class AbstractList<E> extends AbstractCollection<E> implements L
 	elementCount++;
         return true;
     }
-    
+     public void add(int index, E element) {
+        throw new UnsupportedOperationException();
+    }
     public Iterator<E> iterator() {
 	throw new Error("ITERATOR");
     }
@@ -61,4 +71,49 @@ public abstract class AbstractList<E> extends AbstractCollection<E> implements L
         return elementCount;
     }
     abstract public E get(int index);
+    public ListIterator<E> listIterator() {
+        return listIterator(0);
+    }
+    public ListIterator<E> listIterator(final int index) {
+        /*rangeCheckForAdd(index);
+
+        return new ListItr(index);*/
+        throw new Error("Object method not implemented");
+    }
+     public int indexOf(Object o) {
+        ListIterator<E> it = listIterator();
+        if (o==null) {
+            while (it.hasNext())
+                if (it.next()==null)
+                    return it.previousIndex();
+        } else {
+            while (it.hasNext())
+                if (o.equals(it.next()))
+                    return it.previousIndex();
+        }
+        return -1;
+    }
+      public int lastIndexOf(Object o) {
+        ListIterator<E> it = listIterator(size());
+        if (o==null) {
+            while (it.hasPrevious())
+                if (it.previous()==null)
+                    return it.nextIndex();
+        } else {
+            while (it.hasPrevious())
+                if (o.equals(it.previous()))
+                    return it.nextIndex();
+        }
+        return -1;
+    }
+      public E set(int index, E element) {
+        throw new UnsupportedOperationException();
+    }
+      public List<E> subList(int fromIndex, int toIndex) {
+        /*return (this instanceof RandomAccess ?
+                new RandomAccessSubList<>(this, fromIndex, toIndex) :
+                new SubList<>(this, fromIndex, toIndex));*/
+        throw new Error("Object method not implemented");
+    }
+
 }

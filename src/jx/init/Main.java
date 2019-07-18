@@ -4,6 +4,7 @@ import AI.AI;
 import jx.zero.*;
 import jx.zero.debug.*;
 import jx.bootrc.*;
+import jx.devices.pci.PCIGod;
 
 public class Main {
      private final static boolean debug = false;
@@ -17,11 +18,12 @@ public class Main {
 	//System.err = System.out;
 	 
 	Debug.out.println("Init running...");
-        
-	AI instance = new AI(naming);
+       
+	main(new String[] {"boot.rc"});
+       //PCIGod.main(new String[]{});
+        AI instance = new AI(naming);
         instance.start();
         while(true);
-	//main(new String[] {"boot.rc"});
      }
      
      public static void main(String args[]) throws Exception {
@@ -46,15 +48,15 @@ public class Main {
         Debug.out.println("global.");
 
 	// start domains
-	DomainSpec domainSpec;
+	DomainSpec domainSpec;// = new DomainSpec();
 	while((domainSpec = p.nextDomainSpec()) != null) {
 	    // required parameters
 	    int garbageCollector = 0;
-	    String domainName = domainSpec.getString("Name");
-	    int codeSize = domainSpec.getInt("CodeSize");
-	    try { domainSpec.getString("SchedulerClass"); } catch(NameNotFoundException e) {}
-	    try { 
-		String gcName = domainSpec.getString("GarbageCollector"); 
+	    String domainName = "AllDomain";//domainSpec.getString("Name");
+	    int codeSize = 100000;//domainSpec.getInt("CodeSize");
+	    //try { domainSpec.getString("SchedulerClass"); } catch(NameNotFoundException e) {}
+	    //try { 
+		String gcName = "copying";//domainSpec.getString("GarbageCollector"); 
                 switch (gcName) {
                     case "copying":
                         garbageCollector = 0;
@@ -71,7 +73,7 @@ public class Main {
                     default:
                         throw new Error("unknown GC implementation");
                 }
-	    } catch(NameNotFoundException e) {}
+	    //} catch(NameNotFoundException e) {}
 
 	    int gcinfo0 = 0;
 	    int gcinfo1 = 0;
@@ -83,20 +85,20 @@ public class Main {
                 case 0:
                 case 1:
                 case 2:
-                    gcinfo0 = domainSpec.getInt("HeapSize");
+                    gcinfo0 = 20000000;//domainSpec.getInt("HeapSize");
                     break;
                 case 3:
-                    gcinfo0 = domainSpec.getInt("GCHeapInitial");
+                    /*gcinfo0 = domainSpec.getInt("GCHeapInitial");
                     gcinfo1 = domainSpec.getInt("GCHeapChunk");
                     gcinfo2 = domainSpec.getInt("GCStartGC");
                     try { gcinfo3 = domainSpec.getString("GCAccountTo"); } catch(NameNotFoundException e) {}
-                    try { gcinfo4 = domainSpec.getInt("GCLimit"); } catch(NameNotFoundException e) {}
+                    try { gcinfo4 = domainSpec.getInt("GCLimit"); } catch(NameNotFoundException e) {}*/
                     break;
                 default:
                         throw new Error("unknown GC implementation");		
 	    }
             Debug.out.println("spec.");
-	    ComponentSpec[] componentSpec = domainSpec.getComponents();
+	    //ComponentSpec[] componentSpec = domainSpec.getComponents();
 
 	    //if (componentSpec.length == 1) {
 	    /*
@@ -113,7 +115,7 @@ public class Main {
 		// multi component domain
 		String initLib = "init2.jll";
 		String startClass = "jx/init/MultiComponentStart";
-		DomainStarter.createDomain(domainName, initLib, startClass, gcinfo0, gcinfo1, gcinfo2, gcinfo3, gcinfo4, codeSize, initNaming, garbageCollector, new Object[]{componentSpec});
+		//DomainStarter.createDomain(domainName, initLib, startClass, gcinfo0, gcinfo1, gcinfo2, gcinfo3, gcinfo4, codeSize, initNaming, garbageCollector, new Object[]{componentSpec});
 		//}
 	}
 	Debug.out.println("Init finished.");
@@ -121,7 +123,7 @@ public class Main {
 
 
     static private void installGlobal(GlobalSpec globalSpec) {
-	if (globalSpec == null) {
+	/*if (globalSpec == null) {
 	    Debug.out.println("!!ATTENTION!!                                      !!ATTENTION!!");
 	    Debug.out.println("!!ATTENTION!!  No [Global] section found           !!ATTENTION!!");
 	    Debug.out.println("!!ATTENTION!!                                      !!ATTENTION!!");
@@ -145,16 +147,16 @@ public class Main {
 	    Debug.out.println("!!ATTENTION!!                                      !!ATTENTION!!");
 	    Debug.out.println("!!ATTENTION!!  No Security Manager is used         !!ATTENTION!!");
 	    Debug.out.println("!!ATTENTION!!                                      !!ATTENTION!!");
-	}
+	}*/
 
-	try {
-	    String namingClass = globalSpec.getString("InstallNaming");
+	//try {
+	    String namingClass = "jx/init/InitNaming";//globalSpec.getString("InstallNaming");
 	    initNaming = new InitNaming(initNaming);
-	} catch(NameNotFoundException e) {
+	/*} catch(NameNotFoundException e) {
 	    Debug.out.println("!!ATTENTION!!                                      !!ATTENTION!!");
 	    Debug.out.println("!!ATTENTION!!  DomainZero's naming service is used !!ATTENTION!!");
 	    Debug.out.println("!!ATTENTION!!                                      !!ATTENTION!!");
-	}
+	}*/
     }
 
     /*

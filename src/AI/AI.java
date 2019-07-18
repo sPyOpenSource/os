@@ -17,7 +17,6 @@ public final class AI
     private final AILogic  log;
     private final AIOutput oup;
     private final Thread   logThread, inpThread, oupThread;
-    private final Naming naming;
     
     /**
      * Constructor for objects of class AI
@@ -25,14 +24,13 @@ public final class AI
     public AI()
     {
         // Initialize instance variables
-        //mem.setLogPath("/devices/hda0/AI/");
+        mem.setLogPath("/AI/");
         inp = new AIInput(mem);
         log = new AILogic(mem);
         oup = new AIOutput(mem);
 	logThread = new Thread(log);
         inpThread = new Thread(inp);
         oupThread = new Thread(oup);
-        naming = null;
     }
 
     public AI(Naming naming) {
@@ -42,14 +40,13 @@ public final class AI
 	logThread = new Thread(log);
         inpThread = new Thread(inp);
         oupThread = new Thread(oup);
-        this.naming = naming;
     }
     
     public void start()
     {
         Debug.out.println("AI running...");
     	logThread.start();
-        inpThread.start(); 
+        inpThread.run(); 
         oupThread.start();
     }
 }

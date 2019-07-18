@@ -27,5 +27,8 @@ public class IllegalArgumentException extends RuntimeException
     IllegalArgumentException(String selfcausation_not_permitted, Throwable aThis) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+    public IllegalArgumentException(Throwable cause) {
+        super(cause);
+    }
 }
 

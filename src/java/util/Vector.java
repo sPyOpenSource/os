@@ -283,4 +283,29 @@ public class Vector<E> extends AbstractList<E> implements List<E>, Cloneable, Se
     public synchronized void copyInto(E[] anArray) {
         System.arraycopy(elementData, 0, anArray, 0, elementCount);
     }*/
+
+    @Override
+    public ListIterator<E> listIterator() {
+        throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public ListIterator listIterator(int size) {
+        throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void add(int index, E element) {
+        throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public E set(int index, E o) {
+        throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public List<E> subList(int fromIndex, int toIndex) {
+        throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

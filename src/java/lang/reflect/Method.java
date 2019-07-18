@@ -8,4 +8,8 @@ public class Method {
    public int getModifiers() { throw new Error("NOT IMPLEMENTED"); }
    public java.lang.Class getReturnType() { throw new Error("NOT IMPLEMENTED"); }
    public Object newInstance(java.lang.Object[] arg0) throws InvocationTargetException { throw new Error("NOT IMPLEMENTED"); }
+
+    public boolean isAccessible() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

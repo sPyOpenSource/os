@@ -9,6 +9,10 @@ public final class Double extends Number {
     //public static final Class	TYPE = Class.getPrimitiveClass("double");
     public static Class TYPE;
 
+    public static Object toHexString(double result) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public Double(double a) {
 	value = a;
     }

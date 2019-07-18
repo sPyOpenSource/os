@@ -1,6 +1,5 @@
 package java.lang;
 
-
 public final class String
 {
 
@@ -12,9 +11,9 @@ public final class String
     static int indexOf(char[] value, int i, int count, char[] toCharArray, int i0, int length, int fromIndex) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
-    public static String format(String f2f2f, Double x, Double y, Double z) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    
+    public static String format(String format, Object... args) {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     private char[] value;

@@ -31,8 +31,6 @@ executable file might be covered by the GNU General Public License. */
 
 package java.util;
 
-import AI.Models.Info;
-
 /**
  * [This is what this doc comment will mention:
  * ~ Additional restrictions on some methods. Others included for completeness.
@@ -52,6 +50,21 @@ public interface List<E> extends Collection<E>
     public int size();
 
     public E get(int i);
+
+    @SuppressWarnings({"unchecked", "rawtypes"})
+    default void sort(Comparator<? super E> c) {
+        Object[] a = this.toArray();
+        Arrays.sort(a, (Comparator) c);
+        ListIterator<E> i = this.listIterator();
+        for (Object e : a) {
+            i.next();
+            i.set((E) e);
+        }
+    }
+    
+    ListIterator<E> listIterator();
+
+    public ListIterator listIterator(int size);
   /**
    * Insert an element into the list at a given position.
    *
@@ -65,7 +78,7 @@ public interface List<E> extends Collection<E>
    * @exception IllegalArgumentException if o cannot be added to this list for
    *   some other reason.
    */
-  //void add(int index, Object o);
+  void add(int index, E element);
 
   /**
    * Add an element to the end of the list.
@@ -188,7 +201,7 @@ public interface List<E> extends Collection<E>
    * @returns the least integer n such that <code>o == null ? get(n) == null :
    *   o.equals(get(n))</code>, or -1 if there is no such index.
    */
-  //int indexOf(Object o);
+  int indexOf(Object o);
 
   /**
    * Test whether this list is empty, that is, if size() == 0.
@@ -211,7 +224,7 @@ public interface List<E> extends Collection<E>
    * @returns the greatest integer n such that <code>o == null ? get(n) == null
    *   : o.equals(get(n))</code>.
    */
-  //int lastIndexOf(Object o);
+  int lastIndexOf(Object o);
 
   /**
    * Obtain a ListIterator over this list, starting at the beginning.
@@ -281,7 +294,7 @@ public interface List<E> extends Collection<E>
    *
    * @param index the position within this list of the element to be replaced.
    * @param o the object to replace it with.
-   * @returns the object that was replaced.
+   * @return the object that was replaced.
    * @exception UnsupportedOperationException if this list does not support the
    *   set operation.
    * @exception IndexOutOfBoundsException if index < 0 || index >= size()
@@ -290,7 +303,7 @@ public interface List<E> extends Collection<E>
    * @exception IllegalArgumentException if o cannot be added to this list for
    *   some other reason.
    */
-  //Object set(int index, Object o);
+  E set(int index, E o);
 
   /**
    * Get the number of elements in this list.
@@ -310,11 +323,11 @@ public interface List<E> extends Collection<E>
    * @param fromIndex the index that the returned list should start from
    *    (inclusive).
    * @param toIndex the index that the returned list should go to (exclusive).
-   * @returns a List backed by a subsection of this list.
+   * @return a List backed by a subsection of this list.
    * @exception IndexOutOfBoundsException if fromIndex < 0 || toIndex > size()
    *   || fromIndex > toIndex.
    */
-  //List subList(int fromIndex, int toIndex);
+  List<E> subList(int fromIndex, int toIndex);
 
   /**
    * Copy the current contents of this list into an array.

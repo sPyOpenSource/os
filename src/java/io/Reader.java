@@ -24,7 +24,7 @@ package java.io;
  * @date April 21, 1998.  
  * @author Aaron M. Renn (arenn@urbanophile.com) 
  */
-public abstract class Reader
+public abstract class Reader implements Closeable
 {
   /**
    * This is the <code>Object</code> used for synchronizing critical code

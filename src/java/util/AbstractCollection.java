@@ -1,5 +1,7 @@
 package java.util;
 
+import java.util.function.Consumer;
+
 public abstract class AbstractCollection<E> implements Collection<E> {
     public boolean equals(E a, E b) {throw new Error("");}
     public boolean add(E e) {
@@ -97,5 +99,9 @@ public abstract class AbstractCollection<E> implements Collection<E> {
         }
         return it.hasNext() ? finishToArray(r, it) : r;*/
         return null;
+    }
+    public void forEach(Consumer<? super E> action){}
+    public Spliterator<E> spliterator() {
+        return Spliterators.spliteratorUnknownSize(iterator(), 0);
     }
 }

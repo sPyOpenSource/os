@@ -28,5 +28,4 @@ public class Spec {
 	}
 	throw new NameNotFoundException("Entry not found: \"" + name + "\"");
     }
-
 }

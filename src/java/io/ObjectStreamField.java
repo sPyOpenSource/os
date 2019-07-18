@@ -26,6 +26,7 @@
 package java.io;
 
 import java.lang.reflect.Field;
+import java.util.Comparator;
 
 /**
  * A description of a Serializable field from a Serializable class.  An array
@@ -118,6 +119,10 @@ public class ObjectStreamField
             //case '[': type = Object.class; break;
             default: throw new IllegalArgumentException("illegal signature");
         }
+    }
+
+    public ObjectStreamField(String comparator, Class<Comparator> aClass) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     /**

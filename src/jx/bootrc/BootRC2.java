@@ -12,9 +12,9 @@ public class BootRC2 {
     Hashtable components = new Hashtable();
     ReadOnlyMemory mem;
     int pos;
-    int curDomainSpec=0;
+    int curDomainSpec = 0;
     GlobalSpec global;
-    static final boolean verbose = true;
+    static final boolean verbose = false;
 
     public BootRC2(ReadOnlyMemory mem) {
 	this.mem = mem;
@@ -36,7 +36,7 @@ public class BootRC2 {
 		} else if (line.startsWith("[Domain")) {
 		    domain = new DomainSpec();
 		    spec = domain;
-		    domains.addElement(domain);
+		    //domains.addElement(domain);
 		} else if (line.startsWith("[Component ")) {
 		    String name = (line.substring(10, line.length() - 1)).trim();
 		    if (verbose) Debug.out.println("Component: \"" + name + "\"");
@@ -49,14 +49,14 @@ public class BootRC2 {
 		continue;
 	    }
 	    String[] pair = splitByChar(line, '=');
-            Debug.out.println(pair[0]);
+            //Debug.out.println(pair[0]);
 	    Pair p = new Pair();
             Debug.out.println("pair ok");
 	    p.name = pair[0];//.trim();
 	    //if (verbose) Debug.out.println("Entry: \"" + p.name + "\"");
-            Debug.out.println(pair[1]);
+            //Debug.out.println(pair[1]);
 	    p.value = pair[1];//.trim();
-	    if (spec != null) spec.pairs.addElement(p);
+	    //if (spec != null) spec.pairs.addElement(p);
 	}
 	// link component specs to domains 
 	for(int i = 0; i < domains.size(); i++) {

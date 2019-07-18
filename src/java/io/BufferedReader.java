@@ -104,7 +104,7 @@ public class BufferedReader extends Reader
     * caller.
     *
     * @param in The subordinate stream to read from
-    * @param bufsize The buffer size to use
+    * @param size The buffer size to use
     */
   public BufferedReader(Reader in, int size)
   {
@@ -135,6 +135,7 @@ public class BufferedReader extends Reader
     *
     * @return <code>true</code>
     */
+  @Override
   public boolean markSupported()
   {
     return true;
@@ -428,7 +429,7 @@ public class BufferedReader extends Reader
 	    pos++;
 	return str;
       }
-    StringBuffer sbuf = new StringBuffer(200);
+    StringBuilder sbuf = new StringBuilder(200);
     sbuf.append(buffer, pos, i - pos);
     pos = i;
     // We only want to return null when no characters were read before

@@ -35,15 +35,17 @@ public interface Set<E> extends Collection<E>
   boolean add(E o);
   boolean addAll(Collection<? extends E> c);
   void clear();
-  boolean contains(E o);
+  boolean contains(Object o);
   boolean containsAll(Collection<?> c);
   boolean equals(Object o);
   int hashCode();
   boolean isEmpty();
-  Iterator iterator();
-  boolean remove(E o);
+  Iterator<E> iterator();
+  boolean remove(Object o);
   boolean removeAll(Collection<?> c);
   boolean retainAll(Collection<?> c);
   int size();
   Object[]toArray();
+
+ //   <T> T[] toArray(T[] a);
 }
