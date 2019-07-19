@@ -42,21 +42,21 @@ public class MultiComponentStart {
             String schedulerClass = null;
             try {
                 argv = componentSpec1.getStringArray("Args");
-            }catch(NameNotFoundException e) {}
+            } catch(NameNotFoundException e) {}
             StartInfo info = new StartInfo();
             info.name = startClass;
-            info.args=new Object[]{argv};
+            info.args = new Object[]{argv};
             int componentID = componentManager.load(initLib);
             try {
                 String[] cname = componentSpec1.getStringArray("InheritThread");
                 for (String cname1 : cname) {
                     componentManager.setInheritThread(cname1);
                 }
-            }catch(NameNotFoundException e) {}
+            } catch(NameNotFoundException e) {}
             cpuManager.executeClassConstructors(componentID);
             VMClass cl = cpuManager.getClass(startClass);
             if (cl == null) {
-                throw new Error("Class "+startClass+" not found.");
+                throw new Error("Class " + startClass + " not found.");
             }
             final VMMethod[] methods = cl.getMethods();
             String name = "main";
@@ -78,7 +78,7 @@ public class MultiComponentStart {
 	    cpuManager.start(cpuManager.createCPUState(new ThreadEntry() {
                     @Override
 		    public void run() {
-			Debug.out.println("START : "+info.name);
+			Debug.out.println("START : " + info.name);
 			cpuManager.setThreadName(info.name);
 			info.method.invoke(null, info.args);
 		    }

@@ -26,7 +26,7 @@ public class DeviceNaming {
     /**
      * Gibt die Kennung der Partition mit dem angegebenen Namen zur&uuml;ck.
      *
-     * @param  device der Name der Partition (muss entweder "hda", "hdb", "hdc" oder "hdd" sein, gefolgt von einer Nummer)
+     * @param  name der Name der Partition (muss entweder "hda", "hdb", "hdc" oder "hdd" sein, gefolgt von einer Nummer)
      * @return die Kennung der Partition mit diesem Namen
      */
     public static int nameToDevice(String name) {
@@ -43,6 +43,4 @@ public class DeviceNaming {
 	    part = Integer.parseInt(name.substring(3,4)); // ohne -1, besser nur substring(3) ?
 	return ((part << 4) | device);
     }
-
-
 }

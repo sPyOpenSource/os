@@ -4,6 +4,7 @@ import jx.zero.Naming;
 import jx.zero.Ports;
 import jx.zero.Debug;
 import java.util.Vector;
+import jx.init.InitNaming;
 import jx.zero.Service;
 import jx.zero.InitialNaming;
 
@@ -15,31 +16,32 @@ import jx.zero.InitialNaming;
  * Note: The classname is a suggestion of Michael Golm. ;-]
  */
 public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
-   Naming naming;
-   Ports ports;
-   Vector devices = new Vector();
+    Naming naming;
+    Ports ports;
+    Vector devices = new Vector();
    
-   /**
+    /**
      * @param args******************************************************************/
    
-   public static void main(String[] args){
-       Naming naming =    InitialNaming.getInitialNaming();
- 
-       Debug.out.println("Domain PCI speaking.");
+    public static void main(String[] args){
+        Naming naming = InitialNaming.getInitialNaming();
+ 	naming = new InitNaming(naming);
+
+        Debug.out.println("Domain PCI speaking.");
       
-      // init PCI bus
-      PCIGod instance = new PCIGod(naming);
+        // init PCI bus
+        PCIGod instance = new PCIGod(naming);
       
-      // promote as DEP
-      final Naming dz = naming;
-      final PCIAccess depHandle = instance;
+        // promote as DEP
+        final Naming dz = naming;
+        final PCIAccess depHandle = instance;
       
-      // register as DEP
-      naming.registerPortal(depHandle, "PCIAccess");
-      Debug.out.println("PCIAccess registered");
-   }
+        // register as DEP
+        naming.registerPortal(depHandle, "PCIAccess");
+        Debug.out.println("PCIAccess registered");
+    }
    
-   PCIGod(Naming naming){
+    PCIGod(Naming naming){
       this.naming = naming;
       //Debug.assert(naming != null, "naming must be valid");
       
@@ -51,13 +53,13 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
       
       scanBus();
 //      dumpDevices();
-   }
+    }
    
-   /********************************************************************/
-   /* initialisation & device searching                                */
-   /********************************************************************/
+    /********************************************************************/
+    /* initialisation & device searching                                */
+    /********************************************************************/
    
-   private boolean probePCI() {
+    private boolean probePCI() {
       int old = ports.inl_p(CONFIG_ADDRESS);
       if ((old & CONFIG_ENABLE_MASK) != 0) 
 	return false;
@@ -85,22 +87,22 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
       }
       
       return false;
-   }
+    }
    
-   /*
-    * Try to find at least one device on the PCI bus.
-    */
-   private boolean lookForDevices () {
+    /*
+     * Try to find at least one device on the PCI bus.
+     */
+    private boolean lookForDevices () {
       for(byte device = 0; device < MAX_PCI_AGENTS; device++) {
 	 int id = readDeviceConfig(createAddress(0, device, 0, 0));
 	 if( id != INVALID_ID )
 	   return true;
       }
       return false;
-   }
+    }
    
    
-   public void scanBus() {
+    public void scanBus() {
       PCIDevice pcidev;
       int num_bus = 1;
       for (byte bus = 0; bus < num_bus; ++bus) {
@@ -126,37 +128,36 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
 	       
 	       // if PCI-PCI bridge, increment bus count 
 	       if ((classCode & ~CLASSCODE_PIF_MASK) == CLASSCODE_PCI_BRIDGE ){
-		  Debug.out.println("PCI bridge found: bus="+ bus +", device="+device+", function="+function);
+		  Debug.out.println("PCI bridge found: bus=" + bus + ", device=" + device + ", function=" + function);
 		  ++num_bus;
 	       }
 	       devices.addElement(pcidev);
 	    }
 	 }
       }
-   } 
+    } 
    
-   @Override
-   public void dumpDevices() {
+    @Override
+    public void dumpDevices() {
       Debug.out.println("Devices:");
-      for(int i=0; i<devices.size(); ++i){
+      for(int i = 0; i < devices.size(); ++i){
 	 PCIDevice dev = (PCIDevice)devices.elementAt(i);
 	 int irq = dev.getInterruptLine();
 	 Debug.out.println(dev.getAddress().toString() + ": " +
 			   " (INT " + irq + ")" +
-			   " Class: " + PCICodes.lookupClass(dev.getClassCode())  );
-	Debug.out.println("               "+PCICodes.lookup(dev.readConfig(REG_DEVVEND)) ); 
-
+			   " Class: " + PCICodes.lookupClass(dev.getClassCode()));
+	Debug.out.println("               " + PCICodes.lookup(dev.readConfig(REG_DEVVEND)));
       }
-   } 
+    } 
    
-   /********************************************************************/
-   /* internal read/write operations with direct support methods */
+    /********************************************************************/
+    /* internal read/write operations with direct support methods */
    
-   private static int createAddress(PCIAddress pciaddress, int register) {
+    private static int createAddress(PCIAddress pciaddress, int register) {
       return createAddress(pciaddress.bus, pciaddress.device, pciaddress.function, register);
-   }
+    }
    
-   private static int createAddress(int bus, int device, int function, int register) {
+    private static int createAddress(int bus, int device, int function, int register) {
       //Debug.assert(device < MAX_PCI_AGENTS, "device number out of range");
       if(device >= MAX_PCI_AGENTS){
           Debug.out.println("device number out of range");
@@ -166,44 +167,44 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
 	((device   << DEV_OFFSET_BIT) & DEV_MASK) |
 	((function << FUN_OFFSET_BIT) & FUN_MASK) |
 	((register << REG_OFFSET_BIT) & REG_MASK);
-   }
+    }
    
-   private int readDeviceConfig(int address){
+    private int readDeviceConfig(int address){
       ports.outl_p(CONFIG_ADDRESS, address);
       int data = ports.inl_p(CONFIG_DATA);
       ports.outl_p (CONFIG_ADDRESS, 0);
       return data;
-   }
+    }
    
-   private void writeDeviceConfig(int address, int value){
+    private void writeDeviceConfig(int address, int value){
       ports.outl(CONFIG_ADDRESS, address);
       ports.outl(CONFIG_DATA, value);
       ports.outl (CONFIG_ADDRESS, 0);
-   }
+    }
    
-   /********************************************************************/
-   /* public interface for PCIAccess                                   */
-   /**
+    /********************************************************************/
+    /* public interface for PCIAccess                                   */
+    /**
      * @return ******************************************************************/
    
-   @Override
-   public int getNumberOfDevices() {
+    @Override
+    public int getNumberOfDevices() {
       return devices.size();
-   }
+    }
 
-   @Override
-   public PCIDevice getDeviceAt(int index) {
+    @Override
+    public PCIDevice getDeviceAt(int index) {
       return (PCIDevice)devices.elementAt(index);
-   }
+    }
    
-   @Override
-   public PCIDevice[] getDevicesByID(short vendorID, short deviceID){
+    @Override
+    public PCIDevice[] getDevicesByID(short vendorID, short deviceID){
       boolean compareVID = (vendorID != 0xffff && vendorID != 0x0000);
       boolean compareDID = (deviceID != 0xffff && deviceID != 0x0000);
       
       PCIDevice dev;
       Vector v = new Vector(devices.size());
-      for(int i=0; i<devices.size(); ++i){
+      for(int i = 0; i < devices.size(); ++i){
 	 dev = (PCIDevice)devices.elementAt(i);
 	 if( compareVID && vendorID != dev.getVendorID() )
 	   continue;
@@ -212,40 +213,40 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
 	 v.addElement(dev);
       }
       return DevVecToArray(v);
-   }
+    }
    
-   @Override
-   public PCIDevice[] getDevicesByClass(int mask, int classcode){
+    @Override
+    public PCIDevice[] getDevicesByClass(int mask, int classcode){
       PCIDevice dev;
       Vector v = new Vector(devices.size());
-      for(int i=0; i<devices.size(); ++i){
+      for(int i = 0; i < devices.size(); ++i){
 	 dev = (PCIDevice)devices.elementAt(i);
 	 if( (dev.getClassCode() & mask) == classcode )
 	   v.addElement(dev);
       }
       return DevVecToArray(v);
-   }
+    }
    
-   @Override
-   public int readDeviceConfig(PCIAddress devaddr, int reg){
+    @Override
+    public int readDeviceConfig(PCIAddress devaddr, int reg){
       return readDeviceConfig(createAddress(devaddr, reg));
-   }
+    }
    
-   @Override
-   public void writeDeviceConfig(PCIAddress devaddr, int reg, int value){
+    @Override
+    public void writeDeviceConfig(PCIAddress devaddr, int reg, int value){
       writeDeviceConfig(createAddress(devaddr, reg), value);
-   }
+    }
    
-   /********************************************************************/
+    /********************************************************************/
    
-   PCIDevice[] DevVecToArray(Vector v){
+    PCIDevice[] DevVecToArray(Vector v){
       // Note: for jdk >= 1.2 use this:
       // return (PCIDevice [])v.toArray();
       PCIDevice a[] = new PCIDevice[v.size()];
-      for(int i=0; i<a.length; ++i)
+      for(int i = 0; i < a.length; ++i)
 	a[i] = (PCIDevice)v.elementAt(i);
       return a;
-   }
+    }
 }
 
 
@@ -278,7 +279,7 @@ interface PCIHB {
    int FUN_MASK			= 0x00000700;
    int REG_MASK			= 0x000000fc;
 
-   int MAX_PCI_FUNCTIONS	= 8;
+   int MAX_PCI_FUNCTIONS	        = 8;
    int MAX_PCI_AGENTS		= 32;
    int MAX_PCI_BUSSES		= 256;
    

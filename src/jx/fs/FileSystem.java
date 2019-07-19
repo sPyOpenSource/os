@@ -14,6 +14,9 @@ public interface FileSystem extends jx.zero.Portal {
     /**
      * Stellt der Filesystem-Implementierung ein Blockdevice
      * zur Verfuegung.
+     * @param blockDevice
+     * @param bufferCache
+     * @param clock
      */
     void init(BlockIO blockDevice, BufferCache bufferCache, Clock clock);
 

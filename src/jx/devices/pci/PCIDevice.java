@@ -213,9 +213,9 @@ public class PCIDevice {
       capabilities = new PCICapability[numCaps];
       
       int capentry, capid, capnext;
-      for(int i=0; i<numCaps; ++i){
+      for(int i = 0; i < numCaps; ++i){
 	 capentry = readConfig(capreg);
-	 capid = (capentry & PCICap.CAP_ID_MASK) >> PCICap.CAP_ID_SHIFT;
+	 capid = (capentry & PCICap.CAP_ID_MASK);
 	 capnext = (capentry & PCICap.CAP_NEXT_MASK) >> PCICap.CAP_NEXT_SHIFT;
 	 
 	 capabilities[i] = PCICapability.createCapability(this, capreg);
@@ -252,17 +252,18 @@ public class PCIDevice {
       return null;
    }
    
-   /********************************************************************/
+   /**
+     * @return ******************************************************************/
    
+   @Override
    public String toString(){
       return pciaddress.toString() + ": 0x" + Integer.toHexString(readConfig(PCI.REG_DEVVEND));
    }
 
 
-   /***********  additions **************************************************/
+   /***********  additions
+     * @return  **************************************************/
     public boolean busmasterCapable() { return false;}
     public boolean enforceBusmaster() { return false; }
     public int readIRQLine() {return 0;}
-
 }
-

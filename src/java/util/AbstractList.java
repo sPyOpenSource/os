@@ -4,8 +4,17 @@ public abstract class AbstractList<E> extends AbstractCollection<E> implements L
 {
     protected int capacityIncrement;
     protected int elementCount;
-    protected E[] elementData;
-public void sort(Comparator<? super E> c) {
+    
+    /**
+     * The array buffer into which the elements of the ArrayList are stored.
+     * The capacity of the ArrayList is the length of this array buffer. Any
+     * empty ArrayList with elementData == DEFAULTCAPACITY_EMPTY_ELEMENTDATA
+     * will be expanded to DEFAULT_CAPACITY when the first element is added.
+     */
+    transient Object[] elementData; // non-private to simplify nested class access
+    
+    @Override
+    public void sort(Comparator<? super E> c) {
         Object[] a = this.toArray();
         Arrays.sort(a, (Comparator) c);
         ListIterator<E> i = this.listIterator();
@@ -14,11 +23,12 @@ public void sort(Comparator<? super E> c) {
             i.set((E) e);
         }
     }
+    
     protected void ensureCapacity(int minCapacity)
     {
 	if (minCapacity <= elementData.length) return;
 
-	E[] newData = null;;
+	Object[] newData = null;
 
 	try {
 	    int newSize =
@@ -27,13 +37,12 @@ public void sort(Comparator<? super E> c) {
 		: elementData.length * 2;
 	    
 	    if (newSize < minCapacity) newSize = minCapacity;
-	    //newData = new E[newSize];
+	    newData = new Object[newSize];
 	} catch (Error error) {
-	    //newData = new E[minCapacity]; 
+	    newData = new Object[minCapacity]; 
 	}
 
-	copyInto(newData);
-	elementData = newData;
+	elementData = Arrays.copyOf(newData, newData.length);;
     }
 
     public final void copyInto(E[] array)
@@ -45,19 +54,25 @@ public void sort(Comparator<? super E> c) {
 			 );
     }
     
+    @Override
     public boolean add(E e) {
         ensureCapacity(elementCount + 1);
 	elementData[elementCount] = e;
 	elementCount++;
         return true;
     }
-     public void add(int index, E element) {
+    
+    @Override
+    public void add(int index, E element) {
         throw new UnsupportedOperationException();
     }
+    
+    @Override
     public Iterator<E> iterator() {
 	throw new Error("ITERATOR");
     }
     
+    @Override
     public E remove(int index) {
         /*rangeCheck(index);
         checkForComodification();
@@ -66,21 +81,31 @@ public void sort(Comparator<? super E> c) {
         size--;*/
         return null;
     }
+    
+    @Override
     public int size() {
         //checkForComodification();
         return elementCount;
     }
+    
+    @Override
     abstract public E get(int index);
+    
+    @Override
     public ListIterator<E> listIterator() {
         return listIterator(0);
     }
+    
+    @Override
     public ListIterator<E> listIterator(final int index) {
         /*rangeCheckForAdd(index);
 
         return new ListItr(index);*/
         throw new Error("Object method not implemented");
     }
-     public int indexOf(Object o) {
+    
+    @Override
+    public int indexOf(Object o) {
         ListIterator<E> it = listIterator();
         if (o==null) {
             while (it.hasNext())
@@ -93,7 +118,9 @@ public void sort(Comparator<? super E> c) {
         }
         return -1;
     }
-      public int lastIndexOf(Object o) {
+    
+    @Override
+    public int lastIndexOf(Object o) {
         ListIterator<E> it = listIterator(size());
         if (o==null) {
             while (it.hasPrevious())
@@ -106,14 +133,17 @@ public void sort(Comparator<? super E> c) {
         }
         return -1;
     }
-      public E set(int index, E element) {
+    
+    @Override
+    public E set(int index, E element) {
         throw new UnsupportedOperationException();
     }
-      public List<E> subList(int fromIndex, int toIndex) {
+    
+    @Override
+    public List<E> subList(int fromIndex, int toIndex) {
         /*return (this instanceof RandomAccess ?
                 new RandomAccessSubList<>(this, fromIndex, toIndex) :
                 new SubList<>(this, fromIndex, toIndex));*/
         throw new Error("Object method not implemented");
     }
-
 }

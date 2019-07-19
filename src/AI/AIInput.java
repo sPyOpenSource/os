@@ -44,10 +44,6 @@ public class AIInput extends AIBaseInput
         mem.addInfo(new Info(capColorCamera), "the webcam");
         mem.addInfo(new Info(capDepthCamera), "the webcam");*/
     }
-
-    AIInput(AIMemory mem, Naming naming) {
-        super(mem, naming);    
-    }
     
     private void ReadMessageFromArduino(){
         /*try {

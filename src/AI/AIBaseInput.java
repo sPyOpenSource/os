@@ -25,7 +25,6 @@ public abstract class AIBaseInput implements Runnable
      * This is the initialization of AIInput class 
      */
     protected final AIBaseMemory mem;
-    protected final Naming naming;
     private final static int BUFFER_SIZE = 1024;
     
     /**
@@ -35,13 +34,6 @@ public abstract class AIBaseInput implements Runnable
     public AIBaseInput(AIBaseMemory mem)
     {
     	this.mem = mem;
-        naming = null;
-    }
-    
-    public AIBaseInput(AIBaseMemory mem, Naming naming)
-    {
-    	this.mem = mem;
-        this.naming = naming;
     }
     
     /*protected void getImageFromWebcam(VideoCapture cap, String name){
@@ -78,8 +70,6 @@ public abstract class AIBaseInput implements Runnable
 
     @Override
     public void run() {
-        jx.zero.debug.DebugOutputStream out = new jx.zero.debug.DebugOutputStream((DebugChannel) naming.lookup("DebugChannel0"));
-	Debug.out = new jx.zero.debug.DebugPrintStream(out);
         Debug.out.println("AIInput running...");
         //ImportMemory();
         /*Thread ReceiveFromNetwork = new Thread(){

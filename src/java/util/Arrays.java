@@ -68,12 +68,12 @@ import java.util.stream.Stream;
  */
 public class Arrays
 {
-
     @SuppressWarnings("unchecked")
     public static <T> T[] copyOf(T[] original, int newLength) {
         return (T[]) copyOf(original, newLength, original.getClass());
     }
-public static <T,U> T[] copyOf(U[] original, int newLength, Class<? extends T[]> newType) {
+    
+    public static <T,U> T[] copyOf(U[] original, int newLength, Class<? extends T[]> newType) {
         @SuppressWarnings("unchecked")
         T[] copy = ((Object)newType == (Object)Object[].class)
             ? (T[]) new Object[newLength]
@@ -82,6 +82,7 @@ public static <T,U> T[] copyOf(U[] original, int newLength, Class<? extends T[]>
                          Math.min(original.length, newLength));
         return copy;
     }
+    
     public static <T> Stream<T> stream(T[] array) {
         //return stream(array, 0, array.length);
         throw new java.lang.UnsupportedOperationException("Not supported yet.");
@@ -90,7 +91,8 @@ public static <T,U> T[] copyOf(U[] original, int newLength, Class<? extends T[]>
     public static IntStream stream(int[] values) {
         throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
- /**
+    
+    /**
      * Copies the specified range of the specified array into a new array.
      * The initial index of the range (<tt>from</tt>) must lie between zero
      * and <tt>original.length</tt>, inclusive.  The value at

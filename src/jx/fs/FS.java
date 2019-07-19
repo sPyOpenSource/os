@@ -40,8 +40,10 @@ public interface FS extends Portal {
     /**
      * Gibt belegte Ressourcen frei und beendet Threads des Dateisystem. Diese Methode ist f&uuml;r das "Herunterfahren" des
      * Systems gedacht; nach <code>cleanUp</code> sollte nicht mehr auf das Dateisystem zugegriffen werden.
+     * @throws jx.fs.InodeIOException
+     * @throws jx.fs.NotExistException
      */
-    public void cleanUp() throws InodeIOException,NotExistException;
+    public void cleanUp() throws InodeIOException, NotExistException;
 
     /**
      * H&auml;ngt ein Dateisystem in den Verzeichnisbaum ein, indem eine Inode durch die Wurzelinode des
@@ -82,6 +84,7 @@ public interface FS extends Portal {
      * Liefert den freien Platz innerhalb des Dateisystems.
      *
      * @return der freie Platz in Byte
+     * @throws jx.fs.NotExistException
      */
     public int available() throws NotExistException;
 
@@ -200,12 +203,14 @@ public interface FS extends Portal {
      * Liest den Inhalt der Datei mit dem angegebenen Pfadnamen.
      *
      * @param path der Pfadname der zu lesenden Datei
-     * @param b    das Byte-Array, das den Dateiinhalt aufnehmen soll
+     * @param m    das Byte-Array, das den Dateiinhalt aufnehmen soll
      * @param off  der Offset innerhalb der Datei
      * @param len  die Anzahl zu lesender Byte
      * @return die Anzahl tats&auml;chlich gelesener Byte
      * @exception InodeIOException falls ein Fehler bei der Ein-/Ausgabe auftritt
      * @exception NoFileInodeException falls es sich bei dem angegebenen Pfad nicht um eine Datei handelt
+     * @throws jx.fs.NotExistException
+     * @throws jx.fs.PermissionException
      */
     public int read(String path, Memory m, int off, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException;
 
@@ -213,13 +218,14 @@ public interface FS extends Portal {
      * Schreibt den Inhalt des Byte-Arrays in die Datei mit dem angegebenen Pfadnamen.
      *
      * @param path der Pfadname der Datei, deren Inhalt ge&auml;ndert werden soll
-     * @param b    das Byte-Array, das die zu schreibenden Daten enth&auml;lt
+     * @param m    das Byte-Array, das die zu schreibenden Daten enth&auml;lt
      * @param off  der Offset innerhalb der Datei
      * @param len  die Anzahl zu schreibender Byte
      * @return die Anzahl tats&auml;chlich geschriebener Byte
      * @exception InodeIOException     falls ein Fehler bei der Ein-/Ausgabe auftritt
      * @exception NoFileInodeException falls es sich bei dem angegebenen Pfad nicht um eine Datei handelt
      * @exception PermissionException  falls das Dateisystem als nur lesbar angemeldet wurde
+     * @throws jx.fs.NotExistException
      */
     public int write(String path, Memory m, int off, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException;
 

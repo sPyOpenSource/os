@@ -32,21 +32,12 @@ public final class AI
         inpThread = new Thread(inp);
         oupThread = new Thread(oup);
     }
-
-    public AI(Naming naming) {
-        inp = new AIInput(mem, naming);
-        log = new AILogic(mem);
-        oup = new AIOutput(mem);
-	logThread = new Thread(log);
-        inpThread = new Thread(inp);
-        oupThread = new Thread(oup);
-    }
     
     public void start()
     {
         Debug.out.println("AI running...");
     	logThread.start();
-        inpThread.run(); 
+        inpThread.start(); 
         oupThread.start();
     }
 }

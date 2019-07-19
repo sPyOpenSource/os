@@ -20,8 +20,8 @@ public class Main {
 	Debug.out.println("Init running...");
        
 	main(new String[] {"boot.rc"});
-       //PCIGod.main(new String[]{});
-        AI instance = new AI(naming);
+        PCIGod.main(new String[]{});
+        AI instance = new AI();
         instance.start();
         while(true);
      }

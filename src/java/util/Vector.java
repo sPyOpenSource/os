@@ -39,9 +39,9 @@ public class Vector<E> extends AbstractList<E> implements List<E>, Cloneable, Se
     
     public Vector(int initialCapacity, int capacityIncrement)
     {
-	/*this.capacityIncrement = capacityIncrement;
-	elementData = new E[initialCapacity];
-	elementCount = 0;*/
+	this.capacityIncrement = capacityIncrement;
+	elementData = new Object[initialCapacity];
+	elementCount = 0;
     }
     
     public Vector(int initialCapacity)
@@ -110,11 +110,13 @@ public class Vector<E> extends AbstractList<E> implements List<E>, Cloneable, Se
 	elementCount++;
     }
 
+    @Override
     public final int size()
     {
 	return elementCount;
     }
 
+    @Override
     public final boolean isEmpty()
     {
 	return (elementCount == 0);
@@ -162,11 +164,13 @@ public class Vector<E> extends AbstractList<E> implements List<E>, Cloneable, Se
 	return -1;
     }
 
+    @Override
     public final int indexOf(Object obj)
     {
 	return indexOf(obj, 0);
     }
 
+    @Override
     public final boolean contains(Object obj)
     {
 	return (indexOf(obj) >= 0);
@@ -181,6 +185,7 @@ public class Vector<E> extends AbstractList<E> implements List<E>, Cloneable, Se
 	return k;
     }
 
+    @Override
     public final int lastIndexOf(Object obj)
     {
 	return lastIndexOf(obj, elementCount - 1);
@@ -192,6 +197,7 @@ public class Vector<E> extends AbstractList<E> implements List<E>, Cloneable, Se
 	    elementData[--elementCount] = null;
     }
 
+    @Override
     public final void clear() {
 	removeAllElements();
     }
@@ -224,6 +230,7 @@ public class Vector<E> extends AbstractList<E> implements List<E>, Cloneable, Se
     return false;
     }
 
+    @Override
     public final boolean remove(Object o) {
 	return removeElement(o);
     }
@@ -263,6 +270,7 @@ public class Vector<E> extends AbstractList<E> implements List<E>, Cloneable, Se
 	return buff.toString();
     }
 
+    @Override
     public Object[] toArray() {
 	Object[] ret = new Object[elementCount];
         System.arraycopy(elementData, 0, ret, 0, elementCount);

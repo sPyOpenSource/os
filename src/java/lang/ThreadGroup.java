@@ -70,7 +70,7 @@ public class ThreadGroup {
 	}
 	return false;
     }
-    /*public int activeCount() {
+    public int activeCount() {
 	int result;
 	// Snapshot sub-group data so we don't hold this lock
 	// while our children are computing.
@@ -91,14 +91,14 @@ public class ThreadGroup {
 	for (int i = 0 ; i < ngroupsSnapshot ; i++)
 	    result += groupsSnapshot[i].activeCount();
 	return result;
-    }*/
-    /*public int enumerate(Thread list[]) {
+    }
+    public int enumerate(Thread list[]) {
 	return enumerate(list, 0, true);
     }
     public int enumerate(Thread list[], boolean recurse) {
 	return enumerate(list, 0, recurse);
-    }*/
-    /*private int enumerate(Thread list[], int n, boolean recurse) {
+    }
+    private int enumerate(Thread list[], int n, boolean recurse) {
 	int ngroupsSnapshot = 0;
 	ThreadGroup[] groupsSnapshot = null;
 	synchronized (this) {
@@ -126,9 +126,9 @@ public class ThreadGroup {
 		n = groupsSnapshot[i].enumerate(list, n, true);
 	}
 	return n;
-    }*/
+    }
 
-    /*public int activeGroupCount() {
+    public int activeGroupCount() {
 	int ngroupsSnapshot;
 	ThreadGroup[] groupsSnapshot;
 	synchronized (this) {
@@ -146,17 +146,17 @@ public class ThreadGroup {
 	for (int i = 0 ; i < ngroupsSnapshot ; i++)
 	    n += groupsSnapshot[i].activeGroupCount();
 	return n;
-    }*/
+    }
 
-    /*public int enumerate(ThreadGroup list[]) {
+    public int enumerate(ThreadGroup list[]) {
 	return enumerate(list, 0, true);
     }
 
     public int enumerate(ThreadGroup list[], boolean recurse) {
 	return enumerate(list, 0, recurse);
-    }*/
+    }
 
-    /*private int enumerate(ThreadGroup list[], int n, boolean recurse) {
+    private int enumerate(ThreadGroup list[], int n, boolean recurse) {
 	int ngroupsSnapshot = 0;
 	ThreadGroup[] groupsSnapshot = null;
 	synchronized (this) {
@@ -185,9 +185,9 @@ public class ThreadGroup {
 		n = groupsSnapshot[i].enumerate(list, n, true);
 	}
 	return n;
-    }*/
+    }
 
-    /*public final void stop() {
+    public final void stop() {
         if (stopOrSuspend(false))
             Thread.currentThread().stop();
     }
@@ -195,9 +195,9 @@ public class ThreadGroup {
     public final void suspend() {
         if (stopOrSuspend(true))
             Thread.currentThread().suspend();
-    }*/
+    }
 
-    /*private boolean stopOrSuspend(boolean suspend) {
+    private boolean stopOrSuspend(boolean suspend) {
         boolean suicide = false;
         Thread us = Thread.currentThread();
 	int ngroupsSnapshot;
@@ -222,9 +222,9 @@ public class ThreadGroup {
 	    suicide = groupsSnapshot[i].stopOrSuspend(suspend) || suicide;
 
         return suicide;
-    }*/
+    }
     
-    /*public final void resume() {
+    public final void resume() {
 	int ngroupsSnapshot;
 	ThreadGroup[] groupsSnapshot;
 	synchronized (this) {
@@ -274,7 +274,7 @@ public class ThreadGroup {
     }
 
 
-    private final void add(ThreadGroup g){
+    private void add(ThreadGroup g){
 	synchronized (this) {
 	    if (destroyed) {
 		throw new IllegalThreadStateException();
@@ -352,13 +352,13 @@ public class ThreadGroup {
 	    if (daemon && (nthreads == 0) && (ngroups == 0))
 		destroy();
 	}
-    }*/
+    }
 
-    /*public void list() {
+    public void list() {
 	list(System.out, 0);
-    }*/
+    }
     
-    /*void list(PrintStream out, int indent) {
+    void list(PrintStream out, int indent) {
 	int ngroupsSnapshot;
 	ThreadGroup[] groupsSnapshot;
 	synchronized (this) {
@@ -381,7 +381,7 @@ public class ThreadGroup {
 	}
 	for (int i = 0 ; i < ngroupsSnapshot ; i++)
 	    groupsSnapshot[i].list(out, indent);
-    }*/
+    }
 
     public void uncaughtException(Thread t, Throwable e) {
 	if (parent != null) {

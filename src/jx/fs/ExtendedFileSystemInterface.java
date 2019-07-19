@@ -1,6 +1,5 @@
 package jx.fs;
 
-import jx.zero.Debug;
 import jx.zero.InitialNaming;
 import jx.zero.Naming;
 import jx.zero.LookupHelper;
@@ -99,5 +98,4 @@ final public class ExtendedFileSystemInterface {
     public void   unmount() throws Exception {
 	ifs.unmount();
     }
-
 }

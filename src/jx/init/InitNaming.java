@@ -3,14 +3,13 @@ package jx.init;
 import jx.zero.*;
 import jx.zero.debug.*;
 
-
 import java.util.Hashtable;
 import java.util.Enumeration;
 
 public class InitNaming implements Naming {
     Naming baseNaming;
     Hashtable names = new Hashtable();
-    InitNaming(Naming baseNaming) {
+    public InitNaming(Naming baseNaming) {
 	this.baseNaming = baseNaming;
 
 	// enable debugging

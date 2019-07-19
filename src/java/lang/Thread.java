@@ -1,10 +1,10 @@
 package java.lang;
 
+import jx.init.InitNaming;
 import jx.zero.CPUManager;
 import jx.zero.InitialNaming;
 import jx.zero.ThreadEntry;
 import jx.zero.Naming;
-
 
 public class Thread implements Runnable {
     public final static int MIN_PRIORITY = 1;
@@ -24,6 +24,7 @@ public class Thread implements Runnable {
     private ThreadGroup group;
     private boolean daemon = false;
     boolean alive = false;
+    
     public static Thread currentThread() {
 	return null;
     }
@@ -43,26 +44,33 @@ public class Thread implements Runnable {
 
     public Thread() {
     }
+    
     public Thread(Runnable runnable) {
 	this(null, runnable, "thread");
     }
+    
     public Thread(ThreadGroup group, Runnable runnable) {
 	this(group, runnable, "thread");
     }
+    
     public Thread(String name) {
 	this(null, null, name);
-    }    
+    }
+    
     public Thread(ThreadGroup group, String name) {
 	this(group, null, name);
     }
+    
     public Thread(Runnable runnable, String name) {
 	this(null, runnable, name);
     }
+    
     public Thread(ThreadGroup group, Runnable runnable, String name) {
 	this.group = group;
 	this.runnable = runnable;
 	this.name = name;
     }
+    
     public synchronized void start() {
 	Naming naming = InitialNaming.getInitialNaming();
 	//DebugChannel d = (DebugChannel) naming.lookup("DebugChannel0");
@@ -70,37 +78,51 @@ public class Thread implements Runnable {
 	//out.println("java.lang.Thread: Starting new thread.");
 	alive = true;
 //	naming.startThread(new ThreadStarter(this));
+        naming = new InitNaming(naming);
+	cpuManager = (CPUManager) naming.lookup("CPUManager");
 	cpuManager.start(cpuManager.createCPUState(new ThreadStarter(this)));
     }
+    
     @Override
     public void run() {
 	if (runnable != null)
 	    runnable.run();
     }
+    
     public final void stop() {
     }
+    
     public final synchronized void stop(Throwable o) {
     }
+    
     public void interrupt() {
     }
+    
     public static boolean interrupted() {
 	return currentThread().isInterrupted(true);
     }
+    
     public boolean isInterrupted() {
 	return isInterrupted(false);
     }
+    
     private boolean isInterrupted(boolean clearInterrupted) {
 	return false;
     }
+    
     public void destroy() {
     }
+    
     public final boolean isAlive() {
 	return alive;
     }
+    
     public final void suspend() {
     }
+    
     public final void resume() {
     }
+    
     public final void setPriority(int newPriority) {
 	if (newPriority > MAX_PRIORITY || newPriority < MIN_PRIORITY) {
 	    throw new IllegalArgumentException();
@@ -110,27 +132,35 @@ public class Thread implements Runnable {
 	}
 	priority = newPriority;
     }
+    
     public final int getPriority() {
 	return priority;
     }
+    
     public final void setName(String name) {
 	this.name = name;
     }
+    
     public final String getName() {
 	return name;
     }
+    
     public final ThreadGroup getThreadGroup() {
 	return group;
     }
-    /*public static int activeCount() {
+    
+    public static int activeCount() {
 	return currentThread().getThreadGroup().activeCount();
-    }*/
-    /*public static int enumerate(Thread tarray[]) {
+    }
+    
+    public static int enumerate(Thread tarray[]) {
 	return currentThread().getThreadGroup().enumerate(tarray);
-    }*/
+    }
+    
     public int countStackFrames() {
 	return 0;
     }
+    
     public final synchronized void join(long millis) throws InterruptedException {
 	long base = System.currentTimeMillis();
 	long now = 0;
@@ -154,6 +184,7 @@ public class Thread implements Runnable {
 	    }
 	}
     }
+    
     public final synchronized void join(long millis, int nanos) throws InterruptedException {
 
 	if (millis < 0) {
@@ -171,23 +202,29 @@ public class Thread implements Runnable {
 
 	join(millis);
     }
+    
     public final void join() throws InterruptedException {
 	while (isAlive()) {
 	    Thread.yield();
 	}
     }
+    
     public static void dumpStack() {
 	new Exception("Stack trace").printStackTrace();
     }
+    
     public final void setDaemon(boolean on) {
 	if (isAlive()) {
 	    throw new IllegalThreadStateException();
 	}
 	daemon = on;
     }
+    
     public final boolean isDaemon() {
 	return daemon;
     }
+    
+    @Override
     public String toString() {
 	if (getThreadGroup() != null) {
 	    return "Thread[" + getName() + "," + getPriority() + "," + 
@@ -203,26 +240,25 @@ public class Thread implements Runnable {
     }
 
     static {
-	naming = InitialNaming.getInitialNaming();
+	//naming = InitialNaming.getInitialNaming();
+        //naming = new InitNaming(naming);
 	cpuManager = (CPUManager) naming.lookup("CPUManager");
     }
 
+    class ThreadStarter implements ThreadEntry {
+        Thread runnable;
+        ThreadStarter(Thread runnable) { this.runnable = runnable; }
+        @Override
+        public void run() {
+          if (runnable.name != null) {
+            CPUManager cpuManager = (CPUManager) InitialNaming.getInitialNaming().lookup("CPUManager");
+            //naming = new InitNaming(naming);
+            //cpuManager = (CPUManager) naming.lookup("CPUManager");
+            cpuManager.setThreadName(runnable.name);
+          }
 
-  class ThreadStarter implements ThreadEntry {
-    Thread runnable;
-    ThreadStarter(Thread runnable) { this.runnable = runnable; }
-    public void run() {
-      if (runnable.name != null) {
-	CPUManager cpuManager = (CPUManager) InitialNaming.getInitialNaming().lookup("CPUManager");
-	cpuManager.setThreadName(runnable.name);
-      }
-      
-      runnable.run();
-      runnable.alive = false;	
+          runnable.run();
+          runnable.alive = false;	
+        }
     }
-  }
-  
-  
 }
-
-
