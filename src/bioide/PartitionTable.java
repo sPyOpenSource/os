@@ -231,4 +231,3 @@ class PartitionData {
     public int  start_sector()      { return start_sector; }
     public int  length_in_sectors() { return length_in_sectors; }
 }
-

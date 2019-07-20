@@ -12,10 +12,10 @@ public class DeviceNaming {
 	String retval = null;
 	int part;
 	if (device == 99) return "hdemul";
-	if ((device & 3) == 0) retval = new String("hda");
-	if ((device & 3) == 1) retval = new String("hdc");
-	if ((device & 3) == 2) retval = new String("hdb");
-	if ((device & 3) == 3) retval = new String("hdd");
+	if ((device & 3) == 0) retval = "hda";
+	if ((device & 3) == 1) retval = "hdc";
+	if ((device & 3) == 2) retval = "hdb";
+	if ((device & 3) == 3) retval = "hdd";
 	part = (device >> 4) & 15;
 	if (part > 0)
 	    retval += String.valueOf(part); // ohne +1

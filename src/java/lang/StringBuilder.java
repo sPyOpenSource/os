@@ -23,7 +23,7 @@ public final class StringBuilder extends AbstractStringBuilder implements java.i
      *               argument is less than <code>0</code>.
      */
     public StringBuilder(int capacity) {
-        //super(capacity);
+        super(capacity);
     }
 
     /**
@@ -38,10 +38,6 @@ public final class StringBuilder extends AbstractStringBuilder implements java.i
         super(str.length() + 16);
         append(str);
     }
-
-    public StringBuilder(StringBuilder mant) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     
     @Override
     public StringBuilder append(String str){
@@ -50,11 +46,22 @@ public final class StringBuilder extends AbstractStringBuilder implements java.i
     }
     
     @Override
-    public StringBuilder append(Object obj){return this;}
+    public StringBuilder append(Object obj){
+        return append(String.valueOf(obj));
+    }
     
     @Override
-    public StringBuilder append(int i){return this;}
-    public StringBuilder append(long i){return this;}
+    public StringBuilder append(int i){
+        super.append(i);
+        return this;
+    }
+    
+    @Override
+    public StringBuilder append(long lng){
+        super.append(lng);
+        return this;
+    }
+    
     @Override
     public StringBuilder append(char c) {
             super.append(c);
@@ -63,21 +70,7 @@ public final class StringBuilder extends AbstractStringBuilder implements java.i
 
     @Override
     public String toString() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public int length() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public char charAt(int index) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public CharSequence subSequence(int start, int end) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        // Create a copy, don't share the array
+        return new String(value, 0, count);
     }
 }

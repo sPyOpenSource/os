@@ -13,7 +13,7 @@ public class Main {
 	IDEDeviceImpl ide = new IDEDeviceImpl();
 	Debug.out.println("*1");
 	Drive[] drives = ide.getDrives();
-	BlockIO bio=null;
+	BlockIO bio = null;
 
 	if (args[3].equals("full")) {
 	    bio = drives[drive];
@@ -26,6 +26,6 @@ public class Main {
 	    bio = partitions[partition];
 	}	
 	naming.registerPortal(bio, bioName);
-	Debug.out.println("Block I/O device registered as "+bioName);	
+	Debug.out.println("Block I/O device registered as " + bioName);	
     }
 }

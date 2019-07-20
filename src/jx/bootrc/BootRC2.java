@@ -36,7 +36,7 @@ public class BootRC2 {
 		} else if (line.startsWith("[Domain")) {
 		    domain = new DomainSpec();
 		    spec = domain;
-		    //domains.addElement(domain);
+		    domains.addElement(domain);
 		} else if (line.startsWith("[Component ")) {
 		    String name = (line.substring(10, line.length() - 1)).trim();
 		    if (verbose) Debug.out.println("Component: \"" + name + "\"");
@@ -49,14 +49,9 @@ public class BootRC2 {
 		continue;
 	    }
 	    String[] pair = splitByChar(line, '=');
-            //Debug.out.println(pair[0]);
-	    Pair p = new Pair();
-            Debug.out.println("pair ok");
-	    p.name = pair[0];//.trim();
-	    //if (verbose) Debug.out.println("Entry: \"" + p.name + "\"");
-            //Debug.out.println(pair[1]);
-	    p.value = pair[1];//.trim();
-	    //if (spec != null) spec.pairs.addElement(p);
+	    Pair p = new Pair(pair[0].trim(), pair[1].trim());
+	    if (verbose) Debug.out.println("Entry: \"" + p.name + "\"");
+	    if (spec != null) spec.pairs.addElement(p);
 	}
 	// link component specs to domains 
 	for(int i = 0; i < domains.size(); i++) {
@@ -87,8 +82,7 @@ public class BootRC2 {
 
     static String[] splitByChar(String stringToParse, char separator) {
 	boolean exit = false;
-        String ret[] = new String[3];
-        int i = 0;
+        Vector v = new Vector();
 	while(!exit){
 	    int c3 = stringToParse.indexOf(separator);
 	    String s;
@@ -99,23 +93,22 @@ public class BootRC2 {
 		s = stringToParse.substring(0, c3);
 		stringToParse = stringToParse.substring(c3 + 1).trim();
 	    }
-            Debug.out.println(s);
-	    ret[i]=s;
-            i++;
+	    v.addElement(s);
 	}
-        Debug.out.println("ok");
+        String ret[] = new String[v.size()];
+        v.copyInto(ret);
 	return ret;
     }
 
     private String readline() {
 	byte b;
-	int i=0;
+	int i = 0;
 	while(pos < mem.size() && (b = mem.get8(pos)) != NEWLINE) {
 	    data[i] = (char)b;
 	    pos++;
 	    i++;
 	} 
-	if (pos >= mem.size() && i==0) return null;
+	if (pos >= mem.size() && i == 0) return null;
 	pos++;
 	String s = new String(data, 0, i);
 	return s;

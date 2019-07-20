@@ -1,13 +1,9 @@
 package jx.zero;
 
-import jx.zero.debug.*;
-import java.util.Vector;
-
 public class DomainStarter {
 
   private static BootFS bootfs;
   private static ByteCodeTranslater onc;
-
 
 
   public static Domain createDomain(              String libName, String mainclass,                  int gcinfo0) {
@@ -136,7 +132,6 @@ public class DomainStarter {
   }
 
 
-
   public static Domain createDomain(String title, String libName, String mainclass, String schedName, int gcinfo0, int gcinfo1, int gcinfo2, String gcinfo3,  int gcinfo4, int codesize, String [] argv, Naming naming, String interceptorName, Object[] portals, int garbageCollector) {
       return createDomain(title, libName, mainclass, schedName, gcinfo0, gcinfo1, gcinfo2, gcinfo3, gcinfo4, codesize, argv, naming, interceptorName, portals, garbageCollector, (int[])null);
   }
@@ -157,40 +152,39 @@ public class DomainStarter {
     DomainManager dm = (DomainManager)naming.lookup("DomainManager");
     
     /* Debug.message("create Domain "+libName+" via DomainStarter"); */
-    
-    if ((i=libName.indexOf(".zip"))>0) {
-      name = libName.substring(0,i);
-      lib  = name+".jll";
+    if ((i = libName.indexOf(".zip")) > 0) {
+      name = libName.substring(0, i);
+      lib  = name + ".jll";
       zip  = libName;
-    } else if ((i=libName.indexOf(".jll"))>0) {
-      name = libName.substring(0,i);
+    } else if ((i = libName.indexOf(".jll")) > 0) {
+      name = libName.substring(0, i);
       lib  = libName;
-      zip  = name+".zip";
-    } else if ((i=libName.indexOf(".jxd"))>0) {
-      name = libName.substring(0,i);
+      zip  = "";//name + ".zip";
+    } else if ((i = libName.indexOf(".jxd")) > 0) {
+      name = libName.substring(0, i);
       lib  = libName;
-      zip  = name+".zip";
+      zip  = name + ".zip";
     } else {
       name = libName;
-      lib  = name+".jll";
-      zip  = name+".zip";
+      lib  = name + ".jll";
+      zip  = name + ".zip";
     }
 
-    if ((bootfs!=null)&&(!bootfs.lookup(lib))) {
-	Debug.message("lib "+lib+" not found");
+    if ((bootfs != null) && (!bootfs.lookup(lib))) {
+	Debug.message("lib " + lib + " not found");
 	if (bootfs.lookup(zip)) {
-	    if ((onc==null)&&(!initDomainStarter())) throw new Error("can`t init domain starter");
+	    if ((onc == null) && (!initDomainStarter())) throw new Error("can't init domain starter");
 	    try {
-		onc.translate(zip,lib);
+		onc.translate(zip, lib);
 	    } catch (Exception ex) {
-		throw new Error("can`t init domain starter: "+ex.getClass().getName());
+		throw new Error("can't init domain starter: " + ex.getClass().getName());
 	    }
 	} else {
-	    //Debug.message("zip "+zip+" not found (can`t create domain)");
-	    throw new Error("zip "+zip+" not found (can`t create domain)");
+	    //Debug.message("zip "+zip+" not found (can't create domain)");
+	    throw new Error("zip " + zip + " not found (can't create domain)");
 	}
     } else {
-	Debug.message("use library "+lib);
+	//Debug.message("use library " + lib);
     }
 
     if (schedName != null) {
@@ -218,7 +212,7 @@ public class DomainStarter {
     
     CentralSecurityManager secmgr = (CentralSecurityManager)naming.lookup("SecurityManager");
     if ( secmgr != null ) {
-	Debug.out.println("!!!!current Domain: "+dm.getCurrentDomain().getName());
+	Debug.out.println("!!!!current Domain: " + dm.getCurrentDomain().getName());
 	secmgr.inheritPrincipal(dm.getCurrentDomain(), domain);
 	if (interceptorName == null)
 	    secmgr.inheritInterceptor(dm.getCurrentDomain(), domain);
@@ -240,7 +234,7 @@ public class DomainStarter {
     Naming naming = setupDomain();
     DomainManager dm = (DomainManager)naming.lookup("DomainManager");
 
-    if (bootfs==null) throw new Error("bootfs or compiler_env.jll not found!!");
+    if (bootfs == null) throw new Error("bootfs or compiler_env.jll not found!!");
     if (!bootfs.lookup("compiler_env.jll")) throw new Error("bootfs or compiler_env.jll not found!!");
   
     Debug.message("init Domain Manager");
@@ -276,7 +270,7 @@ public class DomainStarter {
 
   public static Naming setupDomain() {
     Naming naming = InitialNaming.getInitialNaming();
-    if (bootfs==null) {
+    if (bootfs == null) {
       bootfs = (BootFS)naming.lookup("BootFS");
     }
     return naming;

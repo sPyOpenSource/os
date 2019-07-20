@@ -56,15 +56,15 @@ public class Integer extends Number
     }
 
     
-      public float floatValue()
-      {
-	  throw new Error(); /*return (float)value;*/
-      }
+    public float floatValue()
+    {
+        throw new Error(); /*return (float)value;*/
+    }
 
-      public double doubleValue()
-      {
-      throw new Error(); /*return (double)value;*/
-      }
+    public double doubleValue()
+    {
+        throw new Error(); /*return (double)value;*/
+    }
     
     public static String toString(int i)
     {
@@ -145,18 +145,18 @@ public class Integer extends Number
 	int result = 0;
 	boolean signed = false;
 	if (s.charAt(position) == '-')
-	    {
-		signed = true;
-		position++;
-	    }
+        {
+            signed = true;
+            position++;
+        }
 	int digit;
 	for (; position < s.length(); position++)
-	    {
-		digit = Character.digit(s.charAt(position), radix);
-		if (digit < 0)
-		    throw new NumberFormatException();
-		result = (result * radix) - digit;
-	    }
+        {
+            digit = Character.digit(s.charAt(position), radix);
+            if (digit < 0)
+                throw new NumberFormatException();
+            result = (result * radix) - digit;
+        }
 	if (!signed && result < -MAX_VALUE)
 	    throw new NumberFormatException();
 	return (signed ? result : -result );
@@ -174,7 +174,7 @@ public class Integer extends Number
 	return new Integer(parseInt(s, radix));
     }
 
-    /*public static Integer getInteger(String nm)
+    public static Integer getInteger(String nm)
     {
 	return getInteger(nm, null);
     }
@@ -191,19 +191,19 @@ public class Integer extends Number
 	if (value == null)
 	    return val;
 	try
-	    {
-		if (value.startsWith("0x"))
-		    return valueOf(value.substring(2), 16);
-		if (value.startsWith("#"))
-		    return valueOf(value.substring(1), 16);
-		if (value.startsWith("0"))
-		    return valueOf(value.substring(1), 8);
-		return valueOf(value, 10);
-	    }
+        {
+            if (value.startsWith("0x"))
+                return valueOf(value.substring(2), 16);
+            if (value.startsWith("#"))
+                return valueOf(value.substring(1), 16);
+            if (value.startsWith("0"))
+                return valueOf(value.substring(1), 8);
+            return valueOf(value, 10);
+        }
 	catch (NumberFormatException ex)
-	    {
-	    }
+        {
+        }
 	return val;
-    }*/
+    }
 }
 

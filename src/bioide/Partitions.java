@@ -1,8 +1,5 @@
 package bioide;
 
-import jx.zero.*;
-import jx.timer.SleepManager;
-
 /**
  * Partitions of a drive.
  * @author Michael Golm

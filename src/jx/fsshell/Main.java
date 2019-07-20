@@ -14,10 +14,12 @@ public class Main {
 	OutputStreamProxy(OutputStreamPortal o) {
 	    this.o = o;
 	}
+        @Override
 	public void write(int c) throws IOException {
 	    //Debug.out.println("PROXY: write"+c);
 	    o.write(c);
 	}
+        @Override
 	public void flush() throws IOException {
 	    o.flush();
 	}	
@@ -28,23 +30,24 @@ public class Main {
 	InputStreamProxy(InputStreamPortal o) {
 	    this.o = o;
 	}
+        @Override
 	public int read() throws IOException {
 
 	    int c = o.read();
-	    while (c==255) { /* ignore telnet control sequence */
+	    while (c == 255) { /* ignore telnet control sequence */
 		Debug.out.println("PROXY: control sequence");
 		o.read();
 		o.read();
 		c = o.read();
 	    }
-	    Debug.out.println("PROXY: read: "+c);
+	    Debug.out.println("PROXY: read: " + c);
 	    return c;
 	}
 	
     }
 
     FS fs;
-    String cwd="/";
+    String cwd = "/";
     MemoryManager memoryManager;
     Memory buffer;
 
@@ -82,55 +85,60 @@ public class Main {
 	buffer = memoryManager.alloc(4096);
 
 	shell.register("ls", new Command() {
+                @Override
 		public void command(PrintStream out, String[] args) throws FSException  {
-		    String[] names = null;
 		    Inode inode;
 		    if (args.length == 0) {
 			inode = fs.getCwdInode();
 		    } else {
 			inode = (Inode)fs.lookup(args[0]);
 		    }
-		    names = inode.readdirNames();
-		    for (int i = 0; i < names.length; i++)
-			out.println((String)names[i]);
+		    String[] names = inode.readdirNames();
+                    for (String name : names) {
+                        out.println((String) name);
+                    }
 		}
+                @Override
 		public String getInfo() { return "list directory"; }	    
 	    });
 
 
 	shell.register("mkdir", new Command() {
+                @Override
 		public void command(PrintStream out, String[] args) throws FSException  {
 		    fs.mkdir(args[0], InodeImpl.S_IWUSR|InodeImpl.S_IRUGO);
 		}
+                @Override
 		public String getInfo() { return "create directory"; }	    
 	    });
 		   
 	shell.register("cd", new Command() {
+                @Override
 		public void command(PrintStream out, String[] args) throws FSException {
 			fs.cd(args[0]);
 		}
+                @Override
 		public String getInfo() { return "change working directory"; }	    
 	    });
 
 	shell.register("cat", new Command() {
+                @Override
 		public void command(PrintStream out, String[] args) throws FSException {
 		    Inode inode = (Inode)fs.lookup(args[0]);
 		    int l = inode.getLength();
 		    int o=0;
-		    while(l>0) {
-			int m = l<4096?l:4096;
+		    while(l > 0) {
+			int m = l < 4096 ? l : 4096;
 			inode.read(buffer, o,  m);
-			for(int i=0; i<m; i++) out.write(buffer.get8(i));
-			l-=m;
-			o+=m;
+			for(int i = 0; i < m; i++) out.write(buffer.get8(i));
+			l -= m;
+			o += m;
 		    }
 		    out.flush();
 		}
+                @Override
 		public String getInfo() { return "print file on standard output"; }	    
 	    });
-		   
-
-
 
 	shell.mainloop();
     }

@@ -25,7 +25,7 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
    
     public static void main(String[] args){
         Naming naming = InitialNaming.getInitialNaming();
- 	naming = new InitNaming(naming);
+ 	//naming = new InitNaming(naming);
 
         Debug.out.println("Domain PCI speaking.");
       

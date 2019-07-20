@@ -25,8 +25,6 @@
 
 package java.lang;
 
-import java.util.Arrays;
-
 /**
  * A mutable sequence of characters.
  * <p>
@@ -39,7 +37,7 @@ import java.util.Arrays;
  * @author      Ulf Zibis
  * @since       1.5
  */
-abstract class AbstractStringBuilder //implements Appendable, CharSequence 
+abstract class AbstractStringBuilder implements CharSequence, Appendable 
 {
     /**
      * The value is used for character storage.
@@ -1398,6 +1396,7 @@ abstract class AbstractStringBuilder //implements Appendable, CharSequence
      *
      * @return  a string representation of this sequence of characters.
      */
+    @Override
     public abstract String toString();
 
     /**
@@ -1406,5 +1405,4 @@ abstract class AbstractStringBuilder //implements Appendable, CharSequence
     final char[] getValue() {
         return value;
     }
-
 }

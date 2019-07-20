@@ -32,16 +32,20 @@ public class PartitionEntry implements Partition, Service {
 	this.os = os;
     }
     
+    @Override
     public int getCapacity() {
 	return size;
     }
 
+    @Override
     public int getSectorSize() { return 512; }
 
+    @Override
     public void readSectors(int startSector, int numberOfSectors, Memory buf, boolean synchronous) { 
 	drive.readSectors(start+startSector,numberOfSectors,buf,synchronous);
     }
 
+    @Override
     public void writeSectors(int startSector, int numberOfSectors, Memory buf, boolean synchronous ) { 
 	drive.writeSectors(start+startSector,numberOfSectors,buf,synchronous);
     }

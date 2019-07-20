@@ -79,11 +79,13 @@ public final class String
 	this(newValue, hibyte, offset, newValue.length );
     }
 
+    @Override
     public String toString()
     {
 	return this;
     }
 
+    @Override
     public int hashCode()
     {
 	int n = value.length;
@@ -158,7 +160,7 @@ public final class String
     {
 	int len = value.length;
 	char[] result = new char[len];
-	for(int i=0; i<len; i++) result[i] = value[i];
+        System.arraycopy(value, 0, result, 0, len);
 	return result;
     }
 
@@ -176,6 +178,7 @@ public final class String
 	return new String(value, beginIndex, endIndex - beginIndex);
     }
 
+    @Override
     public boolean equals(Object obj)
     {
 	if (obj == null)

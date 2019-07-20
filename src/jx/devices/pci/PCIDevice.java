@@ -1,4 +1,5 @@
 package jx.devices.pci;
+
 import jx.zero.Debug;
 
 public class PCIDevice {
@@ -49,6 +50,9 @@ public class PCIDevice {
    /**
     * Read only a part of a DWord of the Configuration Space.
     * 
+     * @param reg
+     * @param mask
+     * @param shift
     * @return (value & mask) >> shift
     * 
     */
@@ -66,6 +70,10 @@ public class PCIDevice {
     * read out and the bits not covered by the mask are merged into the
     * given value. The merged value is written into the register.
     * 
+     * @param reg
+     * @param mask
+     * @param shift
+     * @param value
     */
    public void writePackedConfig(int reg, int mask, int shift, int value){
       int oldval = readConfig(reg) & ~mask;

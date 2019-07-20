@@ -14,6 +14,7 @@ class ReadOperation extends IoOperation {
 	super(buffer, count, controller, drive, sector, synchronous);
     }
 
+    @Override
     public void startOperation() throws IDEException {
 	state.set(STATE_RUNNING);
 	

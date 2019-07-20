@@ -17,7 +17,6 @@ public class BlockIORAM implements jx.bio.BlockIO, Service {
     SleepManager sleepManager = new SleepManagerImpl();
 
 
-
     public BlockIORAM() { 
 	this(DEFAULT_CAPACITY);
     }
@@ -39,19 +38,22 @@ public class BlockIORAM implements jx.bio.BlockIO, Service {
 
     public static void main(String [] args) {
 	Naming naming = InitialNaming.getInitialNaming();
-	CPUManager cpuManager = (CPUManager) naming.lookup("CPUManager");
+	//CPUManager cpuManager = (CPUManager) naming.lookup("CPUManager");
 	String bioName = args[0];
 	final BlockIORAM bio = new BlockIORAM(20 *  1024);
 	naming.registerPortal(bio, bioName);
-	Debug.out.println("Block I/O device registered as "+bioName);
+	Debug.out.println("Block I/O device registered as " + bioName);
     }
 
+    @Override
     public int getCapacity() {
 	return capacity;
     }
 
+    @Override
     public int getSectorSize() { return 512; }
 
+    @Override
     public void readSectors(int startSector, int numberOfSectors, Memory buf, boolean synchronous) {
 	if ((startSector + numberOfSectors)  > capacity) {
 	    Debug.out.println("read attempted out of storage range: startSector="+startSector
@@ -64,6 +66,7 @@ public class BlockIORAM implements jx.bio.BlockIO, Service {
 	sleepManager.mdelay(3);
     }
 
+    @Override
     public void writeSectors(int startSector, int numberOfSectors, Memory buf, boolean synchronous) {
 	if ((startSector + numberOfSectors)  > capacity) {
 	    Debug.out.println("write attempted out of storage range");

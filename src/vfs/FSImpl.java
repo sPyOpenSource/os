@@ -1,8 +1,6 @@
 package vfs;
 
-import java.util.Enumeration;
 import java.util.Hashtable;
-import java.util.Vector;
 import jx.zero.Debug;
 import jx.zero.Service;
 import jx.zero.Memory;
@@ -270,9 +268,7 @@ public class FSImpl implements FS, Service {
 	    String symlink = null;
 	    try {
 		symlink = inode.getSymlink();
-	    } catch (NoSymlinkInodeException e) {
-		throw new InodeIOException();
-	    } catch (NotSupportedException e) {
+	    } catch (NoSymlinkInodeException | NotSupportedException e) {
 		throw new InodeIOException();
 	    }
 	    inode.decUseCount();
@@ -316,11 +312,9 @@ public class FSImpl implements FS, Service {
        FileSystem filesystem = (FileSystem) devices.get(deviceIdentifier);
        
        
-
        if (filesystem == null) Debug.out.println("filesystem ist null");
        filesystem.getInode(identifier);
 
        return filesystem.getInode(identifier);
     }
-
 }

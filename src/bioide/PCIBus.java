@@ -1,7 +1,5 @@
 package bioide;
 
-import jx.zero.*;
-
 /**
  * Access to pci bus (must still be integrated into JX PCI)
  * @author Michael Golm
@@ -68,4 +66,3 @@ public class PCIBus {
 	Env.ports.outl (CONFIG_ADDRESS, 0);
     }
 }
-

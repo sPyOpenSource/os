@@ -16,9 +16,9 @@ public class ConfigFile {
 	    line = line.trim();
 	    if (line.length() == 0 || line.charAt(0) == '#') continue;
 	    String[] pair = BootRC2.splitByChar(line, '=');
-	    Pair p = new Pair();
-	    p.name = pair[0].trim();
-	    p.value = pair[1].trim();
+	    Pair p = new Pair(pair[0].trim(), pair[1].trim());
+	    //p.name = ;
+	    //p.value = pair[1].trim();
 	    pairs.addElement(p);
 	    name2value.put(p.name, p.value);
 	}

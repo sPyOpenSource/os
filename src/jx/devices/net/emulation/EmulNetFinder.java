@@ -5,13 +5,9 @@ import jx.devices.DeviceFinder;
 import jx.devices.Device;
 import jx.zero.*;
 
-import java.util.*;
-import jx.zero.*;
-import jx.zero.debug.*;
 import jx.devices.*;
 import jx.devices.net.*;
 
-import jx.buffer.separator.MemoryConsumer;
 import jx.buffer.separator.*;
 
 /**
@@ -25,6 +21,7 @@ public class EmulNetFinder implements DeviceFinder {
 	this.name = name;
 	this.macaddr = macaddr;
     }
+    @Override
     public Device[] find(String args[]) {
 	NetEmulation net = (NetEmulation)InitialNaming.getInitialNaming().lookup("NetEmulation");
 	if (net == null) return null;
@@ -41,18 +38,18 @@ class NetImpl implements NetworkDevice {
 
     NetImpl(NetEmulation net, String name, String macStr) {
 	this.net = net;
-	byte[] macaddr=new byte[6];
+	byte[] macaddr = new byte[6];
 	char[] macarr = macStr.toCharArray();
-	int j=0;
-	for(int i=0; i<macarr.length; i++) {
-	    int n=0;
-	    while(i<macarr.length && macarr[i]!=':') {
+	int j = 0;
+	for(int i = 0; i < macarr.length; i++) {
+	    int n = 0;
+	    while(i < macarr.length && macarr[i] != ':') {
 		n <<= 4;
 		char c = macarr[i];
 		if (c >= 'A' &&  c <= 'F') n += c - 'A' + 10;
 		else if (c >= 'a' &&  c <= 'f') n += c - 'a' + 10;
 		else if (c >= '0' &&  c <= '9') n += c - '0';
-		else throw new Error("Parse error. No etheraddr:"+macStr);
+		else throw new Error("Parse error. No etheraddr:" + macStr);
 		i++;
 	    }
 	    macaddr[j++] = (byte)(n&0xff);
@@ -62,6 +59,7 @@ class NetImpl implements NetworkDevice {
 	memoryManager = (MemoryManager)naming.lookup("MemoryManager");
 	buffer = memoryManager.alloc(net.getMTU());
 	new Thread("NetEmul-Eventloop") {
+                @Override
 		public void run() {
 		    eventloop();
 		}
@@ -70,9 +68,10 @@ class NetImpl implements NetworkDevice {
     private void eventloop() {
 	int size;
 	for(;;) {
-	    if((size=(net.receive(buffer)))==0) Thread.yield();
-	    else {
-		if (consumer!=null) {
+	    if((size = (net.receive(buffer))) == 0) {
+                Thread.yield();
+            } else {
+		if (consumer != null) {
 		    Memory newMem;
 		    newMem = consumer.processMemory(buffer, 0, size); 
 		    buffer = newMem.revoke();
@@ -82,13 +81,16 @@ class NetImpl implements NetworkDevice {
     }
 
 
+    @Override
     public void setReceiveMode(int mode) {}
 
+    @Override
     public Memory transmit1(Memory buf, int offset, int size) {
 	net.send(buf, offset, size);
 	return buf;
     }
 
+    @Override
     public Memory transmit(Memory buf) {
 	if (! buf.isValid()) {
 	    throw new Error("NetworkEmulation: I got an invalid memory!");
@@ -96,22 +98,25 @@ class NetImpl implements NetworkDevice {
 	net.send(buf, 0, buf.size());
 	return buf;
     }
+    @Override
     public byte[] getMACAddress() { return net.getMACAddress();}
+    @Override
     public int getMTU() { return net.getMTU();}
 
+    @Override
     public boolean registerNonBlockingConsumer(NonBlockingMemoryConsumer consumer) {
 	this.consumer = consumer;
 	return true;
     }
     
 
+    @Override
     public void open(DeviceConfiguration conf){}
+    @Override
     public DeviceConfigurationTemplate[] getSupportedConfigurations (){
 	return new DeviceConfigurationTemplate[] {new NetworkConfigurationTemplate() };
     }
 
+    @Override
     public void close(){}
-
 }
-
-

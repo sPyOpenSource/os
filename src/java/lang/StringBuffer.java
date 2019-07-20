@@ -241,6 +241,4 @@ public class StringBuffer
 	    insert(start, str);
 	    return this;
 	}
-
 }
-

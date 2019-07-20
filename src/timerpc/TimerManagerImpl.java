@@ -33,6 +33,7 @@ public class TimerManagerImpl implements TimerManager, Service {
 	final AtomicVariable atomic = cpuManager.getAtomicVariable();
 	atomic.set(dummy);
 	CPUState cpuState = cpuManager.createCPUState(new ThreadEntry() {
+                @Override
 		public void run() {
 		  cpuManager.setThreadName("TimerManager");
 		    for(;;) {
@@ -184,11 +185,6 @@ public class TimerManagerImpl implements TimerManager, Service {
 	Debug.out.println("" + amount + " Timers in the TimerList!\n");
 	Debug.out.println("...End of timers!");
     }
-    
-
-
-
-
 
     public int getTimeBaseInMicros() {
 	return 250000; // 4 HZ

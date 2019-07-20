@@ -19,6 +19,7 @@ public class VirtualConsoleImpl implements VirtualConsole {
     private InputStream in;
     boolean active;
     ConsoleImpl cons;
+    
     public VirtualConsoleImpl(MemoryManager memMgr, ConsoleImpl cons, Screen screen, Keyboard keyboard) {
 	this.cons = cons;
 	this.video = screen.getVideoMemory();
@@ -26,7 +27,6 @@ public class VirtualConsoleImpl implements VirtualConsole {
 	this.keyboard = keyboard;
 	backup = memMgr.alloc(2 * 80 * 25);
 	backup.fill16((short)0x0f00, 0, 80*24);
-
 
 
 	/*
@@ -118,6 +118,4 @@ public class VirtualConsoleImpl implements VirtualConsole {
     public OutputStream getErrorStream() {
 	return err;
     }
-
 }
-

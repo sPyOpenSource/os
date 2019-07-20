@@ -68,6 +68,7 @@ public interface FS extends Portal {
      * @exception InodeNotFoundException    falls der Verzeichniseintrag (und damit die Inode) nicht gefunden werden kann
      * @exception NoDirectoryInodeException falls es sich bei dem &uuml;berlagerten Verzeichniseintrag nicht um ein
      *                                      Verzeichnis handelt
+     * @throws jx.fs.NotExistException
      */
     public void unmount(FileSystem filesystem) throws InodeNotFoundException, NoDirectoryInodeException, NotExistException;
 
@@ -104,6 +105,7 @@ public interface FS extends Portal {
      * @exception InodeNotFoundException    falls der Verzeichniseintrag (und damit die Inode) nicht gefunden werden kann
      * @exception NoDirectoryInodeException falls es sich beim Pfad zur Datei/zum Verzeichnis nicht um ein Verzeichnis handelt
      * @exception PermissionException       falls es sich um ein Rootverzeichnis oder einen Mountpunkt handelt
+     * @throws jx.fs.NotExistException
      */
     public void rename(String path, String pathneu) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException;
 
@@ -116,6 +118,9 @@ public interface FS extends Portal {
      * @exception InodeIOException          falls ein Fehler bei der Ein-/Ausgabe auftritt
      * @exception InodeNotFoundException    falls der Verzeichniseintrag (und damit die Inode) nicht gefunden werden kann
      * @exception NoDirectoryInodeException falls es sich bei dem Pfad zur Datei/zum Verzeichnis nicht um ein Verzeichnis handelt
+     * @throws jx.fs.NotExistException
+     * @throws jx.fs.NotSupportedException
+     * @throws jx.fs.PermissionException
      */
     public void symlink(String path, String pathneu) throws FileExistsException, InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, NotSupportedException, PermissionException;
 
@@ -129,6 +134,8 @@ public interface FS extends Portal {
      * @exception InodeNotFoundException    falls das Verzeichnis, das das neue Verzeichnis aufnehmen soll, nicht gefunden
      *                                      werden kann
      * @exception NoDirectoryInodeException falls es sich bei dem Pfad zum Verzeichnis nicht um ein Verzeichnis handelt
+     * @throws jx.fs.NotExistException
+     * @throws jx.fs.PermissionException
      */
     public void mkdir(String path, int mode) throws FileExistsException, InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException,PermissionException;
 
@@ -141,6 +148,8 @@ public interface FS extends Portal {
      * @exception InodeNotFoundException    falls das Verzeichnis, das das zu l&ouml;schende Verzeichnis enthalten soll, nicht
      *                                      gefunden werden kann
      * @exception NoDirectoryInodeException falls es sich bei dem Pfad zum Verzeichnis nicht um ein Verzeichnis handelt
+     * @throws jx.fs.NotExistException
+     * @throws jx.fs.PermissionException
      */
     public void rmdir(String path) throws DirNotEmptyException, InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException,PermissionException;
     
@@ -154,6 +163,8 @@ public interface FS extends Portal {
      * @exception InodeNotFoundException    falls das Verzeichnis, das die neue Datei aufnehmen soll, nicht gefunden werden
      *                                      kann
      * @exception NoDirectoryInodeException falls es sich bei dem Pfad zur Datei nicht um ein Verzeichnis handelt
+     * @throws jx.fs.NotExistException
+     * @throws jx.fs.PermissionException
      */
     public void create(String path, int mode) throws FileExistsException, InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException,PermissionException;
 
@@ -165,6 +176,9 @@ public interface FS extends Portal {
      * @exception InodeNotFoundException    falls das Verzeichnis, das die zu l&ouml;schende Datei enthalten soll, nicht
      *                                      gefunden werden kann
      * @exception NoDirectoryInodeException falls es sich bei dem Pfad zur Datei nicht um ein Verzeichnis handelt
+     * @throws jx.fs.NoFileInodeException
+     * @throws jx.fs.NotExistException
+     * @throws jx.fs.PermissionException
      */
     public void unlink(String path) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NoFileInodeException, NotExistException,PermissionException;
 
@@ -196,6 +210,8 @@ public interface FS extends Portal {
      * @exception InodeNotFoundException    falls der Verzeichniseintrag (und damit die Inode) nicht gefunden werden kann
      * @exception NoDirectoryInodeException falls es sich bei einem Teil des Pfades, auf den ein " / " folgt, nicht um ein
      *                                      Verzeichnis handelt
+     * @throws jx.fs.NotExistException
+     * @throws jx.fs.PermissionException
      */
     public Inode lookup(String path) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException;
 

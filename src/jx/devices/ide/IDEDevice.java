@@ -1,9 +1,5 @@
 package jx.devices.ide;
 
-import java.io.File;
-import java.io.RandomAccessFile;
-import java.io.IOException;
-import java.util.Vector;
 import jx.zero.Portal;
 import jx.zero.Memory;
 
@@ -39,6 +35,7 @@ public interface IDEDevice extends Portal {
      *
      * @param bh          der <code>BufferHead</code>, der die Blocknummer, die Partitionskennung, den Puffer und die Anzahl zu
      *                    &uuml;bertragender Byte f&uuml;r die I/O-Operation enth&auml;lt
+     * @param device
      * @param sector      der Sektor, ab dem gelesen werden soll (relativ zum Partitionsanfang)
      * @param read        Falls <code>true</code>, wird von der Partition gelesen, ansonsten wird geschrieben.
      * @param synchronous Falls <code>true</code>, wird auf das Ende der I/O-Operation gewartet (synchrones Lesen bzw. Schreiben).

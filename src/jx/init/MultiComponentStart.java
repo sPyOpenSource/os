@@ -6,6 +6,10 @@ import jx.bootrc.*;
 
 import java.io.*;
 import java.util.Vector;
+import jx.devices.pci.PCIGod;
+import jx.net.StartNetDevice;
+import jx.net.protocols.StartNetworkProtocols;
+import timerpc.StartTimer;
 
 public class MultiComponentStart {
 
@@ -27,8 +31,12 @@ public class MultiComponentStart {
 	Debug.out = new jx.zero.debug.DebugPrintStream(out);
 	//System.out = new java.io.PrintStream(out);
 	//System.err = System.out;
-
-	final CPUManager cpuManager = (CPUManager) naming.lookup("CPUManager");
+        Debug.out.println("init");
+        PCIGod.main(new String[]{});
+        StartTimer.main(new String[]{"TimerManager"});
+        //StartNetDevice.main(new String[]{"NIC", "eth0", "8:0:6:28:63:40"});
+        //StartNetworkProtocols.main(new String[]{"NIC", "TimerManager", "NET"});
+	/*final CPUManager cpuManager = (CPUManager) naming.lookup("CPUManager");
 	final ComponentManager componentManager = (ComponentManager) naming.lookup("ComponentManager");
 
 	ComponentSpec[] componentSpec = (ComponentSpec[]) objectArgs[0];
@@ -46,14 +54,14 @@ public class MultiComponentStart {
             StartInfo info = new StartInfo();
             info.name = startClass;
             info.args = new Object[]{argv};
-            int componentID = componentManager.load(initLib);
+            //int componentID = componentManager.load(initLib);
             try {
                 String[] cname = componentSpec1.getStringArray("InheritThread");
                 for (String cname1 : cname) {
                     componentManager.setInheritThread(cname1);
                 }
             } catch(NameNotFoundException e) {}
-            cpuManager.executeClassConstructors(componentID);
+            //cpuManager.executeClassConstructors(componentID);
             VMClass cl = cpuManager.getClass(startClass);
             if (cl == null) {
                 throw new Error("Class " + startClass + " not found.");
@@ -72,17 +80,17 @@ public class MultiComponentStart {
             start.addElement(info);
         }
 
-
+        
 	for(int i = 0; i < start.size(); i++) {
 	    final StartInfo info = (StartInfo)start.elementAt(i);
 	    cpuManager.start(cpuManager.createCPUState(new ThreadEntry() {
                     @Override
 		    public void run() {
-			Debug.out.println("START : " + info.name);
+			//Debug.out.println("START : " + info.name);
 			cpuManager.setThreadName(info.name);
 			info.method.invoke(null, info.args);
 		    }
 		}));
-	}
+	}*/
     }
 }

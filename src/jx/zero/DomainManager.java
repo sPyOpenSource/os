@@ -1,7 +1,5 @@
 package jx.zero;
 
-import jx.zero.scheduler.HighLevelScheduler;
-
 public interface DomainManager extends Portal {
     Domain createDomain(String name,
 			CPU[] cpus, String[] HLSchedClass,

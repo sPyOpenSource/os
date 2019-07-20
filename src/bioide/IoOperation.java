@@ -35,6 +35,7 @@ abstract class IoOperation extends Operation {
 
     }
 
+    @Override
     public void endOperation(boolean uptodate) {
 	errors = 0;
 	if (!uptodate)
@@ -47,6 +48,7 @@ abstract class IoOperation extends Operation {
 	state.atomicUpdateUnblock(STATE_COMPLETED, cpuState);
     }
 
+    @Override
     public void waitForCompletion() {
         if( Env.verboseIO )
 	    Env.cpuManager.dump("waitForCompletion in IoOperation:", this);
@@ -56,7 +58,6 @@ abstract class IoOperation extends Operation {
 
 	state.blockIfEqual(STATE_RUNNING);
     }
-
 
 
     /**
