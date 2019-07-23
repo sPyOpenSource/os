@@ -54,13 +54,13 @@ public class InitNaming implements Naming {
 
     @Override
     public void registerPortal(Portal portal, String name) {
-	//Debug.out.println("Register: "+name);
+	//Debug.out.println("Register: " + name);
 	names.put(name, portal);
     }
     
     @Override
     public Portal lookup(String name) {
-	//Debug.out.println("Lookup: "+name);
+	//Debug.out.println("Lookup: " + name);
 	return (Portal) names.get(name);
     }
     

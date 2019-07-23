@@ -17,6 +17,3 @@ public interface MemoryManager extends Portal {
     /* query domain specific status information */
     public int getFreeHeapMemory();
 }
-
-
-

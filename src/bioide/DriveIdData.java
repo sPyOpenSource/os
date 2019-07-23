@@ -10,24 +10,24 @@ import jx.zero.*;
  */
 class DriveIdData {
 
-    private Memory  b_data;
+    private final Memory  b_data;
 
     public DriveIdData() {
 	b_data = Env.memoryManager.alloc(512);
     }
 
     // configuration
-    public short  config()            { return b_data.get16(0>>1); }
+    public short  config()            { return b_data.get16(0 >> 1); }
 
     // physikalische Zahl der Zylinder
-    public short  cyls()              { return b_data.get16(2>>1); }
-    public void   cyls(short v)       { b_data.set16(2>>1, v); }
+    public short  cyls()              { return b_data.get16(2 >> 1); }
+    public void   cyls(short v)       { b_data.set16(2 >> 1, v); }
 
     // physikalische Zahl der Koepfe
-    public short  heads()             { return b_data.get16(6>>1); }
+    public short  heads()             { return b_data.get16(6 >> 1); }
 
     // Zahl der physikalischen Sektoren je Spur
-    public short  sectors()           { return b_data.get16(12>>1); }
+    public short  sectors()           { return b_data.get16(12 >> 1); }
 
     // ASCII-Modellnummer, 0 = keine Angabe
     public String model()             { return DataFormat.readString(b_data, 54, 40); }

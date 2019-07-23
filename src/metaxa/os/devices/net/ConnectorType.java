@@ -1,5 +1,4 @@
 package metaxa.os.devices.net;
-import jx.zero.Debug;
 
 class ConnectorType {
 

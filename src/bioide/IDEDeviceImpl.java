@@ -2,7 +2,6 @@ package bioide;
 
 import jx.zero.*;
 import jx.zero.Debug;
-import jx.timer.SleepManager;
 import jx.timer.*;
 
 
@@ -50,44 +49,39 @@ public class IDEDeviceImpl {
 	    return;
 	inited = true;
 	Env.init();
-
 	this.myTimer = new MyTimer();
-       
 	pcibus = new PCIBus();
-
 	controllers = new Controller[MAX_CONTROLLERS];
 	for (int i = 0; i < MAX_CONTROLLERS; i++)
 	    controllers[i] = new Controller(this, i);
 	    
 	ultraDmaSupported = false;
 
-	boolean found = probeForTriton(PCI_VENDOR_ID_INTEL, PCI_DEVICE_ID_INTEL_82371FB_0, 1); // PIIX
+	/*boolean found = probeForTriton(PCI_VENDOR_ID_INTEL, PCI_DEVICE_ID_INTEL_82371FB_0, 1); // PIIX
 	if (found == false)
 	    found = probeForTriton(PCI_VENDOR_ID_INTEL, PCI_DEVICE_ID_INTEL_82371FB_1, 0); // PIIX
 	if (found == false)
 	    found = probeForTriton(PCI_VENDOR_ID_INTEL, PCI_DEVICE_ID_INTEL_82371SB, 0); // PIIX3
 	if (found == false)
 	    found = probeForTriton(PCI_VENDOR_ID_INTEL, PCI_DEVICE_ID_INTEL_82371AB, 0); // PIIX4
-	dmaSupported = found; // found
+        
+	dmaSupported = found; // found*/
 	
 
 	//	probeCmosForDrives();
-
+        
 	for (int i = 0; i < MAX_CONTROLLERS; i++) {
-	    Debug.out.println("Try controller "+i);
+	    Debug.out.println("Try controller " + i);
 	    if (controllers[i].identify() == false)
 		continue;
-	    Debug.out.println("Check controller "+i);
+	    Debug.out.println("Check controller " + i);
 	    if (controllers[i].isPresent()) {
-		Debug.out.println("Setup controller "+i);
+		Debug.out.println("Setup controller " + i);
 		controllers[i].setup();
-		for(int j=0; j<MAX_DRIVES; j++) {
-		    drives[i*MAX_DRIVES+j] = controllers[i].drives[j];
-		}
+                System.arraycopy(controllers[i].drives, 0, drives, i * MAX_DRIVES, MAX_DRIVES);
 	    }
 	}
 	Debug.out.println("IDEDeviceImpl done");
-
     }
 
     public Drive[] getDrives() {
@@ -138,7 +132,7 @@ public class IDEDeviceImpl {
 		if ((my_id == -1) || (my_id == 0))
 		    continue;
 
-		//Debug.out.println("PCI: found device at bus="+bus+", device="+device);
+		Debug.out.println("PCI: found device at bus=" + bus + ", device=" + device);
 
 		// auf Multifunktionseinheit ueberpruefen
 		type = pcibus.readConfig(bus, device, 0, 3); // Headertype
@@ -167,7 +161,6 @@ public class IDEDeviceImpl {
 		}
 	    }
 	}
-
 	return false;
     }
 
@@ -248,13 +241,13 @@ public class IDEDeviceImpl {
  */
 class CmosData  {
     
-    private Memory  b_data;
+    private final Memory  b_data;
 
     public CmosData() {
 	b_data = Env.memoryManager.alloc(16);
     }
 
-    public short cyl()   { return b_data.get16(0>>1); }
+    public short cyl()   { return b_data.get16(0 >> 1); }
     public byte  head()  { return b_data.get8(2); }
     public byte  ctl()   { return b_data.get8(8); }
     public byte  sect()  { return b_data.get8(14); }
@@ -272,6 +265,7 @@ class MyTimerArg {
 }
 
 class MyTimer implements TimerHandler {
+    @Override
     public void timer(Object arg) {
 	MyTimerArg a = (MyTimerArg)arg;
 	a.v.atomicUpdateUnblock(null, a.cpuState);

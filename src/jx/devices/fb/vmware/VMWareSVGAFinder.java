@@ -5,11 +5,7 @@ import jx.devices.DeviceFinder;
 import jx.devices.Device;
 import jx.zero.*;
 
-import java.util.*;
-import jx.zero.*;
-import jx.zero.debug.*;
 import jx.devices.pci.*;
-import jx.devices.*;
 
 /**
  * VMWare SVGA Device finder
@@ -66,6 +62,9 @@ public class VMWareSVGAFinder implements DeviceFinder {
        }
        return null;
    }
+
+    @Override
+    public Device[] find(String[] args, Naming naming) {
+        throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
-
-

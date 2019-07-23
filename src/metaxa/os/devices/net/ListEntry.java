@@ -1,8 +1,5 @@
 package metaxa.os.devices.net;
 
-import metaxa.os.*;
-
-
 /* Here are the classes for DpdList und UpdList - These are the lists which handle the descriptors for downloads to 
  * the NIC (this means, that the NIC should send the data downloaded onto) and the descriptors for uploads, which 
  * describe where to put the received data 

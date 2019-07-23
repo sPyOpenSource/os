@@ -70,6 +70,7 @@ public class ThreadGroup {
 	}
 	return false;
     }
+    
     public int activeCount() {
 	int result;
 	// Snapshot sub-group data so we don't hold this lock
@@ -92,6 +93,7 @@ public class ThreadGroup {
 	    result += groupsSnapshot[i].activeCount();
 	return result;
     }
+    
     public int enumerate(Thread list[]) {
 	return enumerate(list, 0, true);
     }

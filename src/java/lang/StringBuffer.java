@@ -24,7 +24,7 @@ public class StringBuffer
 
 	public int length()
 	{
-		return length;
+            return length;
 	}
 
 	public int capacity()

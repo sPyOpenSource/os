@@ -66,6 +66,4 @@ public class AdapterLimits {
     final static int NIC_MAXIMUM_SEND_COUNT = 0x80;
     final static int NIC_MINIMUM_RECEIVE_COUNT = 0x2;
     final static int NIC_MAXIMUM_RECEIVE_COUNT = 0x80;
-
-   
 }

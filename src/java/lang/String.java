@@ -1,6 +1,6 @@
 package java.lang;
 
-public final class String
+public final class String implements CharSequence
 {
 
     static int lastIndexOf(char[] value, int i, int count, char[] toCharArray, int i0, int length, int fromIndex) {
@@ -116,11 +116,13 @@ public final class String
 	return sum;
     }
 
+    @Override
     public int length()
     {
 	return value.length;
     }
 
+    @Override
     public char charAt(int index)
     {
 	return value[index];
@@ -500,6 +502,11 @@ public final class String
     }
 
     public String[] split(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public CharSequence subSequence(int start, int end) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

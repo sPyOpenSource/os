@@ -5,15 +5,8 @@ import jx.devices.DeviceFinder;
 import jx.devices.Device;
 import jx.zero.*;
 
-import java.util.*;
-import jx.zero.*;
-import jx.zero.debug.*;
 import jx.devices.*;
 import jx.devices.fb.*;
-import jx.wm.EventListener;
-import jx.wm.Keycode;
-import jx.wm.Qualifiers;
-import jx.wm.WindowManager;
 
 /**
  * Emulation FB Device finder
@@ -28,6 +21,11 @@ public class EmulFBFinder implements DeviceFinder {
 	if (fb.open(mode) == false) return null;
 
 	return new Device[] { new FBImpl(fb) };
+    }
+
+    @Override
+    public Device[] find(String[] args, Naming naming) {
+        throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
 
@@ -68,5 +66,3 @@ class FBImpl implements FramebufferDevice {
     }
     public void close(){}
 }
-
-

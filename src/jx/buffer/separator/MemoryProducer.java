@@ -1,7 +1,5 @@
 package jx.buffer.separator;
 
-import jx.zero.*;
-
 /**
  * This interface should be implemented by a class in a domain that generates
  * data.

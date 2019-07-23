@@ -52,5 +52,4 @@ class ManufacturingData {
     public byte get_Year() {
 	return Year;
     }
-
 } 

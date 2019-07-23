@@ -77,5 +77,4 @@ class NicStatistics {
 	UpdateInterval = 0;
 	Rx_MulticastPkts = 0;
     }	
-
 } 

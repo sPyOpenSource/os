@@ -21,11 +21,16 @@ public class EmulNetFinder implements DeviceFinder {
 	this.name = name;
 	this.macaddr = macaddr;
     }
-    @Override
+    //@Override
     public Device[] find(String args[]) {
 	NetEmulation net = (NetEmulation)InitialNaming.getInitialNaming().lookup("NetEmulation");
 	if (net == null) return null;
 	return new Device[] { new NetImpl(net, name, macaddr) };
+    }
+
+    @Override
+    public Device[] find(String[] args, Naming naming) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
 

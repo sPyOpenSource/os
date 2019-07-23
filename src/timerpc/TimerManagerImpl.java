@@ -25,6 +25,7 @@ public class TimerManagerImpl implements TimerManager, Service {
 	clock = (Clock) naming.lookup("Clock");
 
 	unblockHandler = new TimerHandler() {
+                @Override
 		public void timer(Object arg) {
 		    cpuManager.unblock((CPUState)arg);
 		}
@@ -91,7 +92,7 @@ public class TimerManagerImpl implements TimerManager, Service {
 	cpuManager.start(cpuState);
 
 	TimerEmulation timerEmulation = (TimerEmulation) naming.lookup("TimerEmulation");
-	if (timerEmulation==null) {
+	if (timerEmulation == null) {
 	    RTC rtc = new RTCImpl(naming);
 	    rtc.installIntervallTimer(atomic, cpuState, RTC.HZ_4);
 	    Debug.out.println("TimerManager: Installed RTC timer");

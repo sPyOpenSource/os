@@ -1,7 +1,5 @@
 package metaxa.os.devices.net;
 
-import jx.zero.Debug;
-
 class NicHardwareInformation {
 
     final static byte HARDWARE_STATUS_WORKING = 0x0;
@@ -347,5 +345,3 @@ class NicHardwareInformation {
 	return phys;
     }
 }
-
-

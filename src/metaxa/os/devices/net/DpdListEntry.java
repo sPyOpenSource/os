@@ -1,5 +1,5 @@
 package metaxa.os.devices.net;
-import metaxa.os.*;
+
 import jx.zero.*;
 import jx.buffer.multithread.Buffer2;
 
@@ -92,6 +92,7 @@ class DpdListEntry extends ListEntry {
 	return PacketLength;
     }
 
+    @Override
     public String toString() {
 
 	Debug.out.println("-------------DPD_Eintrag---------------");
@@ -129,5 +130,4 @@ class DpdListEntry extends ListEntry {
 	// fake return
 	return "";
     }
-
 } 

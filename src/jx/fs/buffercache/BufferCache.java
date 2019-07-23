@@ -17,7 +17,6 @@ public interface BufferCache {
      *    - bwrite()
      *
      * @param  block  block number
-     * @param  size   block size (multiples of 1024??)
      * @return a locked <code>BufferHead</code> containing the block
      */
     BufferHead bread(int block);
@@ -71,6 +70,8 @@ public interface BufferCache {
 
     /**
      * Fills the buffer with data and releases the buffer immediately.
+     * @param startBlock
+     * @param numberBlocks
      */
     void breadn(int startBlock, int numberBlocks);
 
@@ -105,10 +106,6 @@ public interface BufferCache {
      */
     BufferHead getblk(int block);
 
-
-  
-
-
     
     /**
      * Writes all dirty buffers to the block device.
@@ -125,6 +122,7 @@ public interface BufferCache {
 
     /**
      * Ensure that the contents of the buffer is up-to-date.
+     * @param bh
      */
     void updateBuffer(BufferHead bh);
 
@@ -133,5 +131,4 @@ public interface BufferCache {
      * Print a buffer cache statistics.
      */
     void showBuffers();
-
 }

@@ -13,7 +13,7 @@ public class Main {
 	IDEDeviceImpl ide = new IDEDeviceImpl();
 	Debug.out.println("*1");
 	Drive[] drives = ide.getDrives();
-	BlockIO bio = null;
+	BlockIO bio;
 
 	if (args[3].equals("full")) {
 	    bio = drives[drive];

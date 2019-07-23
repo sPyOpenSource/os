@@ -10,15 +10,17 @@ public class Dump {
   /**
     * Hexdump in the style:
     *  7f  45  4c  46  01  01  01  00
+     * @param data
+     * @param len
     */
-  public static void xdump(byte[] data, int len) {
-    if (len > data.length) len = data.length;
-    for(int i=0; i<len;i++) {
-      Debug.out.print(" " + byteToHex(data[i]) + " ");
-      if ((i+1)%8 == 0) Debug.out.println(); 
+    public static void xdump(byte[] data, int len) {
+        if (len > data.length) len = data.length;
+        for(int i = 0; i < len; i++) {
+            Debug.out.print(" " + byteToHex(data[i]) + " ");
+            if ((i + 1) % 8 == 0) Debug.out.println(); 
+        }
+        if (len < 32) Debug.out.println();
     }
-    if (len < 32) Debug.out.println();
-  }
 
   public static void xdump(ReadOnlyMemory data, int len) {
     if (len > data.size()) len = data.size();
@@ -41,6 +43,8 @@ public class Dump {
   /**
     * hexdump in the style:
     * 00000000    7f454c46 01010100 00000000 00000000    .ELF............
+     * @param data
+     * @param len
     */
   public static void xdump1(byte[] data, int len) {
     if (len > data.length) len = data.length;
@@ -48,9 +52,9 @@ public class Dump {
     for(int i=0; i<len;i++) {
       Debug.out.print(byteToHex(data[i]));
       ascii.append(byteToAscii(data[i]));
-      if ((i+1)%4 == 0) Debug.out.print(" "); 
-      if ((i+1)%16 == 0) {
-	Debug.out.println("   "+ascii.toString()); 
+      if ((i + 1) % 4 == 0) Debug.out.print(" "); 
+      if ((i + 1) % 16 == 0) {
+	Debug.out.println("   " + ascii.toString()); 
 	ascii = new StringBuffer();
       }
     }
@@ -111,19 +115,19 @@ public class Dump {
   static String toHex(int i) {
     if (i <= 9) return "" + i;
     switch(i) {
-    case 10: return "a"; 
-    case 11: return "b";
-    case 12: return "c";
-    case 13: return "d";
-    case 14: return "e";
-    case 15: return "f";
-    default: Debug.out.println("Format error: "+i);
+        case 10: return "a"; 
+        case 11: return "b";
+        case 12: return "c";
+        case 13: return "d";
+        case 14: return "e";
+        case 15: return "f";
+        default: Debug.out.println("Format error: " + i);
     }
     return null;
   }
   static String byteToHex(byte n) {
     int i = n;
-    if (i<0) i+= 256;
+    if (i < 0) i += 256;
     int i1 = i & 0xf;
     int i2 = (i & 0xf0) >> 4;
     return toHex(i2) + toHex(i1);
@@ -139,5 +143,4 @@ public class Dump {
     else
       return '.';
   }
-
 }

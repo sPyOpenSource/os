@@ -1,6 +1,5 @@
 package metaxa.os.devices.net;
 
-import metaxa.os.*;
 import jx.timer.*;
 import jx.zero.*;
 
@@ -14,6 +13,7 @@ class WaitTimer extends WaitCases implements TimerHandler {
 	this.timerManager = timerManager;
     }
 
+    @Override
     public void timer(Object arg) {
 	
 	WaitTimerArg help = (WaitTimerArg)arg;
@@ -155,6 +155,7 @@ class WaitTimer extends WaitCases implements TimerHandler {
 	Debug.out.println("Out WaitTimer");
     }
     
+    @Override
     public boolean equals(Object obj) {
 	return (obj instanceof WaitTimer);
     }

@@ -3,8 +3,6 @@ package metaxa.os.devices.net;
 /* Klasse mit den Offsets des EEPROMs und Zugriffsfunktionen auf das EEPROM */
 /* Siehe auch 3COM-Manual ab Seite 80 */
 
-import metaxa.os.*;
-import metaxa.os.devices.*;
 import jx.zero.*;
 import jx.timer.*;
 
@@ -332,7 +330,4 @@ class Eeprom {
 	}
 	return((short)checksum);
     }
-
 }
-
-

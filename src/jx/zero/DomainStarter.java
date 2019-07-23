@@ -159,7 +159,7 @@ public class DomainStarter {
     } else if ((i = libName.indexOf(".jll")) > 0) {
       name = libName.substring(0, i);
       lib  = libName;
-      zip  = "";//name + ".zip";
+      zip  = name + ".zip";
     } else if ((i = libName.indexOf(".jxd")) > 0) {
       name = libName.substring(0, i);
       lib  = libName;
@@ -184,7 +184,7 @@ public class DomainStarter {
 	    throw new Error("zip " + zip + " not found (can't create domain)");
 	}
     } else {
-	//Debug.message("use library " + lib);
+	Debug.message("use library " + lib);
     }
 
     if (schedName != null) {

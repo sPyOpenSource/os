@@ -25,6 +25,8 @@
 
 package java.lang;
 
+import java.util.Arrays;
+
 /**
  * A mutable sequence of characters.
  * <p>
@@ -68,6 +70,7 @@ abstract class AbstractStringBuilder implements CharSequence, Appendable
      * @return  the length of the sequence of characters currently
      *          represented by this object
      */
+    @Override
     public int length() {
         return count;
     }
@@ -125,7 +128,7 @@ abstract class AbstractStringBuilder implements CharSequence, Appendable
                 throw new OutOfMemoryError();
             newCapacity = Integer.MAX_VALUE;
         }
-        //value = Arrays.copyOf(value, newCapacity);
+        value = Arrays.copyOf(value, newCapacity);
     }
 
     /**
@@ -196,6 +199,7 @@ abstract class AbstractStringBuilder implements CharSequence, Appendable
      * @throws     IndexOutOfBoundsException  if <code>index</code> is
      *             negative or greater than or equal to <code>length()</code>.
      */
+    @Override
     public char charAt(int index) {
         if ((index < 0) || (index >= count))
             throw new StringIndexOutOfBoundsException(index);
@@ -428,12 +432,12 @@ abstract class AbstractStringBuilder implements CharSequence, Appendable
     }
 
     // Documentation in subclasses because of synchro difference
-    //@Override
+    @Override
     public AbstractStringBuilder append(CharSequence s) {
-        /*if (s == null)
+        if (s == null)
             s = "null";
         if (s instanceof String)
-            return this.append((String)s);*/
+            return this.append((String)s);
         if (s instanceof StringBuffer)
             return this.append((StringBuffer)s);
         return this.append(s, 0, s.length());
@@ -468,10 +472,10 @@ abstract class AbstractStringBuilder implements CharSequence, Appendable
      *             {@code start} is greater than {@code end} or
      *             {@code end} is greater than {@code s.length()}
      */
-    //@Override
+    @Override
     public AbstractStringBuilder append(CharSequence s, int start, int end) {
-        /*if (s == null)
-            s = "null";*/
+        if (s == null)
+            s = "null";
         if ((start < 0) || (start > end) || (end > s.length()))
             throw new IndexOutOfBoundsException(
                 "start " + start + ", end " + end + ", s.length() "
@@ -583,6 +587,7 @@ abstract class AbstractStringBuilder implements CharSequence, Appendable
      * @param   c   a {@code char}.
      * @return  a reference to this object.
      */
+    @Override
     public AbstractStringBuilder append(char c) {
         ensureCapacityInternal(count + 1);
         value[count++] = c;
@@ -845,9 +850,9 @@ abstract class AbstractStringBuilder implements CharSequence, Appendable
      *          or if <tt>start</tt> is greater than <tt>end</tt>
      * @spec JSR-51
      */
+    @Override
     public CharSequence subSequence(int start, int end) {
-        //return substring(start, end);
-        return null;
+        return substring(start, end);
     }
 
     /**

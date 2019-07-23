@@ -2,7 +2,6 @@ package buffercache;
 
 import jx.zero.Debug;
 import jx.zero.*;
-import jx.zero.debug.*;
 import jx.bio.BlockIO;
 import jx.collections.Iterator;
 
@@ -18,26 +17,26 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
     private static final boolean trace = false;
     private static final boolean debugSync = false;
     
-    private BufferHashtable buffer_hashtable;
-    private BufferFreeList free_list;
+    private final BufferHashtable buffer_hashtable;
+    private final BufferFreeList free_list;
     private int nr_buffers;
 
-    private int initialNumberOfBlocks;
-    private int maximalNumberOfBlocks;
-    private int incrementNumberOfBlocks;
+    private final int initialNumberOfBlocks;
+    private final int maximalNumberOfBlocks;
+    private final int incrementNumberOfBlocks;
     
     //private Object buffer_wait;
     //private FlushDemon flushd;
-    private BlockIO idedevice;
+    private final BlockIO idedevice;
     
     public int hit, miss; // statistics
     
-    private Clock clock;
-    private CPUManager cpuManager;
-    private int bufferSize;
-    private Profiler profiler;
+    private final Clock clock;
+    private final CPUManager cpuManager;
+    private final int bufferSize;
+    private final Profiler profiler;
 
-    private MemoryManager memMgr = ((MemoryManager)InitialNaming.getInitialNaming().lookup("MemoryManager"));
+    private final MemoryManager memMgr = ((MemoryManager)InitialNaming.getInitialNaming().lookup("MemoryManager"));
 
     /**
      * @param blockDevice block device that contains the blocks 
@@ -134,6 +133,7 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
     }
 
 
+    @Override
     final public jx.fs.buffercache.BufferHead findBuffer(int block) {
 	BufferHead bh = buffer_hashtable.get(block); //new BufferHeadHashKey(block, size);
 	if (bh != null) {
@@ -154,6 +154,7 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
 	return bh;
     }
 
+    @Override
     final public jx.fs.buffercache.BufferHead getblk(int block) {
 	BufferHead bh;
 	jx.fs.buffercache.BufferHead bh0;
@@ -199,6 +200,7 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
      *
      * @param bh der <code>BufferHead</code>, der freigegeben werden soll
      */
+    @Override
     final public  void brelse(jx.fs.buffercache.BufferHead bh0) {
 	BufferHead bh = (BufferHead)bh0;
 	int newtime;
@@ -222,12 +224,11 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
     }
 
 
-    final private void release(BufferHead bh) {
+    private void release(BufferHead bh) {
 	if (bh.isUnused()) {
 	    Debug.out.println("!!! BufferCache.brelse(): attamt to release an unused block: " + bh.b_block);
 	    showBuffers();
 	    cpuManager.printStackTrace();	  
-	    return;
 	} else {
 	    bh.unref();
 	    if (bh.isUnused()) {
@@ -242,8 +243,9 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
     /**
      * H&auml;ngt den <code>BufferHead</code> ans Ende der LRU-Liste.
      *
-     * @param bh der <code>BufferHead</code>, der freigegeben ("vergessen") werden soll
+     * @param bh0 der <code>BufferHead</code>, der freigegeben ("vergessen") werden soll
      */
+    @Override
     final public  void bforget(jx.fs.buffercache.BufferHead bh0) {
 	BufferHead bh = (BufferHead)bh0;
 	if (bh == null)
@@ -262,9 +264,9 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
      * angefordert und der Inhalt des Blocks vom Festplattentreiber gelesen.
      *
      * @param  block  die Nummer des Blocks, der gelesen werden soll
-     * @param  size   die Gr&ouml;&szlig;e des gew&uuml;nschten Blocks (normalerweise Vielfache von 1024)
      * @return der <code>BufferHead</code> mit dem Inhalt des angegebenen Blocks
      */
+    @Override
     final public  jx.fs.buffercache.BufferHead bread(int block) {
 	jx.fs.buffercache.BufferHead bh;
 
@@ -315,8 +317,9 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
      * Gibt eine Statistik der <code>BufferHead</code>s im Cache und der LRU-Liste aus. Die Zahl der gesperrten
      * und als "dirty" markierten <code>BufferHead</code>s wird ermittelt.
      */
+    @Override
     public  void showBuffers() {
-	BufferHead bh = null;
+	BufferHead bh;
 	int found = 0, locked = 0, dirty = 0, used = 0;
 	String buf_types[] = new String[] {"CLEAN", "LOCKED", "DIRTY"};
 
@@ -360,6 +363,7 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
      * die angegebene Partition.
      *
      */
+    @Override
     public  void syncDevice(boolean wait) {
 	if (debugSync) { 
 	    Debug.out.println("Buffers before sync");
@@ -373,7 +377,7 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
     }
 
     private  void syncBuffers(boolean wait, boolean signalError) {
-	BufferHead bh = null;
+	BufferHead bh;
 	    
 	Iterator e = buffer_hashtable.iterator();
 	while (e.hasNext()) {
@@ -417,9 +421,10 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
      * <code>rwBlock</code> auf die Festplatte zur&uuml;ckgeschrieben, sofern sie nicht gesperrt sind bzw. noch nicht alt genug
      * sind.
      */
+    @Override
     public  void flushCache() {
 	int ndirty = 0, nwritten = 0, ncount = 0;
-	BufferHead bh = null;
+	BufferHead bh;
 
 	Debug.out.println("flushing ...");
 
@@ -459,6 +464,7 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
 	//showBuffers();
     }
 
+    @Override
     final public void updateBuffer(jx.fs.buffercache.BufferHead bh) {
 	if (! bh.isUptodate()) {
 	    /*if (profiler.isSampling()) {
@@ -472,26 +478,30 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
 	}
     }
 
+    @Override
     final public void bdwrite(jx.fs.buffercache.BufferHead bh) {
 	bh.markDirty();
 	brelse(bh);
     }
 
+    @Override
     final public void bdirty(jx.fs.buffercache.BufferHead bh) {
 	bh.markDirty();
     }
 
+    @Override
     final public void bawrite(jx.fs.buffercache.BufferHead bh) {
 	bwrite(bh);
     }
 
+    @Override
     final public void bwrite(jx.fs.buffercache.BufferHead bh) {
 	bh.markDirty();
 	writeBlock(bh, true);
 	release((BufferHead)bh);
     }
 
-
+    @Override
     public void breadn(int startBlock, int nBlocks) {
 	throw new Error();
     }

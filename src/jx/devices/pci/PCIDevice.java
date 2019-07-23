@@ -3,8 +3,8 @@ package jx.devices.pci;
 import jx.zero.Debug;
 
 public class PCIDevice {
-   private PCIAddress pciaddress;
-   private PCIAccess  pcibus;
+   private final PCIAddress pciaddress;
+   private final PCIAccess  pcibus;
    
    private boolean haveCapabilities = false;
    private PCICapability capabilities[] = null;
@@ -95,7 +95,8 @@ public class PCIDevice {
    
    /***************************************************/
    /* mandatory header registers for header type zero */
-   /***************************************************/
+   /**
+     * @return *************************************************/
    
    // register 0
    public short getVendorID(){
@@ -142,7 +143,8 @@ public class PCIDevice {
    
    /***************************************************/
    /* optional registers for header type zero         */
-   /***************************************************/
+   /**
+     * @return *************************************************/
    
    // registers 3
    public byte getCacheLineSize(){

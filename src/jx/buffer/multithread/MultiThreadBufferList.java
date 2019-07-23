@@ -53,7 +53,7 @@ public class MultiThreadBufferList implements BufferProducer, BufferConsumer {
 	if (verbose) {
 	//    cpuManager.dump("MultiThreadBufferList(Memory["+bufs.length+"])", this);
 	}
-	for(int i=1; i<bufs.length; i++) {
+	for(int i = 1; i < bufs.length; i++) {
 	    if (verbose) Debug.out.println("       loop:"+i);
 	    appendElement(new Buffer(bufs[i]));
 	}

@@ -1,4 +1,5 @@
 package metaxa.os.devices.net;
+
 import jx.zero.*;
 import jx.timer.*;
 
@@ -206,5 +207,4 @@ class Befehl {
     public void NicDisableAllInterruptIndication(NicInformation Adapter) {
 	NicCommand(Adapter, COMMAND_SET_INDICATION_ENABLE() | DISABLE_ALL_INTERRUPT() );
     }
-    
 }

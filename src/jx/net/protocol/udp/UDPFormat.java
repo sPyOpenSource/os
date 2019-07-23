@@ -50,5 +50,4 @@ class UDPFormat extends Format {
 	Debug.out.println("   First 16 bytes of data:");
 	Dump.xdump(buf, offset+requiresSpace(), 16);
     }
-
 }

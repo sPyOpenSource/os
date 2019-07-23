@@ -77,6 +77,7 @@ class UpdListEntry extends ListEntry {
 	return UPDPhysicalAddress;
     }
 
+    @Override
    public String toString() {
 
 	System.out.println("-------------UPD_Eintrag---------------");
@@ -104,6 +105,4 @@ class UpdListEntry extends ListEntry {
     	// fake return
 	return "";
    }
-
-    
 } 

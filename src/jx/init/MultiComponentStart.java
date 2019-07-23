@@ -6,9 +6,12 @@ import jx.bootrc.*;
 
 import java.io.*;
 import java.util.Vector;
+import jx.devices.pci.PCIAccess;
 import jx.devices.pci.PCIGod;
 import jx.net.StartNetDevice;
 import jx.net.protocols.StartNetworkProtocols;
+import jx.netmanager.NetInit;
+import jx.timer.TimerManager;
 import timerpc.StartTimer;
 
 public class MultiComponentStart {
@@ -32,8 +35,20 @@ public class MultiComponentStart {
 	//System.out = new java.io.PrintStream(out);
 	//System.err = System.out;
         Debug.out.println("init");
-        PCIGod.main(new String[]{});
-        StartTimer.main(new String[]{"TimerManager"});
+        PCIAccess bus = (PCIAccess) PCIGod.main(new String[]{}, naming);
+        
+        Debug.out.println("lookup PCI Access Point...");
+	//PCIAccess bus = (PCIAccess)LookupHelper.waitUntilPortalAvailable(naming, "PCIAccess");
+	//SleepManager sleepManager = new SleepManagerImpl();
+	TimerManager timerManager = null;//(TimerManager)LookupHelper.waitUntilPortalAvailable(naming, "TimerManager");
+        try {
+            timerManager = (TimerManager) StartTimer.main(new String[]{"TimerManager"}, naming);
+        } catch (Exception ex) {
+            //Logger.getLogger(StartNetDevice.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        NetInit.init(naming, new String[]{"NIC", "eth0", "8:0:6:28:63:40"}, timerManager, bus);
+        //NetInit.init(new String[]{"NIC", "eth0", "8:0:6:28:63:40"});
+        //bioide.Main.main(new String[]{"TimerManager", "BIOFS_RW", "0", "1"});
         //StartNetDevice.main(new String[]{"NIC", "eth0", "8:0:6:28:63:40"});
         //StartNetworkProtocols.main(new String[]{"NIC", "TimerManager", "NET"});
 	/*final CPUManager cpuManager = (CPUManager) naming.lookup("CPUManager");

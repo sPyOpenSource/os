@@ -12,6 +12,7 @@ class NicTimer implements TimerHandler {
 	this.timerManager = timerManager;
     }
 
+    @Override
     public void timer(Object arg) {
 	NicInformation Adapter = ((NicTimerArg)arg).get_NicInfo();
 	D3C905 handle = ((NicTimerArg)arg).get_Handle();

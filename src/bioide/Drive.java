@@ -65,6 +65,7 @@ public class Drive implements BlockIO, Service {
     /**
      * Get drive capacity, address schema (LBA or CHS), access mode (PIO or DMA) and
      * configure drive for fastest access mode
+     * @throws bioide.IDEException
      */
     public void setup() throws IDEException {
 	Operation operation;
@@ -87,21 +88,21 @@ public class Drive implements BlockIO, Service {
 	    return;
 	}
 
-	Debug.out.print("" + name + ": " + id_data.model().trim() + ", " + (capacity/2048) + "MB, ");
+	//Debug.out.print("" + name + ": " + id_data.model().trim() + ", " + (capacity/2048) + "MB, ");
 	if (lba())
 	    Debug.out.print("LBA, ");
-	if (bios_cyl < 0) Debug.out.print("CHS=" + (bios_cyl+65536)); else Debug.out.print("CHS=" + bios_cyl);
-	if (bios_head < 0) Debug.out.print("/" + (bios_head+256)); else Debug.out.print("/" + bios_head);
-	if (bios_sect < 0) Debug.out.println("/" + (bios_sect+256)); else Debug.out.println("/" + bios_sect);
+	//if (bios_cyl < 0) Debug.out.print("CHS=" + (bios_cyl+65536)); else Debug.out.print("CHS=" + bios_cyl);
+	//if (bios_head < 0) Debug.out.print("/" + (bios_head+256)); else Debug.out.print("/" + bios_head);
+	//if (bios_sect < 0) Debug.out.println("/" + (bios_sect+256)); else Debug.out.println("/" + bios_sect);
 
 	operation = new RecalibrateOperation(controller, this);
 	operation.startOperation();
   
-	if ((id_data != null) && ((id_data.capability() & 1) > 0) && idedevice.dmaSupported) {
+	if ((id_data != null) && ((id_data.capability() & 1) > 0) && IDEDeviceImpl.dmaSupported) {
 	    // bit 0 von id_data.capability() = DMA-Unterstuetzung
 	    // DMA  fuer alle Laufwerke aktivieren, die Multiword- oder Ultra-DMA unterstuetzen
 	    try {
-		operation = new EnableDMAOperation(controller, this, idedevice.ultraDmaSupported);
+		operation = new EnableDMAOperation(controller, this, IDEDeviceImpl.ultraDmaSupported);
 		operation.startOperation();
 	    } catch(DMAException e) {
 		operation = new EnablePIOOperation(controller, this);
@@ -154,9 +155,10 @@ public class Drive implements BlockIO, Service {
 
     /**
      * Checks drive parameters (no of sectors, heads, cylinders) and corrects them if necessary.
+     * @throws bioide.IDEException
      */
     public void identify() throws IDEException {
-	Debug.out.println("DRIVE IDENTIFY: "+name);
+	Debug.out.println("DRIVE IDENTIFY: " + name);
 	IdentifyOperation operation = new IdentifyOperation(id_data, controller, this);
 	operation.startOperation();
   
@@ -166,7 +168,7 @@ public class Drive implements BlockIO, Service {
 	    head = bios_head = id_data.heads();
 	    sect = bios_sect = id_data.sectors();
 	}
-	Debug.out.println("DRIVE IDENTIFIED: "+name+"; cyl="+cyl+", head="+head+", sect="+sect);
+	Debug.out.println("DRIVE IDENTIFIED: " + name + "; cyl=" + cyl + ", head=" + head + ", sect=" + sect);
 
 	// Umsetzung der logischen Geometrie durch das Laufwerk ueberpruefen
 	if (((id_data.field_valid() & 1) > 0) && (id_data.cur_cyls() > 0) && (id_data.cur_heads() > 0)
@@ -189,7 +191,7 @@ public class Drive implements BlockIO, Service {
 		bios_cyl = cyl;
 	}
 
-	Debug.out.println("DRIVE OK: "+name+"; cyl="+cyl+", head="+head+", sect="+sect);
+	Debug.out.println("DRIVE OK: " + name + "; cyl=" + cyl + ", head=" + head + ", sect=" + sect);
     }
 
     /**

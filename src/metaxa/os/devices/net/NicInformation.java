@@ -1,7 +1,6 @@
 package metaxa.os.devices.net;
+
 import java.util.*;
-import metaxa.os.*;
-import metaxa.os.devices.*;
 import jx.devices.pci.PCIDevice;
 
 class NicInformation extends WaitCases {

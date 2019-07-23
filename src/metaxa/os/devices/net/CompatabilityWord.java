@@ -1,8 +1,8 @@
 package metaxa.os.devices.net;	
 
 class CompatabilityWord {
-    private byte warninglevel;
-    private byte failurelevel;
+    private final byte warninglevel;
+    private final byte failurelevel;
 
     public CompatabilityWord(byte warning, byte failure) {
 	warninglevel = warning;

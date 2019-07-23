@@ -2,13 +2,11 @@ package metaxa.os.devices.net;
 
 import java.util.*;
 import jx.zero.*;
-import jx.zero.debug.*;
 import jx.devices.pci.*;
 import jx.devices.*;
 import jx.timer.*;
 import jx.buffer.separator.*;
 import jx.zero.debug.DebugPrintStream;
-import jx.zero.debug.DebugOutputStream;
 
 class User {
     static DebugPrintStream out;
@@ -131,7 +129,7 @@ public class ComInit extends Softlimits implements DeviceFinder {
     public Device[] find(String[] args) {
 	Debug.out.println("lookup PCI Access Point...");
 	PCIAccess bus;
-	int counter=0;
+	int counter = 0;
 	for(;;) {
 	    bus = (PCIAccess)InitialNaming.getInitialNaming().lookup("PCIAccess");
 	    if (bus == null) {
@@ -154,80 +152,66 @@ public class ComInit extends Softlimits implements DeviceFinder {
 	    Debug.out.println("3COM probe(): no network devices of any vendor found! ");
 	    return null;
 	}
-	// search for supported NICs
-	for (int i = 0; i < devInfo.length; i++) {
-	    deviceID = devInfo[i].getDeviceID() & 0xffff;
-	    vendorID = devInfo[i].getVendorID() & 0xffff;
-
-	    Debug.out.println("Vendor="+ Integer.toHexString(vendorID)+", Device="+ Integer.toHexString(deviceID));
-	
-	    if (vendorID ==  NIC_VENDOR_ID) {          // 3COM Vendor ID
-		switch (deviceID) {
-
-		case NIC_PCI_DEVICE_ID_9055:
-		    User.out.println("10/100 Base-TX NIC found");
-		    foundNics.addElement(devInfo[i]);
-		    break;
-		    
-		case NIC_PCI_DEVICE_ID_9058:
-		    User.out.println("10/100 COMBO Deluxe board found");
-		    foundNics.addElement(devInfo[i]);	    
-		    break;
-		    
-		case NIC_PCI_DEVICE_ID_9004:
-		    User.out.println("10Base-T TPO NIC found");
-		    foundNics.addElement(devInfo[i]);
-		     break;
- 
-		case NIC_PCI_DEVICE_ID_9005:
-		    User.out.println("10Base-T/10Base-2/AUI Combo found");
-		    foundNics.addElement(devInfo[i]);
-		    break;
- 
-		case NIC_PCI_DEVICE_ID_9006:
-		    User.out.println("10Base-T/10Base-2/TPC found");
-		    foundNics.addElement(devInfo[i]);
-		    break;
- 
-		case NIC_PCI_DEVICE_ID_900A:
-		    User.out.println("10Base-FL NIC found");
-		    foundNics.addElement(devInfo[i]);
-		    break;
- 
-		case NIC_PCI_DEVICE_ID_905A:
-		    User.out.println("100Base-Fx NIC found");
-		    foundNics.addElement(devInfo[i]);
-		 break;
-    
-		case NIC_PCI_DEVICE_ID_9200:
-		    User.out.println("Tornado NIC found");
-		    foundNics.addElement(devInfo[i]);
-		   break;
-		    
-		case NIC_PCI_DEVICE_ID_9800:
-		    User.out.println("10/100 Base-TX NIC(Python-H) found");
-		    foundNics.addElement(devInfo[i]);
-		    break;
-		    
- 
-		case NIC_PCI_DEVICE_ID_9805:
-		    User.out.println("10/100 Base-TX NIC(Python-T) found");
-		    foundNics.addElement(devInfo[i]);
-		    break;
-		    
-		default:				
-		    User.out.println("ERROR: Unsupported NIC found");
-		    continue;
-		}				
-	    }
-	}
+        // search for supported NICs
+        for (PCIDevice devInfo1 : devInfo) {
+            deviceID = devInfo1.getDeviceID() & 0xffff;
+            vendorID = devInfo1.getVendorID() & 0xffff;
+            Debug.out.println("Vendor=" + Integer.toHexString(vendorID) + ", Device=" + Integer.toHexString(deviceID));
+            if (vendorID ==  NIC_VENDOR_ID) {
+                // 3COM Vendor ID
+                switch (deviceID) {
+                    case NIC_PCI_DEVICE_ID_9055:
+                        User.out.println("10/100 Base-TX NIC found");
+                        foundNics.addElement(devInfo1);
+                        break;
+                    case NIC_PCI_DEVICE_ID_9058:
+                        User.out.println("10/100 COMBO Deluxe board found");
+                        foundNics.addElement(devInfo1);
+                        break;
+                    case NIC_PCI_DEVICE_ID_9004:
+                        User.out.println("10Base-T TPO NIC found");
+                        foundNics.addElement(devInfo1);
+                        break;
+                    case NIC_PCI_DEVICE_ID_9005:
+                        User.out.println("10Base-T/10Base-2/AUI Combo found");
+                        foundNics.addElement(devInfo1);
+                        break;
+                    case NIC_PCI_DEVICE_ID_9006:
+                        User.out.println("10Base-T/10Base-2/TPC found");
+                        foundNics.addElement(devInfo1);
+                        break;
+                    case NIC_PCI_DEVICE_ID_900A:
+                        User.out.println("10Base-FL NIC found");
+                        foundNics.addElement(devInfo1);
+                        break;
+                    case NIC_PCI_DEVICE_ID_905A:
+                        User.out.println("100Base-Fx NIC found");
+                        foundNics.addElement(devInfo1);
+                        break;
+                    case NIC_PCI_DEVICE_ID_9200:
+                        User.out.println("Tornado NIC found");
+                        foundNics.addElement(devInfo1);
+                        break;
+                    case NIC_PCI_DEVICE_ID_9800:
+                        User.out.println("10/100 Base-TX NIC(Python-H) found");
+                        foundNics.addElement(devInfo1);
+                        break;
+                    case NIC_PCI_DEVICE_ID_9805:
+                        User.out.println("10/100 Base-TX NIC(Python-T) found");
+                        foundNics.addElement(devInfo1);
+                        break;
+                    default:
+                        User.out.println("ERROR: Unsupported NIC found");
+                }
+            }
+        }
 	    
 	//User.out.println("A total of " + foundNics.size() + " supported network interface cards found!");
 	D3C905[] helper = new D3C905[foundNics.size()];
-	for(int i=0; i<foundNics.size(); i++) {
+	for(int i = 0; i < foundNics.size(); i++) {
 	    try {
 		Memory [] bufs = new Memory[10];
-		for(int j=0; j<bufs.length; j++) {
+		for(int j = 0; j < bufs.length; j++) {
 		    bufs[j] = memMgr.alloc(AdapterLimits.ETHERNET_MAXIMUM_FRAME_SIZE);
 		}
 		helper[i] = new D3C905((PCIDevice)foundNics.elementAt(i), ports, clock, irq, memMgr, timerManager, cpuManager, null/*etherConsumer*/, bufs); 
@@ -448,5 +432,10 @@ public class ComInit extends Softlimits implements DeviceFinder {
 	Debug.out.println("setupIOBase: changed I/O-Base from " + addr + " to " + iobase + "(" + base + ")");
 	int a2 = pcidev.readConfig(reg);
 	Debug.out.println("setupIOBase: CHECK REGISTERVALUE: " + a2); 
+    }
+
+    @Override
+    public Device[] find(String[] args, Naming naming) {
+        throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

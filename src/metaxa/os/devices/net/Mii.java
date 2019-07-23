@@ -1,5 +1,5 @@
 package metaxa.os.devices.net;
-import metaxa.os.*;
+
 import jx.zero.*;
 import jx.timer.*;
 /**
@@ -934,5 +934,4 @@ class Mii {
 	//Debug.out.println("ProgrammMII: OUT");
     	return false;
   }
-
 }

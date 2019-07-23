@@ -10,13 +10,14 @@ import jx.zero.*;
 class IdentifyOperation extends Operation {
     private static final byte CMD_IDENTIFY    = (byte)0xec;   // Laufwerk identifizieren
     private static final byte CMD_ATAPI_IDENT = (byte)0xa1;   // Abfrage von CDROMs und Bandlaufwerken
-    private DriveIdData id_data;
+    private final DriveIdData id_data;
 
     public IdentifyOperation(DriveIdData id_data, Controller controller, Drive drive) {
         super(controller, drive);
 	this.id_data = id_data;
     }
 
+    @Override
     public void startOperation() throws IDEException {
 	int retval = 0;
 
@@ -35,11 +36,10 @@ class IdentifyOperation extends Operation {
 	    if (identifyCommand(CMD_IDENTIFY) == -1)
 		if (identifyCommand(CMD_ATAPI_IDENT) == -1) {
 		    Debug.out.println("" + drive.name + ": keine Antwort (Status = " + controller.getStatus() + ")");
-
 		}
 	    controller.getStatus(); // sichergehen, dass Interrupt unterbunden wird
 	} else {
-	    Debug.out.println("Controller status: "+controller.getStatus());
+	    Debug.out.println("Controller status: " + controller.getStatus());
 	    retval = -1;
 	}
 

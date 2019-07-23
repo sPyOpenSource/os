@@ -4,9 +4,10 @@ import AI.AI;
 import jx.zero.*;
 import jx.zero.debug.*;
 import jx.bootrc.*;
+import jx.devices.pci.PCIAccess;
 import jx.devices.pci.PCIGod;
-import jx.net.StartNetDevice;
-import jx.net.protocols.StartNetworkProtocols;
+import jx.netmanager.NetInit;
+import jx.timer.TimerManager;
 import timerpc.StartTimer;
 
 public class Main {
@@ -23,13 +24,9 @@ public class Main {
 	Debug.out.println("Init running...");
        
 	main(new String[] {"boot.rc"});
-        //PCIGod.main(new String[]{});
-        //StartTimer.main(new String[]{"TimerManager"});
-        //StartNetDevice.main(new String[]{"NIC", "eth0", "8:0:6:28:63:40"});
-        //StartNetworkProtocols.main(new String[]{"NIC", "TimerManager", "NET"});
+
         AI instance = new AI();
         instance.start();
-        //while(true);
      }
      
      public static void main(String args[]) throws Exception {
@@ -56,7 +53,7 @@ public class Main {
 	    int garbageCollector = 0;
 	    String domainName = domainSpec.getString("Name");
 	    int codeSize = domainSpec.getInt("CodeSize");
-	    //try { domainSpec.getString("SchedulerClass"); } catch(NameNotFoundException e) {}
+	    try { domainSpec.getString("SchedulerClass"); } catch(NameNotFoundException e) {}
 	    try { 
 		String gcName = domainSpec.getString("GarbageCollector");
                 garbageCollector = 0;
@@ -118,6 +115,8 @@ public class Main {
 		// multi component domain
 		String initLib = "init2.jll";
 		String startClass = "jx/init/MultiComponentStart";
+                
+                //NetInit.init(initNaming, new String[]{"NIC", "eth0", "8:0:6:28:63:40"});
 		DomainStarter.createDomain(domainName, initLib, startClass, gcinfo0, gcinfo1, gcinfo2, gcinfo3, gcinfo4, codeSize, initNaming, garbageCollector, new Object[]{componentSpec});
 		//}
 	}
@@ -132,7 +131,7 @@ public class Main {
 	    Debug.out.println("!!ATTENTION!!                                      !!ATTENTION!!");
 	    return;
 	}
-	/*try {	
+	try {	
 	    Naming naming = InitialNaming.getInitialNaming();
 	    String secLib = globalSpec.getString("SecurityManagerLib");
 	    String secClass = globalSpec.getString("SecurityManagerClass");
@@ -150,7 +149,7 @@ public class Main {
 	    Debug.out.println("!!ATTENTION!!                                      !!ATTENTION!!");
 	    Debug.out.println("!!ATTENTION!!  No Security Manager is used         !!ATTENTION!!");
 	    Debug.out.println("!!ATTENTION!!                                      !!ATTENTION!!");
-	}*/
+	}
 
 	try {
 	    String namingClass = globalSpec.getString("InstallNaming");

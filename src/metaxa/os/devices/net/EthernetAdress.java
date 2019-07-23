@@ -1,17 +1,19 @@
 package metaxa.os.devices.net;
 
+import jx.zero.Debug;
+import jx.zero.Memory;
+
 /* Ethernet-Adresse mit Zugriffsfunktionen */
 
-class EthernetAdress {
+public class EthernetAdress {
     final static int ETH_ADDR_SIZE = 6; 
 
     private byte Addr[];
 
-    EthernetAdress(byte[] array) throws WrongEthernetAdressFormat {
+    public EthernetAdress(byte[] array) throws WrongEthernetAdressFormat {
 	if (array.length != ETH_ADDR_SIZE) throw new WrongEthernetAdressFormat();
 	Addr = new byte[ETH_ADDR_SIZE];
-	for (int i=0; i<6; i++) 
-	    Addr[i] = array[i];
+        System.arraycopy(array, 0, Addr, 0, 6);
     }
 
     /* 
@@ -20,10 +22,19 @@ class EthernetAdress {
      */
 
     public byte[] get_Addr() {
-	byte feld[] = (byte[])Addr.clone();
+	byte feld[] = new byte[ETH_ADDR_SIZE];//(byte[])Addr.clone();
+        //Debug.out.println(print_Addr());
+        /*for (int i = 0; i < Addr.length; i++){
+            Debug.out.print(Addr[i]);
+        }
+        Debug.out.println();*/
+        System.arraycopy(Addr, 0, feld, 0, 6);
 	return feld;
     }
-
+    
+    public byte get(int i){
+        return Addr[i];
+    }
     /* 
      * erzeugt einen String aus der Ethernet.Adresse im gewohnten Format als 6 Werte zwischen 0 und 255
      * dazu muss jedoch getrickst werden, da Java Byte-Werte vorzeichenbehaftet interpretiert und alle 
@@ -38,5 +49,8 @@ class EthernetAdress {
 	    + bs.byte_to_unsigned((byte)Addr[3]) + "." + bs.byte_to_unsigned((byte)Addr[2]) + "." 
 	    + bs.byte_to_unsigned((byte)Addr[1]) + "." + bs.byte_to_unsigned((byte)Addr[0]);
     }
+
+    public void writeTo(Memory buf, int i) {
+        buf.copyFromByteArray(Addr, 0, i, 6);
+    }
 }
-	

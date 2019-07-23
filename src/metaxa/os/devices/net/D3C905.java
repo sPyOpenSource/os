@@ -1,4 +1,5 @@
 package metaxa.os.devices.net;
+
 import java.util.*;
 import jx.zero.*;
 import jx.zero.debug.*;
@@ -10,7 +11,6 @@ import jx.devices.DeviceConfigurationTemplate;
 import jx.devices.DeviceConfiguration;
 
 import jx.buffer.multithread.MultiThreadBufferList;
-import jx.buffer.multithread.Buffer;
 import jx.buffer.multithread.MultiThreadBufferList2;
 import jx.buffer.multithread.Buffer2;
 
@@ -106,7 +106,14 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 
     /**
      * @param pcidevice contains information about the PCI NIC
+     * @param ports
+     * @param clock
+     * @param irq
+     * @param memMgr
      * @param etherConsumer the consumer of the ethernet packets that arrive at the nic
+     * @param timerManager
+     * @param cpuManager
+     * @param bufs
      * @exception a D3C905Exception is thrown if problems with the allocation of the memory objects needed by the descriptors occur
      */
     public D3C905(PCIDevice pcidevice, Ports ports, Clock clock, IRQ irq, MemoryManager memMgr, TimerManager timerManager, CPUManager cpuManager, NonBlockingMemoryConsumer etherConsumer, Memory[] bufs) throws D3C905Exception {
@@ -292,8 +299,7 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
      */
     public byte[] getMACAddress() {
 	byte[] ret = new byte[6];
-	for (int i=0; i<6; i++)
-	    ret[i] = NicInfo().StationAddress[i];
+        System.arraycopy(NicInfo().StationAddress, 0, ret, 0, 6);
 	return ret;
     }
 
@@ -371,7 +377,7 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	intStatus =0;
 	int MAX_RETRIES = 10;
 	Debug.out.println("GetAdapterProperties: Select window 7 ");
-	for(int xx=0; xx<MAX_RETRIES; xx++) {
+	for(int xx = 0; xx < MAX_RETRIES; xx++) {
 	    befehl.NicCommandWait(Adapter, (short)(Befehl.COMMAND_SELECT_REGISTER_WINDOW() | Register.REGISTER_WINDOW_7()));
 	    
 	    
@@ -392,30 +398,22 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	    
 	    Debug.out.println("GetAdapterProperties: Window selection failure");
 	    Debug.out.println("GetAdapterProperties: Out with error");
-	    Debug.out.println("intStatus: "+intStatus);
-	    Debug.out.println("expected intstatus & "+Register.REGISTER_WINDOW_MASK()+": "+(Register.REGISTER_WINDOW_7() << 13));
+	    Debug.out.println("intStatus: " + intStatus);
+	    Debug.out.println("expected intstatus & " + Register.REGISTER_WINDOW_MASK() + ": " + (Register.REGISTER_WINDOW_7() << 13));
 	    throw new NicStatusFailure("GetAdapterProperties: error in setting for register window 7");
 	    
 	}
 
-     
-
-
 
 	try {
-	    information = eeprom.ReadEEPROM(Adapter, eeprom.EEPROM_DEVICE_ID);
+	    information = eeprom.ReadEEPROM(Adapter, Eeprom.EEPROM_DEVICE_ID);
 	    if (debug) Debug.out.println("Software DeviceID: "+Integer.toHexString(information));
 	}
 	catch (NicStatusFailure e) 
-	    {
-		Debug.out.println("GetAdapterProperties: EEPROM read failed");
-		throw new NicStatusFailure("GetAdapterProperties: EEPROM read failed");
-	 
-	    }
-
-
-
-
+        {
+            Debug.out.println("GetAdapterProperties: EEPROM read failed");
+            throw new NicStatusFailure("GetAdapterProperties: EEPROM read failed");
+        }
 
 	//
 	// ----------------- Read the compatability level ----------
@@ -423,17 +421,17 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
      
 	// what we now do is driver version stuff
 	// we check the level in the compatabilityword in the EEPROM of the NIC
-	// if these values don�t compare with our predefined values, we quit
+	// if these values don't compare with our predefined values, we quit
 	// another kind of driver needs to be installed (well, I should develop this one :-))
      
 	try {
-	    compatabilityhelper = eeprom.ReadEEPROM(Adapter, eeprom.EEPROM_COMPATABILITY_WORD);
+	    compatabilityhelper = eeprom.ReadEEPROM(Adapter, Eeprom.EEPROM_COMPATABILITY_WORD);
 	}
 	catch (NicStatusFailure e) 
-	    {
-		Debug.out.println("GetAdapterProperties: compatability read failed");
-		throw e;
-	    }
+        {
+            Debug.out.println("GetAdapterProperties: compatability read failed");
+            throw e;
+        }
      
 	// now set the compatability information
 	// first the lower byte, then the upper byte
@@ -444,7 +442,7 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	// Check the Failure level - see above for explanation
 	//
      
-	if (compatability.get_failurelevel() > eeprom.EEPROM_COMPATABILITY_LEVEL) {
+	if (compatability.get_failurelevel() > Eeprom.EEPROM_COMPATABILITY_LEVEL) {
        
 	    Debug.out.println("GetAdapterProperties: Incompatible failure level");
 	    Debug.out.println("GetAdapterProperties: Out with error\n");
@@ -455,7 +453,7 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	// Check the warning level.
 	//
      
-	if (compatability.get_warninglevel() > eeprom.EEPROM_COMPATABILITY_LEVEL) {  
+	if (compatability.get_warninglevel() > Eeprom.EEPROM_COMPATABILITY_LEVEL) {  
 	    Debug.out.println("GetAdapterProperties: Wrong down compatability level");
 	}
 	
@@ -464,15 +462,15 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	//
      
 	try {
-	    information = eeprom.ReadEEPROM(Adapter, eeprom.EEPROM_SOFTWARE_INFORMATION_1);
+	    information = eeprom.ReadEEPROM(Adapter, Eeprom.EEPROM_SOFTWARE_INFORMATION_1);
 	    if (debug) Debug.out.println("Software Information1: "+Integer.toHexString(information));
 	}
 	catch (NicStatusFailure e) 
-	    {
-		Debug.out.println("GetAdapterProperties: EEPROM s/w info1 read failed");
-		throw new NicStatusFailure("GetAdapterProperties: EEPROM s/w info1 read failed");
-	 
-	    }
+        {
+            Debug.out.println("GetAdapterProperties: EEPROM s/w info1 read failed");
+            throw new NicStatusFailure("GetAdapterProperties: EEPROM s/w info1 read failed");
+
+        }
      
 	// now lets set up the softwareinformation1
 	// first get bits [5:4] for the optimizeFor information
@@ -481,21 +479,15 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	boolean link;
 	boolean duplex;
 	try {
-	    if (bits.isSet(information,14) == true)
-		link = true;
-	    else 
-		link = false;
-	    if (bits.isSet(information,15) == true) 
-		duplex = true;
-	    else
-		duplex = false;
+            link = bits.isSet(information,14) == true;
+            duplex = bits.isSet(information,15) == true;
 	}
 	catch (BitNotExistingException e) 
-	    {
-		Debug.out.println("GetAdapterProperties:Error while checking for bits in softwareinformation read from EEPROM");
-		throw new NicStatusFailure("GetAdapterProperties: Error while checking for bits in softwareinformation read from EEPROM");
-	    }
-     
+        {
+            Debug.out.println("GetAdapterProperties:Error while checking for bits in softwareinformation read from EEPROM");
+            throw new NicStatusFailure("GetAdapterProperties: Error while checking for bits in softwareinformation read from EEPROM");
+        }
+
 	// now we have the information to set up the softwareinformation1
 	information1 = new SoftwareInformation1(optimize, link, duplex);
      
@@ -551,13 +543,13 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	information = 0;
      
 	try {
-	    information = eeprom.ReadEEPROM(Adapter, eeprom.EEPROM_CAPABILITIES_WORD);
+	    information = eeprom.ReadEEPROM(Adapter, Eeprom.EEPROM_CAPABILITIES_WORD);
 	}
 	catch (NicStatusFailure e)
-	    {
-		Debug.out.println("GetAdapterProprties: EEPROM s/w capabilities read failed\n");
-		throw new NicStatusFailure("GetAdapterProprties: EEPROM s/w capabilities read failed\n");
-	    }
+        {
+            Debug.out.println("GetAdapterProprties: EEPROM s/w capabilities read failed\n");
+            throw new NicStatusFailure("GetAdapterProprties: EEPROM s/w capabilities read failed\n");
+        }
      
 	// now we have to setup the capabilities 
      
@@ -569,10 +561,10 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 						bits.isSet(information,12),bits.isSet(information,13));
 	}
 	catch (BitNotExistingException e) 
-	    {
-		Debug.out.println("GetAdapterProperties: Error while checking for bits in capabilitesword read from EEPROM");
-		throw new NicStatusFailure("GetAdapterProperties: Error while checking for bits in capabilitesword read from EEPROM");
-	    }
+        {
+            Debug.out.println("GetAdapterProperties: Error while checking for bits in capabilitesword read from EEPROM");
+            throw new NicStatusFailure("GetAdapterProperties: Error while checking for bits in capabilitesword read from EEPROM");
+        }
      
 	if (capabilities.get_SupportsPowerManagement()) {
        
@@ -589,14 +581,14 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	information = 0;
      
 	try {
-	    information = eeprom.ReadEEPROM(Adapter, eeprom.EEPROM_SOFTWARE_INFORMATION_2);
+	    information = eeprom.ReadEEPROM(Adapter, Eeprom.EEPROM_SOFTWARE_INFORMATION_2);
 	}
 	catch (NicStatusFailure e) 
-	    {
-		Debug.out.println("GetAdapterProperties: ReadEEPROM , SWINFO2 failed");
-		Debug.out.println("GetAdapterProperties: Out with error");
-		throw new NicStatusFailure("GetAdapterProperties: ReadEEPROM , SWINFO2 failed");
-	    }
+        {
+            Debug.out.println("GetAdapterProperties: ReadEEPROM , SWINFO2 failed");
+            Debug.out.println("GetAdapterProperties: Out with error");
+            throw new NicStatusFailure("GetAdapterProperties: ReadEEPROM , SWINFO2 failed");
+        }
      
 	// set up the software information 2 
 	// there seems to be more information in the EEPROM than the version of my Technical Reference offers
@@ -608,10 +600,10 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 						    bits.isSet(information,7));
 	}
 	catch (BitNotExistingException e) 
-	    {
-		Debug.out.println("GetAdapterProperties:Error while checking for bits in softwareinformation2 read from EEPROM");
-		throw new NicStatusFailure("GetAdapterProperties: Error while checking for bits in softwareinformation2 read from EEPROM");  
-	    }
+        {
+            Debug.out.println("GetAdapterProperties:Error while checking for bits in softwareinformation2 read from EEPROM");
+            throw new NicStatusFailure("GetAdapterProperties: Error while checking for bits in softwareinformation2 read from EEPROM");  
+        }
 	if (information2.get_BroadcastRxErrDone()){
        
 	    //Debug.out.println("GetAdapterProperties: Adapter has BroadcastRxErrDone");
@@ -648,15 +640,15 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	information = 0;
      
 	try {
-	    information = eeprom.ReadEEPROM(Adapter, eeprom.EEPROM_OEM_NODE_ADDRESS_WORD_0);
+	    information = eeprom.ReadEEPROM(Adapter, Eeprom.EEPROM_OEM_NODE_ADDRESS_WORD_0);
 	}
 	catch (NicStatusFailure e) 
-	    {
-	 
-		//Debug.out.println("GetAdapterProperties: EEPROM read word 0 failed");
-		//Debug.out.println("GetAdapterProperties: Out with error");
-		throw new NicStatusFailure("GetAdapterProperties: EEPROM read word 0 failed");
-	    }
+        {
+
+            //Debug.out.println("GetAdapterProperties: EEPROM read word 0 failed");
+            //Debug.out.println("GetAdapterProperties: Out with error");
+            throw new NicStatusFailure("GetAdapterProperties: EEPROM read word 0 failed");
+        }
      
 	// set up the address field in NicInformation
 	Adapter.PermanentAddress[0] = bits.hibyte(information);
@@ -666,14 +658,14 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	information = 0;
      
 	try {
-	    information = eeprom.ReadEEPROM(Adapter, eeprom.EEPROM_OEM_NODE_ADDRESS_WORD_1);
+	    information = eeprom.ReadEEPROM(Adapter, Eeprom.EEPROM_OEM_NODE_ADDRESS_WORD_1);
 	}
 	catch (NicStatusFailure e) 
-	    {
-		Debug.out.println("GetAdapterProperties: EEPROM read word 1 failed");
-		Debug.out.println("GetAdapterProperties: Out with error");
-		throw new NicStatusFailure("GetAdapterProperties: EEPROM read word 1 failed");	
-	    }
+        {
+            Debug.out.println("GetAdapterProperties: EEPROM read word 1 failed");
+            Debug.out.println("GetAdapterProperties: Out with error");
+            throw new NicStatusFailure("GetAdapterProperties: EEPROM read word 1 failed");	
+        }
      
 	Adapter.PermanentAddress[2] = bits.hibyte(information);
 	Adapter.PermanentAddress[3] = bits.lobyte(information);
@@ -682,14 +674,14 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	information = 0;
      
 	try {
-	    information = eeprom.ReadEEPROM(Adapter, eeprom.EEPROM_OEM_NODE_ADDRESS_WORD_2);
+	    information = eeprom.ReadEEPROM(Adapter, Eeprom.EEPROM_OEM_NODE_ADDRESS_WORD_2);
 	}
 	catch (NicStatusFailure e) 
-	    {
-		Debug.out.println("GetAdapterProperties: EEPROM read word 2 failed");
-		Debug.out.println("GetAdapterProperties: Out with error");
-		throw new NicStatusFailure("GetAdapterProperties: EEPROM read word 2 failed");
-	    }
+        {
+            Debug.out.println("GetAdapterProperties: EEPROM read word 2 failed");
+            Debug.out.println("GetAdapterProperties: Out with error");
+            throw new NicStatusFailure("GetAdapterProperties: EEPROM read word 2 failed");
+        }
      
 	Adapter.PermanentAddress[4] = bits.hibyte(information);
 	Adapter.PermanentAddress[5] = bits.lobyte(information);
@@ -1010,7 +1002,7 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	    throw new NicStatusFailure();
     	}
 
-	if (!befehl.NicCommandWait(Adapter, (short)(befehl.COMMAND_RX_RESET() | befehl.RX_RESET_MASK_NETWORK_RESET()))) {
+	if (!befehl.NicCommandWait(Adapter, (short)(Befehl.COMMAND_RX_RESET() | Befehl.RX_RESET_MASK_NETWORK_RESET()))) {
 	    Debug.out.println("TestAdapter: Receiver reset failed");
 	    throw new NicStatusFailure();
 	}       
@@ -1129,13 +1121,13 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	// Unstall the download engine
 	//
 
-	befehl.NicCommand(Adapter, befehl.COMMAND_UP_UNSTALL());
+	befehl.NicCommand(Adapter, Befehl.COMMAND_UP_UNSTALL());
 
 	//
 	// Enable the statistics back
 	//
 
-	befehl.NicCommand(Adapter, befehl.COMMAND_STATISTICS_ENABLE());
+	befehl.NicCommand(Adapter, Befehl.COMMAND_STATISTICS_ENABLE());
 
 	//
 	// Acknowledge any pending interrupts
@@ -1159,8 +1151,8 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	// Enable the transmit and receive engines.
 	//
 
-	befehl.NicCommand(Adapter, befehl.COMMAND_RX_ENABLE());
-	befehl.NicCommand(Adapter, befehl.COMMAND_TX_ENABLE());
+	befehl.NicCommand(Adapter, Befehl.COMMAND_RX_ENABLE());
+	befehl.NicCommand(Adapter, Befehl.COMMAND_TX_ENABLE());
 
 	//
 	// Delay three seconds, only some switches need this,
@@ -1173,7 +1165,7 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	    Debug.out.println("D3C905: back again");
 	} 
 
-	befehl.NicCommand(Adapter, befehl.COMMAND_SELECT_REGISTER_WINDOW() | Register.REGISTER_WINDOW_5());
+	befehl.NicCommand(Adapter, Befehl.COMMAND_SELECT_REGISTER_WINDOW() | Register.REGISTER_WINDOW_5());
 	byte rxfilter = befehl.NicReadPortByte(Adapter, Register.RX_FILTER_REGISTER());
 
 	// for debugging purposes
@@ -1183,8 +1175,8 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	// WATCH OUT: if broadcast should also be received, this has to be configured at this point
 
 	int hardwareReceiveFilter = 0;
-	hardwareReceiveFilter |= (byte)(1<<0);
-	befehl.NicCommand(Adapter, (short)(befehl.COMMAND_SET_RX_FILTER() | hardwareReceiveFilter));
+	hardwareReceiveFilter |= (byte)1;
+	befehl.NicCommand(Adapter, (short)(Befehl.COMMAND_SET_RX_FILTER() | hardwareReceiveFilter));
 
 	rxfilter = 0;
 	rxfilter = befehl.NicReadPortByte(Adapter, Register.RX_FILTER_REGISTER());
@@ -1207,7 +1199,7 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	
 	// read the software information 2 register, which contains additional information for the driver - it has no use for 3C90x NICs
 	try {
-	    Contents = eeprom.ReadEEPROM(Adapter, eeprom.EEPROM_SOFTWARE_INFORMATION_2);
+	    Contents = eeprom.ReadEEPROM(Adapter, Eeprom.EEPROM_SOFTWARE_INFORMATION_2);
 	}
 	catch (NicStatusFailure e) {
 	    Debug.out.println("SoftwareWork: Error reading Eeprom");
@@ -1215,14 +1207,14 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	}
 	// check wether the Memory write invalidate PCI command bug has been fixed
 	// if not we can�t use this command
-	if (!((Contents & eeprom.ENABLE_MWI_WORK) > 0)) {
+	if (!((Contents & Eeprom.ENABLE_MWI_WORK) > 0)) {
 	    DmaControl = befehl.NicReadPortLong(Adapter, Register.DMA_CONTROL_REGISTER());
 	    befehl.NicWritePortLong(Adapter, Register.DMA_CONTROL_REGISTER(), (int)(Register.DMA_CONTROL_DEFEAT_MWI() | DmaControl));
 	}
 
 	// check for a special revision (early Hurricane)
 
-	befehl.NicCommand(Adapter, befehl.COMMAND_SELECT_REGISTER_WINDOW() | Register.REGISTER_WINDOW_4());
+	befehl.NicCommand(Adapter, Befehl.COMMAND_SELECT_REGISTER_WINDOW() | Register.REGISTER_WINDOW_4());
 
 	NetDiag = befehl.NicReadPortShort(Adapter, Register.NETWORK_DIAGNOSTICS_REGISTER());
     
@@ -1262,8 +1254,7 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	
 	// Delay for 1 second
 	TimeOutCount = timerManager.getCurrentTime() + 100;
-	while(TimeOutCount > timerManager.getCurrentTime()) 
-	    ;
+	while(TimeOutCount > timerManager.getCurrentTime());
 
 	//
 	// Mask all interrupts
@@ -1281,7 +1272,7 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	// Write the internal config back.
 	//
 
-	befehl.NicCommand(Adapter, befehl.COMMAND_SELECT_REGISTER_WINDOW() | Register.REGISTER_WINDOW_3());
+	befehl.NicCommand(Adapter, Befehl.COMMAND_SELECT_REGISTER_WINDOW() | Register.REGISTER_WINDOW_3());
 	befehl.NicWritePortLong(Adapter, Register.INTERNAL_CONFIG_REGISTER(), (int)internalConfig);
 	
 	//
@@ -1325,7 +1316,6 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	catch (NicStatusFailure e) {
 	    Debug.out.println("ReStartAdapter: StartAdapter failed");
 	}
-	return;
     }
 
     public DeviceConfigurationTemplate[] getSupportedConfigurations () {
@@ -1454,6 +1444,7 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
      * this method is used to shut down the network driver 
      * it waits for ongoing transmits to finish and stops the network card
      * see NICOpen() which is the corresponding method to start the network card
+     * @return 
      */
      public boolean NicClose() {
 
@@ -1465,14 +1456,14 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	// Disable transmit and receive.
 	//
 
-	befehl.NicCommand(Adapter, befehl.COMMAND_TX_DISABLE());
-	befehl.NicCommand(Adapter, befehl.COMMAND_RX_DISABLE());
+	befehl.NicCommand(Adapter, Befehl.COMMAND_TX_DISABLE());
+	befehl.NicCommand(Adapter, Befehl.COMMAND_RX_DISABLE());
 
 	//
 	// Wait for the transmit in progress to go off.
 	//
 
-	befehl.NicCommand(Adapter, befehl.COMMAND_SELECT_REGISTER_WINDOW() | Register.REGISTER_WINDOW_4());
+	befehl.NicCommand(Adapter, Befehl.COMMAND_SELECT_REGISTER_WINDOW() | Register.REGISTER_WINDOW_4());
 	waitglobal.set_MediaStatus(befehl.NicReadPortShort(Adapter, Register.MEDIA_STATUS_REGISTER()));
 	ComInit.udelay(10);
 	
@@ -1487,8 +1478,8 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 		Debug.out.println("NICClose: Adapter is not responding");
 	}
 
-	befehl.NicCommandWait(Adapter, (short)befehl.COMMAND_TX_RESET());
-	befehl.NicCommandWait(Adapter, (short)befehl.COMMAND_RX_RESET());
+	befehl.NicCommandWait(Adapter, (short)Befehl.COMMAND_TX_RESET());
+	befehl.NicCommandWait(Adapter, (short)Befehl.COMMAND_RX_RESET());
 
     	//
 	// Mask and acknowledge all interrupts
@@ -1675,7 +1666,7 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	// get usable exchange buffer and append a buffer skeleton to the intransmit queue
 	//Debug.out.println("Free buffer space: "+usableBufs.size());
 	Buffer2 h = (Buffer2)usableBufs.nonblockingUndockFirstElement();
-	if (h==null) {
+	if (h == null) {
 	    if (debugSend) Debug.out.println("no usable buffers");
 	    return buf;
 	}
@@ -2541,12 +2532,13 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
      */
     public void setNormalReceiveMode() {
 	int hardwareReceiveFilter = 0;
-	hardwareReceiveFilter |= (byte)(1<<0);
-	hardwareReceiveFilter |= befehl.RX_FILTER_INDIVIDUAL();
-	hardwareReceiveFilter |= befehl.RX_FILTER_BROADCAST();
-	befehl.NicCommand(Adapter, (short)(befehl.COMMAND_SET_RX_FILTER() | hardwareReceiveFilter)); 
+	hardwareReceiveFilter |= (byte)1;
+	hardwareReceiveFilter |= Befehl.RX_FILTER_INDIVIDUAL();
+	hardwareReceiveFilter |= Befehl.RX_FILTER_BROADCAST();
+	befehl.NicCommand(Adapter, (short)(Befehl.COMMAND_SET_RX_FILTER() | hardwareReceiveFilter)); 
     }
 
+    @Override
     public void setReceiveMode(int mode) {
 	switch(mode) {
 	case NetworkDevice.RECEIVE_MODE_INDIVIDUAL:
@@ -2562,7 +2554,6 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	    throw new Error("Wrong receive mode");
 	}
 	unmaskInterrupts();
-
     }
 
     /**
@@ -2580,7 +2571,7 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	int index;
 
 	// get first object - this must at least exist
-	MultiCast multic=null;
+	MultiCast multic = null;
 	if(multivec!=null) multic= (MultiCast)multivec.elementAt(0);
 
 	// for debugging purposes
@@ -3371,10 +3362,10 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	    return false;
 	}
 	// fill data in the buffer
-	for (int i=0; i<6; i++)
+	for (int i = 0; i < 6; i++)
 	    storage.set8(i, Adapter.StationAddress[i]);  // destination is me
-	for (int i=0; i<6; i++)
-	    storage.set8(i+6, Adapter.StationAddress[i]);  // as is the source
+	for (int i = 0; i < 6; i++)
+	    storage.set8(i + 6, Adapter.StationAddress[i]);  // as is the source
 	storage.set8(12, (byte)0);
 	storage.set8(16, (byte)0);
 	
@@ -4167,6 +4158,7 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
     }
 
 
+    @Override
     public void restartProduction() {
 	// we did not get a memory object when the receive queue was full
 	UpdListEntry currentUPD = Adapter.HeadUPD;
@@ -4176,5 +4168,4 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	//Debug.out.println("Re-Enable all NIC interrupts");
         befehl.NicUnmaskAllInterrupt(Adapter);
     }
-
 }

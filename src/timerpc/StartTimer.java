@@ -1,14 +1,13 @@
 package timerpc;
 
-import jx.init.InitNaming;
 import jx.zero.*;
 import jx.timer.TimerManager;
 
 public class StartTimer {
-    public static void main(String[] args) throws Exception {
+    public static Portal main(String[] args, Naming naming) throws Exception {
 	final TimerManager timerManager = new TimerManagerImpl();
-	Naming naming = InitialNaming.getInitialNaming();
-        //naming = new InitNaming(naming);
-	naming.registerPortal(timerManager, args[0]);	
+	//Naming naming = InitialNaming.getInitialNaming();
+	naming.registerPortal(timerManager, args[0]);
+        return timerManager;
     }
 }

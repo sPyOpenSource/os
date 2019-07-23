@@ -248,17 +248,12 @@ class Controller {
     public boolean identify() {
 	byte r = Env.ports.inb(io_base + IDE_OFF_LO_CYL);
 	setLoCylReg((byte)~r);
-	// contents of register does not change -> controller not available
-	if (Env.ports.inb(io_base + IDE_OFF_LO_CYL) == r) {
-	    present = false;
-	} else {
-	    Debug.out.println("Found " + name + " (" + Integer.toHexString(io_base) + "), use IRQ " + irq_nr);
-	    present = true;
-	}
+        // contents of register does not change -> controller not available
+        present = Env.ports.inb(io_base + IDE_OFF_LO_CYL) != r; //Debug.out.println("Found " + name + " (" + Integer.toHexString(io_base) + "), use IRQ " + irq_nr);
 
 	for (int unit = 0; unit < IDEDeviceImpl.MAX_DRIVES; unit++) {
 	    Drive drive = drives[unit];
-	    Debug.out.println("DRIVE: "+unit);
+	    Debug.out.println("DRIVE: " + unit);
 	}
 	
 	for (int unit = 0; unit < IDEDeviceImpl.MAX_DRIVES; unit++) {
@@ -270,7 +265,7 @@ class Controller {
 		    present = true;
 		}
 	    } catch(IDEException e) {
-		Debug.out.println("DRIVE: "+unit+" could not be identified+initialized");
+		Debug.out.println("DRIVE: " + unit + " could not be identified+initialized");
 	    }
 	}
 	return true;
@@ -280,7 +275,7 @@ class Controller {
      * Setup controller: install IRQ handler
      */
     public void setup() {
-	Debug.out.println("setup: irq_no="+irq_nr);
+	//Debug.out.println("setup: irq_no="+irq_nr);
 	Env.cpuManager.waitUntilBlocked(handlerObj.irqCtx);
 	Env.irq.installFirstLevelHandler(irq_nr, handler);
 	Env.irq.enableIRQ(irq_nr);

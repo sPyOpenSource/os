@@ -9,38 +9,38 @@ import jx.zero.Debug;
 
 class BitPosition {
     
-    private static final int BIT_0=(1 << 0);
-    private static final int BIT_1=(1 << 1);
-    private static final int BIT_2=(1 << 2);
-    private static final int BIT_3=(1 << 3);
-    private static final int BIT_4=(1 << 4);
-    private static final int BIT_5=(1 << 5);
-    private static final int BIT_6=(1 << 6);
-    private static final int BIT_7=(1 << 7);
-    private static final int BIT_8=(1 << 8);
-    private static final int BIT_9=(1 << 9);
-    private static final int BIT_10=(1 << 10);
-    private static final int BIT_11=(1 << 11);
-    private static final int BIT_12=(1 << 12);
-    private static final int BIT_13=(1 << 13);
-    private static final int BIT_14=(1 << 14);
-    private static final int BIT_15=(1 << 15);
-    private static final int BIT_16=(1 << 16);
-    private static final int BIT_17=(1 << 17);
-    private static final int BIT_18=(1 << 18);
-    private static final int BIT_19=(1 << 19);
-    private static final int BIT_20=(1 << 20);
-    private static final int BIT_21=(1 << 21);
-    private static final int BIT_22=(1 << 22);
-    private static final int BIT_23=(1 << 23);
-    private static final int BIT_24=(1 << 24);
-    private static final int BIT_25=(1 << 25);
-    private static final int BIT_26=(1 << 26);
-    private static final int BIT_27=(1 << 27);
-    private static final int BIT_28=(1 << 28);
-    private static final int BIT_29=(1 << 29);
-    private static final int BIT_30=(1 << 30);
-    private static final int BIT_31=(1 << 31);
+    private static final int BIT_0  =  1;
+    private static final int BIT_1  = (1 << 1);
+    private static final int BIT_2  = (1 << 2);
+    private static final int BIT_3  = (1 << 3);
+    private static final int BIT_4  = (1 << 4);
+    private static final int BIT_5  = (1 << 5);
+    private static final int BIT_6  = (1 << 6);
+    private static final int BIT_7  = (1 << 7);
+    private static final int BIT_8  = (1 << 8);
+    private static final int BIT_9  = (1 << 9);
+    private static final int BIT_10 = (1 << 10);
+    private static final int BIT_11 = (1 << 11);
+    private static final int BIT_12 = (1 << 12);
+    private static final int BIT_13 = (1 << 13);
+    private static final int BIT_14 = (1 << 14);
+    private static final int BIT_15 = (1 << 15);
+    private static final int BIT_16 = (1 << 16);
+    private static final int BIT_17 = (1 << 17);
+    private static final int BIT_18 = (1 << 18);
+    private static final int BIT_19 = (1 << 19);
+    private static final int BIT_20 = (1 << 20);
+    private static final int BIT_21 = (1 << 21);
+    private static final int BIT_22 = (1 << 22);
+    private static final int BIT_23 = (1 << 23);
+    private static final int BIT_24 = (1 << 24);
+    private static final int BIT_25 = (1 << 25);
+    private static final int BIT_26 = (1 << 26);
+    private static final int BIT_27 = (1 << 27);
+    private static final int BIT_28 = (1 << 28);
+    private static final int BIT_29 = (1 << 29);
+    private static final int BIT_30 = (1 << 30);
+    private static final int BIT_31 = (1 << 31);
     
     public static final int bit_0() {return BIT_0;}
     public static final int bit_1() {return BIT_1;}
@@ -76,7 +76,7 @@ class BitPosition {
     public static final int bit_31() {return BIT_31;}
 
     /* Zur Ausgabe als Bitstring  
-       Version f�r int
+       Version for int
     */
     
     public void printBinary(String s, int i) {
@@ -112,9 +112,8 @@ class BitPosition {
   }
 
 
-    
     /* Zur Ausgabe als Bitstring  
-       Version f�r short
+       Version for short
     */
     
     public void printBinary(String s, short i) {
@@ -182,10 +181,7 @@ class BitPosition {
     public boolean isSet(int arg, int welches) throws BitNotExistingException {
 	if (welches >= 32)
 	    throw new BitNotExistingException();
-	if (((1 << welches) & arg) != 0)
-	    return true;
-	else 
-	    return false;
+        return ((1 << welches) & arg) != 0;
     }
 
     /* Zum Setzen eines einzelnen Bits
@@ -218,10 +214,7 @@ class BitPosition {
     public boolean isSet(short arg, int welches) throws BitNotExistingException {
 	if (welches >= 16)
 	    throw new BitNotExistingException();
-	if ( ((1 << welches) & arg) != 0)
-	    return true;
-	else 
-	    return false;
+        return ((1 << welches) & arg) != 0;
     }
     
     /* Zum Setzen eines einzelnen Bits
@@ -273,11 +266,10 @@ class BitPosition {
      */
     
     public String byte_to_unsigned(byte wert) {
-	if (((byte)(1<<7) & wert) == 0) {
+	if (((byte)(1 << 7) & wert) == 0) {
 	    return "" + wert;
 	}
 	int hilf = 128 + ((byte)0x7F & wert);
 	return "" + hilf;
-    }
-       
+    } 
 }

@@ -48,6 +48,4 @@ abstract class Operation {
     public void waitForCompletion() { 
 	throw new Error("Waiting for completion of this operation is not possible.");
     } // override this method in subclasses
-
 }
-
