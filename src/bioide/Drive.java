@@ -22,10 +22,10 @@ public class Drive implements BlockIO, Service {
     public  String      name;	    // drive name (linux), e.g. "hda"
     public  Controller  controller; // controller for this drive
 
-    private byte        select_unit = 4; // Unit-Bit in select register (0: Master, 1: Slave)
-    private byte        select_lba  = 6; // LBA-Bit in select register (0: no LBA, 1: LBA)
+    private final byte        select_unit = 4; // Unit-Bit in select register (0: Master, 1: Slave)
+    private final byte        select_lba  = 6; // LBA-Bit in select register (0: no LBA, 1: LBA)
     private PartitionTable entries;
-    private IDEDeviceImpl idedevice;
+    private final IDEDeviceImpl idedevice;
 
     public Drive(IDEDeviceImpl ide, Controller controller, int unit) {
 	this.controller = controller;
@@ -112,11 +112,10 @@ public class Drive implements BlockIO, Service {
 	    operation = new EnablePIOOperation(controller, this);
 	    operation.startOperation();
 	}
-
     }
 
     public PartitionEntry[] getPartitions() {
-	if (entries==null) {
+	if (entries == null) {
 	    entries = new PartitionTable(this);
 	    entries.dump();
 	}
@@ -192,11 +191,13 @@ public class Drive implements BlockIO, Service {
 	}
 
 	Debug.out.println("DRIVE OK: " + name + "; cyl=" + cyl + ", head=" + head + ", sect=" + sect);
+        //entries = new PartitionTable(this);
     }
 
     /**
      * Read data from disk.
      */
+    @Override
     public void readSectors(int startSector, int numberOfSectors, Memory buf, boolean synchronous) { 
 	Operation operation;
         if( Env.verboseDR ) Debug.out.println("readSectors - start");
@@ -214,6 +215,7 @@ public class Drive implements BlockIO, Service {
     /** 
      * Write data to disk.
      */
+    @Override
     public void writeSectors(int startSector, int numberOfSectors, Memory buf, boolean synchronous ) { 
 	Operation operation;
         if( Env.verboseDR )  Debug.out.println("writeSectors - start");
@@ -228,8 +230,11 @@ public class Drive implements BlockIO, Service {
 	if (synchronous) operation.waitForCompletion();
     }
 
+    @Override
     public int getCapacity() {
 	return capacity;
     }
+    
+    @Override
     public int getSectorSize() { return 512; }
 }

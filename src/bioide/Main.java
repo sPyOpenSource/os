@@ -20,12 +20,12 @@ public class Main {
 	} else {
 	    int partition = Integer.parseInt(args[3]);
 	    Debug.out.println("*2");
-	    PartitionEntry[] partitions = drives[drive].getPartitions();
+	    //PartitionEntry[] partitions = drives[drive].getPartitions();
 	    Debug.out.println("*3");
 	    
-	    bio = partitions[partition];
+	    //bio = partitions[partition];
 	}	
-	naming.registerPortal(bio, bioName);
+	//naming.registerPortal(bio, bioName);
 	Debug.out.println("Block I/O device registered as " + bioName);	
     }
 }

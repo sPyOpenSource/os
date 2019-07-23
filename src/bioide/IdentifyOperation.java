@@ -24,10 +24,12 @@ class IdentifyOperation extends Operation {
 	// try to select the drive
 	controller.setLDHReg(drive.select);
 	Env.sleepManager.mdelay(50);
-	if (controller.getLDHReg() != drive.select && !drive.present) {
+        //Debug.out.println(controller.getLDHReg());
+	if (controller.getLDHReg() != (0xff & drive.select) && !drive.present) {
 	    // select drive 0 and return
 	    controller.setLDHReg(Controller.LDH_DEFAULT);
 	    Env.sleepManager.mdelay(50);
+            //Debug.out.println(drive.select);
 	    throw new IDEException("Drive not present");
 	}
 

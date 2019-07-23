@@ -11,7 +11,7 @@ import java.util.Vector;
  */
 class PartitionTable {
     private PartitionEntry[] partitions;
-    private Drive drive;
+    private final Drive drive;
 
     private static final byte  UNUSED_PARTITION         = 0x0;
     private static final byte  DOS_EXTENDED_PARTITION   = 0x05;
@@ -76,6 +76,7 @@ class PartitionTable {
 		found++;
 	    }
 	}
+        
 	for (int i = 0; i < 4; i++) {
 	    PartitionData part_data = new PartitionData(buffer, 446+i*16);
 	    if (Env.verbosePT) Debug.out.println("entry " + i + ": os = " + osName(part_data.os_indicator()) + ", length = " + part_data.length_in_sectors());
@@ -174,11 +175,9 @@ class PartitionTable {
     
     /** Ermittelt, ob es sich um eine erweiterte Partition handelt. */
     private static boolean isExtended(byte os_indicator) {
-	if ((os_indicator == DOS_EXTENDED_PARTITION) ||
-	    (os_indicator == LINUX_EXTENDED_PARTITION) ||
-	    (os_indicator == WIN95_EXTENDED_PARTITION))
-	    return true;
-	return false;
+	return (os_indicator == DOS_EXTENDED_PARTITION) ||
+                (os_indicator == LINUX_EXTENDED_PARTITION) ||
+                (os_indicator == WIN95_EXTENDED_PARTITION);
     }
     /** Ermittelt, ob es sich um eine erweiterte Partition handelt. */
     public static String osName(byte os_indicator) {

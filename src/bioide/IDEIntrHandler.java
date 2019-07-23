@@ -36,6 +36,7 @@ class IDEIntrHandler implements FirstLevelIrqHandler, Service {
     private void installIRQThread() {
 	Naming naming = InitialNaming.getInitialNaming();
 	Env.cpuManager.start(Env.cpuManager.createCPUState(new ThreadEntry() {
+            @Override
 	    public void run() {
 	      Env.cpuManager.setThreadName("IDE-2nd-IRQ "+controller.getName());
 	      irqCtx = Env.cpuManager.getCPUState();

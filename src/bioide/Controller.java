@@ -21,7 +21,7 @@ class Controller {
     public  int       dma_base;
 
     /** controller irq */
-    private int       irq_nr;
+    private final int       irq_nr;
 
     /** interface name "ide0" */
     public  String    name;
@@ -33,10 +33,10 @@ class Controller {
     private  boolean   present;
 
     /** base I/O port address */
-    private int       io_base;
+    private final int       io_base;
 
     /** normally io_base + 0x206 */
-    private int       ctl_port;
+    private final int       ctl_port;
 
     /** current command (queued) */
     private Operation operation;
@@ -44,7 +44,7 @@ class Controller {
     IDEIntrHandler       handlerObj;
     FirstLevelIrqHandler handler;
 
-    private WaitTimer waittimer;
+    private final WaitTimer waittimer;
 
     private static final int ERROR_MAX          = 8;      // max. number read/write errors
     private static final int ERROR_RESET        = 3;      // reset controller after 4. error
@@ -425,6 +425,7 @@ class WaitTimer implements TimerHandler {
 	this.controller = controller;
     }
 
+    @Override
     public void timer(Object arg) {	
 	Debug.out.println("WaitTimer");
     }
