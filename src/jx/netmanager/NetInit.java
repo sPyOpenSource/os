@@ -191,16 +191,15 @@ public class NetInit implements jx.net.NetInit, Service {
     }
 
 
-    public static void init(final Naming naming, String[] args, TimerManager timerManager, PCIAccess bus) {
+    public static void init(final Naming naming, String[] args) {
         final MemoryManager memMgr = (MemoryManager) naming.lookup("MemoryManager");
         
-	//final TimerManager timerManager = (TimerManager)LookupHelper.waitUntilPortalAvailable(naming, "TimerManager");
+	final TimerManager timerManager = (TimerManager)LookupHelper.waitUntilPortalAvailable(naming, "TimerManager");
 	//final SleepManager sleepManager = new SleepManagerImpl();
 	
 	final CPUManager cpuManager = (CPUManager) naming.lookup("CPUManager");
-	//PCIAccess bus = (PCIAccess)LookupHelper.waitUntilPortalAvailable(naming, "PCIAccess");
+	PCIAccess bus = (PCIAccess)LookupHelper.waitUntilPortalAvailable(naming, "PCIAccess");
 	bus.dumpDevices();
-
 	Debug.out.println("scanning PCIBus for network devices...");
 
 	LanceFinder[] finder = { 
@@ -208,14 +207,13 @@ public class NetInit implements jx.net.NetInit, Service {
 	    //new ComInit(timerManager, /*sleepManager*/null, null),
 	    new LanceFinder(),
 	};
-        //memMgr.alloc(12508);
+        
 	NetworkDevice[] nics = null;
         for (LanceFinder finder1 : finder) {
-            nics = (NetworkDevice[]) finder1.find(new String[] {}, naming, bus, memMgr);
+            nics = (NetworkDevice[]) finder1.find(new String[] {}, naming, memMgr);
             if (nics != null && nics.length != 0) break;
         }
 	NetworkDevice nic = nics[0];
-//memMgr.alloc(12508);
 	nic.open(null);
 
 	nic.setReceiveMode(NetworkDevice.RECEIVE_MODE_INDIVIDUAL);

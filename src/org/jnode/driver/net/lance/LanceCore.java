@@ -148,8 +148,8 @@ public class LanceCore implements FirstLevelIrqHandler, LanceConstants {
 
         // Create rx & tx descriptor rings, initdata and databuffers
         this.bufferManager =
-                new BufferManager(RX_DESCRIPTOR_LENGTH, TX_DESCRIPTOR_LENGTH,
-                        CSR15_DRX | CSR15_DTX, hwAddress, 0, rm);
+                new BufferManager(rm, RX_DESCRIPTOR_LENGTH, TX_DESCRIPTOR_LENGTH,
+                        CSR15_DRX | CSR15_DTX, hwAddress, 0);
 
         // Enable device to become a bus master on the PCI bus.
         //config.setCommand(config.getCommand() | PCIConstants.PCI_COMMAND_MASTER);

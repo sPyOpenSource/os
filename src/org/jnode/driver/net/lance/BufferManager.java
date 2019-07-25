@@ -25,6 +25,7 @@ import jx.zero.Debug;
 import jx.zero.Memory;
 import jx.zero.MemoryManager;
 import metaxa.os.devices.net.AdapterLimits;
+import metaxa.os.devices.net.EthernetAdress;
 //import org.jnode.net.ethernet.EthernetAddress;
 //import org.jnode.system.resource.ResourceNotFreeException;
 //import org.jnode.system.resource.ResourceOwner;
@@ -47,9 +48,8 @@ public class BufferManager {
 
     private final int size;
 
-    public BufferManager(int rxRingLength, int txRingLength, int mode,
-            metaxa.os.devices.net.EthernetAdress physicalAddr, long logicalAddr, MemoryManager rm) {
-
+    public BufferManager(MemoryManager rm, int rxRingLength, int txRingLength, int mode,
+                         EthernetAdress physicalAddr, long logicalAddr) {
         // Compute the required size for the memory resource
         size = InitializationBlock32Bit.INIT_BLOCK_SIZE +
                 (rxRingLength + txRingLength) * (Descriptor.MESSAGE_DESCRIPTOR_SIZE + DATA_BUFFER_SIZE);
@@ -58,30 +58,23 @@ public class BufferManager {
         // Get the memory
         //try {
         this.rm = rm;
-        /*mem = rm.alloc(size);//rm.claimMemoryResource(owner, null, size, ResourceManager.MEMMODE_NORMAL);
+        mem = rm.alloc(size);//rm.claimMemoryResource(owner, null, size, ResourceManager.MEMMODE_NORMAL);
         //} catch (ResourceNotFreeException e) {
           //  System.out.println("buffer memory resouce not free exception");
         //}
-Debug.out.println("rxring");
         // define the offsets into the memory resource for the entities
         final int rxRingOffset = InitializationBlock32Bit.INIT_BLOCK_SIZE;
-
         final int txRingOffset = rxRingOffset + (rxRingLength * Descriptor.MESSAGE_DESCRIPTOR_SIZE);
-
         final int rxDataBufferOffset =
                 txRingOffset + (txRingLength * Descriptor.MESSAGE_DESCRIPTOR_SIZE);
-
         final int txDataBufferOffset = rxDataBufferOffset + (rxRingLength * DATA_BUFFER_SIZE);
-
         // Create and initialize the receive ring
         rxRing = new RxDescriptorRing(mem, rxRingOffset, rxRingLength, rxDataBufferOffset);
-
         // Create and initialize the transmit ring
         txRing = new TxDescriptorRing(mem, txRingOffset, txRingLength, txDataBufferOffset);
-
         // Create and initialize the initialization block
         initBlock = new InitializationBlock32Bit(
-                mem, 0, (short) mode, physicalAddr, logicalAddr, rxRing, txRing);*/
+                mem, 0, (short) mode, physicalAddr, rxRing, 1, txRing, logicalAddr);
     }
 
     /**

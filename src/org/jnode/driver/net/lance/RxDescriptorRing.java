@@ -21,6 +21,7 @@
 package org.jnode.driver.net.lance;
 
 //import org.apache.log4j.Logger;
+import jx.zero.Debug;
 import jx.zero.Memory;
 import jx.zero.MemoryManager;
 
@@ -81,6 +82,7 @@ public class RxDescriptorRing extends DescriptorRing {
         } else if ((status & RxDescriptor.STATUS_STP) != 0 &&
                 (status & RxDescriptor.STATUS_ENP) != 0) {
             byte[] buf = des.getDataBuffer();
+            Debug.out.println(buf.length);
             Memory skbuf = memMgr.alloc(buf.length);
             skbuf.copyFromByteArray(buf, 0, 0, buf.length);
             des.clearStatus();

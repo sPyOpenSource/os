@@ -1,3 +1,6 @@
+v1.9 XW 25-07-2019
+changed: to microkernel
+
 v1.8 XW 23-07-2019
 added: lance driver (issue #13)
 added: ide controller

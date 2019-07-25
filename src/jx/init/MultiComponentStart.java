@@ -35,7 +35,7 @@ public class MultiComponentStart {
 	//System.out = new java.io.PrintStream(out);
 	//System.err = System.out;
         Debug.out.println("init");
-        PCIAccess bus = (PCIAccess) PCIGod.main(new String[]{}, naming);
+        /*PCIAccess bus = (PCIAccess) PCIGod.main(new String[]{}, naming);
         
         Debug.out.println("lookup PCI Access Point...");
 	//PCIAccess bus = (PCIAccess)LookupHelper.waitUntilPortalAvailable(naming, "PCIAccess");
@@ -45,8 +45,8 @@ public class MultiComponentStart {
             timerManager = (TimerManager) StartTimer.main(new String[]{"TimerManager"}, naming);
         } catch (Exception ex) {
             //Logger.getLogger(StartNetDevice.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        NetInit.init(naming, new String[]{"NIC", "eth0", "8:0:6:28:63:40"}, timerManager, bus);
+        }*/
+        NetInit.init(naming, new String[]{"NIC", "eth0", "8:0:6:28:63:40"});
         //NetInit.init(new String[]{"NIC", "eth0", "8:0:6:28:63:40"});
         bioide.Main.main(new String[]{"TimerManager", "BIOFS_RW", "0", "1"});
         //StartNetDevice.main(new String[]{"NIC", "eth0", "8:0:6:28:63:40"});

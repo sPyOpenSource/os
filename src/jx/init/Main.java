@@ -115,9 +115,17 @@ public class Main {
 		// multi component domain
 		String initLib = "init2.jll";
 		String startClass = "jx/init/MultiComponentStart";
-                
-                //NetInit.init(initNaming, new String[]{"NIC", "eth0", "8:0:6:28:63:40"});
-		DomainStarter.createDomain(domainName, initLib, startClass, gcinfo0, gcinfo1, gcinfo2, gcinfo3, gcinfo4, codeSize, initNaming, garbageCollector, new Object[]{componentSpec});
+                PCIAccess bus = (PCIAccess) PCIGod.main(new String[]{}, initNaming);
+
+                TimerManager timerManager = null;
+                try {
+                    timerManager = (TimerManager) StartTimer.main(new String[]{"TimerManager"}, initNaming);
+                } catch (Exception ex) {
+                    //Logger.getLogger(StartNetDevice.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                NetInit.init(initNaming, new String[]{"NIC", "eth0", "8:0:6:28:63:40"});
+                bioide.Main.main(new String[]{"TimerManager", "BIOFS_RW", "0", "1"});
+		//DomainStarter.createDomain(domainName, initLib, startClass, gcinfo0, gcinfo1, gcinfo2, gcinfo3, gcinfo4, codeSize, initNaming, garbageCollector, new Object[]{componentSpec});
 		//}
 	}
 	Debug.out.println("Init finished.");
