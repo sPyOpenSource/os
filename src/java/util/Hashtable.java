@@ -81,6 +81,7 @@ public class Hashtable extends Dictionary implements Cloneable
 
     // Public Methods
 
+    @Override
     public String toString()
     {
         StringBuffer buff = new StringBuffer("{");
@@ -178,7 +179,7 @@ public class Hashtable extends Dictionary implements Cloneable
     @Override
     public Object put(Object key, Object value)
     {
-        if (size*100 > capacity * load)
+        if (size * 100 > capacity * load)
             rehash();
 
         if ((key == null) || (value == null))
@@ -219,7 +220,7 @@ public class Hashtable extends Dictionary implements Cloneable
                 n = (hash + i) & mask;
 
                 if ((keys[n] == null) ||
-                    (! keys[n].equals(key)))
+                    (!keys[n].equals(key)))
                         continue;
 
                 Object obj = values[n];

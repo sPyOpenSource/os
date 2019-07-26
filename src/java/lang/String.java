@@ -251,9 +251,9 @@ public final class String implements CharSequence
       if (strOffset < 0 || strOffset + len > str.length())
 	return false;
       if (ignoreCase) {
-	for (int i=0;i<len;i++) {
-	  char c1 = str.value[strOffset+i];
-	  char c2 = value[offset+i];
+	for (int i = 0; i < len; i++) {
+	  char c1 = str.value[strOffset + i];
+	  char c2 = value[offset + i];
 	  if (c1 == c2)
 	    continue;
 	  if (Character.toUpperCase(c1) == Character.toUpperCase(c2))
@@ -273,8 +273,8 @@ public final class String implements CharSequence
 	return false;
       if (strOffset < 0 || strOffset + len > str.length())
 	return false;
-      for (int i=0;i<len;i++) {
-	if (value[offset+i]!=str.value[strOffset+i]) {
+      for (int i = 0; i < len; i++) {
+	if (value[offset + i] != str.value[strOffset + i]) {
 	  return false;
 	}
       }

@@ -344,7 +344,7 @@ class Controller {
 	int addr, count = 0, size = addrcount, bcount, off = 0;
 
 	addr = buffer.getStartAddress();
-	if (Env.verboseCTRL) Debug.out.println("DMA startaddr "+Integer.toHexString(addr));
+	if (Env.verboseCTRL) Debug.out.println("DMA startaddr " + Integer.toHexString(addr));
 
 	while (size > 0) {
 	    if (++count >= PRD_ENTRIES) {

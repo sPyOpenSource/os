@@ -478,14 +478,14 @@ public final class Character extends Object
 
 	public static char forDigit(int digit, int radix)
 	{
-		if (radix < MIN_RADIX || radix > MAX_RADIX)
-			return MIN_VALUE;
-		if (digit < 0 || digit >= radix)
-			return MIN_VALUE;
-		if (digit < 10)
-			return (char)('0' + digit);
-		else
-			return (char)('a' + digit - 10);
+            if (radix < MIN_RADIX || radix > MAX_RADIX)
+                return MIN_VALUE;
+            if (digit < 0 || digit >= radix)
+                return MIN_VALUE;
+            if (digit < 10)
+                return (char)('0' + digit);
+            else
+                return (char)('a' + digit - 10);
 	}
 	
     

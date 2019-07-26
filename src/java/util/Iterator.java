@@ -34,6 +34,7 @@ package java.util;
  * optional remove method. Iterator is intended as a replacement for the
  * Enumeration interface of previous versions of Java, which did not have the
  * remove method and had less conveniently named methods.
+ * @param <E>
  */
 public interface Iterator<E>
 {

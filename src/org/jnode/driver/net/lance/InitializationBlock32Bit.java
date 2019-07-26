@@ -21,7 +21,7 @@
 package org.jnode.driver.net.lance;
 
 //import org.apache.log4j.Logger;
-//import org.jnode.net.ethernet.EthernetAddress;
+import jx.zero.Debug;
 import jx.zero.Memory;
 import metaxa.os.devices.net.EthernetAdress;
 //import org.jnode.util.NumberUtils;
@@ -36,16 +36,18 @@ public class InitializationBlock32Bit {
     private int offset;
 
     public InitializationBlock32Bit(Memory mem, int offset, short mode,
-            EthernetAdress physicalAddr, long logicalAddr, RxDescriptorRing rxRing,
-            TxDescriptorRing txRing) {
+            EthernetAdress physicalAddr, RxDescriptorRing rxRing, int i, 
+            TxDescriptorRing txRing, long logicalAddr1) {
 
         this.mem = mem;
         this.offset = offset;
-
+        Debug.out.println(i);
+int logicalAddr = 0;
         // Populate the initial data structure
         mem.set16(offset + 0x00, mode);
         mem.set8(offset + 0x02, getEncodedRingLength(rxRing.getLength()));
         mem.set8(offset + 0x03, getEncodedRingLength(txRing.getLength()));
+        Debug.out.println("phy");
         mem.set8(offset + 0x04, physicalAddr.get(0));
         mem.set8(offset + 0x05, physicalAddr.get(1));
         mem.set8(offset + 0x06, physicalAddr.get(2));
