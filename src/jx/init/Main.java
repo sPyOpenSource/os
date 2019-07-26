@@ -1,6 +1,6 @@
 package jx.init;
 
-import AI.AI;
+//import AI.AI;
 import jx.zero.*;
 import jx.zero.debug.*;
 import jx.bootrc.*;
@@ -25,8 +25,8 @@ public class Main {
        
 	main(new String[] {"boot.rc"});
 
-        AI instance = new AI();
-        instance.start();
+        //AI instance = new AI();
+        //instance.start();
      }
      
      public static void main(String args[]) throws Exception {

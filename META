@@ -10,7 +10,10 @@ SUBDIRS += jx/collections jx/devices jx/buffer/multithread jx/net/protocol/ether
 SUBDIRS += jx/zero/memory jx/zero/timing jx/timer jx/devices/pci jx/devices/net/emulation jx/devices/net 
 SUBDIRS += java/io java/lang java/util java/lang/reflect java/security java/security/spec java/security/cert java/net java/util/function java/lang/invoke java/util/stream java/lang/ref
 SUBDIRS += metaxa/os/devices/net timerpc javafs buffercache org/jnode/driver/net/lance
-SUBDIRS += AI AI/Models AI/util bioram bioide
-LIBNAME = init2
-NUMBERENV = int
+SUBDIRS += bioram bioide
+
+LIBNAME = jdk0
+NUMBERENV = float
+MAPPING0 = java/lang/String.value:value
+MAPPING1 = java/lang/String.value:value
 MAINTAINER = golm@cs.fau.de
