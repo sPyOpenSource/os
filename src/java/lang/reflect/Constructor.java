@@ -1,6 +1,8 @@
 package java.lang.reflect;
+
 import jx.zero.VMClass;
 import jx.zero.VMMethod;
+
 public class Constructor<T> {
     VMMethod method;
     VMClass vmclass;
