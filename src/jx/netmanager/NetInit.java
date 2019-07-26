@@ -153,16 +153,16 @@ public class NetInit implements jx.net.NetInit, Service {
     // TODO: make this independent from Ethernet
     @Override
     public Memory getUDPBuffer() {
-	return getUDPBuffer(1514-(14+20+8));
+	return getUDPBuffer(1514 - (14 + 20 + 8));
     }
     
     @Override
     public Memory getUDPBuffer(int size) {
 	Memory buf = memMgr.alloc(1514);// ETHER FRAME SIZE   // 14+20+8 + size);
 	Memory[] arr = new Memory[3];
-	buf.split3(14+20+8, size, arr); /* parts size: 14+20+8, size, rest */
+	buf.split3(14 + 20 + 8, size, arr); /* parts size: 14+20+8, size, rest */
 	Memory[] arr1 = new Memory[3];
-	arr[0].split3(14,20, arr1); /* parts size: 14, 20, 8 */
+	arr[0].split3(14, 20, arr1); /* parts size: 14, 20, 8 */
 	//cpuManager.dump("UDPBUFFER: ", arr[1]);
 	return arr[1];
     }
@@ -170,7 +170,7 @@ public class NetInit implements jx.net.NetInit, Service {
     // TODO: make this independent from Ethernet
     @Override
     public Memory getIPBuffer() {
-	return getIPBuffer(1514-(14+20));
+	return getIPBuffer(1514 - (14 + 20));
     }
     
     @Override

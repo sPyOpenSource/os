@@ -26,6 +26,7 @@ executable file might be covered by the GNU General Public License. */
 
 
 package java.security;
+
 import java.io.Serializable;
 import java.util.Vector;
 
@@ -100,6 +101,7 @@ public abstract class Identity implements Principal, Serializable
 
      @return the name
   */
+  @Override
   public final String getName()
   {
     return name;
@@ -239,7 +241,7 @@ public abstract class Identity implements Principal, Serializable
   /**
      Returns an array of certificates for this identity.
 
-     @returns array of certificates
+     @return array of certificates
   */
   public Certificate[] certificates()
   {
@@ -255,15 +257,16 @@ public abstract class Identity implements Principal, Serializable
      object. If first checks if they are the same object, then 
      if the name and scope matches and returns true if successful.
      If these tests fail, identityEquals is called.
-
+     * @param identity
      @return true if they are equal, false otherwise
   */
+  @Override
   public final boolean equals(Object identity)
   {
     if( identity instanceof Identity ) {
       if( identity == this ) return true;
 
-      if( ( ((Identity)identity).getName() == this.name ) &&
+      if( ( ((Identity)identity).getName() == null ? this.name == null : ((Identity)identity).getName().equals(this.name) ) &&
 	  ( ((Identity)identity).getScope() == this.scope ) )
 	return true;
 
@@ -276,12 +279,12 @@ public abstract class Identity implements Principal, Serializable
      Checks for equality between this Identity and the specified 
      object. A subclass should override this method. The default 
      behavior is to return true if the public key and names match.
-
+     * @param identity
      @return true if they are equal, false otherwise
   */
   protected boolean identityEquals(Identity identity)
   {
-    return (( identity.getName() == this.name ) &&
+    return (( identity.getName() == null ? this.name == null : identity.getName().equals(this.name) ) &&
 	    ( identity.getPublicKey() == this.publicKey) );
   }
 
@@ -296,6 +299,7 @@ public abstract class Identity implements Principal, Serializable
      @throws SecurityException - if the security manager denies 
      access to "printIdentity"
   */
+  @Override
   public String toString()
   {
     SecurityManager sm = System.getSecurityManager();
@@ -315,7 +319,7 @@ public abstract class Identity implements Principal, Serializable
      @param detailed indicates whether or not to provide detailed 
      information
 
-     @returns a string representing this Identity.
+     @return a string representing this Identity.
 
      @throws SecurityException - if the security manager denies 
      access to "printIdentity"
@@ -340,6 +344,7 @@ public abstract class Identity implements Principal, Serializable
 
      @returns the hashcode
   */
+  @Override
   public int hashCode()
   {
     int ret = name.hashCode();

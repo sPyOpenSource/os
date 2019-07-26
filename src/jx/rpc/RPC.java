@@ -85,6 +85,9 @@ public class RPC implements Runnable,ThreadEntry {
   /** 
    * Create a buffer that represents the RPC DATA contained in buf.
    * Skips headers!
+     * @param buf
+     * @param co
+     * @return 
    */
     public RPCBuffer initFrom(Memory buf, RPCContinuation co) {
       Debug.out.println("rpc initFrom");
@@ -104,7 +107,6 @@ public class RPC implements Runnable,ThreadEntry {
 	    int xid = callOnly(rpcHost, dstPort, prog,version, proc, buf, a, c);
 	    return waitForReply(xid);
 	} catch (Exception e) {
-	    e.printStackTrace();
 	    throw new RPCException(e.toString());
 	}
     }
@@ -179,7 +181,7 @@ public class RPC implements Runnable,ThreadEntry {
     }
 
 
-    
+  @Override
     public void run() {
       cpuManager.setThreadName("RPC-Receiver");
 	try {
@@ -200,7 +202,7 @@ public class RPC implements Runnable,ThreadEntry {
 		RPCMessage replyMessage = RPCFormatterRPCMessage.read(rpcbuf);
 		if (! ( replyMessage instanceof RPCMsgSuccess)) {
 		    Debug.out.println("RPC: ignore:" + replyMessage);
-		    continue waiting;
+		    continue;
 		}
 		RPCMsgSuccess reply = (RPCMsgSuccess)replyMessage;
 		Integer xid = new Integer(reply.xid);
@@ -222,14 +224,14 @@ public class RPC implements Runnable,ThreadEntry {
 		    
 		    b.addElement(rpcbuf);
 		}
-		if (w==null)
-		    continue waiting;
+		if (w == null)
+		    continue;
 		if (debug) {
 		    //Debug.out.println("RPC: received reply for xid="+xid);
 		    //rpcbuf.xdump();
 		}
 		
-		if (w.buf==null) {
+		if (w.buf == null) {
 		    if (debug) Debug.out.println("new buffer");
 		    w.buf = net.getUDPBuffer(rpcbuf.buf.size());
 		}
@@ -241,7 +243,6 @@ public class RPC implements Runnable,ThreadEntry {
 		w.unblock();
 	    }
 	} catch(Exception e) {
-	    e.printStackTrace();
 	    Debug.out.println(e);
 	}
     }

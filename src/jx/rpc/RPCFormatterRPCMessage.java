@@ -1,7 +1,7 @@
 package jx.rpc;
-import jx.rpc.*;
-import jx.zero.debug.Dump;
+
 import jx.xdr.Format;
+
 public class RPCFormatterRPCMessage {
      public static void write(RPCBuffer buf, jx.rpc.RPCMessage obj) {
 	 if (obj.msgType == RPCMessage.SWITCH_RPCCall) {

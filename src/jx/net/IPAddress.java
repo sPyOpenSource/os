@@ -28,7 +28,7 @@ public class IPAddress {
     private static int parseIPAddr(String addr) {
 	byte[] ip = new byte[4];
 	int cut0 = 0;
-	for(int i=0; i<3; i++) {
+	for(int i = 0; i < 3; i++) {
 	    int cut = addr.indexOf(".", cut0);
 	    if (cut == -1) {
 		return -1;
@@ -48,8 +48,9 @@ public class IPAddress {
     public String getHostName() { return toString();}// TODO
     //public static IPAddress getLocalHost() { return null; } // TODO
 
+    @Override
     public String toString() {
-	StringBuffer buf = new StringBuffer();
+	StringBuilder buf = new StringBuilder();
 	int a = addr;
 	for(int i=0; i<4; i++) {
 	    buf.append(a&0xff);
@@ -59,6 +60,7 @@ public class IPAddress {
 	return buf.toString();
     }
 
+    @Override
     public boolean equals(Object o) {
 	if (! (o instanceof IPAddress)) return false;
 	return ((IPAddress)o).addr == addr;
