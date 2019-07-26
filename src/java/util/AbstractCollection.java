@@ -1,7 +1,5 @@
 package java.util;
 
-import java.util.function.Consumer;
-
 public abstract class AbstractCollection<E> implements Collection<E> {
     public boolean equals(E a, E b) {throw new Error("");}
     public boolean add(E e) {
@@ -9,47 +7,47 @@ public abstract class AbstractCollection<E> implements Collection<E> {
     }    
     public abstract int size();
     public void clear() {
-        /*Iterator<E> it = iterator();
+        Iterator<E> it = iterator();
         while (it.hasNext()) {
             it.next();
             it.remove();
-        }*/
+        }
     }
     public boolean isEmpty() {
         return size() == 0;
     }
     public boolean addAll(Collection<? extends E> c) {
         boolean modified = false;
-        /*for (E e : c)
+        for (E e : c)
             if (add(e))
-                modified = true;*/
+                modified = true;
         return modified;
     }
     public boolean contains(Object o) {
-        /*Iterator<E> it = iterator();
-        if (o==null) {
+        Iterator<E> it = iterator();
+        if (o == null) {
             while (it.hasNext())
-                if (it.next()==null)
+                if (it.next() == null)
                     return true;
         } else {
             while (it.hasNext())
                 if (o.equals(it.next()))
                     return true;
-        }*/
+        }
         return false;
     }
     public boolean containsAll(Collection<?> c) {
-        /*for (Object e : c)
+        for (Object e : c)
             if (!contains(e))
-                return false;*/
+                return false;
         return true;
     }
     public abstract Iterator<E> iterator();
     public boolean remove(Object o) {
         Iterator<E> it = iterator();
-        if (o==null) {
+        if (o == null) {
             while (it.hasNext()) {
-                if (it.next()==null) {
+                if (it.next() == null) {
                     it.remove();
                     return true;
                 }
@@ -67,13 +65,13 @@ public abstract class AbstractCollection<E> implements Collection<E> {
     public boolean removeAll(Collection<?> c) {
         Objects.requireNonNull(c);
         boolean modified = false;
-        /*Iterator<?> it = iterator();
+        Iterator<?> it = iterator();
         while (it.hasNext()) {
             if (c.contains(it.next())) {
                 it.remove();
                 modified = true;
             }
-        }*/
+        }
         return modified;
     }
     public boolean retainAll(Collection<?> c) {
@@ -81,10 +79,10 @@ public abstract class AbstractCollection<E> implements Collection<E> {
         boolean modified = false;
         Iterator<E> it = iterator();
         while (it.hasNext()) {
-            /*if (!c.contains(it.next())) {
+            if (!c.contains(it.next())) {
                 it.remove();
                 modified = true;
-            }*/
+            }
         }
         return modified;
     }
@@ -99,9 +97,5 @@ public abstract class AbstractCollection<E> implements Collection<E> {
         }
         return it.hasNext() ? finishToArray(r, it) : r;*/
         return null;
-    }
-    public void forEach(Consumer<? super E> action){}
-    public Spliterator<E> spliterator() {
-        return Spliterators.spliteratorUnknownSize(iterator(), 0);
     }
 }
