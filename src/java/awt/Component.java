@@ -1552,7 +1552,7 @@ public abstract class Component implements ImageObserver, MenuContainer,
   /**
    * Removes the specified listener from the component.
    *
-   * @param listener The listener to remove.
+   * @param l The listener to remove.
    */
     public synchronized void removeFocusListener(FocusListener l)
     {

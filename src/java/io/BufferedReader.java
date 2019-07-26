@@ -471,72 +471,72 @@ public class BufferedReader extends Reader
     * This method first discards chars in the buffer, then calls the
     * <code>skip</code> method on the underlying stream to skip the remaining chars.
     *
-    * @param num_chars The requested number of chars to skip
+    * @param count The requested number of chars to skip
     *
     * @return The actual number of chars skipped.
     *
     * @exception IOException If an error occurs
     */
-  /*public long skip(long count) throws IOException
-  {
-    synchronized (lock)
-      {
-	checkStatus();
-	if (count <= 0)
-	  return 0;
-	// Yet again, we need to handle the special case of a readLine
-	// that has a '\r' at the end of the buffer.  In this case, we need
-	// to ignore a '\n' if it is the next char to be read.
-	// This special case is indicated by 'pos > limit' (i.e. avail < 0).
-	// To simplify things, if we're dealing with the special case for
-	// readLine, just read the next char (since the fill method will
-	// skip the '\n' for us).  By doing this, we'll have to back up pos.
-	// That's easier than trying to keep track of whether we've skipped
-	// one element or not.
-	int ch;
-	if (pos > limit)
-	  if ((ch = read()) < 0)
-	    return 0;
-	  else
-	    --pos; 
+    public long skip(long count) throws IOException
+    {
+        synchronized (lock)
+        {
+            checkStatus();
+            if (count <= 0)
+              return 0;
+            // Yet again, we need to handle the special case of a readLine
+            // that has a '\r' at the end of the buffer.  In this case, we need
+            // to ignore a '\n' if it is the next char to be read.
+            // This special case is indicated by 'pos > limit' (i.e. avail < 0).
+            // To simplify things, if we're dealing with the special case for
+            // readLine, just read the next char (since the fill method will
+            // skip the '\n' for us).  By doing this, we'll have to back up pos.
+            // That's easier than trying to keep track of whether we've skipped
+            // one element or not.
+            int ch;
+            if (pos > limit)
+              if ((ch = read()) < 0)
+                return 0;
+              else
+                --pos; 
 
-	int avail = limit - pos;
+            int avail = limit - pos;
 
-	if (count < avail)
-	  {
-	    pos += count;
-	    return count;
-	  }
+            if (count < avail)
+              {
+                pos += count;
+                return count;
+              }
 
-	pos = limit;
-	long todo = count - avail;
-	if (todo > buffer.length)
-	  {
-	    markPos = -1;
-	    //todo -= in.skip(todo);
-	  }
-	else
-	  {
-	    while (todo > 0)
-	      {
-		avail = fill();
-		if (avail <= 0)
-		  break;
-		if (avail > todo)
-		  avail = (int) todo;
-		pos += avail;
-		todo -= avail;
-	      }
-	  }
-	return count - todo;
-      }
-  }*/
-  
-  private void checkStatus() throws IOException
-  {
+            pos = limit;
+            long todo = count - avail;
+            if (todo > buffer.length)
+              {
+                markPos = -1;
+                //todo -= in.skip(todo);
+              }
+            else
+              {
+                while (todo > 0)
+                  {
+                    avail = fill();
+                    if (avail <= 0)
+                      break;
+                    if (avail > todo)
+                      avail = (int) todo;
+                    pos += avail;
+                    todo -= avail;
+                  }
+              }
+            return count - todo;
+        }
+    }
+
+    private void checkStatus() throws IOException
+    {
     if (in == null)
       throw new IOException("Stream closed");
-  }  
+    }  
 
     @Override
     public void close() throws IOException {

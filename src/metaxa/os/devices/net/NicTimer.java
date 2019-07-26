@@ -17,7 +17,7 @@ class NicTimer implements TimerHandler {
 	NicInformation Adapter = ((NicTimerArg)arg).get_NicInfo();
 	D3C905 handle = ((NicTimerArg)arg).get_Handle();
 	
-	/*synchronized (Adapter.lock) {
+	synchronized (Adapter.lock) {
 	    
 	    Adapter.InTimer = true;
 	    
@@ -45,7 +45,7 @@ class NicTimer implements TimerHandler {
 	    timerManager.addMillisTimer(1000, new NicTimer(irq, timerManager), arg);
 	    
 	    Adapter.InTimer = false;
-	}*/
+	}
     }
     
     @Override
