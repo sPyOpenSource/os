@@ -57,6 +57,24 @@ public final class StringBuilder extends AbstractStringBuilder implements java.i
     }
     
     @Override
+    public StringBuilder append(float f) {
+        super.append(f);
+        return this;
+    }
+    
+    @Override
+    public StringBuilder append(double d) {
+        super.append(d);
+        return this;
+    }
+    
+    @Override
+    public StringBuilder append(boolean b) {
+        super.append(b);
+        return this;
+    }
+    
+    @Override
     public StringBuilder append(long lng){
         super.append(lng);
         return this;

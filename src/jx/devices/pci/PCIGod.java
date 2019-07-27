@@ -7,7 +7,6 @@ import java.util.Vector;
 import jx.init.InitNaming;
 import jx.zero.Service;
 import jx.zero.InitialNaming;
-import jx.zero.Portal;
 
 /*
  * This class is *not* a PCIDevice, because it implements only the
@@ -24,7 +23,7 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
     /**
      * @param args******************************************************************/
    
-    public static Portal main(String[] args){
+    public static void main(String[] args){
         Naming naming = InitialNaming.getInitialNaming();
  	//naming = new InitNaming(naming);
 
@@ -40,7 +39,6 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
         // register as DEP
         InitNaming.registerPortal(depHandle, "PCIAccess");
         Debug.out.println("PCIAccess registered");
-        return depHandle;
     }
    
     PCIGod(Naming naming){

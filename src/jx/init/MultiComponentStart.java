@@ -48,7 +48,7 @@ public class MultiComponentStart {
         }*/
         NetInit.init(naming, new String[]{"NIC", "eth0", "8:0:6:28:63:40"});
         //NetInit.init(new String[]{"NIC", "eth0", "8:0:6:28:63:40"});
-        bioide.Main.main(new String[]{"TimerManager", "BIOFS_RW", "0", "1"});
+        //bioide.Main.main(new String[]{"TimerManager", "BIOFS_RW", "0", "1"});
         //StartNetDevice.main(new String[]{"NIC", "eth0", "8:0:6:28:63:40"});
         //StartNetworkProtocols.main(new String[]{"NIC", "TimerManager", "NET"});
 	/*final CPUManager cpuManager = (CPUManager) naming.lookup("CPUManager");

@@ -1,5 +1,7 @@
 v1.11 XW 27-07-2019
 fixed: naming
+added: fileoutputstream.java
+expand: stringbuilder.append()
 
 v1.10 XW 26-07-2019
 improved: code

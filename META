@@ -2,14 +2,13 @@ NEEDLIBS = zero
 #NEEDLIBS += scheduler
 #NEEDLIBS += secmgr_impl
 
-SUBDIRS = gnu/java/math gnu/java/io gnu/java/io/decode gnu/java/io/encode gnu/java/security 
-SUBDIRS += jx/zero/env jx/fs java/security/interfaces jx/net jx/bio jx/rtc jx/net/protocols jx/netmanager jx/net/protocol/udp jx/net/protocol/tcp
-SUBDIRS += jx/buffer/separator jx/fs/buffercache jx/buffer jx/init jx/bootrc jx/zero jx/zero/debug jx/net/devices/lance jx/net/format jx/net/dispatch
-SUBDIRS += jx/collections jx/devices jx/buffer/multithread jx/net/protocol/ether jx/net/protocol/arp jx/net/protocol/ip jx/net/protocol/bootp
-SUBDIRS += jx/zero/memory jx/zero/timing jx/timer jx/devices/pci jx/devices/net/emulation jx/devices/net 
-SUBDIRS += java/io java/lang java/util java/lang/reflect java/security java/security/spec java/security/cert java/net java/util/function java/lang/invoke java/util/stream java/lang/ref
+SUBDIRS = gnu/java/math gnu/java/io gnu/java/security gnu/java/io/decode gnu/java/io/encode 
+SUBDIRS += jx/fs java/security/interfaces jx/net jx/bio jx/rtc jx/netmanager jx/buffer/multithread jx/net/protocol
+SUBDIRS += jx/buffer jx/init jx/bootrc jx/zero jx/net/devices/lance jx/net/format jx/net/dispatch
+SUBDIRS += jx/collections jx/devices jx/timer jx/zero/debug jx/fs/buffercache jx/buffer/separator jx/devices/net jx/devices/pci jx/devices/net/emulation
+SUBDIRS += java/io java/lang java/util java/security java/net java/util/function java/lang/reflect java/security/spec java/security/cert java/lang/invoke java/util/stream
 SUBDIRS += metaxa/os/devices/net timerpc javafs buffercache org/jnode/driver/net/lance
-SUBDIRS += bioram bioide
+SUBDIRS += bioram
 
 LIBNAME = jdk0
 NUMBERENV = float

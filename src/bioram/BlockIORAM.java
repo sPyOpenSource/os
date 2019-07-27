@@ -23,7 +23,7 @@ public class BlockIORAM implements jx.bio.BlockIO, Service {
     public BlockIORAM(int numberKiloBytes) { 
 	capacity = numberKiloBytes;
 	MemoryManager memMgr = (MemoryManager) InitialNaming.getInitialNaming().lookup("MemoryManager");
-	buffer = memMgr.alloc(1024*capacity);
+	buffer = memMgr.alloc(1024 * capacity);
     }
     public BlockIORAM(Memory mem) {
 	capacity = mem.size() >> 10;

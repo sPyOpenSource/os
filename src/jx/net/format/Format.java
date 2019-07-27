@@ -317,5 +317,4 @@ public abstract class Format {
     if (l%4 != 0) o += 4-(l%4); //padding
     return o;
   } 
-  
 }
