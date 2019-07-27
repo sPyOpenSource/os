@@ -1,7 +1,6 @@
 NEEDLIBS = zero
 #NEEDLIBS += scheduler
 #NEEDLIBS += secmgr_impl
-#NEEDLIBS += bootrc
 
 SUBDIRS = gnu/java/math gnu/java/io gnu/java/io/decode gnu/java/io/encode gnu/java/security 
 SUBDIRS += jx/zero/env jx/fs java/security/interfaces jx/net jx/bio jx/rtc jx/net/protocols jx/netmanager jx/net/protocol/udp jx/net/protocol/tcp

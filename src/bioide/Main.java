@@ -4,7 +4,6 @@ import jx.zero.*;
 import jx.bio.*;
 
 public class Main {
-    
     public static void main(String [] args) {
 	Naming naming = InitialNaming.getInitialNaming();
 	String bioName = args[1];

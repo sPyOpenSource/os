@@ -62,9 +62,4 @@ public class VMWareSVGAFinder implements DeviceFinder {
        }
        return null;
    }
-
-    @Override
-    public Device[] find(String[] args, Naming naming) {
-        throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 }

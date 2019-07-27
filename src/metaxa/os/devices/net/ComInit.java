@@ -244,7 +244,6 @@ public class ComInit extends Softlimits implements DeviceFinder {
     // check for busmastering and enable it, read the IRQ-Line and the IO-base
 
     private boolean doBasicConfig(PCIDevice pcidev, PCIAccess pcibus, D3C905 driver) {
-	
 	int IRQLine= -1;
 	int IOBase = -1;
 	int MemBase = -1;
@@ -332,23 +331,22 @@ public class ComInit extends Softlimits implements DeviceFinder {
 	int lowerbits = revision2 & 0x1F;      // encodes the chip revision
 
 	switch (upperbits) {
-
-	case 0:
-	    User.out.println("NIC " + pcidev + " has 40-0502-00x ASIC");
-	     User.out.println("Revision is: " + (0x1C & lowerbits));
-	    break;
-	case 1:
-	    User.out.println("NIC " + pcidev + " has 40-0483-00x ASIC");
-	    User.out.println("Revision is: " + (0x1C & lowerbits));          // just bits [4:2] valid
-	    break;
-	case 3:
-	    User.out.println("NIC " + pcidev + " has 40-0476-001 ASIC");      
-	    User.out.println("Revision is: " + (0x1C & lowerbits));         // just bits [4:2] valid
-	    break;
-	default:
-	    User.out.println("NIC " + pcidev + " uses unknown ASIC ?");
-	    //bits.printBinary("Unknown Asic -> upperbits are: ", upperbits);
-	    break;
+            case 0:
+                User.out.println("NIC " + pcidev + " has 40-0502-00x ASIC");
+                 User.out.println("Revision is: " + (0x1C & lowerbits));
+                break;
+            case 1:
+                User.out.println("NIC " + pcidev + " has 40-0483-00x ASIC");
+                User.out.println("Revision is: " + (0x1C & lowerbits));          // just bits [4:2] valid
+                break;
+            case 3:
+                User.out.println("NIC " + pcidev + " has 40-0476-001 ASIC");      
+                User.out.println("Revision is: " + (0x1C & lowerbits));         // just bits [4:2] valid
+                break;
+            default:
+                User.out.println("NIC " + pcidev + " uses unknown ASIC ?");
+                //bits.printBinary("Unknown Asic -> upperbits are: ", upperbits);
+                break;
 	}
   
 	// now read the cacheLineSize - may be needed later and applies to 3C90xB only
@@ -432,10 +430,5 @@ public class ComInit extends Softlimits implements DeviceFinder {
 	Debug.out.println("setupIOBase: changed I/O-Base from " + addr + " to " + iobase + "(" + base + ")");
 	int a2 = pcidev.readConfig(reg);
 	Debug.out.println("setupIOBase: CHECK REGISTERVALUE: " + a2); 
-    }
-
-    @Override
-    public Device[] find(String[] args, Naming naming) {
-        throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

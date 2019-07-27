@@ -115,11 +115,11 @@ public class Main {
 		// multi component domain
 		String initLib = "init2.jll";
 		String startClass = "jx/init/MultiComponentStart";
-                PCIAccess bus = (PCIAccess) PCIGod.main(new String[]{}, initNaming);
+                PCIAccess bus = (PCIAccess) PCIGod.main(new String[]{});
 
                 TimerManager timerManager = null;
                 try {
-                    timerManager = (TimerManager) StartTimer.main(new String[]{"TimerManager"}, initNaming);
+                    timerManager = (TimerManager) StartTimer.main(new String[]{"TimerManager"});
                 } catch (Exception ex) {
                     //Logger.getLogger(StartNetDevice.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -161,7 +161,8 @@ public class Main {
 
 	try {
 	    String namingClass = globalSpec.getString("InstallNaming");
-	    initNaming = new InitNaming(initNaming);
+	    //initNaming = 
+                    new InitNaming(initNaming);
 	} catch(NameNotFoundException e) {
 	    Debug.out.println("!!ATTENTION!!                                      !!ATTENTION!!");
 	    Debug.out.println("!!ATTENTION!!  DomainZero's naming service is used !!ATTENTION!!");

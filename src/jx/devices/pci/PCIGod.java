@@ -24,8 +24,8 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
     /**
      * @param args******************************************************************/
    
-    public static Portal main(String[] args, Naming naming){
-        //Naming naming = InitialNaming.getInitialNaming();
+    public static Portal main(String[] args){
+        Naming naming = InitialNaming.getInitialNaming();
  	//naming = new InitNaming(naming);
 
         Debug.out.println("Domain PCI speaking.");
@@ -38,7 +38,7 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
         final PCIAccess depHandle = instance;
       
         // register as DEP
-        naming.registerPortal(depHandle, "PCIAccess");
+        InitNaming.registerPortal(depHandle, "PCIAccess");
         Debug.out.println("PCIAccess registered");
         return depHandle;
     }

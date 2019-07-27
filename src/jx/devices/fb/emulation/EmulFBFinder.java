@@ -22,11 +22,6 @@ public class EmulFBFinder implements DeviceFinder {
 
 	return new Device[] { new FBImpl(fb) };
     }
-
-    @Override
-    public Device[] find(String[] args, Naming naming) {
-        throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 }
 
 

@@ -194,10 +194,10 @@ public class NetInit implements jx.net.NetInit, Service {
     public static void init(final Naming naming, String[] args) {
         final MemoryManager memMgr = (MemoryManager) naming.lookup("MemoryManager");
         
-	final TimerManager timerManager = (TimerManager)LookupHelper.waitUntilPortalAvailable(naming, "TimerManager");
+	//final TimerManager timerManager = (TimerManager)LookupHelper.waitUntilPortalAvailable(naming, "TimerManager");
 	//final SleepManager sleepManager = new SleepManagerImpl();
 	
-	final CPUManager cpuManager = (CPUManager) naming.lookup("CPUManager");
+	//final CPUManager cpuManager = (CPUManager) naming.lookup("CPUManager");
 	PCIAccess bus = (PCIAccess)LookupHelper.waitUntilPortalAvailable(naming, "PCIAccess");
 	bus.dumpDevices();
 	Debug.out.println("scanning PCIBus for network devices...");
@@ -210,7 +210,7 @@ public class NetInit implements jx.net.NetInit, Service {
         
 	NetworkDevice[] nics = null;
         for (LanceFinder finder1 : finder) {
-            nics = (NetworkDevice[]) finder1.find(new String[] {}, naming, memMgr);
+            nics = (NetworkDevice[]) finder1.find(new String[] {});
             if (nics != null && nics.length != 0) break;
         }
 	NetworkDevice nic = nics[0];

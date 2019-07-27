@@ -6,9 +6,10 @@ import jx.zero.debug.*;
 import java.util.Hashtable;
 import java.util.Enumeration;
 
-public class InitNaming implements Naming {
-    Naming baseNaming;
-    Hashtable names = new Hashtable();
+public class InitNaming //implements Naming 
+    {
+    static Naming baseNaming;
+    static Hashtable names = new Hashtable();
     public InitNaming(Naming baseNaming) {
 	this.baseNaming = baseNaming;
 
@@ -52,22 +53,22 @@ public class InitNaming implements Naming {
 	add("TimerEmulation");
     }
 
-    @Override
-    public void registerPortal(Portal portal, String name) {
+    //@Override
+    public static void registerPortal(Portal portal, String name) {
 	//Debug.out.println("Register: " + name);
 	names.put(name, portal);
     }
     
-    @Override
-    public Portal lookup(String name) {
+    //@Override
+    public static Portal lookup(String name) {
 	//Debug.out.println("Lookup: " + name);
 	return (Portal) names.get(name);
     }
     
-    @Override
-    public Portal lookupOrWait(String depName) {throw new Error();}
+    //@Override
+    //public Portal lookupOrWait(String depName) {throw new Error();}
 
-    private void add(String name) {
+    private static void add(String name) {
 	Portal p = baseNaming.lookup(name);
 	if (p == null) return;
 	names.put(name, p);

@@ -5,6 +5,7 @@ import jx.devices.Device;
 import jx.zero.*;
 
 import jx.devices.pci.*;
+import jx.init.InitNaming;
 import org.jnode.driver.net.lance.LanceDriver;
 import org.jnode.driver.net.lance.LanceFlags;
 
@@ -18,15 +19,16 @@ public class LanceFinder implements DeviceFinder {
 
 
     //@Override
-    public Device[] find(String[] args, Naming naming, MemoryManager rm) {
+    public Device[] find(String[] args) {
+        Naming naming = InitialNaming.getInitialNaming();
         this.ports = (Ports)naming.lookup("Ports");
 	this.irq = (IRQ)naming.lookup("IRQ");
-        this.rm = rm;//(MemoryManager)naming.lookup("MemoryManager");
+        this.rm = (MemoryManager)naming.lookup("MemoryManager");
 	Debug.out.println("lookup PCI Access Point...");
 	PCIAccess bus;
 	int counter = 0;
 	for(;;) {
-	    bus = (PCIAccess)naming.lookup("PCIAccess");
+	    bus = (PCIAccess)InitNaming.lookup("PCIAccess");
 	    if (bus == null) {
 		if (counter % 20 == 0) { counter = 0; Debug.out.println("NetInit still waiting for PCI");}
 		counter++;
@@ -64,15 +66,5 @@ public class LanceFinder implements DeviceFinder {
             }
         }
 	return null;
-    }                    
-
-    //@Override
-    public Device[] find(String[] args) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public Device[] find(String[] args, Naming naming) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
