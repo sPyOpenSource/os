@@ -12,7 +12,7 @@ public class BufferList {
     private static final boolean check = false;
     private static final boolean trace = false;
     private static final boolean paranoid = false;
-    int size=0;
+    int size = 0;
     BufferHead first = null;
     BufferHead last = null;
 
@@ -22,9 +22,9 @@ public class BufferList {
      * Create list from Memory array
      */
     public BufferList(Memory[] bufs) {
-	for(int i=0; i<bufs.length; i++) {
-	    appendElement(new BufferHead(bufs[i]));
-	}
+        for (Memory buf : bufs) {
+            appendElement(new BufferHead(buf));
+        }
     }
 
     final public int size() {

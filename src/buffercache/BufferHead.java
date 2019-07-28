@@ -1,7 +1,6 @@
 package buffercache;
 
 import jx.zero.Debug;
-import jx.zero.Memory;
 import jx.zero.*;
 
 class BufferHead extends jx.fs.buffercache.BufferHead {

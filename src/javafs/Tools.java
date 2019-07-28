@@ -24,10 +24,10 @@ public class Tools {
     private int group_desc_count, desc_blocks, desc_per_block, inode_blocks_per_group;
     private SuperBlockData sb_data;
     private int block_size;
-    private BufferCache bufferCache;
-    private InodeCache inodeCache;
-    private BlockIO idedevice;
-    private Clock clock;
+    private final BufferCache bufferCache;
+    private final InodeCache inodeCache;
+    private final BlockIO idedevice;
+    private final Clock clock;
 
     static final boolean debugFSCK = false;
 
@@ -50,7 +50,6 @@ public class Tools {
      *
      * @param name       der Name, den das Dateisystem bekommen soll
      * @param blocksize  die Blockgr&ouml;&szlig;e, die f&uuml;r Bl&ouml;cke des Dateisystems verwendet werden soll
-     * @param device     die Kennung der Partition, auf der das Dateisystem installiert werden soll
      */
     public void makeFS(String name, int blocksize) {
 	makeFS(name, blocksize, idedevice.getCapacity());
@@ -459,6 +458,7 @@ public class Tools {
      * (in diesem Fall werden die betroffenen Bl&ouml;cke dupliziert) und ob Verzeichnisse oder Dateien im Verzeichnisbaum
      * h&auml;ngen (wenn nicht, werden sie in dem Verzeichnis "<code>lost+found</code>" angelegt).
      *
+     * @param oracle
      */
     public void checkFS(AnswerMachine oracle) {
 	Vector desc_vector;
@@ -644,8 +644,8 @@ public class Tools {
 	if (duplicate_blocks.size() > 0) {
 	    count = duplicate_blocks.size();
 	    for (int i = 0; i < count; i++) { // doppelten Block kopieren
-		block = ((Integer)duplicate_blocks.firstElement()).intValue();
-		int inodenr = ((Integer)duplicate_inodes.firstElement()).intValue();
+		block = ((Integer)duplicate_blocks.firstElement());
+		int inodenr = ((Integer)duplicate_inodes.firstElement());
 		i_data = fs.getInodeData(inodenr);
 		int newblock = 0;
 		try {
@@ -763,7 +763,7 @@ public class Tools {
 	DirEntryData de_data;
 	InodeImpl inode;
 
-	if (directories.size() == 0)
+	if (directories.isEmpty())
 	    return;
 
 	InodeData i_data = fs.getInodeData(2);

@@ -1,14 +1,8 @@
 package jx.init;
 
-//import AI.AI;
 import jx.zero.*;
 import jx.zero.debug.*;
 import jx.bootrc.*;
-import jx.devices.pci.PCIAccess;
-import jx.devices.pci.PCIGod;
-import jx.netmanager.NetInit;
-import jx.timer.TimerManager;
-import timerpc.StartTimer;
 
 public class Main {
      private final static boolean debug = false;
@@ -24,9 +18,6 @@ public class Main {
 	Debug.out.println("Init running...");
        
 	main(new String[] {"boot.rc"});
-
-        //AI instance = new AI();
-        //instance.start();
      }
      
      public static void main(String args[]) throws Exception {
@@ -116,8 +107,6 @@ public class Main {
 		String initLib = "init2.jll";
 		String startClass = "jx/init/MultiComponentStart";
                 
-                NetInit.init(initNaming, new String[]{"NIC", "eth0", "8:0:6:28:63:40"});
-                //bioide.Main.main(new String[]{"TimerManager", "BIOFS_RW", "0", "1"});
 		//DomainStarter.createDomain(domainName, initLib, startClass, gcinfo0, gcinfo1, gcinfo2, gcinfo3, gcinfo4, codeSize, initNaming, garbageCollector, new Object[]{componentSpec});
 		//}
 	}

@@ -17,16 +17,17 @@ public class FileSystem implements jx.fs.FileSystem, Service {
     private InodeImpl   rootInode;
     private boolean     inited = false;
     private BufferCache bufferCache;
-    private InodeCache  inodeCache;
+    private final InodeCache  inodeCache;
     private Tools       tools;
     private Clock       clock;
-    private Integer     deviceID;
+    private final Integer     deviceID;
 
     public FileSystem() {
 	inodeCache = new InodeCache();
 	deviceID = new Integer(1);
     }
 
+    @Override
     public void init(BlockIO blockDevice, BufferCache bufferCache, Clock clock) {
 	if (inited) throw new Error("FS already initialized");
 	this.clock = clock;
@@ -34,6 +35,7 @@ public class FileSystem implements jx.fs.FileSystem, Service {
 	tools = new Tools(blockDevice, bufferCache, inodeCache, clock);
     }
 
+    @Override
     public void init(boolean read_only) {
 	if (inited)
 	    return;
@@ -46,16 +48,19 @@ public class FileSystem implements jx.fs.FileSystem, Service {
 	rootInode = root.getRootInode();
     }
 
+    @Override
     public String name() {
-	return new String("JavaFS");
+	return "JavaFS";
     }
 
+    @Override
     public jx.fs.Inode getRootInode() {
 	if (! inited) throw new Error("FS not initialized");
 	rootInode.incUseCount();
 	return (jx.fs.Inode)rootInode;
     }
 
+    @Override
     public void release() {
 	if (! inited) throw new Error("FS not initialized");
 	Debug.out.println("releasing filesystem ");
@@ -74,12 +79,14 @@ public class FileSystem implements jx.fs.FileSystem, Service {
 	//bufferCache.stopDemon();
     }
 
+    @Override
     public void build(String name, int blocksize) {
 	inited = false;
 	tools.makeFS(name, blocksize);
 	init(false);
     }
 
+    @Override
     public void check() {
 	if (! inited) throw new Error("FS not initialized");
 	tools.checkFS(null); /* pass answermachine */
@@ -89,9 +96,9 @@ public class FileSystem implements jx.fs.FileSystem, Service {
 	if (! inited) throw new Error("FS not initialized");
 	inodeCache.showInodes();
 	bufferCache.showBuffers();
-
     }
 
+    @Override
     public jx.fs.Inode getInode(int inodeNumber) throws FSException  {
 	DirEntryData de_data;
 	InodeImpl inode;
@@ -141,6 +148,7 @@ public class FileSystem implements jx.fs.FileSystem, Service {
     }
     
 
+    @Override
     public Integer getDeviceID() {
 	return deviceID; /* FIXME */
     }

@@ -4,10 +4,10 @@ NEEDLIBS = zero
 
 SUBDIRS = gnu/java/math gnu/java/io gnu/java/security gnu/java/io/decode gnu/java/io/encode 
 SUBDIRS += jx/fs java/security/interfaces jx/net jx/bio jx/rtc jx/netmanager jx/buffer/multithread jx/net/protocol
-SUBDIRS += jx/buffer jx/init jx/bootrc jx/zero jx/net/devices/lance jx/net/format jx/net/dispatch
+SUBDIRS += jx/buffer jx/init jx/bootrc jx/zero jx/net/format jx/net/dispatch
 SUBDIRS += jx/collections jx/devices jx/timer jx/zero/debug jx/fs/buffercache jx/buffer/separator jx/devices/net jx/devices/pci jx/devices/net/emulation
 SUBDIRS += java/io java/lang java/util java/security java/net java/util/function java/lang/reflect java/security/spec java/security/cert java/lang/invoke java/util/stream
-SUBDIRS += metaxa/os/devices/net timerpc javafs buffercache org/jnode/driver/net/lance
+SUBDIRS += metaxa/os/devices/net timerpc javafs buffercache
 SUBDIRS += bioram
 
 LIBNAME = jdk0

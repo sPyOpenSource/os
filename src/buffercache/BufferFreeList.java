@@ -2,7 +2,6 @@ package buffercache;
 
 import jx.buffer.*;
 
-import jx.zero.Debug;
 //import jx.fs.buffercache.BufferHead;
 
 /**

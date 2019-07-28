@@ -44,7 +44,7 @@ class BufferHashtable {
 	
 	// check the passed in fill fraction
 	if (percentFill <= 0 || percentFill >= 100) {
-	    throw new IllegalArgumentException("fill value out of range "+Integer.toString(percentFill));
+	    throw new IllegalArgumentException("fill value out of range " + Integer.toString(percentFill));
 	}
 	this.fillPercent = percentFill;
 	

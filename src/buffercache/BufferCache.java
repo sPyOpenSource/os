@@ -64,11 +64,12 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
 	
 	buffer_hashtable = new BufferHashtable(200000);
 	free_list = new BufferFreeList();
-    
+    Debug.out.println("max");
 	this.maximalNumberOfBlocks = maximalNumberOfBlocks;
 	this.initialNumberOfBlocks = initialNumberOfBlocks;
 	this.incrementNumberOfBlocks = incrementNumberOfBlocks;
 	if (maximalNumberOfBlocks < initialNumberOfBlocks) throw new Error("maximalNumberOfBlocks < initialNumberOfBlocks");
+        
 	//buffer_wait = new SleepObject();
 	//buffer_wait = new Object();
 	
