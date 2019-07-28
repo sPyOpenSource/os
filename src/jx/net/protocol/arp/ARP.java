@@ -1,6 +1,5 @@
 package jx.net.protocol.arp;
 
-import java.util.Vector;
 import jx.zero.*;
 import jx.timer.*;
 
@@ -19,21 +18,21 @@ import jx.buffer.separator.MemoryConsumer;
 public class ARP implements AddressResolution, MemoryConsumer, EtherConsumer1 {
   
     private IPAddress ownProtocolAddress;
-    private byte[] ownHardwareAddress;
+    private final byte[] ownHardwareAddress;
   
-    private ARPCache arpCache;
-    private Ether ethernet;
+    private final ARPCache arpCache;
+    private final Ether ethernet;
 
     private IP ipLayer = null;
 
-    private boolean sendARPs;
+    private final boolean sendARPs;
     //private Memory answer;
 
     static final boolean dumpAll = false; // switch on to see all arp frames
     private final static boolean debugPacketNotice = false;
     CPUManager cpuManager;
     MemoryManager memoryManager;
-    private int event_rcv;
+    private final int event_rcv;
 
     public ARP(Ether ethernet, IP ip, TimerManager timerManager, boolean sendARPs) {
 	this.ethernet = ethernet;
@@ -49,6 +48,8 @@ public class ARP implements AddressResolution, MemoryConsumer, EtherConsumer1 {
 	arpCache = new ARPCache(this, timerManager);
 	if (sendARPs) timerManager.addMillisTimer(900000,   new ARPTimer(timerManager), new ARPTimerArg(this));
     }
+    
+    @Override
     public boolean register(Object ip) {
 	if (ipLayer != null)
 	    return false;
@@ -57,6 +58,7 @@ public class ARP implements AddressResolution, MemoryConsumer, EtherConsumer1 {
 	return true;
     }
 
+    @Override
     public void notifyAddressChange(Object o) {
 	if (ipLayer!=null) ownProtocolAddress = ipLayer.getOwnAddress();
     }
@@ -69,6 +71,7 @@ public class ARP implements AddressResolution, MemoryConsumer, EtherConsumer1 {
 	arpCache.add(etherAddress, ipAddress);
     }
 
+    @Override
     public byte[] lookup(byte[] ipAddress) throws UnknownAddressException {
 	return arpCache.lookup(ipAddress);
     }
@@ -86,7 +89,7 @@ public class ARP implements AddressResolution, MemoryConsumer, EtherConsumer1 {
 	    Debug.out.println("ARP.byteCompare: the arrays have different size");
 	    return false;
 	}
-	for (int i=0; i < a1.length; i++) {
+	for (int i = 0; i < a1.length; i++) {
 	    if (a1[i] != a2[i]) {
 		//Debug.out.println("ARP.byteCompare: position "+i+"differs:"+a1[i]+"!="+a2[i]);
 		return false;
@@ -119,6 +122,7 @@ public class ARP implements AddressResolution, MemoryConsumer, EtherConsumer1 {
 	ethernet.transmitARPBroadcast1(userbuf);
     } 
     
+    @Override
     public Memory processEther1(EtherData buf) {
 	ARPFormat a = new ARPFormat(buf.mem, buf.offset);
 	cpuManager.recordEvent(event_rcv);
@@ -174,6 +178,7 @@ public class ARP implements AddressResolution, MemoryConsumer, EtherConsumer1 {
 	return buf.mem;
     }
 
+    @Override
     public Memory processMemory(Memory buf) {
 	buf = buf.revoke();
 	ARPFormat a = new ARPFormat(buf,0);
@@ -228,10 +233,3 @@ public class ARP implements AddressResolution, MemoryConsumer, EtherConsumer1 {
     }
 
 }
-
-
-
-
-
-
-

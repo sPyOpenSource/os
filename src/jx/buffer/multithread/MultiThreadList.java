@@ -10,7 +10,7 @@ import jx.zero.*;
 public class MultiThreadList {
 //    static final boolean debug = false;
 
-    boolean verbose = false;
+    boolean verbose = true;
     MultiThreadListElement first;
     MultiThreadListElement last;
     CAS cas_first, cas_last;
@@ -32,13 +32,14 @@ public class MultiThreadList {
 	size = 1;
     }
 
-    /** for debugging */
+    /** for debugging
+     * @param name */
     public void setListName(String name) {
 	this.name = name;
     }
 
     public void appendElement(Object o) {
-	if (verbose) Debug.out.println("appendElement ["+name+"] data="+o+" (size="+size+")");
+	if (verbose) Debug.out.println("appendElement [" + name + "] data=" + o + " (size=" + size + ")");
 	MultiThreadListElement elm = new MultiThreadListElement(o, cpuManager);
 	elm.next.set(null);
 	MultiThreadListElement last_bak;
@@ -57,21 +58,19 @@ public class MultiThreadList {
      *  else first Object
      */
     public Object undockFirstElement() {	
-	if (verbose) Debug.out.println("undockFirstElement ["+name+"] (size="+size+")");
+	if (verbose) Debug.out.println("undockFirstElement [" + name + "] (size=" + size + ")");
 
 	/* in liste einhaengen */
 	consumer = cpuManager.getCPUState();
 	first.next.blockIfEqual(null);
 	consumer = null;
 	/* aus liste austragen */
-	
 	MultiThreadListElement first_bak, first_bak_next;
 	do {   // set last to elm and get a valid copy of last 
 	    first_bak = first;
 	    first_bak_next = (MultiThreadListElement)first_bak.next.get();
 	    if (first_bak_next == null) return null;
 	} while (!cas_first.casObject(this, first_bak, first_bak_next));
-
 	size--;
 	return first_bak_next.data;
     }
@@ -91,7 +90,6 @@ public class MultiThreadList {
 	    first_bak_next = (MultiThreadListElement)first_bak.next.get();
 	    if (first_bak_next == null) return null;
 	} while (!cas_first.casObject(this, first_bak, first_bak_next));
-
 
 
 	size--;

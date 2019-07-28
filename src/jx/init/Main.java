@@ -12,8 +12,6 @@ public class Main {
      public static void init(Naming naming) throws Exception {
 	jx.zero.debug.DebugOutputStream out = new jx.zero.debug.DebugOutputStream((DebugChannel) naming.lookup("DebugChannel0"));
 	Debug.out = new jx.zero.debug.DebugPrintStream(out);
-	//System.out = new java.io.PrintStream(out);
-	//System.err = System.out;
 	 
 	Debug.out.println("Init running...");
        

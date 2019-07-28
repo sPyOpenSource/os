@@ -15,7 +15,7 @@ import jx.net.EtherData;
 import jx.buffer.multithread.MultiThreadList;
 
 public class Ether  implements PacketsProducer, EtherProducer1 {
-    static final boolean dumpAll = false; // switch on to see all ether frames
+    static final boolean dumpAll = true; // switch on to see all ether frames
     static final boolean dumpSend = false;
     static final boolean debug = false;
     private final static boolean debugPacketNotice = false;
@@ -23,11 +23,11 @@ public class Ether  implements PacketsProducer, EtherProducer1 {
     
     public final static int ETHERNET_MAXIMUM_FRAME_SIZE = 1514;
 
-    private NetworkDevice dev;
+    private final NetworkDevice dev;
 
-    private Dispatch dispatch;
+    private final Dispatch dispatch;
 
-    private byte[] ownHardwareAddress;
+    private final byte[] ownHardwareAddress;
 
     public static final int ADDR_SIZE = 6;
     public final byte[] ETHER_BCAST  =   {(byte)0xff, (byte)0xff, (byte)0xff, (byte)0xff, (byte)0xff, (byte)0xff};
@@ -52,7 +52,7 @@ public class Ether  implements PacketsProducer, EtherProducer1 {
 	dispatch.add(0x8035, "RARP");
     }
 
-    private static boolean discardOld = true;
+    private static final boolean discardOld = true;
 
     public Ether(NetworkDevice dev, byte[] ownEtherAddress) {
 	this.dev = dev;
@@ -71,18 +71,26 @@ public class Ether  implements PacketsProducer, EtherProducer1 {
     /**
      * Install a  consumer that receives packets from the network
      * This method is called by higher layers.
+     * @param consumer
+     * @param name
+     * @return 
      */
+    @Override
     public boolean registerConsumer1(EtherConsumer1 consumer, String name) {
-	if (name.equals("IP")) {
-	    myIPConsumer = consumer;
-	    Debug.out.println("Ether: Registered IP consumer");
-	} else if (name.equals("ARP")) {
-	    myARPConsumer = consumer;
-	} else if (name.equals("RARP")) {
-	    myRARPConsumer = consumer;
-	} else {
-	    throw new Error("Unknown protocol "+name);
-	}
+        switch (name) {
+            case "IP":
+                myIPConsumer = consumer;
+                Debug.out.println("Ether: Registered IP consumer");
+                break;
+            case "ARP":
+                myARPConsumer = consumer;
+                break;
+            case "RARP":
+                myRARPConsumer = consumer;
+                break;
+            default:
+                throw new Error("Unknown protocol "+name);
+        }
 	avoidSplitting = true;
 	return true;
     }
@@ -90,7 +98,11 @@ public class Ether  implements PacketsProducer, EtherProducer1 {
     /**
      * Install a  consumer that receives packets from the network
      * This method is called by higher layers.
+     * @param consumer
+     * @param name
+     * @return 
      */
+    @Override
     public boolean registerConsumer(MemoryConsumer consumer, String name) {
 	return dispatch.registerConsumer(consumer, name);
     }
@@ -98,8 +110,9 @@ public class Ether  implements PacketsProducer, EtherProducer1 {
     public PacketsConsumer1 getTransmitter1(final byte[] dest, String name) {
 	final int id = dispatch.findID(name);
 	return new PacketsConsumer1() {
+                @Override
 		public Memory processMemory(Memory userbuf, int offset, int size) {
-		    if (debugPacketNotice) Debug.out.println("Ether.transmit: "+size);
+		    if (debugPacketNotice) Debug.out.println("Ether.transmit: " + size);
 		    Memory buf = userbuf;
 		    offset -= EtherFormat.requiresSpace();
 		    EtherFormat e = new EtherFormat(buf, offset);
@@ -109,25 +122,30 @@ public class Ether  implements PacketsProducer, EtherProducer1 {
 		    if (dumpAll) {
 			e.dump();
 		    }
-		    Memory ret = dev.transmit1(buf, offset, EtherFormat.requiresSpace()+size);		    
+		    Memory ret = dev.transmit1(buf, offset, EtherFormat.requiresSpace() + size);		    
 		    //ret = ret.revoke();		    
 		    return ret;
 		}
+                @Override
 		public int requiresSpace() {return EtherFormat.requiresSpace();}
+                @Override
 		public int getMTU() {return 1000; /*TODO*/}
-
 	    };
     }
 
     /**
      * Get a consumer that transmits packets to the network
      * This method is called by higher layers.
+     * @param dest
+     * @param name
+     * @return 
      */
     public PacketsConsumer getTransmitter(final byte[] dest, String name) {
 	final int id = dispatch.findID(name);
 	return new PacketsConsumer() {
+                @Override
 		public Memory processMemory(Memory userbuf) {
-		    if (debugPacketNotice) Debug.out.println("Ether.transmit: "+userbuf.size());
+		    if (debugPacketNotice) Debug.out.println("Ether.transmit: " + userbuf.size());
 		    Memory buf = userbuf.joinPrevious(); // no joinAll() to preserve packet size 
 		    EtherFormat e = new EtherFormat(buf);
 		    e.insertDestAddress(dest);
@@ -138,23 +156,28 @@ public class Ether  implements PacketsProducer, EtherProducer1 {
 		    int space = e.length();
 		    Memory[] arr = new Memory[2];
 		    ret = ret.joinAll();
-		    if (ret.size() != 1514) throw new Error("Packet is too small: "+ret.size());
+		    if (ret.size() != 1514) throw new Error("Packet is too small: " + ret.size());
 		    ret.split2(space, arr);
-		    if (arr[1]==null) Debug.throwError();
+		    if (arr[1] == null) Debug.throwError();
 		    return arr[1];
 		}
+                @Override
 		public int requiresSpace() {return EtherFormat.requiresSpace();}
+                @Override
 		public int getMTU() {return 1000; /*TODO*/}
 
 	    };
     }
 
-    /** get MemoryNonBlockingConsumer that receives packets from the NIC device driver layer */
+    /** get MemoryNonBlockingConsumer that receives packets from the NIC device driver layer
+     * @param bufs
+     * @return  */
     public NonBlockingMemoryConsumer getNonBlockingReceiver(Memory[] bufs) {
 	final MultiThreadList usableBufs = new MultiThreadList();
 	usableBufs.setListName("usableBufs");
-	    for ( int i = 0; i<bufs.length; i++)
-		usableBufs.appendElement(new PacketContainer(bufs[i]));
+        for (Memory buf : bufs) {
+            usableBufs.appendElement(new PacketContainer(buf));
+        }
 //	usableBufs.enableRecording("Ether-available-queue");
 	final MultiThreadList filledBufs = new MultiThreadList();
 	filledBufs.setListName("filledBufs");
@@ -180,15 +203,15 @@ public class Ether  implements PacketsProducer, EtherProducer1 {
 	    EtherQueueConsumerThread() {
 		super("Etherpacket-Queue");
 	    }
+            @Override
 	    public void run() {
 		int event_rcv = cpuManager.createNewEvent("EtherRcv");
 		for(;;) {
 		    cpuManager.recordEvent(event_rcv);
-		    
-			PacketContainer c = (PacketContainer) filledBufs.undockFirstElement();
-			Memory newMem = c.getMem();
-		    if (! avoidSplitting) {
-			if (debugPacketNotice) Debug.out.println("Ether.receive: "+newMem.size());
+                    PacketContainer c = (PacketContainer) filledBufs.undockFirstElement();
+                    Memory newMem = c.getMem();
+		    if (!avoidSplitting) {
+			if (debugPacketNotice) Debug.out.println("Ether.receive: " + newMem.size());
 			EtherFormat e = new EtherFormat(newMem);
 			if (dumpAll) {
 			    Debug.out.println("Ether packet received.");
@@ -203,7 +226,7 @@ public class Ether  implements PacketsProducer, EtherProducer1 {
 			    
 			c.setMem(newMem.revoke());
 		    } else {
-			if (debugPacketNotice) Debug.out.println("Ether.receive: "+c.getSize());
+			if (debugPacketNotice) Debug.out.println("Ether.receive: " + c.getSize());
 			EtherFormat e = new EtherFormat(newMem, c.getOffset());
 			if (dumpAll) {
 			    Debug.out.println("Ether packet received.");
@@ -217,37 +240,37 @@ public class Ether  implements PacketsProducer, EtherProducer1 {
 			data.offset = c.getOffset() + EtherFormat.requiresSpace();
 			data.size = c.getSize() - EtherFormat.requiresSpace();
 			switch(id) {
-			case PROTO_IP:
-			    if (myIPConsumer == null) {
-				Debug.out.println("NO IP consumer");
-				break;
-			    }
-			    if (dumpAll) 
-				Debug.out.println("Ether: received IP packet");
-			    newMem = myIPConsumer.processEther1(data);
-			    break;
-			case PROTO_ARP:
-			    if (myARPConsumer == null) {
-				Debug.out.println("NO ARP consumer");
-				break;
-			    }
-			    if (dumpAll) {
-				Debug.out.println("Ether: received ARP packet");
-				Dump.xdump(data.mem, data.offset, 16);
-			    }
-			    newMem = myARPConsumer.processEther1(data);
-			    break;
-			case PROTO_RARP:
-			    if (myRARPConsumer == null) {
-				Debug.out.println("NO RARP consumer");
-				break;
-			    }
-			    if (dumpAll)
-				Debug.out.println("Ether: received RARP packet");
-			    newMem = myRARPConsumer.processEther1(data);
-			    break;
-			default: 
-			    Debug.out.println("Unknown packet. ID="+id);
+                            case PROTO_IP:
+                                if (myIPConsumer == null) {
+                                    Debug.out.println("NO IP consumer");
+                                    break;
+                                }
+                                if (dumpAll) 
+                                    Debug.out.println("Ether: received IP packet");
+                                newMem = myIPConsumer.processEther1(data);
+                                break;
+                            case PROTO_ARP:
+                                if (myARPConsumer == null) {
+                                    Debug.out.println("NO ARP consumer");
+                                    break;
+                                }
+                                if (dumpAll) {
+                                    Debug.out.println("Ether: received ARP packet");
+                                    Dump.xdump(data.mem, data.offset, 16);
+                                }
+                                newMem = myARPConsumer.processEther1(data);
+                                break;
+                            case PROTO_RARP:
+                                if (myRARPConsumer == null) {
+                                    Debug.out.println("NO RARP consumer");
+                                    break;
+                                }
+                                if (dumpAll)
+                                    Debug.out.println("Ether: received RARP packet");
+                                newMem = myRARPConsumer.processEther1(data);
+                                break;
+                            default: 
+                                Debug.out.println("Unknown packet. ID=" + id);
 			} 
 			if (debug)
 			    if (newMem == null)
@@ -257,12 +280,12 @@ public class Ether  implements PacketsProducer, EtherProducer1 {
 		    }
 		}
 	    }
-	};
+	}
 	new EtherQueueConsumerThread().start();
 
-
 	
-	class EtherNonBlockingMemoryConsumerImpl implements EtherNonBlockingMemoryConsumer,Service  {
+	class EtherNonBlockingMemoryConsumerImpl implements EtherNonBlockingMemoryConsumer, Service  {
+            @Override
 	    public Memory processMemory(Memory mem, int offs, int size) {
 		if (dumpAll) Debug.out.println("Ether packet received");
 		PacketContainer c = (PacketContainer)usableBufs.nonblockingUndockFirstElement();
@@ -285,9 +308,7 @@ public class Ether  implements PacketsProducer, EtherProducer1 {
 		return result;
 	    }
 	}
-
 	return new EtherNonBlockingMemoryConsumerImpl();
-
     }
     
 
@@ -322,7 +343,7 @@ public class Ether  implements PacketsProducer, EtherProducer1 {
     
     class PacketContainer {
 	private Memory mem;
-	private int offs=0, size=0;
+	private int offs = 0, size = 0;
 	
 	public PacketContainer(Memory mem) { setMem(mem);}
 	public int getOffset() {
@@ -340,10 +361,8 @@ public class Ether  implements PacketsProducer, EtherProducer1 {
 	    this.offs = offs;
 	    this.size = size;
 	}
-	
     }
 }
-
 
 
 interface EtherNonBlockingMemoryConsumer extends NonBlockingMemoryConsumer, Portal {}

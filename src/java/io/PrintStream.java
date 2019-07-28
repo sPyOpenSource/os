@@ -11,20 +11,20 @@ public class PrintStream extends FilterOutputStream {
 	return error;
     }
 
-  @Override
+    @Override
     public void close()
     {
 	try
-	    {
-		out.close();
-	    }
+        {
+            out.close();
+        }
 	catch (IOException e)
-	    {
-		error = true;
-	    }
+        {
+            error = true;
+        }
     }
 
-  @Override
+    @Override
     public void flush()
     {
 	try
@@ -37,7 +37,7 @@ public class PrintStream extends FilterOutputStream {
 	    }
     }
 
-  @Override
+    @Override
     public  void write(int b)
     {
 	try
@@ -53,7 +53,7 @@ public class PrintStream extends FilterOutputStream {
 	    flush();
     }
 
-  @Override
+    @Override
     public  void write(byte[] b, int off, int len)
     {
 	try

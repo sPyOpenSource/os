@@ -1,6 +1,5 @@
 package jx.net;
 
-import jx.zero.*;
 import jx.buffer.separator.MemoryConsumer;
 
 

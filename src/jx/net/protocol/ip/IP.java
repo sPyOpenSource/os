@@ -2,7 +2,6 @@ package jx.net.protocol.ip;
 
 import jx.zero.Debug;
 import jx.zero.*;
-import jx.zero.debug.Dump;
 import jx.buffer.separator.*;
 import jx.net.dispatch.Dispatch;
 import jx.net.PacketsProducer;
@@ -175,7 +174,6 @@ public class IP implements MemoryConsumer, IPProducer, IPProducer1, EtherConsume
 	// cleanup unused memory
 	//	DomainManager domainManager = (DomainManager)InitialNaming.getInitialNaming().lookup("DomainManager");	
 	//domainManager.gc(domainManager.getCurrentDomain());
-
     }
 
     public void setAddressResolution(AddressResolution a) {
@@ -183,6 +181,7 @@ public class IP implements MemoryConsumer, IPProducer, IPProducer1, EtherConsume
 	if (addressResolution != null) addressResolution.register(this);
     }
 
+    @Override
     public boolean registerConsumer1(IPConsumer1 consumer, String name) {
 	if (name.equals("UDP")) {
 	    if (myUDPConsumer1 != null) throw new Error("UDP consumer already registered");
@@ -199,6 +198,7 @@ public class IP implements MemoryConsumer, IPProducer, IPProducer1, EtherConsume
     }
 
 
+    @Override
     public boolean registerConsumer(IPConsumer consumer, String name) {
 	//	return dispatch.registerConsumer(consumer, name);
 	if (name.equals("UDP")) {
@@ -237,6 +237,7 @@ public class IP implements MemoryConsumer, IPProducer, IPProducer1, EtherConsume
     }
 
     /** the TCP-Layer needs to know the own IP-Address to compute the Pseudoheader-chechsum
+     * @return 
      */
     public IPAddress getOwnAddress() {
 	return ownAddress;
@@ -279,10 +280,12 @@ public class IP implements MemoryConsumer, IPProducer, IPProducer1, EtherConsume
     }
 
 
+    @Override
     public Memory processMemory(Memory buf) {
 	throw new Error();
     }
 
+    @Override
     public Memory processEther1(EtherData buf) {
 	if (debugPacketNotice) Debug.out.println("ARP.processEther: "+buf.size);
 	cpuManager.recordEvent(event_rcv);
@@ -342,45 +345,47 @@ public class IP implements MemoryConsumer, IPProducer, IPProducer1, EtherConsume
 	IPData ip = new IPData();
 	ip.sourceAddress = addr;
 	ip.destinationAddress = dAddr;
-	if (id == PROTO_UDP) {
-	    if (myUDPConsumer1!= null) {
-		ip.mem = data.mem;
-		ip.offset = data.offset + IPFormat.requiresSpace();
-		ip.size = data.size-IPFormat.requiresSpace();
-		return myUDPConsumer1.processIP1(ip);
-	    } else if (myUDPConsumer!= null) {
-		ip.mem = data.mem.getSubRange(space, data.mem.size()-space);
-		return myUDPConsumer.processIP(ip);
-	    }
-	    Debug.out.println("  No UDP consumer for this IP packet.");
-	    return data.mem;
-	} else if (id == PROTO_TCP) {
-	    if (myTCPConsumer1!= null) {
-		ip.mem = data.mem;
-		ip.offset = data.offset + IPFormat.requiresSpace();
-/*		ip.size = data.size-IPFormat.requiresSpace();
-		IPFormat ipf = new IPFormat(data.mem, data.offset);
-		Debug.out.println("ipf:"+(ipf.getTotalLength()-ipf.getHeaderLength()) +" sz:"+	ip.size);
-*/
-		IPFormat ipf = new IPFormat(data.mem, data.offset);
-		ip.size = (ipf.getTotalLength()-ipf.getHeaderLength());
-		return myTCPConsumer1.processIP1(ip);
-	    } else if (myTCPConsumer!= null) {
-		IPFormat ipf = new IPFormat(data.mem, data.offset);
-		ip.mem = data.mem.getSubRange(data.offset + IPFormat.requiresSpace(), 
-					      (ipf.getTotalLength()-ipf.getHeaderLength()));
-		return myTCPConsumer.processIP(ip);
-	    }
-	    Debug.out.println("  No TCP consumer for this IP packet.");
-	    return data.mem;
-	} else {
-	    Debug.out.println("Unsupported protocol in IP packet: "+dispatch.findName(id));
-	    return data.mem;
-	}
+        switch (id) {
+            case PROTO_UDP:
+                if (myUDPConsumer1!= null) {
+                    ip.mem = data.mem;
+                    ip.offset = data.offset + IPFormat.requiresSpace();
+                    ip.size = data.size-IPFormat.requiresSpace();
+                    return myUDPConsumer1.processIP1(ip);
+                } else if (myUDPConsumer!= null) {
+                    ip.mem = data.mem.getSubRange(space, data.mem.size()-space);
+                    return myUDPConsumer.processIP(ip);
+                }
+                Debug.out.println("  No UDP consumer for this IP packet.");
+                return data.mem;
+            case PROTO_TCP:
+                if (myTCPConsumer1!= null) {
+                    ip.mem = data.mem;
+                    ip.offset = data.offset + IPFormat.requiresSpace();
+                    /*		ip.size = data.size-IPFormat.requiresSpace();
+                    IPFormat ipf = new IPFormat(data.mem, data.offset);
+                    Debug.out.println("ipf:"+(ipf.getTotalLength()-ipf.getHeaderLength()) +" sz:"+	ip.size);
+                    */
+                    IPFormat ipf = new IPFormat(data.mem, data.offset);
+                    ip.size = (ipf.getTotalLength()-ipf.getHeaderLength());
+                    return myTCPConsumer1.processIP1(ip);
+                } else if (myTCPConsumer!= null) {
+                    IPFormat ipf = new IPFormat(data.mem, data.offset);
+                    ip.mem = data.mem.getSubRange(data.offset + IPFormat.requiresSpace(),
+                            (ipf.getTotalLength()-ipf.getHeaderLength()));
+                    return myTCPConsumer.processIP(ip);
+                }
+                Debug.out.println("  No TCP consumer for this IP packet.");
+                return data.mem;
+            default:
+                Debug.out.println("Unsupported protocol in IP packet: "+dispatch.findName(id));
+                return data.mem;
+        }
     }
 
     public PacketsConsumer1 getTransmitter1(final PacketsConsumer1 lowerConsumer, final IPAddress dst, final int id) {
 	return new PacketsConsumer1() {
+                @Override
 		public Memory processMemory(Memory userbuf, int offset, int size) {
 		    if (debugPacketNotice) Debug.out.println("IP.transmit: "+size);
 		    cpuManager.recordEvent(event_snd);
@@ -406,7 +411,9 @@ public class IP implements MemoryConsumer, IPProducer, IPProducer1, EtherConsume
 		    Memory ret = lowerConsumer.processMemory(buf, offset, IPFormat.requiresSpace() + size);		    
 		    return ret;
 		}
+                @Override
 		public int requiresSpace() {return IPFormat.requiresSpace();}
+                @Override
 		public int getMTU() {return 1000; /*TODO*/}
 	    };
     }
@@ -418,6 +425,7 @@ public class IP implements MemoryConsumer, IPProducer, IPProducer1, EtherConsume
 
     public PacketsConsumer getTransmitter(final PacketsConsumer lowerConsumer, final IPAddress dst, final int id) {
 	return new PacketsConsumer() {
+                @Override
 		public Memory processMemory(Memory userbuf) {
 		    Debug.out.println("SEND2 IP to "+dst);
 		    if (debugPacketNotice) Debug.out.println("IP.transmit: "+userbuf.size());
@@ -442,7 +450,9 @@ public class IP implements MemoryConsumer, IPProducer, IPProducer1, EtherConsume
 		    int space = ip.length();
 		    return ret.getSubRange(space, ret.size()-space);
 		}
+                @Override
 		public int requiresSpace() {return IPFormat.requiresSpace();}
+                @Override
 		public int getMTU() {return 1000; /*TODO*/}
 	    };
     }
@@ -450,6 +460,7 @@ public class IP implements MemoryConsumer, IPProducer, IPProducer1, EtherConsume
     
     public MemoryConsumer getReceiver() {
 	return new MemoryConsumer() {
+                @Override
 		public Memory processMemory(Memory buf) {
 		    if (dumpAll)Debug.out.println("processMemory");
 		    return lowerConsumer.processMemory(buf);		    

@@ -117,7 +117,7 @@ public class MultiThreadBufferList implements BufferProducer, BufferConsumer {
     public Buffer undockFirstElement() {	
 	if (verbose) cpuManager.dump("MultiThreadBufferList::UNDOCK",this);
 	if (check) checkConsistency();
-	if (consumer==null) {consumer=cpuManager.getCPUState();}
+	if (consumer == null) {consumer = cpuManager.getCPUState();}
 
 	/*
         Buffer x;

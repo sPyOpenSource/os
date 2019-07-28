@@ -43,4 +43,3 @@ public class Queue {
 	return head.value;
     }
 }
-

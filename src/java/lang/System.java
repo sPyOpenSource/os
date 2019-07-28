@@ -11,20 +11,19 @@ import java.io.PrintStream;
 
 // DEBUG
 import java.util.Properties;
-// DEBUG
+import jx.zero.debug.DebugChannel;
+import jx.zero.debug.DebugOutputStream;
 
 //class Properties{}
 
 public class System {
+    public static InputStream in= null;//new DebugInputStream(debugChannel);
+    public static PrintStream out = new PrintStream(new DebugOutputStream((DebugChannel) InitialNaming.getInitialNaming().lookup("DebugChannel0")));
+    public static PrintStream err = out;
     
-    /*
-    public static InputStream in= new DebugInputStream(debugChannel);
-    public static PrintStream out= new DebugPrintStream(new DebugOutputStream(debugChannel));
-    public static PrintStream err= new DebugPrintStream(new DebugOutputStream(debugChannel));
-    */
-    public static InputStream in = null;
+    /*public static InputStream in = null;
     public static PrintStream out = null;
-    public static PrintStream err = null;
+    public static PrintStream err = null;*/
 
     private static Properties properties = null;
     private static final boolean usePlugin = false;
