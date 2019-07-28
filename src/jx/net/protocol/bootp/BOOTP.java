@@ -1,12 +1,6 @@
 package jx.net.protocol.bootp;
 
 import jx.zero.*;
-import jx.zero.debug.*;
-import jx.net.PacketsProducer;
-import jx.net.PacketsConsumer;
-import jx.buffer.separator.MemoryConsumer;
-
-//import jx.net.protocol.ether.*;
 import jx.net.IPAddress;
 import jx.net.NetInit;
 import jx.net.UDPSender;
@@ -38,8 +32,8 @@ public class BOOTP  {
     }      
   
     public IPAddress sendRequest() {
-      Memory rbuf2=null;
-      UDPData udp=null;
+      Memory rbuf2 = null;
+      UDPData udp = null;
       Memory arr[] = new Memory[2];
 	try { 
 	    sender = net.getUDPSender(CLIENT_PORT, new IPAddress(255,255,255,255), SERVER_PORT);
@@ -79,8 +73,8 @@ public class BOOTP  {
     }
 
     public IPAddress sendRequest1() {
-      Memory rbuf2=null;
-      UDPData udp=null;
+      Memory rbuf2 = null;
+      UDPData udp = null;
 	try { 
 	    sender = net.getUDPSender(CLIENT_PORT, new IPAddress(255,255,255,255), SERVER_PORT);
 	    receiver = net.getUDPReceiver(CLIENT_PORT, new Memory[] { 
@@ -109,7 +103,4 @@ public class BOOTP  {
       BOOTPFormat b = new BOOTPFormat(udp.mem, udp.offset);
       return b.getYiaddr();
     }
-  
-
-   
 }

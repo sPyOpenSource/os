@@ -1,6 +1,6 @@
 package timerpc;
 
-import jx.init.InitNaming;
+import jx.InitNaming;
 import jx.zero.*;
 import jx.timer.TimerManager;
 

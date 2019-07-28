@@ -4,7 +4,7 @@ import jx.zero.Naming;
 import jx.zero.Ports;
 import jx.zero.Debug;
 import java.util.Vector;
-import jx.init.InitNaming;
+import jx.InitNaming;
 import jx.zero.Service;
 import jx.zero.InitialNaming;
 

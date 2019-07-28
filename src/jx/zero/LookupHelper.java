@@ -1,6 +1,6 @@
 package jx.zero;
 
-import jx.init.InitNaming;
+import jx.InitNaming;
 
 public class LookupHelper {
     private static CPUManager cpuManager;

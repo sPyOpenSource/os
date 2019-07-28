@@ -1,4 +1,4 @@
-package jx.init;
+package jx;
 
 import jx.zero.*;
 import jx.zero.debug.*;

@@ -17,7 +17,10 @@ public final class String implements CharSequence
     }
 
     private char[] value;
-
+    
+    /** Cache the hash code for the string */
+    private int hash; // Default to 0
+    
     public String()
     {
 	value = new char[0];
@@ -64,6 +67,7 @@ public final class String implements CharSequence
 	int n = newValue.length();
 	value = new char[n];
 	newValue.getChars(0, n, value, 0);
+        this.hash = newValue.hash;
     }
 
     public String(StringBuffer newValue)
@@ -88,32 +92,16 @@ public final class String implements CharSequence
     @Override
     public int hashCode()
     {
-	int n = value.length;
-	int sum = 0;
-	int mult = 1;
+	int h = hash;
+        if (h == 0 && value.length > 0) {
+            char val[] = value;
 
-	if (n <= 15)
-	    {
-		for (int i = 0; i < n; i++)
-		    {
-			sum += ((int) value[i]) * mult;
-			mult *= 37;
-		    }
-	    }
-	else
-	    {
-		int k = n / 8;
-		int m = n / k;
-		int j = 0;
-		for (int i = 0; i <= m && j < n; i++)
-		    {
-			sum += ((int) value[j]) * mult;
-			j += k;
-			mult *= 39;
-		    }
-	    }
-
-	return sum;
+            for (int i = 0; i < value.length; i++) {
+                h = 31 * h + val[i];
+            }
+            hash = h;
+        }
+        return h;
     }
 
     @Override

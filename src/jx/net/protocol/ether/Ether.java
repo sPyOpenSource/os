@@ -89,7 +89,7 @@ public class Ether  implements PacketsProducer, EtherProducer1 {
                 myRARPConsumer = consumer;
                 break;
             default:
-                throw new Error("Unknown protocol "+name);
+                throw new Error("Unknown protocol " + name);
         }
 	avoidSplitting = true;
 	return true;

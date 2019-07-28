@@ -1,6 +1,5 @@
 package java.lang;
 
-import jx.init.InitNaming;
 import jx.zero.CPUManager;
 import jx.zero.InitialNaming;
 import jx.zero.ThreadEntry;
@@ -78,7 +77,6 @@ public class Thread implements Runnable {
 	//out.println("java.lang.Thread: Starting new thread.");
 	alive = true;
 //	naming.startThread(new ThreadStarter(this));
-        //naming = new InitNaming(naming);
 	cpuManager = (CPUManager) naming.lookup("CPUManager");
 	cpuManager.start(cpuManager.createCPUState(new ThreadStarter(this)));
     }

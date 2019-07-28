@@ -58,6 +58,7 @@ public class TCP implements IPConsumer, IPConsumer1, Runnable {
 
 	final CPUManager cpuManager = (CPUManager) InitialNaming.getInitialNaming().lookup("CPUManager");
 	CPUState cyclops = cpuManager.createCPUState( new ThreadEntry(){
+                @Override
 		public void run(){ // check retransmitt
 		    cpuManager.setThreadName("CyclicRetransmitCheck");
 		    while (true) {
