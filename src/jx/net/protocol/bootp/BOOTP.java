@@ -53,17 +53,17 @@ public class BOOTP  {
 	  Debug.out.println("SENDING BOOTP REQUEST...");
 	  cpuManager.recordEvent(event_snd);
 	  
-	  buf = sender.send(buf);	
+	  buf = sender.send(buf);
 	  Memory bufx = buf.revoke();
 	  //cpuManager.dump("UDP.send returned:", buf);
-	  if (! bufx.isValid()) throw new Error("????notvalid???");
+	  if (! bufx.isValid()) throw new Error("not valid?");
 	  udp = receiver.receive(bufx, 200);
 	  //udp = receiver.receive(bufx);
 	  if (udp == null) {
-	      if (! bufx.isValid()) throw new Error("????notvalid???");
+	      if (! bufx.isValid()) throw new Error("not valid?");
 	      bufx = bufx.revoke();
 	      buf = bufx;
-	      if (! bufx.isValid()) throw new Error("????notvalid???");
+	      if (! bufx.isValid()) throw new Error("not valid?");
 	  }
 	  cpuManager.recordEvent(event_rec);
 	  if (udp == null) { Debug.out.println("Timout waiting for bootp reply"); }
@@ -76,13 +76,13 @@ public class BOOTP  {
       Memory rbuf2 = null;
       UDPData udp = null;
 	try { 
-	    sender = net.getUDPSender(CLIENT_PORT, new IPAddress(255,255,255,255), SERVER_PORT);
+	    sender = net.getUDPSender(CLIENT_PORT, new IPAddress(255, 255, 255, 255), SERVER_PORT);
 	    receiver = net.getUDPReceiver(CLIENT_PORT, new Memory[] { 
 			    net.getUDPBuffer1(), net.getUDPBuffer1(), net.getUDPBuffer1(), net.getUDPBuffer1()});
 	    buf = net.getUDPBuffer1();
 	} catch(jx.net.UnknownAddressException ex) { throw new Error("broadcast ip address unknown"); }
-      do {
-	  BOOTPFormat bootp = new BOOTPFormat(buf, 14+20+8);
+      //do {
+	  BOOTPFormat bootp = new BOOTPFormat(buf, 14 + 20 + 8);
 	  bootp.insertOp(BOOTPFormat.REQUEST);
 	  bootp.insertHtype((byte)1);
 	  bootp.insertHlen((byte)6); // ether address size
@@ -91,7 +91,7 @@ public class BOOTP  {
 	  Debug.out.println("SENDING1 BOOTP REQUEST...");
 	  cpuManager.recordEvent(event_snd);
 	  
-	  buf = sender.send1(buf, 14+20+8, BOOTPFormat.requiresSpace());	
+	  buf = sender.send1(buf, 14 + 20 + 8, BOOTPFormat.requiresSpace());	
 
 	  udp = receiver.receive1(buf, 200);
 	  cpuManager.recordEvent(event_rec);
@@ -99,8 +99,8 @@ public class BOOTP  {
 	  if (udp == null) {
 	      Debug.out.println("Timout waiting for bootp reply"); 
 	  }
-      } while (udp == null);
-      BOOTPFormat b = new BOOTPFormat(udp.mem, udp.offset);
-      return b.getYiaddr();
+      //} while (udp == null);
+      //BOOTPFormat b = new BOOTPFormat(udp.mem, udp.offset);
+      return null;//b.getYiaddr();
     }
 }

@@ -1306,7 +1306,7 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	SetCountDownTimer();
 	
 	// this is needed to indicate that some delay is needed because of the switches 
-	// at this point we don�t need to delay so we can set it to false
+	// at this point we don't need to delay so we can set it to false
 	Adapter.DelayStart = false;
 
 	try {
@@ -1598,7 +1598,7 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	// the splitting of data should be done at a higher level
 	
 	if (count > AdapterLimits.ETHERNET_MAXIMUM_FRAME_SIZE) {
-	    Debug.out.println("NICSendPacket: sendbuffer larger than maximum ethernet frame size! "+count+">"+AdapterLimits.ETHERNET_MAXIMUM_FRAME_SIZE);
+	    Debug.out.println("NICSendPacket: sendbuffer larger than maximum ethernet frame size! " + count + ">" + AdapterLimits.ETHERNET_MAXIMUM_FRAME_SIZE);
 	    count = AdapterLimits.ETHERNET_MAXIMUM_FRAME_SIZE;
 	    throw new Error();
 	}
@@ -1607,7 +1607,7 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	    Debug.out.println("ERROR: download ring full");
 	    Adapter.DPDRingFull = true;
 	    throw new Error();
-	} 
+	}
 
 	// Get the free DPD from the DPD ring.
 	dpdhelper = Adapter.TailDPD;
@@ -2541,17 +2541,17 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
     @Override
     public void setReceiveMode(int mode) {
 	switch(mode) {
-	case NetworkDevice.RECEIVE_MODE_INDIVIDUAL:
-	    NICSetReceiveMode(null);
-	    break;
-	case NetworkDevice.RECEIVE_MODE_PROMISCOUS:
-	    NICSetReceiveMode(null);
-	    break;
-	case NetworkDevice.RECEIVE_MODE_MULTICAST:
-	    NICSetReceiveMode(null);
-	    break;
-	default:
-	    throw new Error("Wrong receive mode");
+            case NetworkDevice.RECEIVE_MODE_INDIVIDUAL:
+                NICSetReceiveMode(null);
+                break;
+            case NetworkDevice.RECEIVE_MODE_PROMISCOUS:
+                NICSetReceiveMode(null);
+                break;
+            case NetworkDevice.RECEIVE_MODE_MULTICAST:
+                NICSetReceiveMode(null);
+                break;
+            default:
+                throw new Error("Wrong receive mode");
 	}
 	unmaskInterrupts();
     }
@@ -3625,6 +3625,7 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
     /**
      * this is the main interrupt dispatching routine 
      */
+    @Override
     public void interrupt() {	
 	cpuManager.recordEvent(event_interrupt);
 	short intStatus = 0;
@@ -3636,7 +3637,7 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 
 	// no interrupt latch? -> no interrupt occured -> just return
 	if (!((intStatus & Register.INTSTATUS_INTERRUPT_LATCH()) > 0)) {	
-	    Debug.out.println("interruptHandler: no interupt occured???");
+	    Debug.out.println("interruptHandler: no interupt occured?");
 	    return;
 	}
 	else {
@@ -3709,7 +3710,6 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	// re-enable nic interrupts if interrupt handler was sucessful
         if (ok) befehl.NicUnmaskAllInterrupt(Adapter);
 	// Debug.out.println("InterruptHandler: OUT");
-	return;
     }
 
     /* This routine handles the host error */

@@ -1,6 +1,5 @@
 package jx.net;
 
-import jx.net.IPAddress;
 import jx.zero.Memory;
 
 public interface NetInit extends jx.zero.Portal {

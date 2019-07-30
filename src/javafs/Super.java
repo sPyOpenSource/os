@@ -41,7 +41,7 @@ public class Super {
 
     public Super(FileSystem fileSystem, boolean s_readonly, BufferCache bufferCache, InodeCache inodeCache, Clock clock) {
 	this.fileSystem = fileSystem;
-	s_dirty = new Vector(100); // 100 ???
+	s_dirty = new Vector(10); // 100 ???
 	bitmap_cache = new Vector(16);
 	this.s_readonly = s_readonly;
 	this.bufferCache = bufferCache;
@@ -119,7 +119,7 @@ public class Super {
     private  void readSuper() throws BufferIOException {
 	BufferHead bh;
 	GroupData desc;
-	//Debug.out.println("Reading superblock of device ");
+	Debug.out.println("Reading superblock of device ");
 
         if ((sb_bh = bufferCache.bread(1)) == null) {
 	    /*System.out*/Debug.out.println("unable to read superblock");
@@ -132,11 +132,11 @@ public class Super {
 	s_blocksize = 1024;
 	for (int i = 0; i < sb_data.s_log_block_size(); i++)
 	    s_blocksize *= 2;
-	//Debug.out.println("readSuper(): blocksize: " + s_blocksize);
+	Debug.out.println("readSuper(): blocksize: " + s_blocksize);
 
 	s_inodes_count = sb_data.s_inodes_count();
 	if (sb_data.s_inodes_count() == 0) {
-	    Debug.out.println("Superblock ungueltig 1");
+	    Debug.out.println("Superblock invalid 1");
 	    throw new BufferIOException();
 	}
 	if (sb_data.s_blocks_per_group() == 0) {
@@ -166,7 +166,7 @@ public class Super {
 
     private  void setupSuper() {
 	sb_data.s_mtime(clock.getTimeInMillis());
-	//Debug.out.println("setupSuper");
+	Debug.out.println("setupSuper");
 	try {
 	    checkBlockBitmaps();
 	    checkInodeBitmaps();
@@ -466,7 +466,7 @@ public class Super {
 		return;
 	    
 	    if (bitmap.testBit(0) == 0) {
-		/*System.out*/Debug.out.println("checkBlockBitmaps: Superblock in group "+i+" is marked free");
+		/*System.out*/Debug.out.println("checkBlockBitmaps: Superblock in group " + i + " is marked free");
 		bitmap.setBit(0);
 		bitmap.markBitmapDirty();
 	    }

@@ -8,10 +8,12 @@ public interface PacketsConsumer1 {
 
     /**
      * Get number of bytes need for header information
+     * @return 
      */
     int requiresSpace();
     /**
      * Get Maximum Transfer Unit of the underlying network 
+     * @return 
      */
     int getMTU();
 }

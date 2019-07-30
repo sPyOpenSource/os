@@ -153,15 +153,15 @@ public class UDP implements IPConsumer, IPConsumer1 {
 	checkPort(dstPort);
 	return new PacketsConsumer1() {
 		public Memory processMemory(Memory userbuf, int offset, int size) {
-		    if (debugPacketNotice) Debug.out.println("UDP.transmit: "+size);
+		    if (debugPacketNotice) Debug.out.println("UDP.transmit: " + size);
 		    cpuManager.recordEvent(event_snd);
 		    Memory buf = userbuf;
 		    offset -= UDPFormat.requiresSpace();
 		    UDPFormat udp = new UDPFormat(buf, offset);
 		    udp.insertSourcePort(srcPort);
 		    udp.insertDestPort(dstPort);
-		    udp.insertLength(size+8);
-		    Memory ret = lowerLayer.processMemory(buf, offset, UDPFormat.requiresSpace()+size);
+		    udp.insertLength(size + 8);
+		    Memory ret = lowerLayer.processMemory(buf, offset, UDPFormat.requiresSpace() + size);
 		    return ret;
 		}
 		public int requiresSpace() {return UDPFormat.SIZE;}

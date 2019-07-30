@@ -49,7 +49,6 @@ class NicStatistics {
     }	
 
     public void reset() {
-	
 	TxFramesOk = 0;
 	TxBytesOk = 0;
 	TxFramesDeferred = 0;

@@ -143,7 +143,7 @@ public  class BufferHeadAccess {
      * @return die 16 Bit-Zahl, die an dieser Position in der Datenstruktur steht (als <code>short</code>)
      */
     protected short readShort(int pos) { // FIXME: making this final crashes the translator
-	return memory.getLittleEndian16(offset+pos);
+	return memory.getLittleEndian16(offset + pos);
     }
 
     /**
@@ -155,7 +155,7 @@ public  class BufferHeadAccess {
      * @return die 32 Bit-Zahl, die an dieser Position in der Datenstruktur steht (als <code>int</code>)
      */
      final protected int readInt(int pos) {
-	return memory.getLittleEndian32(offset+pos);
+	return memory.getLittleEndian32(offset + pos);
     }
 
     /**
@@ -197,6 +197,7 @@ public  class BufferHeadAccess {
      * durch den Parameter <code>len</code> begrenzt.
      *
      * @param pos   die Position innerhalb der Datenstruktur
+     * @param len
      * @return ein neues <code>String</code>-Objekt, das die Zeichenkette an dieser Position in der Datenstruktur enth&auml;lt
      */
     final protected String readString(int pos, int len) {

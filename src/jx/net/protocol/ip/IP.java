@@ -287,13 +287,13 @@ public class IP implements MemoryConsumer, IPProducer, IPProducer1, EtherConsume
 
     @Override
     public Memory processEther1(EtherData buf) {
-	if (debugPacketNotice) Debug.out.println("ARP.processEther: "+buf.size);
+	if (debugPacketNotice) Debug.out.println("ARP.processEther: " + buf.size);
 	cpuManager.recordEvent(event_rcv);
 	//buf = buf.revoke();
 	IPFormat ip = new IPFormat(buf.mem, buf.offset);
 
 	if (dumpAll) {
-	    Debug.out.println("IP.receive: size="+buf.size);
+	    Debug.out.println("IP.receive: size=" + buf.size);
 	    ip.dump();
 	}
 
@@ -304,10 +304,10 @@ public class IP implements MemoryConsumer, IPProducer, IPProducer1, EtherConsume
 	IPAddress sourceAddress = new IPAddress(ip.getSourceIPAddress());
         IPAddress destAddress = new IPAddress(ip.getDestIPAddress());
 	
-	if (debugFrag) Debug.out.println("IP-Identification: "+ip.getIdentification());
-	if (debugFrag) Debug.out.println("IP-Fragmentoffset: "+foffs);
-	if (debugFrag) Debug.out.println("IP-TTL: "+ip.getTimeToLive());
-	if (debugFrag) Debug.out.println("IP-Flags: "+flags);
+	if (debugFrag) Debug.out.println("IP-Identification: " + ip.getIdentification());
+	if (debugFrag) Debug.out.println("IP-Fragmentoffset: " + foffs);
+	if (debugFrag) Debug.out.println("IP-TTL: " + ip.getTimeToLive());
+	if (debugFrag) Debug.out.println("IP-Flags: " + flags);
 	
 	/*
 	ReAssembly curFrag = null;

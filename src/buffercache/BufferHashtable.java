@@ -47,15 +47,13 @@ class BufferHashtable {
 	    throw new IllegalArgumentException("fill value out of range " + Integer.toString(percentFill));
 	}
 	this.fillPercent = percentFill;
-	
 	// compute initial table size (ensuring odd)
 	int size = Math.max(count * 100 / fillPercent, MINIMUM_SIZE);
 	size += (size + 1) % 2;
-	//Debug.out.println("size: "+size);
+	Debug.out.println("size: " + size);
 	
 	// initialize the table information
 	entryLimit = (int) (size * fillPercent / 100);
-
 	hashTable = new BufferHead[size];
 	hashTable_length = size;
     }
@@ -100,21 +98,20 @@ class BufferHashtable {
     protected void expandTable() {	
 	// initialize for the increased table size
 	int size = hashTable.length * 2 + 1;
-	Debug.out.println("expandTable to size="+size);
+	Debug.out.println("expandTable to size=" + size);
 	entryLimit = (int) (size * fillPercent / 100);
 	BufferHead[] old = hashTable;
 	hashTable = new BufferHead[size];
 	hashTable_length = size;
-	// reinsert all entries into new table
-	for (int i = 0; i < old.length; i++) {
-	    BufferHead entry = old[i];
-	    if (entry != null) {
-		putInTable(entry);
-		while((entry = entry.hashtable_nextInChain) != null) {
-		    putInTable(entry);		
-		}
-	    }
-	}
+        // reinsert all entries into new table
+        for (BufferHead entry : old) {
+            if (entry != null) {
+                putInTable(entry);
+                while((entry = entry.hashtable_nextInChain) != null) {
+                    putInTable(entry);
+                }
+            }
+        }
 	
     }
     
@@ -156,7 +153,7 @@ class BufferHashtable {
     final public BufferHead get(int block) {
 	int offset = block  % hashTable_length;
 	//if (trace) Debug.out.println("Find Hashedentry at "+offset);
-	for(BufferHead entry = hashTable[offset]; entry != null; entry=entry.hashtable_nextInChain) {
+	for(BufferHead entry = hashTable[offset]; entry != null; entry = entry.hashtable_nextInChain) {
 	    if (block == entry.hashtable_hashkey) {
 		return entry;
 	    }
@@ -189,17 +186,16 @@ class BufferHashtable {
 	if (entry.hashtable_nextInChain == null) throw new Error("not found");
 	entry.hashtable_nextInChain = entry.hashtable_nextInChain.hashtable_nextInChain;
 	entryCount--;
-	return;
     }
     
 
     final public void printStatistics() {
-	Debug.out.println("Hashtable statistics: table Length="+hashTable.length);
-	int unused=0;
-	int total=0;
-	int collisions=0;
-	int longest_chain=0;
-	for(int i=0; i<hashTable.length; i++) {
+	Debug.out.println("Hashtable statistics: table Length=" + hashTable.length);
+	int unused = 0;
+	int total = 0;
+	int collisions = 0;
+	int longest_chain = 0;
+	for(int i = 0; i < hashTable.length; i++) {
 	    if (hashTable[i] != null)  { // filled
 		int length = 1;
 		BufferHead bh = hashTable[i];
@@ -211,15 +207,15 @@ class BufferHashtable {
 		collisions += length - 1;
 		if (length > longest_chain) longest_chain = length;
 		Debug.out.println("  " + alignString(Integer.toString((int)i), 11) 
-				+ alignString(Integer.toString((int)(length)), 11)+ "   ");
+				  + alignString(Integer.toString((int)(length)), 11) + "   ");
 	    } else {
 		unused++;
 	    } 
 	}
-	Debug.out.println("  total slots="+total);
-	Debug.out.println("  unused slots: "+unused);
-	Debug.out.println("  collisions: "+collisions);
-	Debug.out.println("  longest chain: "+longest_chain);
+	Debug.out.println("  total slots=" + total);
+	Debug.out.println("  unused slots: " + unused);
+	Debug.out.println("  collisions: " + collisions);
+	Debug.out.println("  longest chain: " + longest_chain);
     }
  
     /** do not use the returned Iterator while concurrently
@@ -246,9 +242,11 @@ class BufferHashtable {
 		    if (offset < hashTable.length) recent =  hashTable[offset];
 		    else recent = null;
 		}
+                @Override
 		final public boolean hasNext() {
 		    return recent != null;
 		}
+                @Override
 		final public Object next() {
 		    Object ret = recent;
 		    advance();
@@ -276,13 +274,13 @@ class BufferHashtable {
 	for(int i=3; i<1000; i++) {
 	    collect.put(new BufferHead(memMgr,i,1024));
 	}
-	BufferHead c1=null;
-	collect.put(new BufferHead(memMgr,3+4096,1024)); // collision
-	collect.put(c1=new BufferHead(memMgr,3+2*4096,1024)); // collision
-	collect.put(new BufferHead(memMgr,3+3*4096,1024)); // collision
-	collect.put(new BufferHead(memMgr,3+4*4096,1024)); // collision
-	BufferHead c2 = collect.get(3+2*4096); // collision
-	if (c1==c2) {
+	BufferHead c1;
+	collect.put(new BufferHead(memMgr, 3 + 4096, 1024)); // collision
+	collect.put(c1 = new BufferHead(memMgr, 3 + 2 * 4096, 1024)); // collision
+	collect.put(new BufferHead(memMgr, 3 + 3 * 4096, 1024)); // collision
+	collect.put(new BufferHead(memMgr, 3 + 4 * 4096, 1024)); // collision
+	BufferHead c2 = collect.get(3 + 2 * 4096); // collision
+	if (c1 == c2) {
 	    Debug.out.println("collision success");
 	} else {
 	    Debug.out.println("collision failure");
@@ -314,6 +312,5 @@ class BufferHashtable {
 	    tmp1 += " ";
 	return (tmp1 + value);
     }
-
 
 }

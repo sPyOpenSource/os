@@ -35,7 +35,9 @@ class BufferHead extends jx.fs.buffercache.BufferHead {
 	if (size != 1024) throw new Error("only size 1024 supported");
     }
 
+    @Override
     final public int getBlock() { return b_block; }
+    @Override
     final public int getSize() { return b_size; }
 
     /**
@@ -44,7 +46,9 @@ class BufferHead extends jx.fs.buffercache.BufferHead {
      *
      * @param value falls <code>true</code>, muss der Inhalt noch geschrieben werden
      */
+    @Override
     final public void markDirty()    { dirty = true; }
+    @Override
     final public void markClean()    { dirty = false; }
 
     /**
@@ -53,6 +57,7 @@ class BufferHead extends jx.fs.buffercache.BufferHead {
      * @return <code>true</code>, falls der Inhalt des BufferHeads nicht mit dem auf der Festplatte &uuml;bereinstimmt
      */
     final boolean dirty()    { return dirty; }
+    @Override
     final public boolean isDirty()    { return dirty; }
 
     /**
@@ -62,7 +67,9 @@ class BufferHead extends jx.fs.buffercache.BufferHead {
      *
      * @param value der neue Zustand der Sperre
      */
+    @Override
     final public void lock() { locked = true; }
+    @Override
     final public void unlock() { locked = false; }
 
     /**
@@ -70,9 +77,11 @@ class BufferHead extends jx.fs.buffercache.BufferHead {
      *
      * @param value <code>true</code>, falls der BufferHead gesperrt ist
      */
+    @Override
     final public boolean isLocked()   { return locked; }
 
 
+    @Override
     public void waitUntilUnlocked() {
 	// TODO: make this atomic!
 	throw new Error("NOT IMPLEMENTED");
@@ -88,6 +97,7 @@ class BufferHead extends jx.fs.buffercache.BufferHead {
      * @param value der neue Zustand des Inhalts: <code>false</code> bedeutet, dass bei der Operation ein Fehler aufgetreten
      *              und der Inhalt nicht mehr g&uuml;ltig ist
      */
+    @Override
     final public void markUptodate() { uptodate = true; }
 
     /**
@@ -96,11 +106,13 @@ class BufferHead extends jx.fs.buffercache.BufferHead {
      * @return <code>false</code> bedeutet, dass bei der Operation ein Fehler aufgetreten und der Inhalt nicht mehr
      *         g&uuml;ltig ist
      */
+    @Override
     final public boolean isUptodate() { return uptodate; }
 
     /**
      * Wartet, bis die Sperre des BufferHeads aufgehoben wird.
      */
+    @Override
     public void waitOn() {
 	if (locked) {
 	    b_count++;
@@ -117,6 +129,7 @@ class BufferHead extends jx.fs.buffercache.BufferHead {
      * @param error zeigt an, ob bei der Operation ein Fehler aufgetreten ist (<code>true</code>)
      * @param synchronous falls <code>true</code>, wird auf das Ende der Operation (mittels <code>sleep</code>) gewartet
      */
+    @Override
     public void endIo(boolean error, boolean synchronous) {
 	if (error)
 	    throw new Error("IO Error");
@@ -129,6 +142,7 @@ class BufferHead extends jx.fs.buffercache.BufferHead {
     /**
      * Clears the buffer.
      */
+    @Override
     final public void clear() {
 	data.clear();
 	//data.fill32((short)0,0,b_size>>2);
@@ -143,6 +157,7 @@ class BufferHead extends jx.fs.buffercache.BufferHead {
      * @param from das erste zu l&ouml;schende Byte des Inhalts
      * @param to   das erste Byte des Bereichs, das nicht mehr zu gel&ouml;scht werden soll
      */
+    @Override
     public void clear(int from, int to) {
 	if ((from < 0) || (from >= b_size) || (to < 0) || (to > b_size))
 	    return;
@@ -170,7 +185,9 @@ class BufferHead extends jx.fs.buffercache.BufferHead {
 	b_count--;
     }
     final boolean isUnused() { return b_count==0; }
+    @Override
     final public boolean isUsed() { return b_count>0; }
+    @Override
     final public boolean isUsedOnlyByMe() { return b_count==1; }
 
 

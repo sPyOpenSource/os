@@ -12,14 +12,13 @@ public class MultiThreadBufferList2 extends MultiThreadBufferList {
 	super(new Buffer2(bufs[0]), null);
 	//if(1==1)throw new Error("TODO: extendRange -> split"); //super(new Buffer2(bufs[0].extendFullRange()), null);
 	if (verbose) {
-	    cpuManager.dump("MultiThreadBufferList2(Memory["+bufs.length+"])", this);
+	    cpuManager.dump("MultiThreadBufferList2(Memory[" + bufs.length + "])", this);
 	}
 	for(int i = 1; i < bufs.length; i++) {
-	    if (verbose) Debug.out.println("       loop:"+i);
+	    if (verbose) Debug.out.println("       loop:" + i);
 	    //if(1==1)throw new Error("TODO: extendRange -> split"); //appendElement(new Buffer2(bufs[i].extendFullRange()));
 	    appendElement(new Buffer2(bufs[i]));
 	}
 	if (verbose) dump();
     }
-
 }

@@ -1,11 +1,9 @@
 package jx.fs.buffercache;
 
-import jx.zero.Debug;
 import jx.zero.Memory;
-import jx.zero.*;
 
 public abstract class BufferHead extends jx.buffer.BufferHead {
-    public BufferHead(Memory buf) {super(buf); }
+    public BufferHead(Memory buf) { super(buf); }
 
     public abstract int getBlock();
     public abstract int getSize();
@@ -26,10 +24,10 @@ public abstract class BufferHead extends jx.buffer.BufferHead {
 
 
 
-  public abstract void clear();
-  public abstract void clear(int from, int to);
+    public abstract void clear();
+    public abstract void clear(int from, int to);
 
     public abstract boolean isUsed();
-   public abstract boolean isUsedOnlyByMe();
+    public abstract boolean isUsedOnlyByMe();
 
 }

@@ -1,12 +1,8 @@
 package jx.net.protocol.ether;
 
-import jx.devices.net.NetworkDevice;
 import jx.zero.Debug;
-import java.lang.*;
-import jx.zero.ThreadEntry;
 import jx.zero.*;
 import jx.zero.debug.*;
-import jx.devices.*;
 
 import jx.net.format.Format;
 
@@ -44,7 +40,7 @@ public class EtherFormat extends Format {
     public static int requiresSpace() { return 14; }
 
     boolean destAddressEquals(byte[] addr) { 
-	for(int i=0; i<6; i++) {
+	for(int i = 0; i < 6; i++) {
 	    if(readByte(i) != addr[i]) {
 		Debug.out.println("Ether.addrCompare: position "+i+"differs:"+readByte(i)+"!="+addr[i]);
 		return false;

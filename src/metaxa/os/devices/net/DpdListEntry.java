@@ -10,7 +10,7 @@ class DpdListEntry extends ListEntry {
     private DpdListEntry Previous;
     
     // the actual memory-objects
-    private Memory DpdMemory;
+    private final Memory DpdMemory;
     private Memory storeMem;
   
     private int DPDPhysicalAddress;

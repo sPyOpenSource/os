@@ -1,7 +1,5 @@
 package jx.buffer.multithread;
 
-import jx.buffer.*;
-
 import jx.zero.*;
 
 /**
@@ -38,7 +36,7 @@ public class MultiThreadBufferList implements BufferProducer, BufferConsumer {
     String name; // for debugging
 
     int event_list;
-    boolean recording=false;
+    boolean recording = false;
 
     public MultiThreadBufferList() {
 	this(new Buffer(null), null);
@@ -54,7 +52,7 @@ public class MultiThreadBufferList implements BufferProducer, BufferConsumer {
 	//    cpuManager.dump("MultiThreadBufferList(Memory["+bufs.length+"])", this);
 	}
 	for(int i = 1; i < bufs.length; i++) {
-	    if (verbose) Debug.out.println("       loop:"+i);
+	    if (verbose) Debug.out.println("       loop:" + i);
 	    appendElement(new Buffer(bufs[i]));
 	}
 	if (verbose) dump();
@@ -66,11 +64,12 @@ public class MultiThreadBufferList implements BufferProducer, BufferConsumer {
 	last = initial;
 	this.consumer = consumer;
 	cpuManager = (CPUManager) InitialNaming.getInitialNaming().lookup("CPUManager");
-	if (verbose) cpuManager.dump("MultiThreadBufferList",this);
+	if (verbose) cpuManager.dump("MultiThreadBufferList", this);
 	size = 1;
     }
 
-     /** for debugging */
+     /** for debugging
+     * @param name */
     public void setListName(String name) {
 	this.name = name;
     }

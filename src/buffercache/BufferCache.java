@@ -14,7 +14,7 @@ import jx.collections.Iterator;
 
 public class BufferCache implements jx.fs.buffercache.BufferCache {
     private static final boolean statistics = false;
-    private static final boolean trace = false;
+    private static final boolean trace = true;
     private static final boolean debugSync = false;
     
     private final BufferHashtable buffer_hashtable;
@@ -61,10 +61,8 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
 	
 	int memory_size;
 	int order;
-	
-	buffer_hashtable = new BufferHashtable(200000);
+	buffer_hashtable = new BufferHashtable(20000);
 	free_list = new BufferFreeList();
-    Debug.out.println("max");
 	this.maximalNumberOfBlocks = maximalNumberOfBlocks;
 	this.initialNumberOfBlocks = initialNumberOfBlocks;
 	this.incrementNumberOfBlocks = incrementNumberOfBlocks;
@@ -182,7 +180,7 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
 	bh.init(block);
 	buffer_hashtable.put(bh);
 
-	if (trace) Debug.out.println("getblk out with " +bh.getBlock());
+	if (trace) Debug.out.println("getblk out with " + bh.getBlock());
 
 	return bh;
     }
@@ -308,7 +306,7 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
 	    nr_buffers++;
 	}
 	if (trace) Debug.out.println("BufferCache: created " + count + " buffers");
-	Debug.out.println("buffercache.BufferCache: size now: " + (nr_buffers*bufferSize) + " bytes");
+	Debug.out.println("buffercache.BufferCache: size now: " + (nr_buffers * bufferSize) + " bytes");
 	//buffer_wait.wakeUp();
 	//buffer_wait.notify();
 
