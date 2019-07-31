@@ -1,7 +1,6 @@
 package jx.bioro;
 
 import jx.zero.*;
-import jx.zero.debug.*;
 import jx.bio.BlockIO;
 
 class Main {

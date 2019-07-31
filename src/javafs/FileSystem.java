@@ -118,8 +118,8 @@ public class FileSystem implements jx.fs.FileSystem, Service {
 	// zurckgeliefert.
 	if (i_data == null) throw new NotExistException();
 
-	if (i_data.i_size() < 0) { // Ueberlauf
-	    Debug.out.println("getInode(): Inode zu gross (Ueberlauf)");
+	if (i_data.i_size() < 0) { // overflow
+	    Debug.out.println("getInode(): Inode zu gross (overflow)");
 	    throw new InodeIOException();
 	}
 

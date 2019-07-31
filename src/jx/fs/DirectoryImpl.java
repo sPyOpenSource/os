@@ -1,7 +1,5 @@
 package jx.fs;
 
-import jx.zero.Debug;
-
 final public class DirectoryImpl extends FSObjectImpl implements jx.fs.Directory {
 
     public DirectoryImpl(FilesystemImpl impl, FileSystem fs, FSObjectImpl parent, Inode inode) {

@@ -15,9 +15,9 @@ public class AuditStore {
     Clock clock = (Clock)InitialNaming.getInitialNaming().lookup("Clock");
 
     /**
+     * @param naming
      * @param bio block I/O device
      * @param append append to existing log
-     * @param writeImmediately write each log to disk immediately
      * @param numberOfSectorsToBuffer maximum number of sectors that are buffered before log is written to disk (0 means do not buffer at all)
      */
     public AuditStore(Naming naming, BlockIO bio, boolean append, int numberOfSectorsToBuffer) {
@@ -30,7 +30,7 @@ public class AuditStore {
 	posInBuf=0;
 	if (append) {
 	    // find last entry
-	    for (int i=1; i<capacity; i++) {
+	    for (int i = 1; i < capacity; i++) {
 		bio.readSectors(i, 1, buf, true);
 	    }
 	}
@@ -83,8 +83,4 @@ public class AuditStore {
 	    }
 	}
     }
-
-
-
-    
 }

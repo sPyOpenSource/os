@@ -26,7 +26,7 @@ executable file might be covered by the GNU General Public License. */
 
 
 package java.util;
-import java.text.DateFormatSymbols;
+//import java.text.DateFormatSymbols;
 
 /**
  * This class represents a time zone offset and handles daylight savings.
@@ -843,13 +843,13 @@ public abstract class TimeZone implements java.io.Serializable, Cloneable
    */
   public String getDisplayName(boolean dst, int style, Locale locale)
   {
-    DateFormatSymbols dfs;
+    //DateFormatSymbols dfs;
     try
       {
-	dfs = new DateFormatSymbols(locale);
+	//dfs = new DateFormatSymbols(locale);
 
 	// The format of the value returned is defined by us.
-	String[][]zoneinfo = dfs.getZoneStrings();
+	String[][]zoneinfo = null;//dfs.getZoneStrings();
 	for (int i = 0; i < zoneinfo.length; i++)
 	  {
 	    if (zoneinfo[i][0].equals(getID()))

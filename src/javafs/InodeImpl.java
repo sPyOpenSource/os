@@ -238,9 +238,10 @@ public abstract class InodeImpl extends jx.fs.InodeImpl {
      * Liest den Inhalt des Blocks mit der Nummer <code>blocknr</code>. Der Block wird mit <code>getBlk</code> angefordert
      * (vergleichbar mit der gleichnamigen Funktion im BufferCache).
      *
+     * @return 
      * @see #getBlk(int block, boolean create)
      * @see fs.BufferCache#bread(int device, int block, int size)
-     * @param block  die Nummer des gew&uuml;nschten Blocks
+     * @param blocknr  die Nummer des gew&uuml;nschten Blocks
      * @param create Falls <code>true</code>, wird der Block erzeugt, falls er noch nicht vorhanden ist (jenseits der
      *               Inodegr&ouml;o&szlig;e liegt.
      */

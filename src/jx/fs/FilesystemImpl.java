@@ -6,10 +6,10 @@ import java.util.Vector;
 
 public class FilesystemImpl implements FilesystemInterface, Service {
 
-    private FileSystem     fs;
-    private EXT2Permission defaultPermission = new EXT2Permission(EXT2Permission.RWX,0,0);
+    private final FileSystem     fs;
+    private final EXT2Permission defaultPermission = new EXT2Permission(EXT2Permission.RWX, 0, 0);
     private Inode          rInode;
-    private Vector         fsobjList = new Vector();
+    private final Vector         fsobjList = new Vector();
     private boolean        umounted = true;
 
     public FilesystemImpl(FileSystem fs) {
@@ -45,7 +45,7 @@ public class FilesystemImpl implements FilesystemInterface, Service {
     public void unmount() {
 	umounted = true;
 	try {
-	    for (int i=0;i<fsobjList.size();i++) {
+	    for (int i = 0; i < fsobjList.size(); i++) {
 		try {
 		    FSObjectImpl fsobj = (FSObjectImpl)fsobjList.elementAt(i);
 		    fsobj.close();
@@ -54,7 +54,7 @@ public class FilesystemImpl implements FilesystemInterface, Service {
 	    fsobjList.removeAllElements();
 	    rInode.decUseCount();
 	} catch (Exception ex) {ex.printStackTrace();}
-	rInode=null;
+	rInode = null;
 	fs.release();
     }
 

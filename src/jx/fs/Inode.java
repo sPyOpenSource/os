@@ -3,8 +3,6 @@ package jx.fs;
 import jx.zero.Memory;
 import jx.zero.ReadOnlyMemory;
 
-import java.util.*;
-
 /**
  * Portal interface to access the files and directories of the filesystem.
  */
@@ -317,12 +315,14 @@ public interface Inode extends jx.zero.Portal {
      * Liest den Inhalt der Datei.
      *
      * @param     pos                  die Position innerhalb der Datei, ab der gelesen werden soll
-     * @param     b                    der Puffer, der die zu lesenden Daten aufnehmen soll
+     * @param     mem                    der Puffer, der die zu lesenden Daten aufnehmen soll
      * @param     bufoff               
      * @param     len                  die Anzahl zu lesender Byte
+     * @return 
      * @exception InodeIOException     falls bei der Ein-/Ausgabe ein Fehler auftritt
      * @exception NoFileInodeException falls es sich nicht um eine Datei handelt (Lesen eines Verzeichnisses ist nicht erlaubt)
      * @exception PermissionException  falls die Zugriffsrechte der Datei die Operation nicht erlauben
+     * @throws jx.fs.NotExistException
      */
     int     read(int pos, Memory mem, int bufoff, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException;
 

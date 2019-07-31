@@ -247,6 +247,6 @@ public interface FS extends Portal {
 
 //     public Inode getInode(int deviceIdentifier, int fileIdentifier) throws FSException, NotExistException, PermissionException;
 
- public Inode getInode(Integer deviceIdentifier, int fileIdentifier) throws FSException, NotExistException, PermissionException;
+    public Inode getInode(Integer deviceIdentifier, int fileIdentifier) throws FSException, NotExistException, PermissionException;
 
 }

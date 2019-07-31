@@ -54,17 +54,17 @@ class AuditRecord {
 
     private int addString(Memory buf, int pos, String str) {
 	buf.setLittleEndian32(pos, str.length());
-	for(int i=0; i<str.length(); i++) {
-	    buf.set8(pos+i+4, (byte)str.charAt(i));
+	for(int i = 0; i < str.length(); i++) {
+	    buf.set8(pos + i + 4, (byte)str.charAt(i));
 	}
-	return pos+str.length()+4;
+	return pos + str.length() + 4;
     }
 
     private String parseString(Memory buf, int pos) {
 	int len = buf.getLittleEndian32(pos);
 	byte b[] = new byte[len];
-	for(int i=0; i<len; i++) {
-	    b[i] = buf.get8(pos+i+4);
+	for(int i = 0; i < len; i++) {
+	    b[i] = buf.get8(pos + i + 4);
 	}
 	return new String(b);
     }

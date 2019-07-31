@@ -108,9 +108,9 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
      * @param synchronous wait until the block is read
      */
     final void readBlock(jx.fs.buffercache.BufferHead bh, boolean synchronous) {
-	if (trace) Debug.out.println("rwBlock(" + bh.getBlock()+")  size="+bh.getSize());
+	if (trace) Debug.out.println("rwBlock(" + bh.getBlock() + ")  size=" + bh.getSize());
 	try {
-	    idedevice.readSectors(bh.getBlock() * (1024/512), (1024/512), bh.getData(), true);
+	    idedevice.readSectors(bh.getBlock() * (1024 / 512), (1024 / 512), bh.getData(), true);
 	} catch(Error e) {
 	    bh.endIo(true, true);
 	    return;
