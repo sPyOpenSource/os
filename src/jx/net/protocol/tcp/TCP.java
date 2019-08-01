@@ -1,13 +1,11 @@
 package jx.net.protocol.tcp;
 
 import jx.net.*;
-import jx.zero.debug.*;
 import jx.zero.*;
 import jx.net.protocol.ip.*;
 import java.util.*;
 import jx.buffer.multithread.MultiThreadList;
 import jx.timer.TimerManager;
-import jx.timer.TimerHandler;
 
 /*
  * Verwaltet Verbindungen und verteilt Pakete an TCPSockets
@@ -15,7 +13,7 @@ import jx.timer.TimerHandler;
  */
 
 
-public class TCP implements IPConsumer, IPConsumer1, Runnable {
+public class TCP implements IPConsumer, Runnable {
 
     static final boolean debug = false;
     static final boolean verbose = false;
@@ -32,15 +30,15 @@ public class TCP implements IPConsumer, IPConsumer1, Runnable {
 
     NetInit net;
 
-    public TCP(IPProducer lowerProducer, jx.net.NetInit net, final TimerManager timerManager) {
+    /*public TCP(IPProducer lowerProducer, jx.net.NetInit net, final TimerManager timerManager) {
 	// bei der IP-Schicht anmelden
 	lowerProducer.registerConsumer(this, "TCP");
 
 	this.net = net;
 	tcpSockets = new Vector();
 	tcpServerSockets = new TCPSocket[65536];
-    }
-    public TCP(IPProducer1 lowerProducer, jx.net.NetInit net, final TimerManager timerManager ) {
+    }*/
+    public TCP(IPProducer lowerProducer, jx.net.NetInit net, final TimerManager timerManager ) {
 	// bei der IP-Schicht anmelden
 	usableBufs = new MultiThreadList();
 	for ( int i = 0; i<INITIAL_BUFFER_SIZE; i++) {
@@ -54,7 +52,7 @@ public class TCP implements IPConsumer, IPConsumer1, Runnable {
 	tcpSockets = new Vector();
 	tcpServerSockets = new TCPSocket[65536];
 
-	lowerProducer.registerConsumer1(this, "TCP");
+	lowerProducer.registerConsumer(this, "TCP");
 
 	final CPUManager cpuManager = (CPUManager) InitialNaming.getInitialNaming().lookup("CPUManager");
 	CPUState cyclops = cpuManager.createCPUState( new ThreadEntry(){

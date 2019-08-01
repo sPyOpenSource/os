@@ -9,12 +9,12 @@ import jx.net.dispatch.Dispatch;
 import jx.net.PacketsProducer;
 import jx.net.PacketsConsumer;
 import jx.net.PacketsConsumer1;
-import jx.net.EtherConsumer1;
-import jx.net.EtherProducer1;
+import jx.net.EtherConsumer;
+import jx.net.EtherProducer;
 import jx.net.EtherData;
 import jx.buffer.multithread.MultiThreadList;
 
-public class Ether  implements PacketsProducer, EtherProducer1 {
+public class Ether  implements PacketsProducer, EtherProducer {
     static final boolean dumpAll = true; // switch on to see all ether frames
     static final boolean dumpSend = false;
     static final boolean debug = false;
@@ -40,9 +40,9 @@ public class Ether  implements PacketsProducer, EtherProducer1 {
 
     private final CPUManager cpuManager = (CPUManager)InitialNaming.getInitialNaming().lookup("CPUManager");
 
-    private EtherConsumer1 myIPConsumer;
-    private EtherConsumer1 myARPConsumer;
-    private EtherConsumer1 myRARPConsumer;
+    private EtherConsumer myIPConsumer;
+    private EtherConsumer myARPConsumer;
+    private EtherConsumer myRARPConsumer;
     private boolean avoidSplitting = true;
 
     {
@@ -76,7 +76,7 @@ public class Ether  implements PacketsProducer, EtherProducer1 {
      * @return 
      */
     @Override
-    public boolean registerConsumer1(EtherConsumer1 consumer, String name) {
+    public boolean registerConsumerEther(EtherConsumer consumer, String name) {
         switch (name) {
             case "IP":
                 myIPConsumer = consumer;
@@ -247,7 +247,7 @@ public class Ether  implements PacketsProducer, EtherProducer1 {
                                 }
                                 if (dumpAll) 
                                     Debug.out.println("Ether: received IP packet");
-                                newMem = myIPConsumer.processEther1(data);
+                                newMem = myIPConsumer.processEther(data);
                                 break;
                             case PROTO_ARP:
                                 if (myARPConsumer == null) {
@@ -258,7 +258,7 @@ public class Ether  implements PacketsProducer, EtherProducer1 {
                                     Debug.out.println("Ether: received ARP packet");
                                     Dump.xdump(data.mem, data.offset, 16);
                                 }
-                                newMem = myARPConsumer.processEther1(data);
+                                newMem = myARPConsumer.processEther(data);
                                 break;
                             case PROTO_RARP:
                                 if (myRARPConsumer == null) {
@@ -267,7 +267,7 @@ public class Ether  implements PacketsProducer, EtherProducer1 {
                                 }
                                 if (dumpAll)
                                     Debug.out.println("Ether: received RARP packet");
-                                newMem = myRARPConsumer.processEther1(data);
+                                newMem = myRARPConsumer.processEther(data);
                                 break;
                             default: 
                                 Debug.out.println("Unknown packet. ID=" + id);

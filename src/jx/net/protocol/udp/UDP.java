@@ -2,27 +2,19 @@ package jx.net.protocol.udp;
 
 import jx.zero.*;
 import jx.zero.debug.Dump;
-
 import jx.buffer.separator.MemoryConsumer;
-import jx.net.PacketsProducer;
 import jx.net.PacketsConsumer;
 import jx.net.PacketsConsumer1;
-import jx.net.IPAddress;
-
 import jx.net.IPProducer;
-import jx.net.IPProducer1;
 import jx.net.IPConsumer;
 import jx.net.IPData;
 import jx.net.UDPConsumer;
-import jx.net.UDPConsumer1;
-import jx.net.IPConsumer1;
 import jx.net.UDPData;
 
-public class UDP implements IPConsumer, IPConsumer1 {
+public class UDP implements IPConsumer {
   
     private PacketsConsumer lowerConsumer;
     private IPProducer lowerProducer;
-    private IPProducer1 lowerProducer1;
 
     static final boolean dumpAll = false; // switch on to see all udp frames
     static final boolean printIfNoReceiver = false; // print to debug out if no receiver for port
@@ -30,7 +22,7 @@ public class UDP implements IPConsumer, IPConsumer1 {
     private final static boolean debugPacketNotice = false;
 
     private UDPConsumer[] udpConsumerList = new UDPConsumer[65536]; // hack
-    private UDPConsumer1[] udpConsumerList1 = new UDPConsumer1[65536]; // hack
+   // private UDPConsumer1[] udpConsumerList1 = new UDPConsumer1[65536]; // hack
 
     CPUManager cpuManager;
     int event_rcv;
@@ -41,18 +33,14 @@ public class UDP implements IPConsumer, IPConsumer1 {
 	this.lowerProducer = lowerProducer;
 	lowerProducer.registerConsumer(this, "UDP");
     }
-    public UDP(IPProducer1 lowerProducer) {
-	init();
-	this.lowerProducer1 = lowerProducer;
-	lowerProducer.registerConsumer1(this, "UDP");
-    }
+
     private void init() {
 	cpuManager = (CPUManager) InitialNaming.getInitialNaming().lookup("CPUManager");
 	event_rcv = cpuManager.createNewEvent("UDPRcv");
 	event_snd = cpuManager.createNewEvent("UDPSnd");
     }
 
-    public Memory processIP1(IPData buf) {
+    /*public Memory processIP1(IPData buf) {
 	if (debugPacketNotice) Debug.out.println("UDP.receive: "+buf.size);
 	cpuManager.recordEvent(event_rcv);
 	Memory mem = buf.mem;
@@ -83,7 +71,7 @@ public class UDP implements IPConsumer, IPConsumer1 {
 	if (printIfNoReceiver)
 	    Debug.out.println("No UDP receiver for port: "+port);
 	return buf.mem;
-    }
+    }*/
 
     public Memory processIP(IPData buf) {
 	if (debugPacketNotice) Debug.out.println("UDP.receive: "+buf.mem.size());
@@ -119,7 +107,7 @@ public class UDP implements IPConsumer, IPConsumer1 {
 	return buf.mem;
     }
 
-    public boolean registerUDPConsumer1(UDPConsumer1 consumer, int port) {
+    /*public boolean registerUDPConsumer1(UDPConsumer1 consumer, int port) {
 	checkPort(port);
 	if (printRegistration) {
 	  Debug.out.println("Register1 (nosplit) UDP receiver for port: "+port);
@@ -127,7 +115,7 @@ public class UDP implements IPConsumer, IPConsumer1 {
 	if (udpConsumerList1[port] != null) throw new Error("port already used");
 	udpConsumerList1[port] = consumer;
 	return true;
-    }
+    }*/
 
 
     public boolean registerUDPConsumer(UDPConsumer consumer, int port) {
@@ -199,16 +187,9 @@ public class UDP implements IPConsumer, IPConsumer1 {
     }
 
     private void checkPort(int port) {
-	if (port <0 || port >65535) {
-	    Debug.out.println("PORT: "+port);
+	if (port < 0 || port > 65535) {
+	    Debug.out.println("PORT: " + port);
 	    throw new Error("Invalid port number.");
 	}
     }
 }
-
-
-
-
-
-
-

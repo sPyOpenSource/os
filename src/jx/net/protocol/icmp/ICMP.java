@@ -2,16 +2,14 @@ package jx.net.protocol.icmp;
 
 import jx.zero.*;
 
-import jx.net.AddressResolution;
-import jx.net.UnknownAddressException;
 import jx.buffer.separator.MemoryConsumer;
 import jx.net.PacketsProducer;
 import jx.net.PacketsConsumer;
 
 public class ICMP implements MemoryConsumer {
   
-    private PacketsConsumer lowerConsumer;
-    private PacketsProducer lowerProducer;
+    private final PacketsConsumer lowerConsumer;
+    private final PacketsProducer lowerProducer;
 
     static final boolean dumpAll = true; // switch on to see all icmp frames
 
@@ -32,6 +30,7 @@ public class ICMP implements MemoryConsumer {
     }
     */
 
+    @Override
     public Memory processMemory(Memory buf) {
 	Memory mem = buf;
 	Debug.out.println("ICMP packet received: offset=");
@@ -40,17 +39,10 @@ public class ICMP implements MemoryConsumer {
 	int type = icmp.getType();
 	int code = icmp.getCode();
 	int checksum = icmp.getChecksum();
-	Debug.out.println("ICMP type: "+type+", code="+code+", checksum="+checksum);
+	Debug.out.println("ICMP type: " + type + ", code=" + code + ", checksum=" + checksum);
 	if (type == TYPE_ECHO) {
 	    Debug.out.println("  ICMP ECHO RECEIVED. (ping)");
 	}
 	return buf;
     }
 }
-
-
-
-
-
-
-

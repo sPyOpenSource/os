@@ -7,7 +7,7 @@ import jx.net.protocol.ether.Ether;
 import jx.net.protocol.ether.EtherFormat;
 import jx.net.protocol.ip.IP;
 
-import jx.net.EtherConsumer1;
+import jx.net.EtherConsumer;
 import jx.net.EtherData;
 
 import jx.net.IPAddress;
@@ -15,7 +15,7 @@ import jx.net.AddressResolution;
 import jx.net.UnknownAddressException;
 import jx.buffer.separator.MemoryConsumer;
 
-public class ARP implements AddressResolution, MemoryConsumer, EtherConsumer1 {
+public class ARP implements AddressResolution, MemoryConsumer, EtherConsumer {
   
     private IPAddress ownProtocolAddress;
     private final byte[] ownHardwareAddress;
@@ -123,7 +123,7 @@ public class ARP implements AddressResolution, MemoryConsumer, EtherConsumer1 {
     } 
     
     @Override
-    public Memory processEther1(EtherData buf) {
+    public Memory processEther(EtherData buf) {
 	ARPFormat a = new ARPFormat(buf.mem, buf.offset);
 	cpuManager.recordEvent(event_rcv);
 	if (debugPacketNotice) Debug.out.println("ARP.processEther: "+buf.size);

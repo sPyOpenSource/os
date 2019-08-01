@@ -11,11 +11,9 @@ import jx.net.AddressResolution;
 import jx.net.IPAddress;
 
 import jx.net.IPProducer;
-import jx.net.IPProducer1;
 import jx.net.IPConsumer;
-import jx.net.IPConsumer1;
-import jx.net.EtherConsumer1;
-import jx.net.EtherProducer1;
+import jx.net.EtherConsumer;
+import jx.net.EtherProducer;
 import jx.net.IPData;
 import jx.net.EtherData;
 
@@ -24,7 +22,7 @@ import jx.net.EtherData;
  * Dispatching and packet reassembly.
  * @author Michael Golm
  */
-public class IP implements MemoryConsumer, IPProducer, IPProducer1, EtherConsumer1 {
+public class IP implements MemoryConsumer, IPProducer, EtherConsumer {
     static final boolean dumpAll = false; // switch on to see all ip packets
     static final boolean debugFrag = false; // debug fragmentation and reassembly
     private final static boolean debugPacketNotice = false;
@@ -46,8 +44,6 @@ public class IP implements MemoryConsumer, IPProducer, IPProducer1, EtherConsume
 
     IPConsumer myUDPConsumer;
     IPConsumer myTCPConsumer;
-    IPConsumer1 myUDPConsumer1;
-    IPConsumer1 myTCPConsumer1;
 
     IPConsumer ipConsumer;
 
@@ -152,9 +148,9 @@ public class IP implements MemoryConsumer, IPProducer, IPProducer1, EtherConsume
 	addressResolution = a;	
 	if (addressResolution != null) addressResolution.register(this);
     }
-    public IP(EtherProducer1 lowerProducer) { 
+    public IP(EtherProducer lowerProducer) { 
 	init();
-	lowerProducer.registerConsumer1(this, "IP");
+	lowerProducer.registerConsumerEther(this, "IP");
     }
     private void init() {
 	memMgr = (MemoryManager)InitialNaming.getInitialNaming().lookup("MemoryManager");
@@ -182,23 +178,23 @@ public class IP implements MemoryConsumer, IPProducer, IPProducer1, EtherConsume
     }
 
     @Override
-    public boolean registerConsumer1(IPConsumer1 consumer, String name) {
+    public boolean registerConsumer(IPConsumer consumer, String name) {
 	if (name.equals("UDP")) {
-	    if (myUDPConsumer1 != null) throw new Error("UDP consumer already registered");
-	    myUDPConsumer1 = consumer;
+	    if (myUDPConsumer != null) throw new Error("UDP consumer already registered");
+	    myUDPConsumer = consumer;
 	    Debug.out.println("IP: Registered UDP consumer");
 	    return true;
 	}
 	if (name.equals("TCP")) {
-	    if (myTCPConsumer1 != null) throw new Error("TCP consumer already registered1");
-	    myTCPConsumer1 = consumer;
+	    if (myTCPConsumer != null) throw new Error("TCP consumer already registered1");
+	    myTCPConsumer = consumer;
 	    return true;	    
 	}
 	throw new Error("Unknown consumer type");
     }
 
 
-    @Override
+    /*@Override
     public boolean registerConsumer(IPConsumer consumer, String name) {
 	//	return dispatch.registerConsumer(consumer, name);
 	if (name.equals("UDP")) {
@@ -212,7 +208,7 @@ public class IP implements MemoryConsumer, IPProducer, IPProducer1, EtherConsume
 	    return true;	    
 	}
 	throw new Error("Unknown consumer type");
-    }
+    }*/
 
     public boolean registerIPConsumer(IPConsumer consumer) {
 	if (printRegistration) {
@@ -286,7 +282,7 @@ public class IP implements MemoryConsumer, IPProducer, IPProducer1, EtherConsume
     }
 
     @Override
-    public Memory processEther1(EtherData buf) {
+    public Memory processEther(EtherData buf) {
 	if (debugPacketNotice) Debug.out.println("ARP.processEther: " + buf.size);
 	cpuManager.recordEvent(event_rcv);
 	//buf = buf.revoke();
@@ -347,11 +343,11 @@ public class IP implements MemoryConsumer, IPProducer, IPProducer1, EtherConsume
 	ip.destinationAddress = dAddr;
         switch (id) {
             case PROTO_UDP:
-                if (myUDPConsumer1!= null) {
+                if (myUDPConsumer!= null) {
                     ip.mem = data.mem;
                     ip.offset = data.offset + IPFormat.requiresSpace();
                     ip.size = data.size-IPFormat.requiresSpace();
-                    return myUDPConsumer1.processIP1(ip);
+                    return myUDPConsumer.processIP(ip);
                 } else if (myUDPConsumer!= null) {
                     ip.mem = data.mem.getSubRange(space, data.mem.size() - space);
                     return myUDPConsumer.processIP(ip);
@@ -359,7 +355,7 @@ public class IP implements MemoryConsumer, IPProducer, IPProducer1, EtherConsume
                 Debug.out.println("  No UDP consumer for this IP packet.");
                 return data.mem;
             case PROTO_TCP:
-                if (myTCPConsumer1!= null) {
+                if (myTCPConsumer!= null) {
                     ip.mem = data.mem;
                     ip.offset = data.offset + IPFormat.requiresSpace();
                     /*		ip.size = data.size-IPFormat.requiresSpace();
@@ -368,7 +364,7 @@ public class IP implements MemoryConsumer, IPProducer, IPProducer1, EtherConsume
                     */
                     IPFormat ipf = new IPFormat(data.mem, data.offset);
                     ip.size = (ipf.getTotalLength()-ipf.getHeaderLength());
-                    return myTCPConsumer1.processIP1(ip);
+                    return myTCPConsumer.processIP(ip);
                 } else if (myTCPConsumer!= null) {
                     IPFormat ipf = new IPFormat(data.mem, data.offset);
                     ip.mem = data.mem.getSubRange(data.offset + IPFormat.requiresSpace(),
