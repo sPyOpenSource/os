@@ -90,7 +90,7 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
      * @param synchronous wait until the block is written
      */
     final void writeBlock(jx.fs.buffercache.BufferHead bh, boolean synchronous) {
-	if (trace) Debug.out.println("rwBlock(" + bh.getBlock()+")  size="+bh.getSize());
+	if (trace) Debug.out.println("rwBlock(" + bh.getBlock() + ")  size=" + bh.getSize());
 	// map logical block number to device sector number
 	try {
 	    idedevice.writeSectors(bh.getBlock() * (1024/512), 1024/512, bh.getData(), true);
