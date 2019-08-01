@@ -40,7 +40,7 @@ public class Buffer2 extends Buffer {
 	setData(m, 0, m.size());
     }
 
-    public void setData(Memory m,int offs, int size) {
+    public void setData(Memory m, int offs, int size) {
         /*
 	if(1==1)throw new Error("TODO: extendRange -> split"); //
 	this.data = m;
@@ -76,10 +76,10 @@ public class Buffer2 extends Buffer {
     }
 
     static private Memory join(Memory m) {
-	if (m==null) return null;
+	if (m == null) return null;
 	Memory x = m.joinAll();
 	if (x.size() < 1514) {
-	    Debug.out.println("error: got="+x.size()+", need=1514");
+	    Debug.out.println("error: got=" + x.size() + ", need=1514");
 	    CPUManager cpuManager = (CPUManager) InitialNaming.getInitialNaming().lookup("CPUManager");
 	    cpuManager.dump("setData x: ", x);
 	    cpuManager.dump("setData:m ", m);

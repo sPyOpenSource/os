@@ -2,13 +2,10 @@ NEEDLIBS = zero
 #NEEDLIBS += scheduler
 #NEEDLIBS += secmgr_impl
 
-SUBDIRS = gnu/java/math gnu/java/io gnu/java/security gnu/java/io/decode gnu/java/io/encode 
-SUBDIRS += jx jx/fs jx/net jx/bio jx/rtc jx/netmanager jx/buffer/multithread jx/net/protocol
-SUBDIRS += jx/buffer jx/init jx/bootrc jx/zero jx/net/format jx/net/dispatch
-SUBDIRS += jx/collections jx/devices jx/timer jx/zero/debug jx/fs/buffercache jx/buffer/separator jx/devices/net jx/devices/pci jx/devices/net/emulation
-SUBDIRS += java/security/interfaces java/io java/lang java/util java/security java/net java/util/function java/lang/reflect java/security/spec java/security/cert java/lang/invoke java/util/stream
+SUBDIRS = gnu/java/math gnu/java/io gnu/java/security
+SUBDIRS += java/security/interfaces java/io java/lang java/util java/security java/net java/security/spec java/security/cert
 SUBDIRS += metaxa/os/devices/net timerpc javafs buffercache
-SUBDIRS += bioram
+SUBDIRS += bioram jx
 
 LIBNAME = jdk0
 NUMBERENV = float

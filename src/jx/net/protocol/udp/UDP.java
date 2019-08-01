@@ -98,14 +98,14 @@ public class UDP implements IPConsumer, IPConsumer1 {
 
 	int port = udp.getDestPort();
 	int srcPort = udp.getSourcePort();
-	if (dumpAll) Debug.out.println("UDP destination port: "+port);
+	if (dumpAll) Debug.out.println("UDP destination port: " + port);
 	MemoryConsumer consumer;
 	UDPConsumer udpConsumer;
 	checkPort(port);
-	if ((udpConsumer=udpConsumerList[port]) != null) {
+	if ((udpConsumer = udpConsumerList[port]) != null) {
 	    int space = udp.length();
 	    //Debug.out.println("UDPDATALEN: "+(buf.size()-space));
-	    Memory data = buf.mem.getSubRange(space, buf.mem.size()-space);
+	    Memory data = buf.mem.getSubRange(space, buf.mem.size() - space);
 	    UDPData u = new UDPData();
 	    u.mem = data;
 	    u.sourcePort = srcPort;

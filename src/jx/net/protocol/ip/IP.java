@@ -268,7 +268,7 @@ public class IP implements MemoryConsumer, IPProducer, IPProducer1, EtherConsume
     }
 
     Memory getLargeMemory(int size) {
-	for (int i=0; i<largePool.length; i++) {
+	for (int i = 0; i < largePool.length; i++) {
 	    if (largePool[i] != null) {
 		Memory retMem = largePool[i];
 		largePool[i] = null;
@@ -353,7 +353,7 @@ public class IP implements MemoryConsumer, IPProducer, IPProducer1, EtherConsume
                     ip.size = data.size-IPFormat.requiresSpace();
                     return myUDPConsumer1.processIP1(ip);
                 } else if (myUDPConsumer!= null) {
-                    ip.mem = data.mem.getSubRange(space, data.mem.size()-space);
+                    ip.mem = data.mem.getSubRange(space, data.mem.size() - space);
                     return myUDPConsumer.processIP(ip);
                 }
                 Debug.out.println("  No UDP consumer for this IP packet.");
@@ -372,7 +372,7 @@ public class IP implements MemoryConsumer, IPProducer, IPProducer1, EtherConsume
                 } else if (myTCPConsumer!= null) {
                     IPFormat ipf = new IPFormat(data.mem, data.offset);
                     ip.mem = data.mem.getSubRange(data.offset + IPFormat.requiresSpace(),
-                            (ipf.getTotalLength()-ipf.getHeaderLength()));
+                            (ipf.getTotalLength() - ipf.getHeaderLength()));
                     return myTCPConsumer.processIP(ip);
                 }
                 Debug.out.println("  No TCP consumer for this IP packet.");
@@ -448,7 +448,7 @@ public class IP implements MemoryConsumer, IPProducer, IPProducer1, EtherConsume
 		    ip.dump();
 		    Memory ret = lowerConsumer.processMemory(buf);		    
 		    int space = ip.length();
-		    return ret.getSubRange(space, ret.size()-space);
+		    return ret.getSubRange(space, ret.size() - space);
 		}
                 @Override
 		public int requiresSpace() {return IPFormat.requiresSpace();}
@@ -520,22 +520,22 @@ public class IP implements MemoryConsumer, IPProducer, IPProducer1, EtherConsume
      */
     private Memory assemble(ReAssembly r) {
 	// remove reassembled packet from assembly line
-	if (r.prev==null) reass = r.next; 
+	if (r.prev == null) reass = r.next; 
 	else r.prev.next = r.next;
 
-	int fsize=r.expectedSize;
-	Memory xbuf = getLargeMemory(fsize+space);
+	int fsize = r.expectedSize;
+	Memory xbuf = getLargeMemory(fsize + space);
 	
-	int offs=space;
+	int offs = space;
 	Fragment f = r.firstFragment;
-	xbuf.copyFromMemory(f.data, 0, 0, f.size+space); // copy IP header
-	for(f = f.next; f != null; f=f.next) {
-	    xbuf.copyFromMemory(f.data, space, f.offset+space, f.size);
+	xbuf.copyFromMemory(f.data, 0, 0, f.size + space); // copy IP header
+	for(f = f.next; f != null; f = f.next) {
+	    xbuf.copyFromMemory(f.data, space, f.offset + space, f.size);
 	    //Debug.out.println(r.fragID+" copy "+f.offset);
 	    insertInMemPool(f.data);
 	    f.data = null;
 	}
-	return xbuf.getSubRange(space, xbuf.size()-space);
+	return xbuf.getSubRange(space, xbuf.size() - space);
     }
 
 }

@@ -54,14 +54,14 @@ public class Decoder {
 	    pos += size;
 
 	    if (testChecksum) {
-		int c=0;
-		for(int i=0; i<size; i++) {
-		    if (debugData) if (i%8==0) Debug.out.println("");
+		int c = 0;
+		for(int i = 0; i < size; i++) {
+		    if (debugData) if (i % 8 == 0) Debug.out.println("");
 		    byte b = ret.get8(i);
 		    c = (c ^ b) & 0xff;
-		    if (debugData) Debug.out.print(c+" ");
+		    if (debugData) Debug.out.print(c + " ");
 		}
-		if (debugData) Debug.out.println("MY CHECKSUM:"+ c);
+		if (debugData) Debug.out.println("MY CHECKSUM:" + c);
 		if (checksum != c) throw new Error("wrong checksum");
 	    }
 
