@@ -57,6 +57,8 @@ import java.io.IOException;
  *
  * @author           Jon Zeppieri
  * @version          $Revision: 1.1 $
+ * @param <K>
+ * @param <V>
  * @modified         $Id: TreeMap.java,v 1.1 2001/07/31 12:42:55 siivdedi Exp $
  */
 public class TreeMap<K,V> extends AbstractMap<K,V>
@@ -84,8 +86,8 @@ public class TreeMap<K,V> extends AbstractMap<K,V>
   Comparator _oComparator;
 
   /** used for serialization -- denotes which fields are serialized */
-  //private static final ObjectStreamField[] serialPersistentFields =
-    //{ new ObjectStreamField("comparator", Comparator.class) };
+  private static final ObjectStreamField[] serialPersistentFields =
+    { new ObjectStreamField("comparator", Comparator.class) };
 
   static final long serialVersionUID = 919286545866124006L;
 

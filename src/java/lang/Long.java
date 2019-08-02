@@ -181,37 +181,37 @@ public final class Long extends Number
             return new Long(parseLong(s, radix));
     }
 
-	/*public static Long getLong(String nm)
-	{
-		return getLong(nm, null);
-	}
+    public static Long getLong(String nm)
+    {
+            return getLong(nm, null);
+    }
 
-	public static Long getLong(String nm, long val)
-	{
-		Long result = getLong(nm, null);
-		return ((result == null) ? new Long(val) : result);
-	}
+    public static Long getLong(String nm, long val)
+    {
+            Long result = getLong(nm, null);
+            return ((result == null) ? new Long(val) : result);
+    }
 
-	public static Long getLong(String nm, Long val)
-	{
-		String value = System.getProperty(nm);
-		if (value == null)
-			return val;
-		try
-		{
-			if (value.startsWith("0x"))
-				return valueOf(value.substring(2), 16);
-			if (value.startsWith("#"))
-				return valueOf(value.substring(1), 16);
-			if (value.startsWith("0"))
-				return valueOf(value.substring(1), 8);
-			return valueOf(value, 10);
-		}
-		catch (NumberFormatException ex)
-		{
-		}
-		return val;
-	}*/
+    public static Long getLong(String nm, Long val)
+    {
+            String value = System.getProperty(nm);
+            if (value == null)
+                    return val;
+            try
+            {
+                    if (value.startsWith("0x"))
+                            return valueOf(value.substring(2), 16);
+                    if (value.startsWith("#"))
+                            return valueOf(value.substring(1), 16);
+                    if (value.startsWith("0"))
+                            return valueOf(value.substring(1), 8);
+                    return valueOf(value, 10);
+            }
+            catch (NumberFormatException ex)
+            {
+            }
+            return val;
+    }
 
     public boolean equals(Object obj)
     {

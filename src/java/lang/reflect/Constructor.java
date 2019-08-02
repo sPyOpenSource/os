@@ -12,12 +12,11 @@ public class Constructor<T> {
 	this.c = c;
 	this.param = param;
     }
-   public java.lang.Object newInstance(java.lang.Object[] arg0) {
-       
+    public java.lang.Object newInstance(java.lang.Object[] arg0) {
        throw new Error("NOT IMPLEMENTED");
-   }
-   public java.lang.Class getDeclaringClass() { throw new Error("NOT IMPLEMENTED"); }
-   public java.lang.Class[] getExceptionTypes() { throw new Error("NOT IMPLEMENTED"); }
-   public int getModifiers() { throw new Error("NOT IMPLEMENTED"); }
-   public java.lang.Class[] getParameterTypes() { throw new Error("NOT IMPLEMENTED"); }
+    }
+    public java.lang.Class getDeclaringClass() { throw new Error("NOT IMPLEMENTED"); }
+    public java.lang.Class[] getExceptionTypes() { throw new Error("NOT IMPLEMENTED"); }
+    public int getModifiers() { throw new Error("NOT IMPLEMENTED"); }
+    public java.lang.Class[] getParameterTypes() { throw new Error("NOT IMPLEMENTED"); }
 }

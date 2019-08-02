@@ -50,7 +50,7 @@ import java.util.HashMap;
 
     /*non-public*/ BoundMethodHandle(MethodType type, LambdaForm form) {
         super(type, form);
-        //assert(speciesData() == speciesData(form));
+        assert(speciesData() == speciesData(form));
     }
 
     //

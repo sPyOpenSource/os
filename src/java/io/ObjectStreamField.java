@@ -61,10 +61,10 @@ public class ObjectStreamField
      * @param   name the name of the serializable field
      * @param   type the <code>Class</code> object of the serializable field
      */
-    /*public ObjectStreamField(String name, Class<?> type) {
+    public ObjectStreamField(String name, Class<?> type) {
         this(name, type, false);
-    }*/
-
+    }
+    
     /**
      * Creates an ObjectStreamField representing a serializable field with the
      * given name and type.  If unshared is false, values of the represented
@@ -82,16 +82,16 @@ public class ObjectStreamField
      *          manner as writeUnshared/readUnshared
      * @since   1.4
      */
-    /*public ObjectStreamField(String name, Class<?> type, boolean unshared) {
+    public ObjectStreamField(String name, Class<?> type, boolean unshared) {
         if (name == null) {
             throw new NullPointerException();
         }
         this.name = name;
         this.type = type;
         this.unshared = unshared;
-        signature = getClassSignature(type).intern();
+        signature = "unknow";//getClassSignature(type).intern();
         field = null;
-    }*/
+    }
 
     /**
      * Creates an ObjectStreamField representing a field with the given name,
@@ -119,10 +119,6 @@ public class ObjectStreamField
             //case '[': type = Object.class; break;
             default: throw new IllegalArgumentException("illegal signature");
         }
-    }
-
-    public ObjectStreamField(String comparator, Class<Comparator> aClass) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     /**
@@ -255,6 +251,8 @@ public class ObjectStreamField
      * -1 if this is smaller, 0 if equal, 1 if greater.  Types that are
      * primitives are "smaller" than object types.  If equal, the field names
      * are compared.
+     * @param obj
+     * @return 
      */
     // REMIND: deprecate?
     public int compareTo(Object obj) {
@@ -268,7 +266,9 @@ public class ObjectStreamField
 
     /**
      * Return a string that describes this field.
+     * @return 
      */
+    @Override
     public String toString() {
         return signature + ' ' + name;
     }
@@ -296,7 +296,7 @@ public class ObjectStreamField
     /**
      * Returns JVM type signature for given class.
      */
-    /*private static String getClassSignature(Class<?> cl) {
+    private static String getClassSignature(Class<?> cl) {
         StringBuilder sbuf = new StringBuilder();
         while (cl.isArray()) {
             sbuf.append('[');
@@ -325,8 +325,8 @@ public class ObjectStreamField
                 throw new InternalError();
             }
         } else {
-            sbuf.append('L' + cl.getName().replace('.', '/') + ';');
+            sbuf.append('L').append(cl.getName().replace('.', '/')).append(';');
         }
         return sbuf.toString();
-    }*/
+    }
 }
