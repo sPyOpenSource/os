@@ -41,9 +41,9 @@ public class TCP implements IPConsumer, Runnable {
     public TCP(IPProducer lowerProducer, jx.net.NetInit net, final TimerManager timerManager ) {
 	// bei der IP-Schicht anmelden
 	usableBufs = new MultiThreadList();
-	for ( int i = 0; i<INITIAL_BUFFER_SIZE; i++) {
+	for ( int i = 0; i < INITIAL_BUFFER_SIZE; i++) {
 	    IPData d = new IPData();
-	    d.mem = net.getTCPBuffer1();
+	    d.mem = net.getTCPBuffer();
 	    usableBufs.appendElement(d);
 	}
 	filledBufs = new MultiThreadList();
@@ -97,7 +97,7 @@ public class TCP implements IPConsumer, Runnable {
     }
 
     public Memory getTCPBuffer1() {
-	return net.getTCPBuffer1();  
+	return net.getTCPBuffer();  
     }
 
     public jx.net.IPSender getIPSender(IPAddress dest) throws UnknownAddressException {
@@ -138,8 +138,8 @@ public class TCP implements IPConsumer, Runnable {
 		       
     // wird von IP aufgerufen, wenn TCP-Paket ankommt
     public Memory processIP(IPData data) {
-	data.offset=0;
-	data.size=data.mem.size();
+	data.offset = 0;
+	data.size = data.mem.size();
 	return processIP1(data);
     }
 
@@ -156,9 +156,10 @@ public class TCP implements IPConsumer, Runnable {
  	Memory ret = d.mem;
 	//ret = ret.revoke();
 	filledBufs.appendElement(data);
-	if (debug)
+	if (debug){
 	    if (ret == null)
 		throw new Error ("ret == null");
+        }
     	return ret;
     }
 

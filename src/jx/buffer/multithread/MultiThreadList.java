@@ -10,7 +10,7 @@ import jx.zero.*;
 public class MultiThreadList {
 //    static final boolean debug = false;
 
-    boolean verbose = false;
+    boolean verbose = true;
     MultiThreadListElement first;
     MultiThreadListElement last;
     CAS cas_first, cas_last;
@@ -60,11 +60,11 @@ public class MultiThreadList {
     public Object undockFirstElement() {	
 	if (verbose) Debug.out.println("undockFirstElement [" + name + "] (size=" + size + ")");
 
-	/* in liste einhaengen */
+	/* hang in list */
 	consumer = cpuManager.getCPUState();
 	first.next.blockIfEqual(null);
 	consumer = null;
-	/* aus liste austragen */
+	/* from list */
 	MultiThreadListElement first_bak, first_bak_next;
 	do {   // set last to elm and get a valid copy of last 
 	    first_bak = first;

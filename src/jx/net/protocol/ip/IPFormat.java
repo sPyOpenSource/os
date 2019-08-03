@@ -29,7 +29,7 @@ public class IPFormat extends Format {
 
     public static final int CHECKSUM_OFFSET = 10;
 
-    public IPFormat(Memory buf) { this(buf,0); }
+    public IPFormat(Memory buf) { this(buf, 14); }
   public IPFormat(Memory buf, int offset) { 
     super(buf, offset);
     if (dumpAll){
@@ -181,17 +181,17 @@ public class IPFormat extends Format {
    * @return the checksum value (one's complement of the sum of one's complements)
    */
   
-  public int computeChecksumOLD() {
-    int sum = 0;
-    
-    for(int i=0; i<requiresSpace(); i+=2) {
-	int s = readShort(i);
-	sum += s;
-	if (sum > 0xffff)
-	    sum -= 0xffff;
+    public int computeChecksumOLD() {
+        int sum = 0;
+
+        for(int i=0; i<requiresSpace(); i+=2) {
+            int s = readShort(i);
+            sum += s;
+            if (sum > 0xffff)
+                sum -= 0xffff;
+        }
+        return((~sum) & 0x0000ffff);
     }
-    return((~sum) & 0x0000ffff);
-  }
 
     public final short computeChecksum() {
 	int len = requiresSpace();
@@ -205,18 +205,29 @@ public class IPFormat extends Format {
 	return (short)checksum;
     }
 
-     private final short addUShort(short a, short b){
+    private short addUShort(short a, short b){
 	int result = (((int) a)&0xffff) + (((int) b)&0xffff);
 	if (result > (int)0x0000ffff) {
 	    result -= 0x0000ffff;
 	}
 	return (short)(result);
-   }
+    }
 
+
+    @Override
+    public int length() { 
+        return requiresSpace(); 
+    }
     
-  public int length() { 
-    return requiresSpace(); 
-  }
+    /**
+     * Swap the source and destination address
+     */
+    public void swapAddresses() {
+        final IPAddress dest = new IPAddress(getDestIPAddress());
+        final IPAddress source = new IPAddress(getSourceIPAddress());
+        insertDestAddress(source);
+        insertSourceAddress(dest);
+    }
     
     public void dump() {
 	Debug.out.println("IP-Packet:");
@@ -225,14 +236,22 @@ public class IPFormat extends Format {
 	Debug.out.println("   Checksum:"+getHeaderChecksum());
 	Debug.out.println("   ID:"+getIdentification());
 	int proto = getProtocol();
-	if (proto == IP.PROTO_UDP) 	Debug.out.println("   Protocol: UDP");
-	else if (proto == IP.PROTO_TCP) 	Debug.out.println("   Protocol: TCP");
-	else Debug.out.println("   Protocol: "+proto);
+          switch (proto) {
+              case IP.PROTO_UDP:
+                  Debug.out.println("   Protocol: UDP");
+                  break;
+              case IP.PROTO_TCP:
+                  Debug.out.println("   Protocol: TCP");
+                  break;
+              default:
+                  Debug.out.println("   Protocol: " + proto);
+                  break;
+          }
 	Debug.out.println("   First 32 bytes of data:");
 	Dump.xdump(buf, offset+requiresSpace(), 32);
     }
 
-  public static int requiresSpace() { 
-    return 20; // 24 with options
-  }
+    public static int requiresSpace() { 
+        return 20; // 24 with options
+    }
 }

@@ -16,8 +16,8 @@ public class SleepManagerImpl implements SleepManager, Service {
 	//timerManager = (TimerManager) LookupHelper.waitUntilPortalAvailable(InitialNaming.getInitialNaming(), "TimerManager");
     }
     public void mdelay(int milliseconds) {
-	int end = clock.getTimeInMillis()+milliseconds;
-	while(end > clock.getTimeInMillis()) ; //Thread.yield();
+	int end = clock.getTimeInMillis() + milliseconds;
+	while(end > clock.getTimeInMillis()); //Thread.yield();
 
 
 	/*	
@@ -48,8 +48,7 @@ public class SleepManagerImpl implements SleepManager, Service {
       //int high = clock.getTicks_high();
 
       for (int j = 0; j < microseconds; j++)
-	for (int i = 0; i < 150; i++)
-	  ;
+	for (int i = 0; i < 150; i++);
       
 	/*
 	// tsc is incremented every 2 nanoseconds on a 500 MHz CPU

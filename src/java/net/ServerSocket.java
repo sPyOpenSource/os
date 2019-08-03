@@ -18,13 +18,13 @@ public class ServerSocket {
 	net = (NetInit) LookupHelper.waitUntilPortalAvailable(InitialNaming.getInitialNaming(), "NET");
 	
 	Memory[] bufs = new Memory[INITIAL_BUFFER_SIZE];
-	for (int i = 0; i < bufs.length; i++) bufs[i] = net.getTCPBuffer1();
+	for (int i = 0; i < bufs.length; i++) bufs[i] = net.getTCPBuffer();
 	tcpSocket = net.getTCPSocket(port, net.getLocalAddress(), bufs);
     }
     
     public Socket accept() throws java.io.IOException{
 	Memory[] bufs = new Memory[INITIAL_BUFFER_SIZE];
-	for (int i = 0; i < bufs.length; i++) bufs[i] = net.getTCPBuffer1();
+	for (int i = 0; i < bufs.length; i++) bufs[i] = net.getTCPBuffer();
 	try {
 	    return new Socket(tcpSocket.accept(bufs));
 	} catch (java.io.IOException e) {

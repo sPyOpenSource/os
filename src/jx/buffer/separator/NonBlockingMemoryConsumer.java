@@ -15,4 +15,5 @@ import jx.zero.*;
  */
 public interface NonBlockingMemoryConsumer {
     Memory processMemory(Memory data, int offset, int size);
+    void EtherQueueConsumerThread();
 }

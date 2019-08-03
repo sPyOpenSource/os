@@ -20,24 +20,24 @@ public abstract class Format {
   /* write */
 
   protected void writeInt(int o, int d) { 
-    buf.set8(offset+o+0, (byte)( (d>>24) & 0xff));
-    buf.set8(offset+o+1, (byte)((d>>16)  & 0xff));
-    buf.set8(offset+o+2, (byte)((d>>8) & 0xff));
-    buf.set8(offset+o+3, (byte)(d & 0xff));
+    buf.set8(offset + o + 0, (byte)((d >> 24) & 0xff));
+    buf.set8(offset + o + 1, (byte)((d >> 16) & 0xff));
+    buf.set8(offset + o + 2, (byte)((d >> 8)  & 0xff));
+    buf.set8(offset + o + 3, (byte) (d        & 0xff));
   }
 
   protected void writeAddress(int o, IPAddress g) { 
       int d = g.getAddress();
-      buf.set8(offset+o+3, (byte)( (d>>24) & 0xff));
-      buf.set8(offset+o+2, (byte)((d>>16)  & 0xff));
-      buf.set8(offset+o+1, (byte)((d>>8) & 0xff));
-      buf.set8(offset+o+0, (byte)(d & 0xff));
+      buf.set8(offset + o + 3, (byte)((d >> 24) & 0xff));
+      buf.set8(offset + o + 2, (byte)((d >> 16) & 0xff));
+      buf.set8(offset + o + 1, (byte)((d >> 8)  & 0xff));
+      buf.set8(offset + o + 0, (byte)( d        & 0xff));
   }
 
 
   protected void writeShort(int o, short d) { 
-    buf.set8(offset+o+0, (byte)((d>>8) & 0xff));
-    buf.set8(offset+o+1, (byte)(d & 0xff));
+    buf.set8(offset + o + 0, (byte)((d >> 8) & 0xff));
+    buf.set8(offset + o + 1, (byte)( d       & 0xff));
   }
 
   protected void writeUShort(int o, short d) { 
@@ -45,12 +45,12 @@ public abstract class Format {
   }
 
   protected void writeByte(int o, byte d) { 
-    buf.set8(offset+o, d);
+    buf.set8(offset + o, d);
   }
 
   protected void writeBytes(int o, byte[] d) { 
-    for(int i=0; i<d.length; i++) {
-      buf.set8(offset+o+i, d[i]);
+    for(int i = 0; i < d.length; i++) {
+      buf.set8(offset + o + i, d[i]);
     }
   }
 
@@ -61,15 +61,15 @@ public abstract class Format {
 
   protected void writeIntArray(int o, int[] d) { 
     writeInt(o, d.length);
-    for(int i=0; i<d.length; i++) {
-      writeInt(o+4+i*4, d[i]);
+    for(int i = 0; i < d.length; i++) {
+      writeInt(o + 4 + i * 4, d[i]);
     }
   }
 
   protected void writeByteArray(int o, byte[] d) { 
     writeInt(o, d.length);
-    for(int i=0; i<d.length; i++) {
-      writeByte(o+4+i, d[i]);
+    for(int i = 0; i < d.length; i++) {
+      writeByte(o + 4 + i, d[i]);
     }
   }
   
@@ -78,31 +78,31 @@ public abstract class Format {
 
   protected byte readByte(int o) { 
       //    return buf.get8(offset+o) < 0 ? buf.get8(offset+o)+256 : buf.get8(offset+o);
-      return buf.get8(offset+o);
+      return buf.get8(offset + o);
   }
 
   protected int readUnsignedByte(int o) { 
-      int b = buf.get8(offset+o); 
+      int b = buf.get8(offset + o); 
       return  b & 0xff; //b < 0 ? b+256 : b;
   }
 
   protected void readBytes(int o, byte[] d) { 
-    for(int i=0; i<d.length; i++) {
-      d[i] = buf.get8(offset+o+i);
+    for(int i = 0; i < d.length; i++) {
+      d[i] = buf.get8(offset + o + i);
     }
   }
 
   protected short readShort(int o) { 
       int d;
-      d = buf.get8(offset+o+1) & 0xff;
-      d |= buf.get8(offset+o) << 8;
+      d  = buf.get8(offset + o + 1) & 0xff;
+      d |= buf.get8(offset + o) << 8;
       return (short)d;
   }
 
   protected int readUnsignedShort(int o) { 
     int d;
-    d = buf.get8(offset+o+1) & 0xff;
-    d |= (buf.get8(offset+o)& 0xff) << 8;
+    d  =  buf.get8(offset + o + 1) & 0xff;
+    d |= (buf.get8(offset + o)     & 0xff) << 8;
     return d;
   }
 
@@ -113,17 +113,17 @@ public abstract class Format {
 
   protected static int readShort(Memory buf, int o) { 
     int d;
-    d =   readByte(buf, o+1)     & 0x00ff;
+    d  =  readByte(buf, o + 1)   & 0x00ff;
     d += (readByte(buf, o) << 8) & 0xff00;
     return d;
   }
 
    protected int readInt(int o) { 
     int d;
-    d =   readByte(o+3)        & 0x000000ff;
-    d |= (readByte(o+2) << 8)  & 0x0000ff00;
-    d |= (readByte(o+1) << 16) & 0x00ff0000;
-    d |= (readByte(o)   << 24) & 0xff000000;
+    d  =  readByte(o + 3)        & 0x000000ff;
+    d |= (readByte(o + 2) << 8)  & 0x0000ff00;
+    d |= (readByte(o + 1) << 16) & 0x00ff0000;
+    d |= (readByte(o)     << 24) & 0xff000000;
     return d;
   }
 
@@ -131,10 +131,10 @@ public abstract class Format {
     int d;
     //Debug.out.println("ADDR:");
     //jx.zero.debug.Dump.xdump1(buf, offset+o, 4);
-    d = buf.get8(offset+o+0) & 0xff;
-    d |= (buf.get8(offset+o+1) << 8) & 0xff00;
-    d |= (buf.get8(offset+o+2) << 16) & 0xff0000;
-    d |= (buf.get8(offset+o+3) << 24) & 0xff000000;
+    d  =  buf.get8(offset + o + 0)        & 0xff;
+    d |= (buf.get8(offset + o + 1) << 8)  & 0xff00;
+    d |= (buf.get8(offset + o + 2) << 16) & 0xff0000;
+    d |= (buf.get8(offset + o + 3) << 24) & 0xff000000;
     //Debug.out.println("ADDRDECODE:"+Integer.toHexString(d));
     return new IPAddress(d);
   }
@@ -145,10 +145,10 @@ public abstract class Format {
 
    protected static int readInt(Memory buf, int o) { 
      int d;
-     d =   readByte(buf, o+3)        & 0x000000ff;
-     d |= (readByte(buf, o+2) << 8)  & 0x0000ff00;
-     d |= (readByte(buf, o+1) << 16) & 0x00ff0000;
-     d |= (readByte(buf, o)   << 24) & 0xff000000;
+     d  =  readByte(buf, o + 3)        & 0x000000ff;
+     d |= (readByte(buf, o + 2) << 8)  & 0x0000ff00;
+     d |= (readByte(buf, o + 1) << 16) & 0x00ff0000;
+     d |= (readByte(buf, o)     << 24) & 0xff000000;
      return d;
   }
 
@@ -313,8 +313,8 @@ public abstract class Format {
   public static int lengthString(String s)  {
     int o = 4;
     int l = s.length(); 
-    o+=l;
-    if (l%4 != 0) o += 4-(l%4); //padding
+    o += l;
+    if (l % 4 != 0) o += 4 - (l % 4); //padding
     return o;
   } 
 }

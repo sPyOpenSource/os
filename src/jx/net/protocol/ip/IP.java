@@ -40,23 +40,24 @@ public class IP implements MemoryConsumer, IPProducer, EtherConsumer {
     private PacketsProducer lowerProducer;
     private AddressResolution addressResolution;
     
-    final int space=IPFormat.requiresSpace();
+    final int space = IPFormat.requiresSpace();
 
     IPConsumer myUDPConsumer;
     IPConsumer myTCPConsumer;
-
+    IPConsumer myICMPConsumer;
     IPConsumer ipConsumer;
 
 
     public static final int PROTO_UDP = 17;
     public static final int PROTO_TCP = 6;
+    public static final int PROTO_ICMP = 1;
 
     private Dispatch dispatch;
     {
 	dispatch = new Dispatch(15);
 	dispatch.add(PROTO_UDP, "UDP");
 	dispatch.add(PROTO_TCP, "TCP");
-	dispatch.add(1, "ICMP");
+	dispatch.add(PROTO_ICMP, "ICMP");
 	dispatch.add(0, "IP");
 	dispatch.add(2, "IGMP");
 	dispatch.add(3, "GGP");
@@ -78,15 +79,15 @@ public class IP implements MemoryConsumer, IPProducer, EtherConsumer {
 	int size;
 	Fragment next;
     }
+    
     class ReAssembly {
 	Fragment firstFragment;
 	int numberFragments;
 	int fragID;
-	int expectedSize=-1;
+	int expectedSize = -1;
 	ReAssembly next;
 	ReAssembly prev;
-	ReAssembly() {
-	}
+	ReAssembly() {}
 	void addFragment(int offs, int size, Memory buf) {
 	    Fragment f;
 	    if (firstFragment == null) {
@@ -148,10 +149,12 @@ public class IP implements MemoryConsumer, IPProducer, EtherConsumer {
 	addressResolution = a;	
 	if (addressResolution != null) addressResolution.register(this);
     }
+    
     public IP(EtherProducer lowerProducer) { 
 	init();
 	lowerProducer.registerConsumerEther(this, "IP");
     }
+    
     private void init() {
 	memMgr = (MemoryManager)InitialNaming.getInitialNaming().lookup("MemoryManager");
 	cpuManager = (CPUManager) InitialNaming.getInitialNaming().lookup("CPUManager");
@@ -186,10 +189,15 @@ public class IP implements MemoryConsumer, IPProducer, EtherConsumer {
 	    return true;
 	}
 	if (name.equals("TCP")) {
-	    if (myTCPConsumer != null) throw new Error("TCP consumer already registered1");
+	    if (myTCPConsumer != null) throw new Error("TCP consumer already registered");
 	    myTCPConsumer = consumer;
 	    return true;	    
 	}
+        if (name.equals("ICMP")) {
+            if (myICMPConsumer != null) throw new Error("ICMP consumer already registeered");
+            myICMPConsumer = consumer;
+            return true;
+        }
 	throw new Error("Unknown consumer type");
     }
 
@@ -212,7 +220,7 @@ public class IP implements MemoryConsumer, IPProducer, EtherConsumer {
 
     public boolean registerIPConsumer(IPConsumer consumer) {
 	if (printRegistration) {
-	  Debug.out.println("Register IP receiver");
+	    Debug.out.println("Register IP receiver");
 	}
 	if (ipConsumer != null) throw new Error("ip consumer already registered");
 	ipConsumer = consumer;
@@ -245,15 +253,16 @@ public class IP implements MemoryConsumer, IPProducer, EtherConsumer {
 
 
     private void insertInMemPool(Memory m) {
-	for (int i=0; i<memPool.length; i++) {
+	for (int i = 0; i < memPool.length; i++) {
 	    if (memPool[i] == null) {
 		memPool[i] = m;
 		return;
 	    }
 	}
     }
+    
     private Memory getFromMemPool() {
-	for (int i=0; i<memPool.length; i++) {
+	for (int i = 0; i < memPool.length; i++) {
 	    if (memPool[i] != null) {
 		Memory retMem = memPool[i];
 		memPool[i] = null;
@@ -343,19 +352,19 @@ public class IP implements MemoryConsumer, IPProducer, EtherConsumer {
 	ip.destinationAddress = dAddr;
         switch (id) {
             case PROTO_UDP:
-                if (myUDPConsumer!= null) {
+                if (myUDPConsumer != null) {
                     ip.mem = data.mem;
                     ip.offset = data.offset + IPFormat.requiresSpace();
-                    ip.size = data.size-IPFormat.requiresSpace();
+                    ip.size = data.size - IPFormat.requiresSpace();
                     return myUDPConsumer.processIP(ip);
-                } else if (myUDPConsumer!= null) {
+                } else if (myUDPConsumer != null) {
                     ip.mem = data.mem.getSubRange(space, data.mem.size() - space);
                     return myUDPConsumer.processIP(ip);
                 }
                 Debug.out.println("  No UDP consumer for this IP packet.");
                 return data.mem;
             case PROTO_TCP:
-                if (myTCPConsumer!= null) {
+                if (myTCPConsumer != null) {
                     ip.mem = data.mem;
                     ip.offset = data.offset + IPFormat.requiresSpace();
                     /*		ip.size = data.size-IPFormat.requiresSpace();
@@ -363,9 +372,9 @@ public class IP implements MemoryConsumer, IPProducer, EtherConsumer {
                     Debug.out.println("ipf:"+(ipf.getTotalLength()-ipf.getHeaderLength()) +" sz:"+	ip.size);
                     */
                     IPFormat ipf = new IPFormat(data.mem, data.offset);
-                    ip.size = (ipf.getTotalLength()-ipf.getHeaderLength());
+                    ip.size = (ipf.getTotalLength() - ipf.getHeaderLength());
                     return myTCPConsumer.processIP(ip);
-                } else if (myTCPConsumer!= null) {
+                } else if (myTCPConsumer != null) {
                     IPFormat ipf = new IPFormat(data.mem, data.offset);
                     ip.mem = data.mem.getSubRange(data.offset + IPFormat.requiresSpace(),
                             (ipf.getTotalLength() - ipf.getHeaderLength()));
@@ -373,8 +382,25 @@ public class IP implements MemoryConsumer, IPProducer, EtherConsumer {
                 }
                 Debug.out.println("  No TCP consumer for this IP packet.");
                 return data.mem;
+            case PROTO_ICMP:
+                if(myICMPConsumer != null){
+                    ip.mem = data.mem;
+                    ip.offset = data.offset + IPFormat.requiresSpace();
+                    ip.size = data.size - IPFormat.requiresSpace();
+                    IPFormat ipf = new IPFormat(data.mem, data.offset);
+                    ipf.swapAddresses();
+                    ipf.insertIdentification(ipid++);
+                    if (insertChecksum) ipf.insertChecksum();
+                    //lowerProducer.getTransmitter(ip.sourceAddress, "IP");
+                    //PacketsConsumer pc = getTransmitter(lowerConsumer, ip.sourceAddress, PROTO_ICMP);
+                    //pc.processMemory(ipf.getMemory());
+                    //lowerConsumer.processMemory(ipf.getMemory());
+                    return myICMPConsumer.processIP(ip);
+                }
+                Debug.out.println("  No ICMP consumer for this IP packet.");
+                return data.mem;
             default:
-                Debug.out.println("Unsupported protocol in IP packet: "+dispatch.findName(id));
+                Debug.out.println("Unsupported protocol in IP packet: " + dispatch.findName(id));
                 return data.mem;
         }
     }
@@ -383,14 +409,15 @@ public class IP implements MemoryConsumer, IPProducer, EtherConsumer {
 	return new PacketsConsumer1() {
                 @Override
 		public Memory processMemory(Memory userbuf, int offset, int size) {
-		    if (debugPacketNotice) Debug.out.println("IP.transmit: "+size);
+		    if (debugPacketNotice) Debug.out.println("IP.transmit: " + size);
 		    cpuManager.recordEvent(event_snd);
 		    Memory buf = userbuf;
 		    offset -= IPFormat.requiresSpace();
 		    IPFormat ip = new IPFormat(buf, offset);
+                    Debug.out.println(offset);
 		    ip.insertHeaderLength();
 		    ip.insertTypeOfService(0);
-		    ip.insertTotalLength(size+IPFormat.requiresSpace());
+		    ip.insertTotalLength(size + IPFormat.requiresSpace());
 		    ip.insertIdentification(ipid++); 
 		    ip.insertFragmentOffset(0);
 		    ip.insertTimeToLive(64);
@@ -423,14 +450,15 @@ public class IP implements MemoryConsumer, IPProducer, EtherConsumer {
 	return new PacketsConsumer() {
                 @Override
 		public Memory processMemory(Memory userbuf) {
-		    Debug.out.println("SEND2 IP to "+dst);
-		    if (debugPacketNotice) Debug.out.println("IP.transmit: "+userbuf.size());
+		    Debug.out.println("SEND2 IP to " + dst);
+		    if (debugPacketNotice) Debug.out.println("IP.transmit: " + userbuf.size());
 		    cpuManager.recordEvent(event_snd);
-		    Memory buf = userbuf.joinPrevious();
+		    Memory buf = userbuf;//userbuf.joinPrevious();
 		    IPFormat ip = new IPFormat(buf);
 		    ip.insertHeaderLength();
 		    ip.insertTypeOfService(0);
-		    ip.insertTotalLength(buf.size());
+		    ip.insertTotalLength(buf.size() - 14);
+                    Debug.out.println(buf.size());
 		    ip.insertIdentification(ipid++); 
 		    ip.insertFragmentOffset(0);
 		    ip.insertTimeToLive(64);
@@ -443,8 +471,9 @@ public class IP implements MemoryConsumer, IPProducer, EtherConsumer {
 		    Debug.out.println("IP send");
 		    ip.dump();
 		    Memory ret = lowerConsumer.processMemory(buf);		    
-		    int space = ip.length();
-		    return ret.getSubRange(space, ret.size() - space);
+		    //int space = ip.length();
+		    //return ret.getSubRange(space, ret.size() - space);
+                    return ret;
 		}
                 @Override
 		public int requiresSpace() {return IPFormat.requiresSpace();}
@@ -480,7 +509,7 @@ public class IP implements MemoryConsumer, IPProducer, EtherConsumer {
 	
 	// new series of fragments
 	r = new ReAssembly();
-	if (prev==null) {
+	if (prev == null) {
 	    reass = r;
 	}
 	else {
@@ -498,14 +527,14 @@ public class IP implements MemoryConsumer, IPProducer, EtherConsumer {
 	
 	for(Fragment f = r.firstFragment; f != null; f=f.next) {
 	    if (f.offset != offs) {
-		Debug.out.println(r.fragID+" not complete. missing "+offs+" ... "+f.offset);
+		Debug.out.println(r.fragID + " not complete. missing " + offs + " ... " + f.offset);
 		return false;
 	    }
 	    offs += f.size;
 	}
 
 	if (offs != r.expectedSize) {
-	    Debug.out.println(r.fragID+" not complete. got size "+offs+" but expected "+r.expectedSize);
+	    Debug.out.println(r.fragID + " not complete. got size " + offs + " but expected " + r.expectedSize);
 	    return false;
 	}
 	return true;

@@ -13,7 +13,7 @@ import jx.net.IPAddress;
 class ARPCache {
     static final boolean verbose = false;
 
-    final  byte[] broadcastIP = {(byte)255, (byte)255, (byte)255, (byte)255 };
+    final byte[] broadcastIP  = { (byte)255, (byte)255, (byte)255, (byte)255 };
     final byte[] broadcastETH = { (byte)0xff, (byte)0xff, (byte)0xff, (byte)0xff, (byte)0xff, (byte)0xff };
 
 
@@ -48,10 +48,10 @@ class ARPCache {
     // set the maximum lookuptime to 10 seconds
     final int LOOKUPTIME = 10000;  // millis
     
-    private Vector ethers;
-    private Vector ips;
-    private ARP arp;
-    private TimerManager timerManager;
+    private final Vector ethers;
+    private final Vector ips;
+    private final ARP arp;
+    private final TimerManager timerManager;
     ARPCache(ARP a, TimerManager timerManager) {
 	this.timerManager = timerManager;
 	ethers = new Vector();
@@ -73,7 +73,7 @@ class ARPCache {
     }
     
     byte[] lookup(IPAddress ipAddress) throws UnknownAddressException {
-	if (verbose) Debug.out.println("ARPCache.lookup():"+ipAddress);
+	if (verbose) Debug.out.println("ARPCache.lookup():" + ipAddress);
 	return lookup(ipAddress.getBytes());
     }
 
@@ -102,7 +102,7 @@ class ARPCache {
     }
     
     private byte[] scan(byte[] ipAddress) {
-	for(int i=0; i<ips.size(); i++) {
+	for(int i = 0; i < ips.size(); i++) {
 	    if (equalIP((byte[])ips.elementAt(i), ipAddress)) {
 		return (byte[])ethers.elementAt(i);
 	    }
@@ -111,7 +111,7 @@ class ARPCache {
     }
     
     private boolean equalIP(byte[] ip1, byte[] ip2) {
-	for(int i=0; i<4; i++) {
+	for(int i = 0; i < 4; i++) {
 	    if (ip1[i] != ip2[i]) return false; 
 	}
 	return true;
@@ -119,6 +119,8 @@ class ARPCache {
     
     private void init() {
 	add(broadcastETH, broadcastIP);
+        add(new byte[]{(byte)0x94,(byte)0x53,(byte)0x30,(byte)0xc7,(byte)0xf8,(byte)0x03}, 
+            new byte[]{(byte)192,(byte)168,(byte)1,(byte)14});
 	/*
 	add(faui49aETH, faui49aIP);
 	add(ultra1ETH, ultra1IP);

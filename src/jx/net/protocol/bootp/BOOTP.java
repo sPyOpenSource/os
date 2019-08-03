@@ -34,16 +34,16 @@ public class BOOTP  {
     public IPAddress sendRequest() {
       Memory rbuf2 = null;
       UDPData udp = null;
-      Memory arr[] = new Memory[2];
+      //Memory arr[] = new Memory[2];
 	try { 
 	    sender = net.getUDPSender(CLIENT_PORT, new IPAddress(255,255,255,255), SERVER_PORT);
 	    receiver = net.getUDPReceiver(CLIENT_PORT, new Memory[] { 
 			    net.getUDPBuffer(0), net.getUDPBuffer(0), net.getUDPBuffer(0), net.getUDPBuffer(0)});
 	    buf = net.getUDPBuffer(300);
 	} catch(jx.net.UnknownAddressException ex) { throw new Error("broadcast ip address unknown"); }
-      do {
-	  buf.split2(BOOTPFormat.requiresSpace(), arr);
-	  buf = arr[0];
+      //do {
+	  //buf.split2(BOOTPFormat.requiresSpace(), arr);
+	  //buf = arr[0];
 	  BOOTPFormat bootp = new BOOTPFormat(buf);
 	  bootp.insertOp(BOOTPFormat.REQUEST);
 	  bootp.insertHtype((byte)1);
@@ -54,7 +54,7 @@ public class BOOTP  {
 	  cpuManager.recordEvent(event_snd);
 	  
 	  buf = sender.send(buf);
-	  Memory bufx = buf.revoke();
+	  Memory bufx = buf;//.revoke();
 	  //cpuManager.dump("UDP.send returned:", buf);
 	  if (! bufx.isValid()) throw new Error("not valid?");
 	  udp = receiver.receive(bufx, 200);
@@ -67,9 +67,9 @@ public class BOOTP  {
 	  }
 	  cpuManager.recordEvent(event_rec);
 	  if (udp == null) { Debug.out.println("Timout waiting for bootp reply"); }
-      } while (udp == null);
+      //} while (udp == null);
       BOOTPFormat b = new BOOTPFormat(udp.mem);
-      return b.getYiaddr();
+      return null;//b.getYiaddr();
     }
 
     public IPAddress sendRequest1() {
@@ -78,8 +78,8 @@ public class BOOTP  {
 	try { 
 	    sender = net.getUDPSender(CLIENT_PORT, new IPAddress(255, 255, 255, 255), SERVER_PORT);
 	    receiver = net.getUDPReceiver(CLIENT_PORT, new Memory[] { 
-			    net.getUDPBuffer1(), net.getUDPBuffer1(), net.getUDPBuffer1(), net.getUDPBuffer1()});
-	    buf = net.getUDPBuffer1();
+			    net.getUDPBuffer(), net.getUDPBuffer(), net.getUDPBuffer(), net.getUDPBuffer()});
+	    buf = net.getUDPBuffer();
 	} catch(jx.net.UnknownAddressException ex) { throw new Error("broadcast ip address unknown"); }
       //do {
 	  BOOTPFormat bootp = new BOOTPFormat(buf, 14 + 20 + 8);

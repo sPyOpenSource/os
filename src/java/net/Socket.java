@@ -41,7 +41,7 @@ public class Socket {
 	
 	Memory[] bufs = new Memory[INITIAL_BUFFER_SIZE];
 	for (int i = 0; i < bufs.length; i++)
-	    bufs[i] = net.getTCPBuffer1();
+	    bufs[i] = net.getTCPBuffer();
 
 	tcpSocket = net.getTCPSocket(remotePort, net.getLocalAddress(), bufs);
 	try {

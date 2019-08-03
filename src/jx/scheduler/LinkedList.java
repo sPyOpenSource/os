@@ -1,16 +1,15 @@
 package jx.scheduler;
 
 import jx.zero.*;
-import jx.zero.debug.*;
 
 public class LinkedList {
     final private CPUManager cpuManager = (CPUManager)InitialNaming.getInitialNaming().lookup("CPUManager");
-    private ObjectContainer first=null;
-    private ObjectContainer last =null;
-    private ObjectContainer enumerator =null;
+    private ObjectContainer first = null;
+    private ObjectContainer last = null;
+    private ObjectContainer enumerator = null;
     private int anzElements = 0;
     
-    private boolean debug=false;   //test
+    private boolean debug = false;   //test
     
     public LinkedList(){
 	/* init Debug.out */
@@ -57,7 +56,7 @@ public class LinkedList {
 	    removeFirst();
 	    return true;
 	}
-	ObjectContainer pre=first;
+	ObjectContainer pre = first;
 	ObjectContainer c = first.next;
 	while (c != null) {
 	    if (c.content == obj) {
@@ -72,9 +71,9 @@ public class LinkedList {
 	    c = c.next;
 	}
 	if (debug) {
-		Debug.out.println("LinkedList.remove: Object\n   ");
-		cpuManager.dump("",obj);
-		Debug.out.println("    not in list.");
+            Debug.out.println("LinkedList.remove: Object\n   ");
+            cpuManager.dump("",obj);
+            Debug.out.println("    not in list.");
 	}
 	return false;
     }
@@ -98,14 +97,11 @@ public class LinkedList {
     }
 
     boolean isEmpty(){
-	return (size()==0);
+	return (size() == 0);
     }
 
     boolean contains(Object o){
-	if (indexOf(o) == -1)
-	    return false;
-	else 
-	    return true;
+        return indexOf(o) != -1;
     }
     
     int indexOf(Object o) {
@@ -144,7 +140,8 @@ public class LinkedList {
 	}
     }
 
-    /************ protected *******************/
+    /************ protected
+     * @return  *******************/
     protected Object getFirst()
     {
 	enumerator = first;
@@ -200,6 +197,3 @@ public class LinkedList {
 	}
     } 
 }
-
-
-

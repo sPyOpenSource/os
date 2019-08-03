@@ -72,10 +72,10 @@ public class IPAddress {
 
     private byte[] toBytes() {
 	byte[] ret = new byte[4];
-	ret[3] = (byte)( (addr>>24) & 0xff);
-	ret[2] = (byte)((addr>>16)  & 0xff);
-	ret[1] = (byte)((addr>>8) & 0xff);
-	ret[0] = (byte)(addr & 0xff);
+	ret[3] = (byte)((addr >> 24) & 0xff);
+	ret[2] = (byte)((addr >> 16) & 0xff);
+	ret[1] = (byte)((addr >> 8)  & 0xff);
+	ret[0] = (byte)( addr        & 0xff);
 	return ret;
     }
 }

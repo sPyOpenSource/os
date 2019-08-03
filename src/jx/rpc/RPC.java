@@ -13,12 +13,12 @@ import jx.net.UDPReceiver;
 import jx.net.UDPSender;
 import jx.net.UDPData;
 
-public class RPC implements Runnable,ThreadEntry {
+public class RPC implements Runnable, ThreadEntry {
   public static final int IPPROTO_TCP = 6;      /* protocol number for TCP/IP */
   public static final int IPPROTO_UDP = 17;     
 
    private UDPReceiver receiver;
-    private short receivePort=-1;
+    private short receivePort = -1;
     //private DatagramSocket socket;
     private MemoryManager memMgr;
     NetInit net;
@@ -187,10 +187,10 @@ public class RPC implements Runnable,ThreadEntry {
 	try {
 	    if (debug) Debug.out.println("RPC receiver started.");
 	    Memory buf = net.getUDPBuffer();
-		Memory[] bufs = new Memory[10]; 
-		for(int i=0; i<10; i++) {
-		    bufs[i] = net.getUDPBuffer(0);
-		}
+            Memory[] bufs = new Memory[10]; 
+            for(int i = 0; i < 10; i++) {
+                bufs[i] = net.getUDPBuffer(0);
+            }
 	    receiver = net.getUDPReceiver(receivePort, bufs);
 	waiting:
 	    for(;;) {
@@ -206,16 +206,15 @@ public class RPC implements Runnable,ThreadEntry {
 		}
 		RPCMsgSuccess reply = (RPCMsgSuccess)replyMessage;
 		Integer xid = new Integer(reply.xid);
-		if (debug) Debug.out.println("RPC: received xid="+xid);
-		Waiter w = null;
-		w = (Waiter) waiters.get(xid);
+		if (debug) Debug.out.println("RPC: received xid=" + xid);
+		Waiter w = (Waiter) waiters.get(xid);
 		if (w == null) {
-		    if (debug) Debug.out.println("RPC: No one is interested in this packet. xid="+xid);
+		    if (debug) Debug.out.println("RPC: No one is interested in this packet. xid=" + xid);
 		    if (debug) Debug.out.println("     Keeping it in buffer.");
 		    Vector b = (Vector)buffers.get(xid);
 		    if (b == null) {
 			b = new Vector();
-			buffers.put(xid,b);
+			buffers.put(xid, b);
 		    }
 		    //byte[] bb = new byte[repl.getLength()-rpcbuf.offset];
 		    //System.arraycopy(rpcbuf.buf, rpcbuf.offset, bb, 0, bb.length);
@@ -323,7 +322,7 @@ public class RPC implements Runnable,ThreadEntry {
     // server part
     public UDPReceiver createReceiver(int port) {
 	Memory[] bufs = new Memory[10]; 
-	for(int i=0; i<10; i++) {
+	for(int i = 0; i < 10; i++) {
 	    bufs[i] = net.getUDPBuffer(0);
 	}
 	return net.getUDPReceiver(port, bufs);
@@ -354,9 +353,9 @@ public class RPC implements Runnable,ThreadEntry {
 	cpuManager.recordEvent(event_rcv);	
 	inbuf.init(buf, buf.offset, buf.size);
 
-	if (debugPacketNotice) Debug.out.println("RPC.receive: "+buf.size);
+	if (debugPacketNotice) Debug.out.println("RPC.receive: " + buf.size);
 	if (debugPacketDump) {
-	    Debug.out.println("RECEIVED REQUEST PACKET: offset="+buf.offset+", size="+buf.size);
+	    Debug.out.println("RECEIVED REQUEST PACKET: offset=" + buf.offset + ", size=" + buf.size);
 	    Dump.xdump1(buf.mem, buf.offset, buf.size);
 	    //Debug.out.println(" xid="+jx.xdr.Format.readInt(inbuf)); // readInt advances the offset pointer!
 	    //Debug.out.println(" type="+jx.xdr.Format.readInt(inbuf));
@@ -405,9 +404,9 @@ public class RPC implements Runnable,ThreadEntry {
 	Memory m=null;
 	try {
 	    UDPSender sender = findUDPSender(localPort, rpcHost, dstPort);
-	    if (debugPacketNotice) Debug.out.println("RPC.replyOnlysend: "+buf.buf.size() +", "+ buf.offset);
-	    m = sender.send1(buf.buf, 14+20+8,buf.offset-(14+20+8)); // FIXME
-	} catch(Exception e) {throw new Error(); }
+	    if (debugPacketNotice) Debug.out.println("RPC.replyOnlysend: " + buf.buf.size() + ", " + buf.offset);
+	    m = sender.send1(buf.buf, 14 + 20 + 8, buf.offset - (14 + 20 + 8)); // FIXME
+	} catch(Exception e) { throw new Error(); }
 	buf.init(m);
 	return buf;
     }  
@@ -417,21 +416,19 @@ public class RPC implements Runnable,ThreadEntry {
     }
 
     private UDPSender findUDPSender(int localPort, IPAddress rpcHost, int dstPort) throws jx.net.UnknownAddressException {
-	for(int i=0; i<senders.length; i++) {
-	    UDPSender s = senders[i];
-	    if (s==null) continue;
-	    if (s.getLocalPort() == localPort && s.getRemotePort() == dstPort && s.getDestination() == rpcHost) {
-		return s;
-	    }
-	}
+        for (UDPSender s : senders) {
+            if (s == null) continue;
+            if (s.getLocalPort() == localPort && s.getRemotePort() == dstPort && s.getDestination() == rpcHost) {
+                return s;
+            }
+        }
 	UDPSender sender = net.getUDPSender(localPort, rpcHost, dstPort);
-	for(int i=0; i<senders.length; i++) {
+	for(int i = 0; i < senders.length; i++) {
 	    if (senders[i] == null) {
 		senders[i] = sender;
 	    }
 	}	
 	return sender;
     }
-
 
 }

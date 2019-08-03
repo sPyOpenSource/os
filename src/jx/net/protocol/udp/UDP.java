@@ -14,14 +14,14 @@ import jx.net.UDPData;
 public class UDP implements IPConsumer {
   
     private PacketsConsumer lowerConsumer;
-    private IPProducer lowerProducer;
+    private final IPProducer lowerProducer;
 
     static final boolean dumpAll = false; // switch on to see all udp frames
     static final boolean printIfNoReceiver = false; // print to debug out if no receiver for port
     static final boolean printRegistration = false;
     private final static boolean debugPacketNotice = false;
 
-    private UDPConsumer[] udpConsumerList = new UDPConsumer[65536]; // hack
+    private final UDPConsumer[] udpConsumerList = new UDPConsumer[65536]; // hack
    // private UDPConsumer1[] udpConsumerList1 = new UDPConsumer1[65536]; // hack
 
     CPUManager cpuManager;
@@ -73,8 +73,9 @@ public class UDP implements IPConsumer {
 	return buf.mem;
     }*/
 
+    @Override
     public Memory processIP(IPData buf) {
-	if (debugPacketNotice) Debug.out.println("UDP.receive: "+buf.mem.size());
+	if (debugPacketNotice) Debug.out.println("UDP.receive: " + buf.mem.size());
 	cpuManager.recordEvent(event_rcv);
 	Memory mem = buf.mem;
 	if (dumpAll) { 
@@ -103,7 +104,7 @@ public class UDP implements IPConsumer {
 	}
 
 	if (printIfNoReceiver)
-	    Debug.out.println("No UDP receiver for port: "+port);
+	    Debug.out.println("No UDP receiver for port: " + port);
 	return buf.mem;
     }
 
@@ -121,7 +122,7 @@ public class UDP implements IPConsumer {
     public boolean registerUDPConsumer(UDPConsumer consumer, int port) {
 	checkPort(port);
 	if (printRegistration) {
-	  Debug.out.println("Register (splitting) UDP receiver for port: "+port);
+	    Debug.out.println("Register (splitting) UDP receiver for port: " + port);
 	}
 	if (udpConsumerList[port] != null) throw new Error("port already used");
 	udpConsumerList[port] = consumer;
@@ -140,6 +141,7 @@ public class UDP implements IPConsumer {
 	checkPort(srcPort);
 	checkPort(dstPort);
 	return new PacketsConsumer1() {
+                @Override
 		public Memory processMemory(Memory userbuf, int offset, int size) {
 		    if (debugPacketNotice) Debug.out.println("UDP.transmit: " + size);
 		    cpuManager.recordEvent(event_snd);
@@ -152,7 +154,9 @@ public class UDP implements IPConsumer {
 		    Memory ret = lowerLayer.processMemory(buf, offset, UDPFormat.requiresSpace() + size);
 		    return ret;
 		}
+                @Override
 		public int requiresSpace() {return UDPFormat.SIZE;}
+                @Override
 		public int getMTU() {return 1000; /*TODO*/}
 	    };
     }
@@ -161,8 +165,9 @@ public class UDP implements IPConsumer {
 	checkPort(srcPort);
 	checkPort(dstPort);
 	return new PacketsConsumer() {
+                @Override
 		public Memory processMemory(Memory userbuf) {
-		    if (debugPacketNotice) Debug.out.println("UDP.transmit: "+userbuf.size());
+		    if (debugPacketNotice) Debug.out.println("UDP.transmit: " + userbuf.size());
 		    cpuManager.recordEvent(event_snd);
 		    Memory buf = userbuf.joinPrevious();
 		    UDPFormat udp = new UDPFormat(buf);
@@ -170,8 +175,8 @@ public class UDP implements IPConsumer {
 		    udp.insertDestPort(dstPort);
 		    udp.insertLength(buf.size());
 		    if (dumpAll) {
-		      Debug.out.println("UDP send to "+dstPort+" lLayer "+lowerLayer.getClass().getName());
-		      Dump.xdump1(buf, 0, 128);
+		        Debug.out.println("UDP send to " + dstPort + " lLayer " + lowerLayer.getClass().getName());
+		        Dump.xdump1(buf, 0, 128);
 		    }
 		    Memory ret = lowerLayer.processMemory(buf);
 		    int space = udp.length();
@@ -181,7 +186,9 @@ public class UDP implements IPConsumer {
 		    ret.split2(space, arr);
 		    return arr[1];
 		}
+                @Override
 		public int requiresSpace() {return UDPFormat.SIZE;}
+                @Override
 		public int getMTU() {return 1000; /*TODO*/}
 	    };
     }
