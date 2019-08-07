@@ -2,42 +2,41 @@ package java.net;
 
 public final class DatagramPacket
 { 
-  byte[] buff;
-  int length;
-  InetAddress addr;
-  int port;
+    byte[] buff;
+    int length;
+    InetAddress addr;
+    int port;
   
-  public InetAddress getAddress()
+    public InetAddress getAddress()
     {
-      return addr;
+        return addr;
     }
   
-  public byte[] getData()
+    public byte[] getData()
     {
-      return buff;
+        return buff;
     }
   
-  public int getLength()
+    public int getLength()
     {
-      return length;
+        return length;
     }
   
-  public int getPort()
+    public int getPort()
     {
-      return port;
+        return port;
     }
   
-  public DatagramPacket(byte ibuf[], int ilength)
+    public DatagramPacket(byte ibuf[], int ilength)
     {
-      buff = ibuf;
-      length = ilength;
+        buff = ibuf;
+        length = ilength;
     }
   
-  public DatagramPacket(byte ibuf[], int ilength, InetAddress iaddr, int iport)
+    public DatagramPacket(byte ibuf[], int ilength, InetAddress iaddr, int iport)
     {
-      this(ibuf, ilength);
-      addr = iaddr;
-      port = iport;
+        this(ibuf, ilength);
+        addr = iaddr;
+        port = iport;
     }
 }
-

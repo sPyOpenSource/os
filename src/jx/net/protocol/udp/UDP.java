@@ -169,22 +169,22 @@ public class UDP implements IPConsumer {
 		public Memory processMemory(Memory userbuf) {
 		    if (debugPacketNotice) Debug.out.println("UDP.transmit: " + userbuf.size());
 		    cpuManager.recordEvent(event_snd);
-		    Memory buf = userbuf.joinPrevious();
+		    Memory buf = userbuf;//.joinPrevious();
 		    UDPFormat udp = new UDPFormat(buf);
 		    udp.insertSourcePort(srcPort);
 		    udp.insertDestPort(dstPort);
-		    udp.insertLength(buf.size());
+		    udp.insertLength(buf.size() - 34);
 		    if (dumpAll) {
 		        Debug.out.println("UDP send to " + dstPort + " lLayer " + lowerLayer.getClass().getName());
 		        Dump.xdump1(buf, 0, 128);
 		    }
 		    Memory ret = lowerLayer.processMemory(buf);
-		    int space = udp.length();
+		    //int space = udp.length();
 		    //cpuManager.dump("..",ret);
 		    //return ret.getSubRange(space, ret.size()-space);
-		    Memory [] arr = new Memory[2];
-		    ret.split2(space, arr);
-		    return arr[1];
+		    //Memory [] arr = new Memory[2];
+		    //ret.split2(space, arr);
+		    return ret;//arr[1];
 		}
                 @Override
 		public int requiresSpace() {return UDPFormat.SIZE;}

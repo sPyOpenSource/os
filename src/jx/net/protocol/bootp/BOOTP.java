@@ -13,7 +13,7 @@ public class BOOTP  {
     int xid = 1;
 
     final static int CLIENT_PORT = 68;
-    final static int SERVER_PORT = 67;
+    protected final static int SERVER_PORT = 67;
     byte myHWaddr[];
 
     UDPSender sender;

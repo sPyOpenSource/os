@@ -1,10 +1,15 @@
 package jx.net.protocol.bootp;
 
+import java.net.Inet4Address;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import jx.zero.*;
 import jx.zero.debug.*;
 
 import jx.net.format.Format;
 import jx.net.IPAddress;
+import metaxa.os.devices.net.EthernetAdress;
+import metaxa.os.devices.net.WrongEthernetAdressFormat;
 
 /**
   * Write BOOTP header data according to the BOOTP format in the buffer.
@@ -13,8 +18,12 @@ import jx.net.IPAddress;
   *
   */
 public class BOOTPFormat extends Format {
-  static final byte REQUEST = 1;
-  static final byte REPLY = 2;
+    /**
+     * Size of the BOOTP header (236 bytes)
+     */
+    public static final int SIZE = 236;
+  public static final byte REQUEST = 1;
+  public static final byte REPLY = 2;
   public BOOTPFormat(Memory buf, int offset) { 
     super(buf, offset);
   }
@@ -66,11 +75,59 @@ public class BOOTPFormat extends Format {
     writeBytes(236, vend);
   }
 
-
+/**
+     * Gets the opcode
+     * @return 
+     */
+    public int getOpcode() {
+        return readByte(0);
+    }
+    
+    /**
+     * Gets the transaction ID
+     * @return 
+     */
+    public int getTransactionID() {
+        return readInt(4);
+    }
+    
   public IPAddress getYiaddr() {
       return readAddress(16);
   }
-
+  
+  public IPAddress getClientIPAddress(){
+      return readAddress(12);
+  }
+  
+  /**
+     * Gets the server IP address
+     * @return 
+     */
+    public IPAddress getServerIPAddress() {
+        return readAddress(20);
+    }
+    
+    public IPAddress getGatewayIPAddress() {
+        return readAddress(24);
+    }
+    
+/**
+     * Gets the client hardware address
+     * @return 
+     */
+    public EthernetAdress getClientHwAddress() {
+        final byte[] addr = new byte[6];
+        for (int i = 0; i < addr.length; i++) {
+            addr[i] = (byte) readByte(28 + i);
+        }
+        try {
+            return new EthernetAdress(addr);
+        } catch (WrongEthernetAdressFormat ex) {
+            //Logger.getLogger(BOOTPFormat.class.getName()).log(Level.SEVERE, null, ex);
+            return null;
+        }
+    }
+    
   public int length() { 
     return requiresSpace(); 
   }

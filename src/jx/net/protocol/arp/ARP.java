@@ -46,7 +46,7 @@ public class ARP implements AddressResolution, MemoryConsumer, EtherConsumer {
 	if (ipLayer != null) ownProtocolAddress = ipLayer.getOwnAddress();
  
 	arpCache = new ARPCache(this, timerManager);
-	if (sendARPs) timerManager.addMillisTimer(900000,   new ARPTimer(timerManager), new ARPTimerArg(this));
+	if (sendARPs) timerManager.addMillisTimer(900000, new ARPTimer(timerManager), new ARPTimerArg(this));
     }
     
     @Override
@@ -194,8 +194,8 @@ public class ARP implements AddressResolution, MemoryConsumer, EtherConsumer {
 	    if (dumpAll) Debug.out.println("ARP: request received!");
 	    IPAddress target = a.getTargetProtocolAddress();
 	    if (dumpAll) {
-		Debug.out.println(" Address to resolve: "+target.toString());
-		Debug.out.println(" My Address: "+ownProtocolAddress.toString());
+		Debug.out.println(" Address to resolve: " + target.toString());
+		Debug.out.println(" My Address: " + ownProtocolAddress.toString());
 	    }
 	    if (target.equals(ownProtocolAddress)) {
 		byte[] senderHW = a.getSenderHardwareAddress();
@@ -215,7 +215,7 @@ public class ARP implements AddressResolution, MemoryConsumer, EtherConsumer {
 		answ.insertTargetProtocolAddress(senderProto);
 
 		//answer = ethernet.transmitARPBroadcast(answer);
-		if (debugPacketNotice) Debug.out.println("ARP.sendAnswer: "+answer.size());
+		if (debugPacketNotice) Debug.out.println("ARP.sendAnswer: " + answer.size());
 		return ethernet.transmitSpecial(ownHardwareAddress, senderHW, 0x0806, answer);
 		
 	    }

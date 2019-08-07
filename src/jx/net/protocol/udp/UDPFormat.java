@@ -14,9 +14,9 @@ import jx.net.format.Format;
  *   unsigned short chksum;
  */
 
-class UDPFormat extends Format {
+public class UDPFormat extends Format {
     static final boolean dumpAll = false; // switch on to see all udp frames
-    UDPFormat(Memory buf) { this(buf,0);}
+    public UDPFormat(Memory buf) { this(buf, 34);}
     UDPFormat(Memory buf, int offset) { 
 	super(buf, offset);
 	if (dumpAll)Debug.out.println("UDP-Packet:");
@@ -24,12 +24,13 @@ class UDPFormat extends Format {
     }
     
     /* write */
-    void insertSourcePort(int port)     {  writeShort(0, (short)port);  }
-    void insertDestPort(int port)     {  writeShort(2, (short)port);  }
-    void insertLength(int len)     {  
+    public void insertSourcePort(int port)     {  writeShort(0, (short)port);  }
+    public void insertDestPort(int port)     {  writeShort(2, (short)port);  }
+    public void insertLength(int len){  
 	if (dumpAll) Debug.out.println("INSERTLENGTH MIT " + len);
-	writeShort(4, (short)len);  }
-    void insertChecksum(int checksum)     {  writeShort(6, (short)checksum);  }
+	writeShort(4, (short)len);
+    }
+    public void insertChecksum(int checksum)     {  writeShort(6, (short)checksum);  }
     
     /* read */
     int getSourcePort()     {  return readUnsignedShort(0);  }
@@ -43,11 +44,11 @@ class UDPFormat extends Format {
 
     public void dump() {
 	Debug.out.println("UDP-Packet:");
-	Debug.out.println("   SourcePort: "+getSourcePort());
-	Debug.out.println("   DestPort: "+getDestPort());
-	Debug.out.println("   Length: "+getLength());
-	Debug.out.println("   Checksum:"+getChecksum());
+	Debug.out.println("   SourcePort: " + getSourcePort());
+	Debug.out.println("   DestPort: " + getDestPort());
+	Debug.out.println("   Length: " + getLength());
+	Debug.out.println("   Checksum:" + getChecksum());
 	Debug.out.println("   First 16 bytes of data:");
-	Dump.xdump(buf, offset+requiresSpace(), 16);
+	Dump.xdump(buf, offset + requiresSpace(), 16);
     }
 }
