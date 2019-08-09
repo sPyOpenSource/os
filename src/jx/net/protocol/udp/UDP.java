@@ -91,9 +91,10 @@ public class UDP implements IPConsumer {
 	MemoryConsumer consumer;
 	UDPConsumer udpConsumer;
 	checkPort(port);
+        Debug.out.println(port);
 	if ((udpConsumer = udpConsumerList[port]) != null) {
 	    int space = udp.length();
-	    //Debug.out.println("UDPDATALEN: "+(buf.size()-space));
+	    Debug.out.println("UDPDATALEN: ");// + (buf.size()-space));
 	    Memory data = buf.mem.getSubRange(space, buf.mem.size() - space);
 	    UDPData u = new UDPData();
 	    u.mem = data;
@@ -125,6 +126,7 @@ public class UDP implements IPConsumer {
 	    Debug.out.println("Register (splitting) UDP receiver for port: " + port);
 	}
 	if (udpConsumerList[port] != null) throw new Error("port already used");
+        Debug.out.println("reg: " + port);
 	udpConsumerList[port] = consumer;
 	return true;
     }

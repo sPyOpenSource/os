@@ -93,7 +93,7 @@ public class BOOTP  {
 	  
 	  buf = sender.send1(buf, 14 + 20 + 8, BOOTPFormat.requiresSpace());	
 
-	  udp = receiver.receive1(buf, 200);
+	  udp = receiver.receive(buf, 200);
 	  cpuManager.recordEvent(event_rec);
 
 	  if (udp == null) {

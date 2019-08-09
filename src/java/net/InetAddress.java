@@ -141,6 +141,8 @@ public class InetAddress
         if (host.equals("faui45")) return new InetAddress(faui45IP);
         if (host.equals("faui40p")) return new InetAddress(faui40pIP);
         if (host.equals(localName)) return new InetAddress(localIP);
+        if (host.equals("laptop")) return new InetAddress(laptop);
+        if (host.equals("home")) return new InetAddress(home);
         throw new UnknownHostException("unknown host " + host); 
     }
 

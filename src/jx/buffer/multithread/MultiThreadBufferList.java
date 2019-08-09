@@ -24,13 +24,15 @@ public class MultiThreadBufferList implements BufferProducer, BufferConsumer {
     static final boolean trace = false;
 
 
-    boolean verbose = false;
+    boolean verbose = true;
     boolean requireMoreData = false;
     Buffer first;
     Buffer last;
     CPUManager cpuManager;
     CPUState consumer;
-
+public Buffer getLast(){
+    return last;
+}
     int size;
 
     String name; // for debugging
@@ -40,11 +42,11 @@ public class MultiThreadBufferList implements BufferProducer, BufferConsumer {
 
     public MultiThreadBufferList() {
 	this(new Buffer(null), null);
-	//throw new Error();
     }
 
     /**
      * Create list from Memory array
+     * @param bufs
      */
     public MultiThreadBufferList(Memory[] bufs) {
 	this(new Buffer(bufs[0]), null);
@@ -91,8 +93,9 @@ public class MultiThreadBufferList implements BufferProducer, BufferConsumer {
 	return consumer;
     }
 
+    @Override
     public void appendElement(Buffer bh) {
-	//if (verbose) Debug.out.println("LIST::appendElement data="+bh.data);
+	if (verbose) Debug.out.println("LIST::appendElement data=" + bh.data);
 	if (requireMoreData && bh.moreData == null) throw new Error("Buffer contains no moreData");
 	if (check) checkConsistency();
 	//if (verbose) cpuManager.dump("MultiThreadBufferList::APPEND",this);
@@ -113,8 +116,9 @@ public class MultiThreadBufferList implements BufferProducer, BufferConsumer {
     }
     
     
+    @Override
     public Buffer undockFirstElement() {	
-	if (verbose) cpuManager.dump("MultiThreadBufferList::UNDOCK",this);
+	if (verbose) cpuManager.dump("MultiThreadBufferList::UNDOCK", this);
 	if (check) checkConsistency();
 	if (consumer == null) {consumer = cpuManager.getCPUState();}
 
@@ -147,7 +151,7 @@ public class MultiThreadBufferList implements BufferProducer, BufferConsumer {
 
     public Buffer nonblockingUndockFirstElement() {	
 	if (verbose) {
-	    cpuManager.dump("MultiThreadBufferList::NONBLOCKINGUNDOCK",this);
+	    cpuManager.dump("MultiThreadBufferList::NONBLOCKINGUNDOCK", this);
 	    dump();
 	}
 	if (check) checkConsistency();
@@ -171,7 +175,7 @@ public class MultiThreadBufferList implements BufferProducer, BufferConsumer {
 	}
     }
 
-    final private void checkConsistency() {
+    private void checkConsistency() {
 	
 	// check last pointer
 	if (last.next.get() != null)
@@ -179,13 +183,13 @@ public class MultiThreadBufferList implements BufferProducer, BufferConsumer {
 	
 	// check size
 	Buffer b = first;
-	int sz=0;
-	while(b!=null) {
+	int sz = 0;
+	while(b != null) {
 	    b = (Buffer) b.next.get();
 	    sz++;
 	}
 	if (sz != size) {
-	    Debug.out.println("size info is not valid ["+name+"] (is: "+sz+" should:"+size+")");
+	    Debug.out.println("size info is not valid [" + name + "] (is: " + sz + " should:" + size + ")");
 	    dump();
 	}
 	

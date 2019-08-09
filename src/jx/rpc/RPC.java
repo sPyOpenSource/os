@@ -195,7 +195,7 @@ public class RPC implements Runnable, ThreadEntry {
 	waiting:
 	    for(;;) {
 		beforeReceive = true; // TODO: remove this hack and configure scheduler
-		UDPData udp = receiver.receive1(buf);
+		UDPData udp = receiver.receive(buf);
 
 		RPCBuffer rpcbuf = new RPCBuffer(udp, udp.offset, udp.size);
 		if (debugPacketNotice) Debug.out.println("RPC.loopreceive: "+udp.size);
@@ -349,7 +349,7 @@ public class RPC implements Runnable, ThreadEntry {
     }
     */
     public RPCBuffer receive(UDPReceiver receiveSocket, RPCBuffer inbuf) {
-	UDPData buf = receiveSocket.receive1(inbuf.getMemory());
+	UDPData buf = receiveSocket.receive(inbuf.getMemory());
 	cpuManager.recordEvent(event_rcv);	
 	inbuf.init(buf, buf.offset, buf.size);
 

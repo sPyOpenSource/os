@@ -7,7 +7,7 @@ import jx.zero.*;
 
 public class Buffer2 extends Buffer {
     int offs, size;
-    private static boolean avoidSplitting = true;
+    private static final boolean avoidSplitting = true;
 
     public Buffer2(Memory mem) {
 	super(join(mem));
@@ -15,11 +15,13 @@ public class Buffer2 extends Buffer {
 	if (mem != null) size = mem.size();
     }
 
+    @Override
     public Memory getMem() {
 	throw new Error("subrange!");
 	//return data;
     }
 
+    @Override
     public Memory getData() {
 	//Debug.out.println("    getData: offs="+offs+", size=" + size);
 	//if (1==1) throw new Error();
@@ -28,6 +30,7 @@ public class Buffer2 extends Buffer {
     }
 
 
+    @Override
     public void setData(Memory m) {
 	/*
 	if(1==1)throw new Error("TODO: extendRange -> split"); //
@@ -56,6 +59,7 @@ public class Buffer2 extends Buffer {
 	this.size = size;
     }
 
+    @Override
     public void copyDataFrom(Buffer b) {
 	super.copyDataFrom(b);
 	Buffer2 b2 = (Buffer2)b;
