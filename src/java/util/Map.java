@@ -35,7 +35,7 @@ public interface Map<K,V>
   public void clear();
   public boolean containsKey(Object key);
   public boolean containsValue(Object value);
-  public Set entrySet();
+  public Set<Map.Entry<K, V>> entrySet();
   public boolean equals(Object o);
   public V get(Object key);
   public V put(K key, V value);

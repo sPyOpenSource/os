@@ -32,6 +32,7 @@ import java.io.IOException;
 import java.io.Serializable;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import jx.zero.Debug;
 
 /**
  * This class provides a hashtable-backed implementation of the
@@ -57,8 +58,8 @@ import java.io.ObjectOutputStream;
  * @version        $Revision: 1.1 $
  * @modified       $Id: HashMap.java,v 1.1 2002/04/30 09:10:32 golm Exp $
  */
-public class HashMap<K,V> extends AbstractMap
-  implements Map, Cloneable, Serializable
+public class HashMap<K,V> extends AbstractMap<K,V>
+  implements Map<K,V>, Cloneable, Serializable
 {
   // STATIC (CLASS) VARIABLES ------------------------------------------
 
@@ -89,7 +90,7 @@ public class HashMap<K,V> extends AbstractMap
   // INSTANCE VARIABLES -------------------------------------------------
 
   /** the capacity of this HashMap:  denotes the size of the bucket array */
-  transient int capacity;
+  transient int capacity = 11;
 
   /** the size of this HashMap:  denotes the number of key-value pairs */
   private transient int size;
@@ -111,7 +112,7 @@ public class HashMap<K,V> extends AbstractMap
    * which, in turn, are linked nodes containing a key-value mapping 
    * and a reference to the "next" Bucket in the list
    */
-  private transient Bucket[] buckets;
+  private transient Bucket<K,V>[] buckets = new Bucket[11];
 
   /** 
    * counts the number of modifications this HashMap has undergone; used by Iterators
@@ -129,7 +130,8 @@ public class HashMap<K,V> extends AbstractMap
    */
   public HashMap()
   {
-    init(DEFAULT_CAPACITY, DEFAULT_LOAD_FACTOR);
+      Debug.out.println("hashmap");
+    //init(DEFAULT_CAPACITY, DEFAULT_LOAD_FACTOR);
   }
 
   /**
@@ -189,19 +191,22 @@ public class HashMap<K,V> extends AbstractMap
 
   // PUBLIC METHODS ---------------------------------------------------------
 
-  /** returns the number of kay-value mappings currently in this Map */
+  /** @return the number of kay-value mappings currently in this Map */
+  @Override
   public int size()
   {
     return size;
   }
 
-  /** returns true if there are no key-value mappings currently in this Map */
+  /** @return true if there are no key-value mappings currently in this Map */
+  @Override
   public boolean isEmpty()
   {
     return size == 0;
   }
 
   /** empties this HashMap of all elements */
+  @Override
   public void clear()
   {
     size = 0;
@@ -212,7 +217,9 @@ public class HashMap<K,V> extends AbstractMap
   /** 
    * returns a shallow clone of this HashMap (i.e. the Map itself is cloned, but
    * its contents are not)
+     * @return 
    */
+  @Override
   public Object clone()
   {
     Map.Entry entry;
@@ -226,19 +233,25 @@ public class HashMap<K,V> extends AbstractMap
     return clone;
   }
 
-  /** returns a "set view" of this HashMap's keys */
+  /** returns a "set view" of this HashMap's keys
+     * @return  */
+  @Override
   public Set keySet()
   {
     return new HashMapSet(KEYS);
   }
 
-  /** returns a "set view" of this HashMap's entries */
+  /** returns a "set view" of this HashMap's entries
+     * @return  */
+  @Override
   public Set entrySet()
   {
     return new HashMapSet(ENTRIES);
   }
 
-  /** returns a "collection view" (or "bag view") of this HashMap's values */
+  /** returns a "collection view" (or "bag view") of this HashMap's values
+     * @return  */
+  @Override
   public Collection values()
   {
     return new HashMapCollection();
@@ -249,7 +262,9 @@ public class HashMap<K,V> extends AbstractMap
    * in this HashMap 
    *
    * @param       key        the key to search for in this HashMap
+     * @return 
    */
+  @Override
   public boolean containsKey(Object key)
   {
     return (internalGet(key) != null);
@@ -260,7 +275,9 @@ public class HashMap<K,V> extends AbstractMap
    * <pre>o.equals(value)</pre>.
    *
    * @param      value       the value to search for in this Hashtable
+     * @return 
    */
+  @Override
   public boolean containsValue(Object value)
   {
     int i;
@@ -281,9 +298,10 @@ public class HashMap<K,V> extends AbstractMap
    *
    * @param     key      the key for which to fetch an associated value
    */
-  public Object get(Object key)
+  @Override
+  public V get(Object key)
   {
-    Map.Entry oResult = internalGet(key);
+    Map.Entry<K,V> oResult = internalGet(key);
     return (oResult == null) ? null : oResult.getValue();
   }
 
@@ -292,8 +310,10 @@ public class HashMap<K,V> extends AbstractMap
    *
    * @param       key        the HashMap key used to locate the value
    * @param       value      the value to be stored in the HashMap
+     * @return 
    */
-  public Object put(Object key, Object value)
+  @Override
+  public V put(K key, V value)
   {
     return internalPut(key, value);
   }
@@ -304,12 +324,14 @@ public class HashMap<K,V> extends AbstractMap
    * and <pre>null</pre> is returned
    *
    * @param    key     the key used to locate the value to remove from the HashMap
+     * @return 
    */
-  public Object remove(Object key)
+  @Override
+  public V remove(Object key)
   {
-    Bucket list;
+    Bucket<K,V> list;
     int index;
-    Object result = null;
+    V result = null;
     if (size > 0)
       {
 	index = hash(((key == null) ? NULL_KEY : key));
@@ -332,46 +354,47 @@ public class HashMap<K,V> extends AbstractMap
 
   // PRIVATE METHODS -----------------------------------------------------------
 
-  /** 
-   * puts the given key-value pair into this HashMap; a private method is used
-   * because it is called by the rehash() method as well as the put() method,
-   * and if a subclass overrides put(), then rehash would do funky things
-   * if it called put()
-   *
-   * @param       key        the HashMap key used to locate the value
-   * @param       value      the value to be stored in the HashMap
-   */
-  private Object internalPut(Object key, Object value)
-  {
-    HashMapEntry entry;
-    Bucket list;
-    int hashIndex;
-    Object oResult;
-    Object oRealKey = ((key == null) ? NULL_KEY : key);
+    /** 
+    * puts the given key-value pair into this HashMap; a private method is used
+    * because it is called by the rehash() method as well as the put() method,
+    * and if a subclass overrides put(), then rehash would do funky things
+    * if it called put()
+    *
+    * @param       key        the HashMap key used to locate the value
+    * @param       value      the value to be stored in the HashMap
+    */
+    private V internalPut(K key, V value)
+    {
+        HashMapEntry<K,V> entry;
+        Bucket<K,V> list;
+        int hashIndex;
+        V oResult;
+        Debug.out.println("key");
+        K oRealKey = key;//((key == null) ? NULL_KEY : key);
 
-    entry = new HashMapEntry(oRealKey, value);
-    hashIndex = hash(oRealKey);
-    list = buckets[hashIndex];
-    if (list == null)
-      {
-	list = new Bucket();
-	buckets[hashIndex] = list;
-      }
-    oResult = list.add(entry);
-    if (oResult == null)
-      {
-	modCount++;
-	if (size++ == threshold)
-	  rehash();
-	return null;
-      }
-    else
-      {
-	// SEH: if key already exists, we don't rehash & we don't update the modCount
-	// because it is not a "structural" modification
-	return oResult;
-      }
-  }
+        entry = new HashMapEntry<>(oRealKey, value);
+        hashIndex = hash(oRealKey);
+        list = buckets[hashIndex];
+        if (list == null)
+        {
+            list = new Bucket();
+            buckets[hashIndex] = list;
+        }
+        oResult = list.add(entry);
+        
+        Debug.out.println("onreselt");
+        if (oResult == null)
+        {
+            modCount++;
+            if (size++ == threshold)
+                rehash();
+            return null;
+        } else {
+            // SEH: if key already exists, we don't rehash & we don't update the modCount
+            // because it is not a "structural" modification
+            return oResult;
+        }
+    }
 
   /** 
    * a private method, called by all of the constructors to initialize a new HashMap
@@ -383,11 +406,12 @@ public class HashMap<K,V> extends AbstractMap
    */
   private void init(int initialCapacity, float initialLoadFactor)
   {
+      Debug.out.println("init");
     size = 0;
     modCount = 0;
     capacity = initialCapacity;
     loadFactor = initialLoadFactor;
-    threshold = (int) ((float) capacity * loadFactor);
+    threshold = (int) (capacity * loadFactor);
     buckets = new Bucket[capacity];
   }
 
@@ -405,12 +429,12 @@ public class HashMap<K,V> extends AbstractMap
   {
     int i;
     Bucket[]data = buckets;
-    Bucket.Node node;
+    Bucket.Node<K,V> node;
 
     modCount++;
     capacity = (capacity * 2) + 1;
     size = 0;
-    threshold = (int) ((float) capacity * loadFactor);
+    threshold = 11;//(int) (capacity * loadFactor);
     buckets = new Bucket[capacity];
     for (i = 0; i < data.length; i++)
       {
@@ -426,25 +450,25 @@ public class HashMap<K,V> extends AbstractMap
       }
   }
 
-  /** 
-   * a private method which does the "dirty work" (or some of it anyway) of fetching a value
-   * with a key
-   *
-   *  @param     key      the key for which to fetch an associated value
-   */
-  private Map.Entry internalGet(Object key)
-  {
-    Bucket list;
-    if (size == 0)
-      {
-	return null;
-      }
-    else
-      {
-	list = buckets[hash(((key == null) ? NULL_KEY : key))];
-	return (list == null) ? null : list.getEntryByKey(key);
-      }
-  }
+    /** 
+    * a private method which does the "dirty work" (or some of it anyway) of fetching a value
+    * with a key
+    *
+    *  @param     key      the key for which to fetch an associated value
+    */
+    private Map.Entry<K,V> internalGet(Object key)
+    {
+        Bucket<K,V> list;
+        if (size == 0)
+        {
+            return null;
+        }
+        else
+        {
+            list = buckets[hash(((key == null) ? NULL_KEY : key))];
+            return (list == null) ? null : list.getEntryByKey(key);
+        }
+    }
 
   /**
    * a private method used by inner class HashMapSet to implement its own 
@@ -513,8 +537,8 @@ public class HashMap<K,V> extends AbstractMap
 
     for (int i = 0; i < iLen; i++)
       {
-	Object oKey = s.readObject();
-	Object oValue = s.readObject();
+	K oKey = null;//s.readObject();
+	V oValue = null;//s.readObject();
 	internalPut(oKey, oValue);
       }
   }
@@ -624,29 +648,29 @@ public class HashMap<K,V> extends AbstractMap
       return new HashMapIterator(setType);
     }
 
-        @Override
-        public boolean containsAll(Collection c) {
-            throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        }
+    @Override
+    public boolean containsAll(Collection c) {
+        throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
-        @Override
-        public boolean removeAll(Collection c) {
-            throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        }
+    @Override
+    public boolean removeAll(Collection c) {
+        throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
-        @Override
-        public boolean retainAll(Collection c) {
-            throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        }
+    @Override
+    public boolean retainAll(Collection c) {
+        throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
-        @Override
-        public Object[] toArray() {
-            throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        }
+    @Override
+    public Object[] toArray() {
+        throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
-        public Object[] toArray(Object[] a) {
-            throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        }
+    public Object[] toArray(Object[] a) {
+        throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
   }
 
   /**
@@ -832,50 +856,53 @@ public class HashMap<K,V> extends AbstractMap
     }
   }
 
-  /**
-   * a singleton instance of this class (HashMap.NULL_KEY)
-   * is used to represent the null key in HashMap objects
-   *
-   * @author     Jon Zeppieri
-   * @version    $Revision: 1.1 $
-   * @modified   $Id: HashMap.java,v 1.1 2002/04/30 09:10:32 golm Exp $
-   */
-  private static class Null
-  {
-    /** trivial constructor */
-    Null()
+    /**
+    * a singleton instance of this class (HashMap.NULL_KEY)
+    * is used to represent the null key in HashMap objects
+    *
+    * @author     Jon Zeppieri
+    * @version    $Revision: 1.1 $
+    * @modified   $Id: HashMap.java,v 1.1 2002/04/30 09:10:32 golm Exp $
+    */
+    private static class Null
     {
-    }
-  }
-
-  /**
-   * a HashMap version of Map.Entry -- one thing in this implementation is
-   * HashMap-specific:  if the key is HashMap.NULL_KEY, getKey() will return
-   * null
-   *
-   * Simply, a key / value pair
-   *
-   * @author      Jon Zeppieri
-   * @version     $Revision: 1.1 $
-   * @modified    $Id: HashMap.java,v 1.1 2002/04/30 09:10:32 golm Exp $
-   */
-  private static class HashMapEntry extends Bucket.Node implements Map.Entry
-  {
-    /** construct a new HashMapEntry with the given key and value */
-    public HashMapEntry(Object key, Object value)
-    {
-      super(key, value);
+        /** trivial constructor */
+        Null()
+        {
+        }
     }
 
     /**
-     * if the key == HashMap.NULL_KEY, null is returned, otherwise the actual
-     * key is returned
-     */
-    public Object getKey()
+    * a HashMap version of Map.Entry -- one thing in this implementation is
+    * HashMap-specific:  if the key is HashMap.NULL_KEY, getKey() will return
+    * null
+    *
+    * Simply, a key / value pair
+    *
+    * @author      Jon Zeppieri
+    * @version     $Revision: 1.1 $
+    * @modified    $Id: HashMap.java,v 1.1 2002/04/30 09:10:32 golm Exp $
+    */
+    private static class HashMapEntry<K,V> extends Bucket.Node<K,V> implements Map.Entry<K,V>
     {
-      Object oResult = super.getKey();
-      return (oResult == HashMap.NULL_KEY) ? null : oResult;
+        K key;
+        /** construct a new HashMapEntry with the given key and value */
+        public HashMapEntry(K key, V value)
+        {
+            super(key, value);
+            this.key = key;
+        }
+
+        /**
+         * if the key == HashMap.NULL_KEY, null is returned, otherwise the actual
+         * key is returned
+         */
+        @Override
+        public K getKey()
+        {
+            K oResult = key;//super.getKey();
+            return (oResult == HashMap.NULL_KEY) ? null : oResult;
+        }
     }
-  }
-  // EOF -----------------------------------------------------------------------
+    // EOF -----------------------------------------------------------------------
 }

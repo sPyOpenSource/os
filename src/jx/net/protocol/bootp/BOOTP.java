@@ -20,7 +20,7 @@ public class BOOTP  {
     UDPReceiver receiver;
     Memory buf;
     int event_snd,event_rec;
-    NetInit net;
+    protected NetInit net;
  
     public BOOTP(NetInit net, byte[] hwaddr) {
 	this.myHWaddr = hwaddr;

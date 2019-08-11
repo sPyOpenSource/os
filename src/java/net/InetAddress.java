@@ -143,6 +143,7 @@ public class InetAddress
         if (host.equals(localName)) return new InetAddress(localIP);
         if (host.equals("laptop")) return new InetAddress(laptop);
         if (host.equals("home")) return new InetAddress(home);
+        if (host.equals("all")) return new InetAddress(new byte[]{(byte)255, (byte)255, (byte)255, (byte)255});
         throw new UnknownHostException("unknown host " + host); 
     }
 
@@ -201,37 +202,36 @@ public class InetAddress
       for (int i = 0; i < addr.length; i++)
 	v[i & 3] += addr[i];
       
-      return	(i(v[0]) <<  0) +
-	(i(v[1]) <<  8) +
-	(i(v[2]) << 16) +
-	(i(v[3]) << 24);
+      return i(v[0]) +
+	    (i(v[1]) <<  8) +
+	    (i(v[2]) << 16) +
+	    (i(v[3]) << 24);
     }
   
-  public String toString()
-	{
-		return	"" + i(addr[0]) +
-			"." + i(addr[1]) +
-			"." + i(addr[2]) +
-			"." + i(addr[3]);
-	}
-  
-  InetAddress(byte[] addr)
+    public String toString()
     {
-        this();
-      this.addr = addr;
-      
+        return	""  + i(addr[0]) +
+                "." + i(addr[1]) +
+                "." + i(addr[2]) +
+                "." + i(addr[3]);
     }
   
-  InetAddress(int addr)
+    InetAddress(byte[] addr)
     {
         this();
-      byte[] b = new byte[4];
-      b[0] = b(addr);	addr >>>= 8;
-      b[1] = b(addr);	addr >>>= 8;
-      b[2] = b(addr);	addr >>>= 8;
-      b[3] = b(addr);
+        this.addr = addr;
+    }
+  
+    InetAddress(int addr)
+    {
+        this();
+        byte[] b = new byte[4];
+        b[0] = b(addr);	addr >>>= 8;
+        b[1] = b(addr);	addr >>>= 8;
+        b[2] = b(addr);	addr >>>= 8;
+        b[3] = b(addr);
       
-      this.addr = b;
+        this.addr = b;
     }
 }
 

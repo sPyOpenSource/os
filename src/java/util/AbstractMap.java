@@ -180,14 +180,14 @@ public abstract class AbstractMap<K,V> implements Map<K,V>
     return this.keySet;
   }
 
-  public Object put(Object key, Object value)
+  public V put(K key, V value)
   {
     throw new UnsupportedOperationException();
   }
 
-  public void putAll(Map m)
+  public void putAll(Map<? extends K, ? extends V> m)
   {
-    Map.Entry entry;
+    Map.Entry<? extends K, ? extends V> entry;
     Iterator entries = m.entrySet().iterator();
     int size = m.size();
 

@@ -28,6 +28,8 @@ executable file might be covered by the GNU General Public License. */
 
 package java.util;
 
+import jx.zero.Debug;
+
 /**
  * a class which implements Map.Entry
  *
@@ -35,12 +37,12 @@ package java.util;
  * @version     $Revision: 1.1 $
  * @modified    $Id: BasicMapEntry.java,v 1.1 2001/07/31 12:42:55 siivdedi Exp $
  */
-class BasicMapEntry implements Map.Entry
+class BasicMapEntry<K,V> implements Map.Entry<K,V>
 {
   /** the key */
-  Object key;
+  K key;
   /** the value */
-  Object value;
+  V value;
 
   /**
    * construct a new BasicMapEntry with the given key and value
@@ -48,7 +50,7 @@ class BasicMapEntry implements Map.Entry
    * @param     newKey       the key of this Entry
    * @param     newValue     the value of this Entry
    */
-  BasicMapEntry(Object newKey, Object newValue)
+  BasicMapEntry(K newKey, V newValue)
   {
     key = newKey;
     value = newValue;
@@ -89,14 +91,15 @@ class BasicMapEntry implements Map.Entry
     return false;
   }
 
-  /** returns the key */
-  public Object getKey()
-  {
-    return key;
-  }
+    /** returns the key */
+    public K getKey()
+    {
+        Debug.out.println("ret key");
+        return key;
+    }
 
   /** returns the value */
-  public Object getValue()
+  public V getValue()
   {
     return value;
   }
@@ -124,11 +127,11 @@ class BasicMapEntry implements Map.Entry
    *
    * @param     newValue         the new value of this Map.Entry
    */
-  public Object setValue(Object newValue)
+  public V setValue(V newValue)
     throws UnsupportedOperationException, ClassCastException,
 	   IllegalArgumentException, NullPointerException
   {
-    Object oVal = value;
+    V oVal = value;
     value = newValue;
     return oVal;
   }

@@ -11,6 +11,10 @@ public final class DatagramPacket
     {
         return addr;
     }
+    
+    public void setAddress(InetAddress addr){
+        this.addr = addr;
+    }
   
     public byte[] getData()
     {
@@ -25,6 +29,10 @@ public final class DatagramPacket
     public int getPort()
     {
         return port;
+    }
+    
+    public void setPort(int port){
+        this.port = port;
     }
   
     public DatagramPacket(byte ibuf[], int ilength)

@@ -28,6 +28,8 @@ executable file might be covered by the GNU General Public License. */
 
 package java.util;
 
+import jx.zero.Debug;
+
 /**
  * a class representing a simple, lightweight linked-list, using Node
  * objects as its linked nodes; this is used by Hashtable and HashMap
@@ -36,51 +38,51 @@ package java.util;
  * @version       $Revision: 1.1 $
  * @modified      $Id: Bucket.java,v 1.1 2002/04/30 09:10:32 golm Exp $
  */
-class Bucket
+class Bucket<K,V>
 {
-  /** the first node of the lined list, originally null */
-  Node first;
+    /** the first node of the lined list, originally null */
+    Node<K,V> first;
 
-  /** trivial constructor for a Bucket */
-  Bucket()
-  {
-  }
+    /** trivial constructor for a Bucket */
+    Bucket()
+    {
+    }
 
-  /** add this key / value pair to the list
+    /** add this key / value pair to the list
 
-   * @param    newNode    a Node object to be added to this list
-   * @return the old value mapped to the key if there was one, 
-   *  otherwise null.
-   */
-  Object add(Node newNode)
-  {
-    Object oKey;
-    Object oTestKey = newNode.getKey();
-    Node it = first;
-    Node prev = null;
-    if (it == null)		// if the list is empty (the ideal case), we make a new single-node list
-      {
-	first = newNode;
-	return null;
-      }
-    else			// otherwise try to find where this key already exists in the list,
-      {				// and if it does, replace the value with the new one (and return the old one)
-	while (it != null)
-	  {
-	    oKey = it.getKey();
-	    if ((oKey == null) ? (oTestKey == null) : oKey.equals(oTestKey))
-	      {
-		Object oldValue = it.value;
-		it.value = newNode.getValue();
-		return oldValue;
-	      }
-	    prev = it;
-	    it = it.next;
-	  }
-	prev.next = newNode;	// otherwise, just stick this at the 
-	return null;		// end of the list
-      }
-  }
+    * @param    newNode    a Node object to be added to this list
+    * @return the old value mapped to the key if there was one, 
+    *  otherwise null.
+    */
+    V add(Node<K,V> newNode)
+    {
+        K oKey;
+        K oTestKey = newNode.getKey();
+        Node<K,V> it = first;
+        Node<K,V> prev = null;
+        if (it == null)		// if the list is empty (the ideal case), we make a new single-node list
+        {
+            first = newNode;
+            return null;
+        }
+        else			// otherwise try to find where this key already exists in the list,
+        {				// and if it does, replace the value with the new one (and return the old one)
+            while (it != null)
+            {
+                oKey = it.getKey();
+                if ((oKey == null) ? (oTestKey == null) : oKey.equals(oTestKey))
+                {
+                    V oldValue = it.value;
+                    it.value = newNode.getValue();
+                    return oldValue;
+                }
+                prev = it;
+                it = it.next;
+            }
+            prev.next = newNode;	// otherwise, just stick this at the 
+            return null;		// end of the list
+        }
+    }
 
   /**
    * remove a Map.Entry in this list with the supplied key and return its value,
@@ -88,11 +90,11 @@ class Bucket
    *
    * @param     key       the key we are looking for in this list
    */
-  Object removeByKey(Object key)
+  V removeByKey(Object key)
   {
     Object oEntryKey;
-    Node prev = null;
-    Node it = first;
+    Node<K,V> prev = null;
+    Node<K,V> it = first;
     while (it != null)
       {
 	oEntryKey = it.getKey();
@@ -133,17 +135,19 @@ class Bucket
    *
    * @param      key         the key for which we are finding the corresponding Map.Entry
    */
-  Node getEntryByKey(Object key)
+  Node<K,V> getEntryByKey(Object key)
   {
-    Object oEntryKey;
-    Node it = first;
+    K oEntryKey;
+    Node<K,V> it = first;
+    Debug.out.println("while");
     while (it != null)
-      {
+    {
 	oEntryKey = it.getKey();
+        Debug.out.println("if");
 	if ((oEntryKey == null) ? (key == null) : oEntryKey.equals(key))
-	  return it;
+	    return it;
 	it = it.next;
-      }
+    }
     return null;
   }
 
@@ -182,15 +186,15 @@ class Bucket
    * @version      $Revision: 1.1 $
    * @modified     $Id: Bucket.java,v 1.1 2002/04/30 09:10:32 golm Exp $
    */
-  static class Node extends BasicMapEntry implements Map.Entry
+  static class Node<K,V> extends BasicMapEntry<K,V> implements Map.Entry<K,V>
   {
     /** a reference to the next node in the linked list */
-    Node next;
+    Node<K,V> next;
 
     /** non-trivial contructor -- sets the <pre>value</pre> of the Bucket upon instantiation */
-    Node(Object key, Object value)
+    Node(K key, V value)
     {
-      super(key, value);
+        super(key, value);
     }
   }
   

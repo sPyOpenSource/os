@@ -34,11 +34,12 @@ public class DatagramSocket
         int len = UDPFormat.requiresSpace();
         Memory buf = net.getUDPBuffer(len + p.length + 34);
         UDPData udp = receiver.receive(buf);
-        //UDPFormat b = new UDPFormat(udp.mem);
-        buf.copyToByteArray(p.buff, 0, 34, 5);
-        for(int i = 0; i < 5; i++){
-            Debug.out.println(p.buff[i]);
-        }
+        UDPFormat b = new UDPFormat(buf, 26);
+        Debug.out.println("len: " + b.getLength());
+        buf.copyToByteArray(p.buff, 0, 34, b.getLength());
+        /*for(int i = 0; i < 100; i++){
+            Debug.out.println(buf.get8(i));
+        }*/
         /*for(;;) {
           Buffer x = p.getFirst();
           if (x != first) {
@@ -59,6 +60,7 @@ public class DatagramSocket
     public void send(DatagramPacket p) throws IOException {
         try {
             sender = net.getUDPSender(port, new IPAddress(p.addr.getAddress()), p.getPort());
+            Debug.out.println("get udp sender");
         } catch (UnknownAddressException ex) {
             //Logger.getLogger(DatagramSocket.class.getName()).log(Level.SEVERE, null, ex);
         }

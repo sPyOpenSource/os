@@ -9,7 +9,12 @@ public class EthernetAdress {
     final static int ETH_ADDR_SIZE = 6; 
 
     private byte Addr[];
-
+/**
+     * Gets the type of this address. This type is used by (e.g.) ARP.
+     */
+    public int getType() {
+        return 1; // For ethernet
+    }
     public EthernetAdress(byte[] array) throws WrongEthernetAdressFormat {
 	if (array.length != ETH_ADDR_SIZE) throw new WrongEthernetAdressFormat();
 	Addr = new byte[ETH_ADDR_SIZE];

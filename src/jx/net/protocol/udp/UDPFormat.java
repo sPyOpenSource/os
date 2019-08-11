@@ -17,7 +17,7 @@ import jx.net.format.Format;
 public class UDPFormat extends Format {
     static final boolean dumpAll = false; // switch on to see all udp frames
     public UDPFormat(Memory buf) { this(buf, 34);}
-    UDPFormat(Memory buf, int offset) { 
+    public UDPFormat(Memory buf, int offset) { 
 	super(buf, offset);
 	if (dumpAll)Debug.out.println("UDP-Packet:");
 	if (dumpAll)Dump.xdump1(buf, offset, 32);
@@ -35,7 +35,7 @@ public class UDPFormat extends Format {
     /* read */
     int getSourcePort()     {  return readUnsignedShort(0);  }
     int getDestPort()     {  return readUnsignedShort(2);  }
-    int getLength()     {  return readUnsignedShort(4);  }
+    public int getLength()     {  return readUnsignedShort(4);  }
     int getChecksum()     {  return readUnsignedShort(6);  }
     final public int length() { return 8; }
     public static int requiresSpace() { return 8; }
