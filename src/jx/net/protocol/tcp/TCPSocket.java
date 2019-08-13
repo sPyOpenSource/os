@@ -18,12 +18,12 @@ import java.util.*;
 
 public class TCPSocket implements jx.net.TCPSocket, Service {
 
-    private static final boolean debug = false;
+    private static final boolean debug = true;
     private static final boolean NOSPLITTING = true;
     private static final boolean MEMORYCYCLE = false;
     private static final boolean COPY_AND_RETRANSMIT = true;
     private static final boolean LISTENQ = true;
-    private static final int EtherFormatrequiresSpace=14 /*EtherFormat.requiresSpace()*/;
+    private static final int EtherFormatrequiresSpace = 14 /*EtherFormat.requiresSpace()*/;
 
     IPAddress remoteIP;
     IPAddress localIP;
@@ -85,11 +85,11 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 	this(tcp, localPort, ip);
 	if (MEMORYCYCLE) {
 	    usableBufs = new MultiThreadList();
-	    for ( int i = 0; i<bufs.length; i++) {
-		IPData d = new IPData();
-		d.mem = bufs[i];
-		usableBufs.appendElement(d);
-	    }
+            for (Memory buf : bufs) {
+                IPData d = new IPData();
+                d.mem = buf;
+                usableBufs.appendElement(d);
+            }
 	}
     }
 
@@ -118,12 +118,15 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 //	retransmit_CAS.casBoolean(this, true, false);
 
 	timerManager = (TimerManager) InitialNaming.getInitialNaming().lookup("TimerManager");
-	localWindowSize = 1024; //hack
+	localWindowSize = 0xFFFF; //hack
     }
 
     // the sequence number is initialized using the system runtime
     private int getInitialSequenceNumber() {
-	if (timerManager == null) Debug.out.println("Timerman is null");
+	if (timerManager == null) {
+            Debug.out.println("Timerman is null");
+            timerManager = (TimerManager)jx.InitNaming.lookup("TimerManager");
+        }
 	return timerManager.getTimeInMillis();
     }
     
@@ -142,7 +145,7 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
     }
     
     void setSocketState(TCPSocketState state) {
-	if (debug)  Debug.out.println("State changed from "+ SocketState2String(getSocketState()) +" to " + SocketState2String(state));
+	if (debug)  Debug.out.println("State changed from " + SocketState2String(getSocketState()) + " to " + SocketState2String(state));
 	//this.state.set(state);
 	this.state.atomicUpdateUnblock(state, waitingThread);
     }
@@ -202,7 +205,7 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 	if (!packet.areFlagsSet(TCPFormat.ACK))  seq++;
 
 	// Paket versenden und von IP erhaltenes Paket dafuer wieder in Frei-Liste haengen
-	d.mem =  lowerLayer.send(pack);
+	d.mem = lowerLayer.send(pack);
 	usableBufs.appendElement(d);
     }	
 
@@ -216,8 +219,8 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 	    data.mem = tcp.getTCPBuffer1();
 	}
 
-	data.offset = EtherFormatrequiresSpace + IPFormat.requiresSpace();   
-	data.size = 20;
+	data.offset = 0;//EtherFormatrequiresSpace + IPFormat.requiresSpace();   
+	data.size = 20 + 4;
 	TCPFormat packet = new TCPFormat(data, localIP, remoteIP);
 	
 	packet.insertFlags(flags);
@@ -226,14 +229,15 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 	packet.insertAcknowledgmentNumber(ack);
 	packet.insertSequenceNumber(seq);
 	packet.insertWindowSize(localWindowSize);
+        packet.insertOptions(new byte[]{(byte)0x02, (byte)0x04, (byte)0x05, (byte)0xB4});
 	packet.computeHeaderLength();
 	packet.insertChecksum();
 
-	if (!packet.areFlagsSet(TCPFormat.ACK))  seq++;
+	if (!packet.areFlagsSet(TCPFormat.ACK)) seq++;
 
-	Memory back = lowerLayer.send1(data.mem, data.offset, data.size);
+	Memory back = lowerLayer.send1(data.mem, /*data.offset*/0x22, data.size);
 	if (MEMORYCYCLE) {
-	    // von IP erhaltenes Paket wieder in Frei-Liste haengen
+	    // Put the package received from IP back into free list
 	    data.mem = back;
 	    usableBufs.appendElement(data);
 	}
@@ -261,6 +265,7 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
     }
 
 
+    @Override
     public Memory processTCPServer(IPData d){
 	Memory ret = null;
 	TCPSocketState st = getSocketState();
@@ -282,10 +287,11 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 //	else if (st == CLOSED)
 //	else if (st == CLOSING)
 //	else if (st == TIME_WAIT)
-	else throw new Error("unexpected state:"+SocketState2String(st));
+	else throw new Error("unexpected state:" + SocketState2String(st));
 	return ret;
     }
     
+    @Override
     public Memory processTCP(IPData d){
 	Memory ret = null;
 
@@ -300,22 +306,22 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 	else if (st == CLOSING)      ret = closing(d);
 	else if (st == TIME_WAIT)    ret = d.mem;
 	else if (st == CLOSED)       ret = d.mem;
-	else throw new Error("unexpected state:"+SocketState2String(st));
+	else throw new Error("unexpected state:" + SocketState2String(st));
 	return ret;
     }
 
     public void processServerSocket(){
 	if (debug){
-	    Debug.out.print ("ServerSocket on: "+localIP+":"+localPort+" = "+SocketState2String(getSocketState()));	
+	    Debug.out.print ("ServerSocket on: " + localIP + ":" + localPort + " = " + SocketState2String(getSocketState()));	
 	    if (LISTENQ)
 		if (listenQ.size() > 1)
-		    Debug.out.print (" "+listenQ.size()+" waiting connections");
+		    Debug.out.print (" " + listenQ.size() + " waiting connections");
 	    Debug.out.println("");
 	}
 	TCPSocketState st = getSocketState();
 
 	if (st == SYN_RCVD) {  
-	    if (timeout(TIMEOUT)==true) {
+	    if (timeout(TIMEOUT) == true) {
 		sendHeaderOnlyPacket(TCPFormat.RST);
 		setSocketState(CLOSED);
 	    } 
@@ -331,10 +337,11 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 //	     else if (st == FIN_WAIT_2)
     }
  
+    @Override
     public void processClientSocket(){
-	if (debug) Debug.out.println (localIP+":"+localPort+" -> "
-				      +remoteIP+":"+remotePort+" = "
-				      +SocketState2String(getSocketState()));
+	if (debug) Debug.out.println (localIP + ":" + localPort + " -> "
+				      + remoteIP + ":" + remotePort + " = "
+				      + SocketState2String(getSocketState()));
 
 	TCPSocketState st = getSocketState();
 
@@ -364,6 +371,7 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
     }
     
     
+    @Override
     public void open(IPAddress remoteIP, int remotePort) throws UnknownAddressException, java.io.IOException {
 	if (getSocketState() != CLOSED) throw new Error("open can only be called on closed sockets!");
 	this.remoteIP = remoteIP;
@@ -395,9 +403,10 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 	}
     }
 
+    @Override
     public void close() throws IOException{
 	TCPSocketState st = getSocketState();
-	if (debug) Debug.out.println("TCPSocket.close called in state: "+SocketState2String(st));
+	if (debug) Debug.out.println("TCPSocket.close called in state: " + SocketState2String(st));
 
 	if (st == SYN_RCVD || st == ESTABLISHED) {
 	    sendHeaderOnlyPacket(TCPFormat.FIN);
@@ -415,14 +424,14 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 	} else if (st == LISTEN || st == SYN_SENT) {
 	    setSocketState(CLOSED);
 	} else if (st == LAST_ACK || st == FIN_WAIT_1 || st == FIN_WAIT_2 || st == CLOSING || st == TIME_WAIT) {
-	    throw new Error(SocketState2String(st)+": setSocketState(CLOSED); return;");
+	    throw new Error(SocketState2String(st) + ": setSocketState(CLOSED); return;");
 	} else if (st == CLOSED || st == CLOSING) { 
-	    return;
 	} else 
 	    throw new Error (" a terrible Error occured");
     }
 		
-    // wartet auf eine Verbindung und blockiert sich, bis Verbindung hergestellt. Liefert dann neuen Socket
+    // waits for a connection and blocks until established connection. Then delivers new socket
+    @Override
     public jx.net.TCPSocket accept(Memory[] newbufs) throws java.io.IOException {
 	
 	if (getSocketState() != CLOSED) throw new Error("Accept can only be called on closed sockets!");
@@ -435,7 +444,7 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 	    // search for pending connections
 	    IPData d = (IPData)listenQ.nonblockingUndockFirstElement();
 	    if (d != null) {
-		if (debug) Debug.out.println("TCPSocket on port " + localPort + ": using waiting connection from "+d.sourceAddress);
+		if (debug) Debug.out.println("TCPSocket on port " + localPort + ": using waiting connection from " + d.sourceAddress);
 		d.mem = listen(d);
 		if (MEMORYCYCLE)
 		    usableBufs.appendElement(d);
@@ -443,7 +452,7 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 	}
 	bufs4newSocket = newbufs;
 
-	// bei TCP als ServerSocket anmelden
+	// log in as ServerSocket for TCP
 	tcp.registerServerSocket(this);
 	
 	waitingThread = cpuManager.getCPUState();  // beware of race conditions!!
@@ -452,7 +461,7 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 	waitingThread = null;
 
 	if (getSocketState() != ESTABLISHED)
-	    throw new java.io.IOException("TCPSocket.listen: state (="+SocketState2String(getSocketState())+") != ESTABLISHED");
+	    throw new java.io.IOException("TCPSocket.listen: state (=" + SocketState2String(getSocketState()) + ") != ESTABLISHED");
 	
 	if (newClientSocket == null)
 	    throw new Error("no client Socket created!");
@@ -485,7 +494,7 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 	// else if (receivedAck == currentReceivedAck) return;  /* handled by caller */
 	else return;
 
-	for (int i=0; i<retransmitQueue.size(); i++) {
+	for (int i = 0; i < retransmitQueue.size(); i++) {
 	    TCPData d = (TCPData) retransmitQueue.elementAt(i);
 	    TCPFormat packet = new TCPFormat(d);
 	    if ((d.getRetransmitCounter() > MAX_RETRANSMITS) || (packet.getSequenceNumber() < receivedAck)) {
@@ -511,24 +520,24 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
  
     private void dumpRetransmitQ(){
 	Debug.out.print("[");
- 	for (int i=0; i<retransmitQueue.size(); i++) {
+ 	for (int i = 0; i < retransmitQueue.size(); i++) {
 	    TCPData d = (TCPData) retransmitQueue.elementAt(i);
 	    TCPFormat packet = new TCPFormat(d);
-	    Debug.out.print(packet.getSequenceNumber()+", ");
+	    Debug.out.print(packet.getSequenceNumber() + ", ");
 	}
 	Debug.out.print("]\n");
    }
 
     private void forceRetransmit(int seqNr) {
 	int qlen = retransmitQueue.size();
-	for (int i =0; (i < qlen && i < retransmitQueue.size()); i++) {
+	for (int i = 0; (i < qlen && i < retransmitQueue.size()); i++) {
 	    TCPData data = (TCPData) retransmitQueue.elementAt(i);
 	    TCPFormat packet = new TCPFormat(data);
 	    if (packet.getSequenceNumber() == seqNr) {
 		TCPData del = null;//(TCPData)retransmitQueue.remove(i);
 		if (del != data)
 		    throw new Error("wrong element deleted from retransmit Q");
-		/* if (debug) */ Debug.out.println("forceRetransmit ["+seqNr+"]");
+		/* if (debug) */ Debug.out.println("forceRetransmit [" + seqNr + "]");
 		retransmit(data);
 		return;
 	    }
@@ -536,11 +545,11 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
     }
 
     private void checkRetransmit() {
-	int       currentTime = timerManager.getTimeInMillis();
-	if (retransmitQueue.size() == 0)
+	int currentTime = timerManager.getTimeInMillis();
+	if (retransmitQueue.isEmpty())
 	    return;
 	int qlen = retransmitQueue.size();
-	for (int i =0; (i < qlen && i < retransmitQueue.size()); i++) {
+	for (int i = 0; (i < qlen && i < retransmitQueue.size()); i++) {
 	    TCPData data = (TCPData) retransmitQueue.elementAt(i);
 	    TCPFormat packet = new TCPFormat(data);
 	    //Debug.out.println(" pckTS:"+data.getRetransmitTimestamp()+" cutTime"+currentTime+" dif:"+compareUnsigned(data.getRetransmitTimestamp(), currentTime));
@@ -558,8 +567,8 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 
     /* retransmitts packet data and appends it to the retransmittQ */
     private void retransmit(TCPData data){
-        if (debug)  Debug.out.println("retransmit: queue length is "+retransmitQueue.size());
-	if (retransmitQueue.size() == 0)
+        if (debug) Debug.out.println("retransmit: queue length is " + retransmitQueue.size());
+	if (retransmitQueue.isEmpty())
 	    return;
 
 	/* retransmit the oldest packet, this is mostly sufficient */
@@ -569,7 +578,7 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 	    Debug.out.println("retransmit: retransmitting aborted due to remote window size");
 	    return;
 	}
-	if (debug) Debug.out.println("retransmit: retransmitting packet ["+packet.getSequenceNumber()+"]");
+	if (debug) Debug.out.println("retransmit: retransmitting packet [" + packet.getSequenceNumber() + "]");
 	
 	data.setRetransmitCounter(data.getRetransmitCounter() + 1);
 	data.setRetransmitTimestamp(data.getRetransmitTimestamp() + RETRANSMIT_INTERVAL);
@@ -581,12 +590,12 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 		Debug.out.println("TCPSocket on port " + localPort + ": No buffer available, no re-retransmition");
 	    else { 
 		d = new TCPData(ipd);
-		d.mem.copyFromMemory(data.mem,0,0,data.mem.size());
+		d.mem.copyFromMemory(data.mem, 0, 0, data.mem.size());
 	    }
 	} else {
 	    d = new TCPData(new IPData());
 	    d.mem = tcp.getTCPBuffer1();
-	    d.mem.copyFromMemory(data.mem,0,0,data.mem.size());
+	    d.mem.copyFromMemory(data.mem, 0, 0, data.mem.size());
 	}
 	
 	Memory back = lowerLayer.send1(data.mem,data.offset,data.size);
@@ -597,13 +606,13 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 	}
 	
 	// Paket in Retransmitqueue einhaengen
-	if (d!=null) {
+	if (d != null) {
 	    if (MEMORYCYCLE)
 		usableBufs.appendElement(d);
-		else {
-		    data.mem = d.mem;  // because d has no valid offset/size info
-		    retransmitQueue.addElement(data);
-		}
+            else {
+                data.mem = d.mem;  // because d has no valid offset/size info
+                retransmitQueue.addElement(data);
+            }
 	}
     }
 
@@ -716,8 +725,7 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 	    ack++;
 	    setSocketState(TIME_WAIT);
 	    return d.mem;
-	}
-	else {	// anderes Paket
+	} else {	// anderes Paket
 	    // richtige Reihenfolge der ankommenden Pakete?
 	    if (packet.getSequenceNumber() == ack) {
 		if (debug) Debug.out.print("****Established, normales Paket, richtige Reihenfolge");
@@ -884,6 +892,7 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 	send(byteArr);
     }
   
+    @Override
     public void send(byte[] byteArr) throws IOException {
 	if (NOSPLITTING)
 	    send1(byteArr);
@@ -954,10 +963,10 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 	    data = new IPData();
 	    data.mem = tcp.getTCPBuffer1();
 	}
-	data.offset = EtherFormatrequiresSpace+IPFormat.requiresSpace();   
-	data.size = 20+size;
+	data.offset = 0;//EtherFormatrequiresSpace + IPFormat.requiresSpace();   
+	data.size = 20 + size;
 	TCPFormat sendPacket = new TCPFormat(data, localIP, remoteIP);
-
+data.offset= 0x22;
 	sendPacket.insertFlags(TCPFormat.PSH | TCPFormat.ACK);
 	sendPacket.insertSourcePort(localPort);
 	sendPacket.insertDestinationPort(remotePort);
@@ -986,17 +995,17 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 		if (d == null) {
 		    if (debug) Debug.out.println("TCPSocket on port " + localPort + ": No buffer available, no retransmition");
 		} else {
-		    d.mem.copyFromMemory(data.mem,0,0,data.mem.size());
+		    d.mem.copyFromMemory(data.mem, 0, 0, data.mem.size());
 		} 
 	    }else {
 		d = new IPData();
 		d.mem = tcp.getTCPBuffer1();
-		d.mem.copyFromMemory(data.mem,0,0,data.mem.size());
+		d.mem.copyFromMemory(data.mem, 0, 0, data.mem.size());
 	    }
 	} 
 	
 	// und ab geht die Post
-	Memory back = lowerLayer.send1(data.mem,data.offset,data.size);
+	Memory back = lowerLayer.send1(data.mem, data.offset, data.size);
 	if (MEMORYCYCLE) {
 	    data.mem = back;
 	    usableBufs.appendElement(data);
@@ -1021,6 +1030,7 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 	}
     }
 
+    @Override
     public byte[] readFromInputBuffer() {
 	if (debug) Debug.out.println("In readFromInputBuffer()");
 	IPData d = (IPData)inputBufs.undockFirstElement();

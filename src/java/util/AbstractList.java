@@ -45,14 +45,14 @@ public abstract class AbstractList<E> extends AbstractCollection<E> implements L
 	elementData = Arrays.copyOf(newData, newData.length);;
     }
 
-    public final void copyInto(E[] array)
+    /*public final void copyInto(E[] array)
     {
 	System.arraycopy(
 			 elementData, 0,
 			 array, 0,
 			 elementCount
 			 );
-    }
+    }*/
     
     @Override
     public boolean add(E e) {

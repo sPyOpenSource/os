@@ -24,7 +24,7 @@ public class MultiThreadBufferList implements BufferProducer, BufferConsumer {
     static final boolean trace = false;
 
 
-    boolean verbose = true;
+    boolean verbose = false;
     boolean requireMoreData = false;
     Buffer first;
     Buffer last;

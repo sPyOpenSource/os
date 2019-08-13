@@ -15,8 +15,8 @@ import jx.timer.TimerManager;
 
 public class TCP implements IPConsumer, Runnable {
 
-    static final boolean debug = false;
-    static final boolean verbose = false;
+    static final boolean debug = true;
+    static final boolean verbose = true;
 
     // Liste aller bestehenden Verbindungen
     private Vector tcpSockets;
@@ -24,8 +24,8 @@ public class TCP implements IPConsumer, Runnable {
     private TCPSocket[] tcpServerSockets;
 
     // Pufferkreislauf  
-    private MultiThreadList usableBufs;
-    private MultiThreadList filledBufs;
+    private final MultiThreadList usableBufs;
+    private final MultiThreadList filledBufs;
     private static final int INITIAL_BUFFER_SIZE = 50;
 
     NetInit net;
@@ -137,13 +137,11 @@ public class TCP implements IPConsumer, Runnable {
     }
 		       
     // wird von IP aufgerufen, wenn TCP-Paket ankommt
+    @Override
     public Memory processIP(IPData data) {
 	data.offset = 0;
 	data.size = data.mem.size();
-	return processIP1(data);
-    }
 
-    public Memory processIP1(IPData data) {
 	/* get free buffer */
 	if (debug) Debug.out.println("IP packet received");
 	IPData d = (IPData)usableBufs.nonblockingUndockFirstElement();
@@ -154,6 +152,9 @@ public class TCP implements IPConsumer, Runnable {
 	}
 	/* return mem of buffer and store received mem */
  	Memory ret = d.mem;
+        /*for(int i = 0; i < 40; i++){
+            Debug.out.println(data.mem.get8(i+0x22));
+        }*/
 	//ret = ret.revoke();
 	filledBufs.appendElement(data);
 	if (debug){
@@ -163,10 +164,11 @@ public class TCP implements IPConsumer, Runnable {
     	return ret;
     }
 
+    @Override
     public void run() {
 	while (true) {
 	    // wait for packets
-	    if (debug) Debug.out.println("Blocked on input queue (sz:#"+filledBufs.size()+")");
+	    if (debug) Debug.out.println("Blocked on input queue (sz:#" + filledBufs.size() + ")");
 	    IPData data = (IPData)filledBufs.undockFirstElement();
 	    if (data == null) throw new Error ("no filled Buffers");
 	    if (debug) Debug.out.println("\nBlock on input queue released");
@@ -176,10 +178,14 @@ public class TCP implements IPConsumer, Runnable {
 	    usableBufs.appendElement(data);
 	}
     }
-    final private IPData dispatch(IPData data){
+    
+    private IPData dispatch(IPData data){
 
 	    IPAddress sourceIP = data.sourceAddress;
 	    IPAddress destinationIP = data.destinationAddress;
+            data.size -= 38;
+            if (data.size == 26) data.size = 24;
+            Debug.out.println("size: " + data.size);
 	    TCPFormat tcpPacket = new TCPFormat(data, sourceIP, destinationIP);
 	    int tcpSourcePort = tcpPacket.getSourcePort();
 	    int tcpDestinationPort = tcpPacket.getDestinationPort();
@@ -199,9 +205,9 @@ public class TCP implements IPConsumer, Runnable {
 	    if (!tcpPacket.isChecksumValid()) {
 		tcpPacket.dump();
 		Debug.out.println("TCP-Packet dropped due to invalid checksum");
-		return data;
+		//return data;
 	    }
-	    // gehoert das Paket zu einer bestehenden Verbindung? 
+	    // Does the package belong to an existing connection? 
 	    if ((sock = findSocket(sourceIP, destinationIP, tcpSourcePort, tcpDestinationPort)) != null) {
 		if (debug) Debug.out.println("TCP: dispatched to socket");
 		IPData d = new IPData();
@@ -209,7 +215,7 @@ public class TCP implements IPConsumer, Runnable {
 		return d;
 	    }
 	    
-	    // gehoert nicht zu Verbindung. SYN an einen Port, an dem gelauscht wird? oder ACK (3. Teil des Handshakes!)
+	    // does not belong to connection. SYN to a port, which is listened to? or ACK (3rd part of the handshake!)
 	    if (((sock = tcpServerSockets[tcpDestinationPort]) != null)  && (destinationIP.equals(sock.localIP))) {
 		if (debug) Debug.out.println("TCP: dispatched to serversocket");
 		IPData d = new IPData();
@@ -217,10 +223,9 @@ public class TCP implements IPConsumer, Runnable {
 		return d;
 	    }
 
-	    // Paket ungueltig, RST zurueckschicken
-	    /* Entsprechende Methode fehlt noch */
+	    /* Package invalid, return RST Appropriate method is still missing */
 	    Debug.out.println("SYN: " + tcpPacket.isSYNFlagSet());
-	    Debug.out.println("Port: "+ tcpDestinationPort +" Socket: " + tcpServerSockets[tcpDestinationPort]);
+	    Debug.out.println("Port: " + tcpDestinationPort + " Socket: " + tcpServerSockets[tcpDestinationPort]);
 	    if  (tcpServerSockets[tcpDestinationPort] != null) 
 		Debug.out.println("IP " + destinationIP + "localIP of Socket: " + tcpServerSockets[tcpDestinationPort].localIP);
 	    
@@ -228,5 +233,3 @@ public class TCP implements IPConsumer, Runnable {
 	    return data;
     }
 }
-
-

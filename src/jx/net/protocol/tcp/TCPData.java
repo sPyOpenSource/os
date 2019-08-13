@@ -33,4 +33,3 @@ public class TCPData extends IPData {
         this.retransmitTimestamp = retransmitTimestamp;
     }
 }
-

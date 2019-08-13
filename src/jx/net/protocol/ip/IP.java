@@ -371,6 +371,7 @@ public class IP implements MemoryConsumer, IPProducer, EtherConsumer {
                     IPFormat ipf = new IPFormat(data.mem, data.offset);
                     Debug.out.println("ipf:"+(ipf.getTotalLength()-ipf.getHeaderLength()) +" sz:"+	ip.size);
                     */
+                    Debug.out.println("offset: " + data.offset);
                     IPFormat ipf = new IPFormat(data.mem, data.offset);
                     ip.size = (ipf.getTotalLength() - ipf.getHeaderLength());
                     return myTCPConsumer.processIP(ip);
@@ -387,10 +388,10 @@ public class IP implements MemoryConsumer, IPProducer, EtherConsumer {
                     ip.mem = data.mem;
                     ip.offset = data.offset + IPFormat.requiresSpace();
                     ip.size = data.size - IPFormat.requiresSpace();
-                    IPFormat ipf = new IPFormat(data.mem, data.offset);
-                    ipf.swapAddresses();
-                    ipf.insertIdentification(ipid++);
-                    if (insertChecksum) ipf.insertChecksum();
+                    //IPFormat ipf = new IPFormat(data.mem, data.offset);
+                    //ipf.swapAddresses();
+                    //ipf.insertIdentification(ipid++);
+                    //if (insertChecksum) ipf.insertChecksum();
                     //lowerProducer.getTransmitter(ip.sourceAddress, "IP");
                     //PacketsConsumer pc = getTransmitter(lowerConsumer, ip.sourceAddress, PROTO_ICMP);
                     //pc.processMemory(ipf.getMemory());

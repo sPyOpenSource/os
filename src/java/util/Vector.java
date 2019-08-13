@@ -152,7 +152,7 @@ public class Vector<E> extends AbstractList<E> implements List<E>, Cloneable, Se
     public final Enumeration elements()
     {
 	Object[] data = new Object[elementCount];
-	//copyInto(data);
+	copyInto(data);
 	return new ArrayEnumeration(data);
     }
 
@@ -229,7 +229,22 @@ public class Vector<E> extends AbstractList<E> implements List<E>, Cloneable, Se
 	    }
     return false;
     }
-
+/**
+     * Copies the components of this vector into the specified array.
+     * The item at index {@code k} in this vector is copied into
+     * component {@code k} of {@code anArray}.
+     *
+     * @param  anArray the array into which the components get copied
+     * @throws NullPointerException if the given array is null
+     * @throws IndexOutOfBoundsException if the specified array is not
+     *         large enough to hold all the components of this vector
+     * @throws ArrayStoreException if a component of this vector is not of
+     *         a runtime type that can be stored in the specified array
+     * @see #toArray(Object[])
+     */
+    public synchronized void copyInto(Object[] anArray) {
+        System.arraycopy(elementData, 0, anArray, 0, elementCount);
+    }
     @Override
     public final boolean remove(Object o) {
 	return removeElement(o);

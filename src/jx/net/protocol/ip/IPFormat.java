@@ -30,13 +30,13 @@ public class IPFormat extends Format {
     public static final int CHECKSUM_OFFSET = 10;
 
     public IPFormat(Memory buf) { this(buf, 14); }
-  public IPFormat(Memory buf, int offset) { 
-    super(buf, offset);
-    if (dumpAll){
-	Debug.out.println("IP-Packet:");
-	Dump.xdump1(buf, offset, 48);
+    public IPFormat(Memory buf, int offset) { 
+        super(buf, offset);
+        if (dumpAll){
+            Debug.out.println("IP-Packet:");
+            Dump.xdump1(buf, offset, 48);
+        }
     }
-  }
   
   public void insertHeaderLength() {  
     writeByte(0, (byte)0x45 /*0x40 = version ; 5= sizeof IP >> 2 or number of words */);

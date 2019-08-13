@@ -8,9 +8,9 @@ import jx.net.NetInit;
 public class ServerSocket {
     private static final int INITIAL_BUFFER_SIZE = 15;
 
-    private NetInit net;
-    private TCPSocket tcpSocket;
-    private int port;
+    private final NetInit net;
+    private final TCPSocket tcpSocket;
+    private final int port;
 
     public ServerSocket(int port) {
 	this.port = port;
@@ -28,7 +28,7 @@ public class ServerSocket {
 	try {
 	    return new Socket(tcpSocket.accept(bufs));
 	} catch (java.io.IOException e) {
-	    Debug.out.println("ServerSocket: TCPSocket reported IOException "+e.getMessage());
+	    Debug.out.println("ServerSocket: TCPSocket reported IOException " + e.getMessage());
 	    throw e;
 	}
 

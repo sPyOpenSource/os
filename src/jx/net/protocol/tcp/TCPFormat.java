@@ -1,7 +1,6 @@
 package jx.net.protocol.tcp;
 
 import jx.zero.*;
-import jx.zero.debug.*;
 import jx.net.*;
 import jx.net.format.Format;
 import jx.net.IPData;
@@ -44,7 +43,7 @@ public class TCPFormat extends Format {
     }
 
     public TCPFormat(Memory buf, IPAddress sourceAddress, IPAddress destinationAddress) {
-	super(buf);
+	super(buf, 0x22);
 	this.sourceAddress = sourceAddress;
 	this.destinationAddress = destinationAddress;
 	this.packetsize = buf.size();
@@ -57,7 +56,11 @@ public class TCPFormat extends Format {
 
     }
     public TCPFormat(IPData data, IPAddress sourceAddress, IPAddress destinationAddress) {
-	super(data.mem, data.offset);
+	super(data.mem, data.offset + 0x22);
+        /*
+        for(int i = 0; i < 40; i++){
+            Debug.out.println(data.mem.get8(i+0x22));
+        }*/
 	this.sourceAddress = sourceAddress;
 	this.destinationAddress = destinationAddress;
 	this.packetsize = data.size;
@@ -81,7 +84,7 @@ public class TCPFormat extends Format {
 
     public void computeHeaderLength() {
 	if (optionsSet) {
-	    //
+	    writeByte(HEADER_LENGTH_OFFSET, (byte) (((HEADER_LENGTH_WITHOUT_OPTIONS+1) << 4) & 0xf0));
 	}
 	else {
 	    writeByte(HEADER_LENGTH_OFFSET, (byte) ((HEADER_LENGTH_WITHOUT_OPTIONS << 4) & 0xf0));
@@ -104,18 +107,18 @@ public class TCPFormat extends Format {
 	writeUShort(CHECKSUM_OFFSET, (short) checksum);
     }
 
-    private final short buildShort(byte a, byte b) {
+    private short buildShort(byte a, byte b) {
 	return (short) (((((int) a) & 0xff) << 8) | (((int) b) & 0xff));
     }
     
     // computes the tcp-checksum
-    private final short computeChecksum() {
+    private short computeChecksum() {
 	CPUManager cpuManager = (CPUManager) InitialNaming.getInitialNaming().lookup("CPUManager");
 	short sum = 0;
 	int len = length();
-
+        Debug.out.println("len: " + len);
 	// checksum algorithm of tcp segment
-	boolean flag = (len%2 == 1);
+	boolean flag = (len % 2 == 1);
 	
 	if (flag) {
 	    short value = (short) (readUnsignedByte(len - 1) << 8);
@@ -139,11 +142,11 @@ public class TCPFormat extends Format {
 	sum = addUShort(sum, buildShort( (byte) ((length() >> 8) & 0xff), (byte) (length() & 0xff)));
 
 	int checksum = (~sum) & 0xffff;
-	//Debug.out.println("computeChecksum: checksum = " + Integer.toHexString(checksum) );
+	Debug.out.println("computeChecksum: checksum = " + Integer.toHexString(checksum) );
 	return (short) checksum;
     }
 
-     private final short addUShort(short a, short b){
+     private short addUShort(short a, short b){
 	int result = (((int) a)&0xffff) + (((int) b)&0xffff);
 	if (result > (int)0x0000ffff) {
 	    result -= 0x0000ffff;
@@ -161,7 +164,8 @@ public class TCPFormat extends Format {
     }
 
     public void insertOptions(byte[] options) {
-	// optionsSet = true;
+	optionsSet = true;
+        writeBytes(OPTION_OFFSET, options);
     }
    
     public void insertData(byte[] data) {
@@ -169,6 +173,7 @@ public class TCPFormat extends Format {
     }
 	
     // abstract method of class Format
+    @Override
     public int length() {
 	return this.packetsize;
     }

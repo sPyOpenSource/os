@@ -10,7 +10,7 @@ import jx.zero.*;
 public class MultiThreadList {
 //    static final boolean debug = false;
 
-    boolean verbose = true;
+    boolean verbose = false;
     MultiThreadListElement first;
     MultiThreadListElement last;
     CAS cas_first, cas_last;
