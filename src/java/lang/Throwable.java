@@ -10,15 +10,6 @@ import java.util.Objects;
 
 public class Throwable
 {
-    class StackFrame {
-	String className, methodName;
-	int bytecode, line;
-        @Override
-	public String toString() {
-	    return className + "." + methodName + ", bytecode " + bytecode + ", line " + line;
-	}
-    }
-    
     // Setting this static field introduces an acceptable
     // initialization dependency on a few java.util classes.
     private static final List<Throwable> SUPPRESSED_SENTINEL =
@@ -47,10 +38,11 @@ public class Throwable
 
     /** Caption for labeling suppressed exception stack traces */
     private static final String SUPPRESSED_CAPTION = "Suppressed: ";
-    private StackFrame[] backtrace;
+    private StackTraceElement[] backtrace;
     private String message;
     private static final boolean createStackTrace = false;
     private Throwable cause = this;
+    
     public Throwable(String message) {
 	this.message = message;
 	if (createStackTrace) {
@@ -85,9 +77,9 @@ public class Throwable
     private static final int MYOWN_STACK = 0;
     private  void fillInStackTrace() {
 	CPUManager c = (CPUManager)InitialNaming.getInitialNaming().lookup("CPUManager");
-	backtrace = new StackFrame[c.getStackDepth()-MYOWN_STACK];
+	backtrace = new StackTraceElement[c.getStackDepth()-MYOWN_STACK];
 	for(int i = 0; i < backtrace.length - MYOWN_STACK; i++) {
-	    backtrace[i] = new StackFrame();
+	    backtrace[i] = new StackTraceElement();
 	    backtrace[i].className = c.getStackFrameClassName(i + MYOWN_STACK);
 	    backtrace[i].methodName = c.getStackFrameMethodName(i + MYOWN_STACK);
 	    backtrace[i].line = c.getStackFrameLine(i + MYOWN_STACK);
@@ -135,5 +127,9 @@ public class Throwable
             suppressedExceptions = new ArrayList<>(1);
 
         suppressedExceptions.add(exception);
+    }
+    
+    public StackTraceElement[] getStackTrace() {
+        return backtrace;//.clone();
     }
 }

@@ -117,7 +117,7 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 //	retransmit_CAS = cpuManager.getCAS("jx/net/protocol/tcp/TCPSocket", "do_retransmit");
 //	retransmit_CAS.casBoolean(this, true, false);
 
-	timerManager = (TimerManager) InitialNaming.getInitialNaming().lookup("TimerManager");
+	timerManager = (TimerManager) jx.InitNaming.lookup("TimerManager");
 	localWindowSize = 0xFFFF; //hack
     }
 

@@ -5,9 +5,9 @@ import jx.bio.BlockIO;
 import jx.fs.buffercache.BufferCache;
 
 /**
- * Dieses Interface stellt Operationen zur Verf&uuml;gung, die das Dateisystem als Ganzes betreffen. Eine konkrete
- * Dateisystem-Implementierung stellt dem virtuellen Dateisystem damit Funktionen zur Verf&uuml;gung, um ein Dateisystem
- * zu an- und abzumelden, zu erzeugen und zu reparieren.
+ * This interface provides operations that affect the file system as a whole. A concrete one
+ * File system implementation provides functions for the virtual file system to create a file system
+ * to log in, log out and repair.
  */
 public interface FileSystem extends jx.zero.Portal {
 

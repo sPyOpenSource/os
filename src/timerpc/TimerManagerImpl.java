@@ -138,7 +138,10 @@ public class TimerManagerImpl implements TimerManager, Service {
     
     /** this method is for cases when we shut down a specific programm and want to delete all
      timers that may be registered but which aren't yet expired
+     * @param which
+     * @return 
     */
+    @Override
     public boolean deleteTimer(TimerHandler which) {
 
         TimerEntry helper = firsttimer;
@@ -187,20 +190,24 @@ public class TimerManagerImpl implements TimerManager, Service {
 	Debug.out.println("...End of timers!");
     }
 
+    @Override
     public int getTimeBaseInMicros() {
 	return 250000; // 4 HZ
     }
 
+    @Override
     public int getCurrentTime() {
 	return ticks;
 	//return clock.getTimeInMillis()/250;
     }
 
+    @Override
     public int getCurrentTimePlusMillis(int milliSeconds) {
 	return ticks + milliSeconds / 4;
     }
 
 
+    @Override
     public int getTimeInMillis() {
 	/*
 	int low = clock.getTicks_low();
@@ -210,10 +217,12 @@ public class TimerManagerImpl implements TimerManager, Service {
 	return clock.getTimeInMillis();
     }
 
+    @Override
     public void unblockInMillis(CPUState thread, int timeFromNowInMillis) {
 	addMillisTimer(timeFromNowInMillis, unblockHandler, thread);
     }
 
+    @Override
     public void unblockInMillisInterval(CPUState thread, int expiresFromNowInMillis, int intervalInMillis) {
 	addMillisIntervalTimer(expiresFromNowInMillis, intervalInMillis, unblockHandler, thread);
     }

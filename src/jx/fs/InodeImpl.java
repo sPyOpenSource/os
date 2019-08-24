@@ -1,8 +1,6 @@
 package jx.fs;
 
 import java.util.*;
-import jx.zero.Debug;
-import jx.fs.Inode;
 import jx.zero.Memory;
 import jx.zero.ReadOnlyMemory;
 
@@ -202,10 +200,7 @@ public abstract class InodeImpl implements jx.fs.Inode {
 	    if (! isDirectory())
 		throw new NoDirectoryInodeException();
 	    
-	    if (overlayNames.contains(name))
-		return true;
-
-	    return false;
+	    return overlayNames.contains(name);
     }
 
     public Inode lookup(String name) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException {

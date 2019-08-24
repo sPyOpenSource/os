@@ -5,21 +5,21 @@ import jx.zero.Portal;
 import jx.zero.Memory;
 
 /**
- * Diese Klasse stellt die Schnittstelle des Dateisystems zur Anwendungsebene dar. Sie enth&auml;lt Methoden, die grundlegende
- * Dateisystemoperationen ausf&uuml;hren (&auml;hnlich den Systemcalls in einem Unix-Dateisystem). Dazu z&auml;hlen:
- * <code>cd</code>, <code>mkdir</code>, <code>rmdir</code>, <code>create</code>, <code>unlink</code>, <code>rename</code>,
- * <code>symlink</code>, <code>read</code> und <code>write</code>.
+ * This class represents the interface of the file system to the application layer. It contains basic methods
+ * Execute file system operations (similar to the system calls in a Unix file system). These include:
+ * <code> cd </ code>, <code> mkdir </ code>, <code> rmdir </ code>, <code> create </ code>, <code> unlink </ code>, <code> rename </ code>
+ * <code> symlink </ code>, <code> read </ code> and <code> write </ code>.
  * <p>
- * Der Unterschied zu den gleichlautenden Befehlen der Klasse <code>Inode</code> ist, dass hier Dateisystem-weite Pfade
- * verwendet werden k&ouml;nnen und nicht Eintr&auml;ge innerhalb einer Verzeichnis-Inode angesprochen werden. Hier geschieht
- * also die Umsetzung von Befehlen auf Pfaden in Methodenaufrufen von Inode-Objekten. Dabei wird ein aktuelles Verzeichnis
- * mitgef&uuml;hrt. Soll z.B. der Befehl <code>mkdir /usr/local/bin</code> ausgef&uuml;hrt werden, wird in der Inode des
- * Wurzelverzeichnisses (die der Klasse immer bekannt ist) nach dem Eintrag "usr" gesucht, dessen Inode geladen, in dieser
- * Inode nach dem Eintrag "local" gesucht und in der zugeh&ouml;rigen Inode die Methode <code>mkdir(bin)</code> aufgerufen.
- * Es werden zwei Inodes permanent gespeichert: die des Wurzelverzeichnisses und die des aktuellen Verzeichnisses zusammen mit
- * ihrem Pfad. Es wird im Folgenden nur auf die Methoden eingegangen, die nicht auch in der <code>Inode</code>-Klasse vorhanden
- * sind, da diese im Wesentlichen auf eine Zerlegung des Pfades und Aufruf der entsprechenden Methoden in der Inode des
- * Dateinamens bestehen.
+ * The difference to the equivalent commands of the class <code> Inode </ code> is that here file system-wide paths
+ * can be used and not addressed within a directory inode. Here happens
+ * So the translation of commands to paths in method calls of inode objects. This will be a current directory
+ * included. Should e.g. the command <code> mkdir / usr / local / bin </ code> will be executed in the inode of the
+ * Root directory (which is always known to the class) looking for the entry "usr" whose inode loaded in this
+ * Inode searched for the entry "local" and called the method <code> mkdir (bin) </ code> in the corresponding inode.
+ * Two inodes are stored permanently: those of the root directory and those of the current directory together with
+ * her path. In the following, only the methods that do not exist in the <code> Inode </ code> class will be discussed
+ * These are essentially due to a decomposition of the path and invocation of the corresponding methods in the inode of the
+ * File names exist.
  */
 public interface FS extends Portal {
 
@@ -57,6 +57,8 @@ public interface FS extends Portal {
      * @exception InodeNotFoundException    falls der Verzeichniseintrag (und damit die Inode) nicht gefunden werden kann
      * @exception NoDirectoryInodeException falls es sich bei dem zu &uuml;berlagernden Verzeichniseintrag nicht um ein
      *                                      Verzeichnis handelt
+     * @throws jx.fs.NotExistException
+     * @throws jx.fs.PermissionException
      */
     public void mount(FileSystem filesystem, String path, boolean read_only) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException;
 
@@ -248,5 +250,13 @@ public interface FS extends Portal {
 //     public Inode getInode(int deviceIdentifier, int fileIdentifier) throws FSException, NotExistException, PermissionException;
 
     public Inode getInode(Integer deviceIdentifier, int fileIdentifier) throws FSException, NotExistException, PermissionException;
-
+    
+    default boolean isPath(String name) {
+	return (name.lastIndexOf('/') != -1);
+    }
+    
+    default boolean isAbsolute(String name) {
+	return (name.charAt(0) == '/');/* ||
+					  (Character.isLetter(name.charAt(0)) && (name.charAt(1) == ':') && (name.charAt(2) == '\\'));*/
+    }
 }

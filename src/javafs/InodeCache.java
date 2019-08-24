@@ -18,7 +18,7 @@ public class InodeCache {
     private int nr_inodes = 0;
     private static final boolean trace = false;
 
-    InodeCache() {
+    public InodeCache() {
 	if (trace) Debug.out.println("Initialising InodeCache");
 	inode_in_use    = new Vector(100);
 	inode_dirty     = new Vector(100);
