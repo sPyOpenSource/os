@@ -20,6 +20,7 @@ public class DatagramSocket
     UDPSender sender;
     NetInit net;
     UDPReceiver receiver;
+    private int timeout = 0x7fffffff;
     
     protected void finalize() {
       /*if (fd != null)
@@ -33,7 +34,14 @@ public class DatagramSocket
     public void receive(DatagramPacket p) throws IOException  {
         int len = UDPFormat.requiresSpace();
         Memory buf = net.getUDPBuffer(len + p.length + 34);
-        UDPData udp = receiver.receive(buf);
+        if (timeout != 0x7ffffff){
+            UDPData udp = receiver.receive(buf, timeout);
+            if (udp == null) {
+	      throw new SocketTimeoutException(); 
+	    }
+        } else {
+            UDPData udp = receiver.receive(buf);
+        }
         UDPFormat b = new UDPFormat(buf, 26);
         Debug.out.println("len: " + b.getLength());
         buf.copyToByteArray(p.buff, 0, 34, b.getLength());
@@ -87,5 +95,11 @@ public class DatagramSocket
   
     public DatagramSocket() throws SocketException {
         this(0);
+    }
+    
+    public synchronized void setSoTimeout(int timeout) throws SocketException {
+        //if (isClosed())
+          //  throw new SocketException("Socket is closed");
+        this.timeout = timeout;
     }
 }
