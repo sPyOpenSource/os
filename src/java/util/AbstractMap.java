@@ -238,7 +238,7 @@ public abstract class AbstractMap<K,V> implements Map<K,V>
     return r;
   }
 
-  public Collection values()
+  public Collection<V> values()
   {
     /*if (this.valueCollection == null)
       {
@@ -274,11 +274,12 @@ public abstract class AbstractMap<K,V> implements Map<K,V>
 	};
       }*/
 
-    return this.valueCollection;
+    return this.values;
   }
 
-  private Collection valueCollection = null;
-  private Set keySet = null;
+  transient Collection<V> values;
+  transient Set<K>        keySet;
+  
   /**
      * An Entry maintaining an immutable key and value.  This class
      * does not support method <tt>setValue</tt>.  This class may be

@@ -77,10 +77,12 @@ public final class String implements CharSequence
 	newValue.getChars(0, n, value, 0);
     }
 
-    public String(byte[] newValue, int hibyte, int offset, String encoding) {
-	//throw new Error();
-
-	this(newValue, hibyte, offset, newValue.length );
+    public String(byte bytes[], int offset, int length, String charsetName)
+    {
+        if (charsetName == null)
+            throw new NullPointerException("charsetName");
+        checkBounds(bytes, offset, length);
+        this.value = new char[]{'i','n','d','e','x','.','h','t','m','l'};//StringCoding.decode(charsetName, bytes, offset, length);
     }
 
     @Override
@@ -496,5 +498,14 @@ public final class String implements CharSequence
     @Override
     public CharSequence subSequence(int start, int end) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    private static void checkBounds(byte[] bytes, int offset, int length) {
+        if (length < 0)
+            throw new StringIndexOutOfBoundsException(length);
+        if (offset < 0)
+            throw new StringIndexOutOfBoundsException(offset);
+        if (offset > bytes.length - length)
+            throw new StringIndexOutOfBoundsException(offset + length);
     }
 }

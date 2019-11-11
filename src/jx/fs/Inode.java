@@ -126,6 +126,7 @@ public interface Inode extends jx.zero.Portal {
      * @exception InodeNotFoundException    falls die gew&uuml;nschte Inode nicht gefunden werden kann
      * @exception NoDirectoryInodeException falls es sich nicht um ein Verzeichnis handelt
      * @exception PermissionException       falls die Zugriffsrechte einer Pfadkomponente die Operation nicht erlauben
+     * @throws jx.fs.NotExistException
      */
     Inode lookup(String name) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException;
 
@@ -305,9 +306,11 @@ public interface Inode extends jx.zero.Portal {
      * @param     mem                  der Puffer, der die zu lesenden Daten aufnehmen soll
      * @param     off                  die Position innerhalb der Datei, ab der gelesen werden soll
      * @param     len                  die Anzahl zu lesender Byte
+     * @return 
      * @exception InodeIOException     falls bei der Ein-/Ausgabe ein Fehler auftritt
      * @exception NoFileInodeException falls es sich nicht um eine Datei handelt (Lesen eines Verzeichnisses ist nicht erlaubt)
      * @exception PermissionException  falls die Zugriffsrechte der Datei die Operation nicht erlauben
+     * @throws jx.fs.NotExistException
      */
     int     read(Memory mem, int off, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException;
 

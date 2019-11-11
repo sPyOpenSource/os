@@ -24,7 +24,7 @@ public abstract class AbstractList<E> extends AbstractCollection<E> implements L
         }
     }
     
-    protected void ensureCapacity(int minCapacity)
+    public void ensureCapacity(int minCapacity)
     {
 	if (minCapacity <= elementData.length) return;
 
@@ -42,7 +42,7 @@ public abstract class AbstractList<E> extends AbstractCollection<E> implements L
 	    newData = new Object[minCapacity]; 
 	}
 
-	elementData = Arrays.copyOf(newData, newData.length);;
+	//elementData = Arrays.copyOf(newData, newData.length);;
     }
 
     /*public final void copyInto(E[] array)
@@ -122,9 +122,9 @@ public abstract class AbstractList<E> extends AbstractCollection<E> implements L
     @Override
     public int lastIndexOf(Object o) {
         ListIterator<E> it = listIterator(size());
-        if (o==null) {
+        if (o == null) {
             while (it.hasPrevious())
-                if (it.previous()==null)
+                if (it.previous() == null)
                     return it.nextIndex();
         } else {
             while (it.hasPrevious())
