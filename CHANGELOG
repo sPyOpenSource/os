@@ -1,6 +1,8 @@
 v1.25 XW 12-11-2019
 fixed: String getBytes method
 improved: code 
+added: nio package (issue #39)
+added: unittest
 
 v1.24 XW 11-11-2019
 fixed: linkedhashmap
