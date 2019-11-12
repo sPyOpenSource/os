@@ -1,5 +1,7 @@
 package java.lang;
 
+import java.io.UnsupportedEncodingException;
+
 public final class String implements CharSequence
 {
 
@@ -135,7 +137,7 @@ public final class String implements CharSequence
 	return buf;
     }
 
-    public byte[] getBytes(String enc) {
+    public byte[] getBytes(String enc) throws UnsupportedEncodingException{
 	return getBytes();
     }
 
