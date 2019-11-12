@@ -4,11 +4,13 @@ public class PushbackInputStream extends FilterInputStream
 { 
     private int pushBack = -1;  // -1 if no byte available. 
 
+    @Override
     public synchronized int available() throws IOException
     {
 	return super.available() + (pushBack >= 0 ? 1 : 0);
     }
 
+    @Override
     public boolean markSupported()
     {
 	return false;
@@ -18,7 +20,9 @@ public class PushbackInputStream extends FilterInputStream
      * Read a single <em>byte</em> from this stream.
      *
      * @return the byte read.
+     * @throws java.io.IOException
      */
+    @Override
     public synchronized int read() throws IOException
     {
 	int retVal;
@@ -39,6 +43,7 @@ public class PushbackInputStream extends FilterInputStream
 	return retVal;
     }
 
+    @Override
     public synchronized int read(byte[] b, int off, int len) throws IOException
     {
 	if (pushBack >= 0)

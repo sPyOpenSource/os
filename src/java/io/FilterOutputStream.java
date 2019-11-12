@@ -7,5 +7,6 @@ public class FilterOutputStream extends OutputStream {
     this.out = o;
   }
 
+  @Override
   public void write(int a) throws IOException {out.write(a);}
 }

@@ -9,7 +9,7 @@ public class DataInputStream extends FilterInputStream implements DataInput {
 		  );
     }
 
-    private final static int UTFBits(byte c) throws UTFDataFormatException
+    private static int UTFBits(byte c) throws UTFDataFormatException
     {
 	if ((c & 0xC0) != 0x80)
 	    throw new UTFDataFormatException();
@@ -22,7 +22,7 @@ public class DataInputStream extends FilterInputStream implements DataInput {
 	byte[] src = new byte[len];
 	in.readFully(src);
 
-	StringBuffer buff = new StringBuffer(len);
+	StringBuilder buff = new StringBuilder(len);
 	int n;
 
 	for (int i = 0; i < len; )
@@ -74,12 +74,12 @@ public class DataInputStream extends FilterInputStream implements DataInput {
 
     private static int last;
 
-    private final void unread0() throws IOException
+    private void unread0() throws IOException
     {
 	((PushbackInputStream) in).unread(last);
     }
 
-    private final int read0() throws IOException
+    private int read0() throws IOException
     {
 	int c = super.read();
 	if (c < 0)
@@ -88,21 +88,25 @@ public class DataInputStream extends FilterInputStream implements DataInput {
 	return c;
     }
 
+    @Override
     public final int read(byte[] b) throws IOException
     {
 	return super.read(b, 0, b.length);
     }
 
+    @Override
     public final int read(byte[] b, int off, int len) throws IOException
     {
 	return super.read(b, off, len);
     }
 
+    @Override
     public final void readFully(byte[] b) throws IOException
     {
 	readFully(b, 0, b.length);
     }
 
+    @Override
     public final synchronized void readFully(byte[] b, int off, int len) throws IOException
     {
 	while (len > 0)
@@ -115,21 +119,25 @@ public class DataInputStream extends FilterInputStream implements DataInput {
 	    }
     }
 
+    @Override
     public final boolean readBoolean() throws IOException
     {
 	return read0() != 0;
     }
 
+    @Override
     public final byte readByte() throws IOException
     {
 	return (byte) read0();
     }
 
+    @Override
     public final int readUnsignedByte() throws IOException
     {
 	return read0();
     }
 
+    @Override
     public final synchronized char readChar() throws IOException
     {
 	int n = read0();
@@ -137,6 +145,7 @@ public class DataInputStream extends FilterInputStream implements DataInput {
 	return (char) n;
     }
 
+    @Override
     public final synchronized short readShort() throws IOException
     {
 	int n = read0();
@@ -144,6 +153,7 @@ public class DataInputStream extends FilterInputStream implements DataInput {
 	return (short) n;
     }
 
+    @Override
     public final synchronized int readUnsignedShort() throws IOException
     {
 	int n = read0();
@@ -151,6 +161,7 @@ public class DataInputStream extends FilterInputStream implements DataInput {
 	return n;
     }
 
+    @Override
     public final synchronized int readInt() throws IOException
     {
 	int n = read0();
@@ -160,6 +171,7 @@ public class DataInputStream extends FilterInputStream implements DataInput {
 	return n;
     }
 
+    @Override
     public final synchronized long readLong() throws IOException
     {
 	long n = read0();
@@ -173,12 +185,14 @@ public class DataInputStream extends FilterInputStream implements DataInput {
 	return n;
     }
 
+    @Override
     public final float readFloat() throws IOException
     {
 	int n = readInt();
 	return Float.intBitsToFloat(n);
     }
 
+    @Override
     public final double readDouble() throws IOException
     {
 	throw new IOException("not implemented");
@@ -188,8 +202,9 @@ public class DataInputStream extends FilterInputStream implements DataInput {
 	*/
     }
 
+    @Override
     public final synchronized String readLine() throws IOException {
-	StringBuffer buff = new StringBuffer();
+	StringBuilder buff = new StringBuilder();
 	
 	while (true) {
 	    int c = read0();
@@ -210,11 +225,13 @@ public class DataInputStream extends FilterInputStream implements DataInput {
 	return buff.toString();
     }
 
+    @Override
     public final String readUTF() throws IOException
     {
 	return readUTF(this);
     }
 
+    @Override
     public final int skipBytes(int n) throws IOException
     {
 	for (int i=0;i<n;i++) {
