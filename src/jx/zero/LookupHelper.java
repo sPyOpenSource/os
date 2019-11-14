@@ -3,7 +3,7 @@ package jx.zero;
 import jx.InitNaming;
 
 public class LookupHelper {
-    private static CPUManager cpuManager;
+    private static final CPUManager cpuManager;
     public static boolean verbose = true;
     
     static {
