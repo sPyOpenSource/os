@@ -1,7 +1,7 @@
 Java OS
 =======
 
-This is a Java OS project.
+This is a Java OS project. It is a microkernel operating system with both the kernel and applications implemented using the Java programming language.
 
 Build
 -----
