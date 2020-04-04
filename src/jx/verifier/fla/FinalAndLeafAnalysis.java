@@ -13,11 +13,7 @@ public class FinalAndLeafAnalysis {
 				      ConstantPool cPool,
 				      ClassTree classTree) throws VerifyException {
 	FLAResult result = new  FLAResult();
-	if (classTree.findClassTreeElement(className).isSystemFinalMethod(method)) {
-	    result.systemFinal = true;
-	} else {
-	    result.systemFinal = false;
-	}
+        result.systemFinal = classTree.findClassTreeElement(className).isSystemFinalMethod(method);
 
 	//check is method is leaf, i.e. if it does not call any other methods.
 	BCLinkList code = new BCLinkList(method, cPool);

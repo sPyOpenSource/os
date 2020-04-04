@@ -1,9 +1,6 @@
 package jx.verifier.npa;
 
-import jx.verifier.bytecode.*;
 import jx.verifier.*;
-import java.util.Vector;
-
 
 public class NPALocalVars extends JVMLocalVars implements NPALocalVarsInterface {
     //returns new SRLvars, with same content in lVars as this.
@@ -57,13 +54,12 @@ public class NPALocalVars extends JVMLocalVars implements NPALocalVarsInterface 
     //find all local Vars with same id as value (must be a valid id!) and change their
     //value to newVal.
     public void setValue(NPAValue value, int newVal) {
-	for (int i = 0; i < lVars.length; i++) {
-	    if (lVars[i] != null && 
-		((NPALocalVarsElement)lVars[i]).getType().getId() == value.getId()) {
-		//the values are the same so update information
-		((NPALocalVarsElement)lVars[i]).setType(new NPAValue(newVal, value.getId()));
-	    }
-	}
+        for (JVMLocalVarsElement lVar : lVars) {
+            if (lVar != null && ((NPALocalVarsElement) lVar).getType().getId() == value.getId()) {
+                //the values are the same so update information
+                ((NPALocalVarsElement) lVar).setType(new NPAValue(newVal, value.getId()));
+            }
+        }
     }
     
     

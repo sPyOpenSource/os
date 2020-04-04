@@ -269,14 +269,14 @@ public class LinkedHashMap<K,V>
     }
 
     TreeNode<K,V> newTreeNode(int hash, K key, V value, Node<K,V> next) {
-        TreeNode<K,V> p = new TreeNode<K,V>(hash, key, value, next);
+        TreeNode<K,V> p = new TreeNode<>(hash, key, value, next);
         linkNodeLast(p);
         return p;
     }
 
     TreeNode<K,V> replacementTreeNode(Node<K,V> p, Node<K,V> next) {
         LinkedHashMap.Entry<K,V> q = (LinkedHashMap.Entry<K,V>)p;
-        TreeNode<K,V> t = new TreeNode<K,V>(q.hash, q.key, q.value, next);
+        TreeNode<K,V> t = new TreeNode<>(q.hash, q.key, q.value, next);
         transferLinks(q, t);
         return t;
     }
@@ -397,9 +397,9 @@ public class LinkedHashMap<K,V>
      *         or the load factor is nonpositive
      */
     public LinkedHashMap(int initialCapacity,
-                         float loadFactor,
+                        // float loadFactor,
                          boolean accessOrder) {
-        super(initialCapacity, loadFactor);
+        super(initialCapacity);//, loadFactor);
         this.accessOrder = accessOrder;
     }
 
@@ -437,13 +437,15 @@ public class LinkedHashMap<K,V>
      * The {@link #containsKey containsKey} operation may be used to
      * distinguish these two cases.
      */
+    @Override
     public V get(Object key) {
-        Node<K,V> e;
+        return null;
+        /*Node<K,V> e;
         if ((e = getNode(hash(key), key)) == null)
             return null;
         if (accessOrder)
             afterNodeAccess(e);
-        return e.value;
+        return e.value;*/
     }
 
     /**
@@ -461,6 +463,7 @@ public class LinkedHashMap<K,V>
     /**
      * {@inheritDoc}
      */
+    @Override
     public void clear() {
         super.clear();
         head = tail = null;

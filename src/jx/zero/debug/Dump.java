@@ -125,7 +125,8 @@ public class Dump {
     }
     return null;
   }
-  static String byteToHex(byte n) {
+  
+  public static String byteToHex(byte n) {
     int i = n;
     if (i < 0) i += 256;
     int i1 = i & 0xf;

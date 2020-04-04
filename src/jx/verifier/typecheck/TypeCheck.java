@@ -32,13 +32,11 @@ public class TypeCheck {
 	//FEHLER schner machen: lieber gleich von hier aus verifyMethod aufrufen.
 	MethodData[] methods = classData.getMethodData();
 	ClassTreeElement cte = classTree.findClassTreeElement(classData.getClassName());
-	for (int i =0; i< methods.length; i++) {
-	    if (methods[i].isFinal() && !cte.isSystemFinalMethod(methods[i].getMethodName(),
-							   methods[i].getMethodType()))
-		throw new VerifyException("Verify Error: final method " +
-					  cte.getClassName() + "." +
-					  methods[i].getMethodName() +
-					  " (" + methods[i].getMethodType() +") overridden!");
-	}
+        for (MethodData method : methods) {
+            if (method.isFinal() && !cte.isSystemFinalMethod(method.getMethodName(), method.getMethodType())) {
+                throw new VerifyException("Verify Error: final method " +
+                        cte.getClassName() + "." + method.getMethodName() + " (" + method.getMethodType() + ") overridden!");
+            }
+        }
     }
 }

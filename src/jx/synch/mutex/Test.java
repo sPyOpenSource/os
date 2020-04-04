@@ -2,8 +2,6 @@ package jx.synch.mutex;
 
 import jx.zero.*;
 import jx.zero.debug.*;
-import java.util.*;
-
 
 public class Test implements Runnable {
     public static void init (final Naming naming /*String []args*/) {
@@ -20,6 +18,7 @@ public class Test implements Runnable {
 	}
     }
     
+    @Override
     public void run() { 
 	mutex.lock();
 	for(int i=0; i<1000000; i++) a++;

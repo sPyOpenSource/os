@@ -1,7 +1,6 @@
 package jx.verifier;
 
 import jx.verifier.bytecode.*;
-import jx.verifier.typecheck.*;
 
 public class VerifyException extends Exception {
     public String className;
@@ -29,6 +28,7 @@ public class VerifyException extends Exception {
     
     
     
+    @Override
     public String toString() {
 	String ret = "Verification failed";
 	if (className != null) 
@@ -50,6 +50,7 @@ public class VerifyException extends Exception {
 		"\n----------------------------------------\n";
 	return ret;
     }
+    @Override
     public String getMessage() {
 	return message.toString();
     }

@@ -6,11 +6,8 @@ import jx.verifier.typecheck.*;
 import jx.verifier.npa.NullPointerAnalysis;
 import jx.verifier.fla.FinalAndLeafAnalysis;
 import jx.verifier.wcet.WCETAnalysis;
-import jx.verifier.wcet.*;
-import jx.verifier.bytecode.*;
 
 import java.util.Enumeration;
-import java.util.Vector;
 
 
 /**Main Class for Verifier.
@@ -63,7 +60,7 @@ public class Verifier {
 	while(vClasses.hasMoreElements()) {
 	    ClassData actClass = (ClassData) vClasses.nextElement();
 	    if (actClass.isInterface()) {
-		continue CLASSWHILE;
+		continue;
 	    }
 	    stdPrintln(0,"Verifying class " + actClass.getClassName());
 	    numClasses++;

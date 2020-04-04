@@ -1,9 +1,6 @@
 package jx.verifier.bytecode;
 
-import java.lang.*;
-import jx.classfile.*;
 import jx.classfile.constantpool.*;
-import java.io.*;
 import jx.verifier.*;
 
 public class ByteCode {
@@ -371,6 +368,7 @@ public class ByteCode {
     public int getAddress() {return address;}
     public void setAddress(int newAddress) {address = newAddress;}
 
+    @Override
     public String toString() {
 	return Integer.toHexString(address) + ": " +
 	    getBCName() + "("+ Integer.toHexString(opCode) +") "+
@@ -530,9 +528,9 @@ public class ByteCode {
 		targets = new ByteCode[0];
 	    
 	}
-	for (int i =0; i < targets.length; i++) {
-	    targets[i].addSource(this);
-	}
+        for (ByteCode target : targets) {
+            target.addSource(this);
+        }
     }
     public void recomputeTargetAddresses() {
 	//nothing to do for ordinary Bytecodes.

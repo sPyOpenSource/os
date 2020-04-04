@@ -2,8 +2,6 @@ package jx.synch.nonblocking2;
 
 import jx.zero.*;
 import jx.zero.debug.*;
-import java.util.*;
-
 
 public class Test {
     static class ID {
@@ -20,11 +18,13 @@ public class Test {
 	
 	
 	new Thread() {
+                @Override
 		public void run() { consume(q); }
 	    }.start();
 
 
 	new Thread() {
+                @Override
 		public void run() { produce(1, q); }
 	    }.start();
 

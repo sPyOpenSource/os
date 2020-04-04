@@ -26,49 +26,60 @@ public class VerifierOptions {
 	
 	//process every option and take out those that we know.
 	for (int i =0; i< args.length; i++) {
-	    if (args[i].toLowerCase().equals("-typecheck")) {
-		doTypecheck = false;
-	    } else if (args[i].toLowerCase().equals("+typecheck")) {
-		doTypecheck = true;
-	    } else if (args[i].toLowerCase().equals("-npa")) {
-		doNPA = false;
-	    } else if (args[i].toLowerCase().equals("+npa")) {
-		doNPA = true;
-	    } else if (args[i].toLowerCase().equals("-fla")) {
-		doFLA = false;
-	    } else if (args[i].toLowerCase().equals("+fla")) {
-		doFLA = true;
-	    } else if (args[i].toLowerCase().equals("-wcet")) {
-		doWCET = false;
-	    } else if (args[i].toLowerCase().equals("+wcet")) {
-		doWCET = true;
-	    } else if (args[i].toLowerCase().equals("+wcet:")) {
-		doWCET = true;
-		i++;
-		wcetMethodArg = args[i];
-		i++;
-		WCETmaxTime = Integer.parseInt(args[i]);
-	    } else if (args[i].toLowerCase().equals("-debug")) {
-		debugMode = 2;
-	    } else if (args[i].toLowerCase().equals("-silent")) {
-		debugMode = 0;
-	    } else if(args[i].toLowerCase().equals("-h") || 
-		      args[i].toLowerCase().equals("-?") || 
-		      args[i].toLowerCase().equals("--help")) {
-		System.out.println(helpString);
-		System.exit(0);
-	    } else {
-		//unknown option --> leave untouched
-		tmp[argscount]=args[i];
-		argscount++;
-	    }
+            switch (args[i].toLowerCase()) {
+                case "-typecheck":
+                    doTypecheck = false;
+                    break;
+                case "+typecheck":
+                    doTypecheck = true;
+                    break;
+                case "-npa":
+                    doNPA = false;
+                    break;
+                case "+npa":
+                    doNPA = true;
+                    break;
+                case "-fla":
+                    doFLA = false;
+                    break;
+                case "+fla":
+                    doFLA = true;
+                    break;
+                case "-wcet":
+                    doWCET = false;
+                    break;
+                case "+wcet":
+                    doWCET = true;
+                    break;
+                case "+wcet:":
+                    doWCET = true;
+                    i++;
+                    wcetMethodArg = args[i];
+                    i++;
+                    WCETmaxTime = Integer.parseInt(args[i]);
+                    break;
+                case "-debug":
+                    debugMode = 2;
+                    break;
+                case "-silent":
+                    debugMode = 0;
+                    break;
+                case "-h":
+                case "-?":
+                case "--help":
+                    System.out.println(helpString);
+                    System.exit(0);
+                default:
+                    //unknown option --> leave untouched
+                    tmp[argscount]=args[i];
+                    argscount++;
+                    break;
+            }
 	}
 
 	//copy leftover arguments into String of appropriate length
 	String[]ret = new String[argscount];
-	for (int i=0; i<ret.length; i++) {
-	    ret[i] = tmp[i];
-	}
+        System.arraycopy(tmp, 0, ret, 0, ret.length);
 	return ret;	
     }
 }

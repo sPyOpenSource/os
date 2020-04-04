@@ -138,13 +138,18 @@ public class Vector<E> extends AbstractList<E> implements List<E>, Cloneable, Se
 	return elementData[elementCount - 1];
     }
 
-    public final Object elementAt(int index)
+    public E elementAt(int index)
     {
 	if (index >= elementCount)
 	    throw new IndexOutOfBoundsException();
-	return elementData[index];
+	return elementData(index);
     }
-
+    
+@SuppressWarnings("unchecked")
+    E elementData(int index) {
+        return (E) elementData[index];
+    }
+    
     /*public final Object get(int index) {
 	return elementAt(index);
     }*/

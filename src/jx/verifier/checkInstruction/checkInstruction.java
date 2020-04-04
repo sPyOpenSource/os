@@ -42,9 +42,6 @@ public class checkInstruction {
 	    verifyMethod(method, cPool, tmp);
 	    res = (cInstrResult)method.getVerifyResult(VerifyResult.CINSTR_RESULT);
 	}
-	if (res.instructionUsed(ByteCode.NEW) == 1)
-	    return true;
-	else 
-	    return false;
+        return res.instructionUsed(ByteCode.NEW) == 1;
     }
 }

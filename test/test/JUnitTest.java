@@ -6,6 +6,7 @@
 package test;
 
 import static junit.framework.TestCase.assertEquals;
+import jx.zero.debug.Dump;
 import org.junit.Test;
 
 /**
@@ -14,8 +15,8 @@ import org.junit.Test;
  */
 public class JUnitTest {
     @Test
-    public void testAssert(){
-        System.out.println("* JUnitTest: assert");
-        assertEquals(0, 0);
+    public void testDump(){
+        System.out.println("* JUnitTest: Dump");
+        assertEquals(Dump.byteToHex((byte)1), "01");
     }
 }

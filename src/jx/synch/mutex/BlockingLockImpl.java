@@ -27,7 +27,6 @@ public class BlockingLockImpl implements BlockingLock {
 	    tail = node;
 	}
 	
-	
 	/* consumer: remove node from head side of the queue */
 	public CPUState dequeue() {
 	    CPUState ret;
@@ -45,6 +44,7 @@ public class BlockingLockImpl implements BlockingLock {
     static Scheduler scheduler = (Scheduler) InitialNaming.getInitialNaming().lookup("Scheduler");
     CPUState owner;
 
+    @Override
     public void lock() {
 	CPUState mythread = cpuManager.getCPUState();
 	for(;;) {
@@ -60,6 +60,7 @@ public class BlockingLockImpl implements BlockingLock {
 	}
     }
 
+    @Override
     public void unlock() {
 	CPUState mythread = cpuManager.getCPUState();
 	scheduler.disableThreadSwitching();

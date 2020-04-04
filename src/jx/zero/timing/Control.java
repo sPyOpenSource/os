@@ -23,7 +23,7 @@ public class Control {
 
     private static boolean calibrate_timing() {
 	Profiler p = (Profiler) InitialNaming.getInitialNaming().lookup("Profiler");
-	boolean result = false;
+	boolean result;
 
 	if (use_standart_value) {
 	    p.startCalibration();

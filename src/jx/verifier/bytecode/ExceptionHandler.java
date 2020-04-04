@@ -1,7 +1,6 @@
 package jx.verifier.bytecode;
 
 import jx.verifier.VerifyException;
-import jx.verifier.Verifier;
 import jx.verifier.JVMState;
 
 public class ExceptionHandler {
@@ -62,6 +61,7 @@ public class ExceptionHandler {
 	}
     }
 
+    @Override
     public String toString() {
 	return "Exception '" + eName +
 	    "' - Begin: " + Integer.toHexString(start.getAddress()) + " - End: " +
@@ -69,6 +69,7 @@ public class ExceptionHandler {
 	    Integer.toHexString(handler.getAddress());
     }
 
+    @Override
     public boolean equals(Object obj) {
 	if (obj == this) return true;
 	else if (obj == null) return false;
@@ -80,7 +81,6 @@ public class ExceptionHandler {
 		handler.getAddress() == eh.getHandler().getAddress() &&
 		start.getAddress() == eh.getStartAddress() &&
 		end.getAddress() == eh.getEndAddress());
-    }
-	    
+    }	    
 
 }

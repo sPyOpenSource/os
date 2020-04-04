@@ -98,15 +98,15 @@ public class HashMap<K,V> extends AbstractMap<K,V>
   // INSTANCE VARIABLES -------------------------------------------------
 
   /** the capacity of this HashMap:  denotes the size of the bucket array */
-  transient int capacity = 11;
+  protected int capacity;
 
   /** the size of this HashMap:  denotes the number of key-value pairs */
-  transient int size;
+  protected int size;
 
   /** the load factor of this HashMap:  used in computing the threshold 
    * @serial
    */
-  float loadFactor;
+  protected float loadFactor;
 
   /* the rounded product of the capacity and the load factor; when the number of
    * elements exceeds the threshold, the HashMap calls <pre>rehash()</pre>
@@ -120,14 +120,14 @@ public class HashMap<K,V> extends AbstractMap<K,V>
    * which, in turn, are linked nodes containing a key-value mapping 
    * and a reference to the "next" Bucket in the list
    */
-  private transient Bucket<K,V>[] buckets = new Bucket[11];
+  private Bucket<K,V>[] buckets = new Bucket[11];
 
   /** 
    * counts the number of modifications this HashMap has undergone; used by Iterators
    * to know when to throw ConcurrentModificationExceptions (idea ripped-off from
    * Stuart Ballard's AbstractList implementation) 
    */
-  transient int modCount;
+  protected int modCount;
 
 
   // CONSTRUCTORS ---------------------------------------------------------
@@ -138,8 +138,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
    */
   public HashMap()
   {
-      Debug.out.println("hashmap");
-    //init(DEFAULT_CAPACITY, DEFAULT_LOAD_FACTOR);
+    init(DEFAULT_CAPACITY);//, DEFAULT_LOAD_FACTOR);
   }
 
   /**
@@ -161,7 +160,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
 	|| initialLoadFactor > 1)
       throw new IllegalArgumentException();
     else
-      init(initialCapacity, initialLoadFactor);
+      init(initialCapacity);//, initialLoadFactor);
   }
 
   /**
@@ -176,7 +175,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
     if (initialCapacity < 0)
       throw new IllegalArgumentException();
     else
-      init(initialCapacity, DEFAULT_LOAD_FACTOR);
+      init(initialCapacity);//, DEFAULT_LOAD_FACTOR);
   }
 
   /**
@@ -191,8 +190,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
   public HashMap(Map t)
   {
     int mapSize = t.size() * 2;
-    init(((mapSize > DEFAULT_CAPACITY) ? mapSize : DEFAULT_CAPACITY),
-	 DEFAULT_LOAD_FACTOR);
+    init(((mapSize > DEFAULT_CAPACITY) ? mapSize : DEFAULT_CAPACITY));//, DEFAULT_LOAD_FACTOR);
     putAll(t);
   }
   
@@ -1398,7 +1396,6 @@ public class HashMap<K,V> extends AbstractMap<K,V>
         }
         oResult = list.add(entry);
         
-        Debug.out.println("onreselt");
         if (oResult == null)
         {
             modCount++;
@@ -1420,14 +1417,13 @@ public class HashMap<K,V> extends AbstractMap<K,V>
    *                              (a misnomer, really, since the load factor of
    *                              a HashMap does not change)
    */
-  private void init(int initialCapacity, float initialLoadFactor)
+  private void init(int initialCapacity)//, float initialLoadFactor)
   {
-      Debug.out.println("init");
     size = 0;
     modCount = 0;
     capacity = initialCapacity;
-    loadFactor = initialLoadFactor;
-    threshold = (int) (capacity * loadFactor);
+    loadFactor = 0.75f;//initialLoadFactor;
+    threshold = 8;//(int) (capacity * loadFactor);
     buckets = new Bucket[capacity];
   }
 
