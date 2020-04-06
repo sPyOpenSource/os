@@ -41,8 +41,6 @@ public class JAVARRobin implements JAVAScheduler, FirstLevelIrqHandler{
 	Debug.out.println("RRobin register called");
 	idleThread = JAVAschedulerSupport.getIdleThread(); 
 	MyCPU = SMPcpuManager.getMyCPU();
-//	JAVAschedulerSupport.setTimeslice(1);
-//	JAVAschedulerSupport.setTimeslice(100);
 	irq.installFirstLevelHandler(irq_nr, this);
 	irq.enableIRQ(irq_nr);
     }
@@ -62,7 +60,6 @@ public class JAVARRobin implements JAVAScheduler, FirstLevelIrqHandler{
      
      public void add(CPUState newThread)  {
 	  /*Debug.out.println("RRobin add called");*/
-	 //Debug.out.print("+"); //ttt
 	  CPUStateContainer c;
 	  
 	  if (newThread == null)
@@ -70,23 +67,23 @@ public class JAVARRobin implements JAVAScheduler, FirstLevelIrqHandler{
 	  if (newThread == idleThread)
 	      return;  // ignore idle Thread
 
-	  for (c = first; c != null; c=c.next) 
+	  for (c = first; c != null; c=c.next) {
 	       if (c.content == newThread) {
 		    Debug.out.println("Thread "+"<THREAD>"+" already in runqueue.");
 		    return;
 	       }
-
-	  if (last == null)
+          }
+	  if (last == null){
 	       last = first = getNewContainer(newThread);
-	  else
-	  {
+          } else {
 	       last.next = getNewContainer(newThread);
 	       last = last.next;
 	  } 
-	  return; 
      }
  
-     /** returns the next Thread or null if there is none */
+     /** 
+      * @return the next Thread or null if there is none 
+      */
      public CPUState removeNext()	  {
 	  /*Debug.out.println("RRobin::removeNext called");*/
 	 //Debug.out.print("-"); //ttt
@@ -155,4 +152,3 @@ public class JAVARRobin implements JAVAScheduler, FirstLevelIrqHandler{
 	  }
      }
 }
-

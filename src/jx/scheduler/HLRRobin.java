@@ -8,9 +8,7 @@ import jx.zero.scheduler.*;
 import jx.zero.debug.DebugPrintStream;
 import jx.zero.debug.DebugOutputStream;
 
-public class HLRRobin implements HLScheduler_runnables, HLS_switchTo, HLS_portalCalled, HLS_GCThread {
-//public class HLRRobin implements jx.zero.scheduler.HLScheduler_all {
-     
+public class HLRRobin implements HLScheduler_runnables, HLS_switchTo, HLS_portalCalled, HLS_GCThread {     
     CPUManager cpuManager;
     SMPCPUManager SMPcpuManager;
     HLSchedulerSupport HLschedulerSupport;
@@ -52,27 +50,13 @@ public class HLRRobin implements HLScheduler_runnables, HLS_switchTo, HLS_portal
 
 	int timebase = HLschedulerSupport.getTimeBaseInMicros();
 	int slice = HLschedulerSupport.getDomainTimeslice ();
-	//	HLschedulerSupport.setMyTimeslice (slice/2);
-//	HLschedulerSupport.setMyTimeslice (42);
-
-//      DomainZeroLookup.breakpoint();
     }
 
     public boolean Scheduler_interrupted(){
-//	anzSchedInterrupted++;
-// 	Debug.out.println("The Scheduler Thread was interrupted ("+anzSchedInterrupted+")");
-//	Debug.out.println("ignorring Interruption");
-//	Debug.out.print("=");
 	return false;
     }
 
     public boolean Scheduler_preempted(){
-//	anzSchedPreempted++;
-// 	Debug.out.println("CPU"+SMPcpuManager.getMyCPU()+":The Scheduler Thread was preempted ("+anzSchedPreempted+")");
-//	Debug.out.println("this can lead to inconsistent Scheduling data!!");
-//	Debug.out.println("resume Thread next time this Domain gets CPU Time");
-//	Debug.out.print("|");
-//      throw new Error("Scheduler_preempted");
 	return false;
     }
 
@@ -125,19 +109,8 @@ public class HLRRobin implements HLScheduler_runnables, HLS_switchTo, HLS_portal
 	if (debug)
 	    Debug.out.println(DomainName+": HLRRobin::portalCalled called");
 	return true;  // hand-off
-	//return false;
     }
-/*    
-     public void blocked(CPUState Thread)  {
- 	if (debug)
- 	    Debug.out.println(DomainName+": HLRRobin::blocked called");
-     }
-*/    
-/*    
-     public void destroyed(CPUState Thread)  {
-	 //Debug.out.println("HLRRobin::destroyed called");
-     }
-*/    
+
    public void startGCThread (CPUState interruptedThread, CPUState GCThread) {
        if (debug)
 	   Debug.out.println("HLRRobin::startGCThread called");
@@ -148,10 +121,12 @@ public class HLRRobin implements HLScheduler_runnables, HLS_switchTo, HLS_portal
     }
 
     public void unblockedGCThread (CPUState GCThread){
- 	if (debug)
+ 	if (debug){
 	    Debug.out.println("HLRRobin::unblockedGCThread called");
-      if (uninterruptable)
+        }
+      if (uninterruptable){
 	throw new Error("should not happen!");  
+      }
       unINTthread= GCThread;
       uninterruptable = true;
     }
@@ -173,18 +148,15 @@ public class HLRRobin implements HLScheduler_runnables, HLS_switchTo, HLS_portal
 	     and this Thread called yield
 	     so activate the next Domain*/
 
-//	  if (yielded == true && anzThreads == 1) {
 	  if (yielded == true ) {
 	    /*Debug.out.println("sole Thread wants to yield ->yield!?");*/
 	    yielded = false;
 	    HLschedulerSupport.yield();
 	    throw new Error("should never return! (B)");
 	  }
-//	  yielded = false;
 	  CPUState t = (CPUState)runnables.removeFirst();
 
 	  if (t == null) {  /* runQ empty*/
-	      /*Debug.out.println("runQ empty ->yield!?");*/
 	      HLschedulerSupport.clearMyRunnableFlag();
 	      HLschedulerSupport.yield();
  	      throw new Error("should never return!");
@@ -201,6 +173,4 @@ public class HLRRobin implements HLScheduler_runnables, HLS_switchTo, HLS_portal
      public void dump() {
 	  runnables.dump();
     }
-
 }
-

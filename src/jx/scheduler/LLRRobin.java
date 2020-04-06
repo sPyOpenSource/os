@@ -1,10 +1,7 @@
 package jx.scheduler;
 
 import jx.zero.*;
-import jx.zero.debug.*;
-
 import jx.zero.debug.DebugPrintStream;
-import jx.zero.debug.DebugOutputStream;
 
 public class LLRRobin implements  LowLevelScheduler{
 
@@ -104,8 +101,6 @@ public class LLRRobin implements  LowLevelScheduler{
 	  
 	  if (activeDom == null)
 	      activeDom = first;
-	  
-	 return; 
     }
      
      public void unregisterDomain(Domain domain) {
@@ -153,11 +148,11 @@ public class LLRRobin implements  LowLevelScheduler{
 	    Debug.out.println("requested TimeSlice ("+time+") is bigger than global TimeSlice ("+GlobalTimeSlice+")");
 	    time = GlobalTimeSlice_init;
 	}
-	for (DomainContainer c = first; c != null; c=c.next) 
+	for (DomainContainer c = first; c != null; c=c.next) {
 	    if (c.domain == domain) {
 		c.DomainTimeSlice = time;
 		return;
-	    }
+	    }}
 	Debug.out.print("Domain ");
 	LLschedulerSupport.printDomainName(domain);
 	Debug.out.println(" not registered.");
@@ -169,7 +164,6 @@ public class LLRRobin implements  LowLevelScheduler{
 	 /* is there enougth time left for the current Domain? */
  //Debug.out.println("\nrest:"+ LLschedulerSupport.readTimer()+" GTS:"+GlobalTimeSlice);
 	 GlobalTimeSlice += LLschedulerSupport.readTimer()-activeDom.DomainTimeSlice;
-
 
 	 if (GlobalTimeSlice >= 0) 	    /* activate current Domainn */
 	 {
@@ -193,15 +187,7 @@ public class LLRRobin implements  LowLevelScheduler{
 	if (next == null) 
 	      throw new Error("LLRRobin::activate_nextDomain: System error: no Domain found!!");
 
-/*	if (activeDom == next){  // DomaZero HLSched is looping because there is no Thread and no other HLS 
-	    if (debug)
-		Debug.out.print("!!!!!DomainZero Loop!!!!!!!!!!!!!!!!!\n");
-	    LLschedulerSupport.tuneTimer(activeDom.DomainTimeSlice);
-	    LLschedulerSupport.activateIdleThread();
-	    throw new Error("should never return!");
-
-	}
-*/	activeDom = next;
+	activeDom = next;
 	
 	/* reset TimeSlice for new Domain */
 	GlobalTimeSlice = GlobalTimeSlice_init-activeDom.DomainTimeSlice;
@@ -223,12 +209,10 @@ public class LLRRobin implements  LowLevelScheduler{
 	      LLschedulerSupport.dumpHLSched(activeDom.domain);
 	  } else
 	      Debug.out.println("no Domain active");
-/*	  for (DomainContainer c = first; c != null; c=c.next) {
-	       LLschedulerSupport.dumpDomain(c.domain);
-	  }
-*/	  for (DomainContainer c = first; c != null; c=c.next) {
-              if (c == activeDom)
+	  for (DomainContainer c = first; c != null; c=c.next) {
+              if (c == activeDom){
 		  continue;
+              }
 	      Debug.out.print("Threads in Domain "/*+activeDom.domain.getID()*/+"(");
 	      LLschedulerSupport.printDomainName(c.domain);
 	      Debug.out.println(")");
@@ -285,4 +269,3 @@ public class LLRRobin implements  LowLevelScheduler{
 	  }
      }
 }
-

@@ -48,26 +48,13 @@ public class HLRRobin_all implements jx.zero.scheduler.HLScheduler_all {
 	int timebase = HLschedulerSupport.getTimeBaseInMicros();
 	int slice = HLschedulerSupport.getDomainTimeslice ();
 	HLschedulerSupport.setMyTimeslice (slice/2);
-//	HLschedulerSupport.setMyTimeslice (42);
-
-//      DomainZeroLookup.breakpoint();
     }
 
     public boolean Scheduler_interrupted(){
-//	anzSchedInterrupted++;
-// 	Debug.out.println("The Scheduler Thread was interrupted ("+anzSchedInterrupted+")");
-//	Debug.out.println("ignorring Interruption");
-//	Debug.out.print("=");
 	return false;
     }
 
     public boolean Scheduler_preempted(){
-//	anzSchedPreempted++;
-// 	Debug.out.println("CPU"+SMPcpuManager.getMyCPU()+":The Scheduler Thread was preempted ("+anzSchedPreempted+")");
-//	Debug.out.println("this can lead to inconsistent Scheduling data!!");
-//	Debug.out.println("resume Thread next time this Domain gets CPU Time");
-//	Debug.out.print("|");
-//      throw new Error("Scheduler_preempted");
 	return false;
     }
 
@@ -123,7 +110,6 @@ public class HLRRobin_all implements jx.zero.scheduler.HLScheduler_all {
 	 Debug.out.println(DomainName+": HLRRobin::portalCalled called");
        blocked.add(Thread);
        return true;  // hand-off
-       //return false;
     }
     
     public void blocked(CPUState Thread)  {
@@ -202,7 +188,5 @@ public class HLRRobin_all implements jx.zero.scheduler.HLScheduler_all {
 
 	 Debug.out.println("  blocked Threads:");
 	 blocked.dump();
-
     }
 }
-

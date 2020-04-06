@@ -11,7 +11,7 @@ public class InitNaming //implements Naming
     static Naming baseNaming;
     static Hashtable names = new Hashtable();
     public InitNaming(Naming baseNaming) {
-	this.baseNaming = baseNaming;
+	InitNaming.baseNaming = baseNaming;
 
 	// enable debugging
 	DebugSupport debugSupport = (DebugSupport)baseNaming.lookup("DebugSupport");
@@ -53,15 +53,11 @@ public class InitNaming //implements Naming
 	add("TimerEmulation");
     }
 
-    //@Override
     public static void registerPortal(Portal portal, String name) {
-	//Debug.out.println("Register: " + name);
 	names.put(name, portal);
     }
     
-    //@Override
     public static Portal lookup(String name) {
-	//Debug.out.println("Lookup: " + name);
 	return (Portal) names.get(name);
     }
     

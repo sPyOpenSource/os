@@ -8,9 +8,7 @@ import jx.zero.scheduler.*;
 import jx.zero.debug.DebugPrintStream;
 import jx.zero.debug.DebugOutputStream;
 
-public class HLRRobin_nonpreemptive implements HLScheduler_runnables, HLS_switchTo, HLS_serviceCalled, HLS_blockedInService, HLS_GCThread {
-//public class HLRRobin implements jx.zero.scheduler.HLScheduler_all {
-     
+public class HLRRobin_nonpreemptive implements HLScheduler_runnables, HLS_switchTo, HLS_serviceCalled, HLS_blockedInService, HLS_GCThread {     
     Naming domainZero;
     CPUManager cpuManager;
     SMPCPUManager SMPcpuManager;
@@ -103,7 +101,6 @@ public class HLRRobin_nonpreemptive implements HLScheduler_runnables, HLS_switch
     public boolean serviceCalled(CPUState Thread, CPUStateLink PortalThread) {
 	Debug.out.println(DomainName+": HLRRobin_nonpreemptive::serviceCalled called");
 	return true;  // hand-off
-	//return false;
     }
 
     public void startGCThread (CPUState interruptedThread, CPUState GCThread) {
@@ -161,6 +158,4 @@ public class HLRRobin_nonpreemptive implements HLScheduler_runnables, HLS_switch
 	  Debug.out.println("  Portalthreads:");
 	 portalThreads.dump();
     }
-
 }
-

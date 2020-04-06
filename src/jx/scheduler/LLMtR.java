@@ -2,7 +2,6 @@ package jx.scheduler;
 
 import jx.zero.*;
 import jx.zero.debug.*;
-import java.util.*;
 
 import jx.zero.debug.DebugPrintStream;
 import jx.zero.debug.DebugOutputStream;
@@ -16,7 +15,7 @@ public class LLMtR implements  LowLevelScheduler{
     LLSchedulerSupport LLschedulerSupport;
     DebugPrintStream out;
   
-    private LinkedList tokens;
+    private final LinkedList tokens;
     private CPU MyCPU = null;
     private int TimeSlice_init = 0;
 
@@ -73,10 +72,6 @@ public class LLMtR implements  LowLevelScheduler{
 	  if (tokens.isEmpty())
 	    activeDomain=newDom;
 	  tokens.add(newDom);
-
-//	  Decision_Epoche();
-
-	  return; 
     }
      
     public void unregisterDomain(Domain domain) {
@@ -110,15 +105,9 @@ public class LLMtR implements  LowLevelScheduler{
 	  dumpTokens();
  	  Debug.out.println("");	  
 
-  //	  Vector tmp = new Vector();
 	  Domain d;
 	  for (DomainContainer c = (DomainContainer)tokens.getFirst(); c != null ;  c = (DomainContainer)tokens.getNext()) {
 	      d = c.domain;
-//	      LLschedulerSupport.printDomainName(d);
-//	      Debug.out.print(" ");
-//	      if (tmp.contains(d))
-//		continue;
-//	      tmp.addElement(d);
 	      Debug.out.print("Threads in Domain ");
 	      LLschedulerSupport.printDomainName(d);
 	      Debug.out.println("");
@@ -135,11 +124,8 @@ public class LLMtR implements  LowLevelScheduler{
 	      Debug.out.print(","+c.DomainTimeSlice+")");
 	  }
 
- 
 	  Debug.out.print("\n*******************************************************\n ");
-	  
     }
-
 
     /************** MTR-LS methods ************************************/     
     private int left=0;
@@ -216,7 +202,6 @@ public class LLMtR implements  LowLevelScheduler{
      private DomainContainer ContainerPool = null;
      private int ContainerPoolSize=0;
 
-
      private DomainContainer getNewContainer(Domain dom)  {
 	 return getNewContainer(dom, TimeSlice_init);	  
      }
@@ -256,4 +241,3 @@ public class LLMtR implements  LowLevelScheduler{
 	  }
      }
 }
-

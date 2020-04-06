@@ -8,9 +8,7 @@ import jx.zero.scheduler.*;
 import jx.zero.debug.DebugPrintStream;
 import jx.zero.debug.DebugOutputStream;
 
-public class HLRRobin_mini implements HLScheduler_runnables, HLS_GCThread {
-//public class HLRRobin implements jx.zero.scheduler.HLScheduler_all {
-     
+public class HLRRobin_mini implements HLScheduler_runnables, HLS_GCThread {     
     Naming domainZero;
     CPUManager cpuManager;
     SMPCPUManager SMPcpuManager;
@@ -120,6 +118,4 @@ public class HLRRobin_mini implements HLScheduler_runnables, HLS_GCThread {
 	      { Debug.out.print("U:"); HLschedulerSupport.dumpThread(unINTthread);}
  	  runnables.dump();
     }
-
 }
-

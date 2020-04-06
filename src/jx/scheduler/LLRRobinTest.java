@@ -72,8 +72,6 @@ public class LLRRobinTest implements  LowLevelScheduler{
 	  
 	  if (activeDom == null)
 	      activeDom = first;
-	  
-	 return; 
     }
      
      public void unregisterDomain(Domain domain) {
@@ -181,4 +179,3 @@ public class LLRRobinTest implements  LowLevelScheduler{
 	  }
      }
 }
-

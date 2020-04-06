@@ -1,7 +1,6 @@
 package jx.scheduler;
 
 import jx.zero.*;
-import jx.zero.debug.*;
 
 public class ThreadList extends LinkedList {
     final private HLSchedulerSupport HLschedulerSupport=(HLSchedulerSupport)InitialNaming.getInitialNaming().lookup("HLSchedulerSupport");

@@ -1,18 +1,16 @@
 package jx.scheduler;
 
 import jx.zero.*;
-import jx.zero.debug.*;
-
 
 /* one appender and one remover allowed */
 public class LinkedListCAS {
     final private CPUManager cpuManager = (CPUManager)InitialNaming.getInitialNaming().lookup("CPUManager");
     private ObjectContainer first=null;
-    private dummyObj last = new dummyObj();
+    private final dummyObj last = new dummyObj();
     private ObjectContainer enumerator =null;
     private int anzElements = 0;
     
-    private boolean debug=false;   //test
+    private final boolean debug=false;   //test
     private CAS cas= null;
 
     public LinkedListCAS(){
@@ -79,10 +77,7 @@ public class LinkedListCAS {
     }
 
     boolean contains(Object o){
-	if (indexOf(o) == -1)
-	    return false;
-	else 
-	    return true;
+        return indexOf(o) != -1;
     }
     
     int indexOf(Object o) {
@@ -178,6 +173,3 @@ public class LinkedListCAS {
 	}
     } 
 }
-
-
-

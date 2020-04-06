@@ -1,7 +1,5 @@
 package jx.net;
 
-import jx.zero.*;
-import jx.zero.debug.*;
 import java.io.*;
 
 
@@ -10,9 +8,9 @@ import java.io.*;
  * @author Stefan Winkler, Christian Fiermann
  */
 public class TCPOutputStream extends OutputStream {
-    private TCPSocket tcpSocket;
+    private final TCPSocket tcpSocket;
 
-    private byte[] buffer;
+    private final byte[] buffer;
     private int    buf_pos;
 
     public TCPOutputStream(TCPSocket tcpSocket) {
@@ -27,7 +25,9 @@ public class TCPOutputStream extends OutputStream {
      * The general contract for write is that one byte is written to the output stream. 
      * The byte to be written is the eight low-order bits of the argument b. 
      * The 24 high-order bits of b are ignored. 
+     * @param b
      */
+    @Override
     public void write(int b) throws IOException {
 	// byte[] data = new byte[1];
 	// data[0]  = (byte) (b & 0xF);
@@ -36,20 +36,22 @@ public class TCPOutputStream extends OutputStream {
 	buffer[buf_pos++] = (byte)b;
 	if (buf_pos >= buffer.length) {
 	    tcpSocket.send(buffer);
-	    buf_pos=0;
+	    buf_pos = 0;
 	}
     }
 
+    @Override
     public void flush() throws IOException {
 	int buf_size = buf_pos;
 	byte[] sendBuf = new byte[buf_size];
-	for (int i=0; i<buf_size; i++) {
+	for (int i = 0; i < buf_size; i++) {
 	    sendBuf[i] = buffer[i];
 	}
 	tcpSocket.send(sendBuf);
-	buf_pos=0;
+	buf_pos = 0;
     }
 
+    @Override
     public void close() {
 	//	tcpSocket.close();
     }
