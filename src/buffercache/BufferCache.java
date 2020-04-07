@@ -199,7 +199,7 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
      *
      * @param bh der <code>BufferHead</code>, der freigegeben werden soll
      
-     ******德文翻译 George *****
+     ****** Translated by George *****
      Set bufferhead free. Tell the Cache that the Bufferhead won't be used and can be inserted to LRU-List. 
      if it is marked as "dirty", The time is set at the earliest time when it can be written (in order to enable other access
      on Puffer without interrupting slow hard driver access) The time spane is 30sec. If the access counter of Bufferhead 
@@ -251,7 +251,7 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
      *
      * @param bh0 der <code>BufferHead</code>, der freigegeben ("vergessen") werden soll
      
-      ******德文翻译 George *****
+      ****** Translated by George *****
       hang the Bufferhead to the end of the LRU-List.
       
       the Bufferhead, that should to be set free. 
@@ -277,7 +277,7 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
      * @param  block  die Nummer des Blocks, der gelesen werden soll
      * @return der <code>BufferHead</code> mit dem Inhalt des angegebenen Blocks
     
-     ******德文翻译 George *****
+     ****** Translated by George *****
      Read the block of hard disk. The Bufferhead will be required with <code>getblk</code> so  
      the content of the block can be read 
      
@@ -303,7 +303,7 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
 	  brelse(bh);
 	  Debug.out.println("bread(" + block + ", " + size + ") fehlgeschlagen"); 
 	  
-	  ******德文翻译 George ***** 
+	  ******Translated by George ***** 
 	  "fehgeschlagen" means failed 
 	  
 	  return null;
@@ -340,7 +340,7 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
      * Gibt eine Statistik der <code>BufferHead</code>s im Cache und der LRU-Liste aus. Die Zahl der gesperrten
      * und als "dirty" markierten <code>BufferHead</code>s wird ermittelt.
      
-     ******德文翻译 George *****
+     ****** Translated by George *****
      
      print one statistic of BufferHead in the Cache and the LRU-List. The number of blocked and as "dirty" marked BufferHead 
      can be determined. 
@@ -391,7 +391,7 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
      * Schreibt die <code>BufferHead</code>s des angegebenen Dateisystems (Partition), die als "dirty" markiert sind, auf
      * die angegebene Partition.
      *
-     ******德文翻译 George ***** 
+     ****** Translated by George ***** 
      
      Write the Bufferhead of specified file system, that was marked as "dirty" on the partition
      */
@@ -453,7 +453,7 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
      * <code>rwBlock</code> auf die Festplatte zur&uuml;ckgeschrieben, sofern sie nicht gesperrt sind bzw. noch nicht alt genug
      * sind.
      
-     ******德文翻译 George ***** 
+     ****** Translated by George ***** 
      All BufferHead, that was marked as dirty (means that still need to be written) will rewritten with ewBlock 
      to the hard disk - if they are neither blocked nor too old.
      */
