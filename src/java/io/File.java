@@ -1,10 +1,15 @@
 package java.io;
 
-import jx.zero.*;
-import jx.fs.FilesystemInterface;
-import jx.fs.FSObject;
+import jx.InitNaming;
 import jx.fs.RegularFile;
 import jx.fs.Directory;
+import jx.fs.FS;
+import jx.fs.Inode;
+import jx.fs.InodeIOException;
+import jx.fs.InodeNotFoundException;
+import jx.fs.NoDirectoryInodeException;
+import jx.fs.NotExistException;
+import jx.fs.PermissionException;
 
 /**
   * Implementation of the File class accessing the JX file system
@@ -15,8 +20,8 @@ public final class File implements Comparable {
     private String pathName;
     private String fileName;
     
-    private FilesystemInterface fs;
-    private FSObject fsobj;
+    private FS fs;
+    private Inode fsobj;
     
     public static final String separator = "/";
     public static final char separatorChar = '/';
@@ -43,16 +48,16 @@ public final class File implements Comparable {
 	}
 	name = path;
 
-	Naming ns = InitialNaming.getInitialNaming();
-	fs    = (jx.fs.FilesystemInterface) ns.lookup("FSInterface");
+	//Naming ns = InitialNaming.getInitialNaming();
+	fs    = (FS) InitNaming.lookup("FS");
 
-	/*
+	
 	try {
-	    fsobj = fs.lookup(name);
-	} catch (Exception ex) {
+	    fsobj = fs.lookup("/index.html");
+	} catch (InodeIOException | InodeNotFoundException | NoDirectoryInodeException | NotExistException | PermissionException ex) {
 	    fsobj = null;
 	}
-	*/
+	
     }
 
     /**
@@ -120,7 +125,7 @@ public final class File implements Comparable {
     public boolean isFile() {
 	try {
 	    return fsobj.isFile();
-	} catch (Exception ex) {
+	} catch (NotExistException ex) {
 	    return false;
 	}
     }
@@ -128,7 +133,7 @@ public final class File implements Comparable {
     public boolean isDirectory() { 
 	try {
 	    return fsobj.isDirectory();
-	} catch (Exception ex) {
+	} catch (NotExistException ex) {
 	    return false;
 	}
     }
@@ -153,16 +158,8 @@ public final class File implements Comparable {
 
     /**
      * Returns the length of the file denoted by this abstract pathname.
+     * @return 
      */
-    /*
-    public long length() {
-	try {
-	    return ((RegulareFile)fsobj).length();
-	} catch (Exception e) {
-	    return -1;
-	}
-    }
-    */
     public int length() {
 	try {
 	    return (int)((RegularFile)fsobj).length();

@@ -2,7 +2,6 @@ package buffercache;
 
 import jx.zero.*;
 import jx.collections.Iterator;
-//import jx.fs.buffercache.BufferHead;
 
 /**
  * Uses "chaining" as a collision resolution technique

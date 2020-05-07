@@ -74,7 +74,7 @@ public abstract class Reader implements Closeable
    *
    * @param buf The array into which the chars read should be stored
    * @param offset The offset into the array to start storing chars
-   * @param len The requested number of chars to read
+   * @param count The requested number of chars to read
    *
    * @return The actual number of chars read, or -1 if end of stream.
    *

@@ -2,8 +2,6 @@ package buffercache;
 
 import jx.buffer.*;
 
-//import jx.fs.buffercache.BufferHead;
-
 /**
  * Requirements: 
  *  -every BufferHead is part of at most one list 

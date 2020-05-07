@@ -157,7 +157,6 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
     final public jx.fs.buffercache.BufferHead getblk(int block) {
 	BufferHead bh;
 	jx.fs.buffercache.BufferHead bh0;
-	int isize;
 
 	if (trace) Debug.out.println("getblk(" + block + " )");
 
@@ -221,11 +220,12 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
 	// Falls dirty, Zeit festlegen, zu der der Buffer geschrieben werden soll
 	if (bh.isDirty()) {
 	    newtime = clock.getTimeInMillis() + 30000; // 30 Sekunden
-	    if (bh.b_flushtime == 0 || bh.b_flushtime > newtime)
+	    if (bh.b_flushtime == 0 || bh.b_flushtime > newtime){
 		bh.b_flushtime = newtime;
-	} else
+            }
+	} else {
 	    bh.b_flushtime = 0;
-	
+        }
 	release(bh);
     }
 
@@ -301,18 +301,14 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
 	throw new Error("IO Error");
 	/*
 	  brelse(bh);
-	  Debug.out.println("bread(" + block + ", " + size + ") fehlgeschlagen"); 
-	  
-	  ******Translated by George ***** 
-	  "fehgeschlagen" means failed 
-	  
+	  Debug.out.println("bread(" + block + ", " + size + ") failed");
 	  return null;
 	*/
     }
 
     private  void growBuffers() {
 	BufferHead bh;
-	int isize, count;
+	int count;
 
 	if (trace) Debug.out.println("growBuffers");
 
@@ -547,7 +543,6 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
 	brelse(bh);
 	throw new Error();
     }
-
 
     public void printStatistics() {
 	Debug.out.println("Buffercache:");

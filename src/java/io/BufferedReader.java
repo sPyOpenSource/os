@@ -38,6 +38,20 @@ exception statement from your version. */
 
 package java.io;
 
+import jx.InitNaming;
+import jx.fs.FS;
+import jx.fs.Inode;
+import jx.fs.InodeIOException;
+import jx.fs.InodeNotFoundException;
+import jx.fs.NoDirectoryInodeException;
+import jx.fs.NoFileInodeException;
+import jx.fs.NotExistException;
+import jx.fs.PermissionException;
+import jx.zero.Debug;
+import jx.zero.LookupHelper;
+import jx.zero.Memory;
+import jx.zero.MemoryManager;
+
 /* Written using "Java Class Libraries", 2nd edition, plus online
  * API docs for JDK 1.2 beta from http://www.javasoft.com.
  * Status:  Believed complete and correct.
@@ -430,7 +444,7 @@ public class BufferedReader extends Reader
 	return str;
       }
     StringBuilder sbuf = new StringBuilder(200);
-    sbuf.append(buffer, pos, i - pos);
+    //sbuf.append(buffer, pos, i - pos);
     pos = i;
     // We only want to return null when no characters were read before
     // EOF.  So we must keep track of this separately.  Otherwise we
@@ -457,7 +471,7 @@ public class BufferedReader extends Reader
 	    break;
 	  }
 	i = lineEnd(limit);
-	sbuf.append(buffer, pos - 1, i - (pos - 1));
+	//sbuf.append(buffer, pos - 1, i - (pos - 1));
 	pos = i;
       }
     return (sbuf.length() == 0 && eof) ? null : sbuf.toString();
@@ -545,6 +559,28 @@ public class BufferedReader extends Reader
 
     @Override
     public int read(char[] buf, int offset, int count) throws IOException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        try {
+            MemoryManager memoryManager = (MemoryManager)InitNaming.lookup("MemoryManager");
+            Memory buffer1 =  memoryManager.alloc(4096);
+            //Memory buffer2 = memoryManager.alloc(4096);
+            FS fs    = (FS) LookupHelper.waitUntilPortalAvailable(null, "FS");
+	
+	    Inode fsobj = fs.lookup("/index.html");
+
+	    int l = fsobj.getLength();
+            Debug.out.println("l: " + l + " count: " + count);
+	  fsobj.read(buffer1, 0,  l);
+          //fsobj.read(buffer2, 1, l);
+	    byte data[] = new byte[l];
+	   buffer1.copyToByteArray(data, 0, 0, 512);
+            //buffer2.copyToByteArray(data, 512*8, 0, l-512*8);
+            for(int i = 0; i < 512; i++){
+                Debug.out.print( (char)data[i]);
+            }
+            return '\n';
+	} catch (InodeIOException | NoFileInodeException | NotExistException | PermissionException |InodeNotFoundException | NoDirectoryInodeException ex) {
+	      Debug.out.println(ex.getMessage());
+	    return 0;
+      }
     }
 }
