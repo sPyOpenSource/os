@@ -156,4 +156,9 @@ public class FileSystem implements jx.fs.FileSystem, Service {
     public Tools getTools() {
 	return tools;
     }
+
+    @Override
+    public String read(String aitxt) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

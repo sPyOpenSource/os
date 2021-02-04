@@ -75,10 +75,10 @@ public class TCP implements IPConsumer, Runnable {
 		    }
 		}
 	    });
-	cpuManager.start(cyclops);
-	timerManager.unblockInMillisInterval(cyclops, 3000,3000);
+	//cpuManager.start(cyclops);
+	//timerManager.unblockInMillisInterval(cyclops, 3000,3000);
 
-	new Thread(this, "TCP-Dispatcher").start();
+	//new Thread(this, "TCP-Dispatcher").start();
     }
 
     // durchsucht die Liste der bestehenden Verbindungen nach einer passenden

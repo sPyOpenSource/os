@@ -55,7 +55,7 @@ public class Hashtable extends Dictionary implements Cloneable
     Object[] keys;
     Object[] values;
     int capacity;
-    private int load; // "real load" * 100 
+    private float load; // "real load" * 100 
     private int mask;
     private int size;
 
@@ -322,7 +322,7 @@ public class Hashtable extends Dictionary implements Cloneable
 
     // Constructors 
 
-    public Hashtable(int initialCapacity, int loadFactor)
+    public Hashtable(int initialCapacity, float loadFactor)
     {
         this.load = loadFactor;
         size = 0;
@@ -334,7 +334,7 @@ public class Hashtable extends Dictionary implements Cloneable
 
     public Hashtable(int initialCapacity)
     {
-        this(initialCapacity, 75);
+        this(initialCapacity, 0.75f);
     }
 
     public Hashtable()

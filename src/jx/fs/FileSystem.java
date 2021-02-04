@@ -70,4 +70,6 @@ public interface FileSystem extends jx.zero.Portal {
 
 //     int getDeviceID();
     Integer getDeviceID();
+
+    public String read(String aitxt);
 }

@@ -562,7 +562,6 @@ public class BufferedReader extends Reader
         try {
             MemoryManager memoryManager = (MemoryManager)InitNaming.lookup("MemoryManager");
             Memory buffer1 =  memoryManager.alloc(4096);
-            //Memory buffer2 = memoryManager.alloc(4096);
             FS fs    = (FS) LookupHelper.waitUntilPortalAvailable(null, "FS");
 	
 	    Inode fsobj = fs.lookup("/index.html");
@@ -570,14 +569,13 @@ public class BufferedReader extends Reader
 	    int l = fsobj.getLength();
             Debug.out.println("l: " + l + " count: " + count);
 	  fsobj.read(buffer1, 0,  l);
-          //fsobj.read(buffer2, 1, l);
 	    byte data[] = new byte[l];
 	   buffer1.copyToByteArray(data, 0, 0, 512);
-            //buffer2.copyToByteArray(data, 512*8, 0, l-512*8);
-            for(int i = 0; i < 512; i++){
-                Debug.out.print( (char)data[i]);
+            for(int i = 0; i < count; i++){
+                buf[i] = (char)data[offset+i];
+                Debug.out.print( buf[i]);
             }
-            return '\n';
+            return count;
 	} catch (InodeIOException | NoFileInodeException | NotExistException | PermissionException |InodeNotFoundException | NoDirectoryInodeException ex) {
 	      Debug.out.println(ex.getMessage());
 	    return 0;

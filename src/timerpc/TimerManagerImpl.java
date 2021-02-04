@@ -120,8 +120,7 @@ public class TimerManagerImpl implements TimerManager, Service {
 
 	if (firsttimer == null) {
 		firsttimer = timer;
-	}
-	else {
+	} else {
 	    while (helper != null && (helper.get_expires() <= timer.get_expires())) {
 		    previous = helper;
 		    helper = helper.get_next();
@@ -198,7 +197,6 @@ public class TimerManagerImpl implements TimerManager, Service {
     @Override
     public int getCurrentTime() {
 	return ticks;
-	//return clock.getTimeInMillis()/250;
     }
 
     @Override
@@ -209,11 +207,6 @@ public class TimerManagerImpl implements TimerManager, Service {
 
     @Override
     public int getTimeInMillis() {
-	/*
-	int low = clock.getTicks_low();
-	int high = clock.getTicks_high();
-	return (high << 10) | (low >>> 22);
-	*/
 	return clock.getTimeInMillis();
     }
 
