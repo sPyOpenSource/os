@@ -9,19 +9,18 @@ public class BufferHead extends jx.fs.buffercache.BufferHead {
 
     private final static boolean paranoid = false;
 
-    /** vom BufferHashtable verwendet */
+    /** used by the BufferHashtable */
     int hashtable_hashkey;
     BufferHead hashtable_nextInChain;
 
-    /** vom BufferCache verwendet */
+    /** used by BufferCache */
     int    b_flushtime;
-    /** vom BufferCache verwendet */
     private  int     b_count, b_list;
     private boolean dirty, locked, uptodate;  // BufferCache
 
-    /** die Blocknummer innerhalb des Dateisystems */
+    /** the block number within the file system */
     int     b_block;
-    /** die Blockgr&ouml;&szlig;e (1024, 2048 oder 4096 Byte) */
+    /** the block size (1024, 2048 oder 4096 Byte) */
     int     b_size;
 
 
