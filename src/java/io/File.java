@@ -1,6 +1,6 @@
 package java.io;
 
-import jx.InitNaming;
+import jx.InitialNaming;
 import jx.fs.RegularFile;
 import jx.fs.Directory;
 import jx.fs.FS;
@@ -49,7 +49,7 @@ public final class File implements Comparable {
 	name = path;
 
 	//Naming ns = InitialNaming.getInitialNaming();
-	fs    = (FS) InitNaming.lookup("FS");
+	fs    = (FS)InitialNaming.lookup("FS");
 
 	
 	try {
@@ -244,33 +244,45 @@ public final class File implements Comparable {
     //  Atomically creates a new, empty file named by this abstract pathname if
     // and only if a file with this name does not yet exist.
     boolean createNewFile() { return false; }
+    
     // Creates an empty file in the default temporary-file directory, using the given prefix and suffix to generate its name.
     static File createTempFile(String prefix, String suffix) { return null; }
+    
     // Creates a new empty file in the specified directory, using the given prefix and suffix strings to generate its name.
     static File createTempFile(String prefix, String suffix, File directory) { return null; }
+    
     // Requests that the file or directory denoted by this abstract pathname be deleted when the virtual machine terminates.
     void deleteOnExit() {}
+    
     // Returns the absolute form of this abstract pathname.
     File getAbsoluteFile() { return null; }
+    
     // Returns the canonical form of this abstract pathname.
     File getCanonicalFile() { return null; }
+    
     // Returns the abstract pathname of this abstract pathname's parent, or null if this pathname does not name a parent directory.
     File getParentFile() { return null; }
+    
     // Tests whether the file named by this abstract pathname is a hidden file.
     boolean  isHidden() { return false; }
+    
     // Returns an array of abstract pathnames denoting the files in the directory denoted by this abstract pathname.
     File[] listFiles() { return null; }
-    // Returns an array of abstract pathnames denoting the files and directories in the directory denoted by this abstract pathname that satisfy the specified filter.
     
-    // File[] listFiles(FileFilter filter) { return null; }
+    // Returns an array of abstract pathnames denoting the files and directories in the directory denoted by this abstract pathname that satisfy the specified filter.
+    // File[] listFiles(FileFilter filter) { return null; }    
     
     //Returns an array of abstract pathnames denoting the files and directories in the directory denotedby this abstract pathname that satisfy the specified filter.
     File[] listFiles(FilenameFilter filter) { return null; }
+    
     //List the available filesystem roots.
     static File[] listRoots() { return null; }
+    
     //Sets the last-modified time of the file or directory named by this abstract pathname.
     boolean setLastModified(long time) { return false; }
+    
     //Marks the file or directory named by this abstract pathname so that only read operations are allowed.
     boolean setReadOnly() { return false; }
+    
     //    java.net.URL toURL() { return null; }
 }

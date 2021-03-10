@@ -170,6 +170,25 @@ public final class Long extends Number
 
             return (signed ? result : -result );
     }
+    
+    private static class LongCache {
+        private LongCache(){}
+
+        static final Long cache[] = new Long[-(-128) + 127 + 1];
+
+        static {
+            for(int i = 0; i < cache.length; i++)
+                cache[i] = new Long(i - 128);
+        }
+    }
+    
+    public static Long valueOf(long l) {
+        final int offset = 128;
+        if (l >= -128 && l <= 127) { // will cache
+            return LongCache.cache[(int)l + offset];
+        }
+        return new Long(l);
+    }
 
     public static Long valueOf(String s) throws NumberFormatException
     {

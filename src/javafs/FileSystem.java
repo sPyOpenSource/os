@@ -20,11 +20,11 @@ public class FileSystem implements jx.fs.FileSystem, Service {
     private final InodeCache  inodeCache;
     private Tools       tools;
     private Clock       clock;
-    private final Integer     deviceID;
+    private final int   deviceID;
 
     public FileSystem() {
 	inodeCache = new InodeCache();
-	deviceID = new Integer(1);
+	deviceID = 1;
     }
 
     @Override
@@ -149,7 +149,7 @@ public class FileSystem implements jx.fs.FileSystem, Service {
     
 
     @Override
-    public Integer getDeviceID() {
+    public int getDeviceID() {
 	return deviceID; /* FIXME */
     }
 

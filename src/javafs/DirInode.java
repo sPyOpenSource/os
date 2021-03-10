@@ -4,6 +4,7 @@ import java.util.Vector;
 import jx.zero.Debug;
 import jx.zero.Memory;
 import jx.zero.Clock;
+
 import jx.fs.DirNotEmptyException;
 import jx.fs.FileExistsException;
 import jx.fs.InodeIOException;
@@ -13,7 +14,6 @@ import jx.fs.NoDirectoryInodeException;
 import jx.fs.NoSymlinkInodeException;
 import jx.fs.NotExistException;
 import jx.fs.PermissionException;
-
 import jx.fs.buffercache.*;
 
 /**
@@ -526,8 +526,7 @@ public  jx.fs.Inode create(String name, int mode) throws FileExistsException, In
      *
      * @param new_inode die Inode, die hinzugef&uuml;gt werden soll
      * @param newname   der Name, der zusammen mit der Inode einen neuen Verzeichniseintrag bilden soll
-     * @param check     falls <code>true</code>, wird &uuml;berpr&uuml;ft, ob die Inode nicht schon einem
-     *                  &uuml;bergeordneten Verzeichnis zugewiesen wurde.
+     * 
      * @exception InodeIOException          falls bei der Ein-/Ausgabe ein Fehler auftritt
      * @exception NoDirectoryInodeException falls es sich nicht um ein Verzeichnis handelt
      * @exception PermissionException       falls der Verzeichniseintrag im Zielverzeichnis nicht angelegt werden darf

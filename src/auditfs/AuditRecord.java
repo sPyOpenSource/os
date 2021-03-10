@@ -21,7 +21,7 @@ class AuditRecord {
 	this.domainName = domainName;
 	this.message = message;
 	time = new CycleTime();
-	if (clock==null) throw new Error();
+	if (clock == null) throw new Error();
 	clock.getCycles(time);
     }
 
@@ -34,7 +34,7 @@ class AuditRecord {
 
     public void addToBuffer(Memory buf, int pos) {
 	buf.setLittleEndian32(pos, time.low);
-	buf.setLittleEndian32(pos+4, time.high);
+	buf.setLittleEndian32(pos + 4, time.high);
 	pos += 8;
 	pos = addString(buf, pos, systemName);
 	pos = addString(buf, pos, domainName);

@@ -7,7 +7,7 @@ import jx.collections.Iterator;
  * Uses "chaining" as a collision resolution technique
  * @author Michael Golm
  */
-class BufferHashtable {
+public class BufferHashtable {
     static final boolean trace = false;
 
     /** Default fill fraction allowed before growing table. */
@@ -253,56 +253,6 @@ class BufferHashtable {
 		}
 	    };
     }
-
-    /*************************************************************************/
-    /****                                                                 ****/
-    /****                                                                 ****/
-    /****                         CLASS TEST                              ****/
-    /****                                                                 ****/
-    /****                                                                 ****/
-    /*************************************************************************/
-	
-    public static void main(String args[]) {
-	MemoryManager memMgr = ((MemoryManager)InitialNaming.getInitialNaming().lookup("MemoryManager"));
-	BufferHashtable collect = new BufferHashtable();
-	// fill
-	BufferHead bh0, bh1, bh2;
-	collect.put(bh0 = new BufferHead(memMgr, 0,1024));
-	collect.put(bh1 = new BufferHead(memMgr,1,1024));
-	collect.put(bh2 = new BufferHead(memMgr,2,1024));
-	for(int i=3; i<1000; i++) {
-	    collect.put(new BufferHead(memMgr,i,1024));
-	}
-	BufferHead c1;
-	collect.put(new BufferHead(memMgr, 3 + 4096, 1024)); // collision
-	collect.put(c1 = new BufferHead(memMgr, 3 + 2 * 4096, 1024)); // collision
-	collect.put(new BufferHead(memMgr, 3 + 3 * 4096, 1024)); // collision
-	collect.put(new BufferHead(memMgr, 3 + 4 * 4096, 1024)); // collision
-	BufferHead c2 = collect.get(3 + 2 * 4096); // collision
-	if (c1 == c2) {
-	    Debug.out.println("collision success");
-	} else {
-	    Debug.out.println("collision failure");
-	}
-	
-	BufferHead bh = collect.get(1);
-
-	if (bh == bh1) {
-	    Debug.out.println("BC success");
-	} else {
-	    Debug.out.println("BC failure");
-	}
-	collect.remove(bh2);
-	bh = collect.get(1);
-
-	if (bh == bh1) {
-	    Debug.out.println("BC2 success");
-	} else {
-	    Debug.out.println("BC2 failure");
-	}
-
-    }
-
 
     private String alignString(String value, int length) {
 	String tmp1 = new String();

@@ -1,6 +1,5 @@
 package jx.fs;
 
-import jx.zero.ReadOnlyMemory;
 import jx.zero.Memory;
 
 public interface ReadOnlyRegularFile extends jx.fs.FSObject, jx.zero.Portal {

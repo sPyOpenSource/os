@@ -68,8 +68,7 @@ public interface FileSystem extends jx.zero.Portal {
 
     Inode getInode(int identifier) throws FSException;
 
-//     int getDeviceID();
-    Integer getDeviceID();
+    int getDeviceID();
 
     public String read(String aitxt);
 }

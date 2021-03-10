@@ -6,9 +6,7 @@
 
 package db.treemap;
 
-
 import db.avltree.*;
-
 
 /**
  *
@@ -34,7 +32,6 @@ public class TreeMap extends java.lang.Object {
             m_cAVL.insert(new TreeMapEntry(cKey, cValue));
 	    m_iCount ++;
         } catch (Exception ex) {
-            //ex.printStackTrace();
         }
        
     }
@@ -44,7 +41,6 @@ public class TreeMap extends java.lang.Object {
 	    m_iCount --;
             return m_cAVL.delete(new TreeMapEntry(cKey, null));
 	} catch (Exception ex) {
-            //ex.printStackTrace();
         }
 
         return false;
@@ -54,7 +50,6 @@ public class TreeMap extends java.lang.Object {
         try {
             return ((TreeMapEntry) m_cAVL.lookup(new TreeMapEntry(cKey, null))).getValue();
         } catch (Exception ex) {
-            //ex.printStackTrace();
         }
 
         return null;
@@ -84,7 +79,6 @@ public class TreeMap extends java.lang.Object {
         try {
             return m_cAVL.lookup(new TreeMapEntry(cKey, null)) != null;
         } catch (Exception ex) {
-            //ex.printStackTrace();
         }
 
         return false;
@@ -94,7 +88,6 @@ public class TreeMap extends java.lang.Object {
         try {
             return m_cAVL.empty();
         } catch (Exception ex) {
-            //ex.printStackTrace();
         }
 
         return true;

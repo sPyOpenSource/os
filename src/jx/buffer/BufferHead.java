@@ -14,7 +14,7 @@ public class BufferHead {
 
     /** vom BufferFreeList verwendet */
     BufferHead prev, next;
-    protected boolean inlist=false;
+    public boolean inlist = false;
 
     /** das Speicherobjekt mit dem Inhalt des Blocks */
     public  Memory  data;

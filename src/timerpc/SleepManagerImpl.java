@@ -11,8 +11,8 @@ public class SleepManagerImpl implements SleepManager, Service {
 	this();
     }
     public SleepManagerImpl() {
-	clock = (Clock) InitialNaming.getInitialNaming().lookup("Clock");
-	cpuManager = (CPUManager) InitialNaming.getInitialNaming().lookup("CPUManager");
+	clock = (Clock)jx.InitialNaming.lookup("Clock");
+	cpuManager = (CPUManager)jx.InitialNaming.lookup("CPUManager");
 	//timerManager = (TimerManager) LookupHelper.waitUntilPortalAvailable(InitialNaming.getInitialNaming(), "TimerManager");
     }
     public void mdelay(int milliseconds) {

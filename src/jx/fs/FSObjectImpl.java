@@ -10,6 +10,7 @@ abstract public class FSObjectImpl implements jx.fs.FSObject, jx.zero.Service {
     protected EXT2Permission perm = null;
     protected EXT2Attribute  attr = null;
 
+    @Override
     public abstract int length() throws Exception;
 
     public FSObjectImpl(FilesystemImpl fs_impl, FileSystem fs, FSObjectImpl parent, Inode inode) {
@@ -22,6 +23,7 @@ abstract public class FSObjectImpl implements jx.fs.FSObject, jx.zero.Service {
 	// =====
     }
 
+    @Override
     public void close() throws Exception {
 	sync();
 	inode.decUseCount();
@@ -59,7 +61,7 @@ abstract public class FSObjectImpl implements jx.fs.FSObject, jx.zero.Service {
     public int hashCode() {
 	try {
 	    return inode.getIdentifier();
-	} catch (Exception ex) {
+	} catch (NotExistException ex) {
 	    return super.hashCode();
 	}
     }

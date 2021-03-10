@@ -6,12 +6,21 @@ import jx.zero.debug.*;
 import java.util.Hashtable;
 import java.util.Enumeration;
 
-public class InitNaming //implements Naming 
+public class InitialNaming
     {
     static Naming baseNaming;
     static Hashtable names = new Hashtable();
-    public InitNaming(Naming baseNaming) {
-	InitNaming.baseNaming = baseNaming;
+
+    public static InitialNaming getInitialNaming() {
+        return new InitialNaming();
+    }
+    
+    public InitialNaming(){
+        
+    }
+    
+    public InitialNaming(Naming baseNaming) {
+	InitialNaming.baseNaming = baseNaming;
 
 	// enable debugging
 	DebugSupport debugSupport = (DebugSupport)baseNaming.lookup("DebugSupport");
@@ -61,9 +70,6 @@ public class InitNaming //implements Naming
 	return (Portal) names.get(name);
     }
     
-    //@Override
-    //public Portal lookupOrWait(String depName) {throw new Error();}
-
     private static void add(String name) {
 	Portal p = baseNaming.lookup(name);
 	if (p == null) return;

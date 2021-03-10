@@ -5,7 +5,6 @@ import jx.zero.Debug;
 import jx.zero.Clock;
 import jx.fs.InodeIOException;
 import jx.fs.NotExistException;
-
 import jx.fs.buffercache.*;
 
 /**
@@ -45,16 +44,16 @@ public abstract class InodeImpl extends jx.fs.InodeImpl {
     // these variables are only needed in getblk but
     // it is faster to compute them once and store them
     // in the object
-    private /*final*/ int addr_per_block;
-  private /*final*/ int addr_per_block_bits;
-  private /*final*/ int addr;
+    private final int addr_per_block;
+    private final int addr_per_block_bits;
+    private final int addr;
     
-    private /*final*/ int blocksize;
+    private final int blocksize;
 
     /* speed up hack for blockGetBlk */
     private InodeBlockData global_bd_slot = null;
 
-    private int maxblock;
+    private final int maxblock;
 
     protected Clock clock;
 
@@ -96,7 +95,6 @@ public abstract class InodeImpl extends jx.fs.InodeImpl {
 	global_bd_slot = new InodeBlockData();
 
     }
-
 
 
     /**

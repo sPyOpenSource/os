@@ -33,7 +33,7 @@ public interface Inode extends jx.zero.Portal {
      * Legt fest, ob die Inode noch geschrieben werden muss oder ob die Version
      * auf der Partition mit dem Speicherobjekt &uuml;bereinstimmt.
      *
-     * @param der neue Zustand der Inode (<code>true</code> f&uuml;r "dirty")
+     * @param value neue Zustand der Inode (<code>true</code> f&uuml;r "dirty")
      */
     void setDirty(boolean value);
 

@@ -37,15 +37,10 @@ obligated to do so.  If you do not wish to do so, delete this
 exception statement from your version. */
 
 package java.awt;
+
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.awt.peer.WindowPeer;
-import java.awt.peer.ComponentPeer;
-import java.util.EventListener;
-/*
-import java.util.Locale;
-import java.util.ResourceBundle;
-*/
 
 /**
  * This class represents a top-level window with no decorations.
@@ -62,7 +57,6 @@ public class Window extends Container
   private int windowSerializedDataVersion = 0; // FIXME
 
   private transient WindowListener windowListener;
-    //  private transient GraphicsConfiguration graphicsConfiguration;
 
   /** 
    * This (package access) constructor is used by subclasses that want
@@ -75,18 +69,12 @@ public class Window extends Container
     setVisible(false);
     setLayout((LayoutManager) new BorderLayout());
   }
-
-    //  Window(GraphicsConfiguration gc)
-    //  {
-    //    this();
-    //    graphicsConfiguration = gc;
-    //  }
     
   /**
    * Initializes a new instance of <code>Window</code> with the specified
    * parent.  The window will initially be invisible.
    *
-   * @param parent The owning <code>Frame</code> of this window.
+   * @param owner The owning <code>Frame</code> of this window.
    */
   public Window(Frame owner)
   {
@@ -144,6 +132,7 @@ public class Window extends Container
   /**
    * Creates the native peer for this window.
    */
+  @Override
   public void addNotify()
   {
     if (peer == null)
@@ -173,6 +162,7 @@ public class Window extends Container
   /**
    * Makes this window visible and brings it to the front.
    */
+  @Override
   public void show ()
   {
     if (peer == null)
@@ -182,6 +172,7 @@ public class Window extends Container
     toFront();
   }
 
+  @Override
   public void hide()
   {
     // FIXME: call hide() on amy "owned" children here.
@@ -196,8 +187,9 @@ public class Window extends Container
 	hide();
 	
 	Window[] list = getOwnedWindows();
-	for (int i=0; i<list.length; i++)
-	    list[i].dispose();
+      for (Window list1 : list) {
+          list1.dispose();
+      }
 	// @ Marco Winter
 	// We don't want to clean up twice!
 	/*for (int i = 0; i < ncomponents; ++i)
@@ -239,6 +231,7 @@ public class Window extends Container
    * @specnote Unlike Component.getToolkit, this implementation always 
    *           returns the value of Toolkit.getDefaultToolkit().
    */
+  @Override
   public Toolkit getToolkit()
   {
     return Toolkit.getDefaultToolkit ();    
@@ -253,7 +246,6 @@ public class Window extends Container
   public final String getWarningString()
   {
     boolean secure = true;
-    /* boolean secure = SecurityManager.checkTopLevelWindow(...) */
 
     if (!secure)
       {
@@ -268,16 +260,6 @@ public class Window extends Container
     return null;
   }
 
-  /**
-   * Returns the locale that this window is configured for.
-   *
-   * @return The locale this window is configured for.
-   */
-    //  public Locale getLocale ()
-    //  {
-    //    return locale == null ? Locale.getDefault () : locale;
-    //  }
-
   /*
   /** @since 1.2
   public InputContext getInputContext()
@@ -291,6 +273,7 @@ public class Window extends Container
    *
    * @param cursor The new cursor for this window.
    */
+  @Override
     public void setCursor(Cursor cursor)
     {
         super.setCursor(cursor);
@@ -339,6 +322,7 @@ public class Window extends Container
     //    else return super.getListeners(listenerType);
     //  }
 
+  @Override
     void dispatchEventImpl(AWTEvent e)
     {
 	// Make use of event id's in order to avoid multiple instanceof tests.
@@ -357,8 +341,9 @@ public class Window extends Container
    * <code>processWindowEvent()</code> is called to process the event,
    * otherwise the superclass version of this method is invoked.
    *
-   * @param event The event to process.
+   * @param evt The event to process.
    */
+  @Override
     protected void processEvent (AWTEvent evt)
     {
         if (evt instanceof WindowEvent)
@@ -373,7 +358,7 @@ public class Window extends Container
    * invoked if it is enabled via <code>enableEvents()</code> or if
    * a listener has been added.
    *
-   * @param event The event to process.
+   * @param evt The event to process.
    */
     protected void processWindowEvent (WindowEvent evt)
     {
@@ -437,6 +422,7 @@ public class Window extends Container
    * @return <code>true</code> if this window is visible, <code>false</code>
    * otherwise.
    */
+  @Override
   public boolean isShowing()
   {
     return super.isShowing();
@@ -465,17 +451,5 @@ public class Window extends Container
     // FIXME
   }
   */
-
-  /** 
-   * Get graphics configuration.  The implementation for Window will
-   * not ask any parent containers, since Window is a toplevel
-   * window and not actually embedded in the parent component.
-   */
-    //  public GraphicsConfiguration getGraphicsConfiguration()
-    //  {
-    //    if (graphicsConfiguration != null) return graphicsConfiguration;
-    //    if (peer != null) return peer.getGraphicsConfiguration();
-    //    return null;
-    //  }
 
 }

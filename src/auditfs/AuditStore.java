@@ -7,7 +7,7 @@ public class AuditStore {
     BlockIO bio;
     int capacity;
     int sectorSize;
-    int currentSector=0;
+    int currentSector = 0;
     MemoryManager memoryManager;
     Memory buf;
     int posInBuf;
@@ -27,7 +27,7 @@ public class AuditStore {
 	sectorSize = bio.getSectorSize();
 	memoryManager = (MemoryManager)naming.lookup("MemoryManager");
 	buf = memoryManager.alloc(sectorSize);
-	posInBuf=0;
+	posInBuf = 0;
 	if (append) {
 	    // find last entry
 	    for (int i = 1; i < capacity; i++) {
@@ -68,7 +68,7 @@ public class AuditStore {
     }
 
     public void dump() {
-	for (int i=0; i<capacity; i++) {
+	for (int i = 0; i < capacity; i++) {
 	    bio.readSectors(i, 1, buf, true);
 	    AuditRecord rec = new AuditRecord();
 	    int pos = 0;

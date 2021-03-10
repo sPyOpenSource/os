@@ -35,6 +35,7 @@ obligated to do so.  If you do not wish to do so, delete this
 exception statement from your version. */
 
 package java.awt;
+
 import java.awt.event.*;
 import java.awt.image.*;
 import java.io.PrintStream;
@@ -95,7 +96,7 @@ public abstract class Component implements ImageObserver, MenuContainer,
      in debug dumps. We clone the String in order to avoid a conflict in 
      the unlikely event that some other package uses exactly the same string
      as a lock object. */
-  static Object treeLock = new String("AWT_TREE_LOCK");
+  static Object treeLock = "AWT_TREE_LOCK";
 
   /* Serialized fields from the serialization spec. */
   // FIXME: Default values?

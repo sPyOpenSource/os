@@ -3,7 +3,7 @@ package buffercache;
 import jx.zero.Debug;
 import jx.zero.*;
 
-class BufferHead extends jx.fs.buffercache.BufferHead {
+public class BufferHead extends jx.fs.buffercache.BufferHead {
     static int sequence = 1;
     int id;
 
@@ -25,7 +25,7 @@ class BufferHead extends jx.fs.buffercache.BufferHead {
     int     b_size;
 
 
-    BufferHead(MemoryManager memMgr, int block, int size) {
+    public BufferHead(MemoryManager memMgr, int block, int size) {
 	super(memMgr.allocAligned(size, 4));
 	this.b_block  = block;
 	this.b_size   = size;
@@ -37,6 +37,7 @@ class BufferHead extends jx.fs.buffercache.BufferHead {
 
     @Override
     final public int getBlock() { return b_block; }
+    
     @Override
     final public int getSize() { return b_size; }
 
@@ -44,10 +45,10 @@ class BufferHead extends jx.fs.buffercache.BufferHead {
      * Markiert den BufferHead als "dirty", d.h. sein Inhalt hat sich ge&auml;ndert und stimmt nicht mehr mit seinem Abbild
      * auf der Festplatte &uuml;berein (dem Inhalt des entsprechenden Blocks); er muss noch geschrieben werden.
      *
-     * @param value falls <code>true</code>, muss der Inhalt noch geschrieben werden
      */
     @Override
     final public void markDirty()    { dirty = true; }
+    
     @Override
     final public void markClean()    { dirty = false; }
 

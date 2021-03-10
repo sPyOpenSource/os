@@ -9,7 +9,6 @@ import jx.bio.BlockIO;
 import jx.fs.InodeIOException;
 import jx.fs.InodeNotFoundException;
 import jx.fs.FSException;
-
 import jx.fs.buffercache.*;
 
 class TooSmallException extends Exception { }

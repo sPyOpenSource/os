@@ -55,9 +55,7 @@ public interface AppletStub
     * the &lt;APPLET&gt; tag for this applet.
     *
     * @param name The parameter name.
-    *
-    * @param value The parameter value, or <code>null</code> if the parameter
-    * does not exist.
+     * @return 
     */
   String getParameter(String name);
 
@@ -85,4 +83,3 @@ public interface AppletStub
   void appletResize(int width, int height);
 
 } // interface AppletStub
-

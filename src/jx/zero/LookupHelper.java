@@ -1,7 +1,5 @@
 package jx.zero;
 
-import jx.InitNaming;
-
 public class LookupHelper {
     private static final CPUManager cpuManager;
     public static boolean verbose = true;
@@ -18,7 +16,7 @@ public class LookupHelper {
 	Portal p = null;
 	if (verbose) Debug.out.println("Lookup " + name);
 	for(;;) {
-	    p = InitNaming.lookup(name);
+	    p = jx.InitialNaming.lookup(name);
 	    if (p != null) break;
             for(int i = 0; i < 20; i++) cpuManager.yield();
 	}

@@ -58,7 +58,7 @@ public class IllegalStateException extends RuntimeException
       super(s);
     }
 
-    IllegalStateException(String string, Throwable aThis) {
+    public IllegalStateException(String string, Throwable aThis) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

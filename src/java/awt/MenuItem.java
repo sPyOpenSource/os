@@ -39,10 +39,8 @@ exception statement from your version. */
 package java.awt;
 
 import java.awt.peer.MenuItemPeer;
-import java.awt.peer.MenuComponentPeer;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.EventListener;
 
 /**
   * This class represents an item in a menu.

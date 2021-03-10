@@ -25,7 +25,7 @@ public class ReadOnlyRegularFileImpl extends FSObjectImpl implements jx.fs.ReadO
 	if (debug) Debug.message(" F: read "+pos+" "+len); 
 	try {
 	    return inode.read(pos,mem,off,len);
-	} catch (Exception ex) {
+	} catch (InodeIOException | NoFileInodeException | NotExistException | PermissionException ex) {
 	    throw new Error(ex.toString());
 	}
     }
@@ -35,7 +35,7 @@ public class ReadOnlyRegularFileImpl extends FSObjectImpl implements jx.fs.ReadO
 	if (debug) Debug.message(" F: length");
 	try {
 	    return inode.getLength();
-	} catch (Exception ex) {
+	} catch (NotExistException ex) {
 	    if (debug) Debug.message("Exception in RegularFileImpl.length");
 	    return -1;
 	}

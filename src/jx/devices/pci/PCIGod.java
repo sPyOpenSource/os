@@ -4,7 +4,6 @@ import jx.zero.Naming;
 import jx.zero.Ports;
 import jx.zero.Debug;
 import java.util.Vector;
-import jx.InitNaming;
 import jx.zero.Service;
 import jx.zero.InitialNaming;
 
@@ -37,7 +36,7 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
         final PCIAccess depHandle = instance;
       
         // register as DEP
-        InitNaming.registerPortal(depHandle, "PCIAccess");
+        jx.InitialNaming.registerPortal(depHandle, "PCIAccess");
         Debug.out.println("PCIAccess registered");
     }
    
@@ -45,9 +44,11 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
       this.naming = naming;
       //Debug.assert(naming != null, "naming must be valid");
       
-      ports = (Ports)naming.lookup("Ports");
+      ports = (Ports)jx.InitialNaming.lookup("Ports");
       //Debug.assert(ports != null, "'Ports' portal not found");
-      
+      if (ports == null){
+          return;
+      }
       if( !probePCI() )
 	throw new Error("no PCI Bus detected");
       

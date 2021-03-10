@@ -39,8 +39,6 @@ exception statement from your version. */
 package java.awt;
 
 import java.awt.peer.ScrollbarPeer;
-import java.awt.peer.ComponentPeer;
-
 import java.awt.event.AdjustmentListener;
 import java.awt.event.AdjustmentEvent;
 

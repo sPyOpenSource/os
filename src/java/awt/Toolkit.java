@@ -64,7 +64,7 @@ public abstract class Toolkit
  */
 
 // The default toolkit name.
-private static String default_toolkit_name = 
+private static final String default_toolkit_name = 
   "gnu.java.awt.peer.gtk.GtkToolkit";
 
 // The toolkit in use.  Once we load it, we don't ever change it
@@ -72,11 +72,11 @@ private static String default_toolkit_name =
 private static Toolkit toolkit;
 
 // The toolkit properties
-private static Properties props = new Properties();
+private static final Properties props = new Properties();
 
     //private PropertyChangeSupport changeSupport = new PropertyChangeSupport(this);
 
-private Properties desktopProperties = new Properties();
+private final Properties desktopProperties = new Properties();
 
 /*************************************************************************/
 
@@ -116,9 +116,7 @@ getDefaultToolkit()
 
       toolkit = (Toolkit)obj;
       return(toolkit);
-    }
-  catch(Exception e)
-    {
+    } catch(ClassNotFoundException | IllegalAccessException | InstantiationException e) {
       throw new AWTError("Cannot load AWT toolkit: " + e.getMessage());
     }
 }

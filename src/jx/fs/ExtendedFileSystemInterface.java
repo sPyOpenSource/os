@@ -6,8 +6,8 @@ import jx.zero.LookupHelper;
 
 final public class ExtendedFileSystemInterface {
 
-    private FilesystemInterface ifs;
-    private FSObject cwd;
+    private final FilesystemInterface ifs;
+    private final FSObject cwd;
     private char separator;
 
     public ExtendedFileSystemInterface(FilesystemInterface fs) throws Exception {
@@ -77,15 +77,15 @@ final public class ExtendedFileSystemInterface {
 	}
 	
 	while (n > 0) {
-	    //try {
+	    try {
 		name  = rpath.substring(0, n);
 		rpath = rpath.substring(n + 1);
 		if ((cFSObj=(ReadOnlyDirectory)cFSObj.openRO(name)) == null) return null;
 		n = rpath.indexOf(separator);
-	    /*} catch (Exception ex) {
-		Debug.message("file not fount ("+path+")");
+	    } catch (Exception ex) {
+		//Debug.message("file not fount ("+path+")");
 		return null;
-	    }*/
+	    }
 	}
 
 	return cFSObj;

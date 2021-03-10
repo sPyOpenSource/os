@@ -38,7 +38,7 @@ exception statement from your version. */
 
 package java.io;
 
-import jx.InitNaming;
+import jx.InitialNaming;
 import jx.fs.FS;
 import jx.fs.Inode;
 import jx.fs.InodeIOException;
@@ -560,7 +560,7 @@ public class BufferedReader extends Reader
     @Override
     public int read(char[] buf, int offset, int count) throws IOException {
         try {
-            MemoryManager memoryManager = (MemoryManager)InitNaming.lookup("MemoryManager");
+            MemoryManager memoryManager = (MemoryManager)InitialNaming.lookup("MemoryManager");
             Memory buffer1 =  memoryManager.alloc(4096);
             FS fs    = (FS) LookupHelper.waitUntilPortalAvailable(null, "FS");
 	

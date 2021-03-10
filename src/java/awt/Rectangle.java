@@ -37,9 +37,6 @@ exception statement from your version. */
 
 package java.awt;
 
-//import java.awt.geom.*;
-import java.io.Serializable;
-
 /* Status:  Mostly complete. Some of the Java2D stuff is commented out. */
 
 /**
@@ -51,9 +48,8 @@ import java.io.Serializable;
  * @author Warren Levy  <warrenl@cygnus.com>
  * @author Aaron M. Renn (arenn@urbanophile.com)
  */
-public class Rectangle //extends Rectangle2D
+public class Rectangle
     implements Shape
-    //implements Cloneable, Shape, Serializable
 {
   /**
   * The X coordinate of the top-left corner of the rectangle.
@@ -91,7 +87,7 @@ public class Rectangle //extends Rectangle2D
    * Initializes a new instance of <code>Rectangle</code> from the
    * coordinates of the specified rectangle.
    *
-   * @param rect The rectangle to copy from.
+   * @param r The rectangle to copy from.
    */
   public Rectangle(Rectangle r)
   {
@@ -139,8 +135,8 @@ public class Rectangle //extends Rectangle2D
    * corner represented by the specified point and the width and height
    * represented by the specified dimension.
    *
-   * @param point The upper left corner of the rectangle.
-   * @param dim The width and height of the rectangle.
+   * @param p The upper left corner of the rectangle.
+   * @param d The width and height of the rectangle.
    */
   public Rectangle(Point p, Dimension d)
   {
@@ -154,7 +150,7 @@ public class Rectangle //extends Rectangle2D
    * Initializes a new instance of <code>Rectangle</code> with a top left
    * corner at the specified point and a width and height of zero.
    *
-   * @param poin The upper left corner of the rectangle.
+   * @param p The upper left corner of the rectangle.
    */
   public Rectangle(Point p)
   {
@@ -169,7 +165,7 @@ public class Rectangle //extends Rectangle2D
    * upper left corner at the origin (0,0) and a width and height represented
    * by the specified dimension.
    *
-   * @param dim The width and height of the rectangle.
+   * @param d The width and height of the rectangle.
    */
   public Rectangle(Dimension d)
   {
@@ -185,18 +181,18 @@ public class Rectangle //extends Rectangle2D
    *
    * @return This rectangle.
    */
+  @Override
     public Rectangle getBounds ()
     {
 	return new Rectangle(x, y, width, height);
-	//return (Rectangle) this.clone();
     }
 
   /**
    * Modifies this rectangle so that it represents the smallest rectangle 
    * that contains both the existing rectangle and the specified point.
    *
-   * @param x The X coordinate of the point to add to this rectangle.
-   * @param y The Y coordinate of the point to add to this rectangle.
+   * @param newx The X coordinate of the point to add to this rectangle.
+   * @param newy The Y coordinate of the point to add to this rectangle.
    */
   public void add(int newx, int newy)
   {
@@ -212,7 +208,7 @@ public class Rectangle //extends Rectangle2D
    * Modifies this rectangle so that it represents the smallest rectangle 
    * that contains both the existing rectangle and the specified point.
    *
-   * @param point The point to add to this rectangle.
+   * @param pt The point to add to this rectangle.
    */
   public void add(Point pt)
   {
@@ -223,7 +219,7 @@ public class Rectangle //extends Rectangle2D
    * Modifies this rectangle so that it represents the smallest rectangle 
    * that contains both the existing rectangle and the specified rectangle.
    *
-   * @param rect The rectangle to add to this rectangle.
+   * @param r The rectangle to add to this rectangle.
    */
   public void add(Rectangle r)
   {
@@ -261,7 +257,7 @@ public class Rectangle //extends Rectangle2D
   /**
    * Tests whether or not the specified point is inside this rectangle.
    *
-   * @param point The point to test.
+   * @param p The point to test.
    *
    * @return <code>true</code> if the point is inside the rectangle,
    * <code>false</code> otherwise.
@@ -292,6 +288,7 @@ public class Rectangle //extends Rectangle2D
    * @return <code>true</code> if the specified object is equal to this one,
    * <code>false</code> otherwise.
    */
+  @Override
   public boolean equals(Object obj)
   {
     if (obj instanceof Rectangle)
@@ -331,21 +328,6 @@ public class Rectangle //extends Rectangle2D
     return new Dimension(width, height);
   }
 
-    /*  public double getWidth()
-	{
-	return (double) this.width;
-	}
-	
-	public double getX()
-	{
-	return (double) x;
-	}
-	
-	public double getY()
-	{
-	return (double) y;
-	}*/
-
   /**
    * Expands the rectangle by the specified amount.  The horizontal
    * and vertical expansion values are applied both to the X,Y coordinate
@@ -382,7 +364,7 @@ public class Rectangle //extends Rectangle2D
    * Determines the rectange which is formed by the intersection of this
    * rectangle with the specified rectangle.
    *
-   * @param rect The rectange to calculate the intersection with.
+   * @param r The rectange to calculate the intersection with.
    *
    * @return The rectangle bounding the intersection.
    *
@@ -406,7 +388,7 @@ public class Rectangle //extends Rectangle2D
   /**
    * Tests whether or not the specified rectangle intersects this rectangle.
    *
-   * @param rect The rectangle to test against.
+   * @param r The rectangle to test against.
    *
    * @return <code>true</code> if the specified rectangle intersects this
    * one, <code>false</code> otherwise.
@@ -450,12 +432,6 @@ public class Rectangle //extends Rectangle2D
   {
     setLocation(x, y);
   }
-
-    /*  public int outcode(double x, double y)
-	{
-	// FIXME
-	return 0;
-	}*/
 
   /**
    * Updates this rectangle to have the specified dimensions.
@@ -507,7 +483,7 @@ public class Rectangle //extends Rectangle2D
    * Updates this rectangle to match the dimensions of the specified 
    * rectangle.
    *
-   * @param rect The rectangle to update from.
+   * @param r The rectangle to update from.
    */
   public void setBounds(Rectangle r)
   {
@@ -536,7 +512,7 @@ public class Rectangle //extends Rectangle2D
    * corner to the specified point.
    * // FIXME: Is this true?
    *
-   * @param point The point to move the rectange to.
+   * @param p The point to move the rectange to.
    */
   public void setLocation(Point p)
   {
@@ -544,18 +520,10 @@ public class Rectangle //extends Rectangle2D
     this.y = p.y;
   }
 
-    /*  public void setRect(double x, double y, double width, double height)
-	{
-	this.x = (int) x;
-	this.y = (int) y;
-	this.width = (int) width;
-	this.height = (int) height;
-	}*/
-
   /**
    * Sets the size of this rectangle based on the specified dimensions.
    *
-   * @param dim The new dimensions of the rectangle.
+   * @param d The new dimensions of the rectangle.
    */
   public void setSize(Dimension d)
   {
@@ -585,7 +553,7 @@ public class Rectangle //extends Rectangle2D
    * Returns the smallest rectangle that contains both this rectangle
    * and the specified rectangle.
    *
-   * @param rect The rectangle to compute the union with.
+   * @param r The rectangle to compute the union with.
    *
    * @return The smallest rectangle containing both rectangles.
    */
@@ -600,35 +568,12 @@ public class Rectangle //extends Rectangle2D
     return new Rectangle(newx, newy, neww, newh);
   }
 
-  // Commented out until we have Rectangle2D
-    /*  public Rectangle2D createIntersection(Rectangle2D r)
-	{
-	// FIXME: maybe we should consider returning a Rectangle or
-	// Rectangle2D.Float depending on type of R.
-	Rectangle2D.Double res = new Rectangle2D.Double ();
-	intersect (this, r, res);
-	return res;
-	}*/
-
-    /*  public Rectangle2D createUnion(Rectangle2D r)
-	{
-	// FIXME: maybe we should consider returning a Rectangle or
-	// Rectangle2D.Float depending on type of R.
-	Rectangle2D.Double res = new Rectangle2D.Double ();
-	union (this, r, res);
-	return res;
-	}*/
-
-    /*  public Rectangle2D getBounds2D()
-	{
-	return new Rectangle (x, y, width, height);
-	}*/
-
   /**
    * Returns a string representation of this rectangle.
    *
    * @return A string representation of this rectangle.
    */
+  @Override
   public String toString()
   {
     return getClass().getName() + "[x=" + x + ",y=" + y + ",width=" + width + 
@@ -640,6 +585,7 @@ public class Rectangle //extends Rectangle2D
    *
    * @return A hash value for this object.
    */
+  @Override
   public int hashCode()
   {
     return x * y * width * height * 37;

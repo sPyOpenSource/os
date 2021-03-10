@@ -30,7 +30,7 @@ public class AVLBaum extends SuchBaum {
 
     public String toString() {           // fuer Ausgabe: Inhalt(Balance)
 
-        return new String(inhalt + "(" + balance + ")");
+        return inhalt + "(" + balance + ")";
     }
 
     public boolean insert(Comparable x) throws Exception {// fuegt x in den AVLBaum ein: true,
@@ -58,44 +58,54 @@ public class AVLBaum extends SuchBaum {
             eingefuegt = ((AVLBaum) left()).insertAVL(x, s);  // linker Teilbaum
 
             if (s.unbal) {                // Linker Teilbaum wurde groesser
-                if (balance == 1) {      // Alte Unausgeglichenheit ausgegl.
-                    balance = 0;         // => neue Balance = 0
-                    s.unbal = false;     // Unausgeglichenheit ausgeglichen
-                    return true; 
-                } else if (balance == 0) { // Hier noch kein Rotieren noetig
-                    balance = -1;        // Balance wird angeglichen
-                    return true; 
-                } else {                   // Rotieren notwendig
-
-                    if (((AVLBaum) links).balance == -1)     
-                        rotateLL();
-                    else 
-                        rotateLR();     
-                    s.unbal = false;     // Unausgeglichenheit ausgeglichen
-                    return true;         // => Rueckgabewert
-                }                        // angleichen
+                switch (balance) {
+                    case 1:
+                        // Alte Unausgeglichenheit ausgegl.
+                        balance = 0;         // => neue Balance = 0
+                        s.unbal = false;     // Unausgeglichenheit ausgeglichen
+                        return true;
+                    case 0:
+                        // Hier noch kein Rotieren noetig
+                        balance = -1;        // Balance wird angeglichen
+                        return true;
+                    default:
+                        // Rotieren notwendig
+                        
+                        if (((AVLBaum) links).balance == -1)
+                            rotateLL();
+                        else
+                            rotateLR();
+                        s.unbal = false;     // Unausgeglichenheit ausgeglichen
+                        return true;         // => Rueckgabewert
+// angleichen
+                }
             }
 
         } else {                         // Element ist groesser =>
             eingefuegt = ((AVLBaum) right()).insertAVL(x, s);// rechter Teilbaum
 
             if (s.unbal) {                // Rechter Teilbaum wurde groesser
-                if (balance == -1) {     // Alte Unausgeglichenheit ausgegl.
-                    balance = 0;         // => neue Balance = 0
-                    s.unbal = false;     // Unausgeglichenheit ausgeglichen
-                    return true;
-                } else if (balance == 0) { // Hier noch kein Rotieren noetig
-                    balance = 1;         // Balance wird angeglichen
-                    return true;
-                } else {                   // Rotieren notwendig
-
-                    if (((AVLBaum) rechts).balance == 1)     
-                        rotateRR();
-                    else            
-                        rotateRL();
-                    s.unbal = false;     // Unausgeglichenheit ausgeglichen
-                    return true;         // => Rueckgabewert
-                }                        // angleichen
+                switch (balance) {
+                    case -1:
+                        // Alte Unausgeglichenheit ausgegl.
+                        balance = 0;         // => neue Balance = 0
+                        s.unbal = false;     // Unausgeglichenheit ausgeglichen
+                        return true;
+                    case 0:
+                        // Hier noch kein Rotieren noetig
+                        balance = 1;         // Balance wird angeglichen
+                        return true;
+                    default:
+                        // Rotieren notwendig
+                        
+                        if (((AVLBaum) rechts).balance == 1)
+                            rotateRR();
+                        else
+                            rotateRL();
+                        s.unbal = false;     // Unausgeglichenheit ausgeglichen
+                        return true;         // => Rueckgabewert
+// angleichen
+                }
             }
         }
         return eingefuegt;               // Keine Rotation => Ergebnis zurueck
@@ -205,6 +215,7 @@ public class AVLBaum extends SuchBaum {
         balance = 0;                     // Wurzel balanciert
     }
 
+    @Override
     public boolean delete(Comparable x) throws Exception {// loescht x im AVLBaum: true,
         // wenn erfolgreich, sonst false.
         // Kapselt die Funktion deleteAVL
@@ -266,44 +277,52 @@ public class AVLBaum extends SuchBaum {
     }
 
     private void balance1(Status s) {    // Unbalance, weil linker Ast kuerzer
-        if (balance == -1) 
-            balance = 0;                 // Balance geaendert, nicht ausgegl.
-        else if (balance == 0) {
-            balance = 1;                 // Ausgeglichen
-            s.unbal = false;
-        } else {                         // Ausgleichen (Rotation) notwendig
-            int b = ((AVLBaum) rechts).balance; //Merke Balance des rechten Sohns
-
-            if (b >= 0) {
-                rotateRR();
-                if (b == 0) {            // Gleiche neue Balancen an
-                    balance = -1;
-                    ((AVLBaum) links).balance = 1;
-                    s.unbal = false;
-                }
-            } else 
-                rotateRL();
+        switch (balance) {
+            case -1:
+                balance = 0;                 // Balance geaendert, nicht ausgegl.
+                break;
+            case 0:
+                balance = 1;                 // Ausgeglichen
+                s.unbal = false;
+                break;
+            default:
+                // Ausgleichen (Rotation) notwendig
+                int b = ((AVLBaum) rechts).balance; //Merke Balance des rechten Sohns
+                if (b >= 0) {
+                    rotateRR();
+                    if (b == 0) {            // Gleiche neue Balancen an
+                        balance = -1;
+                        ((AVLBaum) links).balance = 1;
+                        s.unbal = false;
+                    }
+                } else
+                    rotateRL();
+                break;
         }
     }
 
     private void balance2(Status s) {    // Unbalance, weil recht. Ast kuerzer
-        if (balance == 1) 
-            balance = 0;                 // Balance geaendert, nicht ausgegl.
-        else if (balance == 0) {
-            balance = -1;                // Ausgeglichen
-            s.unbal = false;
-        } else {                         // Ausgleichen (Rotation) notwendig
-            int b = ((AVLBaum) links).balance; // Merke Balance des linken Sohns
-
-            if (b <= 0) {
-                rotateLL();
-                if (b == 0) {            // Gleiche neue Balancen an
-                    balance = 1;
-                    ((AVLBaum) rechts).balance = -1;
-                    s.unbal = false;
-                }
-            } else
-                rotateLR();
+        switch (balance) {
+            case 1:
+                balance = 0;                 // Balance geaendert, nicht ausgegl.
+                break;
+            case 0:
+                balance = -1;                // Ausgeglichen
+                s.unbal = false;
+                break;
+            default:
+                // Ausgleichen (Rotation) notwendig
+                int b = ((AVLBaum) links).balance; // Merke Balance des linken Sohns
+                if (b <= 0) {
+                    rotateLL();
+                    if (b == 0) {            // Gleiche neue Balancen an
+                        balance = 1;
+                        ((AVLBaum) rechts).balance = -1;
+                        s.unbal = false;
+                    }
+                } else
+                    rotateLR();
+                break;
         }
     }
 }

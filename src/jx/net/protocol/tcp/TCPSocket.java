@@ -2,7 +2,6 @@ package jx.net.protocol.tcp;
 
 import jx.net.*;
 import jx.zero.*;
-import jx.net.protocol.ip.*;
 import jx.buffer.multithread.MultiThreadList;
 import jx.timer.*;
 
@@ -117,7 +116,7 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 //	retransmit_CAS = cpuManager.getCAS("jx/net/protocol/tcp/TCPSocket", "do_retransmit");
 //	retransmit_CAS.casBoolean(this, true, false);
 
-	timerManager = (TimerManager) jx.InitNaming.lookup("TimerManager");
+	timerManager = (TimerManager) jx.InitialNaming.lookup("TimerManager");
 	localWindowSize = 0xFFFF; //hack
     }
 
@@ -125,7 +124,7 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
     private int getInitialSequenceNumber() {
 	if (timerManager == null) {
             Debug.out.println("Timerman is null");
-            timerManager = (TimerManager)jx.InitNaming.lookup("TimerManager");
+            timerManager = (TimerManager)jx.InitialNaming.lookup("TimerManager");
         }
 	return timerManager.getTimeInMillis();
     }

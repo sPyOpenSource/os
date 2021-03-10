@@ -48,36 +48,11 @@ public class Applet extends java.awt.Panel implements java.io.Serializable
   public Applet() {}
 
   /**
-    * Returns the URL of the document this applet is embedded in.
-    *
-    * @return The URL of the document this applet is embedded in.
-    */
-    /*  public URL getDocumentBase()
-  {
-    return (stub.getDocumentBase ());
-  }
-    */
-
-  /**
-    * Returns the URL of the code base for this applet.
-    *
-    * @return The URL of the code base for this applet.
-    */
-    /*
-  public URL getCodeBase()
-  {
-    return (stub.getCodeBase ());
-  }
-    */
-
-  /**
     * Returns the value of the specified parameter that was specified in 
     * the &lt;APPLET&gt; tag for this applet.
     *
     * @param name The parameter name.
-    *
-    * @param value The parameter value, or <code>null</code> if the parameter
-    * does not exist.
+     * @return 
     */
   public String getParameter(String name)
   {
@@ -111,6 +86,7 @@ public class Applet extends java.awt.Panel implements java.io.Serializable
     * @param width The new width in pixels.
     * @param height The new height in pixels.
     */
+  @Override
   public void resize(int width, int height)
   {
     stub.appletResize (width, height);
@@ -122,116 +98,19 @@ public class Applet extends java.awt.Panel implements java.io.Serializable
     * @param dim The <code>Dimension</code> object with the requested
     * width and height.
     */
+  @Override
   public void resize(Dimension dim)
   {
     resize (dim.width, dim.height);
   }
 
   /**
-    * Returns an audio clip from the specified URL.
-    *
-    * @param url The URL of the audio clip.
-    *
-    * @return The retrieved audio clip. 
-    */
-    /*
-  public AudioClip getAudioClip(URL url)
-  {
-    return (getAppletContext ().getAudioClip (url));
-  }
-    */
-  /**
-    * Returns an audio clip from the specified URL and name
-    *
-    * @param url The base URL of the audio clip.
-    * @param name The name of the clip relative to the URL.
-    *
-    * @return The retrieved audio clip. 
-    */
-    /*
-  public AudioClip getAudioClip(URL url, String name)
-  {
-    try
-      {
-        return (getAppletContext ().getAudioClip (new URL (url.toExternalForm()
-                                                	   + name)));
-      }
-    catch(Exception e)
-      {
-        return (getAudioClip (url));
-      }
-  }
-    */
-
-  /**
-    * Loads and plays the audio clip pointed to by the specified URL.
-    *
-    * @param The URL of the audio clip.
-    */
-    /*
-  public void play (URL url)
-  {
-    getAudioClip (url).play ();
-  }
-    */
-  /**
-    * Loads and plays the audio clip pointed to by the specified URL.
-    *
-    * @param The base URL of the audio clip.
-    * @param name The name of the audio clip relative to the URL.
-    */
-    /*
-  public void play (URL url, String name)
-  {
-    getAudioClip (url, name).play ();
-  }
-    */
-  /**
-    * Returns an image from the specified URL.  Note that the image is not
-    * actually retrieved until the applet attempts to display it, so this
-    * method returns immediately.
-    *
-    * @param url The URL of the image.
-    *
-    * @return The retrieved image.
-    */
-    /*
-  public Image getImage(URL url)
-  {
-    return (getAppletContext ().getImage (url));
-  }
-    */
-
-  /**
-    * Returns an image from the specified URL.  Note that the image is not
-    * actually retrieved until the applet attempts to display it, so this
-    * method returns immediately.
-    *
-    * @param url The base URL of the image.
-    * @param name The name of the image relative to the URL.
-    *
-    * @return The retrieved image.
-    */
-    /*
-  public Image getImage(URL url, String name)
-  {
-    try
-      {
-        return (getAppletContext ().getImage (new URL (url.toExternalForm()
-                                        	       + name)));
-      }
-    catch(Exception e)
-      {
-        return (getImage (url));
-      }
-  }
-    */
-  /**
     * Returns the locale for this applet, if it has been set.  If no applet
     * specific locale has been set, the default locale is returned.
     *
     * @return The locale for this applet.
     */
+  @Override
   public Locale getLocale()
   {
     return super.getLocale();
@@ -302,4 +181,3 @@ public class Applet extends java.awt.Panel implements java.io.Serializable
   }
 
 } // class Applet
-

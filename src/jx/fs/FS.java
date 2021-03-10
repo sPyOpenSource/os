@@ -247,9 +247,7 @@ public interface FS extends Portal {
      */
     public int write(String path, Memory m, int off, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException;
 
-//     public Inode getInode(int deviceIdentifier, int fileIdentifier) throws FSException, NotExistException, PermissionException;
-
-    public Inode getInode(Integer deviceIdentifier, int fileIdentifier) throws FSException, NotExistException, PermissionException;
+    public Inode getInode(int deviceIdentifier, int fileIdentifier) throws FSException, NotExistException, PermissionException;
     
     default boolean isPath(String name) {
 	return (name.lastIndexOf('/') != -1);

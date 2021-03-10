@@ -13,12 +13,12 @@ import jx.fs.buffercache.*;
  */
 class Bitmap {
     private Memory bitmap;
-    private int blocksize;
+    private final int blocksize;
     private boolean bitmap_loaded;
     public  int block_nr;
     private BufferHead bh; // public
     private static final int nibblemap[] = new int[] {4, 3, 3, 2, 3, 2, 2, 1, 3, 2, 2, 1, 2, 1, 1, 0};
-    private BufferCache buffercache;
+    private final BufferCache buffercache;
 
     public static final boolean traceBitmap = false;
 

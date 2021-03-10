@@ -2,7 +2,7 @@ package javafs;
 
 class InodeHashKey {
     public  int i_ino;
-    private int hashkey;
+    private final int hashkey;
 
     public InodeHashKey(int i_ino) {
 	this.i_ino = i_ino;
@@ -15,8 +15,6 @@ class InodeHashKey {
 
     public boolean equals(Object obj) {
 	InodeHashKey ihk = (InodeHashKey)obj;
-	if (i_ino == ihk.i_ino)
-            return true;
-        return false;
+        return i_ino == ihk.i_ino;
     }
 }

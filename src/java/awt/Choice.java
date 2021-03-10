@@ -39,7 +39,6 @@ exception statement from your version. */
 package java.awt;
 
 import java.awt.peer.ChoicePeer;
-import java.awt.peer.ComponentPeer;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.io.Serializable;
@@ -234,7 +233,6 @@ remove(String item)
   *
   * @param index The index of the item to remove.
   *
-  * @exception ArrayIndexOutOfBoundException If the index is not valid.
   */
 public synchronized void
 remove(int index)

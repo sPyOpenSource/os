@@ -11,9 +11,9 @@ import jx.fs.NotExistException;
  * Cache for inodes.
  */
 public class InodeCache {
-    private Vector    inode_in_use;
-    private Vector    inode_dirty;
-    private Hashtable inode_hashtable;
+    private final Vector    inode_in_use;
+    private final Vector    inode_dirty;
+    private final Hashtable inode_hashtable;
     private final int max_inodes = 16384;
     private int nr_inodes = 0;
     private static final boolean trace = false;
