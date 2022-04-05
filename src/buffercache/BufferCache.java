@@ -200,9 +200,9 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
      
      ****** Translated by George *****
      Set bufferhead free. Tell the Cache that the Bufferhead won't be used and can be inserted to LRU-List. 
-     if it is marked as "dirty", The time is set at the earliest time when it can be written (in order to enable other access
-     on Puffer without interrupting slow hard driver access) The time spane is 30sec. If the access counter of Bufferhead 
-     is null, he will be attached at the end of the LRU-List, otherwise on the beginning.
+     If it is marked as "dirty", The time is set at the earliest time when it can be written (in order to enable other access
+     on Puffer without interrupting the slow hard driver access) The time span is 30 seconds. If the access counter of Bufferhead 
+     is null, then he will be attached at the end of the LRU-List, otherwise on the beginning.
      
      */
     @Override
@@ -252,9 +252,9 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
      * @param bh0 der <code>BufferHead</code>, der freigegeben ("vergessen") werden soll
      
       ****** Translated by George *****
-      hang the Bufferhead to the end of the LRU-List.
+      Hang the Bufferhead to the end of the LRU-List.
       
-      the Bufferhead, that should to be set free. 
+      @param bh0 the Bufferhead, that should to be set free. 
      */
     @Override
     final public  void bforget(jx.fs.buffercache.BufferHead bh0) {
@@ -281,8 +281,8 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
      Read the block of hard disk. The Bufferhead will be required with <code>getblk</code> so  
      the content of the block can be read 
      
-     block the number of the block that should be read
-     return Bufferhead with the content of the specified block
+     @param block the number of the block that should be read
+     @return Bufferhead with the content of the specified block
      
      */
     @Override
@@ -329,7 +329,6 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
 	Debug.out.println("buffercache.BufferCache: size now: " + (nr_buffers * bufferSize) + " bytes");
 	//buffer_wait.wakeUp();
 	//buffer_wait.notify();
-
     }
 
     /**
@@ -337,8 +336,7 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
      * und als "dirty" markierten <code>BufferHead</code>s wird ermittelt.
      
      ****** Translated by George *****
-     
-     print one statistic of BufferHead in the Cache and the LRU-List. The number of blocked and as "dirty" marked BufferHead 
+     Print one statistic of BufferHead in the Cache and the LRU-List. The number of blocked and as "dirty" marked BufferHead 
      can be determined. 
      
      */
@@ -387,8 +385,7 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
      * Schreibt die <code>BufferHead</code>s des angegebenen Dateisystems (Partition), die als "dirty" markiert sind, auf
      * die angegebene Partition.
      *
-     ****** Translated by George ***** 
-     
+     ****** Translated by George *****
      Write the Bufferhead of specified file system, that was marked as "dirty" on the partition
      */
     @Override
@@ -450,7 +447,7 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
      * sind.
      
      ****** Translated by George ***** 
-     All BufferHead, that was marked as dirty (means that still need to be written) will rewritten with ewBlock 
+     All BufferHead, that was marked as dirty (means that still need to be written) will rewritten with rwBlock 
      to the hard disk - if they are neither blocked nor too old.
      */
     @Override
