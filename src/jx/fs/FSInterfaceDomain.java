@@ -58,9 +58,9 @@ public class FSInterfaceDomain {
 	    Debug.out.println("Create FileSystem on BlockIO");
 	    Debug.out.println("Capacity: " + bio.getCapacity());
 
-	    final javafs.FileSystem jfs = new javafs.FileSystem();
+	    final jx.fs.javafs.FileSystem jfs = new jx.fs.javafs.FileSystem();
 	    Clock clock = new MyDummyClock();
-	    jfs.init(bio, new buffercache.BufferCache(bio, clock, 800, 1000, 100, EXT2FS_BLOCKSIZE), clock);	    	    
+	    jfs.init(bio, new jx.bio.buffercache.BufferCache(bio, clock, 800, 1000, 100, EXT2FS_BLOCKSIZE), clock);	    	    
 	    jfs.build("TestFS", 1024);
 
 	    final FilesystemImpl ifs = new FilesystemImpl(jfs);

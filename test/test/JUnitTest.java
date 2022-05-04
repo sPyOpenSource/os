@@ -16,8 +16,8 @@ import org.junit.Test;
 import org.junit.Before;
 import static junit.framework.TestCase.assertEquals;
 
-import buffercache.BufferHashtable;
-import buffercache.BufferHead;
+import jx.bio.buffercache.BufferHashtable;
+import jx.bio.buffercache.BufferHead;
 
 /**
  *
@@ -48,11 +48,11 @@ public class JUnitTest {
         
 	// fill
 	BufferHead bh0, bh1, bh2;
-	collect.put(bh0 = new BufferHead(memMgr, 0,1024));
-	collect.put(bh1 = new BufferHead(memMgr,1,1024));
-	collect.put(bh2 = new BufferHead(memMgr,2,1024));
+	collect.put(bh0 = new BufferHead(memMgr, 0, 1024));
+	collect.put(bh1 = new BufferHead(memMgr, 1, 1024));
+	collect.put(bh2 = new BufferHead(memMgr, 2, 1024));
 	for(int i = 3; i < 1000; i++) {
-	    collect.put(new BufferHead(memMgr,i,1024));
+	    collect.put(new BufferHead(memMgr, i, 1024));
 	}
 	BufferHead c1;
 	collect.put(new BufferHead(memMgr, 3 + 4096, 1024)); // collision

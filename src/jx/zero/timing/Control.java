@@ -39,11 +39,11 @@ public class Control {
 	    
 	    p.startCalibration();
 	    
-	    for (int i=0;i<cal_rounds;i++) {
+	    for (int i = 0; i < cal_rounds; i++) {
 		timing_adjust_boiled();
 	    }
 	    
-	    for (int i=0;i<cal_rounds;i++) {
+	    for (int i = 0; i < cal_rounds; i++) {
 		timing_adjust_raw();
 	    }	   	    
 
@@ -54,11 +54,11 @@ public class Control {
 	    result = p.endCalibration(t1,t2,t3);
 	}
 	    
-	for (int i=0;i<cal_rounds+100;i++) {
+	for (int i = 0; i < cal_rounds + 100; i++) {
 	  timing_adjust_boiled();
 	}
 
-	for (int i=0;i<cal_rounds+100;i++) {
+	for (int i = 0; i < cal_rounds + 100; i++) {
 	  timing_adjust_raw();
 	}
 
