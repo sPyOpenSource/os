@@ -2,6 +2,7 @@ Java OS
 =======
 
 This is a Java OS project. It is a microkernel operating system with both the kernel and applications implemented using the Java programming language.
+This library consist of a JDK, which people can use to build they own software for the operating system.
 
 Build
 -----
