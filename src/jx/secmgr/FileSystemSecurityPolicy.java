@@ -1,7 +1,6 @@
 package jx.secmgr;
 
 import jx.zero.*;
-import java.util.*;
 import jx.fs.*;
 
 public class FileSystemSecurityPolicy implements DomainBorderIn {

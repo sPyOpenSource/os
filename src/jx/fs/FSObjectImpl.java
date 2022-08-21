@@ -1,7 +1,6 @@
 package jx.fs;
 
 abstract public class FSObjectImpl implements jx.fs.FSObject, jx.zero.Service {
-
     protected FilesystemImpl fs_impl;
     protected FileSystem     fs;
     protected DirectoryImpl  parent;

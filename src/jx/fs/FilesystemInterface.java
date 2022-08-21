@@ -1,7 +1,6 @@
 package jx.fs;
 
 public interface FilesystemInterface extends jx.zero.Portal {
-
     public String     getName();
     public Permission getDefaultPermission();
 

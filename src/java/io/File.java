@@ -15,7 +15,6 @@ import jx.fs.PermissionException;
   * Implementation of the File class accessing the JX file system
   */
 public final class File implements Comparable {
-
     private String name;
     private String pathName;
     private String fileName;
@@ -57,7 +56,6 @@ public final class File implements Comparable {
 	} catch (InodeIOException | InodeNotFoundException | NoDirectoryInodeException | NotExistException | PermissionException ex) {
 	    fsobj = null;
 	}
-	
     }
 
     /**

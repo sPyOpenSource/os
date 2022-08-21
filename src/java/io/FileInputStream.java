@@ -34,14 +34,14 @@ public class FileInputStream extends InputStream
     }
   
   public int read(byte[] b, int off, int len) throws IOException
-	{
-	  return 0;
-	}
+    {
+      return 0;
+    }
 
-	public int read(byte[] b) throws IOException
-	{
-	  return 0;
-	}
+    public int read(byte[] b) throws IOException
+    {
+      return 0;
+    }
   
   public long skip(long n) throws IOException
     {
@@ -64,5 +64,5 @@ public class FileInputStream extends InputStream
     {
       this.fd = fd;
       // ....
-	}
+    }
 }

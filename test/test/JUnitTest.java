@@ -11,13 +11,12 @@ import java.util.logging.Logger;
 import jx.emulation.Init;
 import jx.zero.debug.Dump;
 import jx.zero.MemoryManager;
+import jx.bio.buffercache.BufferHashtable;
+import jx.bio.buffercache.BufferHead;
 
 import org.junit.Test;
 import org.junit.Before;
 import static junit.framework.TestCase.assertEquals;
-
-import jx.bio.buffercache.BufferHashtable;
-import jx.bio.buffercache.BufferHead;
 
 /**
  *

@@ -5,7 +5,6 @@ import jx.zero.Service;
 import java.util.Vector;
 
 public class FilesystemImpl implements FilesystemInterface, Service {
-
     private final FileSystem     fs;
     private final EXT2Permission defaultPermission = new EXT2Permission(EXT2Permission.RWX, 0, 0);
     private Inode          rInode;

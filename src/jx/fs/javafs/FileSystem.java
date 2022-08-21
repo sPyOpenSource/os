@@ -147,7 +147,6 @@ public class FileSystem implements jx.fs.FileSystem, Service {
 	return inode;
     }
     
-
     @Override
     public int getDeviceID() {
 	return deviceID; /* FIXME */

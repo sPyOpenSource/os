@@ -1,6 +1,5 @@
 package jx.net.protocol.bootp;
 
-import java.net.Inet4Address;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import jx.zero.*;

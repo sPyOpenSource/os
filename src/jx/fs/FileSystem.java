@@ -10,7 +10,6 @@ import jx.fs.buffercache.BufferCache;
  * to log in, log out and repair.
  */
 public interface FileSystem extends jx.zero.Portal {
-
     /**
      * Stellt der Filesystem-Implementierung ein Blockdevice
      * zur Verfuegung.

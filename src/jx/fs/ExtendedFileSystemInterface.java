@@ -5,7 +5,6 @@ import jx.zero.Naming;
 import jx.zero.LookupHelper;
 
 final public class ExtendedFileSystemInterface {
-
     private final FilesystemInterface ifs;
     private final FSObject cwd;
     private char separator;
