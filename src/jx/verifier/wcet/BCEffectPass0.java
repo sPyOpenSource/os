@@ -1,15 +1,13 @@
 package jx.verifier.wcet;
 
-import jx.verifier.bytecode.*;
+import jx.zero.ByteCode;
 import jx.verifier.*;
-import java.util.Vector;
 import jx.classfile.constantpool.*;
-import jx.classfile.ClassData;
 
 public final class BCEffectPass0 {
 
     // which types are popped from the stack when executing this bc
-    public static final int POP[] = { 
+    public static final int POP[] = {
 	/*0x00 nop*/ 0,
 	/*0x01 aconst_null*/ 0,
 	/*0x02 iconst_m1*/ 0,
@@ -582,5 +580,3 @@ public final class BCEffectPass0 {
     }
 
 }
-
-

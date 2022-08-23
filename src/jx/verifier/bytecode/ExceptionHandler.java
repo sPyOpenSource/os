@@ -4,16 +4,16 @@ import jx.verifier.VerifyException;
 import jx.verifier.JVMState;
 
 public class ExceptionHandler {
-    private String eName;
+    private final String eName;
     public String getName() { return eName;}
-    private ByteCode start;
+    private final ByteCode start;
     public int getStartAddress() { return start.getAddress();}
-    private ByteCode end;
+    private final ByteCode end;
     public int getEndAddress() { return end.getAddress();}
-    private ByteCode handler;
+    private final ByteCode handler;
     public ByteCode getHandler() { return handler;}
     public int getHandlerAddress() { return handler.getAddress();}
-    private int eTypeCPIndex;
+    private final int eTypeCPIndex;
     public int getETypeCPIndex(){return eTypeCPIndex;}
 
     /**Constructor.
@@ -81,6 +81,5 @@ public class ExceptionHandler {
 		handler.getAddress() == eh.getHandler().getAddress() &&
 		start.getAddress() == eh.getStartAddress() &&
 		end.getAddress() == eh.getEndAddress());
-    }	    
-
+    }
 }

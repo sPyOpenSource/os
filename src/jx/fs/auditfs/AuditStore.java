@@ -1,6 +1,6 @@
 package jx.fs.auditfs;
 
-import jx.bio.*;
+import jx.devices.bio.BlockIO;
 import jx.zero.*;
 
 public class AuditStore {

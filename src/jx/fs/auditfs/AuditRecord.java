@@ -7,7 +7,6 @@ import jx.zero.*;
    string length is first 32 bit word of string
 */
 
-     
 class AuditRecord {
     CycleTime time;
     String systemName;

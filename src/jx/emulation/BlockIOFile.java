@@ -2,7 +2,7 @@ package jx.emulation;
 
 import jx.zero.*;
 import java.io.*;
-import jx.bio.BlockIO;
+import jx.devices.bio.BlockIO;
 
 class BlockIOFile implements BlockIO {
     RandomAccessFile file;

@@ -103,7 +103,7 @@ public class InodeCache {
 	//inode.setLocked(true); // set I_LOCK
 	inode.setDirty(false); // reset I_DIRTY
 	try {
-	    inode.writeInode();
+	    inode.writeNode();
 	} catch (InodeIOException e) {
 	} catch (NotExistException e) { }
 	//inode.setLocked(false);
@@ -148,7 +148,7 @@ public class InodeCache {
 	    vec.removeElementAt(0);
 	    inode.i_list = null;
 	    try {
-		inode.putInode();
+		inode.putNode();
 	    } catch (NotExistException e) { }
 	    nr_inodes--;
 	}
@@ -301,11 +301,11 @@ public class InodeCache {
 	    try {
 		if (inode.i_nlinks() == 0) {
 		    removeInodeHash(inode);
-		    inode.deleteInode();
+		    inode.deleteNode();
 		} // (inode.i_ishashed == false) trifft zu
 		if (inode.i_ishashed == false) {
 		    listDel(inode);
-		    inode.putInode();
+		    inode.putNode();
 		    nr_inodes--;
 		} else if (inode.isDirty() == false) {
 		    listDel(inode);

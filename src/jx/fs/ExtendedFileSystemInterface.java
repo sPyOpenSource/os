@@ -5,11 +5,11 @@ import jx.zero.Naming;
 import jx.zero.LookupHelper;
 
 final public class ExtendedFileSystemInterface {
-    private final FilesystemInterface ifs;
+    private final FileSystemInterface ifs;
     private final FSObject cwd;
     private char separator;
 
-    public ExtendedFileSystemInterface(FilesystemInterface fs) throws Exception {
+    public ExtendedFileSystemInterface(FileSystemInterface fs) throws Exception {
 	this.ifs = fs;
 	this.cwd = fs.openRootDirectoryRW();
 	this.separator = '/';
@@ -17,7 +17,7 @@ final public class ExtendedFileSystemInterface {
 
     final public static ExtendedFileSystemInterface getExtFileSystemInterface(String name) throws Exception {
 	Naming ns = (Naming)InitialNaming.getInitialNaming();
-	FilesystemInterface fs=(FilesystemInterface)LookupHelper.waitUntilPortalAvailable(ns, name);
+	FileSystemInterface fs=(FileSystemInterface)LookupHelper.waitUntilPortalAvailable(ns, name);
 	return new ExtendedFileSystemInterface(fs);
     }
 

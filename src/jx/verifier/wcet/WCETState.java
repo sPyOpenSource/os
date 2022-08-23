@@ -1,9 +1,9 @@
 package jx.verifier.wcet;
 
-import java.util.Vector;
 import java.util.Enumeration;
 import jx.verifier.*;
 import jx.verifier.bytecode.*;
+import jx.zero.verifier.wcet.ValueProvider;
 
 public class WCETState extends  JVMState {
     /**Indicates how many ticks the runtime time counter should increase after passing this bytecode.
@@ -63,6 +63,7 @@ public class WCETState extends  JVMState {
 
     public WCETStack WCETgetStack() { return (WCETStack) getStack();}
 
+    @Override
     public void executeNextBC() throws VerifyException {
 	switch(pass) {
 	case 0:
@@ -94,10 +95,10 @@ public class WCETState extends  JVMState {
 		    return;
 		}
 	
-	//propagate pass
-	for (int i=0; i < targets.length; i++) {
-	    ((WCETState)targets[i].beforeState).setPass(pass);
-	}
+        //propagate pass
+        for (ByteCode target : targets) {
+            ((WCETState) target.beforeState).setPass(pass);
+        }
 	
 	/*	    if (getNextBC().getOpCode() == ByteCode.ATHROW) {
 		    //AThrow ends execution at this point; 
@@ -127,8 +128,6 @@ public class WCETState extends  JVMState {
 	} else {
 	    //if (check) getMv().checkBC(targets[0]);
 	}
-	
-	return;
     }
     
     /**Pass2: Mark all bytecodes that must be simulated. 
@@ -178,59 +177,65 @@ public class WCETState extends  JVMState {
 		//Stack...
 		WCETStackElement[] ops;
 		boolean [] res;
-		if (opCode == ByteCode.SWAP) {
-		    ops = new WCETStackElement[2];
-		    res = new boolean[2];
-		    ops[0] = ((WCETStackElement)stack1.nextElement());
-		    ops[1] = ((WCETStackElement)stack1.nextElement());
-		    res[1] = ((WCETStackElement)stack2.nextElement()).necessary;
-		    res[0] = ((WCETStackElement)stack2.nextElement()).necessary;
-		} else if(opCode == ByteCode.DUP_X1) {
-		    ops = new WCETStackElement[2];
-		    res = new boolean[2];
-		    ops[0] = ((WCETStackElement)stack1.nextElement());//word1
-		    ops[1] = ((WCETStackElement)stack1.nextElement());//word2
-		    res[0] = ((WCETStackElement)stack2.nextElement()).necessary;//word1
-		    res[1] = ((WCETStackElement)stack2.nextElement()).necessary;//word2
-		    res[0] |= ((WCETStackElement)stack2.nextElement()).necessary;//word1
-		} else if(opCode == ByteCode.DUP_X2) {
-		    ops = new WCETStackElement[3];
-		    res = new boolean[3];
-		    ops[0] = ((WCETStackElement)stack1.nextElement());//word1
-		    ops[1] = ((WCETStackElement)stack1.nextElement());//word2
-		    ops[2] = ((WCETStackElement)stack1.nextElement());//word3
-		    res[0] = ((WCETStackElement)stack2.nextElement()).necessary;//word1
-		    res[1] = ((WCETStackElement)stack2.nextElement()).necessary;//word2
-		    res[2] = ((WCETStackElement)stack2.nextElement()).necessary;//word3
-		    res[0] |= ((WCETStackElement)stack2.nextElement()).necessary;//word1
-		    res[1] |= ((WCETStackElement)stack2.nextElement()).necessary;//word2
-		} else if(opCode == ByteCode.DUP2_X1) {
-		    ops = new WCETStackElement[4];
-		    res = new boolean[4];
-		    ops[0] = ((WCETStackElement)stack1.nextElement());//word1
-		    ops[1] = ((WCETStackElement)stack1.nextElement());//word2
-		    ops[2] = ((WCETStackElement)stack1.nextElement());//word3
-		    ops[3] = ((WCETStackElement)stack1.nextElement());//word4
-		    res[0] = ((WCETStackElement)stack2.nextElement()).necessary;//word1
-		    res[1] = ((WCETStackElement)stack2.nextElement()).necessary;//word2
-		    res[2] = ((WCETStackElement)stack2.nextElement()).necessary;//word3
-		    res[3] = ((WCETStackElement)stack2.nextElement()).necessary;//word4
-		    res[0] |= ((WCETStackElement)stack2.nextElement()).necessary;//word1
-		    res[1] |= ((WCETStackElement)stack2.nextElement()).necessary;//word2
-		} else if(opCode == ByteCode.DUP2_X2) {
-		    ops = new WCETStackElement[3];
-		    res = new boolean[3];
-		    ops[0] = ((WCETStackElement)stack1.nextElement());//word1
-		    ops[1] = ((WCETStackElement)stack1.nextElement());//word2
-		    ops[2] = ((WCETStackElement)stack1.nextElement());//word3
-		    res[0] = ((WCETStackElement)stack2.nextElement()).necessary;//word1
-		    res[1] = ((WCETStackElement)stack2.nextElement()).necessary;//word2
-		    res[2] = ((WCETStackElement)stack2.nextElement()).necessary;//word3
-		    res[0] |= ((WCETStackElement)stack2.nextElement()).necessary;//word1
-		} else {
-		    //this point should never be reached
-		    throw new Error("Internal Error");
-		}
+                switch (opCode) {
+                    case ByteCode.SWAP:
+                        ops = new WCETStackElement[2];
+                        res = new boolean[2];
+                        ops[0] = ((WCETStackElement)stack1.nextElement());
+                        ops[1] = ((WCETStackElement)stack1.nextElement());
+                        res[1] = ((WCETStackElement)stack2.nextElement()).necessary;
+                        res[0] = ((WCETStackElement)stack2.nextElement()).necessary;
+                        break;
+                    case ByteCode.DUP_X1:
+                        ops = new WCETStackElement[2];
+                        res = new boolean[2];
+                        ops[0] = ((WCETStackElement)stack1.nextElement());//word1
+                        ops[1] = ((WCETStackElement)stack1.nextElement());//word2
+                        res[0] = ((WCETStackElement)stack2.nextElement()).necessary;//word1
+                        res[1] = ((WCETStackElement)stack2.nextElement()).necessary;//word2
+                        res[0] |= ((WCETStackElement)stack2.nextElement()).necessary;//word1
+                        break;
+                    case ByteCode.DUP_X2:
+                        ops = new WCETStackElement[3];
+                        res = new boolean[3];
+                        ops[0] = ((WCETStackElement)stack1.nextElement());//word1
+                        ops[1] = ((WCETStackElement)stack1.nextElement());//word2
+                        ops[2] = ((WCETStackElement)stack1.nextElement());//word3
+                        res[0] = ((WCETStackElement)stack2.nextElement()).necessary;//word1
+                        res[1] = ((WCETStackElement)stack2.nextElement()).necessary;//word2
+                        res[2] = ((WCETStackElement)stack2.nextElement()).necessary;//word3
+                        res[0] |= ((WCETStackElement)stack2.nextElement()).necessary;//word1
+                        res[1] |= ((WCETStackElement)stack2.nextElement()).necessary;//word2
+                        break;
+                    case ByteCode.DUP2_X1:
+                        ops = new WCETStackElement[4];
+                        res = new boolean[4];
+                        ops[0] = ((WCETStackElement)stack1.nextElement());//word1
+                        ops[1] = ((WCETStackElement)stack1.nextElement());//word2
+                        ops[2] = ((WCETStackElement)stack1.nextElement());//word3
+                        ops[3] = ((WCETStackElement)stack1.nextElement());//word4
+                        res[0] = ((WCETStackElement)stack2.nextElement()).necessary;//word1
+                        res[1] = ((WCETStackElement)stack2.nextElement()).necessary;//word2
+                        res[2] = ((WCETStackElement)stack2.nextElement()).necessary;//word3
+                        res[3] = ((WCETStackElement)stack2.nextElement()).necessary;//word4
+                        res[0] |= ((WCETStackElement)stack2.nextElement()).necessary;//word1
+                        res[1] |= ((WCETStackElement)stack2.nextElement()).necessary;//word2
+                        break;
+                    case ByteCode.DUP2_X2:
+                        ops = new WCETStackElement[3];
+                        res = new boolean[3];
+                        ops[0] = ((WCETStackElement)stack1.nextElement());//word1
+                        ops[1] = ((WCETStackElement)stack1.nextElement());//word2
+                        ops[2] = ((WCETStackElement)stack1.nextElement());//word3
+                        res[0] = ((WCETStackElement)stack2.nextElement()).necessary;//word1
+                        res[1] = ((WCETStackElement)stack2.nextElement()).necessary;//word2
+                        res[2] = ((WCETStackElement)stack2.nextElement()).necessary;//word3
+                        res[0] |= ((WCETStackElement)stack2.nextElement()).necessary;//word1
+                        break;
+                    default:
+                        //this point should never be reached
+                        throw new Error("Internal Error");
+                }
 		boolean oldNecessary = this.necessary;
 		for (int j = 0; j < ops.length; j++) {
 		    if (!ops[j].necessary  && res[j]) {
@@ -400,7 +405,6 @@ public class WCETState extends  JVMState {
 	}
 	//FEHLER debug
 	//System.out.println("nacher:\n" + this+"\n***********************************************");
-	return;
     }
     
     //Simulate execution of nextBc on this stack.
@@ -409,6 +413,7 @@ public class WCETState extends  JVMState {
     //return JVMState[0] to end this verification path.
     //if result is null, all in nextBC.getTargets() will be verified with this as beforeState
     //throws exception if verification fails.
+    @Override
     protected JVMState[] doExecuteNextBC() throws VerifyException {
 	switch (pass) {
 	    case 0:
@@ -428,6 +433,7 @@ public class WCETState extends  JVMState {
     //copy this state.
     //should return something created with
     //new JVMState(nextBC, stack.copy(), lVars.copy(), mv);
+    @Override
     public JVMState copy() {
 	return new WCETState(this);
     }
@@ -446,8 +452,8 @@ public class WCETState extends  JVMState {
 	}
     }
 
-
     //override merge..
+    @Override
     public boolean merge(JVMState mergeState) throws VerifyException {
 	switch(pass) {
 	case 0:
@@ -478,6 +484,7 @@ public class WCETState extends  JVMState {
 
     }
 
+    @Override
     public String toString() {
 	String ret = "beforeState of " + getNextBC();
 	ret += "\npass:" + pass;
@@ -500,7 +507,4 @@ public class WCETState extends  JVMState {
 	ret += "\n";
 	return ret;
     }
-
-
 }
-

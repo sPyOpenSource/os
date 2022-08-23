@@ -3,9 +3,12 @@ package jx.fs.javafs;
 import jx.zero.Debug;
 import jx.zero.Service;
 import jx.zero.Clock;
-import jx.bio.BlockIO;
-import jx.fs.*;
+import jx.devices.bio.BlockIO;
 
+import jx.fs.FSException;
+import jx.fs.InodeIOException;
+import jx.fs.Node;
+import jx.fs.NotExistException;
 import jx.fs.buffercache.*;
 
 /**
@@ -54,10 +57,10 @@ public class FileSystem implements jx.fs.FileSystem, Service {
     }
 
     @Override
-    public jx.fs.Inode getRootInode() {
-	if (! inited) throw new Error("FS not initialized");
+    public Node getRootNode() {
+	if (!inited) throw new Error("FS not initialized");
 	rootInode.incUseCount();
-	return (jx.fs.Inode)rootInode;
+	return (Node)rootInode;
     }
 
     @Override
@@ -99,7 +102,7 @@ public class FileSystem implements jx.fs.FileSystem, Service {
     }
 
     @Override
-    public jx.fs.Inode getInode(int inodeNumber) throws FSException  {
+    public Node getNode(int inodeNumber) throws FSException  {
 	DirEntryData de_data;
 	InodeImpl inode;
 	

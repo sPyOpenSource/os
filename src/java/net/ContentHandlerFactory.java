@@ -48,4 +48,3 @@ public abstract ContentHandler
 createContentHandler(String mime_type);
 
 } // interface ContentHandlerFactory
-

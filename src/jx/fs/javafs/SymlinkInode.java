@@ -24,40 +24,47 @@ public class SymlinkInode extends InodeImpl {
 	super(fileSystem, i_sb, i_ino, i_data, bufferCache, inodeCache, clock);
     }
 
+    @Override
     public boolean isSymlink() { // throws NotExistException {
 	//if (i_released)
 	//throw new NotExistException();
 	return true;
     }
 
+    @Override
     public boolean isFile() { // throws NotExistException {
 	//if (i_released)
 	//throw new NotExistException();
 	return false;
     }
 
+    @Override
     public boolean isDirectory() {
 	return false;
     }
 
+    @Override
     public boolean isWritable() { // throws NotExistException {
 	//if (i_released)
 	//throw new NotExistException();
 	return true;
     }
 
+    @Override
     public boolean isReadable() { // throws NotExistException {
 	//if (i_released)
 	//throw new NotExistException();
 	return true;
     }
 
+    @Override
     public boolean isExecutable() { // throws NotExistException {
 	//if (i_released)
 	//throw new NotExistException();
 	return true;
     }
 
+    @Override
     public String[] readdirNames() {
     //throws NoDirectoryInodeException, NotExistException {
 	try {
@@ -68,7 +75,8 @@ public class SymlinkInode extends InodeImpl {
 	return null;
     }
 
-    public jx.fs.Inode getInode(String name) {
+    @Override
+    public jx.fs.Node getNode(String name) {
     //throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException {
 	try {
 	    if (i_released)
@@ -78,7 +86,8 @@ public class SymlinkInode extends InodeImpl {
 	return null;
     }
 
-    public jx.fs.Inode mkdir(String name, int mode) {
+    @Override
+    public jx.fs.Node mkdir(String name, int mode) {
     //throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException {
 	try {
 	    if (i_released)
@@ -88,6 +97,7 @@ public class SymlinkInode extends InodeImpl {
 	return null;
     }
 
+    @Override
     public void rmdir(String name) {
     //throws DirNotEmptyException, InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException,
     //PermissionException {
@@ -98,7 +108,8 @@ public class SymlinkInode extends InodeImpl {
 	} catch (FSException e) { } // alle Exceptions ignorieren
     }
 
-    public jx.fs.Inode create(String name, int mode) {
+    @Override
+    public jx.fs.Node create(String name, int mode) {
     //throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException {
 	try {
 	    if (i_released)
@@ -108,6 +119,7 @@ public class SymlinkInode extends InodeImpl {
 	return null;
     }
 
+    @Override
     public void unlink(String name) {
     //throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NoFileInodeException, NotExistException,
     //PermissionException {
@@ -118,7 +130,8 @@ public class SymlinkInode extends InodeImpl {
 	} catch (FSException e) { } // alle Exceptions ignorieren
     }
 
-    public jx.fs.Inode symlink(String symname, String newname) {
+    @Override
+    public jx.fs.Node symlink(String symname, String newname) {
     //throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, NotSupportedException,
     //PermissionException {
 	try {
@@ -129,7 +142,8 @@ public class SymlinkInode extends InodeImpl {
 	return null;
     }
 
-    public void rename(String oldname, jx.fs.Inode new_dir, String newname) {
+    @Override
+    public void rename(String oldname, jx.fs.Node new_dir, String newname) {
     //throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException {
 	try {
 	    if (i_released)
@@ -138,24 +152,28 @@ public class SymlinkInode extends InodeImpl {
 	} catch (FSException e) { } // alle Exceptions ignorieren
     }
 
+    @Override
     public int read(int pos, Memory b, int off, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException {
 	if (i_released)
 	    throw new NotExistException();
 	throw new NoFileInodeException();
     }
 
+    @Override
     public int read(Memory b, int off, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException {
 	if (i_released)
 	    throw new NotExistException();
 	throw new NoFileInodeException();
     }
-
+    
+    @Override
     public int write(int pos, Memory b, int off, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException {
 	if (i_released)
 	    throw new NotExistException();
 	throw new NoFileInodeException();
     }
 
+    @Override
     public int write(Memory b, int off, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException {
 	if (i_released)
 	    throw new NotExistException();
@@ -210,6 +228,7 @@ public class SymlinkInode extends InodeImpl {
 	} catch (FSException e) { } // alle Exceptions ignorieren
     }
 	
+    @Override
     public  String getSymlink() {
     //throws InodeIOException, NoSymlinkInodeException, NotExistException, NotSupportedException, PermissionException {
 	try {

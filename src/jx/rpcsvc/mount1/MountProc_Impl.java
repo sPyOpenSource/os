@@ -20,7 +20,7 @@ public class MountProc_Impl implements MountProc {
 	Debug.out.println("   -> "+d.data);
 
 	try {
-	    jx.fs.Inode homeInode = fs.lookup(d.data);
+	    Node homeInode = fs.lookup(d.data);
 	    MappedFHandle homeFh = 
 		new MappedFHandle(homeInode.getFileSystem().getDeviceID(),
 				  homeInode.getIdentifier(),

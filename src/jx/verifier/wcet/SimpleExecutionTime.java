@@ -1,6 +1,7 @@
 package jx.verifier.wcet;
 
-import jx.verifier.bytecode.*;
+import jx.zero.ByteCode;
+import jx.zero.verifier.wcet.ExecutionTime;
 
 //class to record execution time of an method
 public class SimpleExecutionTime implements ExecutionTime {

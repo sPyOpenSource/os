@@ -2,11 +2,12 @@ package jx.fs;
 
 import jx.zero.*;
 import jx.zero.debug.*;
-import jx.bio.BlockIO;
+import jx.devices.bio.BlockIO;
 
 /* DummyClock */
 import jx.zero.Clock;
 import jx.zero.CycleTime;
+
 final class MyDummyClock implements Clock {
     int t;
     @Override

@@ -169,6 +169,7 @@ class Inet4Address extends InetAddress {
      *         a wildcard address.
      * @since 1.4
      */
+    @Override
     public boolean isAnyLocalAddress() {
         return holder().getAddress() == 0;
     }
@@ -307,6 +308,7 @@ class Inet4Address extends InetAddress {
      *
      * @return  the raw IP address of this object.
      */
+    @Override
     public byte[] getAddress() {
         int address = holder().getAddress();
         byte[] addr = new byte[INADDRSZ];
@@ -333,6 +335,7 @@ class Inet4Address extends InetAddress {
      *
      * @return  a hash code value for this IP address.
      */
+    @Override
     public int hashCode() {
         return holder().getAddress();
     }
@@ -353,6 +356,7 @@ class Inet4Address extends InetAddress {
      *          {@code false} otherwise.
      * @see     java.net.InetAddress#getAddress()
      */
+    @Override
     public boolean equals(Object obj) {
         return (obj != null) && (obj instanceof Inet4Address) &&
             (((InetAddress)obj).holder().getAddress() == holder().getAddress());

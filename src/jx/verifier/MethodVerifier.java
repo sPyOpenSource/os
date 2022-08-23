@@ -3,7 +3,6 @@ package jx.verifier;
 import java.util.Vector;
 import jx.classfile.*;
 import jx.classfile.constantpool.*;
-import jx.classstore.ClassFinder;
 import jx.verifier.bytecode.*;
 
 /**Class for verification of one method.
@@ -19,8 +18,10 @@ public class MethodVerifier implements VerifierInterface {
     Object vParameter = null;
     
     /**returns the name of the class the verified method belongs to.*/
+    @Override
     public String getClassName() { return className;}
     /**returns the MethodSource of the method that is verified.*/
+    @Override
     public MethodSource getMethod() { return method;}
     /**returns the code of the method*/
     public BCLinkList getCode() {return code;}
@@ -31,6 +32,7 @@ public class MethodVerifier implements VerifierInterface {
     /**returns the subroutines of the method.
      *@see Subroutines
      */
+    @Override
     public Subroutines getSrs() { return srs;}
     /**set the initial state, with which verification is started at the first bytecode.
      * Must be set to a nonnull value before calling runChecks().*/
@@ -38,6 +40,7 @@ public class MethodVerifier implements VerifierInterface {
     /**returns the VerifierParameter. 
      * @return parameter or null.
      */
+    @Override
     public Object getParameter(){return vParameter;}
 
     /**Constructor.
@@ -70,19 +73,19 @@ public class MethodVerifier implements VerifierInterface {
 	this.vParameter = vParameter;
     }
 
-
     /*
     public void run() {
 	//FEHLER mal sehen, was man da machen kann.
 	try{runChecks();}catch (VerifyException e) {}
-    }
-*/
+    }*/
+    
     /**Start verifying.
      * First all subroutines are searched and registered  and the checkQueue is initialized. Then the first bytecode receives "initialState" as "beforeState" and is added to the checkQueue. Finally continueChecks() is called.
      * @exception VerifyException if the method fails verification.
      * @exception java.lang.Error if initialState is null.
      * @see MethodVerifier#continueChecks
      */
+    @Override
     public void runChecks() throws VerifyException {
 	if (initialState == null) {
 	    throw new Error("Internal Error: MethodVerifier.initialState has not yet been initialized!");
@@ -138,6 +141,7 @@ public class MethodVerifier implements VerifierInterface {
     /**Add Bytecode to the checkQueue.
      * Every bytecode has a counter so it can only be added to the checkQueue once. checkBC calls with bytecodes that are already in the queue do nothing.
      */
+    @Override
     public void checkBC(ByteCode e) {
 	if (e.mvCheckCount > 0)
 	    return; //e is already in checkQueue
@@ -149,6 +153,7 @@ public class MethodVerifier implements VerifierInterface {
      * Check is stopped, and runChecks / continueCheck will return.
      * CheckQueue is emptied (and the checkQueue counters of all bytecodes are reset to 0).
      */
+    @Override
     public void endChecks() {
 	//empty the checkQueue
 	while (!checkQueue.isEmpty()) {
@@ -157,5 +162,4 @@ public class MethodVerifier implements VerifierInterface {
 	}
 
     }
-	
 }

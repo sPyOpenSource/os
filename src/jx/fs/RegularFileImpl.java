@@ -2,9 +2,9 @@ package jx.fs;
 
 import jx.zero.Memory;
 
-final public class RegularFileImpl extends FSObjectImpl implements jx.fs.RegularFile {
+final public class RegularFileImpl extends FSObjectImpl implements RegularFile {
         
-    public RegularFileImpl(FilesystemImpl impl, FileSystem fs, FSObjectImpl parent, Inode inode) {
+    public RegularFileImpl(FilesystemImpl impl, FileSystem fs, FSObjectImpl parent, Node inode) {
 	super(impl, fs, parent,inode);
     }
 
@@ -18,6 +18,7 @@ final public class RegularFileImpl extends FSObjectImpl implements jx.fs.Regular
      * @throws java.lang.Exception
      */
 
+    @Override
     public int read(int pos, Memory mem, int off, int len) throws Exception {
 	return inode.read(pos,mem,off,len);
     }
@@ -32,6 +33,7 @@ final public class RegularFileImpl extends FSObjectImpl implements jx.fs.Regular
      * @throws java.lang.Exception
      */
 
+    @Override
     public int write(int pos, Memory mem, int off, int len) throws Exception {
 	return inode.write(pos,mem,off,len);
     }
@@ -45,6 +47,7 @@ final public class RegularFileImpl extends FSObjectImpl implements jx.fs.Regular
      * @throws java.lang.Exception
      */
 
+    @Override
     public int append(Memory mem, int off, int len) throws Exception {	
 	return inode.write((int)length(),mem,off,len);
     }
@@ -56,6 +59,7 @@ final public class RegularFileImpl extends FSObjectImpl implements jx.fs.Regular
      * @throws java.lang.Exception
      */
 
+    @Override
     public int setLength(long newLength) throws Exception {
 	throw new Error("not implemented yet");
     }

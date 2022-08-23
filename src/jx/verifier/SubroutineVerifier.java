@@ -2,7 +2,6 @@ package jx.verifier;
 
 import java.util.Vector;
 import jx.classfile.*;
-import jx.classfile.constantpool.*;
 import jx.verifier.bytecode.*;
 
 /**Class for verification of a subroutine within a method.
@@ -18,16 +17,20 @@ public class SubroutineVerifier implements VerifierInterface {
     Object vParameter;
     private MethodSource method;
 
+    @Override
     public String getClassName() { return className;}
+    @Override
     public MethodSource getMethod() {return method;}
     public SubroutineData getSrData() { return srData;}
     public void setSrData(SubroutineData s) {srData = s;}
 
+    @Override
     public Subroutines getSrs() { return srs;}
 
     /**returns the VerifierParameter. 
      * @return parameter or null.
      */
+    @Override
     public Object getParameter(){return vParameter;}
     public SubroutineVerifier(ByteCode srBegin,
 			      SubroutineData srData,
@@ -57,6 +60,7 @@ public class SubroutineVerifier implements VerifierInterface {
     public JVMState getFinalState() {
 	return srData.finalState;
     }
+    @Override
     public void runChecks() throws VerifyException {
 	Verifier.stdPrintln(1,"Now Verifying subroutine starting at " + Integer.toHexString(srBegin.getAddress()));
 	checkQueue = new Vector();
@@ -94,6 +98,7 @@ public class SubroutineVerifier implements VerifierInterface {
 
     }
 
+    @Override
     public void checkBC(ByteCode e) {
 	if (e.svCheckCount > 0)
 	    return; //e is already in checkQueue
@@ -103,6 +108,7 @@ public class SubroutineVerifier implements VerifierInterface {
     }
     //check is stopped, and runChecks / continueCheck will return
     //checkQueue is emptied!
+    @Override
     public void endChecks() {
 	checkQueue = new Vector(0);
     }

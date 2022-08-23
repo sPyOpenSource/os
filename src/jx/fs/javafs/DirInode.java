@@ -29,43 +29,57 @@ public class DirInode extends InodeImpl {
 	super(fileSystem, i_sb, i_ino, i_data, bufferCache, inodeCache, clock);
     }
 
-    public boolean isSymlink() throws NotExistException {
+    @Override
+    public boolean isSymlink()// throws NotExistException 
+    {
 	if (i_released)
 	    throw new NotExistException();
 	return false;
     }
 
-    public boolean isFile() throws NotExistException {
+    @Override
+    public boolean isFile()// throws NotExistException 
+    {
 	if (i_released)
 	    throw new NotExistException();
 	return false;
     }
 
-    public boolean isDirectory() throws NotExistException {
+    @Override
+    public boolean isDirectory()// throws NotExistException 
+    {
 	if (i_released)
 	    throw new NotExistException();
 	return true;
     }
 
-    public boolean isWritable() throws NotExistException {
+    @Override
+    public boolean isWritable()// throws NotExistException 
+    {
 	if (i_released)
 	    throw new NotExistException();
 	return true;
     }
 
-    public boolean isReadable() throws NotExistException {
+    @Override
+    public boolean isReadable()// throws NotExistException 
+    {
 	if (i_released)
 	    throw new NotExistException();
 	return true;
     }
 
-    public boolean isExecutable() throws NotExistException {
+    @Override
+    public boolean isExecutable()// throws NotExistException 
+    {
 	if (i_released)
 	    throw new NotExistException();
 	return true;
     }
 
-    public String[] readdirNames() throws NoDirectoryInodeException, NotExistException  {
+    @Override
+    public String[] readdirNames()// throws NoDirectoryInodeException, NotExistException  
+    {
 	Vector dirs = readdirNames0();
 	// copy into String array
 	String[] str = new String[dirs.size()];
@@ -172,7 +186,9 @@ public class DirInode extends InodeImpl {
      * @exception NoDirectoryInodeException falls es sich nicht um ein Verzeichnis handelt
      * @exception PermissionException       falls die Zugriffsrechte des Verzeichnisses die Operation nicht erlauben
      */
-    public  jx.fs.Inode getInode(String name) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException {
+    @Override
+    public  jx.fs.Node getNode(String name)// throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException 
+    {
 	DirEntryData de_data;
 	InodeImpl inode;
 	
@@ -222,7 +238,7 @@ public class DirInode extends InodeImpl {
 	return inode;
     }
     
-    public  jx.fs.Inode mkdir(String name, int mode) throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException {
+    public  jx.fs.Node mkdir(String name, int mode) throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException {
 	InodeImpl inode;
 	BufferHead bh, dir_block;
 	DirEntryData de_data;
@@ -293,16 +309,17 @@ public class DirInode extends InodeImpl {
 	return inode;
     }
 
+    @Override
     public  void rmdir(String name) throws DirNotEmptyException, InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException {
 	int time;
 	DirEntryData de_data;
-	jx.fs.Inode tmp_inode;
+	jx.fs.Node tmp_inode;
 	DirInode inode;
 	
 	if (i_released)
 	    throw new NotExistException();
 	
-	tmp_inode = getInode(name);
+	tmp_inode = getNode(name);
 	if (tmp_inode.isDirectory() == false) {
 	    tmp_inode.decUseCount();
 	    throw new NoDirectoryInodeException();
@@ -336,7 +353,8 @@ public class DirInode extends InodeImpl {
 	setDirty(true);
     }
     
-public  jx.fs.Inode create(String name, int mode) throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException {
+    @Override
+    public  jx.fs.Node create(String name, int mode) throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException {
     InodeImpl inode;
     DirEntryData de_data;
     
@@ -364,9 +382,10 @@ public  jx.fs.Inode create(String name, int mode) throws FileExistsException, In
 	    throw new InodeIOException();
 	}
 	
-	return (jx.fs.Inode)inode;
+	return (jx.fs.Node)inode;
     }
 
+    @Override
     public  void unlink(String name) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NoFileInodeException, NotExistException, PermissionException {
 	DirEntryData de_data;
 	InodeImpl inode;
@@ -374,7 +393,7 @@ public  jx.fs.Inode create(String name, int mode) throws FileExistsException, In
 	if (i_released)
 	    throw new NotExistException();
 	
-	inode = (InodeImpl)getInode(name);
+	inode = (InodeImpl)getNode(name);
 	if (inode.isDirectory()) {  // Symlinks sind erlaubt
 	    inode.decUseCount();
 	    throw new NoFileInodeException();
@@ -416,7 +435,8 @@ public  jx.fs.Inode create(String name, int mode) throws FileExistsException, In
      * @exception PermissionException       falls die Zugriffsrechte des Verzeichnisses die Operation nicht erlauben oder das
      *                                      Dateisystem als nur lesbar angemeldet wurde
      */
-    public  jx.fs.Inode symlink(String symname, String newname) throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException {
+    @Override
+    public  jx.fs.Node symlink(String symname, String newname) throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException {
 	SymlinkInode symlinkinode;
 	DirEntryData de_data;
 	boolean success;
@@ -445,6 +465,7 @@ public  jx.fs.Inode create(String name, int mode) throws FileExistsException, In
 	return symlinkinode;
     }
 	
+    @Override
     public String getSymlink() throws InodeIOException, NoSymlinkInodeException, NotExistException, PermissionException {
 	if (i_released)
 	    throw new NotExistException();
@@ -475,7 +496,8 @@ public  jx.fs.Inode create(String name, int mode) throws FileExistsException, In
      *                                      7. die Zugriffsrechte des Verzeichnisses erlauben die Operation nicht
      *                                      8. das Dateisystem ist als nur lesbar angemeldet
      */
-    public  void rename(String oldname, jx.fs.Inode new_dir, String newname) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException {
+    @Override
+    public  void rename(String oldname, jx.fs.Node new_dir, String newname) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException {
 	DirEntryData de_data;
 	InodeImpl inode_to_move;
 	DirInode new_dirinode;
@@ -499,9 +521,9 @@ public  jx.fs.Inode create(String name, int mode) throws FileExistsException, In
 	if (! permission(MAY_WRITE | MAY_EXEC) || ! checkSticky())
 	    throw new PermissionException();
 	
-	inode_to_move = (InodeImpl)getInode(oldname);
+	inode_to_move = (InodeImpl)getNode(oldname);
 	// wirft u.U. DirNotEmptyException, InodeIOException, NoDirectoryInodeException, PermissionException
-	new_dirinode.renameAddInode(inode_to_move, newname);
+	new_dirinode.renameAddNode(inode_to_move, newname);
 	
 	de_data = findDirEntry(oldname);
 	// InodeNotFoundException und InodeIOException werden nicht abgefangen, waeren schon in getInode aufgetreten
@@ -532,12 +554,12 @@ public  jx.fs.Inode create(String name, int mode) throws FileExistsException, In
      * @exception PermissionException       falls der Verzeichniseintrag im Zielverzeichnis nicht angelegt werden darf
      *                                      (s. rename)
      */
-    public  void renameAddInode(InodeImpl new_inode, String newname) throws InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException {
+    public  void renameAddNode(InodeImpl new_inode, String newname) throws InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException {
 	DirEntryData de_data;
 	
 	InodeImpl old_inode = null;
 	try {
-	    old_inode = (InodeImpl)getInode(newname);
+	    old_inode = (InodeImpl)getNode(newname);
 	} catch (InodeIOException e) {
 	    new_inode.decUseCount();
 	    throw e;
@@ -608,24 +630,28 @@ public  jx.fs.Inode create(String name, int mode) throws FileExistsException, In
 	setDirty(true);
     }
 	
+    @Override
     public int read(Memory b, int off, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException {
 	if (i_released)
 	    throw new NotExistException();
 	throw new NoFileInodeException();
     }
 
+    @Override
     public int read(int pos, Memory b, int off, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException {
 	if (i_released)
 	    throw new NotExistException();
 	throw new NoFileInodeException();
     }
 
+    @Override
     public int write(Memory b, int off, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException {
 	if (i_released)
 	    throw new NotExistException();
 	throw new NoFileInodeException();
     }
 
+    @Override
     public int write(int pos,Memory b, int off, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException {
 	if (i_released)
 	    throw new NotExistException();
@@ -641,7 +667,7 @@ public  jx.fs.Inode create(String name, int mode) throws FileExistsException, In
      *         ansonsten ist der R&uuml;ckgabewert <code>null</code>
      */
     public  DirEntryData findDirEntry(String name) throws InodeIOException {
-	BufferHead bh = null;
+	BufferHead bh;
 	int bcount, block, offset, de_len;
 	DirEntryData de_data;
 	if (name.length() > 255)
@@ -694,7 +720,7 @@ public  jx.fs.Inode create(String name, int mode) throws FileExistsException, In
      * Blocks) und wird bei weiteren <code>addDirEntry</code>-Aufrufen nach und nach aufgeteilt.
      *
      * @param name der Name, den der Eintrag bekommen soll
-     * @param ino  die Nummer der Inode, die mit dem Eintrag verkn&uuml;pft werden soll
+     * @param i_ino  die Nummer der Inode, die mit dem Eintrag verkn&uuml;pft werden soll
      * @return falls Operation erfolgreich, <code>true</code>, im Falle eines Fehlers oder falls der Eintrag schon existiert,
      *         <code>false</code>
      */
@@ -849,7 +875,7 @@ public  jx.fs.Inode create(String name, int mode) throws FileExistsException, In
 	int offset;
 	BufferHead bh;
 	DirEntryData de_data;
-	int err;
+	//int err;
 	
 	if ((i_data.i_size() < 12 + 12) || ((bh = bread(0, false)) == null)) {
 	    /*System.out*/Debug.out.println("emptyDir: bad directory (dir #" + i_ino + ") - no data block");

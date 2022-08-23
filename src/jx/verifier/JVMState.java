@@ -1,8 +1,6 @@
 package jx.verifier;
 
-import java.util.Vector;
-import jx.verifier.*;
-import jx.verifier.bytecode.*;
+import jx.zero.ByteCode;
 
 /** Class to hold all necessary information about the state of the JVM simulated during verification.*/
 abstract public class JVMState {
@@ -131,21 +129,21 @@ abstract public class JVMState {
 		}
 	    }
 	} else {
-	    for (int i = 0; i < targetStates.length; i++) {
-		check = false;
-		//if the 'nextBC' of the targetState already has a state, merge the two states
-		//else, just tell that nextBC its new beforeState
-		if (targetStates[i].getNextBC().beforeState != null ) {
-		    check = targetStates[i].getNextBC().beforeState.merge(targetStates[i]);
-		} else { //target's state was null
-		    targetStates[i].getNextBC().beforeState = targetStates[i];
-		    check = true;
-		}
-		if (check) {
-		    mv.checkBC(targetStates[i].getNextBC());
-		}
-		
-	    }
+            for (JVMState targetState : targetStates) {
+                check = false;
+                //if the 'nextBC' of the targetState already has a state, merge the two states
+                //else, just tell that nextBC its new beforeState
+                if (targetState.getNextBC().beforeState != null) {
+                    check = targetState.getNextBC().beforeState.merge(targetState);
+                } else {
+                    //target's state was null
+                    targetState.getNextBC().beforeState = targetState;
+                    check = true;
+                }
+                if (check) {
+                    mv.checkBC(targetState.getNextBC());
+                }
+            }
 	}
     }
 
@@ -156,8 +154,7 @@ abstract public class JVMState {
     }
     /**Constructor.*/
     protected JVMState(ByteCode nextBC, JVMOPStack stack, JVMLocalVars lVars, 
-		     VerifierInterface mv
-		     ) {
+                       VerifierInterface mv) {
 	setNextBC(nextBC);
 	this.stack = stack;
 	this.lVars = lVars;
@@ -186,6 +183,7 @@ abstract public class JVMState {
 	
     }
 
+    @Override
     public String toString() {
 	String ret = "";
 	ret += "Stack:" + stack;
@@ -195,4 +193,3 @@ abstract public class JVMState {
 	return ret;
     }
 }
-

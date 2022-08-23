@@ -1,7 +1,7 @@
-package jx.bioro;
+package jx.bio.ro;
 
 import jx.zero.*;
-import jx.bio.BlockIO;
+import jx.devices.bio.BlockIO;
 
 class Main {
     public static void main(String [] args) {

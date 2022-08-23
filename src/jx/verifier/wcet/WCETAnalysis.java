@@ -8,6 +8,8 @@ import jx.verifier.bytecode.*;
 import jx.verifier.*;
 //FEHLER debug
 import java.util.Enumeration;
+import jx.zero.verifier.wcet.ExecutionTime;
+import jx.zero.verifier.wcet.ValueProvider;
 
 public class WCETAnalysis {
 
@@ -204,7 +206,6 @@ public class WCETAnalysis {
 
 	//save result
 	method.setVerifyResult(new WCETResult(eTime));
-	return;
     }
 
     /**Mark all bytecodes before which a runtime check should be added.
@@ -530,7 +531,6 @@ public class WCETAnalysis {
 	
     }
 
-    
     public int tm2(int i) {
 	for (int k = i; k < 25; k++)
 	    i+=k;

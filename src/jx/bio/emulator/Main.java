@@ -1,8 +1,8 @@
-package jx.bioemul;
+package jx.bio.emulator;
 
 import jx.zero.*;
 import jx.zero.debug.*;
-import jx.bio.BlockIO;
+import jx.devices.bio.BlockIO;
 import jx.zero.debug.DebugPrintStream;
 import jx.zero.debug.DebugOutputStream;
 

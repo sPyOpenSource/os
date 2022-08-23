@@ -40,7 +40,7 @@ package java.io;
 
 import jx.InitialNaming;
 import jx.fs.FS;
-import jx.fs.Inode;
+import jx.fs.Node;
 import jx.fs.InodeIOException;
 import jx.fs.InodeNotFoundException;
 import jx.fs.NoDirectoryInodeException;
@@ -564,7 +564,7 @@ public class BufferedReader extends Reader
             Memory buffer1 =  memoryManager.alloc(4096);
             FS fs    = (FS) LookupHelper.waitUntilPortalAvailable(null, "FS");
 	
-	    Inode fsobj = fs.lookup("/index.html");
+	    Node fsobj = fs.lookup("/index.html");
 
 	    int l = fsobj.getLength();
             Debug.out.println("l: " + l + " count: " + count);

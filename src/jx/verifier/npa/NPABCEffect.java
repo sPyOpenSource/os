@@ -2,12 +2,10 @@ package jx.verifier.npa;
 
 import jx.verifier.bytecode.*;
 import jx.verifier.*;
-import java.util.Vector;
 import jx.classfile.constantpool.*;
-import jx.classfile.ClassData;
+import jx.verifier.typecheck.TCTypes;
 
 public final class NPABCEffect {
-    
     
     static public NPAState[] simulateBC(NPAState state, ByteCode bCode) 
 	throws VerifyException {
@@ -284,21 +282,20 @@ public final class NPABCEffect {
 
     static private void genericOp(NPAState state, ByteCode bCode) throws VerifyException {
 	int bc = bCode.getOpCode();
-	//pops
-	for (int i = 0; i < jx.verifier.typecheck.BCStackEffect.POP[bc].length; i++) {
-	    state.getStack().pop();
-	}
-	//pushs
-	for (int i = 0; i < jx.verifier.typecheck.BCStackEffect.PUSH[bc].length; i++) {
-	    state.NPAgetStack().push(new NPAValue(NPAValue.OTHER), bCode.getAddress());
-	}
-
-	//NOTE: local Variables are not handled. only aload and astore are implemented, 
-	//because all other local variable accesses are irrelevant for NPA:
-	//all non-reference values are irrelevant, and reference-values must have been written
-	//with astore. Because the bytecode has been typechecked before, there must always
-	//be an astore prior to an aload, so there is no need to change values to OTHER
-	//when writing non-reference values.
+        //pops
+        for (TCTypes item : jx.verifier.typecheck.BCStackEffect.POP[bc]) {
+            state.getStack().pop();
+        }
+        //pushs
+        for (TCTypes item : jx.verifier.typecheck.BCStackEffect.PUSH[bc]) {
+            state.NPAgetStack().push(new NPAValue(NPAValue.OTHER), bCode.getAddress());
+        }
+        //NOTE: local Variables are not handled. only aload and astore are implemented,
+        //because all other local variable accesses are irrelevant for NPA:
+        //all non-reference values are irrelevant, and reference-values must have been written
+        //with astore. Because the bytecode has been typechecked before, there must always
+        //be an astore prior to an aload, so there is no need to change values to OTHER
+        //when writing non-reference values.
 	
     }
 
@@ -455,8 +452,6 @@ public final class NPABCEffect {
 	state.NPAgetStack().setValue(value, newVal);
 	//localVariables
 	state.NPAgetLVars().setValue(value, newVal);
-	
-	    
     }
 
     //simulates a null-Pointer run-time check

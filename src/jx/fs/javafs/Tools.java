@@ -4,7 +4,7 @@ import java.util.Hashtable;
 import java.util.Vector;
 import jx.zero.Debug;
 import jx.zero.*;
-import jx.bio.BlockIO;
+import jx.devices.bio.BlockIO;
 
 import jx.fs.InodeIOException;
 import jx.fs.InodeNotFoundException;
@@ -566,7 +566,7 @@ public class Tools {
 		    }
 		    // TODO: check i_blocks also for other inode types
 		    if ((i_data.i_mode() & InodeImpl.S_IFMT) == InodeImpl.S_IFDIR)
-			directories.addElement(new Integer(ino));
+			directories.addElement(ino);
 
 		    /*
 		    int nr_blocks = i_data.i_blocks()*512 / fs.s_blocksize;
@@ -640,7 +640,7 @@ public class Tools {
 	Debug.out.println("Pass 3: Checking directory connectivity");
 	linkLostDirectories(directories, fs);
 
-	if (duplicate_blocks.size() > 0) {
+	if (!duplicate_blocks.isEmpty()) {
 	    count = duplicate_blocks.size();
 	    for (int i = 0; i < count; i++) { // doppelten Block kopieren
 		block = ((Integer)duplicate_blocks.firstElement());
@@ -693,7 +693,7 @@ public class Tools {
 	String remove;
 	int blk, offset, pos, inode_to_remove;
 
-	directories.removeElement(new Integer(current));
+	directories.removeElement(current);
 	i_data = fs.getInodeData(current);
 	inode = new DirInode(fs.fileSystem, fs, current, i_data, bufferCache, inodeCache, clock);
 	if (i_data.i_block(0) == 0) {
@@ -747,7 +747,7 @@ public class Tools {
 	    de_data = new DirEntryData();
 	    while ((offset < i_data.i_size()) && (offset < fs.s_blocksize)) {
 		de_data.init(bh, offset);
-		if (directories.contains(new Integer(de_data.inode())))
+		if (directories.contains(de_data.inode()))
 		    repairDirectories(directories, de_data.inode(), current, fs);
 		offset += de_data.rec_len();
 		pos += de_data.rec_len();
@@ -768,7 +768,7 @@ public class Tools {
 	InodeData i_data = fs.getInodeData(2);
 	DirInode rootinode = new DirInode(fs.fileSystem, fs, 2, i_data, bufferCache, inodeCache, clock);
 	try {
-	    lost_and_found = (DirInode)rootinode.getInode("lost+found");
+	    lost_and_found = (DirInode)rootinode.getNode("lost+found");
 	} catch (InodeNotFoundException e) {
 	    try {
 		lost_and_found = (DirInode)rootinode.mkdir("lost+found", 0);
@@ -781,7 +781,7 @@ public class Tools {
 	
 	for (int i = 0; i < directories.size(); i++) {
 	    String name = "lostfile"+i;
-	    inode = new FileInode(fs.fileSystem, fs, ((Integer)directories.elementAt(i)).intValue(), null, bufferCache, inodeCache, clock);
+	    inode = new FileInode(fs.fileSystem, fs, ((Integer)directories.elementAt(i)), null, bufferCache, inodeCache, clock);
 	    try {
 		de_data = lost_and_found.findDirEntry(name);
 		if (de_data != null)

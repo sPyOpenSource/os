@@ -1,8 +1,10 @@
 package jx.verifier.wcet;
 
-import jx.verifier.bytecode.*;
-import jx.zero.*;
-import jx.zero.debug.*;
+import jx.zero.ByteCode;
+import jx.zero.Debug;
+import jx.zero.verifier.wcet.ExecutionTime;
+import jx.zero.verifier.wcet.ValueProvider;
+
 
 /**Class to provide values for simulation of bytecodes that cannot be simulated, like getfield.
  */
@@ -30,7 +32,7 @@ public class StaticValueProvider implements ValueProvider{
 			       String methodType,
 				   ByteCode bc) {
 	Debug.out.println("StaticValueProvider asked");
-	return new Integer(0);
+	return 0;
     }
 
     public boolean providesMethodWCET(String className, 
@@ -66,6 +68,6 @@ public class StaticValueProvider implements ValueProvider{
 				     String methodType) {
 	
 	Debug.out.println("StaticValueProvider asked");
-	return new Integer(0);
+	return 0;
    }
 }

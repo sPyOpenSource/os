@@ -1,13 +1,14 @@
 package jx.fs;
 
-final public class ReadOnlyDirectoryImpl extends FSObjectImpl implements jx.fs.ReadOnlyDirectory {
+final public class ReadOnlyDirectoryImpl extends FSObjectImpl implements ReadOnlyDirectory {
 
-    public ReadOnlyDirectoryImpl(FilesystemImpl impl, FileSystem fs, FSObjectImpl parent, Inode inode) {
+    public ReadOnlyDirectoryImpl(FilesystemImpl impl, FileSystem fs, FSObjectImpl parent, Node inode) {
 	super(impl, fs, parent, inode);
     }
     
     public Directory  getParent() { return (Directory)parent; }
 
+    @Override
     public String[] list() throws Exception { 
 	String[] dirList = inode.readdirNames();
 	return inode.readdirNames();
@@ -22,9 +23,10 @@ final public class ReadOnlyDirectoryImpl extends FSObjectImpl implements jx.fs.R
     @Override
     public int length() throws Exception {return 0;}
 
+    @Override
     public FSObject openRO(String filename) throws Exception {
-	try {
-	    Inode nInode = inode.lookup(filename);
+	//try {
+	    Node nInode = inode.lookup(filename);
 	    if (nInode.isDirectory()) {
 		return fs_impl.registerFSObj(new ReadOnlyDirectoryImpl(fs_impl, fs, this, nInode));
 	    } else if (nInode.isFile()) {
@@ -32,15 +34,16 @@ final public class ReadOnlyDirectoryImpl extends FSObjectImpl implements jx.fs.R
 	    } else {
 		return null;
 	    }
-	} catch (InodeIOException | InodeNotFoundException | NoDirectoryInodeException | NotExistException | PermissionException ex) {
+	//} catch (InodeIOException | InodeNotFoundException | NoDirectoryInodeException | NotExistException | PermissionException ex) {
 	    //Debug.verbose("exception caught (lookup)");
-	    return null;
-	}
+	    //return null;
+	//}
     }
     
+    @Override
     public FSObject openRW(String filename) throws Exception {
-	try {
-	    Inode nInode = inode.lookup(filename);
+	//try {
+	    Node nInode = inode.lookup(filename);
 	    if (nInode.isDirectory()) {
 		return new DirectoryImpl(fs_impl,fs,this,nInode);
 	    } else if (nInode.isFile()) {
@@ -48,10 +51,10 @@ final public class ReadOnlyDirectoryImpl extends FSObjectImpl implements jx.fs.R
 	    } else {
 		return null;
 	    }
-	} catch (InodeIOException | InodeNotFoundException | NoDirectoryInodeException | NotExistException | PermissionException ex) {
+	//} catch (InodeIOException | InodeNotFoundException | NoDirectoryInodeException | NotExistException | PermissionException ex) {
 	    //Debug.verbose("exception caught (lookup)");
-	    return null;
-	}
+	    //return null;
+	//}
     }
 
     @Override

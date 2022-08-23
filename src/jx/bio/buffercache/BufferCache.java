@@ -2,7 +2,7 @@ package jx.bio.buffercache;
 
 import jx.zero.Debug;
 import jx.zero.*;
-import jx.bio.BlockIO;
+import jx.devices.bio.BlockIO;
 import jx.collections.Iterator;
 
 

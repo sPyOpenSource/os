@@ -32,77 +32,92 @@ public class FileInode extends InodeImpl {
 	blockmask = i_sb.s_blocksize - 1;
     }
 
+    @Override
     public boolean isSymlink() throws NotExistException {
 	if (i_released) throw new NotExistException();
 	return false;
     }
 
+    @Override
     public boolean isFile() throws NotExistException {
 	if (i_released) throw new NotExistException();
 	return true;
     }
 
+    @Override
     public boolean isDirectory() throws NotExistException {
 	if (i_released) throw new NotExistException();
 	return false;
     }
 
+    @Override
     public boolean isWritable() throws NotExistException {
 	if (i_released) throw new NotExistException();
 	return true;
     }
 
+    @Override
     public boolean isReadable() throws NotExistException {
 	if (i_released) throw new NotExistException();
 	return true;
     }
 
+    @Override
     public boolean isExecutable() throws NotExistException {
 	if (i_released) throw new NotExistException();
 	return true;
     }
 
+    @Override
     public String[] readdirNames() throws NoDirectoryInodeException, NotExistException {
 	if (i_released)	throw new NotExistException();
 	throw new NoDirectoryInodeException();
     }
 
-    public jx.fs.Inode getInode(String name) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException {
+    @Override
+    public jx.fs.Node getNode(String name) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException {
 	if (i_released)	throw new NotExistException();
 	throw new NoDirectoryInodeException();
     }
 
-    public jx.fs.Inode mkdir(String name, int mode) throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException {
+    @Override
+    public jx.fs.Node mkdir(String name, int mode) throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException {
 	if (i_released)	throw new NotExistException();
 	throw new NoDirectoryInodeException();
     }
 
+    @Override
     public void rmdir(String name) throws DirNotEmptyException, InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException,PermissionException {
 	if (i_released)	throw new NotExistException();
 	throw new NoDirectoryInodeException();
     }
 
-    public jx.fs.Inode create(String name, int mode) throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException {
+    @Override
+    public jx.fs.Node create(String name, int mode) throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException {
 	if (i_released)	throw new NotExistException();
 	throw new NoDirectoryInodeException();    
     }
 
+    @Override
     public void unlink(String name) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NoFileInodeException, NotExistException,PermissionException {
 	if (i_released) throw new NotExistException();
 	throw new NoDirectoryInodeException();
     }
 
-    public jx.fs.Inode symlink(String symname, String newname) throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, NotSupportedException,PermissionException {
+    @Override
+    public jx.fs.Node symlink(String symname, String newname) throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, NotSupportedException,PermissionException {
 	if (i_released)	throw new NotExistException();
 	throw new NoDirectoryInodeException();
     }
 
+    @Override
     public String getSymlink() throws InodeIOException, NoSymlinkInodeException, NotExistException, NotSupportedException, PermissionException {
 	if (i_released)	throw new NotExistException();
 	throw new NoSymlinkInodeException();
     }
 
-    public void rename(String oldname, jx.fs.Inode new_dir, String newname) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException {
+    @Override
+    public void rename(String oldname, jx.fs.Node new_dir, String newname) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException {
 	if (i_released)	throw new NotExistException();
 	throw new NoDirectoryInodeException();
     }
@@ -300,6 +315,7 @@ public class FileInode extends InodeImpl {
 	return already_read;
     }
 
+    @Override
     public  ReadOnlyMemory readWeak(int off, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException {
 	if (i_released) throw new NotExistException();
 
@@ -369,8 +385,9 @@ public class FileInode extends InodeImpl {
 	return null; // return a chunked ROMemory here
     }
 
-    public  int write(byte[] b, int off, int len) {throw new Error(); }
+    public  int write(byte[] b, int off, int len) { throw new Error(); }
 
+    @Override
     public  int write(Memory mem, int off, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException {
 	if (i_released) throw new NotExistException();
 
@@ -461,7 +478,9 @@ public class FileInode extends InodeImpl {
 	return written;
     }
 
-    public  int write(int pos, Memory mem, int bufoff, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException {
+    @Override
+    public  int write(int pos, Memory mem, int bufoff, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException 
+    {
 	if (i_released) throw new NotExistException();
 
 	//int pos;

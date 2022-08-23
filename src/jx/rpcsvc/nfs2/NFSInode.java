@@ -20,7 +20,7 @@ public class NFSInode extends InodeImpl {
     private Vector names,children;
     private RPC rpc;
 
-    private NFSInode(NFSProc nfs, Inode parent, FHandle handle) {
+    private NFSInode(NFSProc nfs, Node parent, FHandle handle) {
 	super(parent);
 	this.nfs = nfs;
 	this.fileHandle = handle;
@@ -31,13 +31,13 @@ public class NFSInode extends InodeImpl {
      * init with filename
      * store filename but do not query nfs for information about this node
      */
-    private NFSInode(NFSProc nfs, Inode parent, String name) {
+    private NFSInode(NFSProc nfs, Node parent, String name) {
 	super(parent);
 	this.nfs = nfs;
 	myName = name;
     }
 
-    private NFSInode(RPC rpc, NFSProc nfs, Inode parent, FHandle handle, FAttr attr) {
+    private NFSInode(RPC rpc, NFSProc nfs, Node parent, FHandle handle, FAttr attr) {
 	super(parent);
 	this.rpc = rpc;
 	this.nfs = nfs;
@@ -63,7 +63,7 @@ public class NFSInode extends InodeImpl {
     }
 
 
-    private NFSInode(Inode parent) throws NFSException {
+    private NFSInode(Node parent) throws NFSException {
 	super(parent);
     }
 
@@ -256,7 +256,7 @@ public class NFSInode extends InodeImpl {
     }
 
 
-    public synchronized Inode mknode(String name) {
+    public synchronized Node mknode(String name) {
 	SAttr attributes = new SAttr(FAttr.MODE_RWOWNER);
 	DirOpRes  res =   nfs.create(fileHandle, new Name(name), attributes);
 	if (! (res instanceof DirOpResOK)) {
@@ -367,7 +367,7 @@ public class NFSInode extends InodeImpl {
 	return 0;
     }
 
-    public static Inode getRoot(RPC rpc, IPAddress host, String path) throws NFSException {
+    public static Node getRoot(RPC rpc, IPAddress host, String path) throws NFSException {
 	return new NFSInode(rpc, host, path);
     }
 
@@ -379,9 +379,9 @@ public class NFSInode extends InodeImpl {
 
 
     @Override
-    public Inode getParent() {return parent;}
+    public Node getParent() {return parent;}
 
-    public void setParent(Inode parent) {}
+    public void setParent(Node parent) {}
     
     public boolean isDirty() {return false;}
 
@@ -391,39 +391,68 @@ public class NFSInode extends InodeImpl {
 
     public void decUseCount() {}
     public int  i_nlinks() {return 0;}
-    public void deleteInode() throws InodeIOException, NotExistException {}
-    public void writeInode() throws InodeIOException, NotExistException {}
-    public void putInode() throws NotExistException {}
-    public void overlay(Inode newChild, String name) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException {}
-    public void removeOverlay(Inode child) throws InodeNotFoundException, NoDirectoryInodeException, NotExistException {}
-    public void removeAllOverlays() throws NoDirectoryInodeException, NotExistException {}
-    public boolean isOverlayed(String name) throws NoDirectoryInodeException, NotExistException { return false;}
-    public Inode lookup(String name) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException {return null;}
-    public boolean isSymlink() throws NotExistException {return false;}
-    public int    lastModified() throws NotExistException {return 0;}
-    public Inode  getInode(String name) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException {return null;}
-    public Inode  mkdir(String name, int mode) throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException { return null;}
-    public void   rmdir(String name) throws DirNotEmptyException, InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException,PermissionException {}
-    public Inode  create(String name, int mode) throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException {return null;}
-    public void   unlink(String name) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NoFileInodeException, NotExistException,PermissionException {}
-    public Inode  symlink(String symname, String newname) throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, NotSupportedException,PermissionException {return null;}
-    public String getSymlink() throws InodeIOException, NoSymlinkInodeException, NotExistException, NotSupportedException, PermissionException {return null;}
-    public void   rename(String oldname, Inode new_dir, String newname) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException {}
-    public int    read(Memory mem, int off, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException {return 0;}
-    public int    read(int pos, Memory mem, int off, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException {return 0;}
-    public int    write(Memory mem, int off, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException {return 0;}
-    public int    write(int pos, Memory mem, int off, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException {return 0;}
+    public void deleteNode()// throws InodeIOException, NotExistException 
+    {}
+    public void writeNode()// throws InodeIOException, NotExistException 
+    {}
+    public void putNode()// throws NotExistException 
+    {}
+    public void overlay(Node newChild, String name)// throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException 
+    {}
+    public void removeOverlay(Node child)// throws InodeNotFoundException, NoDirectoryInodeException, NotExistException 
+    {}
+    public void removeAllOverlays()// throws NoDirectoryInodeException, NotExistException 
+    {}
+    public boolean isOverlayed(String name)// throws NoDirectoryInodeException, NotExistException 
+    { return false; }
+    public Node lookup(String name)// throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException 
+    {return null;}
+    public boolean isSymlink()// throws NotExistException 
+    {return false;}
+    public int    lastModified()// throws NotExistException 
+    {return 0;}
+    public Node  getNode(String name)// throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException 
+    {return null;}
+    public Node  mkdir(String name, int mode)// throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException 
+    { return null; }
+    public void   rmdir(String name)// throws DirNotEmptyException, InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException,PermissionException 
+    {}
+    public Node  create(String name, int mode)// throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException 
+    {return null;}
+    public void   unlink(String name)// throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NoFileInodeException, NotExistException,PermissionException 
+    {}
+    public Node  symlink(String symname, String newname)// throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, NotSupportedException,PermissionException 
+    {return null;}
+    public String getSymlink()// throws InodeIOException, NoSymlinkInodeException, NotExistException, NotSupportedException, PermissionException 
+    {return null;}
+    public void   rename(String oldname, Node new_dir, String newname)// throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException 
+    {}
+    public int    read(Memory mem, int off, int len)// throws InodeIOException, NoFileInodeException, NotExistException, PermissionException 
+    {return 0;}
+    public int    read(int pos, Memory mem, int off, int len)// throws InodeIOException, NoFileInodeException, NotExistException, PermissionException 
+    {return 0;}
+    public int    write(Memory mem, int off, int len)// throws InodeIOException, NoFileInodeException, NotExistException, PermissionException 
+    {return 0;}
+    public int    write(int pos, Memory mem, int off, int len)// throws InodeIOException, NoFileInodeException, NotExistException, PermissionException 
+    {return 0;}
 
-    public int    lastAccessed() throws NotExistException {return 0;}
-    public int    lastChanged() throws NotExistException {return 0;}
-    public void setLastModified(int time) throws NotExistException {}
-    public void setLastAccessed(int time) throws NotExistException {}
+    public int    lastAccessed()// throws NotExistException 
+    {return 0;}
+    public int    lastChanged()// throws NotExistException 
+    {return 0;}
+    public void setLastModified(int time)// throws NotExistException 
+    {}
+    public void setLastAccessed(int time)// throws NotExistException 
+    {}
 
-    public int getIdentifier() throws NotExistException  {return 0;}
+    public int getIdentifier()// throws NotExistException  
+    {return 0;}
 
-    public int getVersion() throws NotExistException  {return 0;}
+    public int getVersion()// throws NotExistException  
+    {return 0;}
 
-    public FileSystem getFileSystem() throws NotExistException  {return null;}
+    public FileSystem getFileSystem()// throws NotExistException  
+    {return null;}
 
     public StatFS getStatFS() {return null;}
 

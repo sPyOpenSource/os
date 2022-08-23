@@ -4,43 +4,49 @@ import jx.zero.Service;
 
 import java.util.Vector;
 
-public class FilesystemImpl implements FilesystemInterface, Service {
+public class FilesystemImpl implements FileSystemInterface, Service {
     private final FileSystem     fs;
     private final EXT2Permission defaultPermission = new EXT2Permission(EXT2Permission.RWX, 0, 0);
-    private Inode          rInode;
-    private final Vector         fsobjList = new Vector();
-    private boolean        umounted = true;
+    private Node          rInode;
+    private final Vector  fsobjList = new Vector();
+    private boolean       umounted = true;
 
     public FilesystemImpl(FileSystem fs) {
 	this.fs = fs;
 	mount();
     }
 
+    @Override
     public String getName() {
 	return fs.name();
     }
 
+    @Override
     public FSObject openRootDirectoryRO() {
 	rInode.incUseCount();
 	return registerFSObj(new ReadOnlyDirectoryImpl(this, fs, null, rInode));
     }
 
+    @Override
     public FSObject openRootDirectoryRW() {
 	rInode.incUseCount();
 	return registerFSObj(new DirectoryImpl(this, fs, null, rInode));
     }
 
+    @Override
     public Permission getDefaultPermission() {
 	return defaultPermission;
     }
 
+    @Override
     public void mount() {
 	if (!umounted) return;
 	fs.init(true);
-	rInode = fs.getRootInode();
+	rInode = fs.getRootNode();
 	umounted = false;
     }
 
+    @Override
     public void unmount() {
 	umounted = true;
 	try {

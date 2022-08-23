@@ -4,7 +4,7 @@ import jx.InitialNaming;
 import jx.fs.RegularFile;
 import jx.fs.Directory;
 import jx.fs.FS;
-import jx.fs.Inode;
+import jx.fs.Node;
 import jx.fs.InodeIOException;
 import jx.fs.InodeNotFoundException;
 import jx.fs.NoDirectoryInodeException;
@@ -20,7 +20,7 @@ public final class File implements Comparable {
     private String fileName;
     
     private FS fs;
-    private Inode fsobj;
+    private Node fsobj;
     
     public static final String separator = "/";
     public static final char separatorChar = '/';

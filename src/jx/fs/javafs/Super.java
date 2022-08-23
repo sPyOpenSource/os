@@ -199,7 +199,7 @@ public class Super {
      * h&auml;ufig verwendete Gruppen zu erm&ouml;glichen, wird ein Cache verwaltet, in dem zuerst gesucht wird. Wird die
      * gew&uuml;nschte Gruppe dort nicht gefunden, wird eine neue erzeugt und dem Cache hinzugef&uuml;gt.
      *
-     * @param     block_group die Nummer der gew&uuml;nschten Blockgruppe
+     * @param     block_nr die Nummer der gew&uuml;nschten Blockgruppe
      * @param     desc        der Gruppenbezeichner der gew&uuml;nschten Blockgruppe
      * @exception BufferIOException Falls bei der Ein-/Ausgabe ein Fehler auftritt.
      */
@@ -503,7 +503,7 @@ public class Super {
 		    count = (sb_data.s_blocks_count() - sb_data.s_first_data_block()) % sb_data.s_blocks_per_group();
 		for (int j = 0; j < count; j++) {
 		    block = i*sb_data.s_blocks_per_group() + j + sb_data.s_first_data_block();  // sb_data.s_first_data_block abziehen!
-		    if (block_map.containsKey(new Integer(block))) {
+		    if (block_map.containsKey(block)) {
 			if (bitmap.testBit(j) == 0) {
 			    /*System.out*/Debug.out.println("checkBlockBitmaps: Block #" + block + " is used but was marked free");
 			    bitmap.setBit(j);

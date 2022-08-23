@@ -60,6 +60,4 @@ public class TCState extends JVMState {
 		     VerifierInterface mv) {
 	super(nextBC, stack, lVars, mv);
     }
-
 }
-

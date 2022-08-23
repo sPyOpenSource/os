@@ -101,18 +101,21 @@ public abstract class InodeImpl extends jx.fs.InodeImpl {
      * Indicate that inode was changed and has
      * to be written to disk.
      */
+    @Override
     final public void setDirty(boolean value) {
 	i_dirty = value;
 	if (i_dirty)
 	    inodeCache.markInodeDirty(this);
     }
 
+    @Override
     final public void incUseCount() {
 	i_count++;
 	//Debug.out.println("inc: i_ino = " + i_ino + ", i_count = " + i_count);
 	//i_released = false;
     }
 
+    @Override
     final public void decUseCount() {
 	inodeCache.iput(this);
 	//Debug.out.println("dec: i_ino = " + i_ino + ", i_count = " + i_count);
@@ -121,56 +124,65 @@ public abstract class InodeImpl extends jx.fs.InodeImpl {
     }
 
 
+    @Override
     final public int available()  throws NotExistException {
         //if (i_released)
         //throw new NotExistException();
 	return i_sb.available();
     }
 
+    @Override
     final public int lastModified() throws NotExistException {
 	//if (i_released)
 	//throw new NotExistException();
 	return i_data.i_mtime();
     }
 
+    @Override
     final public int lastAccessed() throws NotExistException {
 	//if (i_released)
 	//throw new NotExistException();
 	return i_data.i_atime();
     }
 
+    @Override
     final public int lastChanged() throws NotExistException {
 	//if (i_released)
 	//throw new NotExistException();
 	return i_data.i_ctime();
     }
 
+    @Override
     final public void setLastModified(int time) throws NotExistException {
 	i_data.i_mtime(time);
     }
+    
+    @Override
     final public void setLastAccessed(int time) throws NotExistException {
 	i_data.i_atime(time);
     }
 
-
+    @Override
     final public int getLength() throws NotExistException {
 	//if (i_released)
 	//throw new NotExistException();
 	return i_data.i_size();
     }
 
+    @Override
     final public int i_nlinks()  throws NotExistException {
 	//if (i_released)
 	//throw new NotExistException();
 	return i_data.i_links_count();
     }
 
-    final public  void writeInode()  throws InodeIOException, NotExistException {
-	updateInode(false);
+    @Override
+    final public  void writeNode()  throws InodeIOException, NotExistException {
+	updateNode(false);
     }
 
-    final public  void syncInode()  throws InodeIOException, NotExistException {
-        updateInode(true);
+    final public  void syncNode()  throws InodeIOException, NotExistException {
+        updateNode(true);
     }
 
     public  void syncFile() throws InodeIOException {
@@ -178,7 +190,7 @@ public abstract class InodeImpl extends jx.fs.InodeImpl {
 	i_sb.writeSuper();
     }
 
-    private  void updateInode(boolean do_sync)  throws InodeIOException, NotExistException {
+    private  void updateNode(boolean do_sync)  throws InodeIOException, NotExistException {
 	BufferHead bh = i_data.bh;
 	//Debug.out.println("updateInode: " + bh.b_block);
 	if (i_released)
@@ -190,19 +202,21 @@ public abstract class InodeImpl extends jx.fs.InodeImpl {
 	}
     }
 
-    public  void putInode()  throws NotExistException {
+    @Override
+    public  void putNode()  throws NotExistException {
 	if (i_released) throw new NotExistException();
 	bufferCache.brelse(i_data.bh);
     }
 
     // Wird in iput() aufgerufen, falls i_data.i_links_count() == 0
-    public  void deleteInode() throws InodeIOException, NotExistException {
+    @Override
+    public  void deleteNode() throws InodeIOException, NotExistException {
 	//Debug.out.println("deleteInode");
 	if (i_released)
 	    throw new NotExistException();
 	i_data.i_dtime(clock.getTimeInMillis());
 	setDirty(true);
-	updateInode(false);
+	updateNode(false);
 	i_data.i_size(0);
 	try {
 	    if (i_data.i_blocks() > 0)
@@ -776,17 +790,22 @@ public abstract class InodeImpl extends jx.fs.InodeImpl {
         setDirty(true);
     }
 
+    @Override
     public int getIdentifier() {
 	return i_ino;
     }
 
+    @Override
     public int getVersion() {
 	return i_data.i_version();
     }
+    
+    @Override
     public jx.fs.FileSystem getFileSystem() { 
 	return fileSystem;
     }
 
+    @Override
     public jx.fs.StatFS getStatFS() {
 	jx.fs.StatFS sfs = new jx.fs.StatFS();
 	sfs.bsize = i_sb.s_blocksize;

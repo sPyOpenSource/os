@@ -22,6 +22,7 @@ public class DatagramSocket
     UDPReceiver receiver;
     private int timeout = 0x7fffffff;
     
+    @Override
     protected void finalize() {
       /*if (fd != null)
 	close();*/

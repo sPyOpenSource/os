@@ -1,10 +1,10 @@
 package jx.fs;
 
-abstract public class FSObjectImpl implements jx.fs.FSObject, jx.zero.Service {
+abstract public class FSObjectImpl implements FSObject, jx.zero.Service {
     protected FilesystemImpl fs_impl;
     protected FileSystem     fs;
     protected DirectoryImpl  parent;
-    protected Inode          inode;
+    protected Node           inode;
 
     protected EXT2Permission perm = null;
     protected EXT2Attribute  attr = null;
@@ -12,7 +12,7 @@ abstract public class FSObjectImpl implements jx.fs.FSObject, jx.zero.Service {
     @Override
     public abstract int length() throws Exception;
 
-    public FSObjectImpl(FilesystemImpl fs_impl, FileSystem fs, FSObjectImpl parent, Inode inode) {
+    public FSObjectImpl(FilesystemImpl fs_impl, FileSystem fs, FSObjectImpl parent, Node inode) {
 	this.fs_impl = fs_impl;
 	this.fs      = fs;
 	this.inode   = inode;
@@ -31,14 +31,16 @@ abstract public class FSObjectImpl implements jx.fs.FSObject, jx.zero.Service {
 
     public void sync() throws Exception {}
 
-    final public FilesystemInterface getFileSystem() {
+    final public FileSystemInterface getFileSystem() {
 	return fs_impl;
     }
 
+    @Override
     final public boolean isFile() throws Exception {
 	return inode.isFile();
     }
 
+    @Override
     final public boolean isDirectory() throws Exception {
 	return inode.isDirectory();
     }
@@ -47,10 +49,12 @@ abstract public class FSObjectImpl implements jx.fs.FSObject, jx.zero.Service {
 	return inode.isExecutable();
     }
 
+    @Override
     final public Permission getPermission() throws Exception {	
 	return perm;
     }
 
+    @Override
     final public FSAttribute getAttribute() throws Exception {
 	if (attr==null) {attr = new EXT2Attribute(1,perm);}
 	return attr;
@@ -58,10 +62,10 @@ abstract public class FSObjectImpl implements jx.fs.FSObject, jx.zero.Service {
 
     @Override
     public int hashCode() {
-	try {
+	//try {
 	    return inode.getIdentifier();
-	} catch (NotExistException ex) {
-	    return super.hashCode();
-	}
+	//} catch (NotExistException ex) {
+	    //return super.hashCode();
+	//}
     }
 }

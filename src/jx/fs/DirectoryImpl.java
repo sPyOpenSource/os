@@ -1,12 +1,14 @@
 package jx.fs;
 
-final public class DirectoryImpl extends FSObjectImpl implements jx.fs.Directory {
-    public DirectoryImpl(FilesystemImpl impl, FileSystem fs, FSObjectImpl parent, Inode inode) {
+
+final public class DirectoryImpl extends FSObjectImpl implements Directory {
+    public DirectoryImpl(FilesystemImpl impl, FileSystem fs, FSObjectImpl parent, Node inode) {
 	super(impl, fs, parent, inode);
     }
     
     public Directory getParent() { return parent; }
 
+    @Override
     public String[] list() throws Exception { 
 	try {
 	    String[] dirList = inode.readdirNames();
@@ -19,9 +21,10 @@ final public class DirectoryImpl extends FSObjectImpl implements jx.fs.Directory
     @Override
     public int length() throws Exception { return 0; }
 
+    @Override
     public FSObject openRO(String filename) throws Exception {
-	try {
-	    Inode nInode = inode.lookup(filename);
+	//try {
+	    Node nInode = inode.lookup(filename);
 	    if (nInode.isDirectory()) {		
 		return fs_impl.registerFSObj(new ReadOnlyDirectoryImpl(fs_impl,fs,this,nInode));
 	    } else if (nInode.isFile()) {
@@ -29,15 +32,16 @@ final public class DirectoryImpl extends FSObjectImpl implements jx.fs.Directory
 	    } else {
 		return null;
 	    }
-	} catch (InodeIOException | InodeNotFoundException | NoDirectoryInodeException | NotExistException | PermissionException ex) {
+	//} catch (IOException ex) {
 	    //Debug.verbose("exception caught (lookup)");
-	    return null;
-	}
+	    //return null;
+	//}
     }
 
+    @Override
     public FSObject openRW(String filename) throws Exception {
-	try {
-	    Inode nInode = inode.lookup(filename);
+	//try {
+	    Node nInode = inode.lookup(filename);
 	    if (nInode.isDirectory()) {
 		return fs_impl.registerFSObj(new DirectoryImpl(fs_impl,fs,this,nInode));
 	    } else if (nInode.isFile()) {
@@ -45,25 +49,29 @@ final public class DirectoryImpl extends FSObjectImpl implements jx.fs.Directory
 	    } else {
 		return null;
 	    }
-	} catch (InodeIOException | InodeNotFoundException | NoDirectoryInodeException | NotExistException | PermissionException ex) {
+	//} catch (InodeIOException | InodeNotFoundException | NoDirectoryInodeException | NotExistException | PermissionException ex) {
 	    //Debug.verbose("exception caught (lookup)");
-	    return null;
-	}
+	    //return null;
+	//}
     }
 
+    @Override
     public RegularFile create(Permission perm, String filename) throws Exception {
-	try {
-	    Inode nInode = inode.create(filename, InodeImpl.S_IWUSR|InodeImpl.S_IRUGO);
+	//try {
+	    Node nInode = inode.create(filename, InodeImpl.S_IWUSR|InodeImpl.S_IRUGO);
 	    return new RegularFileImpl(fs_impl,fs,this,nInode);
-	} catch (FileExistsException | InodeIOException | NoDirectoryInodeException | NotExistException | PermissionException ex) {
-	    return null;
-	}
+	//} catch (FileExistsException | InodeIOException | NoDirectoryInodeException | NotExistException | PermissionException ex) {
+	    //return null;
+	//}
     }
 
+    @Override
     public boolean    link(Permission perm, String filename, FSObject file) throws Exception { return false; }
 
+    @Override
     public boolean    unlink(String filename) throws Exception { return false; }
 
+    @Override
     public boolean    mkdir(Permission perm, String name) throws Exception {return false;}
 
     @Override

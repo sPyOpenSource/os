@@ -10,7 +10,7 @@ import timerpc.*;
  * Slow down sector access to simulate real disk device.
  * @author Michael Golm
  */
-public class BlockIORAM implements jx.bio.BlockIO, Service {
+public class BlockIORAM implements jx.devices.bio.BlockIO, Service {
     private final static int DEFAULT_CAPACITY = 5000;
     int capacity;
     Memory buffer;

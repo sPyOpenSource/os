@@ -74,13 +74,13 @@ public class FileSystemSecurityPolicy implements DomainBorderIn {
 	    if (doOpenOnly) return true;
 	    else return check_RegularFile((RegularFile) o, info.getMethod());
 	else if (cpuManager.getVMClass(o).equals(refFilesystemImpl))
-	    return check_FilesystemInterface((FilesystemInterface) o, info.getMethod());
+	    return check_FilesystemInterface((FileSystemInterface) o, info.getMethod());
 	else if (cpuManager.getVMClass(o).equals(refDirectoryImpl))
 	    return check_Directory((Directory) o, info);
 	return false;
     }
 
-    private boolean check_FilesystemInterface(FilesystemInterface fs, VMMethod method){
+    private boolean check_FilesystemInterface(FileSystemInterface fs, VMMethod method){
 	if (method.equals(getDefaultPermission_FilesystemInterface)) { 
 	    return true;
 	} else if (method.equals(openRootDirectoryRW_FilesystemInterface)) {

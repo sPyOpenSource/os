@@ -5,6 +5,8 @@ import jx.classfile.constantpool.*;
 import jx.classstore.ClassFinder;
 import jx.verifier.bytecode.*;
 import jx.verifier.*;
+import jx.zero.verifier.wcet.ExecutionTime;
+import jx.zero.verifier.wcet.ValueProvider;
 
 //Class for Simulated state needed for partial evaluation of loops
 public class SimState {
@@ -72,7 +74,7 @@ public class SimState {
 	lVars = new SimData[lVarsSize];
 	stack = new SimData[stackSize];
 	stackIndex = 0;
-	eTime = new SimpleExecutionTime();
+	eTime = (ExecutionTime)new SimpleExecutionTime();
 	this.classFinder = classFinder;
     }
 
@@ -417,7 +419,7 @@ public class SimState {
 		setInformationMissing();
 		return false;
 	    }
-	    push(new SimInt(nextBC.getAddress(), tmpval.intValue()));
+	    push(new SimInt(nextBC.getAddress(), tmpval));
 	    nextBC = nextBC.getTargets()[0];}
 	    break;
 	case ByteCode.INVOKEVIRTUAL:
@@ -438,7 +440,7 @@ public class SimState {
 		    setInformationMissing();
 		    return false;
 		}
-		push(new SimInt(nextBC.getAddress(), tmpint.intValue()));
+		push(new SimInt(nextBC.getAddress(), tmpint));
 		nextBC = nextBC.getTargets()[0];
 	    }
 	    break;
@@ -573,7 +575,7 @@ public class SimState {
 						  String className, 
 						  ConstantPool cPool,
 						  ExecutionTime eTime) 
-	 {
+	{
 
 	//check if the method should be analyzed or if the wcet is provided by a valueProvider
 	if (getValueProvider().providesMethodWCET(className, 
@@ -653,7 +655,6 @@ public class SimState {
 	    setInformationMissing();
 	    return null;
 	}
-
 
     }
 }

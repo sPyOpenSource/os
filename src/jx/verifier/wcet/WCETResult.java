@@ -2,6 +2,7 @@ package jx.verifier.wcet;
 
 import jx.classfile.VerifyResult;
 import jx.classfile.MethodData;
+import jx.zero.verifier.wcet.ExecutionTime;
 
 
 public class WCETResult extends VerifyResult {

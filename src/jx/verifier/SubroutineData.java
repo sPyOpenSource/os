@@ -1,10 +1,6 @@
 package jx.verifier;
 
 import java.util.Vector;
-import java.util.Enumeration;
-
-import jx.classfile.*;
-import jx.classfile.constantpool.*;
 import jx.verifier.bytecode.*;
 
 /** Class to hold data for one Subroutine.
