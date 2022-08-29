@@ -20,13 +20,13 @@ public class SimState {
     public OpenIfListElement openIf = null;
 
     //set to true if information needed for simulation was not provided by valueprovider
-    private  boolean iM = false;
+    private boolean iM = false;
     public void setInformationMissing() {
 	iM = true;
     }
     public boolean informationMissing() {return iM;}
     public boolean timeExceeded = false;
-    private SimData stack[];
+    private final SimData stack[];
     private int stackIndex = 0;
     public ClassFinder classFinder;
 

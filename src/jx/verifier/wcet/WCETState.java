@@ -3,9 +3,10 @@ package jx.verifier.wcet;
 import java.util.Enumeration;
 import jx.verifier.*;
 import jx.verifier.bytecode.*;
+import jx.zero.verifier.VerifierInterface;
 import jx.zero.verifier.wcet.ValueProvider;
 
-public class WCETState extends  JVMState {
+public class WCETState extends JVMState {
     /**Indicates how many ticks the runtime time counter should increase after passing this bytecode.
      * Values <=0 are ignored. Else, code is added just BEFORE this bytecode to increase the time counter.
      */

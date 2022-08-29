@@ -187,7 +187,7 @@ public class DirInode extends InodeImpl {
      * @exception PermissionException       falls die Zugriffsrechte des Verzeichnisses die Operation nicht erlauben
      */
     @Override
-    public  jx.fs.Node getNode(String name)// throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException 
+    public jx.fs.Node getNode(String name)// throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException 
     {
 	DirEntryData de_data;
 	InodeImpl inode;
@@ -195,7 +195,7 @@ public class DirInode extends InodeImpl {
 	if (i_released)
 	    throw new NotExistException();
 	
-	if (! permission(MAY_EXEC))
+	if (!permission(MAY_EXEC))
 	    throw new PermissionException();
 	
 	de_data = findDirEntry(name);
@@ -238,7 +238,7 @@ public class DirInode extends InodeImpl {
 	return inode;
     }
     
-    public  jx.fs.Node mkdir(String name, int mode) throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException {
+    public jx.fs.Node mkdir(String name, int mode) throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException {
 	InodeImpl inode;
 	BufferHead bh, dir_block;
 	DirEntryData de_data;
@@ -310,7 +310,7 @@ public class DirInode extends InodeImpl {
     }
 
     @Override
-    public  void rmdir(String name) throws DirNotEmptyException, InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException {
+    public void rmdir(String name) throws DirNotEmptyException, InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException {
 	int time;
 	DirEntryData de_data;
 	jx.fs.Node tmp_inode;
@@ -325,7 +325,7 @@ public class DirInode extends InodeImpl {
 	    throw new NoDirectoryInodeException();
 	}
 	
-	if (! permission(MAY_WRITE | MAY_EXEC) || ! checkSticky())
+	if (!permission(MAY_WRITE | MAY_EXEC) || !checkSticky())
 	    throw new PermissionException();
 	
 	inode = (DirInode)tmp_inode;
@@ -354,7 +354,7 @@ public class DirInode extends InodeImpl {
     }
     
     @Override
-    public  jx.fs.Node create(String name, int mode) throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException {
+    public jx.fs.Node create(String name, int mode) throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException {
     InodeImpl inode;
     DirEntryData de_data;
     
@@ -367,7 +367,7 @@ public class DirInode extends InodeImpl {
 	    throw new FileExistsException();
 	}
 	
-	if (! permission(MAY_WRITE | MAY_EXEC))
+	if (!permission(MAY_WRITE | MAY_EXEC))
 	    throw new PermissionException();
 	
 	if ((inode = i_sb.newInode(this, S_IFREG | mode)) == null)
@@ -386,7 +386,7 @@ public class DirInode extends InodeImpl {
     }
 
     @Override
-    public  void unlink(String name) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NoFileInodeException, NotExistException, PermissionException {
+    public void unlink(String name) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NoFileInodeException, NotExistException, PermissionException {
 	DirEntryData de_data;
 	InodeImpl inode;
 	
@@ -399,7 +399,7 @@ public class DirInode extends InodeImpl {
 	    throw new NoFileInodeException();
 	}
 	
-	if (! permission(MAY_WRITE | MAY_EXEC) || ! checkSticky())
+	if (!permission(MAY_WRITE | MAY_EXEC) || !checkSticky())
 	    throw new PermissionException();
 	
 	if (inode.i_data.i_links_count() == 0) {
@@ -436,7 +436,7 @@ public class DirInode extends InodeImpl {
      *                                      Dateisystem als nur lesbar angemeldet wurde
      */
     @Override
-    public  jx.fs.Node symlink(String symname, String newname) throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException {
+    public jx.fs.Node symlink(String symname, String newname) throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException {
 	SymlinkInode symlinkinode;
 	DirEntryData de_data;
 	boolean success;
@@ -448,7 +448,7 @@ public class DirInode extends InodeImpl {
 	if (de_data != null) // Eintrag existiert bereits
 	    throw new FileExistsException();
 	
-	if (! permission(MAY_WRITE | MAY_EXEC))
+	if (!permission(MAY_WRITE | MAY_EXEC))
 	    throw new PermissionException();
 	
 	if ((symlinkinode = (SymlinkInode)i_sb.newInode(this, (S_IFLNK | S_IRWXUGO))) == null)
@@ -497,7 +497,7 @@ public class DirInode extends InodeImpl {
      *                                      8. das Dateisystem ist als nur lesbar angemeldet
      */
     @Override
-    public  void rename(String oldname, jx.fs.Node new_dir, String newname) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException {
+    public void rename(String oldname, jx.fs.Node new_dir, String newname) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException {
 	DirEntryData de_data;
 	InodeImpl inode_to_move;
 	DirInode new_dirinode;
@@ -554,7 +554,7 @@ public class DirInode extends InodeImpl {
      * @exception PermissionException       falls der Verzeichniseintrag im Zielverzeichnis nicht angelegt werden darf
      *                                      (s. rename)
      */
-    public  void renameAddNode(InodeImpl new_inode, String newname) throws InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException {
+    public void renameAddNode(InodeImpl new_inode, String newname) throws InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException {
 	DirEntryData de_data;
 	
 	InodeImpl old_inode = null;

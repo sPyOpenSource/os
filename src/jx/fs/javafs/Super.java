@@ -4,8 +4,7 @@ import java.util.Hashtable;
 import java.util.Vector;
 import jx.zero.Debug;
 import jx.zero.Clock;
-import jx.fs.NotExistException;
-import jx.fs.buffercache.*;
+import jx.fs.buffer.*;
 
 /**
  * Diese Klasse ist die zentrale Stelle f&uuml;r die Verwaltung des Dateisystems. Hier lassen sich neue Bl&ouml;ocke und Inodes
@@ -203,7 +202,7 @@ public class Super {
      * @param     desc        der Gruppenbezeichner der gew&uuml;nschten Blockgruppe
      * @exception BufferIOException Falls bei der Ein-/Ausgabe ein Fehler auftritt.
      */
-    public  Bitmap loadBitmap(int block_nr)
+    public Bitmap loadBitmap(int block_nr)
 	throws BufferIOException {
 	/* moeglich waere auch, alle Elemente mit Bitmaps besetzt zu halten,
 	   die dann nicht geloescht und neu erzeugt werden, sondern nur neu initialisiert. */
@@ -250,7 +249,7 @@ public class Super {
      *
      * @exception BufferIOException Falls bei der Ein-/Ausgabe ein Fehler auftritt.
      */
-    public  int countFreeInodes() throws BufferIOException {
+    public int countFreeInodes() throws BufferIOException {
 	if (true) {
 	    GroupData desc;
 	    Bitmap bitmap;
@@ -380,7 +379,7 @@ public class Super {
      * @param     inode die freizugebende Inode
      * @exception BufferIOException Falls bei der Ein-/Ausgabe ein Fehler auftritt.
      */
-    public  void freeInode(InodeImpl inode) throws BufferIOException {
+    public void freeInode(InodeImpl inode) throws BufferIOException {
 	int ino, block_group, bit, bitmap_nr;
 	GroupData desc;
 	Bitmap bitmap;
@@ -416,10 +415,10 @@ public class Super {
 	    bitmap.markBitmapDirty();
 
 	    desc.bg_free_inodes_count((short)(desc.bg_free_inodes_count()+1));
-	    try {
+	    //try {
 		if (inode.isDirectory())
 		    desc.bg_used_dirs_count((short)(desc.bg_used_dirs_count()-1));
-	    } catch (NotExistException e) {     }
+	    //} catch (NotExistException e) {     }
 	    desc.bh.markDirty();
 
 	    sb_data.s_free_inodes_count(sb_data.s_free_inodes_count()+1);
@@ -840,7 +839,7 @@ public class Super {
      * @param clear clear new block
      * @exception BufferIOException Falls bei der Ein-/Ausgabe ein Fehler auftritt.
      */
-    public  int newBlock(int goal, boolean clear) throws BufferIOException {
+    public int newBlock(int goal, boolean clear) throws BufferIOException {
 	int i, j = 0, k, tmp;
 	BufferHead bh;
 	Bitmap bitmap = null;

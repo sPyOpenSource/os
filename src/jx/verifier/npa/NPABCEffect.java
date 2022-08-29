@@ -134,7 +134,7 @@ public final class NPABCEffect {
 	    state.NPAgetStack().push(NPAValue.newNULL(), bCode.getAddress());
 	    break;
 	case ByteCode.MULTIANEWARRAY:
-	    cPoolIndex = (( bCode.getByteArgs()[0]<<8) & 0xff00) |
+	    cPoolIndex = ((bCode.getByteArgs()[0] << 8) & 0xff00) |
 		(((int)bCode.getByteArgs()[1])&0xff);
 	     bCodeCP = (BCCPArgOp) bCode;
 	    //i dimensions
@@ -215,7 +215,7 @@ public final class NPABCEffect {
     //all if constructs concerning refs; returns all branches that cannot yet be discarded
     //ifnull, ifnonnull, ifacmpne, ifacmpeq
     static private NPAState[] ifOp(NPAState state, ByteCode bCode) throws VerifyException {
-	NPAState[] retval = null;
+	NPAState[] retval;
 
 	NPAValue  value = state.NPAgetStack().NPApop();
 
@@ -245,7 +245,6 @@ public final class NPABCEffect {
 		retval[1].setNextBC(bCode.getTargets()[1]);
 		setValue(retval[1], value, NPAValue.NONNULL);
 		return retval;
-		
 	    }
 
 	case ByteCode.IFNULL:

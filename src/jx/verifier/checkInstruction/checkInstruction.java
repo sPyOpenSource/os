@@ -5,8 +5,8 @@ import jx.verifier.bytecode.*;
 import jx.classfile.*;
 import jx.classfile.constantpool.*;
 import java.util.Vector;
-public class checkInstruction {
 
+public class checkInstruction {
 
     //check if instructions in opCodes is used in method
     static public void  verifyMethod(MethodSource method, 
@@ -25,7 +25,7 @@ public class checkInstruction {
 		 actBc != null; 
 		 actBc = actBc.next) {
 		if (actBc.getOpCode() == opCodes[i]){
-		    result.addElement(new Integer(opCodes[i]));
+		    result.addElement(opCodes[i]);
 		}
 	    }
 	}
@@ -44,4 +44,5 @@ public class checkInstruction {
 	}
         return res.instructionUsed(ByteCode.NEW) == 1;
     }
+    
 }

@@ -5,7 +5,7 @@ package jx.fs.buffercache;
  *
  * @author Michael Golm
  */
-public interface BufferCache {
+public interface BufferCache extends jx.fs.buffer.BufferCache {
 
     /**
      * Reads the block from the block device.
@@ -19,7 +19,7 @@ public interface BufferCache {
      * @param  block  block number
      * @return a locked <code>BufferHead</code> containing the block
      */
-    BufferHead bread(int block);
+    //BufferHead bread(int block);
 
 
     /**
@@ -104,20 +104,20 @@ public interface BufferCache {
      * @param  block  block number
      * @return the buffer. Never null.
      */
-    BufferHead getblk(int block);
+    //BufferHead getblk(int block);
 
     
     /**
      * Writes all dirty buffers to the block device.
      * @param wait wait for buffers to be unlocked
      */
-    void syncDevice(boolean wait);
+    //void syncDevice(boolean wait);
 
     /**
      * Write all dirty buffers to the block device.
      * Locked buffers or "young" buffers are not yet written.
      */
-    void flushCache();
+    //void flushCache();
 
 
     /**
@@ -130,5 +130,5 @@ public interface BufferCache {
     /**
      * Print a buffer cache statistics.
      */
-    void showBuffers();
+    //void showBuffers();
 }

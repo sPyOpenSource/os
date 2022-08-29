@@ -206,7 +206,7 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
      
      */
     @Override
-    final public  void brelse(jx.fs.buffercache.BufferHead bh0) {
+    final public void brelse(jx.fs.buffer.BufferHead bh0) {
 	BufferHead bh = (BufferHead)bh0;
 	int newtime;
 
@@ -257,7 +257,7 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
       the Bufferhead, that should to be set free. 
      */
     @Override
-    final public  void bforget(jx.fs.buffercache.BufferHead bh0) {
+    final public void bforget(jx.fs.buffercache.BufferHead bh0) {
 	BufferHead bh = (BufferHead)bh0;
 	if (bh == null)
 	    return;
@@ -286,7 +286,7 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
      
      */
     @Override
-    final public  jx.fs.buffercache.BufferHead bread(int block) {
+    final public jx.fs.buffercache.BufferHead bread(int block) {
 	jx.fs.buffercache.BufferHead bh;
 
 
@@ -343,7 +343,7 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
      
      */
     @Override
-    public  void showBuffers() {
+    public void showBuffers() {
 	BufferHead bh;
 	int found = 0, locked = 0, dirty = 0, used = 0;
 	String buf_types[] = new String[] {"CLEAN", "LOCKED", "DIRTY"};
@@ -392,7 +392,7 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
      Write the Bufferhead of specified file system, that was marked as "dirty" on the partition
      */
     @Override
-    public  void syncDevice(boolean wait) {
+    public void syncDevice(boolean wait) {
 	if (debugSync) { 
 	    Debug.out.println("Buffers before sync");
 	    showBuffers();
@@ -511,7 +511,7 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
     }
 
     @Override
-    final public void bdwrite(jx.fs.buffercache.BufferHead bh) {
+    final public void bdwrite(jx.fs.buffer.BufferHead bh) {
 	bh.markDirty();
 	brelse(bh);
     }

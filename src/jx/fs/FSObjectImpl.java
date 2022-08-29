@@ -31,6 +31,7 @@ abstract public class FSObjectImpl implements FSObject, jx.zero.Service {
 
     public void sync() throws Exception {}
 
+    @Override
     final public FileSystemInterface getFileSystem() {
 	return fs_impl;
     }

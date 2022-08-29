@@ -8,7 +8,7 @@ import jx.zero.ReadOnlyMemory;
  * A default implementation of the Inode.
  */
 public abstract class InodeImpl implements Node {
-    protected Node parent;
+    protected Node      parent;
     protected Vector    overlayNames;
     protected Vector    overlayInodes;
     protected boolean   i_dirty, i_released;
@@ -126,7 +126,7 @@ public abstract class InodeImpl implements Node {
     @Override
     public Node getParent() { return parent; }
 
-    public void setParent(jx.fs.Inode parent) {
+    public void setParent(jx.fs.Node parent) {
 	this.parent = (InodeImpl)parent;
     }
 
@@ -166,7 +166,7 @@ public abstract class InodeImpl implements Node {
     public  void overlay(Node newChild, String name) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException {
 	    if (i_released)
 		throw new NotExistException();
-	    if (! isDirectory())
+	    if (!isDirectory())
 		throw new NoDirectoryInodeException();
 	    
 	    Node inodeToOverlay = lookup(name); // wirft InodeNotFoundException
@@ -180,7 +180,7 @@ public abstract class InodeImpl implements Node {
     public  void removeOverlay(Node child) throws InodeNotFoundException, NoDirectoryInodeException, NotExistException {
 	    if (i_released)
 		throw new NotExistException();
-	    if (! isDirectory())
+	    if (!isDirectory())
 		throw new NoDirectoryInodeException();
 	    
 	    int index = overlayInodes.indexOf(child);
@@ -201,7 +201,7 @@ public abstract class InodeImpl implements Node {
 		throw new NoDirectoryInodeException();*/
 	    
 	    for (int i = 0; i < overlayInodes.size(); i++) {
-		Inode inode = (Inode)overlayInodes.elementAt(i);
+		Node inode = (Node)overlayInodes.elementAt(i);
 		inode.decUseCount();
 	    }
 	    overlayNames.removeAllElements();

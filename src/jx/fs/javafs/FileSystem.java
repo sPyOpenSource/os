@@ -9,7 +9,7 @@ import jx.fs.FSException;
 import jx.fs.InodeIOException;
 import jx.fs.Node;
 import jx.fs.NotExistException;
-import jx.fs.buffercache.*;
+import jx.fs.buffer.BufferCache;
 
 /**
  * Instances of this class are used by VFS to operate on a jafafs as a whole.

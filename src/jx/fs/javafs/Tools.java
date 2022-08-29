@@ -9,7 +9,8 @@ import jx.devices.bio.BlockIO;
 import jx.fs.InodeIOException;
 import jx.fs.InodeNotFoundException;
 import jx.fs.FSException;
-import jx.fs.buffercache.*;
+import jx.fs.buffer.BufferCache;
+import jx.fs.buffercache.BufferHead;
 
 class TooSmallException extends Exception { }
 class TooBigException extends Exception { }
@@ -646,7 +647,7 @@ public class Tools {
 		block = ((Integer)duplicate_blocks.firstElement());
 		int inodenr = ((Integer)duplicate_inodes.firstElement());
 		i_data = fs.getInodeData(inodenr);
-		int newblock = 0;
+		int newblock;
 		try {
 		    newblock = fs.newBlock(block);
 		} catch(BufferIOException e) {
@@ -698,7 +699,7 @@ public class Tools {
 	inode = new DirInode(fs.fileSystem, fs, current, i_data, bufferCache, inodeCache, clock);
 	if (i_data.i_block(0) == 0) {
 	    int goal = fs.groupStart(current);
-	    int block = 0;
+	    int block;
 	    try {
 		block = fs.newBlock(goal);
 	    } catch (BufferIOException e) {

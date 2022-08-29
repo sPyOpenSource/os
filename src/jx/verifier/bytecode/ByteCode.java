@@ -536,6 +536,4 @@ public class ByteCode {
 	//nothing to do for ordinary Bytecodes.
     }
 
-
 }
-

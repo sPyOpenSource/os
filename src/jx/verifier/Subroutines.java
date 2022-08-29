@@ -1,13 +1,10 @@
 package jx.verifier;
 
 import java.util.Vector;
-import java.lang.Error;
-import jx.classfile.*;
-import jx.classfile.constantpool.*;
 import jx.verifier.bytecode.*;
 
 
-public class Subroutines {
+public class Subroutines implements jx.zero.verifier.Subroutines {
     private SubroutineData srs[];
     private BCLinkList code;
     public void registerSrs(BCLinkList code) {
@@ -77,8 +74,6 @@ public class Subroutines {
 	sr.setAfterState(srVer.getFinalState());
 	//update States of all callers
 	sr.updateCallerStates();
-	return;
-	
     }
 
     public String toString() {
@@ -87,9 +82,9 @@ public class Subroutines {
 	if (srs.length ==0) 
 	    return ret+"(none)\n";
 	ret +="\n";
-	for (int i=0; i< srs.length; i++) {
-	    ret += srs[i].toString();
-	}
+        for (SubroutineData sr : srs) {
+            ret += sr.toString();
+        }
 	
 	return ret;
     }

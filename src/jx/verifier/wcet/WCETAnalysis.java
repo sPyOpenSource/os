@@ -213,7 +213,7 @@ public class WCETAnalysis {
     static public void scheduleRTChecks(BCLinkList code) {
 	int timeCounter = 0;
 	for (ByteCode actBC = code.getFirst(); 
-	     actBC != null; 
+	     actBC != null;
 	     actBC = actBC.next) {
 	    //find basic blocks, at the end of a basic block the appropriate amount of time is added.
 	    //FEHLER es sollte auch wirklich ZEIT draufgez�hlt werden,  nicht nur die Anzahl der Befehle

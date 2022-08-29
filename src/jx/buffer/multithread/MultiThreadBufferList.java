@@ -30,9 +30,9 @@ public class MultiThreadBufferList implements BufferProducer, BufferConsumer {
     Buffer last;
     CPUManager cpuManager;
     CPUState consumer;
-public Buffer getLast(){
-    return last;
-}
+    public Buffer getLast(){
+        return last;
+    }
     int size;
 
     String name; // for debugging
@@ -128,8 +128,8 @@ public Buffer getLast(){
            first.next.blockIfEqual(null);
            x = (Buffer)first.next.get();
            } while(x == null);
-       //if (x==null) throw new Error("Unblocked and element is null?? Should not happen if I am the only consumer in list "         +(name!=null?name:"unnamed list")); // TimerManager unblocks us???
-       first = x;
+        //if (x==null) throw new Error("Unblocked and element is null?? Should not happen if I am the only consumer in list "         +(name!=null?name:"unnamed list")); // TimerManager unblocks us???
+        first = x;
 	*/
 	first.next.blockIfEqual(null);
 	consumer = null;

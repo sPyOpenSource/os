@@ -125,72 +125,80 @@ public abstract class InodeImpl extends jx.fs.InodeImpl {
 
 
     @Override
-    final public int available()  throws NotExistException {
+    final public int available()// throws NotExistException 
+    {
         //if (i_released)
         //throw new NotExistException();
 	return i_sb.available();
     }
 
     @Override
-    final public int lastModified() throws NotExistException {
+    final public int lastModified()// throws NotExistException 
+    {
 	//if (i_released)
 	//throw new NotExistException();
 	return i_data.i_mtime();
     }
 
     @Override
-    final public int lastAccessed() throws NotExistException {
+    final public int lastAccessed()// throws NotExistException 
+    {
 	//if (i_released)
 	//throw new NotExistException();
 	return i_data.i_atime();
     }
 
     @Override
-    final public int lastChanged() throws NotExistException {
+    final public int lastChanged()// throws NotExistException 
+    {
 	//if (i_released)
 	//throw new NotExistException();
 	return i_data.i_ctime();
     }
 
     @Override
-    final public void setLastModified(int time) throws NotExistException {
+    final public void setLastModified(int time)// throws NotExistException 
+    {
 	i_data.i_mtime(time);
     }
     
     @Override
-    final public void setLastAccessed(int time) throws NotExistException {
+    final public void setLastAccessed(int time)// throws NotExistException 
+    {
 	i_data.i_atime(time);
     }
 
     @Override
-    final public int getLength() throws NotExistException {
+    final public int getLength()// throws NotExistException 
+    {
 	//if (i_released)
 	//throw new NotExistException();
 	return i_data.i_size();
     }
 
     @Override
-    final public int i_nlinks()  throws NotExistException {
+    final public int i_nlinks()// throws NotExistException 
+    {
 	//if (i_released)
 	//throw new NotExistException();
 	return i_data.i_links_count();
     }
 
     @Override
-    final public  void writeNode()  throws InodeIOException, NotExistException {
+    final public void writeNode() throws InodeIOException, NotExistException {
 	updateNode(false);
     }
 
-    final public  void syncNode()  throws InodeIOException, NotExistException {
+    final public void syncNode() throws InodeIOException, NotExistException {
         updateNode(true);
     }
 
-    public  void syncFile() throws InodeIOException {
+    public void syncFile() throws InodeIOException {
 	inodeCache.writeInodeNow(this);
 	i_sb.writeSuper();
     }
 
-    private  void updateNode(boolean do_sync)  throws InodeIOException, NotExistException {
+    private void updateNode(boolean do_sync) throws InodeIOException, NotExistException {
 	BufferHead bh = i_data.bh;
 	//Debug.out.println("updateInode: " + bh.b_block);
 	if (i_released)
@@ -203,14 +211,14 @@ public abstract class InodeImpl extends jx.fs.InodeImpl {
     }
 
     @Override
-    public  void putNode()  throws NotExistException {
+    public void putNode() throws NotExistException {
 	if (i_released) throw new NotExistException();
 	bufferCache.brelse(i_data.bh);
     }
 
     // Wird in iput() aufgerufen, falls i_data.i_links_count() == 0
     @Override
-    public  void deleteNode() throws InodeIOException, NotExistException {
+    public void deleteNode() throws InodeIOException, NotExistException {
 	//Debug.out.println("deleteInode");
 	if (i_released)
 	    throw new NotExistException();

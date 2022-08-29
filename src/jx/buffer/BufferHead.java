@@ -8,7 +8,7 @@ import jx.zero.*;
  * des Netzwerkstacks zu &uuml;bertragen. Sie besitzen ein Memory-Objekt (<code>b_data</code>) in der vom NIC verwendeten
  * Blockgr&ouml;&szlig;e.
  */
-public class BufferHead {
+public class BufferHead implements jx.fs.buffer.BufferHead {
     /** vom BufferHashtable verwendet */
     //BufferHeadHashKey b_hashkey;
 
@@ -34,4 +34,19 @@ public class BufferHead {
 
     public final Memory getData() { return data; }
     public final void setData(Memory data) { this.data = data; }
+
+    @Override
+    public void markDirty() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void markUptodate() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void clear() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

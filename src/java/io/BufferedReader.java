@@ -561,23 +561,23 @@ public class BufferedReader extends Reader
     public int read(char[] buf, int offset, int count) throws IOException {
         try {
             MemoryManager memoryManager = (MemoryManager)InitialNaming.lookup("MemoryManager");
-            Memory buffer1 =  memoryManager.alloc(4096);
-            FS fs    = (FS) LookupHelper.waitUntilPortalAvailable(null, "FS");
+            Memory mBuffer = memoryManager.alloc(4096);
+            FS fs = (FS) LookupHelper.waitUntilPortalAvailable(null, "FS");
 	
 	    Node fsobj = fs.lookup("/index.html");
 
 	    int l = fsobj.getLength();
             Debug.out.println("l: " + l + " count: " + count);
-	  fsobj.read(buffer1, 0,  l);
+            fsobj.read(mBuffer, 0,  l);
 	    byte data[] = new byte[l];
-	   buffer1.copyToByteArray(data, 0, 0, 512);
+            mBuffer.copyToByteArray(data, 0, 0, 512);
             for(int i = 0; i < count; i++){
                 buf[i] = (char)data[offset+i];
                 Debug.out.print( buf[i]);
             }
             return count;
 	} catch (InodeIOException | NoFileInodeException | NotExistException | PermissionException |InodeNotFoundException | NoDirectoryInodeException ex) {
-	      Debug.out.println(ex.getMessage());
+	    Debug.out.println(ex.getMessage());
 	    return 0;
       }
     }

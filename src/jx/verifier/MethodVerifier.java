@@ -3,7 +3,9 @@ package jx.verifier;
 import java.util.Vector;
 import jx.classfile.*;
 import jx.classfile.constantpool.*;
-import jx.verifier.bytecode.*;
+import jx.verifier.bytecode.BCLinkList;
+import jx.zero.ByteCode;
+import jx.zero.verifier.VerifierInterface;
 
 /**Class for verification of one method.
  * The class has a checkqueue which contains all bytecodes that should be checked.
@@ -19,21 +21,21 @@ public class MethodVerifier implements VerifierInterface {
     
     /**returns the name of the class the verified method belongs to.*/
     @Override
-    public String getClassName() { return className;}
+    public String getClassName() { return className; }
     /**returns the MethodSource of the method that is verified.*/
     @Override
-    public MethodSource getMethod() { return method;}
+    public MethodSource getMethod() { return method; }
     /**returns the code of the method*/
     public BCLinkList getCode() {return code;}
     /**returns the Typedescriptor of the method being verified.*/
-    public String getTypeDesc() { return method.getMethodType();}
+    public String getTypeDesc() { return method.getMethodType(); }
     /**returns true if the method is static*/
-    public boolean isStaticMethod() { return method.isStatic();}
+    public boolean isStaticMethod() { return method.isStatic(); }
     /**returns the subroutines of the method.
      *@see Subroutines
      */
     @Override
-    public Subroutines getSrs() { return srs;}
+    public Subroutines getSrs() { return srs; }
     /**set the initial state, with which verification is started at the first bytecode.
      * Must be set to a nonnull value before calling runChecks().*/
     public void setInitialState(JVMState iState) {initialState = iState;}
@@ -47,7 +49,7 @@ public class MethodVerifier implements VerifierInterface {
      * creates new constructor and reads the bytecode into a BCLinkList. While creating the BCLinkList, some inconsitencies may be detected (e.g. branch to an invalid address) so an Exception may be thrown.
      * @param method the method that should be verified.
      * @param className the name of the class or interface to which the method belongs.
-     * @cPool the constantPool of the class.
+     * @param cPool the constantPool of the class.
      * @exception VerifyException if inconsitencies are detected when creating BCLinkList.
      * @see BCLinkList
      * @see jx.classfile.MethodSource
@@ -160,6 +162,5 @@ public class MethodVerifier implements VerifierInterface {
 	    ((ByteCode) checkQueue.lastElement()).mvCheckCount = 0;
 	    checkQueue.removeElementAt(checkQueue.size()-1);
 	}
-
     }
 }

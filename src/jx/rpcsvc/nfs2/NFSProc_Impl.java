@@ -10,14 +10,14 @@ public class NFSProc_Impl implements NFSProc {
     int event_getattr_in;
     int event_getattr_out;
     FS fs;
-    Inode[] inodes = new Inode[1024];
+    Node[] inodes = new Node[1024];
     //byte[][] handles = new byte[1024][];
     //byte[]  rootHandle;
     //int nHandles;
     int epoch;
     private static final boolean production=true; 
     private boolean fireProfiler=true;
-    Inode rootInode;
+    Node rootInode;
     MemoryManager memMgr = (MemoryManager)InitialNaming.getInitialNaming().lookup("MemoryManager");
     Memory readbuffer = memMgr.alloc(4096);
 
@@ -157,7 +157,7 @@ public class NFSProc_Impl implements NFSProc {
     // - siehe setAttr()
     public AttrStat setattr(FHandle fh0, SAttr attributes) { 
 
-	Inode inode;	
+	Node inode;	
 
 
 	if (helperMFh == null) helperMFh = new MappedFHandle();
@@ -172,7 +172,7 @@ public class NFSProc_Impl implements NFSProc {
 	
 	try{
 
-	    inode = this.getInode(helperMFh);
+	    inode = this.getNode(helperMFh);
 	    FAttr a = setAttr(inode, helperMFh, attributes);
 	    return new AttrStatOK(a);
 
@@ -216,8 +216,8 @@ public class NFSProc_Impl implements NFSProc {
     // - 
     public DirOpRes    lookup(FHandle  dir0, Name name) {
 
-	Inode inode;
-	Inode dirInode;
+	Node inode;
+	Node dirInode;
 
 	if (helperMFh == null) helperMFh = new MappedFHandle();
 	if (helperDirMFh == null) helperDirMFh = new MappedFHandle();
@@ -242,7 +242,7 @@ public class NFSProc_Impl implements NFSProc {
 
 		// Falls kein Eintrag im Cache gefunden wurde...
 		if (res == null) {
-		    dirInode = this.getInode(helperDirMFh);
+		    dirInode = this.getNode(helperDirMFh);
 		    if (dirInode == null) return new DirOpResNoSuchFile();
 		    inode = dirInode.lookup(name.data);
 		    
@@ -264,7 +264,7 @@ public class NFSProc_Impl implements NFSProc {
 	    }
 	    // Falls ohne LookupCache gearbeitet werden soll...
 	    else {
-		dirInode = this.getInode(helperDirMFh);
+		dirInode = this.getNode(helperDirMFh);
 		inode = dirInode.lookup(name.data);
 		
 		if (inode != null) {
@@ -312,7 +312,7 @@ public class NFSProc_Impl implements NFSProc {
     // NFS_READLINK
     public ReadLinkRes readlink(FHandle a0) {
 
-	Inode symlinkInode;
+	Node symlinkInode;
        
 	if (helperMFh == null) helperMFh = new MappedFHandle();
 	if (helperDirMFh == null) helperDirMFh = new MappedFHandle();
@@ -325,7 +325,7 @@ public class NFSProc_Impl implements NFSProc {
 
        
   	try {
-	    symlinkInode = this.getInode(helperMFh);
+	    symlinkInode = this.getNode(helperMFh);
 	    if (symlinkInode == null) return new ReadLinkResError(Stat.NFSERR_STALE);
 	    
 	    //TODO: Wenn es kein Symlink ist, welcher Fehler soll dann zurckgegeben werden?
@@ -359,7 +359,7 @@ public class NFSProc_Impl implements NFSProc {
 
 
 	helperMFh.renew(fh0.data);
-	Inode inode;
+	Node inode;
 
 	if (debug_nfs) 
 	    Debug.out.println("READ (fh=" + helperMFh.deviceIdentifier + "." +
@@ -371,7 +371,7 @@ public class NFSProc_Impl implements NFSProc {
 
 	try{
 
-	    inode = this.getInode(helperMFh);
+	    inode = this.getNode(helperMFh);
 
 	    if (inode == null) {
 		if (debug_nfs) Debug.out.println("NFS_READ ERR");
@@ -417,7 +417,7 @@ public class NFSProc_Impl implements NFSProc {
 	if (helperDirMFh == null) helperDirMFh = new MappedFHandle();
 
 	helperMFh.renew(fh0.data);
-	Inode inode;
+	Node inode;
 
 	if (debug_nfs) 
 	    Debug.out.println("WRITE (fh=" + helperMFh.deviceIdentifier + "." +
@@ -429,7 +429,7 @@ public class NFSProc_Impl implements NFSProc {
 
 
 	try {
-	    inode = this.getInode(helperMFh);
+	    inode = this.getNode(helperMFh);
 
 	    if (inode != null) {
 		MemoryManager memMgr = (MemoryManager)InitialNaming.getInitialNaming().lookup("MemoryManager");
@@ -460,7 +460,7 @@ public class NFSProc_Impl implements NFSProc {
 	    
 	} catch (StaleHandleException e) {
 	    return new AttrStatErrStale();
-	} catch (Exception e) {
+	} catch (FSException e) {
 	    if (debug_nfs) Debug.out.println("Fehler beim Aufruf von NFSwrite(fh,offset,count,totalcount)");
 	    return new AttrStatError();
 	}
@@ -479,7 +479,7 @@ public class NFSProc_Impl implements NFSProc {
 	if (helperDirMFh == null) helperDirMFh = new MappedFHandle();
 
 	helperDirMFh.renew(dir0.data);
-	Inode dirInode;
+	Node dirInode;
 
  	if (debug_nfs) 
 	    Debug.out.println("CREATE in fh="+helperDirMFh.deviceIdentifier + "." +
@@ -488,12 +488,12 @@ public class NFSProc_Impl implements NFSProc {
 			      ", name="+name.data);
 
  	try {
-	    dirInode = this.getInode(helperDirMFh);
+	    dirInode = this.getNode(helperDirMFh);
 
 	    if (dirInode == null) return new DirOpResError();
 	    
 	    if (dirInode.isDirectory()) {
-		Inode inode;
+		Node inode;
 		try {
 		    inode = dirInode.create(name.data, InodeImpl.S_IWUSR|InodeImpl.S_IRUGO);
 		} catch(FileExistsException e) {
@@ -552,7 +552,7 @@ public class NFSProc_Impl implements NFSProc {
 	if (helperDirMFh == null) helperDirMFh = new MappedFHandle();
 
 	helperDirMFh.renew(dir0.data);
-	Inode dirInode;
+	Node dirInode;
 
 	if (debug_nfs) 
 	    Debug.out.println("REMOVE fh="+helperDirMFh.deviceIdentifier + "." +
@@ -562,7 +562,7 @@ public class NFSProc_Impl implements NFSProc {
 
 	
  	try {
-	    dirInode = this.getInode(helperDirMFh);
+	    dirInode = this.getNode(helperDirMFh);
 
 	    if (dirInode == null) {
 		return new Stat(Stat.NFSERR_PERM);
@@ -597,8 +597,8 @@ public class NFSProc_Impl implements NFSProc {
 	MappedFHandle fromDir = helperMFh;
 	MappedFHandle toDir = helperDirMFh;
 
-	Inode fromDirInode;
-	Inode toDirInode;
+	Node fromDirInode;
+	Node toDirInode;
 
  	if (debug_nfs) 
 	    Debug.out.println("RENAME fh="+fromDir.deviceIdentifier + "." +
@@ -609,8 +609,8 @@ public class NFSProc_Impl implements NFSProc {
 
 
  	try {
-	    fromDirInode = this.getInode(fromDir);
-	    toDirInode = this.getInode(toDir);
+	    fromDirInode = this.getNode(fromDir);
+	    toDirInode = this.getNode(toDir);
 
 	    if (fromDirInode == null || toDirInode == null) return new Stat(Stat.NFSERR_PERM);
 	    
@@ -648,19 +648,19 @@ public class NFSProc_Impl implements NFSProc {
 	helperDirMFh.renew(fromDir0.data);
 	MappedFHandle fromDir = helperDirMFh;
 
-	Inode dirInode;
+	Node dirInode;
 
  	if (debug_nfs) Debug.out.println("SYMLINK fh="+fromDir.identifier+", name="+fromName.data);
 
  	try {
-	    dirInode = this.getInode(fromDir);
+	    dirInode = this.getNode(fromDir);
 
 	    if (dirInode == null) return new Stat(Stat.NFSERR_PERM);
 
 	    if (!dirInode.isDirectory()) return new Stat(Stat.NFSERR_PERM);
 
 	    
-	    Inode inode = dirInode.symlink(to.data, fromName.data);
+	    Node inode = dirInode.symlink(to.data, fromName.data);
 		
 	    helperMFh.renew(fromDir.deviceIdentifier, 
 			    inode.getIdentifier(), 
@@ -671,7 +671,7 @@ public class NFSProc_Impl implements NFSProc {
 	    return new Stat(Stat.NFS_OK);
 	} catch (StaleHandleException e) {
 	    return new Stat(Stat.NFSERR_STALE);
-	} catch (Exception e) {
+	} catch (FSException e) {
 	    if (debug_nfs) Debug.out.println("Fehler in NFS_SYMLINK");
 	    return new Stat(Stat.NFSERR_PERM);
 	}
@@ -689,19 +689,19 @@ public class NFSProc_Impl implements NFSProc {
 
 	helperDirMFh.renew(dir0.data);
 	MappedFHandle dir = helperDirMFh;
-	Inode dirInode;
+	Node dirInode;
 
  	if (debug_nfs) Debug.out.println("MKDIR in fh="+dir.identifier+", name="+name.data);
 
  	try {
-	    dirInode = this.getInode(dir);
+	    dirInode = this.getNode(dir);
 
 	    if (dirInode == null) return new DirOpResError();
 
 	    if (!dirInode.isDirectory()) return new DirOpResError();
 
 	    
-	    Inode inode = dirInode.mkdir(name.data, InodeImpl.S_IWUSR|InodeImpl.S_IRUGO|InodeImpl.S_IXUGO);
+	    Node inode = dirInode.mkdir(name.data, InodeImpl.S_IWUSR|InodeImpl.S_IRUGO|InodeImpl.S_IXUGO);
 	    if (debug_nfs) Debug.out.println("... new inode number: " + inode.getIdentifier());
 
 		
@@ -719,7 +719,7 @@ public class NFSProc_Impl implements NFSProc {
 	    return new DirOpResErrStale();
 	} catch (FileExistsException e) {
 	    return new DirOpResErrExist();
-	} catch (Exception e) {
+	} catch (FSException e) {
 	    if (debug_nfs) Debug.out.println("Fehler in NFS_MKDIR");
 	    return new DirOpResError();
 	}
@@ -728,6 +728,7 @@ public class NFSProc_Impl implements NFSProc {
 
 
     // NFS_RMDIR
+    @Override
     public Stat rmdir(FHandle  dir0, Name name) {
 
 	if (helperMFh == null) helperMFh = new MappedFHandle();
@@ -735,12 +736,12 @@ public class NFSProc_Impl implements NFSProc {
 
 	helperDirMFh.renew(dir0.data);
 	MappedFHandle dir = helperDirMFh;
-	Inode dirInode;
+	Node dirInode;
 
 	if (debug_nfs) Debug.out.println("RMDIR fh="+dir.identifier+", name="+name.data);
 	
  	try {
-	    dirInode = this.getInode(dir);
+	    dirInode = this.getNode(dir);
 
 	    if (dirInode == null) return new Stat(Stat.NFSERR_PERM);	    
 	    
@@ -772,12 +773,12 @@ public class NFSProc_Impl implements NFSProc {
 
 	helperMFh.renew(fh0.data);
 	MappedFHandle fh = helperMFh;
-	Inode dirInode;
+	Node dirInode;
 
 	if (debug_nfs) Debug.out.println("READDIR: fh="+fh.identifier);
 	
  	try {
-	    dirInode = this.getInode(fh);
+	    dirInode = this.getNode(fh);
 
 	    if (dirInode == null) return new ReadDirResError();
 	    
@@ -790,24 +791,22 @@ public class NFSProc_Impl implements NFSProc {
 
 	    Entry startEntry = null;
 
-	    for (int i=0; i<dirNames.length; i++) {
-		if (debug_nfs) Debug.out.println("DIRENTRY:  "+dirNames[i]);
-		int fileid = dirInode.getInode(dirNames[i]).getIdentifier();
-		Entry newEntry = new Entry(
-					   fileid,
-					   new Name(dirNames[i]),
-					   new NFSCookie(fileid)
-					       );
-		if (startEntry != null) {
-		    newEntry.next = new Entries(startEntry);
-		}
-		startEntry = newEntry;
-	    }
+            for (String dirName : dirNames) {
+                if (debug_nfs) {
+                    Debug.out.println("DIRENTRY:  " + dirName);
+                }
+                int fileid = dirInode.getNode(dirName).getIdentifier();
+                Entry newEntry = new Entry(fileid, new Name(dirName), new NFSCookie(fileid));
+                if (startEntry != null) {
+                    newEntry.next = new Entries(startEntry);
+                }
+                startEntry = newEntry;
+            }
 
 	    Entries dirEntries = new Entries(startEntry);
 	    return new ReadDirResOK(dirEntries,1);
 		
-	 } catch (StaleHandleException e) {
+	} catch (StaleHandleException e) {
 	    return new ReadDirResErrStale();
 	} catch (Exception e) {
 	    if (debug_nfs) Debug.out.println("Fehler in NFS_RMDIR");
@@ -821,7 +820,7 @@ public class NFSProc_Impl implements NFSProc {
     public StatFSRes statfs(FHandle fh0) {
 	if (debug_nfs) Debug.out.println("STATFS (get file system attributes)");
 	
-	Inode inode;
+	Node inode;
 
 	if (helperMFh == null) helperMFh = new MappedFHandle();
 	if (helperDirMFh == null) helperDirMFh = new MappedFHandle();
@@ -835,7 +834,7 @@ public class NFSProc_Impl implements NFSProc {
 
 
 	try{
-	    inode = this.getInode(fh);
+	    inode = this.getNode(fh);
 	    StatFS sfs = inode.getStatFS();
 	    
 	    StatFSResOK result = new StatFSResOK();
@@ -876,13 +875,7 @@ public class NFSProc_Impl implements NFSProc {
 	    return new StatFSResErrStale();
 	}
 
-
     }
-
-
-
-
-
 
 
     // -----------------------------------
@@ -898,10 +891,10 @@ public class NFSProc_Impl implements NFSProc {
 //     }
 
 
-    private Inode getInode(MappedFHandle fh) throws FSException, StaleHandleException {
-	Inode inode;
+    private Node getNode(MappedFHandle fh) throws FSException, StaleHandleException {
+	Node inode;
 	
-	inode = fs.getInode(new Integer(fh.deviceIdentifier),fh.identifier);
+	inode = fs.getNode(new Integer(fh.deviceIdentifier),fh.identifier);
 	
 	if (inode.getVersion() != fh.generation) { 
 	    throw new StaleHandleException();
@@ -916,13 +909,13 @@ public class NFSProc_Impl implements NFSProc {
 	NotExistException, PermissionException, FSException, StaleHandleException
     {
 
-	Inode inode;
+	Node inode;
 	FAttr a;
 
 	// Falls der AttrCache genutzt werden soll...
 	if (useAttrCache) {
 	    if (fh.identifier != attrCache_lastFhIdentifier) {
-		inode = this.getInode(fh);
+		inode = this.getNode(fh);
 		a = getFAttr(inode, fh);
 		attrCache_lastFhIdentifier = fh.identifier;
 		attrCache_lastFAttr = a;
@@ -937,7 +930,7 @@ public class NFSProc_Impl implements NFSProc {
 	}
 	// Falls der AttrCache nicht genutzt werden soll...
 	else {
-	    inode = this.getInode(fh);
+	    inode = this.getNode(fh);
 	    a = getFAttr(inode, fh);		
 	}
 	
@@ -947,7 +940,7 @@ public class NFSProc_Impl implements NFSProc {
     /* ToDo: 
        - 
     */
-	private FAttr getFAttr(Inode inode, MappedFHandle fh) {
+	private FAttr getFAttr(Node inode, MappedFHandle fh) {
 	    try {
 	    FAttr a = new FAttr();
 	    
@@ -1013,7 +1006,7 @@ public class NFSProc_Impl implements NFSProc {
     }
 
 
-    private FAttr setAttr(Inode inode, MappedFHandle fh, SAttr attr) throws FSException{
+    private FAttr setAttr(Node inode, MappedFHandle fh, SAttr attr) throws FSException{
 	if (attr.atime.seconds != -1) inode.setLastAccessed(attr.atime.seconds);
 	if (attr.mtime.seconds != -1) inode.setLastModified(attr.mtime.seconds);
 	return getFAttr(inode,fh);

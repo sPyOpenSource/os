@@ -9,8 +9,8 @@ import jx.verifier.bytecode.*;
  */
 
 public class SubroutineData  {
-    private Vector jsrs;
-    private int beginAddress;
+    private final Vector jsrs;
+    private final int beginAddress;
     JVMState beforeState;
     JVMState afterState;
     JVMState finalState;
@@ -97,6 +97,7 @@ public class SubroutineData  {
 	}
     }
 
+    @Override
     public String toString() {
 	String ret = "\tbeginAddress: " + Integer.toHexString(beginAddress)+"\n";
 	for (int i=0; i < jsrs.size(); i++) {
@@ -105,5 +106,4 @@ public class SubroutineData  {
 	}
 	return ret;
     }
-
 } // SubroutineData

@@ -274,7 +274,7 @@ public class NFSInode extends InodeImpl {
 	return inode;
     }
 
-    public Inode mkdir(String name) {
+    public Node mkdir(String name) {
 	// send NFS mkdir request
 	return null;
     }

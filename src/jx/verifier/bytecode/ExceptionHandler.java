@@ -5,14 +5,14 @@ import jx.verifier.JVMState;
 
 public class ExceptionHandler {
     private final String eName;
-    public String getName() { return eName;}
+    public String getName() { return eName; }
     private final ByteCode start;
-    public int getStartAddress() { return start.getAddress();}
+    public int getStartAddress() { return start.getAddress(); }
     private final ByteCode end;
-    public int getEndAddress() { return end.getAddress();}
+    public int getEndAddress() { return end.getAddress(); }
     private final ByteCode handler;
-    public ByteCode getHandler() { return handler;}
-    public int getHandlerAddress() { return handler.getAddress();}
+    public ByteCode getHandler() { return handler; }
+    public int getHandlerAddress() { return handler.getAddress(); }
     private final int eTypeCPIndex;
     public int getETypeCPIndex(){return eTypeCPIndex;}
 

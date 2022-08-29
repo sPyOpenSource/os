@@ -17,7 +17,7 @@ final public class ExtendedFileSystemInterface {
 
     final public static ExtendedFileSystemInterface getExtFileSystemInterface(String name) throws Exception {
 	Naming ns = (Naming)InitialNaming.getInitialNaming();
-	FileSystemInterface fs=(FileSystemInterface)LookupHelper.waitUntilPortalAvailable(ns, name);
+	FileSystemInterface fs = (FileSystemInterface)LookupHelper.waitUntilPortalAvailable(ns, name);
 	return new ExtendedFileSystemInterface(fs);
     }
 

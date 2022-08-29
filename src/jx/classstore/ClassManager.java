@@ -10,20 +10,11 @@ import jx.zero.Memory;
 import jx.zip.ZipFile;
 import jx.zip.ZipEntry;
 
-
-import jx.collections.QuickSort;
-import jx.collections.SortedList;
 import jx.collections.Iterator;
-import jx.collections.Collection;
-import jx.collections.Comparator;
-import jx.collections.List;
-
-
 
 import java.util.Vector;
 import java.util.Enumeration;
 
-import java.io.PrintStream;
 import java.io.IOException;
 
 
@@ -239,4 +230,3 @@ public class ClassManager implements ClassFinder {
     */
 
 }
-

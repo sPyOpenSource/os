@@ -1,8 +1,8 @@
 package jx.verifier.typecheck;
 
-import java.util.Vector;
 import jx.verifier.*;
 import jx.verifier.bytecode.*;
+import jx.zero.verifier.VerifierInterface;
 
 public class TCState extends JVMState {
     public OPStack TCgetStack() {return (OPStack) super.getStack();}

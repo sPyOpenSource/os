@@ -316,7 +316,7 @@ public class FileInode extends InodeImpl {
     }
 
     @Override
-    public  ReadOnlyMemory readWeak(int off, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException {
+    public ReadOnlyMemory readWeak(int off, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException {
 	if (i_released) throw new NotExistException();
 
 	int pos, block, offset, already_read, c, bufoff;
@@ -388,7 +388,7 @@ public class FileInode extends InodeImpl {
     public  int write(byte[] b, int off, int len) { throw new Error(); }
 
     @Override
-    public  int write(Memory mem, int off, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException {
+    public int write(Memory mem, int off, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException {
 	if (i_released) throw new NotExistException();
 
 	//Bitmap.traceBitmap = true;
@@ -479,7 +479,7 @@ public class FileInode extends InodeImpl {
     }
 
     @Override
-    public  int write(int pos, Memory mem, int bufoff, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException 
+    public int write(int pos, Memory mem, int bufoff, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException 
     {
 	if (i_released) throw new NotExistException();
 

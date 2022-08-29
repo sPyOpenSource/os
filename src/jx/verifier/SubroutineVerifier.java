@@ -3,6 +3,7 @@ package jx.verifier;
 import java.util.Vector;
 import jx.classfile.*;
 import jx.verifier.bytecode.*;
+import jx.zero.verifier.VerifierInterface;
 
 /**Class for verification of a subroutine within a method.
  * 
@@ -18,10 +19,10 @@ public class SubroutineVerifier implements VerifierInterface {
     private MethodSource method;
 
     @Override
-    public String getClassName() { return className;}
+    public String getClassName() { return className; }
     @Override
     public MethodSource getMethod() {return method;}
-    public SubroutineData getSrData() { return srData;}
+    public SubroutineData getSrData() { return srData; }
     public void setSrData(SubroutineData s) {srData = s;}
 
     @Override

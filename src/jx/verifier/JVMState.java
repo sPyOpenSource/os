@@ -1,6 +1,7 @@
 package jx.verifier;
 
 import jx.zero.ByteCode;
+import jx.zero.verifier.VerifierInterface;
 
 /** Class to hold all necessary information about the state of the JVM simulated during verification.*/
 abstract public class JVMState {
@@ -41,13 +42,13 @@ abstract public class JVMState {
     /**set the verifier that verifies this method or subroutine*/
     public void setMv(VerifierInterface mv) {this.mv = mv;}
     /**get the operand stack*/
-    public JVMOPStack getStack() { return stack;}
+    public JVMOPStack getStack() { return stack; }
     /**set the operand stack*/
     public void setStack(JVMOPStack stack) {this.stack = stack;}
     /**get local variables */
-    public JVMLocalVars getlVars() { return lVars;}
+    public JVMLocalVars getlVars() { return lVars; }
     /**set local variables */
-    public void setlVars(JVMLocalVars lVars) { this.lVars = lVars;}
+    public void setlVars(JVMLocalVars lVars) { this.lVars = lVars; }
     /** get the next bytecode to be executed*/
     public ByteCode getNextBC() { return nextBC; }
     /**set  the next bytecode to be executed*/

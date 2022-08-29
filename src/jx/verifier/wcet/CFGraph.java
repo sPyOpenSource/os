@@ -211,7 +211,6 @@ public class CFGraph {
 
     public SimState simulate(SimState initialState)   {
 	return ((CFGEdge)nodes.getFirst().oEdges.elementAt(0)).simulate(initialState);
-
     }
 
     //Simplification rule one: If a point has only one outgoing edge, it can

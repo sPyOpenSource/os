@@ -14,7 +14,9 @@ public class MountProc_Impl implements MountProc {
 	this.fs = fs;
     }
 
+    @Override
     public void       nullproc() {}
+    @Override
     public FHStatus   mnt(jx.rpcsvc.nfs2.DirPath d) {
 	Debug.out.println("MountProc.mnt called");
 	Debug.out.println("   -> "+d.data);
@@ -38,14 +40,18 @@ public class MountProc_Impl implements MountProc {
 // 	}
 	//	throw new Error("MOUNT REQUEST FOR UNKNOWN DIR");
     }
+    @Override
     public MountList  dump() {return null; }
+    @Override
     public void       umnt(jx.rpcsvc.nfs2.DirPath d) {
 	Debug.out.println("UNMOUNT AUFGERUFEN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-	try {
+	//try {
 	fs.cleanUp(); // TEST
-	}catch(FSException ex){throw new Error();}
+	//}catch(FSException ex){throw new Error();}
 	
     }
+    @Override
     public void       umntall(){}
+    @Override
     public Exports    export() {return null; }
 }

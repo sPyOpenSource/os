@@ -121,11 +121,11 @@ public final class File implements Comparable {
     }
 
     public boolean isFile() {
-	try {
+	//try {
 	    return fsobj.isFile();
-	} catch (NotExistException ex) {
-	    return false;
-	}
+	//} catch (NotExistException ex) {
+	    //return false;
+	//}
     }
 
     public boolean isDirectory() { 

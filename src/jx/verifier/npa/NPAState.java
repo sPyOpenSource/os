@@ -1,8 +1,8 @@
 package jx.verifier.npa;
 
-import java.util.Vector;
 import jx.verifier.*;
 import jx.verifier.bytecode.*;
+import jx.zero.verifier.VerifierInterface;
 
 public class NPAState extends JVMState {
     public NPAStack NPAgetStack() { return (NPAStack) getStack();}
@@ -15,12 +15,14 @@ public class NPAState extends JVMState {
     //Simulate execution of nextBc on this stack.
     //should return all bytecodes which might be executed after this one
     //throws exception if verification fails.
+    @Override
     protected JVMState[] doExecuteNextBC() throws VerifyException {
 	return NPABCEffect.simulateBC(this, getNextBC());
     }
     //copy this state.
     //should return something created with
     //new JVMState(nextBC, stack.copy(), lVars.copy(), mv);
+    @Override
     public JVMState copy() {
 	return new NPAState(getNextBC(), getStack().copy(), getlVars().copy(),getMv());
     }
@@ -55,4 +57,3 @@ public class NPAState extends JVMState {
     }
     
 }
-
