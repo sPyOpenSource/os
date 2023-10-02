@@ -41,12 +41,11 @@ exception statement from your version. */
 package java.awt;
 
 
-
 class EventDispatchThread extends Thread
 {
   private static int dispatchThreadNum = 1;
 
-  private EventQueue queue;
+  private final EventQueue queue;
 
   EventDispatchThread(EventQueue queue)
   {
@@ -59,6 +58,7 @@ class EventDispatchThread extends Thread
     start();
   }
 
+  @Override
     public void run()
     {
 	while (true)

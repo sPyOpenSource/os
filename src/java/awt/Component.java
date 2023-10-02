@@ -2326,7 +2326,7 @@ public abstract class Component implements ImageObserver, MenuContainer,
   /**
    * Adds the specified popup menu to this component.
    *
-   * @param menu The popup menu to be added.
+   * @param popup The popup menu to be added.
    */
     public synchronized void add(PopupMenu popup)
     {
@@ -2338,7 +2338,7 @@ public abstract class Component implements ImageObserver, MenuContainer,
   /**
    * Removes the specified popup menu from this component.
    *
-   * @param menu The popup menu to remove.
+   * @param popup The popup menu to remove.
    */
     public synchronized void remove(MenuComponent popup)
     {
@@ -2352,7 +2352,7 @@ public abstract class Component implements ImageObserver, MenuContainer,
    */
   protected String paramString()
   {
-    StringBuffer param = new StringBuffer();
+    StringBuilder param = new StringBuilder();
     String name = getName();
     if (name != null)
       {
@@ -2386,6 +2386,7 @@ public abstract class Component implements ImageObserver, MenuContainer,
    *
    * @return A string representation of this component
    */
+  @Override
   public String toString()
   {
     return this.getClass().getName() + "[" + paramString() + "]";
@@ -2402,7 +2403,7 @@ public abstract class Component implements ImageObserver, MenuContainer,
   /**
    * Prints a listing of this component to the specified print stream.
    *
-   * @param stream The <code>PrintStream</code> to print to.
+   * @param out The <code>PrintStream</code> to print to.
    */
   public void list (PrintStream out)
   {
@@ -2413,7 +2414,7 @@ public abstract class Component implements ImageObserver, MenuContainer,
    * Prints a listing of this component to the specified print stream,
    * starting at the specified indentation point.
    *
-   * @param stream The <code>PrintStream</code> to print to.
+   * @param out The <code>PrintStream</code> to print to.
    * @param indent The indentation point.
    */
   public void list (PrintStream out, int indent)
@@ -2426,7 +2427,7 @@ public abstract class Component implements ImageObserver, MenuContainer,
   /**
    * Prints a listing of this component to the specified print writer.
    *
-   * @param writer The <code>PrintWrinter</code> to print to.
+   * @param out The <code>PrintWrinter</code> to print to.
    */
   public void list (PrintWriter out)
   {
@@ -2437,7 +2438,7 @@ public abstract class Component implements ImageObserver, MenuContainer,
    * Prints a listing of this component to the specified print writer,
    * starting at the specified indentation point.
    *
-   * @param writer The <code>PrintWriter</code> to print to.
+   * @param out The <code>PrintWriter</code> to print to.
    * @param indent The indentation point.
    */
   public void list (PrintWriter out, int indent)
