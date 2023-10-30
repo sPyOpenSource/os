@@ -43,7 +43,9 @@ public class BufferHead extends jx.fs.buffercache.BufferHead {
     /**
      * Markiert den BufferHead als "dirty", d.h. sein Inhalt hat sich ge&auml;ndert und stimmt nicht mehr mit seinem Abbild
      * auf der Festplatte &uuml;berein (dem Inhalt des entsprechenden Blocks); er muss noch geschrieben werden.
-     *
+     * Google Translation:
+     * Marks the BufferHead as "dirty", i.e. its content has changed and no longer matches its image
+     * on disk (the contents of the corresponding block); it still needs to be written.
      */
     @Override
     final public void markDirty()    { dirty = true; }
