@@ -66,8 +66,12 @@ public class BufferHead extends jx.fs.buffercache.BufferHead {
      * Sperrt den BufferHead bzw. gibt die Sperre des BufferHeads frei. F&uuml;r die Dauer der Sperre k&ouml;nnen keine anderen
      * Threads darauf zugreifen. Um auf das Ende der Sperre zu warten, dient die Methode <code>waitOn</code>; bei einer Freigabe
      * der Sperre lassen sich andere Threads/Prozesse mittels <code>notifyAll</code> wieder aktivieren.
-     *
      * @param value der neue Zustand der Sperre
+     * Google Translation:
+     * Locks the BufferHead or releases the lock of the BufferHead. No others can do so for the duration of the ban
+     * Threads access it. To wait for the lock to end, use the method <code>waitOn</code>; upon release
+     * After the lock, other threads/processes can be reactivated using <code>notifyAll</code>.
+     * @param value the new state of the lock
      */
     @Override
     final public void lock() { locked = true; }
