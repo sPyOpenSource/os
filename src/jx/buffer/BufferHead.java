@@ -7,6 +7,10 @@ import jx.zero.*;
  * Objekte der Klasse BufferHead werden verwendet, um Daten zwischen NIC und Netzwerkstack und innerhalb
  * des Netzwerkstacks zu &uuml;bertragen. Sie besitzen ein Memory-Objekt (<code>b_data</code>) in der vom NIC verwendeten
  * Blockgr&ouml;&szlig;e.
+ * Google Translation:
+ * Objects of the BufferHead class are used to transfer data between the NIC and the network stack and within
+ * of the network stack. You have a memory object (<code>b_data</code>) in the one used by the NIC
+ * Block size.
  */
 public class BufferHead {
     /** vom BufferHashtable verwendet */
