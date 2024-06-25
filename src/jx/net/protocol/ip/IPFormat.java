@@ -5,6 +5,7 @@ import jx.zero.debug.*;
 
 import jx.net.format.Format;
 import jx.net.IPAddress;
+import jx.net.IPv4Address;
 
 /**
   * Write IP header data according to the IP format in the buffer.
@@ -223,16 +224,16 @@ public class IPFormat extends Format {
      * Swap the source and destination address
      */
     public void swapAddresses() {
-        final IPAddress dest = new IPAddress(getDestIPAddress());
-        final IPAddress source = new IPAddress(getSourceIPAddress());
+        final IPAddress dest = new IPv4Address(getDestIPAddress());
+        final IPAddress source = new IPv4Address(getSourceIPAddress());
         insertDestAddress(source);
         insertSourceAddress(dest);
     }
     
     public void dump() {
 	Debug.out.println("IP-Packet:");
-	Debug.out.println("   Source: "+(new IPAddress(getSourceIPAddress())));
-	Debug.out.println("   Destination: "+(new IPAddress(getDestIPAddress())));
+	Debug.out.println("   Source: "+(new IPv4Address(getSourceIPAddress())));
+	Debug.out.println("   Destination: "+(new IPv4Address(getDestIPAddress())));
 	Debug.out.println("   Checksum:"+getHeaderChecksum());
 	Debug.out.println("   ID:"+getIdentification());
 	int proto = getProtocol();

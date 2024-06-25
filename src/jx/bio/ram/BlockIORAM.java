@@ -1,9 +1,9 @@
 package jx.bio.ram;
 
+import jx.timerpc.SleepManagerImpl;
 import jx.zero.*;
 import jx.zero.debug.*;
-import jx.timer.*;
-import timerpc.*;
+import jx.zero.timer.SleepManager;
 
 /**
  * Access to a block device.

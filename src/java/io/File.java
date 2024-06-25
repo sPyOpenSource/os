@@ -5,11 +5,6 @@ import jx.fs.RegularFile;
 import jx.fs.Directory;
 import jx.fs.FS;
 import jx.fs.Node;
-import jx.fs.InodeIOException;
-import jx.fs.InodeNotFoundException;
-import jx.fs.NoDirectoryInodeException;
-import jx.fs.NotExistException;
-import jx.fs.PermissionException;
 
 /**
   * Implementation of the File class accessing the JX file system
@@ -48,12 +43,15 @@ public final class File implements Comparable {
 	name = path;
 
 	//Naming ns = InitialNaming.getInitialNaming();
-	fs    = (FS)InitialNaming.lookup("FS");
+	fs = (FS)InitialNaming.lookup("FS");
 
 	
 	try {
 	    fsobj = fs.lookup("/index.html");
-	} catch (InodeIOException | InodeNotFoundException | NoDirectoryInodeException | NotExistException | PermissionException ex) {
+	} catch (
+                //InodeIOException | InodeNotFoundException | NoDirectoryInodeException | NotExistException | PermissionException ex
+                Exception ex
+                ) {
 	    fsobj = null;
 	}
     }
@@ -131,7 +129,10 @@ public final class File implements Comparable {
     public boolean isDirectory() { 
 	try {
 	    return fsobj.isDirectory();
-	} catch (NotExistException ex) {
+	} catch (
+                //NotExistException ex
+                Exception ex
+                ) {
 	    return false;
 	}
     }
@@ -160,7 +161,7 @@ public final class File implements Comparable {
      */
     public int length() {
 	try {
-	    return (int)((RegularFile)fsobj).length();
+	    return (int)((RegularFile)fsobj).getLength();
 	} catch (Exception e) {
 	    return -1;
 	}

@@ -21,7 +21,7 @@ final public class ReadOnlyDirectoryImpl extends FSObjectImpl implements ReadOnl
     }
 
     @Override
-    public int length() throws Exception {return 0;}
+    public int getLength() throws Exception {return 0;}
 
     @Override
     public FSObject openRO(String filename) throws Exception {
@@ -60,5 +60,10 @@ final public class ReadOnlyDirectoryImpl extends FSObjectImpl implements ReadOnl
     @Override
     protected void finalize() throws Throwable {
 	inode.decUseCount();
+    }
+
+    @Override
+    public boolean isValid() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }

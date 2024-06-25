@@ -2,6 +2,7 @@ package jx.net.format;
 
 import jx.zero.*;
 import jx.net.IPAddress;
+import jx.net.IPv4Address;
 
 public abstract class Format {
   public static boolean debug = false;
@@ -136,7 +137,7 @@ public abstract class Format {
     d |= (buf.get8(offset + o + 2) << 16) & 0xff0000;
     d |= (buf.get8(offset + o + 3) << 24) & 0xff000000;
     //Debug.out.println("ADDRDECODE:"+Integer.toHexString(d));
-    return new IPAddress(d);
+    return new IPv4Address(d);
   }
 
    public Memory getMemory() {

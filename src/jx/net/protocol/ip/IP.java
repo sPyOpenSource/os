@@ -16,6 +16,7 @@ import jx.net.EtherConsumer;
 import jx.net.EtherProducer;
 import jx.net.IPData;
 import jx.net.EtherData;
+import jx.net.IPv4Address;
 
 /**
  * Implementation of the IP protocol.
@@ -306,8 +307,8 @@ public class IP implements MemoryConsumer, IPProducer, EtherConsumer {
 	int flags = ip.getFlags();
 	int foffs = ip.getFragmentOffset() * 8;
 	int fid = ip.getIdentification();
-	IPAddress sourceAddress = new IPAddress(ip.getSourceIPAddress());
-        IPAddress destAddress = new IPAddress(ip.getDestIPAddress());
+	IPAddress sourceAddress = new IPv4Address(ip.getSourceIPAddress());
+        IPAddress destAddress = new IPv4Address(ip.getDestIPAddress());
 	
 	if (debugFrag) Debug.out.println("IP-Identification: " + ip.getIdentification());
 	if (debugFrag) Debug.out.println("IP-Fragmentoffset: " + foffs);

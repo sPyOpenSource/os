@@ -93,7 +93,7 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
 	if (trace) Debug.out.println("rwBlock(" + bh.getBlock() + ")  size=" + bh.getSize());
 	// map logical block number to device sector number
 	try {
-	    idedevice.writeSectors(bh.getBlock() * (1024/512), 1024/512, bh.getData(), true);
+	    idedevice.writeSectors(bh.getBlock() * (1024 / 512), 1024 / 512, bh.getData(), true);
 	} catch(Error e) {
 	    bh.endIo(true, true);
 	    return;
@@ -107,7 +107,7 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
      * @param bh          the buffer that should be read
      * @param synchronous wait until the block is read
      */
-    final void readBlock(jx.fs.buffercache.BufferHead bh, boolean synchronous) {
+    final void readBlock(jx.fs.buffer.BufferHead bh, boolean synchronous) {
 	if (trace) Debug.out.println("rwBlock(" + bh.getBlock() + ")  size=" + bh.getSize());
 	try {
 	    idedevice.readSectors(bh.getBlock() * (1024 / 512), (1024 / 512), bh.getData(), true);
@@ -131,10 +131,9 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
 	free_list.appendElement(bh); // Ans Ende der free_list haengen
     }
 
-
     @Override
     final public jx.fs.buffercache.BufferHead findBuffer(int block) {
-	BufferHead bh = buffer_hashtable.get(block); //new BufferHeadHashKey(block, size);
+	jx.fs.buffercache.BufferHead bh = buffer_hashtable.get(block); //new BufferHeadHashKey(block, size);
 	if (bh != null) {
 	    //Debug.out.println("buffer found: " + bh.b_block);
 	    if (statistics) hit++;

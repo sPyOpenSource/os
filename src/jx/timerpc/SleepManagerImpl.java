@@ -1,11 +1,11 @@
-package timerpc;
+package jx.timerpc;
 
-import jx.timer.SleepManager;
+import jx.zero.timer.SleepManager;
 import jx.zero.*;
 
 public class SleepManagerImpl implements SleepManager, Service {
     Clock clock;
-    //    TimerManager timerManager;
+    //TimerManager timerManager;
     CPUManager cpuManager;
     public SleepManagerImpl(String[] args) {
 	this();
@@ -15,6 +15,7 @@ public class SleepManagerImpl implements SleepManager, Service {
 	cpuManager = (CPUManager)jx.InitialNaming.lookup("CPUManager");
 	//timerManager = (TimerManager) LookupHelper.waitUntilPortalAvailable(InitialNaming.getInitialNaming(), "TimerManager");
     }
+    @Override
     public void mdelay(int milliseconds) {
 	int end = clock.getTimeInMillis() + milliseconds;
 	while(end > clock.getTimeInMillis()); //Thread.yield();
@@ -43,6 +44,7 @@ public class SleepManagerImpl implements SleepManager, Service {
 	*/
 
     }
+    @Override
     public void udelay(int microseconds) {
       //int low = clock.getTicks_low();
       //int high = clock.getTicks_high();

@@ -234,7 +234,7 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 
 	if (!packet.areFlagsSet(TCPFormat.ACK)) seq++;
 
-	Memory back = lowerLayer.send1(data.mem, /*data.offset*/0x22, data.size);
+	Memory back = lowerLayer.send(data.mem, /*data.offset*/0x22, data.size);
 	if (MEMORYCYCLE) {
 	    // Put the package received from IP back into free list
 	    data.mem = back;
@@ -597,7 +597,7 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 	    d.mem.copyFromMemory(data.mem, 0, 0, data.mem.size());
 	}
 	
-	Memory back = lowerLayer.send1(data.mem,data.offset,data.size);
+	Memory back = lowerLayer.send(data.mem,data.offset,data.size);
 	remoteWindowSize -= size;
 	if (MEMORYCYCLE) {
 	    data.mem = back;
@@ -1004,7 +1004,7 @@ data.offset= 0x22;
 	} 
 	
 	// und ab geht die Post
-	Memory back = lowerLayer.send1(data.mem, data.offset, data.size);
+	Memory back = lowerLayer.send(data.mem, data.offset, data.size);
 	if (MEMORYCYCLE) {
 	    data.mem = back;
 	    usableBufs.appendElement(data);

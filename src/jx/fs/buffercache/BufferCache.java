@@ -32,7 +32,7 @@ public interface BufferCache extends jx.fs.buffer.BufferCache {
      *
      * @param bh the buffer that should be released
      */
-    void brelse(BufferHead bh);
+    //void brelse(BufferHead bh);
 
     /**
      * Releases the buffer.
@@ -41,7 +41,7 @@ public interface BufferCache extends jx.fs.buffer.BufferCache {
      *
      * @param bh the buffer that should be released and written
      */
-    void bdwrite(BufferHead bh);
+    //void bdwrite(BufferHead bh);
 
     /**
      * Releases the buffer.

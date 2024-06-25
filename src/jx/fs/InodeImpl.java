@@ -126,6 +126,7 @@ public abstract class InodeImpl implements Node {
     @Override
     public Node getParent() { return parent; }
 
+    @Override
     public void setParent(jx.fs.Node parent) {
 	this.parent = (InodeImpl)parent;
     }
@@ -163,11 +164,16 @@ public abstract class InodeImpl implements Node {
     public abstract void  putNode();// throws NotExistException;
 
     @Override
-    public  void overlay(Node newChild, String name) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException {
-	    if (i_released)
-		throw new NotExistException();
-	    if (!isDirectory())
-		throw new NoDirectoryInodeException();
+    public void overlay(Node newChild, String name)// throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException 
+    {
+	    if (i_released){
+		//throw new NotExistException();
+                return;
+            }
+	    if (!isDirectory()){
+		//throw new NoDirectoryInodeException();
+                return;
+            }
 	    
 	    Node inodeToOverlay = lookup(name); // wirft InodeNotFoundException
 	    inodeToOverlay.decUseCount();
@@ -177,15 +183,22 @@ public abstract class InodeImpl implements Node {
     }
 
     @Override
-    public  void removeOverlay(Node child) throws InodeNotFoundException, NoDirectoryInodeException, NotExistException {
-	    if (i_released)
-		throw new NotExistException();
-	    if (!isDirectory())
-		throw new NoDirectoryInodeException();
+    public void removeOverlay(Node child)// throws InodeNotFoundException, NoDirectoryInodeException, NotExistException 
+    {
+	    if (i_released){
+		//throw new NotExistException();
+                return;
+            }
+	    if (!isDirectory()){
+		//throw new NoDirectoryInodeException();
+                return;
+            }
 	    
 	    int index = overlayInodes.indexOf(child);
-	    if (index == -1)
-		throw new InodeNotFoundException();
+	    if (index == -1){
+		//throw new InodeNotFoundException();
+                return;
+            }
 	    
 	    overlayNames.removeElementAt(index);
 	    overlayInodes.removeElementAt(index);
@@ -193,7 +206,7 @@ public abstract class InodeImpl implements Node {
     }
 
     @Override
-    public  void removeAllOverlays()// throws NoDirectoryInodeException, NotExistException 
+    public void removeAllOverlays()// throws NoDirectoryInodeException, NotExistException 
     {
 	    /*if (i_released)
 		throw new NotExistException();

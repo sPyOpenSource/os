@@ -2,6 +2,7 @@ package jx.net.protocol.bootp;
 
 import jx.zero.*;
 import jx.net.IPAddress;
+import jx.net.IPv4Address;
 import jx.net.NetInit;
 import jx.net.UDPSender;
 import jx.net.UDPReceiver;
@@ -36,7 +37,7 @@ public class BOOTP  {
       UDPData udp = null;
       //Memory arr[] = new Memory[2];
 	try { 
-	    sender = net.getUDPSender(CLIENT_PORT, new IPAddress(255,255,255,255), SERVER_PORT);
+	    sender = net.getUDPSender(CLIENT_PORT, new IPv4Address(255,255,255,255), SERVER_PORT);
 	    receiver = net.getUDPReceiver(CLIENT_PORT, new Memory[] { 
 			    net.getUDPBuffer(0), net.getUDPBuffer(0), net.getUDPBuffer(0), net.getUDPBuffer(0)});
 	    buf = net.getUDPBuffer(300);
@@ -76,7 +77,7 @@ public class BOOTP  {
       Memory rbuf2 = null;
       UDPData udp = null;
 	try { 
-	    sender = net.getUDPSender(CLIENT_PORT, new IPAddress(255, 255, 255, 255), SERVER_PORT);
+	    sender = net.getUDPSender(CLIENT_PORT, new IPv4Address(255, 255, 255, 255), SERVER_PORT);
 	    receiver = net.getUDPReceiver(CLIENT_PORT, new Memory[] { 
 			    net.getUDPBuffer(), net.getUDPBuffer(), net.getUDPBuffer(), net.getUDPBuffer()});
 	    buf = net.getUDPBuffer();

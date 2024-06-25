@@ -1,4 +1,4 @@
-package timerpc;
+package jx.timerpc;
 
 import jx.timer.*;
 

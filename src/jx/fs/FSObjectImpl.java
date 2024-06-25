@@ -10,7 +10,7 @@ abstract public class FSObjectImpl implements FSObject, jx.zero.Service {
     protected EXT2Attribute  attr = null;
 
     @Override
-    public abstract int length() throws Exception;
+    public abstract int getLength() throws Exception;
 
     public FSObjectImpl(FilesystemImpl fs_impl, FileSystem fs, FSObjectImpl parent, Node inode) {
 	this.fs_impl = fs_impl;

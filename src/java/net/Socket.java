@@ -4,7 +4,9 @@ import jx.zero.*;
 import java.io.OutputStream;
 import java.io.InputStream;
 import java.io.IOException;
+
 import jx.net.IPAddress;
+import jx.net.IPv4Address;
 import jx.net.TCPSocket;
 import jx.net.NetInit;
 import jx.net.UnknownAddressException;
@@ -30,7 +32,7 @@ public class Socket {
     }
 
     public Socket(String host, int remotePort) throws java.io.IOException {
-	this(new IPAddress(host), remotePort);
+	this(new IPv4Address(host), remotePort);
     }
 
     public Socket(IPAddress remoteAddress, int remotePort) throws java.io.IOException {

@@ -576,7 +576,10 @@ public class BufferedReader extends Reader
                 Debug.out.print( buf[i]);
             }
             return count;
-	} catch (InodeIOException | NoFileInodeException | NotExistException | PermissionException |InodeNotFoundException | NoDirectoryInodeException ex) {
+	} catch (
+                //InodeIOException | NoFileInodeException | NotExistException | PermissionException |InodeNotFoundException | NoDirectoryInodeException ex
+                Exception ex
+                ) {
 	    Debug.out.println(ex.getMessage());
 	    return 0;
       }

@@ -49,28 +49,32 @@ final public class RegularFileImpl extends FSObjectImpl implements RegularFile {
 
     @Override
     public int append(Memory mem, int off, int len) throws Exception {	
-	return inode.write((int)length(),mem,off,len);
+	return inode.write((int)getLength(),mem,off,len);
     }
 
     /**
      * Sets the length of this file.
      * @param newLength
-     * @return 
      * @throws java.lang.Exception
      */
 
     @Override
-    public int setLength(long newLength) throws Exception {
+    public void setLength(long newLength) throws Exception {
 	throw new Error("not implemented yet");
     }
 
     @Override
-    public int length() throws Exception {
+    public int getLength() throws Exception {
 	return inode.getLength();
     }
 
     @Override
     protected void finalize() throws Throwable {
 	inode.decUseCount();
+    }
+
+    @Override
+    public boolean isValid() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }

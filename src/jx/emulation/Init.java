@@ -24,7 +24,7 @@ public class Init {
 	Class cx = Class.forName("[Ljava.lang.String;");
 	Method method = cl.getMethod("main", new Class[] { cx });
 	//System.out.println(" XX"+method);
-	String a[] = new String[args.length-1];
+	String a[] = new String[args.length - 1];
 	System.arraycopy(args, 1, a, 0, a.length);
         method.invoke(null, new Object[] {a});
     }

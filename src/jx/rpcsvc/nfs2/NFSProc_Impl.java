@@ -496,7 +496,7 @@ public class NFSProc_Impl implements NFSProc {
 		Node inode;
 		try {
 		    inode = dirInode.create(name.data, InodeImpl.S_IWUSR|InodeImpl.S_IRUGO);
-		} catch(FileExistsException e) {
+		} catch(Exception e) {
 		    inode = dirInode.lookup(name.data);
 		}
 		if (debug_nfs) 
@@ -808,7 +808,7 @@ public class NFSProc_Impl implements NFSProc {
 		
 	} catch (StaleHandleException e) {
 	    return new ReadDirResErrStale();
-	} catch (Exception e) {
+	} catch (FSException e) {
 	    if (debug_nfs) Debug.out.println("Fehler in NFS_RMDIR");
 	    return new ReadDirResError();
 	}
@@ -817,6 +817,7 @@ public class NFSProc_Impl implements NFSProc {
 
 
     // NFS_STATFS
+    @Override
     public StatFSRes statfs(FHandle fh0) {
 	if (debug_nfs) Debug.out.println("STATFS (get file system attributes)");
 	

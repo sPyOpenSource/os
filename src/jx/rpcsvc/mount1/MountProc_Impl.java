@@ -28,7 +28,10 @@ public class MountProc_Impl implements MountProc {
 				  homeInode.getIdentifier(),
 				  0);
 	    return new FHStatusOK(homeFh.getFHandle());
-	} catch (InodeIOException | InodeNotFoundException | NoDirectoryInodeException | NotExistException | PermissionException e) {
+	} catch (
+                //InodeIOException | InodeNotFoundException | NoDirectoryInodeException | NotExistException | PermissionException e
+                Exception e
+                ) {
 	    //TODO
 	    Debug.out.println("Fehler in mount!");
 	    System.out.println("Fehler in mount!");

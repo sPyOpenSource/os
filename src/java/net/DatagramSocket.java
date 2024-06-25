@@ -2,7 +2,7 @@ package java.net;
 
 import java.io.IOException;
 
-import jx.net.IPAddress;
+import jx.net.IPv4Address;
 import jx.net.NetInit;
 import jx.net.UDPData;
 import jx.net.UDPSender;
@@ -68,7 +68,7 @@ public class DatagramSocket
   
     public void send(DatagramPacket p) throws IOException {
         try {
-            sender = net.getUDPSender(port, new IPAddress(p.addr.getAddress()), p.getPort());
+            sender = net.getUDPSender(port, new IPv4Address(p.addr.getAddress()), p.getPort());
             Debug.out.println("get udp sender");
         } catch (UnknownAddressException ex) {
             //Logger.getLogger(DatagramSocket.class.getName()).log(Level.SEVERE, null, ex);

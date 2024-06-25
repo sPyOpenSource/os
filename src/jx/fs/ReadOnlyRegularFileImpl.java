@@ -31,7 +31,7 @@ public class ReadOnlyRegularFileImpl extends FSObjectImpl implements ReadOnlyReg
     }
 
     @Override
-    public int length() throws Exception {
+    public int getLength() throws Exception {
 	if (debug) Debug.message(" F: length");
 	//try {
 	    return inode.getLength();
@@ -44,5 +44,10 @@ public class ReadOnlyRegularFileImpl extends FSObjectImpl implements ReadOnlyReg
     @Override
     protected void finalize() throws Throwable {
 	inode.decUseCount();
+    }
+
+    @Override
+    public boolean isValid() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }

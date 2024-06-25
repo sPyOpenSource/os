@@ -510,4 +510,8 @@ public final class String implements CharSequence
         if (offset > bytes.length - length)
             throw new StringIndexOutOfBoundsException(offset + length);
     }
+
+    public boolean isEmpty() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

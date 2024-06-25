@@ -9,6 +9,10 @@ public final class Float extends Number {
     //public static final Class	TYPE = Class.getPrimitiveClass("float");
     public static Class TYPE;
 
+    public static String toString(float value) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     private float value;
     public Float(float value) {
 	this.value = value;

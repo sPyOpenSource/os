@@ -7,6 +7,7 @@ import jx.devices.*;
 import jx.timer.*;
 import jx.buffer.separator.*;
 import jx.zero.debug.DebugPrintStream;
+import jx.zero.timer.SleepManager;
 
 class User {
     static DebugPrintStream out;
@@ -119,7 +120,7 @@ public class ComInit extends Softlimits implements DeviceFinder {
 	this.irq = (IRQ)naming.lookup("IRQ");
 	this.memMgr = (MemoryManager)naming.lookup("MemoryManager");
 
-	this.sleepManager = new timerpc.SleepManagerImpl();
+	this.sleepManager = new jx.timerpc.SleepManagerImpl();
 	this.timerManager = timerManager;
 	this.etherConsumer = etherConsumer;
 	if (etherConsumer != null) throw new Error("not expected");

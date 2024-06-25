@@ -15,45 +15,50 @@ public class HLRRobin_mini implements HLScheduler_runnables, HLS_GCThread {
     HLSchedulerSupport HLschedulerSupport;
     DebugPrintStream out;
   
-    protected ThreadList runnables=null;
+    protected ThreadList runnables = null;
     private CPU MyCPU = null;
 
     private boolean uninterruptable = false;
-    private CPUState unINTthread=null;
+    private CPUState unINTthread = null;
 
-  public String DomainName="";   //test
-  private boolean debug=false;   //test
+    public String DomainName = "";   //test
+    private boolean debug = false;   //test
 
     public HLRRobin_mini() {
-	domainZero= InitialNaming.getInitialNaming();
-	  cpuManager = (CPUManager) domainZero.lookup("CPUManager");
-	  SMPcpuManager = (SMPCPUManager) domainZero.lookup("SMPCPUManager");
-	  HLschedulerSupport = (HLSchedulerSupport) domainZero.lookup("HLSchedulerSupport");
-	  /* init Debug.out */
-	  DebugChannel d = (DebugChannel) domainZero.lookup("DebugChannel0");
-	  out = new DebugPrintStream(new DebugOutputStream(d));
-	  uninterruptable = false;
-	  Debug.out = out;
-	  runnables = new ThreadList();
-   }
+	domainZero = InitialNaming.getInitialNaming();
+	cpuManager = (CPUManager) domainZero.lookup("CPUManager");
+	SMPcpuManager = (SMPCPUManager) domainZero.lookup("SMPCPUManager");
+	HLschedulerSupport = (HLSchedulerSupport) domainZero.lookup("HLSchedulerSupport");
+	/* init Debug.out */
+	DebugChannel d = (DebugChannel) domainZero.lookup("DebugChannel0");
+	out = new DebugPrintStream(new DebugOutputStream(d));
+	uninterruptable = false;
+	Debug.out = out;
+	runnables = new ThreadList();
+    }
 
+    @Override
     public void registered(){
-	Debug.out.println("HLRRobin registered called on CPU"+SMPcpuManager.getMyCPU());
+	Debug.out.println("HLRRobin registered called on CPU" + SMPcpuManager.getMyCPU());
 	MyCPU = SMPcpuManager.getMyCPU();
     }
 
+    @Override
     public boolean Scheduler_interrupted(){
 	return false;
     }
 
+    @Override
     public boolean Scheduler_preempted(){
 	return false;
     }
 
+    @Override
     public void interrupted(CPUState newThread)  {
 	preempted(newThread);
     }
 
+    @Override
     public void preempted(CPUState Thread)  {
 	//Debug.out.println("HLRRobin::preempted called");
 	if (uninterruptable == true)
@@ -62,20 +67,24 @@ public class HLRRobin_mini implements HLScheduler_runnables, HLS_GCThread {
 	    runnables.add(Thread);
     }
  
+    @Override
     public void yielded(CPUState newThread)  {
 	//Debug.out.println(DomainName+" "+MyCPU.getID()+":HLRRobin::yielded called");
 	runnables.add(newThread);
     }
+    @Override
     public void unblocked(CPUState newThread)  {
 	//Debug.out.println(DomainName+": HLRRobin::unblocked called");
 	runnables.add(newThread);
     }
     
+    @Override
     public void created(CPUState newThread)  {
 	//Debug.out.println("HLRRobin::created called");
 	runnables.add(newThread);
     }
  
+    @Override
   public void startGCThread (CPUState interruptedThread, CPUState GCThread) {
      //Debug.out.println(DomainName+": HLRRobin_mini::startGCThread called");
      if (interruptedThread != null)
@@ -83,18 +92,23 @@ public class HLRRobin_mini implements HLScheduler_runnables, HLS_GCThread {
      uninterruptable = true;
      HLschedulerSupport.activateThread(GCThread);
     }
+  
+    @Override
     public void unblockedGCThread (CPUState GCThread){
       //Debug.out.println(DomainName+": HLRRobin_mini::unblockedGCThread called");
       if (uninterruptable == true)
 	throw new Error("should not happen!");  
-      unINTthread= GCThread;
+      unINTthread = GCThread;
       uninterruptable = true;
     }
+    
+    @Override
     public void destroyedGCThread (CPUState GCThread){
      //Debug.out.println(DomainName+": HLRRobin_mini::destroyedGCThread called");
      uninterruptable = false;
     }
    
+    @Override
      public void activated()	  {
 	 //Debug.out.println(DomainName+": HLRRobin_mini::activated called");
 	 CPUState t = (CPUState)runnables.removeFirst();
@@ -111,8 +125,9 @@ public class HLRRobin_mini implements HLScheduler_runnables, HLS_GCThread {
 	  
 	  HLschedulerSupport.activateThread(t);
 	  throw new Error("should never return! (C)");
-   }
+    }
      
+    @Override
      public void dump() {
 	  if(uninterruptable == true)
 	      { Debug.out.print("U:"); HLschedulerSupport.dumpThread(unINTthread);}

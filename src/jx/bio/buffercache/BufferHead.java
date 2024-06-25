@@ -46,19 +46,20 @@ public class BufferHead extends jx.fs.buffercache.BufferHead {
      *
      */
     @Override
-    final public void markDirty()    { dirty = true; }
+    final public void markDirty() { dirty = true; }
     
     @Override
-    final public void markClean()    { dirty = false; }
+    final public void markClean() { dirty = false; }
 
     /**
      * Gibt an, ob der Inhalt des BufferHeads ge&auml;ndert und noch nicht auf die Festplatte geschrieben wurde.
      *
      * @return <code>true</code>, falls der Inhalt des BufferHeads nicht mit dem auf der Festplatte &uuml;bereinstimmt
      */
-    final boolean dirty()    { return dirty; }
     @Override
-    final public boolean isDirty()    { return dirty; }
+    public final boolean dirty() { return dirty; }
+    @Override
+    final public boolean isDirty() { return dirty; }
 
     /**
      * Sperrt den BufferHead bzw. gibt die Sperre des BufferHeads frei. F&uuml;r die Dauer der Sperre k&ouml;nnen keine anderen
@@ -177,7 +178,8 @@ public class BufferHead extends jx.fs.buffercache.BufferHead {
 	locked = false;
     }
 
-    final void ref() { b_count++; }
+    @Override
+    public final void ref() { b_count++; }
     final void unref() { 
 	if (paranoid) {
 	    if (b_count <= 0) throw new Error(); 
@@ -191,5 +193,6 @@ public class BufferHead extends jx.fs.buffercache.BufferHead {
     final public boolean isUsedOnlyByMe() { return b_count==1; }
 
 
-    final boolean isInFreeList() { return inlist; }
+    @Override
+    public final boolean isInFreeList() { return inlist; }
 }

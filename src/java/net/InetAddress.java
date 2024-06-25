@@ -195,7 +195,8 @@ public class InetAddress
     return hostname;
   }
   
-  public int hashCode()
+    @Override
+    public int hashCode()
     {
       byte[] v = new byte[4];
       
@@ -208,6 +209,7 @@ public class InetAddress
 	    (i(v[3]) << 24);
     }
   
+    @Override
     public String toString()
     {
         return	""  + i(addr[0]) +
@@ -234,4 +236,3 @@ public class InetAddress
         this.addr = b;
     }
 }
-

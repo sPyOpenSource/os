@@ -1,18 +1,14 @@
 package jx.emulation;
 
 import jx.zero.*;
-import java.util.*;
 import jx.InitialNaming;
 
 public class NamingImpl implements Naming {
-    Clock clock;
-    Vector portals = new Vector();
     BlockIOFile ide;
     
     // BlockIOFile ide;
     public NamingImpl() {
-	clock = new ClockImpl(); 
-        registerPortal(clock, "Clock");
+        registerPortal(new ClockImpl(), "Clock");
 	registerPortal(new ProfilerImpl(), "Profiler");
 	registerPortal(new MemoryManagerImpl(), "MemoryManager");
     }
