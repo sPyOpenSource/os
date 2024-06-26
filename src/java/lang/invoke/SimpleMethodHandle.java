@@ -25,9 +25,6 @@
 
 package java.lang.invoke;
 
-import static java.lang.invoke.LambdaForm.BasicType.*;
-import static java.lang.invoke.MethodHandleStatics.*;
-
 /**
  * A method handle whose behavior is determined only by its LambdaForm.
  * @author jrose
@@ -41,10 +38,11 @@ final class SimpleMethodHandle extends BoundMethodHandle {
         return new SimpleMethodHandle(type, form);
     }
 
-    /*non-public*/ static final SpeciesData SPECIES_DATA = SpeciesData.EMPTY;
+    // static final SpeciesData SPECIES_DATA = SpeciesData.EMPTY;
 
-    /*non-public*/ public SpeciesData speciesData() {
-            return SPECIES_DATA;
+    public SpeciesData speciesData() {
+            //return SPECIES_DATA;
+            throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override
@@ -55,11 +53,6 @@ final class SimpleMethodHandle extends BoundMethodHandle {
     @Override
     String internalProperties() {
         return "\n& Class="+getClass().getSimpleName();
-    }
-
-    @Override
-    /*non-public*/ public int fieldCount() {
-        return 0;
     }
 
     @Override

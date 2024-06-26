@@ -25,14 +25,8 @@
 
 package java.lang.invoke;
 
-import java.io.FilePermission;
 import java.io.Serializable;
-import java.lang.reflect.Constructor;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
 import java.util.LinkedHashSet;
-//import java.util.concurrent.atomic.AtomicInteger;
-import java.util.PropertyPermission;
 import java.util.Set;
 
 //import static jdk.internal.org.objectweb.asm.Opcodes.*;
@@ -90,10 +84,10 @@ import java.util.Set;
     }*/
 
     // See context values in AbstractValidatingLambdaMetafactory
-    private final String implMethodClassName;        // Name of type containing implementation "CC"
+    private String implMethodClassName;        // Name of type containing implementation "CC"
     private final String implMethodName;             // Name of implementation method "impl"
     private final String implMethodDesc;             // Type descriptor for implementation methods "(I)Ljava/lang/String;"
-    private final Class<?> implMethodReturnClass;    // class for implementaion method return type "Ljava/lang/String;"
+    private Class<?> implMethodReturnClass;    // class for implementaion method return type "Ljava/lang/String;"
     private final MethodType constructorType;        // Generated class constructor type "(CC)void"
     //private final ClassWriter cw;                    // ASM class writer
     private final String[] argNames;                 // Generated names for the constructor arguments
@@ -150,12 +144,12 @@ import java.util.Set;
         super(caller, invokedType, samMethodName, samMethodType,
               implMethod, instantiatedMethodType,
               isSerializable, markerInterfaces, additionalBridges);
-        implMethodClassName = implDefiningClass.getName().replace('.', '/');
+        //implMethodClassName = implDefiningClass.getName().replace('.', '/');
         implMethodName = implInfo.getName();
         implMethodDesc = implMethodType.toMethodDescriptorString();
-        implMethodReturnClass = (implKind == MethodHandleInfo.REF_newInvokeSpecial)
+        /*implMethodReturnClass = (implKind == MethodHandleInfo.REF_newInvokeSpecial)
                 ? implDefiningClass
-                : implMethodType.returnType();
+                : implMethodType.returnType();*/
         constructorType = invokedType.changeReturnType(Void.TYPE);
         lambdaClassName = targetClass.getName().replace('.', '/') + "$$Lambda$";// + counter.incrementAndGet();
         /*cw = new ClassWriter(ClassWriter.COMPUTE_MAXS);
@@ -246,83 +240,6 @@ import java.util.Set;
      * is not found
      */
     private Class<?> spinInnerClass() throws LambdaConversionException {
-        String[] interfaces;
-        String samIntf = samBase.getName().replace('.', '/');
-        boolean accidentallySerializable = !isSerializable && Serializable.class.isAssignableFrom(samBase);
-        if (markerInterfaces.length == 0) {
-            interfaces = new String[]{samIntf};
-        } else {
-            // Assure no duplicate interfaces (ClassFormatError)
-            Set<String> itfs = new LinkedHashSet<>(markerInterfaces.length + 1);
-            itfs.add(samIntf);
-            for (Class<?> markerInterface : markerInterfaces) {
-                itfs.add(markerInterface.getName().replace('.', '/'));
-                accidentallySerializable |= !isSerializable && Serializable.class.isAssignableFrom(markerInterface);
-            }
-            //interfaces = itfs.toArray(new String[itfs.size()]);
-        }
-
-        /*cw.visit(CLASSFILE_VERSION, ACC_SUPER + ACC_FINAL + ACC_SYNTHETIC,
-                 lambdaClassName, null,
-                 JAVA_LANG_OBJECT, interfaces);
-
-        // Generate final fields to be filled in by constructor
-        for (int i = 0; i < argDescs.length; i++) {
-            FieldVisitor fv = cw.visitField(ACC_PRIVATE + ACC_FINAL,
-                                            argNames[i],
-                                            argDescs[i],
-                                            null, null);
-            fv.visitEnd();
-        }*/
-
-        generateConstructor();
-
-        if (invokedType.parameterCount() != 0) {
-            generateFactory();
-        }
-
-        // Forward the SAM method
-        /*MethodVisitor mv = cw.visitMethod(ACC_PUBLIC, samMethodName,
-                                          samMethodType.toMethodDescriptorString(), null, null);
-        mv.visitAnnotation("Ljava/lang/invoke/LambdaForm$Hidden;", true);
-        new ForwardingMethodGenerator(mv).generate(samMethodType);
-
-        // Forward the bridges
-        if (additionalBridges != null) {
-            for (MethodType mt : additionalBridges) {
-                mv = cw.visitMethod(ACC_PUBLIC|ACC_BRIDGE, samMethodName,
-                                    mt.toMethodDescriptorString(), null, null);
-                mv.visitAnnotation("Ljava/lang/invoke/LambdaForm$Hidden;", true);
-                new ForwardingMethodGenerator(mv).generate(mt);
-            }
-        }
-
-        if (isSerializable)
-            generateSerializationFriendlyMethods();
-        else if (accidentallySerializable)
-            generateSerializationHostileMethods();
-
-        cw.visitEnd();
-
-        // Define the generated class in this VM.
-
-        final byte[] classBytes = cw.toByteArray();
-
-        // If requested, dump out to a file for debugging purposes
-        if (dumper != null) {
-            AccessController.doPrivileged(new PrivilegedAction<Void>() {
-                @Override
-                public Void run() {
-                    dumper.dumpClass(lambdaClassName, classBytes);
-                    return null;
-                }
-            }, null,
-            new FilePermission("<<ALL FILES>>", "read, write"),
-            // createDirectories may need it
-            new PropertyPermission("user.dir", "read"));
-        }
-
-        return UNSAFE.defineAnonymousClass(targetClass, classBytes, null);*/
         throw new UnsupportedOperationException("Not supported yet.");
     }
 

@@ -25,11 +25,6 @@
 
 package java.lang.invoke;
 
-import java.lang.reflect.Method;
-//import static java.lang.invoke.MethodHandleNatives.Constants.*;
-import java.lang.ref.WeakReference;
-import java.lang.reflect.Field;
-
 /**
  * The flavor of method handle which implements a constant reference
  * to a class member.
@@ -42,6 +37,16 @@ class DirectMethodHandle extends MethodHandle {
     private DirectMethodHandle(MethodType mtype, LambdaForm form, MemberName member) {
         super(mtype, form);
        
+    }
+
+    @Override
+    MethodHandle copyWith(MethodType mt, LambdaForm lf) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    BoundMethodHandle rebind() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
    
