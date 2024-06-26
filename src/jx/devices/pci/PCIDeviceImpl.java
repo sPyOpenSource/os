@@ -1,8 +1,11 @@
 package jx.devices.pci;
 
+import jx.devices.Device;
+import jx.devices.DeviceConfiguration;
+import jx.devices.DeviceConfigurationTemplate;
 import jx.zero.Debug;
 
-public class PCIDevice {
+public class PCIDeviceImpl implements PCIDevice {
    private final PCIAddress pciaddress;
    private final PCIAccess  pcibus;
    
@@ -10,13 +13,14 @@ public class PCIDevice {
    private PCICapability capabilities[] = null;
    
    // only the hostbridge should generate PCIDevices
-   PCIDevice(PCIAccess bus, PCIAddress address){
+   PCIDeviceImpl(PCIAccess bus, PCIAddress address){
       pcibus     = bus;
       pciaddress = address;
       
       setupCapabilities();
    }
    
+   @Override
    public PCIAddress getAddress(){
       return pciaddress;
    }
@@ -30,6 +34,7 @@ public class PCIDevice {
     * @param reg Number of the desired DWORD register. (NOT the address!)
     * @return Current value of the register.
     */
+   @Override
    public int readConfig(int reg){
       return pcibus.readDeviceConfig(pciaddress, reg);
    }
@@ -99,9 +104,11 @@ public class PCIDevice {
      * @return *************************************************/
    
    // register 0
+   @Override
    public short getVendorID(){
       return (short)readPackedConfig(PCI.REG_DEVVEND, PCI.VENDOR_MASK, PCI.VENDOR_SHIFT);
    }
+   @Override
    public short getDeviceID(){
       return (short)readPackedConfig(PCI.REG_DEVVEND, PCI.DEVICE_MASK, PCI.DEVICE_SHIFT);
    }
@@ -115,9 +122,11 @@ public class PCIDevice {
    }
    
    // register 1
+   @Override
    public short getCommand(){
       return (short)readPackedConfig(PCI.REG_STATCMD, PCI.COMMAND_MASK, PCI.COMMAND_SHIFT);
    }
+   @Override
    public void setCommand(short cmd){
       writePackedConfig(PCI.REG_STATCMD, PCI.COMMAND_MASK, PCI.COMMAND_SHIFT, cmd);
    }
@@ -132,11 +141,13 @@ public class PCIDevice {
    public byte getRevisionID(){
       return (byte)readPackedConfig(PCI.REG_CLASSREV, PCI.REVISION_MASK, PCI.REVISION_SHIFT);
    }
+   @Override
    public int getClassCode(){
       return readPackedConfig(PCI.REG_CLASSREV, PCI.CLASSCODE_MASK, PCI.CLASSCODE_SHIFT);
    }
    
    // register 3
+   @Override
    public byte getHeaderType(){
       return (byte)readPackedConfig(PCI.REG_BHLC, PCI.HEADERTYPE_MASK, PCI.HEADERTYPE_SHIFT);
    }
@@ -167,6 +178,7 @@ public class PCIDevice {
    }
    
    // register 4 - 9
+   @Override
    public int getBaseAddress(int no){
       //Debug.assert(no >= 0 && no <= 5, "base address index out of range: "+no);
       return readConfig(PCI.REG_BASEADDRESS_0+no);
@@ -194,6 +206,7 @@ public class PCIDevice {
    public byte getInterruptPin(){
       return (byte)readPackedConfig(PCI.REG_LGII, PCI.INTERRUPTPIN_MASK, PCI.INTERRUPTPIN_SHIFT);
    }
+   @Override
    public byte getInterruptLine(){
       return (byte)readPackedConfig(PCI.REG_LGII, PCI.INTERRUPTLINE_MASK, PCI.INTERRUPTLINE_SHIFT);
    }
@@ -273,7 +286,27 @@ public class PCIDevice {
 
    /***********  additions
      * @return  **************************************************/
-    public boolean busmasterCapable() { return false;}
+    public boolean busmasterCapable() { return false; }
     public boolean enforceBusmaster() { return false; }
     public int readIRQLine() {return 0;}
+
+    @Override
+    public Device getChild(int index) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public DeviceConfigurationTemplate[] getSupportedConfigurations() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void open(DeviceConfiguration conf) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void close() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

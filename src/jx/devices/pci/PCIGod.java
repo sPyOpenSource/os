@@ -110,13 +110,13 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
 	 for (byte device = 0; device < MAX_PCI_AGENTS; ++device) {
 	    int num_func = MAX_PCI_FUNCTIONS;
 	    for(int function = 0; function < num_func; ++function){
-	       PCIAddress pciaddr = new PCIAddress(bus, device, function);
+	       PCIAddress pciaddr = new PCIAddressImpl(bus, device, function);
 	       
 	       int id = readDeviceConfig(pciaddr, REG_DEVVEND);
 	       if ( id == INVALID_ID )
 		 break;
 	       
-	       pcidev = new PCIDevice(this, pciaddr);
+	       pcidev = new PCIDeviceImpl(this, pciaddr);
 	       
 	       int misc = pcidev.getHeaderType();
 	       if (function == 0 && (misc & PCI.HEADER_MULTIFUNCTION) == 0)
@@ -155,7 +155,7 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
     /* internal read/write operations with direct support methods */
    
     private static int createAddress(PCIAddress pciaddress, int register) {
-      return createAddress(pciaddress.bus, pciaddress.device, pciaddress.function, register);
+      return createAddress(pciaddress.getBus(), pciaddress.getDevice(), pciaddress.getFunction(), register);
     }
    
     private static int createAddress(int bus, int device, int function, int register) {
@@ -280,7 +280,7 @@ interface PCIHB {
    int FUN_MASK			= 0x00000700;
    int REG_MASK			= 0x000000fc;
 
-   int MAX_PCI_FUNCTIONS	        = 8;
+   int MAX_PCI_FUNCTIONS	= 8;
    int MAX_PCI_AGENTS		= 32;
    int MAX_PCI_BUSSES		= 256;
    
