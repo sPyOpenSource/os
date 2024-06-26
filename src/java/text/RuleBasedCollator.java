@@ -540,14 +540,7 @@ hashCode()
 public Object
 clone()
 {
-  try 
-    {
-       return(super.clone());
-    }
-  catch(CloneNotSupportedException e)
-    {
-       return(null);
-    }
+    return(super.clone());
 }
 
 } // class RuleBasedCollator
