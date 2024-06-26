@@ -1097,6 +1097,11 @@ public class Collections {
         public Stream<E> parallelStream() {
             return (Stream<E>)c.parallelStream();
         }*/
+
+        @Override
+        public <T> T[] toArray(T[] a) {
+            throw new java.lang.UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
     }
 
     /**
@@ -1127,6 +1132,11 @@ public class Collections {
         UnmodifiableSet(Set<? extends E> s)     {super(s);}
         public boolean equals(Object o) {return o == this || c.equals(o);}
         public int hashCode()           {return c.hashCode();}
+
+        @Override
+        public <T> T[] toArray(T[] a) {
+            throw new java.lang.UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
 
     
     }
@@ -1177,6 +1187,11 @@ public class Collections {
 
         public E first()                   {return ss.first();}
         public E last()                    {return ss.last();}
+
+        @Override
+        public <T> T[] toArray(T[] a) {
+            throw new java.lang.UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
     }
 
     /**
@@ -1212,6 +1227,11 @@ public class Collections {
                              implements NavigableSet<E>, Serializable {
 
         private static final long serialVersionUID = -6027448201786391929L;
+
+        @Override
+        public <T> T[] toArray(T[] a) {
+            throw new java.lang.UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
 
         /**
          * A singleton empty unmodifiable navigable set used for
@@ -1382,6 +1402,11 @@ public class Collections {
             return (list instanceof RandomAccess
                     ? new UnmodifiableRandomAccessList<>(list)
                     : this);
+        }
+
+        @Override
+        public <T> T[] toArray(T[] a) {
+            throw new java.lang.UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
         }
     }
 
@@ -2071,6 +2096,11 @@ public class Collections {
         private void writeObject(ObjectOutputStream s) throws IOException {
             synchronized (mutex) {s.defaultWriteObject();}
         }
+
+        @Override
+        public <T> T[] toArray(T[] a) {
+            throw new java.lang.UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
     }
 
     /**
@@ -2129,6 +2159,11 @@ public class Collections {
         }
         public int hashCode() {
             synchronized (mutex) {return c.hashCode();}
+        }
+
+        @Override
+        public <T> T[] toArray(T[] a) {
+            throw new java.lang.UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
         }
 
     }
@@ -2221,6 +2256,11 @@ public class Collections {
         }
         public E last() {
             synchronized (mutex) {return ss.last();}
+        }
+
+        @Override
+        public <T> T[] toArray(T[] a) {
+            throw new java.lang.UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
         }
     }
 
@@ -2469,6 +2509,16 @@ public class Collections {
             return (list instanceof RandomAccess
                     ? new SynchronizedRandomAccessList<>(list)
                     : this);
+        }
+
+        @Override
+        public <T> T[] toArray(T[] a) {
+            throw new java.lang.UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
+
+        @Override
+        public boolean addAll(int index, Collection<? extends E> c) {
+            throw new java.lang.UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
         }
     }
 
@@ -3127,6 +3177,11 @@ public class Collections {
         public boolean addAll(Collection<? extends E> c) {
             throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         }
+
+        @Override
+        public <T> T[] toArray(T[] a) {
+            throw new java.lang.UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
     }
 
     /**
@@ -3238,6 +3293,11 @@ public class Collections {
             throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         }
 
+        @Override
+        public <T> T[] toArray(T[] a) {
+            throw new java.lang.UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
+
    
     }
 
@@ -3301,6 +3361,11 @@ public class Collections {
         }
         public SortedSet<E> tailSet(E fromElement) {
             return checkedSortedSet(ss.tailSet(fromElement), type);
+        }
+
+        @Override
+        public <T> T[] toArray(T[] a) {
+            throw new java.lang.UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
         }
 
      
@@ -3504,6 +3569,16 @@ public class Collections {
         @Override
         public void sort(Comparator<? super E> c) {
             list.sort(c);
+        }
+
+        @Override
+        public <T> T[] toArray(T[] a) {
+            throw new java.lang.UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
+
+        @Override
+        public boolean addAll(int index, Collection<? extends E> c) {
+            throw new java.lang.UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
         }
     }
 
@@ -3876,6 +3951,11 @@ public Spliterator spliterator(){return null;}
             static <K,V,T> CheckedEntry<K,V,T> checkedEntry(Map.Entry<K,V> e,
                                                             Class<T> valueType) {
                 return new CheckedEntry<>(e, valueType);
+            }
+
+            @Override
+            public <T> T[] toArray(T[] a) {
+                throw new java.lang.UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
             }
 
             /**
@@ -4524,6 +4604,11 @@ public Spliterator spliterator(){return null;}
         public List<E> subList(int fromIndex, int toIndex) {
             throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         }
+
+        @Override
+        public boolean addAll(int index, Collection<? extends E> c) {
+            throw new java.lang.UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
     }
 
     /**
@@ -4800,6 +4885,11 @@ public Spliterator spliterator(){return null;}
             throw new UnsupportedOperationException();
         }
 
+        @Override
+        public <T> T[] toArray(T[] a) {
+            throw new java.lang.UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
+
      
 
     }
@@ -4896,6 +4986,16 @@ public Spliterator spliterator(){return null;}
         @Override
         public List<E> subList(int fromIndex, int toIndex) {
             throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        @Override
+        public <T> T[] toArray(T[] a) {
+            throw new java.lang.UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
+
+        @Override
+        public boolean addAll(int index, Collection<? extends E> c) {
+            throw new java.lang.UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
         }
     }
 
@@ -5144,6 +5244,11 @@ public Spliterator spliterator(){return null;}
         @Override
         public E set(int index, E o) {
             throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        @Override
+        public boolean addAll(int index, Collection<? extends E> c) {
+            throw new java.lang.UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
         }
     }
 
@@ -5523,6 +5628,11 @@ public Spliterator spliterator(){return null;}
         {
             stream.defaultReadObject();
             s = m.keySet();
+        }
+
+        @Override
+        public <T> T[] toArray(T[] a) {
+            throw new java.lang.UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
         }
 
 

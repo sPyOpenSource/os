@@ -565,6 +565,11 @@ public class LinkedHashMap<K,V>
             if (modCount != mc)
                 throw new ConcurrentModificationException();
         }
+
+        @Override
+        public <T> T[] toArray(T[] a) {
+            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
     }
 
     /**
@@ -676,6 +681,11 @@ public class LinkedHashMap<K,V>
                 action.accept(e);
             if (modCount != mc)
                 throw new ConcurrentModificationException();
+        }
+
+        @Override
+        public <T> T[] toArray(T[] a) {
+            throw new java.lang.UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
         }
     }
 

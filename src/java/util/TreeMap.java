@@ -1152,6 +1152,11 @@ public class TreeMap<K,V> extends AbstractMap<K,V>
       return new TreeMapIterator(_oMap, _iType);
     }
 
+        @Override
+        public Object[] toArray(Object[] a) {
+            throw new java.lang.UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
+
   
   }
 

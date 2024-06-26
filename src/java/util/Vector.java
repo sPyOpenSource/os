@@ -9,11 +9,13 @@ class ArrayEnumeration implements Enumeration, Serializable
 
     // Methods
 
+    @Override
     public boolean hasMoreElements()
     {
 	return index < data.length;
     }
 
+    @Override
     public Object nextElement() throws NoSuchElementException
     {
 	if (index >= data.length)
@@ -33,7 +35,16 @@ class ArrayEnumeration implements Enumeration, Serializable
 public class Vector<E> extends AbstractList<E> implements List<E>, Cloneable, Serializable
 { 
     // Fields
-
+    protected int capacityIncrement;
+    protected int elementCount;
+    
+    /**
+     * The array buffer into which the elements of the ArrayList are stored.
+     * The capacity of the ArrayList is the length of this array buffer. Any
+     * empty ArrayList with elementData == DEFAULTCAPACITY_EMPTY_ELEMENTDATA
+     * will be expanded to DEFAULT_CAPACITY when the first element is added.
+     */
+    transient Object[] elementData;
 
     // Constructors
     
@@ -103,7 +114,7 @@ public class Vector<E> extends AbstractList<E> implements List<E>, Cloneable, Se
     {
 	if (index > elementCount)
 	    throw new IndexOutOfBoundsException();
-	ensureCapacity(elementCount + 1);
+	//ensureCapacity(elementCount + 1);
 	for (int i = elementCount; i > index; i--)
 	    elementData[i] = elementData[i - 1];
 	elementData[index] = obj;
@@ -266,7 +277,7 @@ public class Vector<E> extends AbstractList<E> implements List<E>, Cloneable, Se
     {
 	while (elementCount > newSize)
 	    elementData[--elementCount] = null;
-	ensureCapacity(newSize);
+	//ensureCapacity(newSize);
 	while (elementCount < newSize)
 	    elementData[elementCount++] = null;
     }
@@ -338,5 +349,15 @@ public class Vector<E> extends AbstractList<E> implements List<E>, Cloneable, Se
     @Override
     public List<E> subList(int fromIndex, int toIndex) {
         throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public <T> T[] toArray(T[] a) {
+        throw new java.lang.UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public boolean addAll(int index, Collection<? extends E> c) {
+        throw new java.lang.UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }

@@ -559,5 +559,10 @@ public class TreeSet<E> extends AbstractSet<E>
 
     private static final long serialVersionUID = -2479143000061671589L;
 
+    @Override
+    public <T> T[] toArray(T[] a) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
 
 }
