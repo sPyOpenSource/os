@@ -6,7 +6,7 @@ import jx.zero.debug.*;
 import jx.devices.net.NetworkDevice;
 import jx.devices.pci.*;
 import jx.timer.*;
-import jx.buffer.separator.*;
+import jx.fs.buffer.separator.*;
 import jx.devices.DeviceConfigurationTemplate;
 import jx.devices.DeviceConfiguration;
 

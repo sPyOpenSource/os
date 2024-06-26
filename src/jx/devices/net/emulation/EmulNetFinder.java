@@ -8,7 +8,7 @@ import jx.zero.*;
 import jx.devices.*;
 import jx.devices.net.*;
 
-import jx.buffer.separator.*;
+import jx.fs.buffer.separator.NonBlockingMemoryConsumer;
 
 /**
  * Emulation NET Device finder
@@ -103,7 +103,6 @@ class NetImpl implements NetworkDevice {
     @Override
     public int getMTU() { return net.getMTU();}
 
-    @Override
     public boolean registerNonBlockingConsumer(NonBlockingMemoryConsumer consumer) {
 	this.consumer = consumer;
 	return true;
