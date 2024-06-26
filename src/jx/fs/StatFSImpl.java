@@ -1,6 +1,6 @@
 package jx.fs;
 
-public class StatFS {
+public class StatFSImpl implements StatFS {
     public int tsize;
     public int bsize; 
     public int blocks; // total blocks
