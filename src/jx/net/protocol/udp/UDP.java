@@ -10,6 +10,7 @@ import jx.net.IPConsumer;
 import jx.net.IPData;
 import jx.net.UDPConsumer;
 import jx.net.UDPData;
+import jx.net.UDPDataImpl;
 
 public class UDP implements IPConsumer {
   
@@ -96,10 +97,10 @@ public class UDP implements IPConsumer {
 	    int space = udp.length();
 	    Debug.out.println("UDPDATALEN: ");// + (buf.size()-space));
 	    Memory data = buf.getMemory().getSubRange(space, buf.getMemory().size() - space);
-	    UDPData u = new UDPData();
-	    u.mem = data;
-	    u.sourcePort = srcPort;
-	    u.sourceAddress = buf.getSourceAddress(); //lowerProducer.getSource(data.joinPrevious());
+	    UDPData u = new UDPDataImpl();
+	    u.setMemory(data);
+	    u.setSourcePort(srcPort);
+	    u.setSourceAddress(buf.getSourceAddress()); //lowerProducer.getSource(data.joinPrevious());
 	    //Debug.out.println("Source address: "+u.sourceAddress);
 	    return udpConsumer.processUDP(u);
 	}

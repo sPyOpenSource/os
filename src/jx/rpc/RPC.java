@@ -197,8 +197,8 @@ public class RPC implements Runnable, ThreadEntry {
 		beforeReceive = true; // TODO: remove this hack and configure scheduler
 		UDPData udp = receiver.receive(buf);
 
-		RPCBuffer rpcbuf = new RPCBuffer(udp, udp.offset, udp.size);
-		if (debugPacketNotice) Debug.out.println("RPC.loopreceive: "+udp.size);
+		RPCBuffer rpcbuf = new RPCBuffer(udp, udp.getOffset(), udp.Size());
+		if (debugPacketNotice) Debug.out.println("RPC.loopreceive: "+udp.Size());
 		RPCMessage replyMessage = RPCFormatterRPCMessage.read(rpcbuf);
 		if (! ( replyMessage instanceof RPCMsgSuccess)) {
 		    Debug.out.println("RPC: ignore:" + replyMessage);
@@ -351,12 +351,12 @@ public class RPC implements Runnable, ThreadEntry {
     public RPCBuffer receive(UDPReceiver receiveSocket, RPCBuffer inbuf) {
 	UDPData buf = receiveSocket.receive(inbuf.getMemory());
 	cpuManager.recordEvent(event_rcv);	
-	inbuf.init(buf, buf.offset, buf.size);
+	inbuf.init(buf, buf.getOffset(), buf.Size());
 
-	if (debugPacketNotice) Debug.out.println("RPC.receive: " + buf.size);
+	if (debugPacketNotice) Debug.out.println("RPC.receive: " + buf.Size());
 	if (debugPacketDump) {
-	    Debug.out.println("RECEIVED REQUEST PACKET: offset=" + buf.offset + ", size=" + buf.size);
-	    Dump.xdump1(buf.mem, buf.offset, buf.size);
+	    Debug.out.println("RECEIVED REQUEST PACKET: offset=" + buf.getOffset() + ", size=" + buf.Size());
+	    Dump.xdump1(buf.getMemory(), buf.getOffset(), buf.Size());
 	    //Debug.out.println(" xid="+jx.xdr.Format.readInt(inbuf)); // readInt advances the offset pointer!
 	    //Debug.out.println(" type="+jx.xdr.Format.readInt(inbuf));
 	}

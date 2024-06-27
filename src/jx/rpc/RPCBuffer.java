@@ -100,20 +100,20 @@ public class RPCBuffer implements XDRBuffer {
     final Memory getMemory() { return buf;}
 
     void init(UDPData buf) {
-	this.buf = buf.mem;
+	this.buf = buf.getMemory();
 	//init();
 	cont = null;
-	offset=0;
-	sourceAddress = buf.sourceAddress;
-	sourcePort = buf.sourcePort;
+	offset = 0;
+	sourceAddress = buf.getSourceAddress();
+	sourcePort = buf.getSourcePort();
     }
     void init(UDPData buf, int offset, int size) {
-	this.buf = buf.mem;
+	this.buf = buf.getMemory();
 	cont = null;
-	this.offset=buf.offset;
-	this.size=buf.size;
-	sourceAddress = buf.sourceAddress;
-	sourcePort = buf.sourcePort;
+	this.offset = buf.getOffset();
+	this.size = buf.Size();
+	sourceAddress = buf.getSourceAddress();
+	sourcePort = buf.getSourcePort();
     }
     void init(Memory buf) {
 	this.buf = buf;

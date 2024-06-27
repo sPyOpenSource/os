@@ -69,7 +69,7 @@ public class BOOTP  {
 	  cpuManager.recordEvent(event_rec);
 	  if (udp == null) { Debug.out.println("Timout waiting for bootp reply"); }
       //} while (udp == null);
-      BOOTPFormat b = new BOOTPFormat(udp.mem);
+      BOOTPFormat b = new BOOTPFormat(udp.getMemory());
       return null;//b.getYiaddr();
     }
 
