@@ -67,12 +67,12 @@ public class DatagramSocket
     }
   
     public void send(DatagramPacket p) throws IOException {
-        try {
+        //try {
             sender = net.getUDPSender(port, new IPv4Address(p.addr.getAddress()), p.getPort());
             Debug.out.println("get udp sender");
-        } catch (UnknownAddressException ex) {
+        //} catch (UnknownAddressException ex) {
             //Logger.getLogger(DatagramSocket.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        //}
         int len = UDPFormat.requiresSpace();
         Memory buf = net.getUDPBuffer(len + p.length + 34);
 

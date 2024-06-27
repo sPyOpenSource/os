@@ -1,18 +1,19 @@
 package jx.net.protocol.tcp;
 
 import jx.net.IPData;
+import jx.net.IPDataImpl;
 
-public class TCPData extends IPData {
+public class TCPData extends IPDataImpl {
 
     protected int retransmitCounter;
     protected int retransmitTimestamp;
 
     TCPData (IPData d){
-	sourceAddress = d.sourceAddress;
-	destinationAddress = d.destinationAddress;
-	mem = d.mem;
-	offset = d.offset;
-	size = d.size;
+	sourceAddress = d.getSourceAddress();
+	destinationAddress = d.getDestinationAddress();
+	mem = d.getMemory();
+	offset = d.getOffset();
+	size = d.Size();
 	retransmitCounter = 0;
 	retransmitTimestamp = 0;
     }

@@ -42,8 +42,8 @@ public class TCP implements IPConsumer, Runnable {
 	// bei der IP-Schicht anmelden
 	usableBufs = new MultiThreadList();
 	for ( int i = 0; i < INITIAL_BUFFER_SIZE; i++) {
-	    IPData d = new IPData();
-	    d.mem = net.getTCPBuffer();
+	    IPData d = new IPDataImpl();
+	    d.setMemory(net.getTCPBuffer());
 	    usableBufs.appendElement(d);
 	}
 	filledBufs = new MultiThreadList();
@@ -139,8 +139,8 @@ public class TCP implements IPConsumer, Runnable {
     // wird von IP aufgerufen, wenn TCP-Paket ankommt
     @Override
     public Memory processIP(IPData data) {
-	data.offset = 0;
-	data.size = data.mem.size();
+	data.setOffset(0);
+	data.setSize(data.getMemory().size());
 
 	/* get free buffer */
 	if (debug) Debug.out.println("IP packet received");
@@ -151,7 +151,7 @@ public class TCP implements IPConsumer, Runnable {
 	    if (d == null) throw new Error("where are my buffers gone?");
 	}
 	/* return mem of buffer and store received mem */
- 	Memory ret = d.mem;
+ 	Memory ret = d.getMemory();
         /*for(int i = 0; i < 40; i++){
             Debug.out.println(data.mem.get8(i+0x22));
         }*/
@@ -181,11 +181,11 @@ public class TCP implements IPConsumer, Runnable {
     
     private IPData dispatch(IPData data){
 
-	    IPAddress sourceIP = data.sourceAddress;
-	    IPAddress destinationIP = data.destinationAddress;
-            data.size -= 38;
-            if (data.size == 26) data.size = 24;
-            Debug.out.println("size: " + data.size);
+	    IPAddress sourceIP = data.getSourceAddress();
+	    IPAddress destinationIP = data.getDestinationAddress();
+            data.setSize(data.Size() - 38);
+            if (data.Size() == 26) data.setSize(24);
+            Debug.out.println("size: " + data.Size());
 	    TCPFormat tcpPacket = new TCPFormat(data, sourceIP, destinationIP);
 	    int tcpSourcePort = tcpPacket.getSourcePort();
 	    int tcpDestinationPort = tcpPacket.getDestinationPort();
@@ -210,16 +210,16 @@ public class TCP implements IPConsumer, Runnable {
 	    // Does the package belong to an existing connection? 
 	    if ((sock = findSocket(sourceIP, destinationIP, tcpSourcePort, tcpDestinationPort)) != null) {
 		if (debug) Debug.out.println("TCP: dispatched to socket");
-		IPData d = new IPData();
-		d.mem = sock.processTCP(data);
+		IPData d = new IPDataImpl();
+		d.setMemory(sock.processTCP(data));
 		return d;
 	    }
 	    
 	    // does not belong to connection. SYN to a port, which is listened to? or ACK (3rd part of the handshake!)
 	    if (((sock = tcpServerSockets[tcpDestinationPort]) != null)  && (destinationIP.equals(sock.localIP))) {
 		if (debug) Debug.out.println("TCP: dispatched to serversocket");
-		IPData d = new IPData();
-		d.mem = sock.processTCPServer(data);
+		IPData d = new IPDataImpl();
+		d.setMemory(sock.processTCPServer(data));
 		return d;
 	    }
 

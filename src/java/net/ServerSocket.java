@@ -25,12 +25,12 @@ public class ServerSocket {
     public Socket accept() throws java.io.IOException{
 	Memory[] bufs = new Memory[INITIAL_BUFFER_SIZE];
 	for (int i = 0; i < bufs.length; i++) bufs[i] = net.getTCPBuffer();
-	try {
+	//try {
 	    return new Socket(tcpSocket.accept(bufs));
-	} catch (java.io.IOException e) {
-	    Debug.out.println("ServerSocket: TCPSocket reported IOException " + e.getMessage());
-	    throw e;
-	}
+	//} catch (java.io.IOException e) {
+	    //Debug.out.println("ServerSocket: TCPSocket reported IOException " + e.getMessage());
+	    //throw e;
+	//}
 
     }
 

@@ -31,11 +31,11 @@ public class Socket {
 	outputStream = new TCPOutputStream(tcpSocket);
     }
 
-    public Socket(String host, int remotePort) throws java.io.IOException {
+    public Socket(String host, int remotePort) throws Exception {
 	this(new IPv4Address(host), remotePort);
     }
 
-    public Socket(IPAddress remoteAddress, int remotePort) throws java.io.IOException {
+    public Socket(IPAddress remoteAddress, int remotePort) throws Exception {
 	this.remoteAddress = remoteAddress;
 	this.remotePort = remotePort;
 
@@ -51,7 +51,7 @@ public class Socket {
 	} catch (UnknownAddressException e) {
 	    Debug.out.println("Socket: TCPSocket reported invalid IPAddress");
 	    throw new Error("");
-	} catch (java.io.IOException e) {
+	} catch (Exception e) {
 	    Debug.out.println("Socket: TCPSocket reported IOException " + e.getMessage());
 	    throw e;
 	}

@@ -72,7 +72,7 @@ public class ARP implements AddressResolution, MemoryConsumer, EtherConsumer {
     }
 
     @Override
-    public byte[] lookup(byte[] ipAddress) throws UnknownAddressException {
+    public byte[] lookup(byte[] ipAddress)  throws Exception{
 	return arpCache.lookup(ipAddress);
     }
 
@@ -124,9 +124,9 @@ public class ARP implements AddressResolution, MemoryConsumer, EtherConsumer {
     
     @Override
     public Memory processEther(EtherData buf) {
-	ARPFormat a = new ARPFormat(buf.mem, buf.offset);
+	ARPFormat a = new ARPFormat(buf.getMemory(), buf.getOffset());
 	cpuManager.recordEvent(event_rcv);
-	if (debugPacketNotice) Debug.out.println("ARP.processEther: "+buf.size);
+	if (debugPacketNotice) Debug.out.println("ARP.processEther: " + buf.Size());
 	if (dumpAll){
 	    Debug.out.println("ARP packet received.");
 	    a.dump();
@@ -134,7 +134,7 @@ public class ARP implements AddressResolution, MemoryConsumer, EtherConsumer {
 	if (ownProtocolAddress == null) {
 	    Debug.out.println("ARP: I don't know who I am");
 	    //cpuManager.dump("ARPRET", buf);
-	    return buf.mem; // can not respond to ARP because I don't know who I am
+	    return buf.getMemory(); // can not respond to ARP because I don't know who I am
 	}
 	if (a.getCommand() == 1 && a.getHardwareAddressSpace() == 1 && a.getProtocolAddressSpace() == 0x800) {
 	    if (dumpAll) Debug.out.println("ARP: request received!");
@@ -147,7 +147,7 @@ public class ARP implements AddressResolution, MemoryConsumer, EtherConsumer {
 		byte[] senderHW = a.getSenderHardwareAddress();
 		byte[] senderProto = a.getSenderProtocolAddress();
 		a = null;
-		Memory answer = buf.mem;		
+		Memory answer = buf.getMemory();		
 		if (dumpAll) Debug.out.println("ARP: my ethernet-address is queried!");
 		ARPFormat answ = new ARPFormat(answer, EtherFormat.requiresSpace());
 		answ.insertHardwareAddressSpace((short)1);
@@ -175,7 +175,7 @@ public class ARP implements AddressResolution, MemoryConsumer, EtherConsumer {
 	else {
 	    Debug.out.println("Unknown ARP command:" + a.getCommand());
 	}
-	return buf.mem;
+	return buf.getMemory();
     }
 
     @Override

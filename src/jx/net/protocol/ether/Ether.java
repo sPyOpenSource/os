@@ -4,7 +4,7 @@ import jx.devices.net.NetworkDevice;
 import jx.zero.Debug;
 import jx.zero.debug.Dump;
 import jx.zero.*;
-import jx.buffer.separator.*;
+import jx.fs.buffer.separator.*;
 import jx.net.dispatch.Dispatch;
 import jx.net.PacketsProducer;
 import jx.net.PacketsConsumer;
@@ -13,6 +13,7 @@ import jx.net.EtherConsumer;
 import jx.net.EtherProducer;
 import jx.net.EtherData;
 import jx.buffer.multithread.MultiThreadList;
+import jx.net.EtherDataImpl;
 
 public class Ether  implements PacketsProducer, EtherProducer {
     static final boolean dumpAll = true; // switch on to see all ether frames
@@ -233,12 +234,12 @@ public class Ether  implements PacketsProducer, EtherProducer {
 			    e.dump();
 			}
 			int id = e.getType();
-			EtherData data = new EtherData();
-			data.srcAddress = e.getSourceAddress();
-			data.dstAddress = e.getDestAddress();
-			data.mem = newMem;
-			data.offset = c.getOffset() + EtherFormat.requiresSpace();
-			data.size = c.getSize() - EtherFormat.requiresSpace();
+			EtherData data = new EtherDataImpl();
+			data.setSrcAddress(e.getSourceAddress());
+			data.setDstAddress(e.getDestAddress());
+			data.setMemory(newMem);
+			data.setOffset(c.getOffset() + EtherFormat.requiresSpace());
+			data.setSize(c.getSize() - EtherFormat.requiresSpace());
 			switch(id) {
                             case PROTO_IP:
                                 if (myIPConsumer == null) {
@@ -256,7 +257,7 @@ public class Ether  implements PacketsProducer, EtherProducer {
                                 }
                                 if (dumpAll) {
                                     Debug.out.println("Ether: received ARP packet");
-                                    Dump.xdump(data.mem, data.offset, 16);
+                                    Dump.xdump(data.getMemory(), data.getOffset(), 16);
                                 }
                                 newMem = myARPConsumer.processEther(data);
                                 break;
@@ -336,12 +337,12 @@ public class Ether  implements PacketsProducer, EtherProducer {
 			    e.dump();
 			}
 			int id = e.getType();
-			EtherData data = new EtherData();
-			data.srcAddress = e.getSourceAddress();
-			data.dstAddress = e.getDestAddress();
-			data.mem = newMem;
-			data.offset = c.getOffset() + EtherFormat.requiresSpace();
-			data.size = c.getSize() - EtherFormat.requiresSpace();
+			EtherData data = new EtherDataImpl();
+			data.setSrcAddress(e.getSourceAddress());
+			data.setDstAddress(e.getDestAddress());
+			data.setMemory(newMem);
+			data.setOffset(c.getOffset() + EtherFormat.requiresSpace());
+			data.setSize(c.getSize() - EtherFormat.requiresSpace());
 			switch(id) {
                             case PROTO_IP:
                                 if (myIPConsumer == null) {
@@ -359,7 +360,7 @@ public class Ether  implements PacketsProducer, EtherProducer {
                                 }
                                 if (dumpAll) {
                                     Debug.out.println("Ether: received ARP packet");
-                                    Dump.xdump(data.mem, data.offset, 16);
+                                    Dump.xdump(data.getMemory(), data.getOffset(), 16);
                                 }
                                 newMem = myARPConsumer.processEther(data);
                                 break;

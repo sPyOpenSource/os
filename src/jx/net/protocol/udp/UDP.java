@@ -75,15 +75,15 @@ public class UDP implements IPConsumer {
 
     @Override
     public Memory processIP(IPData buf) {
-	if (debugPacketNotice) Debug.out.println("UDP.receive: " + buf.mem.size());
+	if (debugPacketNotice) Debug.out.println("UDP.receive: " + buf.getMemory().size());
 	cpuManager.recordEvent(event_rcv);
-	Memory mem = buf.mem;
+	Memory mem = buf.getMemory();
 	if (dumpAll) { 
 	    Debug.out.println("UDP packet received");
-	    Dump.xdump1(buf.mem, 0, 128);
+	    Dump.xdump1(buf.getMemory(), 0, 128);
 	}
 
-	UDPFormat udp = new UDPFormat(buf.mem);
+	UDPFormat udp = new UDPFormat(buf.getMemory());
 
 	int port = udp.getDestPort();
 	int srcPort = udp.getSourcePort();
@@ -95,18 +95,18 @@ public class UDP implements IPConsumer {
 	if ((udpConsumer = udpConsumerList[port]) != null) {
 	    int space = udp.length();
 	    Debug.out.println("UDPDATALEN: ");// + (buf.size()-space));
-	    Memory data = buf.mem.getSubRange(space, buf.mem.size() - space);
+	    Memory data = buf.getMemory().getSubRange(space, buf.getMemory().size() - space);
 	    UDPData u = new UDPData();
 	    u.mem = data;
 	    u.sourcePort = srcPort;
-	    u.sourceAddress = buf.sourceAddress; //lowerProducer.getSource(data.joinPrevious());
+	    u.sourceAddress = buf.getSourceAddress(); //lowerProducer.getSource(data.joinPrevious());
 	    //Debug.out.println("Source address: "+u.sourceAddress);
 	    return udpConsumer.processUDP(u);
 	}
 
 	if (printIfNoReceiver)
 	    Debug.out.println("No UDP receiver for port: " + port);
-	return buf.mem;
+	return buf.getMemory();
     }
 
     /*public boolean registerUDPConsumer1(UDPConsumer1 consumer, int port) {

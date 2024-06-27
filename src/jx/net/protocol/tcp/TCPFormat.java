@@ -56,14 +56,14 @@ public class TCPFormat extends Format {
 
     }
     public TCPFormat(IPData data, IPAddress sourceAddress, IPAddress destinationAddress) {
-	super(data.mem, data.offset + 0x22);
+	super(data.getMemory(), data.getOffset() + 0x22);
         /*
         for(int i = 0; i < 40; i++){
             Debug.out.println(data.mem.get8(i+0x22));
         }*/
 	this.sourceAddress = sourceAddress;
 	this.destinationAddress = destinationAddress;
-	this.packetsize = data.size;
+	this.packetsize = data.Size();
     }
 
     public void insertSourcePort(int sourcePort) {

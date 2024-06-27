@@ -1,6 +1,6 @@
 package jx.net.dispatch;
 
-import jx.buffer.separator.*;
+import jx.fs.buffer.separator.*;
 import jx.zero.Memory;
 import jx.zero.Debug;
 

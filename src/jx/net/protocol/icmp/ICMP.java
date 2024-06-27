@@ -4,7 +4,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import jx.zero.*;
 
-import jx.buffer.separator.MemoryConsumer;
+import jx.fs.buffer.separator.MemoryConsumer;
 import jx.net.IPConsumer;
 import jx.net.IPData;
 import jx.net.IPSender;
@@ -54,15 +54,15 @@ public class ICMP implements MemoryConsumer, IPConsumer {
 	Debug.out.println("ICMP type: " + type + ", code=" + code + ", checksum=" + checksum);
 	if (type == TYPE_ECHO) {
 	    Debug.out.println("  ICMP ECHO RECEIVED. (ping)");
-            try {
+            //try {
                 icmp.insertType((byte)0);
                 icmp.CalculateChecksum();
-                sender = net.getIPSender(data.sourceAddress, 1);
+                sender = net.getIPSender(data.getSourceAddress(), 1);
                 Debug.out.println(buf.size());
                 sender.send(icmp.getMemory());
-            } catch (UnknownAddressException ex) {
+            //} catch (UnknownAddressException ex) {
                 //Logger.getLogger(ICMP.class.getName()).log(Level.SEVERE, null, ex);
-            }
+            //}
 	}
 	return buf;
     }
@@ -70,6 +70,6 @@ public class ICMP implements MemoryConsumer, IPConsumer {
     @Override
     public Memory processIP(IPData data) {
         this.data = data;
-        return processMemory(data.mem);
+        return processMemory(data.getMemory());
     }
 }

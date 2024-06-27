@@ -36,12 +36,12 @@ public class BOOTP  {
       Memory rbuf2 = null;
       UDPData udp = null;
       //Memory arr[] = new Memory[2];
-	try { 
+	//try { 
 	    sender = net.getUDPSender(CLIENT_PORT, new IPv4Address(255,255,255,255), SERVER_PORT);
 	    receiver = net.getUDPReceiver(CLIENT_PORT, new Memory[] { 
 			    net.getUDPBuffer(0), net.getUDPBuffer(0), net.getUDPBuffer(0), net.getUDPBuffer(0)});
 	    buf = net.getUDPBuffer(300);
-	} catch(jx.net.UnknownAddressException ex) { throw new Error("broadcast ip address unknown"); }
+	//} catch(jx.net.UnknownAddressException ex) { throw new Error("broadcast ip address unknown"); }
       //do {
 	  //buf.split2(BOOTPFormat.requiresSpace(), arr);
 	  //buf = arr[0];
@@ -76,12 +76,12 @@ public class BOOTP  {
     public IPAddress sendRequest1() {
       Memory rbuf2 = null;
       UDPData udp = null;
-	try { 
+	//try { 
 	    sender = net.getUDPSender(CLIENT_PORT, new IPv4Address(255, 255, 255, 255), SERVER_PORT);
 	    receiver = net.getUDPReceiver(CLIENT_PORT, new Memory[] { 
 			    net.getUDPBuffer(), net.getUDPBuffer(), net.getUDPBuffer(), net.getUDPBuffer()});
 	    buf = net.getUDPBuffer();
-	} catch(jx.net.UnknownAddressException ex) { throw new Error("broadcast ip address unknown"); }
+	//} catch(jx.net.UnknownAddressException ex) { throw new Error("broadcast ip address unknown"); }
       //do {
 	  BOOTPFormat bootp = new BOOTPFormat(buf, 14 + 20 + 8);
 	  bootp.insertOp(BOOTPFormat.REQUEST);
