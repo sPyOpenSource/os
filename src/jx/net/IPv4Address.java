@@ -6,6 +6,8 @@ import java.net.UnknownHostException;
 import jx.zero.Debug;
 
 public class IPv4Address implements IPAddress {
+    public int addr;
+    public byte[] bytes = new byte[4];
     public static final IPAddress ANY = new IPv4Address("0.0.0.0");
     public static final IPv4Address BROADCAST = new IPv4Address("255.255.255.255");
     public static InetAddress BROADCAST_ADDRESS = (Inet4Address) BROADCAST.toInetAddress();
@@ -60,7 +62,7 @@ public class IPv4Address implements IPAddress {
     public IPAddress and(IPAddress mask) {
         final byte[] res = new byte[length];
         for (int i = 0; i < length; i++) {
-            res[i] = (byte) (bytes[i] & mask.bytes[i]);
+            res[i] = (byte) (bytes[i] & mask.getBytes()[i]);
         }
         return new IPv4Address(res);
     }
@@ -173,7 +175,7 @@ public class IPv4Address implements IPAddress {
     @Override
     public boolean equals(Object o) {
 	if (! (o instanceof IPAddress)) return false;
-	return ((IPAddress)o).addr == addr;
+	return ((IPAddress)o).getAddress() == addr;
     }
 
     @Override

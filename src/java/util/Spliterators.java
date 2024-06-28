@@ -870,6 +870,7 @@ public final class Spliterators {
             public void forEachRemaining(DoubleConsumer action) {
                 throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
             }
+            @Override
             public void forEachRemaining(Consumer c){}
 
             @Override
