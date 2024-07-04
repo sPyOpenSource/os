@@ -189,4 +189,9 @@ public class IPv4Address implements IPAddress {
 	bytes[1] = (byte)((addr >> 8)  & 0xff);
 	bytes[0] = (byte)( addr        & 0xff);
     }
+
+    @Override
+    public boolean isAnyLocalAddress() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

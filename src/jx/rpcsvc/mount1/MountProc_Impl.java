@@ -4,7 +4,6 @@ import jx.rpcsvc.nfs2.*;
 import jx.zero.*;
 import jx.fs.*;
 
-
 public class MountProc_Impl implements MountProc {
     String name;
     byte[] handle;
@@ -48,9 +47,9 @@ public class MountProc_Impl implements MountProc {
     @Override
     public void       umnt(jx.rpcsvc.nfs2.DirPath d) {
 	Debug.out.println("UNMOUNT AUFGERUFEN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-	//try {
+	try {
 	fs.cleanUp(); // TEST
-	//}catch(FSException ex){throw new Error();}
+	}catch(Exception ex){throw new Error();}
 	
     }
     @Override

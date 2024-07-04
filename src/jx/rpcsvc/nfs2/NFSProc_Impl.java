@@ -147,7 +147,9 @@ public class NFSProc_Impl implements NFSProc {
 	    Debug.out.println("----------------------------> Exception (StaleHandleException) in GETATTR");
 	    cpuManager.recordEvent(event_getattr_out);
 	    return new AttrStatErrStale();
-	}
+	} catch (Exception e) {
+            return null;
+        }
 
     }
 
@@ -176,7 +178,6 @@ public class NFSProc_Impl implements NFSProc {
 	    FAttr a = setAttr(inode, helperMFh, attributes);
 	    return new AttrStatOK(a);
 
-
 	} catch (InodeIOException e) {
 	    cpuManager.recordEvent(event_getattr_out);
 	    return new AttrStatErrIO();
@@ -198,8 +199,9 @@ public class NFSProc_Impl implements NFSProc {
 	} catch (StaleHandleException e) {
 	    cpuManager.recordEvent(event_getattr_out);
 	    return new AttrStatErrStale();
-	}
-
+	} catch (Exception e){
+            return null;
+        }
 
     }
 
@@ -303,7 +305,9 @@ public class NFSProc_Impl implements NFSProc {
 	} catch (StaleHandleException e) {
 // 	    Debug.out.println("----------------------------> Exception (StaleHandleException) in LOOKUP");
 	    return new DirOpResErrStale();
-	}
+	} catch (Exception e){
+            return null;
+        }
 	
     }
 
@@ -345,7 +349,9 @@ public class NFSProc_Impl implements NFSProc {
 	} catch (StaleHandleException e) {
 	    cpuManager.recordEvent(event_getattr_out);
 	    return new ReadLinkResErrStale();
-	}
+	} catch (Exception e) {
+            return null;
+        }
 	
     }
 
@@ -463,7 +469,9 @@ public class NFSProc_Impl implements NFSProc {
 	} catch (FSException e) {
 	    if (debug_nfs) Debug.out.println("Fehler beim Aufruf von NFSwrite(fh,offset,count,totalcount)");
 	    return new AttrStatError();
-	}
+	} catch (Exception e) {
+            return null;
+        }
 	
     }
 
@@ -532,12 +540,11 @@ public class NFSProc_Impl implements NFSProc {
 	    return new DirOpResError();
 	} catch (FSException e) {
 	    return new DirOpResError();
-	}
-// 	catch (Exception e) {
-// 	    if (debug_nfs) Debug.out.println("Fehler in NFS_CREATE");
-// 	    e.printStackTrace();
-// 	    return new DirOpResError();
-// 	}
+	} catch (Exception e) {
+ 	    if (debug_nfs) Debug.out.println("Fehler in NFS_CREATE");
+ 	    e.printStackTrace();
+ 	    return new DirOpResError();
+ 	}
 	
     }
 
@@ -674,7 +681,9 @@ public class NFSProc_Impl implements NFSProc {
 	} catch (FSException e) {
 	    if (debug_nfs) Debug.out.println("Fehler in NFS_SYMLINK");
 	    return new Stat(Stat.NFSERR_PERM);
-	}
+	} catch (Exception e) {
+            return null;
+        }
     }
 
 
@@ -722,7 +731,9 @@ public class NFSProc_Impl implements NFSProc {
 	} catch (FSException e) {
 	    if (debug_nfs) Debug.out.println("Fehler in NFS_MKDIR");
 	    return new DirOpResError();
-	}
+	} catch (Exception e) {
+            return null;
+        }
     }
 
 
@@ -811,7 +822,9 @@ public class NFSProc_Impl implements NFSProc {
 	} catch (FSException e) {
 	    if (debug_nfs) Debug.out.println("Fehler in NFS_RMDIR");
 	    return new ReadDirResError();
-	}
+	} catch (Exception e) {
+            return null;
+        }
     }    
 
 
@@ -874,7 +887,9 @@ public class NFSProc_Impl implements NFSProc {
 	} catch (StaleHandleException e) {
 	    cpuManager.recordEvent(event_getattr_out);
 	    return new StatFSResErrStale();
-	}
+	} catch (Exception e) {
+            return null;
+        }
 
     }
 
@@ -892,10 +907,10 @@ public class NFSProc_Impl implements NFSProc {
 //     }
 
 
-    private Node getNode(MappedFHandle fh) throws FSException, StaleHandleException {
+    private Node getNode(MappedFHandle fh) throws Exception {
 	Node inode;
 	
-	inode = fs.getNode(new Integer(fh.deviceIdentifier),fh.identifier);
+	inode = fs.getNode(fh.deviceIdentifier,fh.identifier);
 	
 	if (inode.getVersion() != fh.generation) { 
 	    throw new StaleHandleException();
@@ -906,8 +921,7 @@ public class NFSProc_Impl implements NFSProc {
     
 
     private FAttr getFAttr(MappedFHandle fh) 
-	throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException,
-	NotExistException, PermissionException, FSException, StaleHandleException
+	throws Exception
     {
 
 	Node inode;

@@ -13,7 +13,7 @@ import jx.net.EtherData;
 import jx.net.IPAddress;
 import jx.net.AddressResolution;
 import jx.net.UnknownAddressException;
-import jx.buffer.separator.MemoryConsumer;
+import jx.fs.buffer.separator.MemoryConsumer;
 
 public class ARP implements AddressResolution, MemoryConsumer, EtherConsumer {
   
