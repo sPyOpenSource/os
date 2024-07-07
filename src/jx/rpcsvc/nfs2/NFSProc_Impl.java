@@ -852,8 +852,8 @@ public class NFSProc_Impl implements NFSProc {
 	    StatFS sfs = inode.getStatFS();
 	    
 	    StatFSResOK result = new StatFSResOK();
-	    result.tsize = sfs.tsize;
-	    result.bsize = sfs.bsize;
+	    result.tsize = sfs.getSize();
+	    result.bsize = sfs.getBlockSize();
 	    result.blocks = sfs.blocks;
 	    result.bfree = sfs.bfree;
 	    result.bavail = sfs.bavail;
@@ -1001,7 +1001,7 @@ public class NFSProc_Impl implements NFSProc {
 
 	    // size and blocksize
 	    a.size = inode.getLength();
-	    a.blocksize = inode.getStatFS().bsize;
+	    a.blocksize = inode.getStatFS().getSize();
 	    a.blocks = (a.size + 1024) / 1024;
 
 

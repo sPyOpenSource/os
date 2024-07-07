@@ -164,15 +164,13 @@ public abstract class InodeImpl implements Node {
     public abstract void  putNode();// throws NotExistException;
 
     @Override
-    public void overlay(Node newChild, String name)// throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException 
+    public void overlay(Node newChild, String name) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException 
     {
 	    if (i_released){
-		//throw new NotExistException();
-                return;
+		throw new NotExistException();
             }
 	    if (!isDirectory()){
-		//throw new NoDirectoryInodeException();
-                return;
+		throw new NoDirectoryInodeException();
             }
 	    
 	    Node inodeToOverlay = lookup(name); // wirft InodeNotFoundException
@@ -233,12 +231,12 @@ public abstract class InodeImpl implements Node {
     }
 
     @Override
-    public Node lookup(String name)// throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException 
+    public Node lookup(String name) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException 
     {
-	    /*if (i_released)
+	    if (i_released)
 		throw new NotExistException();
 	    if (! isDirectory())
-		throw new NoDirectoryInodeException();*/
+		throw new NoDirectoryInodeException();
 	    
 	    if (name.equals(".")) {
 		incUseCount();
@@ -293,41 +291,41 @@ public abstract class InodeImpl implements Node {
     public abstract String[]  readdirNames();// throws NoDirectoryInodeException, NotExistException;
 
     @Override
-    public abstract Node   getNode(String name);// throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException;
+    public abstract Node   getNode(String name) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException;
 
     @Override
-    public abstract Node   mkdir(String name, int mode);// throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException;
+    public abstract Node   mkdir(String name, int mode) throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException;
 
     @Override
-    public abstract void    rmdir(String name);// throws DirNotEmptyException, InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException,PermissionException;
+    public abstract void    rmdir(String name) throws DirNotEmptyException, InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException,PermissionException;
 
     @Override
-    public abstract Node   create(String name, int mode);// throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException;
+    public abstract Node   create(String name, int mode) throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, PermissionException;
 
     @Override
-    public abstract void    unlink(String name);// throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NoFileInodeException, NotExistException,PermissionException;
+    public abstract void    unlink(String name) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NoFileInodeException, NotExistException,PermissionException;
 
     @Override
-    public abstract Node   symlink(String symname, String newname);// throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, NotSupportedException, PermissionException;
+    public abstract Node   symlink(String symname, String newname) throws FileExistsException, InodeIOException, NoDirectoryInodeException, NotExistException, NotSupportedException, PermissionException;
 
     @Override
-    public abstract String  getSymlink();// throws InodeIOException, NoSymlinkInodeException, NotExistException, NotSupportedException, PermissionException;
+    public abstract String  getSymlink() throws InodeIOException, NoSymlinkInodeException, NotExistException, NotSupportedException, PermissionException;
 
     @Override
-    public abstract void    rename(String oldname, Node new_dir, String newname);// throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException;
+    public abstract void    rename(String oldname, Node new_dir, String newname) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException;
     
     @Override
-    public abstract int     read(Memory m, int off, int len);//throws InodeIOException, NoFileInodeException, NotExistException, PermissionException;
+    public abstract int     read(Memory m, int off, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException;
     @Override
-    public abstract int     read(int pos, Memory m, int bufoff, int len);// throws InodeIOException, NoFileInodeException, NotExistException, PermissionException;
+    public abstract int     read(int pos, Memory m, int bufoff, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException;
     @Override
-    public ReadOnlyMemory readWeak(int off, int len)// throws InodeIOException, NoFileInodeException, NotExistException, PermissionException 
+    public ReadOnlyMemory readWeak(int off, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException 
     { throw new Error("not applicable");}
     
     @Override
-    public abstract int     write(Memory m, int off, int len);// throws InodeIOException, NoFileInodeException, NotExistException, PermissionException;
+    public abstract int     write(Memory m, int off, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException;
     @Override
-    public abstract int     write(int pos, Memory m, int bufoff, int len);// throws InodeIOException, NoFileInodeException, NotExistException, PermissionException;
+    public abstract int     write(int pos, Memory m, int bufoff, int len) throws InodeIOException, NoFileInodeException, NotExistException, PermissionException;
 
     @Override
     public abstract int available();// throws NotExistException;
