@@ -155,13 +155,13 @@ public abstract class InodeImpl implements Node {
     public abstract int   i_nlinks();// throws NotExistException;
 
     @Override
-    public abstract void  deleteNode();// throws InodeIOException, NotExistException;
+    public abstract void  deleteNode() throws InodeIOException, NotExistException;
 
     @Override
-    public abstract void  writeNode();// throws InodeIOException, NotExistException;
+    public abstract void  writeNode() throws InodeIOException, NotExistException;
 
     @Override
-    public abstract void  putNode();// throws NotExistException;
+    public abstract void  putNode() throws NotExistException;
 
     @Override
     public void overlay(Node newChild, String name) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException 
@@ -288,7 +288,7 @@ public abstract class InodeImpl implements Node {
     public abstract void setLastAccessed(int time);// throws NotExistException;
 
     @Override
-    public abstract String[]  readdirNames();// throws NoDirectoryInodeException, NotExistException;
+    public abstract String[]  readdirNames() throws NoDirectoryInodeException, NotExistException;
 
     @Override
     public abstract Node   getNode(String name) throws InodeIOException, InodeNotFoundException, NoDirectoryInodeException, NotExistException, PermissionException;

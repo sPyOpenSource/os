@@ -5,10 +5,10 @@ import jx.zero.Service;
 import java.util.Vector;
 
 public class FilesystemImpl implements FileSystemInterface, Service {
-    private final FileSystem     fs;
+    private final FileSystem fs;
     private final EXT2Permission defaultPermission = new EXT2Permission(EXT2Permission.RWX, 0, 0);
-    private Node          rInode;
-    private final Vector  fsobjList = new Vector();
+    private Node rInode;
+    private final Vector fsobjList = new Vector();
     private boolean       umounted = true;
 
     public FilesystemImpl(FileSystem fs) {

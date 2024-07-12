@@ -865,7 +865,6 @@ public class NFSProc_Impl implements NFSProc {
 	    result.bavail = 60057800;
 
 	    return result;
-
 	} catch (InodeIOException e) {
 	    cpuManager.recordEvent(event_getattr_out);
 	    return new StatFSResErrIO();
@@ -916,14 +915,12 @@ public class NFSProc_Impl implements NFSProc {
 	    throw new StaleHandleException();
 	}
 	return inode;
-	
     } 
     
 
     private FAttr getFAttr(MappedFHandle fh) 
 	throws Exception
     {
-
 	Node inode;
 	FAttr a;
 
