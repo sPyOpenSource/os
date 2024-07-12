@@ -2,7 +2,7 @@ NEEDLIBS = zero
 #NEEDLIBS += scheduler
 #NEEDLIBS += secmgr_impl
 
-SUBDIRS = gnu/java/math gnu/java/io gnu/java/security
+SUBDIRS = gnu/java/math gnu/java/io gnu/java/security gnu/java/awt
 SUBDIRS += java/security/interfaces java/text java/io java/lang java/util java/security java/net java/security/spec java/security/cert
 SUBDIRS += metaxa/os/devices/net timerpc javafs buffercache
 SUBDIRS += bioram jx java/awt
