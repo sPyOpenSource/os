@@ -113,7 +113,7 @@ TextComponent(String text)
 public synchronized String
 getText()
 {
-  TextComponentPeer tcp = (TextComponentPeer)getPeer();
+  TextComponentPeer tcp = null;//(TextComponentPeer)getPeer();
   if (tcp != null)
     text = tcp.getText();
 
@@ -135,7 +135,7 @@ setText(String text)
 
   this.text = text;
 
-  TextComponentPeer tcp = (TextComponentPeer)getPeer();
+  TextComponentPeer tcp = null;//(TextComponentPeer)getPeer();
   if (tcp != null)
     tcp.setText(text);
 }
@@ -168,7 +168,7 @@ getSelectedText()
 public synchronized int
 getSelectionStart()
 {
-  TextComponentPeer tcp = (TextComponentPeer)getPeer();
+  TextComponentPeer tcp = null;//(TextComponentPeer)getPeer();
   if (tcp != null)
     selectionStart = tcp.getSelectionStart();
 
@@ -201,7 +201,7 @@ setSelectionStart(int selectionStart)
 public synchronized int
 getSelectionEnd()
 {
-  TextComponentPeer tcp = (TextComponentPeer)getPeer();
+  TextComponentPeer tcp = null;//(TextComponentPeer)getPeer();
   if (tcp != null)
     selectionEnd = tcp.getSelectionEnd();
 
@@ -251,7 +251,7 @@ select(int selectionStart, int endSelection)
   this.selectionStart = selectionStart;
   this.selectionEnd = selectionEnd;
 
-  TextComponentPeer tcp = (TextComponentPeer)getPeer();
+  TextComponentPeer tcp = null;//(TextComponentPeer)getPeer();
   if (tcp != null)
     tcp.select(selectionStart, selectionEnd);
 }
@@ -277,7 +277,7 @@ selectAll()
 public synchronized int
 getCaretPosition()
 {
-  TextComponentPeer tcp = (TextComponentPeer)getPeer();
+  TextComponentPeer tcp = null;//(TextComponentPeer)getPeer();
   if (tcp != null)
     return(tcp.getCaretPosition());
   else
@@ -294,7 +294,7 @@ getCaretPosition()
 public synchronized void
 setCaretPosition(int caretPosition)
 {
-  TextComponentPeer tcp = (TextComponentPeer)getPeer();
+  TextComponentPeer tcp = null;//(TextComponentPeer)getPeer();
   if (tcp != null)
     tcp.setCaretPosition(caretPosition);
 }
@@ -326,7 +326,7 @@ setEditable(boolean editable)
 {
   this.editable = editable;
 
-  TextComponentPeer tcp = (TextComponentPeer)getPeer();
+  TextComponentPeer tcp = null;//(TextComponentPeer)getPeer();
   if (tcp != null)
     tcp.setEditable(editable);
 }
@@ -432,6 +432,11 @@ paramString()
 {
   return(getClass().getName() + "(text=" + getText() + ")");
 }
+
+    @Override
+    public Font getFont() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 
 } // class TextComponent
 

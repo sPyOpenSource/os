@@ -257,8 +257,8 @@ getMenu(int index)
 public void
 addNotify()
 {
-  if (getPeer() == null)
-    setPeer((MenuComponentPeer)getToolkit().createMenuBar(this));
+  /*if (getPeer() == null)
+    setPeer((MenuComponentPeer)getToolkit().createMenuBar(this));*/
 }
 
 /*************************************************************************/
@@ -336,5 +336,10 @@ deleteShortcut(MenuShortcut shortcut)
   while ((it = getShortcutMenuItem (shortcut)) != null)
     it.deleteShortcut ();
 }
+
+    @Override
+    public Font getFont() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 
 } // class MenuBar

@@ -627,4 +627,14 @@ calcSize(Container target, int what)
 
   return(new Dimension(width, height));
 }
+
+    @Override
+    public float getLayoutAlignmentX(Container target) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public float getLayoutAlignmentY(Container target) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 } // class BorderLayout 

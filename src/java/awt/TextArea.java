@@ -289,7 +289,7 @@ getMinimumSize()
 public Dimension
 getMinimumSize(int rows, int columns)
 {
-  TextAreaPeer tap = (TextAreaPeer)getPeer();
+  TextAreaPeer tap = null;//(TextAreaPeer)getPeer();
   if (tap == null)
     return(null); // FIXME: What do we do if there is no peer?
 
@@ -356,7 +356,7 @@ getPreferredSize()
 public Dimension
 getPreferredSize(int rows, int columns)
 {
-  TextAreaPeer tap = (TextAreaPeer)getPeer();
+  TextAreaPeer tap = null;//(TextAreaPeer)getPeer();
   if (tap == null)
     return(null); // FIXME: What do we do if there is no peer?
 
@@ -419,10 +419,10 @@ getScrollbarVisibility()
 public void
 addNotify()
 {
-  if (getPeer() != null)
-    return;
+  /*if (getPeer() != null)
+    return;*/
 
-  setPeer((ComponentPeer)getToolkit().createTextArea(this));
+  //setPeer((ComponentPeer)getToolkit().createTextArea(this));
 }
 
 /*************************************************************************/
@@ -435,7 +435,7 @@ addNotify()
 public void
 append(String str)
 {
-  TextAreaPeer tap = (TextAreaPeer)getPeer();
+  TextAreaPeer tap = null;//(TextAreaPeer)getPeer();
   if (tap == null) 
     return;
 
@@ -469,7 +469,7 @@ appendText(String text)
 public void
 insert(String text, int pos)
 {
-  TextAreaPeer tap = (TextAreaPeer)getPeer();
+  TextAreaPeer tap = null;//(TextAreaPeer)getPeer();
   if (tap == null)
     return;
 
@@ -505,7 +505,7 @@ insertText(String text, int pos)
 public void
 replaceRange(String text, int start, int end)
 {
-  TextAreaPeer tap = (TextAreaPeer)getPeer();
+  TextAreaPeer tap = null;//(TextAreaPeer)getPeer();
   if (tap == null)
     return;
 

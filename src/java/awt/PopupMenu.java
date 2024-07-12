@@ -97,8 +97,8 @@ PopupMenu(String label)
 public void
 addNotify()
 {
-  if (peer == null)
-    peer = getToolkit ().createPopupMenu (this);
+  /*if (peer == null)
+    peer = getToolkit ().createPopupMenu (this);*/
   super.addNotify ();
 }
 
@@ -115,7 +115,7 @@ addNotify()
 public void
 show(Component component, int x, int y)
 {
-  PopupMenuPeer pmp = (PopupMenuPeer)getPeer();
+  PopupMenuPeer pmp = null;//(PopupMenuPeer)getPeer();
   if (pmp != null)
     {
       /* XXX

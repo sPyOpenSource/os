@@ -202,7 +202,7 @@ setEchoChar(char echoChar)
 {
   this.echoChar = echoChar;
 
-  TextFieldPeer tfp = (TextFieldPeer)getPeer();
+  TextFieldPeer tfp = null;//(TextFieldPeer)getPeer();
   if (tfp != null)
     tfp.setEchoChar(echoChar);
 }
@@ -266,7 +266,7 @@ getMinimumSize()
 public Dimension
 getMinimumSize(int columns)
 {
-  TextFieldPeer tfp = (TextFieldPeer)getPeer();
+  TextFieldPeer tfp = null;//(TextFieldPeer)getPeer();
   if (tfp == null)
     return(null); // FIXME: What do we do if there is no peer?
 
@@ -330,7 +330,7 @@ getPreferredSize()
 public Dimension
 getPreferredSize(int columns)
 {
-  TextFieldPeer tfp = (TextFieldPeer)getPeer();
+  TextFieldPeer tfp = null;//(TextFieldPeer)getPeer();
   if (tfp == null)
     return(null); // FIXME: What do we do if there is no peer?
 
@@ -378,10 +378,10 @@ preferredSize(int columns)
 public void
 addNotify()
 {
-  if (getPeer() != null)
-    return;
+  /*if (getPeer() != null)
+    return;*/
 
-  setPeer((ComponentPeer)getToolkit().createTextField(this));
+  //setPeer((ComponentPeer)getToolkit().createTextField(this));
 }
 
 /*************************************************************************/

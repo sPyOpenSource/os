@@ -221,8 +221,8 @@ setText(String text)
 public void
 addNotify()
 {
-  if (peer == null)
-    peer = getToolkit ().createLabel (this);
+  /*if (peer == null)
+    peer = getToolkit ().createLabel (this);*/
   super.addNotify ();
 }
 
@@ -239,6 +239,11 @@ paramString()
   return ("text=" + getText() + ",alignment=" +
 	  getAlignment() + "," + super.paramString());
 }
+
+    @Override
+    public Font getFont() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 
 } // class Label
 

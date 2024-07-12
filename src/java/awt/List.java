@@ -335,7 +335,7 @@ minimumSize()
 public Dimension
 getMinimumSize(int rows)
 {
-  ListPeer lp = (ListPeer)getPeer();
+  ListPeer lp = null;//(ListPeer)getPeer();
   if (lp != null)
     return(lp.minimumSize(rows));
   else
@@ -403,7 +403,7 @@ preferredSize()
 public Dimension
 getPreferredSize(int rows)
 {
-  ListPeer lp = (ListPeer)getPeer();
+  ListPeer lp = null;//(ListPeer)getPeer();
   if (lp != null)
     return(lp.preferredSize(rows));
   else
@@ -826,7 +826,7 @@ getVisibleIndex()
 public synchronized void
 select(int index)
 {
-  ListPeer lp = (ListPeer)getPeer();
+  ListPeer lp = null;//(ListPeer)getPeer();
   if (lp != null)
     lp.select(index);
 }
@@ -841,7 +841,7 @@ select(int index)
 public synchronized void
 deselect(int index)
 {
-  ListPeer lp = (ListPeer)getPeer();
+  ListPeer lp = null;//(ListPeer)getPeer();
   if (lp != null)
     lp.deselect(index);
 }
@@ -854,8 +854,8 @@ deselect(int index)
 public void
 addNotify()
 {
-  if (peer == null)
-    peer = getToolkit ().createList (this);
+  /*if (peer == null)
+    peer = getToolkit ().createList (this);*/
   super.addNotify ();
 }
 
@@ -1014,5 +1014,10 @@ paramString()
 {
   return "multiple=" + multipleMode + ",rows=" + rows + super.paramString();
 }
+
+    @Override
+    public Font getFont() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 
 } // class List

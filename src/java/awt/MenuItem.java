@@ -366,8 +366,8 @@ public void
 addNotify()
 {
     // @ Marco Winter
-  if (peer == null)
-    peer = getToolkit ().createMenuItem (this);
+  /*if (peer == null)
+    peer = getToolkit ().createMenuItem (this);*/
 }
 
 /*************************************************************************/
@@ -383,7 +383,7 @@ addActionListener(ActionListener listener)
 {
   action_listeners = AWTEventMulticaster.add(action_listeners, listener);
 
-  enableEvents(AWTEvent.ACTION_EVENT_MASK);
+  enableEvents((int)AWTEvent.ACTION_EVENT_MASK);
 }
 
 public synchronized void

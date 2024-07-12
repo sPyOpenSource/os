@@ -191,7 +191,7 @@ addNotify()
     {
       // This choice of toolkit seems unsatisfying, but I'm not sure
       // what else to do.
-      peer = getToolkit().createCheckboxMenuItem(this);
+      //peer = getToolkit().createCheckboxMenuItem(this);
     }
   super.addNotify ();
 }
@@ -209,7 +209,7 @@ addItemListener(ItemListener listener)
 {
   item_listeners = AWTEventMulticaster.add(item_listeners, listener);
 
-  enableEvents(AWTEvent.ITEM_EVENT_MASK);
+  enableEvents((int)AWTEvent.ITEM_EVENT_MASK);
 }
 
 /*************************************************************************/

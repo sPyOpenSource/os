@@ -302,8 +302,8 @@ setCheckboxGroup(CheckboxGroup group)
 public void
 addNotify()
 {
-  if (peer == null)
-    peer = getToolkit ().createCheckbox (this);
+  /*if (peer == null)
+    peer = getToolkit ().createCheckbox (this);*/
   super.addNotify ();
 }
 
@@ -388,5 +388,10 @@ paramString()
   return ("label=" + label + ",state=" + state + ",group=" + group
 	  + "," + super.paramString());
 }
+
+    @Override
+    public Font getFont() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 
 } // class Checkbox 

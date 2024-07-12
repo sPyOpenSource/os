@@ -216,8 +216,8 @@ removeActionListener(ActionListener listener)
 public void
 addNotify()
 {
-  if (peer == null)
-    peer = getToolkit ().createButton (this);
+  /*if (peer == null)
+    peer = getToolkit ().createButton (this);*/
   super.addNotify();
 }
 
@@ -283,6 +283,11 @@ paramString()
   return ("label=" + getLabel() + ",actionCommand=" + getActionCommand()
 	  + "," + super.paramString());
 }
+
+    @Override
+    public Font getFont() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 
 } // class Button 
 

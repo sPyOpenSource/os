@@ -91,8 +91,8 @@ Panel(LayoutManager layoutManager)
 public void
 addNotify()
 {
-  if (peer == null)
-    peer = getToolkit().createPanel(this);
+  /*if (peer == null)
+    peer = getToolkit().createPanel(this);*/
   super.addNotify();
 }
 

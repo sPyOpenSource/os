@@ -389,7 +389,7 @@ setValues(int value, int visibleAmount, int minimum, int maximum)
   this.minimum = minimum;
   this.maximum = maximum;
 
-  ScrollbarPeer sp = (ScrollbarPeer)getPeer();
+  ScrollbarPeer sp = null;//(ScrollbarPeer)getPeer();
   if (sp != null)
     sp.setValues(value, visibleAmount, minimum, maximum);
 
@@ -476,7 +476,7 @@ setUnitIncrement(int unitIncrement)
 
   lineIncrement = unitIncrement;
 
-  ScrollbarPeer sp = (ScrollbarPeer)getPeer();
+  ScrollbarPeer sp = null;//(ScrollbarPeer)getPeer();
   if (sp != null)
     sp.setLineIncrement(lineIncrement);
 }
@@ -557,7 +557,7 @@ setBlockIncrement(int blockIncrement)
 
   pageIncrement = blockIncrement;
 
-  ScrollbarPeer sp = (ScrollbarPeer)getPeer();
+  ScrollbarPeer sp = null;//(ScrollbarPeer)getPeer();
   if (sp != null)
     sp.setPageIncrement(pageIncrement);
 }
@@ -587,8 +587,8 @@ setPageIncrement(int pageIncrement)
 public synchronized void
 addNotify()
 {
-  if (peer == null)
-    peer = getToolkit ().createScrollbar (this);
+  /*if (peer == null)
+    peer = getToolkit ().createScrollbar (this);*/
   super.addNotify ();
 }
 
@@ -691,6 +691,11 @@ paramString()
 			      ? "HORIZONTAL" : "VERTICAL")
 	 + super.paramString());
 }
+
+    @Override
+    public Font getFont() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 
 } // class Scrollbar 
 

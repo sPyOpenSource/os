@@ -352,7 +352,7 @@ getPeer()
   if (peer != null)
     return(peer);
 
-  peer = Toolkit.getDefaultToolkit().getFontPeer(name, style);
+  //peer = Toolkit.getDefaultToolkit().getFontPeer(name, style);
   return(peer);
 }
 

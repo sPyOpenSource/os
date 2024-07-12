@@ -231,7 +231,7 @@ getViewportSize()
 public int
 getHScrollbarHeight()
 {
-  ScrollPanePeer spp = (ScrollPanePeer)getPeer();
+  ScrollPanePeer spp = null;//(ScrollPanePeer)getPeer();
   if (spp != null)
     return(spp.getHScrollbarHeight());
   else
@@ -248,7 +248,7 @@ getHScrollbarHeight()
 public int
 getVScrollbarWidth()
 {
-  ScrollPanePeer spp = (ScrollPanePeer)getPeer();
+  ScrollPanePeer spp = null;//(ScrollPanePeer)getPeer();
   if (spp != null)
     return(spp.getVScrollbarWidth());
   else
@@ -317,7 +317,7 @@ setScrollPosition(int x, int y)
   if (v != null)
     v.setValue(y);
 
-  ScrollPanePeer spp = (ScrollPanePeer)getPeer();
+  ScrollPanePeer spp = null;//(ScrollPanePeer)getPeer();
   if (spp != null)
     spp.setScrollPosition(x, y);
 }
@@ -331,10 +331,10 @@ setScrollPosition(int x, int y)
 public void
 addNotify()
 {
-  if (getPeer() != null)
-    return;
+  /*if (getPeer() != null)
+    return;*/
 
-  setPeer((ComponentPeer)getToolkit().createScrollPane(this));
+  //setPeer((ComponentPeer)getToolkit().createScrollPane(this));
 
   // @ Marco Winter
   if (hAdjustable != null) {

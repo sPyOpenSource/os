@@ -263,7 +263,7 @@ insert(MenuItem item, int index)
 
   items.insertElementAt(item, index);
 
-  MenuPeer mp = (MenuPeer)getPeer();
+  //MenuPeer mp = (MenuPeer)getPeer();
   // FIXME: Need to add a peer method here.
 //    if (mp != null)
 //      mp.insertItem(item, index);
@@ -329,7 +329,7 @@ remove(int index)
 {
   items.removeElementAt(index);
 
-  MenuPeer mp = (MenuPeer)getPeer();
+  MenuPeer mp = null;//(MenuPeer)getPeer();
   if (mp != null)
     mp.delItem(index);
 }
@@ -376,8 +376,8 @@ removeAll()
 public void
 addNotify()
 {
-  if (peer == null)
-    peer = getToolkit().createMenu(this);
+  /*if (peer == null)
+    peer = getToolkit().createMenu(this);*/
 
   super.addNotify ();
 }
@@ -409,5 +409,10 @@ paramString()
 
 // Accessibility API not yet implemented.
 // public AccessibleContext getAccessibleContext()
+
+    @Override
+    public Font getFont() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 
 } // class Menu

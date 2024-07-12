@@ -410,10 +410,10 @@ remove(MenuComponent menu)
 public void
 addNotify()
 {
-  if (peer == null) 
-    peer = getToolkit ().createFrame (this);
+  /*if (peer == null) 
+    peer = getToolkit ().createFrame (this);*/
   // @ Marco Winter
-  if (menuBar != null && menuBar.getPeer() == null)
+  if (menuBar != null /*&& menuBar.getPeer() == null*/)
       menuBar.addNotify();
   super.addNotify();
 }

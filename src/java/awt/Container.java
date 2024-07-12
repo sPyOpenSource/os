@@ -432,8 +432,8 @@ public class Container extends Component
    */
   protected void validateTree()
   {
-    if (valid)
-      return; 
+    /*if (valid)
+      return; */
 
     ContainerPeer cPeer = null;
     if ((peer != null) && !(peer instanceof LightweightPeer))
@@ -462,7 +462,7 @@ public class Container extends Component
     /* children will call invalidate() when they are layed out. It
        is therefore imporant that valid is not set to true
        before after the children has been layed out. */
-    valid = true;
+    //valid = true;
 
     if (cPeer != null)
       cPeer.endValidate();
@@ -1004,6 +1004,11 @@ public class Container extends Component
       component[i].list (out, indent + 2);
   }
 
+    @Override
+    public Font getFont() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
 
   /* The following classes are used in concert with the
      visitChildren() method to implement all the graphics operations
@@ -1092,7 +1097,7 @@ public class Container extends Component
 	if (component[j] instanceof Container)
 	  {
 	    Component c = component[j];
-	    c = c.findNextFocusComponent (null);
+	    //c = c.findNextFocusComponent (null);
 	    if (c != null)
 	      return c;
 	  }

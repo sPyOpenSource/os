@@ -135,8 +135,8 @@ public class Window extends Container
   @Override
   public void addNotify()
   {
-    if (peer == null)
-      peer = getToolkit ().createWindow (this);
+    /*if (peer == null)
+      peer = getToolkit ().createWindow (this);*/
     super.addNotify ();
   }
 

@@ -364,8 +364,8 @@ select(String item)
 public void
 addNotify()
 {
-  if (peer == null)
-    peer = getToolkit ().createChoice (this);
+  /*if (peer == null)
+    peer = getToolkit ().createChoice (this);*/
   super.addNotify ();
 }
 
@@ -453,5 +453,10 @@ paramString()
 {
   return ("selectedIndex=" + selectedIndex + "," + super.paramString());
 }
+
+    @Override
+    public Font getFont() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 
 } // class Choice 

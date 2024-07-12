@@ -65,8 +65,8 @@ public class Canvas extends Component implements java.io.Serializable
    */
   public void addNotify()
   {
-    if (peer == null)
-      peer = (ComponentPeer) getToolkit().createCanvas(this);
+    /*if (peer == null)
+      peer = (ComponentPeer) getToolkit().createCanvas(this);*/
     super.addNotify();
   }
 
@@ -88,4 +88,9 @@ public class Canvas extends Component implements java.io.Serializable
 
   // Serialization constant
   //private static final long serialVersionUID = -2284879212465893870L;
+
+    @Override
+    public Font getFont() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
