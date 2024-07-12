@@ -5,7 +5,7 @@ NEEDLIBS = zero
 SUBDIRS = gnu/java/math gnu/java/io gnu/java/security
 SUBDIRS += java/security/interfaces java/text java/io java/lang java/util java/security java/net java/security/spec java/security/cert
 SUBDIRS += metaxa/os/devices/net timerpc javafs buffercache
-SUBDIRS += bioram jx
+SUBDIRS += bioram jx java/awt
 
 LIBNAME = jdk0
 NUMBERENV = float
