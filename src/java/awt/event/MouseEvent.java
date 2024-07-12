@@ -148,7 +148,7 @@ private boolean popupTrigger;
     MouseEvent(Component source, int id, /*long when,*/ int modifiers, int x, int y,
            int clickCount, boolean popupTrigger)
 {
-    super(source, id, /*when,*/ modifiers);
+    super(source, id, /*when,*/0, modifiers);
   this.x = x;
   this.y = y;
   this.clickCount = clickCount;

@@ -350,7 +350,7 @@ public
     KeyEvent(Component source, int id, /*long when,*/ int modifiers,
          int keyCode, char keyChar)
 {
-    super(source, id, /*when,*/ modifiers);
+    super(source, id, /*when,*/0, modifiers);
   this.keyCode = keyCode;
   this.keyChar = keyChar;
 }
