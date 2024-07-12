@@ -226,7 +226,7 @@ public class MemoryImageSource implements ImageProducer
 	// @ Marco Winter
 	ic.setDimensions(width, height);
 	if( props != null ) {
-	    ic.setProperties( props );
+	    //ic.setProperties( props );
 	}
 	if( pixeli != null ) {
 	    ic.setPixels( 0, 0, width, height, cm, pixeli, offset, scansize );
@@ -255,7 +255,7 @@ public class MemoryImageSource implements ImageProducer
 			    ic = (ImageConsumer)e.nextElement();
 			    ic.setHints( ImageConsumer.TOPDOWNLEFTRIGHT );
 			    if( props != null ) {
-				ic.setProperties( props );
+				//ic.setProperties( props );
 			    }
 			    if( pixeli != null ) {
 				ic.setPixels( 0, 0, width, height, cm, pixeli, offset, scansize );
@@ -294,7 +294,7 @@ public class MemoryImageSource implements ImageProducer
 			    ic = (ImageConsumer)e.nextElement();
 			    ic.setHints( ImageConsumer.TOPDOWNLEFTRIGHT );
 			    if( props != null ) {
-				ic.setProperties( props );
+				//ic.setProperties( props );
 			    }
 			    if( pixeli != null ) {
 				ic.setPixels( 0, 0, width, height, cm, pixeli, offset, scansize );

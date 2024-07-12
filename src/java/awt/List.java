@@ -337,7 +337,7 @@ getMinimumSize(int rows)
 {
   ListPeer lp = null;//(ListPeer)getPeer();
   if (lp != null)
-    return(lp.minimumSize(rows));
+    return(lp.getMinimumSize(rows));
   else
     return(new Dimension(0,0));
 }
@@ -405,7 +405,7 @@ getPreferredSize(int rows)
 {
   ListPeer lp = null;//(ListPeer)getPeer();
   if (lp != null)
-    return(lp.preferredSize(rows));
+    return(lp.getPreferredSize(rows));
   else
     return(new Dimension(0,0));
 }
