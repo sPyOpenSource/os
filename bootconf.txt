@@ -1,0 +1,8 @@
+#Atmel hexout
+section atmel
+section default
+hexdestfile BOOT_ATM.HEX
+blocksize 2
+setaddr 0
+appendimage
+endsection
