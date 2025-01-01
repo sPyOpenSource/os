@@ -1,0 +1,32 @@
+# configuration file for BootOut
+
+#native IA32 image to boot
+section floppy32
+destfile out/BOOT_FLP.IMG
+blocksize 512
+maximagesize 1474048
+readbuf out/bts_dsk.bin
+offset 30.l4 value imageaddr
+offset 34.l4 value unitaddr
+offset 38.l4 value codeaddr
+offset 42.l4 crc 0x82608EDB
+offset 46.l2 value blockcnt
+writebuf
+appendimage
+endsection
+
+#native AMD64 image to boot
+section floppy64
+section default
+destfile out/BOOT_FLP.IMG
+blocksize 512
+maximagesize 1474048
+readbuf out/b64_dsk.bin
+offset 30.l4 value imageaddr
+offset 34.l4 value unitaddr
+offset 38.l4 value codeaddr
+offset 42.l4 crc 0x82608EDB
+offset 46.l2 value blockcnt
+writebuf
+appendimage
+endsection

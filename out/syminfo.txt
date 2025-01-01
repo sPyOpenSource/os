@@ -1,0 +1,1115 @@
+# --- SJC syminfo--- #
+
+BaseAddress: 0x00100000
+Image size: 35632 b = 35 kb
+Code size: 29207 b = 29 kb in 154 methods
+Strings: 15 with 578 characters using 2016 b = 2 kb
+ramInitAddr: 0x00000000, ramInitSize: 0 b, constMemorySize: 2700 b = 3 kb
+In-image symbol size: 0 b = 0 kb
+
+----------
+struct java.lang.STRUCT (may be reduced to protected) 
+clssRelocTableEntries: 0, clssScalarTableSize: 0
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 0, instScalarTableSize: 0, instIndirScalarTableSize: 0
+- methods:
+- size of code for methods: 0 bytes
+- added vars:
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class java.lang.FLASH 
+clssRelocTableEntries: 4, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 2, instScalarTableSize: 8, instIndirScalarTableSize: 0
+- methods:
+- size of code for methods: 0 bytes
+- added vars:
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+unit for binary imported data binimp.ByteData at 00100090
+- added vars:
+          cnst-c/0: byte[] DEKeyTable (const init obj at 0x00100418)
+- added statically allocated objects:
+          00100418: binimp-data
+
+----------
+class tools.EventBuffer extends tools.RingBuffer 
+clssRelocTableEntries: 4, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 3, instScalarTableSize: 21, instIndirScalarTableSize: 0
+- methods:
+no entry->00100EA0: #constr# EventBuffer(int) (statCall) (redirected to tools.RingBuffer)
+no entry->001011A0: boolean insertEvent(byte,byte,short,int) (statCall) (stmtCnt==3, 250 bytes)
+no entry->001012AC: boolean eventAvail() (statCall) (stmtCnt==1, 19 bytes)
+no entry->001012D0: long fetchEvent() (statCall) (stmtCnt==1, 6 bytes)
+no entry->00000000: byte extractHIDType(long) (skip candidate) (statCall) (stmtCnt==1, 0 bytes)
+no entry->00000000: byte extractHIDNr(long) (skip candidate) (statCall) (stmtCnt==1, 0 bytes)
+no entry->001012E8: short extractCode(long) (statCall) (stmtCnt==1, 52 bytes)
+no entry->0010132C: int extractCodeExt(long) (statCall) (stmtCnt==1, 17 bytes)
+- size of code for methods: 344 bytes
+- added vars:
+          cnst-c/0: byte TP_KEYB
+        unres/inv.: byte TP_MOUSE (skip candidate)
+00000014->inst-s/1: byte HIDs
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class tools.KEvT 
+clssRelocTableEntries: 4, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 3, instScalarTableSize: 8, instIndirScalarTableSize: 0
+- methods:
+no entry->00101350: boolean useTable(int) (statCall) (stmtCnt==4, 34 bytes)
+no entry->00101384: char getChar(short,int) (statCall) (stmtCnt==29, 390 bytes)
+no entry->0010151C: char getKey(short,int) (statCall) (stmtCnt==20, 299 bytes)
+- size of code for methods: 723 bytes
+- added vars:
+        unres/inv.: short MD_NONE (skip candidate)
+        unres/inv.: short MD_LEFT_CTRL (skip candidate)
+        unres/inv.: short MD_RIGHT_CTRL (skip candidate)
+          cnst-c/0: short MD_LEFT_ALT (may be reduced to private)
+          cnst-c/0: short MD_RIGHT_ALT (may be reduced to private)
+        unres/inv.: short MD_LEFT_SHIFT (skip candidate)
+        unres/inv.: short MD_RIGHT_SHIFT (skip candidate)
+          cnst-c/0: short MD_CAPS_LOCK (may be reduced to private)
+          cnst-c/0: short MD_NUM_LOCK (may be reduced to private)
+        unres/inv.: short MD_SCROLL_LOCK (skip candidate)
+        unres/inv.: short MD_LEFT_WIN (skip candidate)
+        unres/inv.: short MD_RIGHT_WIN (skip candidate)
+        unres/inv.: short MD_CONTEXT (skip candidate)
+          cnst-c/0: short MD_ANY_CTRL
+          cnst-c/0: short MD_ANY_ALT
+          cnst-c/0: short MD_ANY_SHIFT
+        unres/inv.: short MD_ANY_WIN (skip candidate)
+        unres/inv.: char KC_BACKSPACE (skip candidate)
+        unres/inv.: char KC_TAB (skip candidate)
+        unres/inv.: char KC_ENTER (skip candidate)
+        unres/inv.: char KC_ESC (skip candidate)
+          cnst-c/0: char KC_UNKNOWN (may be reduced to private)
+          cnst-c/0: char KC_F1
+          cnst-c/0: char KC_F2
+          cnst-c/0: char KC_F3 (may be reduced to private)
+          cnst-c/0: char KC_F4 (may be reduced to private)
+          cnst-c/0: char KC_F5
+          cnst-c/0: char KC_F6
+          cnst-c/0: char KC_F7
+          cnst-c/0: char KC_F8 (may be reduced to private)
+          cnst-c/0: char KC_F9
+          cnst-c/0: char KC_F10 (may be reduced to private)
+          cnst-c/0: char KC_F11 (may be reduced to private)
+          cnst-c/0: char KC_F12 (may be reduced to private)
+          cnst-c/0: char KC_PRINT (may be reduced to private)
+          cnst-c/0: char KC_SCROLL (may be reduced to private)
+          cnst-c/0: char KC_PAUSE (may be reduced to private)
+          cnst-c/0: char KC_CURSLEFT (may be reduced to private)
+          cnst-c/0: char KC_CURSRIGHT (may be reduced to private)
+          cnst-c/0: char KC_CURSUP (may be reduced to private)
+          cnst-c/0: char KC_CURSDOWN (may be reduced to private)
+          cnst-c/0: char KC_HOME (may be reduced to private)
+          cnst-c/0: char KC_END (may be reduced to private)
+          cnst-c/0: char KC_PAGEUP (may be reduced to private)
+          cnst-c/0: char KC_PAGEDOWN (may be reduced to private)
+          cnst-c/0: char KC_INS (may be reduced to private)
+          cnst-c/0: char KC_DEL (may be reduced to private)
+          cnst-c/0: char KC_CENTER (may be reduced to private)
+          cnst-c/0: char KC_NUM (may be reduced to private)
+          cnst-c/0: char KC_SYSRQ (may be reduced to private)
+          cnst-c/0: char KC_BREAK (may be reduced to private)
+          cnst-c/0: char KC_LCTRL (may be reduced to private)
+          cnst-c/0: char KC_RCTRL (may be reduced to private)
+          cnst-c/0: char KC_LALT (may be reduced to private)
+          cnst-c/0: char KC_RALT (may be reduced to private)
+          cnst-c/0: char KC_LSHIFT (may be reduced to private)
+          cnst-c/0: char KC_RSHIFT (may be reduced to private)
+          cnst-c/0: char KC_CAPSLOCK (may be reduced to private)
+          cnst-c/0: char KC_LWIN (may be reduced to private)
+          cnst-c/0: char KC_RWIN (may be reduced to private)
+          cnst-c/0: char KC_CONTEXT (may be reduced to private)
+        unres/inv.: int KC_MAKEMASK (skip candidate)
+          cnst-c/0: int[] codeVal (const init obj at 0x001005DC)
+          cnst-c/0: char[] transVal (const init obj at 0x00100558)
+          cnst-c/0: int TRANSCODES
+FFFFFFF4->inst-r/1: byte[] translation
+- added statically allocated objects:
+          00100558: const-array
+          001005DC: const-array
+- added imports:
+- added interface-maps:
+
+----------
+class tools.RingBuffer (may be reduced to package private) 
+clssRelocTableEntries: 4, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 3, instScalarTableSize: 20, instIndirScalarTableSize: 0
+- methods:
+no entry->00100EA0: #constr# RingBuffer(int) (may be reduced to package private) (statCall) (stmtCnt==2, 33 bytes)
+no entry->00100ED4: int readAvail() (may be reduced to package private) (statCall) (stmtCnt==4, 39 bytes)
+no entry->00100F0C: int writeAvail() (may be reduced to private) (statCall) (stmtCnt==4, 44 bytes)
+no entry->00100F48: boolean putByte(byte) (may be reduced to private) (statCall) (stmtCnt==5, 68 bytes)
+no entry->00100F9C: boolean putShort(short) (may be reduced to private) (statCall) (stmtCnt==5, 55 bytes)
+no entry->00100FE4: boolean putInt(int) (may be reduced to private) (statCall) (stmtCnt==5, 53 bytes)
+no entry->0010102C: boolean putLong(long) (may be reduced to package private) (statCall) (stmtCnt==5, 54 bytes)
+no entry->00101074: byte getByte() (may be reduced to private) (statCall) (stmtCnt==6, 66 bytes)
+no entry->001010C8: short getShort() (may be reduced to private) (statCall) (stmtCnt==2, 51 bytes)
+no entry->0010110C: int getInt() (may be reduced to private) (statCall) (stmtCnt==2, 48 bytes)
+no entry->0010114C: long getLong() (may be reduced to package private) (statCall) (stmtCnt==2, 65 bytes)
+- size of code for methods: 576 bytes
+- added vars:
+FFFFFFF4->inst-r/1: byte[] buffer
+00000008->inst-s/4: int size
+0000000C->inst-s/4: int readPtr
+00000010->inst-s/4: int writePtr
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class devices.DeviceList at 001000C8
+clssRelocTableEntries: 4, clssScalarTableSize: 8
+statRelocTableEntries: 8, statScalarTableSize: 0
+instRelocTableEntries: 2, instScalarTableSize: 8, instIndirScalarTableSize: 0
+- methods:
+no entry->00101658: void initDevices() (statCall) (stmtCnt==8, 325 bytes)
+- size of code for methods: 325 bytes
+- added vars:
+001000B4->clss-r/1: devices.Timer timer (may be reduced to private)
+001000B0->clss-r/1: devices.Keyboard keyb (may be reduced to private)
+001000AC->clss-r/1: tools.EventBuffer in
+001000A8->clss-r/1: tools.KEvT kevt
+001000A4->clss-r/1: devices.VGAText vga
+001000A0->clss-r/1: devices.VESAGraphics vesa
+0010009C->clss-r/1: devices.Viewer out
+00100098->clss-r/1: kernel.IRQController irq
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class devices.Viewer (may be reduced to package private) 
+clssRelocTableEntries: 4, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 3, instScalarTableSize: 8, instIndirScalarTableSize: 0
+- methods:
+no entry->001017B0: #constr# Viewer(devices.TextDriver) (may be reduced to package private) (statCall) (stmtCnt==1, 13 bytes)
+no entry->001017D0: void cls() (statCall) (stmtCnt==3, 39 bytes)
+no entry->00101808: void setColor(int,int) (may be reduced to private) (statCall) (stmtCnt==1, 35 bytes)
+no entry->0010183C: void setCursor(int,int) (may be reduced to private) (statCall) (stmtCnt==1, 35 bytes)
+no entry->00101870: void print(char) (statCall) (stmtCnt==26, 298 bytes)
+no entry->001019AC: void doWriteInt(int) (statCall) (stmtCnt==4, 56 bytes)
+no entry->001019F4: void doWriteLong(long) (statCall) (stmtCnt==4, 344 bytes)
+no entry->00101B5C: void print(int) (statCall) (stmtCnt==9, 54 bytes)
+no entry->00101BA4: void print(long) (may be reduced to private) (statCall) (stmtCnt==9, 105 bytes)
+no entry->00101C20: void print(java.lang.String) (statCall) (stmtCnt==7, 86 bytes)
+no entry->00101C88: void println() (may be reduced to private) (statCall) (stmtCnt==6, 100 bytes)
+no entry->00000000: void println(char) (skip candidate) (statCall) (stmtCnt==2, 0 bytes)
+no entry->00000000: void println(int) (skip candidate) (statCall) (stmtCnt==2, 0 bytes)
+no entry->00000000: void println(long) (skip candidate) (statCall) (stmtCnt==2, 0 bytes)
+no entry->00101CFC: void println(java.lang.String) (statCall) (stmtCnt==2, 21 bytes)
+- size of code for methods: 1186 bytes
+- added vars:
+FFFFFFF4->inst-r/1: devices.TextDriver disp
+- added statically allocated objects:
+          001006C4: <null>
+- added imports:
+- added interface-maps:
+
+----------
+class devices.VESAMode (may be reduced to package private) 
+clssRelocTableEntries: 4, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 3, instScalarTableSize: 32, instIndirScalarTableSize: 0
+- methods:
+- size of code for methods: 0 bytes
+- added vars:
+FFFFFFF4->inst-r/1: devices.VESAMode nextMode (may be reduced to package private)
+00000008->inst-s/1: boolean graphical
+0000000C->inst-s/4: int modeNr (may be reduced to package private)
+00000010->inst-s/4: int lfbAddress (may be reduced to package private)
+00000014->inst-s/4: int xRes (may be reduced to package private)
+00000018->inst-s/4: int yRes (may be reduced to package private)
+0000001C->inst-s/4: int colDepth (may be reduced to package private)
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class devices.Timer extends devices.Device (may be reduced to package private) at 00100100
+clssRelocTableEntries: 5, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 2, instScalarTableSize: 12, instIndirScalarTableSize: 0
+- methods:
+FFFFFFEC->00101D24: void handleIRQ(int) (statCall) (stmtCnt==10, 88 bytes)
+- size of code for methods: 88 bytes
+- added vars:
+00000008->inst-s/4: int cnt
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class devices.LegacyPIC extends kernel.IRQController (may be reduced to package private) at 00100140
+clssRelocTableEntries: 6, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 2, instScalarTableSize: 8, instIndirScalarTableSize: 0
+- methods:
+FFFFFFEC->00101D8C: void init() (statCall) (stmtCnt==2, 26 bytes)
+FFFFFFE8->00101DB8: void ackIRQ(int) (statCall) (stmtCnt==3, 47 bytes)
+no entry->00101DF8: void programChip(int,int,int) (statCall) (stmtCnt==4, 69 bytes)
+- size of code for methods: 142 bytes
+- added vars:
+          cnst-c/0: int MASTER
+          cnst-c/0: int SLAVE
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class devices.Keyboard extends devices.Device (may be reduced to package private) at 0010015C
+clssRelocTableEntries: 5, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 2, instScalarTableSize: 24, instIndirScalarTableSize: 0
+- methods:
+no entry->00101E50: #constr# Keyboard() (may be reduced to package private) (statCall) (stmtCnt==2, 24 bytes)
+FFFFFFEC->00101E78: void handleIRQ(int) (statCall) (stmtCnt==20, 229 bytes)
+no entry->00101F70: void setModifier(short,boolean) (statCall) (stmtCnt==3, 52 bytes)
+no entry->00101FB4: void toggleModifierAndRefreshLEDs(short) (statCall) (stmtCnt==12, 171 bytes)
+no entry->00102070: boolean isInternalModifier(int) (statCall) (stmtCnt==5, 71 bytes)
+no entry->001020C8: boolean isRegularModifier(int) (statCall) (stmtCnt==31, 386 bytes)
+no entry->0010225C: boolean isSysRequest(int) (statCall) (stmtCnt==1, 41 bytes)
+- size of code for methods: 974 bytes
+- added vars:
+00000008->inst-s/1: boolean dontRepeatModifiers (may be reduced to private)
+00000009->inst-s/1: boolean dontRepeatNormalKeys (may be reduced to private)
+          cnst-c/0: short LEFT_CTRL
+          cnst-c/0: short RIGHT_CTRL
+          cnst-c/0: short LEFT_ALT
+          cnst-c/0: short RIGHT_ALT
+          cnst-c/0: short LEFT_SHIFT
+          cnst-c/0: short RIGHT_SHIFT
+          cnst-c/0: short CAPS_LOCK
+          cnst-c/0: short NUM_LOCK
+          cnst-c/0: short SCROLL_LOCK
+          cnst-c/0: short LEFT_WIN
+          cnst-c/0: short RIGHT_WIN
+          cnst-c/0: short CONTEXT
+0000000A->inst-s/1: byte myHID
+0000000C->inst-s/2: short modifier
+00000010->inst-s/4: int lastScan
+00000014->inst-s/4: int lastKey
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class devices.TextDriver (may be reduced to package private) at 0010018C
+clssRelocTableEntries: 10, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 2, instScalarTableSize: 24, instIndirScalarTableSize: 0
+- methods:
+FFFFFFEC  abstract: void setColor(int,int) (may be reduced to package private) (dynaCall) (stmtCnt==0, 0 bytes)
+FFFFFFE8  abstract: void putChar(int,int,char) (may be reduced to package private) (dynaCall) (stmtCnt==0, 0 bytes)
+FFFFFFE4  abstract: void enableCursor(boolean) (dynaCall) (stmtCnt==0, 0 bytes)
+FFFFFFE0  abstract: void setCursor(int,int) (may be reduced to package private) (dynaCall) (stmtCnt==0, 0 bytes)
+FFFFFFDC  abstract: void scroll() (may be reduced to package private) (dynaCall) (stmtCnt==0, 0 bytes)
+FFFFFFD8  abstract: void cls() (may be reduced to package private) (dynaCall) (stmtCnt==0, 0 bytes)
+- size of code for methods: 0 bytes
+- added vars:
+00000008->inst-s/4: int textCols (may be reduced to package private)
+0000000C->inst-s/4: int textLines (may be reduced to package private)
+00000010->inst-s/4: int cursorX (may be reduced to package private)
+00000014->inst-s/4: int cursorY (may be reduced to package private)
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class devices.Device (may be reduced to package private) at 001000E4
+clssRelocTableEntries: 5, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 2, instScalarTableSize: 8, instIndirScalarTableSize: 0
+- methods:
+FFFFFFEC  abstract: void handleIRQ(int) (dynaCall) (stmtCnt==0, 0 bytes)
+- size of code for methods: 0 bytes
+- added vars:
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class devices.VGAText extends devices.TextDriver (may be reduced to package private) at 001001BC
+clssRelocTableEntries: 10, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 2, instScalarTableSize: 36, instIndirScalarTableSize: 0
+- methods:
+no entry->00102298: #constr# VGAText() (may be reduced to package private) (statCall) (stmtCnt==4, 27 bytes)
+no entry->001022C4: void reInit() (statCall) (stmtCnt==4, 30 bytes)
+no entry->001022F4: void setTextMode() (statCall) (stmtCnt==3, 22 bytes)
+FFFFFFEC->0010231C: void setColor(int,int) (statCall) (stmtCnt==2, 19 bytes)
+FFFFFFE8->00102340: void putChar(int,int,char) (statCall) (stmtCnt==6, 112 bytes)
+FFFFFFE4->001023C0: void enableCursor(boolean) (statCall) (stmtCnt==6, 80 bytes)
+FFFFFFE0->00102420: void setCursor(int,int) (statCall) (stmtCnt==10, 155 bytes)
+no entry->001024CC: void clearLine(int) (statCall) (stmtCnt==6, 116 bytes)
+FFFFFFDC->00102550: void scroll() (statCall) (stmtCnt==6, 105 bytes)
+FFFFFFD8->001025CC: void cls() (statCall) (stmtCnt==3, 41 bytes)
+- size of code for methods: 707 bytes
+- added vars:
+00000018->inst-s/4: int textmodeAddress (may be reduced to private)
+          cnst-c/0: int CRTCind
+          cnst-c/0: int CRTCdat
+0000001C->inst-s/4: int colorFG
+00000020->inst-s/4: int colorBG
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class devices.VESAGraphics extends devices.VGAText (may be reduced to package private) 
+clssRelocTableEntries: 10, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 4, instScalarTableSize: 36, instIndirScalarTableSize: 0
+- methods:
+no entry->00102608: devices.VESAGraphics detectDevice() (may be reduced to package private) (statCall) (stmtCnt==42, 488 bytes)
+no entry->00102800: boolean setMode(int,int,int,boolean) (statCall) (stmtCnt==13, 133 bytes)
+no entry->00102898: void setPixel(int,int,int) (statCall) (stmtCnt==14, 296 bytes)
+no entry->001029D0: void drawLine(int,int[]) (statCall) (stmtCnt==60, 311 bytes)
+- size of code for methods: 1228 bytes
+- added vars:
+FFFFFFF4->inst-r/1: devices.VESAMode modes (may be reduced to private)
+FFFFFFF0->inst-r/1: devices.VESAMode curMode (may be reduced to private)
+          cnst-c/0: devices.VESAControllerInfoStruct contrInfo (const init obj at 0x0009F000)
+          cnst-c/0: devices.VESAModeInfoStruct modeInfo (const init obj at 0x0009F000)
+- added statically allocated objects:
+          0009F000: const-ref
+          0009F000: const-ref
+- added imports:
+- added interface-maps:
+
+----------
+struct devices.VESAControllerInfoStruct extends java.lang.STRUCT 
+clssRelocTableEntries: 0, clssScalarTableSize: 0
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 0, instScalarTableSize: 18, instIndirScalarTableSize: 0
+- methods:
+- size of code for methods: 0 bytes
+- added vars:
+00000000->struct/4: int id (may be reduced to package private)
+00000004->struct/1: byte versionDecimal (skip candidate)
+00000005->struct/1: byte version (may be reduced to package private)
+0000000E->struct/2: short videoModePtrOff (may be reduced to package private)
+00000010->struct/2: short videoModePtrSeg (may be reduced to package private)
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+struct devices.VESAModeInfoStruct extends java.lang.STRUCT (may be reduced to package private) 
+clssRelocTableEntries: 0, clssScalarTableSize: 0
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 0, instScalarTableSize: 44, instIndirScalarTableSize: 0
+- methods:
+- size of code for methods: 0 bytes
+- added vars:
+        unres/inv.: short ATTR_SUPPORTED (skip candidate)
+          cnst-c/0: short ATTR_GRAPHICAL (may be reduced to package private)
+          cnst-c/0: short ATTR_LINFRMBUF (may be reduced to package private)
+        unres/inv.: short ATTR_DOUBLESCAN (skip candidate)
+        unres/inv.: short ATTR_INTERLACED (skip candidate)
+00000000->struct/2: short attributes (may be reduced to package private)
+00000012->struct/2: short xRes (may be reduced to package private)
+00000014->struct/2: short yRes (may be reduced to package private)
+00000019->struct/1: byte colDepth (may be reduced to package private)
+00000028->struct/4: int lfbAddress (may be reduced to package private)
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class raytracer.Renderable (may be reduced to package private) at 001001DC
+clssRelocTableEntries: 6, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 2, instScalarTableSize: 8, instIndirScalarTableSize: 0
+- methods:
+FFFFFFEC  abstract: float intersect(raytracer.Ray) (may be reduced to package private) (dynaCall) (stmtCnt==0, 0 bytes)
+FFFFFFE8  abstract: long Shade(raytracer.Ray,raytracer.Scene,raytracer.Vector3f,raytracer.Vector3f,raytracer.Vector3f) (may be reduced to package private) (dynaCall) (stmtCnt==0, 0 bytes)
+no entry->00102B18: float onPoint(float) (may be reduced to package private) (statCall) (stmtCnt==1, 28 bytes)
+- size of code for methods: 28 bytes
+- added vars:
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class raytracer.Vector3f (may be reduced to package private) at 001001F4
+clssRelocTableEntries: 4, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 2, instScalarTableSize: 20, instIndirScalarTableSize: 0
+- methods:
+no entry->00102B44: #constr# Vector3f() (may be reduced to package private) (statCall) (stmtCnt==1, 12 bytes)
+no entry->00000000: #constr# Vector3f(raytracer.Vector3f) (skip candidate) (statCall) (stmtCnt==1, 0 bytes)
+no entry->00102B60: #constr# Vector3f(float,float,float) (may be reduced to package private) (statCall) (stmtCnt==1, 33 bytes)
+no entry->00102B94: void init(float,float,float) (may be reduced to package private) (statCall) (stmtCnt==3, 31 bytes)
+no entry->00102BC4: void normalize() (may be reduced to package private) (statCall) (stmtCnt==1, 9 bytes)
+no entry->00102BE0: void normalize(raytracer.Vector3f) (may be reduced to package private) (statCall) (stmtCnt==4, 90 bytes)
+no entry->00102C4C: float lenSq() (may be reduced to private) (statCall) (stmtCnt==1, 29 bytes)
+no entry->00000000: void scale(float) (skip candidate) (statCall) (stmtCnt==3, 0 bytes)
+no entry->00000000: void add(raytracer.Vector3f) (skip candidate) (statCall) (stmtCnt==3, 0 bytes)
+no entry->00000000: void add(float,float,float) (skip candidate) (statCall) (stmtCnt==3, 0 bytes)
+no entry->00102C7C: void addScaled(raytracer.Vector3f,float) (may be reduced to package private) (statCall) (stmtCnt==3, 67 bytes)
+no entry->00000000: void sub(raytracer.Vector3f) (skip candidate) (statCall) (stmtCnt==3, 0 bytes)
+no entry->00102CD0: float dot(raytracer.Vector3f) (may be reduced to package private) (statCall) (stmtCnt==1, 42 bytes)
+no entry->00102D0C: float dot(float,float,float) (may be reduced to package private) (statCall) (stmtCnt==1, 35 bytes)
+no entry->00102D40: void cross(raytracer.Vector3f,raytracer.Vector3f) (may be reduced to package private) (statCall) (stmtCnt==3, 112 bytes)
+no entry->00102DC0: float lenSq(float,float,float) (may be reduced to package private) (statCall) (stmtCnt==1, 35 bytes)
+- size of code for methods: 495 bytes
+- added vars:
+00000008->inst-s/4: float x (may be reduced to package private)
+0000000C->inst-s/4: float y (may be reduced to package private)
+00000010->inst-s/4: float z (may be reduced to package private)
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class raytracer.Scene (may be reduced to package private) at 00100210
+clssRelocTableEntries: 5, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 7, instScalarTableSize: 24, instIndirScalarTableSize: 0
+- methods:
+no entry->00102DF4: #constr# Scene() (statCall) (stmtCnt==11, 248 bytes)
+FFFFFFEC  abstract: void createWorld() (may be reduced to private) (dynaCall) (stmtCnt==0, 0 bytes)
+- size of code for methods: 248 bytes
+- added vars:
+FFFFFFF4->inst-r/1: raytracer.Vector3f eye (may be reduced to package private)
+FFFFFFF0->inst-r/1: raytracer.Vector3f lookat (may be reduced to package private)
+FFFFFFEC->inst-r/1: raytracer.Vector3f up (may be reduced to package private)
+00000008->inst-s/4: float fov (may be reduced to package private)
+FFFFFFE8->inst-r/1: raytracer.ObjList objects (may be reduced to package private)
+FFFFFFE4->inst-r/1: raytracer.ObjList lights (may be reduced to package private)
+00000010->inst-s/8: long background (may be reduced to package private)
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class raytracer.CalcTAinfo 
+clssRelocTableEntries: 4, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 7, instScalarTableSize: 16, instIndirScalarTableSize: 0
+- methods:
+- size of code for methods: 0 bytes
+- added vars:
+00000008->inst-s/4: int x (may be reduced to package private)
+0000000C->inst-s/4: int y
+FFFFFFF4->inst-r/1: java.lang.Object var1 (may be reduced to package private)
+FFFFFFF0->inst-r/1: java.lang.Object var2 (may be reduced to package private)
+FFFFFFEC->inst-r/1: java.lang.Object var3 (may be reduced to package private)
+FFFFFFE8->inst-r/1: java.lang.Object var4 (may be reduced to package private)
+FFFFFFE4->inst-r/1: java.lang.Object var5 (may be reduced to package private)
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class raytracer.Surface (may be reduced to package private) 
+clssRelocTableEntries: 4, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 2, instScalarTableSize: 48, instIndirScalarTableSize: 0
+- methods:
+no entry->00102EFC: #constr# Surface(float,float,float,float,float,float,float,float,float,float) (may be reduced to package private) (statCall) (stmtCnt==10, 87 bytes)
+no entry->00102F64: long Shade(raytracer.Vector3f,raytracer.Vector3f,raytracer.Vector3f,raytracer.Scene,raytracer.Ray) (may be reduced to package private) (statCall) (stmtCnt==92, 1903 bytes)
+- size of code for methods: 1990 bytes
+- added vars:
+00000008->inst-s/4: float ir (may be reduced to private)
+0000000C->inst-s/4: float ig (may be reduced to private)
+00000010->inst-s/4: float ib (may be reduced to private)
+00000014->inst-s/4: float ka (may be reduced to private)
+00000018->inst-s/4: float kd (may be reduced to private)
+0000001C->inst-s/4: float ks (may be reduced to private)
+00000020->inst-s/4: float ns (may be reduced to private)
+00000024->inst-s/4: float kt (may be reduced to private)
+00000028->inst-s/4: float kr (may be reduced to private)
+0000002C->inst-s/4: float nt (may be reduced to private)
+          cnst-c/0: float TINY
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class raytracer.Ray (may be reduced to package private) at 00100228
+clssRelocTableEntries: 4, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 4, instScalarTableSize: 16, instIndirScalarTableSize: 0
+- methods:
+no entry->001036E4: #constr# Ray(raytracer.Vector3f,raytracer.Vector3f) (may be reduced to package private) (statCall) (stmtCnt==3, 95 bytes)
+no entry->00103754: void init(raytracer.Vector3f,raytracer.Vector3f) (may be reduced to package private) (statCall) (stmtCnt==2, 75 bytes)
+no entry->001037B0: boolean cast(raytracer.ObjList) (may be reduced to package private) (statCall) (stmtCnt==11, 122 bytes)
+no entry->0010383C: raytracer.Renderable trace(raytracer.ObjList) (may be reduced to package private) (statCall) (stmtCnt==14, 153 bytes)
+- size of code for methods: 445 bytes
+- added vars:
+00000008->inst-s/4: float MAX_T (may be reduced to private)
+FFFFFFF4->inst-r/1: raytracer.Vector3f origin (may be reduced to package private)
+FFFFFFF0->inst-r/1: raytracer.Vector3f direction (may be reduced to package private)
+0000000C->inst-s/4: float t (may be reduced to package private)
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class raytracer.Sphere extends raytracer.Renderable (may be reduced to package private) at 00100248
+clssRelocTableEntries: 6, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 4, instScalarTableSize: 16, instIndirScalarTableSize: 0
+- methods:
+no entry->001038E8: #constr# Sphere(raytracer.Surface,raytracer.Vector3f,float) (may be reduced to package private) (statCall) (stmtCnt==4, 40 bytes)
+FFFFFFEC->00103920: float intersect(raytracer.Ray) (statCall) (stmtCnt==14, 330 bytes)
+FFFFFFE8->00103A7C: long Shade(raytracer.Ray,raytracer.Scene,raytracer.Vector3f,raytracer.Vector3f,raytracer.Vector3f) (statCall) (stmtCnt==10, 344 bytes)
+- size of code for methods: 714 bytes
+- added vars:
+FFFFFFF4->inst-r/1: raytracer.Surface surface (may be reduced to private)
+FFFFFFF0->inst-r/1: raytracer.Vector3f center (may be reduced to private)
+00000008->inst-s/4: float radius (may be reduced to private)
+0000000C->inst-s/4: float radSqr (may be reduced to private)
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class raytracer.ObjList (may be reduced to package private) 
+clssRelocTableEntries: 4, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 4, instScalarTableSize: 8, instIndirScalarTableSize: 0
+- methods:
+no entry->00103BE4: #constr# ObjList() (may be reduced to package private) (statCall) (stmtCnt==2, 11 bytes)
+no entry->00103C00: #constr# ObjList(java.lang.Object) (may be reduced to private) (statCall) (stmtCnt==2, 18 bytes)
+no entry->00103C24: void addElement(java.lang.Object) (may be reduced to package private) (statCall) (stmtCnt==9, 96 bytes)
+- size of code for methods: 125 bytes
+- added vars:
+FFFFFFF4->inst-r/1: java.lang.Object elem (may be reduced to package private)
+FFFFFFF0->inst-r/1: raytracer.ObjList next (may be reduced to package private)
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class raytracer.RayTrace 
+clssRelocTableEntries: 4, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 6, instScalarTableSize: 17, instIndirScalarTableSize: 0
+- methods:
+no entry->00103C94: #constr# RayTrace(raytracer.Scene,boolean) (statCall) (stmtCnt==2, 121 bytes)
+no entry->00103D20: void init(int,int) (statCall) (stmtCnt==26, 1113 bytes)
+no entry->0010418C: void renderLine(int[],raytracer.CalcTAinfo) (statCall) (stmtCnt==27, 793 bytes)
+- size of code for methods: 2027 bytes
+- added vars:
+FFFFFFF4->inst-r/1: raytracer.Vector3f Du (may be reduced to private)
+FFFFFFF0->inst-r/1: raytracer.Vector3f Dv (may be reduced to private)
+FFFFFFEC->inst-r/1: raytracer.Vector3f Vp (may be reduced to private)
+FFFFFFE8->inst-r/1: raytracer.Scene scene (may be reduced to private)
+00000008->inst-s/4: int width (may be reduced to private)
+0000000C->inst-s/4: int height (may be reduced to private)
+00000010->inst-s/1: boolean bgr (may be reduced to private)
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class raytracer.RGBfCol (may be reduced to package private) 
+clssRelocTableEntries: 4, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 2, instScalarTableSize: 8, instIndirScalarTableSize: 0
+- methods:
+no entry->001044B8: long create(float,float,float) (may be reduced to package private) (statCall) (stmtCnt==17, 358 bytes)
+no entry->00104630: int getIntCol(long,int) (statCall) (stmtCnt==4, 77 bytes)
+no entry->00104690: float fGetRed(long) (may be reduced to package private) (statCall) (stmtCnt==3, 51 bytes)
+no entry->001046D4: float fGetGreen(long) (may be reduced to package private) (statCall) (stmtCnt==3, 51 bytes)
+no entry->00104718: float fGetBlue(long) (may be reduced to package private) (statCall) (stmtCnt==3, 51 bytes)
+no entry->0010475C: int toRGB(long,boolean) (may be reduced to package private) (statCall) (stmtCnt==5, 125 bytes)
+- size of code for methods: 713 bytes
+- added vars:
+          cnst-c/0: int RED
+          cnst-c/0: int GREEN
+          cnst-c/0: int BLUE
+          cnst-c/0: int bpc
+          cnst-c/0: float f_mul
+          cnst-c/0: int i_max
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class raytracer.Triangle extends raytracer.Renderable (may be reduced to package private) at 00100268
+clssRelocTableEntries: 6, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 6, instScalarTableSize: 8, instIndirScalarTableSize: 0
+- methods:
+no entry->001047EC: #constr# Triangle(raytracer.Surface,raytracer.Vector3f,raytracer.Vector3f,raytracer.Vector3f) (may be reduced to package private) (statCall) (stmtCnt==4, 31 bytes)
+FFFFFFEC->0010481C: float intersect(raytracer.Ray) (statCall) (stmtCnt==32, 754 bytes)
+FFFFFFE8->00104B20: long Shade(raytracer.Ray,raytracer.Scene,raytracer.Vector3f,raytracer.Vector3f,raytracer.Vector3f) (statCall) (stmtCnt==29, 830 bytes)
+- size of code for methods: 1615 bytes
+- added vars:
+          cnst-c/0: float EPSILON (may be reduced to private)
+FFFFFFF4->inst-r/1: raytracer.Surface surface (may be reduced to private)
+FFFFFFF0->inst-r/1: raytracer.Vector3f point1 (may be reduced to private)
+FFFFFFEC->inst-r/1: raytracer.Vector3f point2 (may be reduced to private)
+FFFFFFE8->inst-r/1: raytracer.Vector3f point3 (may be reduced to private)
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class raytracer.SceneDemo5 extends raytracer.Scene at 00100284
+clssRelocTableEntries: 5, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 7, instScalarTableSize: 24, instIndirScalarTableSize: 0
+- methods:
+no entry->00104E70: void setUpEye() (statCall) (stmtCnt==4, 140 bytes)
+no entry->00104F0C: void setUpEnvironment() (statCall) (stmtCnt==4, 210 bytes)
+no entry->00104FF0: void createWalls() (statCall) (stmtCnt==26, 1357 bytes)
+no entry->00105550: void createString() (statCall) (stmtCnt==7, 621 bytes)
+no entry->001057D0: void createGroup(raytracer.Surface,float,float,boolean) (statCall) (stmtCnt==12, 1382 bytes)
+no entry->00105D48: void createThings() (statCall) (stmtCnt==25, 1467 bytes)
+no entry->00106314: void createLights() (statCall) (stmtCnt==3, 296 bytes)
+FFFFFFEC->0010644C: void createWorld() (statCall) (stmtCnt==6, 31 bytes)
+- size of code for methods: 5504 bytes
+- added vars:
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class raytracer.Light (may be reduced to package private) at 0010029C
+clssRelocTableEntries: 4, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 3, instScalarTableSize: 24, instIndirScalarTableSize: 0
+- methods:
+no entry->0010647C: #constr# Light(int,raytracer.Vector3f,float,float,float) (may be reduced to package private) (statCall) (stmtCnt==21, 252 bytes)
+- size of code for methods: 252 bytes
+- added vars:
+          cnst-c/0: int AMBIENT (may be reduced to package private)
+          cnst-c/0: int DIRECTIONAL (may be reduced to private)
+          cnst-c/0: int POINT (may be reduced to package private)
+00000008->inst-s/4: int lightType (may be reduced to package private)
+FFFFFFF4->inst-r/1: raytracer.Vector3f lvec (may be reduced to package private)
+0000000C->inst-s/4: float ir (may be reduced to package private)
+00000010->inst-s/4: float ig (may be reduced to package private)
+00000014->inst-s/4: float ib (may be reduced to package private)
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class raytracer.Cylinder extends raytracer.Renderable (may be reduced to package private) at 001002BC
+clssRelocTableEntries: 6, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 5, instScalarTableSize: 12, instIndirScalarTableSize: 0
+- methods:
+no entry->00106588: #constr# Cylinder(raytracer.Surface,raytracer.Vector3f,float,raytracer.Vector3f,boolean) (may be reduced to package private) (statCall) (stmtCnt==10, 119 bytes)
+FFFFFFEC->00106610: float intersect(raytracer.Ray) (statCall) (stmtCnt==43, 889 bytes)
+FFFFFFE8->0010699C: long Shade(raytracer.Ray,raytracer.Scene,raytracer.Vector3f,raytracer.Vector3f,raytracer.Vector3f) (statCall) (stmtCnt==14, 413 bytes)
+- size of code for methods: 1421 bytes
+- added vars:
+FFFFFFF4->inst-r/1: raytracer.Vector3f origin (may be reduced to private)
+FFFFFFF0->inst-r/1: raytracer.Vector3f direction (may be reduced to private)
+00000008->inst-s/4: float radiusSq (may be reduced to private)
+FFFFFFEC->inst-r/1: raytracer.Surface surface (may be reduced to private)
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class kernel.BIOS at 001002D4
+clssRelocTableEntries: 4, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 1
+instRelocTableEntries: 2, instScalarTableSize: 8, instIndirScalarTableSize: 0
+- methods:
+no entry->00106B4C: void rint(int) (statCall) (stmtCnt==119, 992 bytes)
+- size of code for methods: 992 bytes
+- added vars:
+          cnst-c/0: int BIOS_STKBSE
+        unres/inv.: int DS (skip candidate)
+          cnst-c/0: int ES
+        unres/inv.: int FS (skip candidate)
+        unres/inv.: int FLAGS (skip candidate)
+          cnst-c/0: int EDI
+        unres/inv.: int ESI (skip candidate)
+        unres/inv.: int EBP (skip candidate)
+        unres/inv.: int ESP (skip candidate)
+          cnst-c/0: int EBX
+        unres/inv.: int EDX (skip candidate)
+          cnst-c/0: int ECX
+          cnst-c/0: int EAX
+        unres/inv.: int F_CARRY (skip candidate)
+        unres/inv.: int F_PARITY (skip candidate)
+        unres/inv.: int F_AUX (skip candidate)
+        unres/inv.: int F_ZERO (skip candidate)
+        unres/inv.: int F_SIGN (skip candidate)
+        unres/inv.: int F_TRAP (skip candidate)
+        unres/inv.: int F_INT (skip candidate)
+        unres/inv.: int F_DIR (skip candidate)
+        unres/inv.: int F_OVER (skip candidate)
+001002DC->clss-s/1: boolean initDone
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class kernel.Scheduler (may be reduced to package private) 
+clssRelocTableEntries: 4, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 2, instScalarTableSize: 8, instIndirScalarTableSize: 0
+- methods:
+no entry->00106F3C: void run() (may be reduced to package private) (statCall) (stmtCnt==9, 114 bytes)
+no entry->00106FC0: void printHelp() (statCall) (stmtCnt==7, 176 bytes)
+no entry->00107080: boolean initVesa() (statCall) (stmtCnt==7, 110 bytes)
+no entry->00107100: void printInput() (statCall) (stmtCnt==51, 979 bytes)
+no entry->001074E4: void printTime(int,int,int) (statCall) (stmtCnt==8, 225 bytes)
+no entry->001075D8: int linInterPol2D(int,int,int,int,int,int,int,int) (statCall) (stmtCnt==1, 64 bytes)
+no entry->00107628: int linInterPol1D(int,int,int,int) (statCall) (stmtCnt==1, 182 bytes)
+no entry->001076F0: byte calcMandelPixel(float,float) (statCall) (stmtCnt==13, 186 bytes)
+- size of code for methods: 2036 bytes
+- added vars:
+          cnst-c/0: int XRES
+          cnst-c/0: int YRES
+- added statically allocated objects:
+          00100708: VESA not supported
+          00100764: installed VESA-card does not support requested mode
+          00100804: With Ctrl+Shift+Esc you can fire a sys-req resulting in a break point
+          001008C8: With F9 re-initialize display or switch back to normal textual mode
+          00100988: With F7 switch to low resolution mode and calc Mandelbrot picture
+          00100A44: With F6 switch to high resolution mode and raytrace picture
+          00100AF4: With F5 switch to high resolution mode and show colors
+          00100B98: With F2 access memory at location 0xFFFFFFFC
+          00100C28: With F1 switch to virtual memory (check F2)
+          00100CB8:  bit mode
+          00100D04: Welcome to smfPicOS running in 
+- added imports:
+- added interface-maps:
+
+----------
+class kernel.memory.MemIntf (may be reduced to package private) at 001002F4
+clssRelocTableEntries: 5, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 2, instScalarTableSize: 8, instIndirScalarTableSize: 0
+- methods:
+FFFFFFEC  abstract: java.lang.Object allocate(int,int,rte.SClassDesc) (dynaCall) (stmtCnt==0, 0 bytes)
+- size of code for methods: 0 bytes
+- added vars:
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class kernel.memory.BasicMemory extends kernel.memory.MemIntf at 00100310
+clssRelocTableEntries: 5, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 8
+instRelocTableEntries: 2, instScalarTableSize: 8, instIndirScalarTableSize: 0
+- methods:
+no entry->001077BC: void init() (statCall) (stmtCnt==2, 74 bytes)
+FFFFFFEC->00107818: java.lang.Object allocate(int,int,rte.SClassDesc) (statCall) (stmtCnt==1, 24 bytes)
+no entry->00107840: java.lang.Object basicAllocate(int,int,rte.SClassDesc) (may be reduced to package private) (statCall) (stmtCnt==16, 163 bytes)
+no entry->001078F4: int allocateKernelBlock(int,int) (may be reduced to package private) (statCall) (stmtCnt==4, 70 bytes)
+- size of code for methods: 331 bytes
+- added vars:
+00100318->clss-s/4: int nextFreeAddress
+0010031C->clss-s/4: int lastObjectAddress
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class kernel.memory.VirtualMemory extends kernel.memory.MemIntf at 00100334
+clssRelocTableEntries: 5, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 4
+instRelocTableEntries: 2, instScalarTableSize: 8, instIndirScalarTableSize: 0
+- methods:
+no entry->0010794C: void init() (statCall) (stmtCnt==36, 371 bytes)
+FFFFFFEC->00107AD0: java.lang.Object allocate(int,int,rte.SClassDesc) (statCall) (stmtCnt==1, 24 bytes)
+- size of code for methods: 395 bytes
+- added vars:
+0010033C->clss-s/4: int pagetables
+- added statically allocated objects:
+          00100D7C:  done
+          00100DC0: switching to VirtualMemory...
+          00100E34: BasicMemory already replaced
+- added imports:
+- added interface-maps:
+
+----------
+class kernel.memory.PageFault extends kernel.ExcHandler (may be reduced to package private) at 00100370
+clssRelocTableEntries: 5, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 2, instScalarTableSize: 8, instIndirScalarTableSize: 0
+- methods:
+FFFFFFEC->00107AF8: void handle(int,boolean,int) (statCall) (stmtCnt==7, 60 bytes)
+- size of code for methods: 60 bytes
+- added vars:
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class kernel.IRQController (may be reduced to protected) at 00100120
+clssRelocTableEntries: 6, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 2, instScalarTableSize: 8, instIndirScalarTableSize: 0
+- methods:
+FFFFFFEC  abstract: void init() (dynaCall) (stmtCnt==0, 0 bytes)
+FFFFFFE8  abstract: void ackIRQ(int) (may be reduced to package private) (dynaCall) (stmtCnt==0, 0 bytes)
+- size of code for methods: 0 bytes
+- added vars:
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class kernel.KernelConst 
+clssRelocTableEntries: 4, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 2, instScalarTableSize: 8, instIndirScalarTableSize: 0
+- methods:
+- size of code for methods: 0 bytes
+- added vars:
+          cnst-c/0: int KC_FIRSTINTINGDT (may be reduced to package private)
+          cnst-c/0: int KC_INTCOUNT (may be reduced to package private)
+          cnst-c/0: int KM_MEMSTART (may be reduced to private)
+          cnst-c/0: int BIOS_MEMORY (may be reduced to package private)
+          cnst-c/0: int BIOS_STKEND (may be reduced to package private)
+          cnst-c/0: int KM_GDTADDR (may be reduced to package private)
+          cnst-c/0: int KM_IDTADDR (may be reduced to package private)
+          cnst-c/0: int KM_PAGEDIR
+          cnst-c/0: int KM_SCRATCH
+          cnst-c/0: int KM_INTDESC (may be reduced to package private)
+          cnst-c/0: int KM_IMAGESIZEREL
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class kernel.SegmentTables (may be reduced to package private) 
+clssRelocTableEntries: 4, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 2, instScalarTableSize: 8, instIndirScalarTableSize: 0
+- methods:
+no entry->00107B44: void rebuildGDT() (may be reduced to package private) (statCall) (stmtCnt==26, 114 bytes)
+no entry->00107BC8: void lgdt(int) (may be reduced to package private) (statCall) (stmtCnt==5, 50 bytes)
+no entry->00107C0C: void lidt() (may be reduced to package private) (statCall) (stmtCnt==5, 32 bytes)
+no entry->00107C3C: void lidtRM() (may be reduced to package private) (statCall) (stmtCnt==4, 32 bytes)
+- size of code for methods: 228 bytes
+- added vars:
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class kernel.Interrupts (may be reduced to package private) at 00100398
+clssRelocTableEntries: 6, clssScalarTableSize: 8
+statRelocTableEntries: 2, statScalarTableSize: 0
+instRelocTableEntries: 2, instScalarTableSize: 12, instIndirScalarTableSize: 0
+- methods:
+no entry->00107C6C: void init() (may be reduced to package private) (statCall) (stmtCnt==5, 60 bytes)
+no entry->00107CB8: #constr# Interrupts() (statCall) (stmtCnt==2, 9 bytes)
+no entry->00107CD4: void sti() (statCall) (stmtCnt==4, 22 bytes)
+no entry->00107CFC: void cli() (statCall) (stmtCnt==2, 7 bytes)
+no entry->00107D14: void replaceIRQHandler(int,devices.Device) (statCall) (stmtCnt==1, 47 bytes)
+no entry->00107D54: void replaceExcHandler(int,kernel.ExcHandler) (statCall) (stmtCnt==1, 47 bytes)
+no entry->00107D94: void createTable() (may be reduced to private) (statCall) (stmtCnt==31, 564 bytes)
+no entry->00107FD8: void createEntry(int,int) (statCall) (stmtCnt==13, 107 bytes)
+FFFFFFEC->00108054: void firstLevelHandlerWOE() (statCall) (stmtCnt==21, 242 bytes)
+FFFFFFE8->00108158: void firstLevelHandlerWEC(int) (statCall) (stmtCnt==15, 114 bytes)
+- size of code for methods: 1219 bytes
+- added vars:
+0010037C->clss-r/1: kernel.ExcHandler[] handler
+00100378->clss-r/1: devices.Device[] devList
+00000008->inst-s/4: int cliLevel
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class kernel.Kernel at 001003B8
+clssRelocTableEntries: 4, clssScalarTableSize: 8
+statRelocTableEntries: 2, statScalarTableSize: 0
+instRelocTableEntries: 2, instScalarTableSize: 8, instIndirScalarTableSize: 0
+- methods:
+no entry->001081DC: void main() (statCall) (stmtCnt==11, 108 bytes)
+no entry->00108258: void directPrintInt(int,int,int,int,int,int,boolean) (statCall) (stmtCnt==23, 647 bytes)
+no entry->001084F0: void directPrintChar(char,int,int,int) (may be reduced to package private) (statCall) (stmtCnt==1, 53 bytes)
+no entry->00108538: void setMem32(int,int,int) (statCall) (stmtCnt==10, 21 bytes)
+- size of code for methods: 829 bytes
+- added vars:
+001003A4->clss-r/1: kernel.memory.MemIntf mem
+001003A0->clss-r/1: kernel.Interrupts ints
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class kernel.ExcHandler (may be reduced to protected) at 00100354
+clssRelocTableEntries: 5, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 2, instScalarTableSize: 8, instIndirScalarTableSize: 0
+- methods:
+FFFFFFEC  abstract: void handle(int,boolean,int) (may be reduced to package private) (dynaCall) (stmtCnt==0, 0 bytes)
+- size of code for methods: 0 bytes
+- added vars:
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class kernel.DebugScreen extends kernel.ExcHandler (may be reduced to package private) at 001003D4
+clssRelocTableEntries: 5, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 2, instScalarTableSize: 8, instIndirScalarTableSize: 0
+- methods:
+FFFFFFEC->00108560: void handle(int,boolean,int) (statCall) (stmtCnt==4, 50 bytes)
+- size of code for methods: 50 bytes
+- added vars:
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class java.lang.Math 
+clssRelocTableEntries: 4, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 2, instScalarTableSize: 8, instIndirScalarTableSize: 0
+- methods:
+no entry->001085A4: double tan(double) (statCall) (stmtCnt==8, 21 bytes)
+no entry->001085CC: double sqrt(double) (statCall) (stmtCnt==6, 18 bytes)
+no entry->001085F0: double exp(double) (may be reduced to private) (statCall) (stmtCnt==26, 63 bytes)
+no entry->00108640: double ln(double) (may be reduced to private) (statCall) (stmtCnt==9, 24 bytes)
+no entry->00108668: double pow(double,double) (statCall) (stmtCnt==1, 35 bytes)
+no entry->0010869C: double abs(double) (statCall) (stmtCnt==6, 18 bytes)
+- size of code for methods: 179 bytes
+- added vars:
+          cnst-c/0: double PI
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class java.lang.String 
+clssRelocTableEntries: 4, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 3, instScalarTableSize: 12, instIndirScalarTableSize: 0
+- methods:
+- size of code for methods: 0 bytes
+- added vars:
+FFFFFFF4->inst-r/1: char[] value
+00000008->inst-s/4: int count
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class java.lang.Object at 00100048
+clssRelocTableEntries: 4, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 2, instScalarTableSize: 8, instIndirScalarTableSize: 0
+- methods:
+- size of code for methods: 0 bytes
+- added vars:
+00000000->inst-s/4: int _r_relocEntries (may be reduced to protected)
+00000004->inst-s/4: int _r_scalarSize (may be reduced to protected)
+FFFFFFFC->inst-r/1: rte.SClassDesc _r_type (may be reduced to protected)
+FFFFFFF8->inst-r/1: java.lang.Object _r_next (may be reduced to protected)
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class rte.SMthdBlock at 001003EC
+clssRelocTableEntries: 4, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 2, instScalarTableSize: 8, instIndirScalarTableSize: 0
+- methods:
+- size of code for methods: 0 bytes
+- added vars:
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class rte.SArray at 00100404
+clssRelocTableEntries: 4, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 3, instScalarTableSize: 20, instIndirScalarTableSize: 0
+- methods:
+- size of code for methods: 0 bytes
+- added vars:
+00000008->inst-s/4: int length
+0000000C->inst-s/4: int _r_dim (may be reduced to package private)
+00000010->inst-s/4: int _r_stdType (may be reduced to package private)
+FFFFFFF4->inst-r/1: rte.SClassDesc _r_unitType (may be reduced to package private)
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class rte.SIntfMap at 00100078
+clssRelocTableEntries: 4, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 4, instScalarTableSize: 8, instIndirScalarTableSize: 0
+- methods:
+- size of code for methods: 0 bytes
+- added vars:
+FFFFFFF4->inst-r/1: rte.SIntfDesc owner (may be reduced to package private)
+FFFFFFF0->inst-r/1: rte.SIntfMap next (may be reduced to package private)
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class rte.SIntfDesc at 00100060
+clssRelocTableEntries: 4, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 2, instScalarTableSize: 8, instIndirScalarTableSize: 0
+- methods:
+- size of code for methods: 0 bytes
+- added vars:
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class rte.DynamicRuntime 
+clssRelocTableEntries: 4, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 2, instScalarTableSize: 8, instIndirScalarTableSize: 0
+- methods:
+no entry->001086C0: java.lang.Object newInstance(int,int,rte.SClassDesc) (may be reduced to private) (statCall) (stmtCnt==1, 41 bytes)
+no entry->001086FC: rte.SArray newArray(int,int,int,int,rte.SClassDesc) (statCall) (stmtCnt==15, 183 bytes)
+no entry->001087C4: void newMultArray(rte.SArray[],int,int,int,int,int,int,rte.SClassDesc) (may be reduced to private) (statCall) (stmtCnt==12, 249 bytes)
+no entry->001088D0: boolean isInstance(java.lang.Object,rte.SClassDesc,boolean) (may be reduced to private) (statCall) (stmtCnt==15, 89 bytes)
+no entry->0010893C: rte.SIntfMap isImplementation(java.lang.Object,rte.SIntfDesc,boolean) (statCall) (stmtCnt==12, 79 bytes)
+no entry->0010899C: boolean isArray(rte.SArray,int,rte.SClassDesc,int,boolean) (may be reduced to private) (statCall) (stmtCnt==43, 291 bytes)
+no entry->00108AD0: void checkArrayStore(rte.SArray,rte.SArray) (statCall) (stmtCnt==5, 86 bytes)
+- size of code for methods: 1018 bytes
+- added vars:
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
+----------
+class rte.SClassDesc at 00100030
+clssRelocTableEntries: 4, clssScalarTableSize: 8
+statRelocTableEntries: 0, statScalarTableSize: 0
+instRelocTableEntries: 4, instScalarTableSize: 8, instIndirScalarTableSize: 0
+- methods:
+- size of code for methods: 0 bytes
+- added vars:
+FFFFFFF4->inst-r/1: rte.SClassDesc parent (may be reduced to package private)
+FFFFFFF0->inst-r/1: rte.SIntfMap implementations (may be reduced to package private)
+- added statically allocated objects:
+- added imports:
+- added interface-maps:
+
