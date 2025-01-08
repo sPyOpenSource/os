@@ -11,5 +11,7 @@ Run following command to get the source code:
 	 git clone git://s55969da3.adsl.online.nl/jx/os.git
 
 This is a NetBean projecct. It requires: 
+
 compiler: https://github.com/sPyOpenSource/compiler
+
 jcore: https://github.com/sPyOpenSource/jcore
