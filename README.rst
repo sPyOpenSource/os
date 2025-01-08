@@ -10,7 +10,7 @@ Run following command to get the source code:
 
 	 git clone git://s55969da3.adsl.online.nl/jx/os.git
 
-This is a NetBean projecct. It requires: 
+This is a NetBean projecct. It requires: `Link text <https://domain.invalid/>`_
 
 compiler: https://github.com/sPyOpenSource/compiler
 
