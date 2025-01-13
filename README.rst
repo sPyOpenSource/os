@@ -10,4 +10,4 @@ Run following command to get the source code:
 
 	 git clone git://s55969da3.adsl.online.nl/jx/os.git
 
-This is a NetBean projecct. It requires `Compiler <https://github.com/sPyOpenSource/compiler>`_ and `jcore <https://github.com/sPyOpenSource/jcore>`_ to work.
+This is a NetBean projecct. It requires Bytecode `Compiler <https://github.com/sPyOpenSource/compiler>`_ and micro kernel `jcore <https://github.com/sPyOpenSource/jcore>`_ to work.
