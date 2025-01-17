@@ -281,7 +281,7 @@ public class PrintWriter extends Writer
    * This is the system dependent line separator
    */
   private static final char[] line_separator
-  = System.getProperty("line.separator").toCharArray();
+  = null;//System.getProperty("line.separator").toCharArray();
 
   /**
    * This method prints a line separator sequence to the stream.  The value
