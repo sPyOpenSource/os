@@ -164,11 +164,11 @@ protected static final String[][] mime_strings = {
 private static Hashtable mime_types = new Hashtable(150);
 
 // Static initializer to load MIME types into Hashtable
-static
+/*static
 {
   for (int i = 0; i < mime_strings.length; i++)
     mime_types.put(mime_strings[i][1], mime_strings[i][0]);
-}
+}*/
 
 /*************************************************************************/
 
