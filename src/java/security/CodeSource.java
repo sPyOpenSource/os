@@ -51,7 +51,7 @@ public class CodeSource implements Serializable
  * Class Variables
  */
 
-private static final String linesep = System.getProperty("line.separator");
+private static final String linesep = null;//System.getProperty("line.separator");
 
 /*************************************************************************/
 
