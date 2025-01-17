@@ -204,7 +204,7 @@ public class SimpleDateFormat extends DateFormat
     computeCenturyStart();
     tokens = new Vector();
     formatData = new DateFormatSymbols(locale);
-    compileFormat(pattern);
+    //compileFormat(pattern);
     this.pattern = pattern;
     numberFormat = NumberFormat.getInstance(locale);
     numberFormat.setGroupingUsed (false);
