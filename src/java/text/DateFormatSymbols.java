@@ -97,7 +97,7 @@ public class DateFormatSymbols implements java.io.Serializable, Cloneable
    */
   public DateFormatSymbols (Locale locale) throws MissingResourceException
   {
-    ResourceBundle res
+    /*ResourceBundle res
       = ResourceBundle.getBundle("gnu.java.locale.LocaleInformation", locale);
 
     ampms = res.getStringArray ("ampms");
@@ -110,7 +110,7 @@ public class DateFormatSymbols implements java.io.Serializable, Cloneable
     zoneStrings = (String[][]) res.getObject ("zoneStrings");
 
     dateFormats = formatsForKey(res, "DateFormat");
-    timeFormats = formatsForKey(res, "TimeFormat");
+    timeFormats = formatsForKey(res, "TimeFormat");*/
   }
 
   /**
