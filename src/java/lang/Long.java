@@ -176,10 +176,10 @@ public final class Long extends Number
 
         static final Long cache[] = new Long[-(-128) + 127 + 1];
 
-        static {
+        /*static {
             for(int i = 0; i < cache.length; i++)
                 cache[i] = new Long(i - 128);
-        }
+        }*/
     }
     
     public static Long valueOf(long l) {
