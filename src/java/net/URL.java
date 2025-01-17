@@ -131,13 +131,13 @@ private static String ph_search_path;
 
 static
 {
-  String s = System.getProperty("gnu.java.net.nocache_protocol_handlers");
+  String s = null;//System.getProperty("gnu.java.net.nocache_protocol_handlers");
   if (s == null)
     cache_handlers = true;
   else
     cache_handlers = false;
 
-  ph_search_path = System.getProperty("java.protocol.handler.pkgs");
+  ph_search_path = null;//System.getProperty("java.protocol.handler.pkgs");
 
   // Tack our default package on at the ends
   if (ph_search_path != null)
