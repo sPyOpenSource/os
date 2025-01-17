@@ -207,7 +207,7 @@ public class SimpleDateFormat extends DateFormat
     //compileFormat(pattern);
     this.pattern = pattern;
     numberFormat = NumberFormat.getInstance(locale);
-    numberFormat.setGroupingUsed (false);
+    //numberFormat.setGroupingUsed (false);
   }
 
   /**
