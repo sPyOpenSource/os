@@ -215,10 +215,10 @@ public class Locale implements java.io.Serializable, Cloneable
     this(language, country, "");
   }
 
-  private static Locale defaultLocale =
-    new Locale(System.getProperty("user.language", ""),
+  private static Locale defaultLocale = null;
+    /*new Locale(System.getProperty("user.language", ""),
 	       System.getProperty("user.region", ""),
-	       System.getProperty("user.variant", ""));
+	       System.getProperty("user.variant", ""));*/
 
   /**
    * Returns the default Locale.  The default locale is generally
