@@ -363,7 +363,7 @@ public class GregorianCalendar extends Calendar
   @Override
   protected synchronized void computeTime()
   {
-    int era = isSet[ERA] ? fields[ERA] : AD;
+    /*int era = isSet[ERA] ? fields[ERA] : AD;
     int year = isSet[YEAR] ? fields[YEAR] : 1970;
     if (era == BC)
       year = 1 - year;
@@ -415,7 +415,7 @@ public class GregorianCalendar extends Calendar
 					     month, day, weekday, millisInDay)
 			      - zone.getRawOffset());
     time -= rawOffset + dstOffset;
-    isTimeSet = true;
+    isTimeSet = true;*/
   }
 
   /**
