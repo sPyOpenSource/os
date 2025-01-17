@@ -86,7 +86,7 @@ static
 {
   drivers = new Vector();
 
-  String driver_string = System.getProperty("jdbc.drivers");
+  String driver_string = null;//System.getProperty("jdbc.drivers");
   if (driver_string != null)
     {
       StringTokenizer st = new StringTokenizer(driver_string);
