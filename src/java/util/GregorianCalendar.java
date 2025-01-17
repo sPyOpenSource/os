@@ -360,6 +360,7 @@ public class GregorianCalendar extends Calendar
    * Converts the time field values (<code>fields</code>) to
    * milliseconds since the epoch UTC (<code>time</code>). 
    */
+  @Override
   protected synchronized void computeTime()
   {
     int era = isSet[ERA] ? fields[ERA] : AD;
@@ -537,9 +538,10 @@ public class GregorianCalendar extends Calendar
    * (<code>time</code>) to time fields
    * (<code>fields</code>). 
    */
+  @Override
   protected synchronized void computeFields()
   {
-    boolean gregorian = (time >= gregorianCutover);
+    /*boolean gregorian = (time >= gregorianCutover);
 
     TimeZone zone = getTimeZone();
     fields[ZONE_OFFSET] = zone.getRawOffset();
@@ -603,7 +605,7 @@ public class GregorianCalendar extends Calendar
       isSet[DAY_OF_WEEK_IN_MONTH] = isSet[AM_PM] = isSet[HOUR] =
       isSet[HOUR_OF_DAY] = isSet[MINUTE] = isSet[SECOND] =
       isSet[MILLISECOND] = isSet[ZONE_OFFSET] = isSet[DST_OFFSET] = true;
-
+*/
   }
 
   /**
