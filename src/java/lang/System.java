@@ -17,7 +17,7 @@ import jx.zero.debug.DebugOutputStream;
 //class Properties{}
 
 public class System {
-    public static InputStream in= null;//new DebugInputStream(debugChannel);
+    public static InputStream in = null;//new DebugInputStream(debugChannel);
     public static PrintStream out = new PrintStream(new DebugOutputStream((DebugChannel) InitialNaming.getInitialNaming().lookup("DebugChannel0")));
     public static PrintStream err = out;
     

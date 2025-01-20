@@ -1,10 +1,10 @@
 package jx.emulation;
 
-import java.util.Hashtable;
+import java.util.HashMap;
 import jx.zero.*;
 
 public class NamingImpl implements Naming {
-    Hashtable portalNames = new Hashtable();
+    private HashMap portalNames = new HashMap();
     
     public NamingImpl() {
         registerPortal(new ClockImpl(), "Clock");
@@ -26,6 +26,6 @@ public class NamingImpl implements Naming {
 
     @Override
     public void registerPortal(Portal dep, String name) {
-	portalNames.put(dep, name);
+	portalNames.put(name, dep);
     }
 }
