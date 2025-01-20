@@ -53,7 +53,7 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
 	throw new Error("no PCI Bus detected");
       
       scanBus();
-//      dumpDevices();
+      dumpDevices();
     }
    
     /********************************************************************/
