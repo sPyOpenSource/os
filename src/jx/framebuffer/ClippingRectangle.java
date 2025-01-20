@@ -16,6 +16,7 @@ public class ClippingRectangle implements Cloneable {
    public int xmax(){ return xmax; }
    public int ymax(){ return ymax; }
    
+   @Override
    public Object clone() {
       try {
 	 return super.clone();

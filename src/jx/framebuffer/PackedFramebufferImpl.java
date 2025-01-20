@@ -69,14 +69,20 @@ public class PackedFramebufferImpl implements PackedFramebuffer {
    public int width(){ return width; }
    @Override
    public int height(){ return height; }
+   @Override
    public int depth(){ return depth; }
    
+   @Override
    public int startAddress(){ return startAddress; }
+   @Override
    public int scanlineOffset(){ return scanlineOffset; }
+   @Override
    public int pixelOffset(){ return pixelOffset; }
    
+   @Override
    public Memory memObj(){ return memObj; }
    
+   @Override
    public String toString(){
       return toString(this);
    }
@@ -91,15 +97,17 @@ public class PackedFramebufferImpl implements PackedFramebuffer {
       return retval;
    }
    
+   @Override
    public void clear(){
       int fbi = (startAddress - memObj.getStartAddress()) ;
-      for(int y=0; y<height; ++y){
-	 memObj.fill16((short)0xffff, fbi/2, width*pixelOffset/2);
+      for(int y = 0; y < height; ++y){
+	 memObj.fill16((short)0xffff, fbi / 2, width * pixelOffset / 2);
 	 fbi += scanlineOffset;
       }
    }
    
    // This one should be overridden in derived classes!
+   @Override
    public String framebufferType(){
       return "PackedFramebuffer";
    }

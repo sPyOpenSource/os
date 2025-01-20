@@ -26,6 +26,7 @@ public class InterlacedFramebuffer extends PackedFramebufferImpl implements Clip
       //Debug.assert(field == 0 || field == 1, "field id out of range");
    }
    
+   @Override
    public ClippingRectangle []transformClippings(ClippingRectangle rects[]){
       Debug.out.println(framebufferType()+": translating clippings: fieldno="+fieldno);
 

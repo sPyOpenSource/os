@@ -11,12 +11,8 @@ public class InitialNaming
     static Naming baseNaming;
     static Hashtable names = new Hashtable();
 
-    public static InitialNaming getInitialNaming() {
-        return new InitialNaming();
-    }
-    
-    public InitialNaming(){
-        
+    public static Naming getInitialNaming() {
+        return baseNaming;
     }
     
     public InitialNaming(Naming baseNaming) {
