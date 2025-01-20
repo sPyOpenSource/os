@@ -16,7 +16,7 @@ public class MemoryFramebuffer extends PackedFramebufferImpl {
    public MemoryFramebuffer(MemoryManager memMgr, int width, int height, int depth){
       super(width, height, depth, 
 	    0, 0, 0, 
-	    memMgr.allocAligned(height*width*depthToBPP(depth), 4));
+	    memMgr.allocAligned(height * width * depthToBPP(depth), 4));
    }
    
    @Override

@@ -6,8 +6,7 @@ import jx.zero.debug.*;
 import java.util.Hashtable;
 import java.util.Enumeration;
 
-public class InitialNaming
-    {
+public class InitialNaming implements Naming {
     static Naming baseNaming;
     static Hashtable names = new Hashtable();
 
@@ -58,11 +57,13 @@ public class InitialNaming
 	add("TimerEmulation");
     }
 
-    public static void registerPortal(Portal portal, String name) {
+    @Override
+    public void registerPortal(Portal portal, String name) {
 	names.put(name, portal);
     }
     
-    public static Portal lookup(String name) {
+    @Override
+    public Portal lookup(String name) {
 	return (Portal) names.get(name);
     }
     
@@ -74,5 +75,10 @@ public class InitialNaming
 
     private void serviceFinalizer() {
 	Debug.out.println("*****  InitNaming: THIS SERVICE TERMINATES NOW ***");
+    }
+
+    @Override
+    public Portal lookupOrWait(String name) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }

@@ -1,6 +1,6 @@
 package java.io;
 
-import jx.InitialNaming;
+import jx.zero.InitialNaming;
 import jx.fs.RegularFile;
 import jx.fs.Directory;
 import jx.fs.FS;
@@ -42,8 +42,7 @@ public final class File implements Comparable {
 	}
 	name = path;
 
-	//Naming ns = InitialNaming.getInitialNaming();
-	fs = (FS)InitialNaming.lookup("FS");
+	fs = (FS)InitialNaming.getInitialNaming().lookup("FS");
 
 	
 	try {

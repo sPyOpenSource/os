@@ -36,7 +36,7 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
         final PCIAccess depHandle = instance;
       
         // register as DEP
-        jx.InitialNaming.registerPortal(depHandle, "PCIAccess");
+        InitialNaming.getInitialNaming().registerPortal(depHandle, "PCIAccess");
         Debug.out.println("PCIAccess registered");
     }
    
@@ -44,7 +44,7 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
       this.naming = naming;
       //Debug.assert(naming != null, "naming must be valid");
       
-      ports = (Ports)jx.InitialNaming.lookup("Ports");
+      ports = (Ports)InitialNaming.getInitialNaming().lookup("Ports");
       //Debug.assert(ports != null, "'Ports' portal not found");
       if (ports == null){
           return;

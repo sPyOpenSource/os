@@ -17,6 +17,7 @@ import jx.bio.buffercache.BufferHashtable;
 import org.junit.Test;
 import org.junit.Before;
 import static junit.framework.TestCase.assertEquals;
+import jx.zero.InitialNaming;
 
 /**
  *
@@ -42,7 +43,7 @@ public class JUnitTest {
     public void testBufferHashtable(){
         System.out.println("* JUnitTest: BufferHashtable");
 	
-	MemoryManager memMgr = (MemoryManager)jx.InitialNaming.lookup("MemoryManager");
+	MemoryManager memMgr = (MemoryManager)InitialNaming.getInitialNaming().lookup("MemoryManager");
 	BufferHashtable collect = new BufferHashtable();
         
 	// fill

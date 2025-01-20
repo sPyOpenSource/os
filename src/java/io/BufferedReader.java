@@ -38,15 +38,9 @@ exception statement from your version. */
 
 package java.io;
 
-import jx.InitialNaming;
+import jx.zero.InitialNaming;
 import jx.fs.FS;
 import jx.fs.Node;
-import jx.fs.InodeIOException;
-import jx.fs.InodeNotFoundException;
-import jx.fs.NoDirectoryInodeException;
-import jx.fs.NoFileInodeException;
-import jx.fs.NotExistException;
-import jx.fs.PermissionException;
 import jx.zero.Debug;
 import jx.zero.LookupHelper;
 import jx.zero.Memory;
@@ -491,6 +485,7 @@ public class BufferedReader extends Reader
     *
     * @exception IOException If an error occurs
     */
+  @Override
     public long skip(long count) throws IOException
     {
         synchronized (lock)
@@ -560,7 +555,7 @@ public class BufferedReader extends Reader
     @Override
     public int read(char[] buf, int offset, int count) throws IOException {
         try {
-            MemoryManager memoryManager = (MemoryManager)InitialNaming.lookup("MemoryManager");
+            MemoryManager memoryManager = (MemoryManager)InitialNaming.getInitialNaming().lookup("MemoryManager");
             Memory mBuffer = memoryManager.alloc(4096);
             FS fs = (FS) LookupHelper.waitUntilPortalAvailable(null, "FS");
 	

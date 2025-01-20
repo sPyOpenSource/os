@@ -22,7 +22,7 @@ public class BlockIORAM implements jx.devices.bio.BlockIO, Service {
     }
     public BlockIORAM(int numberKiloBytes) { 
 	capacity = numberKiloBytes;
-	MemoryManager memMgr = (MemoryManager) jx.InitialNaming.lookup("MemoryManager");
+	MemoryManager memMgr = (MemoryManager) InitialNaming.getInitialNaming().lookup("MemoryManager");
 	buffer = memMgr.alloc(1024 * capacity);
     }
     public BlockIORAM(Memory mem) {
@@ -32,13 +32,13 @@ public class BlockIORAM implements jx.devices.bio.BlockIO, Service {
 
     public static void init(Naming naming, String [] args) {
 	DebugChannel d = (DebugChannel) naming.lookup("DebugChannel0");
-	Debug.out = new jx.zero.debug.DebugPrintStream(new jx.zero.debug.DebugOutputStream(d));
+	Debug.out = new DebugPrintStream(new DebugOutputStream(d));
 	main(args);
     }
 
     public static void main(String [] args) {
 	Naming naming = InitialNaming.getInitialNaming();
-	//CPUManager cpuManager = (CPUManager) naming.lookup("CPUManager");
+	CPUManager cpuManager = (CPUManager) naming.lookup("CPUManager");
 	String bioName = args[0];
 	final BlockIORAM bio = new BlockIORAM(20 *  1024);
 	naming.registerPortal(bio, bioName);

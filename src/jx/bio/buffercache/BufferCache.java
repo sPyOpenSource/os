@@ -36,7 +36,7 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
     private final int bufferSize;
     private final Profiler profiler;
 
-    private final MemoryManager memMgr = ((MemoryManager)jx.InitialNaming.lookup("MemoryManager"));
+    private final MemoryManager memMgr = ((MemoryManager)InitialNaming.getInitialNaming().lookup("MemoryManager"));
 
     /**
      * @param blockDevice block device that contains the blocks 
@@ -56,8 +56,8 @@ public class BufferCache implements jx.fs.buffercache.BufferCache {
 	this.clock = clock;
 	this.bufferSize = bufferSize;
 
-	cpuManager = (CPUManager)jx.InitialNaming.lookup("CPUManager");
-	profiler = (Profiler)jx.InitialNaming.lookup("Profiler");
+	cpuManager = (CPUManager)InitialNaming.getInitialNaming().lookup("CPUManager");
+	profiler = (Profiler)InitialNaming.getInitialNaming().lookup("Profiler");
 	
 	int memory_size;
 	int order;

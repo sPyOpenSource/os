@@ -1,35 +1,31 @@
 package jx.emulation;
 
+import java.util.Hashtable;
 import jx.zero.*;
-import jx.InitialNaming;
 
 public class NamingImpl implements Naming {
-    BlockIOFile ide;
+    Hashtable portalNames = new Hashtable();
     
-    // BlockIOFile ide;
     public NamingImpl() {
         registerPortal(new ClockImpl(), "Clock");
 	registerPortal(new ProfilerImpl(), "Profiler");
 	registerPortal(new MemoryManagerImpl(), "MemoryManager");
+        registerPortal(new BlockIOFile("/tmp/jfs_file", 2 * 1024 * 20), "IDE");
     }
     
     @Override
     public Portal lookup(String name) {
-	if (name.equals("IDE") && ide == null) {
-	    ide = new BlockIOFile("/tmp/jfs_file", 2 * 1024 * 20);
-	    registerPortal(ide, "IDE");
-	}
-	return (Portal) InitialNaming.lookup(name);
+	return (Portal) portalNames.get(name);
     }
 
     // FIXME jgbauman: Quickfix does this work
     @Override
     public Portal lookupOrWait(String depName) {
-       return (Portal) InitialNaming.lookup(depName);
+       return (Portal) portalNames.get(depName);
     }
 
     @Override
     public void registerPortal(Portal dep, String name) {
-	InitialNaming.registerPortal(dep, name);
+	portalNames.put(dep, name);
     }
 }

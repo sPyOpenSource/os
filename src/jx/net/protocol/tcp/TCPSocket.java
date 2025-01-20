@@ -16,7 +16,6 @@ import java.util.*;
 
 
 public class TCPSocket implements jx.net.TCPSocket, Service {
-
     private static final boolean debug = true;
     private static final boolean NOSPLITTING = true;
     private static final boolean MEMORYCYCLE = false;
@@ -116,7 +115,7 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 //	retransmit_CAS = cpuManager.getCAS("jx/net/protocol/tcp/TCPSocket", "do_retransmit");
 //	retransmit_CAS.casBoolean(this, true, false);
 
-	timerManager = (TimerManager) jx.InitialNaming.lookup("TimerManager");
+	timerManager = (TimerManager)InitialNaming.getInitialNaming().lookup("TimerManager");
 	localWindowSize = 0xFFFF; //hack
     }
 
@@ -124,7 +123,7 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
     private int getInitialSequenceNumber() {
 	if (timerManager == null) {
             Debug.out.println("Timerman is null");
-            timerManager = (TimerManager)jx.InitialNaming.lookup("TimerManager");
+            timerManager = (TimerManager)InitialNaming.getInitialNaming().lookup("TimerManager");
         }
 	return timerManager.getTimeInMillis();
     }

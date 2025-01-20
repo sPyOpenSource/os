@@ -12,12 +12,12 @@ public class InterlacedFramebuffer extends PackedFramebufferImpl implements Clip
        */
       super(
 	    framebuffer.width(),
-	    framebuffer.height()/2 + field*framebuffer.height()%2,
+	    framebuffer.height() / 2 + field * framebuffer.height() % 2,
 	    framebuffer.depth(),
 	    
-	    framebuffer.startAddress() + field*framebuffer.scanlineOffset(),
+	    framebuffer.startAddress() + field * framebuffer.scanlineOffset(),
 	    framebuffer.pixelOffset(),
-	    framebuffer.scanlineOffset()*2,
+	    framebuffer.scanlineOffset() * 2,
 	    
 	    framebuffer.memObj()
 	    );
