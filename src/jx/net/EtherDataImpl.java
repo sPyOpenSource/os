@@ -41,7 +41,7 @@ public class EtherDataImpl implements EtherData {
 
     @Override
     public void setSrcAddress(byte[] sourceAddress) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.srcAddress = sourceAddress;
     }
 
     @Override
