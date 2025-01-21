@@ -16,7 +16,7 @@ public class LookupHelper {
 	Portal p = null;
 	if (verbose) Debug.out.println("Lookup " + name);
 	for(;;) {
-	    p = InitialNaming.getInitialNaming().lookup(name);
+	    p = naming.lookup(name);
 	    if (p != null) break;
             for(int i = 0; i < 20; i++) cpuManager.yield();
 	}
