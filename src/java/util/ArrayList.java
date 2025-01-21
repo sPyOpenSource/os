@@ -999,6 +999,7 @@ public class ArrayList<E> extends AbstractList<E>
      * @throws IndexOutOfBoundsException {@inheritDoc}
      * @throws IllegalArgumentException {@inheritDoc}
      */
+    @Override
     public List<E> subList(int fromIndex, int toIndex) {
         subListRangeCheck(fromIndex, toIndex, size);
         return new SubList(this, 0, fromIndex, toIndex);
@@ -1029,6 +1030,7 @@ public class ArrayList<E> extends AbstractList<E>
             //this.modCount = ArrayList.this.modCount;
         }
 
+        @Override
         public E set(int index, E e) {
             rangeCheck(index);
             //checkForComodification();
@@ -1037,12 +1039,14 @@ public class ArrayList<E> extends AbstractList<E>
             return oldValue;
         }
 
+        @Override
         public E get(int index) {
             rangeCheck(index);
             //checkForComodification();
             return ArrayList.this.elementData(offset + index);
         }
 
+        @Override
         public int size() {
             //checkForComodification();
             return this.size;
@@ -1214,6 +1218,7 @@ public class ArrayList<E> extends AbstractList<E>
             };
         }*/
 
+        @Override
         public List<E> subList(int fromIndex, int toIndex) {
             subListRangeCheck(fromIndex, toIndex, size);
             return new SubList(this, offset, fromIndex, toIndex);
