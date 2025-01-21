@@ -7,7 +7,7 @@ public class EtherDataImpl implements EtherData {
     public byte[] srcAddress;
     public byte[] dstAddress;
     public Memory mem;
-    public int offset,size; // only used when memory splitting is avoided
+    public int offset, size; // only used when memory splitting is avoided
 
     @Override
     public Memory getMemory() {
@@ -46,6 +46,6 @@ public class EtherDataImpl implements EtherData {
 
     @Override
     public void setDstAddress(byte[] destAddress) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.dstAddress = destAddress;
     }
 }
