@@ -46,7 +46,7 @@ public class StartNetDevice {
 	NetworkDevice nic;
 
 	EmulNetFinder cFinder = new EmulNetFinder(args[1], args[2]);
-	Device[] devices = cFinder.find(new String[] {});
+	Device[] devices = cFinder.find(naming);
 	/*if (devices != null) {
 	    naming.registerPortal((NetworkDevice)devices[0], args[0]);
 	    return;

@@ -22,8 +22,8 @@ public class EmulNetFinder implements DeviceFinder {
 	this.macaddr = macaddr;
     }
     @Override
-    public Device[] find(String args[]) {
-	NetEmulation net = (NetEmulation)InitialNaming.getInitialNaming().lookup("NetEmulation");
+    public Device[] find(Naming naming) {
+	NetEmulation net = (NetEmulation)naming.lookup("NetEmulation");
 	if (net == null) return null;
 	return new Device[] { new NetImpl(net, name, macaddr) };
     }

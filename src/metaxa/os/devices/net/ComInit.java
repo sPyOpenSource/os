@@ -127,12 +127,13 @@ public class ComInit extends Softlimits implements DeviceFinder {
 	User.out = Debug.out;
     }
 
-    public Device[] find(String[] args) {
+    @Override
+    public Device[] find(Naming naming) {
 	Debug.out.println("lookup PCI Access Point...");
 	PCIAccess bus;
 	int counter = 0;
 	for(;;) {
-	    bus = (PCIAccess)InitialNaming.getInitialNaming().lookup("PCIAccess");
+	    bus = (PCIAccess)naming.lookup("PCIAccess");
 	    if (bus == null) {
 		if (counter % 20 == 0) { counter = 0; Debug.out.println("NetInit still waiting for PCI");}
 		counter++;
