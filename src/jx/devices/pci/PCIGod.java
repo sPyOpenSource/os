@@ -142,9 +142,9 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
     public void dumpDevices() {
       Debug.out.println("Devices:");
       for(int i = 0; i < devices.size(); ++i){
-	 PCIDevice dev = (PCIDevice)devices.elementAt(i);
-	 int irq = dev.getInterruptLine();
-	 Debug.out.println(dev.getAddress().toString() + ": " +
+	PCIDevice dev = (PCIDevice)devices.elementAt(i);
+	int irq = dev.getInterruptLine();
+	Debug.out.println(dev.getAddress().toString() + ": " +
 			   " (INT " + irq + ")" +
 			   " Class: " + PCICodes.lookupClass(dev.getClassCode()));
 	Debug.out.println("               " + PCICodes.lookup(dev.readConfig(REG_DEVVEND)));

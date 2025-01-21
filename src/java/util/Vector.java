@@ -196,10 +196,6 @@ public class Vector<E> extends AbstractList<E> implements List<E>, Cloneable, Se
     E elementData(int index) {
         return (E) elementData[index];
     }
-    
-    /*public final Object get(int index) {
-	return elementAt(index);
-    }*/
 
     public final Enumeration elements()
     {
