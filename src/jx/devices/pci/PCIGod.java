@@ -36,7 +36,7 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
         final PCIAccess depHandle = instance;
       
         // register as DEP
-        InitialNaming.getInitialNaming().registerPortal(depHandle, "PCIAccess");
+        //InitialNaming.getInitialNaming().registerPortal(depHandle, "PCIAccess");
         Debug.out.println("PCIAccess registered");
     }
    
