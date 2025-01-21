@@ -26,7 +26,7 @@ public class IPDataImpl implements IPData {
 
     @Override
     public void setMemory(Memory buf) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.mem = buf;
     }
 
     @Override

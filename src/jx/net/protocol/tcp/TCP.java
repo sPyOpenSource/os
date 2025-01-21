@@ -41,7 +41,7 @@ public class TCP implements IPConsumer, Runnable {
     public TCP(IPProducer lowerProducer, jx.net.NetInit net, final TimerManager timerManager ) {
 	// bei der IP-Schicht anmelden
 	usableBufs = new MultiThreadList();
-	for ( int i = 0; i < INITIAL_BUFFER_SIZE; i++) {
+	for (int i = 0; i < INITIAL_BUFFER_SIZE; i++) {
 	    IPData d = new IPDataImpl();
 	    d.setMemory(net.getTCPBuffer());
 	    usableBufs.appendElement(d);
