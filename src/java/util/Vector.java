@@ -76,16 +76,16 @@ public class Vector<E> extends AbstractList<E> implements List<E>, Cloneable, Se
     public Object clone()
     {
 	try
-	    {
-		Vector<E> v = (Vector<E>) super.clone();
-		v.elementData = Arrays.copyOf(elementData, elementCount);
-                v.modCount = 0;
-		return v;
-	    }
+        {
+            Vector<E> v = (Vector<E>) super.clone();
+            v.elementData = Arrays.copyOf(elementData, elementCount);
+            v.modCount = 0;
+            return v;
+        }
 	catch (CloneNotSupportedException e)
-	    {
-		return null;
-	    }
+        {
+            return null;
+        }
     }
 
     public final void trimToSize()
@@ -257,16 +257,6 @@ public class Vector<E> extends AbstractList<E> implements List<E>, Cloneable, Se
 	elementCount--;
     }
 
-    /*public final Object remove(int index) {
-	Object o = elementData[index];
-
-	for (int i = index + 1; i < elementCount; i++)
-	    elementData[i - 1] = elementData[i];
-	elementCount--;
-
-	return o;
-    }*/
-
     public final boolean removeElement(Object obj)
     {
     for (int i = 0; i < elementCount; i++)
@@ -277,7 +267,8 @@ public class Vector<E> extends AbstractList<E> implements List<E>, Cloneable, Se
 	    }
     return false;
     }
-/**
+    
+    /**
      * Copies the components of this vector into the specified array.
      * The item at index {@code k} in this vector is copied into
      * component {@code k} of {@code anArray}.
@@ -293,6 +284,7 @@ public class Vector<E> extends AbstractList<E> implements List<E>, Cloneable, Se
     public synchronized void copyInto(Object[] anArray) {
         System.arraycopy(elementData, 0, anArray, 0, elementCount);
     }
+    
     @Override
     public final boolean remove(Object o) {
 	return removeElement(o);
