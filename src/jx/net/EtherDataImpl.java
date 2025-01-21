@@ -11,17 +11,17 @@ public class EtherDataImpl implements EtherData {
 
     @Override
     public Memory getMemory() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return mem;
     }
 
     @Override
     public int getOffset() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return offset;
     }
 
     @Override
     public int Size() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return size;
     }
 
     @Override
@@ -31,12 +31,12 @@ public class EtherDataImpl implements EtherData {
 
     @Override
     public void setOffset(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.offset = i;
     }
 
     @Override
     public void setSize(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.size = i;
     }
 
     @Override

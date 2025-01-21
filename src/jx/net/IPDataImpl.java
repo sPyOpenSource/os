@@ -11,17 +11,17 @@ public class IPDataImpl implements IPData {
 
     @Override
     public int Size() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return size;
     }
 
     @Override
     public int getOffset() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return offset;
     }
 
     @Override
     public Memory getMemory() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return mem;
     }
 
     @Override
@@ -31,31 +31,31 @@ public class IPDataImpl implements IPData {
 
     @Override
     public IPAddress getSourceAddress() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return sourceAddress;
     }
 
     @Override
     public void setOffset(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.offset = i;
     }
 
     @Override
     public IPAddress getDestinationAddress() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return destinationAddress;
     }
 
     @Override
     public void setSourceAddress(IPAddress addr) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.sourceAddress = addr;
     }
 
     @Override
     public void setDestinationAddress(IPAddress dAddr) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.destinationAddress = dAddr;
     }
 
     @Override
     public void setSize(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.size = i;
     }
 }
