@@ -72,15 +72,14 @@ public class Vector<E> extends AbstractList<E> implements List<E>, Cloneable, Se
 	return elementData.length;
     }
 
-
-    /*
+    @Override
     public Object clone()
     {
 	try
 	    {
-		Vector v = (Vector) super.clone();
-		v.elementData = (Object[]) elementData.clone();
-
+		Vector<E> v = (Vector<E>) super.clone();
+		v.elementData = Arrays.copyOf(elementData, elementCount);
+                v.modCount = 0;
 		return v;
 	    }
 	catch (CloneNotSupportedException e)
@@ -88,25 +87,62 @@ public class Vector<E> extends AbstractList<E> implements List<E>, Cloneable, Se
 		return null;
 	    }
     }
-    */
-    // TEST
-    public Object clone()
-    {
-	Vector c = new Vector();
-	for(int i = 0; i < size(); i++)
-	    c.addElement(elementAt(i));
-	return c;
-    }
 
     public final void trimToSize()
     {
-	/*E[] newData = new E[elementCount];
-	copyInto(newData);
-	elementData = newData;*/
+	modCount++;
+        int oldCapacity = elementData.length;
+        if (elementCount < oldCapacity) {
+            elementData = Arrays.copyOf(elementData, elementCount);
+        }
+    }
+    
+    /**
+     * This implements the unsynchronized semantics of ensureCapacity.
+     * Synchronized methods in this class can internally call this
+     * method for ensuring capacity without incurring the cost of an
+     * extra synchronization.
+     *
+     * @see #ensureCapacity(int)
+     */
+    private void ensureCapacityHelper(int minCapacity) {
+        // overflow-conscious code
+        if (minCapacity - elementData.length > 0)
+            grow(minCapacity);
+    }
+
+    /**
+     * The maximum size of array to allocate.
+     * Some VMs reserve some header words in an array.
+     * Attempts to allocate larger arrays may result in
+     * OutOfMemoryError: Requested array size exceeds VM limit
+     */
+    private static final int MAX_ARRAY_SIZE = Integer.MAX_VALUE - 8;
+
+    private void grow(int minCapacity) {
+        // overflow-conscious code
+        int oldCapacity = elementData.length;
+        int newCapacity = oldCapacity + ((capacityIncrement > 0) ?
+                                         capacityIncrement : oldCapacity);
+        if (newCapacity - minCapacity < 0)
+            newCapacity = minCapacity;
+        if (newCapacity - MAX_ARRAY_SIZE > 0)
+            newCapacity = hugeCapacity(minCapacity);
+        elementData = Arrays.copyOf(elementData, newCapacity);
+    }
+
+    private static int hugeCapacity(int minCapacity) {
+        if (minCapacity < 0) // overflow
+            throw new OutOfMemoryError();
+        return (minCapacity > MAX_ARRAY_SIZE) ?
+            Integer.MAX_VALUE :
+            MAX_ARRAY_SIZE;
     }
 
     public final void addElement(E obj)
     {
+        modCount++;
+        ensureCapacityHelper(elementCount + 1);
 	elementData[elementCount++] = obj;
     }
 
