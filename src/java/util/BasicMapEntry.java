@@ -25,10 +25,7 @@ resulting executable to be covered by the GNU General Public License.
 This exception does not however invalidate any other reasons why the
 executable file might be covered by the GNU General Public License. */
 
-
 package java.util;
-
-import jx.zero.Debug;
 
 /**
  * a class which implements Map.Entry
@@ -71,6 +68,7 @@ class BasicMapEntry<K,V> implements Map.Entry<K,V>
    *
    * @param      o        the Object being tested for equality
    */
+  @Override
   public boolean equals(Object o)
   {
     Map.Entry tester;
@@ -92,17 +90,18 @@ class BasicMapEntry<K,V> implements Map.Entry<K,V>
   }
 
     /** returns the key */
+    @Override
     public K getKey()
     {
-        Debug.out.println("ret key");
         return key;
     }
 
-  /** returns the value */
-  public V getValue()
-  {
-    return value;
-  }
+    /** returns the value */
+    @Override
+    public V getValue()
+    {
+        return value;
+    }
 
   /** the hashCode() for a Map.Entry is 
    * <pre> 
@@ -114,6 +113,7 @@ class BasicMapEntry<K,V> implements Map.Entry<K,V>
    * are <i>NOT</i> superfluous and should not be removed.  They insure 
    * that subclasses such as HashMapEntry work correctly
    */
+  @Override
   public int hashCode()
   {
     Object oKey = getKey();
@@ -127,6 +127,7 @@ class BasicMapEntry<K,V> implements Map.Entry<K,V>
    *
    * @param     newValue         the new value of this Map.Entry
    */
+  @Override
   public V setValue(V newValue)
     throws UnsupportedOperationException, ClassCastException,
 	   IllegalArgumentException, NullPointerException

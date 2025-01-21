@@ -43,7 +43,7 @@ public class JUnitTest {
     public void testBufferHashtable(){
         System.out.println("* JUnitTest: BufferHashtable");
 	
-	MemoryManager memMgr = (MemoryManager)InitialNaming.getInitialNaming().lookup("MemoryManager");
+	//MemoryManager memMgr = (MemoryManager)InitialNaming.getInitialNaming().lookup("MemoryManager");
 	BufferHashtable collect = new BufferHashtable();
         
 	// fill

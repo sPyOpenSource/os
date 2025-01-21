@@ -910,7 +910,7 @@ public class TreeMap<K,V> extends AbstractMap<K,V>
 
     @Override
     public Set entrySet() {
-        throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new java.lang.UnsupportedOperationException("Not supported yet.");
     }
 
     @Override
@@ -1152,11 +1152,10 @@ public class TreeMap<K,V> extends AbstractMap<K,V>
       return new TreeMapIterator(_oMap, _iType);
     }
 
-        @Override
-        public Object[] toArray(Object[] a) {
-            throw new java.lang.UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-        }
-
+    @Override
+    public Object[] toArray(Object[] a) {
+        throw new java.lang.UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
   
   }
 
@@ -1328,7 +1327,6 @@ public class TreeMap<K,V> extends AbstractMap<K,V>
 	}
     }
   }
-
 
   private class SubTreeMap extends AbstractMap implements SortedMap
   {
