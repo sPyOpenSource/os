@@ -20,8 +20,8 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
     Vector devices = new Vector();
    
     /**
-     * @param args******************************************************************/
-   
+     * @param args
+     */
     public static void main(String[] args){
         Naming naming = InitialNaming.getInitialNaming();
  	//naming = new InitNaming(naming);
@@ -84,7 +84,7 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
       
       if ((mode1res & CONF1_ENABLE_MSK1) == CONF1_ENABLE_RES1) {
 	 Debug.out.println("now checking pci bus #2");
-	 if (lookForDevices())   return true;
+	 if (lookForDevices()) return true;
       }
       
       return false;
@@ -173,14 +173,14 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
     private int readDeviceConfig(int address){
       ports.outl_p(CONFIG_ADDRESS, address);
       int data = ports.inl_p(CONFIG_DATA);
-      ports.outl_p (CONFIG_ADDRESS, 0);
+      ports.outl_p(CONFIG_ADDRESS, 0);
       return data;
     }
    
     private void writeDeviceConfig(int address, int value){
       ports.outl(CONFIG_ADDRESS, address);
       ports.outl(CONFIG_DATA, value);
-      ports.outl (CONFIG_ADDRESS, 0);
+      ports.outl(CONFIG_ADDRESS, 0);
     }
    
     /********************************************************************/

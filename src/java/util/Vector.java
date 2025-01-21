@@ -107,7 +107,7 @@ public class Vector<E> extends AbstractList<E> implements List<E>, Cloneable, Se
 
     public final void addElement(E obj)
     {
-	add(obj);
+	elementData[elementCount++] = obj;
     }
 
     public final void insertElementAt(E obj, int index)
@@ -156,7 +156,7 @@ public class Vector<E> extends AbstractList<E> implements List<E>, Cloneable, Se
 	return elementData(index);
     }
     
-@SuppressWarnings("unchecked")
+    @SuppressWarnings("unchecked")
     E elementData(int index) {
         return (E) elementData[index];
     }
