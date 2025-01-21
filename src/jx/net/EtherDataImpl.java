@@ -26,7 +26,7 @@ public class EtherDataImpl implements EtherData {
 
     @Override
     public void setMemory(Memory newMem) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.mem = newMem;
     }
 
     @Override
