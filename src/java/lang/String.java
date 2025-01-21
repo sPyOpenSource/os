@@ -544,7 +544,10 @@ public final class String implements CharSequence
                 }
             }
             String[] result = new String[resultSize];
-            return list.subList(0, resultSize).toArray(result);
+            for(int i = 0; i < list.size(); i++){
+                result[i] = list.get(i);
+            }
+            return result;
         }
         return null;//Pattern.compile(regex).split(this, limit);
     }
