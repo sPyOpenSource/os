@@ -26,11 +26,13 @@ class HashtableEnumeration implements Enumeration
 
     // Public Methods
 
+    @Override
     public boolean hasMoreElements()
     {
         return (next != null);
     }
 
+    @Override
     public Object nextElement() throws NoSuchElementException
     {
         if (next == null)
@@ -55,7 +57,7 @@ public class Hashtable extends Dictionary implements Cloneable
     Object[] keys;
     Object[] values;
     int capacity;
-    private float load; // "real load" * 100 
+    private int load; // "real load" * 100 
     private int mask;
     private int size;
 
@@ -63,7 +65,7 @@ public class Hashtable extends Dictionary implements Cloneable
 
     protected void rehash()
     {
-        while (size*100 > capacity * load)
+        while (size * 100 > capacity * load)
             capacity <<= 1;
         mask = (capacity - 1);
 
@@ -291,10 +293,10 @@ public class Hashtable extends Dictionary implements Cloneable
 
     public boolean containsKey(Object key)
     {
-        int hash = key.hashCode() & mask;
-
         if (key == null)
             return false;
+        
+        int hash = key.hashCode() & mask;
 
         for (int i = 0; i < capacity; i++)
         {
@@ -322,7 +324,7 @@ public class Hashtable extends Dictionary implements Cloneable
 
     // Constructors 
 
-    public Hashtable(int initialCapacity, float loadFactor)
+    public Hashtable(int initialCapacity, int loadFactor)
     {
         this.load = loadFactor;
         size = 0;
@@ -334,7 +336,7 @@ public class Hashtable extends Dictionary implements Cloneable
 
     public Hashtable(int initialCapacity)
     {
-        this(initialCapacity, 0.75f);
+        this(initialCapacity, 75);
     }
 
     public Hashtable()
