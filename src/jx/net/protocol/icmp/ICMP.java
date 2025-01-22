@@ -45,9 +45,9 @@ public class ICMP implements MemoryConsumer, IPConsumer {
     public Memory processMemory(Memory buf) {
 	Debug.out.println("ICMP packet received: offset=");
         MemoryManager memMgr = (MemoryManager) InitialNaming.getInitialNaming().lookup("MemoryManager");
-        //Memory mem = memMgr.alloc(98);
-        //mem.copyFromMemory(buf, 0, 0, 98);
-	ICMPFormat icmp = new ICMPFormat(buf, 0x22);
+        Memory mem = memMgr.alloc(84);
+        mem.copyFromMemory(buf, 0, 0, 84);
+	ICMPFormat icmp = new ICMPFormat(mem, 0x22);
 	int type = icmp.getType();
 	int code = icmp.getCode();
 	int checksum = icmp.getChecksum();
