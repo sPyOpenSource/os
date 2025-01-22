@@ -44,10 +44,10 @@ public class ICMP implements MemoryConsumer, IPConsumer {
     @Override
     public Memory processMemory(Memory buf) {
 	Debug.out.println("ICMP packet received: offset=");
-        //MemoryManager memMgr = (MemoryManager) InitialNaming.getInitialNaming().lookup("MemoryManager");
-        //Memory mem = memMgr.alloc(98);
-        //mem = buf.getSubRange(0, 98);
-	ICMPFormat icmp = new ICMPFormat(buf, 0x22);
+        MemoryManager memMgr = (MemoryManager) InitialNaming.getInitialNaming().lookup("MemoryManager");
+        Memory mem = memMgr.alloc(98);
+        mem.copyFromMemory(buf, 0, 0, 98);
+	ICMPFormat icmp = new ICMPFormat(mem, 0x22);
 	int type = icmp.getType();
 	int code = icmp.getCode();
 	int checksum = icmp.getChecksum();
@@ -59,7 +59,7 @@ public class ICMP implements MemoryConsumer, IPConsumer {
                 icmp.CalculateChecksum();
                 sender = net.getIPSender(data.getSourceAddress(), 1);
                 //Debug.out.println(buf.size());
-                sender.send(icmp.getMemory(), 0, 98);
+                sender.send(icmp.getMemory());
             //} catch (UnknownAddressException ex) {
                 //Logger.getLogger(ICMP.class.getName()).log(Level.SEVERE, null, ex);
             //}
