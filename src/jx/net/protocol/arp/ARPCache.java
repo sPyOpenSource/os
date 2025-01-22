@@ -119,10 +119,10 @@ class ARPCache {
     
     private void init() {
 	add(broadcastETH, broadcastIP);
-        add(new byte[]{(byte)0x94,(byte)0x53,(byte)0x30,(byte)0xc7,(byte)0xf8,(byte)0x03}, 
-            new byte[]{(byte)192,(byte)168,(byte)1,(byte)14});
-        add(new byte[]{(byte)0x94,(byte)0x53,(byte)0x30,(byte)0xc7,(byte)0xf8,(byte)0x03}, 
-            new byte[]{(byte)192,(byte)168,(byte)90,(byte)218});
+        add(new byte[]{(byte)0x52,(byte)0xed,(byte)0x3c,(byte)0xc0,(byte)0xef,(byte)0x64}, 
+            new byte[]{(byte)192,(byte)168,(byte)64,(byte)1});
+        add(new byte[]{(byte)0xc2,(byte)0x1a,(byte)0xac,(byte)0x7a,(byte)0x9d,(byte)0x7a}, 
+            new byte[]{(byte)192,(byte)168,(byte)64,(byte)5});
 	/*
 	add(faui49aETH, faui49aIP);
 	add(ultra1ETH, ultra1IP);
