@@ -129,6 +129,7 @@ public class IPv4Address implements IPAddress {
 	this(parseIPAddr(a));
     }
     public IPv4Address(int a) {
+        addr = a;
 	toBytes(a);
     }
     @Override
