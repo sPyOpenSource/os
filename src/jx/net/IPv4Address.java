@@ -25,6 +25,7 @@ public class IPv4Address implements IPAddress {
      * @see java.net.Inet4Address
      * @return This address as java.net.InetAddress
      */
+    @Override
     public InetAddress toInetAddress() {
         if (inetAddress == null) {
             try {
@@ -39,6 +40,7 @@ public class IPv4Address implements IPAddress {
     /**
      * Gets the default subnet mask for this address 
      */
+    @Override
     public IPAddress getDefaultSubnetmask() {
         if (isAny()) {
             return DEFAULT_ANY_SUBNETMASK;

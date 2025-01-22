@@ -1688,6 +1688,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
         throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    @Override
     public Object[] toArray(Object[] a) {
         throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }

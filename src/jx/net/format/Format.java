@@ -130,8 +130,8 @@ public abstract class Format {
 
    protected IPAddress readAddress(int o) { 
     int d;
-    //Debug.out.println("ADDR:");
-    //jx.zero.debug.Dump.xdump1(buf, offset+o, 4);
+    Debug.out.println("ADDR:");
+    jx.zero.debug.Dump.xdump1(buf, offset + o, 4);
     d  =  buf.get8(offset + o + 0)        & 0xff;
     d |= (buf.get8(offset + o + 1) << 8)  & 0xff00;
     d |= (buf.get8(offset + o + 2) << 16) & 0xff0000;
