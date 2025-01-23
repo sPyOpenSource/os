@@ -44,8 +44,8 @@ public abstract class AbstractStructure {
      * @param alignment The alignment of the descriptor in bytes
      */
     protected AbstractStructure(MemoryManager rm, int size, int alignment) {
-        this.data = new byte[size + alignment];
-        this.dataRes = null;//rm.asMemoryResource(data);
+        this.data = new byte[size];
+        this.dataRes = rm.allocAligned(size, alignment);
         //Address ptr = dataRes.getAddress();
         int offset = 0;
         /*while (((offset + ptr.toInt()) & (alignment - 1)) != 0) {

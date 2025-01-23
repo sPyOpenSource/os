@@ -168,6 +168,7 @@ public class Schedule implements USBConstants {
      * Gets the optimal interrupt QH for a specific interval.
      *
      * @param interval
+     * @return 
      */
     public final QueueHead getInterruptQH(int interval) {
         if (interval < 16) {
@@ -195,6 +196,7 @@ public class Schedule implements USBConstants {
         }
     }
 
+    @Override
     public String toString() {
         return "Schedule{lowQH:" + lowSpeedControlQH + ", highQH:" + highSpeedControlQH + '}';
     }
