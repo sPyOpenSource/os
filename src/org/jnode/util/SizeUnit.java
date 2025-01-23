@@ -23,21 +23,23 @@ package org.jnode.util;
 /**
  * @deprecated use DecimalPrefix or BinaryPrefix instead.
  */
-public enum SizeUnit {
-    B(1l, "B"),
-    K(1024l, "K"),
-    M(1024l * 1024l, "M"),
-    G(1024l * 1024l * 1024l, "G"),
-    T(1024l * 1024l * 1024l * 1024l, "T"),
-    P(1024l * 1024l * 1024l * 1024l * 1024l, "P"),
-    E(1024l * 1024l * 1024l * 1024l * 1024l * 1024l, "E");
+public class SizeUnit {
+    static SizeUnit[] values = {
+        new SizeUnit(1l, "B"),
+        new SizeUnit(1024l, "K"),
+        new SizeUnit(1024l * 1024l, "M"),
+        new SizeUnit(1024l * 1024l * 1024l, "G"),
+        new SizeUnit(1024l * 1024l * 1024l * 1024l, "T"),
+        new SizeUnit(1024l * 1024l * 1024l * 1024l * 1024l, "P"),
+        new SizeUnit(1024l * 1024l * 1024l * 1024l * 1024l * 1024l, "E")
+    };
     //these units have too big multipliers to fit in a long
     // (aka they are greater than 2^64) :
     //Z(1024l*1024l*1024l*1024l*1024l*1024l*1024l, "Z"),
     //Y(1024l*1024l*1024l*1024l*1024l*1024l*1024l*1024l, "Y");
 
-    public static final SizeUnit MIN = B;
-    public static final SizeUnit MAX = E;
+    public static final SizeUnit MIN = values[0];
+    public static final SizeUnit MAX = values[-1];
 
     private final long multiplier;
     private final String unit;

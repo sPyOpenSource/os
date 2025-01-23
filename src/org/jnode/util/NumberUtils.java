@@ -253,7 +253,7 @@ public class NumberUtils {
      * @deprecated use toDecimalByte() or toBinaryByte() instead
      */
     public static String size(long v) {
-        for (SizeUnit unit : SizeUnit.values()) {
+        for (SizeUnit unit : SizeUnit.values) {
             if ((v < 1024) && (v >= 0)) {
                 return String.valueOf(v) + unit.getUnit();
             }
@@ -330,7 +330,7 @@ public class NumberUtils {
             return null;
 
         size = size.trim();
-        for (SizeUnit unit : SizeUnit.values()) {
+        for (SizeUnit unit : SizeUnit.values) {
             String unitStr = unit.getUnit();
             if (size.endsWith(unitStr)) {
                 return unit;
