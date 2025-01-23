@@ -324,15 +324,14 @@ public final class Character extends Object
 
     public static boolean isDigit(char ch)
     {
-            // ranges
-            for (int i = 0; i < isDigitRangeTable.length; i++)
-            {
-                    if (ch >= isDigitRangeTable[i][0] &&
-                        ch <= isDigitRangeTable[i][1])
-                            return true;
+        // ranges
+        for (char[] digitRangeTable : isDigitRangeTable) {
+            if (ch >= digitRangeTable[0] && ch <= digitRangeTable[1]) {
+                return true;
             }
+        }
 
-            return false;
+        return false;
     }
 
     public static boolean isLetter(char ch)

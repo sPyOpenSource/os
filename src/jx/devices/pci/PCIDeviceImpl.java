@@ -48,6 +48,7 @@ public class PCIDeviceImpl implements PCIDevice {
     * @param reg Number of the desired DWORD register. (NOT the address!)
     * @param value New value which is written into the register.
     */
+   @Override
    public void writeConfig(int reg, int value){
       pcibus.writeDeviceConfig(pciaddress, reg, value);
    }
@@ -61,6 +62,7 @@ public class PCIDeviceImpl implements PCIDevice {
     * @return (value & mask) >> shift
     * 
     */
+   @Override
    public int readPackedConfig(int reg, int mask, int shift){
       return (readConfig(reg) & mask) >> shift;
    }
@@ -84,6 +86,7 @@ public class PCIDeviceImpl implements PCIDevice {
       int oldval = readConfig(reg) & ~mask;
       writeConfig(reg, oldval | ((value << shift) & mask) );
    }
+   @Override
    public void writePackedConfig(int reg, int mask, int value){
       int oldval = readConfig(reg) & ~mask;
       writeConfig(reg, oldval | (value & mask) );
@@ -138,9 +141,11 @@ public class PCIDeviceImpl implements PCIDevice {
    }
    
    // register 2
+   @Override
    public byte getRevisionID(){
       return (byte)readPackedConfig(PCI.REG_CLASSREV, PCI.REVISION_MASK, PCI.REVISION_SHIFT);
    }
+   
    @Override
    public int getClassCode(){
       return readPackedConfig(PCI.REG_CLASSREV, PCI.CLASSCODE_MASK, PCI.CLASSCODE_SHIFT);
@@ -158,15 +163,18 @@ public class PCIDeviceImpl implements PCIDevice {
      * @return *************************************************/
    
    // registers 3
+   @Override
    public byte getCacheLineSize(){
       return (byte)readPackedConfig(PCI.REG_BHLC, PCI.CACHELINE_MASK, PCI.CACHELINE_SHIFT);
    }
    public void setCachLineSize(byte value){
       writePackedConfig(PCI.REG_BHLC, PCI.CACHELINE_MASK, PCI.CACHELINE_SHIFT, value);
    }
+   @Override
    public int getLatencyTimer(){
       return readPackedConfig(PCI.REG_BHLC, PCI.LATENCYTIMER_MASK, PCI.LATENCYTIMER_SHIFT);
    }
+   @Override
    public void setLatencyTimer(byte clocks){
       writePackedConfig(PCI.REG_BHLC, PCI.LATENCYTIMER_MASK, PCI.LATENCYTIMER_SHIFT, clocks);
    }
@@ -181,8 +189,9 @@ public class PCIDeviceImpl implements PCIDevice {
    @Override
    public int getBaseAddress(int no){
       //Debug.assert(no >= 0 && no <= 5, "base address index out of range: "+no);
-      return readConfig(PCI.REG_BASEADDRESS_0+no);
+      return readConfig(PCI.REG_BASEADDRESS_0 + no);
    }
+   @Override
    public void setBaseAddress(int no, int val){
       //Debug.assert(no >= 0 && no <= 5, "base address index out of range: "+no);
       writeConfig(PCI.REG_BASEADDRESS_0+no, val);
@@ -210,6 +219,7 @@ public class PCIDeviceImpl implements PCIDevice {
    public byte getInterruptLine(){
       return (byte)readPackedConfig(PCI.REG_LGII, PCI.INTERRUPTLINE_MASK, PCI.INTERRUPTLINE_SHIFT);
    }
+   @Override
    public void setInterruptLine(byte val){
       writePackedConfig(PCI.REG_LGII, PCI.INTERRUPTLINE_MASK, PCI.INTERRUPTLINE_SHIFT, val);
    }
@@ -286,8 +296,11 @@ public class PCIDeviceImpl implements PCIDevice {
 
    /***********  additions
      * @return  **************************************************/
+   @Override
     public boolean busmasterCapable() { return false; }
+   @Override
     public boolean enforceBusmaster() { return false; }
+   @Override
     public int readIRQLine() {return 0;}
 
     @Override
