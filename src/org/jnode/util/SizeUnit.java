@@ -25,13 +25,13 @@ package org.jnode.util;
  */
 public class SizeUnit {
     static SizeUnit[] values = {
-        new SizeUnit(1l, "B"),
-        new SizeUnit(1024l, "K"),
-        new SizeUnit(1024l * 1024l, "M"),
-        new SizeUnit(1024l * 1024l * 1024l, "G"),
-        new SizeUnit(1024l * 1024l * 1024l * 1024l, "T"),
-        new SizeUnit(1024l * 1024l * 1024l * 1024l * 1024l, "P"),
-        new SizeUnit(1024l * 1024l * 1024l * 1024l * 1024l * 1024l, "E")
+        new SizeUnit(1, "B"),
+        new SizeUnit(1024, "K"),
+        new SizeUnit(1024 * 1024, "M"),
+        new SizeUnit(1024 * 1024 * 1024, "G"),
+        //new SizeUnit(1024l * 1024l * 1024l * 1024l, "T"),
+        //new SizeUnit(1024l * 1024l * 1024l * 1024l * 1024l, "P"),
+        //new SizeUnit(1024l * 1024l * 1024l * 1024l * 1024l * 1024l, "E")
     };
     //these units have too big multipliers to fit in a long
     // (aka they are greater than 2^64) :
@@ -41,10 +41,10 @@ public class SizeUnit {
     public static final SizeUnit MIN = values[0];
     public static final SizeUnit MAX = values[-1];
 
-    private final long multiplier;
+    private final int multiplier;
     private final String unit;
 
-    private SizeUnit(long multiplier, String unit) {
+    private SizeUnit(int multiplier, String unit) {
         this.multiplier = multiplier;
         this.unit = unit;
     }

@@ -22,13 +22,13 @@ package org.jnode.util;
 
 public class BinaryScaleFactor implements ScaleFactor {
     static BinaryScaleFactor[] values = {
-        new BinaryScaleFactor(1l, ""),
-        new BinaryScaleFactor(1024l, "K"),
-        new BinaryScaleFactor(1024l * 1024l, "M"),
-        new BinaryScaleFactor(1024l * 1024l * 1024l, "G"),
-        new BinaryScaleFactor(1024l * 1024l * 1024l * 1024l, "T"),
-        new BinaryScaleFactor(1024l * 1024l * 1024l * 1024l * 1024l, "P"),
-        new BinaryScaleFactor(1024l * 1024l * 1024l * 1024l * 1024l * 1024l, "E")
+        new BinaryScaleFactor(1, ""),
+        new BinaryScaleFactor(1024, "K"),
+        new BinaryScaleFactor(1024 * 1024, "M"),
+        new BinaryScaleFactor(1024 * 1024 * 1024, "G"),
+        //new BinaryScaleFactor(1024l * 1024l * 1024l * 1024l, "T"),
+        //new BinaryScaleFactor(1024l * 1024l * 1024l * 1024l * 1024l, "P"),
+        //new BinaryScaleFactor(1024l * 1024l * 1024l * 1024l * 1024l * 1024l, "E")
     };
     //these units have too big multipliers to fit in a long
     // (aka they are greater than 2^64) :
@@ -38,10 +38,10 @@ public class BinaryScaleFactor implements ScaleFactor {
     public static final BinaryScaleFactor MIN = values[0];
     public static final BinaryScaleFactor MAX = values[-1];
 
-    private final long multiplier;
+    private final int multiplier;
     private final String unit;
 
-    private BinaryScaleFactor(long multiplier, String unit) {
+    private BinaryScaleFactor(int multiplier, String unit) {
         this.multiplier = multiplier;
         this.unit = unit;
     }

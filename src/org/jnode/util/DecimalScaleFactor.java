@@ -23,13 +23,13 @@ package org.jnode.util;
 
 public class DecimalScaleFactor implements ScaleFactor {
     static DecimalScaleFactor[] values = {
-        new DecimalScaleFactor(1l, ""),
-        new DecimalScaleFactor(1000l, "k"),
-        new DecimalScaleFactor(1000l * 1000l, "M"),
-        new DecimalScaleFactor(1000l * 1000l * 1000l, "G"),
-        new DecimalScaleFactor(1000l * 1000l * 1000l * 1000l, "T"),
-        new DecimalScaleFactor(1000l * 1000l * 1000l * 1000l * 1000l, "P"),
-        new DecimalScaleFactor(1000l * 1000l * 1000l * 1000l * 1000l * 1000l, "E")
+        new DecimalScaleFactor(1, ""),
+        new DecimalScaleFactor(1000, "k"),
+        new DecimalScaleFactor(1000 * 1000, "M"),
+        new DecimalScaleFactor(1000 * 1000 * 1000, "G"),
+        //new DecimalScaleFactor(1000l * 1000l * 1000l * 1000l, "T"),
+        //new DecimalScaleFactor(1000l * 1000l * 1000l * 1000l * 1000l, "P"),
+        //new DecimalScaleFactor(1000l * 1000l * 1000l * 1000l * 1000l * 1000l, "E")
     };
     //these units have too big multipliers to fit in a long
     // (aka they are greater than 2^64) :
@@ -39,10 +39,10 @@ public class DecimalScaleFactor implements ScaleFactor {
     public static final DecimalScaleFactor MIN = values[0];
     public static final DecimalScaleFactor MAX = values[-1];
 
-    private final long multiplier;
+    private final int multiplier;
     private final String unit;
 
-    private DecimalScaleFactor(long multiplier, String unit) {
+    private DecimalScaleFactor(int multiplier, String unit) {
         this.multiplier = multiplier;
         this.unit = unit;
     }
