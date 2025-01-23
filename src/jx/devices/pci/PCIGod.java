@@ -147,10 +147,10 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
       Debug.out.println("Devices:");
       for(int i = 0; i < devices.size(); ++i){
 	PCIDevice dev = (PCIDevice)devices.elementAt(i);
-        if(PCICodes.lookupClass(dev.getClassCode()).startsWith("USB")){
+        /*if(PCICodes.lookupClass(dev.getClassCode()).startsWith("USB")){
                 System.out.println("USB found");
                 new UHCICore(dev);
-        }
+        }*/
 	int irq = dev.getInterruptLine();
 	Debug.out.println(dev.getAddress().toString() + ": " +
 			   " (INT " + irq + ")" +
