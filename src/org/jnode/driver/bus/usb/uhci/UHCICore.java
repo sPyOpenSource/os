@@ -87,10 +87,9 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants {
      *
      * @param device
      */
-    public UHCICore(PCIDevice device) throws Exception {
+    public UHCICore(PCIDevice device) {
         this.device = device;
         final PCIAddress baseAddr = device.getAddress();
-        try {
             this.rm = (MemoryManager)InitialNaming.getInitialNaming().lookup("MemoryManager");
             //final int ioBase = baseAddr.getIOBase();
             //final int ioSize = baseAddr.getSize();
@@ -117,9 +116,6 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants {
             io.setFrameListBaseAddress(schedule.getFrameList().getDescriptorAddress());
             // Go!
             setRun(true);
-        } catch (Exception ex) {
-            throw new Exception(ex);
-        }
     }
 
     /**
