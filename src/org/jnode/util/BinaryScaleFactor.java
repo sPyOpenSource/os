@@ -25,7 +25,7 @@ public class BinaryScaleFactor implements ScaleFactor {
         new BinaryScaleFactor(1, ""),
         new BinaryScaleFactor(1024, "K"),
         new BinaryScaleFactor(1024 * 1024, "M"),
-        new BinaryScaleFactor(1024 * 1024 * 1024, "G"),
+        //new BinaryScaleFactor(1024 * 1024 * 1024, "G"),
         //new BinaryScaleFactor(1024l * 1024l * 1024l * 1024l, "T"),
         //new BinaryScaleFactor(1024l * 1024l * 1024l * 1024l * 1024l, "P"),
         //new BinaryScaleFactor(1024l * 1024l * 1024l * 1024l * 1024l * 1024l, "E")

@@ -28,7 +28,7 @@ public class SizeUnit {
         new SizeUnit(1, "B"),
         new SizeUnit(1024, "K"),
         new SizeUnit(1024 * 1024, "M"),
-        new SizeUnit(1024 * 1024 * 1024, "G"),
+        //new SizeUnit(1024 * 1024 * 1024, "G"),
         //new SizeUnit(1024l * 1024l * 1024l * 1024l, "T"),
         //new SizeUnit(1024l * 1024l * 1024l * 1024l * 1024l, "P"),
         //new SizeUnit(1024l * 1024l * 1024l * 1024l * 1024l * 1024l, "E")
