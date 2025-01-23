@@ -20,6 +20,7 @@
  
 package org.jnode.driver.bus.usb.uhci;
 
+import jx.zero.InitialNaming;
 import jx.zero.Memory;
 import jx.zero.MemoryManager;
 
@@ -46,6 +47,7 @@ public abstract class AbstractStructure {
     protected AbstractStructure(MemoryManager rm, int size, int alignment) {
         this.data = new byte[size];
         System.out.println("aa");
+        rm = (MemoryManager)InitialNaming.getInitialNaming().lookup("MemoryManager");
         this.dataRes = rm.alloc(size);
         //Address ptr = dataRes.getAddress();
         int offset = 0;
