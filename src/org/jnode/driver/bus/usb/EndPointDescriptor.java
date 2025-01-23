@@ -24,6 +24,7 @@ package org.jnode.driver.bus.usb;
  * @author Ewout Prangsma (epr@users.sourceforge.net)
  */
 public final class EndPointDescriptor extends AbstractDescriptor {
+    public static final String USB_ENDPOINT_XFER_NAMES[] = {"control", "isochronous", "bulk", "interrupt"};
 
     /**
      * Initialize this instance.
