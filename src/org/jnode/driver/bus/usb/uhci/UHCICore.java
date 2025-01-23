@@ -26,6 +26,9 @@ import jx.devices.pci.PCIAddress;
 import jx.devices.pci.PCIDevice;
 import jx.zero.InitialNaming;
 import jx.zero.MemoryManager;
+import jx.zero.Naming;
+import jx.zero.timer.SleepManager;
+import jx.zero.timer.TimerManager;
 
 //import org.jnode.driver.DriverException;
 import org.jnode.driver.bus.usb.USBBus;
@@ -81,7 +84,8 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants {
      * The bus this HostController is providing
      */
     private final USBBus bus;
-
+TimerManager tm;
+SleepManager sleepManager;
     /**
      * Create and initialize a new instance
      *
@@ -89,6 +93,8 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants {
      */
     public UHCICore(PCIDevice device) {
         this.device = device;
+        //this.tm = (TimerManager)naming.lookup("TimerManager");
+        sleepManager = new jx.timerpc.SleepManagerImpl();
         final PCIAddress baseAddr = device.getAddress();
             this.rm = (MemoryManager)InitialNaming.getInitialNaming().lookup("MemoryManager");
             //final int ioBase = baseAddr.getIOBase();
@@ -199,17 +205,19 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants {
      */
     private void resetHC() {
         io.setCommand(USBCMD_HCRESET);
-        try {
-            Thread.sleep(50);
-        } catch (InterruptedException ex) {
+        //try {
+            //Thread.sleep(50);
+            sleepManager.mdelay(50);
+        //} catch (InterruptedException ex) {
             // Ignore
-        }
+        //}
         io.setCommand(0);
-        try {
-            Thread.sleep(10);
-        } catch (InterruptedException ex) {
+        //try {
+            //Thread.sleep(10);
+            sleepManager.mdelay(10);
+        //} catch (InterruptedException ex) {
             // Ignore
-        }
+        //}
         device.writeConfig(USBLEGSUP, USBLEGSUP_DEFAULT);
         rootHub.resetHub();
     }
