@@ -39,9 +39,7 @@ public class FrameList extends AbstractStructure {
      */
     public FrameList(MemoryManager rm) {
         super(rm, 4096, 4096);
-        System.out.println("slpi");
         for (int i = 0; i < 1024; i++) {
-            //System.out.println(i);
             setListPointerInvalid(i);
         }
     }
@@ -55,7 +53,7 @@ public class FrameList extends AbstractStructure {
     public final void setListPointer(int frame, TransferDescriptor td) {
         final int ptr = td.getDescriptorAddress() & 0xFFFFFFF0;
         this.list[frame] = td;
-        setInt(frame << 2, ptr);
+        setInt(frame, ptr);
     }
 
     /**
@@ -69,7 +67,7 @@ public class FrameList extends AbstractStructure {
     public final void setListPointer(int frame, QueueHead qh, boolean depthFirst) {
         final int ptr = (qh.getDescriptorAddress() & 0xFFFFFFF0) | 0x2 | (depthFirst ? 0x4 : 0x0);
         this.list[frame] = qh;
-        setInt(frame << 2, ptr);
+        setInt(frame, ptr);
     }
 
     /**
