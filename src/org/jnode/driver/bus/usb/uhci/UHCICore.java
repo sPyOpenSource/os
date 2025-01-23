@@ -177,6 +177,7 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants, FirstLevel
      * @param endPoint
      * @return The new pipe.
      */
+    @Override
     public USBPipe createPipe(USBEndPoint endPoint) {
         return pipeMgr.createPipe(endPoint);
     }
@@ -184,7 +185,8 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants, FirstLevel
     /**
      * @see org.jnode.system.resource.IRQHandler#handleInterrupt(int)
      */
-    public final void handleInterrupt(int irq) {
+    @Override
+    public final void interrupt() {
         final int status = io.getStatus();
         if (status == 0) {
             //log.debug("UHCI IRQ, status == 0, so probably not for me");
@@ -255,9 +257,4 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants, FirstLevel
             throw new DriverException("Unknown exception", ex);
         }
     }*/
-
-    @Override
-    public void interrupt() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
 }
