@@ -129,7 +129,7 @@ public class Schedule implements USBConstants {
         // for some Intel PIIX controllers
         termQH.setElement(termTD);
         termTD.setActive(false);
-
+System.out.println("framelist");
         // Setup the framelist
         final int max = frameList.getSize();
         for (int i = 0; i < max; i++) {
