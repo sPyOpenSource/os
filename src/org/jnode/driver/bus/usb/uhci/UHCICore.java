@@ -95,7 +95,7 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants {
         sleepManager = new jx.timerpc.SleepManagerImpl();
         final PCIAddress baseAddr = device.getAddress();
             this.rm = (MemoryManager)InitialNaming.getInitialNaming().lookup("MemoryManager");
-            //final int ioBase = baseAddr.getIOBase();
+            final int ioBase = device.getBaseAddress(0) - 1;
             //final int ioSize = baseAddr.getSize();
             System.out.println("Found UHCI at 0x" + NumberUtils.hex(baseAddr.getDevice()));
 
@@ -232,6 +232,7 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants {
     /**
      * @return Returns the rootHub.
      */
+    @Override
     public final USBHubAPI getRootHUB() {
         return this.rootHub;
     }
