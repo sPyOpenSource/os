@@ -41,6 +41,7 @@ public class FrameList extends AbstractStructure {
         super(rm, 4096, 4096);
         System.out.println("slpi");
         for (int i = 0; i < 1024; i++) {
+            System.out.println(i);
             setListPointerInvalid(i);
         }
     }
