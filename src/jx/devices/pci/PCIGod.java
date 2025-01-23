@@ -149,6 +149,7 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
 	PCIDevice dev = (PCIDevice)devices.elementAt(i);
         if(PCICodes.lookupClass(dev.getClassCode()).startsWith("USB")){
             try {
+                System.out.println("USB found");
                 new UHCICore(dev);
             } catch (Exception ex) {
                 //Logger.getLogger(PCIGod.class.getName()).log(Level.SEVERE, null, ex);
