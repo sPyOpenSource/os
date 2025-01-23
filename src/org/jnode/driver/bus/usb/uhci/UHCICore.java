@@ -105,7 +105,7 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants {
             // Workaround for some VIA chips
             device.setInterruptLine((byte)irqNr);
             //this.irq = rm.claimIRQ(device, irqNr, this, true);
-            //log.debug("Using IRQ " + irqNr);
+            System.out.println("Using IRQ " + irqNr);
 
             // Reset the HC
             resetHC();
