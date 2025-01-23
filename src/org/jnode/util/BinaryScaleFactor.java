@@ -20,21 +20,23 @@
  
 package org.jnode.util;
 
-public enum BinaryScaleFactor implements ScaleFactor {
-    B(1l, ""),
-    K(1024l, "K"),
-    M(1024l * 1024l, "M"),
-    G(1024l * 1024l * 1024l, "G"),
-    T(1024l * 1024l * 1024l * 1024l, "T"),
-    P(1024l * 1024l * 1024l * 1024l * 1024l, "P"),
-    E(1024l * 1024l * 1024l * 1024l * 1024l * 1024l, "E");
+public class BinaryScaleFactor implements ScaleFactor {
+    static BinaryScaleFactor[] values = {
+        new BinaryScaleFactor(1l, ""),
+        new BinaryScaleFactor(1024l, "K"),
+        new BinaryScaleFactor(1024l * 1024l, "M"),
+        new BinaryScaleFactor(1024l * 1024l * 1024l, "G"),
+        new BinaryScaleFactor(1024l * 1024l * 1024l * 1024l, "T"),
+        new BinaryScaleFactor(1024l * 1024l * 1024l * 1024l * 1024l, "P"),
+        new BinaryScaleFactor(1024l * 1024l * 1024l * 1024l * 1024l * 1024l, "E")
+    };
     //these units have too big multipliers to fit in a long
     // (aka they are greater than 2^64) :
     //Z(1024l*1024l*1024l*1024l*1024l*1024l*1024l, "Z"),
     //Y(1024l*1024l*1024l*1024l*1024l*1024l*1024l*1024l, "Y");
 
-    public static final BinaryScaleFactor MIN = B;
-    public static final BinaryScaleFactor MAX = E;
+    public static final BinaryScaleFactor MIN = values[0];
+    public static final BinaryScaleFactor MAX = values[-1];
 
     private final long multiplier;
     private final String unit;
@@ -69,7 +71,7 @@ public enum BinaryScaleFactor implements ScaleFactor {
     public static String apply(final long value, final int nbDecimals) {
         long v = value;
         BinaryScaleFactor unit = null;
-        for (BinaryScaleFactor u : values()) {
+        for (BinaryScaleFactor u : values) {
             if ((v < 1024) && (v >= 0)) {
                 unit = u;
                 break;
