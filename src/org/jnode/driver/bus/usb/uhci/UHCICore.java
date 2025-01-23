@@ -117,7 +117,7 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants {
             // Set the enabled interrupts
             io.setInterruptEnable(0x000F);
             // Set the framelist pointer
-            //io.setFrameListBaseAddress(schedule.getFrameList().getDescriptorAddress());
+            io.setFrameListBaseAddress(schedule.getFrameList().getDescriptorAddress());
             // Go!
             setRun(true);
     }

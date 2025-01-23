@@ -48,7 +48,7 @@ public abstract class AbstractStructure {
         this.data = new byte[size];
         //System.out.println("aa");
         rm = (MemoryManager)InitialNaming.getInitialNaming().lookup("MemoryManager");
-        this.dataRes = rm.alloc(size);
+        this.dataRes = rm.allocAligned(size, alignment);
         //Address ptr = dataRes.getAddress();
         int offset = 0;
         /*while (((offset + ptr.toInt()) & (alignment - 1)) != 0) {
