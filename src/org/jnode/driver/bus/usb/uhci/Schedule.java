@@ -96,6 +96,7 @@ public class Schedule implements USBConstants {
     public Schedule(MemoryManager rm) {
         //this.intQH = new QueueHead[8];
         this.frameList = new FrameList(rm);
+        System.out.println("here");
         this.int128QH = new QueueHead(rm);
         this.int64QH = new QueueHead(rm);
         this.int32QH = new QueueHead(rm);
