@@ -24,6 +24,8 @@ import java.security.PrivilegedExceptionAction;
 import javax.naming.NameNotFoundException;
 import jx.devices.pci.PCIAddress;
 import jx.devices.pci.PCIDevice;
+import jx.zero.FirstLevelIrqHandler;
+import jx.zero.IRQ;
 import jx.zero.InitialNaming;
 import jx.zero.MemoryManager;
 import jx.zero.Naming;
@@ -50,7 +52,7 @@ import org.jnode.util.NumberUtils;
 /**
  * @author Ewout Prangsma (epr@users.sourceforge.net)
  */
-public class UHCICore implements USBHostControllerAPI, UHCIConstants {
+public class UHCICore implements USBHostControllerAPI, UHCIConstants, FirstLevelIrqHandler {
 
     /**
      * My logger
@@ -67,7 +69,7 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants {
     /**
      * The IRQ resource
      */
-    //private final IRQResource irq;
+    private final IRQ irq;
     /**
      * The resource manager
      */
@@ -251,4 +253,9 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants {
             throw new DriverException("Unknown exception", ex);
         }
     }*/
+
+    @Override
+    public void interrupt() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
