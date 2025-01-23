@@ -21,22 +21,23 @@
 package org.jnode.util;
 
 public class BinaryScaleFactor implements ScaleFactor {
-    static BinaryScaleFactor[] values = {
-        new BinaryScaleFactor(1, ""),
-        new BinaryScaleFactor(1024, "K"),
-        new BinaryScaleFactor(1024 * 1024, "M"),
-        //new BinaryScaleFactor(1024 * 1024 * 1024, "G"),
+    static String[] values = {
+        "",
+        "K",
+        "M",
+        "G",
         //new BinaryScaleFactor(1024l * 1024l * 1024l * 1024l, "T"),
         //new BinaryScaleFactor(1024l * 1024l * 1024l * 1024l * 1024l, "P"),
         //new BinaryScaleFactor(1024l * 1024l * 1024l * 1024l * 1024l * 1024l, "E")
     };
+    static int[] keys = {1, 1024, 1024 * 1024, 1024 * 1024 * 1024};
     //these units have too big multipliers to fit in a long
     // (aka they are greater than 2^64) :
     //Z(1024l*1024l*1024l*1024l*1024l*1024l*1024l, "Z"),
     //Y(1024l*1024l*1024l*1024l*1024l*1024l*1024l*1024l, "Y");
 
-    public static final BinaryScaleFactor MIN = values[0];
-    public static final BinaryScaleFactor MAX = values[-1];
+    public static final BinaryScaleFactor MIN = new BinaryScaleFactor(keys[0], values[0]);
+    public static final BinaryScaleFactor MAX = new BinaryScaleFactor(keys[-1], values[-1]);
 
     private final int multiplier;
     private final String unit;
@@ -71,9 +72,9 @@ public class BinaryScaleFactor implements ScaleFactor {
     public static String apply(final long value, final int nbDecimals) {
         long v = value;
         BinaryScaleFactor unit = null;
-        for (BinaryScaleFactor u : values) {
+        for (int u = 0; u < values.length; u++) {
             if ((v < 1024) && (v >= 0)) {
-                unit = u;
+                unit = new BinaryScaleFactor(keys[u], values[u]);
                 break;
             }
 
