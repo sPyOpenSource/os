@@ -108,6 +108,7 @@ public class Schedule implements USBConstants {
         this.highSpeedControlQH = new QueueHead(rm);
         this.bulkQH = new QueueHead(rm);
         this.termQH = new QueueHead(rm);
+        System.out.println("tfd");
         this.termTD = new TransferDescriptor(rm, 0x7F, 0, USB_PID_IN, true, null, 0, 0, false, false, false);
 
         int128QH.setLink(int64QH);
