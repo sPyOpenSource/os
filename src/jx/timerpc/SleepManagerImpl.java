@@ -20,7 +20,6 @@ public class SleepManagerImpl implements SleepManager, Service {
 	int end = clock.getTimeInMillis() + milliseconds;
 	while(end > clock.getTimeInMillis()); //Thread.yield();
 
-
 	/*	
 	CycleTime now = new CycleTime();
 	CycleTime start = new CycleTime();
@@ -37,13 +36,12 @@ public class SleepManagerImpl implements SleepManager, Service {
 	}
 	*/
 
-
 	/*
 	timerManager.unblockInMillis(cpuManager.getCPUState(), milliseconds);
 	cpuManager.block();  // DANGER: lost-update problem (FIXME)
 	*/
-
     }
+    
     @Override
     public void udelay(int microseconds) {
       //int low = clock.getTicks_low();

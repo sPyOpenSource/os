@@ -117,7 +117,6 @@ public class TimerManagerImpl implements TimerManager, Service {
     public Timer addTimerEntry(TimerEntry timer) {
 	TimerEntry helper = firsttimer;
 
-
 	if (firsttimer == null) {
 		firsttimer = timer;
 	} else {

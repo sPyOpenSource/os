@@ -84,8 +84,7 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants {
      * The bus this HostController is providing
      */
     private final USBBus bus;
-TimerManager tm;
-SleepManager sleepManager;
+    SleepManager sleepManager;
     /**
      * Create and initialize a new instance
      *
@@ -93,7 +92,6 @@ SleepManager sleepManager;
      */
     public UHCICore(PCIDevice device) {
         this.device = device;
-        //this.tm = (TimerManager)naming.lookup("TimerManager");
         sleepManager = new jx.timerpc.SleepManagerImpl();
         final PCIAddress baseAddr = device.getAddress();
             this.rm = (MemoryManager)InitialNaming.getInitialNaming().lookup("MemoryManager");
@@ -104,7 +102,7 @@ SleepManager sleepManager;
             this.io = new UHCIIO();
             this.bus = new USBBus(device, this);
             this.rootHub = new UHCIRootHub(io, bus);
-            //final Schedule schedule = new Schedule(rm);
+            final Schedule schedule = new Schedule(rm);
             this.pipeMgr = null;//new UHCIPipeManager(rm, schedule);
 
             final int irqNr = device.getInterruptLine() & 0xF;
