@@ -253,14 +253,14 @@ public class NumberUtils {
      * @deprecated use toDecimalByte() or toBinaryByte() instead
      */
     public static String size(long v) {
-        for (SizeUnit unit : SizeUnit.values) {
+        for (int unit = 0; unit < BinaryScaleFactor.values.length; unit++) {
             if ((v < 1024) && (v >= 0)) {
-                return String.valueOf(v) + unit.getUnit();
+                return String.valueOf(v) + new SizeUnit(BinaryScaleFactor.keys[unit], BinaryScaleFactor.values[unit]).getUnit();
             }
 
             v = v >>> 10;
         }
-        return String.valueOf(v >>> 10) + SizeUnit.MAX.getUnit();
+        return String.valueOf(v >>> 10) + new SizeUnit(BinaryScaleFactor.keys[-1], BinaryScaleFactor.values[-1]).getUnit();
     }
 
     /**
@@ -315,7 +315,7 @@ public class NumberUtils {
             return 0;
 
         size = size.trim();
-        long multiplier = SizeUnit.MIN.getMultiplier();
+        long multiplier = new SizeUnit(BinaryScaleFactor.keys[0], BinaryScaleFactor.values[0]).getMultiplier();
         SizeUnit sizeUnit = getSizeUnit(size);
         if (sizeUnit != null) {
             multiplier = sizeUnit.getMultiplier();
@@ -330,10 +330,11 @@ public class NumberUtils {
             return null;
 
         size = size.trim();
-        for (SizeUnit unit : SizeUnit.values) {
-            String unitStr = unit.getUnit();
+        for (int unit = 0; unit < BinaryScaleFactor.values.length; unit++) {
+            SizeUnit u = new SizeUnit(BinaryScaleFactor.keys[unit], BinaryScaleFactor.values[unit]);
+            String unitStr = u.getUnit();
             if (size.endsWith(unitStr)) {
-                return unit;
+                return u;
             }
         }
 

@@ -22,11 +22,11 @@ package org.jnode.util;
 
 
 public class DecimalScaleFactor implements ScaleFactor {
-    static DecimalScaleFactor[] values = {
-        new DecimalScaleFactor(1, ""),
-        new DecimalScaleFactor(1000, "k"),
-        new DecimalScaleFactor(1000 * 1000, "M"),
-        new DecimalScaleFactor(1000 * 1000 * 1000, "G"),
+    static int[] keys = {
+        1,
+        1000,
+        1000 * 1000,
+        1000 * 1000 * 1000,
         //new DecimalScaleFactor(1000l * 1000l * 1000l * 1000l, "T"),
         //new DecimalScaleFactor(1000l * 1000l * 1000l * 1000l * 1000l, "P"),
         //new DecimalScaleFactor(1000l * 1000l * 1000l * 1000l * 1000l * 1000l, "E")
@@ -36,8 +36,8 @@ public class DecimalScaleFactor implements ScaleFactor {
     //Z(1000l*1000l*1000l*1000l*1000l*1000l*1000l, "Z"),
     //Y(1000l*1000l*1000l*1000l*1000l*1000l*1000l*1000l, "Y");
 
-    public static final DecimalScaleFactor MIN = values[0];
-    public static final DecimalScaleFactor MAX = values[-1];
+    //public static final DecimalScaleFactor MIN = values[0];
+    //public static final DecimalScaleFactor MAX = values[-1];
 
     private final int multiplier;
     private final String unit;
@@ -72,15 +72,15 @@ public class DecimalScaleFactor implements ScaleFactor {
     public static String apply(final long value, final int nbDecimals) {
         long v = value;
         DecimalScaleFactor unit = null;
-        for (DecimalScaleFactor u : values) {
+        for (int u = 0; u < keys.length; u++) {
             if ((v < 1000l) && (v >= 0l)) {
-                unit = u;
+                unit = new DecimalScaleFactor(keys[u], BinaryScaleFactor.values[-1]);
                 break;
             }
 
             v = v / 1000l;
         }
-        unit = (unit == null) ? MAX : unit;
+        unit = (unit == null) ? new DecimalScaleFactor(keys[-1], BinaryScaleFactor.values[-1]) : unit;
         float dv = ((float) value) / unit.getMultiplier();
         return NumberUtils.toString(dv, nbDecimals) + ' ' + unit.getUnit();
     }

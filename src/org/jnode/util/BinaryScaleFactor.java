@@ -21,7 +21,7 @@
 package org.jnode.util;
 
 public class BinaryScaleFactor implements ScaleFactor {
-    static String[] values = {
+    public static String[] values = {
         "",
         "K",
         "M",
@@ -30,7 +30,7 @@ public class BinaryScaleFactor implements ScaleFactor {
         //new BinaryScaleFactor(1024l * 1024l * 1024l * 1024l * 1024l, "P"),
         //new BinaryScaleFactor(1024l * 1024l * 1024l * 1024l * 1024l * 1024l, "E")
     };
-    static int[] keys = {1, 1024, 1024 * 1024, 1024 * 1024 * 1024};
+    public static int[] keys = {1, 1024, 1024 * 1024, 1024 * 1024 * 1024};
     //these units have too big multipliers to fit in a long
     // (aka they are greater than 2^64) :
     //Z(1024l*1024l*1024l*1024l*1024l*1024l*1024l, "Z"),

@@ -24,7 +24,7 @@ package org.jnode.util;
  * @deprecated use DecimalPrefix or BinaryPrefix instead.
  */
 public class SizeUnit {
-    static SizeUnit[] values = {
+    /*static SizeUnit[] values = {
         new SizeUnit(1, "B"),
         new SizeUnit(1024, "K"),
         new SizeUnit(1024 * 1024, "M"),
@@ -32,19 +32,19 @@ public class SizeUnit {
         //new SizeUnit(1024l * 1024l * 1024l * 1024l, "T"),
         //new SizeUnit(1024l * 1024l * 1024l * 1024l * 1024l, "P"),
         //new SizeUnit(1024l * 1024l * 1024l * 1024l * 1024l * 1024l, "E")
-    };
+    };*/
     //these units have too big multipliers to fit in a long
     // (aka they are greater than 2^64) :
     //Z(1024l*1024l*1024l*1024l*1024l*1024l*1024l, "Z"),
     //Y(1024l*1024l*1024l*1024l*1024l*1024l*1024l*1024l, "Y");
 
-    public static final SizeUnit MIN = values[0];
-    public static final SizeUnit MAX = values[-1];
+    //public static final SizeUnit MIN = values[0];
+    //public static final SizeUnit MAX = values[-1];
 
     private final int multiplier;
     private final String unit;
 
-    private SizeUnit(int multiplier, String unit) {
+    public SizeUnit(int multiplier, String unit) {
         this.multiplier = multiplier;
         this.unit = unit;
     }
