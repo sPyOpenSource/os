@@ -36,8 +36,8 @@ public class BinaryScaleFactor implements ScaleFactor {
     //Z(1024l*1024l*1024l*1024l*1024l*1024l*1024l, "Z"),
     //Y(1024l*1024l*1024l*1024l*1024l*1024l*1024l*1024l, "Y");
 
-    public static final BinaryScaleFactor MIN = new BinaryScaleFactor(keys[0], values[0]);
-    public static final BinaryScaleFactor MAX = new BinaryScaleFactor(keys[-1], values[-1]);
+    //public static final BinaryScaleFactor MIN = new BinaryScaleFactor(keys[0], values[0]);
+    //public static final BinaryScaleFactor MAX = new BinaryScaleFactor(keys[-1], values[-1]);
 
     private final int multiplier;
     private final String unit;
@@ -80,7 +80,7 @@ public class BinaryScaleFactor implements ScaleFactor {
 
             v = v >>> 10;
         }
-        unit = (unit == null) ? MAX : unit;
+        unit = (unit == null) ? new BinaryScaleFactor(keys[-1], values[-1]) : unit;
         float dv = ((float) value) / unit.getMultiplier();
         return NumberUtils.toString(dv, nbDecimals) + ' ' + unit.getUnit();
     }
