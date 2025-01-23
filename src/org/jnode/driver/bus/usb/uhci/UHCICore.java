@@ -110,7 +110,9 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants, FirstLevel
             final int irqNr = device.getInterruptLine() & 0xF;
             // Workaround for some VIA chips
             device.setInterruptLine((byte)irqNr);
-            //this.irq = rm.claimIRQ(device, irqNr, this, true);
+            this.irq = (IRQ)InitialNaming.getInitialNaming().lookup("IRQ");
+            this.irq.installFirstLevelHandler(irqNr, this);
+            this.irq.enableIRQ(irqNr);
             System.out.println("Using IRQ " + irqNr);
 
             // Reset the HC

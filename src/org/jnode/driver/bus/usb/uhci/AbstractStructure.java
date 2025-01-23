@@ -46,16 +46,15 @@ public abstract class AbstractStructure {
      */
     protected AbstractStructure(MemoryManager rm, int size, int alignment) {
         this.data = new byte[size];
-        //System.out.println("aa");
         rm = (MemoryManager)InitialNaming.getInitialNaming().lookup("MemoryManager");
         this.dataRes = rm.allocAligned(size, alignment);
-        //Address ptr = dataRes.getAddress();
+        int ptr = dataRes.getStartAddress();
         int offset = 0;
-        /*while (((offset + ptr.toInt()) & (alignment - 1)) != 0) {
+        while (((offset + ptr) & (alignment - 1)) != 0) {
             offset++;
-        }*/
+        }
         this.offset = offset;
-        this.descrAddr = 0;//dataRes.getAddress().toInt() + offset;
+        this.descrAddr = dataRes.getStartAddress() + offset;
     }
 
     /**
