@@ -78,7 +78,7 @@ public class FrameList extends AbstractStructure {
      * @param frame The framenumber 0..1023
      */
     public final void setListPointerInvalid(int frame) {
-        setInt(frame << 2, 0);
+        setInt(frame, 0);
         this.list[frame] = null;
     }
 
