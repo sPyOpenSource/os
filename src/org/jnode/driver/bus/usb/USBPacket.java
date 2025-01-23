@@ -168,6 +168,7 @@ public class USBPacket implements USBConstants {
      *
      * @see java.lang.Object#toString()
      */
+    @Override
     public String toString() {
         return NumberUtils.hex(data, offset, size);
     }

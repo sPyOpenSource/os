@@ -4,8 +4,11 @@ import jx.zero.Naming;
 import jx.zero.Ports;
 import jx.zero.Debug;
 import java.util.Vector;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import jx.zero.Service;
 import jx.zero.InitialNaming;
+import org.jnode.driver.bus.usb.uhci.UHCICore;
 
 /*
  * This class is *not* a PCIDevice, because it implements only the
@@ -144,6 +147,13 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
       Debug.out.println("Devices:");
       for(int i = 0; i < devices.size(); ++i){
 	PCIDevice dev = (PCIDevice)devices.elementAt(i);
+        if(PCICodes.lookupClass(dev.getClassCode()).startsWith("USB")){
+            try {
+                new UHCICore(dev);
+            } catch (Exception ex) {
+                //Logger.getLogger(PCIGod.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
 	int irq = dev.getInterruptLine();
 	Debug.out.println(dev.getAddress().toString() + ": " +
 			   " (INT " + irq + ")" +

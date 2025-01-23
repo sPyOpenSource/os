@@ -133,6 +133,7 @@ public final class EndPointDescriptor extends AbstractDescriptor {
      *
      * @see java.lang.Object#toString()
      */
+    @Override
     public final String toString() {
         return "EP[epnum:" + getEndPointNumber() +
             ", dir:" + (isDirIn() ? "IN" : "OUT") +

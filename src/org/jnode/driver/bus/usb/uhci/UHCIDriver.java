@@ -20,6 +20,8 @@
  
 package org.jnode.driver.bus.usb.uhci;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import jx.devices.pci.PCIDevice;
 //import org.jnode.driver.DriverException;
 import org.jnode.driver.bus.usb.AbstractHostControllerDriver;
@@ -41,12 +43,18 @@ public class UHCIDriver extends AbstractHostControllerDriver {
     /**
      * Initialize this instance
      */
-    public UHCIDriver() {
+    public UHCIDriver(PCIDevice device) {
+        try {
+            core = new UHCICore(device);
+        } catch (Exception ex) {
+            //Logger.getLogger(UHCIDriver.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     /**
      * @see org.jnode.driver.bus.usb.AbstractHostControllerDriver#claimResources()
      */
+    @Override
     protected void claimResources() throws Exception {
         /*try {
             core = new UHCICore((PCIDevice) getDevice());
@@ -67,6 +75,7 @@ public class UHCIDriver extends AbstractHostControllerDriver {
     /**
      * Gets the API implementation.
      */
+    @Override
     protected USBHostControllerAPI getAPIImplementation() {
         return core;
     }
@@ -74,6 +83,7 @@ public class UHCIDriver extends AbstractHostControllerDriver {
     /**
      * Gets the prefix for the device name
      */
+    @Override
     protected String getDevicePrefix() {
         return "usb-uhci";
     }

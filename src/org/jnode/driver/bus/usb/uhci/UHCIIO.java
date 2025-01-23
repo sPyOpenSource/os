@@ -20,6 +20,7 @@
  
 package org.jnode.driver.bus.usb.uhci;
 
+import jx.zero.InitialNaming;
 import jx.zero.Ports;
 
 /**
@@ -35,8 +36,8 @@ public class UHCIIO implements UHCIConstants {
      *
      * @param io
      */
-    public UHCIIO(Ports io) {
-        this.io = io;
+    public UHCIIO() {
+        this.io = (Ports)InitialNaming.getInitialNaming().lookup("Ports");
         this.base = 0;//io.getStartPort();
     }
 
