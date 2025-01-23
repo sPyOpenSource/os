@@ -21,21 +21,23 @@
 package org.jnode.util;
 
 
-public enum DecimalScaleFactor implements ScaleFactor {
-    B(1l, ""),
-    K(1000l, "k"),
-    M(1000l * 1000l, "M"),
-    G(1000l * 1000l * 1000l, "G"),
-    T(1000l * 1000l * 1000l * 1000l, "T"),
-    P(1000l * 1000l * 1000l * 1000l * 1000l, "P"),
-    E(1000l * 1000l * 1000l * 1000l * 1000l * 1000l, "E");
+public class DecimalScaleFactor implements ScaleFactor {
+    static DecimalScaleFactor[] values = {
+        new DecimalScaleFactor(1l, ""),
+        new DecimalScaleFactor(1000l, "k"),
+        new DecimalScaleFactor(1000l * 1000l, "M"),
+        new DecimalScaleFactor(1000l * 1000l * 1000l, "G"),
+        new DecimalScaleFactor(1000l * 1000l * 1000l * 1000l, "T"),
+        new DecimalScaleFactor(1000l * 1000l * 1000l * 1000l * 1000l, "P"),
+        new DecimalScaleFactor(1000l * 1000l * 1000l * 1000l * 1000l * 1000l, "E")
+    };
     //these units have too big multipliers to fit in a long
     // (aka they are greater than 2^64) :
     //Z(1000l*1000l*1000l*1000l*1000l*1000l*1000l, "Z"),
     //Y(1000l*1000l*1000l*1000l*1000l*1000l*1000l*1000l, "Y");
 
-    public static final DecimalScaleFactor MIN = B;
-    public static final DecimalScaleFactor MAX = E;
+    public static final DecimalScaleFactor MIN = values[0];
+    public static final DecimalScaleFactor MAX = values[-1];
 
     private final long multiplier;
     private final String unit;
@@ -70,7 +72,7 @@ public enum DecimalScaleFactor implements ScaleFactor {
     public static String apply(final long value, final int nbDecimals) {
         long v = value;
         DecimalScaleFactor unit = null;
-        for (DecimalScaleFactor u : values()) {
+        for (DecimalScaleFactor u : values) {
             if ((v < 1000l) && (v >= 0l)) {
                 unit = u;
                 break;
