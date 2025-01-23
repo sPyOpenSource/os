@@ -98,8 +98,8 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants {
             this.io = new UHCIIO();
             this.bus = new USBBus(device, this);
             this.rootHub = new UHCIRootHub(io, bus);
-            final Schedule schedule = new Schedule(rm);
-            this.pipeMgr = new UHCIPipeManager(rm, schedule);
+            //final Schedule schedule = new Schedule(rm);
+            this.pipeMgr = null;//new UHCIPipeManager(rm, schedule);
 
             final int irqNr = device.getInterruptLine() & 0xF;
             // Workaround for some VIA chips
@@ -113,7 +113,7 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants {
             // Set the enabled interrupts
             io.setInterruptEnable(0x000F);
             // Set the framelist pointer
-            io.setFrameListBaseAddress(schedule.getFrameList().getDescriptorAddress());
+            //io.setFrameListBaseAddress(schedule.getFrameList().getDescriptorAddress());
             // Go!
             setRun(true);
     }
