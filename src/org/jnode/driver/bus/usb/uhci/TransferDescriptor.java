@@ -101,17 +101,17 @@ public final class TransferDescriptor extends AbstractTreeStructure implements U
             ctrl |= TD_CTRL_LS;
         }
         this.origCtrl = ctrl;
-        setInt(4, ctrl); //
+        setInt(1, ctrl); //
         // Set Token
         int token = packetId & 0xFF;
         token |= (deviceAddress & 0x7F) << 8;
         token |= (endPt & 0xF) << 15;
         token |= (data0 ? 0 : 1) << 19;
         token |= (maxLen << 21);
-        setInt(8, token);
+        setInt(2, token);
         // Set Buffer pointer
         if (dataBuffer == null) {
-            setInt(12, 0);
+            setInt(3, 0);
         } else {
             //setInt(12, dataBufferOffset + rm.asMemoryResource(dataBuffer).getAddress().toInt());
         }
