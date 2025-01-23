@@ -103,7 +103,7 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants {
             this.bus = new USBBus(device, this);
             this.rootHub = new UHCIRootHub(io, bus);
             final Schedule schedule = new Schedule(rm);
-            this.pipeMgr = null;//new UHCIPipeManager(rm, schedule);
+            this.pipeMgr = new UHCIPipeManager(rm, schedule);
 
             final int irqNr = device.getInterruptLine() & 0xF;
             // Workaround for some VIA chips
