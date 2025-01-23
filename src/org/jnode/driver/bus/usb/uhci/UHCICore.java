@@ -93,7 +93,7 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants {
             this.rm = (MemoryManager)InitialNaming.getInitialNaming().lookup("MemoryManager");
             //final int ioBase = baseAddr.getIOBase();
             //final int ioSize = baseAddr.getSize();
-            //log.info("Found UHCI at 0x" + NumberUtils.hex(ioBase));
+            System.out.println("Found UHCI at 0x" + NumberUtils.hex(baseAddr.getDevice()));
 
             this.io = new UHCIIO();
             this.bus = new USBBus(device, this);
