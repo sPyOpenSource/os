@@ -20,6 +20,7 @@
  
 package org.jnode.driver.bus.usb.uhci;
 
+import AI.util.AIQueue;
 import java.util.ArrayList;
 import java.util.Queue;
 import jx.zero.MemoryManager;
@@ -115,7 +116,7 @@ public class UHCIPipe implements USBPipe, USBConstants {
         this.endPointNum = (endPoint != null) ? endPoint.getDescriptor().getEndPointNumber() : 0;
         this.qh = new QueueHead(rm);
         this.skelQH = skelQH;
-        this.queue = null;//new Queue<USBRequest>();
+        this.queue = new AIQueue<>();
         this.maxPktSize = (endPoint != null) ? endPoint.getDescriptor().getMaxPacketSize() : -1;
     }
 
@@ -263,7 +264,7 @@ public class UHCIPipe implements USBPipe, USBConstants {
                 }
             }
             if ((!queue.isEmpty()) && qh.isEmpty()) {
-                final UHCIRequest nextReq = (UHCIRequest) queue.peek();
+                final UHCIRequest nextReq = (UHCIRequest) queue.poll();
                 try {
                     activateRequest(nextReq);
                 } catch (USBException ex) {

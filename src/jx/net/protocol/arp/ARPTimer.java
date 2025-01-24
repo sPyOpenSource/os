@@ -1,6 +1,5 @@
 package jx.net.protocol.arp;
 
-import jx.zero.*;
 import jx.timer.*;
 
 /**
@@ -15,8 +14,8 @@ class ARPTimer implements TimerHandler {
 	this.timerManager = timerManager;
     }
     
+    @Override
     public void timer(Object arg) {
-	
 	ARP arp = ((ARPTimerArg)arg).handle();
     
 	arp.clearCache();
@@ -24,9 +23,9 @@ class ARPTimer implements TimerHandler {
 	timerManager.addMillisTimer(900000,  new ARPTimer(timerManager), arg);
     }
     
+    @Override
     public boolean equals(Object obj) {
 	return (obj instanceof ARPTimer);
     }
     
 }
-
