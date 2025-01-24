@@ -121,7 +121,7 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants, FirstLevel
         }
         // Reset the HC
         resetHC();
-
+System.out.println("reset");
         // Set the enabled interrupts
         io.setInterruptEnable(0x000F);
         // Set the framelist pointer
