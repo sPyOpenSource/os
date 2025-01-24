@@ -69,7 +69,7 @@ public class USBDevice implements Device, USBConstants {
      * The default control pipe
      */
     private final USBControlPipe defaultControlPipe;
-
+private final USBBus bus;
     /**
      * Initialize this device. The USB device id is not set yet. The speed is set to the given
      * parameter.
@@ -79,6 +79,7 @@ public class USBDevice implements Device, USBConstants {
      */
     public USBDevice(USBBus bus, int speed) {
         //super(bus, "usb" + usbIdCounter++);
+        this.bus = bus;
         this.devId = 0;
         if ((speed < USB_SPEED_LOW) || (speed > USB_SPEED_HIGH)) {
             throw new IllegalArgumentException("Invalid speed value");
@@ -99,7 +100,7 @@ public class USBDevice implements Device, USBConstants {
      * Gets the USB bus i'm connected to.
      */
     public final USBBus getUSBBus() {
-        return null;//(USBBus) getBus();
+        return bus;
     }
 
     /**

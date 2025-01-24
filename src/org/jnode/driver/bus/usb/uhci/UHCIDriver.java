@@ -26,6 +26,7 @@ import jx.devices.pci.PCIDevice;
 //import org.jnode.driver.DriverException;
 import org.jnode.driver.bus.usb.AbstractHostControllerDriver;
 import org.jnode.driver.bus.usb.USBHostControllerAPI;
+import org.jnode.driver.bus.usb.USBHubMonitor;
 //import org.jnode.system.resource.ResourceNotFreeException;
 
 /**
@@ -46,6 +47,7 @@ public class UHCIDriver extends AbstractHostControllerDriver {
     public UHCIDriver(PCIDevice device) {
         try {
             core = new UHCICore(device);
+            new USBHubMonitor(device, core.getRootHUB()).startMonitor();
         } catch (Exception ex) {
             //Logger.getLogger(UHCIDriver.class.getName()).log(Level.SEVERE, null, ex);
         }

@@ -54,6 +54,7 @@ public class UHCIRootHub implements USBHubAPI, UHCIConstants {
     /**
      * Gets the bus to which this HUB is connected.
      */
+    @Override
     public USBBus getUSBBus() {
         return bus;
     }
@@ -63,6 +64,7 @@ public class UHCIRootHub implements USBHubAPI, UHCIConstants {
      *
      * @param port
      */
+    @Override
     public USBDevice getDevice(int port) {
         return devices[port];
     }
