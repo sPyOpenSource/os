@@ -2,13 +2,11 @@ package jx.devices.pci;
 
 import jx.zero.Naming;
 import jx.zero.Ports;
-import jx.zero.Debug;
 import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import jx.zero.Service;
 import jx.zero.InitialNaming;
-import org.jnode.driver.bus.usb.uhci.UHCICore;
 
 /*
  * This class is *not* a PCIDevice, because it implements only the

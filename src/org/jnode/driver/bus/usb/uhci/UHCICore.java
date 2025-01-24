@@ -20,6 +20,7 @@
  
 package org.jnode.driver.bus.usb.uhci;
 
+import AI.AIZeroLogic;
 import java.security.PrivilegedExceptionAction;
 import javax.naming.NameNotFoundException;
 import jx.devices.pci.PCIAddress;
@@ -111,8 +112,9 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants, FirstLevel
             // Workaround for some VIA chips
             device.setInterruptLine((byte)irqNr);
             this.irq = (IRQ)InitialNaming.getInitialNaming().lookup("IRQ");
-            this.irq.installFirstLevelHandler(irqNr, this);
-            this.irq.enableIRQ(irqNr);
+            //this.irq.installFirstLevelHandler(irqNr, this);
+            //this.irq.enableIRQ(irqNr);
+            AIZeroLogic.createIRQ(irqNr, this);
             System.out.println("Using IRQ " + irqNr);
 
             // Reset the HC
