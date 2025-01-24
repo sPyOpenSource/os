@@ -36,9 +36,9 @@ public class UHCIIO implements UHCIConstants {
      *
      * @param io
      */
-    public UHCIIO() {
+    public UHCIIO(int base) {
         this.io = (Ports)InitialNaming.getInitialNaming().lookup("Ports");
-        this.base = 0;//io.getStartPort();
+        this.base = base;
     }
 
     /**

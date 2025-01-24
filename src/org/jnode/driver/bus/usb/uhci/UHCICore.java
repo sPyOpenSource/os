@@ -103,7 +103,7 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants, FirstLevel
         //final int ioSize = baseAddr.getSize();
         System.out.println("Found UHCI at 0x" + NumberUtils.hex(baseAddr.getDevice()));
 
-        this.io = new UHCIIO();
+        this.io = new UHCIIO(ioBase);
         this.bus = new USBBus(device, this);
         this.rootHub = new UHCIRootHub(io, bus);
         final Schedule schedule = new Schedule(rm);

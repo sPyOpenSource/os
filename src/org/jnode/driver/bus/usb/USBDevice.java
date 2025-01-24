@@ -114,6 +114,7 @@ public class USBDevice implements Device, USBConstants {
      *
      * @see java.lang.Object#finalize()
      */
+    @Override
     public void finalize() {
         getUSBBus().freeDeviceID(devId);
     }
@@ -400,6 +401,11 @@ public class USBDevice implements Device, USBConstants {
     @Override
     public void close() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public int getId() {
+        return devId;
     }
 
 }

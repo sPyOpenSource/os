@@ -4168,4 +4168,9 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	//Debug.out.println("Re-Enable all NIC interrupts");
         befehl.NicUnmaskAllInterrupt(Adapter);
     }
+
+    @Override
+    public int getId() {
+        throw new java.lang.UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
