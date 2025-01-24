@@ -29,7 +29,7 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
         Naming naming = InitialNaming.getInitialNaming();
  	//naming = new InitNaming(naming);
 
-        Debug.out.println("Domain PCI speaking.");
+        System.out.println("Domain PCI speaking.");
       
         // init PCI bus
         PCIGod instance = new PCIGod(naming);
@@ -41,7 +41,7 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
         // register as DEP
         
         InitialNaming.getInitialNaming().registerPortal(depHandle, "PCIAccess");
-        Debug.out.println("PCIAccess registered");
+        System.out.println("PCIAccess registered");
     }
    
     public PCIGod(Naming naming){
@@ -69,7 +69,7 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
       if ((old & CONFIG_ENABLE_MASK) != 0) 
 	return false;
       
-      Debug.out.println("Success reading PCI configuration port");
+      System.out.println("Success reading PCI configuration port");
       
       ports.outl_p(CONFIG_ADDRESS, ECD_MASK);
       ports.outb_p(CONFIG_ADDRESS + 3, (byte)0);
@@ -77,9 +77,9 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
       ports.outl_p(CONFIG_ADDRESS, old);
       
       if (mode1res != 0) {
-	 Debug.out.println("now checking pci bus");
+	 System.out.println("now checking pci bus");
 	 if (lookForDevices()) return true;
-	 Debug.out.println("found no devices on this pci bus");
+	 System.out.println("found no devices on this pci bus");
       }
       
       ports.outl_p(CONFIG_ADDRESS, CONF1_ENABLE_CHK1);
@@ -87,7 +87,7 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
       ports.outl_p(CONFIG_ADDRESS, old);
       
       if ((mode1res & CONF1_ENABLE_MSK1) == CONF1_ENABLE_RES1) {
-	 Debug.out.println("now checking pci bus #2");
+	 System.out.println("now checking pci bus #2");
 	 if (lookForDevices()) return true;
       }
       
@@ -133,7 +133,7 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
 	       
 	       // if PCI-PCI bridge, increment bus count 
 	       if ((classCode & ~CLASSCODE_PIF_MASK) == CLASSCODE_PCI_BRIDGE ){
-		  Debug.out.println("PCI bridge found: bus=" + bus + ", device=" + device + ", function=" + function);
+		  System.out.println("PCI bridge found: bus=" + bus + ", device=" + device + ", function=" + function);
 		  ++num_bus;
 	       }
 	       devices.addElement(pcidev);
@@ -144,7 +144,7 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
    
     @Override
     public void dumpDevices() {
-      Debug.out.println("Devices:");
+      System.out.println("Devices:");
       for(int i = 0; i < devices.size(); ++i){
 	PCIDevice dev = (PCIDevice)devices.elementAt(i);
         /*if(PCICodes.lookupClass(dev.getClassCode()).startsWith("USB")){
@@ -152,10 +152,10 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
                 new UHCICore(dev);
         }*/
 	int irq = dev.getInterruptLine();
-	Debug.out.println(dev.getAddress().toString() + ": " +
+	System.out.println(dev.getAddress().toString() + ": " +
 			   " (INT " + irq + ")" +
 			   " Class: " + PCICodes.lookupClass(dev.getClassCode()));
-	Debug.out.println("               " + PCICodes.lookup(dev.readConfig(REG_DEVVEND)));
+	System.out.println("               " + PCICodes.lookup(dev.readConfig(REG_DEVVEND)));
       }
     } 
    
@@ -169,7 +169,7 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
     private static int createAddress(int bus, int device, int function, int register) {
       //Debug.assert(device < MAX_PCI_AGENTS, "device number out of range");
       if(device >= MAX_PCI_AGENTS){
-          Debug.out.println("device number out of range");
+          System.out.println("device number out of range");
       }
       return ECD_MASK |
 	((bus      << BUS_OFFSET_BIT) & BUS_MASK) |
