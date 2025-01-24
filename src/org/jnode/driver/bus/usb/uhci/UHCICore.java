@@ -128,6 +128,7 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants, FirstLevel
         io.setFrameListBaseAddress(schedule.getFrameList().getDescriptorAddress());
         // Go!
         setRun(true);
+        System.out.println("OK");
     }
 
     /**
