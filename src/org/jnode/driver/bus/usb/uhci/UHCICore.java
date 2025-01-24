@@ -98,36 +98,36 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants, FirstLevel
         this.device = device;
         sleepManager = new jx.timerpc.SleepManagerImpl();
         final PCIAddress baseAddr = device.getAddress();
-            this.rm = (MemoryManager)InitialNaming.getInitialNaming().lookup("MemoryManager");
-            final int ioBase = device.getBaseAddress(0) - 1;
-            //final int ioSize = baseAddr.getSize();
-            System.out.println("Found UHCI at 0x" + NumberUtils.hex(baseAddr.getDevice()));
+        this.rm = (MemoryManager)InitialNaming.getInitialNaming().lookup("MemoryManager");
+        final int ioBase = device.getBaseAddress(0) - 1;
+        //final int ioSize = baseAddr.getSize();
+        System.out.println("Found UHCI at 0x" + NumberUtils.hex(baseAddr.getDevice()));
 
-            this.io = new UHCIIO();
-            this.bus = new USBBus(device, this);
-            this.rootHub = new UHCIRootHub(io, bus);
-            final Schedule schedule = new Schedule(rm);
-            this.pipeMgr = new UHCIPipeManager(rm, schedule);
+        this.io = new UHCIIO();
+        this.bus = new USBBus(device, this);
+        this.rootHub = new UHCIRootHub(io, bus);
+        final Schedule schedule = new Schedule(rm);
+        this.pipeMgr = new UHCIPipeManager(rm, schedule);
 
-            final int irqNr = device.getInterruptLine() & 0xF;
-            // Workaround for some VIA chips
-            device.setInterruptLine((byte)irqNr);
-            this.irq = (IRQ)InitialNaming.getInitialNaming().lookup("IRQ");
-            AIZeroLogic.createIRQ(irqNr, this);
-            //if(!IRQHandler.isEnable(irqNr)){
-                this.irq.installFirstLevelHandler(irqNr, new IRQHandler(irqNr));
-                this.irq.enableIRQ(irqNr);
-                System.out.println("Using IRQ " + irqNr);
-            //}
-            // Reset the HC
-            resetHC();
+        final int irqNr = device.getInterruptLine() & 0xF;
+        // Workaround for some VIA chips
+        device.setInterruptLine((byte)irqNr);
+        this.irq = (IRQ)InitialNaming.getInitialNaming().lookup("IRQ");
+        AIZeroLogic.createIRQ(irqNr, this);
+        if(IRQHandler.OK(irqNr)){
+            this.irq.installFirstLevelHandler(irqNr, new IRQHandler(irqNr));
+            this.irq.enableIRQ(irqNr);
+            System.out.println("Using IRQ " + irqNr);
+        }
+        // Reset the HC
+        resetHC();
 
-            // Set the enabled interrupts
-            io.setInterruptEnable(0x000F);
-            // Set the framelist pointer
-            io.setFrameListBaseAddress(schedule.getFrameList().getDescriptorAddress());
-            // Go!
-            setRun(true);
+        // Set the enabled interrupts
+        io.setInterruptEnable(0x000F);
+        // Set the framelist pointer
+        io.setFrameListBaseAddress(schedule.getFrameList().getDescriptorAddress());
+        // Go!
+        setRun(true);
     }
 
     /**
