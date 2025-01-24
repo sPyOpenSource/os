@@ -114,7 +114,7 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants, FirstLevel
         device.setInterruptLine((byte)irqNr);
         this.irq = (IRQ)InitialNaming.getInitialNaming().lookup("IRQ");
         AIZeroLogic.createIRQ(irqNr, this);
-        if(IRQHandler.OK(irqNr)){
+        if(IRQHandler.first(irqNr)){
             this.irq.installFirstLevelHandler(irqNr, new IRQHandler(irqNr));
             this.irq.enableIRQ(irqNr);
             System.out.println("Using IRQ " + irqNr);
