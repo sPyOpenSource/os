@@ -131,7 +131,7 @@ public class USBHubMonitor implements USBConstants {
      * @param port
      */
     protected void portConnectionStatusChanged(int port) throws USBException {
-        //log.debug("USB hub connection status changed for port " + port);
+        System.out.println("USB hub connection status changed for port " + port);
 
         if (hub.isPortConnected(port)) {
             //log.debug("Port " + port + " is connected");
@@ -155,7 +155,7 @@ public class USBHubMonitor implements USBConstants {
             }
 
             // Create the new device
-            //log.debug("Creating USBDevice");
+            System.out.println("Creating USBDevice");
             final USBDevice dev = new USBDevice(hub.getUSBBus(), speed);
             dev.getDefaultControlPipe().open();
 
