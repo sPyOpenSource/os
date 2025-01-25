@@ -230,7 +230,7 @@ public class USBHubMonitor implements USBConstants {
             }
             hub.setPortEnabled(port, false);
         }
-
+System.out.println("here");
         // Clear the connection status
         hub.clearPortConnectionStatusChanged(port);
     }
