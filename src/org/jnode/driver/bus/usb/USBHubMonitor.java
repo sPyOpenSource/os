@@ -294,12 +294,12 @@ SleepManager sleepManager;
      *
      * @param ms
      */
-    private void sleep(long ms) {
-        try {
-            Thread.sleep(ms);
-        } catch (InterruptedException ex) {
+    private void sleep(int ms) {
+        //try {
+            sleepManager.mdelay(ms);
+        //} catch (InterruptedException ex) {
             // Ignore
-        }
+        //}
     }
 
     /**
