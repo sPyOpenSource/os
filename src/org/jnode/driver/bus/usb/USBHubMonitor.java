@@ -305,7 +305,7 @@ public class USBHubMonitor implements USBConstants {
      */
     public void startMonitor() {
         if (thread == null) {
-            thread = new USBHubMonitorThread("HubMonitor-" + hubDevice.getId());
+            thread = new USBHubMonitorThread("HubMonitor-"/* + hubDevice.getId()*/);
             thread.start();
         }
     }
