@@ -87,7 +87,7 @@ public class USBHubDriver implements USBHubAPI, USBHubConstants {
             powerOn();
 
             // Create the monitor
-            monitor = new USBHubMonitor(dev, this);
+            monitor = new USBHubMonitor(dev, this, null);
             monitor.startMonitor();
         } catch (USBException ex) {
             throw new Exception(ex);

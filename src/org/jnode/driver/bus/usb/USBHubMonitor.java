@@ -21,6 +21,7 @@
 package org.jnode.driver.bus.usb;
 
 import jx.devices.Device;
+import jx.zero.timer.SleepManager;
 //import org.jnode.driver.DeviceAlreadyRegisteredException;
 //import org.jnode.driver.DeviceManager;
 //import org.jnode.driver.DriverException;
@@ -88,13 +89,14 @@ public class USBHubMonitor implements USBConstants {
      * The monitor thread (if started)
      */
     private USBHubMonitorThread thread;
-
+SleepManager sleepManager;
     /**
      * Initialize a new instance.
      *
      * @param hub
      */
-    public USBHubMonitor(Device hubDevice, USBHubAPI hub) {
+    public USBHubMonitor(Device hubDevice, USBHubAPI hub, SleepManager sleepManager) {
+        this.sleepManager = sleepManager;
         this.hubDevice = hubDevice;
         this.hub = hub;
         //this.dm = hubDevice.getManager();
@@ -349,11 +351,11 @@ public class USBHubMonitor implements USBConstants {
             boolean first = true;
             while (!stop) {
                 try {
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException ex) {
-                        stop = true;
-                    }
+                    //try {
+                        sleepManager.mdelay(1000);
+                    //} catch (InterruptedException ex) {
+                      //  stop = true;
+                    //}
                     checkStatus(first);
                 } catch (Exception ex) {
                     //log.error("Error in USBHubMonitor", ex);

@@ -94,9 +94,9 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants, FirstLevel
      *
      * @param device
      */
-    public UHCICore(PCIDevice device) {
+    public UHCICore(PCIDevice device, SleepManager sleepManager) {
         this.device = device;
-        sleepManager = new jx.timerpc.SleepManagerImpl();
+        this.sleepManager = sleepManager;
         final PCIAddress baseAddr = device.getAddress();
         this.rm = (MemoryManager)InitialNaming.getInitialNaming().lookup("MemoryManager");
         final int ioBase = device.getBaseAddress(0) - 1;

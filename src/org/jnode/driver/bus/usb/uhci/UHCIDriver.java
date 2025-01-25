@@ -23,6 +23,7 @@ package org.jnode.driver.bus.usb.uhci;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import jx.devices.pci.PCIDevice;
+import jx.zero.timer.SleepManager;
 //import org.jnode.driver.DriverException;
 import org.jnode.driver.bus.usb.AbstractHostControllerDriver;
 import org.jnode.driver.bus.usb.USBHostControllerAPI;
@@ -46,8 +47,9 @@ public class UHCIDriver extends AbstractHostControllerDriver {
      */
     public UHCIDriver(PCIDevice device) {
         try {
-            core = new UHCICore(device);
-            new USBHubMonitor(device, core.getRootHUB()).startMonitor();
+            SleepManager sleepManager = new jx.timerpc.SleepManagerImpl();
+            core = new UHCICore(device, sleepManager);
+            new USBHubMonitor(device, core.getRootHUB(), sleepManager).startMonitor();
         } catch (Exception ex) {
             //Logger.getLogger(UHCIDriver.class.getName()).log(Level.SEVERE, null, ex);
         }
