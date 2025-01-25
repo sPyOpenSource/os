@@ -45,9 +45,8 @@ public class UHCIDriver extends AbstractHostControllerDriver {
     /**
      * Initialize this instance
      */
-    public UHCIDriver(PCIDevice device) {
+    public UHCIDriver(PCIDevice device, SleepManager sleepManager) {
         try {
-            SleepManager sleepManager = new jx.timerpc.SleepManagerImpl();
             core = new UHCICore(device, sleepManager);
             new USBHubMonitor(device, core.getRootHUB(), sleepManager).startMonitor();
         } catch (Exception ex) {
