@@ -20,6 +20,7 @@
  
 package org.jnode.driver.bus.usb.uhci;
 
+import jx.zero.timer.SleepManager;
 import org.jnode.driver.bus.usb.USBBus;
 import org.jnode.driver.bus.usb.USBDevice;
 import org.jnode.driver.bus.usb.USBHubAPI;
@@ -32,13 +33,15 @@ public class UHCIRootHub implements USBHubAPI, UHCIConstants {
     private final UHCIIO io;
     private final USBBus bus;
     private final USBDevice[] devices;
+    SleepManager sleepManager;
 
     /**
      * Initialize this instance.
      *
      * @param io
      */
-    public UHCIRootHub(UHCIIO io, USBBus bus) {
+    public UHCIRootHub(UHCIIO io, USBBus bus, SleepManager sleepManager) {
+        this.sleepManager = sleepManager;
         this.io = io;
         this.bus = bus;
         this.devices = new USBDevice[getNumPorts()];
@@ -121,19 +124,19 @@ public class UHCIRootHub implements USBHubAPI, UHCIConstants {
      * Reset a given port
      */
     public void resetPort(int port) {
-        try {
+        //try {
             testPort(port);
             io.setPortSCBits(port, USBPORTSC_PR, true);
-            Thread.sleep(100);
+            sleepManager.mdelay(100);
             io.setPortSCBits(port, USBPORTSC_PR, false);
-            Thread.sleep(1);
+            sleepManager.mdelay(1);
             io.setPortSCBits(port, USBPORTSC_PE, true);
-            Thread.sleep(10);
+            sleepManager.mdelay(10);
             io.setPortSCBits(port, 0xA, true);
-            Thread.sleep(200);
-        } catch (InterruptedException ex) {
+            sleepManager.mdelay(200);
+        //} catch (InterruptedException ex) {
             // Ignore
-        }
+        //}
     }
 
     /**

@@ -89,7 +89,8 @@ public class USBHubMonitor implements USBConstants {
      * The monitor thread (if started)
      */
     private USBHubMonitorThread thread;
-SleepManager sleepManager;
+    SleepManager sleepManager;
+    
     /**
      * Initialize a new instance.
      *

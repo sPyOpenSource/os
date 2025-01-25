@@ -105,7 +105,7 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants, FirstLevel
 
         this.io = new UHCIIO(ioBase);
         this.bus = new USBBus(device, this);
-        this.rootHub = new UHCIRootHub(io, bus);
+        this.rootHub = new UHCIRootHub(io, bus, sleepManager);
         final Schedule schedule = new Schedule(rm);
         this.pipeMgr = new UHCIPipeManager(rm, schedule);
 
