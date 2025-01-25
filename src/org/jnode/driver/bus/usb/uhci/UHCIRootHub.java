@@ -99,7 +99,7 @@ public class UHCIRootHub implements USBHubAPI, UHCIConstants {
      * Gets the number of downstream ports connected to this HUB.
      */
     public int getNumPorts() {
-        return 2;
+        return 1;
     }
 
     /**
