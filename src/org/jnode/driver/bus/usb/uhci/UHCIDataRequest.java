@@ -44,17 +44,19 @@ public class UHCIDataRequest extends AbstractUSBDataRequest implements UHCIReque
         super(dataPacket);
     }
 
+    @Override
     public void createTDs(UHCIPipe pipe) {
+        System.out.println("i'm here");
         final USBPacket dataPacket = getDataPacket();
         int offset = 0;
         int length = dataPacket.getSize();
         final USBEndPoint ep = pipe.getEndPoint();
+        System.out.println("datapid");
         final int dataPid = (ep.getDescriptor().isDirIn() ? USB_PID_IN : USB_PID_OUT);
         final int maxPacketSize = pipe.getMaxPacketSize();
         TransferDescriptor firstTD = null;
-
+System.out.println("here");
         while (length > 0) {
-
             // Create the TD for this part of the data packet
             final int curlen = Math.min(length, maxPacketSize);
             final TransferDescriptor dataTD;

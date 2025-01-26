@@ -20,6 +20,8 @@
  
 package org.jnode.driver.bus.usb.spi;
 
+import jx.zero.CPUManager;
+import jx.zero.InitialNaming;
 import org.jnode.driver.bus.usb.USBRequest;
 
 /**
@@ -68,7 +70,7 @@ public class AbstractUSBRequest implements USBRequest {
      */
     public synchronized void setCompleted(boolean completed) {
         this.completed = completed;
-        notifyAll();
+        //notifyAll();
     }
 
     /**
@@ -85,11 +87,12 @@ public class AbstractUSBRequest implements USBRequest {
      */
     public synchronized void waitUntilComplete(long timeout) {
         while (!isCompleted()) {
-            try {
-                wait(timeout);
-            } catch (InterruptedException ex) {
+            //try {
+                //wait(timeout);
+                for(int i = 0; i < 1000; i++) ((CPUManager)InitialNaming.getInitialNaming().lookup("CPUManager")).yield();
+            //} catch (InterruptedException ex) {
                 // Ignore
-            }
+            //}
         }
     }
 }

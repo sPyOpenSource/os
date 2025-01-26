@@ -23,6 +23,8 @@ package org.jnode.driver.bus.usb.uhci;
 import AI.util.AIQueue;
 import java.util.ArrayList;
 import java.util.Queue;
+import jx.zero.CPUManager;
+import jx.zero.InitialNaming;
 import jx.zero.MemoryManager;
 
 import org.jnode.driver.bus.usb.USBConstants;
@@ -91,7 +93,7 @@ public class UHCIPipe implements USBPipe, USBConstants {
     /**
      * My listeners
      */
-    private ArrayList<USBPipeListener> listeners = new ArrayList<>();
+    private final ArrayList<USBPipeListener> listeners = new ArrayList<>();
     /**
      * The maximum packet size, or -1 if not set
      */
@@ -124,6 +126,7 @@ public class UHCIPipe implements USBPipe, USBConstants {
     /**
      * Is this a control pipe.
      */
+    @Override
     public final boolean isControlPipe() {
         return (transferType == USB_ENDPOINT_XFER_CONTROL);
     }
@@ -131,6 +134,7 @@ public class UHCIPipe implements USBPipe, USBConstants {
     /**
      * Is this an interrupt pipe.
      */
+    @Override
     public final boolean isInterruptPipe() {
         return (transferType == USB_ENDPOINT_XFER_INT);
     }
@@ -138,6 +142,7 @@ public class UHCIPipe implements USBPipe, USBConstants {
     /**
      * Is this a isochronous pipe.
      */
+    @Override
     public boolean isIsochronousPipe() {
         return (transferType == USB_ENDPOINT_XFER_ISOC);
     }
@@ -145,6 +150,7 @@ public class UHCIPipe implements USBPipe, USBConstants {
     /**
      * Is this a bulk pipe.
      */
+    @Override
     public boolean isBulkPipe() {
         return (transferType == USB_ENDPOINT_XFER_BULK);
     }
@@ -152,6 +158,7 @@ public class UHCIPipe implements USBPipe, USBConstants {
     /**
      * Is this pipe open.
      */
+    @Override
     public final boolean isOpen() {
         return this.open;
     }
@@ -185,6 +192,7 @@ public class UHCIPipe implements USBPipe, USBConstants {
      *
      * @param request
      */
+    @Override
     public synchronized void asyncSubmit(USBRequest request) throws USBException {
         if (!open) {
             throw new USBException("Not open");
@@ -197,9 +205,11 @@ public class UHCIPipe implements USBPipe, USBConstants {
         }
         final UHCIRequest req = (UHCIRequest) request;
         final AbstractUSBRequest usbReq = (AbstractUSBRequest) request;
+        System.out.println("start");
         usbReq.setCompleted(false);
         usbReq.setActualLength(0);
         usbReq.setStatus(0);
+        System.out.println("ready");
         if (qh.isEmpty()) {
             activateRequest(req);
         } else {
@@ -213,8 +223,10 @@ public class UHCIPipe implements USBPipe, USBConstants {
      * @param request
      * @param timeout
      */
+    @Override
     public void syncSubmit(USBRequest request, long timeout) throws USBException {
         asyncSubmit(request);
+        System.out.println("problem");
         request.waitUntilComplete(timeout);
         if (!request.isCompleted()) {
             throw new USBException("Timeout on request");
@@ -230,6 +242,7 @@ public class UHCIPipe implements USBPipe, USBConstants {
      *
      * @param listener
      */
+    @Override
     public synchronized void addListener(USBPipeListener listener) {
         listeners.add(listener);
     }
@@ -239,6 +252,7 @@ public class UHCIPipe implements USBPipe, USBConstants {
      *
      * @param listener
      */
+    @Override
     public synchronized void removeListener(USBPipeListener listener) {
         listeners.remove(listener);
     }
@@ -287,11 +301,11 @@ public class UHCIPipe implements USBPipe, USBConstants {
         throws USBException {
         TransferDescriptor td = req.getFirstTD();
         if (td == null) {
-            //log.debug("create");
+            System.out.println("create");
             // It is a new request, create the TD's
             req.createTDs(this);
         } else {
-            //log.debug("recycle");
+            System.out.println("recycle");
             // It is a recycled request, reset the TD's
             while (td != null) {
                 td.resetStatus();
@@ -299,7 +313,6 @@ public class UHCIPipe implements USBPipe, USBConstants {
             }
         }
         this.activeRequest = req;
-        //log.debug("add");
         qh.add(req);
         //log.debug("activateRequest done");
     }

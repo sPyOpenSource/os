@@ -20,6 +20,8 @@
  
 package org.jnode.driver.bus.usb.uhci;
 
+import java.util.Arrays;
+import jx.zero.Memory;
 import jx.zero.MemoryManager;
 import org.jnode.util.NumberUtils;
 
@@ -113,7 +115,11 @@ public final class TransferDescriptor extends AbstractTreeStructure implements U
         if (dataBuffer == null) {
             setInt(3, 0);
         } else {
-            //setInt(12, dataBufferOffset + rm.asMemoryResource(dataBuffer).getAddress().toInt());
+            Memory dataRes = rm.alloc(dataBuffer.length);
+            for (int b = 0; b < dataBuffer.length; b++){
+                dataRes.set8(b, dataBuffer[b]);
+            }
+            setInt(3, dataBufferOffset + dataRes.getStartAddress());
         }
     }
 
@@ -124,7 +130,7 @@ public final class TransferDescriptor extends AbstractTreeStructure implements U
      * The SPD, LS, ISO and IOC bits are preserved.
      */
     public final void resetStatus() {
-        setInt(4, origCtrl);
+        setInt(1, origCtrl);
     }
 
     /**
@@ -168,20 +174,20 @@ public final class TransferDescriptor extends AbstractTreeStructure implements U
      * @param active
      */
     public final void setActive(boolean active) {
-        int ctrl = getInt(4);
+        int ctrl = getInt(1);
         if (active) {
             ctrl |= TD_CTRL_ACTIVE;
         } else {
             ctrl &= ~TD_CTRL_ACTIVE;
         }
-        setInt(4, ctrl);
+        setInt(1, ctrl);
     }
 
     /**
      * Is the active bit of this descriptor set.
      */
     public final boolean isActive() {
-        final int ctrl = getInt(4);
+        final int ctrl = getInt(1);
         return ((ctrl & TD_CTRL_ACTIVE) != 0);
     }
 
@@ -189,7 +195,7 @@ public final class TransferDescriptor extends AbstractTreeStructure implements U
      * Is the stalled bit of this descriptor set.
      */
     public final boolean isStalled() {
-        final int ctrl = getInt(4);
+        final int ctrl = getInt(1);
         return ((ctrl & TD_CTRL_STALLED) != 0);
     }
 
@@ -197,7 +203,7 @@ public final class TransferDescriptor extends AbstractTreeStructure implements U
      * Is the data buffer error bit of this descriptor set.
      */
     public final boolean isDataBufferError() {
-        final int ctrl = getInt(4);
+        final int ctrl = getInt(1);
         return ((ctrl & TD_CTRL_DBUFERR) != 0);
     }
 
@@ -205,7 +211,7 @@ public final class TransferDescriptor extends AbstractTreeStructure implements U
      * Is the babble detected bit of this descriptor set.
      */
     public final boolean isBabbleDetected() {
-        final int ctrl = getInt(4);
+        final int ctrl = getInt(1);
         return ((ctrl & TD_CTRL_BABBLE) != 0);
     }
 
@@ -213,7 +219,7 @@ public final class TransferDescriptor extends AbstractTreeStructure implements U
      * Is the NAK received bit of this descriptor set.
      */
     public final boolean isNAKReceived() {
-        final int ctrl = getInt(4);
+        final int ctrl = getInt(1);
         return ((ctrl & TD_CTRL_NAK) != 0);
     }
 
@@ -221,7 +227,7 @@ public final class TransferDescriptor extends AbstractTreeStructure implements U
      * Is the CRC/Time Out Error bit of this descriptor set.
      */
     public final boolean isCRCTimeOutError() {
-        final int ctrl = getInt(4);
+        final int ctrl = getInt(1);
         return ((ctrl & TD_CTRL_CRCTIMEO) != 0);
     }
 
@@ -229,7 +235,7 @@ public final class TransferDescriptor extends AbstractTreeStructure implements U
      * Is the Bitstuff Error bit of this descriptor set.
      */
     public final boolean isBitstuffError() {
-        final int ctrl = getInt(4);
+        final int ctrl = getInt(1);
         return ((ctrl & TD_CTRL_BITSTUFF) != 0);
     }
 
@@ -237,7 +243,7 @@ public final class TransferDescriptor extends AbstractTreeStructure implements U
      * Is any of the error flags set.
      */
     public final boolean isAnyError() {
-        final int ctrl = getInt(4);
+        final int ctrl = getInt(1);
         return ((ctrl & TD_CTRL_ANY_ERROR) != 0);
     }
 
@@ -245,7 +251,7 @@ public final class TransferDescriptor extends AbstractTreeStructure implements U
      * Gets the actual length that is set by the HC.
      */
     public final int getActualLength() {
-        final int len = getInt(4) & TD_CTRL_ACTLEN_MASK;
+        final int len = getInt(1) & TD_CTRL_ACTLEN_MASK;
         if (len == 0x7FF) {
             return 0;
         } else {
@@ -311,7 +317,7 @@ public final class TransferDescriptor extends AbstractTreeStructure implements U
      * @see java.lang.Object#toString()
      */
     public String toString() {
-        return "TD[" + NumberUtils.hex(getInt(0)) + ", " + NumberUtils.hex(getInt(4)) + ", " +
-            NumberUtils.hex(getInt(8)) + ", " + NumberUtils.hex(getInt(12)) + "->" + linkPointer + ']';
+        return "TD[" + NumberUtils.hex(getInt(0)) + ", " + NumberUtils.hex(getInt(1)) + ", " +
+            NumberUtils.hex(getInt(2)) + ", " + NumberUtils.hex(getInt(3)) + "->" + linkPointer + ']';
     }
 }

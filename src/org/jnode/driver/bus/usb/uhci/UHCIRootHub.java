@@ -115,6 +115,7 @@ public class UHCIRootHub implements USBHubAPI, UHCIConstants {
      *
      * @param enabled
      */
+    @Override
     public void setPortEnabled(int port, boolean enabled) {
         testPort(port);
         io.setPortSCBits(port, USBPORTSC_PE, enabled);
@@ -123,6 +124,7 @@ public class UHCIRootHub implements USBHubAPI, UHCIConstants {
     /**
      * Reset a given port
      */
+    @Override
     public void resetPort(int port) {
         //try {
             testPort(port);
@@ -144,6 +146,7 @@ public class UHCIRootHub implements USBHubAPI, UHCIConstants {
      *
      * @return True if a device is connected, false otherwise
      */
+    @Override
     public boolean isPortConnected(int port) {
         testPort(port);
         return io.getPortSCBits(port, USBPORTSC_CCS);
@@ -152,6 +155,7 @@ public class UHCIRootHub implements USBHubAPI, UHCIConstants {
     /**
      * Has the port connection status changed.
      */
+    @Override
     public boolean isPortConnectionStatusChanged(int port) {
         testPort(port);
         return io.getPortSCBits(port, USBPORTSC_CSC);
@@ -160,6 +164,7 @@ public class UHCIRootHub implements USBHubAPI, UHCIConstants {
     /**
      * Clear the port connection status changed flag.
      */
+    @Override
     public void clearPortConnectionStatusChanged(int port) {
         testPort(port);
         io.setPortSCBits(port, USBPORTSC_CSC, true);
@@ -171,6 +176,7 @@ public class UHCIRootHub implements USBHubAPI, UHCIConstants {
      *
      * @return True if a lowspeed device is connected, false otherwise (full or high speed)
      */
+    @Override
     public boolean isPortConnectedToLowSpeed(int port) {
         testPort(port);
         return io.getPortSCBits(port, USBPORTSC_LSDA);
@@ -182,11 +188,13 @@ public class UHCIRootHub implements USBHubAPI, UHCIConstants {
      *
      * @return True if a highspeed device is connected, false otherwise (low or full)
      */
+    @Override
     public boolean isPortConnectedToHighSpeed(int port) {
         testPort(port);
         return false;
     }
 
+    @Override
     public int getPortStatus(int port) {
         testPort(port);
         return io.getPortSC(port);

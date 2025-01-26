@@ -155,17 +155,17 @@ public class USBHubMonitor implements USBConstants {
             }
 
             // Create the new device
-            System.out.println("Creating USBDevice");
+            System.out.println("Creating USBDevice"+speed);
             final USBDevice dev = new USBDevice(hub.getUSBBus(), speed);
             dev.getDefaultControlPipe().open();
 
             // Now set the address
-            //log.debug("Set the address");
+            System.out.println("Set the address");
             final int devId = dev.getUSBBus().allocDeviceID();
             try {
                 // Set the device address
                 dev.setAddress(devId);
-                //log.debug("Now using address 0x" + NumberUtils.hex(devId, 2));
+                System.out.println("Now using address 0x" + NumberUtils.hex(devId, 2));
                 sleep(100); // Let the address settle
                 //log.debug("After sleep");
 
@@ -174,7 +174,7 @@ public class USBHubMonitor implements USBConstants {
                 final DeviceDescriptor devDescr = new DeviceDescriptor();
                 dev.readDescriptor(USB_RECIP_DEVICE, USB_DT_DEVICE, 0, 0, 8, devDescr);
                 dev.setDescriptor(devDescr);
-                //log.debug("devDescr[0-7]=" + devDescr + ", len=" + devDescr.getLength());
+                System.out.println("devDescr[0-7]=" + devDescr + ", len=" + devDescr.getLength());
 
                 // Fetch the complete device descriptor.
                 dev.readDescriptor(USB_RECIP_DEVICE, USB_DT_DEVICE, 0, 0, USB_DT_DEVICE_SIZE, devDescr);
@@ -309,8 +309,9 @@ System.out.println("here");
     public void startMonitor() {
         if (thread == null) {
             thread = new USBHubMonitorThread("HubMonitor-"/* + hubDevice.getId()*/);
-            thread.start();
+            //thread.run();
         }
+        thread.run();
     }
 
     /**
@@ -337,7 +338,7 @@ System.out.println("here");
     class USBHubMonitorThread extends Thread {
 
         private boolean stop;
-
+private boolean first = true;
         public USBHubMonitorThread(String name) {
             super(name);
             this.stop = false;
@@ -349,8 +350,9 @@ System.out.println("here");
 
         @Override
         public void run() {
-            boolean first = true;
-            while (!stop) {
+            //boolean first = true;
+            //while (!stop) {
+                //System.out.println("delay");
                 try {
                     //try {
                         sleepManager.mdelay(1000);
@@ -362,7 +364,7 @@ System.out.println("here");
                     //log.error("Error in USBHubMonitor", ex);
                 }
                 first = false;
-            }
+            //}
         }
 
     }

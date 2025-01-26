@@ -99,9 +99,9 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants, FirstLevel
         this.sleepManager = sleepManager;
         final PCIAddress baseAddr = device.getAddress();
         this.rm = (MemoryManager)InitialNaming.getInitialNaming().lookup("MemoryManager");
-        final int ioBase = device.getBaseAddress(0) - 1;
+        final int ioBase = device.getBaseAddress(0);
         //final int ioSize = baseAddr.getSize();
-        System.out.println("Found UHCI at 0x" + NumberUtils.hex(baseAddr.getDevice()));
+        System.out.println("Found UHCI at 0x" + NumberUtils.hex(ioBase));
 
         this.io = new UHCIIO(ioBase);
         this.bus = new USBBus(device, this);

@@ -69,7 +69,8 @@ public class USBDevice implements Device, USBConstants {
      * The default control pipe
      */
     private final USBControlPipe defaultControlPipe;
-private final USBBus bus;
+    private final USBBus bus;
+    
     /**
      * Initialize this device. The USB device id is not set yet. The speed is set to the given
      * parameter.
@@ -315,6 +316,7 @@ private final USBBus bus;
         }
         final USBRequest req =
             defaultControlPipe.createRequest(SetupPacket.createDeviceSetAddressPacket(usbAddress), null);
+        System.out.println("submit");
         defaultControlPipe.syncSubmit(req, SET_TIMEOUT);
         this.devId = usbAddress;
     }

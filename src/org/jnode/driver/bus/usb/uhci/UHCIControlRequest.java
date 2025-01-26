@@ -46,13 +46,14 @@ public class UHCIControlRequest extends AbstractUSBControlRequest implements UHC
         super(setupPacket, dataPacket);
     }
 
+    @Override
     public void createTDs(UHCIPipe pipe)
         throws USBException {
         final SetupPacket setupPacket = getSetupPacket();
 
         // The setup TD
         setupTD = pipe.createTD(USB_PID_SETUP, true, setupPacket.getData(), 0, setupPacket.getSize(), false);
-        //log.debug("setupTD: " + setupTD + ", ls=" + ls);
+        System.out.println("setupTD: " + setupTD + ", ls=");
 
         // Add the data TD's
         final USBPacket dataPacket = getDataPacket();
@@ -66,7 +67,6 @@ public class UHCIControlRequest extends AbstractUSBControlRequest implements UHC
             throw new USBException("Invalid maximum packet size " + maxPacketSize);
         }
         while (length > 0) {
-
             // Create the TD for this part of the data packet
             final TransferDescriptor dataTD;
             final int curlen = Math.min(length, maxPacketSize);

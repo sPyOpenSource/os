@@ -44,7 +44,7 @@ public class QueueHead extends AbstractTreeStructure {
         // Set Linkpointer to invalid
         setInt(0, 1);
         // Set Element Linkpointer to invalid
-        setInt(4, 1);
+        setInt(1, 1);
     }
 
     /**
@@ -154,7 +154,7 @@ public class QueueHead extends AbstractTreeStructure {
      */
     final void setElement(TransferDescriptor td) {
         final int ptr = td.getDescriptorAddress() & 0xFFFFFFF0;
-        setInt(4, ptr);
+        setInt(1, ptr);
     }
 
     /**
@@ -163,7 +163,7 @@ public class QueueHead extends AbstractTreeStructure {
      * @param td
      */
     private final boolean isElement(TransferDescriptor td) {
-        final int cur = getInt(4);
+        final int cur = getInt(1);
         final int ptr = td.getDescriptorAddress() & 0xFFFFFFF0;
         return ((cur & 1) == 0) && ((cur & 0xFFFFFFF0) == ptr);
     }
@@ -181,7 +181,7 @@ public class QueueHead extends AbstractTreeStructure {
      * Set the element link pointer as invalid
      */
     private final void removeElement() {
-        setInt(4, 1);
+        setInt(1, 1);
     }
 
     /**
@@ -190,7 +190,7 @@ public class QueueHead extends AbstractTreeStructure {
      * @return True if this queue has not elements (T-bit=1), false otherwise.
      */
     public final boolean isEmpty() {
-        final int v = getInt(4);
+        final int v = getInt(1);
         return ((v & 1) == 1);
     }
 
@@ -200,6 +200,6 @@ public class QueueHead extends AbstractTreeStructure {
      * @see java.lang.Object#toString()
      */
     public String toString() {
-        return "QH[" + NumberUtils.hex(getInt(0)) + ", " + NumberUtils.hex(getInt(4)) + ']';
+        return "QH[" + NumberUtils.hex(getInt(0)) + ", " + NumberUtils.hex(getInt(1)) + ']';
     }
 }
