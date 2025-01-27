@@ -85,6 +85,7 @@ public class AbstractUSBRequest implements USBRequest {
      *
      * @param timeout
      */
+    @Override
     public synchronized void waitUntilComplete(long timeout) {
         while (!isCompleted()) {
             //try {

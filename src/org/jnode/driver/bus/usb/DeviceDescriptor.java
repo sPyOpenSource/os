@@ -149,6 +149,7 @@ public final class DeviceDescriptor extends AbstractDescriptor {
      *
      * @param dev
      */
+    @Override
     final void loadStrings(USBDevice dev)
         throws USBException {
         final int manIdx = getManufacturerStringIndex();
@@ -170,6 +171,7 @@ public final class DeviceDescriptor extends AbstractDescriptor {
      *
      * @see java.lang.Object#toString()
      */
+    @Override
     public final String toString() {
         return "DEV[usb:0x" + NumberUtils.hex(getUSBVersion(), 4) +
             ", dclass:" + getDeviceClass() +

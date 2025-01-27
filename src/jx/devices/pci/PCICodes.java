@@ -115,7 +115,7 @@ public class PCICodes {
    };
 
    public static String lookup(int id){
-      return lookup( (id & PCI.DEVICE_MASK) >> PCI.DEVICE_SHIFT,
+      return lookup((id & PCI.DEVICE_MASK) >> PCI.DEVICE_SHIFT,
 		    (id & PCI.VENDOR_MASK) >> PCI.VENDOR_SHIFT);
    }
    
@@ -124,32 +124,32 @@ public class PCICodes {
    }
    
    public static String lookup(short deviceID, short vendorID){
-      for(int i=0; i<device_code.length; ++i){
+      for(int i = 0; i < device_code.length; ++i){
 	 if(device_code[i].deviceID == deviceID &&
 	    device_code[i].vendorID == vendorID )
 	   return "Chip="+device_code[i].chipNumber + '(' +device_code[i].description + ')';
       }
-      return "device 0x"+Integer.toHexString(deviceID) + " / " + lookupVendor(vendorID);
+      return "device 0x" + Integer.toHexString(deviceID) + " / " + lookupVendor(vendorID);
    }
-   
+    
    public static String lookupVendor(int vendorID){
       return lookupVendor((short)vendorID);
    }
    
    public static String lookupVendor(short vendorID){
-      for(int i=0; i<vendor_code.length; ++i){
+      for(int i = 0; i < vendor_code.length; ++i){
 	 if( vendor_code[i].vendorID == vendorID )
 	   return vendor_code[i].vendor;
       }
-      return "vendor 0x"+Integer.toHexString(vendorID);
+      return "vendor 0x" + Integer.toHexString(vendorID);
    }
     
     public static String lookupClass (int classID) {
-	String result = "class 0x"+Integer.toHexString(classID);
-	for(int j=0; j<baseclass_code.length; ++j)
+	String result = "class 0x" + Integer.toHexString(classID);
+	for(int j = 0; j < baseclass_code.length; ++j)
 	    if( baseclass_code[j].classID == (classID & 0xff0000) >> 16 ) {
 		result =  baseclass_code[j].className;
-		for(int i=0; i<class_code[j].length; ++i)
+		for(int i = 0; i < class_code[j].length; ++i)
 		    if( class_code[j][i].classID == (classID & 0xff00) >> 8 ) 
 			result =  class_code[j][i].className;
 	    }

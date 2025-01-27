@@ -23,8 +23,7 @@ package org.jnode.driver.bus.usb.uhci;
 import AI.util.AIQueue;
 import java.util.ArrayList;
 import java.util.Queue;
-import jx.zero.CPUManager;
-import jx.zero.InitialNaming;
+import jx.zero.Memory;
 import jx.zero.MemoryManager;
 
 import org.jnode.driver.bus.usb.USBConstants;
@@ -205,11 +204,9 @@ public class UHCIPipe implements USBPipe, USBConstants {
         }
         final UHCIRequest req = (UHCIRequest) request;
         final AbstractUSBRequest usbReq = (AbstractUSBRequest) request;
-        System.out.println("start");
         usbReq.setCompleted(false);
         usbReq.setActualLength(0);
         usbReq.setStatus(0);
-        System.out.println("ready");
         if (qh.isEmpty()) {
             activateRequest(req);
         } else {
@@ -226,7 +223,6 @@ public class UHCIPipe implements USBPipe, USBConstants {
     @Override
     public void syncSubmit(USBRequest request, long timeout) throws USBException {
         asyncSubmit(request);
-        System.out.println("problem");
         request.waitUntilComplete(timeout);
         if (!request.isCompleted()) {
             throw new USBException("Timeout on request");
@@ -301,7 +297,6 @@ public class UHCIPipe implements USBPipe, USBConstants {
         throws USBException {
         TransferDescriptor td = req.getFirstTD();
         if (td == null) {
-            System.out.println("create");
             // It is a new request, create the TD's
             req.createTDs(this);
         } else {
@@ -405,7 +400,7 @@ public class UHCIPipe implements USBPipe, USBConstants {
      * @param ioc
      * @return The new TD
      */
-    protected TransferDescriptor createTD(int packetId, boolean data0, byte[] dataBuffer, int dataBufferOffset,
+    protected TransferDescriptor createTD(int packetId, boolean data0, Memory dataBuffer, int dataBufferOffset,
                                           int bufLength, boolean ioc) {
         final int devAddr = device.getUSBDeviceId();
         final boolean iso = isIsochronousPipe();

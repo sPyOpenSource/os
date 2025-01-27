@@ -20,6 +20,8 @@
  
 package org.jnode.driver.bus.usb;
 
+import jx.zero.Memory;
+
 
 /**
  * @author Ewout Prangsma (epr@users.sourceforge.net)
@@ -40,7 +42,7 @@ public final class ConfigurationDescriptor extends AbstractDescriptor {
      * @param ofs
      * @param len
      */
-    public ConfigurationDescriptor(byte[] data, int ofs, int len) {
+    public ConfigurationDescriptor(Memory data, int ofs, int len) {
         super(data, ofs, len);
     }
 
@@ -84,6 +86,7 @@ public final class ConfigurationDescriptor extends AbstractDescriptor {
      *
      * @param dev
      */
+    @Override
     final void loadStrings(USBDevice dev)
         throws USBException {
         final int cIdx = getConfigurationStringIndex();

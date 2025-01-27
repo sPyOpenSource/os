@@ -20,6 +20,8 @@
  
 package org.jnode.driver.bus.usb;
 
+import jx.zero.Memory;
+
 /**
  * @author Ewout Prangsma (epr@users.sourceforge.net)
  */
@@ -38,7 +40,7 @@ public final class EndPointDescriptor extends AbstractDescriptor {
      * @param ofs
      * @param len
      */
-    public EndPointDescriptor(byte[] data, int ofs, int len) {
+    public EndPointDescriptor(Memory data, int ofs, int len) {
         super(data, ofs, len);
     }
 

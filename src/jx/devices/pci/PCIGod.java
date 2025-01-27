@@ -116,7 +116,7 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
 	       
 	       int id = readDeviceConfig(pciaddr, REG_DEVVEND);
 	       if ( id == INVALID_ID )
-		 break;
+		 continue;
 	       
 	       pcidev = new PCIDeviceImpl(this, pciaddr);
 	       

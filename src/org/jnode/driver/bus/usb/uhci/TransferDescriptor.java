@@ -20,7 +20,6 @@
  
 package org.jnode.driver.bus.usb.uhci;
 
-import java.util.Arrays;
 import jx.zero.Memory;
 import jx.zero.MemoryManager;
 import org.jnode.util.NumberUtils;
@@ -35,7 +34,7 @@ public final class TransferDescriptor extends AbstractTreeStructure implements U
     /**
      * The transfer data buffer
      */
-    private final byte[] dataBuffer;
+    private final Memory dataBuffer;
     /**
      * Offset in the data buffer
      */
@@ -74,7 +73,7 @@ public final class TransferDescriptor extends AbstractTreeStructure implements U
         int endPt,
         int packetId,
         boolean data0,
-        byte[] dataBuffer,
+        Memory dataBuffer,
         int dataBufferOffset,
         int bufLength,
         boolean isochronous,
@@ -115,11 +114,7 @@ public final class TransferDescriptor extends AbstractTreeStructure implements U
         if (dataBuffer == null) {
             setInt(3, 0);
         } else {
-            Memory dataRes = rm.alloc(dataBuffer.length);
-            for (int b = 0; b < dataBuffer.length; b++){
-                dataRes.set8(b, dataBuffer[b]);
-            }
-            setInt(3, dataBufferOffset + dataRes.getStartAddress());
+            setInt(3, dataBufferOffset + dataBuffer.getStartAddress());
         }
     }
 
@@ -262,7 +257,7 @@ public final class TransferDescriptor extends AbstractTreeStructure implements U
     /**
      * @return Returns the dataBuffer.
      */
-    public final byte[] getDataBuffer() {
+    public final Memory getDataBuffer() {
         return this.dataBuffer;
     }
 
@@ -316,6 +311,7 @@ public final class TransferDescriptor extends AbstractTreeStructure implements U
      *
      * @see java.lang.Object#toString()
      */
+    @Override
     public String toString() {
         return "TD[" + NumberUtils.hex(getInt(0)) + ", " + NumberUtils.hex(getInt(1)) + ", " +
             NumberUtils.hex(getInt(2)) + ", " + NumberUtils.hex(getInt(3)) + "->" + linkPointer + ']';

@@ -62,7 +62,7 @@ public class Vector<E> extends AbstractList<E> implements List<E>, Cloneable, Se
     
     public Vector()
     {
-	this(15);
+	this(20);
     }
 
     // Methods

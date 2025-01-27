@@ -53,7 +53,7 @@ public class UHCIControlRequest extends AbstractUSBControlRequest implements UHC
 
         // The setup TD
         setupTD = pipe.createTD(USB_PID_SETUP, true, setupPacket.getData(), 0, setupPacket.getSize(), false);
-        System.out.println("setupTD: " + setupTD + ", ls=");
+        //System.out.println("setupTD: " + setupTD + ", ls=");
 
         // Add the data TD's
         final USBPacket dataPacket = getDataPacket();

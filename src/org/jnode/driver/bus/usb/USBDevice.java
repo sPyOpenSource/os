@@ -316,7 +316,6 @@ public class USBDevice implements Device, USBConstants {
         }
         final USBRequest req =
             defaultControlPipe.createRequest(SetupPacket.createDeviceSetAddressPacket(usbAddress), null);
-        System.out.println("submit");
         defaultControlPipe.syncSubmit(req, SET_TIMEOUT);
         this.devId = usbAddress;
     }

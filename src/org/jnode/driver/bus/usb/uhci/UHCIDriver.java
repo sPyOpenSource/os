@@ -24,10 +24,10 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import jx.devices.pci.PCIDevice;
 import jx.zero.timer.SleepManager;
+
 //import org.jnode.driver.DriverException;
 import org.jnode.driver.bus.usb.AbstractHostControllerDriver;
 import org.jnode.driver.bus.usb.USBHostControllerAPI;
-import org.jnode.driver.bus.usb.USBHubMonitor;
 //import org.jnode.system.resource.ResourceNotFreeException;
 
 /**

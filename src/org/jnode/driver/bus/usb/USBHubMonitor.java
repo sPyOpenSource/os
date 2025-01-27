@@ -21,6 +21,9 @@
 package org.jnode.driver.bus.usb;
 
 import jx.devices.Device;
+import jx.zero.InitialNaming;
+import jx.zero.Memory;
+import jx.zero.MemoryManager;
 import jx.zero.timer.SleepManager;
 //import org.jnode.driver.DeviceAlreadyRegisteredException;
 //import org.jnode.driver.DeviceManager;
@@ -155,12 +158,12 @@ public class USBHubMonitor implements USBConstants {
             }
 
             // Create the new device
-            System.out.println("Creating USBDevice"+speed);
+            System.out.println("Creating USBDevice: " + speed);
             final USBDevice dev = new USBDevice(hub.getUSBBus(), speed);
             dev.getDefaultControlPipe().open();
 
             // Now set the address
-            System.out.println("Set the address");
+            //System.out.println("Set the address");
             final int devId = dev.getUSBBus().allocDeviceID();
             try {
                 // Set the device address
@@ -230,7 +233,6 @@ public class USBHubMonitor implements USBConstants {
             }
             hub.setPortEnabled(port, false);
         }
-System.out.println("here");
         // Clear the connection status
         hub.clearPortConnectionStatusChanged(port);
     }
@@ -246,11 +248,11 @@ System.out.println("here");
         // First read enough to get the wTotalLength
         final ConfigurationDescriptor initDescr = new ConfigurationDescriptor();
         dev.readDescriptor(USB_RECIP_DEVICE, USB_DT_CONFIG, confNum, 0, USB_DT_CONFIG_SIZE, initDescr);
-
+MemoryManager rm = (MemoryManager)InitialNaming.getInitialNaming().lookup("MemoryManager");
         // Now get the full configuration data
-        final byte[] data = new byte[initDescr.getTotalLength()];
+        final Memory data = rm.alloc(initDescr.getTotalLength());
         final USBPacket dataP = new USBPacket(data);
-        dev.readDescriptor(USB_RECIP_DEVICE, USB_DT_CONFIG, confNum, 0, data.length, dataP);
+        dev.readDescriptor(USB_RECIP_DEVICE, USB_DT_CONFIG, confNum, 0, data.size(), dataP);
 
         // Get the configuration strings
         final ConfigurationDescriptor confDescr = new ConfigurationDescriptor(data, 0, USB_DT_CONFIG_SIZE);

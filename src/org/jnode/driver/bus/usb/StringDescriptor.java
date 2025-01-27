@@ -20,6 +20,8 @@
  
 package org.jnode.driver.bus.usb;
 
+import jx.zero.Memory;
+
 /**
  * @author Ewout Prangsma (epr@users.sourceforge.net)
  */
@@ -35,7 +37,7 @@ public class StringDescriptor extends AbstractDescriptor {
      * @param ofs
      * @param len
      */
-    public StringDescriptor(byte[] data, int ofs, int len) {
+    public StringDescriptor(Memory data, int ofs, int len) {
         super(data, ofs, len);
     }
 

@@ -97,9 +97,10 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants, FirstLevel
     public UHCICore(PCIDevice device, SleepManager sleepManager) {
         this.device = device;
         this.sleepManager = sleepManager;
-        final PCIAddress baseAddr = device.getAddress();
         this.rm = (MemoryManager)InitialNaming.getInitialNaming().lookup("MemoryManager");
-        final int ioBase = device.getBaseAddress(0);
+        int ioBase = device.getBaseAddress(0);
+        if(ioBase == 0) ioBase = device.getBaseAddress(4) - 1;
+        if(device.getBaseAddress(1) != 0) ioBase = (ioBase << 16) + device.getBaseAddress(1);
         //final int ioSize = baseAddr.getSize();
         System.out.println("Found UHCI at 0x" + NumberUtils.hex(ioBase));
 
@@ -121,14 +122,12 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants, FirstLevel
         }
         // Reset the HC
         resetHC();
-        System.out.println("reset");
         // Set the enabled interrupts
         io.setInterruptEnable(0x000F);
         // Set the framelist pointer
         io.setFrameListBaseAddress(schedule.getFrameList().getDescriptorAddress());
         // Go!
         setRun(true);
-        System.out.println("OK");
     }
 
     /**

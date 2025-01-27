@@ -20,6 +20,9 @@
  
 package org.jnode.driver.bus.usb;
 
+import jx.zero.InitialNaming;
+import jx.zero.Memory;
+import jx.zero.MemoryManager;
 import org.jnode.util.NumberUtils;
 
 /**
@@ -27,7 +30,7 @@ import org.jnode.util.NumberUtils;
  */
 public class USBPacket implements USBConstants {
 
-    private final byte[] data;
+    private final Memory data;
     private final int size;
     private final int offset;
 
@@ -37,7 +40,8 @@ public class USBPacket implements USBConstants {
      * @param size
      */
     public USBPacket(int size) {
-        this.data = new byte[size];
+        MemoryManager rm = (MemoryManager)InitialNaming.getInitialNaming().lookup("MemoryManager");
+        this.data = rm.alloc(size);
         this.size = size;
         this.offset = 0;
     }
@@ -47,8 +51,8 @@ public class USBPacket implements USBConstants {
      *
      * @param data
      */
-    public USBPacket(byte[] data) {
-        this(data, 0, data.length);
+    public USBPacket(Memory data) {
+        this(data, 0, data.size());
     }
 
     /**
@@ -58,7 +62,7 @@ public class USBPacket implements USBConstants {
      * @param ofs
      * @param len
      */
-    public USBPacket(byte[] data, int ofs, int len) {
+    public USBPacket(Memory data, int ofs, int len) {
         this.data = data;
         this.size = len;
         this.offset = ofs;
@@ -71,7 +75,7 @@ public class USBPacket implements USBConstants {
      * @param value
      */
     protected final void setByte(int ofs, int value) {
-        data[this.offset + ofs] = (byte) value;
+        data.set8(this.offset + ofs, (byte) value);
     }
 
     /**
@@ -81,8 +85,8 @@ public class USBPacket implements USBConstants {
      * @param value
      */
     protected final void setShort(int ofs, int value) {
-        data[this.offset + ofs + 0] = (byte) (value & 0xFF);
-        data[this.offset + ofs + 1] = (byte) ((value >> 8) & 0xFF);
+        data.set8(this.offset + ofs + 0, (byte) (value & 0xFF));
+        data.set8(this.offset + ofs + 1, (byte) ((value >> 8) & 0xFF));
     }
 
     /**
@@ -92,10 +96,10 @@ public class USBPacket implements USBConstants {
      * @param value
      */
     protected final void setInt(int ofs, int value) {
-        data[this.offset + ofs + 0] = (byte) (value & 0xFF);
-        data[this.offset + ofs + 1] = (byte) ((value >> 8) & 0xFF);
-        data[this.offset + ofs + 2] = (byte) ((value >> 16) & 0xFF);
-        data[this.offset + ofs + 3] = (byte) ((value >>> 24) & 0xFF);
+        data.set8(this.offset + ofs + 0, (byte) (value & 0xFF));
+        data.set8(this.offset + ofs + 1, (byte) ((value >> 8) & 0xFF));
+        data.set8(this.offset + ofs + 2, (byte) ((value >> 16) & 0xFF));
+        data.set8(this.offset + ofs + 3, (byte) ((value >>> 24) & 0xFF));
     }
 
     /**
@@ -104,7 +108,7 @@ public class USBPacket implements USBConstants {
      * @param ofs
      */
     protected final int getByte(int ofs) {
-        return data[this.offset + ofs] & 0xFF;
+        return data.get8(this.offset + ofs) & 0xFF;
     }
 
     /**
@@ -113,8 +117,8 @@ public class USBPacket implements USBConstants {
      * @param ofs
      */
     protected final int getShort(int ofs) {
-        final int v0 = data[this.offset + ofs + 0] & 0xFF;
-        final int v1 = data[this.offset + ofs + 1] & 0xFF;
+        final int v0 = data.get8(this.offset + ofs + 0) & 0xFF;
+        final int v1 = data.get8(this.offset + ofs + 1) & 0xFF;
         return (short) (v0 | (v1 << 8));
     }
 
@@ -124,8 +128,8 @@ public class USBPacket implements USBConstants {
      * @param ofs
      */
     protected final char getChar(int ofs) {
-        final int v0 = data[this.offset + ofs + 0] & 0xFF;
-        final int v1 = data[this.offset + ofs + 1] & 0xFF;
+        final int v0 = data.get8(this.offset + ofs + 0) & 0xFF;
+        final int v1 = data.get8(this.offset + ofs + 1) & 0xFF;
         return (char) (v0 | (v1 << 8));
     }
 
@@ -135,17 +139,17 @@ public class USBPacket implements USBConstants {
      * @param ofs
      */
     protected final int getInt(int ofs) {
-        final int v0 = data[this.offset + ofs + 0] & 0xFF;
-        final int v1 = data[this.offset + ofs + 1] & 0xFF;
-        final int v2 = data[this.offset + ofs + 2] & 0xFF;
-        final int v3 = data[this.offset + ofs + 3] & 0xFF;
+        final int v0 = data.get8(this.offset + ofs + 0) & 0xFF;
+        final int v1 = data.get8(this.offset + ofs + 1) & 0xFF;
+        final int v2 = data.get8(this.offset + ofs + 2) & 0xFF;
+        final int v3 = data.get8(this.offset + ofs + 3) & 0xFF;
         return (short) (v0 | (v1 << 8) | (v2 << 16) | (v3 << 24));
     }
 
     /**
      * Gets the data itself
      */
-    public byte[] getData() {
+    public Memory getData() {
         return this.data;
     }
 
@@ -170,6 +174,6 @@ public class USBPacket implements USBConstants {
      */
     @Override
     public String toString() {
-        return NumberUtils.hex(data, offset, size);
+        return "";//NumberUtils.hex(data, offset, size);
     }
 }
