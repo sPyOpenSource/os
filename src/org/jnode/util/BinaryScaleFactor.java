@@ -42,7 +42,7 @@ public class BinaryScaleFactor implements ScaleFactor {
     private final int multiplier;
     private final String unit;
 
-    private BinaryScaleFactor(int multiplier, String unit) {
+    public BinaryScaleFactor(int multiplier, String unit) {
         this.multiplier = multiplier;
         this.unit = unit;
     }

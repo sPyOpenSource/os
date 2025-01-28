@@ -177,13 +177,13 @@ public class USBHubMonitor implements USBConstants {
                 final DeviceDescriptor devDescr = new DeviceDescriptor();
                 dev.readDescriptor(USB_RECIP_DEVICE, USB_DT_DEVICE, 0, 0, 8, devDescr);
                 dev.setDescriptor(devDescr);
-                System.out.println("devDescr[0-7]=" + devDescr + ", len=" + devDescr.getLength());
+                //System.out.println("devDescr[0-7]=" + devDescr + ", len=" + devDescr.getLength());
 
                 // Fetch the complete device descriptor.
                 dev.readDescriptor(USB_RECIP_DEVICE, USB_DT_DEVICE, 0, 0, USB_DT_DEVICE_SIZE, devDescr);
                 //log.debug("read devDescr=" + devDescr);
                 dev.setFullDescriptor(devDescr);
-                //log.debug("Full devDescr=" + devDescr);
+                //System.out.println("Full devDescr=" + devDescr);
 
                 // Get all configurations.
                 final int confCount = devDescr.getNumConfigurations();
@@ -197,7 +197,7 @@ public class USBHubMonitor implements USBConstants {
 
                 // Load the strings of the device descriptor
                 devDescr.loadStrings(dev);
-                //log.debug("Got descriptor " + devDescr);
+                System.out.println("Got descriptor " + devDescr);
 
                 // Register the device with the HUB
                 //log.debug("hub.setDevice");
@@ -311,7 +311,7 @@ MemoryManager rm = (MemoryManager)InitialNaming.getInitialNaming().lookup("Memor
     public void startMonitor() {
         if (thread == null) {
             thread = new USBHubMonitorThread("HubMonitor-"/* + hubDevice.getId()*/);
-            //thread.run();
+            //thread.start();
         }
         thread.run();
     }
@@ -340,7 +340,8 @@ MemoryManager rm = (MemoryManager)InitialNaming.getInitialNaming().lookup("Memor
     class USBHubMonitorThread extends Thread {
 
         private boolean stop;
-private boolean first = true;
+        private boolean first = true;
+        
         public USBHubMonitorThread(String name) {
             super(name);
             this.stop = false;
@@ -354,7 +355,6 @@ private boolean first = true;
         public void run() {
             //boolean first = true;
             //while (!stop) {
-                //System.out.println("delay");
                 try {
                     //try {
                         sleepManager.mdelay(1000);

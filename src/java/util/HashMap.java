@@ -1383,7 +1383,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
         Bucket<K,V> list;
         int hashIndex;
         V oResult;
-        Debug.out.println("key");
+        //Debug.out.println("key");
         K oRealKey = key;//((key == null) ? NULL_KEY : key);
 
         entry = new HashMapEntry<>(oRealKey, value);

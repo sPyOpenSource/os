@@ -85,6 +85,15 @@ public final class StringBuilder extends AbstractStringBuilder implements java.i
             super.append(c);
             return this;
     }
+    
+    /**
+     * @throws StringIndexOutOfBoundsException {@inheritDoc}
+     */
+    @Override
+    public StringBuilder insert(int offset, String str) {
+        super.insert(offset, str);
+        return this;
+    }
 
     @Override
     public String toString() {
