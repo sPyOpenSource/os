@@ -397,7 +397,7 @@ addActionListener(ActionListener listener)
 {
   action_listeners = AWTEventMulticaster.add(action_listeners, listener);
 
-  enableEvents(AWTEvent.ACTION_EVENT_MASK);
+  //enableEvents(AWTEvent.ACTION_EVENT_MASK);
 }
 
 /*************************************************************************/

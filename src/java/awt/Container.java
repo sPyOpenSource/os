@@ -258,8 +258,8 @@ public class Container extends Component
       {
 	comp.addNotify ();
 
-	if (comp.isLightweight())
-	  enableEvents(comp.eventMask);
+	/*if (comp.isLightweight())
+	  enableEvents(comp.eventMask);*/
       }
 
     invalidate ();
@@ -923,8 +923,8 @@ public class Container extends Component
     for (int i = ncomponents;  --i >= 0; )
       {
 	component[i].addNotify();
-	if (component[i].isLightweight())
-	  enableEvents(component[i].eventMask);
+	/*if (component[i].isLightweight())
+	  enableEvents(component[i].eventMask);*/
       }
   }
 

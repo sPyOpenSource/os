@@ -355,7 +355,7 @@ addTextListener(TextListener listener)
 {
   textListener = AWTEventMulticaster.add(textListener, listener);
 
-  enableEvents(AWTEvent.TEXT_EVENT_MASK);  
+  //enableEvents(AWTEvent.TEXT_EVENT_MASK);  
 }
 
 /*************************************************************************/

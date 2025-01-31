@@ -154,6 +154,6 @@ paramString()
   return(getClass().getName() + " source=" + getSource() + " id=" + getID() +
          " temporary=" + isTemporary());
 }
-
+public class Cause{};
 } // class FocusEvent
 

@@ -154,6 +154,7 @@ public class PCIGod implements PCIAccess, PCIHB, PCI, Service {
 			   " (INT " + irq + ")" +
 			   " Class: " + PCICodes.lookupClass(dev.getClassCode()));
 	System.out.println("               " + PCICodes.lookup(dev.readConfig(REG_DEVVEND)));
+        //System.out.println(dev.getBaseAddress(0));
       }
     } 
    

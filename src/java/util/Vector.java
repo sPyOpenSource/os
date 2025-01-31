@@ -362,7 +362,7 @@ public class Vector<E> extends AbstractList<E> implements List<E>, Cloneable, Se
 
     @Override
     public void add(int index, E element) {
-        throw new java.lang.UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        insertElementAt(element, index);
     }
 
     @Override

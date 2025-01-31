@@ -604,7 +604,7 @@ public synchronized void
 addAdjustmentListener(AdjustmentListener listener)
 {
   adjustment_listeners = AWTEventMulticaster.add(adjustment_listeners, listener);
-  enableEvents(AWTEvent.ADJUSTMENT_EVENT_MASK);
+  //enableEvents(AWTEvent.ADJUSTMENT_EVENT_MASK);
 }
 
 /*************************************************************************/

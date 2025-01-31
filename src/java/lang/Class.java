@@ -38,7 +38,9 @@ public final class Class<T>
 
     public Class getComponentType() { throw new Error(); }
     
-    public String getName() { return vmclass.getName(); }
+    public String getName() { 
+        return "";//vmclass.getName();
+    }
     
     public boolean isInterface() { return false; }
 
