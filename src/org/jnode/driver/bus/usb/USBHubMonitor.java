@@ -25,6 +25,7 @@ import jx.zero.InitialNaming;
 import jx.zero.Memory;
 import jx.zero.MemoryManager;
 import jx.zero.timer.SleepManager;
+import org.jnode.driver.bus.usb.uhci.UHCICore;
 //import org.jnode.driver.DeviceAlreadyRegisteredException;
 //import org.jnode.driver.DeviceManager;
 //import org.jnode.driver.DriverException;
@@ -93,16 +94,17 @@ public class USBHubMonitor implements USBConstants {
      */
     private USBHubMonitorThread thread;
     SleepManager sleepManager;
-    
+    private UHCICore api;
     /**
      * Initialize a new instance.
      *
      * @param hub
      */
-    public USBHubMonitor(Device hubDevice, USBHubAPI hub, SleepManager sleepManager) {
+    public USBHubMonitor(Device hubDevice, USBHostControllerAPI hub, SleepManager sleepManager) {
         this.sleepManager = sleepManager;
         this.hubDevice = hubDevice;
-        this.hub = hub;
+        this.hub = hub.getRootHUB();
+        api = (UHCICore)hub;
         //this.dm = hubDevice.getManager();
     }
 
@@ -134,7 +136,7 @@ public class USBHubMonitor implements USBConstants {
      * @param port
      */
     protected void portConnectionStatusChanged(int port) throws USBException {
-        System.out.println("USB hub connection status changed for port " + port);
+        //System.out.println("USB hub connection status changed for port " + port);
 
         if (hub.isPortConnected(port)) {
             //log.debug("Port " + port + " is connected");
@@ -313,7 +315,8 @@ MemoryManager rm = (MemoryManager)InitialNaming.getInitialNaming().lookup("Memor
             thread = new USBHubMonitorThread("HubMonitor-"/* + hubDevice.getId()*/);
             //thread.start();
         }
-        thread.run();
+        if(api.getVersion() == 1)
+            thread.run();
     }
 
     /**

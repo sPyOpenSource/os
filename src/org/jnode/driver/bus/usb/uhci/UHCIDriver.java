@@ -78,7 +78,7 @@ public class UHCIDriver extends AbstractHostControllerDriver {
      * Gets the API implementation.
      */
     @Override
-    public USBHostControllerAPI getAPIImplementation() {
+    public USBHostControllerAPI getAPI() {
         return core;
     }
 

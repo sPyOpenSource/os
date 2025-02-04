@@ -89,6 +89,7 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants, FirstLevel
      */
     private final USBBus bus;
     SleepManager sleepManager;
+    private int version = 1;
     /**
      * Create and initialize a new instance
      *
@@ -100,7 +101,11 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants, FirstLevel
         this.rm = (MemoryManager)InitialNaming.getInitialNaming().lookup("MemoryManager");
         int ioBase = device.getBaseAddress(0);
         if(ioBase == 0) ioBase = device.getBaseAddress(4) - 1;
-        if(device.getBaseAddress(1) != 0) ioBase = (ioBase << 16) + device.getBaseAddress(1);
+        else version = 2;
+        if(device.getBaseAddress(1) != 0) {
+            ioBase = (ioBase << 16) + device.getBaseAddress(1);
+            version = 3;
+        }
         //final int ioSize = baseAddr.getSize();
         System.out.println("Found UHCI at 0x" + NumberUtils.hex(ioBase));
 
@@ -247,7 +252,11 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants, FirstLevel
         return this.rootHub;
     }
 
-    /*private IOResource claimPorts(final MemoryManager rm, final ResourceOwner owner, final int low, final int length)
+    public int getVersion()
+    {
+        return version;
+    }
+        /*private IOResource claimPorts(final MemoryManager rm, final ResourceOwner owner, final int low, final int length)
         throws ResourceNotFreeException, DriverException {
         try {
             return AccessControllerUtils.doPrivileged(new PrivilegedExceptionAction<IOResource>() {

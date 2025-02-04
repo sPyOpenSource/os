@@ -59,7 +59,7 @@ public abstract class AbstractHostControllerDriver {
         claimResources();
         //device.registerAPI(USBHostControllerAPI.class, getAPIImplementation());
         // Create & start a monitor
-        final USBHubAPI hubApi = getAPIImplementation().getRootHUB();
+        final USBHostControllerAPI hubApi = getAPI();
         this.rootHubMonitor = new USBHubMonitor(device, hubApi, null);
         rootHubMonitor.startMonitor();
     }
@@ -94,5 +94,5 @@ public abstract class AbstractHostControllerDriver {
     /**
      * Gets the API implementation.
      */
-    protected abstract USBHostControllerAPI getAPIImplementation();
+    protected abstract USBHostControllerAPI getAPI();
 }
