@@ -23,11 +23,11 @@ public class Triangle extends Renderable {
   /**
    * Check whether this object intersects with the given ray.
    * 
-   * @param Ray
-   *          ray to intersect
+   * @param ray to intersect
    * @return float -1 if no intersection, otherwise returns value of parametric
    *         value t at the intersection point
    */
+  @Override
   public float intersect(Ray ray) {
     float t;
     float det, u, v;
@@ -92,9 +92,9 @@ public class Triangle extends Renderable {
    * surface shader. This function determines the point of intersection, surface
    * normal, and ray origin and passes them to the surface shader.
    * 
-   * @param Ray
+   * @param ray
    *          the intersecting ray
-   * @param Scene
+   * @param scene
    *          lights, objects, background
    * @return RGBfCol the shaded color
    */

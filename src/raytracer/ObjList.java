@@ -20,8 +20,7 @@ public class ObjList {
     if (elem == null) {
       elem = obj;
       // next=null; //is already initialized
-    }
-    else {
+    } else {
       myList = this;
       while (myList.next != null)
         myList = myList.next;

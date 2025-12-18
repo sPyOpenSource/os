@@ -1,4 +1,5 @@
 package sun;
+
 import java.awt.Frame;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
@@ -10,7 +11,7 @@ import raytracer.*;
 public class SunRaytrace extends Frame {
   private static final long serialVersionUID = 1L;
 
-  public final static int XRES=800, YRES=600;
+  public final static int XRES = 800, YRES = 600;
   
   /** the buffered image instance for drawing the rendered picture */ 
   private BufferedImage screen;
@@ -26,12 +27,14 @@ public class SunRaytrace extends Frame {
 
     // adds a window listener so that hitting the close button works 
     addWindowListener(new java.awt.event.WindowAdapter() {
+      @Override
       public void windowClosing(java.awt.event.WindowEvent e) {
         System.exit(0);
       }
     });
 	}
 
+  @Override
   public void paint(Graphics g) {
     g.drawImage(screen, 0, 0, this);
   }
@@ -39,17 +42,17 @@ public class SunRaytrace extends Frame {
   public static void main(String[] args){
     int y, image[][], line[];
     
-    if (args.length!=0) {
+    if (args.length != 0) {
         System.err.println("Improper arguments.");
         System.exit(0);
     }
-    SunRaytrace me=new SunRaytrace();
-    image=new int[YRES][XRES];
+    SunRaytrace me = new SunRaytrace();
+    image = new int[YRES][XRES];
     RayTrace rt = new RayTrace(new SceneDemo5(), false);
     rt.init(XRES, YRES);
     CalcTAinfo cTAi = new CalcTAinfo();
-    for (y=0; y<YRES; y++) {
-      rt.renderLine(line=image[cTAi.y=y], cTAi);
+    for (y = 0; y < YRES; y++) {
+      rt.renderLine(line = image[cTAi.y = y], cTAi);
       me.screen.setRGB(0, y, XRES, 1, line, 0, XRES);
       me.paint(me.getGraphics());
     }

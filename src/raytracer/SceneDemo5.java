@@ -135,6 +135,7 @@ public class SceneDemo5 extends Scene {
         0.3f, 0.3f, 0.3f));
   }
 
+  @Override
   public void createWorld() {
     setUpEye();
     setUpEnvironment();

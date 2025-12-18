@@ -17,15 +17,15 @@ public class DeviceList {
   
   public static void initDevices() {
     //program legacy hardware interrupt controller
-    (irq=new LegacyPIC()).init();
+    (irq = new LegacyPIC()).init();
     //initialize output and helpers
-    if ((vga=vesa=VESAGraphics.detectDevice())==null) vga=new VGAText();
-    out=new Viewer(vga);
+    if ((vga = vesa = VESAGraphics.detectDevice()) == null) vga = new VGAText();
+    out = new Viewer(vga);
     //initialize input and helpers
-    in=new EventBuffer(512);
-    (kevt=new KEvT()).useTable(49);
+    in = new EventBuffer(512);
+    (kevt = new KEvT()).useTable(49);
     //initialize devices and insert handlers
-    Kernel.ints.replaceIRQHandler(0, timer=new Timer());
-    Kernel.ints.replaceIRQHandler(1, keyb=new Keyboard());
+    Kernel.ints.replaceIRQHandler(0, timer = new Timer());
+    Kernel.ints.replaceIRQHandler(1, keyb = new Keyboard());
   }
 }

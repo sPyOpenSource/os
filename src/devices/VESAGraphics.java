@@ -17,9 +17,9 @@ public class VESAGraphics extends VGAText {
     VESAMode mode;
     
     //get information through real mode interrupt
-    contrInfo.id=0x32454256; //VBE2
+    contrInfo.id = 0x32454256; //VBE2
     MAGIC.wMem16(BIOS.EAX, (short)0x4F00); //get controller information
-    MAGIC.wMem16(BIOS.ES, (short)(KernelConst.KM_SCRATCH>>>4));
+    MAGIC.wMem16(BIOS.ES,  (short)(KernelConst.KM_SCRATCH>>>4));
     MAGIC.wMem16(BIOS.EDI, (short)(KernelConst.KM_SCRATCH&0xF));
     BIOS.rint(0x10);
 

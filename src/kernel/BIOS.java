@@ -1,19 +1,19 @@
 package kernel;
 
 public class BIOS {
-  private final static int BIOS_STKBSE = KernelConst.BIOS_STKEND-0x28;
-  public final static int DS    = BIOS_STKBSE+0x00;
-  public final static int ES    = BIOS_STKBSE+0x02;
-  public final static int FS    = BIOS_STKBSE+0x04;
-  public final static int FLAGS = BIOS_STKBSE+0x06;
-  public final static int EDI   = BIOS_STKBSE+0x08;
-  public final static int ESI   = BIOS_STKBSE+0x0C;
-  public final static int EBP   = BIOS_STKBSE+0x10;
-  public final static int ESP   = BIOS_STKBSE+0x14;
-  public final static int EBX   = BIOS_STKBSE+0x18;
-  public final static int EDX   = BIOS_STKBSE+0x1C;
-  public final static int ECX   = BIOS_STKBSE+0x20;
-  public final static int EAX   = BIOS_STKBSE+0x24;
+  private final static int BIOS_STKBSE = KernelConst.BIOS_STKEND - 0x28;
+  public final static int DS    = BIOS_STKBSE + 0x00;
+  public final static int ES    = BIOS_STKBSE + 0x02;
+  public final static int FS    = BIOS_STKBSE + 0x04;
+  public final static int FLAGS = BIOS_STKBSE + 0x06;
+  public final static int EDI   = BIOS_STKBSE + 0x08;
+  public final static int ESI   = BIOS_STKBSE + 0x0C;
+  public final static int EBP   = BIOS_STKBSE + 0x10;
+  public final static int ESP   = BIOS_STKBSE + 0x14;
+  public final static int EBX   = BIOS_STKBSE + 0x18;
+  public final static int EDX   = BIOS_STKBSE + 0x1C;
+  public final static int ECX   = BIOS_STKBSE + 0x20;
+  public final static int EAX   = BIOS_STKBSE + 0x24;
   
   public final static int F_CARRY  = 0x0001;
   public final static int F_PARITY = 0x0004;

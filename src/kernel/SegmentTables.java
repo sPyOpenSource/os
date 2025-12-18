@@ -25,8 +25,7 @@ public class SegmentTables {
     if (MAGIC.ptrSize==4) {
       MAGIC.inline(0x83, 0x04, 0x24, 0x05);         //add dword [esp],byte 0x05
       MAGIC.inline(0xCB);                           //retf
-    }
-    else {
+    } else {
       MAGIC.inline(0x83, 0x04, 0x24, 0x06);         //add dword [rsp],byte 0x06
       MAGIC.inline(0x48, 0xCB);                     //retf
     }

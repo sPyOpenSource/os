@@ -10,7 +10,7 @@ public class KernelConst {
   //constants to specify complete blocks
   public final static int KM_MEMSTART = 0x08000; //start of kernel-memory, size 512 bytes
   public final static int BIOS_MEMORY = 0x09000; //start of BIOS-memory
-  public final static int BIOS_STKEND = BIOS_MEMORY+0x1000; //allocate one page
+  public final static int BIOS_STKEND = BIOS_MEMORY + 0x1000; //allocate one page
   public final static int KM_GDTADDR  = 0x10000; //position of gdt, size 4K
   public final static int KM_IDTADDR  = 0x11000; //position of idt, size 4K
   public final static int KM_PAGEDIR  = 0x12000; //position of top-level page directory

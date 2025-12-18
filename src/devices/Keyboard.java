@@ -24,10 +24,11 @@ public class Keyboard extends Device {
   private int lastScan, lastKey;
   
   public Keyboard() {
-    myHID=++DeviceList.in.HIDs;
+    myHID = ++DeviceList.in.HIDs;
     toggleModifierAndRefreshLEDs((short)0);
   }
   
+  @Override
   public void handleIRQ(int no) {
     int actScan, fullScan;
     boolean mod;
@@ -61,19 +62,19 @@ public class Keyboard extends Device {
   }
   
   private void toggleModifierAndRefreshLEDs(short mod) {
-    byte LEDcode=(byte)0;
-    modifier^=mod;
-    if ((modifier&SCROLL_LOCK)!=(short)0) LEDcode|=(byte)1;
-    if ((modifier&NUM_LOCK)!=(short)0) LEDcode|=(byte)2;
-    if ((modifier&CAPS_LOCK)!=(short)0) LEDcode|=(byte)4;
-    while (((int)MAGIC.rIOs8(0x64)&0x2)!=0) /* wait */;
+    byte LEDcode = (byte)0;
+    modifier ^= mod;
+    if ((modifier & SCROLL_LOCK) != (short)0) LEDcode |= (byte)1;
+    if ((modifier & NUM_LOCK)    != (short)0) LEDcode |= (byte)2;
+    if ((modifier & CAPS_LOCK)   != (short)0) LEDcode |= (byte)4;
+    while (((int)MAGIC.rIOs8(0x64)&0x2) != 0) /* wait */;
     MAGIC.wIOs8(0x60, (byte)0xED);
-    while (((int)MAGIC.rIOs8(0x64)&0x2)!=0) /* wait */;
+    while (((int)MAGIC.rIOs8(0x64) & 0x2) != 0) /* wait */;
     MAGIC.wIOs8(0x60, LEDcode);
   }
   
   private boolean isInternalModifier(int code) {
-    if ((code&0xFF)>=0xF0) return true; //don't handle ACK
+    if ((code&0xFF) >= 0xF0) return true; //don't handle ACK
     switch (code) {
       case 0xE02A: case 0xE0AA: case 0xE0B6: case 0xE036:
         return true;
@@ -84,25 +85,25 @@ public class Keyboard extends Device {
   private boolean isRegularModifier(int code) {
     boolean make=(code&0x80)==0;
     switch (code&~0x80) {
-      case 0x1D:   setModifier(LEFT_CTRL, make); break;
-      case 0xE01D: setModifier(RIGHT_CTRL, make); break;
-      case 0x38:   setModifier(LEFT_ALT, make); break;
-      case 0xE038: setModifier(RIGHT_ALT, make); break;
-      case 0x2A:   setModifier(LEFT_SHIFT, make); break;
+      case 0x1D:   setModifier(LEFT_CTRL,   make); break;
+      case 0xE01D: setModifier(RIGHT_CTRL,  make); break;
+      case 0x38:   setModifier(LEFT_ALT,    make); break;
+      case 0xE038: setModifier(RIGHT_ALT,   make); break;
+      case 0x2A:   setModifier(LEFT_SHIFT,  make); break;
       case 0xE02A: setModifier(RIGHT_SHIFT, make); break;
-      case 0xE05B: setModifier(LEFT_WIN, make); break;
-      case 0xE05C: setModifier(RIGHT_WIN, make); break;
-      case 0xE05D: setModifier(CONTEXT, make); break;
+      case 0xE05B: setModifier(LEFT_WIN,    make); break;
+      case 0xE05C: setModifier(RIGHT_WIN,   make); break;
+      case 0xE05D: setModifier(CONTEXT,     make); break;
       case 0x3A:
-        if (make && lastScan!=0x3A) //switch only at down-event and at first time
+        if (make && lastScan != 0x3A) //switch only at down-event and at first time
           toggleModifierAndRefreshLEDs(CAPS_LOCK);
         break;
       case 0x45:
-        if (make && lastScan!=0x45) //switch only at down-event and first time
+        if (make && lastScan != 0x45) //switch only at down-event and first time
           toggleModifierAndRefreshLEDs(NUM_LOCK);
         break;
       case 0x46:
-        if (make && lastScan!=0x46) //switch only at down-event and first time
+        if (make && lastScan != 0x46) //switch only at down-event and first time
           toggleModifierAndRefreshLEDs(SCROLL_LOCK);
         break;
       default: //no modifier
@@ -113,8 +114,8 @@ public class Keyboard extends Device {
   }
   
   private boolean isSysRequest(int code) {
-    return (modifier&(LEFT_CTRL|RIGHT_CTRL))!=(short)0
-      && (modifier&(LEFT_SHIFT|RIGHT_SHIFT))!=(short)0
-      && code==0x01;
+    return (modifier & (LEFT_CTRL |RIGHT_CTRL)) !=(short)0
+        && (modifier & (LEFT_SHIFT|RIGHT_SHIFT))!=(short)0
+        && code == 0x01;
   }
 }

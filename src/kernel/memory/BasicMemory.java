@@ -12,15 +12,16 @@ public class BasicMemory extends MemIntf {
   
   public static void init() {
     //get size of code-image and prepare BasicMemory to start allocation at the next page
-    nextFreeAddress=(MAGIC.imageBase
-        +(MAGIC.rMem32(MAGIC.imageBase+KernelConst.KM_IMAGESIZEREL)+0xFFF))&~0xFFF;
+    nextFreeAddress = (MAGIC.imageBase
+        + (MAGIC.rMem32(MAGIC.imageBase + KernelConst.KM_IMAGESIZEREL) + 0xFFF)) & ~0xFFF;
     //get an instance of BasicMemory allocated with BasicMemory :)
-    Kernel.mem=(MemIntf)basicAllocate(
+    Kernel.mem = (MemIntf)basicAllocate(
         MAGIC.getInstScalarSize("BasicMemory"),
         MAGIC.getInstRelocEntries("BasicMemory"),
         MAGIC.clssDesc("BasicMemory"));
   }
   
+  @Override
   public Object allocate(int scalarSize, int relocEntries, SClassDesc type) {
     return basicAllocate(scalarSize, relocEntries, type);
   }

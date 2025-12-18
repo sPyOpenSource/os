@@ -12,7 +12,7 @@ public class Scheduler {
   public static void run() {
     DeviceList.out.cls();
     DeviceList.out.print("Welcome to smfPicOS running in ");
-    DeviceList.out.print(MAGIC.ptrSize<<3);
+    DeviceList.out.print(MAGIC.ptrSize << 3);
     DeviceList.out.println(" bit mode");
     printHelp();
     while(true) {
@@ -48,7 +48,7 @@ public class Scheduler {
     char c;
     RayTrace rt;
     CalcTAinfo cTAi;
-    int image[][]=null, line[];
+    int image[][] = null, line[];
     
     while (DeviceList.in.eventAvail()) {
       event=DeviceList.in.fetchEvent();

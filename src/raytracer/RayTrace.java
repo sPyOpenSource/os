@@ -30,7 +30,7 @@ public class RayTrace {
    *          image width
    * @param int
    *          image height
-   * @param Scene
+   * @param s
    *          world description
    */
   public RayTrace(Scene s, boolean useBGR) {

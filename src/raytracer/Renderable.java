@@ -18,9 +18,9 @@ public abstract class Renderable {
   /**
    * Shade a surface, given the world description and the ray.
    * 
-   * @param Ray
+   * @param r
    *          the ray to trace
-   * @param Scene
+   * @param scene
    *          lights, objects, background
    * @param three
    *          temporary vectors (are changed in method!)

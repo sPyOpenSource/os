@@ -16,7 +16,7 @@ public class Interrupts {
     //load gdt
     SegmentTables.lgdt(KernelConst.KC_FIRSTINTINGDT+KernelConst.KC_INTCOUNT);
     //instantiate Interrupts, insert Timer and fire
-    Kernel.ints=new Interrupts();
+    Kernel.ints = new Interrupts();
   }
   
   private Interrupts() {
@@ -50,12 +50,12 @@ public class Interrupts {
     Device[] newDevices;
     
     //save address of class descriptor and get destinations
-    cls=(int)MAGIC.cast2Ref(MAGIC.clssDesc("Interrupts"));
+    cls = (int)MAGIC.cast2Ref(MAGIC.clssDesc("Interrupts"));
     MAGIC.wMem32(KernelConst.KM_INTDESC, cls);
-    destWOE=MAGIC.rMem32(cls+MAGIC.mthdOff("Interrupts", "firstLevelHandlerWOE"))
-      +MAGIC.getCodeOff();
-    destWEC=MAGIC.rMem32(cls+MAGIC.mthdOff("Interrupts", "firstLevelHandlerWEC"))
-      +MAGIC.getCodeOff();
+    destWOE = MAGIC.rMem32(cls + MAGIC.mthdOff("Interrupts", "firstLevelHandlerWOE"))
+      + MAGIC.getCodeOff();
+    destWEC = MAGIC.rMem32(cls + MAGIC.mthdOff("Interrupts", "firstLevelHandlerWEC"))
+      + MAGIC.getCodeOff();
     //create entries for exceptions
     while (i<=0x07) createEntry(i++, destWOE);
     while (i<=0x0E) createEntry(i++, destWEC);
@@ -84,8 +84,7 @@ public class Interrupts {
       addr=KernelConst.KM_IDTADDR+(no<<3);
       MAGIC.wMem32(addr, (dest&0x0000FFFF)|(dstSel<<19));
       MAGIC.wMem32(addr+4, (dest&0xFFFF0000)|0x00008E00);
-    }
-    else { //amd64
+    } else { //amd64
       //write entry in idt
       addr=KernelConst.KM_IDTADDR+(no<<4);
       MAGIC.wMem32(addr, (dest&0x0000FFFF)|(dstSel<<19));

@@ -25,9 +25,9 @@ public class Ray {
   /**
    * This is the sole constructor; it normalizes the direction vector.
    * 
-   * @param Vector3f
+   * @param eye
    *          eyepoint
-   * @param Vector3f
+   * @param dir
    *          direction
    */
   public Ray(Vector3f eye, Vector3f dir) {
@@ -45,8 +45,7 @@ public class Ray {
    * This function casts the ray from the origin to infinity, stopping when it
    * hits any object.
    * 
-   * @param Vector
-   *          of objects to test for intersection
+   * @param  objList Vector of objects to test for intersection
    * @return boolean whether any object was hit
    */
   public boolean cast(ObjList objList) {
@@ -75,8 +74,7 @@ public class Ray {
    * This function traces the ray from the origin to infinity, checking every
    * object to determine which is closest.
    * 
-   * @param Vector
-   *          of objects to test for intersection
+   * @param objList Vector of objects to test for intersection
    * @return boolean whether any object was hit
    */
   public Renderable trace(ObjList objList) {

@@ -49,8 +49,8 @@ public class Kernel {
     MAGIC.inline(0x57); //push e/rdi
     MAGIC.inline(0xFC); //cld
     MAGIC.inline(0x8B, 0x7D); MAGIC.inlineOffset(1, addr); //mov edi,[e/rbp+16/32]
-    MAGIC.inline(0x8B, 0x45); MAGIC.inlineOffset(1, val); //mov eax,[e/rbp+8/16]
-    MAGIC.inline(0x8B, 0x4D); MAGIC.inlineOffset(1, cnt); //mov ecx,[e/rbp+12+24]
+    MAGIC.inline(0x8B, 0x45); MAGIC.inlineOffset(1, val);  //mov eax,[e/rbp+8/16]
+    MAGIC.inline(0x8B, 0x4D); MAGIC.inlineOffset(1, cnt);  //mov ecx,[e/rbp+12+24]
     MAGIC.inline(0xF3, 0xAB); //rep stosd
     MAGIC.inline(0x5F); //pop e/rdi
   }
