@@ -3,9 +3,9 @@ package kernel;
 //small SJC-example assuming a LED at PA2
 
 public class Kernel {
-  @SJC(enterCodeAddr=AVR.STARTMETHOD)
+  @SJC(enterCodeAddr = AVR.STARTMETHOD)
   public static void main() {
-    boolean state=false;
+    boolean state = false;
     
     //initialize default levels
     MAGIC.bitMem8(AVR.PORTA, (byte)0x04, state);
@@ -19,10 +19,10 @@ public class Kernel {
     //main loop
     while (true) {
       //toggle LED
-      state=!state;
+      state = !state;
       MAGIC.bitMem8(AVR.PORTA, (byte)0x04, state);
       //wait a bit
-      for (int i=0; i<10000; i++) { /*wait*/ }
+      for (int i = 0; i < 10000; i++) { /*wait*/ }
     }
   }
   
@@ -31,13 +31,13 @@ public class Kernel {
     short m, src, dst;
     
     //get start of RAM-init-area in flash
-    src=(short)MAGIC.getRamInitAddr();
+    src = (short)MAGIC.getRamInitAddr();
     
     //get maximum of RAM-init-area in flash
-    m=(short)((dst=(short)MAGIC.getRamAddr())+(short)MAGIC.getRamSize()+(short)MAGIC.getConstMemorySize());
+    m = (short)((dst = (short)MAGIC.getRamAddr()) + (short)MAGIC.getRamSize() + (short)MAGIC.getConstMemorySize());
     
     //copy each byte from flash to RAM
-    while (dst<m) MAGIC.wMem8(dst++, MAGIC.rIOs8(src++, 1));
+    while (dst < m) MAGIC.wMem8(dst++, MAGIC.rIOs8(src++, 1));
     //old version using rFlash8 below: while (dst<m) MAGIC.wMem8(dst++, rFlash8(src++));
   }
 }

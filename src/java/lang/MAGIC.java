@@ -91,4 +91,8 @@ public class MAGIC {
   public static void assign(int dest, int value) {}
   public static void assign(long dest, long value) {}
   public static void assign(Object dest, Object value) {}
+
+    public static byte rIOs8(short s, int i) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
