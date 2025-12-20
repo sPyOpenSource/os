@@ -132,7 +132,7 @@ public class DomainStarter {
   }
 
 
-  public static Domain createDomain(String title, String libName, String mainclass, String schedName, int gcinfo0, int gcinfo1, int gcinfo2, String gcinfo3,  int gcinfo4, int codesize, String [] argv, Naming naming, String interceptorName, Object[] portals, int garbageCollector) {
+  public static Domain createDomain(String title, String libName, String mainclass, String schedName, int gcinfo0, int gcinfo1, int gcinfo2, String gcinfo3, int gcinfo4, int codesize, String [] argv, Naming naming, String interceptorName, Object[] portals, int garbageCollector) {
       return createDomain(title, libName, mainclass, schedName, gcinfo0, gcinfo1, gcinfo2, gcinfo3, gcinfo4, codesize, argv, naming, interceptorName, portals, garbageCollector, (int[])null);
   }
 
@@ -151,7 +151,7 @@ public class DomainStarter {
     setupDomain();
     DomainManager dm = (DomainManager)naming.lookup("DomainManager");
     
-    /* Debug.message("create Domain "+libName+" via DomainStarter"); */
+    Debug.out.println("create Domain " + libName + " via DomainStarter");
     if ((i = libName.indexOf(".zip")) > 0) {
       name = libName.substring(0, i);
       lib  = name + ".jll";
@@ -184,7 +184,7 @@ public class DomainStarter {
 	    throw new Error("zip " + zip + " not found (can't create domain)");
 	}
     } else {
-	Debug.message("use library " + lib);
+	Debug.out.println("use library " + lib);
     }
 
     if (schedName != null) {
@@ -192,7 +192,6 @@ public class DomainStarter {
 	 libs = new String[] {"scheduler.jll"};
     }
 
- 
     Domain domain = dm.createDomain(title,   /* title */
 				    null,    /* CPU-Objects */
 				    schedulers,
@@ -207,8 +206,7 @@ public class DomainStarter {
 				    naming,
 				    portals,
 				    garbageCollector,
-				    schedinfo
-				    );
+				    schedinfo);
     
     CentralSecurityManager secmgr = (CentralSecurityManager)naming.lookup("SecurityManager");
     if ( secmgr != null ) {

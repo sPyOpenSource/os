@@ -25,12 +25,6 @@
 
 package java.lang.invoke;
 
-import java.io.Serializable;
-import java.util.LinkedHashSet;
-import java.util.Set;
-
-//import static jdk.internal.org.objectweb.asm.Opcodes.*;
-
 /**
  * Lambda metafactory implementation which dynamically creates an
  * inner-class-like class per lambda callsite.

@@ -2,7 +2,6 @@ package java.lang;
 
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
-import java.util.regex.Pattern;
 
 public final class String implements CharSequence
 {
@@ -570,7 +569,6 @@ public final class String implements CharSequence
             throw new StringIndexOutOfBoundsException(offset + length);
     }
 
-    @Override
     public boolean isEmpty() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
