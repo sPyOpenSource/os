@@ -1,8 +1,8 @@
 Java OS
 =======
 
-This is a Java OS project. It is a microkernel operating system. The applications is implemented with the Java programming language.
-This library consist of a JDK. You can use it to build your own software for this operating system.
+This is a Java OS project. It based on a microkernel. The applications is implemented with the Java programming language.
+This library consist of a cleanroom implementation of JDK. You can use it to build your own software for the operating system.
 
 Build
 -----
