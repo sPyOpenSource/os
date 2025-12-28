@@ -3,6 +3,7 @@ package java.lang;
 public class Short {
     public static Class TYPE;
     public static int MAX_VALUE = 256;
+    short value;
     
     public Short(short s) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

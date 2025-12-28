@@ -30,13 +30,11 @@ public class DebugPrintStream
     public void close()
     {
 	try
-	    {
-		out.close();
-	    }
-	catch (IOException e)
-	    {
-		error = true;
-	    }
+        {
+            out.close();
+        } catch (IOException e) {
+            error = true;
+        }
     }
 
     public void flush()

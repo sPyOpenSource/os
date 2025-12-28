@@ -9,7 +9,8 @@ public class Thread implements Runnable {
     public final static int MIN_PRIORITY = 1;
     public final static int NORM_PRIORITY = 5;
     public final static int MAX_PRIORITY = 10;
-
+    
+    private long stackFrame;
     private static Naming naming;
     private static CPUManager cpuManager;
 

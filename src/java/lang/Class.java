@@ -16,8 +16,14 @@ public final class Class<T>
     static CPUManager cpuManager = (CPUManager) InitialNaming.getInitialNaming().lookup("CPUManager");
 
     VMClass vmclass;
-    VMMethod methods[];
-
+    //VMMethod methods[];
+    long classHandle;
+    String name;
+    int modifiers;
+    Constructor<?>[] constructors;
+    Field[] fields;
+    Method[] methods;
+    
     private Class(VMClass cl) {
 	//System.out.println("");
 	this.vmclass = cl;

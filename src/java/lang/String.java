@@ -20,6 +20,7 @@ public final class String implements CharSequence
     }
 
     private char[] value;
+    int count, offset;
     
     /** Cache the hash code for the string */
     private int hash; // Default to 0

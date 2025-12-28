@@ -2,7 +2,8 @@ package java.lang;
 public class Byte {
 
     public static Class TYPE;
-
+    byte value;
+    
     public Byte(byte b) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
