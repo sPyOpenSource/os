@@ -23,7 +23,7 @@ package org.luaj.vm2.lib.jme;
 
 import org.luaj.vm2.Globals;
 import org.luaj.vm2.LoadState;
-import org.luaj.vm2.compiler.LuaC;
+import org.luaj.vm2.compiler.Compiler;
 import org.luaj.vm2.lib.*;
 
 /**
@@ -73,7 +73,7 @@ import org.luaj.vm2.lib.*;
  * <li>{@link org.luaj.vm2.lib.jme.JmeIoLib}</li>
  * <li>{@link OsLib}</li>
  * </ul>
- * In addition, the {@link LuaC} compiler is installed so lua files may be loaded in their source form.
+ * In addition, the {@link Compiler} compiler is installed so lua files may be loaded in their source form.
  * <p>
  * The debug globals are simply the standard globals plus the {@code debug} library {@link DebugLib}.
  * <p>
@@ -105,7 +105,7 @@ public class JmePlatform {
         globals.load(new CoroutineLib());
         globals.load(new JmeIoLib());
         LoadState.install(globals);
-        LuaC.install(globals);
+        Compiler.install(globals);
         return globals;
     }
 

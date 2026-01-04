@@ -35,7 +35,7 @@ import org.luaj.vm2.Prototype;
 import org.luaj.vm2.compiler.FuncState.BlockCnt;
 import org.luaj.vm2.lib.MathLib;
 
-public class LexState extends Constants {
+public class Lexer extends Constants {
 	
     protected static final String RESERVED_LOCAL_VAR_FOR_CONTROL = "(for control)";
     protected static final String RESERVED_LOCAL_VAR_FOR_STATE = "(for state)";
@@ -134,7 +134,7 @@ public class LexState extends Constants {
 	final Token t = new Token();  /* current token */
 	final Token lookahead = new Token();  /* look ahead token */
 	FuncState fs;  /* `FuncState' is private to the parser */
-	LuaC.CompileState L;
+	Compiler.CompileState L;
 	InputStream z;  /* input stream */
 	char[] buff;  /* buffer for tokens */
 	int nbuff; /* length of buffer */
@@ -201,7 +201,7 @@ public class LexState extends Constants {
 		return (c >= 0 && c <= ' ');
 	}
 
-	public LexState(LuaC.CompileState state, InputStream stream) {
+	public Lexer(Compiler.CompileState state, InputStream stream) {
 		this.z = stream;
 		this.buff = new char[32];
 		this.L = state;
@@ -287,7 +287,7 @@ public class LexState extends Constants {
 			syntaxerror("chunk has too many lines");
 	}
 
-	void setinput(LuaC.CompileState L, int firstByte, InputStream z, LuaString source) {
+	void setinput(Compiler.CompileState L, int firstByte, InputStream z, LuaString source) {
 		this.decpoint = '.';
 		this.L = L;
 		this.lookahead.token = TK_EOS; /* no look-ahead token */

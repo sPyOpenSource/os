@@ -256,8 +256,8 @@ public class Globals extends LuaTable {
 			return loader.load(p, chunkname, environment);
 		} catch (LuaError l) {
 			throw l;
-		} catch (Exception e) {
-			return error("load "+chunkname+": "+e);
+		} catch (IOException e) {
+			return error("load " + chunkname + ": " + e);
 		}
 	}
 
@@ -283,7 +283,7 @@ public class Globals extends LuaTable {
 		if (mode.indexOf('t') >= 0) {
 			return compilePrototype(is, chunkname);
 		}
-		error("Failed to load prototype "+chunkname+" using mode '"+mode+"'");
+		error("Failed to load prototype " + chunkname + " using mode '" + mode + "'");
 		return null;
 	}
 	

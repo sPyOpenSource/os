@@ -48,9 +48,9 @@ import org.luaj.vm2.lib.BaseLib;
  * lua bytecode compiling and java bytecode compiling.
  *  
  * <p> 
- * The {@link LuaC} compiler is installed by default by both the 
+ * The {@link Compiler} compiler is installed by default by both the 
  * {@link org.luaj.vm2.lib.jse.JsePlatform} and {@link org.luaj.vm2.lib.jme.JmePlatform} classes, 
- * so in the following example, the default {@link LuaC} compiler 
+ * so in the following example, the default {@link Compiler} compiler 
  * will be used:
  * <pre> {@code
  * Globals globals = JsePlatform.standardGlobals();
@@ -72,10 +72,10 @@ import org.luaj.vm2.lib.BaseLib;
  * @see LuaValue
  * @see Prototype
  */
-public class LuaC extends Constants implements Globals.Compiler, Globals.Loader {
+public class Compiler extends Constants implements Globals.Compiler, Globals.Loader {
 
 	/** A sharable instance of the LuaC compiler. */
-	public static final LuaC instance = new LuaC();
+	public static final Compiler instance = new Compiler();
 	
 	/** Install the compiler so that LoadState will first 
 	 * try to use it when handed bytes that are 
@@ -87,7 +87,7 @@ public class LuaC extends Constants implements Globals.Compiler, Globals.Loader 
 		globals.loader = instance;
 	}
 
-	protected LuaC() {}
+	protected Compiler() {}
 
 	/** Compile lua source into a Prototype.
 	 * @param stream InputStream representing the text source conforming to lua source syntax.
@@ -120,7 +120,7 @@ public class LuaC extends Constants implements Globals.Compiler, Globals.Loader 
 	
 		/** Parse the input */
 		Prototype luaY_parser(InputStream z, String name) throws IOException{
-			LexState lexstate = new LexState(this, z);
+			Lexer lexstate = new Lexer(this, z);
 			FuncState funcstate = new FuncState();
 			// lexstate.buff = buff;
 			lexstate.fs = funcstate;
@@ -129,9 +129,9 @@ public class LuaC extends Constants implements Globals.Compiler, Globals.Loader 
 			funcstate.f = new Prototype();
 			funcstate.f.source = (LuaString) LuaValue.valueOf(name);
 			lexstate.mainfunc(funcstate);
-			LuaC._assert (funcstate.prev == null);
+			Compiler._assert (funcstate.prev == null);
 			/* all scopes should be correctly finished */
-			LuaC._assert (lexstate.dyd == null 
+			Compiler._assert (lexstate.dyd == null 
 					|| (lexstate.dyd.n_actvar == 0 && lexstate.dyd.n_gt == 0 && lexstate.dyd.n_label == 0));
 			return funcstate.f;
 		}
