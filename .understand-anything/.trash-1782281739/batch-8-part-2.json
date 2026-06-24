@@ -1,0 +1,696 @@
+{
+  "batchIndex": 8,
+  "part": 2,
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "3e260f23a0f25f09",
+      "type": "class",
+      "name": "TCPOutputStream",
+      "filePath": "src/jx/net/TCPOutputStream.java",
+      "startLine": 10,
+      "endLine": 59,
+      "methods": [
+        "TCPOutputStream",
+        "write",
+        "flush",
+        "close"
+      ],
+      "properties": [
+        "tcpSocket",
+        "buffer",
+        "buf_pos"
+      ]
+    },
+    {
+      "id": "77d9d212b2b2fe9e",
+      "type": "class",
+      "name": "RPC",
+      "filePath": "src/jx/rpc/RPC.java",
+      "startLine": 16,
+      "endLine": 434,
+      "methods": [
+        "RPC",
+        "init",
+        "getNewBuffer",
+        "initFrom",
+        "call",
+        "callOnly",
+        "waitForReply",
+        "waitForNextReply",
+        "run",
+        "getLocalAddress",
+        "createReceiver",
+        "receive",
+        "replyOnly",
+        "getUDPBuffer",
+        "findUDPSender"
+      ],
+      "properties": [
+        "IPPROTO_TCP",
+        "IPPROTO_UDP",
+        "receiver",
+        "receivePort",
+        "memMgr",
+        "net",
+        "waiters",
+        "buffers",
+        "beforeReceive",
+        "debug",
+        "debugPacketNotice",
+        "debugPacketDump",
+        "SUCCESS",
+        "PROG_UNAVAIL",
+        "PROG_MISMATCH",
+        "PROC_UNAVAIL",
+        "GARBAGE_ARGS",
+        "SYSTEM_ERR",
+        "xid",
+        "cpuManager",
+        "NUMBER_CACHED_UDP_ENDPOINTS",
+        "senders",
+        "event_reply",
+        "event_rcv",
+        "memoryManager"
+      ]
+    },
+    {
+      "id": "0284ad115f6d6c86",
+      "type": "class",
+      "name": "InputStreamPortal",
+      "filePath": "src/jx/streams/InputStreamPortal.java",
+      "startLine": 6,
+      "endLine": 8,
+      "methods": [
+        "read"
+      ],
+      "properties": []
+    },
+    {
+      "id": "434def55bda6bb6b",
+      "type": "class",
+      "name": "OutputStreamPortal",
+      "filePath": "src/jx/streams/OutputStreamPortal.java",
+      "startLine": 6,
+      "endLine": 9,
+      "methods": [
+        "write",
+        "flush"
+      ],
+      "properties": []
+    },
+    {
+      "id": "c45e8732f1e773ae",
+      "type": "class",
+      "name": "MemoryOutputStream",
+      "filePath": "src/jx/zero/memory/MemoryOutputStream.java",
+      "startLine": 7,
+      "endLine": 21,
+      "methods": [
+        "MemoryOutputStream",
+        "write"
+      ],
+      "properties": [
+        "buf",
+        "pos",
+        "size"
+      ]
+    },
+    {
+      "id": "4922235cb0c65792",
+      "type": "dependency",
+      "name": "SocketPermission.java",
+      "filePath": "src/java/net/SocketPermission.java"
+    },
+    {
+      "id": "9d1fdd15641f78a4",
+      "type": "dependency",
+      "name": "URL.java",
+      "filePath": "src/java/net/URL.java"
+    },
+    {
+      "id": "b959d01a8048ba08",
+      "type": "dependency",
+      "name": "FilterInputStream.java",
+      "filePath": "src/java/io/FilterInputStream.java"
+    },
+    {
+      "id": "28ba8a28519142b3",
+      "type": "dependency",
+      "name": "IOException.java",
+      "filePath": "src/java/io/IOException.java"
+    },
+    {
+      "id": "34543bf778fd1998",
+      "type": "dependency",
+      "name": "FilterOutputStream.java",
+      "filePath": "src/java/io/FilterOutputStream.java"
+    },
+    {
+      "id": "13f3002fe28ab615",
+      "type": "dependency",
+      "name": "DefaultPermissionCollection.java",
+      "filePath": "src/gnu/java/security/DefaultPermissionCollection.java"
+    },
+    {
+      "id": "f411576d8dbdb282",
+      "type": "dependency",
+      "name": "ByteArrayInputStream.java",
+      "filePath": "src/java/io/ByteArrayInputStream.java"
+    },
+    {
+      "id": "fa468b8a651f5b2b",
+      "type": "dependency",
+      "name": "ByteArrayOutputStream.java",
+      "filePath": "src/java/io/ByteArrayOutputStream.java"
+    },
+    {
+      "id": "1590cd89ba611d2b",
+      "type": "dependency",
+      "name": "ObjectInputStream.java",
+      "filePath": "src/java/io/ObjectInputStream.java"
+    },
+    {
+      "id": "304e7f96c408696f",
+      "type": "dependency",
+      "name": "ObjectOutputStream.java",
+      "filePath": "src/java/io/ObjectOutputStream.java"
+    },
+    {
+      "id": "3c318f196d688583",
+      "type": "dependency",
+      "name": "Debug.java",
+      "filePath": "src/jx/zero/Debug.java"
+    },
+    {
+      "id": "4c93a7a49eb3483e",
+      "type": "dependency",
+      "name": "ObjectStreamField.java",
+      "filePath": "src/java/io/ObjectStreamField.java"
+    },
+    {
+      "id": "3c26d2167c08b76c",
+      "type": "dependency",
+      "name": "Vector.java",
+      "filePath": "src/java/util/Vector.java"
+    },
+    {
+      "id": "8ac4357fdb03122c",
+      "type": "dependency",
+      "name": "MethodType.java",
+      "filePath": "src/java/lang/invoke/MethodType.java"
+    },
+    {
+      "id": "f70cbf5996805a26",
+      "type": "dependency",
+      "name": "Stream.java",
+      "filePath": "src/java/util/stream/Stream.java"
+    },
+    {
+      "id": "e749832cbdfa0029",
+      "type": "dependency",
+      "name": "USBDevice.java",
+      "filePath": "src/org/jnode/driver/bus/usb/USBDevice.java"
+    },
+    {
+      "id": "a85c6cd6359060e0",
+      "type": "dependency",
+      "name": "EncodingManager.java",
+      "filePath": "src/gnu/java/io/EncodingManager.java"
+    },
+    {
+      "id": "d1137060c3e043cd",
+      "type": "dependency",
+      "name": "PropertyChangeSupport.java",
+      "filePath": "src/java/beans/PropertyChangeSupport.java"
+    },
+    {
+      "id": "9543e4cdd603e276",
+      "type": "dependency",
+      "name": "VetoableChangeSupport.java",
+      "filePath": "src/java/beans/VetoableChangeSupport.java"
+    },
+    {
+      "id": "de76ee2dce649be5",
+      "type": "dependency",
+      "name": "SerializablePermission.java",
+      "filePath": "src/java/io/SerializablePermission.java"
+    },
+    {
+      "id": "6450c0c5c396af1c",
+      "type": "dependency",
+      "name": "MimeTypeMapper.java",
+      "filePath": "src/java/net/MimeTypeMapper.java"
+    },
+    {
+      "id": "c97d3ea53e7a634b",
+      "type": "dependency",
+      "name": "URLConnection.java",
+      "filePath": "src/java/net/URLConnection.java"
+    },
+    {
+      "id": "55744e604604a7a2",
+      "type": "dependency",
+      "name": "DriverManager.java",
+      "filePath": "src/java/sql/DriverManager.java"
+    },
+    {
+      "id": "ccdfcf732ddb072c",
+      "type": "dependency",
+      "name": "Socket.java",
+      "filePath": "src/java/net/Socket.java"
+    }
+  ],
+  "edges": [
+    {
+      "source": "da8b14945624fb45",
+      "target": "3e260f23a0f25f09",
+      "type": "contains"
+    },
+    {
+      "source": "3e260f23a0f25f09",
+      "target": "da8b14945624fb45",
+      "type": "exports"
+    },
+    {
+      "source": "914fa86f8ae0ef40",
+      "target": "77d9d212b2b2fe9e",
+      "type": "contains"
+    },
+    {
+      "source": "77d9d212b2b2fe9e",
+      "target": "914fa86f8ae0ef40",
+      "type": "exports"
+    },
+    {
+      "source": "91e1659e244cab0f",
+      "target": "0284ad115f6d6c86",
+      "type": "contains"
+    },
+    {
+      "source": "0284ad115f6d6c86",
+      "target": "91e1659e244cab0f",
+      "type": "exports"
+    },
+    {
+      "source": "347f9a71bdf9511b",
+      "target": "434def55bda6bb6b",
+      "type": "contains"
+    },
+    {
+      "source": "434def55bda6bb6b",
+      "target": "347f9a71bdf9511b",
+      "type": "exports"
+    },
+    {
+      "source": "b56460057705527d",
+      "target": "c45e8732f1e773ae",
+      "type": "contains"
+    },
+    {
+      "source": "c45e8732f1e773ae",
+      "target": "b56460057705527d",
+      "type": "exports"
+    },
+    {
+      "source": "f310c24c3460c5bf",
+      "target": "4922235cb0c65792",
+      "type": "imports"
+    },
+    {
+      "source": "f310c24c3460c5bf",
+      "target": "9d1fdd15641f78a4",
+      "type": "imports"
+    },
+    {
+      "source": "212497a68449b046",
+      "target": "b959d01a8048ba08",
+      "type": "imports"
+    },
+    {
+      "source": "212497a68449b046",
+      "target": "28ba8a28519142b3",
+      "type": "imports"
+    },
+    {
+      "source": "86136f957d5ff4bc",
+      "target": "34543bf778fd1998",
+      "type": "imports"
+    },
+    {
+      "source": "86136f957d5ff4bc",
+      "target": "28ba8a28519142b3",
+      "type": "imports"
+    },
+    {
+      "source": "437c73b82acb9e7b",
+      "target": "13f3002fe28ab615",
+      "type": "imports"
+    },
+    {
+      "source": "3cceeadf59133e76",
+      "target": "f411576d8dbdb282",
+      "type": "imports"
+    },
+    {
+      "source": "3cceeadf59133e76",
+      "target": "fa468b8a651f5b2b",
+      "type": "imports"
+    },
+    {
+      "source": "3cceeadf59133e76",
+      "target": "28ba8a28519142b3",
+      "type": "imports"
+    },
+    {
+      "source": "3cceeadf59133e76",
+      "target": "1590cd89ba611d2b",
+      "type": "imports"
+    },
+    {
+      "source": "3cceeadf59133e76",
+      "target": "304e7f96c408696f",
+      "type": "imports"
+    },
+    {
+      "source": "214d86039fda987b",
+      "target": "28ba8a28519142b3",
+      "type": "imports"
+    },
+    {
+      "source": "214d86039fda987b",
+      "target": "1590cd89ba611d2b",
+      "type": "imports"
+    },
+    {
+      "source": "214d86039fda987b",
+      "target": "304e7f96c408696f",
+      "type": "imports"
+    },
+    {
+      "source": "214d86039fda987b",
+      "target": "3c318f196d688583",
+      "type": "imports"
+    },
+    {
+      "source": "5cc067aa3c5005f2",
+      "target": "28ba8a28519142b3",
+      "type": "imports"
+    },
+    {
+      "source": "5cc067aa3c5005f2",
+      "target": "1590cd89ba611d2b",
+      "type": "imports"
+    },
+    {
+      "source": "5cc067aa3c5005f2",
+      "target": "304e7f96c408696f",
+      "type": "imports"
+    },
+    {
+      "source": "0f445ceb075828f8",
+      "target": "28ba8a28519142b3",
+      "type": "imports"
+    },
+    {
+      "source": "ab8a716ff6bd21d3",
+      "target": "28ba8a28519142b3",
+      "type": "imports"
+    },
+    {
+      "source": "ab8a716ff6bd21d3",
+      "target": "1590cd89ba611d2b",
+      "type": "imports"
+    },
+    {
+      "source": "ab8a716ff6bd21d3",
+      "target": "304e7f96c408696f",
+      "type": "imports"
+    },
+    {
+      "source": "ab8a716ff6bd21d3",
+      "target": "4c93a7a49eb3483e",
+      "type": "imports"
+    },
+    {
+      "source": "7c2b2914de3dd268",
+      "target": "28ba8a28519142b3",
+      "type": "imports"
+    },
+    {
+      "source": "914fa86f8ae0ef40",
+      "target": "3c26d2167c08b76c",
+      "type": "imports"
+    },
+    {
+      "source": "91e1659e244cab0f",
+      "target": "28ba8a28519142b3",
+      "type": "imports"
+    },
+    {
+      "source": "347f9a71bdf9511b",
+      "target": "28ba8a28519142b3",
+      "type": "imports"
+    },
+    {
+      "source": "b56460057705527d",
+      "target": "28ba8a28519142b3",
+      "type": "imports"
+    },
+    {
+      "source": "f310c24c3460c5bf",
+      "target": "4922235cb0c65792",
+      "type": "depends_on"
+    },
+    {
+      "source": "f310c24c3460c5bf",
+      "target": "9d1fdd15641f78a4",
+      "type": "depends_on"
+    },
+    {
+      "source": "212497a68449b046",
+      "target": "b959d01a8048ba08",
+      "type": "depends_on"
+    },
+    {
+      "source": "212497a68449b046",
+      "target": "28ba8a28519142b3",
+      "type": "depends_on"
+    },
+    {
+      "source": "86136f957d5ff4bc",
+      "target": "34543bf778fd1998",
+      "type": "depends_on"
+    },
+    {
+      "source": "86136f957d5ff4bc",
+      "target": "28ba8a28519142b3",
+      "type": "depends_on"
+    },
+    {
+      "source": "437c73b82acb9e7b",
+      "target": "13f3002fe28ab615",
+      "type": "depends_on"
+    },
+    {
+      "source": "3cceeadf59133e76",
+      "target": "f411576d8dbdb282",
+      "type": "depends_on"
+    },
+    {
+      "source": "3cceeadf59133e76",
+      "target": "fa468b8a651f5b2b",
+      "type": "depends_on"
+    },
+    {
+      "source": "3cceeadf59133e76",
+      "target": "28ba8a28519142b3",
+      "type": "depends_on"
+    },
+    {
+      "source": "3cceeadf59133e76",
+      "target": "1590cd89ba611d2b",
+      "type": "depends_on"
+    },
+    {
+      "source": "3cceeadf59133e76",
+      "target": "304e7f96c408696f",
+      "type": "depends_on"
+    },
+    {
+      "source": "214d86039fda987b",
+      "target": "28ba8a28519142b3",
+      "type": "depends_on"
+    },
+    {
+      "source": "214d86039fda987b",
+      "target": "1590cd89ba611d2b",
+      "type": "depends_on"
+    },
+    {
+      "source": "214d86039fda987b",
+      "target": "304e7f96c408696f",
+      "type": "depends_on"
+    },
+    {
+      "source": "214d86039fda987b",
+      "target": "3c318f196d688583",
+      "type": "depends_on"
+    },
+    {
+      "source": "214d86039fda987b",
+      "target": "8ac4357fdb03122c",
+      "type": "depends_on"
+    },
+    {
+      "source": "214d86039fda987b",
+      "target": "f70cbf5996805a26",
+      "type": "depends_on"
+    },
+    {
+      "source": "214d86039fda987b",
+      "target": "e749832cbdfa0029",
+      "type": "depends_on"
+    },
+    {
+      "source": "5cc067aa3c5005f2",
+      "target": "28ba8a28519142b3",
+      "type": "depends_on"
+    },
+    {
+      "source": "5cc067aa3c5005f2",
+      "target": "1590cd89ba611d2b",
+      "type": "depends_on"
+    },
+    {
+      "source": "5cc067aa3c5005f2",
+      "target": "304e7f96c408696f",
+      "type": "depends_on"
+    },
+    {
+      "source": "0882806d77f5e155",
+      "target": "a85c6cd6359060e0",
+      "type": "depends_on"
+    },
+    {
+      "source": "0882806d77f5e155",
+      "target": "13f3002fe28ab615",
+      "type": "depends_on"
+    },
+    {
+      "source": "0882806d77f5e155",
+      "target": "d1137060c3e043cd",
+      "type": "depends_on"
+    },
+    {
+      "source": "0882806d77f5e155",
+      "target": "9543e4cdd603e276",
+      "type": "depends_on"
+    },
+    {
+      "source": "0882806d77f5e155",
+      "target": "304e7f96c408696f",
+      "type": "depends_on"
+    },
+    {
+      "source": "0882806d77f5e155",
+      "target": "de76ee2dce649be5",
+      "type": "depends_on"
+    },
+    {
+      "source": "0882806d77f5e155",
+      "target": "6450c0c5c396af1c",
+      "type": "depends_on"
+    },
+    {
+      "source": "0882806d77f5e155",
+      "target": "9d1fdd15641f78a4",
+      "type": "depends_on"
+    },
+    {
+      "source": "0882806d77f5e155",
+      "target": "c97d3ea53e7a634b",
+      "type": "depends_on"
+    },
+    {
+      "source": "0f445ceb075828f8",
+      "target": "28ba8a28519142b3",
+      "type": "depends_on"
+    },
+    {
+      "source": "ed460fcdcd69fb65",
+      "target": "a85c6cd6359060e0",
+      "type": "depends_on"
+    },
+    {
+      "source": "ed460fcdcd69fb65",
+      "target": "de76ee2dce649be5",
+      "type": "depends_on"
+    },
+    {
+      "source": "ed460fcdcd69fb65",
+      "target": "9d1fdd15641f78a4",
+      "type": "depends_on"
+    },
+    {
+      "source": "ed460fcdcd69fb65",
+      "target": "55744e604604a7a2",
+      "type": "depends_on"
+    },
+    {
+      "source": "ab8a716ff6bd21d3",
+      "target": "28ba8a28519142b3",
+      "type": "depends_on"
+    },
+    {
+      "source": "ab8a716ff6bd21d3",
+      "target": "1590cd89ba611d2b",
+      "type": "depends_on"
+    },
+    {
+      "source": "ab8a716ff6bd21d3",
+      "target": "304e7f96c408696f",
+      "type": "depends_on"
+    },
+    {
+      "source": "ab8a716ff6bd21d3",
+      "target": "4c93a7a49eb3483e",
+      "type": "depends_on"
+    },
+    {
+      "source": "7c2b2914de3dd268",
+      "target": "28ba8a28519142b3",
+      "type": "depends_on"
+    },
+    {
+      "source": "7c2b2914de3dd268",
+      "target": "ccdfcf732ddb072c",
+      "type": "depends_on"
+    },
+    {
+      "source": "da8b14945624fb45",
+      "target": "ccdfcf732ddb072c",
+      "type": "depends_on"
+    },
+    {
+      "source": "914fa86f8ae0ef40",
+      "target": "3c26d2167c08b76c",
+      "type": "depends_on"
+    },
+    {
+      "source": "91e1659e244cab0f",
+      "target": "28ba8a28519142b3",
+      "type": "depends_on"
+    },
+    {
+      "source": "347f9a71bdf9511b",
+      "target": "28ba8a28519142b3",
+      "type": "depends_on"
+    },
+    {
+      "source": "b56460057705527d",
+      "target": "28ba8a28519142b3",
+      "type": "depends_on"
+    }
+  ]
+}

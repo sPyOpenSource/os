@@ -1,0 +1,649 @@
+{
+  "batchIndex": 33,
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "fd36f9d8b87168",
+      "type": "file",
+      "name": "FileExistsException.java",
+      "filePath": "src/jx/fs/FileExistsException.java",
+      "language": "java",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "7861f6c3c6fa18",
+      "type": "file",
+      "name": "FSException.java",
+      "filePath": "src/jx/fs/FSException.java",
+      "language": "java",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "3bae1d7df2a1a",
+      "type": "file",
+      "name": "FSInterfaceDomain.java",
+      "filePath": "src/jx/fs/FSInterfaceDomain.java",
+      "language": "java",
+      "totalLines": 77,
+      "nonEmptyLines": 60,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 11,
+        "functionCount": 11,
+        "classCount": 2
+      }
+    },
+    {
+      "id": "b770b1e97ef778",
+      "type": "file",
+      "name": "FSObjectImpl.java",
+      "filePath": "src/jx/fs/FSObjectImpl.java",
+      "language": "java",
+      "totalLines": 72,
+      "nonEmptyLines": 59,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 12,
+        "functionCount": 11,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "8b42e20f3811b",
+      "type": "file",
+      "name": "InodeImpl.java",
+      "filePath": "src/jx/fs/InodeImpl.java",
+      "language": "java",
+      "totalLines": 353,
+      "nonEmptyLines": 296,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 72,
+        "functionCount": 49,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "f7a3159722b09",
+      "type": "file",
+      "name": "InodeIOException.java",
+      "filePath": "src/jx/fs/InodeIOException.java",
+      "language": "java",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "240eceb1de0ec8",
+      "type": "file",
+      "name": "InodeNotFoundException.java",
+      "filePath": "src/jx/fs/InodeNotFoundException.java",
+      "language": "java",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "f7c00a48db716",
+      "type": "file",
+      "name": "NoDirectoryInodeException.java",
+      "filePath": "src/jx/fs/NoDirectoryInodeException.java",
+      "language": "java",
+      "totalLines": 15,
+      "nonEmptyLines": 13,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "78759b57766ce8",
+      "type": "file",
+      "name": "NoFileInodeException.java",
+      "filePath": "src/jx/fs/NoFileInodeException.java",
+      "language": "java",
+      "totalLines": 15,
+      "nonEmptyLines": 13,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "5e999da25896f",
+      "type": "file",
+      "name": "NoSymlinkInodeException.java",
+      "filePath": "src/jx/fs/NoSymlinkInodeException.java",
+      "language": "java",
+      "totalLines": 15,
+      "nonEmptyLines": 13,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "20297e0d8ad73",
+      "type": "file",
+      "name": "NotExistException.java",
+      "filePath": "src/jx/fs/NotExistException.java",
+      "language": "java",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "677aec33946198",
+      "type": "file",
+      "name": "NotSupportedException.java",
+      "filePath": "src/jx/fs/NotSupportedException.java",
+      "language": "java",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "2aea94db724aa8",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/fs/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "97c993b4b39b38",
+      "type": "file",
+      "name": "PermissionException.java",
+      "filePath": "src/jx/fs/PermissionException.java",
+      "language": "java",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "7d99b58175d8b",
+      "type": "file",
+      "name": "ReadOnlyDirectoryImpl.java",
+      "filePath": "src/jx/fs/ReadOnlyDirectoryImpl.java",
+      "language": "java",
+      "totalLines": 69,
+      "nonEmptyLines": 59,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "802344d4e62fa8",
+      "type": "file",
+      "name": "RegularFileImpl.java",
+      "filePath": "src/jx/fs/RegularFileImpl.java",
+      "language": "java",
+      "totalLines": 80,
+      "nonEmptyLines": 66,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "b9467689f9f24",
+      "type": "file",
+      "name": "StatFSImpl.java",
+      "filePath": "src/jx/fs/StatFSImpl.java",
+      "language": "java",
+      "totalLines": 39,
+      "nonEmptyLines": 32,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 12,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "71977e91e4a0a",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/net/dispatch/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "36f371fc443b2",
+      "type": "file",
+      "name": "UpperLayer.java",
+      "filePath": "src/jx/net/dispatch/UpperLayer.java",
+      "language": "java",
+      "totalLines": 11,
+      "nonEmptyLines": 8,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "90bb3bafbe2ef8",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/net/format/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "b8cee03d0df2d8",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/net/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "2dd2dc0b4e2718",
+      "type": "file",
+      "name": "ARPTimer.java",
+      "filePath": "src/jx/net/protocol/arp/ARPTimer.java",
+      "language": "java",
+      "totalLines": 31,
+      "nonEmptyLines": 22,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "1c57eb12973b4",
+      "type": "file",
+      "name": "ARPTimerArg.java",
+      "filePath": "src/jx/net/protocol/arp/ARPTimerArg.java",
+      "language": "java",
+      "totalLines": 20,
+      "nonEmptyLines": 14,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "f3b9ab847908b",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/net/protocol/arp/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "a6860c92d07798",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/net/protocol/bootp/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "9e44db96f6ac68",
+      "type": "class",
+      "name": "FileExistsException",
+      "filePath": "src/jx/fs/FileExistsException.java",
+      "startLine": 6,
+      "endLine": 14
+    },
+    {
+      "id": "8674ad7d6ccc78",
+      "type": "class",
+      "name": "FSException",
+      "filePath": "src/jx/fs/FSException.java",
+      "startLine": 3,
+      "endLine": 11
+    },
+    {
+      "id": "e57cebfa99225",
+      "type": "class",
+      "name": "MyDummyClock",
+      "filePath": "src/jx/fs/FSInterfaceDomain.java",
+      "startLine": 11,
+      "endLine": 31
+    },
+    {
+      "id": "984e93f68dc998",
+      "type": "class",
+      "name": "FSInterfaceDomain",
+      "filePath": "src/jx/fs/FSInterfaceDomain.java",
+      "startLine": 34,
+      "endLine": 77
+    },
+    {
+      "id": "8d158de04f96a",
+      "type": "class",
+      "name": "FSObjectImpl",
+      "filePath": "src/jx/fs/FSObjectImpl.java",
+      "startLine": 3,
+      "endLine": 72
+    },
+    {
+      "id": "494cecb82ff04",
+      "type": "class",
+      "name": "InodeImpl",
+      "filePath": "src/jx/fs/InodeImpl.java",
+      "startLine": 10,
+      "endLine": 353
+    },
+    {
+      "id": "d37bf42e45ee9",
+      "type": "class",
+      "name": "InodeIOException",
+      "filePath": "src/jx/fs/InodeIOException.java",
+      "startLine": 6,
+      "endLine": 14
+    },
+    {
+      "id": "93f10a138cbf5",
+      "type": "class",
+      "name": "InodeNotFoundException",
+      "filePath": "src/jx/fs/InodeNotFoundException.java",
+      "startLine": 6,
+      "endLine": 14
+    },
+    {
+      "id": "35ea40eac13d68",
+      "type": "class",
+      "name": "NoDirectoryInodeException",
+      "filePath": "src/jx/fs/NoDirectoryInodeException.java",
+      "startLine": 7,
+      "endLine": 15
+    },
+    {
+      "id": "ed13ee9611eed8",
+      "type": "class",
+      "name": "NoFileInodeException",
+      "filePath": "src/jx/fs/NoFileInodeException.java",
+      "startLine": 7,
+      "endLine": 15
+    },
+    {
+      "id": "ae1c58edcb35a8",
+      "type": "class",
+      "name": "NoSymlinkInodeException",
+      "filePath": "src/jx/fs/NoSymlinkInodeException.java",
+      "startLine": 7,
+      "endLine": 15
+    },
+    {
+      "id": "0856c496b2a68",
+      "type": "class",
+      "name": "NotExistException",
+      "filePath": "src/jx/fs/NotExistException.java",
+      "startLine": 6,
+      "endLine": 14
+    },
+    {
+      "id": "e13afeb03db73",
+      "type": "class",
+      "name": "NotSupportedException",
+      "filePath": "src/jx/fs/NotSupportedException.java",
+      "startLine": 6,
+      "endLine": 14
+    },
+    {
+      "id": "92c7ef5ecf7da",
+      "type": "class",
+      "name": "PermissionException",
+      "filePath": "src/jx/fs/PermissionException.java",
+      "startLine": 6,
+      "endLine": 14
+    },
+    {
+      "id": "a2a93da2a82b28",
+      "type": "class",
+      "name": "ReadOnlyDirectoryImpl",
+      "filePath": "src/jx/fs/ReadOnlyDirectoryImpl.java",
+      "startLine": 3,
+      "endLine": 69
+    },
+    {
+      "id": "4d307efabd683",
+      "type": "class",
+      "name": "RegularFileImpl",
+      "filePath": "src/jx/fs/RegularFileImpl.java",
+      "startLine": 5,
+      "endLine": 80
+    },
+    {
+      "id": "7c05bb27391f4",
+      "type": "class",
+      "name": "StatFSImpl",
+      "filePath": "src/jx/fs/StatFSImpl.java",
+      "startLine": 3,
+      "endLine": 39
+    },
+    {
+      "id": "fef2879f8eb588",
+      "type": "class",
+      "name": "UpperLayer",
+      "filePath": "src/jx/net/dispatch/UpperLayer.java",
+      "startLine": 6,
+      "endLine": 11
+    },
+    {
+      "id": "2064474526757",
+      "type": "class",
+      "name": "ARPTimer",
+      "filePath": "src/jx/net/protocol/arp/ARPTimer.java",
+      "startLine": 9,
+      "endLine": 31
+    },
+    {
+      "id": "65cf2176b31dd8",
+      "type": "class",
+      "name": "ARPTimerArg",
+      "filePath": "src/jx/net/protocol/arp/ARPTimerArg.java",
+      "startLine": 8,
+      "endLine": 20
+    },
+    {
+      "id": "ee9aab5663df5",
+      "type": "dependency",
+      "name": "NFSException.java",
+      "filePath": "src/jx/rpcsvc/nfs2/NFSException.java"
+    }
+  ],
+  "edges": [
+    {
+      "source": "fd36f9d8b87168",
+      "target": "9e44db96f6ac68",
+      "type": "contains"
+    },
+    {
+      "source": "7861f6c3c6fa18",
+      "target": "8674ad7d6ccc78",
+      "type": "contains"
+    },
+    {
+      "source": "3bae1d7df2a1a",
+      "target": "e57cebfa99225",
+      "type": "contains"
+    },
+    {
+      "source": "3bae1d7df2a1a",
+      "target": "984e93f68dc998",
+      "type": "contains"
+    },
+    {
+      "source": "b770b1e97ef778",
+      "target": "8d158de04f96a",
+      "type": "contains"
+    },
+    {
+      "source": "8b42e20f3811b",
+      "target": "494cecb82ff04",
+      "type": "contains"
+    },
+    {
+      "source": "f7a3159722b09",
+      "target": "d37bf42e45ee9",
+      "type": "contains"
+    },
+    {
+      "source": "240eceb1de0ec8",
+      "target": "93f10a138cbf5",
+      "type": "contains"
+    },
+    {
+      "source": "f7c00a48db716",
+      "target": "35ea40eac13d68",
+      "type": "contains"
+    },
+    {
+      "source": "78759b57766ce8",
+      "target": "ed13ee9611eed8",
+      "type": "contains"
+    },
+    {
+      "source": "5e999da25896f",
+      "target": "ae1c58edcb35a8",
+      "type": "contains"
+    },
+    {
+      "source": "20297e0d8ad73",
+      "target": "0856c496b2a68",
+      "type": "contains"
+    },
+    {
+      "source": "677aec33946198",
+      "target": "e13afeb03db73",
+      "type": "contains"
+    },
+    {
+      "source": "97c993b4b39b38",
+      "target": "92c7ef5ecf7da",
+      "type": "contains"
+    },
+    {
+      "source": "7d99b58175d8b",
+      "target": "a2a93da2a82b28",
+      "type": "contains"
+    },
+    {
+      "source": "802344d4e62fa8",
+      "target": "4d307efabd683",
+      "type": "contains"
+    },
+    {
+      "source": "b9467689f9f24",
+      "target": "7c05bb27391f4",
+      "type": "contains"
+    },
+    {
+      "source": "36f371fc443b2",
+      "target": "fef2879f8eb588",
+      "type": "contains"
+    },
+    {
+      "source": "2dd2dc0b4e2718",
+      "target": "2064474526757",
+      "type": "contains"
+    },
+    {
+      "source": "1c57eb12973b4",
+      "target": "65cf2176b31dd8",
+      "type": "contains"
+    },
+    {
+      "source": "7861f6c3c6fa18",
+      "target": "ee9aab5663df5",
+      "type": "depends_on"
+    }
+  ]
+}

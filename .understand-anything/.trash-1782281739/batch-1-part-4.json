@@ -1,0 +1,1378 @@
+{
+  "schemaVersion": 1,
+  "batchIndex": 1,
+  "part": 4,
+  "nodes": [
+    {
+      "id": "cls:src/jx/classfile/ClassData.java:ClassData",
+      "type": "class",
+      "label": "ClassData",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "ClassData",
+        "startLine": 13,
+        "endLine": 268,
+        "numMethods": 35
+      }
+    },
+    {
+      "id": "cls:src/jx/classfile/FieldData.java:FieldData",
+      "type": "class",
+      "label": "FieldData",
+      "properties": {
+        "path": "src/jx/classfile/FieldData.java",
+        "name": "FieldData",
+        "startLine": 14,
+        "endLine": 91,
+        "numMethods": 16
+      }
+    },
+    {
+      "id": "file:src/jx/classfile/ClassData.java",
+      "type": "file",
+      "label": "ClassData.java",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "language": "java",
+        "sizeLines": 268,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/jx/classfile/FieldData.java",
+      "type": "file",
+      "label": "FieldData.java",
+      "properties": {
+        "path": "src/jx/classfile/FieldData.java",
+        "language": "java",
+        "sizeLines": 155,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/jx/classfile/constantpool/UTF8ConstantData.java",
+      "type": "file",
+      "label": "UTF8ConstantData.java",
+      "properties": {
+        "path": "src/jx/classfile/constantpool/UTF8ConstantData.java",
+        "language": "java",
+        "sizeLines": 49,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:ClassData",
+      "type": "function",
+      "label": "ClassData",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "ClassData",
+        "startLine": 44,
+        "endLine": 47,
+        "params": [
+          "input",
+          "allowNative"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:addMethod",
+      "type": "function",
+      "label": "addMethod",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "addMethod",
+        "startLine": 88,
+        "endLine": 96,
+        "params": [
+          "newMethod"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:dump",
+      "type": "function",
+      "label": "dump",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "dump",
+        "startLine": 223,
+        "endLine": 231,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:getAccessFlags",
+      "type": "function",
+      "label": "getAccessFlags",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "getAccessFlags",
+        "startLine": 185,
+        "endLine": 185,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:getAccessFlagsString",
+      "type": "function",
+      "label": "getAccessFlagsString",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "getAccessFlagsString",
+        "startLine": 172,
+        "endLine": 183,
+        "params": [
+          "accessFlags"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:getClassName",
+      "type": "function",
+      "label": "getClassName",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "getClassName",
+        "startLine": 188,
+        "endLine": 191,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:getConstantPool",
+      "type": "function",
+      "label": "getConstantPool",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "getConstantPool",
+        "startLine": 49,
+        "endLine": 50,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:getDeclaredFields",
+      "type": "function",
+      "label": "getDeclaredFields",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "getDeclaredFields",
+        "startLine": 239,
+        "endLine": 241,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:getField",
+      "type": "function",
+      "label": "getField",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "getField",
+        "startLine": 249,
+        "endLine": 255,
+        "params": [
+          "name"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:getFields",
+      "type": "function",
+      "label": "getFields",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "getFields",
+        "startLine": 213,
+        "endLine": 216,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:getInterfaceNames",
+      "type": "function",
+      "label": "getInterfaceNames",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "getInterfaceNames",
+        "startLine": 203,
+        "endLine": 211,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:getJavaLanguageName",
+      "type": "function",
+      "label": "getJavaLanguageName",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "getJavaLanguageName",
+        "startLine": 233,
+        "endLine": 235,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:getMethod",
+      "type": "function",
+      "label": "getMethod",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "getMethod",
+        "startLine": 52,
+        "endLine": 55,
+        "params": [
+          "methodName",
+          "methodType"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:getMethodData",
+      "type": "function",
+      "label": "getMethodData",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "getMethodData",
+        "startLine": 62,
+        "endLine": 72,
+        "params": [
+          "methodName",
+          "methodType"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:getMethodDataNE",
+      "type": "function",
+      "label": "getMethodDataNE",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "getMethodDataNE",
+        "startLine": 75,
+        "endLine": 84,
+        "params": [
+          "methodName",
+          "methodType"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:getMethods",
+      "type": "function",
+      "label": "getMethods",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "getMethods",
+        "startLine": 245,
+        "endLine": 248,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:getName",
+      "type": "function",
+      "label": "getName",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "getName",
+        "startLine": 242,
+        "endLine": 244,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:getSourceFileAttribute",
+      "type": "function",
+      "label": "getSourceFileAttribute",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "getSourceFileAttribute",
+        "startLine": 218,
+        "endLine": 221,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:getSuperClassName",
+      "type": "function",
+      "label": "getSuperClassName",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "getSuperClassName",
+        "startLine": 193,
+        "endLine": 201,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:getThisClassCPIndex",
+      "type": "function",
+      "label": "getThisClassCPIndex",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "getThisClassCPIndex",
+        "startLine": 36,
+        "endLine": 38,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:isAbstract",
+      "type": "function",
+      "label": "isAbstract",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "isAbstract",
+        "startLine": 262,
+        "endLine": 262,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:isFinal",
+      "type": "function",
+      "label": "isFinal",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "isFinal",
+        "startLine": 261,
+        "endLine": 261,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:isInterface",
+      "type": "function",
+      "label": "isInterface",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "isInterface",
+        "startLine": 265,
+        "endLine": 265,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:isNative",
+      "type": "function",
+      "label": "isNative",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "isNative",
+        "startLine": 263,
+        "endLine": 263,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:isPrivate",
+      "type": "function",
+      "label": "isPrivate",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "isPrivate",
+        "startLine": 258,
+        "endLine": 258,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:isProtected",
+      "type": "function",
+      "label": "isProtected",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "isProtected",
+        "startLine": 259,
+        "endLine": 259,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:isPublic",
+      "type": "function",
+      "label": "isPublic",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "isPublic",
+        "startLine": 257,
+        "endLine": 257,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:isStatic",
+      "type": "function",
+      "label": "isStatic",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "isStatic",
+        "startLine": 260,
+        "endLine": 260,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:isSynchronized",
+      "type": "function",
+      "label": "isSynchronized",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "isSynchronized",
+        "startLine": 264,
+        "endLine": 264,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:isTransient",
+      "type": "function",
+      "label": "isTransient",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "isTransient",
+        "startLine": 267,
+        "endLine": 267,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:isVolatile",
+      "type": "function",
+      "label": "isVolatile",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "isVolatile",
+        "startLine": 266,
+        "endLine": 266,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:readAttribute",
+      "type": "function",
+      "label": "readAttribute",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "readAttribute",
+        "startLine": 153,
+        "endLine": 164,
+        "params": [
+          "input",
+          "cPool"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ClassData.java:readFromClassFile",
+      "type": "function",
+      "label": "readFromClassFile",
+      "properties": {
+        "path": "src/jx/classfile/ClassData.java",
+        "name": "readFromClassFile",
+        "startLine": 99,
+        "endLine": 151,
+        "params": [
+          "input"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/FieldData.java:FieldData",
+      "type": "function",
+      "label": "FieldData",
+      "properties": {
+        "path": "src/jx/classfile/FieldData.java",
+        "name": "FieldData",
+        "startLine": 23,
+        "endLine": 27,
+        "params": [
+          "declaringClass",
+          "input",
+          "cPool"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/FieldData.java:getBasicType",
+      "type": "function",
+      "label": "getBasicType",
+      "properties": {
+        "path": "src/jx/classfile/FieldData.java",
+        "name": "getBasicType",
+        "startLine": 65,
+        "endLine": 67,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/FieldData.java:getDeclaringClass",
+      "type": "function",
+      "label": "getDeclaringClass",
+      "properties": {
+        "path": "src/jx/classfile/FieldData.java",
+        "name": "getDeclaringClass",
+        "startLine": 90,
+        "endLine": 90,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/FieldData.java:getDescription",
+      "type": "function",
+      "label": "getDescription",
+      "properties": {
+        "path": "src/jx/classfile/FieldData.java",
+        "name": "getDescription",
+        "startLine": 72,
+        "endLine": 76,
+        "params": [
+          "cPool"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/FieldData.java:getModifiers",
+      "type": "function",
+      "label": "getModifiers",
+      "properties": {
+        "path": "src/jx/classfile/FieldData.java",
+        "name": "getModifiers",
+        "startLine": 89,
+        "endLine": 89,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/FieldData.java:getName",
+      "type": "function",
+      "label": "getName",
+      "properties": {
+        "path": "src/jx/classfile/FieldData.java",
+        "name": "getName",
+        "startLine": 58,
+        "endLine": 60,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/FieldData.java:getType",
+      "type": "function",
+      "label": "getType",
+      "properties": {
+        "path": "src/jx/classfile/FieldData.java",
+        "name": "getType",
+        "startLine": 61,
+        "endLine": 63,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/FieldData.java:isFinal",
+      "type": "function",
+      "label": "isFinal",
+      "properties": {
+        "path": "src/jx/classfile/FieldData.java",
+        "name": "isFinal",
+        "startLine": 82,
+        "endLine": 82,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/FieldData.java:isPrivate",
+      "type": "function",
+      "label": "isPrivate",
+      "properties": {
+        "path": "src/jx/classfile/FieldData.java",
+        "name": "isPrivate",
+        "startLine": 79,
+        "endLine": 79,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/FieldData.java:isProtected",
+      "type": "function",
+      "label": "isProtected",
+      "properties": {
+        "path": "src/jx/classfile/FieldData.java",
+        "name": "isProtected",
+        "startLine": 80,
+        "endLine": 80,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/FieldData.java:isPublic",
+      "type": "function",
+      "label": "isPublic",
+      "properties": {
+        "path": "src/jx/classfile/FieldData.java",
+        "name": "isPublic",
+        "startLine": 78,
+        "endLine": 78,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/FieldData.java:isStatic",
+      "type": "function",
+      "label": "isStatic",
+      "properties": {
+        "path": "src/jx/classfile/FieldData.java",
+        "name": "isStatic",
+        "startLine": 81,
+        "endLine": 81,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/FieldData.java:readFromClassFile",
+      "type": "function",
+      "label": "readFromClassFile",
+      "properties": {
+        "path": "src/jx/classfile/FieldData.java",
+        "name": "readFromClassFile",
+        "startLine": 29,
+        "endLine": 42,
+        "params": [
+          "input",
+          "cPool"
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "cls:src/jx/classfile/ClassData.java:ClassData",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "cls:src/jx/classfile/ClassData.java:ClassData",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getThisClassCPIndex",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getThisClassCPIndex",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:ClassData",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:ClassData",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:ClassData",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:ClassData",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getConstantPool",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getConstantPool",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getMethod",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getMethod",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getMethodData",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getMethodData",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getMethodData",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getMethodData",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getMethodDataNE",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getMethodDataNE",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:addMethod",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:addMethod",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:readFromClassFile",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:readFromClassFile",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:readAttribute",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getAccessFlagsString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getAccessFlagsString",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getAccessFlags",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getAccessFlags",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getClassName",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getClassName",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getSuperClassName",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getSuperClassName",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getInterfaceNames",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getInterfaceNames",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getFields",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getFields",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getSourceFileAttribute",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getSourceFileAttribute",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:dump",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:dump",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getJavaLanguageName",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getJavaLanguageName",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getDeclaredFields",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getDeclaredFields",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getName",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getName",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getMethods",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getMethods",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getField",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:getField",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:isPublic",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:isPublic",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:isPrivate",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:isPrivate",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:isProtected",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:isProtected",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:isStatic",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:isStatic",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:isFinal",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:isFinal",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:isAbstract",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:isAbstract",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:isNative",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:isNative",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:isSynchronized",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:isSynchronized",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:isInterface",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:isInterface",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:isVolatile",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:isVolatile",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:isTransient",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "fn:src/jx/classfile/ClassData.java:isTransient",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/ClassData.java:ClassData",
+      "target": "fn:src/jx/classfile/ClassData.java:readFromClassFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/ClassData.java:getMethod",
+      "target": "fn:src/jx/classfile/ClassData.java:getMethodData",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/ClassData.java:readFromClassFile",
+      "target": "fn:src/jx/classfile/ClassData.java:readAttribute",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/ClassData.java:dump",
+      "target": "fn:src/jx/classfile/ClassData.java:getClassName",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/ClassData.java:dump",
+      "target": "fn:src/jx/classfile/ClassData.java:getSuperClassName",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/ClassData.java:dump",
+      "target": "fn:src/jx/classfile/ClassData.java:getInterfaceNames",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/ClassData.java:getJavaLanguageName",
+      "target": "fn:src/jx/classfile/ClassData.java:getClassName",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/ClassData.java:getDeclaredFields",
+      "target": "fn:src/jx/classfile/ClassData.java:getFields",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/ClassData.java:getName",
+      "target": "fn:src/jx/classfile/ClassData.java:getClassName",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "cls:src/jx/classfile/FieldData.java:FieldData",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "cls:src/jx/classfile/FieldData.java:FieldData",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:FieldData",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:FieldData",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:readFromClassFile",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:readFromClassFile",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:getName",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:getName",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:getType",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:getType",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:getName",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:getName",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:getType",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:getType",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:getBasicType",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:getBasicType",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:getDescription",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:getDescription",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:isPublic",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:isPublic",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:isPrivate",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:isPrivate",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:isProtected",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:isProtected",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:isStatic",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:isStatic",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:isFinal",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:isFinal",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:getModifiers",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:getModifiers",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:getDeclaringClass",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/FieldData.java",
+      "target": "fn:src/jx/classfile/FieldData.java:getDeclaringClass",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/FieldData.java:FieldData",
+      "target": "fn:src/jx/classfile/FieldData.java:readFromClassFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/FieldData.java:getName",
+      "target": "fn:src/jx/classfile/FieldData.java:getName",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/FieldData.java:getType",
+      "target": "fn:src/jx/classfile/FieldData.java:getType",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/FieldData.java:getBasicType",
+      "target": "fn:src/jx/classfile/FieldData.java:getType",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ClassData.java",
+      "target": "file:src/jx/zero/Debug.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "fn:src/jx/classfile/ClassData.java:getMethodData",
+      "target": "fn:src/jx/classfile/ClassData.java:method[i].getMethodName().equals",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/ClassData.java:getMethodData",
+      "target": "fn:src/jx/classfile/ClassData.java:method[i].getMethodName",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/ClassData.java:getMethodData",
+      "target": "fn:src/jx/classfile/ClassData.java:method[i].getMethodType().equals",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ],
+  "metadata": {
+    "totalNodesInPart": 51,
+    "totalEdgesInPart": 120,
+    "algorithm": "file-analyzer"
+  }
+}

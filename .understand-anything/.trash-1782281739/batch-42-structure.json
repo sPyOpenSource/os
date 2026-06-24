@@ -1,0 +1,6074 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/metaxa/os/devices/net/ComInit.java.MOS",
+      "language": "mos",
+      "fileCategory": "code",
+      "totalLines": 554,
+      "nonEmptyLines": 452,
+      "metrics": {}
+    },
+    {
+      "path": "src/metaxa/os/devices/net/CompatabilityWord.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 15,
+      "functions": [
+        {
+          "name": "CompatabilityWord",
+          "startLine": 7,
+          "endLine": 10,
+          "params": [
+            "warning",
+            "failure"
+          ]
+        },
+        {
+          "name": "get_warninglevel",
+          "startLine": 12,
+          "endLine": 14,
+          "params": []
+        },
+        {
+          "name": "get_failurelevel",
+          "startLine": 15,
+          "endLine": 17,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CompatabilityWord",
+          "startLine": 3,
+          "endLine": 18,
+          "methods": [
+            "CompatabilityWord",
+            "get_warninglevel",
+            "get_failurelevel"
+          ],
+          "properties": [
+            "warninglevel",
+            "failurelevel"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "CompatabilityWord",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "get_warninglevel",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "get_failurelevel",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/ConnectorType.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 39,
+      "nonEmptyLines": 32,
+      "functions": [
+        {
+          "name": "ConnectorType",
+          "startLine": 17,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "ConnectorType",
+          "startLine": 21,
+          "endLine": 23,
+          "params": [
+            "c"
+          ]
+        },
+        {
+          "name": "set_Connector",
+          "startLine": 25,
+          "endLine": 34,
+          "params": [
+            "c"
+          ]
+        },
+        {
+          "name": "get_Connector",
+          "startLine": 36,
+          "endLine": 38,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ConnectorType",
+          "startLine": 3,
+          "endLine": 39,
+          "methods": [
+            "ConnectorType",
+            "ConnectorType",
+            "set_Connector",
+            "get_Connector"
+          ],
+          "properties": [
+            "CONNECTOR_10BASET",
+            "CONNECTOR_10AUI",
+            "CONNECTOR_10BASE2",
+            "CONNECTOR_100BASETX",
+            "CONNECTOR_100BASEFX",
+            "CONNECTOR_MII",
+            "CONNECTOR_AUTONEGOTIATION",
+            "CONNECTOR_EXTERNAL_MII",
+            "CONNECTOR_UNKNOWN",
+            "connector"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ConnectorType",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "ConnectorType",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "set_Connector",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "get_Connector",
+          "line": 36,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ConnectorType",
+          "callee": "set_Connector",
+          "lineNumber": 22
+        },
+        {
+          "caller": "set_Connector",
+          "callee": "new UndefinedConnectorException",
+          "lineNumber": 29
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 4,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/D3C905Exception.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "D3C905Exception",
+          "startLine": 8,
+          "endLine": 10,
+          "params": []
+        },
+        {
+          "name": "D3C905Exception",
+          "startLine": 11,
+          "endLine": 13,
+          "params": [
+            "arg"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "D3C905Exception",
+          "startLine": 6,
+          "endLine": 14,
+          "methods": [
+            "D3C905Exception",
+            "D3C905Exception"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "D3C905Exception",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "D3C905Exception",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/Eeprom.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 333,
+      "nonEmptyLines": 247,
+      "functions": [
+        {
+          "name": "Eeprom",
+          "startLine": 144,
+          "endLine": 148,
+          "params": [
+            "ports",
+            "timerManager"
+          ]
+        },
+        {
+          "name": "CheckIfEEPROMBusy",
+          "startLine": 150,
+          "endLine": 166,
+          "params": [
+            "Adapter"
+          ]
+        },
+        {
+          "name": "ReadEEPROM",
+          "startLine": 176,
+          "endLine": 224,
+          "params": [
+            "Adapter",
+            "EEPROMAddress"
+          ]
+        },
+        {
+          "name": "WriteEEPROM",
+          "startLine": 237,
+          "endLine": 306,
+          "params": [
+            "Adapter",
+            "EEPROMAddress",
+            "Data"
+          ]
+        },
+        {
+          "name": "CalculateEEPROMChecksum1",
+          "startLine": 309,
+          "endLine": 332,
+          "params": [
+            "Adapter"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Eeprom",
+          "startLine": 9,
+          "endLine": 333,
+          "methods": [
+            "Eeprom",
+            "CheckIfEEPROMBusy",
+            "ReadEEPROM",
+            "WriteEEPROM",
+            "CalculateEEPROMChecksum1"
+          ],
+          "properties": [
+            "EEPROM_NODE_ADDRESS_WORD_0",
+            "EEPROM_NODE_ADDRESS_WORD_1",
+            "EEPROM_NODE_ADDRESS_WORD_2",
+            "EEPROM_DEVICE_ID",
+            "EEPROM_MANUFACTURING_DATE",
+            "EEPROM_MANUFACTURING_DIVISION",
+            "EEPROM_MANUFACTURING_PRODUCT_CODE",
+            "EEPROM_MANUFACTURING_ID",
+            "EEPROM_PCI_PARAMETERS_1",
+            "EEPROM_ROM_INFORMATION",
+            "EEPROM_OEM_NODE_ADDRESS_WORD_0",
+            "EEPROM_OEM_NODE_ADDRESS_WORD_1",
+            "EEPROM_OEM_NODE_ADDRESS_WORD_2",
+            "EEPROM_SOFTWARE_INFORMATION_1",
+            "EEPROM_COMPATABILITY_WORD",
+            "EEPROM_COMPATABILITY_LEVEL",
+            "EEPROM_SOFTWARE_INFORMATION_2",
+            "ENABLE_MWI_WORK",
+            "EEPROM_CAPABILITIES_WORD",
+            "EEPROM_RESERVED_LOCATION",
+            "EEPROM_SHORTERNAL_CONFIG_WORD_0",
+            "EEPROM_SHORTERNAL_CONFIG_WORD_1",
+            "EEPROM_ANALOG_DIAGNOSTICS",
+            "EEPROM_SOFTWARE_INFORMATION_3",
+            "EEPROM_CHECKSUM_1",
+            "EEPROM_SOS_PINS_1_TO_4",
+            "EEPROM_SOS_PINS_5_TO_7",
+            "EEPROM_CHECKSUM_2_UPPER",
+            "EEPROM_CHECKSUM_2_LOWER",
+            "EEPROM_CHECKSUM_3_UPPER",
+            "EEPROM_CHECKSUM_3_LOWER",
+            "EEPROM_COMMAND_MASK",
+            "EEPROM_COMMAND_AUTOINIT_DONE",
+            "EEPROM_COMMAND_PCI_CONFIG_WRITE",
+            "EEPROM_COMMAND_REGISTER_WRITE",
+            "EEPROM_COMMAND_TX_FIFO_WRITE",
+            "EEPROM_CURRENT_WINDOW_MASK",
+            "EEPROM_ADDRESS_MASK",
+            "EEPROM_TX_BYTE_COUNT",
+            "EEPROM_FLEXIBLE_FORMAT_START",
+            "EEPROM_WORD_ACCESS",
+            "MAX_FLEX_EEPROM_SIZE",
+            "EEPROM_WINDOW_0",
+            "EEPROM_WINDOW_1",
+            "EEPROM_WINDOW_2",
+            "EEPROM_WINDOW_3",
+            "EEPROM_WINDOW_4",
+            "EEPROM_WINDOW_5",
+            "EEPROM_WINDOW_6",
+            "EEPROM_WINDOW_7",
+            "BIOS_ROM_ADDRESS_REGISTER",
+            "BIOS_ROM_DATA_REGISTER",
+            "EEPROM_COMMAND_REGISTER",
+            "EEPROM_BUSY_BIT",
+            "EEPROM_COMMAND_READ",
+            "EEPROM_WRITE_ENABLE",
+            "EEPROM_ERASE_REGISTER",
+            "EEPROM_WRITE_REGISTER",
+            "EEPROM_DATA_REGISTER",
+            "EEPROM_INTERNAL_CONFIG_WORD_0",
+            "EEPROM_INTERNAL_CONFIG_WORD_1",
+            "timerManager",
+            "befehle",
+            "bits",
+            "register"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Eeprom",
+          "line": 144,
+          "isDefault": false
+        },
+        {
+          "name": "ReadEEPROM",
+          "line": 176,
+          "isDefault": false
+        },
+        {
+          "name": "WriteEEPROM",
+          "line": 237,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Eeprom",
+          "callee": "new Befehl",
+          "lineNumber": 145
+        },
+        {
+          "caller": "Eeprom",
+          "callee": "new BitPosition",
+          "lineNumber": 146
+        },
+        {
+          "caller": "Eeprom",
+          "callee": "new Register",
+          "lineNumber": 147
+        },
+        {
+          "caller": "CheckIfEEPROMBusy",
+          "callee": "befehle.NicReadPortShort",
+          "lineNumber": 157
+        },
+        {
+          "caller": "CheckIfEEPROMBusy",
+          "callee": "ComInit.sleep",
+          "lineNumber": 158
+        },
+        {
+          "caller": "CheckIfEEPROMBusy",
+          "callee": "Debug.out.println",
+          "lineNumber": 162
+        },
+        {
+          "caller": "ReadEEPROM",
+          "callee": "befehle.NicCommand",
+          "lineNumber": 190
+        },
+        {
+          "caller": "ReadEEPROM",
+          "callee": "befehle.COMMAND_SELECT_REGISTER_WINDOW",
+          "lineNumber": 190
+        },
+        {
+          "caller": "ReadEEPROM",
+          "callee": "Register.REGISTER_WINDOW_0",
+          "lineNumber": 190
+        },
+        {
+          "caller": "ReadEEPROM",
+          "callee": "CheckIfEEPROMBusy",
+          "lineNumber": 196
+        },
+        {
+          "caller": "ReadEEPROM",
+          "callee": "Debug.out.println",
+          "lineNumber": 198
+        },
+        {
+          "caller": "ReadEEPROM",
+          "callee": "new NicStatusFailure",
+          "lineNumber": 199
+        },
+        {
+          "caller": "ReadEEPROM",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 206
+        },
+        {
+          "caller": "ReadEEPROM",
+          "callee": "CheckIfEEPROMBusy",
+          "lineNumber": 212
+        },
+        {
+          "caller": "ReadEEPROM",
+          "callee": "Debug.out.println",
+          "lineNumber": 214
+        },
+        {
+          "caller": "ReadEEPROM",
+          "callee": "new NicStatusFailure",
+          "lineNumber": 215
+        },
+        {
+          "caller": "ReadEEPROM",
+          "callee": "befehle.NicReadPortShort",
+          "lineNumber": 222
+        },
+        {
+          "caller": "WriteEEPROM",
+          "callee": "befehle.NicCommand",
+          "lineNumber": 252
+        },
+        {
+          "caller": "WriteEEPROM",
+          "callee": "befehle.COMMAND_SELECT_REGISTER_WINDOW",
+          "lineNumber": 252
+        },
+        {
+          "caller": "WriteEEPROM",
+          "callee": "Register.REGISTER_WINDOW_0",
+          "lineNumber": 252
+        },
+        {
+          "caller": "WriteEEPROM",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 258
+        },
+        {
+          "caller": "WriteEEPROM",
+          "callee": "CheckIfEEPROMBusy",
+          "lineNumber": 260
+        },
+        {
+          "caller": "WriteEEPROM",
+          "callee": "Debug.out.println",
+          "lineNumber": 261
+        },
+        {
+          "caller": "WriteEEPROM",
+          "callee": "new NicStatusFailure",
+          "lineNumber": 262
+        },
+        {
+          "caller": "WriteEEPROM",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 265
+        },
+        {
+          "caller": "WriteEEPROM",
+          "callee": "CheckIfEEPROMBusy",
+          "lineNumber": 267
+        },
+        {
+          "caller": "WriteEEPROM",
+          "callee": "Debug.out.println",
+          "lineNumber": 268
+        },
+        {
+          "caller": "WriteEEPROM",
+          "callee": "new NicStatusFailure",
+          "lineNumber": 269
+        },
+        {
+          "caller": "WriteEEPROM",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 276
+        },
+        {
+          "caller": "WriteEEPROM",
+          "callee": "CheckIfEEPROMBusy",
+          "lineNumber": 279
+        },
+        {
+          "caller": "WriteEEPROM",
+          "callee": "Debug.out.println",
+          "lineNumber": 281
+        },
+        {
+          "caller": "WriteEEPROM",
+          "callee": "new NicStatusFailure",
+          "lineNumber": 282
+        },
+        {
+          "caller": "WriteEEPROM",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 290
+        },
+        {
+          "caller": "WriteEEPROM",
+          "callee": "CheckIfEEPROMBusy",
+          "lineNumber": 292
+        },
+        {
+          "caller": "WriteEEPROM",
+          "callee": "Debug.out.println",
+          "lineNumber": 294
+        },
+        {
+          "caller": "WriteEEPROM",
+          "callee": "new NicStatusFailure",
+          "lineNumber": 295
+        },
+        {
+          "caller": "WriteEEPROM",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 298
+        },
+        {
+          "caller": "WriteEEPROM",
+          "callee": "CheckIfEEPROMBusy",
+          "lineNumber": 300
+        },
+        {
+          "caller": "WriteEEPROM",
+          "callee": "Debug.out.println",
+          "lineNumber": 302
+        },
+        {
+          "caller": "WriteEEPROM",
+          "callee": "new NicStatusFailure",
+          "lineNumber": 303
+        },
+        {
+          "caller": "CalculateEEPROMChecksum1",
+          "callee": "befehle.NicCommand",
+          "lineNumber": 315
+        },
+        {
+          "caller": "CalculateEEPROMChecksum1",
+          "callee": "befehle.COMMAND_SELECT_REGISTER_WINDOW",
+          "lineNumber": 315
+        },
+        {
+          "caller": "CalculateEEPROMChecksum1",
+          "callee": "Register.REGISTER_WINDOW_0",
+          "lineNumber": 315
+        },
+        {
+          "caller": "CalculateEEPROMChecksum1",
+          "callee": "ReadEEPROM",
+          "lineNumber": 320
+        },
+        {
+          "caller": "CalculateEEPROMChecksum1",
+          "callee": "Debug.out.println",
+          "lineNumber": 323
+        },
+        {
+          "caller": "CalculateEEPROMChecksum1",
+          "callee": "bits.lobyte",
+          "lineNumber": 328
+        },
+        {
+          "caller": "CalculateEEPROMChecksum1",
+          "callee": "bits.lobyte",
+          "lineNumber": 329
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 3,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/LinkSpeedException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "LinkSpeedException",
+          "startLine": 7,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "LinkSpeedException",
+          "startLine": 10,
+          "endLine": 12,
+          "params": [
+            "arg"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "LinkSpeedException",
+          "startLine": 6,
+          "endLine": 13,
+          "methods": [
+            "LinkSpeedException",
+            "LinkSpeedException"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "LinkSpeedException",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "LinkSpeedException",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "LinkSpeedException",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/ListEntry.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 18,
+      "functions": [
+        {
+          "name": "get_MAXGatherList",
+          "startLine": 19,
+          "endLine": 21,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ListEntry",
+          "startLine": 15,
+          "endLine": 22,
+          "methods": [
+            "get_MAXGatherList"
+          ],
+          "properties": [
+            "MAXIMUM_SCATTER_GATHER_LIST"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "get_MAXGatherList",
+          "line": 19,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/ManufacturingData.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 55,
+      "nonEmptyLines": 49,
+      "functions": [
+        {
+          "name": "ManufacturingData",
+          "startLine": 12,
+          "endLine": 16,
+          "params": []
+        },
+        {
+          "name": "ManufacturingData",
+          "startLine": 18,
+          "endLine": 28,
+          "params": [
+            "day",
+            "month",
+            "year"
+          ]
+        },
+        {
+          "name": "set_Day",
+          "startLine": 30,
+          "endLine": 34,
+          "params": [
+            "day"
+          ]
+        },
+        {
+          "name": "set_Month",
+          "startLine": 35,
+          "endLine": 39,
+          "params": [
+            "month"
+          ]
+        },
+        {
+          "name": "set_Year",
+          "startLine": 40,
+          "endLine": 44,
+          "params": [
+            "year"
+          ]
+        },
+        {
+          "name": "get_Day",
+          "startLine": 46,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "get_Month",
+          "startLine": 49,
+          "endLine": 51,
+          "params": []
+        },
+        {
+          "name": "get_Year",
+          "startLine": 52,
+          "endLine": 54,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ManufacturingData",
+          "startLine": 3,
+          "endLine": 55,
+          "methods": [
+            "ManufacturingData",
+            "ManufacturingData",
+            "set_Day",
+            "set_Month",
+            "set_Year",
+            "get_Day",
+            "get_Month",
+            "get_Year"
+          ],
+          "properties": [
+            "Day",
+            "Month",
+            "Year"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "set_Day",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "set_Month",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "set_Year",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "get_Day",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "get_Month",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "get_Year",
+          "line": 52,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ManufacturingData",
+          "callee": "System.out.println",
+          "lineNumber": 20
+        },
+        {
+          "caller": "ManufacturingData",
+          "callee": "new WrongDate",
+          "lineNumber": 21
+        },
+        {
+          "caller": "set_Day",
+          "callee": "new WrongDate",
+          "lineNumber": 32
+        },
+        {
+          "caller": "set_Month",
+          "callee": "new WrongDate",
+          "lineNumber": 37
+        },
+        {
+          "caller": "set_Year",
+          "callee": "new WrongDate",
+          "lineNumber": 42
+        }
+      ],
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 6,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/Mii.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 937,
+      "nonEmptyLines": 770,
+      "functions": [
+        {
+          "name": "Mii",
+          "startLine": 132,
+          "endLine": 138,
+          "params": [
+            "ports",
+            "timerManager"
+          ]
+        },
+        {
+          "name": "SendMIIPhyPreamble",
+          "startLine": 142,
+          "endLine": 167,
+          "params": [
+            "Adapter"
+          ]
+        },
+        {
+          "name": "ReadMIIPhy",
+          "startLine": 178,
+          "endLine": 274,
+          "params": [
+            "Adapter",
+            "RegisterAddress"
+          ]
+        },
+        {
+          "name": "WriteMIIPhy",
+          "startLine": 283,
+          "endLine": 337,
+          "params": [
+            "Adapter",
+            "RegAddr",
+            "Output"
+          ]
+        },
+        {
+          "name": "CheckMIIAutoNegotiationStatus",
+          "startLine": 346,
+          "endLine": 418,
+          "params": [
+            "Adapter"
+          ]
+        },
+        {
+          "name": "ConfigureMII",
+          "startLine": 427,
+          "endLine": 585,
+          "params": [
+            "Adapter",
+            "MediaOptions"
+          ]
+        },
+        {
+          "name": "CheckMIIConfiguration",
+          "startLine": 599,
+          "endLine": 726,
+          "params": [
+            "Adapter",
+            "MediaOptions"
+          ]
+        },
+        {
+          "name": "FindMIIPhy",
+          "startLine": 734,
+          "endLine": 776,
+          "params": [
+            "Adapter"
+          ]
+        },
+        {
+          "name": "MIIMediaOverride",
+          "startLine": 780,
+          "endLine": 811,
+          "params": [
+            "Adapter",
+            "PhyModes"
+          ]
+        },
+        {
+          "name": "ProgramMII",
+          "startLine": 819,
+          "endLine": 936,
+          "params": [
+            "Adapter",
+            "NewConnector"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Mii",
+          "startLine": 8,
+          "endLine": 937,
+          "methods": [
+            "Mii",
+            "SendMIIPhyPreamble",
+            "ReadMIIPhy",
+            "WriteMIIPhy",
+            "CheckMIIAutoNegotiationStatus",
+            "ConfigureMII",
+            "CheckMIIConfiguration",
+            "FindMIIPhy",
+            "MIIMediaOverride",
+            "ProgramMII"
+          ],
+          "properties": [
+            "MII_PHY_ADDRESS",
+            "MII_PHY_CONTROL",
+            "MII_PHY_STATUS",
+            "MII_PHY_OUI",
+            "MII_PHY_MODEL",
+            "MII_PHY_ANAR",
+            "MII_PHY_ANLPAR",
+            "MII_PHY_ANER",
+            "MII_PAR",
+            "MII_PCR",
+            "MII_PHY_REGISTER_24",
+            "MII_PHY_REGISTER_24_PVCIRC",
+            "PHY_WRITE",
+            "PHY_DATA1",
+            "PHY_CLOCK",
+            "MII_CONTROL_RESET",
+            "MII_CONTROL_100MB",
+            "MII_CONTROL_ENABLE_AUTO",
+            "MII_CONTROL_ISOLATE",
+            "MII_CONTROL_START_AUTO",
+            "MII_CONTROL_FULL_DUPLEX",
+            "MII_STATUS_100MB_MASK",
+            "MII_STATUS_10MB_MASK",
+            "MII_STATUS_AUTO_DONE",
+            "MII_STATUS_AUTO",
+            "MII_STATUS_LINK_UP",
+            "MII_STATUS_EXTENDED",
+            "MII_STATUS_100T4",
+            "MII_STATUS_100TXFD",
+            "MII_STATUS_100TX",
+            "MII_STATUS_10TFD",
+            "MII_STATUS_10T",
+            "MII_ANLPAR_100T4",
+            "MII_ANLPAR_100TXFD",
+            "MII_ANLPAR_100TX",
+            "MII_ANLPAR_10TFD",
+            "MII_ANLPAR_10T",
+            "MII_ANAR_100T4",
+            "MII_ANAR_100TXFD",
+            "MII_ANAR_100TX",
+            "MII_ANAR_10TFD",
+            "MII_ANAR_10T",
+            "MII_ANAR_FLOWCONTROL",
+            "MII_ANAR_MEDIA_MASK",
+            "MII_ANAR_MEDIA_100_MASK",
+            "MII_ANAR_MEDIA_10_MASK",
+            "MII_100TXFD",
+            "MII_100T4",
+            "MII_100TX",
+            "MII_10TFD",
+            "MII_10T",
+            "MII_ANER_LPANABLE",
+            "MII_ANER_MLF",
+            "MIISELECT_GENERIC",
+            "MIISELECT_100BT4",
+            "MIISELECT_10BT",
+            "MIISELECT_100BTX",
+            "MIISELECT_10BT_ANE",
+            "MIISELECT_100BTX_ANE",
+            "MIITXTYPE_MASK",
+            "MEDIA_NONE",
+            "MEDIA_10BASE_TX",
+            "MEDIA_10AUI",
+            "MEDIA_10BASE_2",
+            "MEDIA_100BASE_TX",
+            "MEDIA_100BASE_FX",
+            "MEDIA_10BASE_FL",
+            "MEDIA_AUTO_SELECT",
+            "befehle",
+            "waitglobal",
+            "timerManager",
+            "ports",
+            "eeprom"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Mii",
+          "line": 132,
+          "isDefault": false
+        },
+        {
+          "name": "ReadMIIPhy",
+          "line": 178,
+          "isDefault": false
+        },
+        {
+          "name": "WriteMIIPhy",
+          "line": 283,
+          "isDefault": false
+        },
+        {
+          "name": "CheckMIIAutoNegotiationStatus",
+          "line": 346,
+          "isDefault": false
+        },
+        {
+          "name": "CheckMIIConfiguration",
+          "line": 599,
+          "isDefault": false
+        },
+        {
+          "name": "FindMIIPhy",
+          "line": 734,
+          "isDefault": false
+        },
+        {
+          "name": "ProgramMII",
+          "line": 819,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Mii",
+          "callee": "new Befehl",
+          "lineNumber": 135
+        },
+        {
+          "caller": "Mii",
+          "callee": "WaitTimerGlobal.instance",
+          "lineNumber": 136
+        },
+        {
+          "caller": "Mii",
+          "callee": "new Eeprom",
+          "lineNumber": 137
+        },
+        {
+          "caller": "SendMIIPhyPreamble",
+          "callee": "befehle.NicCommand",
+          "lineNumber": 151
+        },
+        {
+          "caller": "SendMIIPhyPreamble",
+          "callee": "Befehl.COMMAND_SELECT_REGISTER_WINDOW",
+          "lineNumber": 151
+        },
+        {
+          "caller": "SendMIIPhyPreamble",
+          "callee": "Register.REGISTER_WINDOW_4",
+          "lineNumber": 151
+        },
+        {
+          "caller": "SendMIIPhyPreamble",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 154
+        },
+        {
+          "caller": "SendMIIPhyPreamble",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 154
+        },
+        {
+          "caller": "SendMIIPhyPreamble",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 158
+        },
+        {
+          "caller": "SendMIIPhyPreamble",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 158
+        },
+        {
+          "caller": "SendMIIPhyPreamble",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 160
+        },
+        {
+          "caller": "SendMIIPhyPreamble",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 160
+        },
+        {
+          "caller": "SendMIIPhyPreamble",
+          "callee": "ComInit.udelay",
+          "lineNumber": 161
+        },
+        {
+          "caller": "SendMIIPhyPreamble",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 162
+        },
+        {
+          "caller": "SendMIIPhyPreamble",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 162
+        },
+        {
+          "caller": "SendMIIPhyPreamble",
+          "callee": "ComInit.udelay",
+          "lineNumber": 163
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "Adapter.Hardware.get_MIIReadCommand",
+          "lineNumber": 187
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "SendMIIPhyPreamble",
+          "lineNumber": 189
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "befehle.NicCommand",
+          "lineNumber": 198
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "Befehl.COMMAND_SELECT_REGISTER_WINDOW",
+          "lineNumber": 198
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "Register.REGISTER_WINDOW_4",
+          "lineNumber": 198
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 200
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 200
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 201
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 201
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 204
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 204
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 205
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 205
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "ComInit.udelay",
+          "lineNumber": 207
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 208
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 208
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "ComInit.udelay",
+          "lineNumber": 209
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 216
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 216
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 217
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 217
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "ComInit.udelay",
+          "lineNumber": 218
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 219
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 219
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "ComInit.udelay",
+          "lineNumber": 220
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "befehle.NicReadPortShort",
+          "lineNumber": 228
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 228
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "new ReadMIIException",
+          "lineNumber": 231
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "befehle.NicCommand",
+          "lineNumber": 245
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "Befehl.COMMAND_SELECT_REGISTER_WINDOW",
+          "lineNumber": 245
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "Register.REGISTER_WINDOW_4",
+          "lineNumber": 245
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 246
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 246
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "ComInit.udelay",
+          "lineNumber": 247
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 248
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 248
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "ComInit.udelay",
+          "lineNumber": 249
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "befehle.NicReadPortShort",
+          "lineNumber": 250
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 250
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 263
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 263
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 267
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 267
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "ComInit.udelay",
+          "lineNumber": 268
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 269
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 269
+        },
+        {
+          "caller": "ReadMIIPhy",
+          "callee": "ComInit.udelay",
+          "lineNumber": 270
+        },
+        {
+          "caller": "WriteMIIPhy",
+          "callee": "Adapter.Hardware.get_MIIWriteCommand",
+          "lineNumber": 291
+        },
+        {
+          "caller": "WriteMIIPhy",
+          "callee": "SendMIIPhyPreamble",
+          "lineNumber": 294
+        },
+        {
+          "caller": "WriteMIIPhy",
+          "callee": "befehle.NicCommand",
+          "lineNumber": 303
+        },
+        {
+          "caller": "WriteMIIPhy",
+          "callee": "Befehl.COMMAND_SELECT_REGISTER_WINDOW",
+          "lineNumber": 303
+        },
+        {
+          "caller": "WriteMIIPhy",
+          "callee": "Register.REGISTER_WINDOW_4",
+          "lineNumber": 303
+        },
+        {
+          "caller": "WriteMIIPhy",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 310
+        },
+        {
+          "caller": "WriteMIIPhy",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 310
+        },
+        {
+          "caller": "WriteMIIPhy",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 311
+        },
+        {
+          "caller": "WriteMIIPhy",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 311
+        },
+        {
+          "caller": "WriteMIIPhy",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 314
+        },
+        {
+          "caller": "WriteMIIPhy",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 314
+        },
+        {
+          "caller": "WriteMIIPhy",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 315
+        },
+        {
+          "caller": "WriteMIIPhy",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 315
+        },
+        {
+          "caller": "WriteMIIPhy",
+          "callee": "ComInit.udelay",
+          "lineNumber": 317
+        },
+        {
+          "caller": "WriteMIIPhy",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 318
+        },
+        {
+          "caller": "WriteMIIPhy",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 318
+        },
+        {
+          "caller": "WriteMIIPhy",
+          "callee": "ComInit.udelay",
+          "lineNumber": 319
+        },
+        {
+          "caller": "WriteMIIPhy",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 327
+        },
+        {
+          "caller": "WriteMIIPhy",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 327
+        },
+        {
+          "caller": "WriteMIIPhy",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 330
+        },
+        {
+          "caller": "WriteMIIPhy",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 330
+        },
+        {
+          "caller": "WriteMIIPhy",
+          "callee": "ComInit.udelay",
+          "lineNumber": 331
+        },
+        {
+          "caller": "WriteMIIPhy",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 332
+        },
+        {
+          "caller": "WriteMIIPhy",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 332
+        },
+        {
+          "caller": "WriteMIIPhy",
+          "callee": "ComInit.udelay",
+          "lineNumber": 333
+        },
+        {
+          "caller": "CheckMIIAutoNegotiationStatus",
+          "callee": "ReadMIIPhy",
+          "lineNumber": 363
+        },
+        {
+          "caller": "CheckMIIAutoNegotiationStatus",
+          "callee": "Debug.out.println",
+          "lineNumber": 371
+        },
+        {
+          "caller": "CheckMIIAutoNegotiationStatus",
+          "callee": "Adapter.Hardware.set_Status",
+          "lineNumber": 372
+        },
+        {
+          "caller": "CheckMIIAutoNegotiationStatus",
+          "callee": "ReadMIIPhy",
+          "lineNumber": 386
+        },
+        {
+          "caller": "CheckMIIAutoNegotiationStatus",
+          "callee": "Debug.out.println",
+          "lineNumber": 392
+        },
+        {
+          "caller": "CheckMIIAutoNegotiationStatus",
+          "callee": "Adapter.Hardware.set_Status",
+          "lineNumber": 393
+        },
+        {
+          "caller": "CheckMIIAutoNegotiationStatus",
+          "callee": "ReadMIIPhy",
+          "lineNumber": 399
+        },
+        {
+          "caller": "CheckMIIAutoNegotiationStatus",
+          "callee": "Debug.out.println",
+          "lineNumber": 405
+        },
+        {
+          "caller": "CheckMIIAutoNegotiationStatus",
+          "callee": "Adapter.Hardware.set_Status",
+          "lineNumber": 406
+        },
+        {
+          "caller": "CheckMIIAutoNegotiationStatus",
+          "callee": "Debug.out.println",
+          "lineNumber": 415
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "new WaitTimer",
+          "lineNumber": 435
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "ReadMIIPhy",
+          "lineNumber": 446
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "Debug.out.println",
+          "lineNumber": 452
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "Adapter.Hardware.set_Status",
+          "lineNumber": 453
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "ReadMIIPhy",
+          "lineNumber": 463
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "Debug.out.println",
+          "lineNumber": 469
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "Adapter.Hardware.set_Status",
+          "lineNumber": 470
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "Adapter.Hardware.get_FullDuplexEnable",
+          "lineNumber": 484
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "Adapter.Hardware.get_FlowControlSupported",
+          "lineNumber": 495
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "Register.MEDIA_OPTIONS_100BASETX_AVAILABLE",
+          "lineNumber": 506
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "Adapter.Hardware.get_AutoSelect",
+          "lineNumber": 507
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "Adapter.Hardware.get_FullDuplexEnable",
+          "lineNumber": 510
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "Register.MEDIA_OPTIONS_10BASET_AVAILABLE",
+          "lineNumber": 516
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "Adapter.Hardware.get_AutoSelect",
+          "lineNumber": 517
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "Adapter.Hardware.get_FullDuplexEnable",
+          "lineNumber": 520
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "WriteMIIPhy",
+          "lineNumber": 537
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "WriteMIIPhy",
+          "lineNumber": 538
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "waitglobal.set_PhyResponding",
+          "lineNumber": 544
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "waitglobal.set_PhyStatus",
+          "lineNumber": 546
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "ReadMIIPhy",
+          "lineNumber": 546
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "waitglobal.set_PhyResponding",
+          "lineNumber": 549
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "ComInit.udelay",
+          "lineNumber": 552
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "waitglobal.get_PhyResponding",
+          "lineNumber": 553
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "Debug.out.println",
+          "lineNumber": 554
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "Adapter.Hardware.set_Status",
+          "lineNumber": 555
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "waitglobal.get_PhyStatus",
+          "lineNumber": 558
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "timerManager.getCurrentTime",
+          "lineNumber": 560
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "new WaitTimerArg",
+          "lineNumber": 561
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "timerManager.addMillisTimer",
+          "lineNumber": 562
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "timerManager.getCurrentTime",
+          "lineNumber": 563
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "waitglobal.get_PhyStatus",
+          "lineNumber": 564
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "Debug.out.println",
+          "lineNumber": 565
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "Adapter.Hardware.set_LinkState",
+          "lineNumber": 567
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "Debug.out.println",
+          "lineNumber": 570
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "Adapter.Hardware.set_LinkState",
+          "lineNumber": 577
+        },
+        {
+          "caller": "ConfigureMII",
+          "callee": "Debug.out.println",
+          "lineNumber": 580
+        },
+        {
+          "caller": "CheckMIIConfiguration",
+          "callee": "ReadMIIPhy",
+          "lineNumber": 614
+        },
+        {
+          "caller": "CheckMIIConfiguration",
+          "callee": "Debug.out.println",
+          "lineNumber": 617
+        },
+        {
+          "caller": "CheckMIIConfiguration",
+          "callee": "Adapter.Hardware.set_Status",
+          "lineNumber": 618
+        },
+        {
+          "caller": "CheckMIIConfiguration",
+          "callee": "ReadMIIPhy",
+          "lineNumber": 622
+        },
+        {
+          "caller": "CheckMIIConfiguration",
+          "callee": "Debug.out.println",
+          "lineNumber": 625
+        },
+        {
+          "caller": "CheckMIIConfiguration",
+          "callee": "Adapter.Hardware.set_Status",
+          "lineNumber": 626
+        },
+        {
+          "caller": "CheckMIIConfiguration",
+          "callee": "ConfigureMII",
+          "lineNumber": 634
+        },
+        {
+          "caller": "CheckMIIConfiguration",
+          "callee": "ReadMIIPhy",
+          "lineNumber": 646
+        },
+        {
+          "caller": "CheckMIIConfiguration",
+          "callee": "Debug.out.println",
+          "lineNumber": 649
+        },
+        {
+          "caller": "CheckMIIConfiguration",
+          "callee": "Adapter.Hardware.set_Status",
+          "lineNumber": 650
+        },
+        {
+          "caller": "CheckMIIConfiguration",
+          "callee": "Register.MEDIA_OPTIONS_100BASETX_AVAILABLE",
+          "lineNumber": 665
+        },
+        {
+          "caller": "CheckMIIConfiguration",
+          "callee": "Adapter.Hardware.get_AutoSelect",
+          "lineNumber": 666
+        },
+        {
+          "caller": "CheckMIIConfiguration",
+          "callee": "Adapter.Hardware.get_FullDuplexEnable",
+          "lineNumber": 670
+        },
+        {
+          "caller": "CheckMIIConfiguration",
+          "callee": "Register.MEDIA_OPTIONS_10BASET_AVAILABLE",
+          "lineNumber": 676
+        },
+        {
+          "caller": "CheckMIIConfiguration",
+          "callee": "Adapter.Hardware.get_AutoSelect",
+          "lineNumber": 677
+        },
+        {
+          "caller": "CheckMIIConfiguration",
+          "callee": "Adapter.Hardware.get_FullDuplexEnable",
+          "lineNumber": 680
+        },
+        {
+          "caller": "CheckMIIConfiguration",
+          "callee": "Adapter.Hardware.get_FullDuplexEnable",
+          "lineNumber": 686
+        },
+        {
+          "caller": "CheckMIIConfiguration",
+          "callee": "Adapter.Hardware.get_FlowControlSupported",
+          "lineNumber": 686
+        },
+        {
+          "caller": "CheckMIIConfiguration",
+          "callee": "Register.MEDIA_OPTIONS_100BASETX_AVAILABLE",
+          "lineNumber": 702
+        },
+        {
+          "caller": "CheckMIIConfiguration",
+          "callee": "Debug.out.println",
+          "lineNumber": 709
+        },
+        {
+          "caller": "CheckMIIConfiguration",
+          "callee": "ConfigureMII",
+          "lineNumber": 710
+        },
+        {
+          "caller": "CheckMIIConfiguration",
+          "callee": "Register.MEDIA_OPTIONS_10BASET_AVAILABLE",
+          "lineNumber": 713
+        },
+        {
+          "caller": "CheckMIIConfiguration",
+          "callee": "Debug.out.println",
+          "lineNumber": 720
+        },
+        {
+          "caller": "CheckMIIConfiguration",
+          "callee": "ConfigureMII",
+          "lineNumber": 721
+        },
+        {
+          "caller": "FindMIIPhy",
+          "callee": "befehle.NicCommand",
+          "lineNumber": 745
+        },
+        {
+          "caller": "FindMIIPhy",
+          "callee": "Befehl.COMMAND_SELECT_REGISTER_WINDOW",
+          "lineNumber": 745
+        },
+        {
+          "caller": "FindMIIPhy",
+          "callee": "Register.REGISTER_WINDOW_3",
+          "lineNumber": 745
+        },
+        {
+          "caller": "FindMIIPhy",
+          "callee": "befehle.NicReadPortShort",
+          "lineNumber": 746
+        },
+        {
+          "caller": "FindMIIPhy",
+          "callee": "Register.MEDIA_OPTIONS_REGISTER",
+          "lineNumber": 746
+        },
+        {
+          "caller": "FindMIIPhy",
+          "callee": "Register.MEDIA_OPTIONS_MII_AVAILABLE",
+          "lineNumber": 748
+        },
+        {
+          "caller": "FindMIIPhy",
+          "callee": "Register.MEDIA_OPTIONS_100BASET4_AVAILABLE",
+          "lineNumber": 748
+        },
+        {
+          "caller": "FindMIIPhy",
+          "callee": "befehle.NicCommand",
+          "lineNumber": 755
+        },
+        {
+          "caller": "FindMIIPhy",
+          "callee": "Befehl.COMMAND_SELECT_REGISTER_WINDOW",
+          "lineNumber": 755
+        },
+        {
+          "caller": "FindMIIPhy",
+          "callee": "Register.REGISTER_WINDOW_4",
+          "lineNumber": 755
+        },
+        {
+          "caller": "FindMIIPhy",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 756
+        },
+        {
+          "caller": "FindMIIPhy",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 756
+        },
+        {
+          "caller": "FindMIIPhy",
+          "callee": "ComInit.udelay",
+          "lineNumber": 759
+        },
+        {
+          "caller": "FindMIIPhy",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 760
+        },
+        {
+          "caller": "FindMIIPhy",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 760
+        },
+        {
+          "caller": "FindMIIPhy",
+          "callee": "ComInit.udelay",
+          "lineNumber": 761
+        },
+        {
+          "caller": "FindMIIPhy",
+          "callee": "befehle.NicWritePortShort",
+          "lineNumber": 762
+        },
+        {
+          "caller": "FindMIIPhy",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 762
+        },
+        {
+          "caller": "FindMIIPhy",
+          "callee": "befehle.NicReadPortShort",
+          "lineNumber": 765
+        },
+        {
+          "caller": "FindMIIPhy",
+          "callee": "Register.PHYSICAL_MANAGEMENT_REGISTER",
+          "lineNumber": 765
+        },
+        {
+          "caller": "MIIMediaOverride",
+          "callee": "Adapter.Hardware.get_MediaOverride",
+          "lineNumber": 786
+        },
+        {
+          "caller": "MIIMediaOverride",
+          "callee": "Adapter.Hardware.get_FullDuplexEnable",
+          "lineNumber": 790
+        },
+        {
+          "caller": "MIIMediaOverride",
+          "callee": "new MIIMediaOverrideException",
+          "lineNumber": 795
+        },
+        {
+          "caller": "MIIMediaOverride",
+          "callee": "Adapter.Hardware.get_FullDuplexEnable",
+          "lineNumber": 800
+        },
+        {
+          "caller": "MIIMediaOverride",
+          "callee": "new MIIMediaOverrideException",
+          "lineNumber": 805
+        },
+        {
+          "caller": "ProgramMII",
+          "callee": "FindMIIPhy",
+          "lineNumber": 834
+        },
+        {
+          "caller": "ProgramMII",
+          "callee": "ReadMIIPhy",
+          "lineNumber": 845
+        },
+        {
+          "caller": "ProgramMII",
+          "callee": "ReadMIIPhy",
+          "lineNumber": 856
+        },
+        {
+          "caller": "ProgramMII",
+          "callee": "eeprom.ReadEEPROM",
+          "lineNumber": 870
+        },
+        {
+          "caller": "ProgramMII",
+          "callee": "ReadMIIPhy",
+          "lineNumber": 880
+        },
+        {
+          "caller": "ProgramMII",
+          "callee": "ReadMIIPhy",
+          "lineNumber": 886
+        },
+        {
+          "caller": "ProgramMII",
+          "callee": "MIIMediaOverride",
+          "lineNumber": 892
+        },
+        {
+          "caller": "ProgramMII",
+          "callee": "Adapter.Hardware.get_FullDuplexEnable",
+          "lineNumber": 902
+        },
+        {
+          "caller": "ProgramMII",
+          "callee": "WriteMIIPhy",
+          "lineNumber": 911
+        },
+        {
+          "caller": "ProgramMII",
+          "callee": "timerManager.getCurrentTime",
+          "lineNumber": 913
+        },
+        {
+          "caller": "ProgramMII",
+          "callee": "timerManager.getCurrentTime",
+          "lineNumber": 914
+        },
+        {
+          "caller": "ProgramMII",
+          "callee": "Adapter.Hardware.set_LinkSpeed",
+          "lineNumber": 915
+        },
+        {
+          "caller": "ProgramMII",
+          "callee": "WriteMIIPhy",
+          "lineNumber": 920
+        },
+        {
+          "caller": "ProgramMII",
+          "callee": "timerManager.getCurrentTime",
+          "lineNumber": 922
+        },
+        {
+          "caller": "ProgramMII",
+          "callee": "timerManager.getCurrentTime",
+          "lineNumber": 923
+        },
+        {
+          "caller": "ProgramMII",
+          "callee": "Adapter.Hardware.set_LinkSpeed",
+          "lineNumber": 924
+        },
+        {
+          "caller": "ProgramMII",
+          "callee": "WriteMIIPhy",
+          "lineNumber": 929
+        },
+        {
+          "caller": "ProgramMII",
+          "callee": "timerManager.getCurrentTime",
+          "lineNumber": 931
+        },
+        {
+          "caller": "ProgramMII",
+          "callee": "timerManager.getCurrentTime",
+          "lineNumber": 932
+        },
+        {
+          "caller": "ProgramMII",
+          "callee": "Adapter.Hardware.set_LinkSpeed",
+          "lineNumber": 933
+        }
+      ],
+      "metrics": {
+        "importCount": 7,
+        "exportCount": 7,
+        "functionCount": 10,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/MIIMediaOverrideException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "MIIMediaOverrideException",
+          "startLine": 7,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "MIIMediaOverrideException",
+          "startLine": 10,
+          "endLine": 12,
+          "params": [
+            "arg"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "MIIMediaOverrideException",
+          "startLine": 6,
+          "endLine": 13,
+          "methods": [
+            "MIIMediaOverrideException",
+            "MIIMediaOverrideException"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "MIIMediaOverrideException",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "MIIMediaOverrideException",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/MultiCast.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 16,
+      "functions": [
+        {
+          "name": "MultiCast",
+          "startLine": 7,
+          "endLine": 11,
+          "params": [
+            "f",
+            "a"
+          ]
+        },
+        {
+          "name": "flags",
+          "startLine": 13,
+          "endLine": 15,
+          "params": []
+        },
+        {
+          "name": "addr",
+          "startLine": 16,
+          "endLine": 18,
+          "params": [
+            "i"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "MultiCast",
+          "startLine": 3,
+          "endLine": 19,
+          "methods": [
+            "MultiCast",
+            "flags",
+            "addr"
+          ],
+          "properties": [
+            "flags",
+            "addr"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "MultiCast",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "flags",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "addr",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/NicHardwareInformation.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 347,
+      "nonEmptyLines": 322,
+      "functions": [
+        {
+          "name": "set_CacheLineSize",
+          "startLine": 92,
+          "endLine": 94,
+          "params": [
+            "cachelinesize"
+          ]
+        },
+        {
+          "name": "set_RevisionId",
+          "startLine": 95,
+          "endLine": 97,
+          "params": [
+            "revisionid"
+          ]
+        },
+        {
+          "name": "set_Status",
+          "startLine": 98,
+          "endLine": 100,
+          "params": [
+            "status"
+          ]
+        },
+        {
+          "name": "set_XcvrType",
+          "startLine": 101,
+          "endLine": 103,
+          "params": [
+            "xcvrtype"
+          ]
+        },
+        {
+          "name": "set_DeviceId",
+          "startLine": 104,
+          "endLine": 106,
+          "params": [
+            "deviceid"
+          ]
+        },
+        {
+          "name": "set_BitsInHashFilter",
+          "startLine": 107,
+          "endLine": 109,
+          "params": [
+            "bitsinhashfilter"
+          ]
+        },
+        {
+          "name": "set_LinkSpeed",
+          "startLine": 110,
+          "endLine": 112,
+          "params": [
+            "linkspeed"
+          ]
+        },
+        {
+          "name": "set_UpdateInterval",
+          "startLine": 113,
+          "endLine": 115,
+          "params": [
+            "updateinterval"
+          ]
+        },
+        {
+          "name": "set_Connector",
+          "startLine": 116,
+          "endLine": 120,
+          "params": [
+            "connector"
+          ]
+        },
+        {
+          "name": "set_ConfigConnector",
+          "startLine": 121,
+          "endLine": 126,
+          "params": [
+            "configconnector"
+          ]
+        },
+        {
+          "name": "set_HurricaneEarlyRevision",
+          "startLine": 127,
+          "endLine": 129,
+          "params": [
+            "hurricaneearlyrevision"
+          ]
+        },
+        {
+          "name": "set_FeatureSet",
+          "startLine": 130,
+          "endLine": 132,
+          "params": [
+            "featureset"
+          ]
+        },
+        {
+          "name": "set_OptimizeForThroughput",
+          "startLine": 133,
+          "endLine": 135,
+          "params": [
+            "optimizeforthroughput"
+          ]
+        },
+        {
+          "name": "set_OptimizeForCPU",
+          "startLine": 136,
+          "endLine": 138,
+          "params": [
+            "optimizeforcpu"
+          ]
+        },
+        {
+          "name": "set_OptimizeNormal",
+          "startLine": 139,
+          "endLine": 141,
+          "params": [
+            "optimizenormal"
+          ]
+        },
+        {
+          "name": "set_BroadcastErrDone",
+          "startLine": 142,
+          "endLine": 144,
+          "params": [
+            "broadcasterrdone"
+          ]
+        },
+        {
+          "name": "set_UDPChecksumErrDone",
+          "startLine": 145,
+          "endLine": 147,
+          "params": [
+            "udpchecksumerrdone"
+          ]
+        },
+        {
+          "name": "set_FullDuplexEnable",
+          "startLine": 148,
+          "endLine": 150,
+          "params": [
+            "fullduplexenable"
+          ]
+        },
+        {
+          "name": "set_DuplexCommandOverride",
+          "startLine": 151,
+          "endLine": 153,
+          "params": [
+            "duplexcommandoverride"
+          ]
+        },
+        {
+          "name": "set_MWIErrDone",
+          "startLine": 154,
+          "endLine": 156,
+          "params": [
+            "mwierrdone"
+          ]
+        },
+        {
+          "name": "set_FlowControlEnable",
+          "startLine": 157,
+          "endLine": 159,
+          "params": [
+            "flowcontrolenable"
+          ]
+        },
+        {
+          "name": "set_FlowControlSupported",
+          "startLine": 160,
+          "endLine": 162,
+          "params": [
+            "flowcontrolsupported"
+          ]
+        },
+        {
+          "name": "set_LinkBeatDisable",
+          "startLine": 163,
+          "endLine": 165,
+          "params": [
+            "linkbeatdisable"
+          ]
+        },
+        {
+          "name": "set_SupportsPowerManagement",
+          "startLine": 166,
+          "endLine": 168,
+          "params": [
+            "supportspowermanagement"
+          ]
+        },
+        {
+          "name": "set_WOLConnectorPresent",
+          "startLine": 169,
+          "endLine": 171,
+          "params": [
+            "wolconnectorpresent"
+          ]
+        },
+        {
+          "name": "set_AutoResetToD0",
+          "startLine": 172,
+          "endLine": 174,
+          "params": [
+            "autoresettod0"
+          ]
+        },
+        {
+          "name": "set_DontSleep",
+          "startLine": 175,
+          "endLine": 177,
+          "params": [
+            "dontsleep"
+          ]
+        },
+        {
+          "name": "set_D3Work",
+          "startLine": 178,
+          "endLine": 180,
+          "params": [
+            "d3work"
+          ]
+        },
+        {
+          "name": "set_WakeOnMagicPacket",
+          "startLine": 181,
+          "endLine": 183,
+          "params": [
+            "wakeonmagicpacket"
+          ]
+        },
+        {
+          "name": "set_WakeOnLinkChange",
+          "startLine": 184,
+          "endLine": 186,
+          "params": [
+            "wakeonlinkchange"
+          ]
+        },
+        {
+          "name": "set_SQEDisable",
+          "startLine": 187,
+          "endLine": 189,
+          "params": [
+            "sqedisable"
+          ]
+        },
+        {
+          "name": "set_AutoSelect",
+          "startLine": 190,
+          "endLine": 192,
+          "params": [
+            "autoselect"
+          ]
+        },
+        {
+          "name": "set_LightTen",
+          "startLine": 193,
+          "endLine": 195,
+          "params": [
+            "lightten"
+          ]
+        },
+        {
+          "name": "set_LinkState",
+          "startLine": 196,
+          "endLine": 200,
+          "params": [
+            "linkstate"
+          ]
+        },
+        {
+          "name": "set_MIIReadCommand",
+          "startLine": 201,
+          "endLine": 203,
+          "params": [
+            "miireadcommand"
+          ]
+        },
+        {
+          "name": "set_MIIWriteCommand",
+          "startLine": 204,
+          "endLine": 206,
+          "params": [
+            "miiwritecommand"
+          ]
+        },
+        {
+          "name": "set_MIIPhyOui",
+          "startLine": 207,
+          "endLine": 209,
+          "params": [
+            "miiphyoui"
+          ]
+        },
+        {
+          "name": "set_MIIPhyModel",
+          "startLine": 210,
+          "endLine": 212,
+          "params": [
+            "miiphymodel"
+          ]
+        },
+        {
+          "name": "set_MIIPhyUsed",
+          "startLine": 213,
+          "endLine": 215,
+          "params": [
+            "miiphyused"
+          ]
+        },
+        {
+          "name": "set_MediaOverride",
+          "startLine": 216,
+          "endLine": 218,
+          "params": [
+            "mediaoverride"
+          ]
+        },
+        {
+          "name": "set_phys",
+          "startLine": 219,
+          "endLine": 221,
+          "params": [
+            "phys_arg"
+          ]
+        },
+        {
+          "name": "get_CacheLineSize",
+          "startLine": 224,
+          "endLine": 226,
+          "params": []
+        },
+        {
+          "name": "get_RevisionId",
+          "startLine": 227,
+          "endLine": 229,
+          "params": []
+        },
+        {
+          "name": "get_Status",
+          "startLine": 230,
+          "endLine": 232,
+          "params": []
+        },
+        {
+          "name": "get_XcvrType",
+          "startLine": 233,
+          "endLine": 235,
+          "params": []
+        },
+        {
+          "name": "get_DeviceId",
+          "startLine": 236,
+          "endLine": 238,
+          "params": []
+        },
+        {
+          "name": "get_BitsInHashFilter",
+          "startLine": 239,
+          "endLine": 241,
+          "params": []
+        },
+        {
+          "name": "get_LinkSpeed",
+          "startLine": 242,
+          "endLine": 244,
+          "params": []
+        },
+        {
+          "name": "get_UpdateInterval",
+          "startLine": 245,
+          "endLine": 247,
+          "params": []
+        },
+        {
+          "name": "get_Connector",
+          "startLine": 248,
+          "endLine": 250,
+          "params": []
+        },
+        {
+          "name": "get_ConfigConnector",
+          "startLine": 251,
+          "endLine": 253,
+          "params": []
+        },
+        {
+          "name": "get_HurricaneEarlyRevision",
+          "startLine": 254,
+          "endLine": 256,
+          "params": []
+        },
+        {
+          "name": "get_FeatureSet",
+          "startLine": 257,
+          "endLine": 259,
+          "params": []
+        },
+        {
+          "name": "get_OptimizeForThroughput",
+          "startLine": 260,
+          "endLine": 262,
+          "params": []
+        },
+        {
+          "name": "get_OptimizeForCPU",
+          "startLine": 263,
+          "endLine": 265,
+          "params": []
+        },
+        {
+          "name": "get_OptimizeNormal",
+          "startLine": 266,
+          "endLine": 268,
+          "params": []
+        },
+        {
+          "name": "get_BroadcastErrDone",
+          "startLine": 269,
+          "endLine": 271,
+          "params": []
+        },
+        {
+          "name": "get_UDPChecksumErrDone",
+          "startLine": 272,
+          "endLine": 274,
+          "params": []
+        },
+        {
+          "name": "get_FullDuplexEnable",
+          "startLine": 275,
+          "endLine": 277,
+          "params": []
+        },
+        {
+          "name": "get_DuplexCommandOverride",
+          "startLine": 278,
+          "endLine": 280,
+          "params": []
+        },
+        {
+          "name": "get_MWIErrDone",
+          "startLine": 281,
+          "endLine": 283,
+          "params": []
+        },
+        {
+          "name": "get_FlowControlEnable",
+          "startLine": 284,
+          "endLine": 286,
+          "params": []
+        },
+        {
+          "name": "get_FlowControlSupported",
+          "startLine": 287,
+          "endLine": 289,
+          "params": []
+        },
+        {
+          "name": "get_LinkBeatDisable",
+          "startLine": 290,
+          "endLine": 292,
+          "params": []
+        },
+        {
+          "name": "get_SupportsPowerManagement",
+          "startLine": 293,
+          "endLine": 295,
+          "params": []
+        },
+        {
+          "name": "get_WOLConnectorPresent",
+          "startLine": 296,
+          "endLine": 298,
+          "params": []
+        },
+        {
+          "name": "get_AutoResetToD0",
+          "startLine": 299,
+          "endLine": 301,
+          "params": []
+        },
+        {
+          "name": "get_DontSleep",
+          "startLine": 302,
+          "endLine": 304,
+          "params": []
+        },
+        {
+          "name": "get_D3Work",
+          "startLine": 305,
+          "endLine": 307,
+          "params": []
+        },
+        {
+          "name": "get_WakeOnMagicPacket",
+          "startLine": 308,
+          "endLine": 310,
+          "params": []
+        },
+        {
+          "name": "get_WakeOnLinkChange",
+          "startLine": 311,
+          "endLine": 313,
+          "params": []
+        },
+        {
+          "name": "get_SQEDisable",
+          "startLine": 314,
+          "endLine": 316,
+          "params": []
+        },
+        {
+          "name": "get_AutoSelect",
+          "startLine": 317,
+          "endLine": 319,
+          "params": []
+        },
+        {
+          "name": "get_LightTen",
+          "startLine": 320,
+          "endLine": 322,
+          "params": []
+        },
+        {
+          "name": "get_LinkState",
+          "startLine": 323,
+          "endLine": 325,
+          "params": []
+        },
+        {
+          "name": "get_MIIReadCommand",
+          "startLine": 326,
+          "endLine": 328,
+          "params": []
+        },
+        {
+          "name": "get_MIIWriteCommand",
+          "startLine": 329,
+          "endLine": 331,
+          "params": []
+        },
+        {
+          "name": "get_MIIPhyOui",
+          "startLine": 332,
+          "endLine": 334,
+          "params": []
+        },
+        {
+          "name": "get_MIIPhyModel",
+          "startLine": 335,
+          "endLine": 337,
+          "params": []
+        },
+        {
+          "name": "get_MIIPhyUsed",
+          "startLine": 338,
+          "endLine": 340,
+          "params": []
+        },
+        {
+          "name": "get_MediaOverride",
+          "startLine": 341,
+          "endLine": 343,
+          "params": []
+        },
+        {
+          "name": "get_phys",
+          "startLine": 344,
+          "endLine": 346,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "NicHardwareInformation",
+          "startLine": 3,
+          "endLine": 347,
+          "methods": [
+            "set_CacheLineSize",
+            "set_RevisionId",
+            "set_Status",
+            "set_XcvrType",
+            "set_DeviceId",
+            "set_BitsInHashFilter",
+            "set_LinkSpeed",
+            "set_UpdateInterval",
+            "set_Connector",
+            "set_ConfigConnector",
+            "set_HurricaneEarlyRevision",
+            "set_FeatureSet",
+            "set_OptimizeForThroughput",
+            "set_OptimizeForCPU",
+            "set_OptimizeNormal",
+            "set_BroadcastErrDone",
+            "set_UDPChecksumErrDone",
+            "set_FullDuplexEnable",
+            "set_DuplexCommandOverride",
+            "set_MWIErrDone",
+            "set_FlowControlEnable",
+            "set_FlowControlSupported",
+            "set_LinkBeatDisable",
+            "set_SupportsPowerManagement",
+            "set_WOLConnectorPresent",
+            "set_AutoResetToD0",
+            "set_DontSleep",
+            "set_D3Work",
+            "set_WakeOnMagicPacket",
+            "set_WakeOnLinkChange",
+            "set_SQEDisable",
+            "set_AutoSelect",
+            "set_LightTen",
+            "set_LinkState",
+            "set_MIIReadCommand",
+            "set_MIIWriteCommand",
+            "set_MIIPhyOui",
+            "set_MIIPhyModel",
+            "set_MIIPhyUsed",
+            "set_MediaOverride",
+            "set_phys",
+            "get_CacheLineSize",
+            "get_RevisionId",
+            "get_Status",
+            "get_XcvrType",
+            "get_DeviceId",
+            "get_BitsInHashFilter",
+            "get_LinkSpeed",
+            "get_UpdateInterval",
+            "get_Connector",
+            "get_ConfigConnector",
+            "get_HurricaneEarlyRevision",
+            "get_FeatureSet",
+            "get_OptimizeForThroughput",
+            "get_OptimizeForCPU",
+            "get_OptimizeNormal",
+            "get_BroadcastErrDone",
+            "get_UDPChecksumErrDone",
+            "get_FullDuplexEnable",
+            "get_DuplexCommandOverride",
+            "get_MWIErrDone",
+            "get_FlowControlEnable",
+            "get_FlowControlSupported",
+            "get_LinkBeatDisable",
+            "get_SupportsPowerManagement",
+            "get_WOLConnectorPresent",
+            "get_AutoResetToD0",
+            "get_DontSleep",
+            "get_D3Work",
+            "get_WakeOnMagicPacket",
+            "get_WakeOnLinkChange",
+            "get_SQEDisable",
+            "get_AutoSelect",
+            "get_LightTen",
+            "get_LinkState",
+            "get_MIIReadCommand",
+            "get_MIIWriteCommand",
+            "get_MIIPhyOui",
+            "get_MIIPhyModel",
+            "get_MIIPhyUsed",
+            "get_MediaOverride",
+            "get_phys"
+          ],
+          "properties": [
+            "HARDWARE_STATUS_WORKING",
+            "HARDWARE_STATUS_HUNG",
+            "HARDWARE_STATUS_FAILURE",
+            "MOTHERBOARD_FEATURE_SET",
+            "LOW_COST_ADAPTER_FEATURE_SET",
+            "STANDARD_ADAPTER_FEATURE_SET",
+            "SERVER_ADAPTER_FEATURE_SET",
+            "CONNECTOR_10BASET",
+            "CONNECTOR_10AUI",
+            "CONNECTOR_10BASE2",
+            "CONNECTOR_100BASETX",
+            "CONNECTOR_100BASEFX",
+            "CONNECTOR_MII",
+            "CONNECTOR_AUTONEGOTIATION",
+            "CONNECTOR_EXTERNAL_MII",
+            "CONNECTOR_UNKNOWN",
+            "LINK_UP",
+            "LINK_DOWN",
+            "LINK_DOWN_AT_INIT",
+            "CacheLineSize",
+            "RevisionId",
+            "Status",
+            "XcvrType",
+            "DeviceId",
+            "BitsInHashFilter",
+            "LinkSpeed",
+            "UpdateInterval",
+            "Connector",
+            "ConfigConnector",
+            "HurricaneEarlyRevision",
+            "FeatureSet",
+            "OptimizeForThroughput",
+            "OptimizeForCPU",
+            "OptimizeNormal",
+            "BroadcastErrDone",
+            "UDPChecksumErrDone",
+            "FullDuplexEnable",
+            "DuplexCommandOverride",
+            "MWIErrDone",
+            "FlowControlEnable",
+            "FlowControlSupported",
+            "LinkBeatDisable",
+            "SupportsPowerManagement",
+            "WOLConnectorPresent",
+            "AutoResetToD0",
+            "DontSleep",
+            "D3Work",
+            "WakeOnMagicPacket",
+            "WakeOnLinkChange",
+            "SQEDisable",
+            "AutoSelect",
+            "LightTen",
+            "LinkState",
+            "MIIReadCommand",
+            "MIIWriteCommand",
+            "MIIPhyOui",
+            "MIIPhyModel",
+            "MIIPhyUsed",
+            "MediaOverride",
+            "phys"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "set_CacheLineSize",
+          "line": 92,
+          "isDefault": false
+        },
+        {
+          "name": "set_RevisionId",
+          "line": 95,
+          "isDefault": false
+        },
+        {
+          "name": "set_Status",
+          "line": 98,
+          "isDefault": false
+        },
+        {
+          "name": "set_XcvrType",
+          "line": 101,
+          "isDefault": false
+        },
+        {
+          "name": "set_DeviceId",
+          "line": 104,
+          "isDefault": false
+        },
+        {
+          "name": "set_BitsInHashFilter",
+          "line": 107,
+          "isDefault": false
+        },
+        {
+          "name": "set_LinkSpeed",
+          "line": 110,
+          "isDefault": false
+        },
+        {
+          "name": "set_UpdateInterval",
+          "line": 113,
+          "isDefault": false
+        },
+        {
+          "name": "set_Connector",
+          "line": 116,
+          "isDefault": false
+        },
+        {
+          "name": "set_ConfigConnector",
+          "line": 121,
+          "isDefault": false
+        },
+        {
+          "name": "set_HurricaneEarlyRevision",
+          "line": 127,
+          "isDefault": false
+        },
+        {
+          "name": "set_FeatureSet",
+          "line": 130,
+          "isDefault": false
+        },
+        {
+          "name": "set_OptimizeForThroughput",
+          "line": 133,
+          "isDefault": false
+        },
+        {
+          "name": "set_OptimizeForCPU",
+          "line": 136,
+          "isDefault": false
+        },
+        {
+          "name": "set_OptimizeNormal",
+          "line": 139,
+          "isDefault": false
+        },
+        {
+          "name": "set_BroadcastErrDone",
+          "line": 142,
+          "isDefault": false
+        },
+        {
+          "name": "set_UDPChecksumErrDone",
+          "line": 145,
+          "isDefault": false
+        },
+        {
+          "name": "set_FullDuplexEnable",
+          "line": 148,
+          "isDefault": false
+        },
+        {
+          "name": "set_DuplexCommandOverride",
+          "line": 151,
+          "isDefault": false
+        },
+        {
+          "name": "set_MWIErrDone",
+          "line": 154,
+          "isDefault": false
+        },
+        {
+          "name": "set_FlowControlEnable",
+          "line": 157,
+          "isDefault": false
+        },
+        {
+          "name": "set_FlowControlSupported",
+          "line": 160,
+          "isDefault": false
+        },
+        {
+          "name": "set_LinkBeatDisable",
+          "line": 163,
+          "isDefault": false
+        },
+        {
+          "name": "set_SupportsPowerManagement",
+          "line": 166,
+          "isDefault": false
+        },
+        {
+          "name": "set_WOLConnectorPresent",
+          "line": 169,
+          "isDefault": false
+        },
+        {
+          "name": "set_AutoResetToD0",
+          "line": 172,
+          "isDefault": false
+        },
+        {
+          "name": "set_DontSleep",
+          "line": 175,
+          "isDefault": false
+        },
+        {
+          "name": "set_D3Work",
+          "line": 178,
+          "isDefault": false
+        },
+        {
+          "name": "set_WakeOnMagicPacket",
+          "line": 181,
+          "isDefault": false
+        },
+        {
+          "name": "set_WakeOnLinkChange",
+          "line": 184,
+          "isDefault": false
+        },
+        {
+          "name": "set_SQEDisable",
+          "line": 187,
+          "isDefault": false
+        },
+        {
+          "name": "set_AutoSelect",
+          "line": 190,
+          "isDefault": false
+        },
+        {
+          "name": "set_LightTen",
+          "line": 193,
+          "isDefault": false
+        },
+        {
+          "name": "set_LinkState",
+          "line": 196,
+          "isDefault": false
+        },
+        {
+          "name": "set_MIIReadCommand",
+          "line": 201,
+          "isDefault": false
+        },
+        {
+          "name": "set_MIIWriteCommand",
+          "line": 204,
+          "isDefault": false
+        },
+        {
+          "name": "set_MIIPhyOui",
+          "line": 207,
+          "isDefault": false
+        },
+        {
+          "name": "set_MIIPhyModel",
+          "line": 210,
+          "isDefault": false
+        },
+        {
+          "name": "set_MIIPhyUsed",
+          "line": 213,
+          "isDefault": false
+        },
+        {
+          "name": "set_MediaOverride",
+          "line": 216,
+          "isDefault": false
+        },
+        {
+          "name": "set_phys",
+          "line": 219,
+          "isDefault": false
+        },
+        {
+          "name": "get_CacheLineSize",
+          "line": 224,
+          "isDefault": false
+        },
+        {
+          "name": "get_RevisionId",
+          "line": 227,
+          "isDefault": false
+        },
+        {
+          "name": "get_Status",
+          "line": 230,
+          "isDefault": false
+        },
+        {
+          "name": "get_XcvrType",
+          "line": 233,
+          "isDefault": false
+        },
+        {
+          "name": "get_DeviceId",
+          "line": 236,
+          "isDefault": false
+        },
+        {
+          "name": "get_BitsInHashFilter",
+          "line": 239,
+          "isDefault": false
+        },
+        {
+          "name": "get_LinkSpeed",
+          "line": 242,
+          "isDefault": false
+        },
+        {
+          "name": "get_UpdateInterval",
+          "line": 245,
+          "isDefault": false
+        },
+        {
+          "name": "get_Connector",
+          "line": 248,
+          "isDefault": false
+        },
+        {
+          "name": "get_ConfigConnector",
+          "line": 251,
+          "isDefault": false
+        },
+        {
+          "name": "get_HurricaneEarlyRevision",
+          "line": 254,
+          "isDefault": false
+        },
+        {
+          "name": "get_FeatureSet",
+          "line": 257,
+          "isDefault": false
+        },
+        {
+          "name": "get_OptimizeForThroughput",
+          "line": 260,
+          "isDefault": false
+        },
+        {
+          "name": "get_OptimizeForCPU",
+          "line": 263,
+          "isDefault": false
+        },
+        {
+          "name": "get_OptimizeNormal",
+          "line": 266,
+          "isDefault": false
+        },
+        {
+          "name": "get_BroadcastErrDone",
+          "line": 269,
+          "isDefault": false
+        },
+        {
+          "name": "get_UDPChecksumErrDone",
+          "line": 272,
+          "isDefault": false
+        },
+        {
+          "name": "get_FullDuplexEnable",
+          "line": 275,
+          "isDefault": false
+        },
+        {
+          "name": "get_DuplexCommandOverride",
+          "line": 278,
+          "isDefault": false
+        },
+        {
+          "name": "get_MWIErrDone",
+          "line": 281,
+          "isDefault": false
+        },
+        {
+          "name": "get_FlowControlEnable",
+          "line": 284,
+          "isDefault": false
+        },
+        {
+          "name": "get_FlowControlSupported",
+          "line": 287,
+          "isDefault": false
+        },
+        {
+          "name": "get_LinkBeatDisable",
+          "line": 290,
+          "isDefault": false
+        },
+        {
+          "name": "get_SupportsPowerManagement",
+          "line": 293,
+          "isDefault": false
+        },
+        {
+          "name": "get_WOLConnectorPresent",
+          "line": 296,
+          "isDefault": false
+        },
+        {
+          "name": "get_AutoResetToD0",
+          "line": 299,
+          "isDefault": false
+        },
+        {
+          "name": "get_DontSleep",
+          "line": 302,
+          "isDefault": false
+        },
+        {
+          "name": "get_D3Work",
+          "line": 305,
+          "isDefault": false
+        },
+        {
+          "name": "get_WakeOnMagicPacket",
+          "line": 308,
+          "isDefault": false
+        },
+        {
+          "name": "get_WakeOnLinkChange",
+          "line": 311,
+          "isDefault": false
+        },
+        {
+          "name": "get_SQEDisable",
+          "line": 314,
+          "isDefault": false
+        },
+        {
+          "name": "get_AutoSelect",
+          "line": 317,
+          "isDefault": false
+        },
+        {
+          "name": "get_LightTen",
+          "line": 320,
+          "isDefault": false
+        },
+        {
+          "name": "get_LinkState",
+          "line": 323,
+          "isDefault": false
+        },
+        {
+          "name": "get_MIIReadCommand",
+          "line": 326,
+          "isDefault": false
+        },
+        {
+          "name": "get_MIIWriteCommand",
+          "line": 329,
+          "isDefault": false
+        },
+        {
+          "name": "get_MIIPhyOui",
+          "line": 332,
+          "isDefault": false
+        },
+        {
+          "name": "get_MIIPhyModel",
+          "line": 335,
+          "isDefault": false
+        },
+        {
+          "name": "get_MIIPhyUsed",
+          "line": 338,
+          "isDefault": false
+        },
+        {
+          "name": "get_MediaOverride",
+          "line": 341,
+          "isDefault": false
+        },
+        {
+          "name": "get_phys",
+          "line": 344,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "set_Connector",
+          "callee": "new UnknownConnectorType",
+          "lineNumber": 118
+        },
+        {
+          "caller": "set_ConfigConnector",
+          "callee": "new UnknownConnectorType",
+          "lineNumber": 124
+        },
+        {
+          "caller": "set_LinkState",
+          "callee": "new UnknownLinkState",
+          "lineNumber": 198
+        }
+      ],
+      "metrics": {
+        "importCount": 82,
+        "exportCount": 82,
+        "functionCount": 82,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/NicInformation.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 59,
+      "nonEmptyLines": 46,
+      "functions": [
+        {
+          "name": "NicInformation",
+          "startLine": 49,
+          "endLine": 58,
+          "params": [
+            "pcidevice"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "NicInformation",
+          "startLine": 6,
+          "endLine": 59,
+          "methods": [
+            "NicInformation"
+          ],
+          "properties": [
+            "MAXIMUM_TEST_BUFFERS",
+            "IoBaseAddress",
+            "MemBaseAddress",
+            "irq",
+            "DeviceName",
+            "PermanentAddress",
+            "StationAddress",
+            "ResourcesReserved",
+            "PCI",
+            "HeadUPD",
+            "HeadDPD",
+            "TailDPD",
+            "TestDPD",
+            "Resources",
+            "Statistics",
+            "Hardware",
+            "BytesInDPDQueue",
+            "InTimer",
+            "DelayStart",
+            "mc_list",
+            "lock",
+            "DPDRingFull",
+            "DeviceGivenByOS",
+            "keepForGlobalReset",
+            "WaitCases"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "NicInformation",
+          "line": 49,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "NicInformation",
+          "callee": "new Resourcen",
+          "lineNumber": 53
+        },
+        {
+          "caller": "NicInformation",
+          "callee": "new NicStatistics",
+          "lineNumber": 54
+        },
+        {
+          "caller": "NicInformation",
+          "callee": "new NicHardwareInformation",
+          "lineNumber": 55
+        },
+        {
+          "caller": "NicInformation",
+          "callee": "new NicPciInformation",
+          "lineNumber": 56
+        },
+        {
+          "caller": "NicInformation",
+          "callee": "new Object",
+          "lineNumber": 57
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/NicPciInformation.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 28,
+      "functions": [
+        {
+          "name": "NicPciInformation",
+          "startLine": 10,
+          "endLine": 10,
+          "params": [
+            "dev"
+          ]
+        },
+        {
+          "name": "get_Interrupt",
+          "startLine": 19,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "get_IoBaseAddress",
+          "startLine": 23,
+          "endLine": 25,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "NicPciInformation",
+          "startLine": 5,
+          "endLine": 35,
+          "methods": [
+            "NicPciInformation",
+            "get_Interrupt",
+            "get_IoBaseAddress"
+          ],
+          "properties": [
+            "InterruptVector",
+            "IoBaseAddress",
+            "dev"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "NicPciInformation",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "get_Interrupt",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "get_IoBaseAddress",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "get_Interrupt",
+          "callee": "dev.getInterruptLine",
+          "lineNumber": 20
+        },
+        {
+          "caller": "get_IoBaseAddress",
+          "callee": "dev.getBaseAddress",
+          "lineNumber": 24
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/NicStatistics.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 79,
+      "nonEmptyLines": 68,
+      "functions": [
+        {
+          "name": "NicStatistics",
+          "startLine": 48,
+          "endLine": 49,
+          "params": []
+        },
+        {
+          "name": "reset",
+          "startLine": 51,
+          "endLine": 78,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "NicStatistics",
+          "startLine": 3,
+          "endLine": 79,
+          "methods": [
+            "NicStatistics",
+            "reset"
+          ],
+          "properties": [
+            "TxFramesOk",
+            "TxBytesOk",
+            "TxFramesDeferred",
+            "TxSingleCollisions",
+            "TxMultipleCollisions",
+            "TxLateCollisions",
+            "TxCarrierLost",
+            "TxMaximumCollisions",
+            "TxSQEErrors",
+            "TxHWErrors",
+            "TxJabberError",
+            "TxUnknownError",
+            "TxLastPackets",
+            "TxLastCollisions",
+            "TxLastDeferred",
+            "RxFramesOk",
+            "RxBytesOk",
+            "RxOverruns",
+            "RxBadSSD",
+            "RxAlignmentError",
+            "RxBadCRCError",
+            "RxOversizeError",
+            "RxNoBuffer",
+            "RxLastPackets",
+            "UpdateInterval",
+            "Rx_MulticastPkts"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "NicStatistics",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "reset",
+          "line": 51,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/NicStatusFailure.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 13,
+      "functions": [
+        {
+          "name": "NicStatusFailure",
+          "startLine": 9,
+          "endLine": 11,
+          "params": []
+        },
+        {
+          "name": "NicStatusFailure",
+          "startLine": 12,
+          "endLine": 14,
+          "params": [
+            "msg"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "NicStatusFailure",
+          "startLine": 7,
+          "endLine": 15,
+          "methods": [
+            "NicStatusFailure",
+            "NicStatusFailure"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "NicStatusFailure",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/NicTimer.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 55,
+      "nonEmptyLines": 40,
+      "functions": [
+        {
+          "name": "NicTimer",
+          "startLine": 10,
+          "endLine": 13,
+          "params": [
+            "irq",
+            "timerManager"
+          ]
+        },
+        {
+          "name": "timer",
+          "startLine": 15,
+          "endLine": 49,
+          "params": [
+            "arg"
+          ]
+        },
+        {
+          "name": "equals",
+          "startLine": 51,
+          "endLine": 54,
+          "params": [
+            "obj"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "NicTimer",
+          "startLine": 6,
+          "endLine": 55,
+          "methods": [
+            "NicTimer",
+            "timer",
+            "equals"
+          ],
+          "properties": [
+            "irq",
+            "timerManager"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "timer",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "equals",
+          "line": 51,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "timer",
+          "callee": "((NicTimerArg)arg).get_NicInfo",
+          "lineNumber": 17
+        },
+        {
+          "caller": "timer",
+          "callee": "((NicTimerArg)arg).get_Handle",
+          "lineNumber": 18
+        },
+        {
+          "caller": "timer",
+          "callee": "irq.disableIRQ",
+          "lineNumber": 24
+        },
+        {
+          "caller": "timer",
+          "callee": "Adapter.PCI.get_Interrupt",
+          "lineNumber": 24
+        },
+        {
+          "caller": "timer",
+          "callee": "Adapter.Resources.get_TimerInterval",
+          "lineNumber": 25
+        },
+        {
+          "caller": "timer",
+          "callee": "handle.UpdateStatisticsEvent",
+          "lineNumber": 29
+        },
+        {
+          "caller": "timer",
+          "callee": "Adapter.Hardware.set_UpdateInterval",
+          "lineNumber": 36
+        },
+        {
+          "caller": "timer",
+          "callee": "Adapter.Hardware.get_UpdateInterval",
+          "lineNumber": 36
+        },
+        {
+          "caller": "timer",
+          "callee": "Adapter.Resources.get_TimerInterval",
+          "lineNumber": 36
+        },
+        {
+          "caller": "timer",
+          "callee": "Adapter.Hardware.get_UpdateInterval",
+          "lineNumber": 37
+        },
+        {
+          "caller": "timer",
+          "callee": "Adapter.Hardware.set_UpdateInterval",
+          "lineNumber": 39
+        },
+        {
+          "caller": "timer",
+          "callee": "handle.TickMediaHandler",
+          "lineNumber": 40
+        },
+        {
+          "caller": "timer",
+          "callee": "irq.enableIRQ",
+          "lineNumber": 43
+        },
+        {
+          "caller": "timer",
+          "callee": "Adapter.PCI.get_Interrupt",
+          "lineNumber": 43
+        },
+        {
+          "caller": "timer",
+          "callee": "timerManager.addMillisTimer",
+          "lineNumber": 45
+        },
+        {
+          "caller": "timer",
+          "callee": "new NicTimer",
+          "lineNumber": 45
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/NicTimerArg.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 15,
+      "functions": [
+        {
+          "name": "NicTimerArg",
+          "startLine": 7,
+          "endLine": 10,
+          "params": [
+            "handle",
+            "adapter"
+          ]
+        },
+        {
+          "name": "get_Handle",
+          "startLine": 12,
+          "endLine": 14,
+          "params": []
+        },
+        {
+          "name": "get_NicInfo",
+          "startLine": 15,
+          "endLine": 17,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "NicTimerArg",
+          "startLine": 3,
+          "endLine": 18,
+          "methods": [
+            "NicTimerArg",
+            "get_Handle",
+            "get_NicInfo"
+          ],
+          "properties": [
+            "Handle",
+            "Adapter"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "NicTimerArg",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "get_Handle",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "get_NicInfo",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/metaxa/os/devices/net/PciParameters1.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 82,
+      "nonEmptyLines": 75,
+      "functions": [
+        {
+          "name": "PciParameters1",
+          "startLine": 22,
+          "endLine": 33,
+          "params": [
+            "bit0",
+            "lower1meg",
+            "disablememorybase",
+            "d3supportcold",
+            "d1support",
+            "d2support",
+            "minimumgrant",
+            "maximumlatency"
+          ]
+        },
+        {
+          "name": "set_Bit0",
+          "startLine": 35,
+          "endLine": 37,
+          "params": [
+            "bit0"
+          ]
+        },
+        {
+          "name": "set_Lower1Meg",
+          "startLine": 38,
+          "endLine": 40,
+          "params": [
+            "lower1meg"
+          ]
+        },
+        {
+          "name": "set_DisableMemoryBase",
+          "startLine": 41,
+          "endLine": 43,
+          "params": [
+            "disablememorybase"
+          ]
+        },
+        {
+          "name": "set_D3SupportCold",
+          "startLine": 44,
+          "endLine": 46,
+          "params": [
+            "d3supportcold"
+          ]
+        },
+        {
+          "name": "set_D1Support",
+          "startLine": 47,
+          "endLine": 49,
+          "params": [
+            "d1support"
+          ]
+        },
+        {
+          "name": "set_D2Support",
+          "startLine": 50,
+          "endLine": 52,
+          "params": [
+            "d2support"
+          ]
+        },
+        {
+          "name": "set_MinimumGrant",
+          "startLine": 53,
+          "endLine": 55,
+          "params": [
+            "minimumgrant"
+          ]
+        },
+        {
+          "name": "set_MaximumLatency",
+          "startLine": 56,
+          "endLine": 58,
+          "params": [
+            "maximumlatency"
+          ]
+        },
+        {
+          "name": "get_Bit0",
+          "startLine": 60,
+          "endLine": 62,
+          "params": []
+        },
+        {
+          "name": "get_Lower1Meg",
+          "startLine": 63,
+          "endLine": 65,
+          "params": []
+        },
+        {
+          "name": "get_DisableMemoryBase",
+          "startLine": 66,
+          "endLine": 68,
+          "params": []
+        },
+        {
+          "name": "get_D1Support",
+          "startLine": 69,
+          "endLine": 71,
+          "params": []
+        },
+        {
+          "name": "get_D2Support",
+          "startLine": 72,
+          "endLine": 74,
+          "params": []
+        },
+        {
+          "name": "get_MinimumGrant",
+          "startLine": 75,
+          "endLine": 77,
+          "params": []
+        },
+        {
+          "name": "get_MaximumLatency",
+          "startLine": 78,
+          "endLine": 80,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "PciParameters1",
+          "startLine": 3,
+          "endLine": 82,
+          "methods": [
+            "PciParameters1",
+            "set_Bit0",
+            "set_Lower1Meg",
+            "set_DisableMemoryBase",
+            "set_D3SupportCold",
+            "set_D1Support",
+            "set_D2Support",
+            "set_MinimumGrant",
+            "set_MaximumLatency",
+            "get_Bit0",
+            "get_Lower1Meg",
+            "get_DisableMemoryBase",
+            "get_D1Support",
+            "get_D2Support",
+            "get_MinimumGrant",
+            "get_MaximumLatency"
+          ],
+          "properties": [
+            "Bit0",
+            "Lower1Meg",
+            "DisableMemoryBase",
+            "D3SupportCold",
+            "D1Support",
+            "D2Support",
+            "MinimumGrant",
+            "MaximumLatency"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "set_Bit0",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "set_Lower1Meg",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "set_DisableMemoryBase",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "set_D3SupportCold",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "set_D1Support",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "set_D2Support",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "set_MinimumGrant",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "set_MaximumLatency",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "get_Bit0",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "get_Lower1Meg",
+          "line": 63,
+          "isDefault": false
+        },
+        {
+          "name": "get_DisableMemoryBase",
+          "line": 66,
+          "isDefault": false
+        },
+        {
+          "name": "get_D1Support",
+          "line": 69,
+          "isDefault": false
+        },
+        {
+          "name": "get_D2Support",
+          "line": 72,
+          "isDefault": false
+        },
+        {
+          "name": "get_MinimumGrant",
+          "line": 75,
+          "isDefault": false
+        },
+        {
+          "name": "get_MaximumLatency",
+          "line": 78,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "PciParameters1",
+          "callee": "set_Bit0",
+          "lineNumber": 25
+        },
+        {
+          "caller": "PciParameters1",
+          "callee": "set_Lower1Meg",
+          "lineNumber": 26
+        },
+        {
+          "caller": "PciParameters1",
+          "callee": "set_DisableMemoryBase",
+          "lineNumber": 27
+        },
+        {
+          "caller": "PciParameters1",
+          "callee": "set_D3SupportCold",
+          "lineNumber": 28
+        },
+        {
+          "caller": "PciParameters1",
+          "callee": "set_D1Support",
+          "lineNumber": 29
+        },
+        {
+          "caller": "PciParameters1",
+          "callee": "set_D2Support",
+          "lineNumber": 30
+        },
+        {
+          "caller": "PciParameters1",
+          "callee": "set_MinimumGrant",
+          "lineNumber": 31
+        },
+        {
+          "caller": "PciParameters1",
+          "callee": "set_MaximumLatency",
+          "lineNumber": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 15,
+        "exportCount": 15,
+        "functionCount": 16,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/ReadMIIException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "ReadMIIException",
+          "startLine": 7,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "ReadMIIException",
+          "startLine": 10,
+          "endLine": 12,
+          "params": [
+            "arg"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReadMIIException",
+          "startLine": 6,
+          "endLine": 13,
+          "methods": [
+            "ReadMIIException",
+            "ReadMIIException"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ReadMIIException",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "ReadMIIException",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/Register.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 196,
+      "nonEmptyLines": 168,
+      "functions": [
+        {
+          "name": "REGISTER_WINDOW_0",
+          "startLine": 11,
+          "endLine": 11,
+          "params": []
+        },
+        {
+          "name": "REGISTER_WINDOW_1",
+          "startLine": 12,
+          "endLine": 12,
+          "params": []
+        },
+        {
+          "name": "REGISTER_WINDOW_2",
+          "startLine": 13,
+          "endLine": 13,
+          "params": []
+        },
+        {
+          "name": "REGISTER_WINDOW_3",
+          "startLine": 14,
+          "endLine": 14,
+          "params": []
+        },
+        {
+          "name": "REGISTER_WINDOW_4",
+          "startLine": 15,
+          "endLine": 15,
+          "params": []
+        },
+        {
+          "name": "REGISTER_WINDOW_5",
+          "startLine": 16,
+          "endLine": 16,
+          "params": []
+        },
+        {
+          "name": "REGISTER_WINDOW_6",
+          "startLine": 17,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "REGISTER_WINDOW_7",
+          "startLine": 18,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "REGISTER_WINDOW_MASK",
+          "startLine": 19,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "INTSTATUS_INTERRUPT_MASK",
+          "startLine": 21,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "BIOS_ROM_ADDRESS_REGISTER",
+          "startLine": 27,
+          "endLine": 27,
+          "params": []
+        },
+        {
+          "name": "BIOS_ROM_DATA_REGISTER",
+          "startLine": 28,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "EEPROM_COMMAND_REGISTER",
+          "startLine": 30,
+          "endLine": 30,
+          "params": []
+        },
+        {
+          "name": "EEPROM_BUSY_BIT",
+          "startLine": 31,
+          "endLine": 31,
+          "params": []
+        },
+        {
+          "name": "EEPROM_COMMAND_READ",
+          "startLine": 32,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "EEPROM_WRITE_ENABLE",
+          "startLine": 33,
+          "endLine": 33,
+          "params": []
+        },
+        {
+          "name": "EEPROM_ERASE_REGISTER",
+          "startLine": 34,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "EEPROM_WRITE_REGISTER",
+          "startLine": 35,
+          "endLine": 35,
+          "params": []
+        },
+        {
+          "name": "EEPROM_DATA_REGISTER",
+          "startLine": 37,
+          "endLine": 37,
+          "params": []
+        },
+        {
+          "name": "INTSTATUS_COMMAND_REGISTER",
+          "startLine": 39,
+          "endLine": 39,
+          "params": []
+        },
+        {
+          "name": "INTSTATUS_INTERRUPT_LATCH",
+          "startLine": 40,
+          "endLine": 40,
+          "params": []
+        },
+        {
+          "name": "INTSTATUS_HOST_ERROR",
+          "startLine": 41,
+          "endLine": 41,
+          "params": []
+        },
+        {
+          "name": "INTSTATUS_TX_COMPLETE",
+          "startLine": 42,
+          "endLine": 42,
+          "params": []
+        },
+        {
+          "name": "INTSTATUS_RX_COMPLETE",
+          "startLine": 43,
+          "endLine": 43,
+          "params": []
+        },
+        {
+          "name": "INTSTATUS_INTERRUPT_REQUESTED",
+          "startLine": 44,
+          "endLine": 44,
+          "params": []
+        },
+        {
+          "name": "INTSTATUS_UPDATE_STATISTICS",
+          "startLine": 45,
+          "endLine": 45,
+          "params": []
+        },
+        {
+          "name": "INTSTATUS_LINK_EVENT",
+          "startLine": 46,
+          "endLine": 46,
+          "params": []
+        },
+        {
+          "name": "INTSTATUS_DOWN_COMPLETE",
+          "startLine": 47,
+          "endLine": 47,
+          "params": []
+        },
+        {
+          "name": "INTSTATUS_UP_COMPLETE",
+          "startLine": 48,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "INTSTATUS_COMMAND_IN_PROGRESS",
+          "startLine": 49,
+          "endLine": 49,
+          "params": []
+        },
+        {
+          "name": "INTSTATUS_INTERRUPT_NONE",
+          "startLine": 50,
+          "endLine": 50,
+          "params": []
+        },
+        {
+          "name": "INTSTATUS_INTERRUPT_ALL",
+          "startLine": 51,
+          "endLine": 51,
+          "params": []
+        },
+        {
+          "name": "INTSTATUS_ACKNOWLEDGE_ALL",
+          "startLine": 52,
+          "endLine": 52,
+          "params": []
+        },
+        {
+          "name": "STATION_ADDRESS_LOW_REGISTER",
+          "startLine": 58,
+          "endLine": 58,
+          "params": []
+        },
+        {
+          "name": "STATION_ADDRESS_MID_REGISTER",
+          "startLine": 59,
+          "endLine": 59,
+          "params": []
+        },
+        {
+          "name": "STATION_ADDRESS_HIGH_REGISTER",
+          "startLine": 60,
+          "endLine": 60,
+          "params": []
+        },
+        {
+          "name": "INTERNAL_CONFIG_REGISTER",
+          "startLine": 66,
+          "endLine": 66,
+          "params": []
+        },
+        {
+          "name": "INTERNAL_CONFIG_DISABLE_BAD_SSD",
+          "startLine": 67,
+          "endLine": 67,
+          "params": []
+        },
+        {
+          "name": "INTERNAL_CONFIG_ENABLE_TX_LARGE",
+          "startLine": 68,
+          "endLine": 68,
+          "params": []
+        },
+        {
+          "name": "INTERNAL_CONFIG_ENABLE_RX_LARGE",
+          "startLine": 69,
+          "endLine": 69,
+          "params": []
+        },
+        {
+          "name": "INTERNAL_CONFIG_AUTO_SELECT",
+          "startLine": 70,
+          "endLine": 70,
+          "params": []
+        },
+        {
+          "name": "INTERNAL_CONFIG_DISABLE_ROM",
+          "startLine": 71,
+          "endLine": 71,
+          "params": []
+        },
+        {
+          "name": "INTERNAL_CONFIG_TRANSCEIVER_MASK",
+          "startLine": 72,
+          "endLine": 72,
+          "params": []
+        },
+        {
+          "name": "MAXIMUM_PACKET_SIZE_REGISTER",
+          "startLine": 74,
+          "endLine": 74,
+          "params": []
+        },
+        {
+          "name": "MAC_CONTROL_REGISTER",
+          "startLine": 76,
+          "endLine": 76,
+          "params": []
+        },
+        {
+          "name": "MAC_CONTROL_FULL_DUPLEX_ENABLE",
+          "startLine": 77,
+          "endLine": 77,
+          "params": []
+        },
+        {
+          "name": "MAC_CONTROL_ALLOW_LARGE_PACKETS",
+          "startLine": 78,
+          "endLine": 78,
+          "params": []
+        },
+        {
+          "name": "MAC_CONTROL_FLOW_CONTROL_ENABLE",
+          "startLine": 79,
+          "endLine": 79,
+          "params": []
+        },
+        {
+          "name": "MEDIA_OPTIONS_REGISTER",
+          "startLine": 80,
+          "endLine": 80,
+          "params": []
+        },
+        {
+          "name": "MEDIA_OPTIONS_100BASET4_AVAILABLE",
+          "startLine": 81,
+          "endLine": 81,
+          "params": []
+        },
+        {
+          "name": "MEDIA_OPTIONS_100BASETX_AVAILABLE",
+          "startLine": 82,
+          "endLine": 82,
+          "params": []
+        },
+        {
+          "name": "MEDIA_OPTIONS_100BASEFX_AVAILABLE",
+          "startLine": 83,
+          "endLine": 83,
+          "params": []
+        },
+        {
+          "name": "MEDIA_OPTIONS_10BASET_AVAILABLE",
+          "startLine": 84,
+          "endLine": 84,
+          "params": []
+        },
+        {
+          "name": "MEDIA_OPTIONS_10BASE2_AVAILABLE",
+          "startLine": 85,
+          "endLine": 85,
+          "params": []
+        },
+        {
+          "name": "MEDIA_OPTIONS_10AUI_AVAILABLE",
+          "startLine": 86,
+          "endLine": 86,
+          "params": []
+        },
+        {
+          "name": "MEDIA_OPTIONS_MII_AVAILABLE",
+          "startLine": 87,
+          "endLine": 87,
+          "params": []
+        },
+        {
+          "name": "MEDIA_OPTIONS_10BASEFL_AVAILABLE",
+          "startLine": 88,
+          "endLine": 88,
+          "params": []
+        },
+        {
+          "name": "RX_FREE_REGISTER",
+          "startLine": 90,
+          "endLine": 90,
+          "params": []
+        },
+        {
+          "name": "TX_FREE_REGISTER",
+          "startLine": 91,
+          "endLine": 91,
+          "params": []
+        },
+        {
+          "name": "PHYSICAL_MANAGEMENT_REGISTER",
+          "startLine": 97,
+          "endLine": 97,
+          "params": []
+        },
+        {
+          "name": "NETWORK_DIAGNOSTICS_REGISTER",
+          "startLine": 98,
+          "endLine": 98,
+          "params": []
+        },
+        {
+          "name": "NETWORK_DIAGNOSTICS_ASIC_REVISION",
+          "startLine": 99,
+          "endLine": 99,
+          "params": []
+        },
+        {
+          "name": "NETWORK_DIAGNOSTICS_ASIC_REVISION_LOW",
+          "startLine": 100,
+          "endLine": 100,
+          "params": []
+        },
+        {
+          "name": "NETWORK_DIAGNOSTICS_UPPER_BYTES_ENABLE",
+          "startLine": 101,
+          "endLine": 101,
+          "params": []
+        },
+        {
+          "name": "MEDIA_STATUS_REGISTER",
+          "startLine": 102,
+          "endLine": 102,
+          "params": []
+        },
+        {
+          "name": "MEDIA_STATUS_SQE_STATISTICS_ENABLE",
+          "startLine": 103,
+          "endLine": 103,
+          "params": []
+        },
+        {
+          "name": "MEDIA_STATUS_CARRIER_SENSE",
+          "startLine": 104,
+          "endLine": 104,
+          "params": []
+        },
+        {
+          "name": "MEDIA_STATUS_JABBER_GUARD_ENABLE",
+          "startLine": 105,
+          "endLine": 105,
+          "params": []
+        },
+        {
+          "name": "MEDIA_STATUS_LINK_BEAT_ENABLE",
+          "startLine": 106,
+          "endLine": 106,
+          "params": []
+        },
+        {
+          "name": "MEDIA_STATUS_LINK_DETECT",
+          "startLine": 107,
+          "endLine": 107,
+          "params": []
+        },
+        {
+          "name": "MEDIA_STATUS_TX_IN_PROGRESS",
+          "startLine": 108,
+          "endLine": 108,
+          "params": []
+        },
+        {
+          "name": "MEDIA_STATUS_DC_CONVERTER_ENABLED",
+          "startLine": 109,
+          "endLine": 109,
+          "params": []
+        },
+        {
+          "name": "BAD_SSD_REGISTER",
+          "startLine": 110,
+          "endLine": 110,
+          "params": []
+        },
+        {
+          "name": "UPPER_BYTES_OK_REGISTER",
+          "startLine": 111,
+          "endLine": 111,
+          "params": []
+        },
+        {
+          "name": "RX_FILTER_REGISTER",
+          "startLine": 117,
+          "endLine": 117,
+          "params": []
+        },
+        {
+          "name": "INTERRUPT_ENABLE_REGISTER",
+          "startLine": 118,
+          "endLine": 118,
+          "params": []
+        },
+        {
+          "name": "INDICATION_ENABLE_REGISTER",
+          "startLine": 119,
+          "endLine": 119,
+          "params": []
+        },
+        {
+          "name": "CARRIER_LOST_REGISTER",
+          "startLine": 125,
+          "endLine": 125,
+          "params": []
+        },
+        {
+          "name": "SQE_ERRORS_REGISTER",
+          "startLine": 126,
+          "endLine": 126,
+          "params": []
+        },
+        {
+          "name": "MULTIPLE_COLLISIONS_REGISTER",
+          "startLine": 127,
+          "endLine": 127,
+          "params": []
+        },
+        {
+          "name": "SINGLE_COLLISIONS_REGISTER",
+          "startLine": 128,
+          "endLine": 128,
+          "params": []
+        },
+        {
+          "name": "LATE_COLLISIONS_REGISTER",
+          "startLine": 129,
+          "endLine": 129,
+          "params": []
+        },
+        {
+          "name": "RX_OVERRUNS_REGISTER",
+          "startLine": 130,
+          "endLine": 130,
+          "params": []
+        },
+        {
+          "name": "FRAMES_TRANSMITTED_OK_REGISTER",
+          "startLine": 131,
+          "endLine": 131,
+          "params": []
+        },
+        {
+          "name": "FRAMES_RECEIVED_OK_REGISTER",
+          "startLine": 132,
+          "endLine": 132,
+          "params": []
+        },
+        {
+          "name": "FRAMES_DEFERRED_REGISTER",
+          "startLine": 133,
+          "endLine": 133,
+          "params": []
+        },
+        {
+          "name": "UPPER_FRAMES_OK_REGISTER",
+          "startLine": 134,
+          "endLine": 134,
+          "params": []
+        },
+        {
+          "name": "BYTES_RECEIVED_OK_REGISTER",
+          "startLine": 135,
+          "endLine": 135,
+          "params": []
+        },
+        {
+          "name": "BYTES_TRANSMITTED_OK_REGISTER",
+          "startLine": 136,
+          "endLine": 136,
+          "params": []
+        },
+        {
+          "name": "TIMER_REGISTER",
+          "startLine": 142,
+          "endLine": 142,
+          "params": []
+        },
+        {
+          "name": "TX_STATUS_REGISTER",
+          "startLine": 143,
+          "endLine": 143,
+          "params": []
+        },
+        {
+          "name": "TX_STATUS_MAXIMUM_COLLISION",
+          "startLine": 144,
+          "endLine": 144,
+          "params": []
+        },
+        {
+          "name": "TX_STATUS_HWERROR",
+          "startLine": 145,
+          "endLine": 145,
+          "params": []
+        },
+        {
+          "name": "TX_STATUS_JABBER",
+          "startLine": 146,
+          "endLine": 146,
+          "params": []
+        },
+        {
+          "name": "TX_STATUS_INTERRUPT_REQUESTED",
+          "startLine": 147,
+          "endLine": 147,
+          "params": []
+        },
+        {
+          "name": "TX_STATUS_COMPLETE",
+          "startLine": 148,
+          "endLine": 148,
+          "params": []
+        },
+        {
+          "name": "INT_STATUS_AUTO_REGISTER",
+          "startLine": 149,
+          "endLine": 149,
+          "params": []
+        },
+        {
+          "name": "DMA_CONTROL_REGISTER",
+          "startLine": 150,
+          "endLine": 150,
+          "params": []
+        },
+        {
+          "name": "DMA_CONTROL_DOWN_STALLED",
+          "startLine": 151,
+          "endLine": 151,
+          "params": []
+        },
+        {
+          "name": "DMA_CONTROL_UP_COMPLETE",
+          "startLine": 152,
+          "endLine": 152,
+          "params": []
+        },
+        {
+          "name": "DMA_CONTROL_DOWN_COMPLETE",
+          "startLine": 153,
+          "endLine": 153,
+          "params": []
+        },
+        {
+          "name": "DMA_CONTROL_ARM_COUNTDOWN",
+          "startLine": 155,
+          "endLine": 155,
+          "params": []
+        },
+        {
+          "name": "DMA_CONTROL_DOWN_IN_PROGRESS",
+          "startLine": 156,
+          "endLine": 156,
+          "params": []
+        },
+        {
+          "name": "DMA_CONTROL_COUNTER_SPEED",
+          "startLine": 157,
+          "endLine": 157,
+          "params": []
+        },
+        {
+          "name": "DMA_CONTROL_COUNTDOWN_MODE",
+          "startLine": 158,
+          "endLine": 158,
+          "params": []
+        },
+        {
+          "name": "DMA_CONTROL_DOWN_SEQ_DISABLE",
+          "startLine": 159,
+          "endLine": 159,
+          "params": []
+        },
+        {
+          "name": "DMA_CONTROL_DEFEAT_MWI",
+          "startLine": 160,
+          "endLine": 160,
+          "params": []
+        },
+        {
+          "name": "DMA_CONTROL_DEFEAT_MRL",
+          "startLine": 161,
+          "endLine": 161,
+          "params": []
+        },
+        {
+          "name": "DMA_CONTROL_UPOVERDISC_DISABLE",
+          "startLine": 162,
+          "endLine": 162,
+          "params": []
+        },
+        {
+          "name": "DMA_CONTROL_TARGET_ABORT",
+          "startLine": 163,
+          "endLine": 163,
+          "params": []
+        },
+        {
+          "name": "DMA_CONTROL_MASTER_ABORT",
+          "startLine": 164,
+          "endLine": 164,
+          "params": []
+        },
+        {
+          "name": "DOWN_LIST_POINTER_REGISTER",
+          "startLine": 166,
+          "endLine": 166,
+          "params": []
+        },
+        {
+          "name": "DOWN_POLL_REGISTER",
+          "startLine": 167,
+          "endLine": 167,
+          "params": []
+        },
+        {
+          "name": "UP_PACKET_STATUS_REGISTER",
+          "startLine": 168,
+          "endLine": 168,
+          "params": []
+        },
+        {
+          "name": "UP_PACKET_STATUS_ERROR",
+          "startLine": 169,
+          "endLine": 169,
+          "params": []
+        },
+        {
+          "name": "UP_PACKET_STATUS_COMPLETE",
+          "startLine": 170,
+          "endLine": 170,
+          "params": []
+        },
+        {
+          "name": "UP_PACKET_STATUS_OVERRUN",
+          "startLine": 171,
+          "endLine": 171,
+          "params": []
+        },
+        {
+          "name": "UP_PACKET_STATUS_RUNT_FRAME",
+          "startLine": 172,
+          "endLine": 172,
+          "params": []
+        },
+        {
+          "name": "UP_PACKET_STATUS_ALIGNMENT_ERROR",
+          "startLine": 173,
+          "endLine": 173,
+          "params": []
+        },
+        {
+          "name": "UP_PACKET_STATUS_CRC_ERROR",
+          "startLine": 174,
+          "endLine": 174,
+          "params": []
+        },
+        {
+          "name": "UP_PACKET_STATUS_OVERSIZE_FRAME",
+          "startLine": 175,
+          "endLine": 175,
+          "params": []
+        },
+        {
+          "name": "UP_PACKET_STATUS_DRIBBLE_BITS",
+          "startLine": 176,
+          "endLine": 176,
+          "params": []
+        },
+        {
+          "name": "UP_PACKET_STATUS_OVERFLOW",
+          "startLine": 177,
+          "endLine": 177,
+          "params": []
+        },
+        {
+          "name": "UP_PACKET_STATUS_IP_CHECKSUM_ERROR",
+          "startLine": 178,
+          "endLine": 178,
+          "params": []
+        },
+        {
+          "name": "UP_PACKET_STATUS_TCP_CHECKSUM_ERROR",
+          "startLine": 179,
+          "endLine": 179,
+          "params": []
+        },
+        {
+          "name": "UP_PACKET_STATUS_UDP_CHECKSUM_ERROR",
+          "startLine": 180,
+          "endLine": 180,
+          "params": []
+        },
+        {
+          "name": "UP_PACKET_STATUS_IMPLIED_BUFFER_ENABLE",
+          "startLine": 181,
+          "endLine": 181,
+          "params": []
+        },
+        {
+          "name": "UP_PACKET_STATUS_IP_CHECKSUM_CHECKED",
+          "startLine": 182,
+          "endLine": 182,
+          "params": []
+        },
+        {
+          "name": "UP_PACKET_STATUS_TCP_CHECKSUM_CHECKED",
+          "startLine": 183,
+          "endLine": 183,
+          "params": []
+        },
+        {
+          "name": "UP_PACKET_STATUS_UDP_CHECKSUM_CHECKED",
+          "startLine": 184,
+          "endLine": 184,
+          "params": []
+        },
+        {
+          "name": "UP_PACKET_STATUS_ERROR_MASK",
+          "startLine": 185,
+          "endLine": 185,
+          "params": []
+        },
+        {
+          "name": "FREE_TIMER_REGISTER",
+          "startLine": 186,
+          "endLine": 186,
+          "params": []
+        },
+        {
+          "name": "COUNTDOWN_REGISTER",
+          "startLine": 187,
+          "endLine": 187,
+          "params": []
+        },
+        {
+          "name": "UP_LIST_POINTER_REGISTER",
+          "startLine": 188,
+          "endLine": 188,
+          "params": []
+        },
+        {
+          "name": "UP_POLL_REGISTER",
+          "startLine": 189,
+          "endLine": 189,
+          "params": []
+        },
+        {
+          "name": "REAL_TIME_COUNTER_REGISTER",
+          "startLine": 190,
+          "endLine": 190,
+          "params": []
+        },
+        {
+          "name": "CONFIG_ADDRESS_REGISTER",
+          "startLine": 191,
+          "endLine": 191,
+          "params": []
+        },
+        {
+          "name": "CONFIG_DATA_REGISTER",
+          "startLine": 192,
+          "endLine": 192,
+          "params": []
+        },
+        {
+          "name": "DEBUG_DATA_REGISTER",
+          "startLine": 193,
+          "endLine": 193,
+          "params": []
+        },
+        {
+          "name": "DEBUG_CONTROL_REGISTER",
+          "startLine": 194,
+          "endLine": 194,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "Register",
+          "startLine": 5,
+          "endLine": 196,
+          "methods": [
+            "REGISTER_WINDOW_0",
+            "REGISTER_WINDOW_1",
+            "REGISTER_WINDOW_2",
+            "REGISTER_WINDOW_3",
+            "REGISTER_WINDOW_4",
+            "REGISTER_WINDOW_5",
+            "REGISTER_WINDOW_6",
+            "REGISTER_WINDOW_7",
+            "REGISTER_WINDOW_MASK",
+            "INTSTATUS_INTERRUPT_MASK",
+            "BIOS_ROM_ADDRESS_REGISTER",
+            "BIOS_ROM_DATA_REGISTER",
+            "EEPROM_COMMAND_REGISTER",
+            "EEPROM_BUSY_BIT",
+            "EEPROM_COMMAND_READ",
+            "EEPROM_WRITE_ENABLE",
+            "EEPROM_ERASE_REGISTER",
+            "EEPROM_WRITE_REGISTER",
+            "EEPROM_DATA_REGISTER",
+            "INTSTATUS_COMMAND_REGISTER",
+            "INTSTATUS_INTERRUPT_LATCH",
+            "INTSTATUS_HOST_ERROR",
+            "INTSTATUS_TX_COMPLETE",
+            "INTSTATUS_RX_COMPLETE",
+            "INTSTATUS_INTERRUPT_REQUESTED",
+            "INTSTATUS_UPDATE_STATISTICS",
+            "INTSTATUS_LINK_EVENT",
+            "INTSTATUS_DOWN_COMPLETE",
+            "INTSTATUS_UP_COMPLETE",
+            "INTSTATUS_COMMAND_IN_PROGRESS",
+            "INTSTATUS_INTERRUPT_NONE",
+            "INTSTATUS_INTERRUPT_ALL",
+            "INTSTATUS_ACKNOWLEDGE_ALL",
+            "STATION_ADDRESS_LOW_REGISTER",
+            "STATION_ADDRESS_MID_REGISTER",
+            "STATION_ADDRESS_HIGH_REGISTER",
+            "INTERNAL_CONFIG_REGISTER",
+            "INTERNAL_CONFIG_DISABLE_BAD_SSD",
+            "INTERNAL_CONFIG_ENABLE_TX_LARGE",
+            "INTERNAL_CONFIG_ENABLE_RX_LARGE",
+            "INTERNAL_CONFIG_AUTO_SELECT",
+            "INTERNAL_CONFIG_DISABLE_ROM",
+            "INTERNAL_CONFIG_TRANSCEIVER_MASK",
+            "MAXIMUM_PACKET_SIZE_REGISTER",
+            "MAC_CONTROL_REGISTER",
+            "MAC_CONTROL_FULL_DUPLEX_ENABLE",
+            "MAC_CONTROL_ALLOW_LARGE_PACKETS",
+            "MAC_CONTROL_FLOW_CONTROL_ENABLE",
+            "MEDIA_OPTIONS_REGISTER",
+            "MEDIA_OPTIONS_100BASET4_AVAILABLE",
+            "MEDIA_OPTIONS_100BASETX_AVAILABLE",
+            "MEDIA_OPTIONS_100BASEFX_AVAILABLE",
+            "MEDIA_OPTIONS_10BASET_AVAILABLE",
+            "MEDIA_OPTIONS_10BASE2_AVAILABLE",
+            "MEDIA_OPTIONS_10AUI_AVAILABLE",
+            "MEDIA_OPTIONS_MII_AVAILABLE",
+            "MEDIA_OPTIONS_10BASEFL_AVAILABLE",
+            "RX_FREE_REGISTER",
+            "TX_FREE_REGISTER",
+            "PHYSICAL_MANAGEMENT_REGISTER",
+            "NETWORK_DIAGNOSTICS_REGISTER",
+            "NETWORK_DIAGNOSTICS_ASIC_REVISION",
+            "NETWORK_DIAGNOSTICS_ASIC_REVISION_LOW",
+            "NETWORK_DIAGNOSTICS_UPPER_BYTES_ENABLE",
+            "MEDIA_STATUS_REGISTER",
+            "MEDIA_STATUS_SQE_STATISTICS_ENABLE",
+            "MEDIA_STATUS_CARRIER_SENSE",
+            "MEDIA_STATUS_JABBER_GUARD_ENABLE",
+            "MEDIA_STATUS_LINK_BEAT_ENABLE",
+            "MEDIA_STATUS_LINK_DETECT",
+            "MEDIA_STATUS_TX_IN_PROGRESS",
+            "MEDIA_STATUS_DC_CONVERTER_ENABLED",
+            "BAD_SSD_REGISTER",
+            "UPPER_BYTES_OK_REGISTER",
+            "RX_FILTER_REGISTER",
+            "INTERRUPT_ENABLE_REGISTER",
+            "INDICATION_ENABLE_REGISTER",
+            "CARRIER_LOST_REGISTER",
+            "SQE_ERRORS_REGISTER",
+            "MULTIPLE_COLLISIONS_REGISTER",
+            "SINGLE_COLLISIONS_REGISTER",
+            "LATE_COLLISIONS_REGISTER",
+            "RX_OVERRUNS_REGISTER",
+            "FRAMES_TRANSMITTED_OK_REGISTER",
+            "FRAMES_RECEIVED_OK_REGISTER",
+            "FRAMES_DEFERRED_REGISTER",
+            "UPPER_FRAMES_OK_REGISTER",
+            "BYTES_RECEIVED_OK_REGISTER",
+            "BYTES_TRANSMITTED_OK_REGISTER",
+            "TIMER_REGISTER",
+            "TX_STATUS_REGISTER",
+            "TX_STATUS_MAXIMUM_COLLISION",
+            "TX_STATUS_HWERROR",
+            "TX_STATUS_JABBER",
+            "TX_STATUS_INTERRUPT_REQUESTED",
+            "TX_STATUS_COMPLETE",
+            "INT_STATUS_AUTO_REGISTER",
+            "DMA_CONTROL_REGISTER",
+            "DMA_CONTROL_DOWN_STALLED",
+            "DMA_CONTROL_UP_COMPLETE",
+            "DMA_CONTROL_DOWN_COMPLETE",
+            "DMA_CONTROL_ARM_COUNTDOWN",
+            "DMA_CONTROL_DOWN_IN_PROGRESS",
+            "DMA_CONTROL_COUNTER_SPEED",
+            "DMA_CONTROL_COUNTDOWN_MODE",
+            "DMA_CONTROL_DOWN_SEQ_DISABLE",
+            "DMA_CONTROL_DEFEAT_MWI",
+            "DMA_CONTROL_DEFEAT_MRL",
+            "DMA_CONTROL_UPOVERDISC_DISABLE",
+            "DMA_CONTROL_TARGET_ABORT",
+            "DMA_CONTROL_MASTER_ABORT",
+            "DOWN_LIST_POINTER_REGISTER",
+            "DOWN_POLL_REGISTER",
+            "UP_PACKET_STATUS_REGISTER",
+            "UP_PACKET_STATUS_ERROR",
+            "UP_PACKET_STATUS_COMPLETE",
+            "UP_PACKET_STATUS_OVERRUN",
+            "UP_PACKET_STATUS_RUNT_FRAME",
+            "UP_PACKET_STATUS_ALIGNMENT_ERROR",
+            "UP_PACKET_STATUS_CRC_ERROR",
+            "UP_PACKET_STATUS_OVERSIZE_FRAME",
+            "UP_PACKET_STATUS_DRIBBLE_BITS",
+            "UP_PACKET_STATUS_OVERFLOW",
+            "UP_PACKET_STATUS_IP_CHECKSUM_ERROR",
+            "UP_PACKET_STATUS_TCP_CHECKSUM_ERROR",
+            "UP_PACKET_STATUS_UDP_CHECKSUM_ERROR",
+            "UP_PACKET_STATUS_IMPLIED_BUFFER_ENABLE",
+            "UP_PACKET_STATUS_IP_CHECKSUM_CHECKED",
+            "UP_PACKET_STATUS_TCP_CHECKSUM_CHECKED",
+            "UP_PACKET_STATUS_UDP_CHECKSUM_CHECKED",
+            "UP_PACKET_STATUS_ERROR_MASK",
+            "FREE_TIMER_REGISTER",
+            "COUNTDOWN_REGISTER",
+            "UP_LIST_POINTER_REGISTER",
+            "UP_POLL_REGISTER",
+            "REAL_TIME_COUNTER_REGISTER",
+            "CONFIG_ADDRESS_REGISTER",
+            "CONFIG_DATA_REGISTER",
+            "DEBUG_DATA_REGISTER",
+            "DEBUG_CONTROL_REGISTER"
+          ],
+          "properties": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "EEPROM_BUSY_BIT",
+          "callee": "BitPosition.bit_15",
+          "lineNumber": 31
+        },
+        {
+          "caller": "INTSTATUS_INTERRUPT_LATCH",
+          "callee": "BitPosition.bit_0",
+          "lineNumber": 40
+        },
+        {
+          "caller": "INTSTATUS_HOST_ERROR",
+          "callee": "BitPosition.bit_1",
+          "lineNumber": 41
+        },
+        {
+          "caller": "INTSTATUS_TX_COMPLETE",
+          "callee": "BitPosition.bit_2",
+          "lineNumber": 42
+        },
+        {
+          "caller": "INTSTATUS_RX_COMPLETE",
+          "callee": "BitPosition.bit_4",
+          "lineNumber": 43
+        },
+        {
+          "caller": "INTSTATUS_INTERRUPT_REQUESTED",
+          "callee": "BitPosition.bit_6",
+          "lineNumber": 44
+        },
+        {
+          "caller": "INTSTATUS_UPDATE_STATISTICS",
+          "callee": "BitPosition.bit_7",
+          "lineNumber": 45
+        },
+        {
+          "caller": "INTSTATUS_LINK_EVENT",
+          "callee": "BitPosition.bit_8",
+          "lineNumber": 46
+        },
+        {
+          "caller": "INTSTATUS_DOWN_COMPLETE",
+          "callee": "BitPosition.bit_9",
+          "lineNumber": 47
+        },
+        {
+          "caller": "INTSTATUS_UP_COMPLETE",
+          "callee": "BitPosition.bit_10",
+          "lineNumber": 48
+        },
+        {
+          "caller": "INTSTATUS_COMMAND_IN_PROGRESS",
+          "callee": "BitPosition.bit_12",
+          "lineNumber": 49
+        },
+        {
+          "caller": "INTERNAL_CONFIG_DISABLE_BAD_SSD",
+          "callee": "BitPosition.bit_8",
+          "lineNumber": 67
+        },
+        {
+          "caller": "INTERNAL_CONFIG_ENABLE_TX_LARGE",
+          "callee": "BitPosition.bit_14",
+          "lineNumber": 68
+        },
+        {
+          "caller": "INTERNAL_CONFIG_ENABLE_RX_LARGE",
+          "callee": "BitPosition.bit_15",
+          "lineNumber": 69
+        },
+        {
+          "caller": "INTERNAL_CONFIG_AUTO_SELECT",
+          "callee": "BitPosition.bit_24",
+          "lineNumber": 70
+        },
+        {
+          "caller": "INTERNAL_CONFIG_DISABLE_ROM",
+          "callee": "BitPosition.bit_25",
+          "lineNumber": 71
+        },
+        {
+          "caller": "MAC_CONTROL_FULL_DUPLEX_ENABLE",
+          "callee": "BitPosition.bit_5",
+          "lineNumber": 77
+        },
+        {
+          "caller": "MAC_CONTROL_ALLOW_LARGE_PACKETS",
+          "callee": "BitPosition.bit_6",
+          "lineNumber": 78
+        },
+        {
+          "caller": "MAC_CONTROL_FLOW_CONTROL_ENABLE",
+          "callee": "BitPosition.bit_8",
+          "lineNumber": 79
+        },
+        {
+          "caller": "MEDIA_OPTIONS_100BASET4_AVAILABLE",
+          "callee": "BitPosition.bit_0",
+          "lineNumber": 81
+        },
+        {
+          "caller": "MEDIA_OPTIONS_100BASETX_AVAILABLE",
+          "callee": "BitPosition.bit_1",
+          "lineNumber": 82
+        },
+        {
+          "caller": "MEDIA_OPTIONS_100BASEFX_AVAILABLE",
+          "callee": "BitPosition.bit_2",
+          "lineNumber": 83
+        },
+        {
+          "caller": "MEDIA_OPTIONS_10BASET_AVAILABLE",
+          "callee": "BitPosition.bit_3",
+          "lineNumber": 84
+        },
+        {
+          "caller": "MEDIA_OPTIONS_10BASE2_AVAILABLE",
+          "callee": "BitPosition.bit_4",
+          "lineNumber": 85
+        },
+        {
+          "caller": "MEDIA_OPTIONS_10AUI_AVAILABLE",
+          "callee": "BitPosition.bit_5",
+          "lineNumber": 86
+        },
+        {
+          "caller": "MEDIA_OPTIONS_MII_AVAILABLE",
+          "callee": "BitPosition.bit_6",
+          "lineNumber": 87
+        },
+        {
+          "caller": "MEDIA_OPTIONS_10BASEFL_AVAILABLE",
+          "callee": "BitPosition.bit_8",
+          "lineNumber": 88
+        },
+        {
+          "caller": "NETWORK_DIAGNOSTICS_UPPER_BYTES_ENABLE",
+          "callee": "BitPosition.bit_6",
+          "lineNumber": 101
+        },
+        {
+          "caller": "MEDIA_STATUS_SQE_STATISTICS_ENABLE",
+          "callee": "BitPosition.bit_3",
+          "lineNumber": 103
+        },
+        {
+          "caller": "MEDIA_STATUS_CARRIER_SENSE",
+          "callee": "BitPosition.bit_5",
+          "lineNumber": 104
+        },
+        {
+          "caller": "MEDIA_STATUS_JABBER_GUARD_ENABLE",
+          "callee": "BitPosition.bit_6",
+          "lineNumber": 105
+        },
+        {
+          "caller": "MEDIA_STATUS_LINK_BEAT_ENABLE",
+          "callee": "BitPosition.bit_7",
+          "lineNumber": 106
+        },
+        {
+          "caller": "MEDIA_STATUS_LINK_DETECT",
+          "callee": "BitPosition.bit_11",
+          "lineNumber": 107
+        },
+        {
+          "caller": "MEDIA_STATUS_TX_IN_PROGRESS",
+          "callee": "BitPosition.bit_12",
+          "lineNumber": 108
+        },
+        {
+          "caller": "MEDIA_STATUS_DC_CONVERTER_ENABLED",
+          "callee": "BitPosition.bit_14",
+          "lineNumber": 109
+        },
+        {
+          "caller": "TX_STATUS_MAXIMUM_COLLISION",
+          "callee": "BitPosition.bit_3",
+          "lineNumber": 144
+        },
+        {
+          "caller": "TX_STATUS_HWERROR",
+          "callee": "BitPosition.bit_4",
+          "lineNumber": 145
+        },
+        {
+          "caller": "TX_STATUS_JABBER",
+          "callee": "BitPosition.bit_5",
+          "lineNumber": 146
+        },
+        {
+          "caller": "TX_STATUS_INTERRUPT_REQUESTED",
+          "callee": "BitPosition.bit_6",
+          "lineNumber": 147
+        },
+        {
+          "caller": "TX_STATUS_COMPLETE",
+          "callee": "BitPosition.bit_7",
+          "lineNumber": 148
+        },
+        {
+          "caller": "DMA_CONTROL_DOWN_STALLED",
+          "callee": "BitPosition.bit_2",
+          "lineNumber": 151
+        },
+        {
+          "caller": "DMA_CONTROL_UP_COMPLETE",
+          "callee": "BitPosition.bit_3",
+          "lineNumber": 152
+        },
+        {
+          "caller": "DMA_CONTROL_DOWN_COMPLETE",
+          "callee": "BitPosition.bit_4",
+          "lineNumber": 153
+        },
+        {
+          "caller": "DMA_CONTROL_ARM_COUNTDOWN",
+          "callee": "BitPosition.bit_6",
+          "lineNumber": 155
+        },
+        {
+          "caller": "DMA_CONTROL_DOWN_IN_PROGRESS",
+          "callee": "BitPosition.bit_7",
+          "lineNumber": 156
+        },
+        {
+          "caller": "DMA_CONTROL_COUNTER_SPEED",
+          "callee": "BitPosition.bit_8",
+          "lineNumber": 157
+        },
+        {
+          "caller": "DMA_CONTROL_COUNTDOWN_MODE",
+          "callee": "BitPosition.bit_9",
+          "lineNumber": 158
+        },
+        {
+          "caller": "DMA_CONTROL_DOWN_SEQ_DISABLE",
+          "callee": "BitPosition.bit_17",
+          "lineNumber": 159
+        },
+        {
+          "caller": "DMA_CONTROL_DEFEAT_MWI",
+          "callee": "BitPosition.bit_20",
+          "lineNumber": 160
+        },
+        {
+          "caller": "DMA_CONTROL_DEFEAT_MRL",
+          "callee": "BitPosition.bit_21",
+          "lineNumber": 161
+        },
+        {
+          "caller": "DMA_CONTROL_UPOVERDISC_DISABLE",
+          "callee": "BitPosition.bit_22",
+          "lineNumber": 162
+        },
+        {
+          "caller": "DMA_CONTROL_TARGET_ABORT",
+          "callee": "BitPosition.bit_30",
+          "lineNumber": 163
+        },
+        {
+          "caller": "DMA_CONTROL_MASTER_ABORT",
+          "callee": "BitPosition.bit_31",
+          "lineNumber": 164
+        },
+        {
+          "caller": "UP_PACKET_STATUS_ERROR",
+          "callee": "BitPosition.bit_14",
+          "lineNumber": 169
+        },
+        {
+          "caller": "UP_PACKET_STATUS_COMPLETE",
+          "callee": "BitPosition.bit_15",
+          "lineNumber": 170
+        },
+        {
+          "caller": "UP_PACKET_STATUS_OVERRUN",
+          "callee": "BitPosition.bit_16",
+          "lineNumber": 171
+        },
+        {
+          "caller": "UP_PACKET_STATUS_RUNT_FRAME",
+          "callee": "BitPosition.bit_17",
+          "lineNumber": 172
+        },
+        {
+          "caller": "UP_PACKET_STATUS_ALIGNMENT_ERROR",
+          "callee": "BitPosition.bit_18",
+          "lineNumber": 173
+        },
+        {
+          "caller": "UP_PACKET_STATUS_CRC_ERROR",
+          "callee": "BitPosition.bit_19",
+          "lineNumber": 174
+        },
+        {
+          "caller": "UP_PACKET_STATUS_OVERSIZE_FRAME",
+          "callee": "BitPosition.bit_20",
+          "lineNumber": 175
+        },
+        {
+          "caller": "UP_PACKET_STATUS_DRIBBLE_BITS",
+          "callee": "BitPosition.bit_23",
+          "lineNumber": 176
+        },
+        {
+          "caller": "UP_PACKET_STATUS_OVERFLOW",
+          "callee": "BitPosition.bit_24",
+          "lineNumber": 177
+        },
+        {
+          "caller": "UP_PACKET_STATUS_IP_CHECKSUM_ERROR",
+          "callee": "BitPosition.bit_25",
+          "lineNumber": 178
+        },
+        {
+          "caller": "UP_PACKET_STATUS_TCP_CHECKSUM_ERROR",
+          "callee": "BitPosition.bit_26",
+          "lineNumber": 179
+        },
+        {
+          "caller": "UP_PACKET_STATUS_UDP_CHECKSUM_ERROR",
+          "callee": "BitPosition.bit_27",
+          "lineNumber": 180
+        },
+        {
+          "caller": "UP_PACKET_STATUS_IMPLIED_BUFFER_ENABLE",
+          "callee": "BitPosition.bit_28",
+          "lineNumber": 181
+        },
+        {
+          "caller": "UP_PACKET_STATUS_IP_CHECKSUM_CHECKED",
+          "callee": "BitPosition.bit_29",
+          "lineNumber": 182
+        },
+        {
+          "caller": "UP_PACKET_STATUS_TCP_CHECKSUM_CHECKED",
+          "callee": "BitPosition.bit_30",
+          "lineNumber": 183
+        },
+        {
+          "caller": "UP_PACKET_STATUS_UDP_CHECKSUM_CHECKED",
+          "callee": "BitPosition.bit_31",
+          "lineNumber": 184
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 140,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/Resourcen.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 100,
+      "nonEmptyLines": 94,
+      "functions": [
+        {
+          "name": "TimerList",
+          "startLine": 8,
+          "endLine": 13,
+          "params": [
+            "next",
+            "prev",
+            "expires",
+            "data"
+          ]
+        },
+        {
+          "name": "clone",
+          "startLine": 14,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "set_ReceiveCount",
+          "startLine": 37,
+          "endLine": 39,
+          "params": [
+            "receivecount"
+          ]
+        },
+        {
+          "name": "set_SendCount",
+          "startLine": 40,
+          "endLine": 42,
+          "params": [
+            "sendcount"
+          ]
+        },
+        {
+          "name": "set_SharedMemorySize",
+          "startLine": 43,
+          "endLine": 45,
+          "params": [
+            "sharedmemorysize"
+          ]
+        },
+        {
+          "name": "set_SharedMemoryVirtual",
+          "startLine": 46,
+          "endLine": 48,
+          "params": [
+            "sharedmemoryvirtual"
+          ]
+        },
+        {
+          "name": "set_Timer",
+          "startLine": 49,
+          "endLine": 55,
+          "params": [
+            "next",
+            "prev",
+            "expires",
+            "data"
+          ]
+        },
+        {
+          "name": "set_TimerInterval",
+          "startLine": 65,
+          "endLine": 67,
+          "params": [
+            "timerinterval"
+          ]
+        },
+        {
+          "name": "set_DownPollRate",
+          "startLine": 68,
+          "endLine": 70,
+          "params": [
+            "downpollrate"
+          ]
+        },
+        {
+          "name": "get_ReceiveCount",
+          "startLine": 72,
+          "endLine": 74,
+          "params": []
+        },
+        {
+          "name": "get_SendCount",
+          "startLine": 75,
+          "endLine": 77,
+          "params": []
+        },
+        {
+          "name": "get_SharedMemorySize",
+          "startLine": 78,
+          "endLine": 80,
+          "params": []
+        },
+        {
+          "name": "get_SharedMemoryVirtual",
+          "startLine": 81,
+          "endLine": 83,
+          "params": []
+        },
+        {
+          "name": "get_Timer",
+          "startLine": 84,
+          "endLine": 87,
+          "params": []
+        },
+        {
+          "name": "get_TimerInterval",
+          "startLine": 94,
+          "endLine": 96,
+          "params": []
+        },
+        {
+          "name": "get_DownPollRate",
+          "startLine": 97,
+          "endLine": 99,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "TimerList",
+          "startLine": 3,
+          "endLine": 23,
+          "methods": [
+            "TimerList",
+            "clone"
+          ],
+          "properties": [
+            "next",
+            "prev",
+            "expires",
+            "data"
+          ]
+        },
+        {
+          "name": "Resourcen",
+          "startLine": 26,
+          "endLine": 100,
+          "methods": [
+            "set_ReceiveCount",
+            "set_SendCount",
+            "set_SharedMemorySize",
+            "set_SharedMemoryVirtual",
+            "set_Timer",
+            "set_TimerInterval",
+            "set_DownPollRate",
+            "get_ReceiveCount",
+            "get_SendCount",
+            "get_SharedMemorySize",
+            "get_SharedMemoryVirtual",
+            "get_Timer",
+            "get_TimerInterval",
+            "get_DownPollRate"
+          ],
+          "properties": [
+            "ReceiveCount",
+            "SendCount",
+            "SharedMemorySize",
+            "SharedMemoryVirtual",
+            "Timer",
+            "TimerInterval",
+            "DownPollRate"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "clone",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "set_ReceiveCount",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "set_SendCount",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "set_SharedMemorySize",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "set_SharedMemoryVirtual",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "set_Timer",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "set_TimerInterval",
+          "line": 65,
+          "isDefault": false
+        },
+        {
+          "name": "set_DownPollRate",
+          "line": 68,
+          "isDefault": false
+        },
+        {
+          "name": "get_ReceiveCount",
+          "line": 72,
+          "isDefault": false
+        },
+        {
+          "name": "get_SendCount",
+          "line": 75,
+          "isDefault": false
+        },
+        {
+          "name": "get_SharedMemorySize",
+          "line": 78,
+          "isDefault": false
+        },
+        {
+          "name": "get_SharedMemoryVirtual",
+          "line": 81,
+          "isDefault": false
+        },
+        {
+          "name": "get_Timer",
+          "line": 84,
+          "isDefault": false
+        },
+        {
+          "name": "get_TimerInterval",
+          "line": 94,
+          "isDefault": false
+        },
+        {
+          "name": "get_DownPollRate",
+          "line": 97,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "clone",
+          "callee": "super.clone",
+          "lineNumber": 18
+        },
+        {
+          "caller": "set_Timer",
+          "callee": "System.out.println",
+          "lineNumber": 51
+        },
+        {
+          "caller": "set_Timer",
+          "callee": "new TimerList",
+          "lineNumber": 54
+        },
+        {
+          "caller": "get_Timer",
+          "callee": "Timer.clone",
+          "lineNumber": 85
+        }
+      ],
+      "metrics": {
+        "importCount": 15,
+        "exportCount": 15,
+        "functionCount": 16,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/RomInformation.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 38,
+      "nonEmptyLines": 29,
+      "functions": [
+        {
+          "name": "RomInformation",
+          "startLine": 18,
+          "endLine": 21,
+          "params": [
+            "rompresent",
+            "romsize"
+          ]
+        },
+        {
+          "name": "set_RomPresent",
+          "startLine": 23,
+          "endLine": 25,
+          "params": [
+            "rompresent"
+          ]
+        },
+        {
+          "name": "set_RomSize",
+          "startLine": 27,
+          "endLine": 29,
+          "params": [
+            "romsize"
+          ]
+        },
+        {
+          "name": "get_RomPresent",
+          "startLine": 31,
+          "endLine": 33,
+          "params": []
+        },
+        {
+          "name": "get_RomSize",
+          "startLine": 35,
+          "endLine": 37,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "RomInformation",
+          "startLine": 3,
+          "endLine": 38,
+          "methods": [
+            "RomInformation",
+            "set_RomPresent",
+            "set_RomSize",
+            "get_RomPresent",
+            "get_RomSize"
+          ],
+          "properties": [
+            "Reserved",
+            "RomPresent",
+            "RomSize"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "set_RomPresent",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "set_RomSize",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "get_RomPresent",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "get_RomSize",
+          "line": 35,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "RomInformation",
+          "callee": "set_RomPresent",
+          "lineNumber": 19
+        },
+        {
+          "caller": "RomInformation",
+          "callee": "set_RomSize",
+          "lineNumber": 20
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 4,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/Softlimits.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 25,
+      "nonEmptyLines": 18,
+      "classes": [
+        {
+          "name": "Softlimits",
+          "startLine": 3,
+          "endLine": 25,
+          "methods": [],
+          "properties": [
+            "NIC_STATUS_SUCCESS",
+            "NIC_STATUS_FAILURE",
+            "NIC_DEFAULT_SEND_COUNT",
+            "NIC_DEFAULT_RECEIVE_COUNT",
+            "NIC_MINIMUM_SEND_COUNT",
+            "NIC_MAXIMUM_SEND_COUNT",
+            "NIC_MINIMUM_RECEIVE_COUNT",
+            "NIC_MAXIMUM_RECEIVE_COUNT",
+            "LINK_SPEED_100",
+            "LINK_SPEED_10",
+            "ETH_ADDR_SIZE",
+            "ETH_MULTICAST_BIT"
+          ]
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    }
+  ]
+}

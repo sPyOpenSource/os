@@ -1,0 +1,283 @@
+{
+  "batchIndex": 15,
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "dd9ffa1feff38d91",
+      "type": "file",
+      "name": "FHStatus.java",
+      "filePath": "src/jx/rpcsvc/mount1/FHStatus.java",
+      "language": "java",
+      "totalLines": 13,
+      "nonEmptyLines": 8,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "3df6a6f8a9318304",
+      "type": "class",
+      "name": "FHStatus",
+      "filePath": "src/jx/rpcsvc/mount1/FHStatus.java",
+      "startLine": 5,
+      "endLine": 13,
+      "methods": [
+        "FHStatus",
+        "FHStatus"
+      ],
+      "properties": [
+        "SWITCH_FHStatusOK",
+        "status"
+      ]
+    },
+    {
+      "id": "6359fa8eeb7485fe",
+      "type": "file",
+      "name": "FHStatusOK.java",
+      "filePath": "src/jx/rpcsvc/mount1/FHStatusOK.java",
+      "language": "java",
+      "totalLines": 12,
+      "nonEmptyLines": 9,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "20feb1cd354f6edb",
+      "type": "class",
+      "name": "FHStatusOK",
+      "filePath": "src/jx/rpcsvc/mount1/FHStatusOK.java",
+      "startLine": 3,
+      "endLine": 12,
+      "methods": [
+        "FHStatusOK",
+        "FHStatusOK"
+      ],
+      "properties": [
+        "directory"
+      ]
+    },
+    {
+      "id": "9e157794e515a540",
+      "type": "file",
+      "name": "MountProc.java",
+      "filePath": "src/jx/rpcsvc/mount1/MountProc.java",
+      "language": "java",
+      "totalLines": 25,
+      "nonEmptyLines": 21,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "c60d577a14734e75",
+      "type": "class",
+      "name": "MountProc",
+      "filePath": "src/jx/rpcsvc/mount1/MountProc.java",
+      "startLine": 8,
+      "endLine": 25,
+      "methods": [
+        "nullproc",
+        "mnt",
+        "dump",
+        "umnt",
+        "umntall",
+        "export"
+      ],
+      "properties": [
+        "VERSION",
+        "PROGRAM",
+        "MID_nullproc_0",
+        "MID_mnt_1",
+        "MID_dump_2",
+        "MID_umnt_3",
+        "MID_umntall_4",
+        "MID_export_5"
+      ]
+    },
+    {
+      "id": "b4e10e9ff398fc6d",
+      "type": "file",
+      "name": "NFSInode.java",
+      "filePath": "src/jx/rpcsvc/nfs2/NFSInode.java",
+      "language": "java",
+      "totalLines": 558,
+      "nonEmptyLines": 481,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 53,
+        "functionCount": 61,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "529b438d00e96741",
+      "type": "class",
+      "name": "NFSInode",
+      "filePath": "src/jx/rpcsvc/nfs2/NFSInode.java",
+      "startLine": 13,
+      "endLine": 558,
+      "methods": [
+        "NFSInode",
+        "NFSInode",
+        "NFSInode",
+        "NFSInode",
+        "NFSInode",
+        "initFromNFS",
+        "initAttrFromNFS",
+        "getFileHandle",
+        "readdirNames",
+        "getAttr",
+        "isDirectory",
+        "isReadable",
+        "isWritable",
+        "isExecutable",
+        "isFile",
+        "mtime",
+        "mknode",
+        "mkdir",
+        "getLength",
+        "read",
+        "write",
+        "available",
+        "getRoot",
+        "finalize",
+        "getParent",
+        "setParent",
+        "isDirty",
+        "setDirty",
+        "incUseCount",
+        "decUseCount",
+        "i_nlinks",
+        "deleteNode",
+        "writeNode",
+        "putNode",
+        "overlay",
+        "removeOverlay",
+        "removeAllOverlays",
+        "isOverlayed",
+        "lookup",
+        "isSymlink",
+        "lastModified",
+        "getNode",
+        "mkdir",
+        "rmdir",
+        "create",
+        "unlink",
+        "symlink",
+        "getSymlink",
+        "rename",
+        "read",
+        "read",
+        "write",
+        "write",
+        "lastAccessed",
+        "lastChanged",
+        "setLastModified",
+        "setLastAccessed",
+        "getIdentifier",
+        "getVersion",
+        "getFileSystem",
+        "getStatFS"
+      ],
+      "properties": [
+        "dumpAll",
+        "attr",
+        "fileHandle",
+        "nfs",
+        "myName",
+        "names",
+        "children",
+        "rpc"
+      ]
+    },
+    {
+      "id": "1e0f5eb2cb7f152e",
+      "type": "dependency",
+      "name": "FHStatus.java",
+      "filePath": "src/jx/rpcsvc/mount1/FHStatus.java"
+    },
+    {
+      "id": "9c366dd8c21f712f",
+      "type": "dependency",
+      "name": "FHStatusOK.java",
+      "filePath": "src/jx/rpcsvc/mount1/FHStatusOK.java"
+    },
+    {
+      "id": "34523abafd1bec29",
+      "type": "dependency",
+      "name": "MountProc.java",
+      "filePath": "src/jx/rpcsvc/mount1/MountProc.java"
+    }
+  ],
+  "edges": [
+    {
+      "source": "dd9ffa1feff38d91",
+      "target": "3df6a6f8a9318304",
+      "type": "contains"
+    },
+    {
+      "source": "3df6a6f8a9318304",
+      "target": "dd9ffa1feff38d91",
+      "type": "exports"
+    },
+    {
+      "source": "6359fa8eeb7485fe",
+      "target": "20feb1cd354f6edb",
+      "type": "contains"
+    },
+    {
+      "source": "20feb1cd354f6edb",
+      "target": "6359fa8eeb7485fe",
+      "type": "exports"
+    },
+    {
+      "source": "9e157794e515a540",
+      "target": "c60d577a14734e75",
+      "type": "contains"
+    },
+    {
+      "source": "c60d577a14734e75",
+      "target": "9e157794e515a540",
+      "type": "exports"
+    },
+    {
+      "source": "b4e10e9ff398fc6d",
+      "target": "529b438d00e96741",
+      "type": "contains"
+    },
+    {
+      "source": "529b438d00e96741",
+      "target": "b4e10e9ff398fc6d",
+      "type": "exports"
+    },
+    {
+      "source": "b4e10e9ff398fc6d",
+      "target": "1e0f5eb2cb7f152e",
+      "type": "imports"
+    },
+    {
+      "source": "b4e10e9ff398fc6d",
+      "target": "9c366dd8c21f712f",
+      "type": "imports"
+    },
+    {
+      "source": "b4e10e9ff398fc6d",
+      "target": "34523abafd1bec29",
+      "type": "imports"
+    }
+  ]
+}

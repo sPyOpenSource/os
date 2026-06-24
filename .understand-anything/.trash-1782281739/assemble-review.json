@@ -1,0 +1,21 @@
+{
+  "totalNodes": 3455,
+  "totalEdges": 3929,
+  "issues": [
+    "Self-referencing call edges: 23 functions have [calls] edges to themselves (recursive self-calls). These are noise and should be filtered during assembly."
+  ],
+  "warnings": [
+    "Low file coverage: 134/986 scanned files (13.6%) appear as path-based file nodes. 918 scanned files missing from graph. The remaining 851 file nodes use hash-based IDs from dependency analysis and cannot be mapped back to actual source paths.",
+    "Graph contains 66 file paths not in scan. 65 of these are marked exists=false (referenced but not on disk); 1 (Datatype.java) is exists=true and should be in the scan.",
+    "Orphaned nodes with zero edges: 362 (282 files, 80 classes). 282 of these are hash-based dependency file nodes that were never connected.",
+    "Mixed-case edge types (inconsistent batch conventions): contains(1162)/CONTAINS(719), exports(919)/EXPORTS(395), calls(94)/CALLS(120)",
+    "Files with containment edges: 629/985. 356 file nodes have no class/function children.",
+    "File nodes marked as non-existent (exists=false): 65. These are referenced by other code but the source file is not on disk."
+  ],
+  "recommendations": [
+    "Edge count: graph has 3929 edges vs report of 3928 (diff: 1). Likely the import recovery edge (+1) was counted in the file but omitted in the report.",
+    "The merge script reported adding 1 import recovery edge from the import map, but no edge with type \"isLinked\" exists. Verify it was merged into the \"imports\" edge type.",
+    "Standardize edge type casing across batch agents (lowercase vs UPPERCASE) to avoid mixed-case duplicates like contains/CONTAINS.",
+    "Resolve hash-based file node IDs (512 nodes) and non-standard file IDs (250 nodes) to actual source paths during assembly. These nodes come from dependency analysis but lack path metadata, creating disconnected subgraphs."
+  ]
+}

@@ -1,0 +1,5936 @@
+{
+  "scriptCompleted": true,
+  "files": [
+    {
+      "path": "src/AI/util/AIQueue.java",
+      "language": "java",
+      "sizeLines": 256,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/com/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/com/sun/net/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/com/sun/net/ssl/internal/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/com/sun/net/ssl/internal/ssl/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/com/sun/net/ssl/internal/ssl/Provider.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/com/sun/net/ssl/KeyManager.java",
+      "language": "java",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/com/sun/net/ssl/KeyManagerFactory.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/com/sun/net/ssl/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/com/sun/net/ssl/SSLContext.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/com/sun/net/ssl/TrustManager.java",
+      "language": "java",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/com/sun/net/ssl/TrustManagerFactory.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/com/sun/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/gnu/java/io/EncodingManager.java",
+      "language": "java",
+      "sizeLines": 592,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/gnu/java/io/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/gnu/java/math/MPN.java",
+      "language": "java",
+      "sizeLines": 768,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/gnu/java/math/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/gnu/java/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/gnu/java/security/DefaultPermissionCollection.java",
+      "language": "java",
+      "sizeLines": 149,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/gnu/java/security/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/gnu/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/applet/Applet.java",
+      "language": "java",
+      "sizeLines": 183,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/applet/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/BeanDescriptor.java",
+      "language": "java",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/Beans.j",
+      "language": "j",
+      "sizeLines": 194,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/EventSetDescriptor.j",
+      "language": "j",
+      "sizeLines": 429,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/FeatureDescriptor.java",
+      "language": "java",
+      "sizeLines": 155,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/IndexedPropertyDescriptor.j",
+      "language": "j",
+      "sizeLines": 295,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/IntrospectionException.java",
+      "language": "java",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/Introspector.j",
+      "language": "j",
+      "sizeLines": 426,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/MethodDescriptor.java",
+      "language": "java",
+      "sizeLines": 77,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/ParameterDescriptor.java",
+      "language": "java",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/PropertyChangeEvent.java",
+      "language": "java",
+      "sizeLines": 113,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/PropertyChangeSupport.java",
+      "language": "java",
+      "sizeLines": 240,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/PropertyDescriptor.j",
+      "language": "j",
+      "sizeLines": 332,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/PropertyEditorManager.j",
+      "language": "j",
+      "sizeLines": 150,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/PropertyEditorSupport.java",
+      "language": "java",
+      "sizeLines": 195,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/PropertyVetoException.java",
+      "language": "java",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/SimpleBeanInfo.j",
+      "language": "j",
+      "sizeLines": 127,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/VetoableChangeSupport.java",
+      "language": "java",
+      "sizeLines": 283,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/BufferedInputStream.java",
+      "language": "java",
+      "sizeLines": 577,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/BufferedOutputStream.java",
+      "language": "java",
+      "sizeLines": 222,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/BufferedReader.java",
+      "language": "java",
+      "sizeLines": 582,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/ByteArrayInputStream.java",
+      "language": "java",
+      "sizeLines": 298,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/ByteArrayOutputStream.java",
+      "language": "java",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/CharArrayReader.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/CharArrayWriter.java",
+      "language": "java",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/CharConversionException.java",
+      "language": "java",
+      "sizeLines": 86,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/DataInputStream.java",
+      "language": "java",
+      "sizeLines": 256,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/DataOutputStream.java",
+      "language": "java",
+      "sizeLines": 140,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/EOFException.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/File.java",
+      "language": "java",
+      "sizeLines": 286,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/FileDescriptor.java",
+      "language": "java",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/FileInputStream.java",
+      "language": "java",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/FileNotFoundException.java",
+      "language": "java",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/FileOutputStream.java",
+      "language": "java",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/FilePermission.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/FileReader.java",
+      "language": "java",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/FileWriter.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/FilterInputStream.java",
+      "language": "java",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/FilterOutputStream.java",
+      "language": "java",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/InputStreamReader.java",
+      "language": "java",
+      "sizeLines": 224,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/InterruptedIOException.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/InvalidObjectException.java",
+      "language": "java",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/IOException.java",
+      "language": "java",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/NotActiveException.java",
+      "language": "java",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/NotSerializableException.java",
+      "language": "java",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/ObjectIdentityWrapper.java",
+      "language": "java",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/ObjectInputStream.java",
+      "language": "java",
+      "sizeLines": 182,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/ObjectOutputStream.java",
+      "language": "java",
+      "sizeLines": 1186,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/ObjectStreamClass.java",
+      "language": "java",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/ObjectStreamField.java",
+      "language": "java",
+      "sizeLines": 332,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/OutputStreamWriter.java",
+      "language": "java",
+      "sizeLines": 215,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/PrintStream.java",
+      "language": "java",
+      "sizeLines": 191,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/PrintWriter.java",
+      "language": "java",
+      "sizeLines": 541,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/PushbackInputStream.java",
+      "language": "java",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/RandomAccessFile.j",
+      "language": "j",
+      "sizeLines": 414,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/SerializablePermission.java",
+      "language": "java",
+      "sizeLines": 131,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/StreamCorruptedException.java",
+      "language": "java",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/StringBufferInputStream.java",
+      "language": "java",
+      "sizeLines": 187,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/StringReader.java",
+      "language": "java",
+      "sizeLines": 210,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/StringWriter.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/UnsupportedEncodingException.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/UTFDataFormatException.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/AbstractMethodError.java",
+      "language": "java",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/AbstractStringBuilder.java",
+      "language": "java",
+      "sizeLines": 1413,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/ArithmeticException.java",
+      "language": "java",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/ArrayIndexOutOfBoundsException.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/AssertionError.java",
+      "language": "java",
+      "sizeLines": 167,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/Boolean.java",
+      "language": "java",
+      "sizeLines": 144,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/Byte.java",
+      "language": "java",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/Character.java",
+      "language": "java",
+      "sizeLines": 585,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/Class.java",
+      "language": "java",
+      "sizeLines": 216,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/ClassCastException.java",
+      "language": "java",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/ClassFormatError.java",
+      "language": "java",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/ClassNotFoundException.java",
+      "language": "java",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/ClassValue.java",
+      "language": "java",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/CloneNotSupportedException.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/Double.java",
+      "language": "java",
+      "sizeLines": 105,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/Error.java",
+      "language": "java",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/Exception.java",
+      "language": "java",
+      "sizeLines": 83,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/ExceptionInInitializerError.java",
+      "language": "java",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/Float.java",
+      "language": "java",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/IllegalAccessException.java",
+      "language": "java",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/IllegalArgumentException.java",
+      "language": "java",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/IllegalMonitorStateException.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/IllegalStateException.java",
+      "language": "java",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/IllegalThreadStateException.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/IncompatibleClassChangeError.java",
+      "language": "java",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/IndexOutOfBoundsException.java",
+      "language": "java",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/InstantiationException.java",
+      "language": "java",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/Integer.java",
+      "language": "java",
+      "sizeLines": 277,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/InternalError.java",
+      "language": "java",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/InterruptedException.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/CallSite.java",
+      "language": "java",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/ConstantCallSite.java",
+      "language": "java",
+      "sizeLines": 120,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/DirectMethodHandle.java",
+      "language": "java",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/InfoFromMemberName.java",
+      "language": "java",
+      "sizeLines": 141,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/InnerClassLambdaMetafactory.java",
+      "language": "java",
+      "sizeLines": 474,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/Invokers.java",
+      "language": "java",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/LambdaConversionException.java",
+      "language": "java",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/LambdaForm.java",
+      "language": "java",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/LambdaFormEditor.java",
+      "language": "java",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/LambdaMetafactory.java",
+      "language": "java",
+      "sizeLines": 474,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/MemberName.java",
+      "language": "java",
+      "sizeLines": 133,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/MethodHandleNatives.java",
+      "language": "java",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/MethodHandles.java",
+      "language": "java",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/MethodHandleStatics.java",
+      "language": "java",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/MethodType.java",
+      "language": "java",
+      "sizeLines": 162,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/MethodTypeForm.java",
+      "language": "java",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/Name.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/SimpleMethodHandle.java",
+      "language": "java",
+      "sizeLines": 98,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/ValueConversions.java",
+      "language": "java",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/VerifyType.java",
+      "language": "java",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/Wrapper.java",
+      "language": "java",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/WrongMethodTypeException.java",
+      "language": "java",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/LinkageError.java",
+      "language": "java",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/Long.java",
+      "language": "java",
+      "sizeLines": 283,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/Math.java",
+      "language": "java",
+      "sizeLines": 319,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/NegativeArraySizeException.java",
+      "language": "java",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/NoClassDefFoundError.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/NoSuchFieldError.java",
+      "language": "java",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/NoSuchFieldException.java",
+      "language": "java",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/NoSuchMethodError.java",
+      "language": "java",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/NoSuchMethodException.java",
+      "language": "java",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/NullPointerException.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/NumberFormatException.java",
+      "language": "java",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/Object.java",
+      "language": "java",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/OutOfMemoryError.java",
+      "language": "java",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/Process.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/ref/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/ref/Reference.java",
+      "language": "java",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/ref/ReferenceQueue.java",
+      "language": "java",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/ref/WeakReference.java",
+      "language": "java",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/reflect/Array.j",
+      "language": "j",
+      "sizeLines": 526,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/reflect/Array.java",
+      "language": "java",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/reflect/Constructor.java",
+      "language": "java",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/reflect/Field.java",
+      "language": "java",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/reflect/InvocationTargetException.java",
+      "language": "java",
+      "sizeLines": 140,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/reflect/Method.java",
+      "language": "java",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/reflect/Modifier.java",
+      "language": "java",
+      "sizeLines": 230,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/reflect/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/reflect/ReflectPermission.java",
+      "language": "java",
+      "sizeLines": 105,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/ReflectiveOperationException.java",
+      "language": "java",
+      "sizeLines": 91,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/Runtime.java",
+      "language": "java",
+      "sizeLines": 157,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/RuntimeException.java",
+      "language": "java",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/RuntimePermission.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/SecurityException.java",
+      "language": "java",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/SecurityManager.java",
+      "language": "java",
+      "sizeLines": 747,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/Short.java",
+      "language": "java",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/StackTraceElement.java",
+      "language": "java",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/String.java",
+      "language": "java",
+      "sizeLines": 576,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/StringBuffer.java",
+      "language": "java",
+      "sizeLines": 244,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/StringBuilder.java",
+      "language": "java",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/StringIndexOutOfBoundsException.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/System.java",
+      "language": "java",
+      "sizeLines": 249,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/Thread.java",
+      "language": "java",
+      "sizeLines": 263,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/ThreadDeath.java",
+      "language": "java",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/ThreadGroup.java",
+      "language": "java",
+      "sizeLines": 404,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/Throwable.java",
+      "language": "java",
+      "sizeLines": 135,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/TypeNotPresentException.java",
+      "language": "java",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/UnsatisfiedLinkError.java",
+      "language": "java",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/UnsupportedOperationException.java",
+      "language": "java",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/VirtualMachineError.java",
+      "language": "java",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/Void.java",
+      "language": "java",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/math/BigDecimal.java",
+      "language": "java",
+      "sizeLines": 350,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/math/BigInteger.j",
+      "language": "j",
+      "sizeLines": 2267,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/math/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/net/BindException.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/net/ConnectException.java",
+      "language": "java",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/net/DatagramPacket.java",
+      "language": "java",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/net/DatagramSocket.java",
+      "language": "java",
+      "sizeLines": 106,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/net/HttpURLConnection.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/net/Inet4Address.java",
+      "language": "java",
+      "sizeLines": 384,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/net/InetAddress.java",
+      "language": "java",
+      "sizeLines": 238,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/net/MalformedURLException.java",
+      "language": "java",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/net/MimeTypeMapper.java",
+      "language": "java",
+      "sizeLines": 224,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/net/NetPermission.java",
+      "language": "java",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/net/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/net/ServerSocket.java",
+      "language": "java",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/net/Socket.java",
+      "language": "java",
+      "sizeLines": 86,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/net/SocketException.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/net/SocketPermission.java",
+      "language": "java",
+      "sizeLines": 397,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/net/SocketTimeoutException.java",
+      "language": "java",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/net/UnknownHostException.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/net/UnknownServiceException.java",
+      "language": "java",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/net/URL.java",
+      "language": "java",
+      "sizeLines": 828,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/net/URLClassLoader.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/net/URLConnection.java",
+      "language": "java",
+      "sizeLines": 924,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/net/URLEncoder.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/net/URLStreamHandler.java",
+      "language": "java",
+      "sizeLines": 259,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/AccessControlContext.java",
+      "language": "java",
+      "sizeLines": 162,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/AccessControlException.java",
+      "language": "java",
+      "sizeLines": 108,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/AccessController.java",
+      "language": "java",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/acl/AclNotFoundException.java",
+      "language": "java",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/acl/LastOwnerException.java",
+      "language": "java",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/acl/NotOwnerException.java",
+      "language": "java",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/acl/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/AlgorithmParameterGenerator.java",
+      "language": "java",
+      "sizeLines": 202,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/AlgorithmParameters.java",
+      "language": "java",
+      "sizeLines": 250,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/AllPermission.java",
+      "language": "java",
+      "sizeLines": 156,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/BasicPermission$1.j",
+      "language": "j",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/cert/CertificateEncodingException.java",
+      "language": "java",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/cert/CertificateException.java",
+      "language": "java",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/cert/CertificateExpiredException.java",
+      "language": "java",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/cert/CertificateFactory.java",
+      "language": "java",
+      "sizeLines": 259,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/cert/CertificateNotYetValidException.java",
+      "language": "java",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/cert/CertificateParsingException.java",
+      "language": "java",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/cert/CRLException.java",
+      "language": "java",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/cert/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/CodeSource.java",
+      "language": "java",
+      "sizeLines": 366,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/DigestException.java",
+      "language": "java",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/DigestInputStream.java",
+      "language": "java",
+      "sizeLines": 157,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/DigestOutputStream.java",
+      "language": "java",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/DummyKeyPairGenerator.java",
+      "language": "java",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/DummyMessageDigest.java",
+      "language": "java",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/DummySignature.java",
+      "language": "java",
+      "sizeLines": 86,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/GeneralSecurityException.java",
+      "language": "java",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/GuardedObject.java",
+      "language": "java",
+      "sizeLines": 104,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/InvalidAlgorithmParameterException.java",
+      "language": "java",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/InvalidKeyException.java",
+      "language": "java",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/InvalidParameterException.java",
+      "language": "java",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/KeyException.java",
+      "language": "java",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/KeyFactory.java",
+      "language": "java",
+      "sizeLines": 224,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/KeyManagementException.java",
+      "language": "java",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/KeyPair.java",
+      "language": "java",
+      "sizeLines": 77,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/KeyStore.java",
+      "language": "java",
+      "sizeLines": 443,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/KeyStoreException.java",
+      "language": "java",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/NoSuchAlgorithmException.java",
+      "language": "java",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/NoSuchProviderException.java",
+      "language": "java",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/Permissions.java",
+      "language": "java",
+      "sizeLines": 228,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/PrivilegedActionException.java",
+      "language": "java",
+      "sizeLines": 134,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/ProtectionDomain.java",
+      "language": "java",
+      "sizeLines": 172,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/ProviderException.java",
+      "language": "java",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/SecureClassLoader.java",
+      "language": "java",
+      "sizeLines": 152,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/SecureRandom.java",
+      "language": "java",
+      "sizeLines": 318,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/Security.java",
+      "language": "java",
+      "sizeLines": 302,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/SecurityPermission.java",
+      "language": "java",
+      "sizeLines": 106,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/Signature.java",
+      "language": "java",
+      "sizeLines": 486,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/SignatureException.java",
+      "language": "java",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/SignedObject.java",
+      "language": "java",
+      "sizeLines": 166,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/spec/DSAParameterSpec.java",
+      "language": "java",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/spec/DSAPrivateKeySpec.java",
+      "language": "java",
+      "sizeLines": 102,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/spec/DSAPublicKeySpec.java",
+      "language": "java",
+      "sizeLines": 102,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/spec/InvalidKeySpecException.java",
+      "language": "java",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/spec/InvalidParameterSpecException.java",
+      "language": "java",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/spec/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/spec/PKCS8EncodedKeySpec.java",
+      "language": "java",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/spec/RSAKeyGenParameterSpec.j",
+      "language": "j",
+      "sizeLines": 86,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/spec/RSAPrivateCrtKeySpec.java",
+      "language": "java",
+      "sizeLines": 140,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/spec/RSAPrivateKeySpec.java",
+      "language": "java",
+      "sizeLines": 77,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/spec/RSAPublicKeySpec.java",
+      "language": "java",
+      "sizeLines": 77,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/spec/X509EncodedKeySpec.java",
+      "language": "java",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/UnrecoverableKeyException.java",
+      "language": "java",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/UnresolvedPermission.java",
+      "language": "java",
+      "sizeLines": 222,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/sql/BatchUpdateException.java",
+      "language": "java",
+      "sizeLines": 169,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/sql/DataTruncation.java",
+      "language": "java",
+      "sizeLines": 196,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/sql/Date.java",
+      "language": "java",
+      "sizeLines": 138,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/sql/DriverManager.java",
+      "language": "java",
+      "sizeLines": 389,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/sql/DriverPropertyInfo.java",
+      "language": "java",
+      "sizeLines": 91,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/sql/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/sql/SQLException.java",
+      "language": "java",
+      "sizeLines": 210,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/sql/SQLWarning.java",
+      "language": "java",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/sql/Time.java",
+      "language": "java",
+      "sizeLines": 142,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/sql/Timestamp.java",
+      "language": "java",
+      "sizeLines": 290,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/sql/Types.java",
+      "language": "java",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/text/Annotation.java",
+      "language": "java",
+      "sizeLines": 102,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/text/AttributedString.j",
+      "language": "j",
+      "sizeLines": 433,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/text/AttributedStringIterator.j",
+      "language": "j",
+      "sizeLines": 344,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/text/BreakIterator.java",
+      "language": "java",
+      "sizeLines": 436,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/text/ChoiceFormat.java",
+      "language": "java",
+      "sizeLines": 455,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/text/CollationElementIterator.java",
+      "language": "java",
+      "sizeLines": 300,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/text/CollationKey.java",
+      "language": "java",
+      "sizeLines": 225,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/text/DateFormatSymbols.java",
+      "language": "java",
+      "sizeLines": 499,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/text/DecimalFormat.java",
+      "language": "java",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/text/DecimalFormatSymbols.java",
+      "language": "java",
+      "sizeLines": 639,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/text/DefaultBreakIterator.java",
+      "language": "java",
+      "sizeLines": 357,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/text/FieldPosition.java",
+      "language": "java",
+      "sizeLines": 207,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/text/MessageFormat.java",
+      "language": "java",
+      "sizeLines": 506,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/text/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/text/ParseException.java",
+      "language": "java",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/text/ParsePosition.java",
+      "language": "java",
+      "sizeLines": 184,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/text/RuleBasedCollator.java",
+      "language": "java",
+      "sizeLines": 547,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/text/SimpleDateFormat.java",
+      "language": "java",
+      "sizeLines": 779,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/text/StringCharacterIterator.java",
+      "language": "java",
+      "sizeLines": 393,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/AbstractCollection.j",
+      "language": "j",
+      "sizeLines": 347,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/AbstractList.j",
+      "language": "j",
+      "sizeLines": 538,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/ArrayList.java",
+      "language": "java",
+      "sizeLines": 1510,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/Arrays.java",
+      "language": "java",
+      "sizeLines": 2671,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/BasicMapEntry.java",
+      "language": "java",
+      "sizeLines": 139,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/BitSet.java",
+      "language": "java",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/Bucket.java",
+      "language": "java",
+      "sizeLines": 202,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/Collections.java",
+      "language": "java",
+      "sizeLines": 5705,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/ConcurrentModificationException.java",
+      "language": "java",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/Date.java",
+      "language": "java",
+      "sizeLines": 421,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/DoubleEnumeration.java",
+      "language": "java",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/EmptyStackException.java",
+      "language": "java",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/EventObject.java",
+      "language": "java",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/GregorianCalendar.java",
+      "language": "java",
+      "sizeLines": 1062,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/HashMap.java",
+      "language": "java",
+      "sizeLines": 1939,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/HashSet.java",
+      "language": "java",
+      "sizeLines": 264,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/Hashtable.java",
+      "language": "java",
+      "sizeLines": 346,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/LinkedHashMap.java",
+      "language": "java",
+      "sizeLines": 770,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/LinkedHashSet.java",
+      "language": "java",
+      "sizeLines": 195,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/LinkedList.j",
+      "language": "j",
+      "sizeLines": 677,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/Locale.java",
+      "language": "java",
+      "sizeLines": 699,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/MissingResourceException.java",
+      "language": "java",
+      "sizeLines": 81,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/NoSuchElementException.java",
+      "language": "java",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/Objects.java",
+      "language": "java",
+      "sizeLines": 293,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/Properties.java",
+      "language": "java",
+      "sizeLines": 411,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/PropertyPermission.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/PropertyResourceBundle.java",
+      "language": "java",
+      "sizeLines": 131,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/Random.java",
+      "language": "java",
+      "sizeLines": 379,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/SimpleTimeZone.java",
+      "language": "java",
+      "sizeLines": 830,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/Spliterators.java",
+      "language": "java",
+      "sizeLines": 2385,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/Stack.java",
+      "language": "java",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/stream/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/stream/Stream.java",
+      "language": "java",
+      "sizeLines": 1155,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/stream/Streams.j",
+      "language": "j",
+      "sizeLines": 896,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/stream/Streams.java",
+      "language": "java",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/stream/StreamSupport.java",
+      "language": "java",
+      "sizeLines": 326,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/StringTokenizer.java",
+      "language": "java",
+      "sizeLines": 261,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/TooManyListenersException.java",
+      "language": "java",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/TreeMap.java",
+      "language": "java",
+      "sizeLines": 1549,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/TreeSet.java",
+      "language": "java",
+      "sizeLines": 568,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/Tripwire.java",
+      "language": "java",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/UnsupportedOperationException.java",
+      "language": "java",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/Vector.java",
+      "language": "java",
+      "sizeLines": 387,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/zip/InflaterInputStream.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/zip/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/zip/ZipEntry.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/zip/ZipFile.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/zip/ZipInputStream.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/zip/ZipOutputStream.java",
+      "language": "java",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/javax/net/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/javax/net/ServerSocketFactory.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/javax/net/ssl/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/javax/net/ssl/SSLServerSocket.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/javax/net/ssl/SSLServerSocketFactory.java",
+      "language": "java",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/javax/net/ssl/SSLSession.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/javax/net/ssl/SSLSocket.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/javax/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/javax/security/cert/Certificate.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/javax/security/cert/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/javax/security/cert/X509Certificate.java",
+      "language": "java",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/javax/security/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bio/buffercache/BufferCache.java",
+      "language": "java",
+      "sizeLines": 552,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bio/buffercache/BufferFreeList.java",
+      "language": "java",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bio/buffercache/BufferHashtable.java",
+      "language": "java",
+      "sizeLines": 265,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bio/buffercache/BufferHead.java",
+      "language": "java",
+      "sizeLines": 198,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bio/buffercache/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bio/emulator/Main.java",
+      "language": "java",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bio/emulator/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bio/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bio/ram/BlockIORAM.java",
+      "language": "java",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bio/ram/Main.java",
+      "language": "java",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bio/ram/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bio/ro/Main.java",
+      "language": "java",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bio/ro/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bootrc/BootRC.java",
+      "language": "java",
+      "sizeLines": 345,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bootrc/BootRC2.java",
+      "language": "java",
+      "sizeLines": 116,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bootrc/ComponentSpec.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bootrc/ConfigFile.java",
+      "language": "java",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bootrc/DomainSpec.java",
+      "language": "java",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bootrc/GlobalSpec.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bootrc/NameNotFoundException.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bootrc/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bootrc/Pair.java",
+      "language": "java",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bootrc/Record.java",
+      "language": "java",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bootrc/Section.java",
+      "language": "java",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bootrc/Spec.java",
+      "language": "java",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bootrc/StringTokenException.java",
+      "language": "java",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/buffer/BufferHead.java",
+      "language": "java",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/buffer/BufferList.java",
+      "language": "java",
+      "sizeLines": 132,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/buffer/multithread/Buffer.java",
+      "language": "java",
+      "sizeLines": 72,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/buffer/multithread/Buffer2.java",
+      "language": "java",
+      "sizeLines": 95,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/buffer/multithread/BufferConsumer.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/buffer/multithread/BufferProducer.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/buffer/multithread/MultiThreadBufferList.java",
+      "language": "java",
+      "sizeLines": 216,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/buffer/multithread/MultiThreadBufferList2.java",
+      "language": "java",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/buffer/multithread/MultiThreadList.java",
+      "language": "java",
+      "sizeLines": 141,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/buffer/multithread/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/buffer/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/buffer/separator/MemoryConsumer.java",
+      "language": "java",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/buffer/separator/MemoryConsumer2.java",
+      "language": "java",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/buffer/separator/MemoryProducer.java",
+      "language": "java",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/buffer/separator/NonBlockingMemoryConsumer.java",
+      "language": "java",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/buffer/separator/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/BC.java",
+      "language": "java",
+      "sizeLines": 283,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/ClassData.java",
+      "language": "java",
+      "sizeLines": 268,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/ClassSource.java",
+      "language": "java",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/CodeData.java",
+      "language": "java",
+      "sizeLines": 125,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/constantpool/ClassCPEntry.java",
+      "language": "java",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/constantpool/ClassMemberCPEntry.java",
+      "language": "java",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/constantpool/ConstantPool.java",
+      "language": "java",
+      "sizeLines": 309,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/constantpool/ConstantPoolEntry.java",
+      "language": "java",
+      "sizeLines": 153,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/constantpool/DummyCPEntry.java",
+      "language": "java",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/constantpool/FieldRefCPEntry.java",
+      "language": "java",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/constantpool/InterfaceMethodRefCPEntry.java",
+      "language": "java",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/constantpool/MethodRefCPEntry.java",
+      "language": "java",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/constantpool/NameAndTypeCPEntry.java",
+      "language": "java",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/constantpool/NumericCPEntry.java",
+      "language": "java",
+      "sizeLines": 95,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/constantpool/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/constantpool/StringCPEntry.java",
+      "language": "java",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/constantpool/UTF8CPEntry.java",
+      "language": "java",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BasicTypeDescriptor.java",
+      "language": "java",
+      "sizeLines": 167,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BCBasicDatatype.java",
+      "language": "java",
+      "sizeLines": 186,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BCByte.java",
+      "language": "java",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BCDouble.java",
+      "language": "java",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BCFloat.java",
+      "language": "java",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BCFloatDatatype.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BCInteger.java",
+      "language": "java",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BCIntegerDatatype.java",
+      "language": "java",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BCLong.java",
+      "language": "java",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BCNumericDatatype.java",
+      "language": "java",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BCReference.java",
+      "language": "java",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BCShort.java",
+      "language": "java",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/DataType.java",
+      "language": "java",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/MethodTypeDescriptor.java",
+      "language": "java",
+      "sizeLines": 199,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/NoClassTypeException.java",
+      "language": "java",
+      "sizeLines": 2,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/TestTypeDesc.java",
+      "language": "java",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/ExceptionHandlerData.java",
+      "language": "java",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/FieldData.java",
+      "language": "java",
+      "sizeLines": 91,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/LineAttributeData.java",
+      "language": "java",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/MethodData.java",
+      "language": "java",
+      "sizeLines": 269,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/MethodSource.java",
+      "language": "java",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/Modifier.java",
+      "language": "java",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/NativeMethodException.java",
+      "language": "java",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/NoMagicNumberException.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/VerifyResult.java",
+      "language": "java",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classstore/ClassFinder.java",
+      "language": "java",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classstore/ClassInformation.java",
+      "language": "java",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classstore/ClassManager.java",
+      "language": "java",
+      "sizeLines": 232,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classstore/ClassStore.java",
+      "language": "java",
+      "sizeLines": 94,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classstore/LoadedClass.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classstore/MemoryClassSource.java",
+      "language": "java",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classstore/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/collections/Collection.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/collections/Comparator.java",
+      "language": "java",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/collections/Iterator.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/collections/List.java",
+      "language": "java",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/collections/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/collections/QuickSort.java",
+      "language": "java",
+      "sizeLines": 141,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/collections/SortedList.java",
+      "language": "java",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/avltree/AVLBaum.java",
+      "language": "java",
+      "sizeLines": 328,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/avltree/Baum.java",
+      "language": "java",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/avltree/Comparable.java",
+      "language": "java",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/avltree/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/avltree/SuchBaum.java",
+      "language": "java",
+      "sizeLines": 72,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/BufferList.java",
+      "language": "java",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/CodedException.java",
+      "language": "java",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/Database.java",
+      "language": "java",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/Index.java",
+      "language": "java",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/IndexInfo.java",
+      "language": "java",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/Key.java",
+      "language": "java",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/mytypes/comparators/IntegerComparator.java",
+      "language": "java",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/mytypes/comparators/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/mytypes/comparators/StringComparator.java",
+      "language": "java",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/mytypes/Converter.java",
+      "language": "java",
+      "sizeLines": 154,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/mytypes/converters/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/mytypes/converters/StringToByteArrayConverter.java",
+      "language": "java",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/mytypes/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/mytypes/TypeManagerImpl.java",
+      "language": "java",
+      "sizeLines": 95,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/parser/JXResultSet.java",
+      "language": "java",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/parser/Main.java",
+      "language": "java",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/parser/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/parser/ParseException.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/parser/Parser.java",
+      "language": "java",
+      "sizeLines": 201,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/RelationalOperator.java",
+      "language": "java",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/RelationScan.java",
+      "language": "java",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/SetNumberReader.java",
+      "language": "java",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/systembuffer/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/systembuffer/strategy/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/systembuffer/strategy/PageStrategy.java",
+      "language": "java",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/systembuffer/strategy/PageStrategyRecord.java",
+      "language": "java",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/Table.java",
+      "language": "java",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/treemap/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/treemap/TreeMap.java",
+      "language": "java",
+      "sizeLines": 128,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/TupleDescriptor.java",
+      "language": "java",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/TupleReader.java",
+      "language": "java",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/TupleWriter.java",
+      "language": "java",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/types/DbComparator.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/types/DbConverter.java",
+      "language": "java",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/types/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/types/TypeManager.java",
+      "language": "java",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/devices/DeviceInfo.java",
+      "language": "java",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/devices/net/emulation/EmulNetFinder.java",
+      "language": "java",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/devices/net/emulation/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/devices/net/NetworkConfigurationTemplate.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/devices/net/NoMoreElementsException.java",
+      "language": "java",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/devices/net/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/devices/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/devices/pci/CapabilityAGP.java",
+      "language": "java",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/devices/pci/CapabilityPM.java",
+      "language": "java",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/devices/pci/CapabilitySI.java",
+      "language": "java",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/devices/pci/CapabilityVPD.java",
+      "language": "java",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/devices/pci/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/devices/pci/PCIAddressImpl.java",
+      "language": "java",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/devices/pci/PCICapability.java",
+      "language": "java",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/devices/pci/PCICodes.java",
+      "language": "java",
+      "sizeLines": 202,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/devices/pci/PCIDeviceImpl.java",
+      "language": "java",
+      "sizeLines": 330,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/devices/pci/PCIGod.java",
+      "language": "java",
+      "sizeLines": 297,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/emulation/BlockIOFile.java",
+      "language": "java",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/emulation/ClockImpl.java",
+      "language": "java",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/emulation/ComponentManagerImpl.java",
+      "language": "java",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/emulation/DebugChannelImpl.java",
+      "language": "java",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/emulation/devices/ide/DebugConf.java",
+      "language": "java",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/emulation/devices/ide/DeviceNaming.java",
+      "language": "java",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/emulation/devices/ide/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/emulation/devices/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/emulation/DomainManagerImpl.java",
+      "language": "java",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/emulation/Init.java",
+      "language": "java",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/emulation/MemoryImpl.java",
+      "language": "java",
+      "sizeLines": 567,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/emulation/MemoryManagerImpl.java",
+      "language": "java",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/emulation/NamingImpl.java",
+      "language": "java",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/emulation/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/emulation/ProfilerImpl.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/formats/LittleEndianInputStream.java",
+      "language": "java",
+      "sizeLines": 90,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/formats/LittleEndianOutputStream.java",
+      "language": "java",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/formats/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/framebuffer/ClippingRectangle.java",
+      "language": "java",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/framebuffer/ClippingTransformer.java",
+      "language": "java",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/framebuffer/InterlacedFramebuffer.java",
+      "language": "java",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/framebuffer/MemoryFramebuffer.java",
+      "language": "java",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/framebuffer/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/framebuffer/PackedFramebuffer.java",
+      "language": "java",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/framebuffer/PackedFramebufferImpl.java",
+      "language": "java",
+      "sizeLines": 125,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/framebuffer/SubFramebuffer.java",
+      "language": "java",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/AlreadyMountedException.java",
+      "language": "java",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/auditfs/AuditRecord.java",
+      "language": "java",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/auditfs/AuditStore.java",
+      "language": "java",
+      "sizeLines": 86,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/auditfs/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/buffercache/BufferCache.java",
+      "language": "java",
+      "sizeLines": 134,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/buffercache/BufferHead.java",
+      "language": "java",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/buffercache/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/DeviceNaming.java",
+      "language": "java",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/DirectoryImpl.java",
+      "language": "java",
+      "sizeLines": 86,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/DirNotEmptyException.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/EXT2Attribute.java",
+      "language": "java",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/EXT2Permission.java",
+      "language": "java",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/ExtendedFileSystemInterface.java",
+      "language": "java",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/FileException.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/FileExistsException.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/FilesystemImpl.java",
+      "language": "java",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/FSException.java",
+      "language": "java",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/FSInterfaceDomain.java",
+      "language": "java",
+      "sizeLines": 77,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/FSObjectImpl.java",
+      "language": "java",
+      "sizeLines": 72,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/InodeImpl.java",
+      "language": "java",
+      "sizeLines": 353,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/InodeIOException.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/InodeNotFoundException.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/NoDirectoryInodeException.java",
+      "language": "java",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/NoFileInodeException.java",
+      "language": "java",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/NoSymlinkInodeException.java",
+      "language": "java",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/NotExistException.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/NotSupportedException.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/PermissionException.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/ReadOnlyDirectoryImpl.java",
+      "language": "java",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/ReadOnlyRegularFileImpl.java",
+      "language": "java",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/RegularFileImpl.java",
+      "language": "java",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/fs/StatFSImpl.java",
+      "language": "java",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/InitialNaming.java",
+      "language": "java",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/dispatch/Dispatch.java",
+      "language": "java",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/dispatch/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/dispatch/UpperLayer.java",
+      "language": "java",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/EtherDataImpl.java",
+      "language": "java",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/format/Format.java",
+      "language": "java",
+      "sizeLines": 321,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/format/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/IPDataImpl.java",
+      "language": "java",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/IPv4Address.java",
+      "language": "java",
+      "sizeLines": 200,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/arp/ARP.java",
+      "language": "java",
+      "sizeLines": 235,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/arp/ARPCache.java",
+      "language": "java",
+      "sizeLines": 133,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/arp/ARPFormat.java",
+      "language": "java",
+      "sizeLines": 93,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/arp/ARPTimer.java",
+      "language": "java",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/arp/ARPTimerArg.java",
+      "language": "java",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/arp/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/bootp/BOOTP.java",
+      "language": "java",
+      "sizeLines": 107,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/bootp/BOOTPFormat.java",
+      "language": "java",
+      "sizeLines": 171,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/bootp/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/ether/Ether.java",
+      "language": "java",
+      "sizeLines": 440,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/ether/EtherFormat.java",
+      "language": "java",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/ether/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/icmp/ICMP.java",
+      "language": "java",
+      "sizeLines": 75,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/icmp/ICMPFormat.java",
+      "language": "java",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/icmp/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/ip/IP.java",
+      "language": "java",
+      "sizeLines": 569,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/ip/IPFormat.java",
+      "language": "java",
+      "sizeLines": 258,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/ip/IPv4Utils.java",
+      "language": "java",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/ip/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/tcp/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/tcp/TCP.java",
+      "language": "java",
+      "sizeLines": 235,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/tcp/TCPData.java",
+      "language": "java",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/tcp/TCPFormat.java",
+      "language": "java",
+      "sizeLines": 291,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/tcp/TCPSocket.java",
+      "language": "java",
+      "sizeLines": 1051,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/tcp/TCPSocketState.java",
+      "language": "java",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/udp/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/udp/UDP.java",
+      "language": "java",
+      "sizeLines": 205,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/udp/UDPFormat.java",
+      "language": "java",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/StartNetDevice.java",
+      "language": "java",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/TCPInputStream.java",
+      "language": "java",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/TCPOutputStream.java",
+      "language": "java",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/UDPDataImpl.java",
+      "language": "java",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/UnknownAddressException.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rdp/crypto/BlockMessageDigest.java",
+      "language": "java",
+      "sizeLines": 154,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rdp/crypto/CryptoException.java",
+      "language": "java",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rdp/crypto/Key.java",
+      "language": "java",
+      "sizeLines": 113,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rdp/crypto/MD5.java",
+      "language": "java",
+      "sizeLines": 308,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rdp/crypto/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rdp/crypto/RC4.java",
+      "language": "java",
+      "sizeLines": 295,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rdp/crypto/SHA1.java",
+      "language": "java",
+      "sizeLines": 326,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rdp/orders/BoundsOrder.java",
+      "language": "java",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rdp/orders/Brush.java",
+      "language": "java",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rdp/orders/DeskSaveOrder.java",
+      "language": "java",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rdp/orders/DestBltOrder.java",
+      "language": "java",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rdp/orders/LineOrder.java",
+      "language": "java",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rdp/orders/MemBltOrder.java",
+      "language": "java",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rdp/orders/Order.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rdp/orders/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rdp/orders/PatBltOrder.java",
+      "language": "java",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rdp/orders/Pen.java",
+      "language": "java",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rdp/orders/PolyLineOrder.java",
+      "language": "java",
+      "sizeLines": 77,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rdp/orders/RectangleOrder.java",
+      "language": "java",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rdp/orders/ScreenBltOrder.java",
+      "language": "java",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rdp/orders/Text2Order.java",
+      "language": "java",
+      "sizeLines": 193,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rdp/orders/TriBltOrder.java",
+      "language": "java",
+      "sizeLines": 73,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rdp/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rexec/Decoder.java",
+      "language": "java",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rexec/Encoder.java",
+      "language": "java",
+      "sizeLines": 81,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rexec/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rexec/server/Main.j",
+      "language": "j",
+      "sizeLines": 177,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/Auth.java",
+      "language": "java",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/AuthNone.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/AuthShort.java",
+      "language": "java",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/AuthUnix.java",
+      "language": "java",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPC.java",
+      "language": "java",
+      "sizeLines": 434,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCBuffer.java",
+      "language": "java",
+      "sizeLines": 154,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCCall.java",
+      "language": "java",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCContinuation.java",
+      "language": "java",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCData.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCEnum.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCException.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterAuth.java",
+      "language": "java",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterAuthNone.java",
+      "language": "java",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterAuthShort.java",
+      "language": "java",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterAuthUnix.java",
+      "language": "java",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterRPCCall.java",
+      "language": "java",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterRPCHeader.java",
+      "language": "java",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterRPCMessage.java",
+      "language": "java",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterRPCMsgAccepted.java",
+      "language": "java",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterRPCMsgDenied.java",
+      "language": "java",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterRPCMsgProgMismatch.java",
+      "language": "java",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterRPCMsgProgUnavailable.java",
+      "language": "java",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterRPCMsgRejectAuth.java",
+      "language": "java",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterRPCMsgRejectMismatch.java",
+      "language": "java",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterRPCMsgSuccess.java",
+      "language": "java",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterRPCReply.java",
+      "language": "java",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCHeader.java",
+      "language": "java",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCInitException.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCMessage.java",
+      "language": "java",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCMsgAccepted.java",
+      "language": "java",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCMsgDenied.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCMsgProgMismatch.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCMsgProgUnavailable.java",
+      "language": "java",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCMsgRejectAuth.java",
+      "language": "java",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCMsgRejectMismatch.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCMsgSuccess.java",
+      "language": "java",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCOpaque.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCOptional.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCProc.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCReader.java",
+      "language": "java",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCReply.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCUnion.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCWriter.java",
+      "language": "java",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/Waiter.java",
+      "language": "java",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/bind2/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/bind2/RPCB.java",
+      "language": "java",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/bind2/RPCBind_Impl.java",
+      "language": "java",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/bind2/RPCBind.java",
+      "language": "java",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/bind2/Service.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/mount1/ExportNode.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/mount1/Exports.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/mount1/FHStatus.java",
+      "language": "java",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/mount1/FHStatusOK.java",
+      "language": "java",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/mount1/GroupNode.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/mount1/Groups.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/mount1/MountBody.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/mount1/MountList.java",
+      "language": "java",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/mount1/MountProc_Impl.java",
+      "language": "java",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/mount1/MountProc.java",
+      "language": "java",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/mount1/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/AttrStat.java",
+      "language": "java",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/AttrStatErrAcces.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/AttrStatErrIO.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/AttrStatErrNoEnt.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/AttrStatErrNotDir.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/AttrStatError.java",
+      "language": "java",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/AttrStatErrStale.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/AttrStatOK.java",
+      "language": "java",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirOpRes.java",
+      "language": "java",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirOpResErrAcces.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirOpResErrExist.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirOpResErrIO.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirOpResErrNotDir.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirOpResError.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirOpResErrStale.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirOpResNoSuchFile.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirOpResOK.java",
+      "language": "java",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirPath.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/Entries.java",
+      "language": "java",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/Entry.java",
+      "language": "java",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/FAttr.java",
+      "language": "java",
+      "sizeLines": 105,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/FHandle.java",
+      "language": "java",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/FType.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/MappedFHandle.java",
+      "language": "java",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/Name.java",
+      "language": "java",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/NFSCookie.java",
+      "language": "java",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/NFSData.java",
+      "language": "java",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/NFSException.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/NFSInode.java",
+      "language": "java",
+      "sizeLines": 558,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/NFSMountError.j",
+      "language": "j",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/NFSProc_Impl.java",
+      "language": "java",
+      "sizeLines": 1259,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/NFSProc.java",
+      "language": "java",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadDirRes.java",
+      "language": "java",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadDirResErrAcces.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadDirResErrIO.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadDirResErrNoEnt.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadDirResErrNotDir.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadDirResError.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadDirResErrStale.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadDirResOK.java",
+      "language": "java",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadLinkRes.java",
+      "language": "java",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadLinkResErrAcces.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadLinkResErrIO.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadLinkResErrNoEnt.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadLinkResErrNotDir.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadLinkResError.java",
+      "language": "java",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadLinkResErrStale.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadLinkResOK.java",
+      "language": "java",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadRes.java",
+      "language": "java",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadResErrAcces.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadResErrIO.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadResErrNoEnt.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadResErrNotDir.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadResError.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadResErrStale.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadResOK.java",
+      "language": "java",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/SAttr.java",
+      "language": "java",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/Stat.java",
+      "language": "java",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/StatFSRes.java",
+      "language": "java",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/StatFSResErrAcces.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/StatFSResErrIO.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/StatFSResErrNoEnt.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/StatFSResErrNotDir.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/StatFSResError.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/StatFSResErrStale.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/StatFSResOK.java",
+      "language": "java",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/Timeval.java",
+      "language": "java",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rtc/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rtc/RTC.java",
+      "language": "java",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rtc/RTCImpl.java",
+      "language": "java",
+      "sizeLines": 141,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/scheduler/HLRRobin_all.java",
+      "language": "java",
+      "sizeLines": 192,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/scheduler/HLRRobin_mini.java",
+      "language": "java",
+      "sizeLines": 136,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/scheduler/HLRRobin_nonpreemptive.java",
+      "language": "java",
+      "sizeLines": 161,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/scheduler/HLRRobin.java",
+      "language": "java",
+      "sizeLines": 176,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/scheduler/JAVARRobin.java",
+      "language": "java",
+      "sizeLines": 154,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/scheduler/LinkedList.java",
+      "language": "java",
+      "sizeLines": 199,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/scheduler/LinkedListCAS.java",
+      "language": "java",
+      "sizeLines": 175,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/scheduler/LLMtR.java",
+      "language": "java",
+      "sizeLines": 243,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/scheduler/LLRRobin.java",
+      "language": "java",
+      "sizeLines": 271,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/scheduler/LLRRobinTest.java",
+      "language": "java",
+      "sizeLines": 181,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/scheduler/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/scheduler/SchedulerPortal.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/scheduler/SuperHLRRobin.java",
+      "language": "java",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/scheduler/ThreadList.java",
+      "language": "java",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/scheduler/ThreadListCAS.java",
+      "language": "java",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/secmgr/BlockIOSecurityPolicy.java",
+      "language": "java",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/secmgr/FileSystemSecurityPolicy.java",
+      "language": "java",
+      "sizeLines": 146,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/secmgr/MySecurityPolicy.java",
+      "language": "java",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/secmgr/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/secmgr/Principal_impl.java",
+      "language": "java",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/secmgr/SecMgr.java",
+      "language": "java",
+      "sizeLines": 83,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/secmgr/SecMgrSecurityPolicy.java",
+      "language": "java",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/streams/InputStreamPortal.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/streams/OutputStreamPortal.java",
+      "language": "java",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/streams/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/streams/StreamProvider.java",
+      "language": "java",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/synch/blocking/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/synch/blocking/Queue.java",
+      "language": "java",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/synch/blocking/Test.java",
+      "language": "java",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/synch/mutex/BlockingLock.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/synch/mutex/BlockingLockImpl.java",
+      "language": "java",
+      "sizeLines": 77,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/synch/mutex/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/synch/mutex/Test.java",
+      "language": "java",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/synch/nonblocking2/MPSCQueue.java",
+      "language": "java",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/synch/nonblocking2/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/synch/nonblocking2/Queue.java",
+      "language": "java",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/synch/nonblocking2/QueueEmptyException.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/synch/nonblocking2/SPSCQueue.java",
+      "language": "java",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/synch/nonblocking2/Test.java",
+      "language": "java",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/synch/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/timer/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/timer/Timer.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/timer/TimerHandler.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/timer/TimerManager.java",
+      "language": "java",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/timerpc/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/timerpc/SleepManagerImpl.java",
+      "language": "java",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/timerpc/StartTimer.java",
+      "language": "java",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/timerpc/TimerEntry.java",
+      "language": "java",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/timerpc/TimerManagerImpl.java",
+      "language": "java",
+      "sizeLines": 221,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/xdr/Format.java",
+      "language": "java",
+      "sizeLines": 290,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/xdr/FormatMem.java",
+      "language": "java",
+      "sizeLines": 283,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/xdr/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/xdr/XDRBuffer.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/zero/Debug.java",
+      "language": "java",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/zero/debug/DebugInputStream.java",
+      "language": "java",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/zero/debug/DebugOutputStream.java",
+      "language": "java",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/zero/debug/DebugPrintStream.java",
+      "language": "java",
+      "sizeLines": 462,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/zero/debug/Dump.java",
+      "language": "java",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/zero/debug/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/zero/DomainStarter.java",
+      "language": "java",
+      "sizeLines": 276,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/zero/DomainTerminatedException.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/zero/env/ConditionalVariables.java",
+      "language": "java",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/zero/env/Monitor.java",
+      "language": "java",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/zero/env/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/zero/LookupHelper.java",
+      "language": "java",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/zero/memory/MemoryInputStream.java",
+      "language": "java",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/zero/memory/MemoryOutputStream.java",
+      "language": "java",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/zero/memory/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/zero/MemoryExhaustedException.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/zero/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/zero/timing/Control.java",
+      "language": "java",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/zero/timing/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/zip/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/zip/ZipEntry.java",
+      "language": "java",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/zip/ZipFile.java",
+      "language": "java",
+      "sizeLines": 180,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/AdapterLimits.java",
+      "language": "java",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/Befehl.java",
+      "language": "java",
+      "sizeLines": 210,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/BitNotExistingException.java",
+      "language": "java",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/BitPosition.java",
+      "language": "java",
+      "sizeLines": 275,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/CapabilitiesWord.java",
+      "language": "java",
+      "sizeLines": 127,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/ComInit.java",
+      "language": "java",
+      "sizeLines": 436,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/ComInit.java.MOS",
+      "language": "mos",
+      "sizeLines": 554,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/CompatabilityWord.java",
+      "language": "java",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/ConnectorType.java",
+      "language": "java",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/D3C905.java",
+      "language": "java",
+      "sizeLines": 4176,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/D3C905Exception.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/DpdListEntry.java",
+      "language": "java",
+      "sizeLines": 133,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/Eeprom.java",
+      "language": "java",
+      "sizeLines": 333,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/EthernetAdress.java",
+      "language": "java",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/LinkSpeedException.java",
+      "language": "java",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/ListEntry.java",
+      "language": "java",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/ManufacturingData.java",
+      "language": "java",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/Mii.java",
+      "language": "java",
+      "sizeLines": 937,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/MIIMediaOverrideException.java",
+      "language": "java",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/MultiCast.java",
+      "language": "java",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/NicHardwareInformation.java",
+      "language": "java",
+      "sizeLines": 347,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/NicInformation.java",
+      "language": "java",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/NicPciInformation.java",
+      "language": "java",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/NicStatistics.java",
+      "language": "java",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/NicStatusFailure.java",
+      "language": "java",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/NicTimer.java",
+      "language": "java",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/NicTimerArg.java",
+      "language": "java",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/PciParameters1.java",
+      "language": "java",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/ReadMIIException.java",
+      "language": "java",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/Register.java",
+      "language": "java",
+      "sizeLines": 196,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/Resourcen.java",
+      "language": "java",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/RomInformation.java",
+      "language": "java",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/Softlimits.java",
+      "language": "java",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/SoftwareInformation1.java",
+      "language": "java",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "language": "java",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/SoftwareInformation3.java",
+      "language": "java",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/UndefinedConnectorException.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/UnknownConnectorType.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/UnknownLinkState.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "language": "java",
+      "sizeLines": 108,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/WaitCases.java",
+      "language": "java",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/WaitTimer.java",
+      "language": "java",
+      "sizeLines": 162,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/WaitTimerArg.java",
+      "language": "java",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "language": "java",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/WrongDate.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/WrongEthernetAdressFormat.java",
+      "language": "java",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/AbstractDescriptor.java",
+      "language": "java",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/AbstractDeviceItem.java",
+      "language": "java",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/AbstractHostControllerDriver.java",
+      "language": "java",
+      "sizeLines": 98,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java",
+      "language": "java",
+      "sizeLines": 110,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/DeviceDescriptor.java",
+      "language": "java",
+      "sizeLines": 190,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/EndPointDescriptor.java",
+      "language": "java",
+      "sizeLines": 146,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/hub/HubDescriptor.java",
+      "language": "java",
+      "sizeLines": 114,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/hub/PortStatus.java",
+      "language": "java",
+      "sizeLines": 75,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/hub/USBHubConstants.java",
+      "language": "java",
+      "sizeLines": 120,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/hub/USBHubDeviceToDriverMapper.java",
+      "language": "java",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/hub/USBHubDriver.java",
+      "language": "java",
+      "sizeLines": 324,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java",
+      "language": "java",
+      "sizeLines": 132,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/SetupPacket.java",
+      "language": "java",
+      "sizeLines": 175,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/spi/AbstractUSBControlRequest.java",
+      "language": "java",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/spi/AbstractUSBDataRequest.java",
+      "language": "java",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/spi/AbstractUSBRequest.java",
+      "language": "java",
+      "sizeLines": 99,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/StringDescriptor.java",
+      "language": "java",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java",
+      "language": "java",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java",
+      "language": "java",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/AbstractTreeStructure.java",
+      "language": "java",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/FrameList.java",
+      "language": "java",
+      "sizeLines": 99,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/QueueHead.java",
+      "language": "java",
+      "sizeLines": 205,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/Schedule.java",
+      "language": "java",
+      "sizeLines": 223,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/TransferDescriptor.java",
+      "language": "java",
+      "sizeLines": 319,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/UHCIConstants.java",
+      "language": "java",
+      "sizeLines": 125,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/UHCIControlPipe.java",
+      "language": "java",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/UHCIControlRequest.java",
+      "language": "java",
+      "sizeLines": 106,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/UHCICore.java",
+      "language": "java",
+      "sizeLines": 273,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/UHCIDataPipe.java",
+      "language": "java",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/UHCIDataRequest.java",
+      "language": "java",
+      "sizeLines": 86,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/UHCIDriver.java",
+      "language": "java",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java",
+      "language": "java",
+      "sizeLines": 196,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/UHCIPipe.java",
+      "language": "java",
+      "sizeLines": 430,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/UHCIPipeManager.java",
+      "language": "java",
+      "sizeLines": 161,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/UHCIRequest.java",
+      "language": "java",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/UHCIRootHub.java",
+      "language": "java",
+      "sizeLines": 214,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBBus.java",
+      "language": "java",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBConfiguration.java",
+      "language": "java",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBConstants.java",
+      "language": "java",
+      "sizeLines": 192,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBControlPipe.java",
+      "language": "java",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBDataPipe.java",
+      "language": "java",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBDevice.java",
+      "language": "java",
+      "sizeLines": 413,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBEndPoint.java",
+      "language": "java",
+      "sizeLines": 164,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBException.java",
+      "language": "java",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBHostControllerAPI.java",
+      "language": "java",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBHubAPI.java",
+      "language": "java",
+      "sizeLines": 133,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBHubMonitor.java",
+      "language": "java",
+      "sizeLines": 376,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBInterface.java",
+      "language": "java",
+      "sizeLines": 148,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBPacket.java",
+      "language": "java",
+      "sizeLines": 179,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBPipe.java",
+      "language": "java",
+      "sizeLines": 96,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBPipeListener.java",
+      "language": "java",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBRequest.java",
+      "language": "java",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/util/BinaryScaleFactor.java",
+      "language": "java",
+      "sizeLines": 87,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/util/DecimalScaleFactor.java",
+      "language": "java",
+      "sizeLines": 87,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/util/NumberUtils.java",
+      "language": "java",
+      "sizeLines": 386,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/util/ScaleFactor.java",
+      "language": "java",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/util/SizeUnit.java",
+      "language": "java",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sun/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sun/security/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sun/security/provider/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sun/security/provider/Sun.java",
+      "language": "java",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sun/tools/javac/Main.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sun/tools/javac/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sun/tools/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    }
+  ],
+  "totalFiles": 986,
+  "filteredByIgnore": 0,
+  "estimatedComplexity": "very-large",
+  "stats": {
+    "filesScanned": 986,
+    "byCategory": {
+      "code": 986
+    },
+    "byLanguage": {
+      "java": 846,
+      "bluej": 119,
+      "j": 20,
+      "mos": 1
+    }
+  }
+}

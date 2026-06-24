@@ -1,0 +1,1247 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/jx/rpc/RPCMsgProgUnavailable.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 10,
+      "nonEmptyLines": 8,
+      "functions": [
+        {
+          "name": "RPCMsgProgUnavailable",
+          "startLine": 5,
+          "endLine": 6,
+          "params": []
+        },
+        {
+          "name": "RPCMsgProgUnavailable",
+          "startLine": 7,
+          "endLine": 9,
+          "params": [
+            "xid",
+            "verf"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RPCMsgProgUnavailable",
+          "startLine": 3,
+          "endLine": 10,
+          "methods": [
+            "RPCMsgProgUnavailable",
+            "RPCMsgProgUnavailable"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RPCMsgProgUnavailable",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "RPCMsgProgUnavailable",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "RPCMsgProgUnavailable",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpc/RPCMsgRejectAuth.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 32,
+      "nonEmptyLines": 29,
+      "functions": [
+        {
+          "name": "toString",
+          "startLine": 20,
+          "endLine": 31,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "RPCMsgRejectAuth",
+          "startLine": 3,
+          "endLine": 32,
+          "methods": [
+            "toString"
+          ],
+          "properties": [
+            "AUTH_BADCRED",
+            "AUTH_REJECTEDCRED",
+            "AUTH_BADVERF",
+            "AUTH_REJECTEDVERF",
+            "AUTH_TOOWEAK",
+            "AUTH_INVALIDRESP",
+            "AUTH_FAILED",
+            "authStatus"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AUTH_BADCRED",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "AUTH_REJECTEDCRED",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "AUTH_BADVERF",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "AUTH_REJECTEDVERF",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "AUTH_TOOWEAK",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "AUTH_INVALIDRESP",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "AUTH_FAILED",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "authStatus",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "RPCMsgRejectAuth",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpc/RPCMsgRejectMismatch.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "classes": [
+        {
+          "name": "RPCMsgRejectMismatch",
+          "startLine": 3,
+          "endLine": 6,
+          "methods": [],
+          "properties": [
+            "low",
+            "high"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "low",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "high",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "RPCMsgRejectMismatch",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpc/RPCMsgSuccess.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 7,
+      "functions": [
+        {
+          "name": "RPCMsgSuccess",
+          "startLine": 5,
+          "endLine": 5,
+          "params": []
+        },
+        {
+          "name": "RPCMsgSuccess",
+          "startLine": 7,
+          "endLine": 9,
+          "params": [
+            "xid",
+            "verf"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RPCMsgSuccess",
+          "startLine": 3,
+          "endLine": 11,
+          "methods": [
+            "RPCMsgSuccess",
+            "RPCMsgSuccess"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RPCMsgSuccess",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "RPCMsgSuccess",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "RPCMsgSuccess",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpc/RPCOpaque.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 7,
+      "classes": [
+        {
+          "name": "RPCOpaque",
+          "startLine": 7,
+          "endLine": 8,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RPCOpaque",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpc/RPCOptional.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 4,
+      "nonEmptyLines": 3,
+      "classes": [
+        {
+          "name": "RPCOptional",
+          "startLine": 3,
+          "endLine": 4,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RPCOptional",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpc/RPCProc.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 4,
+      "nonEmptyLines": 3,
+      "classes": [
+        {
+          "name": "RPCProc",
+          "startLine": 3,
+          "endLine": 4,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RPCProc",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpc/RPCReader.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "classes": [
+        {
+          "name": "RPCReader",
+          "startLine": 3,
+          "endLine": 5,
+          "methods": [
+            "read"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RPCReader",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpc/RPCReply.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "RPCReply",
+          "startLine": 8,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "RPCReply",
+          "startLine": 10,
+          "endLine": 13,
+          "params": [
+            "xid",
+            "status"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RPCReply",
+          "startLine": 3,
+          "endLine": 14,
+          "methods": [
+            "RPCReply",
+            "RPCReply"
+          ],
+          "properties": [
+            "SWITCH_RPCMsgAccepted",
+            "SWITCH_RPCMsgDenied",
+            "status"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SWITCH_RPCMsgAccepted",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_RPCMsgDenied",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "status",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "RPCReply",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "RPCReply",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "RPCReply",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpc/RPCUnion.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 4,
+      "nonEmptyLines": 3,
+      "classes": [
+        {
+          "name": "RPCUnion",
+          "startLine": 3,
+          "endLine": 4,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RPCUnion",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpc/RPCWriter.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "classes": [
+        {
+          "name": "RPCWriter",
+          "startLine": 3,
+          "endLine": 5,
+          "methods": [
+            "write"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RPCWriter",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpc/Waiter.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 16,
+      "functions": [
+        {
+          "name": "Waiter",
+          "startLine": 10,
+          "endLine": 10,
+          "params": [
+            "rpc",
+            "xid",
+            "buf"
+          ]
+        },
+        {
+          "name": "doWait",
+          "startLine": 12,
+          "endLine": 15,
+          "params": []
+        },
+        {
+          "name": "unblock",
+          "startLine": 17,
+          "endLine": 19,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "Waiter",
+          "startLine": 5,
+          "endLine": 21,
+          "methods": [
+            "Waiter",
+            "doWait",
+            "unblock"
+          ],
+          "properties": [
+            "xid",
+            "buf",
+            "waiter",
+            "rpc"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Waiter",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "doWait",
+          "callee": "rpc.cpuManager.getCPUState",
+          "lineNumber": 13
+        },
+        {
+          "caller": "doWait",
+          "callee": "rpc.cpuManager.block",
+          "lineNumber": 14
+        },
+        {
+          "caller": "unblock",
+          "callee": "rpc.cpuManager.unblock",
+          "lineNumber": 18
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/bind2/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/rpcsvc/bind2/RPCB.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 15,
+      "classes": [
+        {
+          "name": "RPCB",
+          "startLine": 11,
+          "endLine": 18,
+          "methods": [],
+          "properties": [
+            "args",
+            "prog",
+            "protocol",
+            "vers"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RPCB",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/bind2/RPCBind.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 11,
+      "classes": [
+        {
+          "name": "RPCBind",
+          "startLine": 11,
+          "endLine": 13,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/mount1/ExportNode.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 6,
+      "classes": [
+        {
+          "name": "ExportNode",
+          "startLine": 3,
+          "endLine": 7,
+          "methods": [],
+          "properties": [
+            "ex_dir",
+            "ex_groups",
+            "next"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ex_dir",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "ex_groups",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "next",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "ExportNode",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/mount1/Exports.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "classes": [
+        {
+          "name": "Exports",
+          "startLine": 4,
+          "endLine": 6,
+          "methods": [],
+          "properties": [
+            "node"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "node",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "Exports",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/mount1/GroupNode.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "classes": [
+        {
+          "name": "GroupNode",
+          "startLine": 3,
+          "endLine": 6,
+          "methods": [],
+          "properties": [
+            "gr_name",
+            "next"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "gr_name",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "next",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "GroupNode",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/mount1/Groups.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "classes": [
+        {
+          "name": "Groups",
+          "startLine": 4,
+          "endLine": 6,
+          "methods": [],
+          "properties": [
+            "node"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "node",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "Groups",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/mount1/MountBody.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 6,
+      "classes": [
+        {
+          "name": "MountBody",
+          "startLine": 3,
+          "endLine": 7,
+          "methods": [],
+          "properties": [
+            "ml_hostname",
+            "ml_directory",
+            "ml_next"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "MountBody",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/mount1/MountList.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "classes": [
+        {
+          "name": "MountList",
+          "startLine": 3,
+          "endLine": 5,
+          "methods": [],
+          "properties": [
+            "data"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "MountList",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/mount1/MountProc_Impl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 59,
+      "nonEmptyLines": 53,
+      "functions": [
+        {
+          "name": "MountProc_Impl",
+          "startLine": 12,
+          "endLine": 14,
+          "params": [
+            "fs"
+          ]
+        },
+        {
+          "name": "nullproc",
+          "startLine": 16,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "mnt",
+          "startLine": 18,
+          "endLine": 44,
+          "params": [
+            "d"
+          ]
+        },
+        {
+          "name": "dump",
+          "startLine": 45,
+          "endLine": 46,
+          "params": []
+        },
+        {
+          "name": "umnt",
+          "startLine": 47,
+          "endLine": 54,
+          "params": [
+            "d"
+          ]
+        },
+        {
+          "name": "umntall",
+          "startLine": 55,
+          "endLine": 56,
+          "params": []
+        },
+        {
+          "name": "export",
+          "startLine": 57,
+          "endLine": 58,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "MountProc_Impl",
+          "startLine": 7,
+          "endLine": 59,
+          "methods": [
+            "MountProc_Impl",
+            "nullproc",
+            "mnt",
+            "dump",
+            "umnt",
+            "umntall",
+            "export"
+          ],
+          "properties": [
+            "name",
+            "handle",
+            "fs"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "MountProc_Impl",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "nullproc",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "mnt",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "dump",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "umnt",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "umntall",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "export",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "MountProc_Impl",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "mnt",
+          "callee": "Debug.out.println",
+          "lineNumber": 20
+        },
+        {
+          "caller": "mnt",
+          "callee": "Debug.out.println",
+          "lineNumber": 21
+        },
+        {
+          "caller": "mnt",
+          "callee": "fs.lookup",
+          "lineNumber": 24
+        },
+        {
+          "caller": "mnt",
+          "callee": "new MappedFHandle",
+          "lineNumber": 26
+        },
+        {
+          "caller": "mnt",
+          "callee": "homeInode.getFileSystem().getDeviceID",
+          "lineNumber": 26
+        },
+        {
+          "caller": "mnt",
+          "callee": "homeInode.getFileSystem",
+          "lineNumber": 26
+        },
+        {
+          "caller": "mnt",
+          "callee": "homeInode.getIdentifier",
+          "lineNumber": 27
+        },
+        {
+          "caller": "mnt",
+          "callee": "new FHStatusOK",
+          "lineNumber": 29
+        },
+        {
+          "caller": "mnt",
+          "callee": "homeFh.getFHandle",
+          "lineNumber": 29
+        },
+        {
+          "caller": "mnt",
+          "callee": "Debug.out.println",
+          "lineNumber": 35
+        },
+        {
+          "caller": "mnt",
+          "callee": "System.out.println",
+          "lineNumber": 36
+        },
+        {
+          "caller": "mnt",
+          "callee": "new FHStatusOK",
+          "lineNumber": 37
+        },
+        {
+          "caller": "umnt",
+          "callee": "Debug.out.println",
+          "lineNumber": 49
+        },
+        {
+          "caller": "umnt",
+          "callee": "fs.cleanUp",
+          "lineNumber": 51
+        },
+        {
+          "caller": "umnt",
+          "callee": "new Error",
+          "lineNumber": 52
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/mount1/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/AttrStat.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 14,
+      "functions": [
+        {
+          "name": "AttrStat",
+          "startLine": 18,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "AttrStat",
+          "startLine": 19,
+          "endLine": 19,
+          "params": [
+            "s"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AttrStat",
+          "startLine": 5,
+          "endLine": 21,
+          "methods": [
+            "AttrStat",
+            "AttrStat"
+          ],
+          "properties": [
+            "SWITCH_AttrStatOK",
+            "SWITCH_AttrStatErrNoEnt",
+            "SWITCH_AttrStatErrIO",
+            "SWITCH_AttrStatErrAcces",
+            "SWITCH_AttrStatErrNotDir",
+            "SWITCH_AttrStatErrStale",
+            "SWITCHDEFAULT_AttrStatError",
+            "status"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SWITCH_AttrStatOK",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_AttrStatErrNoEnt",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_AttrStatErrIO",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_AttrStatErrAcces",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_AttrStatErrNotDir",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_AttrStatErrStale",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCHDEFAULT_AttrStatError",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "status",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "AttrStat",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "AttrStat",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "AttrStat",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 11,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/AttrStatErrAcces.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "AttrStatErrAcces",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AttrStatErrAcces",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "AttrStatErrAcces"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AttrStatErrAcces",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "AttrStatErrAcces",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    }
+  ]
+}

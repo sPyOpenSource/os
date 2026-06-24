@@ -1,0 +1,2889 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/jx/emulation/MemoryManagerImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 26,
+      "nonEmptyLines": 21,
+      "functions": [
+        {
+          "name": "alloc",
+          "startLine": 7,
+          "endLine": 10,
+          "params": [
+            "size"
+          ]
+        },
+        {
+          "name": "allocAligned",
+          "startLine": 11,
+          "endLine": 14,
+          "params": [
+            "size",
+            "bytes"
+          ]
+        },
+        {
+          "name": "allocDeviceMemory",
+          "startLine": 15,
+          "endLine": 17,
+          "params": [
+            "start",
+            "size"
+          ]
+        },
+        {
+          "name": "getTotalMemory",
+          "startLine": 20,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "getTotalFreeMemory",
+          "startLine": 21,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "getFreeHeapMemory",
+          "startLine": 24,
+          "endLine": 24,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "MemoryManagerImpl",
+          "startLine": 6,
+          "endLine": 26,
+          "methods": [
+            "alloc",
+            "allocAligned",
+            "allocDeviceMemory",
+            "getTotalMemory",
+            "getTotalFreeMemory",
+            "getFreeHeapMemory"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "alloc",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "allocAligned",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "allocDeviceMemory",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "getTotalMemory",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "getTotalFreeMemory",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "getFreeHeapMemory",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "MemoryManagerImpl",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "alloc",
+          "callee": "new MemoryImpl",
+          "lineNumber": 9
+        },
+        {
+          "caller": "allocAligned",
+          "callee": "new MemoryImpl",
+          "lineNumber": 13
+        },
+        {
+          "caller": "allocDeviceMemory",
+          "callee": "new MemoryImpl",
+          "lineNumber": 16
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/emulation/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/emulation/ProfilerImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "restart",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        },
+        {
+          "name": "shell",
+          "startLine": 7,
+          "endLine": 7,
+          "params": []
+        },
+        {
+          "name": "startCalibration",
+          "startLine": 8,
+          "endLine": 8,
+          "params": []
+        },
+        {
+          "name": "endCalibration",
+          "startLine": 9,
+          "endLine": 9,
+          "params": [
+            "time1",
+            "time2",
+            "time3"
+          ]
+        },
+        {
+          "name": "getAverageCyclesOfMethod",
+          "startLine": 10,
+          "endLine": 10,
+          "params": [
+            "methodName"
+          ]
+        },
+        {
+          "name": "startSampling",
+          "startLine": 11,
+          "endLine": 11,
+          "params": []
+        },
+        {
+          "name": "stopSampling",
+          "startLine": 12,
+          "endLine": 12,
+          "params": []
+        },
+        {
+          "name": "isSampling",
+          "startLine": 13,
+          "endLine": 13,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ProfilerImpl",
+          "startLine": 5,
+          "endLine": 14,
+          "methods": [
+            "restart",
+            "shell",
+            "startCalibration",
+            "endCalibration",
+            "getAverageCyclesOfMethod",
+            "startSampling",
+            "stopSampling",
+            "isSampling"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "restart",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "shell",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "startCalibration",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "endCalibration",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "getAverageCyclesOfMethod",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "startSampling",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "stopSampling",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "isSampling",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/formats/LittleEndianInputStream.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 90,
+      "nonEmptyLines": 78,
+      "functions": [
+        {
+          "name": "LittleEndianInputStream",
+          "startLine": 14,
+          "endLine": 16,
+          "params": [
+            "in"
+          ]
+        },
+        {
+          "name": "readShort",
+          "startLine": 18,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "readInt",
+          "startLine": 28,
+          "endLine": 40,
+          "params": []
+        },
+        {
+          "name": "readLong",
+          "startLine": 42,
+          "endLine": 62,
+          "params": []
+        },
+        {
+          "name": "readByte",
+          "startLine": 64,
+          "endLine": 68,
+          "params": []
+        },
+        {
+          "name": "readString",
+          "startLine": 70,
+          "endLine": 82,
+          "params": []
+        },
+        {
+          "name": "readString2ByteAligned",
+          "startLine": 83,
+          "endLine": 89,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "LittleEndianInputStream",
+          "startLine": 10,
+          "endLine": 90,
+          "methods": [
+            "LittleEndianInputStream",
+            "readShort",
+            "readInt",
+            "readLong",
+            "readByte",
+            "readString",
+            "readString2ByteAligned"
+          ],
+          "properties": [
+            "str_buffer"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "LittleEndianInputStream",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "readShort",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "readInt",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "readLong",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "readByte",
+          "line": 64,
+          "isDefault": false
+        },
+        {
+          "name": "readString",
+          "line": 70,
+          "isDefault": false
+        },
+        {
+          "name": "readString2ByteAligned",
+          "line": 83,
+          "isDefault": false
+        },
+        {
+          "name": "LittleEndianInputStream",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "readShort",
+          "callee": "read",
+          "lineNumber": 21
+        },
+        {
+          "caller": "readShort",
+          "callee": "new EOFException",
+          "lineNumber": 21
+        },
+        {
+          "caller": "readShort",
+          "callee": "read",
+          "lineNumber": 23
+        },
+        {
+          "caller": "readShort",
+          "callee": "new EOFException",
+          "lineNumber": 23
+        },
+        {
+          "caller": "readInt",
+          "callee": "read",
+          "lineNumber": 31
+        },
+        {
+          "caller": "readInt",
+          "callee": "new EOFException",
+          "lineNumber": 31
+        },
+        {
+          "caller": "readInt",
+          "callee": "read",
+          "lineNumber": 33
+        },
+        {
+          "caller": "readInt",
+          "callee": "new EOFException",
+          "lineNumber": 33
+        },
+        {
+          "caller": "readInt",
+          "callee": "read",
+          "lineNumber": 35
+        },
+        {
+          "caller": "readInt",
+          "callee": "new EOFException",
+          "lineNumber": 35
+        },
+        {
+          "caller": "readInt",
+          "callee": "read",
+          "lineNumber": 37
+        },
+        {
+          "caller": "readInt",
+          "callee": "new EOFException",
+          "lineNumber": 37
+        },
+        {
+          "caller": "readLong",
+          "callee": "read",
+          "lineNumber": 45
+        },
+        {
+          "caller": "readLong",
+          "callee": "new EOFException",
+          "lineNumber": 45
+        },
+        {
+          "caller": "readLong",
+          "callee": "read",
+          "lineNumber": 47
+        },
+        {
+          "caller": "readLong",
+          "callee": "new EOFException",
+          "lineNumber": 47
+        },
+        {
+          "caller": "readLong",
+          "callee": "read",
+          "lineNumber": 49
+        },
+        {
+          "caller": "readLong",
+          "callee": "new EOFException",
+          "lineNumber": 49
+        },
+        {
+          "caller": "readLong",
+          "callee": "read",
+          "lineNumber": 51
+        },
+        {
+          "caller": "readLong",
+          "callee": "new EOFException",
+          "lineNumber": 51
+        },
+        {
+          "caller": "readLong",
+          "callee": "read",
+          "lineNumber": 53
+        },
+        {
+          "caller": "readLong",
+          "callee": "new EOFException",
+          "lineNumber": 53
+        },
+        {
+          "caller": "readLong",
+          "callee": "read",
+          "lineNumber": 55
+        },
+        {
+          "caller": "readLong",
+          "callee": "new EOFException",
+          "lineNumber": 55
+        },
+        {
+          "caller": "readLong",
+          "callee": "read",
+          "lineNumber": 57
+        },
+        {
+          "caller": "readLong",
+          "callee": "new EOFException",
+          "lineNumber": 57
+        },
+        {
+          "caller": "readLong",
+          "callee": "read",
+          "lineNumber": 59
+        },
+        {
+          "caller": "readLong",
+          "callee": "new EOFException",
+          "lineNumber": 59
+        },
+        {
+          "caller": "readByte",
+          "callee": "read",
+          "lineNumber": 66
+        },
+        {
+          "caller": "readByte",
+          "callee": "new EOFException",
+          "lineNumber": 66
+        },
+        {
+          "caller": "readString",
+          "callee": "readInt",
+          "lineNumber": 71
+        },
+        {
+          "caller": "readString",
+          "callee": "read",
+          "lineNumber": 78
+        },
+        {
+          "caller": "readString",
+          "callee": "new String",
+          "lineNumber": 81
+        },
+        {
+          "caller": "readString2ByteAligned",
+          "callee": "readString",
+          "lineNumber": 84
+        },
+        {
+          "caller": "readString2ByteAligned",
+          "callee": "s.length",
+          "lineNumber": 85
+        },
+        {
+          "caller": "readString2ByteAligned",
+          "callee": "read",
+          "lineNumber": 86
+        },
+        {
+          "caller": "readString2ByteAligned",
+          "callee": "new EOFException",
+          "lineNumber": 86
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/formats/LittleEndianOutputStream.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 54,
+      "nonEmptyLines": 46,
+      "functions": [
+        {
+          "name": "LittleEndianOutputStream",
+          "startLine": 15,
+          "endLine": 17,
+          "params": [
+            "out"
+          ]
+        },
+        {
+          "name": "writeByte",
+          "startLine": 19,
+          "endLine": 21,
+          "params": [
+            "v"
+          ]
+        },
+        {
+          "name": "writeShort",
+          "startLine": 22,
+          "endLine": 25,
+          "params": [
+            "v"
+          ]
+        },
+        {
+          "name": "writeInt",
+          "startLine": 26,
+          "endLine": 31,
+          "params": [
+            "v"
+          ]
+        },
+        {
+          "name": "writeString",
+          "startLine": 33,
+          "endLine": 41,
+          "params": [
+            "s"
+          ]
+        },
+        {
+          "name": "writeChecksum",
+          "startLine": 43,
+          "endLine": 47,
+          "params": []
+        },
+        {
+          "name": "write",
+          "startLine": 49,
+          "endLine": 53,
+          "params": [
+            "b"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "LittleEndianOutputStream",
+          "startLine": 10,
+          "endLine": 54,
+          "methods": [
+            "LittleEndianOutputStream",
+            "writeByte",
+            "writeShort",
+            "writeInt",
+            "writeString",
+            "writeChecksum",
+            "write"
+          ],
+          "properties": [
+            "checksum",
+            "doChecksum"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "LittleEndianOutputStream",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "writeByte",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "writeShort",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "writeInt",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "writeString",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "writeChecksum",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "write",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "LittleEndianOutputStream",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "writeByte",
+          "callee": "write",
+          "lineNumber": 20
+        },
+        {
+          "caller": "writeShort",
+          "callee": "write",
+          "lineNumber": 23
+        },
+        {
+          "caller": "writeShort",
+          "callee": "write",
+          "lineNumber": 24
+        },
+        {
+          "caller": "writeInt",
+          "callee": "write",
+          "lineNumber": 27
+        },
+        {
+          "caller": "writeInt",
+          "callee": "write",
+          "lineNumber": 28
+        },
+        {
+          "caller": "writeInt",
+          "callee": "write",
+          "lineNumber": 29
+        },
+        {
+          "caller": "writeInt",
+          "callee": "write",
+          "lineNumber": 30
+        },
+        {
+          "caller": "writeString",
+          "callee": "s.length",
+          "lineNumber": 34
+        },
+        {
+          "caller": "writeString",
+          "callee": "s.getChars",
+          "lineNumber": 36
+        },
+        {
+          "caller": "writeString",
+          "callee": "writeInt",
+          "lineNumber": 37
+        },
+        {
+          "caller": "writeString",
+          "callee": "write",
+          "lineNumber": 39
+        },
+        {
+          "caller": "writeChecksum",
+          "callee": "writeInt",
+          "lineNumber": 46
+        },
+        {
+          "caller": "write",
+          "callee": "super.write",
+          "lineNumber": 52
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/formats/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/framebuffer/ClippingRectangle.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 28,
+      "nonEmptyLines": 23,
+      "functions": [
+        {
+          "name": "ClippingRectangle",
+          "startLine": 7,
+          "endLine": 12,
+          "params": [
+            "x1",
+            "y1",
+            "x2",
+            "y2"
+          ]
+        },
+        {
+          "name": "xmin",
+          "startLine": 14,
+          "endLine": 14,
+          "params": []
+        },
+        {
+          "name": "ymin",
+          "startLine": 15,
+          "endLine": 15,
+          "params": []
+        },
+        {
+          "name": "xmax",
+          "startLine": 16,
+          "endLine": 16,
+          "params": []
+        },
+        {
+          "name": "ymax",
+          "startLine": 17,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "clone",
+          "startLine": 19,
+          "endLine": 26,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ClippingRectangle",
+          "startLine": 3,
+          "endLine": 27,
+          "methods": [
+            "ClippingRectangle",
+            "xmin",
+            "ymin",
+            "xmax",
+            "ymax",
+            "clone"
+          ],
+          "properties": [
+            "xmin",
+            "ymin",
+            "xmax",
+            "ymax"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ClippingRectangle",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "xmin",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "ymin",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "xmax",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "ymax",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "clone",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "ClippingRectangle",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ClippingRectangle",
+          "callee": "Math.min",
+          "lineNumber": 8
+        },
+        {
+          "caller": "ClippingRectangle",
+          "callee": "Math.min",
+          "lineNumber": 9
+        },
+        {
+          "caller": "ClippingRectangle",
+          "callee": "Math.max",
+          "lineNumber": 10
+        },
+        {
+          "caller": "ClippingRectangle",
+          "callee": "Math.max",
+          "lineNumber": 11
+        },
+        {
+          "caller": "clone",
+          "callee": "super.clone",
+          "lineNumber": 22
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/framebuffer/ClippingTransformer.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "classes": [
+        {
+          "name": "ClippingTransformer",
+          "startLine": 3,
+          "endLine": 5,
+          "methods": [
+            "transformClippings"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ClippingTransformer",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/framebuffer/InterlacedFramebuffer.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 64,
+      "nonEmptyLines": 55,
+      "functions": [
+        {
+          "name": "InterlacedFramebuffer",
+          "startLine": 8,
+          "endLine": 27,
+          "params": [
+            "framebuffer",
+            "field"
+          ]
+        },
+        {
+          "name": "transformClippings",
+          "startLine": 29,
+          "endLine": 58,
+          "params": [
+            "rects"
+          ]
+        },
+        {
+          "name": "framebufferType",
+          "startLine": 60,
+          "endLine": 63,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "InterlacedFramebuffer",
+          "startLine": 5,
+          "endLine": 64,
+          "methods": [
+            "InterlacedFramebuffer",
+            "transformClippings",
+            "framebufferType"
+          ],
+          "properties": [
+            "fieldno"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "InterlacedFramebuffer",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "transformClippings",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "framebufferType",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "InterlacedFramebuffer",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "InterlacedFramebuffer",
+          "callee": "framebuffer.width",
+          "lineNumber": 14
+        },
+        {
+          "caller": "InterlacedFramebuffer",
+          "callee": "framebuffer.height",
+          "lineNumber": 15
+        },
+        {
+          "caller": "InterlacedFramebuffer",
+          "callee": "framebuffer.height",
+          "lineNumber": 15
+        },
+        {
+          "caller": "InterlacedFramebuffer",
+          "callee": "framebuffer.depth",
+          "lineNumber": 16
+        },
+        {
+          "caller": "InterlacedFramebuffer",
+          "callee": "framebuffer.startAddress",
+          "lineNumber": 18
+        },
+        {
+          "caller": "InterlacedFramebuffer",
+          "callee": "framebuffer.scanlineOffset",
+          "lineNumber": 18
+        },
+        {
+          "caller": "InterlacedFramebuffer",
+          "callee": "framebuffer.pixelOffset",
+          "lineNumber": 19
+        },
+        {
+          "caller": "InterlacedFramebuffer",
+          "callee": "framebuffer.scanlineOffset",
+          "lineNumber": 20
+        },
+        {
+          "caller": "InterlacedFramebuffer",
+          "callee": "framebuffer.memObj",
+          "lineNumber": 22
+        },
+        {
+          "caller": "transformClippings",
+          "callee": "Debug.out.println",
+          "lineNumber": 31
+        },
+        {
+          "caller": "transformClippings",
+          "callee": "framebufferType",
+          "lineNumber": 31
+        },
+        {
+          "caller": "transformClippings",
+          "callee": "new ClippingRectangle",
+          "lineNumber": 41
+        },
+        {
+          "caller": "transformClippings",
+          "callee": "new ClippingRectangle",
+          "lineNumber": 48
+        },
+        {
+          "caller": "transformClippings",
+          "callee": "new ClippingRectangle",
+          "lineNumber": 53
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/framebuffer/MemoryFramebuffer.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 20,
+      "functions": [
+        {
+          "name": "MemoryFramebuffer",
+          "startLine": 7,
+          "endLine": 10,
+          "params": [
+            "width",
+            "height",
+            "depth"
+          ]
+        },
+        {
+          "name": "MemoryFramebuffer",
+          "startLine": 12,
+          "endLine": 14,
+          "params": [
+            "mem",
+            "width",
+            "height",
+            "depth"
+          ]
+        },
+        {
+          "name": "MemoryFramebuffer",
+          "startLine": 16,
+          "endLine": 20,
+          "params": [
+            "memMgr",
+            "width",
+            "height",
+            "depth"
+          ]
+        },
+        {
+          "name": "framebufferType",
+          "startLine": 22,
+          "endLine": 25,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "MemoryFramebuffer",
+          "startLine": 5,
+          "endLine": 27,
+          "methods": [
+            "MemoryFramebuffer",
+            "MemoryFramebuffer",
+            "MemoryFramebuffer",
+            "framebufferType"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "MemoryFramebuffer",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "MemoryFramebuffer",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "MemoryFramebuffer",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "framebufferType",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "MemoryFramebuffer",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "MemoryFramebuffer",
+          "callee": "InitialNaming.getInitialNaming().lookup",
+          "lineNumber": 8
+        },
+        {
+          "caller": "MemoryFramebuffer",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 8
+        },
+        {
+          "caller": "MemoryFramebuffer",
+          "callee": "memMgr.allocAligned",
+          "lineNumber": 19
+        },
+        {
+          "caller": "MemoryFramebuffer",
+          "callee": "depthToBPP",
+          "lineNumber": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/framebuffer/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/framebuffer/PackedFramebuffer.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 18,
+      "classes": [
+        {
+          "name": "PackedFramebuffer",
+          "startLine": 9,
+          "endLine": 23,
+          "methods": [
+            "width",
+            "height",
+            "depth",
+            "startAddress",
+            "scanlineOffset",
+            "pixelOffset",
+            "memObj",
+            "clear",
+            "framebufferType"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "PackedFramebuffer",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/fs/AlreadyMountedException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "functions": [
+        {
+          "name": "AlreadyMountedException",
+          "startLine": 4,
+          "endLine": 6,
+          "params": []
+        },
+        {
+          "name": "AlreadyMountedException",
+          "startLine": 8,
+          "endLine": 10,
+          "params": [
+            "msg"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AlreadyMountedException",
+          "startLine": 3,
+          "endLine": 11,
+          "methods": [
+            "AlreadyMountedException",
+            "AlreadyMountedException"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AlreadyMountedException",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "AlreadyMountedException",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "AlreadyMountedException",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/fs/auditfs/AuditRecord.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 70,
+      "nonEmptyLines": 60,
+      "functions": [
+        {
+          "name": "AuditRecord",
+          "startLine": 17,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "AuditRecord",
+          "startLine": 18,
+          "endLine": 25,
+          "params": [
+            "clock",
+            "systemName",
+            "domainName",
+            "message"
+          ]
+        },
+        {
+          "name": "getSize",
+          "startLine": 27,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "addToBuffer",
+          "startLine": 34,
+          "endLine": 41,
+          "params": [
+            "buf",
+            "pos"
+          ]
+        },
+        {
+          "name": "parseFromBuffer",
+          "startLine": 43,
+          "endLine": 52,
+          "params": [
+            "buf",
+            "pos"
+          ]
+        },
+        {
+          "name": "addString",
+          "startLine": 54,
+          "endLine": 60,
+          "params": [
+            "buf",
+            "pos",
+            "str"
+          ]
+        },
+        {
+          "name": "parseString",
+          "startLine": 62,
+          "endLine": 69,
+          "params": [
+            "buf",
+            "pos"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AuditRecord",
+          "startLine": 10,
+          "endLine": 70,
+          "methods": [
+            "AuditRecord",
+            "AuditRecord",
+            "getSize",
+            "addToBuffer",
+            "parseFromBuffer",
+            "addString",
+            "parseString"
+          ],
+          "properties": [
+            "time",
+            "systemName",
+            "domainName",
+            "message"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AuditRecord",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "AuditRecord",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "getSize",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "addToBuffer",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "parseFromBuffer",
+          "line": 43,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AuditRecord",
+          "callee": "new CycleTime",
+          "lineNumber": 22
+        },
+        {
+          "caller": "AuditRecord",
+          "callee": "new Error",
+          "lineNumber": 23
+        },
+        {
+          "caller": "AuditRecord",
+          "callee": "clock.getCycles",
+          "lineNumber": 24
+        },
+        {
+          "caller": "getSize",
+          "callee": "systemName.length",
+          "lineNumber": 29
+        },
+        {
+          "caller": "getSize",
+          "callee": "domainName.length",
+          "lineNumber": 30
+        },
+        {
+          "caller": "getSize",
+          "callee": "message.length",
+          "lineNumber": 31
+        },
+        {
+          "caller": "addToBuffer",
+          "callee": "buf.setLittleEndian32",
+          "lineNumber": 35
+        },
+        {
+          "caller": "addToBuffer",
+          "callee": "buf.setLittleEndian32",
+          "lineNumber": 36
+        },
+        {
+          "caller": "addToBuffer",
+          "callee": "addString",
+          "lineNumber": 38
+        },
+        {
+          "caller": "addToBuffer",
+          "callee": "addString",
+          "lineNumber": 39
+        },
+        {
+          "caller": "addToBuffer",
+          "callee": "addString",
+          "lineNumber": 40
+        },
+        {
+          "caller": "parseFromBuffer",
+          "callee": "new CycleTime",
+          "lineNumber": 44
+        },
+        {
+          "caller": "parseFromBuffer",
+          "callee": "buf.getLittleEndian32",
+          "lineNumber": 45
+        },
+        {
+          "caller": "parseFromBuffer",
+          "callee": "buf.getLittleEndian32",
+          "lineNumber": 46
+        },
+        {
+          "caller": "parseFromBuffer",
+          "callee": "parseString",
+          "lineNumber": 48
+        },
+        {
+          "caller": "parseFromBuffer",
+          "callee": "systemName.length",
+          "lineNumber": 48
+        },
+        {
+          "caller": "parseFromBuffer",
+          "callee": "parseString",
+          "lineNumber": 49
+        },
+        {
+          "caller": "parseFromBuffer",
+          "callee": "domainName.length",
+          "lineNumber": 49
+        },
+        {
+          "caller": "parseFromBuffer",
+          "callee": "parseString",
+          "lineNumber": 50
+        },
+        {
+          "caller": "parseFromBuffer",
+          "callee": "message.length",
+          "lineNumber": 50
+        },
+        {
+          "caller": "addString",
+          "callee": "buf.setLittleEndian32",
+          "lineNumber": 55
+        },
+        {
+          "caller": "addString",
+          "callee": "str.length",
+          "lineNumber": 55
+        },
+        {
+          "caller": "addString",
+          "callee": "str.length",
+          "lineNumber": 56
+        },
+        {
+          "caller": "addString",
+          "callee": "buf.set8",
+          "lineNumber": 57
+        },
+        {
+          "caller": "addString",
+          "callee": "str.charAt",
+          "lineNumber": 57
+        },
+        {
+          "caller": "addString",
+          "callee": "str.length",
+          "lineNumber": 59
+        },
+        {
+          "caller": "parseString",
+          "callee": "buf.getLittleEndian32",
+          "lineNumber": 63
+        },
+        {
+          "caller": "parseString",
+          "callee": "buf.get8",
+          "lineNumber": 66
+        },
+        {
+          "caller": "parseString",
+          "callee": "new String",
+          "lineNumber": 68
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/fs/auditfs/AuditStore.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 86,
+      "nonEmptyLines": 77,
+      "functions": [
+        {
+          "name": "AuditStore",
+          "startLine": 23,
+          "endLine": 37,
+          "params": [
+            "naming",
+            "bio",
+            "append",
+            "numberOfSectorsToBuffer"
+          ]
+        },
+        {
+          "name": "writeAuditLog",
+          "startLine": 40,
+          "endLine": 42,
+          "params": [
+            "systemName",
+            "domainName",
+            "message"
+          ]
+        },
+        {
+          "name": "writeAuditLog",
+          "startLine": 44,
+          "endLine": 61,
+          "params": [
+            "r"
+          ]
+        },
+        {
+          "name": "erase",
+          "startLine": 63,
+          "endLine": 68,
+          "params": []
+        },
+        {
+          "name": "dump",
+          "startLine": 70,
+          "endLine": 85,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AuditStore",
+          "startLine": 6,
+          "endLine": 86,
+          "methods": [
+            "AuditStore",
+            "writeAuditLog",
+            "writeAuditLog",
+            "erase",
+            "dump"
+          ],
+          "properties": [
+            "bio",
+            "capacity",
+            "sectorSize",
+            "currentSector",
+            "memoryManager",
+            "buf",
+            "posInBuf",
+            "numberOfSectorsToBuffer",
+            "clock"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AuditStore",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "writeAuditLog",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "erase",
+          "line": 63,
+          "isDefault": false
+        },
+        {
+          "name": "dump",
+          "line": 70,
+          "isDefault": false
+        },
+        {
+          "name": "AuditStore",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AuditStore",
+          "callee": "bio.getCapacity",
+          "lineNumber": 26
+        },
+        {
+          "caller": "AuditStore",
+          "callee": "bio.getSectorSize",
+          "lineNumber": 27
+        },
+        {
+          "caller": "AuditStore",
+          "callee": "naming.lookup",
+          "lineNumber": 28
+        },
+        {
+          "caller": "AuditStore",
+          "callee": "memoryManager.alloc",
+          "lineNumber": 29
+        },
+        {
+          "caller": "AuditStore",
+          "callee": "bio.readSectors",
+          "lineNumber": 34
+        },
+        {
+          "caller": "writeAuditLog",
+          "callee": "writeAuditLog",
+          "lineNumber": 41
+        },
+        {
+          "caller": "writeAuditLog",
+          "callee": "new AuditRecord",
+          "lineNumber": 41
+        },
+        {
+          "caller": "writeAuditLog",
+          "callee": "r.getSize",
+          "lineNumber": 45
+        },
+        {
+          "caller": "writeAuditLog",
+          "callee": "bio.writeSectors",
+          "lineNumber": 49
+        },
+        {
+          "caller": "writeAuditLog",
+          "callee": "r.addToBuffer",
+          "lineNumber": 56
+        },
+        {
+          "caller": "writeAuditLog",
+          "callee": "bio.writeSectors",
+          "lineNumber": 59
+        },
+        {
+          "caller": "erase",
+          "callee": "buf.fill32",
+          "lineNumber": 64
+        },
+        {
+          "caller": "erase",
+          "callee": "bio.writeSectors",
+          "lineNumber": 66
+        },
+        {
+          "caller": "dump",
+          "callee": "bio.readSectors",
+          "lineNumber": 72
+        },
+        {
+          "caller": "dump",
+          "callee": "new AuditRecord",
+          "lineNumber": 73
+        },
+        {
+          "caller": "dump",
+          "callee": "buf.getLittleEndian32",
+          "lineNumber": 77
+        },
+        {
+          "caller": "dump",
+          "callee": "buf.getLittleEndian32",
+          "lineNumber": 77
+        },
+        {
+          "caller": "dump",
+          "callee": "rec.parseFromBuffer",
+          "lineNumber": 79
+        },
+        {
+          "caller": "dump",
+          "callee": "Debug.out.println",
+          "lineNumber": 80
+        },
+        {
+          "caller": "dump",
+          "callee": "Integer.toHexString",
+          "lineNumber": 80
+        },
+        {
+          "caller": "dump",
+          "callee": "Integer.toHexString",
+          "lineNumber": 81
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/fs/auditfs/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/fs/buffercache/BufferCache.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 134,
+      "nonEmptyLines": 111,
+      "classes": [
+        {
+          "name": "BufferCache",
+          "startLine": 8,
+          "endLine": 134,
+          "methods": [
+            "bawrite",
+            "bwrite",
+            "bdirty",
+            "breadn",
+            "bforget",
+            "findBuffer",
+            "updateBuffer"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "BufferCache",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/fs/buffercache/BufferHead.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 37,
+      "nonEmptyLines": 26,
+      "functions": [
+        {
+          "name": "BufferHead",
+          "startLine": 8,
+          "endLine": 8,
+          "params": [
+            "buf"
+          ]
+        },
+        {
+          "name": "getBlock",
+          "startLine": 10,
+          "endLine": 11,
+          "params": []
+        },
+        {
+          "name": "getSize",
+          "startLine": 12,
+          "endLine": 13,
+          "params": []
+        },
+        {
+          "name": "endIo",
+          "startLine": 14,
+          "endLine": 15,
+          "params": [
+            "error",
+            "synchronous"
+          ]
+        },
+        {
+          "name": "isDirty",
+          "startLine": 17,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "markClean",
+          "startLine": 18,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "isUptodate",
+          "startLine": 20,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "isLocked",
+          "startLine": 22,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "lock",
+          "startLine": 23,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "unlock",
+          "startLine": 24,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "waitUntilUnlocked",
+          "startLine": 25,
+          "endLine": 25,
+          "params": []
+        },
+        {
+          "name": "waitOn",
+          "startLine": 26,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "clear",
+          "startLine": 29,
+          "endLine": 29,
+          "params": [
+            "from",
+            "to"
+          ]
+        },
+        {
+          "name": "isUsed",
+          "startLine": 31,
+          "endLine": 31,
+          "params": []
+        },
+        {
+          "name": "isUsedOnlyByMe",
+          "startLine": 32,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "isInFreeList",
+          "startLine": 34,
+          "endLine": 36,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "BufferHead",
+          "startLine": 5,
+          "endLine": 37,
+          "methods": [
+            "BufferHead",
+            "getBlock",
+            "getSize",
+            "endIo",
+            "isDirty",
+            "markClean",
+            "isUptodate",
+            "isLocked",
+            "lock",
+            "unlock",
+            "waitUntilUnlocked",
+            "waitOn",
+            "clear",
+            "isUsed",
+            "isUsedOnlyByMe",
+            "isInFreeList"
+          ],
+          "properties": [
+            "b_flushtime"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "b_flushtime",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "BufferHead",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "getBlock",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "getSize",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "endIo",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "isDirty",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "markClean",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "isUptodate",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "isLocked",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "lock",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "unlock",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "waitUntilUnlocked",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "waitOn",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "clear",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "isUsed",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "isUsedOnlyByMe",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "isInFreeList",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "BufferHead",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "isInFreeList",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 35
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 18,
+        "functionCount": 16,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/fs/buffercache/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/fs/DeviceNaming.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 46,
+      "nonEmptyLines": 41,
+      "functions": [
+        {
+          "name": "deviceToName",
+          "startLine": 11,
+          "endLine": 23,
+          "params": [
+            "device"
+          ]
+        },
+        {
+          "name": "nameToDevice",
+          "startLine": 32,
+          "endLine": 45,
+          "params": [
+            "name"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DeviceNaming",
+          "startLine": 3,
+          "endLine": 46,
+          "methods": [
+            "deviceToName",
+            "nameToDevice"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "deviceToName",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "nameToDevice",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "DeviceNaming",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "deviceToName",
+          "callee": "String.valueOf",
+          "lineNumber": 21
+        },
+        {
+          "caller": "nameToDevice",
+          "callee": "name.equals",
+          "lineNumber": 35
+        },
+        {
+          "caller": "nameToDevice",
+          "callee": "name.startsWith",
+          "lineNumber": 36
+        },
+        {
+          "caller": "nameToDevice",
+          "callee": "name.startsWith",
+          "lineNumber": 37
+        },
+        {
+          "caller": "nameToDevice",
+          "callee": "name.startsWith",
+          "lineNumber": 38
+        },
+        {
+          "caller": "nameToDevice",
+          "callee": "name.startsWith",
+          "lineNumber": 39
+        },
+        {
+          "caller": "nameToDevice",
+          "callee": "name.length",
+          "lineNumber": 42
+        },
+        {
+          "caller": "nameToDevice",
+          "callee": "Integer.parseInt",
+          "lineNumber": 43
+        },
+        {
+          "caller": "nameToDevice",
+          "callee": "name.substring",
+          "lineNumber": 43
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/fs/DirectoryImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 86,
+      "nonEmptyLines": 73,
+      "functions": [
+        {
+          "name": "DirectoryImpl",
+          "startLine": 5,
+          "endLine": 7,
+          "params": [
+            "impl",
+            "fs",
+            "parent",
+            "inode"
+          ]
+        },
+        {
+          "name": "getParent",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "list",
+          "startLine": 11,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "getLength",
+          "startLine": 21,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "openRO",
+          "startLine": 24,
+          "endLine": 39,
+          "params": [
+            "filename"
+          ]
+        },
+        {
+          "name": "openRW",
+          "startLine": 41,
+          "endLine": 56,
+          "params": [
+            "filename"
+          ]
+        },
+        {
+          "name": "create",
+          "startLine": 58,
+          "endLine": 66,
+          "params": [
+            "perm",
+            "filename"
+          ]
+        },
+        {
+          "name": "link",
+          "startLine": 68,
+          "endLine": 69,
+          "params": [
+            "perm",
+            "filename",
+            "file"
+          ]
+        },
+        {
+          "name": "unlink",
+          "startLine": 71,
+          "endLine": 72,
+          "params": [
+            "filename"
+          ]
+        },
+        {
+          "name": "mkdir",
+          "startLine": 74,
+          "endLine": 75,
+          "params": [
+            "perm",
+            "name"
+          ]
+        },
+        {
+          "name": "finalize",
+          "startLine": 77,
+          "endLine": 80,
+          "params": []
+        },
+        {
+          "name": "isValid",
+          "startLine": 82,
+          "endLine": 85,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DirectoryImpl",
+          "startLine": 4,
+          "endLine": 86,
+          "methods": [
+            "DirectoryImpl",
+            "getParent",
+            "list",
+            "getLength",
+            "openRO",
+            "openRW",
+            "create",
+            "link",
+            "unlink",
+            "mkdir",
+            "finalize",
+            "isValid"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DirectoryImpl",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "getParent",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "list",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "getLength",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "openRO",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "openRW",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "create",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "link",
+          "line": 68,
+          "isDefault": false
+        },
+        {
+          "name": "unlink",
+          "line": 71,
+          "isDefault": false
+        },
+        {
+          "name": "mkdir",
+          "line": 74,
+          "isDefault": false
+        },
+        {
+          "name": "isValid",
+          "line": 82,
+          "isDefault": false
+        },
+        {
+          "name": "DirectoryImpl",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "list",
+          "callee": "inode.readdirNames",
+          "lineNumber": 14
+        },
+        {
+          "caller": "openRO",
+          "callee": "inode.lookup",
+          "lineNumber": 27
+        },
+        {
+          "caller": "openRO",
+          "callee": "nInode.isDirectory",
+          "lineNumber": 28
+        },
+        {
+          "caller": "openRO",
+          "callee": "fs_impl.registerFSObj",
+          "lineNumber": 29
+        },
+        {
+          "caller": "openRO",
+          "callee": "new ReadOnlyDirectoryImpl",
+          "lineNumber": 29
+        },
+        {
+          "caller": "openRO",
+          "callee": "nInode.isFile",
+          "lineNumber": 30
+        },
+        {
+          "caller": "openRO",
+          "callee": "fs_impl.registerFSObj",
+          "lineNumber": 31
+        },
+        {
+          "caller": "openRO",
+          "callee": "new ReadOnlyRegularFileImpl",
+          "lineNumber": 31
+        },
+        {
+          "caller": "openRW",
+          "callee": "inode.lookup",
+          "lineNumber": 44
+        },
+        {
+          "caller": "openRW",
+          "callee": "nInode.isDirectory",
+          "lineNumber": 45
+        },
+        {
+          "caller": "openRW",
+          "callee": "fs_impl.registerFSObj",
+          "lineNumber": 46
+        },
+        {
+          "caller": "openRW",
+          "callee": "new DirectoryImpl",
+          "lineNumber": 46
+        },
+        {
+          "caller": "openRW",
+          "callee": "nInode.isFile",
+          "lineNumber": 47
+        },
+        {
+          "caller": "openRW",
+          "callee": "fs_impl.registerFSObj",
+          "lineNumber": 48
+        },
+        {
+          "caller": "openRW",
+          "callee": "new RegularFileImpl",
+          "lineNumber": 48
+        },
+        {
+          "caller": "create",
+          "callee": "inode.create",
+          "lineNumber": 61
+        },
+        {
+          "caller": "create",
+          "callee": "new RegularFileImpl",
+          "lineNumber": 62
+        },
+        {
+          "caller": "finalize",
+          "callee": "inode.decUseCount",
+          "lineNumber": 79
+        },
+        {
+          "caller": "isValid",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 84
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 12,
+        "functionCount": 12,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/fs/DirNotEmptyException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "DirNotEmptyException",
+          "startLine": 7,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "DirNotEmptyException",
+          "startLine": 11,
+          "endLine": 13,
+          "params": [
+            "msg"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DirNotEmptyException",
+          "startLine": 6,
+          "endLine": 14,
+          "methods": [
+            "DirNotEmptyException",
+            "DirNotEmptyException"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DirNotEmptyException",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "DirNotEmptyException",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "DirNotEmptyException",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/fs/EXT2Attribute.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 17,
+      "functions": [
+        {
+          "name": "EXT2Attribute",
+          "startLine": 8,
+          "endLine": 11,
+          "params": [
+            "user",
+            "perm"
+          ]
+        },
+        {
+          "name": "getUserID",
+          "startLine": 13,
+          "endLine": 16,
+          "params": []
+        },
+        {
+          "name": "getPermission",
+          "startLine": 18,
+          "endLine": 21,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "EXT2Attribute",
+          "startLine": 3,
+          "endLine": 22,
+          "methods": [
+            "EXT2Attribute",
+            "getUserID",
+            "getPermission"
+          ],
+          "properties": [
+            "id",
+            "perm"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "EXT2Attribute",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "getUserID",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "getPermission",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "EXT2Attribute",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/fs/EXT2Permission.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 50,
+      "nonEmptyLines": 37,
+      "functions": [
+        {
+          "name": "EXT2Permission",
+          "startLine": 19,
+          "endLine": 19,
+          "params": [
+            "user",
+            "group",
+            "other"
+          ]
+        },
+        {
+          "name": "EXT2Permission",
+          "startLine": 21,
+          "endLine": 21,
+          "params": [
+            "mode"
+          ]
+        },
+        {
+          "name": "addPermission",
+          "startLine": 23,
+          "endLine": 25,
+          "params": [
+            "field",
+            "perm"
+          ]
+        },
+        {
+          "name": "delPermission",
+          "startLine": 27,
+          "endLine": 31,
+          "params": [
+            "field",
+            "perm"
+          ]
+        },
+        {
+          "name": "getPermission",
+          "startLine": 33,
+          "endLine": 35,
+          "params": [
+            "field"
+          ]
+        },
+        {
+          "name": "setMode",
+          "startLine": 37,
+          "endLine": 41,
+          "params": [
+            "user",
+            "group",
+            "other"
+          ]
+        },
+        {
+          "name": "setMode",
+          "startLine": 43,
+          "endLine": 45,
+          "params": [
+            "mode"
+          ]
+        },
+        {
+          "name": "getMode",
+          "startLine": 47,
+          "endLine": 49,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "EXT2Permission",
+          "startLine": 3,
+          "endLine": 50,
+          "methods": [
+            "EXT2Permission",
+            "EXT2Permission",
+            "addPermission",
+            "delPermission",
+            "getPermission",
+            "setMode",
+            "setMode",
+            "getMode"
+          ],
+          "properties": [
+            "RWX",
+            "RX",
+            "RW",
+            "WRITE",
+            "READ",
+            "EXEC",
+            "USER",
+            "GROUP",
+            "OTHER",
+            "mode"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RWX",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "RX",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "RW",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "WRITE",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "READ",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "EXEC",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "USER",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "GROUP",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "OTHER",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "EXT2Permission",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "EXT2Permission",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "addPermission",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "delPermission",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "getPermission",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "setMode",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "setMode",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "getMode",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "EXT2Permission",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "EXT2Permission",
+          "callee": "setMode",
+          "lineNumber": 19
+        },
+        {
+          "caller": "EXT2Permission",
+          "callee": "setMode",
+          "lineNumber": 21
+        },
+        {
+          "caller": "delPermission",
+          "callee": "new Error",
+          "lineNumber": 28
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 18,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/fs/FileException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 4,
+      "nonEmptyLines": 3,
+      "classes": [
+        {
+          "name": "FileException",
+          "startLine": 3,
+          "endLine": 4,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "FileException",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    }
+  ]
+}

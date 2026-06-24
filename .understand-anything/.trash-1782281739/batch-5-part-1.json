@@ -1,0 +1,1228 @@
+{
+  "schemaVersion": 1,
+  "batchIndex": 5,
+  "part": 1,
+  "nodes": [
+    {
+      "id": "cls:src/gnu/java/io/EncodingManager.java:EncodingManager",
+      "type": "class",
+      "label": "EncodingManager",
+      "properties": {
+        "path": "src/gnu/java/io/EncodingManager.java",
+        "name": "EncodingManager",
+        "startLine": 62,
+        "endLine": 591,
+        "numMethods": 14
+      }
+    },
+    {
+      "id": "cls:src/gnu/java/security/DefaultPermissionCollection.java:DefaultPermissionCollection",
+      "type": "class",
+      "label": "DefaultPermissionCollection",
+      "properties": {
+        "path": "src/gnu/java/security/DefaultPermissionCollection.java",
+        "name": "DefaultPermissionCollection",
+        "startLine": 46,
+        "endLine": 148,
+        "numMethods": 4
+      }
+    },
+    {
+      "id": "cls:src/java/io/BufferedOutputStream.java:BufferedOutputStream",
+      "type": "class",
+      "label": "BufferedOutputStream",
+      "properties": {
+        "path": "src/java/io/BufferedOutputStream.java",
+        "name": "BufferedOutputStream",
+        "startLine": 42,
+        "endLine": 222,
+        "numMethods": 5
+      }
+    },
+    {
+      "id": "cls:src/java/io/ByteArrayInputStream.java:ByteArrayInputStream",
+      "type": "class",
+      "label": "ByteArrayInputStream",
+      "properties": {
+        "path": "src/java/io/ByteArrayInputStream.java",
+        "name": "ByteArrayInputStream",
+        "startLine": 37,
+        "endLine": 297,
+        "numMethods": 10
+      }
+    },
+    {
+      "id": "cls:src/java/io/CharArrayReader.java:CharArrayReader",
+      "type": "class",
+      "label": "CharArrayReader",
+      "properties": {
+        "path": "src/java/io/CharArrayReader.java",
+        "name": "CharArrayReader",
+        "startLine": 2,
+        "endLine": 4,
+        "numMethods": 1
+      }
+    },
+    {
+      "id": "cls:src/java/io/InputStreamReader.java:InputStreamReader",
+      "type": "class",
+      "label": "InputStreamReader",
+      "properties": {
+        "path": "src/java/io/InputStreamReader.java",
+        "name": "InputStreamReader",
+        "startLine": 88,
+        "endLine": 224,
+        "numMethods": 7
+      }
+    },
+    {
+      "id": "file:src/gnu/java/io/EncodingManager.java",
+      "type": "file",
+      "label": "EncodingManager.java",
+      "properties": {
+        "path": "src/gnu/java/io/EncodingManager.java",
+        "language": "java",
+        "sizeLines": 592,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/gnu/java/security/DefaultPermissionCollection.java",
+      "type": "file",
+      "label": "DefaultPermissionCollection.java",
+      "properties": {
+        "path": "src/gnu/java/security/DefaultPermissionCollection.java",
+        "language": "java",
+        "sizeLines": 149,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/io/BufferedOutputStream.java",
+      "type": "file",
+      "label": "BufferedOutputStream.java",
+      "properties": {
+        "path": "src/java/io/BufferedOutputStream.java",
+        "language": "java",
+        "sizeLines": 222,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/io/ByteArrayInputStream.java",
+      "type": "file",
+      "label": "ByteArrayInputStream.java",
+      "properties": {
+        "path": "src/java/io/ByteArrayInputStream.java",
+        "language": "java",
+        "sizeLines": 298,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/io/CharArrayReader.java",
+      "type": "file",
+      "label": "CharArrayReader.java",
+      "properties": {
+        "path": "src/java/io/CharArrayReader.java",
+        "language": "java",
+        "sizeLines": 4,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/io/InputStreamReader.java",
+      "type": "file",
+      "label": "InputStreamReader.java",
+      "properties": {
+        "path": "src/java/io/InputStreamReader.java",
+        "language": "java",
+        "sizeLines": 224,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "fn:src/gnu/java/io/EncodingManager.java:findDecoderConstructor",
+      "type": "function",
+      "label": "findDecoderConstructor",
+      "properties": {
+        "path": "src/gnu/java/io/EncodingManager.java",
+        "name": "findDecoderConstructor",
+        "startLine": 192,
+        "endLine": 225,
+        "params": [
+          "encoding",
+          "cache"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/gnu/java/io/EncodingManager.java:findEncoderConstructor",
+      "type": "function",
+      "label": "findEncoderConstructor",
+      "properties": {
+        "path": "src/gnu/java/io/EncodingManager.java",
+        "name": "findEncoderConstructor",
+        "startLine": 235,
+        "endLine": 268,
+        "params": [
+          "encoding",
+          "cache"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/gnu/java/io/EncodingManager.java:getDecoder",
+      "type": "function",
+      "label": "getDecoder",
+      "properties": {
+        "path": "src/gnu/java/io/EncodingManager.java",
+        "name": "getDecoder",
+        "startLine": 408,
+        "endLine": 429,
+        "params": [
+          "in",
+          "encoding",
+          "cache"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/gnu/java/io/EncodingManager.java:getEncoder",
+      "type": "function",
+      "label": "getEncoder",
+      "properties": {
+        "path": "src/gnu/java/io/EncodingManager.java",
+        "name": "getEncoder",
+        "startLine": 568,
+        "endLine": 589,
+        "params": [
+          "out",
+          "encoding",
+          "cache"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/gnu/java/security/DefaultPermissionCollection.java:DefaultPermissionCollection",
+      "type": "function",
+      "label": "DefaultPermissionCollection",
+      "properties": {
+        "path": "src/gnu/java/security/DefaultPermissionCollection.java",
+        "name": "DefaultPermissionCollection",
+        "startLine": 75,
+        "endLine": 86,
+        "params": [
+          "permtype"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/gnu/java/security/DefaultPermissionCollection.java:add",
+      "type": "function",
+      "label": "add",
+      "properties": {
+        "path": "src/gnu/java/security/DefaultPermissionCollection.java",
+        "name": "add",
+        "startLine": 97,
+        "endLine": 112,
+        "params": [
+          "perm"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/gnu/java/security/DefaultPermissionCollection.java:elements",
+      "type": "function",
+      "label": "elements",
+      "properties": {
+        "path": "src/gnu/java/security/DefaultPermissionCollection.java",
+        "name": "elements",
+        "startLine": 141,
+        "endLine": 146,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/gnu/java/security/DefaultPermissionCollection.java:implies",
+      "type": "function",
+      "label": "implies",
+      "properties": {
+        "path": "src/gnu/java/security/DefaultPermissionCollection.java",
+        "name": "implies",
+        "startLine": 120,
+        "endLine": 133,
+        "params": [
+          "perm"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/BufferedOutputStream.java:BufferedOutputStream",
+      "type": "function",
+      "label": "BufferedOutputStream",
+      "properties": {
+        "path": "src/java/io/BufferedOutputStream.java",
+        "name": "BufferedOutputStream",
+        "startLine": 104,
+        "endLine": 110,
+        "params": [
+          "out",
+          "size"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/BufferedOutputStream.java:flush",
+      "type": "function",
+      "label": "flush",
+      "properties": {
+        "path": "src/java/io/BufferedOutputStream.java",
+        "name": "flush",
+        "startLine": 124,
+        "endLine": 132,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/BufferedOutputStream.java:write",
+      "type": "function",
+      "label": "write",
+      "properties": {
+        "path": "src/java/io/BufferedOutputStream.java",
+        "name": "write",
+        "startLine": 202,
+        "endLine": 220,
+        "params": [
+          "buf",
+          "offset",
+          "len"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/ByteArrayInputStream.java:ByteArrayInputStream",
+      "type": "function",
+      "label": "ByteArrayInputStream",
+      "properties": {
+        "path": "src/java/io/ByteArrayInputStream.java",
+        "name": "ByteArrayInputStream",
+        "startLine": 112,
+        "endLine": 118,
+        "params": [
+          "buf",
+          "offset",
+          "length"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/ByteArrayInputStream.java:available",
+      "type": "function",
+      "label": "available",
+      "properties": {
+        "path": "src/java/io/ByteArrayInputStream.java",
+        "name": "available",
+        "startLine": 146,
+        "endLine": 150,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/ByteArrayInputStream.java:close",
+      "type": "function",
+      "label": "close",
+      "properties": {
+        "path": "src/java/io/ByteArrayInputStream.java",
+        "name": "close",
+        "startLine": 132,
+        "endLine": 136,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/ByteArrayInputStream.java:mark",
+      "type": "function",
+      "label": "mark",
+      "properties": {
+        "path": "src/java/io/ByteArrayInputStream.java",
+        "name": "mark",
+        "startLine": 181,
+        "endLine": 185,
+        "params": [
+          "readlimit"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/ByteArrayInputStream.java:markSupported",
+      "type": "function",
+      "label": "markSupported",
+      "properties": {
+        "path": "src/java/io/ByteArrayInputStream.java",
+        "name": "markSupported",
+        "startLine": 161,
+        "endLine": 165,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/ByteArrayInputStream.java:read",
+      "type": "function",
+      "label": "read",
+      "properties": {
+        "path": "src/java/io/ByteArrayInputStream.java",
+        "name": "read",
+        "startLine": 270,
+        "endLine": 295,
+        "params": [
+          "buf",
+          "offset",
+          "len"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/ByteArrayInputStream.java:reset",
+      "type": "function",
+      "label": "reset",
+      "properties": {
+        "path": "src/java/io/ByteArrayInputStream.java",
+        "name": "reset",
+        "startLine": 196,
+        "endLine": 200,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/ByteArrayInputStream.java:skip",
+      "type": "function",
+      "label": "skip",
+      "properties": {
+        "path": "src/java/io/ByteArrayInputStream.java",
+        "name": "skip",
+        "startLine": 215,
+        "endLine": 227,
+        "params": [
+          "num_bytes"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/CharArrayReader.java:CharArrayReader",
+      "type": "function",
+      "label": "CharArrayReader",
+      "properties": {
+        "path": "src/java/io/CharArrayReader.java",
+        "name": "CharArrayReader",
+        "startLine": 3,
+        "endLine": 3,
+        "params": [
+          "arg0",
+          "arg1",
+          "arg2"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/InputStreamReader.java:InputStreamReader",
+      "type": "function",
+      "label": "InputStreamReader",
+      "properties": {
+        "path": "src/java/io/InputStreamReader.java",
+        "name": "InputStreamReader",
+        "startLine": 130,
+        "endLine": 135,
+        "params": [
+          "in",
+          "encoding_name"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/InputStreamReader.java:close",
+      "type": "function",
+      "label": "close",
+      "properties": {
+        "path": "src/java/io/InputStreamReader.java",
+        "name": "close",
+        "startLine": 164,
+        "endLine": 168,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/InputStreamReader.java:getEncoding",
+      "type": "function",
+      "label": "getEncoding",
+      "properties": {
+        "path": "src/java/io/InputStreamReader.java",
+        "name": "getEncoding",
+        "startLine": 150,
+        "endLine": 154,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/InputStreamReader.java:read",
+      "type": "function",
+      "label": "read",
+      "properties": {
+        "path": "src/java/io/InputStreamReader.java",
+        "name": "read",
+        "startLine": 218,
+        "endLine": 222,
+        "params": [
+          "buf",
+          "offset",
+          "len"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/InputStreamReader.java:ready",
+      "type": "function",
+      "label": "ready",
+      "properties": {
+        "path": "src/java/io/InputStreamReader.java",
+        "name": "ready",
+        "startLine": 182,
+        "endLine": 186,
+        "params": []
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "cls:src/gnu/java/io/EncodingManager.java:EncodingManager",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "cls:src/gnu/java/io/EncodingManager.java:EncodingManager",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:findDecoderConstructor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:findEncoderConstructor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:getDecoder",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:getDecoder",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:getDecoder",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:getDecoder",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:getDecoder",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:getDecoder",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:getDecoder",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:getDecoder",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:getDecoder",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:getDecoder",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:getDecoder",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:getDecoder",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:getEncoder",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:getEncoder",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:getEncoder",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:getEncoder",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:getEncoder",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:getEncoder",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:getEncoder",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:getEncoder",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:getEncoder",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:getEncoder",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:getEncoder",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:getEncoder",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/gnu/java/io/EncodingManager.java:getDecoder",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:getDecoder",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/gnu/java/io/EncodingManager.java:getDecoder",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:findDecoderConstructor",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/gnu/java/io/EncodingManager.java:getEncoder",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:getEncoder",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/gnu/java/io/EncodingManager.java:getEncoder",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:findEncoderConstructor",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/gnu/java/security/DefaultPermissionCollection.java",
+      "target": "cls:src/gnu/java/security/DefaultPermissionCollection.java:DefaultPermissionCollection",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/gnu/java/security/DefaultPermissionCollection.java",
+      "target": "cls:src/gnu/java/security/DefaultPermissionCollection.java:DefaultPermissionCollection",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/gnu/java/security/DefaultPermissionCollection.java",
+      "target": "fn:src/gnu/java/security/DefaultPermissionCollection.java:DefaultPermissionCollection",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/gnu/java/security/DefaultPermissionCollection.java",
+      "target": "fn:src/gnu/java/security/DefaultPermissionCollection.java:DefaultPermissionCollection",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/gnu/java/security/DefaultPermissionCollection.java",
+      "target": "fn:src/gnu/java/security/DefaultPermissionCollection.java:add",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/gnu/java/security/DefaultPermissionCollection.java",
+      "target": "fn:src/gnu/java/security/DefaultPermissionCollection.java:add",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/gnu/java/security/DefaultPermissionCollection.java",
+      "target": "fn:src/gnu/java/security/DefaultPermissionCollection.java:implies",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/gnu/java/security/DefaultPermissionCollection.java",
+      "target": "fn:src/gnu/java/security/DefaultPermissionCollection.java:implies",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/gnu/java/security/DefaultPermissionCollection.java",
+      "target": "fn:src/gnu/java/security/DefaultPermissionCollection.java:elements",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/gnu/java/security/DefaultPermissionCollection.java",
+      "target": "fn:src/gnu/java/security/DefaultPermissionCollection.java:elements",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/BufferedOutputStream.java",
+      "target": "cls:src/java/io/BufferedOutputStream.java:BufferedOutputStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/BufferedOutputStream.java",
+      "target": "cls:src/java/io/BufferedOutputStream.java:BufferedOutputStream",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/BufferedOutputStream.java",
+      "target": "fn:src/java/io/BufferedOutputStream.java:BufferedOutputStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/BufferedOutputStream.java",
+      "target": "fn:src/java/io/BufferedOutputStream.java:BufferedOutputStream",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/BufferedOutputStream.java",
+      "target": "fn:src/java/io/BufferedOutputStream.java:BufferedOutputStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/BufferedOutputStream.java",
+      "target": "fn:src/java/io/BufferedOutputStream.java:BufferedOutputStream",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/BufferedOutputStream.java",
+      "target": "fn:src/java/io/BufferedOutputStream.java:flush",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/BufferedOutputStream.java",
+      "target": "fn:src/java/io/BufferedOutputStream.java:flush",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/BufferedOutputStream.java",
+      "target": "fn:src/java/io/BufferedOutputStream.java:write",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/BufferedOutputStream.java",
+      "target": "fn:src/java/io/BufferedOutputStream.java:write",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/BufferedOutputStream.java",
+      "target": "fn:src/java/io/BufferedOutputStream.java:write",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/BufferedOutputStream.java",
+      "target": "fn:src/java/io/BufferedOutputStream.java:write",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/BufferedOutputStream.java:write",
+      "target": "fn:src/java/io/BufferedOutputStream.java:flush",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/ByteArrayInputStream.java",
+      "target": "cls:src/java/io/ByteArrayInputStream.java:ByteArrayInputStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/ByteArrayInputStream.java",
+      "target": "cls:src/java/io/ByteArrayInputStream.java:ByteArrayInputStream",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/ByteArrayInputStream.java",
+      "target": "fn:src/java/io/ByteArrayInputStream.java:ByteArrayInputStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/ByteArrayInputStream.java",
+      "target": "fn:src/java/io/ByteArrayInputStream.java:ByteArrayInputStream",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/ByteArrayInputStream.java",
+      "target": "fn:src/java/io/ByteArrayInputStream.java:ByteArrayInputStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/ByteArrayInputStream.java",
+      "target": "fn:src/java/io/ByteArrayInputStream.java:ByteArrayInputStream",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/ByteArrayInputStream.java",
+      "target": "fn:src/java/io/ByteArrayInputStream.java:close",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/ByteArrayInputStream.java",
+      "target": "fn:src/java/io/ByteArrayInputStream.java:close",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/ByteArrayInputStream.java",
+      "target": "fn:src/java/io/ByteArrayInputStream.java:available",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/ByteArrayInputStream.java",
+      "target": "fn:src/java/io/ByteArrayInputStream.java:available",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/ByteArrayInputStream.java",
+      "target": "fn:src/java/io/ByteArrayInputStream.java:markSupported",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/ByteArrayInputStream.java",
+      "target": "fn:src/java/io/ByteArrayInputStream.java:markSupported",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/ByteArrayInputStream.java",
+      "target": "fn:src/java/io/ByteArrayInputStream.java:mark",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/ByteArrayInputStream.java",
+      "target": "fn:src/java/io/ByteArrayInputStream.java:mark",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/ByteArrayInputStream.java",
+      "target": "fn:src/java/io/ByteArrayInputStream.java:reset",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/ByteArrayInputStream.java",
+      "target": "fn:src/java/io/ByteArrayInputStream.java:reset",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/ByteArrayInputStream.java",
+      "target": "fn:src/java/io/ByteArrayInputStream.java:skip",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/ByteArrayInputStream.java",
+      "target": "fn:src/java/io/ByteArrayInputStream.java:skip",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/ByteArrayInputStream.java",
+      "target": "fn:src/java/io/ByteArrayInputStream.java:read",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/ByteArrayInputStream.java",
+      "target": "fn:src/java/io/ByteArrayInputStream.java:read",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/ByteArrayInputStream.java",
+      "target": "fn:src/java/io/ByteArrayInputStream.java:read",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/ByteArrayInputStream.java",
+      "target": "fn:src/java/io/ByteArrayInputStream.java:read",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/CharArrayReader.java",
+      "target": "cls:src/java/io/CharArrayReader.java:CharArrayReader",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/CharArrayReader.java",
+      "target": "cls:src/java/io/CharArrayReader.java:CharArrayReader",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/CharArrayReader.java",
+      "target": "fn:src/java/io/CharArrayReader.java:CharArrayReader",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/CharArrayReader.java",
+      "target": "fn:src/java/io/CharArrayReader.java:CharArrayReader",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/InputStreamReader.java",
+      "target": "cls:src/java/io/InputStreamReader.java:InputStreamReader",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/InputStreamReader.java",
+      "target": "cls:src/java/io/InputStreamReader.java:InputStreamReader",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/InputStreamReader.java",
+      "target": "fn:src/java/io/InputStreamReader.java:InputStreamReader",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/InputStreamReader.java",
+      "target": "fn:src/java/io/InputStreamReader.java:InputStreamReader",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/InputStreamReader.java",
+      "target": "fn:src/java/io/InputStreamReader.java:InputStreamReader",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/InputStreamReader.java",
+      "target": "fn:src/java/io/InputStreamReader.java:InputStreamReader",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/InputStreamReader.java",
+      "target": "fn:src/java/io/InputStreamReader.java:getEncoding",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/InputStreamReader.java",
+      "target": "fn:src/java/io/InputStreamReader.java:getEncoding",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/InputStreamReader.java",
+      "target": "fn:src/java/io/InputStreamReader.java:close",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/InputStreamReader.java",
+      "target": "fn:src/java/io/InputStreamReader.java:close",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/InputStreamReader.java",
+      "target": "fn:src/java/io/InputStreamReader.java:ready",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/InputStreamReader.java",
+      "target": "fn:src/java/io/InputStreamReader.java:ready",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/InputStreamReader.java",
+      "target": "fn:src/java/io/InputStreamReader.java:read",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/InputStreamReader.java",
+      "target": "fn:src/java/io/InputStreamReader.java:read",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/InputStreamReader.java",
+      "target": "fn:src/java/io/InputStreamReader.java:read",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/InputStreamReader.java",
+      "target": "fn:src/java/io/InputStreamReader.java:read",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/InputStreamReader.java",
+      "target": "file:src/gnu/java/io/EncodingManager.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "file:src/java/io/UnsupportedEncodingException.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "file:src/java/lang/reflect/Constructor.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "file:src/java/util/Hashtable.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/gnu/java/io/EncodingManager.java",
+      "target": "file:src/java/util/StringTokenizer.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "fn:src/gnu/java/io/EncodingManager.java:findDecoderConstructor",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:System.getProperty",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/gnu/java/io/EncodingManager.java:findDecoderConstructor",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:new StringTokenizer",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/gnu/java/io/EncodingManager.java:findDecoderConstructor",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:st.hasMoreTokens",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/gnu/java/io/EncodingManager.java:findDecoderConstructor",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:st.nextToken",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/gnu/java/io/EncodingManager.java:findDecoderConstructor",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:Class.forName",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/gnu/java/io/EncodingManager.java:findDecoderConstructor",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:cls.getConstructor",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/gnu/java/io/EncodingManager.java:findDecoderConstructor",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:decoder_cons.put",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/gnu/java/io/EncodingManager.java:findDecoderConstructor",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:new UnsupportedEncodingException",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/gnu/java/io/EncodingManager.java:findEncoderConstructor",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:System.getProperty",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/gnu/java/io/EncodingManager.java:findEncoderConstructor",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:new StringTokenizer",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/gnu/java/io/EncodingManager.java:findEncoderConstructor",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:st.hasMoreTokens",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/gnu/java/io/EncodingManager.java:findEncoderConstructor",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:st.nextToken",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/gnu/java/io/EncodingManager.java:findEncoderConstructor",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:Class.forName",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/gnu/java/io/EncodingManager.java:findEncoderConstructor",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:cls.getConstructor",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/gnu/java/io/EncodingManager.java:findEncoderConstructor",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:encoder_cons.put",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/gnu/java/io/EncodingManager.java:findEncoderConstructor",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:new UnsupportedEncodingException",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/gnu/java/io/EncodingManager.java:getDecoder",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:decoder_instances.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/gnu/java/io/EncodingManager.java:getDecoder",
+      "target": "fn:src/gnu/java/io/EncodingManager.java:decoder_instances.put",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ],
+  "metadata": {
+    "totalNodesInPart": 37,
+    "totalEdgesInPart": 120,
+    "algorithm": "file-analyzer"
+  }
+}

@@ -1,0 +1,1085 @@
+{
+  "batchIndex": 8,
+  "files": [
+    {
+      "path": "src/java/security/CodeSource.java",
+      "language": "java",
+      "sizeLines": 366,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/DigestInputStream.java",
+      "language": "java",
+      "sizeLines": 157,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/DigestOutputStream.java",
+      "language": "java",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/Permissions.java",
+      "language": "java",
+      "sizeLines": 228,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/SignedObject.java",
+      "language": "java",
+      "sizeLines": 166,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/text/ChoiceFormat.java",
+      "language": "java",
+      "sizeLines": 455,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/HashMap.java",
+      "language": "java",
+      "sizeLines": 1939,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/HashSet.java",
+      "language": "java",
+      "sizeLines": 264,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/Hashtable.java",
+      "language": "java",
+      "sizeLines": 346,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/LinkedHashMap.java",
+      "language": "java",
+      "sizeLines": 770,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/NoSuchElementException.java",
+      "language": "java",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/StringTokenizer.java",
+      "language": "java",
+      "sizeLines": 261,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/TreeMap.java",
+      "language": "java",
+      "sizeLines": 1549,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/InitialNaming.java",
+      "language": "java",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classstore/LoadedClass.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/emulation/NamingImpl.java",
+      "language": "java",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/TCPInputStream.java",
+      "language": "java",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/TCPOutputStream.java",
+      "language": "java",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPC.java",
+      "language": "java",
+      "sizeLines": 434,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/streams/InputStreamPortal.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/streams/OutputStreamPortal.java",
+      "language": "java",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/zero/memory/MemoryOutputStream.java",
+      "language": "java",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/java/security/CodeSource.java": [
+      "src/java/net/SocketPermission.java",
+      "src/java/net/URL.java"
+    ],
+    "src/java/security/DigestInputStream.java": [
+      "src/java/io/FilterInputStream.java",
+      "src/java/io/IOException.java"
+    ],
+    "src/java/security/DigestOutputStream.java": [
+      "src/java/io/FilterOutputStream.java",
+      "src/java/io/IOException.java"
+    ],
+    "src/java/security/Permissions.java": [
+      "src/gnu/java/security/DefaultPermissionCollection.java",
+      "src/java/util/Hashtable.java",
+      "src/java/util/NoSuchElementException.java"
+    ],
+    "src/java/security/SignedObject.java": [
+      "src/java/io/ByteArrayInputStream.java",
+      "src/java/io/ByteArrayOutputStream.java",
+      "src/java/io/IOException.java",
+      "src/java/io/ObjectInputStream.java",
+      "src/java/io/ObjectOutputStream.java"
+    ],
+    "src/java/text/ChoiceFormat.java": [
+      "src/java/util/StringTokenizer.java"
+    ],
+    "src/java/util/HashMap.java": [
+      "src/java/io/IOException.java",
+      "src/java/io/ObjectInputStream.java",
+      "src/java/io/ObjectOutputStream.java",
+      "src/jx/zero/Debug.java"
+    ],
+    "src/java/util/HashSet.java": [
+      "src/java/io/IOException.java",
+      "src/java/io/ObjectInputStream.java",
+      "src/java/io/ObjectOutputStream.java"
+    ],
+    "src/java/util/Hashtable.java": [],
+    "src/java/util/LinkedHashMap.java": [
+      "src/java/io/IOException.java"
+    ],
+    "src/java/util/NoSuchElementException.java": [],
+    "src/java/util/StringTokenizer.java": [],
+    "src/java/util/TreeMap.java": [
+      "src/java/io/IOException.java",
+      "src/java/io/ObjectInputStream.java",
+      "src/java/io/ObjectOutputStream.java",
+      "src/java/io/ObjectStreamField.java"
+    ],
+    "src/jx/InitialNaming.java": [
+      "src/java/util/Hashtable.java"
+    ],
+    "src/jx/classstore/LoadedClass.java": [
+      "src/java/util/Hashtable.java"
+    ],
+    "src/jx/emulation/NamingImpl.java": [
+      "src/java/util/HashMap.java"
+    ],
+    "src/jx/net/TCPInputStream.java": [
+      "src/java/io/IOException.java"
+    ],
+    "src/jx/net/TCPOutputStream.java": [],
+    "src/jx/rpc/RPC.java": [
+      "src/java/util/Hashtable.java",
+      "src/java/util/Vector.java"
+    ],
+    "src/jx/streams/InputStreamPortal.java": [
+      "src/java/io/IOException.java"
+    ],
+    "src/jx/streams/OutputStreamPortal.java": [
+      "src/java/io/IOException.java"
+    ],
+    "src/jx/zero/memory/MemoryOutputStream.java": [
+      "src/java/io/IOException.java"
+    ]
+  },
+  "neighborMap": {
+    "src/java/security/CodeSource.java": [
+      {
+        "path": "src/java/net/SocketPermission.java",
+        "batchIndex": 5,
+        "symbols": [
+          "SocketPermission",
+          "equals",
+          "hashCode",
+          "getActions",
+          "newPermissionCollection",
+          "implies",
+          "SocketPermission"
+        ]
+      },
+      {
+        "path": "src/java/net/URL.java",
+        "batchIndex": 5,
+        "symbols": [
+          "setURLStreamHandlerFactory",
+          "URL",
+          "URL",
+          "URL",
+          "URL",
+          "URL",
+          "URL",
+          "getProtocol",
+          "getHost",
+          "getPort",
+          "getFile",
+          "getRef",
+          "equals",
+          "sameFile",
+          "toExternalForm",
+          "toString",
+          "openConnection",
+          "openStream",
+          "getContent",
+          "hashCode",
+          "URL"
+        ]
+      }
+    ],
+    "src/java/security/DigestInputStream.java": [
+      {
+        "path": "src/java/io/FilterInputStream.java",
+        "batchIndex": 5,
+        "symbols": [
+          "available",
+          "close",
+          "mark",
+          "markSupported",
+          "read",
+          "read",
+          "read",
+          "reset",
+          "skip",
+          "FilterInputStream"
+        ]
+      },
+      {
+        "path": "src/java/io/IOException.java",
+        "batchIndex": 5,
+        "symbols": [
+          "IOException",
+          "IOException",
+          "IOException",
+          "IOException",
+          "IOException"
+        ]
+      }
+    ],
+    "src/java/security/DigestOutputStream.java": [
+      {
+        "path": "src/java/io/FilterOutputStream.java",
+        "batchIndex": 5,
+        "symbols": [
+          "FilterOutputStream",
+          "write",
+          "FilterOutputStream"
+        ]
+      },
+      {
+        "path": "src/java/io/IOException.java",
+        "batchIndex": 5,
+        "symbols": [
+          "IOException",
+          "IOException",
+          "IOException",
+          "IOException",
+          "IOException"
+        ]
+      }
+    ],
+    "src/java/security/Permissions.java": [
+      {
+        "path": "src/gnu/java/security/DefaultPermissionCollection.java",
+        "batchIndex": 5,
+        "symbols": [
+          "DefaultPermissionCollection",
+          "add",
+          "implies",
+          "elements",
+          "DefaultPermissionCollection"
+        ]
+      }
+    ],
+    "src/java/security/SignedObject.java": [
+      {
+        "path": "src/java/io/ByteArrayInputStream.java",
+        "batchIndex": 5,
+        "symbols": [
+          "ByteArrayInputStream",
+          "ByteArrayInputStream",
+          "close",
+          "available",
+          "markSupported",
+          "mark",
+          "reset",
+          "skip",
+          "read",
+          "read",
+          "ByteArrayInputStream"
+        ]
+      },
+      {
+        "path": "src/java/io/ByteArrayOutputStream.java",
+        "batchIndex": 5,
+        "symbols": [
+          "ByteArrayOutputStream",
+          "ByteArrayOutputStream",
+          "write",
+          "write",
+          "writeTo",
+          "reset",
+          "toByteArray",
+          "size",
+          "toString",
+          "toString",
+          "toString",
+          "ByteArrayOutputStream"
+        ]
+      },
+      {
+        "path": "src/java/io/IOException.java",
+        "batchIndex": 5,
+        "symbols": [
+          "IOException",
+          "IOException",
+          "IOException",
+          "IOException",
+          "IOException"
+        ]
+      },
+      {
+        "path": "src/java/io/ObjectInputStream.java",
+        "batchIndex": 5,
+        "symbols": [
+          "read",
+          "readInt",
+          "readFloat",
+          "readObject",
+          "ObjectInputStream",
+          "defaultReadObject",
+          "close",
+          "readFields",
+          "ObjectInputStream"
+        ]
+      },
+      {
+        "path": "src/java/io/ObjectOutputStream.java",
+        "batchIndex": 5,
+        "symbols": [
+          "ObjectOutputStream",
+          "writeObject",
+          "defaultWriteObject",
+          "reset",
+          "useProtocolVersion",
+          "setDefaultProtocolVersion",
+          "write",
+          "write",
+          "write",
+          "flush",
+          "close",
+          "writeBoolean",
+          "writeByte",
+          "writeShort",
+          "writeChar",
+          "writeInt",
+          "writeLong",
+          "writeFloat",
+          "writeDouble",
+          "writeBytes",
+          "writeChars",
+          "writeUTF",
+          "putFields",
+          "writeFields",
+          "ObjectOutputStream"
+        ]
+      }
+    ],
+    "src/java/util/HashMap.java": [
+      {
+        "path": "src/java/io/IOException.java",
+        "batchIndex": 5,
+        "symbols": [
+          "IOException",
+          "IOException",
+          "IOException",
+          "IOException",
+          "IOException"
+        ]
+      },
+      {
+        "path": "src/java/io/ObjectInputStream.java",
+        "batchIndex": 5,
+        "symbols": [
+          "read",
+          "readInt",
+          "readFloat",
+          "readObject",
+          "ObjectInputStream",
+          "defaultReadObject",
+          "close",
+          "readFields",
+          "ObjectInputStream"
+        ]
+      },
+      {
+        "path": "src/java/io/ObjectOutputStream.java",
+        "batchIndex": 5,
+        "symbols": [
+          "ObjectOutputStream",
+          "writeObject",
+          "defaultWriteObject",
+          "reset",
+          "useProtocolVersion",
+          "setDefaultProtocolVersion",
+          "write",
+          "write",
+          "write",
+          "flush",
+          "close",
+          "writeBoolean",
+          "writeByte",
+          "writeShort",
+          "writeChar",
+          "writeInt",
+          "writeLong",
+          "writeFloat",
+          "writeDouble",
+          "writeBytes",
+          "writeChars",
+          "writeUTF",
+          "putFields",
+          "writeFields",
+          "ObjectOutputStream"
+        ]
+      },
+      {
+        "path": "src/jx/zero/Debug.java",
+        "batchIndex": 3,
+        "symbols": [
+          "debug",
+          "in",
+          "out",
+          "err",
+          "throwError",
+          "throwError",
+          "message",
+          "verbose",
+          "check",
+          "Debug"
+        ]
+      },
+      {
+        "path": "src/java/lang/invoke/MethodType.java",
+        "batchIndex": 2,
+        "symbols": [
+          "MethodType"
+        ]
+      },
+      {
+        "path": "src/java/util/stream/Stream.java",
+        "batchIndex": 2,
+        "symbols": [
+          "Stream"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBDevice.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBDevice",
+          "getUSBBus",
+          "getUSBDeviceId",
+          "finalize",
+          "getSpeed",
+          "isLowSpeed",
+          "isFullSpeed",
+          "isHighSpeed",
+          "getMaxPacketSize",
+          "getDescriptor",
+          "getConfiguration",
+          "getString",
+          "readDescriptor",
+          "getConfiguration",
+          "setConfiguration",
+          "getStatus",
+          "setFeature",
+          "clearFeature",
+          "getDefaultControlPipe",
+          "getSupportedConfigurations",
+          "open",
+          "close",
+          "getId",
+          "USBDevice"
+        ]
+      }
+    ],
+    "src/java/util/HashSet.java": [
+      {
+        "path": "src/java/io/IOException.java",
+        "batchIndex": 5,
+        "symbols": [
+          "IOException",
+          "IOException",
+          "IOException",
+          "IOException",
+          "IOException"
+        ]
+      },
+      {
+        "path": "src/java/io/ObjectInputStream.java",
+        "batchIndex": 5,
+        "symbols": [
+          "read",
+          "readInt",
+          "readFloat",
+          "readObject",
+          "ObjectInputStream",
+          "defaultReadObject",
+          "close",
+          "readFields",
+          "ObjectInputStream"
+        ]
+      },
+      {
+        "path": "src/java/io/ObjectOutputStream.java",
+        "batchIndex": 5,
+        "symbols": [
+          "ObjectOutputStream",
+          "writeObject",
+          "defaultWriteObject",
+          "reset",
+          "useProtocolVersion",
+          "setDefaultProtocolVersion",
+          "write",
+          "write",
+          "write",
+          "flush",
+          "close",
+          "writeBoolean",
+          "writeByte",
+          "writeShort",
+          "writeChar",
+          "writeInt",
+          "writeLong",
+          "writeFloat",
+          "writeDouble",
+          "writeBytes",
+          "writeChars",
+          "writeUTF",
+          "putFields",
+          "writeFields",
+          "ObjectOutputStream"
+        ]
+      }
+    ],
+    "src/java/util/Hashtable.java": [
+      {
+        "path": "src/gnu/java/io/EncodingManager.java",
+        "batchIndex": 5,
+        "symbols": [
+          "getDecoder",
+          "getDecoder",
+          "getDecoder",
+          "getDecoder",
+          "getDecoder",
+          "getDecoder",
+          "getEncoder",
+          "getEncoder",
+          "getEncoder",
+          "getEncoder",
+          "getEncoder",
+          "getEncoder",
+          "EncodingManager"
+        ]
+      },
+      {
+        "path": "src/gnu/java/security/DefaultPermissionCollection.java",
+        "batchIndex": 5,
+        "symbols": [
+          "DefaultPermissionCollection",
+          "add",
+          "implies",
+          "elements",
+          "DefaultPermissionCollection"
+        ]
+      },
+      {
+        "path": "src/java/beans/PropertyChangeSupport.java",
+        "batchIndex": 5,
+        "symbols": [
+          "PropertyChangeSupport",
+          "addPropertyChangeListener",
+          "addPropertyChangeListener",
+          "removePropertyChangeListener",
+          "removePropertyChangeListener",
+          "firePropertyChange",
+          "firePropertyChange",
+          "firePropertyChange",
+          "firePropertyChange",
+          "hasListeners",
+          "PropertyChangeSupport"
+        ]
+      },
+      {
+        "path": "src/java/beans/VetoableChangeSupport.java",
+        "batchIndex": 5,
+        "symbols": [
+          "VetoableChangeSupport",
+          "addVetoableChangeListener",
+          "addVetoableChangeListener",
+          "removeVetoableChangeListener",
+          "removeVetoableChangeListener",
+          "fireVetoableChange",
+          "fireVetoableChange",
+          "fireVetoableChange",
+          "fireVetoableChange",
+          "hasListeners",
+          "VetoableChangeSupport"
+        ]
+      },
+      {
+        "path": "src/java/io/ObjectOutputStream.java",
+        "batchIndex": 5,
+        "symbols": [
+          "ObjectOutputStream",
+          "writeObject",
+          "defaultWriteObject",
+          "reset",
+          "useProtocolVersion",
+          "setDefaultProtocolVersion",
+          "write",
+          "write",
+          "write",
+          "flush",
+          "close",
+          "writeBoolean",
+          "writeByte",
+          "writeShort",
+          "writeChar",
+          "writeInt",
+          "writeLong",
+          "writeFloat",
+          "writeDouble",
+          "writeBytes",
+          "writeChars",
+          "writeUTF",
+          "putFields",
+          "writeFields",
+          "ObjectOutputStream"
+        ]
+      },
+      {
+        "path": "src/java/io/SerializablePermission.java",
+        "batchIndex": 5,
+        "symbols": [
+          "SerializablePermission",
+          "SerializablePermission",
+          "SerializablePermission"
+        ]
+      },
+      {
+        "path": "src/java/net/MimeTypeMapper.java",
+        "batchIndex": 5,
+        "symbols": [
+          "MimeTypeMapper",
+          "getContentTypeFor"
+        ]
+      },
+      {
+        "path": "src/java/net/URL.java",
+        "batchIndex": 5,
+        "symbols": [
+          "setURLStreamHandlerFactory",
+          "URL",
+          "URL",
+          "URL",
+          "URL",
+          "URL",
+          "URL",
+          "getProtocol",
+          "getHost",
+          "getPort",
+          "getFile",
+          "getRef",
+          "equals",
+          "sameFile",
+          "toExternalForm",
+          "toString",
+          "openConnection",
+          "openStream",
+          "getContent",
+          "hashCode",
+          "URL"
+        ]
+      },
+      {
+        "path": "src/java/net/URLConnection.java",
+        "batchIndex": 4,
+        "symbols": [
+          "setContentHandlerFactory",
+          "getDefaultAllowUserInteraction",
+          "setDefaultAllowUserInteraction",
+          "getDefaultRequestProperty",
+          "setDefaultRequestProperty",
+          "guessContentTypeFromStream",
+          "getFileNameMap",
+          "setFileNameMap",
+          "getDefaultUseCaches",
+          "setDefaultUseCaches",
+          "getAllowUserInteraction",
+          "setAllowUserInteraction",
+          "getDoInput",
+          "setDoInput",
+          "getDoOutput",
+          "setDoOutput",
+          "getUseCaches",
+          "setUseCaches",
+          "getIfModifiedSince",
+          "setIfModifiedSince",
+          "getRequestProperty",
+          "setRequestProperty",
+          "getURL",
+          "connect",
+          "getInputStream",
+          "getOutputStream",
+          "getContentEncoding",
+          "getContentLength",
+          "getContentType",
+          "getDate",
+          "getExpiration",
+          "getLastModified",
+          "getHeaderFieldKey",
+          "getHeaderField",
+          "getHeaderField",
+          "getHeaderFieldDate",
+          "getHeaderFieldInt",
+          "getPermission",
+          "getContent",
+          "toString",
+          "URLConnection"
+        ]
+      }
+    ],
+    "src/java/util/LinkedHashMap.java": [
+      {
+        "path": "src/java/io/IOException.java",
+        "batchIndex": 5,
+        "symbols": [
+          "IOException",
+          "IOException",
+          "IOException",
+          "IOException",
+          "IOException"
+        ]
+      }
+    ],
+    "src/java/util/StringTokenizer.java": [
+      {
+        "path": "src/gnu/java/io/EncodingManager.java",
+        "batchIndex": 5,
+        "symbols": [
+          "getDecoder",
+          "getDecoder",
+          "getDecoder",
+          "getDecoder",
+          "getDecoder",
+          "getDecoder",
+          "getEncoder",
+          "getEncoder",
+          "getEncoder",
+          "getEncoder",
+          "getEncoder",
+          "getEncoder",
+          "EncodingManager"
+        ]
+      },
+      {
+        "path": "src/java/io/SerializablePermission.java",
+        "batchIndex": 5,
+        "symbols": [
+          "SerializablePermission",
+          "SerializablePermission",
+          "SerializablePermission"
+        ]
+      },
+      {
+        "path": "src/java/net/URL.java",
+        "batchIndex": 5,
+        "symbols": [
+          "setURLStreamHandlerFactory",
+          "URL",
+          "URL",
+          "URL",
+          "URL",
+          "URL",
+          "URL",
+          "getProtocol",
+          "getHost",
+          "getPort",
+          "getFile",
+          "getRef",
+          "equals",
+          "sameFile",
+          "toExternalForm",
+          "toString",
+          "openConnection",
+          "openStream",
+          "getContent",
+          "hashCode",
+          "URL"
+        ]
+      },
+      {
+        "path": "src/java/sql/DriverManager.java",
+        "batchIndex": 12,
+        "symbols": [
+          "getLoginTimeout",
+          "setLoginTimeout",
+          "getLogWriter",
+          "setLogWriter",
+          "getLogStream",
+          "setLogStream",
+          "println",
+          "registerDriver",
+          "deregisterDriver",
+          "getDrivers",
+          "getDriver",
+          "getConnection",
+          "getConnection",
+          "getConnection",
+          "DriverManager"
+        ]
+      }
+    ],
+    "src/java/util/TreeMap.java": [
+      {
+        "path": "src/java/io/IOException.java",
+        "batchIndex": 5,
+        "symbols": [
+          "IOException",
+          "IOException",
+          "IOException",
+          "IOException",
+          "IOException"
+        ]
+      },
+      {
+        "path": "src/java/io/ObjectInputStream.java",
+        "batchIndex": 5,
+        "symbols": [
+          "read",
+          "readInt",
+          "readFloat",
+          "readObject",
+          "ObjectInputStream",
+          "defaultReadObject",
+          "close",
+          "readFields",
+          "ObjectInputStream"
+        ]
+      },
+      {
+        "path": "src/java/io/ObjectOutputStream.java",
+        "batchIndex": 5,
+        "symbols": [
+          "ObjectOutputStream",
+          "writeObject",
+          "defaultWriteObject",
+          "reset",
+          "useProtocolVersion",
+          "setDefaultProtocolVersion",
+          "write",
+          "write",
+          "write",
+          "flush",
+          "close",
+          "writeBoolean",
+          "writeByte",
+          "writeShort",
+          "writeChar",
+          "writeInt",
+          "writeLong",
+          "writeFloat",
+          "writeDouble",
+          "writeBytes",
+          "writeChars",
+          "writeUTF",
+          "putFields",
+          "writeFields",
+          "ObjectOutputStream"
+        ]
+      },
+      {
+        "path": "src/java/io/ObjectStreamField.java",
+        "batchIndex": 2,
+        "symbols": [
+          "ObjectStreamField",
+          "ObjectStreamField",
+          "getName",
+          "getTypeCode",
+          "getTypeString",
+          "getOffset",
+          "isPrimitive",
+          "isUnshared",
+          "compareTo",
+          "toString",
+          "ObjectStreamField"
+        ]
+      }
+    ],
+    "src/jx/net/TCPInputStream.java": [
+      {
+        "path": "src/java/io/IOException.java",
+        "batchIndex": 5,
+        "symbols": [
+          "IOException",
+          "IOException",
+          "IOException",
+          "IOException",
+          "IOException"
+        ]
+      },
+      {
+        "path": "src/java/net/Socket.java",
+        "batchIndex": 5,
+        "symbols": [
+          "Socket",
+          "Socket",
+          "Socket",
+          "getOutputStream",
+          "getInputStream",
+          "getRemoteAddress",
+          "getRemotePort",
+          "close",
+          "setSoTimeout",
+          "Socket"
+        ]
+      }
+    ],
+    "src/jx/net/TCPOutputStream.java": [
+      {
+        "path": "src/java/net/Socket.java",
+        "batchIndex": 5,
+        "symbols": [
+          "Socket",
+          "Socket",
+          "Socket",
+          "getOutputStream",
+          "getInputStream",
+          "getRemoteAddress",
+          "getRemotePort",
+          "close",
+          "setSoTimeout",
+          "Socket"
+        ]
+      }
+    ],
+    "src/jx/rpc/RPC.java": [
+      {
+        "path": "src/java/util/Vector.java",
+        "batchIndex": 11,
+        "symbols": [
+          "hasMoreElements",
+          "nextElement",
+          "Vector",
+          "Vector",
+          "Vector",
+          "capacity",
+          "clone",
+          "trimToSize",
+          "addElement",
+          "insertElementAt",
+          "size",
+          "isEmpty",
+          "firstElement",
+          "lastElement",
+          "elementAt",
+          "elements",
+          "indexOf",
+          "indexOf",
+          "contains",
+          "lastIndexOf",
+          "lastIndexOf",
+          "removeAllElements",
+          "clear",
+          "removeElementAt",
+          "removeElement",
+          "copyInto",
+          "remove",
+          "setElementAt",
+          "setSize",
+          "toString",
+          "toArray",
+          "remove",
+          "get",
+          "listIterator",
+          "listIterator",
+          "add",
+          "set",
+          "subList",
+          "toArray",
+          "addAll",
+          "Vector"
+        ]
+      }
+    ],
+    "src/jx/streams/InputStreamPortal.java": [
+      {
+        "path": "src/java/io/IOException.java",
+        "batchIndex": 5,
+        "symbols": [
+          "IOException",
+          "IOException",
+          "IOException",
+          "IOException",
+          "IOException"
+        ]
+      }
+    ],
+    "src/jx/streams/OutputStreamPortal.java": [
+      {
+        "path": "src/java/io/IOException.java",
+        "batchIndex": 5,
+        "symbols": [
+          "IOException",
+          "IOException",
+          "IOException",
+          "IOException",
+          "IOException"
+        ]
+      }
+    ],
+    "src/jx/zero/memory/MemoryOutputStream.java": [
+      {
+        "path": "src/java/io/IOException.java",
+        "batchIndex": 5,
+        "symbols": [
+          "IOException",
+          "IOException",
+          "IOException",
+          "IOException",
+          "IOException"
+        ]
+      }
+    ]
+  }
+}

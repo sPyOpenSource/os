@@ -1,0 +1,171 @@
+{
+  "batchIndex": 16,
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "0272f25ed41ee53e",
+      "type": "file",
+      "name": "Math.java",
+      "filePath": "src/java/lang/Math.java",
+      "language": "java",
+      "totalLines": 319,
+      "nonEmptyLines": 269,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 34,
+        "functionCount": 31,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "9207d90629a43801",
+      "type": "file",
+      "name": "SecureRandom.java",
+      "filePath": "src/java/security/SecureRandom.java",
+      "language": "java",
+      "totalLines": 318,
+      "nonEmptyLines": 253,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 11,
+        "functionCount": 12,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "1a41abe31573c944",
+      "type": "file",
+      "name": "Random.java",
+      "filePath": "src/java/util/Random.java",
+      "language": "java",
+      "totalLines": 379,
+      "nonEmptyLines": 358,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 12,
+        "functionCount": 12,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "351a7c8e633d93da",
+      "type": "class",
+      "name": "Math",
+      "filePath": "src/java/lang/Math.java",
+      "startLine": 5,
+      "endLine": 318,
+      "methods": [
+        "floor",
+        "ceil",
+        "rint",
+        "round",
+        "round",
+        "random",
+        "abs",
+        "abs",
+        "abs",
+        "abs",
+        "min",
+        "min",
+        "min",
+        "min",
+        "max",
+        "max",
+        "max",
+        "max",
+        "IEEEremainder",
+        "exp",
+        "pow",
+        "sqrt",
+        "sin",
+        "cos",
+        "tan",
+        "log",
+        "asin",
+        "acos",
+        "atan",
+        "atan2",
+        "addExact"
+      ],
+      "properties": [
+        "random",
+        "E",
+        "PI"
+      ]
+    },
+    {
+      "id": "0782f164178d7455",
+      "type": "class",
+      "name": "SecureRandom",
+      "filePath": "src/java/security/SecureRandom.java",
+      "startLine": 41,
+      "endLine": 318,
+      "methods": [
+        "SecureRandom",
+        "SecureRandom",
+        "SecureRandom",
+        "getInstance",
+        "getInstance",
+        "getProvider",
+        "setSeed",
+        "setSeed",
+        "nextBytes",
+        "next",
+        "getSeed",
+        "generateSeed"
+      ],
+      "properties": [
+        "counter",
+        "digest",
+        "provider",
+        "randomBytes",
+        "randomBytesUsed",
+        "secureRandomSpi",
+        "state"
+      ]
+    },
+    {
+      "id": "35a0feb5074e8501",
+      "type": "class",
+      "name": "Random",
+      "filePath": "src/java/util/Random.java",
+      "startLine": 59,
+      "endLine": 379,
+      "methods": [
+        "Random",
+        "Random",
+        "setSeed",
+        "next",
+        "nextBytes",
+        "nextInt",
+        "nextInt",
+        "nextLong",
+        "nextBoolean",
+        "nextFloat",
+        "nextDouble",
+        "nextGaussian"
+      ],
+      "properties": [
+        "haveNextNextGaussian",
+        "nextNextGaussian",
+        "seed",
+        "serialVersionUID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "0272f25ed41ee53e",
+      "target": "1a41abe31573c944",
+      "type": "imports"
+    },
+    {
+      "source": "9207d90629a43801",
+      "target": "1a41abe31573c944",
+      "type": "imports"
+    }
+  ]
+}

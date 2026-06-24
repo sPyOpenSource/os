@@ -1,0 +1,1370 @@
+{
+  "schemaVersion": 1,
+  "batchIndex": 1,
+  "part": 3,
+  "nodes": [
+    {
+      "id": "cls:src/jx/bio/buffercache/BufferHead.java:BufferHead",
+      "type": "class",
+      "label": "BufferHead",
+      "properties": {
+        "path": "src/jx/bio/buffercache/BufferHead.java",
+        "name": "BufferHead",
+        "startLine": 6,
+        "endLine": 198,
+        "numMethods": 24
+      }
+    },
+    {
+      "id": "cls:src/jx/classfile/CodeData.java:CodeData",
+      "type": "class",
+      "label": "CodeData",
+      "properties": {
+        "path": "src/jx/classfile/CodeData.java",
+        "name": "CodeData",
+        "startLine": 13,
+        "endLine": 125,
+        "numMethods": 17
+      }
+    },
+    {
+      "id": "cls:src/jx/classfile/ExceptionHandlerData.java:ExceptionHandlerData",
+      "type": "class",
+      "label": "ExceptionHandlerData",
+      "properties": {
+        "path": "src/jx/classfile/ExceptionHandlerData.java",
+        "name": "ExceptionHandlerData",
+        "startLine": 14,
+        "endLine": 55,
+        "numMethods": 10
+      }
+    },
+    {
+      "id": "file:src/jx/bio/buffercache/BufferHead.java",
+      "type": "file",
+      "label": "BufferHead.java",
+      "properties": {
+        "path": "src/jx/bio/buffercache/BufferHead.java",
+        "language": "java",
+        "sizeLines": 198,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/jx/classfile/CodeData.java",
+      "type": "file",
+      "label": "CodeData.java",
+      "properties": {
+        "path": "src/jx/classfile/CodeData.java",
+        "language": "java",
+        "sizeLines": 125,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/jx/classfile/ExceptionHandlerData.java",
+      "type": "file",
+      "label": "ExceptionHandlerData.java",
+      "properties": {
+        "path": "src/jx/classfile/ExceptionHandlerData.java",
+        "language": "java",
+        "sizeLines": 55,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "fn:src/jx/bio/buffercache/BufferHead.java:BufferHead",
+      "type": "function",
+      "label": "BufferHead",
+      "properties": {
+        "path": "src/jx/bio/buffercache/BufferHead.java",
+        "name": "BufferHead",
+        "startLine": 27,
+        "endLine": 35,
+        "params": [
+          "memMgr",
+          "block",
+          "size"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/bio/buffercache/BufferHead.java:clear",
+      "type": "function",
+      "label": "clear",
+      "properties": {
+        "path": "src/jx/bio/buffercache/BufferHead.java",
+        "name": "clear",
+        "startLine": 161,
+        "endLine": 167,
+        "params": [
+          "from",
+          "to"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/bio/buffercache/BufferHead.java:dirty",
+      "type": "function",
+      "label": "dirty",
+      "properties": {
+        "path": "src/jx/bio/buffercache/BufferHead.java",
+        "name": "dirty",
+        "startLine": 59,
+        "endLine": 60,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/bio/buffercache/BufferHead.java:endIo",
+      "type": "function",
+      "label": "endIo",
+      "properties": {
+        "path": "src/jx/bio/buffercache/BufferHead.java",
+        "name": "endIo",
+        "startLine": 133,
+        "endLine": 141,
+        "params": [
+          "error",
+          "synchronous"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/bio/buffercache/BufferHead.java:getBlock",
+      "type": "function",
+      "label": "getBlock",
+      "properties": {
+        "path": "src/jx/bio/buffercache/BufferHead.java",
+        "name": "getBlock",
+        "startLine": 37,
+        "endLine": 38,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/bio/buffercache/BufferHead.java:getSize",
+      "type": "function",
+      "label": "getSize",
+      "properties": {
+        "path": "src/jx/bio/buffercache/BufferHead.java",
+        "name": "getSize",
+        "startLine": 40,
+        "endLine": 41,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/bio/buffercache/BufferHead.java:init",
+      "type": "function",
+      "label": "init",
+      "properties": {
+        "path": "src/jx/bio/buffercache/BufferHead.java",
+        "name": "init",
+        "startLine": 170,
+        "endLine": 179,
+        "params": [
+          "block"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/bio/buffercache/BufferHead.java:isDirty",
+      "type": "function",
+      "label": "isDirty",
+      "properties": {
+        "path": "src/jx/bio/buffercache/BufferHead.java",
+        "name": "isDirty",
+        "startLine": 61,
+        "endLine": 62,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/bio/buffercache/BufferHead.java:isInFreeList",
+      "type": "function",
+      "label": "isInFreeList",
+      "properties": {
+        "path": "src/jx/bio/buffercache/BufferHead.java",
+        "name": "isInFreeList",
+        "startLine": 196,
+        "endLine": 197,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/bio/buffercache/BufferHead.java:isLocked",
+      "type": "function",
+      "label": "isLocked",
+      "properties": {
+        "path": "src/jx/bio/buffercache/BufferHead.java",
+        "name": "isLocked",
+        "startLine": 81,
+        "endLine": 82,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/bio/buffercache/BufferHead.java:isUptodate",
+      "type": "function",
+      "label": "isUptodate",
+      "properties": {
+        "path": "src/jx/bio/buffercache/BufferHead.java",
+        "name": "isUptodate",
+        "startLine": 110,
+        "endLine": 111,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/bio/buffercache/BufferHead.java:isUsed",
+      "type": "function",
+      "label": "isUsed",
+      "properties": {
+        "path": "src/jx/bio/buffercache/BufferHead.java",
+        "name": "isUsed",
+        "startLine": 190,
+        "endLine": 191,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/bio/buffercache/BufferHead.java:isUsedOnlyByMe",
+      "type": "function",
+      "label": "isUsedOnlyByMe",
+      "properties": {
+        "path": "src/jx/bio/buffercache/BufferHead.java",
+        "name": "isUsedOnlyByMe",
+        "startLine": 192,
+        "endLine": 193,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/bio/buffercache/BufferHead.java:lock",
+      "type": "function",
+      "label": "lock",
+      "properties": {
+        "path": "src/jx/bio/buffercache/BufferHead.java",
+        "name": "lock",
+        "startLine": 71,
+        "endLine": 72,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/bio/buffercache/BufferHead.java:markClean",
+      "type": "function",
+      "label": "markClean",
+      "properties": {
+        "path": "src/jx/bio/buffercache/BufferHead.java",
+        "name": "markClean",
+        "startLine": 51,
+        "endLine": 52,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/bio/buffercache/BufferHead.java:markDirty",
+      "type": "function",
+      "label": "markDirty",
+      "properties": {
+        "path": "src/jx/bio/buffercache/BufferHead.java",
+        "name": "markDirty",
+        "startLine": 48,
+        "endLine": 49,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/bio/buffercache/BufferHead.java:markUptodate",
+      "type": "function",
+      "label": "markUptodate",
+      "properties": {
+        "path": "src/jx/bio/buffercache/BufferHead.java",
+        "name": "markUptodate",
+        "startLine": 101,
+        "endLine": 102,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/bio/buffercache/BufferHead.java:ref",
+      "type": "function",
+      "label": "ref",
+      "properties": {
+        "path": "src/jx/bio/buffercache/BufferHead.java",
+        "name": "ref",
+        "startLine": 181,
+        "endLine": 182,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/bio/buffercache/BufferHead.java:unlock",
+      "type": "function",
+      "label": "unlock",
+      "properties": {
+        "path": "src/jx/bio/buffercache/BufferHead.java",
+        "name": "unlock",
+        "startLine": 73,
+        "endLine": 74,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/bio/buffercache/BufferHead.java:waitOn",
+      "type": "function",
+      "label": "waitOn",
+      "properties": {
+        "path": "src/jx/bio/buffercache/BufferHead.java",
+        "name": "waitOn",
+        "startLine": 116,
+        "endLine": 125,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/bio/buffercache/BufferHead.java:waitUntilUnlocked",
+      "type": "function",
+      "label": "waitUntilUnlocked",
+      "properties": {
+        "path": "src/jx/bio/buffercache/BufferHead.java",
+        "name": "waitUntilUnlocked",
+        "startLine": 85,
+        "endLine": 92,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/CodeData.java:CodeData",
+      "type": "function",
+      "label": "CodeData",
+      "properties": {
+        "path": "src/jx/classfile/CodeData.java",
+        "name": "CodeData",
+        "startLine": 36,
+        "endLine": 53,
+        "params": [
+          "maxStack",
+          "maxLocals",
+          "codeBytes",
+          "exceptionHandler",
+          "lineNumberTable"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/CodeData.java:copy",
+      "type": "function",
+      "label": "copy",
+      "properties": {
+        "path": "src/jx/classfile/CodeData.java",
+        "name": "copy",
+        "startLine": 55,
+        "endLine": 58,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/CodeData.java:getBytecode",
+      "type": "function",
+      "label": "getBytecode",
+      "properties": {
+        "path": "src/jx/classfile/CodeData.java",
+        "name": "getBytecode",
+        "startLine": 63,
+        "endLine": 63,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/CodeData.java:getBytecodeLength",
+      "type": "function",
+      "label": "getBytecodeLength",
+      "properties": {
+        "path": "src/jx/classfile/CodeData.java",
+        "name": "getBytecodeLength",
+        "startLine": 65,
+        "endLine": 65,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/CodeData.java:getDescription",
+      "type": "function",
+      "label": "getDescription",
+      "properties": {
+        "path": "src/jx/classfile/CodeData.java",
+        "name": "getDescription",
+        "startLine": 121,
+        "endLine": 123,
+        "params": [
+          "cPool"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/CodeData.java:getExceptionHandlers",
+      "type": "function",
+      "label": "getExceptionHandlers",
+      "properties": {
+        "path": "src/jx/classfile/CodeData.java",
+        "name": "getExceptionHandlers",
+        "startLine": 69,
+        "endLine": 72,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/CodeData.java:getLineNumberTable",
+      "type": "function",
+      "label": "getLineNumberTable",
+      "properties": {
+        "path": "src/jx/classfile/CodeData.java",
+        "name": "getLineNumberTable",
+        "startLine": 67,
+        "endLine": 67,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/CodeData.java:getNumLocalVariables",
+      "type": "function",
+      "label": "getNumLocalVariables",
+      "properties": {
+        "path": "src/jx/classfile/CodeData.java",
+        "name": "getNumLocalVariables",
+        "startLine": 61,
+        "endLine": 61,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/CodeData.java:getNumStackSlots",
+      "type": "function",
+      "label": "getNumStackSlots",
+      "properties": {
+        "path": "src/jx/classfile/CodeData.java",
+        "name": "getNumStackSlots",
+        "startLine": 60,
+        "endLine": 60,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/CodeData.java:increaseMaxLocals",
+      "type": "function",
+      "label": "increaseMaxLocals",
+      "properties": {
+        "path": "src/jx/classfile/CodeData.java",
+        "name": "increaseMaxLocals",
+        "startLine": 24,
+        "endLine": 24,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/CodeData.java:increaseMaxStack",
+      "type": "function",
+      "label": "increaseMaxStack",
+      "properties": {
+        "path": "src/jx/classfile/CodeData.java",
+        "name": "increaseMaxStack",
+        "startLine": 25,
+        "endLine": 25,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/CodeData.java:readAttribute",
+      "type": "function",
+      "label": "readAttribute",
+      "properties": {
+        "path": "src/jx/classfile/CodeData.java",
+        "name": "readAttribute",
+        "startLine": 98,
+        "endLine": 112,
+        "params": [
+          "input",
+          "cPool"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/CodeData.java:readFromClassFile",
+      "type": "function",
+      "label": "readFromClassFile",
+      "properties": {
+        "path": "src/jx/classfile/CodeData.java",
+        "name": "readFromClassFile",
+        "startLine": 74,
+        "endLine": 96,
+        "params": [
+          "input",
+          "cPool"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/CodeData.java:setCodeBytes",
+      "type": "function",
+      "label": "setCodeBytes",
+      "properties": {
+        "path": "src/jx/classfile/CodeData.java",
+        "name": "setCodeBytes",
+        "startLine": 27,
+        "endLine": 27,
+        "params": [
+          "newCode"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/CodeData.java:toString",
+      "type": "function",
+      "label": "toString",
+      "properties": {
+        "path": "src/jx/classfile/CodeData.java",
+        "name": "toString",
+        "startLine": 114,
+        "endLine": 119,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ExceptionHandlerData.java:ExceptionHandlerData",
+      "type": "function",
+      "label": "ExceptionHandlerData",
+      "properties": {
+        "path": "src/jx/classfile/ExceptionHandlerData.java",
+        "name": "ExceptionHandlerData",
+        "startLine": 27,
+        "endLine": 33,
+        "params": [
+          "startBCIndex",
+          "endBCIndex",
+          "handlerBCIndex",
+          "catchTypeCPIndex"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ExceptionHandlerData.java:copy",
+      "type": "function",
+      "label": "copy",
+      "properties": {
+        "path": "src/jx/classfile/ExceptionHandlerData.java",
+        "name": "copy",
+        "startLine": 35,
+        "endLine": 38,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ExceptionHandlerData.java:getCatchTypeCPIndex",
+      "type": "function",
+      "label": "getCatchTypeCPIndex",
+      "properties": {
+        "path": "src/jx/classfile/ExceptionHandlerData.java",
+        "name": "getCatchTypeCPIndex",
+        "startLine": 42,
+        "endLine": 42,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ExceptionHandlerData.java:getEndBCIndex",
+      "type": "function",
+      "label": "getEndBCIndex",
+      "properties": {
+        "path": "src/jx/classfile/ExceptionHandlerData.java",
+        "name": "getEndBCIndex",
+        "startLine": 40,
+        "endLine": 40,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ExceptionHandlerData.java:getHandlerBCIndex",
+      "type": "function",
+      "label": "getHandlerBCIndex",
+      "properties": {
+        "path": "src/jx/classfile/ExceptionHandlerData.java",
+        "name": "getHandlerBCIndex",
+        "startLine": 41,
+        "endLine": 41,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ExceptionHandlerData.java:getStartBCIndex",
+      "type": "function",
+      "label": "getStartBCIndex",
+      "properties": {
+        "path": "src/jx/classfile/ExceptionHandlerData.java",
+        "name": "getStartBCIndex",
+        "startLine": 39,
+        "endLine": 39,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ExceptionHandlerData.java:readFromClassFile",
+      "type": "function",
+      "label": "readFromClassFile",
+      "properties": {
+        "path": "src/jx/classfile/ExceptionHandlerData.java",
+        "name": "readFromClassFile",
+        "startLine": 44,
+        "endLine": 50,
+        "params": [
+          "input",
+          "cPool"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/ExceptionHandlerData.java:toString",
+      "type": "function",
+      "label": "toString",
+      "properties": {
+        "path": "src/jx/classfile/ExceptionHandlerData.java",
+        "name": "toString",
+        "startLine": 52,
+        "endLine": 54,
+        "params": []
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "cls:src/jx/bio/buffercache/BufferHead.java:BufferHead",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "cls:src/jx/bio/buffercache/BufferHead.java:BufferHead",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:BufferHead",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:BufferHead",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:getBlock",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:getBlock",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:getSize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:getSize",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:markDirty",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:markDirty",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:markClean",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:markClean",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:dirty",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:dirty",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:isDirty",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:isDirty",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:lock",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:lock",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:unlock",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:unlock",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:isLocked",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:isLocked",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:waitUntilUnlocked",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:waitUntilUnlocked",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:markUptodate",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:markUptodate",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:isUptodate",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:isUptodate",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:waitOn",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:waitOn",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:endIo",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:endIo",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:clear",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:clear",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:clear",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:clear",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:ref",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:ref",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:isUsed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:isUsed",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:isUsedOnlyByMe",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:isUsedOnlyByMe",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:isInFreeList",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:isInFreeList",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "cls:src/jx/classfile/CodeData.java:CodeData",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "cls:src/jx/classfile/CodeData.java:CodeData",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:increaseMaxLocals",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:increaseMaxLocals",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:increaseMaxStack",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:increaseMaxStack",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:setCodeBytes",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:setCodeBytes",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:CodeData",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:CodeData",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:CodeData",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:CodeData",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:CodeData",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:CodeData",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:copy",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:copy",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:getNumStackSlots",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:getNumStackSlots",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:getNumLocalVariables",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:getNumLocalVariables",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:getBytecode",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:getBytecode",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:getBytecodeLength",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:getBytecodeLength",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:getLineNumberTable",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:getLineNumberTable",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:getExceptionHandlers",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:getExceptionHandlers",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:readFromClassFile",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:readFromClassFile",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:readAttribute",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:toString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:toString",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:getDescription",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "fn:src/jx/classfile/CodeData.java:getDescription",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/CodeData.java:CodeData",
+      "target": "fn:src/jx/classfile/CodeData.java:readFromClassFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/CodeData.java:readFromClassFile",
+      "target": "fn:src/jx/classfile/CodeData.java:readAttribute",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/CodeData.java:getDescription",
+      "target": "fn:src/jx/classfile/CodeData.java:toString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ExceptionHandlerData.java",
+      "target": "cls:src/jx/classfile/ExceptionHandlerData.java:ExceptionHandlerData",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ExceptionHandlerData.java",
+      "target": "cls:src/jx/classfile/ExceptionHandlerData.java:ExceptionHandlerData",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ExceptionHandlerData.java",
+      "target": "fn:src/jx/classfile/ExceptionHandlerData.java:ExceptionHandlerData",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ExceptionHandlerData.java",
+      "target": "fn:src/jx/classfile/ExceptionHandlerData.java:ExceptionHandlerData",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ExceptionHandlerData.java",
+      "target": "fn:src/jx/classfile/ExceptionHandlerData.java:ExceptionHandlerData",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ExceptionHandlerData.java",
+      "target": "fn:src/jx/classfile/ExceptionHandlerData.java:ExceptionHandlerData",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ExceptionHandlerData.java",
+      "target": "fn:src/jx/classfile/ExceptionHandlerData.java:ExceptionHandlerData",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ExceptionHandlerData.java",
+      "target": "fn:src/jx/classfile/ExceptionHandlerData.java:ExceptionHandlerData",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ExceptionHandlerData.java",
+      "target": "fn:src/jx/classfile/ExceptionHandlerData.java:copy",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ExceptionHandlerData.java",
+      "target": "fn:src/jx/classfile/ExceptionHandlerData.java:copy",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ExceptionHandlerData.java",
+      "target": "fn:src/jx/classfile/ExceptionHandlerData.java:getStartBCIndex",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ExceptionHandlerData.java",
+      "target": "fn:src/jx/classfile/ExceptionHandlerData.java:getStartBCIndex",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ExceptionHandlerData.java",
+      "target": "fn:src/jx/classfile/ExceptionHandlerData.java:getEndBCIndex",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ExceptionHandlerData.java",
+      "target": "fn:src/jx/classfile/ExceptionHandlerData.java:getEndBCIndex",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ExceptionHandlerData.java",
+      "target": "fn:src/jx/classfile/ExceptionHandlerData.java:getHandlerBCIndex",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ExceptionHandlerData.java",
+      "target": "fn:src/jx/classfile/ExceptionHandlerData.java:getHandlerBCIndex",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ExceptionHandlerData.java",
+      "target": "fn:src/jx/classfile/ExceptionHandlerData.java:getCatchTypeCPIndex",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ExceptionHandlerData.java",
+      "target": "fn:src/jx/classfile/ExceptionHandlerData.java:getCatchTypeCPIndex",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ExceptionHandlerData.java",
+      "target": "fn:src/jx/classfile/ExceptionHandlerData.java:readFromClassFile",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ExceptionHandlerData.java",
+      "target": "fn:src/jx/classfile/ExceptionHandlerData.java:readFromClassFile",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/ExceptionHandlerData.java",
+      "target": "fn:src/jx/classfile/ExceptionHandlerData.java:toString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/ExceptionHandlerData.java",
+      "target": "fn:src/jx/classfile/ExceptionHandlerData.java:toString",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/ExceptionHandlerData.java:ExceptionHandlerData",
+      "target": "fn:src/jx/classfile/ExceptionHandlerData.java:readFromClassFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/bio/buffercache/BufferHead.java",
+      "target": "file:src/jx/zero/Debug.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "fn:src/jx/bio/buffercache/BufferHead.java:BufferHead",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:memMgr.allocAligned",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/bio/buffercache/BufferHead.java:BufferHead",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:new Error",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/bio/buffercache/BufferHead.java:waitUntilUnlocked",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:new Error",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/bio/buffercache/BufferHead.java:waitOn",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:Debug.out.println",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/bio/buffercache/BufferHead.java:waitOn",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:((CPUManager)InitialNaming.getInitialNaming().lookup(\"CPUManager\")).block",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/bio/buffercache/BufferHead.java:waitOn",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:InitialNaming.getInitialNaming().lookup",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/bio/buffercache/BufferHead.java:waitOn",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:InitialNaming.getInitialNaming",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/bio/buffercache/BufferHead.java:endIo",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:new Error",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/bio/buffercache/BufferHead.java:clear",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:data.clear",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/bio/buffercache/BufferHead.java:clear",
+      "target": "fn:src/jx/bio/buffercache/BufferHead.java:data.set8",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/CodeData.java",
+      "target": "file:src/jx/zero/Debug.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "fn:src/jx/classfile/CodeData.java:CodeData",
+      "target": "fn:src/jx/classfile/CodeData.java:exceptionHandler[i].copy",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/CodeData.java:CodeData",
+      "target": "fn:src/jx/classfile/CodeData.java:lineNumberTable[i].copy",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ],
+  "metadata": {
+    "totalNodesInPart": 50,
+    "totalEdgesInPart": 120,
+    "algorithm": "file-analyzer"
+  }
+}

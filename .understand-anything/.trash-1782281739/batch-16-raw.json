@@ -1,0 +1,32 @@
+{
+  "batchIndex": 16,
+  "files": [
+    {
+      "path": "src/java/lang/Math.java",
+      "language": "java",
+      "sizeLines": 319,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/security/SecureRandom.java",
+      "language": "java",
+      "sizeLines": 318,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/Random.java",
+      "language": "java",
+      "sizeLines": 379,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/java/lang/Math.java": [
+      "src/java/util/Random.java"
+    ],
+    "src/java/security/SecureRandom.java": [
+      "src/java/util/Random.java"
+    ],
+    "src/java/util/Random.java": []
+  }
+}

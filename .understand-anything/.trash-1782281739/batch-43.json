@@ -1,0 +1,6361 @@
+{
+  "batchIndex": 43,
+  "nodes": [
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation1.java::class::SoftwareInformation1",
+      "type": "class",
+      "label": "SoftwareInformation1",
+      "properties": {
+        "startLine": 3,
+        "endLine": 43,
+        "methods": [
+          "SoftwareInformation1",
+          "set_OptimizeFor",
+          "set_LinkBeatDisable",
+          "set_FullDuplexMode",
+          "get_OptimizeFor",
+          "get_LinkBeatDisable",
+          "get_FullDuplexMode"
+        ],
+        "properties": [
+          "EEPROM_OPTIMIZE_NORMAL",
+          "EEPROM_OPTIMIZE_FOR_THROUGHPUT",
+          "EEPROM_OPTIMIZE_FOR_CPU",
+          "EEPROM_DISABLE_FULL_DUPLEX",
+          "EEPROM_ENABLE_FULL_DUPLEX",
+          "Reserved1",
+          "OptimizeFor",
+          "Reserved2",
+          "LinkBeatDisable",
+          "FullDuplexMode"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation1.java::func::SoftwareInformation1",
+      "type": "function",
+      "label": "SoftwareInformation1",
+      "properties": {
+        "startLine": 17,
+        "endLine": 21,
+        "params": [
+          "optimizefor",
+          "linkbeatdisable",
+          "fullduplexmode"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation1.java::func::set_OptimizeFor",
+      "type": "function",
+      "label": "set_OptimizeFor",
+      "properties": {
+        "startLine": 23,
+        "endLine": 25,
+        "params": [
+          "optimizefor"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation1.java::func::set_LinkBeatDisable",
+      "type": "function",
+      "label": "set_LinkBeatDisable",
+      "properties": {
+        "startLine": 26,
+        "endLine": 28,
+        "params": [
+          "linkbeatdisable"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation1.java::func::set_FullDuplexMode",
+      "type": "function",
+      "label": "set_FullDuplexMode",
+      "properties": {
+        "startLine": 29,
+        "endLine": 31,
+        "params": [
+          "fullduplexmode"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation1.java::func::get_OptimizeFor",
+      "type": "function",
+      "label": "get_OptimizeFor",
+      "properties": {
+        "startLine": 33,
+        "endLine": 35,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation1.java::func::get_LinkBeatDisable",
+      "type": "function",
+      "label": "get_LinkBeatDisable",
+      "properties": {
+        "startLine": 37,
+        "endLine": 39,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation1.java::func::get_FullDuplexMode",
+      "type": "function",
+      "label": "get_FullDuplexMode",
+      "properties": {
+        "startLine": 40,
+        "endLine": 42,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation1.java::export::set_OptimizeFor",
+      "type": "export",
+      "label": "set_OptimizeFor",
+      "properties": {
+        "line": 23,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation1.java::export::set_LinkBeatDisable",
+      "type": "export",
+      "label": "set_LinkBeatDisable",
+      "properties": {
+        "line": 26,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation1.java::export::set_FullDuplexMode",
+      "type": "export",
+      "label": "set_FullDuplexMode",
+      "properties": {
+        "line": 29,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation1.java::export::get_OptimizeFor",
+      "type": "export",
+      "label": "get_OptimizeFor",
+      "properties": {
+        "line": 33,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation1.java::export::get_LinkBeatDisable",
+      "type": "export",
+      "label": "get_LinkBeatDisable",
+      "properties": {
+        "line": 37,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation1.java::export::get_FullDuplexMode",
+      "type": "export",
+      "label": "get_FullDuplexMode",
+      "properties": {
+        "line": 40,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation1.java",
+      "type": "file",
+      "label": "SoftwareInformation1.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 43,
+        "nonEmptyLines": 36,
+        "metrics": {
+          "importCount": 6,
+          "exportCount": 6,
+          "functionCount": 7,
+          "classCount": 1
+        }
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::class::SoftwareInformation2",
+      "type": "class",
+      "label": "SoftwareInformation2",
+      "properties": {
+        "startLine": 3,
+        "endLine": 70,
+        "methods": [
+          "SoftwareInformation2",
+          "SoftwareInformation2",
+          "set_BroadcastRxErrDone",
+          "set_EncoderDecoderLoopBackErrDone",
+          "set_WOLConnectorPresent",
+          "set_PMEPulsed",
+          "set_MWIErrDone",
+          "set_AutoResetToD0",
+          "set_D3Work",
+          "get_BroadcastRxErrDone",
+          "get_EncoderDecoderLoopBackErrDone",
+          "get_WOLConnectorPresent",
+          "get_PMEPulsed",
+          "get_MWIErrDone",
+          "get_AutoResetToD0",
+          "get_D3Work"
+        ],
+        "properties": [
+          "BroadcastRxErrDone",
+          "EncoderDecoderLoopBackErrDone",
+          "WOLConnectorPresent",
+          "PMEPulsed",
+          "MWIErrDone",
+          "AutoResetToD0",
+          "D3Work"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::SoftwareInformation2",
+      "type": "function",
+      "label": "SoftwareInformation2",
+      "properties": {
+        "startLine": 13,
+        "endLine": 22,
+        "params": [
+          "broadcastrxerrdone",
+          "encoderdecoderloopbackerrdone",
+          "wolconnectorpresent",
+          "pmepulsed",
+          "mwierrdone",
+          "autoresettod0",
+          "d3work"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::set_BroadcastRxErrDone",
+      "type": "function",
+      "label": "set_BroadcastRxErrDone",
+      "properties": {
+        "startLine": 26,
+        "endLine": 28,
+        "params": [
+          "broadcastrxerrdone"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::set_EncoderDecoderLoopBackErrDone",
+      "type": "function",
+      "label": "set_EncoderDecoderLoopBackErrDone",
+      "properties": {
+        "startLine": 29,
+        "endLine": 31,
+        "params": [
+          "encoderdecoderloopbackerrdone"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::set_WOLConnectorPresent",
+      "type": "function",
+      "label": "set_WOLConnectorPresent",
+      "properties": {
+        "startLine": 32,
+        "endLine": 34,
+        "params": [
+          "wolconnectorpresent"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::set_PMEPulsed",
+      "type": "function",
+      "label": "set_PMEPulsed",
+      "properties": {
+        "startLine": 35,
+        "endLine": 37,
+        "params": [
+          "pmepulsed"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::set_MWIErrDone",
+      "type": "function",
+      "label": "set_MWIErrDone",
+      "properties": {
+        "startLine": 38,
+        "endLine": 40,
+        "params": [
+          "mwierrdone"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::set_AutoResetToD0",
+      "type": "function",
+      "label": "set_AutoResetToD0",
+      "properties": {
+        "startLine": 41,
+        "endLine": 43,
+        "params": [
+          "autoresettod0"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::set_D3Work",
+      "type": "function",
+      "label": "set_D3Work",
+      "properties": {
+        "startLine": 44,
+        "endLine": 46,
+        "params": [
+          "d3work"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::get_BroadcastRxErrDone",
+      "type": "function",
+      "label": "get_BroadcastRxErrDone",
+      "properties": {
+        "startLine": 48,
+        "endLine": 50,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::get_EncoderDecoderLoopBackErrDone",
+      "type": "function",
+      "label": "get_EncoderDecoderLoopBackErrDone",
+      "properties": {
+        "startLine": 51,
+        "endLine": 53,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::get_WOLConnectorPresent",
+      "type": "function",
+      "label": "get_WOLConnectorPresent",
+      "properties": {
+        "startLine": 54,
+        "endLine": 56,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::get_PMEPulsed",
+      "type": "function",
+      "label": "get_PMEPulsed",
+      "properties": {
+        "startLine": 57,
+        "endLine": 59,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::get_MWIErrDone",
+      "type": "function",
+      "label": "get_MWIErrDone",
+      "properties": {
+        "startLine": 60,
+        "endLine": 62,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::get_AutoResetToD0",
+      "type": "function",
+      "label": "get_AutoResetToD0",
+      "properties": {
+        "startLine": 63,
+        "endLine": 65,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::get_D3Work",
+      "type": "function",
+      "label": "get_D3Work",
+      "properties": {
+        "startLine": 66,
+        "endLine": 68,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::SoftwareInformation2",
+      "type": "export",
+      "label": "SoftwareInformation2",
+      "properties": {
+        "line": 13,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::set_BroadcastRxErrDone",
+      "type": "export",
+      "label": "set_BroadcastRxErrDone",
+      "properties": {
+        "line": 26,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::set_EncoderDecoderLoopBackErrDone",
+      "type": "export",
+      "label": "set_EncoderDecoderLoopBackErrDone",
+      "properties": {
+        "line": 29,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::set_WOLConnectorPresent",
+      "type": "export",
+      "label": "set_WOLConnectorPresent",
+      "properties": {
+        "line": 32,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::set_PMEPulsed",
+      "type": "export",
+      "label": "set_PMEPulsed",
+      "properties": {
+        "line": 35,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::set_MWIErrDone",
+      "type": "export",
+      "label": "set_MWIErrDone",
+      "properties": {
+        "line": 38,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::set_AutoResetToD0",
+      "type": "export",
+      "label": "set_AutoResetToD0",
+      "properties": {
+        "line": 41,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::set_D3Work",
+      "type": "export",
+      "label": "set_D3Work",
+      "properties": {
+        "line": 44,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::get_BroadcastRxErrDone",
+      "type": "export",
+      "label": "get_BroadcastRxErrDone",
+      "properties": {
+        "line": 48,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::get_EncoderDecoderLoopBackErrDone",
+      "type": "export",
+      "label": "get_EncoderDecoderLoopBackErrDone",
+      "properties": {
+        "line": 51,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::get_WOLConnectorPresent",
+      "type": "export",
+      "label": "get_WOLConnectorPresent",
+      "properties": {
+        "line": 54,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::get_PMEPulsed",
+      "type": "export",
+      "label": "get_PMEPulsed",
+      "properties": {
+        "line": 57,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::get_MWIErrDone",
+      "type": "export",
+      "label": "get_MWIErrDone",
+      "properties": {
+        "line": 60,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::get_AutoResetToD0",
+      "type": "export",
+      "label": "get_AutoResetToD0",
+      "properties": {
+        "line": 63,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::get_D3Work",
+      "type": "export",
+      "label": "get_D3Work",
+      "properties": {
+        "line": 66,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "type": "file",
+      "label": "SoftwareInformation2.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 70,
+        "nonEmptyLines": 63,
+        "metrics": {
+          "importCount": 16,
+          "exportCount": 16,
+          "functionCount": 16,
+          "classCount": 1
+        }
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation3.java::class::SoftwareInformation3",
+      "type": "class",
+      "label": "SoftwareInformation3",
+      "properties": {
+        "startLine": 3,
+        "endLine": 27,
+        "methods": [
+          "SoftwareInformation3",
+          "set_ForceXcvr",
+          "get_ForceXcvr"
+        ],
+        "properties": [
+          "EEPROM_GENERIC_MII",
+          "EEPROM_100BASE_T4_MII",
+          "EEPROM_10BASE_T_MII",
+          "EEPROM_100BASE_TX_MII",
+          "EEPROM_10_BASE_T_AUTONEGOTIATION",
+          "EEPROM_100_BASE_TX_AUTONEGOTIATION",
+          "ForceXcvr",
+          "Reserved"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation3.java::func::SoftwareInformation3",
+      "type": "function",
+      "label": "SoftwareInformation3",
+      "properties": {
+        "startLine": 15,
+        "endLine": 17,
+        "params": [
+          "forcexcvr"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation3.java::func::set_ForceXcvr",
+      "type": "function",
+      "label": "set_ForceXcvr",
+      "properties": {
+        "startLine": 19,
+        "endLine": 21,
+        "params": [
+          "forcexcvr"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation3.java::func::get_ForceXcvr",
+      "type": "function",
+      "label": "get_ForceXcvr",
+      "properties": {
+        "startLine": 23,
+        "endLine": 25,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation3.java::export::set_ForceXcvr",
+      "type": "export",
+      "label": "set_ForceXcvr",
+      "properties": {
+        "line": 19,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation3.java::export::get_ForceXcvr",
+      "type": "export",
+      "label": "get_ForceXcvr",
+      "properties": {
+        "line": 23,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/SoftwareInformation3.java",
+      "type": "file",
+      "label": "SoftwareInformation3.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 27,
+        "nonEmptyLines": 20,
+        "metrics": {
+          "importCount": 2,
+          "exportCount": 2,
+          "functionCount": 3,
+          "classCount": 1
+        }
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UndefinedConnectorException.java::class::UndefinedConnectorException",
+      "type": "class",
+      "label": "UndefinedConnectorException",
+      "properties": {
+        "startLine": 7,
+        "endLine": 14,
+        "methods": [
+          "UndefinedConnectorException",
+          "UndefinedConnectorException"
+        ],
+        "properties": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UndefinedConnectorException.java::func::UndefinedConnectorException",
+      "type": "function",
+      "label": "UndefinedConnectorException",
+      "properties": {
+        "startLine": 8,
+        "endLine": 10,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UndefinedConnectorException.java::export::UndefinedConnectorException",
+      "type": "export",
+      "label": "UndefinedConnectorException",
+      "properties": {
+        "line": 8,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UndefinedConnectorException.java",
+      "type": "file",
+      "label": "UndefinedConnectorException.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 14,
+        "nonEmptyLines": 13,
+        "metrics": {
+          "importCount": 2,
+          "exportCount": 2,
+          "functionCount": 2,
+          "classCount": 1
+        }
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UnknownConnectorType.java::class::UnknownConnectorType",
+      "type": "class",
+      "label": "UnknownConnectorType",
+      "properties": {
+        "startLine": 7,
+        "endLine": 14,
+        "methods": [
+          "UnknownConnectorType",
+          "UnknownConnectorType"
+        ],
+        "properties": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UnknownConnectorType.java::func::UnknownConnectorType",
+      "type": "function",
+      "label": "UnknownConnectorType",
+      "properties": {
+        "startLine": 8,
+        "endLine": 10,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UnknownConnectorType.java::export::UnknownConnectorType",
+      "type": "export",
+      "label": "UnknownConnectorType",
+      "properties": {
+        "line": 8,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UnknownConnectorType.java",
+      "type": "file",
+      "label": "UnknownConnectorType.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 14,
+        "nonEmptyLines": 13,
+        "metrics": {
+          "importCount": 2,
+          "exportCount": 2,
+          "functionCount": 2,
+          "classCount": 1
+        }
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UnknownLinkState.java::class::UnknownLinkState",
+      "type": "class",
+      "label": "UnknownLinkState",
+      "properties": {
+        "startLine": 7,
+        "endLine": 14,
+        "methods": [
+          "UnknownLinkState",
+          "UnknownLinkState"
+        ],
+        "properties": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UnknownLinkState.java::func::UnknownLinkState",
+      "type": "function",
+      "label": "UnknownLinkState",
+      "properties": {
+        "startLine": 8,
+        "endLine": 10,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UnknownLinkState.java::export::UnknownLinkState",
+      "type": "export",
+      "label": "UnknownLinkState",
+      "properties": {
+        "line": 8,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UnknownLinkState.java",
+      "type": "file",
+      "label": "UnknownLinkState.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 14,
+        "nonEmptyLines": 13,
+        "metrics": {
+          "importCount": 2,
+          "exportCount": 2,
+          "functionCount": 2,
+          "classCount": 1
+        }
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UpdListEntry.java::class::UpdListEntry",
+      "type": "class",
+      "label": "UpdListEntry",
+      "properties": {
+        "startLine": 5,
+        "endLine": 108,
+        "methods": [
+          "UpdListEntry",
+          "StoreMem",
+          "UpPacketStatus",
+          "UpNextPointer",
+          "Next",
+          "Previous",
+          "UpPacketStatus",
+          "UpdMemory",
+          "StoreMem",
+          "Next",
+          "Previous",
+          "UPDPhysicalAddress",
+          "toString"
+        ],
+        "properties": [
+          "Next",
+          "Previous",
+          "UpdMemory",
+          "StoreMem",
+          "UPDPhysicalAddress"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdListEntry",
+      "type": "function",
+      "label": "UpdListEntry",
+      "properties": {
+        "startLine": 19,
+        "endLine": 41,
+        "params": [
+          "memMgr"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UpdListEntry.java::func::StoreMem",
+      "type": "function",
+      "label": "StoreMem",
+      "properties": {
+        "startLine": 43,
+        "endLine": 47,
+        "params": [
+          "mem"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpPacketStatus",
+      "type": "function",
+      "label": "UpPacketStatus",
+      "properties": {
+        "startLine": 48,
+        "endLine": 50,
+        "params": [
+          "uppacketstatus"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpNextPointer",
+      "type": "function",
+      "label": "UpNextPointer",
+      "properties": {
+        "startLine": 51,
+        "endLine": 53,
+        "params": [
+          "upnextpointer"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UpdListEntry.java::func::Next",
+      "type": "function",
+      "label": "Next",
+      "properties": {
+        "startLine": 54,
+        "endLine": 56,
+        "params": [
+          "next"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UpdListEntry.java::func::Previous",
+      "type": "function",
+      "label": "Previous",
+      "properties": {
+        "startLine": 57,
+        "endLine": 59,
+        "params": [
+          "previous"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdMemory",
+      "type": "function",
+      "label": "UpdMemory",
+      "properties": {
+        "startLine": 64,
+        "endLine": 66,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UpdListEntry.java::func::UPDPhysicalAddress",
+      "type": "function",
+      "label": "UPDPhysicalAddress",
+      "properties": {
+        "startLine": 76,
+        "endLine": 78,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UpdListEntry.java::func::toString",
+      "type": "function",
+      "label": "toString",
+      "properties": {
+        "startLine": 80,
+        "endLine": 107,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UpdListEntry.java::export::UpdListEntry",
+      "type": "export",
+      "label": "UpdListEntry",
+      "properties": {
+        "line": 19,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UpdListEntry.java::export::StoreMem",
+      "type": "export",
+      "label": "StoreMem",
+      "properties": {
+        "line": 43,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UpdListEntry.java::export::UpPacketStatus",
+      "type": "export",
+      "label": "UpPacketStatus",
+      "properties": {
+        "line": 48,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UpdListEntry.java::export::UpNextPointer",
+      "type": "export",
+      "label": "UpNextPointer",
+      "properties": {
+        "line": 51,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UpdListEntry.java::export::Next",
+      "type": "export",
+      "label": "Next",
+      "properties": {
+        "line": 54,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UpdListEntry.java::export::Previous",
+      "type": "export",
+      "label": "Previous",
+      "properties": {
+        "line": 57,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UpdListEntry.java::export::UpdMemory",
+      "type": "export",
+      "label": "UpdMemory",
+      "properties": {
+        "line": 64,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UpdListEntry.java::export::UPDPhysicalAddress",
+      "type": "export",
+      "label": "UPDPhysicalAddress",
+      "properties": {
+        "line": 76,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UpdListEntry.java::export::toString",
+      "type": "export",
+      "label": "toString",
+      "properties": {
+        "line": 80,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "type": "file",
+      "label": "UpdListEntry.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 108,
+        "nonEmptyLines": 97,
+        "metrics": {
+          "importCount": 13,
+          "exportCount": 13,
+          "functionCount": 13,
+          "classCount": 1
+        }
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitCases.java::class::WaitCases",
+      "type": "class",
+      "label": "WaitCases",
+      "properties": {
+        "startLine": 4,
+        "endLine": 17,
+        "methods": [],
+        "properties": [
+          "CHECK_UPLOAD_STATUS",
+          "CHECK_DOWNLOAD_STATUS",
+          "CHECK_DC_CONVERTER",
+          "CHECK_PHY_STATUS",
+          "CHECK_TRANSMIT_IN_PROGRESS",
+          "CHECK_DOWNLOAD_SELFDIRECTED",
+          "AUTONEG_TEST_PACKET",
+          "CHECK_DMA_CONTROL",
+          "CHECK_CARRIER_SENSE"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitCases.java",
+      "type": "file",
+      "label": "WaitCases.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 17,
+        "nonEmptyLines": 13,
+        "metrics": {
+          "importCount": 0,
+          "exportCount": 0,
+          "functionCount": 0,
+          "classCount": 1
+        }
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimer.java::class::WaitTimer",
+      "type": "class",
+      "label": "WaitTimer",
+      "properties": {
+        "startLine": 6,
+        "endLine": 162,
+        "methods": [
+          "WaitTimer",
+          "timer",
+          "equals"
+        ],
+        "properties": [
+          "ports",
+          "timerManager"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimer.java::func::WaitTimer",
+      "type": "function",
+      "label": "WaitTimer",
+      "properties": {
+        "startLine": 11,
+        "endLine": 14,
+        "params": [
+          "ports",
+          "timerManager"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "type": "function",
+      "label": "timer",
+      "properties": {
+        "startLine": 16,
+        "endLine": 156,
+        "params": [
+          "arg"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimer.java::func::equals",
+      "type": "function",
+      "label": "equals",
+      "properties": {
+        "startLine": 158,
+        "endLine": 161,
+        "params": [
+          "obj"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimer.java::export::timer",
+      "type": "export",
+      "label": "timer",
+      "properties": {
+        "line": 16,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimer.java::export::equals",
+      "type": "export",
+      "label": "equals",
+      "properties": {
+        "line": 158,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimer.java",
+      "type": "file",
+      "label": "WaitTimer.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 162,
+        "nonEmptyLines": 141,
+        "metrics": {
+          "importCount": 2,
+          "exportCount": 2,
+          "functionCount": 3,
+          "classCount": 1
+        }
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerArg.java::class::WaitTimerArg",
+      "type": "class",
+      "label": "WaitTimerArg",
+      "properties": {
+        "startLine": 3,
+        "endLine": 25,
+        "methods": [
+          "WaitTimerArg",
+          "get_NicInfo",
+          "get_TestDPD",
+          "get_TimeOut"
+        ],
+        "properties": [
+          "Info",
+          "TestDPD",
+          "TimeOut"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerArg.java::func::WaitTimerArg",
+      "type": "function",
+      "label": "WaitTimerArg",
+      "properties": {
+        "startLine": 9,
+        "endLine": 13,
+        "params": [
+          "info",
+          "test",
+          "timeout"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerArg.java::func::get_NicInfo",
+      "type": "function",
+      "label": "get_NicInfo",
+      "properties": {
+        "startLine": 15,
+        "endLine": 17,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerArg.java::func::get_TestDPD",
+      "type": "function",
+      "label": "get_TestDPD",
+      "properties": {
+        "startLine": 18,
+        "endLine": 20,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerArg.java::func::get_TimeOut",
+      "type": "function",
+      "label": "get_TimeOut",
+      "properties": {
+        "startLine": 21,
+        "endLine": 23,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerArg.java::export::WaitTimerArg",
+      "type": "export",
+      "label": "WaitTimerArg",
+      "properties": {
+        "line": 9,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerArg.java::export::get_NicInfo",
+      "type": "export",
+      "label": "get_NicInfo",
+      "properties": {
+        "line": 15,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerArg.java::export::get_TestDPD",
+      "type": "export",
+      "label": "get_TestDPD",
+      "properties": {
+        "line": 18,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerArg.java::export::get_TimeOut",
+      "type": "export",
+      "label": "get_TimeOut",
+      "properties": {
+        "line": 21,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerArg.java",
+      "type": "file",
+      "label": "WaitTimerArg.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 25,
+        "nonEmptyLines": 20,
+        "metrics": {
+          "importCount": 4,
+          "exportCount": 4,
+          "functionCount": 4,
+          "classCount": 1
+        }
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::class::WaitTimerGlobal",
+      "type": "class",
+      "label": "WaitTimerGlobal",
+      "properties": {
+        "startLine": 6,
+        "endLine": 76,
+        "methods": [
+          "WaitTimerGlobal",
+          "instance",
+          "get_DCConverterEnabledState",
+          "get_MediaStatus",
+          "get_PhyResponding",
+          "get_PhyStatus",
+          "get_DownListPointer",
+          "get_UpListPointer",
+          "get_PortV",
+          "get_dmaControl",
+          "set_DCConverterEnabledState",
+          "set_MediaStatus",
+          "set_PhyResponding",
+          "set_PhyStatus",
+          "set_DownListPointer",
+          "set_UpListPointer",
+          "set_PortV",
+          "set_dmaControl"
+        ],
+        "properties": [
+          "portValue",
+          "DCConverterEnabledState",
+          "MediaStatus",
+          "PhyResponding",
+          "PhyStatus",
+          "DownListPointer",
+          "UpListPointer",
+          "dmaControl",
+          "instance"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::WaitTimerGlobal",
+      "type": "function",
+      "label": "WaitTimerGlobal",
+      "properties": {
+        "startLine": 19,
+        "endLine": 21,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::instance",
+      "type": "function",
+      "label": "instance",
+      "properties": {
+        "startLine": 23,
+        "endLine": 26,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::get_DCConverterEnabledState",
+      "type": "function",
+      "label": "get_DCConverterEnabledState",
+      "properties": {
+        "startLine": 27,
+        "endLine": 29,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::get_MediaStatus",
+      "type": "function",
+      "label": "get_MediaStatus",
+      "properties": {
+        "startLine": 30,
+        "endLine": 32,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::get_PhyResponding",
+      "type": "function",
+      "label": "get_PhyResponding",
+      "properties": {
+        "startLine": 33,
+        "endLine": 35,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::get_PhyStatus",
+      "type": "function",
+      "label": "get_PhyStatus",
+      "properties": {
+        "startLine": 36,
+        "endLine": 38,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::get_DownListPointer",
+      "type": "function",
+      "label": "get_DownListPointer",
+      "properties": {
+        "startLine": 39,
+        "endLine": 41,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::get_UpListPointer",
+      "type": "function",
+      "label": "get_UpListPointer",
+      "properties": {
+        "startLine": 42,
+        "endLine": 44,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::get_PortV",
+      "type": "function",
+      "label": "get_PortV",
+      "properties": {
+        "startLine": 45,
+        "endLine": 47,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::get_dmaControl",
+      "type": "function",
+      "label": "get_dmaControl",
+      "properties": {
+        "startLine": 48,
+        "endLine": 50,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::set_DCConverterEnabledState",
+      "type": "function",
+      "label": "set_DCConverterEnabledState",
+      "properties": {
+        "startLine": 52,
+        "endLine": 54,
+        "params": [
+          "dc"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::set_MediaStatus",
+      "type": "function",
+      "label": "set_MediaStatus",
+      "properties": {
+        "startLine": 55,
+        "endLine": 57,
+        "params": [
+          "media"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::set_PhyResponding",
+      "type": "function",
+      "label": "set_PhyResponding",
+      "properties": {
+        "startLine": 58,
+        "endLine": 60,
+        "params": [
+          "phyres"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::set_PhyStatus",
+      "type": "function",
+      "label": "set_PhyStatus",
+      "properties": {
+        "startLine": 61,
+        "endLine": 63,
+        "params": [
+          "phystat"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::set_DownListPointer",
+      "type": "function",
+      "label": "set_DownListPointer",
+      "properties": {
+        "startLine": 64,
+        "endLine": 66,
+        "params": [
+          "dlp"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::set_UpListPointer",
+      "type": "function",
+      "label": "set_UpListPointer",
+      "properties": {
+        "startLine": 67,
+        "endLine": 69,
+        "params": [
+          "ulp"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::set_PortV",
+      "type": "function",
+      "label": "set_PortV",
+      "properties": {
+        "startLine": 70,
+        "endLine": 72,
+        "params": [
+          "port"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::set_dmaControl",
+      "type": "function",
+      "label": "set_dmaControl",
+      "properties": {
+        "startLine": 73,
+        "endLine": 75,
+        "params": [
+          "dma"
+        ]
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::instance",
+      "type": "export",
+      "label": "instance",
+      "properties": {
+        "line": 23,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::get_DCConverterEnabledState",
+      "type": "export",
+      "label": "get_DCConverterEnabledState",
+      "properties": {
+        "line": 27,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::get_MediaStatus",
+      "type": "export",
+      "label": "get_MediaStatus",
+      "properties": {
+        "line": 30,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::get_PhyResponding",
+      "type": "export",
+      "label": "get_PhyResponding",
+      "properties": {
+        "line": 33,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::get_PhyStatus",
+      "type": "export",
+      "label": "get_PhyStatus",
+      "properties": {
+        "line": 36,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::get_DownListPointer",
+      "type": "export",
+      "label": "get_DownListPointer",
+      "properties": {
+        "line": 39,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::get_UpListPointer",
+      "type": "export",
+      "label": "get_UpListPointer",
+      "properties": {
+        "line": 42,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::get_PortV",
+      "type": "export",
+      "label": "get_PortV",
+      "properties": {
+        "line": 45,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::get_dmaControl",
+      "type": "export",
+      "label": "get_dmaControl",
+      "properties": {
+        "line": 48,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::set_DCConverterEnabledState",
+      "type": "export",
+      "label": "set_DCConverterEnabledState",
+      "properties": {
+        "line": 52,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::set_MediaStatus",
+      "type": "export",
+      "label": "set_MediaStatus",
+      "properties": {
+        "line": 55,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::set_PhyResponding",
+      "type": "export",
+      "label": "set_PhyResponding",
+      "properties": {
+        "line": 58,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::set_PhyStatus",
+      "type": "export",
+      "label": "set_PhyStatus",
+      "properties": {
+        "line": 61,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::set_DownListPointer",
+      "type": "export",
+      "label": "set_DownListPointer",
+      "properties": {
+        "line": 64,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::set_UpListPointer",
+      "type": "export",
+      "label": "set_UpListPointer",
+      "properties": {
+        "line": 67,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::set_PortV",
+      "type": "export",
+      "label": "set_PortV",
+      "properties": {
+        "line": 70,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::set_dmaControl",
+      "type": "export",
+      "label": "set_dmaControl",
+      "properties": {
+        "line": 73,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "type": "file",
+      "label": "WaitTimerGlobal.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 76,
+        "nonEmptyLines": 69,
+        "metrics": {
+          "importCount": 17,
+          "exportCount": 17,
+          "functionCount": 18,
+          "classCount": 1
+        }
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WrongDate.java::class::WrongDate",
+      "type": "class",
+      "label": "WrongDate",
+      "properties": {
+        "startLine": 7,
+        "endLine": 14,
+        "methods": [
+          "WrongDate",
+          "WrongDate"
+        ],
+        "properties": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WrongDate.java::func::WrongDate",
+      "type": "function",
+      "label": "WrongDate",
+      "properties": {
+        "startLine": 8,
+        "endLine": 10,
+        "params": []
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WrongDate.java::export::WrongDate",
+      "type": "export",
+      "label": "WrongDate",
+      "properties": {
+        "line": 8,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/net/WrongDate.java",
+      "type": "file",
+      "label": "WrongDate.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 14,
+        "nonEmptyLines": 13,
+        "metrics": {
+          "importCount": 2,
+          "exportCount": 2,
+          "functionCount": 2,
+          "classCount": 1
+        }
+      }
+    },
+    {
+      "id": "src/metaxa/os/devices/package.bluej",
+      "type": "file",
+      "label": "package.bluej",
+      "properties": {
+        "language": "bluej",
+        "category": "code",
+        "totalLines": 1,
+        "nonEmptyLines": 0,
+        "metrics": {}
+      }
+    },
+    {
+      "id": "src/metaxa/os/package.bluej",
+      "type": "file",
+      "label": "package.bluej",
+      "properties": {
+        "language": "bluej",
+        "category": "code",
+        "totalLines": 1,
+        "nonEmptyLines": 0,
+        "metrics": {}
+      }
+    },
+    {
+      "id": "src/metaxa/package.bluej",
+      "type": "file",
+      "label": "package.bluej",
+      "properties": {
+        "language": "bluej",
+        "category": "code",
+        "totalLines": 1,
+        "nonEmptyLines": 0,
+        "metrics": {}
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/AbstractDeviceItem.java::class::AbstractDeviceItem",
+      "type": "class",
+      "label": "AbstractDeviceItem",
+      "properties": {
+        "startLine": 26,
+        "endLine": 49,
+        "methods": [
+          "AbstractDeviceItem",
+          "getDevice"
+        ],
+        "properties": [
+          "device"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/AbstractDeviceItem.java::func::AbstractDeviceItem",
+      "type": "function",
+      "label": "AbstractDeviceItem",
+      "properties": {
+        "startLine": 38,
+        "endLine": 40,
+        "params": [
+          "device"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/AbstractDeviceItem.java::func::getDevice",
+      "type": "function",
+      "label": "getDevice",
+      "properties": {
+        "startLine": 45,
+        "endLine": 47,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/AbstractDeviceItem.java::export::AbstractDeviceItem",
+      "type": "export",
+      "label": "AbstractDeviceItem",
+      "properties": {
+        "line": 38,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/AbstractDeviceItem.java::export::getDevice",
+      "type": "export",
+      "label": "getDevice",
+      "properties": {
+        "line": 45,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/AbstractDeviceItem.java",
+      "type": "file",
+      "label": "AbstractDeviceItem.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 49,
+        "nonEmptyLines": 43,
+        "metrics": {
+          "importCount": 3,
+          "exportCount": 3,
+          "functionCount": 2,
+          "classCount": 1
+        }
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::class::ConfigurationDescriptor",
+      "type": "class",
+      "label": "ConfigurationDescriptor",
+      "properties": {
+        "startLine": 29,
+        "endLine": 110,
+        "methods": [
+          "ConfigurationDescriptor",
+          "ConfigurationDescriptor",
+          "getTotalLength",
+          "getNumInterfaces",
+          "getConfigurationValue",
+          "getConfigurationStringIndex",
+          "getConfigurationName",
+          "loadStrings",
+          "toString"
+        ],
+        "properties": [
+          "configurationName"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::ConfigurationDescriptor",
+      "type": "function",
+      "label": "ConfigurationDescriptor",
+      "properties": {
+        "startLine": 36,
+        "endLine": 38,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::getTotalLength",
+      "type": "function",
+      "label": "getTotalLength",
+      "properties": {
+        "startLine": 52,
+        "endLine": 54,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::getNumInterfaces",
+      "type": "function",
+      "label": "getNumInterfaces",
+      "properties": {
+        "startLine": 59,
+        "endLine": 61,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::getConfigurationValue",
+      "type": "function",
+      "label": "getConfigurationValue",
+      "properties": {
+        "startLine": 66,
+        "endLine": 68,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::getConfigurationStringIndex",
+      "type": "function",
+      "label": "getConfigurationStringIndex",
+      "properties": {
+        "startLine": 73,
+        "endLine": 75,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::getConfigurationName",
+      "type": "function",
+      "label": "getConfigurationName",
+      "properties": {
+        "startLine": 80,
+        "endLine": 82,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::loadStrings",
+      "type": "function",
+      "label": "loadStrings",
+      "properties": {
+        "startLine": 89,
+        "endLine": 96,
+        "params": [
+          "dev"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::toString",
+      "type": "function",
+      "label": "toString",
+      "properties": {
+        "startLine": 103,
+        "endLine": 108,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::export::ConfigurationDescriptor",
+      "type": "export",
+      "label": "ConfigurationDescriptor",
+      "properties": {
+        "line": 36,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::export::getTotalLength",
+      "type": "export",
+      "label": "getTotalLength",
+      "properties": {
+        "line": 52,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::export::getNumInterfaces",
+      "type": "export",
+      "label": "getNumInterfaces",
+      "properties": {
+        "line": 59,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::export::getConfigurationValue",
+      "type": "export",
+      "label": "getConfigurationValue",
+      "properties": {
+        "line": 66,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::export::getConfigurationStringIndex",
+      "type": "export",
+      "label": "getConfigurationStringIndex",
+      "properties": {
+        "line": 73,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::export::getConfigurationName",
+      "type": "export",
+      "label": "getConfigurationName",
+      "properties": {
+        "line": 80,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::export::toString",
+      "type": "export",
+      "label": "toString",
+      "properties": {
+        "line": 103,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java",
+      "type": "file",
+      "label": "ConfigurationDescriptor.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 110,
+        "nonEmptyLines": 95,
+        "metrics": {
+          "importCount": 9,
+          "exportCount": 9,
+          "functionCount": 9,
+          "classCount": 1
+        }
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::class::InterfaceDescriptor",
+      "type": "class",
+      "label": "InterfaceDescriptor",
+      "properties": {
+        "startLine": 29,
+        "endLine": 132,
+        "methods": [
+          "InterfaceDescriptor",
+          "InterfaceDescriptor",
+          "getInterfaceNumber",
+          "getAlternateSetting",
+          "getNumEndPoints",
+          "getInterfaceClass",
+          "getInterfaceSubClass",
+          "getInterfaceProtocol",
+          "getInterfaceStringIndex",
+          "getInterfaceName",
+          "loadStrings",
+          "toString"
+        ],
+        "properties": [
+          "intfName"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::InterfaceDescriptor",
+      "type": "function",
+      "label": "InterfaceDescriptor",
+      "properties": {
+        "startLine": 36,
+        "endLine": 38,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getInterfaceNumber",
+      "type": "function",
+      "label": "getInterfaceNumber",
+      "properties": {
+        "startLine": 52,
+        "endLine": 54,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getAlternateSetting",
+      "type": "function",
+      "label": "getAlternateSetting",
+      "properties": {
+        "startLine": 59,
+        "endLine": 61,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getNumEndPoints",
+      "type": "function",
+      "label": "getNumEndPoints",
+      "properties": {
+        "startLine": 66,
+        "endLine": 68,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getInterfaceClass",
+      "type": "function",
+      "label": "getInterfaceClass",
+      "properties": {
+        "startLine": 73,
+        "endLine": 75,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getInterfaceSubClass",
+      "type": "function",
+      "label": "getInterfaceSubClass",
+      "properties": {
+        "startLine": 80,
+        "endLine": 82,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getInterfaceProtocol",
+      "type": "function",
+      "label": "getInterfaceProtocol",
+      "properties": {
+        "startLine": 87,
+        "endLine": 89,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getInterfaceStringIndex",
+      "type": "function",
+      "label": "getInterfaceStringIndex",
+      "properties": {
+        "startLine": 94,
+        "endLine": 96,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getInterfaceName",
+      "type": "function",
+      "label": "getInterfaceName",
+      "properties": {
+        "startLine": 101,
+        "endLine": 103,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::loadStrings",
+      "type": "function",
+      "label": "loadStrings",
+      "properties": {
+        "startLine": 110,
+        "endLine": 116,
+        "params": [
+          "dev"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::toString",
+      "type": "function",
+      "label": "toString",
+      "properties": {
+        "startLine": 123,
+        "endLine": 131,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::export::InterfaceDescriptor",
+      "type": "export",
+      "label": "InterfaceDescriptor",
+      "properties": {
+        "line": 36,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::export::getInterfaceNumber",
+      "type": "export",
+      "label": "getInterfaceNumber",
+      "properties": {
+        "line": 52,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::export::getAlternateSetting",
+      "type": "export",
+      "label": "getAlternateSetting",
+      "properties": {
+        "line": 59,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::export::getNumEndPoints",
+      "type": "export",
+      "label": "getNumEndPoints",
+      "properties": {
+        "line": 66,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::export::getInterfaceClass",
+      "type": "export",
+      "label": "getInterfaceClass",
+      "properties": {
+        "line": 73,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::export::getInterfaceSubClass",
+      "type": "export",
+      "label": "getInterfaceSubClass",
+      "properties": {
+        "line": 80,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::export::getInterfaceProtocol",
+      "type": "export",
+      "label": "getInterfaceProtocol",
+      "properties": {
+        "line": 87,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::export::getInterfaceStringIndex",
+      "type": "export",
+      "label": "getInterfaceStringIndex",
+      "properties": {
+        "line": 94,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::export::getInterfaceName",
+      "type": "export",
+      "label": "getInterfaceName",
+      "properties": {
+        "line": 101,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::export::toString",
+      "type": "export",
+      "label": "toString",
+      "properties": {
+        "line": 123,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java",
+      "type": "file",
+      "label": "InterfaceDescriptor.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 132,
+        "nonEmptyLines": 115,
+        "metrics": {
+          "importCount": 12,
+          "exportCount": 12,
+          "functionCount": 12,
+          "classCount": 1
+        }
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/StringDescriptor.java::class::StringDescriptor",
+      "type": "class",
+      "label": "StringDescriptor",
+      "properties": {
+        "startLine": 28,
+        "endLine": 65,
+        "methods": [
+          "StringDescriptor",
+          "StringDescriptor",
+          "getString"
+        ],
+        "properties": [
+          "cachedString"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/StringDescriptor.java::func::StringDescriptor",
+      "type": "function",
+      "label": "StringDescriptor",
+      "properties": {
+        "startLine": 40,
+        "endLine": 42,
+        "params": [
+          "data",
+          "ofs",
+          "len"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/StringDescriptor.java::func::getString",
+      "type": "function",
+      "label": "getString",
+      "properties": {
+        "startLine": 54,
+        "endLine": 64,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/StringDescriptor.java::export::StringDescriptor",
+      "type": "export",
+      "label": "StringDescriptor",
+      "properties": {
+        "line": 40,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/StringDescriptor.java::export::getString",
+      "type": "export",
+      "label": "getString",
+      "properties": {
+        "line": 54,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/StringDescriptor.java",
+      "type": "file",
+      "label": "StringDescriptor.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 65,
+        "nonEmptyLines": 58,
+        "metrics": {
+          "importCount": 4,
+          "exportCount": 4,
+          "functionCount": 3,
+          "classCount": 1
+        }
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java::class::StringDescriptorZero",
+      "type": "class",
+      "label": "StringDescriptorZero",
+      "properties": {
+        "startLine": 28,
+        "endLine": 79,
+        "methods": [
+          "StringDescriptorZero",
+          "StringDescriptorZero",
+          "getNumLangIDs",
+          "getLangID",
+          "contains"
+        ],
+        "properties": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java::func::StringDescriptorZero",
+      "type": "function",
+      "label": "StringDescriptorZero",
+      "properties": {
+        "startLine": 35,
+        "endLine": 37,
+        "params": [
+          "data",
+          "ofs",
+          "len"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java::func::getNumLangIDs",
+      "type": "function",
+      "label": "getNumLangIDs",
+      "properties": {
+        "startLine": 51,
+        "endLine": 53,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java::func::getLangID",
+      "type": "function",
+      "label": "getLangID",
+      "properties": {
+        "startLine": 60,
+        "endLine": 62,
+        "params": [
+          "index"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java::func::contains",
+      "type": "function",
+      "label": "contains",
+      "properties": {
+        "startLine": 69,
+        "endLine": 77,
+        "params": [
+          "langID"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java::export::StringDescriptorZero",
+      "type": "export",
+      "label": "StringDescriptorZero",
+      "properties": {
+        "line": 35,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java::export::getNumLangIDs",
+      "type": "export",
+      "label": "getNumLangIDs",
+      "properties": {
+        "line": 51,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java::export::getLangID",
+      "type": "export",
+      "label": "getLangID",
+      "properties": {
+        "line": 60,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java::export::contains",
+      "type": "export",
+      "label": "contains",
+      "properties": {
+        "line": 69,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java",
+      "type": "file",
+      "label": "StringDescriptorZero.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 79,
+        "nonEmptyLines": 70,
+        "metrics": {
+          "importCount": 6,
+          "exportCount": 6,
+          "functionCount": 5,
+          "classCount": 1
+        }
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java::class::AbstractStructure",
+      "type": "class",
+      "label": "AbstractStructure",
+      "properties": {
+        "startLine": 33,
+        "endLine": 85,
+        "methods": [
+          "AbstractStructure",
+          "getInt",
+          "setInt",
+          "getDescriptorAddress"
+        ],
+        "properties": [
+          "data",
+          "dataRes",
+          "offset",
+          "descrAddr"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java::func::AbstractStructure",
+      "type": "function",
+      "label": "AbstractStructure",
+      "properties": {
+        "startLine": 47,
+        "endLine": 58,
+        "params": [
+          "rm",
+          "size",
+          "alignment"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java::func::getInt",
+      "type": "function",
+      "label": "getInt",
+      "properties": {
+        "startLine": 65,
+        "endLine": 67,
+        "params": [
+          "ofs"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java::func::setInt",
+      "type": "function",
+      "label": "setInt",
+      "properties": {
+        "startLine": 75,
+        "endLine": 77,
+        "params": [
+          "ofs",
+          "value"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java::func::getDescriptorAddress",
+      "type": "function",
+      "label": "getDescriptorAddress",
+      "properties": {
+        "startLine": 82,
+        "endLine": 84,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java::export::getDescriptorAddress",
+      "type": "export",
+      "label": "getDescriptorAddress",
+      "properties": {
+        "line": 82,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java::export::AbstractStructure",
+      "type": "export",
+      "label": "AbstractStructure",
+      "properties": {
+        "line": 33,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java",
+      "type": "file",
+      "label": "AbstractStructure.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 85,
+        "nonEmptyLines": 77,
+        "metrics": {
+          "importCount": 2,
+          "exportCount": 2,
+          "functionCount": 4,
+          "classCount": 1
+        }
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/AbstractTreeStructure.java::class::AbstractTreeStructure",
+      "type": "class",
+      "label": "AbstractTreeStructure",
+      "properties": {
+        "startLine": 28,
+        "endLine": 38,
+        "methods": [
+          "AbstractTreeStructure"
+        ],
+        "properties": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/AbstractTreeStructure.java::func::AbstractTreeStructure",
+      "type": "function",
+      "label": "AbstractTreeStructure",
+      "properties": {
+        "startLine": 35,
+        "endLine": 37,
+        "params": [
+          "rm",
+          "size",
+          "alignment"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/AbstractTreeStructure.java::export::AbstractTreeStructure",
+      "type": "export",
+      "label": "AbstractTreeStructure",
+      "properties": {
+        "line": 35,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/AbstractTreeStructure.java",
+      "type": "file",
+      "label": "AbstractTreeStructure.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 38,
+        "nonEmptyLines": 34,
+        "metrics": {
+          "importCount": 2,
+          "exportCount": 2,
+          "functionCount": 1,
+          "classCount": 1
+        }
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::class::FrameList",
+      "type": "class",
+      "label": "FrameList",
+      "properties": {
+        "startLine": 28,
+        "endLine": 99,
+        "methods": [
+          "FrameList",
+          "setListPointer",
+          "setListPointer",
+          "setListPointerInvalid",
+          "getListPointer",
+          "getSize"
+        ],
+        "properties": [
+          "list"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::func::FrameList",
+      "type": "function",
+      "label": "FrameList",
+      "properties": {
+        "startLine": 40,
+        "endLine": 45,
+        "params": [
+          "rm"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::func::setListPointer",
+      "type": "function",
+      "label": "setListPointer",
+      "properties": {
+        "startLine": 53,
+        "endLine": 57,
+        "params": [
+          "frame",
+          "td"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::func::setListPointerInvalid",
+      "type": "function",
+      "label": "setListPointerInvalid",
+      "properties": {
+        "startLine": 78,
+        "endLine": 81,
+        "params": [
+          "frame"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::func::getListPointer",
+      "type": "function",
+      "label": "getListPointer",
+      "properties": {
+        "startLine": 89,
+        "endLine": 91,
+        "params": [
+          "frame"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::func::getSize",
+      "type": "function",
+      "label": "getSize",
+      "properties": {
+        "startLine": 96,
+        "endLine": 98,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::export::FrameList",
+      "type": "export",
+      "label": "FrameList",
+      "properties": {
+        "line": 40,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::export::setListPointer",
+      "type": "export",
+      "label": "setListPointer",
+      "properties": {
+        "line": 53,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::export::setListPointerInvalid",
+      "type": "export",
+      "label": "setListPointerInvalid",
+      "properties": {
+        "line": 78,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::export::getListPointer",
+      "type": "export",
+      "label": "getListPointer",
+      "properties": {
+        "line": 89,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::export::getSize",
+      "type": "export",
+      "label": "getSize",
+      "properties": {
+        "line": 96,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/FrameList.java",
+      "type": "file",
+      "label": "FrameList.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 99,
+        "nonEmptyLines": 89,
+        "metrics": {
+          "importCount": 7,
+          "exportCount": 7,
+          "functionCount": 6,
+          "classCount": 1
+        }
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/UHCIConstants.java::class::UHCIConstants",
+      "type": "class",
+      "label": "UHCIConstants",
+      "properties": {
+        "startLine": 26,
+        "endLine": 125,
+        "methods": [],
+        "properties": [
+          "USBCMD",
+          "USBCMD_RS",
+          "USBCMD_HCRESET",
+          "USBCMD_GRESET",
+          "USBCMD_EGSM",
+          "USBCMD_FGR",
+          "USBCMD_SWDBG",
+          "USBCMD_CF",
+          "USBCMD_MAXP",
+          "USBSTS",
+          "USBSTS_USBINT",
+          "USBSTS_ERROR",
+          "USBSTS_RD",
+          "USBSTS_HSE",
+          "USBSTS_HCPE",
+          "USBSTS_HCH",
+          "USBINTR",
+          "USBINTR_TIMEOUT",
+          "USBINTR_RESUME",
+          "USBINTR_IOC",
+          "USBINTR_SP",
+          "USBFRNUM",
+          "USBFLBASEADD",
+          "USBSOF",
+          "USBPORTSC1",
+          "USBPORTSC2",
+          "USBPORTSC_CCS",
+          "USBPORTSC_CSC",
+          "USBPORTSC_PE",
+          "USBPORTSC_PEC",
+          "USBPORTSC_LS",
+          "USBPORTSC_RD",
+          "USBPORTSC_LSDA",
+          "USBPORTSC_PR",
+          "USBPORTSC_SUSP",
+          "USBLEGSUP",
+          "USBLEGSUP_DEFAULT",
+          "TD_CTRL_SPD",
+          "TD_CTRL_C_ERR_MASK",
+          "TD_CTRL_C_ERR_SHIFT",
+          "TD_CTRL_LS",
+          "TD_CTRL_IOS",
+          "TD_CTRL_IOC",
+          "TD_CTRL_ACTIVE",
+          "TD_CTRL_STALLED",
+          "TD_CTRL_DBUFERR",
+          "TD_CTRL_BABBLE",
+          "TD_CTRL_NAK",
+          "TD_CTRL_CRCTIMEO",
+          "TD_CTRL_BITSTUFF",
+          "TD_CTRL_ACTLEN_MASK",
+          "TD_CTRL_ANY_ERROR"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/UHCIConstants.java::export::UHCIConstants",
+      "type": "export",
+      "label": "UHCIConstants",
+      "properties": {
+        "line": 26,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/UHCIConstants.java",
+      "type": "file",
+      "label": "UHCIConstants.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 125,
+        "nonEmptyLines": 115,
+        "metrics": {
+          "importCount": 1,
+          "exportCount": 1,
+          "functionCount": 0,
+          "classCount": 1
+        }
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::class::UHCIIO",
+      "type": "class",
+      "label": "UHCIIO",
+      "properties": {
+        "startLine": 29,
+        "endLine": 196,
+        "methods": [
+          "UHCIIO",
+          "release",
+          "getCommand",
+          "getCommandBits",
+          "setCommand",
+          "setCommandBits",
+          "getStatus",
+          "getStatusBits",
+          "clearStatus",
+          "getInterruptEnable",
+          "setInterruptEnable",
+          "getFrameNumber",
+          "setFrameNumber",
+          "getFrameListBaseAddress",
+          "setFrameListBaseAddress",
+          "getStartOfFrame",
+          "setStartOfFrame",
+          "getPortSC",
+          "getPortSCBits",
+          "setPortSCBits",
+          "setPortSC"
+        ],
+        "properties": [
+          "io",
+          "base"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::UHCIIO",
+      "type": "function",
+      "label": "UHCIIO",
+      "properties": {
+        "startLine": 39,
+        "endLine": 42,
+        "params": [
+          "base"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::release",
+      "type": "function",
+      "label": "release",
+      "properties": {
+        "startLine": 47,
+        "endLine": 49,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getCommand",
+      "type": "function",
+      "label": "getCommand",
+      "properties": {
+        "startLine": 54,
+        "endLine": 56,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getCommandBits",
+      "type": "function",
+      "label": "getCommandBits",
+      "properties": {
+        "startLine": 61,
+        "endLine": 63,
+        "params": [
+          "mask"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::setCommand",
+      "type": "function",
+      "label": "setCommand",
+      "properties": {
+        "startLine": 68,
+        "endLine": 70,
+        "params": [
+          "command"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::setCommandBits",
+      "type": "function",
+      "label": "setCommandBits",
+      "properties": {
+        "startLine": 75,
+        "endLine": 83,
+        "params": [
+          "mask",
+          "on"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getStatus",
+      "type": "function",
+      "label": "getStatus",
+      "properties": {
+        "startLine": 88,
+        "endLine": 90,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getStatusBits",
+      "type": "function",
+      "label": "getStatusBits",
+      "properties": {
+        "startLine": 95,
+        "endLine": 97,
+        "params": [
+          "mask"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::clearStatus",
+      "type": "function",
+      "label": "clearStatus",
+      "properties": {
+        "startLine": 102,
+        "endLine": 104,
+        "params": [
+          "clearMask"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getInterruptEnable",
+      "type": "function",
+      "label": "getInterruptEnable",
+      "properties": {
+        "startLine": 109,
+        "endLine": 111,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::setInterruptEnable",
+      "type": "function",
+      "label": "setInterruptEnable",
+      "properties": {
+        "startLine": 116,
+        "endLine": 118,
+        "params": [
+          "mask"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getFrameNumber",
+      "type": "function",
+      "label": "getFrameNumber",
+      "properties": {
+        "startLine": 123,
+        "endLine": 125,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::setFrameNumber",
+      "type": "function",
+      "label": "setFrameNumber",
+      "properties": {
+        "startLine": 130,
+        "endLine": 132,
+        "params": [
+          "frnum"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getFrameListBaseAddress",
+      "type": "function",
+      "label": "getFrameListBaseAddress",
+      "properties": {
+        "startLine": 137,
+        "endLine": 139,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::setFrameListBaseAddress",
+      "type": "function",
+      "label": "setFrameListBaseAddress",
+      "properties": {
+        "startLine": 144,
+        "endLine": 146,
+        "params": [
+          "baseAddress"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getStartOfFrame",
+      "type": "function",
+      "label": "getStartOfFrame",
+      "properties": {
+        "startLine": 151,
+        "endLine": 153,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::setStartOfFrame",
+      "type": "function",
+      "label": "setStartOfFrame",
+      "properties": {
+        "startLine": 158,
+        "endLine": 160,
+        "params": [
+          "sof"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getPortSC",
+      "type": "function",
+      "label": "getPortSC",
+      "properties": {
+        "startLine": 165,
+        "endLine": 167,
+        "params": [
+          "port"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getPortSCBits",
+      "type": "function",
+      "label": "getPortSCBits",
+      "properties": {
+        "startLine": 172,
+        "endLine": 174,
+        "params": [
+          "port",
+          "mask"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::setPortSCBits",
+      "type": "function",
+      "label": "setPortSCBits",
+      "properties": {
+        "startLine": 179,
+        "endLine": 188,
+        "params": [
+          "port",
+          "mask",
+          "on"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::setPortSC",
+      "type": "function",
+      "label": "setPortSC",
+      "properties": {
+        "startLine": 193,
+        "endLine": 195,
+        "params": [
+          "port",
+          "value"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::export::UHCIIO",
+      "type": "export",
+      "label": "UHCIIO",
+      "properties": {
+        "line": 39,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::export::release",
+      "type": "export",
+      "label": "release",
+      "properties": {
+        "line": 47,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java",
+      "type": "file",
+      "label": "UHCIIO.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 196,
+        "nonEmptyLines": 171,
+        "metrics": {
+          "importCount": 3,
+          "exportCount": 3,
+          "functionCount": 21,
+          "classCount": 1
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation1.java::class::SoftwareInformation1",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation1.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation1.java::func::SoftwareInformation1",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation1.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation1.java::func::set_OptimizeFor",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation1.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation1.java::func::set_LinkBeatDisable",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation1.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation1.java::func::set_FullDuplexMode",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation1.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation1.java::func::get_OptimizeFor",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation1.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation1.java::func::get_LinkBeatDisable",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation1.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation1.java::func::get_FullDuplexMode",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation1.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation1.java::func::SoftwareInformation1",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation1.java::func::set_OptimizeFor",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 18
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation1.java::func::SoftwareInformation1",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation1.java::func::set_LinkBeatDisable",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 19
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation1.java::func::SoftwareInformation1",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation1.java::func::set_FullDuplexMode",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 20
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation1.java",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation1.java::export::set_OptimizeFor",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation1.java",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation1.java::export::set_LinkBeatDisable",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation1.java",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation1.java::export::set_FullDuplexMode",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation1.java",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation1.java::export::get_OptimizeFor",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation1.java",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation1.java::export::get_LinkBeatDisable",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation1.java",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation1.java::export::get_FullDuplexMode",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java::class::SoftwareInformation2",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::SoftwareInformation2",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::SoftwareInformation2",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::set_BroadcastRxErrDone",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::set_EncoderDecoderLoopBackErrDone",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::set_WOLConnectorPresent",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::set_PMEPulsed",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::set_MWIErrDone",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::set_AutoResetToD0",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::set_D3Work",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::get_BroadcastRxErrDone",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::get_EncoderDecoderLoopBackErrDone",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::get_WOLConnectorPresent",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::get_PMEPulsed",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::get_MWIErrDone",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::get_AutoResetToD0",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::get_D3Work",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::SoftwareInformation2",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::set_BroadcastRxErrDone",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 15
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::SoftwareInformation2",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::set_EncoderDecoderLoopBackErrDone",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 16
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::SoftwareInformation2",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::set_WOLConnectorPresent",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 17
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::SoftwareInformation2",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::set_PMEPulsed",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 18
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::SoftwareInformation2",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::set_MWIErrDone",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 19
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::SoftwareInformation2",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::set_AutoResetToD0",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 20
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::SoftwareInformation2",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java::func::set_D3Work",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 21
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::SoftwareInformation2",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::SoftwareInformation2",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::set_BroadcastRxErrDone",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::set_EncoderDecoderLoopBackErrDone",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::set_WOLConnectorPresent",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::set_PMEPulsed",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::set_MWIErrDone",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::set_AutoResetToD0",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::set_D3Work",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::get_BroadcastRxErrDone",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::get_EncoderDecoderLoopBackErrDone",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::get_WOLConnectorPresent",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::get_PMEPulsed",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::get_MWIErrDone",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::get_AutoResetToD0",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation2.java::export::get_D3Work",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation3.java::class::SoftwareInformation3",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation3.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation3.java::func::SoftwareInformation3",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation3.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation3.java::func::set_ForceXcvr",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation3.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation3.java::func::get_ForceXcvr",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation3.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation3.java::func::SoftwareInformation3",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation3.java::func::set_ForceXcvr",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 16
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation3.java",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation3.java::export::set_ForceXcvr",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/SoftwareInformation3.java",
+      "target": "src/metaxa/os/devices/net/SoftwareInformation3.java::export::get_ForceXcvr",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UndefinedConnectorException.java::class::UndefinedConnectorException",
+      "target": "src/metaxa/os/devices/net/UndefinedConnectorException.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UndefinedConnectorException.java::func::UndefinedConnectorException",
+      "target": "src/metaxa/os/devices/net/UndefinedConnectorException.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UndefinedConnectorException.java::func::UndefinedConnectorException",
+      "target": "src/metaxa/os/devices/net/UndefinedConnectorException.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UndefinedConnectorException.java",
+      "target": "src/metaxa/os/devices/net/UndefinedConnectorException.java::export::UndefinedConnectorException",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UndefinedConnectorException.java",
+      "target": "src/metaxa/os/devices/net/UndefinedConnectorException.java::export::UndefinedConnectorException",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UnknownConnectorType.java::class::UnknownConnectorType",
+      "target": "src/metaxa/os/devices/net/UnknownConnectorType.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UnknownConnectorType.java::func::UnknownConnectorType",
+      "target": "src/metaxa/os/devices/net/UnknownConnectorType.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UnknownConnectorType.java::func::UnknownConnectorType",
+      "target": "src/metaxa/os/devices/net/UnknownConnectorType.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UnknownConnectorType.java",
+      "target": "src/metaxa/os/devices/net/UnknownConnectorType.java::export::UnknownConnectorType",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UnknownConnectorType.java",
+      "target": "src/metaxa/os/devices/net/UnknownConnectorType.java::export::UnknownConnectorType",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UnknownLinkState.java::class::UnknownLinkState",
+      "target": "src/metaxa/os/devices/net/UnknownLinkState.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UnknownLinkState.java::func::UnknownLinkState",
+      "target": "src/metaxa/os/devices/net/UnknownLinkState.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UnknownLinkState.java::func::UnknownLinkState",
+      "target": "src/metaxa/os/devices/net/UnknownLinkState.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UnknownLinkState.java",
+      "target": "src/metaxa/os/devices/net/UnknownLinkState.java::export::UnknownLinkState",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UnknownLinkState.java",
+      "target": "src/metaxa/os/devices/net/UnknownLinkState.java::export::UnknownLinkState",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::class::UpdListEntry",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdListEntry",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::StoreMem",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpPacketStatus",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpNextPointer",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::Next",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::Previous",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpPacketStatus",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdMemory",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::StoreMem",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::Next",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::Previous",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::UPDPhysicalAddress",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::toString",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdListEntry",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::memMgr.allocAligned",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 20
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdListEntry",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::System.out.println",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 22
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdListEntry",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdMemory.getStartAddress",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 25
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdListEntry",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::memMgr.alloc",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 27
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdListEntry",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::System.out.println",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 29
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdListEntry",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdMemory.set32",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 34
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdListEntry",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdMemory.set32",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 36
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdListEntry",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdMemory.set32",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 38
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdListEntry",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::StoreMem.getStartAddress",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 38
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdListEntry",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdMemory.set32",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 40
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdListEntry",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::StoreMem.size",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 40
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::StoreMem",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdMemory.set32",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 45
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::StoreMem",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::mem.getStartAddress",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 45
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::StoreMem",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdMemory.set32",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 46
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::StoreMem",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::mem.size",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 46
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpPacketStatus",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdMemory.set32",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 49
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpNextPointer",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdMemory.set32",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 52
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpPacketStatus",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdMemory.get32",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 62
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::toString",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::System.out.println",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 83
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::toString",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::System.out.println",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 84
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::toString",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::Integer.toHexString",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 84
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::toString",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdMemory.get32",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 84
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::toString",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::System.out.println",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 85
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::toString",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::Integer.toHexString",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 85
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::toString",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::System.out.println",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 86
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::toString",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::System.out.println",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 88
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::toString",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdMemory.get32",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 88
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::toString",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::System.out.println",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 89
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::toString",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdMemory.get32",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 89
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::toString",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::System.out.println",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 90
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::toString",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdMemory.get32",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 90
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::toString",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::System.out.println",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 91
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::toString",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdMemory.get32",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 91
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::toString",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::System.out.println",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 92
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::toString",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdMemory.getStartAddress",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 92
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::toString",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::UpdMemory.size",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 92
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::toString",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::System.out.println",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 95
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::toString",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::System.out.println",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 98
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::toString",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::StoreMem.size",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 98
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::toString",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::StoreMem.getStartAddress",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 98
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::toString",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::System.out.println",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 101
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java::func::toString",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::func::System.out.println",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 103
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::export::UpdListEntry",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::export::StoreMem",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::export::UpPacketStatus",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::export::UpNextPointer",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::export::Next",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::export::Previous",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::export::UpPacketStatus",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::export::UpdMemory",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::export::StoreMem",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::export::Next",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::export::Previous",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::export::UPDPhysicalAddress",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "target": "src/metaxa/os/devices/net/UpdListEntry.java::export::toString",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitCases.java::class::WaitCases",
+      "target": "src/metaxa/os/devices/net/WaitCases.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::class::WaitTimer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::WaitTimer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::equals",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::help.get_NicInfo",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 20
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::WaitTimerGlobal.instance",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 21
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::new Befehl",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 22
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::new Mii",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 23
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::help.get_TimeOut",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 38
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::timerManager.getCurrentTime",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 38
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::Debug.out.println",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 43
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::help.get_TestDPD",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 44
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::dpd.DpdMemory",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 46
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::waitglobal.get_PortV",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 47
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::(dpd.DpdMemory()).getStartAddress",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 47
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::dpd.DpdMemory",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 47
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::befehl.NicReadPortLong",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 48
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::Register.DOWN_LIST_POINTER_REGISTER",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 48
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::waitglobal.set_PortV",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 49
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::waitglobal.get_PortV",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 56
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::Adapter.HeadUPD.UPDPhysicalAddress",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 56
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::Debug.out.println",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 57
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::waitglobal.get_PortV",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 57
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::Adapter.HeadUPD.UPDPhysicalAddress",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 57
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::befehl.NicReadPortLong",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 58
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::Register.UP_LIST_POINTER_REGISTER",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 58
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::waitglobal.set_PortV",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 59
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::Debug.out.println",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 65
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::waitglobal.get_DCConverterEnabledState",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 66
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::waitglobal.get_MediaStatus",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 67
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::Register.MEDIA_STATUS_DC_CONVERTER_ENABLED",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 67
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::waitglobal.get_DCConverterEnabledState",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 68
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::waitglobal.get_MediaStatus",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 69
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::Register.MEDIA_STATUS_DC_CONVERTER_ENABLED",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 69
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::befehl.NicReadPortShort",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 71
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::Register.MEDIA_STATUS_REGISTER",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 71
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::waitglobal.set_MediaStatus",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 72
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::Debug.out.println",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 78
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::waitglobal.get_PhyStatus",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 79
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::mii.ReadMIIPhy",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 83
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::waitglobal.set_PhyStatus",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 88
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::waitglobal.set_PhyResponding",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 89
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::Debug.out.println",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 96
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::waitglobal.get_MediaStatus",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 97
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::Register.MEDIA_STATUS_TX_IN_PROGRESS",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 97
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::befehl.NicReadPortShort",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 99
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::Register.MEDIA_STATUS_REGISTER",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 99
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::waitglobal.set_MediaStatus",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 100
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::Debug.out.println",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 106
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::help.get_TestDPD",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 107
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::waitglobal.get_DownListPointer",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 108
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::dpd.DPDPhysicalAddress",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 108
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::befehl.NicReadPortLong",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 110
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::Register.DOWN_LIST_POINTER_REGISTER",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 110
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::waitglobal.set_DownListPointer",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 111
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::Debug.out.println",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 117
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::waitglobal.get_UpListPointer",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 118
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::Adapter.HeadUPD.UPDPhysicalAddress",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 118
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::befehl.NicReadPortLong",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 120
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::Register.UP_LIST_POINTER_REGISTER",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 120
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::waitglobal.set_UpListPointer",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 121
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::Debug.out.println",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 127
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::waitglobal.get_dmaControl",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 128
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::Register.DMA_CONTROL_DOWN_IN_PROGRESS",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 128
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::befehl.NicReadPortLong",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 130
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::Register.DMA_CONTROL_REGISTER",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 130
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::waitglobal.set_dmaControl",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 131
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::Debug.out.println",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 138
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::waitglobal.get_MediaStatus",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 139
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::Register.MEDIA_STATUS_CARRIER_SENSE",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 139
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::befehl.NicReadPortShort",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 141
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::Register.MEDIA_STATUS_REGISTER",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 141
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::waitglobal.set_MediaStatus",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 142
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::timerManager.addMillisTimer",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 151
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java::func::timer",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::func::Debug.out.println",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 155
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::export::timer",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimer.java",
+      "target": "src/metaxa/os/devices/net/WaitTimer.java::export::equals",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerArg.java::class::WaitTimerArg",
+      "target": "src/metaxa/os/devices/net/WaitTimerArg.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerArg.java::func::WaitTimerArg",
+      "target": "src/metaxa/os/devices/net/WaitTimerArg.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerArg.java::func::get_NicInfo",
+      "target": "src/metaxa/os/devices/net/WaitTimerArg.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerArg.java::func::get_TestDPD",
+      "target": "src/metaxa/os/devices/net/WaitTimerArg.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerArg.java::func::get_TimeOut",
+      "target": "src/metaxa/os/devices/net/WaitTimerArg.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerArg.java",
+      "target": "src/metaxa/os/devices/net/WaitTimerArg.java::export::WaitTimerArg",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerArg.java",
+      "target": "src/metaxa/os/devices/net/WaitTimerArg.java::export::get_NicInfo",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerArg.java",
+      "target": "src/metaxa/os/devices/net/WaitTimerArg.java::export::get_TestDPD",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerArg.java",
+      "target": "src/metaxa/os/devices/net/WaitTimerArg.java::export::get_TimeOut",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java::class::WaitTimerGlobal",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::WaitTimerGlobal",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::instance",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::get_DCConverterEnabledState",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::get_MediaStatus",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::get_PhyResponding",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::get_PhyStatus",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::get_DownListPointer",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::get_UpListPointer",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::get_PortV",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::get_dmaControl",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::set_DCConverterEnabledState",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::set_MediaStatus",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::set_PhyResponding",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::set_PhyStatus",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::set_DownListPointer",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::set_UpListPointer",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::set_PortV",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::set_dmaControl",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::instance",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java::func::new WaitTimerGlobal",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 24
+      }
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::instance",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::get_DCConverterEnabledState",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::get_MediaStatus",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::get_PhyResponding",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::get_PhyStatus",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::get_DownListPointer",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::get_UpListPointer",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::get_PortV",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::get_dmaControl",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::set_DCConverterEnabledState",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::set_MediaStatus",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::set_PhyResponding",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::set_PhyStatus",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::set_DownListPointer",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::set_UpListPointer",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::set_PortV",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "target": "src/metaxa/os/devices/net/WaitTimerGlobal.java::export::set_dmaControl",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WrongDate.java::class::WrongDate",
+      "target": "src/metaxa/os/devices/net/WrongDate.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WrongDate.java::func::WrongDate",
+      "target": "src/metaxa/os/devices/net/WrongDate.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WrongDate.java::func::WrongDate",
+      "target": "src/metaxa/os/devices/net/WrongDate.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WrongDate.java",
+      "target": "src/metaxa/os/devices/net/WrongDate.java::export::WrongDate",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/metaxa/os/devices/net/WrongDate.java",
+      "target": "src/metaxa/os/devices/net/WrongDate.java::export::WrongDate",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/AbstractDeviceItem.java::class::AbstractDeviceItem",
+      "target": "src/org/jnode/driver/bus/usb/AbstractDeviceItem.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/AbstractDeviceItem.java::func::AbstractDeviceItem",
+      "target": "src/org/jnode/driver/bus/usb/AbstractDeviceItem.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/AbstractDeviceItem.java::func::getDevice",
+      "target": "src/org/jnode/driver/bus/usb/AbstractDeviceItem.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/AbstractDeviceItem.java",
+      "target": "src/org/jnode/driver/bus/usb/AbstractDeviceItem.java::export::AbstractDeviceItem",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/AbstractDeviceItem.java",
+      "target": "src/org/jnode/driver/bus/usb/AbstractDeviceItem.java::export::getDevice",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/AbstractDeviceItem.java",
+      "target": "src/org/jnode/driver/bus/usb/AbstractDeviceItem.java::export::AbstractDeviceItem",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::class::ConfigurationDescriptor",
+      "target": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::ConfigurationDescriptor",
+      "target": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::ConfigurationDescriptor",
+      "target": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::getTotalLength",
+      "target": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::getNumInterfaces",
+      "target": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::getConfigurationValue",
+      "target": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::getConfigurationStringIndex",
+      "target": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::getConfigurationName",
+      "target": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::loadStrings",
+      "target": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::getTotalLength",
+      "target": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::getShort",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 53
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::getNumInterfaces",
+      "target": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::getByte",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 60
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::getConfigurationValue",
+      "target": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::getByte",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 67
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::getConfigurationStringIndex",
+      "target": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::getByte",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 74
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::loadStrings",
+      "target": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::getConfigurationStringIndex",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 92
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::loadStrings",
+      "target": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::dev.getString",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 94
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::getTotalLength",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 104
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::getNumInterfaces",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 105
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::getConfigurationValue",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 106
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::func::getConfigurationStringIndex",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 107
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java",
+      "target": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::export::ConfigurationDescriptor",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java",
+      "target": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::export::ConfigurationDescriptor",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java",
+      "target": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::export::getTotalLength",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java",
+      "target": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::export::getNumInterfaces",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java",
+      "target": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::export::getConfigurationValue",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java",
+      "target": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::export::getConfigurationStringIndex",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java",
+      "target": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::export::getConfigurationName",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java",
+      "target": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::export::toString",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java",
+      "target": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java::export::ConfigurationDescriptor",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::class::InterfaceDescriptor",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::InterfaceDescriptor",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::InterfaceDescriptor",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getInterfaceNumber",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getAlternateSetting",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getNumEndPoints",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getInterfaceClass",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getInterfaceSubClass",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getInterfaceProtocol",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getInterfaceStringIndex",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getInterfaceName",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::loadStrings",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getInterfaceNumber",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getByte",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 53
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getAlternateSetting",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getByte",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 60
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getNumEndPoints",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getByte",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 67
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getInterfaceClass",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getByte",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 74
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getInterfaceSubClass",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getByte",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 81
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getInterfaceProtocol",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getByte",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 88
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getInterfaceStringIndex",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getByte",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 95
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::loadStrings",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getInterfaceStringIndex",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 112
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::loadStrings",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::dev.getString",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 114
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getInterfaceNumber",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 124
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getAlternateSetting",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 125
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getNumEndPoints",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 126
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getInterfaceClass",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 127
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getInterfaceSubClass",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 128
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getInterfaceProtocol",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 129
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::func::getInterfaceStringIndex",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 130
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::export::InterfaceDescriptor",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::export::InterfaceDescriptor",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::export::getInterfaceNumber",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::export::getAlternateSetting",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::export::getNumEndPoints",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::export::getInterfaceClass",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::export::getInterfaceSubClass",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::export::getInterfaceProtocol",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::export::getInterfaceStringIndex",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::export::getInterfaceName",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::export::toString",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java",
+      "target": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java::export::InterfaceDescriptor",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/StringDescriptor.java::class::StringDescriptor",
+      "target": "src/org/jnode/driver/bus/usb/StringDescriptor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/StringDescriptor.java::func::StringDescriptor",
+      "target": "src/org/jnode/driver/bus/usb/StringDescriptor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/StringDescriptor.java::func::StringDescriptor",
+      "target": "src/org/jnode/driver/bus/usb/StringDescriptor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/StringDescriptor.java::func::getString",
+      "target": "src/org/jnode/driver/bus/usb/StringDescriptor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/StringDescriptor.java::func::getString",
+      "target": "src/org/jnode/driver/bus/usb/StringDescriptor.java::func::getLength",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 56
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/StringDescriptor.java::func::getString",
+      "target": "src/org/jnode/driver/bus/usb/StringDescriptor.java::func::getChar",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 59
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/StringDescriptor.java::func::getString",
+      "target": "src/org/jnode/driver/bus/usb/StringDescriptor.java::func::new String",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 61
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/StringDescriptor.java",
+      "target": "src/org/jnode/driver/bus/usb/StringDescriptor.java::export::StringDescriptor",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/StringDescriptor.java",
+      "target": "src/org/jnode/driver/bus/usb/StringDescriptor.java::export::StringDescriptor",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/StringDescriptor.java",
+      "target": "src/org/jnode/driver/bus/usb/StringDescriptor.java::export::getString",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/StringDescriptor.java",
+      "target": "src/org/jnode/driver/bus/usb/StringDescriptor.java::export::StringDescriptor",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java::class::StringDescriptorZero",
+      "target": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java::func::StringDescriptorZero",
+      "target": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java::func::StringDescriptorZero",
+      "target": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java::func::getNumLangIDs",
+      "target": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java::func::getLangID",
+      "target": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java::func::contains",
+      "target": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java::func::getNumLangIDs",
+      "target": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java::func::getLength",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 52
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java::func::getLangID",
+      "target": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java::func::getShort",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 61
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java::func::contains",
+      "target": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java::func::getNumLangIDs",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 70
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java::func::contains",
+      "target": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java::func::getLangID",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 72
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java",
+      "target": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java::export::StringDescriptorZero",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java",
+      "target": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java::export::StringDescriptorZero",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java",
+      "target": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java::export::getNumLangIDs",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java",
+      "target": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java::export::getLangID",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java",
+      "target": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java::export::contains",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java",
+      "target": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java::export::StringDescriptorZero",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java::class::AbstractStructure",
+      "target": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java::func::AbstractStructure",
+      "target": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java::func::getInt",
+      "target": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java::func::setInt",
+      "target": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java::func::getDescriptorAddress",
+      "target": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java::func::AbstractStructure",
+      "target": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java::func::InitialNaming.getInitialNaming().lookup",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 49
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java::func::AbstractStructure",
+      "target": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java::func::InitialNaming.getInitialNaming",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 49
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java::func::AbstractStructure",
+      "target": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java::func::rm.allocAligned",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 50
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java::func::AbstractStructure",
+      "target": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java::func::dataRes.getStartAddress",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 51
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java::func::AbstractStructure",
+      "target": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java::func::dataRes.getStartAddress",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 57
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java::func::getInt",
+      "target": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java::func::dataRes.get32",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 66
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java::func::setInt",
+      "target": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java::func::dataRes.set32",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 76
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java",
+      "target": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java::export::getDescriptorAddress",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java",
+      "target": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java::export::AbstractStructure",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/AbstractTreeStructure.java::class::AbstractTreeStructure",
+      "target": "src/org/jnode/driver/bus/usb/uhci/AbstractTreeStructure.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/AbstractTreeStructure.java::func::AbstractTreeStructure",
+      "target": "src/org/jnode/driver/bus/usb/uhci/AbstractTreeStructure.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/AbstractTreeStructure.java",
+      "target": "src/org/jnode/driver/bus/usb/uhci/AbstractTreeStructure.java::export::AbstractTreeStructure",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/AbstractTreeStructure.java",
+      "target": "src/org/jnode/driver/bus/usb/uhci/AbstractTreeStructure.java::export::AbstractTreeStructure",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::class::FrameList",
+      "target": "src/org/jnode/driver/bus/usb/uhci/FrameList.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::func::FrameList",
+      "target": "src/org/jnode/driver/bus/usb/uhci/FrameList.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::func::setListPointer",
+      "target": "src/org/jnode/driver/bus/usb/uhci/FrameList.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::func::setListPointer",
+      "target": "src/org/jnode/driver/bus/usb/uhci/FrameList.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::func::setListPointerInvalid",
+      "target": "src/org/jnode/driver/bus/usb/uhci/FrameList.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::func::getListPointer",
+      "target": "src/org/jnode/driver/bus/usb/uhci/FrameList.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::func::getSize",
+      "target": "src/org/jnode/driver/bus/usb/uhci/FrameList.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::func::FrameList",
+      "target": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::func::setListPointerInvalid",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 43
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::func::setListPointer",
+      "target": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::func::td.getDescriptorAddress",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 54
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::func::setListPointer",
+      "target": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::func::setInt",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 56
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::func::setListPointer",
+      "target": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::func::qh.getDescriptorAddress",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 68
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::func::setListPointer",
+      "target": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::func::setInt",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 70
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::func::setListPointerInvalid",
+      "target": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::func::setInt",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 79
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/FrameList.java",
+      "target": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::export::FrameList",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/FrameList.java",
+      "target": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::export::setListPointer",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/FrameList.java",
+      "target": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::export::setListPointer",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/FrameList.java",
+      "target": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::export::setListPointerInvalid",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/FrameList.java",
+      "target": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::export::getListPointer",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/FrameList.java",
+      "target": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::export::getSize",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/FrameList.java",
+      "target": "src/org/jnode/driver/bus/usb/uhci/FrameList.java::export::FrameList",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIConstants.java::class::UHCIConstants",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIConstants.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIConstants.java",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIConstants.java::export::UHCIConstants",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::class::UHCIIO",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::UHCIIO",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::release",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getCommand",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getCommandBits",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::setCommand",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::setCommandBits",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getStatus",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getStatusBits",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::clearStatus",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getInterruptEnable",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::setInterruptEnable",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getFrameNumber",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::setFrameNumber",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getFrameListBaseAddress",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::setFrameListBaseAddress",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getStartOfFrame",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::setStartOfFrame",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getPortSC",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getPortSCBits",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::setPortSCBits",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::setPortSC",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::UHCIIO",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::InitialNaming.getInitialNaming().lookup",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 40
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::UHCIIO",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::InitialNaming.getInitialNaming",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 40
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getCommand",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::io.inw_p",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 55
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getCommandBits",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::io.inw_p",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 62
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::setCommand",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::io.outw_p",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 69
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::setCommandBits",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::io.inw_p",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 76
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::setCommandBits",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::io.outw_p",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 82
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getStatus",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::io.inw_p",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 89
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getStatusBits",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::io.inw_p",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 96
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::clearStatus",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::io.outw_p",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 103
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getInterruptEnable",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::io.inw_p",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 110
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::setInterruptEnable",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::io.outw_p",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 117
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getFrameNumber",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::io.inw_p",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 124
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::setFrameNumber",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::io.outw_p",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 131
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getFrameListBaseAddress",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::io.inl_p",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 138
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::setFrameListBaseAddress",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::io.outl_p",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 145
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getStartOfFrame",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::io.inb_p",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 152
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::setStartOfFrame",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::io.outb_p",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 159
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getPortSC",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::io.inw_p",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 166
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::getPortSCBits",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::io.inw_p",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 173
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::setPortSCBits",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::io.inw_p",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 180
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::setPortSCBits",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::io.outw_p",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 187
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::setPortSC",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::func::io.outw_p",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 194
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::export::UHCIIO",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::export::release",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java",
+      "target": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java::export::UHCIIO",
+      "type": "EXPORTS",
+      "properties": {}
+    }
+  ],
+  "metadata": {
+    "filesAnalyzed": 25,
+    "filesSkipped": [],
+    "totalNodes": 263,
+    "totalEdges": 468
+  }
+}

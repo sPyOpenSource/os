@@ -1,0 +1,184 @@
+{
+  "projectRoot": "/Users/xuyi/Source/OS/armOS/lib/jcore/OS",
+  "batchIndex": 28,
+  "batchFiles": [
+    {
+      "path": "src/jx/bootrc/StringTokenException.java",
+      "language": "java",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/buffer/BufferHead.java",
+      "language": "java",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/buffer/multithread/Buffer.java",
+      "language": "java",
+      "sizeLines": 72,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/buffer/multithread/BufferConsumer.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/buffer/multithread/BufferProducer.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/buffer/multithread/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/buffer/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/buffer/separator/MemoryConsumer2.java",
+      "language": "java",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/buffer/separator/MemoryProducer.java",
+      "language": "java",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/buffer/separator/NonBlockingMemoryConsumer.java",
+      "language": "java",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/buffer/separator/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/BC.java",
+      "language": "java",
+      "sizeLines": 283,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/constantpool/ClassCPEntry.java",
+      "language": "java",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/constantpool/ClassMemberCPEntry.java",
+      "language": "java",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/constantpool/ConstantPoolEntry.java",
+      "language": "java",
+      "sizeLines": 153,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/constantpool/FieldRefCPEntry.java",
+      "language": "java",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/constantpool/MethodRefCPEntry.java",
+      "language": "java",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/constantpool/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/constantpool/UTF8CPEntry.java",
+      "language": "java",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BasicTypeDescriptor.java",
+      "language": "java",
+      "sizeLines": 167,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BCByte.java",
+      "language": "java",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BCDouble.java",
+      "language": "java",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BCFloat.java",
+      "language": "java",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BCFloatDatatype.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BCInteger.java",
+      "language": "java",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/jx/bootrc/StringTokenException.java": [],
+    "src/jx/buffer/BufferHead.java": [],
+    "src/jx/buffer/multithread/Buffer.java": [],
+    "src/jx/buffer/multithread/BufferConsumer.java": [],
+    "src/jx/buffer/multithread/BufferProducer.java": [],
+    "src/jx/buffer/multithread/package.bluej": [],
+    "src/jx/buffer/package.bluej": [],
+    "src/jx/buffer/separator/MemoryConsumer2.java": [],
+    "src/jx/buffer/separator/MemoryProducer.java": [],
+    "src/jx/buffer/separator/NonBlockingMemoryConsumer.java": [],
+    "src/jx/buffer/separator/package.bluej": [],
+    "src/jx/classfile/BC.java": [],
+    "src/jx/classfile/constantpool/ClassCPEntry.java": [],
+    "src/jx/classfile/constantpool/ClassMemberCPEntry.java": [],
+    "src/jx/classfile/constantpool/ConstantPoolEntry.java": [],
+    "src/jx/classfile/constantpool/FieldRefCPEntry.java": [],
+    "src/jx/classfile/constantpool/MethodRefCPEntry.java": [],
+    "src/jx/classfile/constantpool/package.bluej": [],
+    "src/jx/classfile/constantpool/UTF8CPEntry.java": [],
+    "src/jx/classfile/datatypes/BasicTypeDescriptor.java": [],
+    "src/jx/classfile/datatypes/BCByte.java": [],
+    "src/jx/classfile/datatypes/BCDouble.java": [],
+    "src/jx/classfile/datatypes/BCFloat.java": [],
+    "src/jx/classfile/datatypes/BCFloatDatatype.java": [],
+    "src/jx/classfile/datatypes/BCInteger.java": []
+  },
+  "neighborMap": {}
+}

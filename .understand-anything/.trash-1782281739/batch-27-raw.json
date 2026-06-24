@@ -1,0 +1,201 @@
+{
+  "projectRoot": "/Users/xuyi/Source/OS/armOS/lib/jcore/OS",
+  "batchIndex": 27,
+  "batchFiles": [
+    {
+      "path": "src/javax/net/ssl/SSLSocket.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/javax/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/javax/security/cert/Certificate.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/javax/security/cert/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/javax/security/cert/X509Certificate.java",
+      "language": "java",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/javax/security/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bio/buffercache/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bio/emulator/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bio/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bio/ram/BlockIORAM.java",
+      "language": "java",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bio/ram/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bio/ro/Main.java",
+      "language": "java",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bio/ro/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bootrc/BootRC.java",
+      "language": "java",
+      "sizeLines": 345,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bootrc/BootRC2.java",
+      "language": "java",
+      "sizeLines": 116,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bootrc/ComponentSpec.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bootrc/ConfigFile.java",
+      "language": "java",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bootrc/DomainSpec.java",
+      "language": "java",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bootrc/GlobalSpec.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bootrc/NameNotFoundException.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bootrc/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bootrc/Pair.java",
+      "language": "java",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bootrc/Record.java",
+      "language": "java",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bootrc/Section.java",
+      "language": "java",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bootrc/Spec.java",
+      "language": "java",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/javax/net/ssl/SSLSocket.java": [],
+    "src/javax/package.bluej": [],
+    "src/javax/security/cert/Certificate.java": [],
+    "src/javax/security/cert/package.bluej": [],
+    "src/javax/security/cert/X509Certificate.java": [],
+    "src/javax/security/package.bluej": [],
+    "src/jx/bio/buffercache/package.bluej": [],
+    "src/jx/bio/emulator/package.bluej": [],
+    "src/jx/bio/package.bluej": [],
+    "src/jx/bio/ram/BlockIORAM.java": [
+      "src/jx/timerpc/SleepManagerImpl.java"
+    ],
+    "src/jx/bio/ram/package.bluej": [],
+    "src/jx/bio/ro/Main.java": [],
+    "src/jx/bio/ro/package.bluej": [],
+    "src/jx/bootrc/BootRC.java": [],
+    "src/jx/bootrc/BootRC2.java": [],
+    "src/jx/bootrc/ComponentSpec.java": [],
+    "src/jx/bootrc/ConfigFile.java": [],
+    "src/jx/bootrc/DomainSpec.java": [],
+    "src/jx/bootrc/GlobalSpec.java": [],
+    "src/jx/bootrc/NameNotFoundException.java": [],
+    "src/jx/bootrc/package.bluej": [],
+    "src/jx/bootrc/Pair.java": [],
+    "src/jx/bootrc/Record.java": [],
+    "src/jx/bootrc/Section.java": [],
+    "src/jx/bootrc/Spec.java": []
+  },
+  "neighborMap": {
+    "src/jx/bio/ram/BlockIORAM.java": [
+      {
+        "path": "src/jx/timerpc/SleepManagerImpl.java",
+        "batchIndex": 41,
+        "symbols": [
+          "SleepManagerImpl",
+          "SleepManagerImpl",
+          "mdelay",
+          "udelay",
+          "sleep",
+          "SleepManagerImpl"
+        ]
+      }
+    ]
+  }
+}

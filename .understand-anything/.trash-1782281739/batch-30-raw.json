@@ -1,0 +1,184 @@
+{
+  "projectRoot": "/Users/xuyi/Source/OS/armOS/lib/jcore/OS",
+  "batchIndex": 30,
+  "batchFiles": [
+    {
+      "path": "src/jx/db/Index.java",
+      "language": "java",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/IndexInfo.java",
+      "language": "java",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/Key.java",
+      "language": "java",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/mytypes/comparators/IntegerComparator.java",
+      "language": "java",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/mytypes/comparators/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/mytypes/comparators/StringComparator.java",
+      "language": "java",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/mytypes/Converter.java",
+      "language": "java",
+      "sizeLines": 154,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/mytypes/converters/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/mytypes/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/parser/JXResultSet.java",
+      "language": "java",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/parser/Main.java",
+      "language": "java",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/parser/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/parser/ParseException.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/RelationalOperator.java",
+      "language": "java",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/RelationScan.java",
+      "language": "java",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/SetNumberReader.java",
+      "language": "java",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/systembuffer/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/systembuffer/strategy/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/systembuffer/strategy/PageStrategyRecord.java",
+      "language": "java",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/Table.java",
+      "language": "java",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/treemap/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/treemap/TreeMap.java",
+      "language": "java",
+      "sizeLines": 128,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/TupleReader.java",
+      "language": "java",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/TupleWriter.java",
+      "language": "java",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/jx/db/Index.java": [],
+    "src/jx/db/IndexInfo.java": [],
+    "src/jx/db/Key.java": [],
+    "src/jx/db/mytypes/comparators/IntegerComparator.java": [],
+    "src/jx/db/mytypes/comparators/package.bluej": [],
+    "src/jx/db/mytypes/comparators/StringComparator.java": [],
+    "src/jx/db/mytypes/Converter.java": [],
+    "src/jx/db/mytypes/converters/package.bluej": [],
+    "src/jx/db/mytypes/package.bluej": [],
+    "src/jx/db/package.bluej": [],
+    "src/jx/db/parser/JXResultSet.java": [],
+    "src/jx/db/parser/Main.java": [],
+    "src/jx/db/parser/package.bluej": [],
+    "src/jx/db/parser/ParseException.java": [],
+    "src/jx/db/RelationalOperator.java": [],
+    "src/jx/db/RelationScan.java": [],
+    "src/jx/db/SetNumberReader.java": [],
+    "src/jx/db/systembuffer/package.bluej": [],
+    "src/jx/db/systembuffer/strategy/package.bluej": [],
+    "src/jx/db/systembuffer/strategy/PageStrategyRecord.java": [],
+    "src/jx/db/Table.java": [],
+    "src/jx/db/treemap/package.bluej": [],
+    "src/jx/db/treemap/TreeMap.java": [],
+    "src/jx/db/TupleReader.java": [],
+    "src/jx/db/TupleWriter.java": []
+  },
+  "neighborMap": {}
+}

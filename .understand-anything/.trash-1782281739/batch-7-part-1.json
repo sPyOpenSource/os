@@ -1,0 +1,1567 @@
+{
+  "batchIndex": 7,
+  "part": 1,
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "4a3179f54d007b65",
+      "type": "file",
+      "name": "AIQueue.java",
+      "filePath": "src/AI/util/AIQueue.java",
+      "language": "java",
+      "totalLines": 256,
+      "nonEmptyLines": 227,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 26,
+        "functionCount": 24,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "4f152b0b7709d041",
+      "type": "file",
+      "name": "ArrayList.java",
+      "filePath": "src/java/util/ArrayList.java",
+      "language": "java",
+      "totalLines": 1510,
+      "nonEmptyLines": 1360,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 31,
+        "functionCount": 44,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "d5474858d84d49c2",
+      "type": "file",
+      "name": "AbstractDescriptor.java",
+      "filePath": "src/org/jnode/driver/bus/usb/AbstractDescriptor.java",
+      "language": "java",
+      "totalLines": 71,
+      "nonEmptyLines": 62,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "076ddf547a517e0f",
+      "type": "file",
+      "name": "AbstractHostControllerDriver.java",
+      "filePath": "src/org/jnode/driver/bus/usb/AbstractHostControllerDriver.java",
+      "language": "java",
+      "totalLines": 98,
+      "nonEmptyLines": 88,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "57d95c13e8218b09",
+      "type": "file",
+      "name": "DeviceDescriptor.java",
+      "filePath": "src/org/jnode/driver/bus/usb/DeviceDescriptor.java",
+      "language": "java",
+      "totalLines": 190,
+      "nonEmptyLines": 167,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 18,
+        "functionCount": 18,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "fed3bf8d3a0cde39",
+      "type": "file",
+      "name": "EndPointDescriptor.java",
+      "filePath": "src/org/jnode/driver/bus/usb/EndPointDescriptor.java",
+      "language": "java",
+      "totalLines": 146,
+      "nonEmptyLines": 128,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 17,
+        "functionCount": 15,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "6d26fb67eb7ee99d",
+      "type": "file",
+      "name": "SetupPacket.java",
+      "filePath": "src/org/jnode/driver/bus/usb/SetupPacket.java",
+      "language": "java",
+      "totalLines": 175,
+      "nonEmptyLines": 154,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 20,
+        "functionCount": 19,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "f1dc8594172894a5",
+      "type": "file",
+      "name": "USBBus.java",
+      "filePath": "src/org/jnode/driver/bus/usb/USBBus.java",
+      "language": "java",
+      "totalLines": 103,
+      "nonEmptyLines": 90,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "c00dd74772ead742",
+      "type": "file",
+      "name": "USBConstants.java",
+      "filePath": "src/org/jnode/driver/bus/usb/USBConstants.java",
+      "language": "java",
+      "totalLines": 192,
+      "nonEmptyLines": 171,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "e488b78aa40cb794",
+      "type": "file",
+      "name": "USBControlPipe.java",
+      "filePath": "src/org/jnode/driver/bus/usb/USBControlPipe.java",
+      "language": "java",
+      "totalLines": 37,
+      "nonEmptyLines": 33,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "5262c3c276b4459d",
+      "type": "file",
+      "name": "USBDataPipe.java",
+      "filePath": "src/org/jnode/driver/bus/usb/USBDataPipe.java",
+      "language": "java",
+      "totalLines": 35,
+      "nonEmptyLines": 31,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "af297f278c7a747c",
+      "type": "file",
+      "name": "USBDevice.java",
+      "filePath": "src/org/jnode/driver/bus/usb/USBDevice.java",
+      "language": "java",
+      "totalLines": 413,
+      "nonEmptyLines": 375,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 24,
+        "functionCount": 27,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "8f1d35ed0297b767",
+      "type": "file",
+      "name": "USBEndPoint.java",
+      "filePath": "src/org/jnode/driver/bus/usb/USBEndPoint.java",
+      "language": "java",
+      "totalLines": 164,
+      "nonEmptyLines": 149,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 12,
+        "functionCount": 11,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "1aa9a0e04881b764",
+      "type": "file",
+      "name": "USBException.java",
+      "filePath": "src/org/jnode/driver/bus/usb/USBException.java",
+      "language": "java",
+      "totalLines": 57,
+      "nonEmptyLines": 50,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "a8b1d3979c9eb1ef",
+      "type": "file",
+      "name": "USBHostControllerAPI.java",
+      "filePath": "src/org/jnode/driver/bus/usb/USBHostControllerAPI.java",
+      "language": "java",
+      "totalLines": 56,
+      "nonEmptyLines": 49,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "4db9e7ffe6b1985f",
+      "type": "file",
+      "name": "USBHubAPI.java",
+      "filePath": "src/org/jnode/driver/bus/usb/USBHubAPI.java",
+      "language": "java",
+      "totalLines": 133,
+      "nonEmptyLines": 115,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "ab5c5599b45ef690",
+      "type": "file",
+      "name": "USBHubMonitor.java",
+      "filePath": "src/org/jnode/driver/bus/usb/USBHubMonitor.java",
+      "language": "java",
+      "totalLines": 376,
+      "nonEmptyLines": 343,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 4,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "e61248f14f0233ec",
+      "type": "file",
+      "name": "USBPacket.java",
+      "filePath": "src/org/jnode/driver/bus/usb/USBPacket.java",
+      "language": "java",
+      "totalLines": 179,
+      "nonEmptyLines": 161,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 8,
+        "functionCount": 14,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "6893936043bd4ef7",
+      "type": "file",
+      "name": "USBPipe.java",
+      "filePath": "src/org/jnode/driver/bus/usb/USBPipe.java",
+      "language": "java",
+      "totalLines": 96,
+      "nonEmptyLines": 83,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "9624bbe4323f195a",
+      "type": "file",
+      "name": "USBPipeListener.java",
+      "filePath": "src/org/jnode/driver/bus/usb/USBPipeListener.java",
+      "language": "java",
+      "totalLines": 42,
+      "nonEmptyLines": 37,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "eb532e5dbcea491f",
+      "type": "file",
+      "name": "USBRequest.java",
+      "filePath": "src/org/jnode/driver/bus/usb/USBRequest.java",
+      "language": "java",
+      "totalLines": 51,
+      "nonEmptyLines": 45,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "a297a8db9da378b0",
+      "type": "file",
+      "name": "HubDescriptor.java",
+      "filePath": "src/org/jnode/driver/bus/usb/hub/HubDescriptor.java",
+      "language": "java",
+      "totalLines": 114,
+      "nonEmptyLines": 103,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 9,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "a93b6409c2040565",
+      "type": "class",
+      "name": "AIQueue",
+      "filePath": "src/AI/util/AIQueue.java",
+      "startLine": 31,
+      "endLine": 256,
+      "methods": [
+        "get",
+        "get",
+        "get",
+        "get",
+        "add",
+        "remove",
+        "contains",
+        "size",
+        "isEmpty",
+        "close",
+        "isClosed",
+        "offer",
+        "remove",
+        "poll",
+        "element",
+        "peek",
+        "iterator",
+        "toArray",
+        "toArray",
+        "containsAll",
+        "addAll",
+        "removeAll",
+        "retainAll",
+        "clear"
+      ],
+      "properties": [
+        "NO_WAIT",
+        "queue",
+        "closed"
+      ]
+    },
+    {
+      "id": "ec34c76ca232a2a7",
+      "type": "class",
+      "name": "ArrayList",
+      "filePath": "src/java/util/ArrayList.java",
+      "startLine": 104,
+      "endLine": 1510,
+      "methods": [
+        "ArrayList",
+        "ArrayList",
+        "ArrayList",
+        "trimToSize",
+        "ensureCapacity",
+        "ensureCapacityInternal",
+        "ensureExplicitCapacity",
+        "grow",
+        "hugeCapacity",
+        "size",
+        "isEmpty",
+        "contains",
+        "indexOf",
+        "lastIndexOf",
+        "clone",
+        "toArray",
+        "toArray",
+        "elementData",
+        "get",
+        "set",
+        "add",
+        "add",
+        "remove",
+        "remove",
+        "fastRemove",
+        "clear",
+        "addAll",
+        "addAll",
+        "removeRange",
+        "rangeCheck",
+        "rangeCheckForAdd",
+        "outOfBoundsMsg",
+        "removeAll",
+        "retainAll",
+        "batchRemove",
+        "writeObject",
+        "readObject",
+        "iterator",
+        "listIterator",
+        "listIterator",
+        "subList",
+        "subListRangeCheck",
+        "forEach",
+        "spliterator"
+      ],
+      "properties": [
+        "serialVersionUID",
+        "DEFAULT_CAPACITY",
+        "EMPTY_ELEMENTDATA",
+        "DEFAULTCAPACITY_EMPTY_ELEMENTDATA",
+        "elementData",
+        "size",
+        "modCount",
+        "MAX_ARRAY_SIZE"
+      ]
+    },
+    {
+      "id": "bfa62f4dc0bd47f5",
+      "type": "class",
+      "name": "AbstractDescriptor",
+      "filePath": "src/org/jnode/driver/bus/usb/AbstractDescriptor.java",
+      "startLine": 29,
+      "endLine": 71,
+      "methods": [
+        "AbstractDescriptor",
+        "AbstractDescriptor",
+        "getLength",
+        "getType",
+        "loadStrings"
+      ],
+      "properties": []
+    },
+    {
+      "id": "27dd2e021c50a236",
+      "type": "class",
+      "name": "AbstractHostControllerDriver",
+      "filePath": "src/org/jnode/driver/bus/usb/AbstractHostControllerDriver.java",
+      "startLine": 35,
+      "endLine": 98,
+      "methods": [
+        "startDevice",
+        "stopDevice",
+        "getDevicePrefix",
+        "claimResources",
+        "releaseResources",
+        "getAPI"
+      ],
+      "properties": [
+        "rootHubMonitor"
+      ]
+    },
+    {
+      "id": "135355e322bd3b5d",
+      "type": "class",
+      "name": "DeviceDescriptor",
+      "filePath": "src/org/jnode/driver/bus/usb/DeviceDescriptor.java",
+      "startLine": 28,
+      "endLine": 190,
+      "methods": [
+        "DeviceDescriptor",
+        "getUSBVersion",
+        "getDeviceClass",
+        "getDeviceSubClass",
+        "getDeviceProtocol",
+        "getMaxPacketSize0",
+        "getVendorID",
+        "getProductID",
+        "getDeviceRelease",
+        "getManufacturerStringIndex",
+        "getProductStringIndex",
+        "getSerialNumberStringIndex",
+        "getNumConfigurations",
+        "getManufacturerName",
+        "getProductName",
+        "getSerialNumber",
+        "loadStrings",
+        "toString"
+      ],
+      "properties": [
+        "manufacturer",
+        "product",
+        "serialNumber"
+      ]
+    },
+    {
+      "id": "ab1cc467cf058243",
+      "type": "class",
+      "name": "EndPointDescriptor",
+      "filePath": "src/org/jnode/driver/bus/usb/EndPointDescriptor.java",
+      "startLine": 28,
+      "endLine": 146,
+      "methods": [
+        "EndPointDescriptor",
+        "EndPointDescriptor",
+        "getEndPointAddress",
+        "getEndPointNumber",
+        "isDirIn",
+        "isDirOut",
+        "getAttributes",
+        "getTransferType",
+        "isControlTransfer",
+        "isIntTransfer",
+        "isBulkTransfer",
+        "isIsochronousTransfer",
+        "getMaxPacketSize",
+        "getInterval",
+        "toString"
+      ],
+      "properties": [
+        "USB_ENDPOINT_XFER_NAMES"
+      ]
+    },
+    {
+      "id": "7ab40682f378b848",
+      "type": "class",
+      "name": "SetupPacket",
+      "filePath": "src/org/jnode/driver/bus/usb/SetupPacket.java",
+      "startLine": 28,
+      "endLine": 175,
+      "methods": [
+        "SetupPacket",
+        "getRequestType",
+        "getRequest",
+        "getValue",
+        "getIndex",
+        "getLength",
+        "isDirOut",
+        "isDirIn",
+        "createDeviceSetAddressPacket",
+        "createDeviceGetConfigurationPacket",
+        "createDeviceSetConfigurationPacket",
+        "createInterfaceGetInterfacePacket",
+        "createInterfaceSetInterfacePacket",
+        "createEndPointSyncFramePacket",
+        "createEndPointSetInterfacePacket",
+        "createGetDescriptorPacket",
+        "createGetStatusPacket",
+        "createClearFeaturePacket",
+        "createSetFeaturePacket"
+      ],
+      "properties": []
+    },
+    {
+      "id": "2d866b3c873923d4",
+      "type": "class",
+      "name": "USBBus",
+      "filePath": "src/org/jnode/driver/bus/usb/USBBus.java",
+      "startLine": 31,
+      "endLine": 103,
+      "methods": [
+        "USBBus",
+        "allocDeviceID",
+        "freeDeviceID",
+        "getHcApi",
+        "getChild",
+        "getSupportedConfigurations",
+        "open",
+        "close",
+        "getId"
+      ],
+      "properties": [
+        "devIdsInUse",
+        "hcApi"
+      ]
+    },
+    {
+      "id": "7d094f9aa69b9f3b",
+      "type": "class",
+      "name": "USBConstants",
+      "filePath": "src/org/jnode/driver/bus/usb/USBConstants.java",
+      "startLine": 26,
+      "endLine": 192,
+      "methods": [],
+      "properties": [
+        "USB_CLASS_PER_INTERFACE",
+        "USB_CLASS_AUDIO",
+        "USB_CLASS_COMM",
+        "USB_CLASS_HID",
+        "USB_CLASS_PHYSICAL",
+        "USB_CLASS_STILL_IMAGE",
+        "USB_CLASS_PRINTER",
+        "USB_CLASS_MASS_STORAGE",
+        "USB_CLASS_HUB",
+        "USB_CLASS_CDC_DATA",
+        "USB_CLASS_CSCID",
+        "USB_CLASS_CONTENT_SEC",
+        "USB_CLASS_WIRELESS",
+        "USB_CLASS_APP_SPEC",
+        "USB_CLASS_VENDOR_SPEC",
+        "USB_TYPE_MASK",
+        "USB_TYPE_STANDARD",
+        "USB_TYPE_CLASS",
+        "USB_TYPE_VENDOR",
+        "USB_TYPE_RESERVED",
+        "USB_RECIP_MASK",
+        "USB_RECIP_DEVICE",
+        "USB_RECIP_INTERFACE",
+        "USB_RECIP_ENDPOINT",
+        "USB_RECIP_OTHER",
+        "USB_DIR_MASK",
+        "USB_DIR_OUT",
+        "USB_DIR_IN",
+        "USB_DT_DEVICE",
+        "USB_DT_CONFIG",
+        "USB_DT_STRING",
+        "USB_DT_INTERFACE",
+        "USB_DT_ENDPOINT",
+        "USB_DT_HID",
+        "USB_DT_REPORT",
+        "USB_DT_PHYSICAL",
+        "USB_DT_DEVICE_SIZE",
+        "USB_DT_CONFIG_SIZE",
+        "USB_DT_INTERFACE_SIZE",
+        "USB_DT_ENDPOINT_SIZE",
+        "USB_DT_ENDPOINT_AUDIO_SIZE",
+        "USB_DT_HID_SIZE",
+        "USB_ENDPOINT_NUMBER_MASK",
+        "USB_ENDPOINT_DIR_MASK",
+        "USB_ENDPOINT_MAX",
+        "USB_ENDPOINT_XFERTYPE_MASK",
+        "USB_ENDPOINT_XFER_CONTROL",
+        "USB_ENDPOINT_XFER_ISOC",
+        "USB_ENDPOINT_XFER_BULK",
+        "USB_ENDPOINT_XFER_INT",
+        "USB_ENDPOINT_XFER_NAMES",
+        "USB_ENDPOINT_MAXPS_MASK",
+        "USB_PID_UNDEF_0",
+        "USB_PID_OUT",
+        "USB_PID_ACK",
+        "USB_PID_DATA0",
+        "USB_PID_PING",
+        "USB_PID_SOF",
+        "USB_PID_NYET",
+        "USB_PID_DATA2",
+        "USB_PID_SPLIT",
+        "USB_PID_IN",
+        "USB_PID_NAK",
+        "USB_PID_DATA1",
+        "USB_PID_PREAMBLE",
+        "USB_PID_ERR",
+        "USB_PID_SETUP",
+        "USB_PID_STALL",
+        "USB_PID_MDATA",
+        "USB_REQ_GET_STATUS",
+        "USB_REQ_CLEAR_FEATURE",
+        "USB_REQ_SET_FEATURE",
+        "USB_REQ_SET_ADDRESS",
+        "USB_REQ_GET_DESCRIPTOR",
+        "USB_REQ_SET_DESCRIPTOR",
+        "USB_REQ_GET_CONFIGURATION",
+        "USB_REQ_SET_CONFIGURATION",
+        "USB_REQ_GET_INTERFACE",
+        "USB_REQ_SET_INTERFACE",
+        "USB_REQ_SYNCH_FRAME",
+        "USB_REQ_GET_REPORT",
+        "USB_REQ_GET_IDLE",
+        "USB_REQ_GET_PROTOCOL",
+        "USB_REQ_SET_REPORT",
+        "USB_REQ_SET_IDLE",
+        "USB_REQ_SET_PROTOCOL",
+        "USB_SPEED_LOW",
+        "USB_SPEED_FULL",
+        "USB_SPEED_HIGH",
+        "GET_TIMEOUT",
+        "SET_TIMEOUT",
+        "GET_DESCRIPTOR_ATTEMPTS",
+        "GET_STATUS_ATTEMPTS",
+        "SET_ADDRESS_ATTEMPTS",
+        "SET_CONFIGURATION_ATTEMPTS",
+        "SET_FEATURE_ATTEMPTS",
+        "SYNC_FRAME_ATTEMPTS",
+        "USBREQ_ST_STALLED",
+        "USBREQ_ST_NAK",
+        "USBREQ_ST_DATABUFFER",
+        "USBREQ_ST_TIMEOUT",
+        "USBREQ_ST_BITSTUFF",
+        "USBREQ_ST_BABBLE",
+        "USBREQ_ST_ERROR_MASK",
+        "USBREQ_ST_COMPLETED"
+      ]
+    },
+    {
+      "id": "9f9ea22d803c1e91",
+      "type": "class",
+      "name": "USBControlPipe",
+      "filePath": "src/org/jnode/driver/bus/usb/USBControlPipe.java",
+      "startLine": 26,
+      "endLine": 37,
+      "methods": [
+        "createRequest"
+      ],
+      "properties": []
+    },
+    {
+      "id": "42cf425b758377fb",
+      "type": "class",
+      "name": "USBDataPipe",
+      "filePath": "src/org/jnode/driver/bus/usb/USBDataPipe.java",
+      "startLine": 26,
+      "endLine": 35,
+      "methods": [
+        "createRequest"
+      ],
+      "properties": []
+    },
+    {
+      "id": "9d1f9098bed23f7e",
+      "type": "class",
+      "name": "USBDevice",
+      "filePath": "src/org/jnode/driver/bus/usb/USBDevice.java",
+      "startLine": 33,
+      "endLine": 413,
+      "methods": [
+        "USBDevice",
+        "getUSBBus",
+        "getUSBDeviceId",
+        "finalize",
+        "getSpeed",
+        "isLowSpeed",
+        "isFullSpeed",
+        "isHighSpeed",
+        "getMaxPacketSize",
+        "getDescriptor",
+        "setDescriptor",
+        "setFullDescriptor",
+        "getConfiguration",
+        "setConfiguration",
+        "getString",
+        "readDescriptor",
+        "setAddress",
+        "getConfiguration",
+        "setConfiguration",
+        "getStatus",
+        "setFeature",
+        "clearFeature",
+        "getDefaultControlPipe",
+        "getSupportedConfigurations",
+        "open",
+        "close",
+        "getId"
+      ],
+      "properties": [
+        "usbIdCounter",
+        "devId",
+        "speed",
+        "maxPacketSize",
+        "deviceDescriptor",
+        "confs",
+        "activeConf",
+        "stringCache",
+        "defaultLangID",
+        "defaultControlPipe",
+        "bus"
+      ]
+    },
+    {
+      "id": "de90786003d29841",
+      "type": "class",
+      "name": "USBEndPoint",
+      "filePath": "src/org/jnode/driver/bus/usb/USBEndPoint.java",
+      "startLine": 26,
+      "endLine": 164,
+      "methods": [
+        "USBEndPoint",
+        "getDescriptor",
+        "getInterface",
+        "toString",
+        "getDataToggle",
+        "toggle",
+        "getStatus",
+        "setFeature",
+        "clearFeature",
+        "syncFrame",
+        "getPipe"
+      ],
+      "properties": [
+        "intf",
+        "descr",
+        "dataToggle",
+        "pipe"
+      ]
+    },
+    {
+      "id": "819f860ea331bc5f",
+      "type": "class",
+      "name": "USBException",
+      "filePath": "src/org/jnode/driver/bus/usb/USBException.java",
+      "startLine": 26,
+      "endLine": 57,
+      "methods": [
+        "USBException",
+        "USBException",
+        "USBException",
+        "USBException"
+      ],
+      "properties": []
+    },
+    {
+      "id": "8da17650b84fa386",
+      "type": "class",
+      "name": "USBHostControllerAPI",
+      "filePath": "src/org/jnode/driver/bus/usb/USBHostControllerAPI.java",
+      "startLine": 28,
+      "endLine": 56,
+      "methods": [
+        "createDefaultControlPipe",
+        "createPipe",
+        "getRootHUB"
+      ],
+      "properties": []
+    },
+    {
+      "id": "84add8ac3b8eea0c",
+      "type": "class",
+      "name": "USBHubAPI",
+      "filePath": "src/org/jnode/driver/bus/usb/USBHubAPI.java",
+      "startLine": 30,
+      "endLine": 133,
+      "methods": [
+        "getUSBBus",
+        "getDevice",
+        "setDevice",
+        "unsetDevice",
+        "getNumPorts",
+        "isPortEnabled",
+        "setPortEnabled",
+        "resetPort",
+        "isPortConnected",
+        "isPortConnectionStatusChanged",
+        "clearPortConnectionStatusChanged",
+        "isPortConnectedToLowSpeed",
+        "isPortConnectedToHighSpeed",
+        "getPortStatus"
+      ],
+      "properties": []
+    },
+    {
+      "id": "f0368935e5dbd649",
+      "type": "class",
+      "name": "USBHubMonitor",
+      "filePath": "src/org/jnode/driver/bus/usb/USBHubMonitor.java",
+      "startLine": 74,
+      "endLine": 376,
+      "methods": [
+        "USBHubMonitor",
+        "checkStatus",
+        "portConnectionStatusChanged",
+        "getConfiguration",
+        "sleep",
+        "startMonitor",
+        "stopMonitor"
+      ],
+      "properties": [
+        "hubDevice",
+        "hub",
+        "thread",
+        "sleepManager",
+        "api"
+      ]
+    },
+    {
+      "id": "b941853dbce209ba",
+      "type": "class",
+      "name": "USBPacket",
+      "filePath": "src/org/jnode/driver/bus/usb/USBPacket.java",
+      "startLine": 31,
+      "endLine": 179,
+      "methods": [
+        "USBPacket",
+        "USBPacket",
+        "USBPacket",
+        "setByte",
+        "setShort",
+        "setInt",
+        "getByte",
+        "getShort",
+        "getChar",
+        "getInt",
+        "getData",
+        "getOffset",
+        "getSize",
+        "toString"
+      ],
+      "properties": [
+        "data",
+        "size",
+        "offset"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "4a3179f54d007b65",
+      "target": "a93b6409c2040565",
+      "type": "contains"
+    },
+    {
+      "source": "a93b6409c2040565",
+      "target": "4a3179f54d007b65",
+      "type": "exports"
+    },
+    {
+      "source": "4f152b0b7709d041",
+      "target": "ec34c76ca232a2a7",
+      "type": "contains"
+    },
+    {
+      "source": "ec34c76ca232a2a7",
+      "target": "4f152b0b7709d041",
+      "type": "exports"
+    },
+    {
+      "source": "d5474858d84d49c2",
+      "target": "bfa62f4dc0bd47f5",
+      "type": "contains"
+    },
+    {
+      "source": "bfa62f4dc0bd47f5",
+      "target": "d5474858d84d49c2",
+      "type": "exports"
+    },
+    {
+      "source": "076ddf547a517e0f",
+      "target": "27dd2e021c50a236",
+      "type": "contains"
+    },
+    {
+      "source": "27dd2e021c50a236",
+      "target": "076ddf547a517e0f",
+      "type": "exports"
+    },
+    {
+      "source": "57d95c13e8218b09",
+      "target": "135355e322bd3b5d",
+      "type": "contains"
+    },
+    {
+      "source": "135355e322bd3b5d",
+      "target": "57d95c13e8218b09",
+      "type": "exports"
+    },
+    {
+      "source": "fed3bf8d3a0cde39",
+      "target": "ab1cc467cf058243",
+      "type": "contains"
+    },
+    {
+      "source": "ab1cc467cf058243",
+      "target": "fed3bf8d3a0cde39",
+      "type": "exports"
+    },
+    {
+      "source": "6d26fb67eb7ee99d",
+      "target": "7ab40682f378b848",
+      "type": "contains"
+    },
+    {
+      "source": "7ab40682f378b848",
+      "target": "6d26fb67eb7ee99d",
+      "type": "exports"
+    },
+    {
+      "source": "f1dc8594172894a5",
+      "target": "2d866b3c873923d4",
+      "type": "contains"
+    },
+    {
+      "source": "2d866b3c873923d4",
+      "target": "f1dc8594172894a5",
+      "type": "exports"
+    },
+    {
+      "source": "c00dd74772ead742",
+      "target": "7d094f9aa69b9f3b",
+      "type": "contains"
+    },
+    {
+      "source": "7d094f9aa69b9f3b",
+      "target": "c00dd74772ead742",
+      "type": "exports"
+    },
+    {
+      "source": "e488b78aa40cb794",
+      "target": "9f9ea22d803c1e91",
+      "type": "contains"
+    },
+    {
+      "source": "9f9ea22d803c1e91",
+      "target": "e488b78aa40cb794",
+      "type": "exports"
+    },
+    {
+      "source": "5262c3c276b4459d",
+      "target": "42cf425b758377fb",
+      "type": "contains"
+    },
+    {
+      "source": "42cf425b758377fb",
+      "target": "5262c3c276b4459d",
+      "type": "exports"
+    },
+    {
+      "source": "af297f278c7a747c",
+      "target": "9d1f9098bed23f7e",
+      "type": "contains"
+    },
+    {
+      "source": "9d1f9098bed23f7e",
+      "target": "af297f278c7a747c",
+      "type": "exports"
+    },
+    {
+      "source": "8f1d35ed0297b767",
+      "target": "de90786003d29841",
+      "type": "contains"
+    },
+    {
+      "source": "de90786003d29841",
+      "target": "8f1d35ed0297b767",
+      "type": "exports"
+    },
+    {
+      "source": "1aa9a0e04881b764",
+      "target": "819f860ea331bc5f",
+      "type": "contains"
+    },
+    {
+      "source": "819f860ea331bc5f",
+      "target": "1aa9a0e04881b764",
+      "type": "exports"
+    },
+    {
+      "source": "a8b1d3979c9eb1ef",
+      "target": "8da17650b84fa386",
+      "type": "contains"
+    },
+    {
+      "source": "8da17650b84fa386",
+      "target": "a8b1d3979c9eb1ef",
+      "type": "exports"
+    },
+    {
+      "source": "4db9e7ffe6b1985f",
+      "target": "84add8ac3b8eea0c",
+      "type": "contains"
+    },
+    {
+      "source": "84add8ac3b8eea0c",
+      "target": "4db9e7ffe6b1985f",
+      "type": "exports"
+    },
+    {
+      "source": "ab5c5599b45ef690",
+      "target": "f0368935e5dbd649",
+      "type": "contains"
+    },
+    {
+      "source": "f0368935e5dbd649",
+      "target": "ab5c5599b45ef690",
+      "type": "exports"
+    },
+    {
+      "source": "e61248f14f0233ec",
+      "target": "b941853dbce209ba",
+      "type": "contains"
+    },
+    {
+      "source": "b941853dbce209ba",
+      "target": "e61248f14f0233ec",
+      "type": "exports"
+    },
+    {
+      "source": "6893936043bd4ef7",
+      "target": "4c2b901fb6156322",
+      "type": "contains"
+    },
+    {
+      "source": "4c2b901fb6156322",
+      "target": "6893936043bd4ef7",
+      "type": "exports"
+    },
+    {
+      "source": "9624bbe4323f195a",
+      "target": "6483a733cceba0df",
+      "type": "contains"
+    },
+    {
+      "source": "6483a733cceba0df",
+      "target": "9624bbe4323f195a",
+      "type": "exports"
+    },
+    {
+      "source": "eb532e5dbcea491f",
+      "target": "59ab110de9c023f4",
+      "type": "contains"
+    },
+    {
+      "source": "59ab110de9c023f4",
+      "target": "eb532e5dbcea491f",
+      "type": "exports"
+    },
+    {
+      "source": "a297a8db9da378b0",
+      "target": "5752d23c8156a465",
+      "type": "contains"
+    },
+    {
+      "source": "5752d23c8156a465",
+      "target": "a297a8db9da378b0",
+      "type": "exports"
+    },
+    {
+      "source": "4a3179f54d007b65",
+      "target": "4f152b0b7709d041",
+      "type": "imports"
+    },
+    {
+      "source": "57d95c13e8218b09",
+      "target": "0f3bf9e35e60f5ea",
+      "type": "imports"
+    },
+    {
+      "source": "af297f278c7a747c",
+      "target": "ccdbdd1abdf0422e",
+      "type": "imports"
+    },
+    {
+      "source": "ab5c5599b45ef690",
+      "target": "9f8c27244e4712c4",
+      "type": "imports"
+    },
+    {
+      "source": "ab5c5599b45ef690",
+      "target": "0f3bf9e35e60f5ea",
+      "type": "imports"
+    },
+    {
+      "source": "e61248f14f0233ec",
+      "target": "0f3bf9e35e60f5ea",
+      "type": "imports"
+    },
+    {
+      "source": "a297a8db9da378b0",
+      "target": "d5474858d84d49c2",
+      "type": "imports"
+    },
+    {
+      "source": "a297a8db9da378b0",
+      "target": "0f3bf9e35e60f5ea",
+      "type": "imports"
+    },
+    {
+      "source": "4a3179f54d007b65",
+      "target": "d849390c2126a99e",
+      "type": "depends_on"
+    },
+    {
+      "source": "4f152b0b7709d041",
+      "target": "a2bd5469180dfc05",
+      "type": "depends_on"
+    },
+    {
+      "source": "4f152b0b7709d041",
+      "target": "1242ccb2dd2bd17d",
+      "type": "depends_on"
+    },
+    {
+      "source": "4f152b0b7709d041",
+      "target": "5a374aa45f86a63b",
+      "type": "depends_on"
+    },
+    {
+      "source": "4f152b0b7709d041",
+      "target": "d849390c2126a99e",
+      "type": "depends_on"
+    },
+    {
+      "source": "4f152b0b7709d041",
+      "target": "aef27ad7225cb970",
+      "type": "depends_on"
+    },
+    {
+      "source": "076ddf547a517e0f",
+      "target": "940ab53214411854",
+      "type": "depends_on"
+    },
+    {
+      "source": "57d95c13e8218b09",
+      "target": "0f3bf9e35e60f5ea",
+      "type": "depends_on"
+    },
+    {
+      "source": "fed3bf8d3a0cde39",
+      "target": "aef27ad7225cb970",
+      "type": "depends_on"
+    },
+    {
+      "source": "6d26fb67eb7ee99d",
+      "target": "6e06b1d948a7258b",
+      "type": "depends_on"
+    },
+    {
+      "source": "6d26fb67eb7ee99d",
+      "target": "ea234d4652eb6d99",
+      "type": "depends_on"
+    },
+    {
+      "source": "6d26fb67eb7ee99d",
+      "target": "cf5f27ef01908941",
+      "type": "depends_on"
+    },
+    {
+      "source": "6d26fb67eb7ee99d",
+      "target": "90c6c68920958bab",
+      "type": "depends_on"
+    },
+    {
+      "source": "f1dc8594172894a5",
+      "target": "6e06b1d948a7258b",
+      "type": "depends_on"
+    },
+    {
+      "source": "f1dc8594172894a5",
+      "target": "9f8c27244e4712c4",
+      "type": "depends_on"
+    },
+    {
+      "source": "f1dc8594172894a5",
+      "target": "4481bd6a7f2d2f13",
+      "type": "depends_on"
+    },
+    {
+      "source": "c00dd74772ead742",
+      "target": "bc9aea59cb87c5bd",
+      "type": "depends_on"
+    },
+    {
+      "source": "c00dd74772ead742",
+      "target": "07deafdc0eea0ded",
+      "type": "depends_on"
+    },
+    {
+      "source": "c00dd74772ead742",
+      "target": "c15c8e02651221c4",
+      "type": "depends_on"
+    },
+    {
+      "source": "c00dd74772ead742",
+      "target": "90c6c68920958bab",
+      "type": "depends_on"
+    },
+    {
+      "source": "c00dd74772ead742",
+      "target": "04a996a4d23e48cd",
+      "type": "depends_on"
+    },
+    {
+      "source": "c00dd74772ead742",
+      "target": "d849390c2126a99e",
+      "type": "depends_on"
+    },
+    {
+      "source": "c00dd74772ead742",
+      "target": "aef27ad7225cb970",
+      "type": "depends_on"
+    },
+    {
+      "source": "e488b78aa40cb794",
+      "target": "6e06b1d948a7258b",
+      "type": "depends_on"
+    },
+    {
+      "source": "e488b78aa40cb794",
+      "target": "cf5f27ef01908941",
+      "type": "depends_on"
+    },
+    {
+      "source": "e488b78aa40cb794",
+      "target": "9f8c27244e4712c4",
+      "type": "depends_on"
+    },
+    {
+      "source": "e488b78aa40cb794",
+      "target": "aef27ad7225cb970",
+      "type": "depends_on"
+    },
+    {
+      "source": "5262c3c276b4459d",
+      "target": "1a7a70073c6f0072",
+      "type": "depends_on"
+    },
+    {
+      "source": "af297f278c7a747c",
+      "target": "ccdbdd1abdf0422e",
+      "type": "depends_on"
+    },
+    {
+      "source": "af297f278c7a747c",
+      "target": "07deafdc0eea0ded",
+      "type": "depends_on"
+    },
+    {
+      "source": "af297f278c7a747c",
+      "target": "6e06b1d948a7258b",
+      "type": "depends_on"
+    },
+    {
+      "source": "af297f278c7a747c",
+      "target": "cf5f27ef01908941",
+      "type": "depends_on"
+    },
+    {
+      "source": "af297f278c7a747c",
+      "target": "9f8c27244e4712c4",
+      "type": "depends_on"
+    },
+    {
+      "source": "af297f278c7a747c",
+      "target": "1a7a70073c6f0072",
+      "type": "depends_on"
+    },
+    {
+      "source": "af297f278c7a747c",
+      "target": "d849390c2126a99e",
+      "type": "depends_on"
+    },
+    {
+      "source": "af297f278c7a747c",
+      "target": "aef27ad7225cb970",
+      "type": "depends_on"
+    },
+    {
+      "source": "af297f278c7a747c",
+      "target": "4481bd6a7f2d2f13",
+      "type": "depends_on"
+    },
+    {
+      "source": "8f1d35ed0297b767",
+      "target": "cf5f27ef01908941",
+      "type": "depends_on"
+    },
+    {
+      "source": "8f1d35ed0297b767",
+      "target": "9f8c27244e4712c4",
+      "type": "depends_on"
+    },
+    {
+      "source": "8f1d35ed0297b767",
+      "target": "1a7a70073c6f0072",
+      "type": "depends_on"
+    },
+    {
+      "source": "8f1d35ed0297b767",
+      "target": "04a996a4d23e48cd",
+      "type": "depends_on"
+    },
+    {
+      "source": "8f1d35ed0297b767",
+      "target": "d849390c2126a99e",
+      "type": "depends_on"
+    },
+    {
+      "source": "8f1d35ed0297b767",
+      "target": "aef27ad7225cb970",
+      "type": "depends_on"
+    },
+    {
+      "source": "1aa9a0e04881b764",
+      "target": "6e06b1d948a7258b",
+      "type": "depends_on"
+    },
+    {
+      "source": "1aa9a0e04881b764",
+      "target": "90c6c68920958bab",
+      "type": "depends_on"
+    },
+    {
+      "source": "1aa9a0e04881b764",
+      "target": "d849390c2126a99e",
+      "type": "depends_on"
+    },
+    {
+      "source": "1aa9a0e04881b764",
+      "target": "b898b8e34e6fb398",
+      "type": "depends_on"
+    },
+    {
+      "source": "a8b1d3979c9eb1ef",
+      "target": "9f8c27244e4712c4",
+      "type": "depends_on"
+    },
+    {
+      "source": "a8b1d3979c9eb1ef",
+      "target": "940ab53214411854",
+      "type": "depends_on"
+    },
+    {
+      "source": "4db9e7ffe6b1985f",
+      "target": "6e06b1d948a7258b",
+      "type": "depends_on"
+    },
+    {
+      "source": "4db9e7ffe6b1985f",
+      "target": "9f8c27244e4712c4",
+      "type": "depends_on"
+    },
+    {
+      "source": "4db9e7ffe6b1985f",
+      "target": "4481bd6a7f2d2f13",
+      "type": "depends_on"
+    },
+    {
+      "source": "ab5c5599b45ef690",
+      "target": "9f8c27244e4712c4",
+      "type": "depends_on"
+    },
+    {
+      "source": "ab5c5599b45ef690",
+      "target": "0f3bf9e35e60f5ea",
+      "type": "depends_on"
+    },
+    {
+      "source": "ab5c5599b45ef690",
+      "target": "6e06b1d948a7258b",
+      "type": "depends_on"
+    },
+    {
+      "source": "e61248f14f0233ec",
+      "target": "0f3bf9e35e60f5ea",
+      "type": "depends_on"
+    },
+    {
+      "source": "e61248f14f0233ec",
+      "target": "34a23e2585dd6a5d",
+      "type": "depends_on"
+    },
+    {
+      "source": "e61248f14f0233ec",
+      "target": "ea234d4652eb6d99",
+      "type": "depends_on"
+    },
+    {
+      "source": "e61248f14f0233ec",
+      "target": "3510bd6a3e4f45cc",
+      "type": "depends_on"
+    },
+    {
+      "source": "e61248f14f0233ec",
+      "target": "cf5f27ef01908941",
+      "type": "depends_on"
+    },
+    {
+      "source": "e61248f14f0233ec",
+      "target": "90c6c68920958bab",
+      "type": "depends_on"
+    },
+    {
+      "source": "e61248f14f0233ec",
+      "target": "1a7a70073c6f0072",
+      "type": "depends_on"
+    },
+    {
+      "source": "e61248f14f0233ec",
+      "target": "04a996a4d23e48cd",
+      "type": "depends_on"
+    },
+    {
+      "source": "6893936043bd4ef7",
+      "target": "9f8c27244e4712c4",
+      "type": "depends_on"
+    },
+    {
+      "source": "6893936043bd4ef7",
+      "target": "d849390c2126a99e",
+      "type": "depends_on"
+    },
+    {
+      "source": "6893936043bd4ef7",
+      "target": "aef27ad7225cb970",
+      "type": "depends_on"
+    },
+    {
+      "source": "9624bbe4323f195a",
+      "target": "d849390c2126a99e",
+      "type": "depends_on"
+    },
+    {
+      "source": "eb532e5dbcea491f",
+      "target": "6e06b1d948a7258b",
+      "type": "depends_on"
+    },
+    {
+      "source": "eb532e5dbcea491f",
+      "target": "f878ec034019f67f",
+      "type": "depends_on"
+    },
+    {
+      "source": "eb532e5dbcea491f",
+      "target": "cf5f27ef01908941",
+      "type": "depends_on"
+    },
+    {
+      "source": "eb532e5dbcea491f",
+      "target": "1a7a70073c6f0072",
+      "type": "depends_on"
+    },
+    {
+      "source": "eb532e5dbcea491f",
+      "target": "d849390c2126a99e",
+      "type": "depends_on"
+    },
+    {
+      "source": "eb532e5dbcea491f",
+      "target": "b898b8e34e6fb398",
+      "type": "depends_on"
+    },
+    {
+      "source": "a297a8db9da378b0",
+      "target": "0f3bf9e35e60f5ea",
+      "type": "depends_on"
+    }
+  ]
+}

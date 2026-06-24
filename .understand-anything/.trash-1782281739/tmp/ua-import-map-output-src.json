@@ -1,0 +1,1676 @@
+{
+  "scriptCompleted": true,
+  "stats": {
+    "filesScanned": 986,
+    "filesWithImports": 220,
+    "totalEdges": 460
+  },
+  "importMap": {
+    "src/AI/util/AIQueue.java": [
+      "src/java/util/ArrayList.java"
+    ],
+    "src/com/package.bluej": [],
+    "src/com/sun/net/package.bluej": [],
+    "src/com/sun/net/ssl/internal/package.bluej": [],
+    "src/com/sun/net/ssl/internal/ssl/package.bluej": [],
+    "src/com/sun/net/ssl/internal/ssl/Provider.java": [],
+    "src/com/sun/net/ssl/KeyManager.java": [],
+    "src/com/sun/net/ssl/KeyManagerFactory.java": [],
+    "src/com/sun/net/ssl/package.bluej": [],
+    "src/com/sun/net/ssl/SSLContext.java": [],
+    "src/com/sun/net/ssl/TrustManager.java": [],
+    "src/com/sun/net/ssl/TrustManagerFactory.java": [],
+    "src/com/sun/package.bluej": [],
+    "src/gnu/java/io/EncodingManager.java": [
+      "src/java/io/UnsupportedEncodingException.java",
+      "src/java/lang/reflect/Constructor.java",
+      "src/java/util/Hashtable.java",
+      "src/java/util/StringTokenizer.java"
+    ],
+    "src/gnu/java/io/package.bluej": [],
+    "src/gnu/java/math/MPN.java": [],
+    "src/gnu/java/math/package.bluej": [],
+    "src/gnu/java/package.bluej": [],
+    "src/gnu/java/security/DefaultPermissionCollection.java": [
+      "src/java/util/Hashtable.java"
+    ],
+    "src/gnu/java/security/package.bluej": [],
+    "src/gnu/package.bluej": [],
+    "src/java/applet/Applet.java": [
+      "src/java/util/Locale.java"
+    ],
+    "src/java/applet/package.bluej": [],
+    "src/java/beans/BeanDescriptor.java": [],
+    "src/java/beans/Beans.j": [],
+    "src/java/beans/EventSetDescriptor.j": [],
+    "src/java/beans/FeatureDescriptor.java": [],
+    "src/java/beans/IndexedPropertyDescriptor.j": [],
+    "src/java/beans/IntrospectionException.java": [],
+    "src/java/beans/Introspector.j": [],
+    "src/java/beans/MethodDescriptor.java": [],
+    "src/java/beans/package.bluej": [],
+    "src/java/beans/ParameterDescriptor.java": [],
+    "src/java/beans/PropertyChangeEvent.java": [],
+    "src/java/beans/PropertyChangeSupport.java": [
+      "src/java/io/IOException.java",
+      "src/java/io/ObjectInputStream.java",
+      "src/java/io/ObjectOutputStream.java",
+      "src/java/util/Hashtable.java",
+      "src/java/util/Vector.java"
+    ],
+    "src/java/beans/PropertyDescriptor.j": [],
+    "src/java/beans/PropertyEditorManager.j": [],
+    "src/java/beans/PropertyEditorSupport.java": [],
+    "src/java/beans/PropertyVetoException.java": [],
+    "src/java/beans/SimpleBeanInfo.j": [],
+    "src/java/beans/VetoableChangeSupport.java": [
+      "src/java/io/IOException.java",
+      "src/java/io/ObjectInputStream.java",
+      "src/java/io/ObjectOutputStream.java",
+      "src/java/util/Hashtable.java",
+      "src/java/util/Vector.java"
+    ],
+    "src/java/io/BufferedInputStream.java": [],
+    "src/java/io/BufferedOutputStream.java": [],
+    "src/java/io/BufferedReader.java": [
+      "src/jx/zero/Debug.java",
+      "src/jx/zero/LookupHelper.java"
+    ],
+    "src/java/io/ByteArrayInputStream.java": [],
+    "src/java/io/ByteArrayOutputStream.java": [],
+    "src/java/io/CharArrayReader.java": [],
+    "src/java/io/CharArrayWriter.java": [],
+    "src/java/io/CharConversionException.java": [],
+    "src/java/io/DataInputStream.java": [],
+    "src/java/io/DataOutputStream.java": [],
+    "src/java/io/EOFException.java": [],
+    "src/java/io/File.java": [],
+    "src/java/io/FileDescriptor.java": [],
+    "src/java/io/FileInputStream.java": [],
+    "src/java/io/FileNotFoundException.java": [],
+    "src/java/io/FileOutputStream.java": [],
+    "src/java/io/FilePermission.java": [],
+    "src/java/io/FileReader.java": [],
+    "src/java/io/FileWriter.java": [],
+    "src/java/io/FilterInputStream.java": [],
+    "src/java/io/FilterOutputStream.java": [],
+    "src/java/io/InputStreamReader.java": [
+      "src/gnu/java/io/EncodingManager.java"
+    ],
+    "src/java/io/InterruptedIOException.java": [],
+    "src/java/io/InvalidObjectException.java": [],
+    "src/java/io/IOException.java": [],
+    "src/java/io/NotActiveException.java": [],
+    "src/java/io/NotSerializableException.java": [],
+    "src/java/io/ObjectIdentityWrapper.java": [],
+    "src/java/io/ObjectInputStream.java": [],
+    "src/java/io/ObjectOutputStream.java": [
+      "src/java/lang/reflect/Array.java",
+      "src/java/util/Hashtable.java"
+    ],
+    "src/java/io/ObjectStreamClass.java": [],
+    "src/java/io/ObjectStreamField.java": [
+      "src/java/lang/reflect/Field.java"
+    ],
+    "src/java/io/OutputStreamWriter.java": [],
+    "src/java/io/package.bluej": [],
+    "src/java/io/PrintStream.java": [],
+    "src/java/io/PrintWriter.java": [],
+    "src/java/io/PushbackInputStream.java": [],
+    "src/java/io/RandomAccessFile.j": [],
+    "src/java/io/SerializablePermission.java": [
+      "src/java/util/Hashtable.java",
+      "src/java/util/StringTokenizer.java"
+    ],
+    "src/java/io/StreamCorruptedException.java": [],
+    "src/java/io/StringBufferInputStream.java": [],
+    "src/java/io/StringReader.java": [],
+    "src/java/io/StringWriter.java": [],
+    "src/java/io/UnsupportedEncodingException.java": [],
+    "src/java/io/UTFDataFormatException.java": [],
+    "src/java/lang/AbstractMethodError.java": [],
+    "src/java/lang/AbstractStringBuilder.java": [
+      "src/java/util/Arrays.java"
+    ],
+    "src/java/lang/ArithmeticException.java": [],
+    "src/java/lang/ArrayIndexOutOfBoundsException.java": [],
+    "src/java/lang/AssertionError.java": [],
+    "src/java/lang/Boolean.java": [],
+    "src/java/lang/Byte.java": [],
+    "src/java/lang/Character.java": [],
+    "src/java/lang/Class.java": [
+      "src/java/lang/reflect/Constructor.java",
+      "src/java/lang/reflect/Field.java",
+      "src/java/lang/reflect/Method.java"
+    ],
+    "src/java/lang/ClassCastException.java": [],
+    "src/java/lang/ClassFormatError.java": [],
+    "src/java/lang/ClassNotFoundException.java": [],
+    "src/java/lang/ClassValue.java": [],
+    "src/java/lang/CloneNotSupportedException.java": [],
+    "src/java/lang/Double.java": [],
+    "src/java/lang/Error.java": [],
+    "src/java/lang/Exception.java": [],
+    "src/java/lang/ExceptionInInitializerError.java": [],
+    "src/java/lang/Float.java": [],
+    "src/java/lang/IllegalAccessException.java": [],
+    "src/java/lang/IllegalArgumentException.java": [],
+    "src/java/lang/IllegalMonitorStateException.java": [],
+    "src/java/lang/IllegalStateException.java": [],
+    "src/java/lang/IllegalThreadStateException.java": [],
+    "src/java/lang/IncompatibleClassChangeError.java": [],
+    "src/java/lang/IndexOutOfBoundsException.java": [],
+    "src/java/lang/InstantiationException.java": [],
+    "src/java/lang/Integer.java": [
+      "src/jx/zero/Debug.java"
+    ],
+    "src/java/lang/InternalError.java": [
+      "src/java/io/IOException.java"
+    ],
+    "src/java/lang/InterruptedException.java": [],
+    "src/java/lang/invoke/CallSite.java": [],
+    "src/java/lang/invoke/ConstantCallSite.java": [],
+    "src/java/lang/invoke/DirectMethodHandle.java": [],
+    "src/java/lang/invoke/InfoFromMemberName.java": [
+      "src/java/lang/invoke/MethodHandleStatics.java"
+    ],
+    "src/java/lang/invoke/InnerClassLambdaMetafactory.java": [],
+    "src/java/lang/invoke/Invokers.java": [],
+    "src/java/lang/invoke/LambdaConversionException.java": [],
+    "src/java/lang/invoke/LambdaForm.java": [],
+    "src/java/lang/invoke/LambdaFormEditor.java": [],
+    "src/java/lang/invoke/LambdaMetafactory.java": [],
+    "src/java/lang/invoke/MemberName.java": [
+      "src/java/lang/invoke/MethodHandleStatics.java",
+      "src/java/lang/reflect/Constructor.java",
+      "src/java/lang/reflect/Field.java",
+      "src/java/lang/reflect/Method.java",
+      "src/java/lang/reflect/Modifier.java",
+      "src/java/util/ArrayList.java",
+      "src/java/util/Arrays.java",
+      "src/java/util/Collections.java",
+      "src/java/util/Objects.java"
+    ],
+    "src/java/lang/invoke/MethodHandleNatives.java": [
+      "src/java/lang/invoke/MethodHandleStatics.java",
+      "src/java/lang/reflect/Field.java"
+    ],
+    "src/java/lang/invoke/MethodHandles.java": [
+      "src/java/lang/invoke/MethodHandleStatics.java",
+      "src/java/util/Arrays.java",
+      "src/java/util/BitSet.java"
+    ],
+    "src/java/lang/invoke/MethodHandleStatics.java": [
+      "src/java/security/AccessController.java"
+    ],
+    "src/java/lang/invoke/MethodType.java": [
+      "src/java/lang/invoke/MethodHandleStatics.java",
+      "src/java/lang/ref/Reference.java",
+      "src/java/lang/ref/ReferenceQueue.java",
+      "src/java/lang/ref/WeakReference.java",
+      "src/java/util/Arrays.java",
+      "src/java/util/Collections.java",
+      "src/java/util/HashMap.java",
+      "src/java/util/Objects.java"
+    ],
+    "src/java/lang/invoke/MethodTypeForm.java": [],
+    "src/java/lang/invoke/Name.java": [],
+    "src/java/lang/invoke/package.bluej": [],
+    "src/java/lang/invoke/SimpleMethodHandle.java": [],
+    "src/java/lang/invoke/ValueConversions.java": [],
+    "src/java/lang/invoke/VerifyType.java": [],
+    "src/java/lang/invoke/Wrapper.java": [],
+    "src/java/lang/invoke/WrongMethodTypeException.java": [],
+    "src/java/lang/LinkageError.java": [],
+    "src/java/lang/Long.java": [],
+    "src/java/lang/Math.java": [
+      "src/java/util/Random.java"
+    ],
+    "src/java/lang/NegativeArraySizeException.java": [],
+    "src/java/lang/NoClassDefFoundError.java": [],
+    "src/java/lang/NoSuchFieldError.java": [],
+    "src/java/lang/NoSuchFieldException.java": [],
+    "src/java/lang/NoSuchMethodError.java": [],
+    "src/java/lang/NoSuchMethodException.java": [],
+    "src/java/lang/NullPointerException.java": [],
+    "src/java/lang/NumberFormatException.java": [],
+    "src/java/lang/Object.java": [],
+    "src/java/lang/OutOfMemoryError.java": [],
+    "src/java/lang/package.bluej": [],
+    "src/java/lang/Process.java": [],
+    "src/java/lang/ref/package.bluej": [],
+    "src/java/lang/ref/Reference.java": [],
+    "src/java/lang/ref/ReferenceQueue.java": [],
+    "src/java/lang/ref/WeakReference.java": [],
+    "src/java/lang/reflect/Array.j": [],
+    "src/java/lang/reflect/Array.java": [],
+    "src/java/lang/reflect/Constructor.java": [],
+    "src/java/lang/reflect/Field.java": [],
+    "src/java/lang/reflect/InvocationTargetException.java": [],
+    "src/java/lang/reflect/Method.java": [],
+    "src/java/lang/reflect/Modifier.java": [],
+    "src/java/lang/reflect/package.bluej": [],
+    "src/java/lang/reflect/ReflectPermission.java": [],
+    "src/java/lang/ReflectiveOperationException.java": [],
+    "src/java/lang/Runtime.java": [
+      "src/java/io/IOException.java"
+    ],
+    "src/java/lang/RuntimeException.java": [],
+    "src/java/lang/RuntimePermission.java": [],
+    "src/java/lang/SecurityException.java": [],
+    "src/java/lang/SecurityManager.java": [],
+    "src/java/lang/Short.java": [],
+    "src/java/lang/StackTraceElement.java": [],
+    "src/java/lang/String.java": [
+      "src/java/io/UnsupportedEncodingException.java",
+      "src/java/util/ArrayList.java"
+    ],
+    "src/java/lang/StringBuffer.java": [],
+    "src/java/lang/StringBuilder.java": [],
+    "src/java/lang/StringIndexOutOfBoundsException.java": [],
+    "src/java/lang/System.java": [
+      "src/java/io/PrintStream.java",
+      "src/java/util/Properties.java",
+      "src/jx/zero/debug/DebugOutputStream.java"
+    ],
+    "src/java/lang/Thread.java": [],
+    "src/java/lang/ThreadDeath.java": [],
+    "src/java/lang/ThreadGroup.java": [
+      "src/java/io/PrintStream.java"
+    ],
+    "src/java/lang/Throwable.java": [
+      "src/java/io/PrintStream.java",
+      "src/java/util/ArrayList.java",
+      "src/java/util/Collections.java",
+      "src/java/util/Objects.java"
+    ],
+    "src/java/lang/TypeNotPresentException.java": [],
+    "src/java/lang/UnsatisfiedLinkError.java": [],
+    "src/java/lang/UnsupportedOperationException.java": [],
+    "src/java/lang/VirtualMachineError.java": [],
+    "src/java/lang/Void.java": [],
+    "src/java/math/BigDecimal.java": [],
+    "src/java/math/BigInteger.j": [],
+    "src/java/math/package.bluej": [],
+    "src/java/net/BindException.java": [],
+    "src/java/net/ConnectException.java": [],
+    "src/java/net/DatagramPacket.java": [],
+    "src/java/net/DatagramSocket.java": [
+      "src/java/io/IOException.java",
+      "src/jx/net/IPv4Address.java",
+      "src/jx/net/protocol/udp/UDPFormat.java",
+      "src/jx/net/UnknownAddressException.java",
+      "src/jx/zero/Debug.java"
+    ],
+    "src/java/net/HttpURLConnection.java": [],
+    "src/java/net/Inet4Address.java": [],
+    "src/java/net/InetAddress.java": [],
+    "src/java/net/MalformedURLException.java": [],
+    "src/java/net/MimeTypeMapper.java": [
+      "src/java/util/Hashtable.java"
+    ],
+    "src/java/net/NetPermission.java": [],
+    "src/java/net/package.bluej": [],
+    "src/java/net/ServerSocket.java": [],
+    "src/java/net/Socket.java": [
+      "src/java/io/IOException.java",
+      "src/jx/net/IPv4Address.java",
+      "src/jx/net/TCPInputStream.java",
+      "src/jx/net/TCPOutputStream.java",
+      "src/jx/net/UnknownAddressException.java"
+    ],
+    "src/java/net/SocketException.java": [
+      "src/java/io/IOException.java"
+    ],
+    "src/java/net/SocketPermission.java": [],
+    "src/java/net/SocketTimeoutException.java": [],
+    "src/java/net/UnknownHostException.java": [
+      "src/java/io/IOException.java"
+    ],
+    "src/java/net/UnknownServiceException.java": [],
+    "src/java/net/URL.java": [
+      "src/java/io/IOException.java",
+      "src/java/util/Hashtable.java",
+      "src/java/util/StringTokenizer.java"
+    ],
+    "src/java/net/URLClassLoader.java": [],
+    "src/java/net/URLConnection.java": [
+      "src/java/io/IOException.java",
+      "src/java/text/ParseException.java",
+      "src/java/text/ParsePosition.java",
+      "src/java/util/Date.java",
+      "src/java/util/Hashtable.java",
+      "src/java/util/Locale.java"
+    ],
+    "src/java/net/URLEncoder.java": [],
+    "src/java/net/URLStreamHandler.java": [
+      "src/java/io/IOException.java"
+    ],
+    "src/java/package.bluej": [],
+    "src/java/security/AccessControlContext.java": [],
+    "src/java/security/AccessControlException.java": [],
+    "src/java/security/AccessController.java": [
+      "src/java/util/PropertyPermission.java"
+    ],
+    "src/java/security/acl/AclNotFoundException.java": [],
+    "src/java/security/acl/LastOwnerException.java": [],
+    "src/java/security/acl/NotOwnerException.java": [],
+    "src/java/security/acl/package.bluej": [],
+    "src/java/security/AlgorithmParameterGenerator.java": [],
+    "src/java/security/AlgorithmParameters.java": [
+      "src/java/io/IOException.java",
+      "src/java/security/spec/InvalidParameterSpecException.java"
+    ],
+    "src/java/security/AllPermission.java": [],
+    "src/java/security/BasicPermission$1.j": [],
+    "src/java/security/cert/CertificateEncodingException.java": [],
+    "src/java/security/cert/CertificateException.java": [
+      "src/java/security/GeneralSecurityException.java"
+    ],
+    "src/java/security/cert/CertificateExpiredException.java": [],
+    "src/java/security/cert/CertificateFactory.java": [
+      "src/java/security/NoSuchProviderException.java",
+      "src/java/security/Security.java"
+    ],
+    "src/java/security/cert/CertificateNotYetValidException.java": [],
+    "src/java/security/cert/CertificateParsingException.java": [],
+    "src/java/security/cert/CRLException.java": [
+      "src/java/security/GeneralSecurityException.java"
+    ],
+    "src/java/security/cert/package.bluej": [],
+    "src/java/security/CodeSource.java": [
+      "src/java/net/SocketPermission.java",
+      "src/java/net/URL.java"
+    ],
+    "src/java/security/DigestException.java": [],
+    "src/java/security/DigestInputStream.java": [
+      "src/java/io/FilterInputStream.java",
+      "src/java/io/IOException.java"
+    ],
+    "src/java/security/DigestOutputStream.java": [
+      "src/java/io/FilterOutputStream.java",
+      "src/java/io/IOException.java"
+    ],
+    "src/java/security/DummyKeyPairGenerator.java": [],
+    "src/java/security/DummyMessageDigest.java": [
+      "src/java/security/DigestException.java"
+    ],
+    "src/java/security/DummySignature.java": [],
+    "src/java/security/GeneralSecurityException.java": [],
+    "src/java/security/GuardedObject.java": [],
+    "src/java/security/InvalidAlgorithmParameterException.java": [],
+    "src/java/security/InvalidKeyException.java": [],
+    "src/java/security/InvalidParameterException.java": [],
+    "src/java/security/KeyException.java": [],
+    "src/java/security/KeyFactory.java": [
+      "src/java/security/spec/InvalidKeySpecException.java"
+    ],
+    "src/java/security/KeyManagementException.java": [],
+    "src/java/security/KeyPair.java": [],
+    "src/java/security/KeyStore.java": [
+      "src/java/io/IOException.java",
+      "src/java/security/cert/CertificateException.java",
+      "src/java/util/Date.java"
+    ],
+    "src/java/security/KeyStoreException.java": [],
+    "src/java/security/NoSuchAlgorithmException.java": [],
+    "src/java/security/NoSuchProviderException.java": [],
+    "src/java/security/package.bluej": [],
+    "src/java/security/Permissions.java": [
+      "src/gnu/java/security/DefaultPermissionCollection.java",
+      "src/java/util/Hashtable.java",
+      "src/java/util/NoSuchElementException.java"
+    ],
+    "src/java/security/PrivilegedActionException.java": [
+      "src/java/io/PrintStream.java",
+      "src/java/io/PrintWriter.java"
+    ],
+    "src/java/security/ProtectionDomain.java": [],
+    "src/java/security/ProviderException.java": [],
+    "src/java/security/SecureClassLoader.java": [],
+    "src/java/security/SecureRandom.java": [
+      "src/java/util/Random.java"
+    ],
+    "src/java/security/Security.java": [
+      "src/java/io/File.java",
+      "src/java/io/FileInputStream.java",
+      "src/java/io/FileNotFoundException.java",
+      "src/java/io/IOException.java",
+      "src/java/util/Properties.java",
+      "src/java/util/Vector.java"
+    ],
+    "src/java/security/SecurityPermission.java": [],
+    "src/java/security/Signature.java": [],
+    "src/java/security/SignatureException.java": [],
+    "src/java/security/SignedObject.java": [
+      "src/java/io/ByteArrayInputStream.java",
+      "src/java/io/ByteArrayOutputStream.java",
+      "src/java/io/IOException.java",
+      "src/java/io/ObjectInputStream.java",
+      "src/java/io/ObjectOutputStream.java"
+    ],
+    "src/java/security/spec/DSAParameterSpec.java": [],
+    "src/java/security/spec/DSAPrivateKeySpec.java": [],
+    "src/java/security/spec/DSAPublicKeySpec.java": [],
+    "src/java/security/spec/InvalidKeySpecException.java": [
+      "src/java/security/GeneralSecurityException.java"
+    ],
+    "src/java/security/spec/InvalidParameterSpecException.java": [
+      "src/java/security/GeneralSecurityException.java"
+    ],
+    "src/java/security/spec/package.bluej": [],
+    "src/java/security/spec/PKCS8EncodedKeySpec.java": [],
+    "src/java/security/spec/RSAKeyGenParameterSpec.j": [],
+    "src/java/security/spec/RSAPrivateCrtKeySpec.java": [],
+    "src/java/security/spec/RSAPrivateKeySpec.java": [],
+    "src/java/security/spec/RSAPublicKeySpec.java": [],
+    "src/java/security/spec/X509EncodedKeySpec.java": [],
+    "src/java/security/UnrecoverableKeyException.java": [],
+    "src/java/security/UnresolvedPermission.java": [],
+    "src/java/sql/BatchUpdateException.java": [],
+    "src/java/sql/DataTruncation.java": [],
+    "src/java/sql/Date.java": [
+      "src/java/text/SimpleDateFormat.java"
+    ],
+    "src/java/sql/DriverManager.java": [
+      "src/java/io/PrintStream.java",
+      "src/java/io/PrintWriter.java",
+      "src/java/util/Properties.java",
+      "src/java/util/StringTokenizer.java",
+      "src/java/util/Vector.java"
+    ],
+    "src/java/sql/DriverPropertyInfo.java": [],
+    "src/java/sql/package.bluej": [],
+    "src/java/sql/SQLException.java": [],
+    "src/java/sql/SQLWarning.java": [],
+    "src/java/sql/Time.java": [
+      "src/java/text/SimpleDateFormat.java"
+    ],
+    "src/java/sql/Timestamp.java": [
+      "src/java/text/SimpleDateFormat.java"
+    ],
+    "src/java/sql/Types.java": [],
+    "src/java/text/Annotation.java": [],
+    "src/java/text/AttributedString.j": [],
+    "src/java/text/AttributedStringIterator.j": [],
+    "src/java/text/BreakIterator.java": [
+      "src/java/util/Locale.java",
+      "src/java/util/MissingResourceException.java"
+    ],
+    "src/java/text/ChoiceFormat.java": [
+      "src/java/util/StringTokenizer.java"
+    ],
+    "src/java/text/CollationElementIterator.java": [],
+    "src/java/text/CollationKey.java": [],
+    "src/java/text/DateFormatSymbols.java": [
+      "src/java/util/Locale.java",
+      "src/java/util/MissingResourceException.java"
+    ],
+    "src/java/text/DecimalFormat.java": [],
+    "src/java/text/DecimalFormatSymbols.java": [
+      "src/java/util/Locale.java"
+    ],
+    "src/java/text/DefaultBreakIterator.java": [],
+    "src/java/text/FieldPosition.java": [],
+    "src/java/text/MessageFormat.java": [
+      "src/java/util/Locale.java",
+      "src/java/util/Vector.java"
+    ],
+    "src/java/text/package.bluej": [],
+    "src/java/text/ParseException.java": [],
+    "src/java/text/ParsePosition.java": [],
+    "src/java/text/RuleBasedCollator.java": [
+      "src/java/util/Vector.java"
+    ],
+    "src/java/text/SimpleDateFormat.java": [
+      "src/java/io/IOException.java",
+      "src/java/io/ObjectInputStream.java",
+      "src/java/util/Date.java",
+      "src/java/util/GregorianCalendar.java",
+      "src/java/util/Locale.java",
+      "src/java/util/SimpleTimeZone.java",
+      "src/java/util/Vector.java"
+    ],
+    "src/java/text/StringCharacterIterator.java": [],
+    "src/java/util/AbstractCollection.j": [],
+    "src/java/util/AbstractList.j": [],
+    "src/java/util/ArrayList.java": [],
+    "src/java/util/Arrays.java": [
+      "src/java/lang/reflect/Array.java",
+      "src/java/util/stream/Stream.java"
+    ],
+    "src/java/util/BasicMapEntry.java": [],
+    "src/java/util/BitSet.java": [],
+    "src/java/util/Bucket.java": [
+      "src/jx/zero/Debug.java"
+    ],
+    "src/java/util/Collections.java": [
+      "src/java/io/IOException.java",
+      "src/java/io/ObjectOutputStream.java",
+      "src/java/lang/reflect/Array.java",
+      "src/java/util/stream/Stream.java",
+      "src/java/util/stream/StreamSupport.java"
+    ],
+    "src/java/util/ConcurrentModificationException.java": [],
+    "src/java/util/Date.java": [],
+    "src/java/util/DoubleEnumeration.java": [],
+    "src/java/util/EmptyStackException.java": [],
+    "src/java/util/EventObject.java": [],
+    "src/java/util/GregorianCalendar.java": [],
+    "src/java/util/HashMap.java": [
+      "src/java/io/IOException.java",
+      "src/java/io/ObjectInputStream.java",
+      "src/java/io/ObjectOutputStream.java",
+      "src/jx/zero/Debug.java"
+    ],
+    "src/java/util/HashSet.java": [
+      "src/java/io/IOException.java",
+      "src/java/io/ObjectInputStream.java",
+      "src/java/io/ObjectOutputStream.java"
+    ],
+    "src/java/util/Hashtable.java": [],
+    "src/java/util/LinkedHashMap.java": [
+      "src/java/io/IOException.java"
+    ],
+    "src/java/util/LinkedHashSet.java": [],
+    "src/java/util/LinkedList.j": [],
+    "src/java/util/Locale.java": [],
+    "src/java/util/MissingResourceException.java": [],
+    "src/java/util/NoSuchElementException.java": [],
+    "src/java/util/Objects.java": [],
+    "src/java/util/package.bluej": [],
+    "src/java/util/Properties.java": [
+      "src/java/io/IOException.java",
+      "src/java/io/PrintStream.java",
+      "src/java/io/PushbackInputStream.java"
+    ],
+    "src/java/util/PropertyPermission.java": [],
+    "src/java/util/PropertyResourceBundle.java": [],
+    "src/java/util/Random.java": [],
+    "src/java/util/SimpleTimeZone.java": [
+      "src/java/text/DateFormatSymbols.java"
+    ],
+    "src/java/util/Spliterators.java": [],
+    "src/java/util/Stack.java": [],
+    "src/java/util/stream/package.bluej": [],
+    "src/java/util/stream/Stream.java": [
+      "src/java/util/Arrays.java",
+      "src/java/util/HashMap.java",
+      "src/java/util/Objects.java",
+      "src/java/util/Spliterators.java"
+    ],
+    "src/java/util/stream/Streams.j": [],
+    "src/java/util/stream/Streams.java": [],
+    "src/java/util/stream/StreamSupport.java": [
+      "src/java/util/Objects.java"
+    ],
+    "src/java/util/StringTokenizer.java": [],
+    "src/java/util/TooManyListenersException.java": [],
+    "src/java/util/TreeMap.java": [
+      "src/java/io/IOException.java",
+      "src/java/io/ObjectInputStream.java",
+      "src/java/io/ObjectOutputStream.java",
+      "src/java/io/ObjectStreamField.java"
+    ],
+    "src/java/util/TreeSet.java": [],
+    "src/java/util/Tripwire.java": [
+      "src/java/security/AccessController.java"
+    ],
+    "src/java/util/UnsupportedOperationException.java": [],
+    "src/java/util/Vector.java": [],
+    "src/java/util/zip/InflaterInputStream.java": [],
+    "src/java/util/zip/package.bluej": [],
+    "src/java/util/zip/ZipEntry.java": [],
+    "src/java/util/zip/ZipFile.java": [],
+    "src/java/util/zip/ZipInputStream.java": [],
+    "src/java/util/zip/ZipOutputStream.java": [],
+    "src/javax/net/package.bluej": [],
+    "src/javax/net/ServerSocketFactory.java": [],
+    "src/javax/net/ssl/package.bluej": [],
+    "src/javax/net/ssl/SSLServerSocket.java": [],
+    "src/javax/net/ssl/SSLServerSocketFactory.java": [],
+    "src/javax/net/ssl/SSLSession.java": [],
+    "src/javax/net/ssl/SSLSocket.java": [],
+    "src/javax/package.bluej": [],
+    "src/javax/security/cert/Certificate.java": [],
+    "src/javax/security/cert/package.bluej": [],
+    "src/javax/security/cert/X509Certificate.java": [],
+    "src/javax/security/package.bluej": [],
+    "src/jx/bio/buffercache/BufferCache.java": [
+      "src/jx/collections/Iterator.java",
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/bio/buffercache/BufferFreeList.java": [
+      "src/jx/buffer/BufferList.java"
+    ],
+    "src/jx/bio/buffercache/BufferHashtable.java": [
+      "src/jx/collections/Iterator.java"
+    ],
+    "src/jx/bio/buffercache/BufferHead.java": [
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/bio/buffercache/package.bluej": [],
+    "src/jx/bio/emulator/Main.java": [
+      "src/jx/zero/debug/DebugOutputStream.java",
+      "src/jx/zero/debug/DebugPrintStream.java"
+    ],
+    "src/jx/bio/emulator/package.bluej": [],
+    "src/jx/bio/package.bluej": [],
+    "src/jx/bio/ram/BlockIORAM.java": [
+      "src/jx/timerpc/SleepManagerImpl.java"
+    ],
+    "src/jx/bio/ram/Main.java": [
+      "src/jx/zero/debug/DebugOutputStream.java",
+      "src/jx/zero/debug/DebugPrintStream.java"
+    ],
+    "src/jx/bio/ram/package.bluej": [],
+    "src/jx/bio/ro/Main.java": [],
+    "src/jx/bio/ro/package.bluej": [],
+    "src/jx/bootrc/BootRC.java": [],
+    "src/jx/bootrc/BootRC2.java": [],
+    "src/jx/bootrc/ComponentSpec.java": [],
+    "src/jx/bootrc/ConfigFile.java": [],
+    "src/jx/bootrc/DomainSpec.java": [],
+    "src/jx/bootrc/GlobalSpec.java": [],
+    "src/jx/bootrc/NameNotFoundException.java": [],
+    "src/jx/bootrc/package.bluej": [],
+    "src/jx/bootrc/Pair.java": [],
+    "src/jx/bootrc/Record.java": [],
+    "src/jx/bootrc/Section.java": [],
+    "src/jx/bootrc/Spec.java": [],
+    "src/jx/bootrc/StringTokenException.java": [],
+    "src/jx/buffer/BufferHead.java": [],
+    "src/jx/buffer/BufferList.java": [
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/buffer/multithread/Buffer.java": [],
+    "src/jx/buffer/multithread/Buffer2.java": [
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/buffer/multithread/BufferConsumer.java": [],
+    "src/jx/buffer/multithread/BufferProducer.java": [],
+    "src/jx/buffer/multithread/MultiThreadBufferList.java": [],
+    "src/jx/buffer/multithread/MultiThreadBufferList2.java": [],
+    "src/jx/buffer/multithread/MultiThreadList.java": [],
+    "src/jx/buffer/multithread/package.bluej": [],
+    "src/jx/buffer/package.bluej": [],
+    "src/jx/buffer/separator/MemoryConsumer.java": [],
+    "src/jx/buffer/separator/MemoryConsumer2.java": [],
+    "src/jx/buffer/separator/MemoryProducer.java": [],
+    "src/jx/buffer/separator/NonBlockingMemoryConsumer.java": [],
+    "src/jx/buffer/separator/package.bluej": [],
+    "src/jx/classfile/BC.java": [],
+    "src/jx/classfile/ClassData.java": [
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/classfile/ClassSource.java": [
+      "src/jx/classfile/constantpool/ConstantPool.java"
+    ],
+    "src/jx/classfile/CodeData.java": [
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/classfile/constantpool/ClassCPEntry.java": [],
+    "src/jx/classfile/constantpool/ClassMemberCPEntry.java": [],
+    "src/jx/classfile/constantpool/ConstantPool.java": [
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/classfile/constantpool/ConstantPoolEntry.java": [],
+    "src/jx/classfile/constantpool/DummyCPEntry.java": [
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/classfile/constantpool/FieldRefCPEntry.java": [],
+    "src/jx/classfile/constantpool/InterfaceMethodRefCPEntry.java": [
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/classfile/constantpool/MethodRefCPEntry.java": [],
+    "src/jx/classfile/constantpool/NameAndTypeCPEntry.java": [
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/classfile/constantpool/NumericCPEntry.java": [
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/classfile/constantpool/package.bluej": [],
+    "src/jx/classfile/constantpool/StringCPEntry.java": [
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/classfile/constantpool/UTF8CPEntry.java": [],
+    "src/jx/classfile/datatypes/BasicTypeDescriptor.java": [],
+    "src/jx/classfile/datatypes/BCBasicDatatype.java": [
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/classfile/datatypes/BCByte.java": [],
+    "src/jx/classfile/datatypes/BCDouble.java": [],
+    "src/jx/classfile/datatypes/BCFloat.java": [],
+    "src/jx/classfile/datatypes/BCFloatDatatype.java": [],
+    "src/jx/classfile/datatypes/BCInteger.java": [],
+    "src/jx/classfile/datatypes/BCIntegerDatatype.java": [],
+    "src/jx/classfile/datatypes/BCLong.java": [],
+    "src/jx/classfile/datatypes/BCNumericDatatype.java": [],
+    "src/jx/classfile/datatypes/BCReference.java": [],
+    "src/jx/classfile/datatypes/BCShort.java": [],
+    "src/jx/classfile/datatypes/DataType.java": [],
+    "src/jx/classfile/datatypes/MethodTypeDescriptor.java": [
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/classfile/datatypes/NoClassTypeException.java": [],
+    "src/jx/classfile/datatypes/package.bluej": [],
+    "src/jx/classfile/datatypes/TestTypeDesc.java": [],
+    "src/jx/classfile/ExceptionHandlerData.java": [
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/classfile/FieldData.java": [
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/classfile/LineAttributeData.java": [],
+    "src/jx/classfile/MethodData.java": [
+      "src/java/util/Vector.java",
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/classfile/MethodSource.java": [],
+    "src/jx/classfile/Modifier.java": [
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/classfile/NativeMethodException.java": [],
+    "src/jx/classfile/NoMagicNumberException.java": [],
+    "src/jx/classfile/package.bluej": [],
+    "src/jx/classfile/VerifyResult.java": [],
+    "src/jx/classstore/ClassFinder.java": [
+      "src/jx/collections/Iterator.java"
+    ],
+    "src/jx/classstore/ClassInformation.java": [
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/classstore/ClassManager.java": [
+      "src/java/io/IOException.java",
+      "src/java/util/Vector.java",
+      "src/jx/collections/Iterator.java",
+      "src/jx/zero/Debug.java",
+      "src/jx/zip/ZipEntry.java",
+      "src/jx/zip/ZipFile.java"
+    ],
+    "src/jx/classstore/ClassStore.java": [
+      "src/jx/collections/Iterator.java",
+      "src/jx/collections/List.java"
+    ],
+    "src/jx/classstore/LoadedClass.java": [
+      "src/java/util/Hashtable.java"
+    ],
+    "src/jx/classstore/MemoryClassSource.java": [
+      "src/jx/classfile/ClassData.java",
+      "src/jx/zero/memory/MemoryInputStream.java"
+    ],
+    "src/jx/classstore/package.bluej": [],
+    "src/jx/collections/Collection.java": [],
+    "src/jx/collections/Comparator.java": [],
+    "src/jx/collections/Iterator.java": [],
+    "src/jx/collections/List.java": [
+      "src/java/util/Vector.java"
+    ],
+    "src/jx/collections/package.bluej": [],
+    "src/jx/collections/QuickSort.java": [
+      "src/java/util/Vector.java"
+    ],
+    "src/jx/collections/SortedList.java": [],
+    "src/jx/db/avltree/AVLBaum.java": [],
+    "src/jx/db/avltree/Baum.java": [],
+    "src/jx/db/avltree/Comparable.java": [],
+    "src/jx/db/avltree/package.bluej": [],
+    "src/jx/db/avltree/SuchBaum.java": [],
+    "src/jx/db/BufferList.java": [],
+    "src/jx/db/CodedException.java": [],
+    "src/jx/db/Database.java": [
+      "src/jx/db/BufferList.java",
+      "src/jx/db/types/TypeManager.java"
+    ],
+    "src/jx/db/Index.java": [],
+    "src/jx/db/IndexInfo.java": [],
+    "src/jx/db/Key.java": [],
+    "src/jx/db/mytypes/comparators/IntegerComparator.java": [],
+    "src/jx/db/mytypes/comparators/package.bluej": [],
+    "src/jx/db/mytypes/comparators/StringComparator.java": [],
+    "src/jx/db/mytypes/Converter.java": [],
+    "src/jx/db/mytypes/converters/package.bluej": [],
+    "src/jx/db/mytypes/converters/StringToByteArrayConverter.java": [
+      "src/jx/db/CodedException.java",
+      "src/jx/db/types/DbConverter.java"
+    ],
+    "src/jx/db/mytypes/package.bluej": [],
+    "src/jx/db/mytypes/TypeManagerImpl.java": [
+      "src/jx/db/CodedException.java"
+    ],
+    "src/jx/db/package.bluej": [],
+    "src/jx/db/parser/JXResultSet.java": [],
+    "src/jx/db/parser/Main.java": [],
+    "src/jx/db/parser/package.bluej": [],
+    "src/jx/db/parser/ParseException.java": [],
+    "src/jx/db/parser/Parser.java": [
+      "src/java/util/Vector.java",
+      "src/jx/db/types/TypeManager.java"
+    ],
+    "src/jx/db/RelationalOperator.java": [],
+    "src/jx/db/RelationScan.java": [],
+    "src/jx/db/SetNumberReader.java": [],
+    "src/jx/db/systembuffer/package.bluej": [],
+    "src/jx/db/systembuffer/strategy/package.bluej": [],
+    "src/jx/db/systembuffer/strategy/PageStrategy.java": [
+      "src/jx/db/CodedException.java"
+    ],
+    "src/jx/db/systembuffer/strategy/PageStrategyRecord.java": [],
+    "src/jx/db/Table.java": [],
+    "src/jx/db/treemap/package.bluej": [],
+    "src/jx/db/treemap/TreeMap.java": [],
+    "src/jx/db/TupleDescriptor.java": [
+      "src/jx/db/CodedException.java",
+      "src/jx/db/types/DbConverter.java"
+    ],
+    "src/jx/db/TupleReader.java": [],
+    "src/jx/db/TupleWriter.java": [],
+    "src/jx/db/types/DbComparator.java": [],
+    "src/jx/db/types/DbConverter.java": [
+      "src/jx/db/CodedException.java"
+    ],
+    "src/jx/db/types/package.bluej": [],
+    "src/jx/db/types/TypeManager.java": [
+      "src/jx/db/CodedException.java"
+    ],
+    "src/jx/devices/DeviceInfo.java": [],
+    "src/jx/devices/net/emulation/EmulNetFinder.java": [],
+    "src/jx/devices/net/emulation/package.bluej": [],
+    "src/jx/devices/net/NetworkConfigurationTemplate.java": [],
+    "src/jx/devices/net/NoMoreElementsException.java": [],
+    "src/jx/devices/net/package.bluej": [],
+    "src/jx/devices/package.bluej": [],
+    "src/jx/devices/pci/CapabilityAGP.java": [],
+    "src/jx/devices/pci/CapabilityPM.java": [],
+    "src/jx/devices/pci/CapabilitySI.java": [],
+    "src/jx/devices/pci/CapabilityVPD.java": [],
+    "src/jx/devices/pci/package.bluej": [],
+    "src/jx/devices/pci/PCIAddressImpl.java": [],
+    "src/jx/devices/pci/PCICapability.java": [],
+    "src/jx/devices/pci/PCICodes.java": [],
+    "src/jx/devices/pci/PCIDeviceImpl.java": [
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/devices/pci/PCIGod.java": [
+      "src/java/util/Vector.java"
+    ],
+    "src/jx/emulation/BlockIOFile.java": [],
+    "src/jx/emulation/ClockImpl.java": [],
+    "src/jx/emulation/ComponentManagerImpl.java": [],
+    "src/jx/emulation/DebugChannelImpl.java": [],
+    "src/jx/emulation/devices/ide/DebugConf.java": [],
+    "src/jx/emulation/devices/ide/DeviceNaming.java": [],
+    "src/jx/emulation/devices/ide/package.bluej": [],
+    "src/jx/emulation/devices/package.bluej": [],
+    "src/jx/emulation/DomainManagerImpl.java": [],
+    "src/jx/emulation/Init.java": [
+      "src/java/lang/reflect/Method.java",
+      "src/jx/zero/Debug.java",
+      "src/jx/zero/debug/DebugInputStream.java",
+      "src/jx/zero/debug/DebugOutputStream.java",
+      "src/jx/zero/debug/DebugPrintStream.java"
+    ],
+    "src/jx/emulation/MemoryImpl.java": [
+      "src/java/lang/reflect/Field.java",
+      "src/java/lang/reflect/Modifier.java",
+      "src/java/util/Vector.java"
+    ],
+    "src/jx/emulation/MemoryManagerImpl.java": [],
+    "src/jx/emulation/NamingImpl.java": [
+      "src/java/util/HashMap.java"
+    ],
+    "src/jx/emulation/package.bluej": [],
+    "src/jx/emulation/ProfilerImpl.java": [],
+    "src/jx/formats/LittleEndianInputStream.java": [],
+    "src/jx/formats/LittleEndianOutputStream.java": [],
+    "src/jx/formats/package.bluej": [],
+    "src/jx/framebuffer/ClippingRectangle.java": [],
+    "src/jx/framebuffer/ClippingTransformer.java": [],
+    "src/jx/framebuffer/InterlacedFramebuffer.java": [],
+    "src/jx/framebuffer/MemoryFramebuffer.java": [],
+    "src/jx/framebuffer/package.bluej": [],
+    "src/jx/framebuffer/PackedFramebuffer.java": [],
+    "src/jx/framebuffer/PackedFramebufferImpl.java": [
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/framebuffer/SubFramebuffer.java": [
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/fs/AlreadyMountedException.java": [],
+    "src/jx/fs/auditfs/AuditRecord.java": [],
+    "src/jx/fs/auditfs/AuditStore.java": [],
+    "src/jx/fs/auditfs/package.bluej": [],
+    "src/jx/fs/buffercache/BufferCache.java": [],
+    "src/jx/fs/buffercache/BufferHead.java": [],
+    "src/jx/fs/buffercache/package.bluej": [],
+    "src/jx/fs/DeviceNaming.java": [],
+    "src/jx/fs/DirectoryImpl.java": [],
+    "src/jx/fs/DirNotEmptyException.java": [],
+    "src/jx/fs/EXT2Attribute.java": [],
+    "src/jx/fs/EXT2Permission.java": [],
+    "src/jx/fs/ExtendedFileSystemInterface.java": [
+      "src/jx/zero/LookupHelper.java"
+    ],
+    "src/jx/fs/FileException.java": [],
+    "src/jx/fs/FileExistsException.java": [],
+    "src/jx/fs/FilesystemImpl.java": [
+      "src/java/util/Vector.java"
+    ],
+    "src/jx/fs/FSException.java": [],
+    "src/jx/fs/FSInterfaceDomain.java": [],
+    "src/jx/fs/FSObjectImpl.java": [],
+    "src/jx/fs/InodeImpl.java": [],
+    "src/jx/fs/InodeIOException.java": [],
+    "src/jx/fs/InodeNotFoundException.java": [],
+    "src/jx/fs/NoDirectoryInodeException.java": [],
+    "src/jx/fs/NoFileInodeException.java": [],
+    "src/jx/fs/NoSymlinkInodeException.java": [],
+    "src/jx/fs/NotExistException.java": [],
+    "src/jx/fs/NotSupportedException.java": [],
+    "src/jx/fs/package.bluej": [],
+    "src/jx/fs/PermissionException.java": [],
+    "src/jx/fs/ReadOnlyDirectoryImpl.java": [],
+    "src/jx/fs/ReadOnlyRegularFileImpl.java": [
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/fs/RegularFileImpl.java": [],
+    "src/jx/fs/StatFSImpl.java": [],
+    "src/jx/InitialNaming.java": [
+      "src/java/util/Hashtable.java"
+    ],
+    "src/jx/net/dispatch/Dispatch.java": [
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/net/dispatch/package.bluej": [],
+    "src/jx/net/dispatch/UpperLayer.java": [],
+    "src/jx/net/EtherDataImpl.java": [],
+    "src/jx/net/format/Format.java": [
+      "src/jx/net/IPv4Address.java"
+    ],
+    "src/jx/net/format/package.bluej": [],
+    "src/jx/net/IPDataImpl.java": [],
+    "src/jx/net/IPv4Address.java": [
+      "src/java/net/Inet4Address.java",
+      "src/java/net/InetAddress.java",
+      "src/java/net/UnknownHostException.java",
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/net/package.bluej": [],
+    "src/jx/net/protocol/arp/ARP.java": [
+      "src/jx/net/protocol/ether/Ether.java",
+      "src/jx/net/protocol/ether/EtherFormat.java",
+      "src/jx/net/protocol/ip/IP.java",
+      "src/jx/net/UnknownAddressException.java"
+    ],
+    "src/jx/net/protocol/arp/ARPCache.java": [
+      "src/java/util/Vector.java",
+      "src/jx/net/UnknownAddressException.java"
+    ],
+    "src/jx/net/protocol/arp/ARPFormat.java": [
+      "src/jx/net/format/Format.java"
+    ],
+    "src/jx/net/protocol/arp/ARPTimer.java": [],
+    "src/jx/net/protocol/arp/ARPTimerArg.java": [],
+    "src/jx/net/protocol/arp/package.bluej": [],
+    "src/jx/net/protocol/bootp/BOOTP.java": [
+      "src/jx/net/IPv4Address.java"
+    ],
+    "src/jx/net/protocol/bootp/BOOTPFormat.java": [
+      "src/jx/net/format/Format.java",
+      "src/metaxa/os/devices/net/EthernetAdress.java",
+      "src/metaxa/os/devices/net/WrongEthernetAdressFormat.java"
+    ],
+    "src/jx/net/protocol/bootp/package.bluej": [],
+    "src/jx/net/protocol/ether/Ether.java": [
+      "src/jx/buffer/multithread/MultiThreadList.java",
+      "src/jx/net/dispatch/Dispatch.java",
+      "src/jx/net/EtherDataImpl.java",
+      "src/jx/zero/Debug.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/net/protocol/ether/EtherFormat.java": [
+      "src/jx/net/format/Format.java",
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/net/protocol/ether/package.bluej": [],
+    "src/jx/net/protocol/icmp/ICMP.java": [
+      "src/jx/net/protocol/ip/IP.java",
+      "src/jx/net/UnknownAddressException.java"
+    ],
+    "src/jx/net/protocol/icmp/ICMPFormat.java": [
+      "src/jx/net/format/Format.java",
+      "src/jx/net/protocol/ip/IPv4Utils.java"
+    ],
+    "src/jx/net/protocol/icmp/package.bluej": [],
+    "src/jx/net/protocol/ip/IP.java": [
+      "src/jx/net/dispatch/Dispatch.java",
+      "src/jx/net/IPDataImpl.java",
+      "src/jx/net/IPv4Address.java",
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/net/protocol/ip/IPFormat.java": [
+      "src/jx/net/format/Format.java",
+      "src/jx/net/IPv4Address.java"
+    ],
+    "src/jx/net/protocol/ip/IPv4Utils.java": [],
+    "src/jx/net/protocol/ip/package.bluej": [],
+    "src/jx/net/protocol/package.bluej": [],
+    "src/jx/net/protocol/tcp/package.bluej": [],
+    "src/jx/net/protocol/tcp/TCP.java": [
+      "src/jx/buffer/multithread/MultiThreadList.java",
+      "src/jx/timer/TimerManager.java"
+    ],
+    "src/jx/net/protocol/tcp/TCPData.java": [
+      "src/jx/net/IPDataImpl.java"
+    ],
+    "src/jx/net/protocol/tcp/TCPFormat.java": [
+      "src/jx/net/format/Format.java"
+    ],
+    "src/jx/net/protocol/tcp/TCPSocket.java": [
+      "src/java/io/IOException.java",
+      "src/jx/buffer/multithread/MultiThreadList.java"
+    ],
+    "src/jx/net/protocol/tcp/TCPSocketState.java": [],
+    "src/jx/net/protocol/udp/package.bluej": [],
+    "src/jx/net/protocol/udp/UDP.java": [
+      "src/jx/buffer/separator/MemoryConsumer.java",
+      "src/jx/net/UDPDataImpl.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/net/protocol/udp/UDPFormat.java": [
+      "src/jx/net/format/Format.java"
+    ],
+    "src/jx/net/StartNetDevice.java": [
+      "src/jx/devices/net/emulation/EmulNetFinder.java",
+      "src/jx/zero/debug/Dump.java",
+      "src/metaxa/os/devices/net/ComInit.java",
+      "src/metaxa/os/devices/net/D3C905.java"
+    ],
+    "src/jx/net/TCPInputStream.java": [
+      "src/java/io/IOException.java"
+    ],
+    "src/jx/net/TCPOutputStream.java": [],
+    "src/jx/net/UDPDataImpl.java": [],
+    "src/jx/net/UnknownAddressException.java": [],
+    "src/jx/package.bluej": [],
+    "src/jx/rdp/crypto/BlockMessageDigest.java": [],
+    "src/jx/rdp/crypto/CryptoException.java": [],
+    "src/jx/rdp/crypto/Key.java": [],
+    "src/jx/rdp/crypto/MD5.java": [],
+    "src/jx/rdp/crypto/package.bluej": [],
+    "src/jx/rdp/crypto/RC4.java": [],
+    "src/jx/rdp/crypto/SHA1.java": [],
+    "src/jx/rdp/orders/BoundsOrder.java": [],
+    "src/jx/rdp/orders/Brush.java": [],
+    "src/jx/rdp/orders/DeskSaveOrder.java": [],
+    "src/jx/rdp/orders/DestBltOrder.java": [],
+    "src/jx/rdp/orders/LineOrder.java": [],
+    "src/jx/rdp/orders/MemBltOrder.java": [],
+    "src/jx/rdp/orders/Order.java": [],
+    "src/jx/rdp/orders/package.bluej": [],
+    "src/jx/rdp/orders/PatBltOrder.java": [],
+    "src/jx/rdp/orders/Pen.java": [],
+    "src/jx/rdp/orders/PolyLineOrder.java": [],
+    "src/jx/rdp/orders/RectangleOrder.java": [],
+    "src/jx/rdp/orders/ScreenBltOrder.java": [],
+    "src/jx/rdp/orders/Text2Order.java": [],
+    "src/jx/rdp/orders/TriBltOrder.java": [],
+    "src/jx/rdp/package.bluej": [],
+    "src/jx/rexec/Decoder.java": [
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rexec/Encoder.java": [],
+    "src/jx/rexec/package.bluej": [],
+    "src/jx/rexec/server/Main.j": [],
+    "src/jx/rpc/Auth.java": [],
+    "src/jx/rpc/AuthNone.java": [],
+    "src/jx/rpc/AuthShort.java": [],
+    "src/jx/rpc/AuthUnix.java": [],
+    "src/jx/rpc/package.bluej": [],
+    "src/jx/rpc/RPC.java": [
+      "src/java/util/Hashtable.java",
+      "src/java/util/Vector.java"
+    ],
+    "src/jx/rpc/RPCBuffer.java": [
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCCall.java": [],
+    "src/jx/rpc/RPCContinuation.java": [],
+    "src/jx/rpc/RPCData.java": [],
+    "src/jx/rpc/RPCEnum.java": [],
+    "src/jx/rpc/RPCException.java": [],
+    "src/jx/rpc/RPCFormatterAuth.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCFormatterAuthNone.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCFormatterAuthShort.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCFormatterAuthUnix.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/Debug.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCFormatterRPCCall.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/Debug.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCFormatterRPCHeader.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCFormatterRPCMessage.java": [
+      "src/jx/xdr/Format.java"
+    ],
+    "src/jx/rpc/RPCFormatterRPCMsgAccepted.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCFormatterRPCMsgDenied.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCFormatterRPCMsgProgMismatch.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCFormatterRPCMsgProgUnavailable.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCFormatterRPCMsgRejectAuth.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCFormatterRPCMsgRejectMismatch.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCFormatterRPCMsgSuccess.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCFormatterRPCReply.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCHeader.java": [],
+    "src/jx/rpc/RPCInitException.java": [],
+    "src/jx/rpc/RPCMessage.java": [],
+    "src/jx/rpc/RPCMsgAccepted.java": [],
+    "src/jx/rpc/RPCMsgDenied.java": [],
+    "src/jx/rpc/RPCMsgProgMismatch.java": [],
+    "src/jx/rpc/RPCMsgProgUnavailable.java": [],
+    "src/jx/rpc/RPCMsgRejectAuth.java": [],
+    "src/jx/rpc/RPCMsgRejectMismatch.java": [],
+    "src/jx/rpc/RPCMsgSuccess.java": [],
+    "src/jx/rpc/RPCOpaque.java": [],
+    "src/jx/rpc/RPCOptional.java": [],
+    "src/jx/rpc/RPCProc.java": [],
+    "src/jx/rpc/RPCReader.java": [],
+    "src/jx/rpc/RPCReply.java": [],
+    "src/jx/rpc/RPCUnion.java": [],
+    "src/jx/rpc/RPCWriter.java": [],
+    "src/jx/rpc/Waiter.java": [],
+    "src/jx/rpcsvc/bind2/package.bluej": [],
+    "src/jx/rpcsvc/bind2/RPCB.java": [],
+    "src/jx/rpcsvc/bind2/RPCBind_Impl.java": [
+      "src/java/util/Vector.java"
+    ],
+    "src/jx/rpcsvc/bind2/RPCBind.java": [],
+    "src/jx/rpcsvc/bind2/Service.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpcsvc/mount1/ExportNode.java": [],
+    "src/jx/rpcsvc/mount1/Exports.java": [],
+    "src/jx/rpcsvc/mount1/FHStatus.java": [],
+    "src/jx/rpcsvc/mount1/FHStatusOK.java": [],
+    "src/jx/rpcsvc/mount1/GroupNode.java": [],
+    "src/jx/rpcsvc/mount1/Groups.java": [],
+    "src/jx/rpcsvc/mount1/MountBody.java": [],
+    "src/jx/rpcsvc/mount1/MountList.java": [],
+    "src/jx/rpcsvc/mount1/MountProc_Impl.java": [],
+    "src/jx/rpcsvc/mount1/MountProc.java": [],
+    "src/jx/rpcsvc/mount1/package.bluej": [],
+    "src/jx/rpcsvc/nfs2/AttrStat.java": [],
+    "src/jx/rpcsvc/nfs2/AttrStatErrAcces.java": [],
+    "src/jx/rpcsvc/nfs2/AttrStatErrIO.java": [],
+    "src/jx/rpcsvc/nfs2/AttrStatErrNoEnt.java": [],
+    "src/jx/rpcsvc/nfs2/AttrStatErrNotDir.java": [],
+    "src/jx/rpcsvc/nfs2/AttrStatError.java": [],
+    "src/jx/rpcsvc/nfs2/AttrStatErrStale.java": [],
+    "src/jx/rpcsvc/nfs2/AttrStatOK.java": [],
+    "src/jx/rpcsvc/nfs2/DirOpRes.java": [],
+    "src/jx/rpcsvc/nfs2/DirOpResErrAcces.java": [],
+    "src/jx/rpcsvc/nfs2/DirOpResErrExist.java": [],
+    "src/jx/rpcsvc/nfs2/DirOpResErrIO.java": [],
+    "src/jx/rpcsvc/nfs2/DirOpResErrNotDir.java": [],
+    "src/jx/rpcsvc/nfs2/DirOpResError.java": [],
+    "src/jx/rpcsvc/nfs2/DirOpResErrStale.java": [],
+    "src/jx/rpcsvc/nfs2/DirOpResNoSuchFile.java": [],
+    "src/jx/rpcsvc/nfs2/DirOpResOK.java": [],
+    "src/jx/rpcsvc/nfs2/DirPath.java": [],
+    "src/jx/rpcsvc/nfs2/Entries.java": [],
+    "src/jx/rpcsvc/nfs2/Entry.java": [],
+    "src/jx/rpcsvc/nfs2/FAttr.java": [],
+    "src/jx/rpcsvc/nfs2/FHandle.java": [],
+    "src/jx/rpcsvc/nfs2/FType.java": [],
+    "src/jx/rpcsvc/nfs2/MappedFHandle.java": [],
+    "src/jx/rpcsvc/nfs2/Name.java": [],
+    "src/jx/rpcsvc/nfs2/NFSCookie.java": [],
+    "src/jx/rpcsvc/nfs2/NFSData.java": [],
+    "src/jx/rpcsvc/nfs2/NFSException.java": [
+      "src/jx/fs/FSException.java"
+    ],
+    "src/jx/rpcsvc/nfs2/NFSInode.java": [
+      "src/jx/rpcsvc/mount1/FHStatus.java",
+      "src/jx/rpcsvc/mount1/FHStatusOK.java",
+      "src/jx/rpcsvc/mount1/MountProc.java"
+    ],
+    "src/jx/rpcsvc/nfs2/NFSMountError.j": [],
+    "src/jx/rpcsvc/nfs2/NFSProc_Impl.java": [],
+    "src/jx/rpcsvc/nfs2/NFSProc.java": [],
+    "src/jx/rpcsvc/nfs2/package.bluej": [],
+    "src/jx/rpcsvc/nfs2/ReadDirRes.java": [],
+    "src/jx/rpcsvc/nfs2/ReadDirResErrAcces.java": [],
+    "src/jx/rpcsvc/nfs2/ReadDirResErrIO.java": [],
+    "src/jx/rpcsvc/nfs2/ReadDirResErrNoEnt.java": [],
+    "src/jx/rpcsvc/nfs2/ReadDirResErrNotDir.java": [],
+    "src/jx/rpcsvc/nfs2/ReadDirResError.java": [],
+    "src/jx/rpcsvc/nfs2/ReadDirResErrStale.java": [],
+    "src/jx/rpcsvc/nfs2/ReadDirResOK.java": [],
+    "src/jx/rpcsvc/nfs2/ReadLinkRes.java": [],
+    "src/jx/rpcsvc/nfs2/ReadLinkResErrAcces.java": [],
+    "src/jx/rpcsvc/nfs2/ReadLinkResErrIO.java": [],
+    "src/jx/rpcsvc/nfs2/ReadLinkResErrNoEnt.java": [],
+    "src/jx/rpcsvc/nfs2/ReadLinkResErrNotDir.java": [],
+    "src/jx/rpcsvc/nfs2/ReadLinkResError.java": [],
+    "src/jx/rpcsvc/nfs2/ReadLinkResErrStale.java": [],
+    "src/jx/rpcsvc/nfs2/ReadLinkResOK.java": [],
+    "src/jx/rpcsvc/nfs2/ReadRes.java": [],
+    "src/jx/rpcsvc/nfs2/ReadResErrAcces.java": [],
+    "src/jx/rpcsvc/nfs2/ReadResErrIO.java": [],
+    "src/jx/rpcsvc/nfs2/ReadResErrNoEnt.java": [],
+    "src/jx/rpcsvc/nfs2/ReadResErrNotDir.java": [],
+    "src/jx/rpcsvc/nfs2/ReadResError.java": [],
+    "src/jx/rpcsvc/nfs2/ReadResErrStale.java": [],
+    "src/jx/rpcsvc/nfs2/ReadResOK.java": [],
+    "src/jx/rpcsvc/nfs2/SAttr.java": [],
+    "src/jx/rpcsvc/nfs2/Stat.java": [],
+    "src/jx/rpcsvc/nfs2/StatFSRes.java": [],
+    "src/jx/rpcsvc/nfs2/StatFSResErrAcces.java": [],
+    "src/jx/rpcsvc/nfs2/StatFSResErrIO.java": [],
+    "src/jx/rpcsvc/nfs2/StatFSResErrNoEnt.java": [],
+    "src/jx/rpcsvc/nfs2/StatFSResErrNotDir.java": [],
+    "src/jx/rpcsvc/nfs2/StatFSResError.java": [],
+    "src/jx/rpcsvc/nfs2/StatFSResErrStale.java": [],
+    "src/jx/rpcsvc/nfs2/StatFSResOK.java": [],
+    "src/jx/rpcsvc/nfs2/Timeval.java": [],
+    "src/jx/rpcsvc/package.bluej": [],
+    "src/jx/rtc/package.bluej": [],
+    "src/jx/rtc/RTC.java": [],
+    "src/jx/rtc/RTCImpl.java": [],
+    "src/jx/scheduler/HLRRobin_all.java": [
+      "src/jx/zero/debug/DebugOutputStream.java",
+      "src/jx/zero/debug/DebugPrintStream.java"
+    ],
+    "src/jx/scheduler/HLRRobin_mini.java": [
+      "src/jx/zero/debug/DebugOutputStream.java",
+      "src/jx/zero/debug/DebugPrintStream.java"
+    ],
+    "src/jx/scheduler/HLRRobin_nonpreemptive.java": [
+      "src/jx/zero/debug/DebugOutputStream.java",
+      "src/jx/zero/debug/DebugPrintStream.java"
+    ],
+    "src/jx/scheduler/HLRRobin.java": [
+      "src/jx/zero/debug/DebugOutputStream.java",
+      "src/jx/zero/debug/DebugPrintStream.java"
+    ],
+    "src/jx/scheduler/JAVARRobin.java": [
+      "src/jx/zero/debug/DebugOutputStream.java",
+      "src/jx/zero/debug/DebugPrintStream.java"
+    ],
+    "src/jx/scheduler/LinkedList.java": [],
+    "src/jx/scheduler/LinkedListCAS.java": [],
+    "src/jx/scheduler/LLMtR.java": [
+      "src/jx/zero/debug/DebugOutputStream.java",
+      "src/jx/zero/debug/DebugPrintStream.java"
+    ],
+    "src/jx/scheduler/LLRRobin.java": [
+      "src/jx/zero/debug/DebugPrintStream.java"
+    ],
+    "src/jx/scheduler/LLRRobinTest.java": [
+      "src/jx/zero/debug/DebugOutputStream.java",
+      "src/jx/zero/debug/DebugPrintStream.java"
+    ],
+    "src/jx/scheduler/package.bluej": [],
+    "src/jx/scheduler/SchedulerPortal.java": [],
+    "src/jx/scheduler/SuperHLRRobin.java": [],
+    "src/jx/scheduler/ThreadList.java": [],
+    "src/jx/scheduler/ThreadListCAS.java": [],
+    "src/jx/secmgr/BlockIOSecurityPolicy.java": [],
+    "src/jx/secmgr/FileSystemSecurityPolicy.java": [],
+    "src/jx/secmgr/MySecurityPolicy.java": [],
+    "src/jx/secmgr/package.bluej": [],
+    "src/jx/secmgr/Principal_impl.java": [],
+    "src/jx/secmgr/SecMgr.java": [],
+    "src/jx/secmgr/SecMgrSecurityPolicy.java": [],
+    "src/jx/streams/InputStreamPortal.java": [
+      "src/java/io/IOException.java"
+    ],
+    "src/jx/streams/OutputStreamPortal.java": [
+      "src/java/io/IOException.java"
+    ],
+    "src/jx/streams/package.bluej": [],
+    "src/jx/streams/StreamProvider.java": [],
+    "src/jx/synch/blocking/package.bluej": [],
+    "src/jx/synch/blocking/Queue.java": [],
+    "src/jx/synch/blocking/Test.java": [],
+    "src/jx/synch/mutex/BlockingLock.java": [],
+    "src/jx/synch/mutex/BlockingLockImpl.java": [],
+    "src/jx/synch/mutex/package.bluej": [],
+    "src/jx/synch/mutex/Test.java": [],
+    "src/jx/synch/nonblocking2/MPSCQueue.java": [],
+    "src/jx/synch/nonblocking2/package.bluej": [],
+    "src/jx/synch/nonblocking2/Queue.java": [],
+    "src/jx/synch/nonblocking2/QueueEmptyException.java": [],
+    "src/jx/synch/nonblocking2/SPSCQueue.java": [],
+    "src/jx/synch/nonblocking2/Test.java": [],
+    "src/jx/synch/package.bluej": [],
+    "src/jx/timer/package.bluej": [],
+    "src/jx/timer/Timer.java": [],
+    "src/jx/timer/TimerHandler.java": [],
+    "src/jx/timer/TimerManager.java": [],
+    "src/jx/timerpc/package.bluej": [],
+    "src/jx/timerpc/SleepManagerImpl.java": [],
+    "src/jx/timerpc/StartTimer.java": [
+      "src/jx/timer/TimerManager.java"
+    ],
+    "src/jx/timerpc/TimerEntry.java": [],
+    "src/jx/timerpc/TimerManagerImpl.java": [],
+    "src/jx/xdr/Format.java": [
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/xdr/FormatMem.java": [],
+    "src/jx/xdr/package.bluej": [],
+    "src/jx/xdr/XDRBuffer.java": [],
+    "src/jx/zero/Debug.java": [
+      "src/jx/zero/debug/DebugOutputStream.java",
+      "src/jx/zero/debug/DebugPrintStream.java"
+    ],
+    "src/jx/zero/debug/DebugInputStream.java": [
+      "src/java/io/IOException.java"
+    ],
+    "src/jx/zero/debug/DebugOutputStream.java": [
+      "src/java/io/IOException.java"
+    ],
+    "src/jx/zero/debug/DebugPrintStream.java": [
+      "src/java/io/IOException.java"
+    ],
+    "src/jx/zero/debug/Dump.java": [
+      "src/java/io/PrintStream.java",
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/zero/debug/package.bluej": [],
+    "src/jx/zero/DomainStarter.java": [],
+    "src/jx/zero/DomainTerminatedException.java": [],
+    "src/jx/zero/env/ConditionalVariables.java": [],
+    "src/jx/zero/env/Monitor.java": [],
+    "src/jx/zero/env/package.bluej": [],
+    "src/jx/zero/LookupHelper.java": [],
+    "src/jx/zero/memory/MemoryInputStream.java": [],
+    "src/jx/zero/memory/MemoryOutputStream.java": [
+      "src/java/io/IOException.java"
+    ],
+    "src/jx/zero/memory/package.bluej": [],
+    "src/jx/zero/MemoryExhaustedException.java": [],
+    "src/jx/zero/package.bluej": [],
+    "src/jx/zero/timing/Control.java": [],
+    "src/jx/zero/timing/package.bluej": [],
+    "src/jx/zip/package.bluej": [],
+    "src/jx/zip/ZipEntry.java": [],
+    "src/jx/zip/ZipFile.java": [
+      "src/jx/zero/Debug.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/metaxa/os/devices/net/AdapterLimits.java": [],
+    "src/metaxa/os/devices/net/Befehl.java": [],
+    "src/metaxa/os/devices/net/BitNotExistingException.java": [],
+    "src/metaxa/os/devices/net/BitPosition.java": [
+      "src/jx/zero/Debug.java"
+    ],
+    "src/metaxa/os/devices/net/CapabilitiesWord.java": [],
+    "src/metaxa/os/devices/net/ComInit.java": [
+      "src/jx/zero/debug/DebugPrintStream.java"
+    ],
+    "src/metaxa/os/devices/net/ComInit.java.MOS": [],
+    "src/metaxa/os/devices/net/CompatabilityWord.java": [],
+    "src/metaxa/os/devices/net/ConnectorType.java": [],
+    "src/metaxa/os/devices/net/D3C905.java": [
+      "src/jx/buffer/multithread/Buffer2.java",
+      "src/jx/buffer/multithread/MultiThreadBufferList.java",
+      "src/jx/buffer/multithread/MultiThreadBufferList2.java"
+    ],
+    "src/metaxa/os/devices/net/D3C905Exception.java": [],
+    "src/metaxa/os/devices/net/DpdListEntry.java": [
+      "src/jx/buffer/multithread/Buffer2.java"
+    ],
+    "src/metaxa/os/devices/net/Eeprom.java": [],
+    "src/metaxa/os/devices/net/EthernetAdress.java": [
+      "src/jx/zero/Debug.java"
+    ],
+    "src/metaxa/os/devices/net/LinkSpeedException.java": [],
+    "src/metaxa/os/devices/net/ListEntry.java": [],
+    "src/metaxa/os/devices/net/ManufacturingData.java": [],
+    "src/metaxa/os/devices/net/Mii.java": [],
+    "src/metaxa/os/devices/net/MIIMediaOverrideException.java": [],
+    "src/metaxa/os/devices/net/MultiCast.java": [],
+    "src/metaxa/os/devices/net/NicHardwareInformation.java": [],
+    "src/metaxa/os/devices/net/NicInformation.java": [],
+    "src/metaxa/os/devices/net/NicPciInformation.java": [],
+    "src/metaxa/os/devices/net/NicStatistics.java": [],
+    "src/metaxa/os/devices/net/NicStatusFailure.java": [],
+    "src/metaxa/os/devices/net/NicTimer.java": [],
+    "src/metaxa/os/devices/net/NicTimerArg.java": [],
+    "src/metaxa/os/devices/net/package.bluej": [],
+    "src/metaxa/os/devices/net/PciParameters1.java": [],
+    "src/metaxa/os/devices/net/ReadMIIException.java": [],
+    "src/metaxa/os/devices/net/Register.java": [],
+    "src/metaxa/os/devices/net/Resourcen.java": [],
+    "src/metaxa/os/devices/net/RomInformation.java": [],
+    "src/metaxa/os/devices/net/Softlimits.java": [],
+    "src/metaxa/os/devices/net/SoftwareInformation1.java": [],
+    "src/metaxa/os/devices/net/SoftwareInformation2.java": [],
+    "src/metaxa/os/devices/net/SoftwareInformation3.java": [],
+    "src/metaxa/os/devices/net/UndefinedConnectorException.java": [],
+    "src/metaxa/os/devices/net/UnknownConnectorType.java": [],
+    "src/metaxa/os/devices/net/UnknownLinkState.java": [],
+    "src/metaxa/os/devices/net/UpdListEntry.java": [],
+    "src/metaxa/os/devices/net/WaitCases.java": [],
+    "src/metaxa/os/devices/net/WaitTimer.java": [],
+    "src/metaxa/os/devices/net/WaitTimerArg.java": [],
+    "src/metaxa/os/devices/net/WaitTimerGlobal.java": [],
+    "src/metaxa/os/devices/net/WrongDate.java": [],
+    "src/metaxa/os/devices/net/WrongEthernetAdressFormat.java": [],
+    "src/metaxa/os/devices/package.bluej": [],
+    "src/metaxa/os/package.bluej": [],
+    "src/metaxa/package.bluej": [],
+    "src/org/jnode/driver/bus/usb/AbstractDescriptor.java": [],
+    "src/org/jnode/driver/bus/usb/AbstractDeviceItem.java": [],
+    "src/org/jnode/driver/bus/usb/AbstractHostControllerDriver.java": [],
+    "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java": [],
+    "src/org/jnode/driver/bus/usb/DeviceDescriptor.java": [
+      "src/org/jnode/util/NumberUtils.java"
+    ],
+    "src/org/jnode/driver/bus/usb/EndPointDescriptor.java": [],
+    "src/org/jnode/driver/bus/usb/hub/HubDescriptor.java": [
+      "src/org/jnode/driver/bus/usb/AbstractDescriptor.java",
+      "src/org/jnode/util/NumberUtils.java"
+    ],
+    "src/org/jnode/driver/bus/usb/hub/PortStatus.java": [
+      "src/org/jnode/driver/bus/usb/USBPacket.java",
+      "src/org/jnode/util/NumberUtils.java"
+    ],
+    "src/org/jnode/driver/bus/usb/hub/USBHubConstants.java": [
+      "src/org/jnode/driver/bus/usb/USBConstants.java"
+    ],
+    "src/org/jnode/driver/bus/usb/hub/USBHubDeviceToDriverMapper.java": [
+      "src/org/jnode/driver/bus/usb/USBConstants.java",
+      "src/org/jnode/driver/bus/usb/USBDevice.java"
+    ],
+    "src/org/jnode/driver/bus/usb/hub/USBHubDriver.java": [
+      "src/org/jnode/driver/bus/usb/SetupPacket.java",
+      "src/org/jnode/driver/bus/usb/USBBus.java",
+      "src/org/jnode/driver/bus/usb/USBControlPipe.java",
+      "src/org/jnode/driver/bus/usb/USBDevice.java",
+      "src/org/jnode/driver/bus/usb/USBException.java",
+      "src/org/jnode/driver/bus/usb/USBHubAPI.java",
+      "src/org/jnode/driver/bus/usb/USBHubMonitor.java",
+      "src/org/jnode/driver/bus/usb/USBRequest.java"
+    ],
+    "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java": [],
+    "src/org/jnode/driver/bus/usb/SetupPacket.java": [],
+    "src/org/jnode/driver/bus/usb/spi/AbstractUSBControlRequest.java": [
+      "src/org/jnode/driver/bus/usb/SetupPacket.java",
+      "src/org/jnode/driver/bus/usb/USBPacket.java"
+    ],
+    "src/org/jnode/driver/bus/usb/spi/AbstractUSBDataRequest.java": [
+      "src/org/jnode/driver/bus/usb/USBPacket.java"
+    ],
+    "src/org/jnode/driver/bus/usb/spi/AbstractUSBRequest.java": [
+      "src/org/jnode/driver/bus/usb/USBRequest.java"
+    ],
+    "src/org/jnode/driver/bus/usb/StringDescriptor.java": [],
+    "src/org/jnode/driver/bus/usb/StringDescriptorZero.java": [],
+    "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java": [],
+    "src/org/jnode/driver/bus/usb/uhci/AbstractTreeStructure.java": [],
+    "src/org/jnode/driver/bus/usb/uhci/FrameList.java": [],
+    "src/org/jnode/driver/bus/usb/uhci/QueueHead.java": [
+      "src/org/jnode/util/NumberUtils.java"
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/Schedule.java": [
+      "src/org/jnode/driver/bus/usb/USBConstants.java"
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/TransferDescriptor.java": [
+      "src/org/jnode/util/NumberUtils.java"
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCIConstants.java": [],
+    "src/org/jnode/driver/bus/usb/uhci/UHCIControlPipe.java": [
+      "src/org/jnode/driver/bus/usb/SetupPacket.java",
+      "src/org/jnode/driver/bus/usb/USBControlPipe.java",
+      "src/org/jnode/driver/bus/usb/USBDevice.java",
+      "src/org/jnode/driver/bus/usb/USBEndPoint.java",
+      "src/org/jnode/driver/bus/usb/USBPacket.java",
+      "src/org/jnode/driver/bus/usb/USBRequest.java"
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCIControlRequest.java": [
+      "src/org/jnode/driver/bus/usb/SetupPacket.java",
+      "src/org/jnode/driver/bus/usb/spi/AbstractUSBControlRequest.java",
+      "src/org/jnode/driver/bus/usb/USBConstants.java",
+      "src/org/jnode/driver/bus/usb/USBException.java",
+      "src/org/jnode/driver/bus/usb/USBPacket.java"
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCICore.java": [
+      "src/org/jnode/driver/bus/usb/USBBus.java",
+      "src/org/jnode/driver/bus/usb/USBControlPipe.java",
+      "src/org/jnode/driver/bus/usb/USBDevice.java",
+      "src/org/jnode/driver/bus/usb/USBEndPoint.java",
+      "src/org/jnode/driver/bus/usb/USBHostControllerAPI.java",
+      "src/org/jnode/driver/bus/usb/USBHubAPI.java",
+      "src/org/jnode/driver/bus/usb/USBPipe.java",
+      "src/org/jnode/util/NumberUtils.java"
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCIDataPipe.java": [
+      "src/org/jnode/driver/bus/usb/USBDataPipe.java",
+      "src/org/jnode/driver/bus/usb/USBDevice.java",
+      "src/org/jnode/driver/bus/usb/USBEndPoint.java",
+      "src/org/jnode/driver/bus/usb/USBPacket.java",
+      "src/org/jnode/driver/bus/usb/USBRequest.java"
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCIDataRequest.java": [
+      "src/org/jnode/driver/bus/usb/spi/AbstractUSBDataRequest.java",
+      "src/org/jnode/driver/bus/usb/USBConstants.java",
+      "src/org/jnode/driver/bus/usb/USBEndPoint.java",
+      "src/org/jnode/driver/bus/usb/USBPacket.java"
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCIDriver.java": [
+      "src/org/jnode/driver/bus/usb/AbstractHostControllerDriver.java",
+      "src/org/jnode/driver/bus/usb/USBHostControllerAPI.java"
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java": [],
+    "src/org/jnode/driver/bus/usb/uhci/UHCIPipe.java": [
+      "src/AI/util/AIQueue.java",
+      "src/java/util/ArrayList.java",
+      "src/org/jnode/driver/bus/usb/spi/AbstractUSBRequest.java",
+      "src/org/jnode/driver/bus/usb/USBConstants.java",
+      "src/org/jnode/driver/bus/usb/USBDevice.java",
+      "src/org/jnode/driver/bus/usb/USBEndPoint.java",
+      "src/org/jnode/driver/bus/usb/USBException.java",
+      "src/org/jnode/driver/bus/usb/USBPipe.java",
+      "src/org/jnode/driver/bus/usb/USBPipeListener.java",
+      "src/org/jnode/driver/bus/usb/USBRequest.java",
+      "src/org/jnode/util/NumberUtils.java"
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCIPipeManager.java": [
+      "src/java/util/ArrayList.java",
+      "src/org/jnode/driver/bus/usb/EndPointDescriptor.java",
+      "src/org/jnode/driver/bus/usb/USBConstants.java",
+      "src/org/jnode/driver/bus/usb/USBControlPipe.java",
+      "src/org/jnode/driver/bus/usb/USBDevice.java",
+      "src/org/jnode/driver/bus/usb/USBEndPoint.java",
+      "src/org/jnode/driver/bus/usb/USBPipe.java"
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCIRequest.java": [
+      "src/org/jnode/driver/bus/usb/USBException.java",
+      "src/org/jnode/driver/bus/usb/USBRequest.java"
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCIRootHub.java": [
+      "src/org/jnode/driver/bus/usb/USBBus.java",
+      "src/org/jnode/driver/bus/usb/USBDevice.java",
+      "src/org/jnode/driver/bus/usb/USBHubAPI.java"
+    ],
+    "src/org/jnode/driver/bus/usb/USBBus.java": [],
+    "src/org/jnode/driver/bus/usb/USBConfiguration.java": [],
+    "src/org/jnode/driver/bus/usb/USBConstants.java": [],
+    "src/org/jnode/driver/bus/usb/USBControlPipe.java": [],
+    "src/org/jnode/driver/bus/usb/USBDataPipe.java": [],
+    "src/org/jnode/driver/bus/usb/USBDevice.java": [
+      "src/java/util/HashMap.java"
+    ],
+    "src/org/jnode/driver/bus/usb/USBEndPoint.java": [],
+    "src/org/jnode/driver/bus/usb/USBException.java": [],
+    "src/org/jnode/driver/bus/usb/USBHostControllerAPI.java": [],
+    "src/org/jnode/driver/bus/usb/USBHubAPI.java": [],
+    "src/org/jnode/driver/bus/usb/USBHubMonitor.java": [
+      "src/org/jnode/driver/bus/usb/uhci/UHCICore.java",
+      "src/org/jnode/util/NumberUtils.java"
+    ],
+    "src/org/jnode/driver/bus/usb/USBInterface.java": [],
+    "src/org/jnode/driver/bus/usb/USBPacket.java": [
+      "src/org/jnode/util/NumberUtils.java"
+    ],
+    "src/org/jnode/driver/bus/usb/USBPipe.java": [],
+    "src/org/jnode/driver/bus/usb/USBPipeListener.java": [],
+    "src/org/jnode/driver/bus/usb/USBRequest.java": [],
+    "src/org/jnode/util/BinaryScaleFactor.java": [],
+    "src/org/jnode/util/DecimalScaleFactor.java": [],
+    "src/org/jnode/util/NumberUtils.java": [],
+    "src/org/jnode/util/ScaleFactor.java": [],
+    "src/org/jnode/util/SizeUnit.java": [],
+    "src/package.bluej": [],
+    "src/sun/package.bluej": [],
+    "src/sun/security/package.bluej": [],
+    "src/sun/security/provider/package.bluej": [],
+    "src/sun/security/provider/Sun.java": [],
+    "src/sun/tools/javac/Main.java": [],
+    "src/sun/tools/javac/package.bluej": [],
+    "src/sun/tools/package.bluej": []
+  }
+}

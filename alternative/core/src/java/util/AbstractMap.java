@@ -1,25 +1,22 @@
 
-
-
 package java.util;
-
 
 public abstract class AbstractMap<K, V> implements Map<K, V> {
 
     protected AbstractMap() {
     }
 
-
+    @Override
     public int size() {
         return entrySet().size();
     }
 
-
+    @Override
     public boolean isEmpty() {
         return size() == 0;
     }
 
-
+    @Override
     public boolean containsValue(Object value) {
         Iterator<Entry<K, V>> i = entrySet().iterator();
         if (value == null) {
@@ -38,7 +35,7 @@ public abstract class AbstractMap<K, V> implements Map<K, V> {
         return false;
     }
 
-
+    @Override
     public boolean containsKey(Object key) {
         Iterator<Map.Entry<K, V>> i = entrySet().iterator();
         if (key == null) {
@@ -56,7 +53,6 @@ public abstract class AbstractMap<K, V> implements Map<K, V> {
         }
         return false;
     }
-
 
     public V get(Object key) {
         Iterator<Entry<K, V>> i = entrySet().iterator();
@@ -76,11 +72,9 @@ public abstract class AbstractMap<K, V> implements Map<K, V> {
         return null;
     }
 
-
     public V put(K key, V value) {
         throw new RuntimeException("NOT SUPPORT");
     }
-
 
     public V remove(Object key) {
         Iterator<Entry<K, V>> i = entrySet().iterator();
@@ -118,10 +112,8 @@ public abstract class AbstractMap<K, V> implements Map<K, V> {
         entrySet().clear();
     }
 
-
     transient volatile Set<K> keySet;
     transient volatile Collection<V> values;
-
 
     public Set<K> keySet() {
         if (keySet == null) {
@@ -164,7 +156,6 @@ public abstract class AbstractMap<K, V> implements Map<K, V> {
         return keySet;
     }
 
-
     public Collection<V> values() {
         if (values == null) {
             values = new AbstractCollection<V>() {
@@ -206,9 +197,10 @@ public abstract class AbstractMap<K, V> implements Map<K, V> {
         return values;
     }
 
+    @Override
     public abstract Set<Entry<K, V>> entrySet();
 
-
+    @Override
     public boolean equals(Object o) {
         if (o == this)
             return true;
@@ -242,7 +234,7 @@ public abstract class AbstractMap<K, V> implements Map<K, V> {
         return true;
     }
 
-
+    @Override
     public int hashCode() {
         int h = 0;
         Iterator<Entry<K, V>> i = entrySet().iterator();
@@ -251,7 +243,7 @@ public abstract class AbstractMap<K, V> implements Map<K, V> {
         return h;
     }
 
-
+    @Override
     public String toString() {
         Iterator<Entry<K, V>> i = entrySet().iterator();
         if (!i.hasNext())
@@ -264,14 +256,13 @@ public abstract class AbstractMap<K, V> implements Map<K, V> {
             K key = e.getKey();
             V value = e.getValue();
             sb.append(key == this ? "(this Map)" : key);
-            sb.append('=');
+            sb.append(':');
             sb.append(value == this ? "(this Map)" : value);
             if (!i.hasNext())
                 return sb.append('}').toString();
             sb.append(',').append(' ');
         }
     }
-
 
     protected Object clone() throws CloneNotSupportedException {
         AbstractMap<?, ?> result = (AbstractMap<?, ?>) super.clone();
@@ -284,7 +275,6 @@ public abstract class AbstractMap<K, V> implements Map<K, V> {
     private static boolean eq(Object o1, Object o2) {
         return o1 == null ? o2 == null : o1.equals(o2);
     }
-
 
     public static class SimpleEntry<K, V>
             implements Entry<K, V>, java.io.Serializable {
@@ -337,11 +327,10 @@ public abstract class AbstractMap<K, V> implements Map<K, V> {
 
 
         public String toString() {
-            return key + "=" + value;
+            return key + ":" + value;
         }
 
     }
-
 
     public static class SimpleImmutableEntry<K, V>
             implements Entry<K, V>, java.io.Serializable {
@@ -372,11 +361,9 @@ public abstract class AbstractMap<K, V> implements Map<K, V> {
             return value;
         }
 
-
         public V setValue(V value) {
             throw new RuntimeException("NOT SUPPORT");
         }
-
 
         public boolean equals(Object o) {
             if (!(o instanceof Map.Entry))
@@ -385,15 +372,14 @@ public abstract class AbstractMap<K, V> implements Map<K, V> {
             return eq(key, e.getKey()) && eq(value, e.getValue());
         }
 
-
         public int hashCode() {
             return (key == null ? 0 : key.hashCode()) ^
                     (value == null ? 0 : value.hashCode());
         }
 
-
+        @Override
         public String toString() {
-            return key + "=" + value;
+            return key + ":" + value;
         }
 
     }

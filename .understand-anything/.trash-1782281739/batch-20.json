@@ -1,0 +1,844 @@
+{
+  "batchIndex": 20,
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "6323b44045d8c6a2",
+      "type": "file",
+      "name": "Error.java",
+      "filePath": "src/java/lang/Error.java",
+      "language": "java",
+      "totalLines": 10,
+      "nonEmptyLines": 8,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "d9c4c1c87f731b81",
+      "type": "file",
+      "name": "Exception.java",
+      "filePath": "src/java/lang/Exception.java",
+      "language": "java",
+      "totalLines": 83,
+      "nonEmptyLines": 76,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "82a91a2f1f5575ff",
+      "type": "file",
+      "name": "ExceptionInInitializerError.java",
+      "filePath": "src/java/lang/ExceptionInInitializerError.java",
+      "language": "java",
+      "totalLines": 126,
+      "nonEmptyLines": 118,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "f5886e2a876ee16c",
+      "type": "file",
+      "name": "Float.java",
+      "filePath": "src/java/lang/Float.java",
+      "language": "java",
+      "totalLines": 92,
+      "nonEmptyLines": 80,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 21,
+        "functionCount": 14,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "b48c5ade160c799e",
+      "type": "file",
+      "name": "IllegalAccessException.java",
+      "filePath": "src/java/lang/IllegalAccessException.java",
+      "language": "java",
+      "totalLines": 64,
+      "nonEmptyLines": 54,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "158a1feb4bc5275c",
+      "type": "file",
+      "name": "IllegalArgumentException.java",
+      "filePath": "src/java/lang/IllegalArgumentException.java",
+      "language": "java",
+      "totalLines": 34,
+      "nonEmptyLines": 29,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "5557cedf01b5bbdf",
+      "type": "file",
+      "name": "IllegalMonitorStateException.java",
+      "filePath": "src/java/lang/IllegalMonitorStateException.java",
+      "language": "java",
+      "totalLines": 14,
+      "nonEmptyLines": 11,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "f020a5d79e49f2b0",
+      "type": "file",
+      "name": "IllegalStateException.java",
+      "filePath": "src/java/lang/IllegalStateException.java",
+      "language": "java",
+      "totalLines": 64,
+      "nonEmptyLines": 53,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "92dbf8e785669c09",
+      "type": "file",
+      "name": "IllegalThreadStateException.java",
+      "filePath": "src/java/lang/IllegalThreadStateException.java",
+      "language": "java",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "6420556ae8c68c4d",
+      "type": "file",
+      "name": "IncompatibleClassChangeError.java",
+      "filePath": "src/java/lang/IncompatibleClassChangeError.java",
+      "language": "java",
+      "totalLines": 58,
+      "nonEmptyLines": 48,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "525c2f4bd72f8970",
+      "type": "file",
+      "name": "IndexOutOfBoundsException.java",
+      "filePath": "src/java/lang/IndexOutOfBoundsException.java",
+      "language": "java",
+      "totalLines": 15,
+      "nonEmptyLines": 10,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "1cfc73569c8835b1",
+      "type": "file",
+      "name": "InstantiationException.java",
+      "filePath": "src/java/lang/InstantiationException.java",
+      "language": "java",
+      "totalLines": 27,
+      "nonEmptyLines": 23,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "f01ffd30ac4aea25",
+      "type": "file",
+      "name": "InterruptedException.java",
+      "filePath": "src/java/lang/InterruptedException.java",
+      "language": "java",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "b5e5b2717d4fcd3d",
+      "type": "file",
+      "name": "CallSite.java",
+      "filePath": "src/java/lang/invoke/CallSite.java",
+      "language": "java",
+      "totalLines": 70,
+      "nonEmptyLines": 64,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "e798a3a6a7cfb5ea",
+      "type": "file",
+      "name": "ConstantCallSite.java",
+      "filePath": "src/java/lang/invoke/ConstantCallSite.java",
+      "language": "java",
+      "totalLines": 120,
+      "nonEmptyLines": 113,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "06a69935c3d3f08d",
+      "type": "file",
+      "name": "DirectMethodHandle.java",
+      "filePath": "src/java/lang/invoke/DirectMethodHandle.java",
+      "language": "java",
+      "totalLines": 53,
+      "nonEmptyLines": 45,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "c2063732cafe51e7",
+      "type": "file",
+      "name": "InnerClassLambdaMetafactory.java",
+      "filePath": "src/java/lang/invoke/InnerClassLambdaMetafactory.java",
+      "language": "java",
+      "totalLines": 474,
+      "nonEmptyLines": 440,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "777456e221ec8ac6",
+      "type": "file",
+      "name": "Invokers.java",
+      "filePath": "src/java/lang/invoke/Invokers.java",
+      "language": "java",
+      "totalLines": 38,
+      "nonEmptyLines": 30,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "eecabec9cb7440c4",
+      "type": "file",
+      "name": "LambdaConversionException.java",
+      "filePath": "src/java/lang/invoke/LambdaConversionException.java",
+      "language": "java",
+      "totalLines": 76,
+      "nonEmptyLines": 69,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "a6eaa93cf55b466d",
+      "type": "file",
+      "name": "LambdaForm.java",
+      "filePath": "src/java/lang/invoke/LambdaForm.java",
+      "language": "java",
+      "totalLines": 78,
+      "nonEmptyLines": 59,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "837985e6d328b9cc",
+      "type": "file",
+      "name": "LambdaFormEditor.java",
+      "filePath": "src/java/lang/invoke/LambdaFormEditor.java",
+      "language": "java",
+      "totalLines": 58,
+      "nonEmptyLines": 45,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 11,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "9401302f6ac1e22f",
+      "type": "file",
+      "name": "LambdaMetafactory.java",
+      "filePath": "src/java/lang/invoke/LambdaMetafactory.java",
+      "language": "java",
+      "totalLines": 474,
+      "nonEmptyLines": 463,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "9e15e6e56a7254cd",
+      "type": "file",
+      "name": "MethodTypeForm.java",
+      "filePath": "src/java/lang/invoke/MethodTypeForm.java",
+      "language": "java",
+      "totalLines": 54,
+      "nonEmptyLines": 42,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "c9ea2fc0b384cb0e",
+      "type": "file",
+      "name": "Name.java",
+      "filePath": "src/java/lang/invoke/Name.java",
+      "language": "java",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "f401dd3c8dc60c4c",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/java/lang/invoke/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "fileCategory": "package-marker"
+    },
+    {
+      "id": "41bdc2b8c3b21eff",
+      "type": "class",
+      "name": "Error",
+      "filePath": "src/java/lang/Error.java",
+      "startLine": 3,
+      "endLine": 9,
+      "methods": [
+        "Error",
+        "Error",
+        "Error"
+      ],
+      "properties": []
+    },
+    {
+      "id": "39342161729670cf",
+      "type": "class",
+      "name": "Exception",
+      "filePath": "src/java/lang/Exception.java",
+      "startLine": 3,
+      "endLine": 82,
+      "methods": [
+        "Exception",
+        "Exception",
+        "Exception",
+        "Exception"
+      ],
+      "properties": [
+        "serialVersionUID"
+      ]
+    },
+    {
+      "id": "fada759f57f29cf3",
+      "type": "class",
+      "name": "ExceptionInInitializerError",
+      "filePath": "src/java/lang/ExceptionInInitializerError.java",
+      "startLine": 44,
+      "endLine": 126,
+      "methods": [
+        "ExceptionInInitializerError",
+        "ExceptionInInitializerError",
+        "ExceptionInInitializerError",
+        "getException",
+        "getCause"
+      ],
+      "properties": [
+        "serialVersionUID",
+        "exception"
+      ]
+    },
+    {
+      "id": "69c1a3259ec5ccad",
+      "type": "class",
+      "name": "Float",
+      "filePath": "src/java/lang/Float.java",
+      "startLine": 3,
+      "endLine": 92,
+      "methods": [
+        "toString",
+        "Float",
+        "Float",
+        "byteValue",
+        "shortValue",
+        "intValue",
+        "longValue",
+        "floatValue",
+        "doubleValue",
+        "valueOf",
+        "floatToIntBits",
+        "intBitsToFloat",
+        "parseFloat",
+        "compare"
+      ],
+      "properties": [
+        "POSITIVE_INFINITY",
+        "NEGATIVE_INFINITY",
+        "NaN",
+        "MAX_VALUE",
+        "MIN_VALUE",
+        "TYPE",
+        "value"
+      ]
+    },
+    {
+      "id": "a6de7bd93bb64fce",
+      "type": "class",
+      "name": "IllegalAccessException",
+      "filePath": "src/java/lang/IllegalAccessException.java",
+      "startLine": 45,
+      "endLine": 64,
+      "methods": [
+        "IllegalAccessException",
+        "IllegalAccessException"
+      ],
+      "properties": [
+        "serialVersionUID"
+      ]
+    },
+    {
+      "id": "97f10d0e85c97684",
+      "type": "class",
+      "name": "IllegalArgumentException",
+      "filePath": "src/java/lang/IllegalArgumentException.java",
+      "startLine": 15,
+      "endLine": 33,
+      "methods": [
+        "IllegalArgumentException",
+        "IllegalArgumentException",
+        "IllegalArgumentException",
+        "IllegalArgumentException"
+      ],
+      "properties": []
+    },
+    {
+      "id": "b701d50246a32bc3",
+      "type": "class",
+      "name": "IllegalMonitorStateException",
+      "filePath": "src/java/lang/IllegalMonitorStateException.java",
+      "startLine": 3,
+      "endLine": 14,
+      "methods": [
+        "IllegalMonitorStateException",
+        "IllegalMonitorStateException"
+      ],
+      "properties": []
+    },
+    {
+      "id": "43a81d8cdb0035ca",
+      "type": "class",
+      "name": "IllegalStateException",
+      "filePath": "src/java/lang/IllegalStateException.java",
+      "startLine": 41,
+      "endLine": 64,
+      "methods": [
+        "IllegalStateException",
+        "IllegalStateException",
+        "IllegalStateException"
+      ],
+      "properties": [
+        "serialVersionUID"
+      ]
+    },
+    {
+      "id": "80ff80ea8f35662b",
+      "type": "class",
+      "name": "IllegalThreadStateException",
+      "filePath": "src/java/lang/IllegalThreadStateException.java",
+      "startLine": 3,
+      "endLine": 6,
+      "methods": [
+        "IllegalThreadStateException",
+        "IllegalThreadStateException"
+      ],
+      "properties": []
+    },
+    {
+      "id": "d224f273d67731ef",
+      "type": "class",
+      "name": "IncompatibleClassChangeError",
+      "filePath": "src/java/lang/IncompatibleClassChangeError.java",
+      "startLine": 39,
+      "endLine": 58,
+      "methods": [
+        "IncompatibleClassChangeError",
+        "IncompatibleClassChangeError"
+      ],
+      "properties": [
+        "serialVersionUID"
+      ]
+    },
+    {
+      "id": "bee18acf5ad17afd",
+      "type": "class",
+      "name": "IndexOutOfBoundsException",
+      "filePath": "src/java/lang/IndexOutOfBoundsException.java",
+      "startLine": 3,
+      "endLine": 14,
+      "methods": [
+        "IndexOutOfBoundsException",
+        "IndexOutOfBoundsException"
+      ],
+      "properties": []
+    },
+    {
+      "id": "624ba4eea2e478ec",
+      "type": "class",
+      "name": "InstantiationException",
+      "filePath": "src/java/lang/InstantiationException.java",
+      "startLine": 15,
+      "endLine": 26,
+      "methods": [
+        "InstantiationException",
+        "InstantiationException"
+      ],
+      "properties": []
+    },
+    {
+      "id": "4dd50bd8c888ddf4",
+      "type": "class",
+      "name": "InterruptedException",
+      "filePath": "src/java/lang/InterruptedException.java",
+      "startLine": 3,
+      "endLine": 6,
+      "methods": [
+        "InterruptedException",
+        "InterruptedException"
+      ],
+      "properties": []
+    },
+    {
+      "id": "ffc984adb6fda2a6",
+      "type": "class",
+      "name": "CallSite",
+      "filePath": "src/java/lang/invoke/CallSite.java",
+      "startLine": 12,
+      "endLine": 70,
+      "methods": [
+        "makeSite",
+        "dynamicInvoker",
+        "CallSite",
+        "CallSite",
+        "CallSite",
+        "checkTargetChange"
+      ],
+      "properties": [
+        "target"
+      ]
+    },
+    {
+      "id": "9994b964105d5b67",
+      "type": "class",
+      "name": "ConstantCallSite",
+      "filePath": "src/java/lang/invoke/ConstantCallSite.java",
+      "startLine": 34,
+      "endLine": 120,
+      "methods": [
+        "ConstantCallSite",
+        "ConstantCallSite",
+        "getTarget",
+        "setTarget",
+        "dynamicInvoker"
+      ],
+      "properties": [
+        "isFrozen"
+      ]
+    },
+    {
+      "id": "29668afa5c7c9576",
+      "type": "class",
+      "name": "DirectMethodHandle",
+      "filePath": "src/java/lang/invoke/DirectMethodHandle.java",
+      "startLine": 33,
+      "endLine": 53,
+      "methods": [
+        "DirectMethodHandle",
+        "copyWith",
+        "rebind"
+      ],
+      "properties": []
+    },
+    {
+      "id": "a59204b00107b8d1",
+      "type": "class",
+      "name": "InnerClassLambdaMetafactory",
+      "filePath": "src/java/lang/invoke/InnerClassLambdaMetafactory.java",
+      "startLine": 34,
+      "endLine": 474,
+      "methods": [
+        "InnerClassLambdaMetafactory",
+        "buildCallSite",
+        "spinInnerClass",
+        "generateFactory",
+        "generateConstructor",
+        "generateSerializationFriendlyMethods",
+        "generateSerializationHostileMethods",
+        "getParameterSize",
+        "getOpcodeOffset"
+      ],
+      "properties": [
+        "CLASSFILE_VERSION",
+        "JAVA_LANG_OBJECT",
+        "NAME_CTOR",
+        "NAME_FACTORY",
+        "NAME_SERIALIZED_LAMBDA",
+        "NAME_NOT_SERIALIZABLE_EXCEPTION",
+        "DESCR_METHOD_WRITE_REPLACE",
+        "DESCR_METHOD_WRITE_OBJECT",
+        "DESCR_METHOD_READ_OBJECT",
+        "NAME_METHOD_WRITE_REPLACE",
+        "NAME_METHOD_READ_OBJECT",
+        "NAME_METHOD_WRITE_OBJECT",
+        "DESCR_CTOR_SERIALIZED_LAMBDA",
+        "DESCR_CTOR_NOT_SERIALIZABLE_EXCEPTION",
+        "SER_HOSTILE_EXCEPTIONS",
+        "EMPTY_STRING_ARRAY",
+        "implMethodClassName",
+        "implMethodName",
+        "implMethodDesc",
+        "implMethodReturnClass",
+        "constructorType",
+        "argNames",
+        "argDescs",
+        "lambdaClassName"
+      ]
+    },
+    {
+      "id": "4f362eb637c1e48f",
+      "type": "class",
+      "name": "Invokers",
+      "filePath": "src/java/lang/invoke/Invokers.java",
+      "startLine": 12,
+      "endLine": 38,
+      "methods": [
+        "linkToTargetMethod",
+        "linkToCallSiteMethod",
+        "methodHandleInvokeLinkerMethod",
+        "spreadInvoker",
+        "genericInvoker",
+        "exactInvoker"
+      ],
+      "properties": []
+    },
+    {
+      "id": "a1d5fe289b874453",
+      "type": "class",
+      "name": "LambdaConversionException",
+      "filePath": "src/java/lang/invoke/LambdaConversionException.java",
+      "startLine": 31,
+      "endLine": 76,
+      "methods": [
+        "LambdaConversionException",
+        "LambdaConversionException",
+        "LambdaConversionException"
+      ],
+      "properties": [
+        "serialVersionUID"
+      ]
+    },
+    {
+      "id": "049e0db9eab1e2ab",
+      "type": "class",
+      "name": "LambdaForm",
+      "filePath": "src/java/lang/invoke/LambdaForm.java",
+      "startLine": 12,
+      "endLine": 78,
+      "methods": [
+        "arguments",
+        "editor",
+        "expressionCount",
+        "uncustomize",
+        "prepare",
+        "compileToBytecode",
+        "customize"
+      ],
+      "properties": [
+        "names",
+        "customized"
+      ]
+    },
+    {
+      "id": "8e8b438226ab9c51",
+      "type": "class",
+      "name": "LambdaFormEditor",
+      "filePath": "src/java/lang/invoke/LambdaFormEditor.java",
+      "startLine": 12,
+      "endLine": 58,
+      "methods": [
+        "spreadArgumentsForm",
+        "collectArgumentArrayForm",
+        "collectArgumentsForm",
+        "bindArgumentL",
+        "bindArgumentI",
+        "bindArgumentJ",
+        "bindArgumentF",
+        "bindArgumentD",
+        "dupArgumentForm",
+        "permuteArgumentsForm",
+        "foldArgumentsForm"
+      ],
+      "properties": []
+    },
+    {
+      "id": "efb854f666048b94",
+      "type": "class",
+      "name": "LambdaMetafactory",
+      "filePath": "src/java/lang/invoke/LambdaMetafactory.java",
+      "startLine": 214,
+      "endLine": 474,
+      "methods": [
+        "metafactory",
+        "altMetafactory"
+      ],
+      "properties": [
+        "FLAG_SERIALIZABLE",
+        "FLAG_MARKERS",
+        "FLAG_BRIDGES",
+        "EMPTY_CLASS_ARRAY",
+        "EMPTY_MT_ARRAY"
+      ]
+    },
+    {
+      "id": "62a45a7a1ddf7fa8",
+      "type": "class",
+      "name": "MethodTypeForm",
+      "filePath": "src/java/lang/invoke/MethodTypeForm.java",
+      "startLine": 12,
+      "endLine": 54,
+      "methods": [
+        "findForm",
+        "cachedLambdaForm",
+        "setCachedLambdaForm",
+        "parameterSlotCount",
+        "returnSlotCount",
+        "hasPrimitives",
+        "erasedType",
+        "basicType"
+      ],
+      "properties": [
+        "LF_REBIND",
+        "LF_DELEGATE_BLOCK_INLINING",
+        "LF_DELEGATE",
+        "LF_GWT",
+        "LF_GWC",
+        "erasedType"
+      ]
+    },
+    {
+      "id": "b3b9423a6a8ad82c",
+      "type": "class",
+      "name": "Name",
+      "filePath": "src/java/lang/invoke/Name.java",
+      "startLine": 12,
+      "endLine": 14,
+      "methods": [],
+      "properties": []
+    }
+  ],
+  "edges": []
+}

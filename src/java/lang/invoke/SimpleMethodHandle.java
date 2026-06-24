@@ -57,7 +57,7 @@ final class SimpleMethodHandle extends BoundMethodHandle {
 
     @Override
     /*non-public*/ final BoundMethodHandle copyWithExtendL(MethodType mt, LambdaForm lf, Object narg) {
-        return BoundMethodHandle.bindSingle(mt, lf, narg); // Use known fast path.
+        return BoundMethodHandle.bindSingleL(mt, lf, narg); // Use known fast path.
     }
     @Override
     /*non-public*/ final BoundMethodHandle copyWithExtendI(MethodType mt, LambdaForm lf, int narg) {

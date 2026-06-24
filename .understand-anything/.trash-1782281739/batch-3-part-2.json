@@ -1,0 +1,1301 @@
+{
+  "schemaVersion": 1,
+  "batchIndex": 3,
+  "part": 2,
+  "nodes": [
+    {
+      "id": "cls:src/jx/fs/EXT2Attribute.java:EXT2Attribute",
+      "type": "class",
+      "label": "EXT2Attribute",
+      "properties": {
+        "path": "src/jx/fs/EXT2Attribute.java",
+        "name": "EXT2Attribute",
+        "startLine": 3,
+        "endLine": 22,
+        "numMethods": 3
+      }
+    },
+    {
+      "id": "cls:src/jx/fs/FSInterfaceDomain.java:FSInterfaceDomain",
+      "type": "class",
+      "label": "FSInterfaceDomain",
+      "properties": {
+        "path": "src/jx/fs/FSInterfaceDomain.java",
+        "name": "FSInterfaceDomain",
+        "startLine": 34,
+        "endLine": 77,
+        "numMethods": 2
+      }
+    },
+    {
+      "id": "cls:src/jx/fs/FSInterfaceDomain.java:MyDummyClock",
+      "type": "class",
+      "label": "MyDummyClock",
+      "properties": {
+        "path": "src/jx/fs/FSInterfaceDomain.java",
+        "name": "MyDummyClock",
+        "startLine": 11,
+        "endLine": 31,
+        "numMethods": 9
+      }
+    },
+    {
+      "id": "cls:src/jx/fs/FileExistsException.java:FileExistsException",
+      "type": "class",
+      "label": "FileExistsException",
+      "properties": {
+        "path": "src/jx/fs/FileExistsException.java",
+        "name": "FileExistsException",
+        "startLine": 6,
+        "endLine": 14,
+        "numMethods": 2
+      }
+    },
+    {
+      "id": "cls:src/jx/fs/FilesystemImpl.java:FilesystemImpl",
+      "type": "class",
+      "label": "FilesystemImpl",
+      "properties": {
+        "path": "src/jx/fs/FilesystemImpl.java",
+        "name": "FilesystemImpl",
+        "startLine": 7,
+        "endLine": 79,
+        "numMethods": 9
+      }
+    },
+    {
+      "id": "cls:src/jx/fs/StatFSImpl.java:StatFSImpl",
+      "type": "class",
+      "label": "StatFSImpl",
+      "properties": {
+        "path": "src/jx/fs/StatFSImpl.java",
+        "name": "StatFSImpl",
+        "startLine": 3,
+        "endLine": 39,
+        "numMethods": 6
+      }
+    },
+    {
+      "id": "file:src/jx/concurrent/ExecutionException.java",
+      "type": "file",
+      "label": "ExecutionException.java",
+      "properties": {
+        "path": "src/jx/concurrent/ExecutionException.java",
+        "language": "java",
+        "sizeLines": 18,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/jx/concurrent/Future.java",
+      "type": "file",
+      "label": "Future.java",
+      "properties": {
+        "path": "src/jx/concurrent/Future.java",
+        "language": "java",
+        "sizeLines": 14,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/jx/concurrent/TimeUnit.java",
+      "type": "file",
+      "label": "TimeUnit.java",
+      "properties": {
+        "path": "src/jx/concurrent/TimeUnit.java",
+        "language": "java",
+        "sizeLines": 355,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/jx/concurrent/TimeoutException.java",
+      "type": "file",
+      "label": "TimeoutException.java",
+      "properties": {
+        "path": "src/jx/concurrent/TimeoutException.java",
+        "language": "java",
+        "sizeLines": 11,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/jx/concurrent/locks/AbstractQueuedSynchronizer.java",
+      "type": "file",
+      "label": "AbstractQueuedSynchronizer.java",
+      "properties": {
+        "path": "src/jx/concurrent/locks/AbstractQueuedSynchronizer.java",
+        "language": "java",
+        "sizeLines": 376,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/jx/concurrent/locks/CondVar.java",
+      "type": "file",
+      "label": "CondVar.java",
+      "properties": {
+        "path": "src/jx/concurrent/locks/CondVar.java",
+        "language": "java",
+        "sizeLines": 48,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/jx/concurrent/locks/Condition.java",
+      "type": "file",
+      "label": "Condition.java",
+      "properties": {
+        "path": "src/jx/concurrent/locks/Condition.java",
+        "language": "java",
+        "sizeLines": 11,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/jx/concurrent/locks/Lock.java",
+      "type": "file",
+      "label": "Lock.java",
+      "properties": {
+        "path": "src/jx/concurrent/locks/Lock.java",
+        "language": "java",
+        "sizeLines": 10,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/jx/concurrent/locks/LockSupport.java",
+      "type": "file",
+      "label": "LockSupport.java",
+      "properties": {
+        "path": "src/jx/concurrent/locks/LockSupport.java",
+        "language": "java",
+        "sizeLines": 51,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/jx/concurrent/locks/ReadWriteLock.java",
+      "type": "file",
+      "label": "ReadWriteLock.java",
+      "properties": {
+        "path": "src/jx/concurrent/locks/ReadWriteLock.java",
+        "language": "java",
+        "sizeLines": 7,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/jx/concurrent/locks/ReentrantLock.java",
+      "type": "file",
+      "label": "ReentrantLock.java",
+      "properties": {
+        "path": "src/jx/concurrent/locks/ReentrantLock.java",
+        "language": "java",
+        "sizeLines": 257,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/jx/concurrent/locks/ReentrantReadWriteLock.java",
+      "type": "file",
+      "label": "ReentrantReadWriteLock.java",
+      "properties": {
+        "path": "src/jx/concurrent/locks/ReentrantReadWriteLock.java",
+        "language": "java",
+        "sizeLines": 172,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/jx/fs/EXT2Attribute.java",
+      "type": "file",
+      "label": "EXT2Attribute.java",
+      "properties": {
+        "path": "src/jx/fs/EXT2Attribute.java",
+        "language": "java",
+        "sizeLines": 29,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/jx/fs/FSInterfaceDomain.java",
+      "type": "file",
+      "label": "FSInterfaceDomain.java",
+      "properties": {
+        "path": "src/jx/fs/FSInterfaceDomain.java",
+        "language": "java",
+        "sizeLines": 80,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/jx/fs/FileExistsException.java",
+      "type": "file",
+      "label": "FileExistsException.java",
+      "properties": {
+        "path": "src/jx/fs/FileExistsException.java",
+        "language": "java",
+        "sizeLines": 9,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/jx/fs/FilesystemImpl.java",
+      "type": "file",
+      "label": "FilesystemImpl.java",
+      "properties": {
+        "path": "src/jx/fs/FilesystemImpl.java",
+        "language": "java",
+        "sizeLines": 36,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/jx/fs/StatFSImpl.java",
+      "type": "file",
+      "label": "StatFSImpl.java",
+      "properties": {
+        "path": "src/jx/fs/StatFSImpl.java",
+        "language": "java",
+        "sizeLines": 113,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/EXT2Attribute.java:EXT2Attribute",
+      "type": "function",
+      "label": "EXT2Attribute",
+      "properties": {
+        "path": "src/jx/fs/EXT2Attribute.java",
+        "name": "EXT2Attribute",
+        "startLine": 8,
+        "endLine": 11,
+        "params": [
+          "user",
+          "perm"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/EXT2Attribute.java:getPermission",
+      "type": "function",
+      "label": "getPermission",
+      "properties": {
+        "path": "src/jx/fs/EXT2Attribute.java",
+        "name": "getPermission",
+        "startLine": 18,
+        "endLine": 21,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/EXT2Attribute.java:getUserID",
+      "type": "function",
+      "label": "getUserID",
+      "properties": {
+        "path": "src/jx/fs/EXT2Attribute.java",
+        "name": "getUserID",
+        "startLine": 13,
+        "endLine": 16,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FSInterfaceDomain.java:FSInterfaceDomain",
+      "type": "function",
+      "label": "FSInterfaceDomain",
+      "properties": {
+        "path": "src/jx/fs/FSInterfaceDomain.java",
+        "name": "FSInterfaceDomain",
+        "startLine": 55,
+        "endLine": 76,
+        "params": [
+          "naming",
+          "bio"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FSInterfaceDomain.java:getCycles",
+      "type": "function",
+      "label": "getCycles",
+      "properties": {
+        "path": "src/jx/fs/FSInterfaceDomain.java",
+        "name": "getCycles",
+        "startLine": 21,
+        "endLine": 22,
+        "params": [
+          "c"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FSInterfaceDomain.java:getTicks",
+      "type": "function",
+      "label": "getTicks",
+      "properties": {
+        "path": "src/jx/fs/FSInterfaceDomain.java",
+        "name": "getTicks",
+        "startLine": 15,
+        "endLine": 16,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FSInterfaceDomain.java:getTicks_high",
+      "type": "function",
+      "label": "getTicks_high",
+      "properties": {
+        "path": "src/jx/fs/FSInterfaceDomain.java",
+        "name": "getTicks_high",
+        "startLine": 19,
+        "endLine": 20,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FSInterfaceDomain.java:getTicks_low",
+      "type": "function",
+      "label": "getTicks_low",
+      "properties": {
+        "path": "src/jx/fs/FSInterfaceDomain.java",
+        "name": "getTicks_low",
+        "startLine": 17,
+        "endLine": 18,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FSInterfaceDomain.java:getTimeInMillis",
+      "type": "function",
+      "label": "getTimeInMillis",
+      "properties": {
+        "path": "src/jx/fs/FSInterfaceDomain.java",
+        "name": "getTimeInMillis",
+        "startLine": 13,
+        "endLine": 14,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FSInterfaceDomain.java:init",
+      "type": "function",
+      "label": "init",
+      "properties": {
+        "path": "src/jx/fs/FSInterfaceDomain.java",
+        "name": "init",
+        "startLine": 40,
+        "endLine": 53,
+        "params": [
+          "naming",
+          "args"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FSInterfaceDomain.java:subtract",
+      "type": "function",
+      "label": "subtract",
+      "properties": {
+        "path": "src/jx/fs/FSInterfaceDomain.java",
+        "name": "subtract",
+        "startLine": 23,
+        "endLine": 24,
+        "params": [
+          "result",
+          "a",
+          "b"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FSInterfaceDomain.java:toMicroSec",
+      "type": "function",
+      "label": "toMicroSec",
+      "properties": {
+        "path": "src/jx/fs/FSInterfaceDomain.java",
+        "name": "toMicroSec",
+        "startLine": 25,
+        "endLine": 26,
+        "params": [
+          "c"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FSInterfaceDomain.java:toMilliSec",
+      "type": "function",
+      "label": "toMilliSec",
+      "properties": {
+        "path": "src/jx/fs/FSInterfaceDomain.java",
+        "name": "toMilliSec",
+        "startLine": 29,
+        "endLine": 30,
+        "params": [
+          "c"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FSInterfaceDomain.java:toNanoSec",
+      "type": "function",
+      "label": "toNanoSec",
+      "properties": {
+        "path": "src/jx/fs/FSInterfaceDomain.java",
+        "name": "toNanoSec",
+        "startLine": 27,
+        "endLine": 28,
+        "params": [
+          "c"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FileExistsException.java:FileExistsException",
+      "type": "function",
+      "label": "FileExistsException",
+      "properties": {
+        "path": "src/jx/fs/FileExistsException.java",
+        "name": "FileExistsException",
+        "startLine": 11,
+        "endLine": 13,
+        "params": [
+          "msg"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FilesystemImpl.java:FilesystemImpl",
+      "type": "function",
+      "label": "FilesystemImpl",
+      "properties": {
+        "path": "src/jx/fs/FilesystemImpl.java",
+        "name": "FilesystemImpl",
+        "startLine": 14,
+        "endLine": 17,
+        "params": [
+          "fs"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FilesystemImpl.java:getDefaultPermission",
+      "type": "function",
+      "label": "getDefaultPermission",
+      "properties": {
+        "path": "src/jx/fs/FilesystemImpl.java",
+        "name": "getDefaultPermission",
+        "startLine": 36,
+        "endLine": 39,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FilesystemImpl.java:getName",
+      "type": "function",
+      "label": "getName",
+      "properties": {
+        "path": "src/jx/fs/FilesystemImpl.java",
+        "name": "getName",
+        "startLine": 19,
+        "endLine": 22,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FilesystemImpl.java:mount",
+      "type": "function",
+      "label": "mount",
+      "properties": {
+        "path": "src/jx/fs/FilesystemImpl.java",
+        "name": "mount",
+        "startLine": 41,
+        "endLine": 47,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FilesystemImpl.java:openRootDirectoryRO",
+      "type": "function",
+      "label": "openRootDirectoryRO",
+      "properties": {
+        "path": "src/jx/fs/FilesystemImpl.java",
+        "name": "openRootDirectoryRO",
+        "startLine": 24,
+        "endLine": 28,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FilesystemImpl.java:openRootDirectoryRW",
+      "type": "function",
+      "label": "openRootDirectoryRW",
+      "properties": {
+        "path": "src/jx/fs/FilesystemImpl.java",
+        "name": "openRootDirectoryRW",
+        "startLine": 30,
+        "endLine": 34,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FilesystemImpl.java:unmount",
+      "type": "function",
+      "label": "unmount",
+      "properties": {
+        "path": "src/jx/fs/FilesystemImpl.java",
+        "name": "unmount",
+        "startLine": 49,
+        "endLine": 64,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/StatFSImpl.java:getBlockSize",
+      "type": "function",
+      "label": "getBlockSize",
+      "properties": {
+        "path": "src/jx/fs/StatFSImpl.java",
+        "name": "getBlockSize",
+        "startLine": 20,
+        "endLine": 23,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/StatFSImpl.java:getSize",
+      "type": "function",
+      "label": "getSize",
+      "properties": {
+        "path": "src/jx/fs/StatFSImpl.java",
+        "name": "getSize",
+        "startLine": 15,
+        "endLine": 18,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/StatFSImpl.java:setBlockSize",
+      "type": "function",
+      "label": "setBlockSize",
+      "properties": {
+        "path": "src/jx/fs/StatFSImpl.java",
+        "name": "setBlockSize",
+        "startLine": 25,
+        "endLine": 28,
+        "params": [
+          "s_blocksize"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/StatFSImpl.java:setBlocks",
+      "type": "function",
+      "label": "setBlocks",
+      "properties": {
+        "path": "src/jx/fs/StatFSImpl.java",
+        "name": "setBlocks",
+        "startLine": 30,
+        "endLine": 33,
+        "params": [
+          "numberOfBlocks"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/StatFSImpl.java:setFreeBlocks",
+      "type": "function",
+      "label": "setFreeBlocks",
+      "properties": {
+        "path": "src/jx/fs/StatFSImpl.java",
+        "name": "setFreeBlocks",
+        "startLine": 35,
+        "endLine": 38,
+        "params": [
+          "numberOfFreeBlocks"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/StatFSImpl.java:setSize",
+      "type": "function",
+      "label": "setSize",
+      "properties": {
+        "path": "src/jx/fs/StatFSImpl.java",
+        "name": "setSize",
+        "startLine": 10,
+        "endLine": 13,
+        "params": [
+          "size"
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/jx/fs/StatFSImpl.java",
+      "target": "cls:src/jx/fs/StatFSImpl.java:StatFSImpl",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/StatFSImpl.java",
+      "target": "cls:src/jx/fs/StatFSImpl.java:StatFSImpl",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/StatFSImpl.java",
+      "target": "fn:src/jx/fs/StatFSImpl.java:setSize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/StatFSImpl.java",
+      "target": "fn:src/jx/fs/StatFSImpl.java:setSize",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/StatFSImpl.java",
+      "target": "fn:src/jx/fs/StatFSImpl.java:getSize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/StatFSImpl.java",
+      "target": "fn:src/jx/fs/StatFSImpl.java:getSize",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/StatFSImpl.java",
+      "target": "fn:src/jx/fs/StatFSImpl.java:getBlockSize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/StatFSImpl.java",
+      "target": "fn:src/jx/fs/StatFSImpl.java:getBlockSize",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/StatFSImpl.java",
+      "target": "fn:src/jx/fs/StatFSImpl.java:setBlockSize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/StatFSImpl.java",
+      "target": "fn:src/jx/fs/StatFSImpl.java:setBlockSize",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/StatFSImpl.java",
+      "target": "fn:src/jx/fs/StatFSImpl.java:setBlocks",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/StatFSImpl.java",
+      "target": "fn:src/jx/fs/StatFSImpl.java:setBlocks",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/StatFSImpl.java",
+      "target": "fn:src/jx/fs/StatFSImpl.java:setFreeBlocks",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/StatFSImpl.java",
+      "target": "fn:src/jx/fs/StatFSImpl.java:setFreeBlocks",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FilesystemImpl.java",
+      "target": "cls:src/jx/fs/FilesystemImpl.java:FilesystemImpl",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FilesystemImpl.java",
+      "target": "cls:src/jx/fs/FilesystemImpl.java:FilesystemImpl",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FilesystemImpl.java",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:FilesystemImpl",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FilesystemImpl.java",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:FilesystemImpl",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FilesystemImpl.java",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:getName",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FilesystemImpl.java",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:getName",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FilesystemImpl.java",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:openRootDirectoryRO",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FilesystemImpl.java",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:openRootDirectoryRO",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FilesystemImpl.java",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:openRootDirectoryRW",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FilesystemImpl.java",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:openRootDirectoryRW",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FilesystemImpl.java",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:getDefaultPermission",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FilesystemImpl.java",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:getDefaultPermission",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FilesystemImpl.java",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:mount",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FilesystemImpl.java",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:mount",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FilesystemImpl.java",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:unmount",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FilesystemImpl.java",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:unmount",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FilesystemImpl.java:FilesystemImpl",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:mount",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FSInterfaceDomain.java",
+      "target": "cls:src/jx/fs/FSInterfaceDomain.java:MyDummyClock",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FSInterfaceDomain.java",
+      "target": "cls:src/jx/fs/FSInterfaceDomain.java:FSInterfaceDomain",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FSInterfaceDomain.java",
+      "target": "cls:src/jx/fs/FSInterfaceDomain.java:FSInterfaceDomain",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FSInterfaceDomain.java",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:getTimeInMillis",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FSInterfaceDomain.java",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:getTimeInMillis",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FSInterfaceDomain.java",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:getTicks",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FSInterfaceDomain.java",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:getTicks",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FSInterfaceDomain.java",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:getTicks_low",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FSInterfaceDomain.java",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:getTicks_low",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FSInterfaceDomain.java",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:getTicks_high",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FSInterfaceDomain.java",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:getTicks_high",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FSInterfaceDomain.java",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:getCycles",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FSInterfaceDomain.java",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:getCycles",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FSInterfaceDomain.java",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:subtract",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FSInterfaceDomain.java",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:subtract",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FSInterfaceDomain.java",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:toMicroSec",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FSInterfaceDomain.java",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:toMicroSec",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FSInterfaceDomain.java",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:toNanoSec",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FSInterfaceDomain.java",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:toNanoSec",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FSInterfaceDomain.java",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:toMilliSec",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FSInterfaceDomain.java",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:toMilliSec",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FSInterfaceDomain.java",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FSInterfaceDomain.java",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:init",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FSInterfaceDomain.java",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:FSInterfaceDomain",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FSInterfaceDomain.java",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:FSInterfaceDomain",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/EXT2Attribute.java",
+      "target": "cls:src/jx/fs/EXT2Attribute.java:EXT2Attribute",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/EXT2Attribute.java",
+      "target": "cls:src/jx/fs/EXT2Attribute.java:EXT2Attribute",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/EXT2Attribute.java",
+      "target": "fn:src/jx/fs/EXT2Attribute.java:EXT2Attribute",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/EXT2Attribute.java",
+      "target": "fn:src/jx/fs/EXT2Attribute.java:EXT2Attribute",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/EXT2Attribute.java",
+      "target": "fn:src/jx/fs/EXT2Attribute.java:getUserID",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/EXT2Attribute.java",
+      "target": "fn:src/jx/fs/EXT2Attribute.java:getUserID",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/EXT2Attribute.java",
+      "target": "fn:src/jx/fs/EXT2Attribute.java:getPermission",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/EXT2Attribute.java",
+      "target": "fn:src/jx/fs/EXT2Attribute.java:getPermission",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FileExistsException.java",
+      "target": "cls:src/jx/fs/FileExistsException.java:FileExistsException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FileExistsException.java",
+      "target": "cls:src/jx/fs/FileExistsException.java:FileExistsException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FileExistsException.java",
+      "target": "fn:src/jx/fs/FileExistsException.java:FileExistsException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FileExistsException.java",
+      "target": "fn:src/jx/fs/FileExistsException.java:FileExistsException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FileExistsException.java",
+      "target": "fn:src/jx/fs/FileExistsException.java:FileExistsException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FileExistsException.java",
+      "target": "fn:src/jx/fs/FileExistsException.java:FileExistsException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/StatFSImpl.java:setSize",
+      "target": "fn:src/jx/fs/StatFSImpl.java:new UnsupportedOperationException",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/StatFSImpl.java:getSize",
+      "target": "fn:src/jx/fs/StatFSImpl.java:new UnsupportedOperationException",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/StatFSImpl.java:getBlockSize",
+      "target": "fn:src/jx/fs/StatFSImpl.java:new UnsupportedOperationException",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/StatFSImpl.java:setBlockSize",
+      "target": "fn:src/jx/fs/StatFSImpl.java:new UnsupportedOperationException",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/StatFSImpl.java:setBlocks",
+      "target": "fn:src/jx/fs/StatFSImpl.java:new UnsupportedOperationException",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/StatFSImpl.java:setFreeBlocks",
+      "target": "fn:src/jx/fs/StatFSImpl.java:new UnsupportedOperationException",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FilesystemImpl.java",
+      "target": "file:src/java/util/Vector.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "fn:src/jx/fs/FilesystemImpl.java:getName",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:fs.name",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FilesystemImpl.java:openRootDirectoryRO",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:rInode.incUseCount",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FilesystemImpl.java:openRootDirectoryRO",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:registerFSObj",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FilesystemImpl.java:openRootDirectoryRO",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:new ReadOnlyDirectoryImpl",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FilesystemImpl.java:openRootDirectoryRW",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:rInode.incUseCount",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FilesystemImpl.java:openRootDirectoryRW",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:registerFSObj",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FilesystemImpl.java:openRootDirectoryRW",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:new DirectoryImpl",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FilesystemImpl.java:mount",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:fs.init",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FilesystemImpl.java:mount",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:fs.getRootNode",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FilesystemImpl.java:unmount",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:fsobjList.size",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FilesystemImpl.java:unmount",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:fsobjList.elementAt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FilesystemImpl.java:unmount",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:fsobj.close",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FilesystemImpl.java:unmount",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:ex.printStackTrace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FilesystemImpl.java:unmount",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:fsobjList.removeAllElements",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FilesystemImpl.java:unmount",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:rInode.decUseCount",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FilesystemImpl.java:unmount",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:fs.release",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FilesystemImpl.java:finalize",
+      "target": "fn:src/jx/fs/FilesystemImpl.java:unmount",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FSInterfaceDomain.java:init",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:naming.lookup",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FSInterfaceDomain.java:init",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:new DebugPrintStream",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FSInterfaceDomain.java:init",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:new DebugOutputStream",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FSInterfaceDomain.java:init",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:Debug.out.println",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FSInterfaceDomain.java:init",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:cpuManager.setThreadName",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FSInterfaceDomain.java:init",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:LookupHelper.waitUntilPortalAvailable",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FSInterfaceDomain.java:init",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:new FSInterfaceDomain",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FSInterfaceDomain.java:FSInterfaceDomain",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:Debug.out.println",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FSInterfaceDomain.java:FSInterfaceDomain",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:bio.getCapacity",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FSInterfaceDomain.java:FSInterfaceDomain",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:new MyDummyClock",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FSInterfaceDomain.java:FSInterfaceDomain",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:e.printStackTrace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FSInterfaceDomain.java:FSInterfaceDomain",
+      "target": "fn:src/jx/fs/FSInterfaceDomain.java:new Error",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FileExistsException.java",
+      "target": "file:src/jx/fs/FSException.java",
+      "type": "inherits",
+      "weight": 0.9
+    }
+  ],
+  "metadata": {
+    "totalNodesInPart": 51,
+    "totalEdgesInPart": 107,
+    "algorithm": "file-analyzer"
+  }
+}

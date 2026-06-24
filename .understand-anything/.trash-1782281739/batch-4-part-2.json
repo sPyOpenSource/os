@@ -1,0 +1,1414 @@
+{
+  "schemaVersion": 1,
+  "batchIndex": 4,
+  "part": 2,
+  "nodes": [
+    {
+      "id": "cls:src/java/net/URLConnection.java:URLConnection",
+      "type": "class",
+      "label": "URLConnection",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "URLConnection",
+        "startLine": 74,
+        "endLine": 923,
+        "numMethods": 42
+      }
+    },
+    {
+      "id": "cls:src/java/security/InvalidParameterException.java:InvalidParameterException",
+      "type": "class",
+      "label": "InvalidParameterException",
+      "properties": {
+        "path": "src/java/security/InvalidParameterException.java",
+        "name": "InvalidParameterException",
+        "startLine": 38,
+        "endLine": 41,
+        "numMethods": 0
+      }
+    },
+    {
+      "id": "cls:src/java/security/KeyException.java:KeyException",
+      "type": "class",
+      "label": "KeyException",
+      "properties": {
+        "path": "src/java/security/KeyException.java",
+        "name": "KeyException",
+        "startLine": 37,
+        "endLine": 64,
+        "numMethods": 2
+      }
+    },
+    {
+      "id": "file:src/java/net/URLConnection.java",
+      "type": "file",
+      "label": "URLConnection.java",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "language": "java",
+        "sizeLines": 175,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/security/BasicPermission.java",
+      "type": "file",
+      "label": "BasicPermission.java",
+      "properties": {
+        "path": "src/java/security/BasicPermission.java",
+        "language": "java",
+        "sizeLines": 37,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/java/security/Certificate.java",
+      "type": "file",
+      "label": "Certificate.java",
+      "properties": {
+        "path": "src/java/security/Certificate.java",
+        "language": "java",
+        "sizeLines": 58,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/java/security/CodeSigner.java",
+      "type": "file",
+      "label": "CodeSigner.java",
+      "properties": {
+        "path": "src/java/security/CodeSigner.java",
+        "language": "java",
+        "sizeLines": 99,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/java/security/Identity.java",
+      "type": "file",
+      "label": "Identity.java",
+      "properties": {
+        "path": "src/java/security/Identity.java",
+        "language": "java",
+        "sizeLines": 75,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/java/security/IdentityScope.java",
+      "type": "file",
+      "label": "IdentityScope.java",
+      "properties": {
+        "path": "src/java/security/IdentityScope.java",
+        "language": "java",
+        "sizeLines": 67,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/java/security/InvalidParameterException.java",
+      "type": "file",
+      "label": "InvalidParameterException.java",
+      "properties": {
+        "path": "src/java/security/InvalidParameterException.java",
+        "language": "java",
+        "sizeLines": 7,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/security/Key.java",
+      "type": "file",
+      "label": "Key.java",
+      "properties": {
+        "path": "src/java/security/Key.java",
+        "language": "java",
+        "sizeLines": 14,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/java/security/KeyException.java",
+      "type": "file",
+      "label": "KeyException.java",
+      "properties": {
+        "path": "src/java/security/KeyException.java",
+        "language": "java",
+        "sizeLines": 8,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:URLConnection",
+      "type": "function",
+      "label": "URLConnection",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "URLConnection",
+        "startLine": 332,
+        "endLine": 348,
+        "params": [
+          "url"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:connect",
+      "type": "function",
+      "label": "connect",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "connect",
+        "startLine": 581,
+        "endLine": 582,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:getAllowUserInteraction",
+      "type": "function",
+      "label": "getAllowUserInteraction",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "getAllowUserInteraction",
+        "startLine": 391,
+        "endLine": 395,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:getContent",
+      "type": "function",
+      "label": "getContent",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "getContent",
+        "startLine": 875,
+        "endLine": 907,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:getContentEncoding",
+      "type": "function",
+      "label": "getContentEncoding",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "getContentEncoding",
+        "startLine": 624,
+        "endLine": 628,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:getContentLength",
+      "type": "function",
+      "label": "getContentLength",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "getContentLength",
+        "startLine": 638,
+        "endLine": 642,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:getContentType",
+      "type": "function",
+      "label": "getContentType",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "getContentType",
+        "startLine": 656,
+        "endLine": 664,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:getDate",
+      "type": "function",
+      "label": "getDate",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "getDate",
+        "startLine": 676,
+        "endLine": 680,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:getDefaultAllowUserInteraction",
+      "type": "function",
+      "label": "getDefaultAllowUserInteraction",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "getDefaultAllowUserInteraction",
+        "startLine": 198,
+        "endLine": 202,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:getDefaultRequestProperty",
+      "type": "function",
+      "label": "getDefaultRequestProperty",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "getDefaultRequestProperty",
+        "startLine": 229,
+        "endLine": 233,
+        "params": [
+          "key"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:getDefaultUseCaches",
+      "type": "function",
+      "label": "getDefaultUseCaches",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "getDefaultUseCaches",
+        "startLine": 362,
+        "endLine": 366,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:getDoInput",
+      "type": "function",
+      "label": "getDoInput",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "getDoInput",
+        "startLine": 421,
+        "endLine": 425,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:getDoOutput",
+      "type": "function",
+      "label": "getDoOutput",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "getDoOutput",
+        "startLine": 450,
+        "endLine": 454,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:getExpiration",
+      "type": "function",
+      "label": "getExpiration",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "getExpiration",
+        "startLine": 691,
+        "endLine": 695,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:getFileNameMap",
+      "type": "function",
+      "label": "getFileNameMap",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "getFileNameMap",
+        "startLine": 301,
+        "endLine": 305,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:getHeaderField",
+      "type": "function",
+      "label": "getHeaderField",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "getHeaderField",
+        "startLine": 758,
+        "endLine": 770,
+        "params": [
+          "name"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:getHeaderFieldDate",
+      "type": "function",
+      "label": "getHeaderFieldDate",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "getHeaderFieldDate",
+        "startLine": 782,
+        "endLine": 801,
+        "params": [
+          "key",
+          "def"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:getHeaderFieldInt",
+      "type": "function",
+      "label": "getHeaderFieldInt",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "getHeaderFieldInt",
+        "startLine": 813,
+        "endLine": 831,
+        "params": [
+          "key",
+          "def"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:getHeaderFieldKey",
+      "type": "function",
+      "label": "getHeaderFieldKey",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "getHeaderFieldKey",
+        "startLine": 724,
+        "endLine": 728,
+        "params": [
+          "index"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:getIfModifiedSince",
+      "type": "function",
+      "label": "getIfModifiedSince",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "getIfModifiedSince",
+        "startLine": 510,
+        "endLine": 514,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:getInputStream",
+      "type": "function",
+      "label": "getInputStream",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "getInputStream",
+        "startLine": 594,
+        "endLine": 598,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:getLastModified",
+      "type": "function",
+      "label": "getLastModified",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "getLastModified",
+        "startLine": 706,
+        "endLine": 710,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:getOutputStream",
+      "type": "function",
+      "label": "getOutputStream",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "getOutputStream",
+        "startLine": 610,
+        "endLine": 614,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:getPermission",
+      "type": "function",
+      "label": "getPermission",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "getPermission",
+        "startLine": 850,
+        "endLine": 854,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:getRequestProperty",
+      "type": "function",
+      "label": "getRequestProperty",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "getRequestProperty",
+        "startLine": 542,
+        "endLine": 546,
+        "params": [
+          "key"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:getURL",
+      "type": "function",
+      "label": "getURL",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "getURL",
+        "startLine": 569,
+        "endLine": 573,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:getUseCaches",
+      "type": "function",
+      "label": "getUseCaches",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "getUseCaches",
+        "startLine": 479,
+        "endLine": 483,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:guessContentTypeFromStream",
+      "type": "function",
+      "label": "guessContentTypeFromStream",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "guessContentTypeFromStream",
+        "startLine": 287,
+        "endLine": 291,
+        "params": [
+          "is"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:setAllowUserInteraction",
+      "type": "function",
+      "label": "setAllowUserInteraction",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "setAllowUserInteraction",
+        "startLine": 406,
+        "endLine": 410,
+        "params": [
+          "allow"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:setContentHandlerFactory",
+      "type": "function",
+      "label": "setContentHandlerFactory",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "setContentHandlerFactory",
+        "startLine": 181,
+        "endLine": 188,
+        "params": [
+          "fac"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:setDefaultAllowUserInteraction",
+      "type": "function",
+      "label": "setDefaultAllowUserInteraction",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "setDefaultAllowUserInteraction",
+        "startLine": 212,
+        "endLine": 216,
+        "params": [
+          "allow"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:setDefaultRequestProperty",
+      "type": "function",
+      "label": "setDefaultRequestProperty",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "setDefaultRequestProperty",
+        "startLine": 245,
+        "endLine": 249,
+        "params": [
+          "key",
+          "value"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:setDefaultUseCaches",
+      "type": "function",
+      "label": "setDefaultUseCaches",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "setDefaultUseCaches",
+        "startLine": 376,
+        "endLine": 380,
+        "params": [
+          "use"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:setDoInput",
+      "type": "function",
+      "label": "setDoInput",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "setDoInput",
+        "startLine": 436,
+        "endLine": 440,
+        "params": [
+          "input"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:setDoOutput",
+      "type": "function",
+      "label": "setDoOutput",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "setDoOutput",
+        "startLine": 465,
+        "endLine": 469,
+        "params": [
+          "output"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:setFileNameMap",
+      "type": "function",
+      "label": "setFileNameMap",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "setFileNameMap",
+        "startLine": 315,
+        "endLine": 319,
+        "params": [
+          "fileNameMap"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:setIfModifiedSince",
+      "type": "function",
+      "label": "setIfModifiedSince",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "setIfModifiedSince",
+        "startLine": 527,
+        "endLine": 531,
+        "params": [
+          "modified_since"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:setRequestProperty",
+      "type": "function",
+      "label": "setRequestProperty",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "setRequestProperty",
+        "startLine": 556,
+        "endLine": 560,
+        "params": [
+          "key",
+          "value"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:setUseCaches",
+      "type": "function",
+      "label": "setUseCaches",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "setUseCaches",
+        "startLine": 493,
+        "endLine": 497,
+        "params": [
+          "use_caches"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/URLConnection.java:toString",
+      "type": "function",
+      "label": "toString",
+      "properties": {
+        "path": "src/java/net/URLConnection.java",
+        "name": "toString",
+        "startLine": 917,
+        "endLine": 921,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyException.java:KeyException",
+      "type": "function",
+      "label": "KeyException",
+      "properties": {
+        "path": "src/java/security/KeyException.java",
+        "name": "KeyException",
+        "startLine": 58,
+        "endLine": 62,
+        "params": [
+          "msg"
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "cls:src/java/net/URLConnection.java:URLConnection",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "cls:src/java/net/URLConnection.java:URLConnection",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:setContentHandlerFactory",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:setContentHandlerFactory",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getDefaultAllowUserInteraction",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getDefaultAllowUserInteraction",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:setDefaultAllowUserInteraction",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:setDefaultAllowUserInteraction",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getDefaultRequestProperty",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getDefaultRequestProperty",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:setDefaultRequestProperty",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:setDefaultRequestProperty",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:guessContentTypeFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:guessContentTypeFromStream",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getFileNameMap",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getFileNameMap",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:setFileNameMap",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:setFileNameMap",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:URLConnection",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:URLConnection",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getDefaultUseCaches",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getDefaultUseCaches",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:setDefaultUseCaches",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:setDefaultUseCaches",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getAllowUserInteraction",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getAllowUserInteraction",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:setAllowUserInteraction",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:setAllowUserInteraction",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getDoInput",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getDoInput",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:setDoInput",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:setDoInput",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getDoOutput",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getDoOutput",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:setDoOutput",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:setDoOutput",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getUseCaches",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getUseCaches",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:setUseCaches",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:setUseCaches",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getIfModifiedSince",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getIfModifiedSince",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:setIfModifiedSince",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:setIfModifiedSince",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getRequestProperty",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getRequestProperty",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:setRequestProperty",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:setRequestProperty",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getURL",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getURL",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:connect",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:connect",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getInputStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getInputStream",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getOutputStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getOutputStream",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getContentEncoding",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getContentEncoding",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getContentLength",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getContentLength",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getContentType",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getContentType",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getDate",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getDate",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getExpiration",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getExpiration",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getLastModified",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getLastModified",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getHeaderFieldKey",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getHeaderFieldKey",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getHeaderField",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getHeaderField",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getHeaderField",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getHeaderField",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getHeaderFieldDate",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getHeaderFieldDate",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getHeaderFieldInt",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getHeaderFieldInt",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getPermission",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getPermission",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getContent",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:getContent",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:toString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "fn:src/java/net/URLConnection.java:toString",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/URLConnection.java:getContentEncoding",
+      "target": "fn:src/java/net/URLConnection.java:getHeaderField",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/URLConnection.java:getContentLength",
+      "target": "fn:src/java/net/URLConnection.java:getHeaderFieldInt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/URLConnection.java:getContentType",
+      "target": "fn:src/java/net/URLConnection.java:getHeaderField",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/URLConnection.java:getContentType",
+      "target": "fn:src/java/net/URLConnection.java:getURL",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/URLConnection.java:getDate",
+      "target": "fn:src/java/net/URLConnection.java:getHeaderFieldDate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/URLConnection.java:getExpiration",
+      "target": "fn:src/java/net/URLConnection.java:getHeaderFieldDate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/URLConnection.java:getLastModified",
+      "target": "fn:src/java/net/URLConnection.java:getHeaderFieldDate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/URLConnection.java:getHeaderField",
+      "target": "fn:src/java/net/URLConnection.java:getHeaderFieldKey",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/URLConnection.java:getHeaderField",
+      "target": "fn:src/java/net/URLConnection.java:getHeaderField",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/URLConnection.java:getHeaderFieldDate",
+      "target": "fn:src/java/net/URLConnection.java:getHeaderField",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/URLConnection.java:getHeaderFieldInt",
+      "target": "fn:src/java/net/URLConnection.java:getHeaderField",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/URLConnection.java:getContent",
+      "target": "fn:src/java/net/URLConnection.java:getContentType",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/InvalidParameterException.java",
+      "target": "cls:src/java/security/InvalidParameterException.java:InvalidParameterException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/InvalidParameterException.java",
+      "target": "cls:src/java/security/InvalidParameterException.java:InvalidParameterException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyException.java",
+      "target": "cls:src/java/security/KeyException.java:KeyException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyException.java",
+      "target": "cls:src/java/security/KeyException.java:KeyException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyException.java",
+      "target": "fn:src/java/security/KeyException.java:KeyException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyException.java",
+      "target": "fn:src/java/security/KeyException.java:KeyException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyException.java",
+      "target": "fn:src/java/security/KeyException.java:KeyException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyException.java",
+      "target": "fn:src/java/security/KeyException.java:KeyException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "file:src/java/io/IOException.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "file:src/java/text/ParseException.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "file:src/java/text/ParsePosition.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "file:src/java/util/Date.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "file:src/java/util/Hashtable.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/java/net/URLConnection.java",
+      "target": "file:src/java/util/Locale.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "fn:src/java/net/URLConnection.java:setContentHandlerFactory",
+      "target": "fn:src/java/net/URLConnection.java:new Error",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/URLConnection.java:getDefaultRequestProperty",
+      "target": "fn:src/java/net/URLConnection.java:def_req_props.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/URLConnection.java:getDefaultRequestProperty",
+      "target": "fn:src/java/net/URLConnection.java:key.toLowerCase",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/URLConnection.java:setDefaultRequestProperty",
+      "target": "fn:src/java/net/URLConnection.java:def_req_props.put",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/URLConnection.java:setDefaultRequestProperty",
+      "target": "fn:src/java/net/URLConnection.java:key.toLowerCase",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/URLConnection.java:URLConnection",
+      "target": "fn:src/java/net/URLConnection.java:def_req_props.keys",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/URLConnection.java:URLConnection",
+      "target": "fn:src/java/net/URLConnection.java:e.hasMoreElements",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/URLConnection.java:URLConnection",
+      "target": "fn:src/java/net/URLConnection.java:e.nextElement",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/URLConnection.java:URLConnection",
+      "target": "fn:src/java/net/URLConnection.java:def_req_props.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/URLConnection.java:URLConnection",
+      "target": "fn:src/java/net/URLConnection.java:req_props.put",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ],
+  "metadata": {
+    "totalNodesInPart": 53,
+    "totalEdgesInPart": 120,
+    "algorithm": "file-analyzer"
+  }
+}

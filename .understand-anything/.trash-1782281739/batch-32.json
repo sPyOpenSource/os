@@ -1,0 +1,643 @@
+{
+  "batchIndex": 32,
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "6738437b6ddb38",
+      "type": "file",
+      "name": "MemoryManagerImpl.java",
+      "filePath": "src/jx/emulation/MemoryManagerImpl.java",
+      "language": "java",
+      "totalLines": 26,
+      "nonEmptyLines": 21,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "a1a1f54e693648",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/emulation/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "565d892188b8e",
+      "type": "file",
+      "name": "ProfilerImpl.java",
+      "filePath": "src/jx/emulation/ProfilerImpl.java",
+      "language": "java",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "82f610ea142ed8",
+      "type": "file",
+      "name": "LittleEndianInputStream.java",
+      "filePath": "src/jx/formats/LittleEndianInputStream.java",
+      "language": "java",
+      "totalLines": 90,
+      "nonEmptyLines": 78,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "5148950bc6cd68",
+      "type": "file",
+      "name": "LittleEndianOutputStream.java",
+      "filePath": "src/jx/formats/LittleEndianOutputStream.java",
+      "language": "java",
+      "totalLines": 54,
+      "nonEmptyLines": 46,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "251c05ed45d388",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/formats/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "4331546ecbfd5",
+      "type": "file",
+      "name": "ClippingRectangle.java",
+      "filePath": "src/jx/framebuffer/ClippingRectangle.java",
+      "language": "java",
+      "totalLines": 28,
+      "nonEmptyLines": 23,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "6a2bbe180db938",
+      "type": "file",
+      "name": "ClippingTransformer.java",
+      "filePath": "src/jx/framebuffer/ClippingTransformer.java",
+      "language": "java",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "852a935860db7",
+      "type": "file",
+      "name": "InterlacedFramebuffer.java",
+      "filePath": "src/jx/framebuffer/InterlacedFramebuffer.java",
+      "language": "java",
+      "totalLines": 64,
+      "nonEmptyLines": 55,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "094201cc86b658",
+      "type": "file",
+      "name": "MemoryFramebuffer.java",
+      "filePath": "src/jx/framebuffer/MemoryFramebuffer.java",
+      "language": "java",
+      "totalLines": 27,
+      "nonEmptyLines": 20,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "d076cab83c3c3",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/framebuffer/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "5aa1cd072ad5b8",
+      "type": "file",
+      "name": "PackedFramebuffer.java",
+      "filePath": "src/jx/framebuffer/PackedFramebuffer.java",
+      "language": "java",
+      "totalLines": 24,
+      "nonEmptyLines": 18,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "1bca3f223afbc",
+      "type": "file",
+      "name": "AlreadyMountedException.java",
+      "filePath": "src/jx/fs/AlreadyMountedException.java",
+      "language": "java",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "a7cd67cd4d6ab",
+      "type": "file",
+      "name": "AuditRecord.java",
+      "filePath": "src/jx/fs/auditfs/AuditRecord.java",
+      "language": "java",
+      "totalLines": 70,
+      "nonEmptyLines": 60,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "5f1493c6272a",
+      "type": "file",
+      "name": "AuditStore.java",
+      "filePath": "src/jx/fs/auditfs/AuditStore.java",
+      "language": "java",
+      "totalLines": 86,
+      "nonEmptyLines": 77,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "ddd6e64a1edc7",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/fs/auditfs/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "5d2625bfc822c8",
+      "type": "file",
+      "name": "BufferCache.java",
+      "filePath": "src/jx/fs/buffercache/BufferCache.java",
+      "language": "java",
+      "totalLines": 134,
+      "nonEmptyLines": 111,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "e241dec562bab8",
+      "type": "file",
+      "name": "BufferHead.java",
+      "filePath": "src/jx/fs/buffercache/BufferHead.java",
+      "language": "java",
+      "totalLines": 37,
+      "nonEmptyLines": 26,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 18,
+        "functionCount": 16,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "5c501919c06758",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/fs/buffercache/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "b085bf75847a1",
+      "type": "file",
+      "name": "DeviceNaming.java",
+      "filePath": "src/jx/fs/DeviceNaming.java",
+      "language": "java",
+      "totalLines": 46,
+      "nonEmptyLines": 41,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "0d4863c33b67d",
+      "type": "file",
+      "name": "DirectoryImpl.java",
+      "filePath": "src/jx/fs/DirectoryImpl.java",
+      "language": "java",
+      "totalLines": 86,
+      "nonEmptyLines": 73,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 12,
+        "functionCount": 12,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "bc75d40370aca",
+      "type": "file",
+      "name": "DirNotEmptyException.java",
+      "filePath": "src/jx/fs/DirNotEmptyException.java",
+      "language": "java",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "a10fec206406a",
+      "type": "file",
+      "name": "EXT2Attribute.java",
+      "filePath": "src/jx/fs/EXT2Attribute.java",
+      "language": "java",
+      "totalLines": 22,
+      "nonEmptyLines": 17,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "cd17f3a0db8a28",
+      "type": "file",
+      "name": "EXT2Permission.java",
+      "filePath": "src/jx/fs/EXT2Permission.java",
+      "language": "java",
+      "totalLines": 50,
+      "nonEmptyLines": 37,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 18,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "579e7e770caf9",
+      "type": "file",
+      "name": "FileException.java",
+      "filePath": "src/jx/fs/FileException.java",
+      "language": "java",
+      "totalLines": 4,
+      "nonEmptyLines": 3,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "8bb4bc227af948",
+      "type": "class",
+      "name": "MemoryManagerImpl",
+      "filePath": "src/jx/emulation/MemoryManagerImpl.java",
+      "startLine": 6,
+      "endLine": 26
+    },
+    {
+      "id": "c0e688399848b",
+      "type": "class",
+      "name": "ProfilerImpl",
+      "filePath": "src/jx/emulation/ProfilerImpl.java",
+      "startLine": 5,
+      "endLine": 14
+    },
+    {
+      "id": "2c27b8ceeb5298",
+      "type": "class",
+      "name": "LittleEndianInputStream",
+      "filePath": "src/jx/formats/LittleEndianInputStream.java",
+      "startLine": 10,
+      "endLine": 90
+    },
+    {
+      "id": "3ec29ba407ba7",
+      "type": "class",
+      "name": "LittleEndianOutputStream",
+      "filePath": "src/jx/formats/LittleEndianOutputStream.java",
+      "startLine": 10,
+      "endLine": 54
+    },
+    {
+      "id": "601a08e5fe45e",
+      "type": "class",
+      "name": "ClippingRectangle",
+      "filePath": "src/jx/framebuffer/ClippingRectangle.java",
+      "startLine": 3,
+      "endLine": 27
+    },
+    {
+      "id": "9b0f8f8bae6778",
+      "type": "class",
+      "name": "ClippingTransformer",
+      "filePath": "src/jx/framebuffer/ClippingTransformer.java",
+      "startLine": 3,
+      "endLine": 5
+    },
+    {
+      "id": "89506ae48b2048",
+      "type": "class",
+      "name": "InterlacedFramebuffer",
+      "filePath": "src/jx/framebuffer/InterlacedFramebuffer.java",
+      "startLine": 5,
+      "endLine": 64
+    },
+    {
+      "id": "11cc1a0727ecc8",
+      "type": "class",
+      "name": "MemoryFramebuffer",
+      "filePath": "src/jx/framebuffer/MemoryFramebuffer.java",
+      "startLine": 5,
+      "endLine": 27
+    },
+    {
+      "id": "759ff3da079ee",
+      "type": "class",
+      "name": "PackedFramebuffer",
+      "filePath": "src/jx/framebuffer/PackedFramebuffer.java",
+      "startLine": 9,
+      "endLine": 23
+    },
+    {
+      "id": "135aa6ee12fa08",
+      "type": "class",
+      "name": "AlreadyMountedException",
+      "filePath": "src/jx/fs/AlreadyMountedException.java",
+      "startLine": 3,
+      "endLine": 11
+    },
+    {
+      "id": "553fd467f56468",
+      "type": "class",
+      "name": "AuditRecord",
+      "filePath": "src/jx/fs/auditfs/AuditRecord.java",
+      "startLine": 10,
+      "endLine": 70
+    },
+    {
+      "id": "8e134f90ec3c78",
+      "type": "class",
+      "name": "AuditStore",
+      "filePath": "src/jx/fs/auditfs/AuditStore.java",
+      "startLine": 6,
+      "endLine": 86
+    },
+    {
+      "id": "5a30a30238aa8",
+      "type": "class",
+      "name": "BufferCache",
+      "filePath": "src/jx/fs/buffercache/BufferCache.java",
+      "startLine": 8,
+      "endLine": 134
+    },
+    {
+      "id": "a2aa3ced1374f",
+      "type": "class",
+      "name": "BufferHead",
+      "filePath": "src/jx/fs/buffercache/BufferHead.java",
+      "startLine": 5,
+      "endLine": 37
+    },
+    {
+      "id": "310a699321143",
+      "type": "class",
+      "name": "DeviceNaming",
+      "filePath": "src/jx/fs/DeviceNaming.java",
+      "startLine": 3,
+      "endLine": 46
+    },
+    {
+      "id": "24d4896ee92b98",
+      "type": "class",
+      "name": "DirectoryImpl",
+      "filePath": "src/jx/fs/DirectoryImpl.java",
+      "startLine": 4,
+      "endLine": 86
+    },
+    {
+      "id": "1555620117103",
+      "type": "class",
+      "name": "DirNotEmptyException",
+      "filePath": "src/jx/fs/DirNotEmptyException.java",
+      "startLine": 6,
+      "endLine": 14
+    },
+    {
+      "id": "65eb68a8d536",
+      "type": "class",
+      "name": "EXT2Attribute",
+      "filePath": "src/jx/fs/EXT2Attribute.java",
+      "startLine": 3,
+      "endLine": 22
+    },
+    {
+      "id": "f5deb70ac10bc8",
+      "type": "class",
+      "name": "EXT2Permission",
+      "filePath": "src/jx/fs/EXT2Permission.java",
+      "startLine": 3,
+      "endLine": 50
+    },
+    {
+      "id": "e4b47ee903d2d8",
+      "type": "class",
+      "name": "FileException",
+      "filePath": "src/jx/fs/FileException.java",
+      "startLine": 3,
+      "endLine": 4
+    }
+  ],
+  "edges": [
+    {
+      "source": "6738437b6ddb38",
+      "target": "8bb4bc227af948",
+      "type": "contains"
+    },
+    {
+      "source": "565d892188b8e",
+      "target": "c0e688399848b",
+      "type": "contains"
+    },
+    {
+      "source": "82f610ea142ed8",
+      "target": "2c27b8ceeb5298",
+      "type": "contains"
+    },
+    {
+      "source": "5148950bc6cd68",
+      "target": "3ec29ba407ba7",
+      "type": "contains"
+    },
+    {
+      "source": "4331546ecbfd5",
+      "target": "601a08e5fe45e",
+      "type": "contains"
+    },
+    {
+      "source": "6a2bbe180db938",
+      "target": "9b0f8f8bae6778",
+      "type": "contains"
+    },
+    {
+      "source": "852a935860db7",
+      "target": "89506ae48b2048",
+      "type": "contains"
+    },
+    {
+      "source": "094201cc86b658",
+      "target": "11cc1a0727ecc8",
+      "type": "contains"
+    },
+    {
+      "source": "5aa1cd072ad5b8",
+      "target": "759ff3da079ee",
+      "type": "contains"
+    },
+    {
+      "source": "1bca3f223afbc",
+      "target": "135aa6ee12fa08",
+      "type": "contains"
+    },
+    {
+      "source": "a7cd67cd4d6ab",
+      "target": "553fd467f56468",
+      "type": "contains"
+    },
+    {
+      "source": "5f1493c6272a",
+      "target": "8e134f90ec3c78",
+      "type": "contains"
+    },
+    {
+      "source": "5d2625bfc822c8",
+      "target": "5a30a30238aa8",
+      "type": "contains"
+    },
+    {
+      "source": "e241dec562bab8",
+      "target": "a2aa3ced1374f",
+      "type": "contains"
+    },
+    {
+      "source": "b085bf75847a1",
+      "target": "310a699321143",
+      "type": "contains"
+    },
+    {
+      "source": "0d4863c33b67d",
+      "target": "24d4896ee92b98",
+      "type": "contains"
+    },
+    {
+      "source": "bc75d40370aca",
+      "target": "1555620117103",
+      "type": "contains"
+    },
+    {
+      "source": "a10fec206406a",
+      "target": "65eb68a8d536",
+      "type": "contains"
+    },
+    {
+      "source": "cd17f3a0db8a28",
+      "target": "f5deb70ac10bc8",
+      "type": "contains"
+    },
+    {
+      "source": "579e7e770caf9",
+      "target": "e4b47ee903d2d8",
+      "type": "contains"
+    }
+  ]
+}

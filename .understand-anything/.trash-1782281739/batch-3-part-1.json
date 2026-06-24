@@ -1,0 +1,1433 @@
+{
+  "schemaVersion": 1,
+  "batchIndex": 3,
+  "part": 1,
+  "nodes": [
+    {
+      "id": "cls:src/jx/fs/ExtendedFileSystemInterface.java:ExtendedFileSystemInterface",
+      "type": "class",
+      "label": "ExtendedFileSystemInterface",
+      "properties": {
+        "path": "src/jx/fs/ExtendedFileSystemInterface.java",
+        "name": "ExtendedFileSystemInterface",
+        "startLine": 7,
+        "endLine": 100,
+        "numMethods": 12
+      }
+    },
+    {
+      "id": "cls:src/jx/fs/FSObjectImpl.java:FSObjectImpl",
+      "type": "class",
+      "label": "FSObjectImpl",
+      "properties": {
+        "path": "src/jx/fs/FSObjectImpl.java",
+        "name": "FSObjectImpl",
+        "startLine": 3,
+        "endLine": 72,
+        "numMethods": 11
+      }
+    },
+    {
+      "id": "cls:src/jx/fs/ReadOnlyDirectoryImpl.java:ReadOnlyDirectoryImpl",
+      "type": "class",
+      "label": "ReadOnlyDirectoryImpl",
+      "properties": {
+        "path": "src/jx/fs/ReadOnlyDirectoryImpl.java",
+        "name": "ReadOnlyDirectoryImpl",
+        "startLine": 3,
+        "endLine": 69,
+        "numMethods": 9
+      }
+    },
+    {
+      "id": "cls:src/jx/fs/ReadOnlyRegularFileImpl.java:ReadOnlyRegularFileImpl",
+      "type": "class",
+      "label": "ReadOnlyRegularFileImpl",
+      "properties": {
+        "path": "src/jx/fs/ReadOnlyRegularFileImpl.java",
+        "name": "ReadOnlyRegularFileImpl",
+        "startLine": 6,
+        "endLine": 53,
+        "numMethods": 5
+      }
+    },
+    {
+      "id": "cls:src/jx/fs/RegularFileImpl.java:RegularFileImpl",
+      "type": "class",
+      "label": "RegularFileImpl",
+      "properties": {
+        "path": "src/jx/fs/RegularFileImpl.java",
+        "name": "RegularFileImpl",
+        "startLine": 5,
+        "endLine": 80,
+        "numMethods": 8
+      }
+    },
+    {
+      "id": "file:src/jx/concurrent/Callable.java",
+      "type": "file",
+      "label": "Callable.java",
+      "properties": {
+        "path": "src/jx/concurrent/Callable.java",
+        "language": "java",
+        "sizeLines": 20,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/jx/concurrent/ConcurrentMap.java",
+      "type": "file",
+      "label": "ConcurrentMap.java",
+      "properties": {
+        "path": "src/jx/concurrent/ConcurrentMap.java",
+        "language": "java",
+        "sizeLines": 12,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/jx/concurrent/CopyOnWriteArrayList.java",
+      "type": "file",
+      "label": "CopyOnWriteArrayList.java",
+      "properties": {
+        "path": "src/jx/concurrent/CopyOnWriteArrayList.java",
+        "language": "java",
+        "sizeLines": 56,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/jx/fs/ExtendedFileSystemInterface.java",
+      "type": "file",
+      "label": "ExtendedFileSystemInterface.java",
+      "properties": {
+        "path": "src/jx/fs/ExtendedFileSystemInterface.java",
+        "language": "java",
+        "sizeLines": 20,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/jx/fs/FSObjectImpl.java",
+      "type": "file",
+      "label": "FSObjectImpl.java",
+      "properties": {
+        "path": "src/jx/fs/FSObjectImpl.java",
+        "language": "java",
+        "sizeLines": 233,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/jx/fs/ReadOnlyDirectoryImpl.java",
+      "type": "file",
+      "label": "ReadOnlyDirectoryImpl.java",
+      "properties": {
+        "path": "src/jx/fs/ReadOnlyDirectoryImpl.java",
+        "language": "java",
+        "sizeLines": 92,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/jx/fs/ReadOnlyRegularFileImpl.java",
+      "type": "file",
+      "label": "ReadOnlyRegularFileImpl.java",
+      "properties": {
+        "path": "src/jx/fs/ReadOnlyRegularFileImpl.java",
+        "language": "java",
+        "sizeLines": 36,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/jx/fs/RegularFileImpl.java",
+      "type": "file",
+      "label": "RegularFileImpl.java",
+      "properties": {
+        "path": "src/jx/fs/RegularFileImpl.java",
+        "language": "java",
+        "sizeLines": 46,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/ExtendedFileSystemInterface.java:ExtendedFileSystemInterface",
+      "type": "function",
+      "label": "ExtendedFileSystemInterface",
+      "properties": {
+        "path": "src/jx/fs/ExtendedFileSystemInterface.java",
+        "name": "ExtendedFileSystemInterface",
+        "startLine": 12,
+        "endLine": 16,
+        "params": [
+          "fs"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/ExtendedFileSystemInterface.java:create",
+      "type": "function",
+      "label": "create",
+      "properties": {
+        "path": "src/jx/fs/ExtendedFileSystemInterface.java",
+        "name": "create",
+        "startLine": 44,
+        "endLine": 54,
+        "params": [
+          "perm",
+          "path"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/ExtendedFileSystemInterface.java:filename",
+      "type": "function",
+      "label": "filename",
+      "properties": {
+        "path": "src/jx/fs/ExtendedFileSystemInterface.java",
+        "name": "filename",
+        "startLine": 56,
+        "endLine": 60,
+        "params": [
+          "path"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/ExtendedFileSystemInterface.java:getExtFileSystemInterface",
+      "type": "function",
+      "label": "getExtFileSystemInterface",
+      "properties": {
+        "path": "src/jx/fs/ExtendedFileSystemInterface.java",
+        "name": "getExtFileSystemInterface",
+        "startLine": 18,
+        "endLine": 22,
+        "params": [
+          "name"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/ExtendedFileSystemInterface.java:locate",
+      "type": "function",
+      "label": "locate",
+      "properties": {
+        "path": "src/jx/fs/ExtendedFileSystemInterface.java",
+        "name": "locate",
+        "startLine": 66,
+        "endLine": 91,
+        "params": [
+          "dir",
+          "path"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/ExtendedFileSystemInterface.java:mount",
+      "type": "function",
+      "label": "mount",
+      "properties": {
+        "path": "src/jx/fs/ExtendedFileSystemInterface.java",
+        "name": "mount",
+        "startLine": 93,
+        "endLine": 95,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/ExtendedFileSystemInterface.java:openRO",
+      "type": "function",
+      "label": "openRO",
+      "properties": {
+        "path": "src/jx/fs/ExtendedFileSystemInterface.java",
+        "name": "openRO",
+        "startLine": 28,
+        "endLine": 32,
+        "params": [
+          "path"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/ExtendedFileSystemInterface.java:openRW",
+      "type": "function",
+      "label": "openRW",
+      "properties": {
+        "path": "src/jx/fs/ExtendedFileSystemInterface.java",
+        "name": "openRW",
+        "startLine": 34,
+        "endLine": 38,
+        "params": [
+          "path"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/ExtendedFileSystemInterface.java:setSeparator",
+      "type": "function",
+      "label": "setSeparator",
+      "properties": {
+        "path": "src/jx/fs/ExtendedFileSystemInterface.java",
+        "name": "setSeparator",
+        "startLine": 24,
+        "endLine": 26,
+        "params": [
+          "separator"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/ExtendedFileSystemInterface.java:unmount",
+      "type": "function",
+      "label": "unmount",
+      "properties": {
+        "path": "src/jx/fs/ExtendedFileSystemInterface.java",
+        "name": "unmount",
+        "startLine": 97,
+        "endLine": 99,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FSObjectImpl.java:FSObjectImpl",
+      "type": "function",
+      "label": "FSObjectImpl",
+      "properties": {
+        "path": "src/jx/fs/FSObjectImpl.java",
+        "name": "FSObjectImpl",
+        "startLine": 15,
+        "endLine": 23,
+        "params": [
+          "fs_impl",
+          "fs",
+          "parent",
+          "inode"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FSObjectImpl.java:close",
+      "type": "function",
+      "label": "close",
+      "properties": {
+        "path": "src/jx/fs/FSObjectImpl.java",
+        "name": "close",
+        "startLine": 25,
+        "endLine": 30,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FSObjectImpl.java:getAttribute",
+      "type": "function",
+      "label": "getAttribute",
+      "properties": {
+        "path": "src/jx/fs/FSObjectImpl.java",
+        "name": "getAttribute",
+        "startLine": 58,
+        "endLine": 62,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FSObjectImpl.java:getFileSystem",
+      "type": "function",
+      "label": "getFileSystem",
+      "properties": {
+        "path": "src/jx/fs/FSObjectImpl.java",
+        "name": "getFileSystem",
+        "startLine": 34,
+        "endLine": 37,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FSObjectImpl.java:getLength",
+      "type": "function",
+      "label": "getLength",
+      "properties": {
+        "path": "src/jx/fs/FSObjectImpl.java",
+        "name": "getLength",
+        "startLine": 12,
+        "endLine": 13,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FSObjectImpl.java:getPermission",
+      "type": "function",
+      "label": "getPermission",
+      "properties": {
+        "path": "src/jx/fs/FSObjectImpl.java",
+        "name": "getPermission",
+        "startLine": 53,
+        "endLine": 56,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FSObjectImpl.java:hashCode",
+      "type": "function",
+      "label": "hashCode",
+      "properties": {
+        "path": "src/jx/fs/FSObjectImpl.java",
+        "name": "hashCode",
+        "startLine": 64,
+        "endLine": 71,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FSObjectImpl.java:isDirectory",
+      "type": "function",
+      "label": "isDirectory",
+      "properties": {
+        "path": "src/jx/fs/FSObjectImpl.java",
+        "name": "isDirectory",
+        "startLine": 44,
+        "endLine": 47,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FSObjectImpl.java:isExecuteable",
+      "type": "function",
+      "label": "isExecuteable",
+      "properties": {
+        "path": "src/jx/fs/FSObjectImpl.java",
+        "name": "isExecuteable",
+        "startLine": 49,
+        "endLine": 51,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FSObjectImpl.java:isFile",
+      "type": "function",
+      "label": "isFile",
+      "properties": {
+        "path": "src/jx/fs/FSObjectImpl.java",
+        "name": "isFile",
+        "startLine": 39,
+        "endLine": 42,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/FSObjectImpl.java:sync",
+      "type": "function",
+      "label": "sync",
+      "properties": {
+        "path": "src/jx/fs/FSObjectImpl.java",
+        "name": "sync",
+        "startLine": 32,
+        "endLine": 32,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/ReadOnlyDirectoryImpl.java:ReadOnlyDirectoryImpl",
+      "type": "function",
+      "label": "ReadOnlyDirectoryImpl",
+      "properties": {
+        "path": "src/jx/fs/ReadOnlyDirectoryImpl.java",
+        "name": "ReadOnlyDirectoryImpl",
+        "startLine": 5,
+        "endLine": 7,
+        "params": [
+          "impl",
+          "fs",
+          "parent",
+          "inode"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/ReadOnlyDirectoryImpl.java:close",
+      "type": "function",
+      "label": "close",
+      "properties": {
+        "path": "src/jx/fs/ReadOnlyDirectoryImpl.java",
+        "name": "close",
+        "startLine": 17,
+        "endLine": 21,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/ReadOnlyDirectoryImpl.java:getLength",
+      "type": "function",
+      "label": "getLength",
+      "properties": {
+        "path": "src/jx/fs/ReadOnlyDirectoryImpl.java",
+        "name": "getLength",
+        "startLine": 23,
+        "endLine": 24,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/ReadOnlyDirectoryImpl.java:getParent",
+      "type": "function",
+      "label": "getParent",
+      "properties": {
+        "path": "src/jx/fs/ReadOnlyDirectoryImpl.java",
+        "name": "getParent",
+        "startLine": 9,
+        "endLine": 9,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/ReadOnlyDirectoryImpl.java:isValid",
+      "type": "function",
+      "label": "isValid",
+      "properties": {
+        "path": "src/jx/fs/ReadOnlyDirectoryImpl.java",
+        "name": "isValid",
+        "startLine": 65,
+        "endLine": 68,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/ReadOnlyDirectoryImpl.java:list",
+      "type": "function",
+      "label": "list",
+      "properties": {
+        "path": "src/jx/fs/ReadOnlyDirectoryImpl.java",
+        "name": "list",
+        "startLine": 11,
+        "endLine": 15,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/ReadOnlyDirectoryImpl.java:openRO",
+      "type": "function",
+      "label": "openRO",
+      "properties": {
+        "path": "src/jx/fs/ReadOnlyDirectoryImpl.java",
+        "name": "openRO",
+        "startLine": 26,
+        "endLine": 41,
+        "params": [
+          "filename"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/ReadOnlyDirectoryImpl.java:openRW",
+      "type": "function",
+      "label": "openRW",
+      "properties": {
+        "path": "src/jx/fs/ReadOnlyDirectoryImpl.java",
+        "name": "openRW",
+        "startLine": 43,
+        "endLine": 58,
+        "params": [
+          "filename"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/ReadOnlyRegularFileImpl.java:ReadOnlyRegularFileImpl",
+      "type": "function",
+      "label": "ReadOnlyRegularFileImpl",
+      "properties": {
+        "path": "src/jx/fs/ReadOnlyRegularFileImpl.java",
+        "name": "ReadOnlyRegularFileImpl",
+        "startLine": 9,
+        "endLine": 11,
+        "params": [
+          "impl",
+          "fs",
+          "parent",
+          "inode"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/ReadOnlyRegularFileImpl.java:getLength",
+      "type": "function",
+      "label": "getLength",
+      "properties": {
+        "path": "src/jx/fs/ReadOnlyRegularFileImpl.java",
+        "name": "getLength",
+        "startLine": 33,
+        "endLine": 42,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/ReadOnlyRegularFileImpl.java:isValid",
+      "type": "function",
+      "label": "isValid",
+      "properties": {
+        "path": "src/jx/fs/ReadOnlyRegularFileImpl.java",
+        "name": "isValid",
+        "startLine": 49,
+        "endLine": 52,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/ReadOnlyRegularFileImpl.java:read",
+      "type": "function",
+      "label": "read",
+      "properties": {
+        "path": "src/jx/fs/ReadOnlyRegularFileImpl.java",
+        "name": "read",
+        "startLine": 23,
+        "endLine": 31,
+        "params": [
+          "pos",
+          "mem",
+          "off",
+          "len"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/RegularFileImpl.java:RegularFileImpl",
+      "type": "function",
+      "label": "RegularFileImpl",
+      "properties": {
+        "path": "src/jx/fs/RegularFileImpl.java",
+        "name": "RegularFileImpl",
+        "startLine": 7,
+        "endLine": 9,
+        "params": [
+          "impl",
+          "fs",
+          "parent",
+          "inode"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/RegularFileImpl.java:append",
+      "type": "function",
+      "label": "append",
+      "properties": {
+        "path": "src/jx/fs/RegularFileImpl.java",
+        "name": "append",
+        "startLine": 50,
+        "endLine": 53,
+        "params": [
+          "mem",
+          "off",
+          "len"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/RegularFileImpl.java:getLength",
+      "type": "function",
+      "label": "getLength",
+      "properties": {
+        "path": "src/jx/fs/RegularFileImpl.java",
+        "name": "getLength",
+        "startLine": 66,
+        "endLine": 69,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/RegularFileImpl.java:isValid",
+      "type": "function",
+      "label": "isValid",
+      "properties": {
+        "path": "src/jx/fs/RegularFileImpl.java",
+        "name": "isValid",
+        "startLine": 76,
+        "endLine": 79,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/RegularFileImpl.java:read",
+      "type": "function",
+      "label": "read",
+      "properties": {
+        "path": "src/jx/fs/RegularFileImpl.java",
+        "name": "read",
+        "startLine": 21,
+        "endLine": 24,
+        "params": [
+          "pos",
+          "mem",
+          "off",
+          "len"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/RegularFileImpl.java:setLength",
+      "type": "function",
+      "label": "setLength",
+      "properties": {
+        "path": "src/jx/fs/RegularFileImpl.java",
+        "name": "setLength",
+        "startLine": 61,
+        "endLine": 64,
+        "params": [
+          "newLength"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/RegularFileImpl.java:write",
+      "type": "function",
+      "label": "write",
+      "properties": {
+        "path": "src/jx/fs/RegularFileImpl.java",
+        "name": "write",
+        "startLine": 36,
+        "endLine": 39,
+        "params": [
+          "pos",
+          "mem",
+          "off",
+          "len"
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/jx/fs/ExtendedFileSystemInterface.java",
+      "target": "cls:src/jx/fs/ExtendedFileSystemInterface.java:ExtendedFileSystemInterface",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/ExtendedFileSystemInterface.java",
+      "target": "cls:src/jx/fs/ExtendedFileSystemInterface.java:ExtendedFileSystemInterface",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/ExtendedFileSystemInterface.java",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:ExtendedFileSystemInterface",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/ExtendedFileSystemInterface.java",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:ExtendedFileSystemInterface",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/ExtendedFileSystemInterface.java",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:getExtFileSystemInterface",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/ExtendedFileSystemInterface.java",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:getExtFileSystemInterface",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/ExtendedFileSystemInterface.java",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:setSeparator",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/ExtendedFileSystemInterface.java",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:setSeparator",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/ExtendedFileSystemInterface.java",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:openRO",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/ExtendedFileSystemInterface.java",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:openRO",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/ExtendedFileSystemInterface.java",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:openRW",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/ExtendedFileSystemInterface.java",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:openRW",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/ExtendedFileSystemInterface.java",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:create",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/ExtendedFileSystemInterface.java",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:create",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/ExtendedFileSystemInterface.java",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:create",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/ExtendedFileSystemInterface.java",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:create",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/ExtendedFileSystemInterface.java",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:filename",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/ExtendedFileSystemInterface.java",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:filename",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/ExtendedFileSystemInterface.java",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:locate",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/ExtendedFileSystemInterface.java",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:locate",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/ExtendedFileSystemInterface.java",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:locate",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/ExtendedFileSystemInterface.java",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:locate",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/ExtendedFileSystemInterface.java",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:mount",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/ExtendedFileSystemInterface.java",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:mount",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/ExtendedFileSystemInterface.java",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:unmount",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/ExtendedFileSystemInterface.java",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:unmount",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/ExtendedFileSystemInterface.java:openRO",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:locate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/ExtendedFileSystemInterface.java:openRO",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:filename",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/ExtendedFileSystemInterface.java:openRW",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:locate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/ExtendedFileSystemInterface.java:openRW",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:filename",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/ExtendedFileSystemInterface.java:create",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:create",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/ExtendedFileSystemInterface.java:create",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:locate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/ExtendedFileSystemInterface.java:create",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:filename",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/ExtendedFileSystemInterface.java:locate",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:locate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyRegularFileImpl.java",
+      "target": "cls:src/jx/fs/ReadOnlyRegularFileImpl.java:ReadOnlyRegularFileImpl",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyRegularFileImpl.java",
+      "target": "cls:src/jx/fs/ReadOnlyRegularFileImpl.java:ReadOnlyRegularFileImpl",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyRegularFileImpl.java",
+      "target": "fn:src/jx/fs/ReadOnlyRegularFileImpl.java:ReadOnlyRegularFileImpl",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyRegularFileImpl.java",
+      "target": "fn:src/jx/fs/ReadOnlyRegularFileImpl.java:ReadOnlyRegularFileImpl",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyRegularFileImpl.java",
+      "target": "fn:src/jx/fs/ReadOnlyRegularFileImpl.java:read",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyRegularFileImpl.java",
+      "target": "fn:src/jx/fs/ReadOnlyRegularFileImpl.java:read",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyRegularFileImpl.java",
+      "target": "fn:src/jx/fs/ReadOnlyRegularFileImpl.java:getLength",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyRegularFileImpl.java",
+      "target": "fn:src/jx/fs/ReadOnlyRegularFileImpl.java:getLength",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyRegularFileImpl.java",
+      "target": "fn:src/jx/fs/ReadOnlyRegularFileImpl.java:isValid",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyRegularFileImpl.java",
+      "target": "fn:src/jx/fs/ReadOnlyRegularFileImpl.java:isValid",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyRegularFileImpl.java",
+      "target": "file:src/jx/fs/FSObjectImpl.java",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyDirectoryImpl.java",
+      "target": "cls:src/jx/fs/ReadOnlyDirectoryImpl.java:ReadOnlyDirectoryImpl",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyDirectoryImpl.java",
+      "target": "cls:src/jx/fs/ReadOnlyDirectoryImpl.java:ReadOnlyDirectoryImpl",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyDirectoryImpl.java",
+      "target": "fn:src/jx/fs/ReadOnlyDirectoryImpl.java:ReadOnlyDirectoryImpl",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyDirectoryImpl.java",
+      "target": "fn:src/jx/fs/ReadOnlyDirectoryImpl.java:ReadOnlyDirectoryImpl",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyDirectoryImpl.java",
+      "target": "fn:src/jx/fs/ReadOnlyDirectoryImpl.java:getParent",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyDirectoryImpl.java",
+      "target": "fn:src/jx/fs/ReadOnlyDirectoryImpl.java:getParent",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyDirectoryImpl.java",
+      "target": "fn:src/jx/fs/ReadOnlyDirectoryImpl.java:list",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyDirectoryImpl.java",
+      "target": "fn:src/jx/fs/ReadOnlyDirectoryImpl.java:list",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyDirectoryImpl.java",
+      "target": "fn:src/jx/fs/ReadOnlyDirectoryImpl.java:close",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyDirectoryImpl.java",
+      "target": "fn:src/jx/fs/ReadOnlyDirectoryImpl.java:close",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyDirectoryImpl.java",
+      "target": "fn:src/jx/fs/ReadOnlyDirectoryImpl.java:getLength",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyDirectoryImpl.java",
+      "target": "fn:src/jx/fs/ReadOnlyDirectoryImpl.java:getLength",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyDirectoryImpl.java",
+      "target": "fn:src/jx/fs/ReadOnlyDirectoryImpl.java:openRO",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyDirectoryImpl.java",
+      "target": "fn:src/jx/fs/ReadOnlyDirectoryImpl.java:openRO",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyDirectoryImpl.java",
+      "target": "fn:src/jx/fs/ReadOnlyDirectoryImpl.java:openRW",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyDirectoryImpl.java",
+      "target": "fn:src/jx/fs/ReadOnlyDirectoryImpl.java:openRW",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyDirectoryImpl.java",
+      "target": "fn:src/jx/fs/ReadOnlyDirectoryImpl.java:isValid",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyDirectoryImpl.java",
+      "target": "fn:src/jx/fs/ReadOnlyDirectoryImpl.java:isValid",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/ReadOnlyDirectoryImpl.java",
+      "target": "file:src/jx/fs/FSObjectImpl.java",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/jx/fs/RegularFileImpl.java",
+      "target": "cls:src/jx/fs/RegularFileImpl.java:RegularFileImpl",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/RegularFileImpl.java",
+      "target": "cls:src/jx/fs/RegularFileImpl.java:RegularFileImpl",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/RegularFileImpl.java",
+      "target": "fn:src/jx/fs/RegularFileImpl.java:RegularFileImpl",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/RegularFileImpl.java",
+      "target": "fn:src/jx/fs/RegularFileImpl.java:RegularFileImpl",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/RegularFileImpl.java",
+      "target": "fn:src/jx/fs/RegularFileImpl.java:read",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/RegularFileImpl.java",
+      "target": "fn:src/jx/fs/RegularFileImpl.java:read",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/RegularFileImpl.java",
+      "target": "fn:src/jx/fs/RegularFileImpl.java:write",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/RegularFileImpl.java",
+      "target": "fn:src/jx/fs/RegularFileImpl.java:write",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/RegularFileImpl.java",
+      "target": "fn:src/jx/fs/RegularFileImpl.java:append",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/RegularFileImpl.java",
+      "target": "fn:src/jx/fs/RegularFileImpl.java:append",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/RegularFileImpl.java",
+      "target": "fn:src/jx/fs/RegularFileImpl.java:setLength",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/RegularFileImpl.java",
+      "target": "fn:src/jx/fs/RegularFileImpl.java:setLength",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/RegularFileImpl.java",
+      "target": "fn:src/jx/fs/RegularFileImpl.java:getLength",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/RegularFileImpl.java",
+      "target": "fn:src/jx/fs/RegularFileImpl.java:getLength",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/RegularFileImpl.java",
+      "target": "fn:src/jx/fs/RegularFileImpl.java:isValid",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/RegularFileImpl.java",
+      "target": "fn:src/jx/fs/RegularFileImpl.java:isValid",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/RegularFileImpl.java:append",
+      "target": "fn:src/jx/fs/RegularFileImpl.java:getLength",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/RegularFileImpl.java",
+      "target": "file:src/jx/fs/FSObjectImpl.java",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/jx/fs/FSObjectImpl.java",
+      "target": "cls:src/jx/fs/FSObjectImpl.java:FSObjectImpl",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FSObjectImpl.java",
+      "target": "cls:src/jx/fs/FSObjectImpl.java:FSObjectImpl",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FSObjectImpl.java",
+      "target": "fn:src/jx/fs/FSObjectImpl.java:getLength",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FSObjectImpl.java",
+      "target": "fn:src/jx/fs/FSObjectImpl.java:getLength",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FSObjectImpl.java",
+      "target": "fn:src/jx/fs/FSObjectImpl.java:FSObjectImpl",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FSObjectImpl.java",
+      "target": "fn:src/jx/fs/FSObjectImpl.java:FSObjectImpl",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FSObjectImpl.java",
+      "target": "fn:src/jx/fs/FSObjectImpl.java:close",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FSObjectImpl.java",
+      "target": "fn:src/jx/fs/FSObjectImpl.java:close",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FSObjectImpl.java",
+      "target": "fn:src/jx/fs/FSObjectImpl.java:sync",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FSObjectImpl.java",
+      "target": "fn:src/jx/fs/FSObjectImpl.java:sync",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FSObjectImpl.java",
+      "target": "fn:src/jx/fs/FSObjectImpl.java:getFileSystem",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FSObjectImpl.java",
+      "target": "fn:src/jx/fs/FSObjectImpl.java:getFileSystem",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FSObjectImpl.java",
+      "target": "fn:src/jx/fs/FSObjectImpl.java:isFile",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FSObjectImpl.java",
+      "target": "fn:src/jx/fs/FSObjectImpl.java:isFile",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FSObjectImpl.java",
+      "target": "fn:src/jx/fs/FSObjectImpl.java:isDirectory",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FSObjectImpl.java",
+      "target": "fn:src/jx/fs/FSObjectImpl.java:isDirectory",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FSObjectImpl.java",
+      "target": "fn:src/jx/fs/FSObjectImpl.java:isExecuteable",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FSObjectImpl.java",
+      "target": "fn:src/jx/fs/FSObjectImpl.java:isExecuteable",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FSObjectImpl.java",
+      "target": "fn:src/jx/fs/FSObjectImpl.java:getPermission",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FSObjectImpl.java",
+      "target": "fn:src/jx/fs/FSObjectImpl.java:getPermission",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FSObjectImpl.java",
+      "target": "fn:src/jx/fs/FSObjectImpl.java:getAttribute",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FSObjectImpl.java",
+      "target": "fn:src/jx/fs/FSObjectImpl.java:getAttribute",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/FSObjectImpl.java",
+      "target": "fn:src/jx/fs/FSObjectImpl.java:hashCode",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/FSObjectImpl.java",
+      "target": "fn:src/jx/fs/FSObjectImpl.java:hashCode",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/FSObjectImpl.java:close",
+      "target": "fn:src/jx/fs/FSObjectImpl.java:sync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/ExtendedFileSystemInterface.java",
+      "target": "file:src/jx/zero/LookupHelper.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "fn:src/jx/fs/ExtendedFileSystemInterface.java:ExtendedFileSystemInterface",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:fs.openRootDirectoryRW",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/ExtendedFileSystemInterface.java:getExtFileSystemInterface",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:InitialNaming.getInitialNaming",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/ExtendedFileSystemInterface.java:getExtFileSystemInterface",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:LookupHelper.waitUntilPortalAvailable",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/ExtendedFileSystemInterface.java:getExtFileSystemInterface",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:new ExtendedFileSystemInterface",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/ExtendedFileSystemInterface.java:openRO",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:dir.openRO",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/ExtendedFileSystemInterface.java:openRW",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:dir.openRW",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/ExtendedFileSystemInterface.java:create",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:ifs.getDefaultPermission",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/ExtendedFileSystemInterface.java:create",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:path.lastIndexOf",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/ExtendedFileSystemInterface.java:create",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:path.substring",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/ExtendedFileSystemInterface.java:create",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:dir.openRW",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/ExtendedFileSystemInterface.java:create",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:odir.create",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/ExtendedFileSystemInterface.java:create",
+      "target": "fn:src/jx/fs/ExtendedFileSystemInterface.java:((Directory)cwd).create",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ],
+  "metadata": {
+    "totalNodesInPart": 53,
+    "totalEdgesInPart": 120,
+    "algorithm": "file-analyzer"
+  }
+}

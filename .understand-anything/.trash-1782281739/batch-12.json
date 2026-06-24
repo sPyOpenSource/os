@@ -1,0 +1,1107 @@
+{
+  "batchIndex": 12,
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "58be5de0ebae55f7",
+      "type": "file",
+      "name": "File.java",
+      "filePath": "src/java/io/File.java",
+      "language": "java",
+      "totalLines": 286,
+      "nonEmptyLines": 229,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 32,
+        "functionCount": 40,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "6fa1f4bc040a477a",
+      "type": "class",
+      "name": "File",
+      "filePath": "src/java/io/File.java",
+      "startLine": 12,
+      "endLine": 286,
+      "methods": [
+        "File",
+        "File",
+        "File",
+        "getName",
+        "getPath",
+        "getCanonicalPath",
+        "getParent",
+        "exists",
+        "canWrite",
+        "canRead",
+        "isFile",
+        "isDirectory",
+        "isAbsolute",
+        "getAbsolutePath",
+        "lastModified",
+        "length",
+        "mkdir",
+        "renameTo",
+        "mkdirs",
+        "list",
+        "list",
+        "delete",
+        "hashCode",
+        "equals",
+        "toString",
+        "compareTo",
+        "compareTo",
+        "createNewFile",
+        "createTempFile",
+        "createTempFile",
+        "deleteOnExit",
+        "getAbsoluteFile",
+        "getCanonicalFile",
+        "getParentFile",
+        "isHidden",
+        "listFiles",
+        "listFiles",
+        "listRoots",
+        "setLastModified",
+        "setReadOnly"
+      ],
+      "properties": [
+        "name",
+        "pathName",
+        "fileName",
+        "fs",
+        "fsobj",
+        "separator",
+        "separatorChar",
+        "pathSeparator",
+        "pathSeparatorChar"
+      ]
+    },
+    {
+      "id": "ea943e04acbb368f",
+      "type": "file",
+      "name": "FileInputStream.java",
+      "filePath": "src/java/io/FileInputStream.java",
+      "language": "java",
+      "totalLines": 68,
+      "nonEmptyLines": 55,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 11,
+        "functionCount": 11,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "e1f3a6525db0942e",
+      "type": "class",
+      "name": "FileInputStream",
+      "filePath": "src/java/io/FileInputStream.java",
+      "startLine": 3,
+      "endLine": 68,
+      "methods": [
+        "finalize",
+        "close",
+        "getFD",
+        "available",
+        "read",
+        "read",
+        "read",
+        "skip",
+        "FileInputStream",
+        "FileInputStream",
+        "FileInputStream"
+      ],
+      "properties": [
+        "fd"
+      ]
+    },
+    {
+      "id": "53ffca1b016ac160",
+      "type": "file",
+      "name": "FileNotFoundException.java",
+      "filePath": "src/java/io/FileNotFoundException.java",
+      "language": "java",
+      "totalLines": 10,
+      "nonEmptyLines": 9,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "3520355345e691db",
+      "type": "class",
+      "name": "FileNotFoundException",
+      "filePath": "src/java/io/FileNotFoundException.java",
+      "startLine": 3,
+      "endLine": 10,
+      "methods": [
+        "FileNotFoundException",
+        "FileNotFoundException"
+      ],
+      "properties": []
+    },
+    {
+      "id": "367335229ac376bf",
+      "type": "file",
+      "name": "PrintStream.java",
+      "filePath": "src/java/io/PrintStream.java",
+      "language": "java",
+      "totalLines": 191,
+      "nonEmptyLines": 162,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 22,
+        "functionCount": 21,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "eda3bfe653571e4b",
+      "type": "class",
+      "name": "PrintStream",
+      "filePath": "src/java/io/PrintStream.java",
+      "startLine": 3,
+      "endLine": 191,
+      "methods": [
+        "PrintStream",
+        "checkError",
+        "close",
+        "flush",
+        "write",
+        "write",
+        "print",
+        "print",
+        "print",
+        "print",
+        "print",
+        "print",
+        "print",
+        "println",
+        "println",
+        "println",
+        "println",
+        "println",
+        "println",
+        "println",
+        "println"
+      ],
+      "properties": [
+        "error",
+        "autoflush"
+      ]
+    },
+    {
+      "id": "ddcbf9fad8d1badc",
+      "type": "file",
+      "name": "PrintWriter.java",
+      "filePath": "src/java/io/PrintWriter.java",
+      "language": "java",
+      "totalLines": 541,
+      "nonEmptyLines": 501,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 32,
+        "functionCount": 32,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "a2819e8f39ea15a0",
+      "type": "class",
+      "name": "PrintWriter",
+      "filePath": "src/java/io/PrintWriter.java",
+      "startLine": 34,
+      "endLine": 541,
+      "methods": [
+        "PrintWriter",
+        "PrintWriter",
+        "PrintWriter",
+        "PrintWriter",
+        "setError",
+        "checkError",
+        "flush",
+        "close",
+        "print",
+        "print",
+        "print",
+        "print",
+        "print",
+        "print",
+        "print",
+        "print",
+        "print",
+        "println",
+        "println",
+        "println",
+        "println",
+        "println",
+        "println",
+        "println",
+        "println",
+        "println",
+        "println",
+        "write",
+        "write",
+        "write",
+        "write",
+        "write"
+      ],
+      "properties": [
+        "autoflush",
+        "error",
+        "out",
+        "line_separator"
+      ]
+    },
+    {
+      "id": "35219e9e0cd3faac",
+      "type": "file",
+      "name": "PushbackInputStream.java",
+      "filePath": "src/java/io/PushbackInputStream.java",
+      "language": "java",
+      "totalLines": 78,
+      "nonEmptyLines": 67,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "bff6297b3e9dc33e",
+      "type": "class",
+      "name": "PushbackInputStream",
+      "filePath": "src/java/io/PushbackInputStream.java",
+      "startLine": 3,
+      "endLine": 77,
+      "methods": [
+        "available",
+        "markSupported",
+        "read",
+        "read",
+        "unread",
+        "PushbackInputStream",
+        "PushbackInputStream"
+      ],
+      "properties": [
+        "pushBack"
+      ]
+    },
+    {
+      "id": "718ad4cd63252a10",
+      "type": "file",
+      "name": "System.java",
+      "filePath": "src/java/lang/System.java",
+      "language": "java",
+      "totalLines": 249,
+      "nonEmptyLines": 218,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 17,
+        "functionCount": 14,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "396376271c1a6ec7",
+      "type": "class",
+      "name": "System",
+      "filePath": "src/java/lang/System.java",
+      "startLine": 19,
+      "endLine": 249,
+      "methods": [
+        "arraycopy",
+        "setProperties",
+        "getProperties",
+        "getProperty",
+        "getProperty",
+        "currentTimeMillis",
+        "exit",
+        "gc",
+        "load",
+        "loadLibrary",
+        "identityHashCode",
+        "setDefaultProperties",
+        "getSecurityManager",
+        "nanoTime"
+      ],
+      "properties": [
+        "in",
+        "out",
+        "err",
+        "properties",
+        "usePlugin",
+        "clock"
+      ]
+    },
+    {
+      "id": "6ea8f8b2cc36c869",
+      "type": "file",
+      "name": "ThreadGroup.java",
+      "filePath": "src/java/lang/ThreadGroup.java",
+      "language": "java",
+      "totalLines": 404,
+      "nonEmptyLines": 374,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 24,
+        "functionCount": 31,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "858d277fc98aef53",
+      "type": "class",
+      "name": "ThreadGroup",
+      "filePath": "src/java/lang/ThreadGroup.java",
+      "startLine": 5,
+      "endLine": 404,
+      "methods": [
+        "ThreadGroup",
+        "ThreadGroup",
+        "getName",
+        "getParent",
+        "getMaxPriority",
+        "isDaemon",
+        "isDestroyed",
+        "setDaemon",
+        "parentOf",
+        "activeCount",
+        "enumerate",
+        "enumerate",
+        "enumerate",
+        "activeGroupCount",
+        "enumerate",
+        "enumerate",
+        "enumerate",
+        "stop",
+        "suspend",
+        "stopOrSuspend",
+        "resume",
+        "destroy",
+        "add",
+        "remove",
+        "add",
+        "remove",
+        "list",
+        "list",
+        "uncaughtException",
+        "allowThreadSuspension",
+        "toString"
+      ],
+      "properties": [
+        "parent",
+        "name",
+        "maxPriority",
+        "destroyed",
+        "daemon",
+        "vmAllowSuspension",
+        "nthreads",
+        "threads",
+        "ngroups",
+        "groups"
+      ]
+    },
+    {
+      "id": "f7754aebc5170e26",
+      "type": "file",
+      "name": "NoSuchProviderException.java",
+      "filePath": "src/java/security/NoSuchProviderException.java",
+      "language": "java",
+      "totalLines": 66,
+      "nonEmptyLines": 53,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "140cae5afed4a95b",
+      "type": "class",
+      "name": "NoSuchProviderException",
+      "filePath": "src/java/security/NoSuchProviderException.java",
+      "startLine": 38,
+      "endLine": 65,
+      "methods": [
+        "NoSuchProviderException",
+        "NoSuchProviderException"
+      ],
+      "properties": []
+    },
+    {
+      "id": "3de07e805f81b837",
+      "type": "file",
+      "name": "PrivilegedActionException.java",
+      "filePath": "src/java/security/PrivilegedActionException.java",
+      "language": "java",
+      "totalLines": 134,
+      "nonEmptyLines": 108,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "f61f3af8abad2ad5",
+      "type": "class",
+      "name": "PrivilegedActionException",
+      "filePath": "src/java/security/PrivilegedActionException.java",
+      "startLine": 44,
+      "endLine": 133,
+      "methods": [
+        "PrivilegedActionException",
+        "getException",
+        "printStackTrace",
+        "printStackTrace",
+        "printStackTrace"
+      ],
+      "properties": [
+        "e"
+      ]
+    },
+    {
+      "id": "45c26be49bb013b7",
+      "type": "file",
+      "name": "Security.java",
+      "filePath": "src/java/security/Security.java",
+      "language": "java",
+      "totalLines": 302,
+      "nonEmptyLines": 237,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 9,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "34c82c1b08110b20",
+      "type": "class",
+      "name": "Security",
+      "filePath": "src/java/security/Security.java",
+      "startLine": 44,
+      "endLine": 302,
+      "methods": [
+        "getAlgorithmProperty",
+        "insertProviderAt",
+        "addProvider",
+        "removeProvider",
+        "getProviders",
+        "getProvider",
+        "getProperty",
+        "setProperty"
+      ],
+      "properties": [
+        "providers",
+        "providerCount",
+        "secprops"
+      ]
+    },
+    {
+      "id": "6abe7263e90e6d11",
+      "type": "file",
+      "name": "CertificateFactory.java",
+      "filePath": "src/java/security/cert/CertificateFactory.java",
+      "language": "java",
+      "totalLines": 259,
+      "nonEmptyLines": 200,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 9,
+        "functionCount": 10,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "573011e164c8c003",
+      "type": "class",
+      "name": "CertificateFactory",
+      "filePath": "src/java/security/cert/CertificateFactory.java",
+      "startLine": 48,
+      "endLine": 259,
+      "methods": [
+        "CertificateFactory",
+        "getInstance",
+        "getInstance",
+        "getInstance",
+        "getProvider",
+        "getType",
+        "generateCertificate",
+        "generateCertificates",
+        "generateCRL",
+        "generateCRLs"
+      ],
+      "properties": [
+        "certFacSpi",
+        "provider",
+        "type"
+      ]
+    },
+    {
+      "id": "b3138203f7feb6a3",
+      "type": "file",
+      "name": "DriverManager.java",
+      "filePath": "src/java/sql/DriverManager.java",
+      "language": "java",
+      "totalLines": 389,
+      "nonEmptyLines": 328,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 15,
+        "functionCount": 15,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "a42b957cc218ac21",
+      "type": "class",
+      "name": "DriverManager",
+      "filePath": "src/java/sql/DriverManager.java",
+      "startLine": 55,
+      "endLine": 388,
+      "methods": [
+        "getLoginTimeout",
+        "setLoginTimeout",
+        "getLogWriter",
+        "setLogWriter",
+        "getLogStream",
+        "setLogStream",
+        "println",
+        "registerDriver",
+        "deregisterDriver",
+        "getDrivers",
+        "getDriver",
+        "getConnection",
+        "getConnection",
+        "getConnection",
+        "DriverManager"
+      ],
+      "properties": [
+        "log_stream",
+        "log_writer",
+        "login_timeout",
+        "drivers"
+      ]
+    },
+    {
+      "id": "3ff0f7ac7ca01c94",
+      "type": "file",
+      "name": "Properties.java",
+      "filePath": "src/java/util/Properties.java",
+      "language": "java",
+      "totalLines": 411,
+      "nonEmptyLines": 327,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 13,
+        "functionCount": 19,
+        "classCount": 2
+      }
+    },
+    {
+      "id": "39524668ca919dc6",
+      "type": "class",
+      "name": "PropertiesEnumeration",
+      "filePath": "src/java/util/Properties.java",
+      "startLine": 9,
+      "endLine": 69,
+      "methods": [
+        "next_element",
+        "hasMoreElements",
+        "nextElement",
+        "PropertiesEnumeration"
+      ],
+      "properties": [
+        "source",
+        "enume",
+        "defaults",
+        "next"
+      ]
+    },
+    {
+      "id": "a111198195c9e8e6",
+      "type": "class",
+      "name": "Properties",
+      "filePath": "src/java/util/Properties.java",
+      "startLine": 71,
+      "endLine": 410,
+      "methods": [
+        "skip_ws",
+        "skip_comment",
+        "read_key",
+        "read_hexcode",
+        "read_escape",
+        "read_value",
+        "setProperty",
+        "getProperty",
+        "getProperty",
+        "propertyNames",
+        "load",
+        "save",
+        "list",
+        "Properties",
+        "Properties"
+      ],
+      "properties": [
+        "digits",
+        "defaults"
+      ]
+    },
+    {
+      "id": "d5a7fcdf35ea70ab",
+      "type": "dependency",
+      "name": "PrintStream.java",
+      "filePath": "src/java/io/PrintStream.java"
+    },
+    {
+      "id": "049135ad61667f1f",
+      "type": "dependency",
+      "name": "Properties.java",
+      "filePath": "src/java/util/Properties.java"
+    },
+    {
+      "id": "750f265c221a4a77",
+      "type": "dependency",
+      "name": "DebugOutputStream.java",
+      "filePath": "src/jx/zero/debug/DebugOutputStream.java"
+    },
+    {
+      "id": "443d2ddd926caef8",
+      "type": "dependency",
+      "name": "PrintWriter.java",
+      "filePath": "src/java/io/PrintWriter.java"
+    },
+    {
+      "id": "60507be1dc5721ab",
+      "type": "dependency",
+      "name": "File.java",
+      "filePath": "src/java/io/File.java"
+    },
+    {
+      "id": "f58038e50738ad44",
+      "type": "dependency",
+      "name": "FileInputStream.java",
+      "filePath": "src/java/io/FileInputStream.java"
+    },
+    {
+      "id": "78500481600f84f3",
+      "type": "dependency",
+      "name": "FileNotFoundException.java",
+      "filePath": "src/java/io/FileNotFoundException.java"
+    },
+    {
+      "id": "cf934dc9c26e1eba",
+      "type": "dependency",
+      "name": "IOException.java",
+      "filePath": "src/java/io/IOException.java"
+    },
+    {
+      "id": "d3029700411727d3",
+      "type": "dependency",
+      "name": "Vector.java",
+      "filePath": "src/java/util/Vector.java"
+    },
+    {
+      "id": "30215c1c17ee87cd",
+      "type": "dependency",
+      "name": "NoSuchProviderException.java",
+      "filePath": "src/java/security/NoSuchProviderException.java"
+    },
+    {
+      "id": "a7baa49b860a0f00",
+      "type": "dependency",
+      "name": "Security.java",
+      "filePath": "src/java/security/Security.java"
+    },
+    {
+      "id": "d16d6c72863cb2bb",
+      "type": "dependency",
+      "name": "StringTokenizer.java",
+      "filePath": "src/java/util/StringTokenizer.java"
+    },
+    {
+      "id": "b6a04e1f95213228",
+      "type": "dependency",
+      "name": "PushbackInputStream.java",
+      "filePath": "src/java/io/PushbackInputStream.java"
+    },
+    {
+      "id": "1a134cde9a98fd9d",
+      "type": "dependency",
+      "name": "Throwable.java",
+      "filePath": "src/java/lang/Throwable.java"
+    },
+    {
+      "id": "2ab118ba7e14d6b8",
+      "type": "dependency",
+      "name": "Dump.java",
+      "filePath": "src/jx/zero/debug/Dump.java"
+    }
+  ],
+  "edges": [
+    {
+      "source": "58be5de0ebae55f7",
+      "target": "6fa1f4bc040a477a",
+      "type": "contains"
+    },
+    {
+      "source": "6fa1f4bc040a477a",
+      "target": "58be5de0ebae55f7",
+      "type": "exports"
+    },
+    {
+      "source": "ea943e04acbb368f",
+      "target": "e1f3a6525db0942e",
+      "type": "contains"
+    },
+    {
+      "source": "e1f3a6525db0942e",
+      "target": "ea943e04acbb368f",
+      "type": "exports"
+    },
+    {
+      "source": "53ffca1b016ac160",
+      "target": "3520355345e691db",
+      "type": "contains"
+    },
+    {
+      "source": "3520355345e691db",
+      "target": "53ffca1b016ac160",
+      "type": "exports"
+    },
+    {
+      "source": "367335229ac376bf",
+      "target": "eda3bfe653571e4b",
+      "type": "contains"
+    },
+    {
+      "source": "eda3bfe653571e4b",
+      "target": "367335229ac376bf",
+      "type": "exports"
+    },
+    {
+      "source": "ddcbf9fad8d1badc",
+      "target": "a2819e8f39ea15a0",
+      "type": "contains"
+    },
+    {
+      "source": "a2819e8f39ea15a0",
+      "target": "ddcbf9fad8d1badc",
+      "type": "exports"
+    },
+    {
+      "source": "35219e9e0cd3faac",
+      "target": "bff6297b3e9dc33e",
+      "type": "contains"
+    },
+    {
+      "source": "bff6297b3e9dc33e",
+      "target": "35219e9e0cd3faac",
+      "type": "exports"
+    },
+    {
+      "source": "718ad4cd63252a10",
+      "target": "396376271c1a6ec7",
+      "type": "contains"
+    },
+    {
+      "source": "396376271c1a6ec7",
+      "target": "718ad4cd63252a10",
+      "type": "exports"
+    },
+    {
+      "source": "6ea8f8b2cc36c869",
+      "target": "858d277fc98aef53",
+      "type": "contains"
+    },
+    {
+      "source": "858d277fc98aef53",
+      "target": "6ea8f8b2cc36c869",
+      "type": "exports"
+    },
+    {
+      "source": "f7754aebc5170e26",
+      "target": "140cae5afed4a95b",
+      "type": "contains"
+    },
+    {
+      "source": "140cae5afed4a95b",
+      "target": "f7754aebc5170e26",
+      "type": "exports"
+    },
+    {
+      "source": "3de07e805f81b837",
+      "target": "f61f3af8abad2ad5",
+      "type": "contains"
+    },
+    {
+      "source": "f61f3af8abad2ad5",
+      "target": "3de07e805f81b837",
+      "type": "exports"
+    },
+    {
+      "source": "45c26be49bb013b7",
+      "target": "34c82c1b08110b20",
+      "type": "contains"
+    },
+    {
+      "source": "34c82c1b08110b20",
+      "target": "45c26be49bb013b7",
+      "type": "exports"
+    },
+    {
+      "source": "6abe7263e90e6d11",
+      "target": "573011e164c8c003",
+      "type": "contains"
+    },
+    {
+      "source": "573011e164c8c003",
+      "target": "6abe7263e90e6d11",
+      "type": "exports"
+    },
+    {
+      "source": "b3138203f7feb6a3",
+      "target": "a42b957cc218ac21",
+      "type": "contains"
+    },
+    {
+      "source": "a42b957cc218ac21",
+      "target": "b3138203f7feb6a3",
+      "type": "exports"
+    },
+    {
+      "source": "3ff0f7ac7ca01c94",
+      "target": "39524668ca919dc6",
+      "type": "contains"
+    },
+    {
+      "source": "39524668ca919dc6",
+      "target": "3ff0f7ac7ca01c94",
+      "type": "exports"
+    },
+    {
+      "source": "3ff0f7ac7ca01c94",
+      "target": "a111198195c9e8e6",
+      "type": "contains"
+    },
+    {
+      "source": "a111198195c9e8e6",
+      "target": "3ff0f7ac7ca01c94",
+      "type": "exports"
+    },
+    {
+      "source": "367335229ac376bf",
+      "target": "1a134cde9a98fd9d",
+      "type": "imports"
+    },
+    {
+      "source": "367335229ac376bf",
+      "target": "1a134cde9a98fd9d",
+      "type": "depends_on"
+    },
+    {
+      "source": "367335229ac376bf",
+      "target": "2ab118ba7e14d6b8",
+      "type": "imports"
+    },
+    {
+      "source": "367335229ac376bf",
+      "target": "2ab118ba7e14d6b8",
+      "type": "depends_on"
+    },
+    {
+      "source": "718ad4cd63252a10",
+      "target": "750f265c221a4a77",
+      "type": "imports"
+    },
+    {
+      "source": "718ad4cd63252a10",
+      "target": "750f265c221a4a77",
+      "type": "depends_on"
+    },
+    {
+      "source": "45c26be49bb013b7",
+      "target": "cf934dc9c26e1eba",
+      "type": "imports"
+    },
+    {
+      "source": "45c26be49bb013b7",
+      "target": "cf934dc9c26e1eba",
+      "type": "depends_on"
+    },
+    {
+      "source": "45c26be49bb013b7",
+      "target": "d3029700411727d3",
+      "type": "imports"
+    },
+    {
+      "source": "45c26be49bb013b7",
+      "target": "d3029700411727d3",
+      "type": "depends_on"
+    },
+    {
+      "source": "b3138203f7feb6a3",
+      "target": "d16d6c72863cb2bb",
+      "type": "imports"
+    },
+    {
+      "source": "b3138203f7feb6a3",
+      "target": "d16d6c72863cb2bb",
+      "type": "depends_on"
+    },
+    {
+      "source": "b3138203f7feb6a3",
+      "target": "d3029700411727d3",
+      "type": "imports"
+    },
+    {
+      "source": "b3138203f7feb6a3",
+      "target": "d3029700411727d3",
+      "type": "depends_on"
+    },
+    {
+      "source": "3ff0f7ac7ca01c94",
+      "target": "cf934dc9c26e1eba",
+      "type": "imports"
+    },
+    {
+      "source": "3ff0f7ac7ca01c94",
+      "target": "cf934dc9c26e1eba",
+      "type": "depends_on"
+    },
+    {
+      "source": "718ad4cd63252a10",
+      "target": "d5a7fcdf35ea70ab",
+      "type": "imports"
+    },
+    {
+      "source": "718ad4cd63252a10",
+      "target": "049135ad61667f1f",
+      "type": "imports"
+    },
+    {
+      "source": "718ad4cd63252a10",
+      "target": "750f265c221a4a77",
+      "type": "imports"
+    },
+    {
+      "source": "6ea8f8b2cc36c869",
+      "target": "d5a7fcdf35ea70ab",
+      "type": "imports"
+    },
+    {
+      "source": "3de07e805f81b837",
+      "target": "d5a7fcdf35ea70ab",
+      "type": "imports"
+    },
+    {
+      "source": "3de07e805f81b837",
+      "target": "443d2ddd926caef8",
+      "type": "imports"
+    },
+    {
+      "source": "45c26be49bb013b7",
+      "target": "60507be1dc5721ab",
+      "type": "imports"
+    },
+    {
+      "source": "45c26be49bb013b7",
+      "target": "f58038e50738ad44",
+      "type": "imports"
+    },
+    {
+      "source": "45c26be49bb013b7",
+      "target": "78500481600f84f3",
+      "type": "imports"
+    },
+    {
+      "source": "45c26be49bb013b7",
+      "target": "cf934dc9c26e1eba",
+      "type": "imports"
+    },
+    {
+      "source": "45c26be49bb013b7",
+      "target": "049135ad61667f1f",
+      "type": "imports"
+    },
+    {
+      "source": "45c26be49bb013b7",
+      "target": "d3029700411727d3",
+      "type": "imports"
+    },
+    {
+      "source": "6abe7263e90e6d11",
+      "target": "30215c1c17ee87cd",
+      "type": "imports"
+    },
+    {
+      "source": "6abe7263e90e6d11",
+      "target": "a7baa49b860a0f00",
+      "type": "imports"
+    },
+    {
+      "source": "b3138203f7feb6a3",
+      "target": "d5a7fcdf35ea70ab",
+      "type": "imports"
+    },
+    {
+      "source": "b3138203f7feb6a3",
+      "target": "443d2ddd926caef8",
+      "type": "imports"
+    },
+    {
+      "source": "b3138203f7feb6a3",
+      "target": "049135ad61667f1f",
+      "type": "imports"
+    },
+    {
+      "source": "b3138203f7feb6a3",
+      "target": "d16d6c72863cb2bb",
+      "type": "imports"
+    },
+    {
+      "source": "b3138203f7feb6a3",
+      "target": "d3029700411727d3",
+      "type": "imports"
+    },
+    {
+      "source": "3ff0f7ac7ca01c94",
+      "target": "cf934dc9c26e1eba",
+      "type": "imports"
+    },
+    {
+      "source": "3ff0f7ac7ca01c94",
+      "target": "d5a7fcdf35ea70ab",
+      "type": "imports"
+    },
+    {
+      "source": "3ff0f7ac7ca01c94",
+      "target": "b6a04e1f95213228",
+      "type": "imports"
+    }
+  ]
+}

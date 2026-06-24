@@ -1,0 +1,184 @@
+{
+  "projectRoot": "/Users/xuyi/Source/OS/armOS/lib/jcore/OS",
+  "batchIndex": 26,
+  "batchFiles": [
+    {
+      "path": "src/java/util/EmptyStackException.java",
+      "language": "java",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/EventObject.java",
+      "language": "java",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/LinkedHashSet.java",
+      "language": "java",
+      "sizeLines": 195,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/LinkedList.j",
+      "language": "j",
+      "sizeLines": 677,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/PropertyResourceBundle.java",
+      "language": "java",
+      "sizeLines": 131,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/Stack.java",
+      "language": "java",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/stream/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/stream/Streams.j",
+      "language": "j",
+      "sizeLines": 896,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/stream/Streams.java",
+      "language": "java",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/TooManyListenersException.java",
+      "language": "java",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/TreeSet.java",
+      "language": "java",
+      "sizeLines": 568,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/UnsupportedOperationException.java",
+      "language": "java",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/zip/InflaterInputStream.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/zip/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/zip/ZipEntry.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/zip/ZipFile.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/zip/ZipInputStream.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/zip/ZipOutputStream.java",
+      "language": "java",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/javax/net/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/javax/net/ServerSocketFactory.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/javax/net/ssl/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/javax/net/ssl/SSLServerSocket.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/javax/net/ssl/SSLServerSocketFactory.java",
+      "language": "java",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/javax/net/ssl/SSLSession.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/java/util/EmptyStackException.java": [],
+    "src/java/util/EventObject.java": [],
+    "src/java/util/LinkedHashSet.java": [],
+    "src/java/util/LinkedList.j": [],
+    "src/java/util/package.bluej": [],
+    "src/java/util/PropertyResourceBundle.java": [],
+    "src/java/util/Stack.java": [],
+    "src/java/util/stream/package.bluej": [],
+    "src/java/util/stream/Streams.j": [],
+    "src/java/util/stream/Streams.java": [],
+    "src/java/util/TooManyListenersException.java": [],
+    "src/java/util/TreeSet.java": [],
+    "src/java/util/UnsupportedOperationException.java": [],
+    "src/java/util/zip/InflaterInputStream.java": [],
+    "src/java/util/zip/package.bluej": [],
+    "src/java/util/zip/ZipEntry.java": [],
+    "src/java/util/zip/ZipFile.java": [],
+    "src/java/util/zip/ZipInputStream.java": [],
+    "src/java/util/zip/ZipOutputStream.java": [],
+    "src/javax/net/package.bluej": [],
+    "src/javax/net/ServerSocketFactory.java": [],
+    "src/javax/net/ssl/package.bluej": [],
+    "src/javax/net/ssl/SSLServerSocket.java": [],
+    "src/javax/net/ssl/SSLServerSocketFactory.java": [],
+    "src/javax/net/ssl/SSLSession.java": []
+  },
+  "neighborMap": {}
+}

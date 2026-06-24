@@ -1,0 +1,1388 @@
+{
+  "batchIndex": 11,
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "3a4ea380d7439d05",
+      "type": "file",
+      "name": "RuleBasedCollator.java",
+      "filePath": "src/java/text/RuleBasedCollator.java",
+      "language": "java",
+      "totalLines": 547,
+      "nonEmptyLines": 466,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 10,
+        "functionCount": 10,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "ca77aa6fa84810de",
+      "type": "class",
+      "name": "RuleBasedCollator",
+      "filePath": "src/java/text/RuleBasedCollator.java",
+      "startLine": 119,
+      "endLine": 546,
+      "methods": [
+        "RuleBasedCollator",
+        "getRules",
+        "getCollationElementValue",
+        "getCollationElementIterator",
+        "getCollationElementIterator",
+        "compare",
+        "getCollationKey",
+        "equals",
+        "hashCode",
+        "clone"
+      ],
+      "properties": [
+        "rules",
+        "ce_table"
+      ]
+    },
+    {
+      "id": "c52c63caa91ca699",
+      "type": "file",
+      "name": "Vector.java",
+      "filePath": "src/java/util/Vector.java",
+      "language": "java",
+      "totalLines": 387,
+      "nonEmptyLines": 329,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 41,
+        "functionCount": 45,
+        "classCount": 2
+      }
+    },
+    {
+      "id": "b3e6145ce26fee5e",
+      "type": "class",
+      "name": "ArrayEnumeration",
+      "filePath": "src/java/util/Vector.java",
+      "startLine": 5,
+      "endLine": 33,
+      "methods": [
+        "hasMoreElements",
+        "nextElement",
+        "ArrayEnumeration"
+      ],
+      "properties": [
+        "data",
+        "index"
+      ]
+    },
+    {
+      "id": "95d2d9a629250fa1",
+      "type": "class",
+      "name": "Vector",
+      "filePath": "src/java/util/Vector.java",
+      "startLine": 35,
+      "endLine": 387,
+      "methods": [
+        "Vector",
+        "Vector",
+        "Vector",
+        "capacity",
+        "clone",
+        "trimToSize",
+        "ensureCapacityHelper",
+        "grow",
+        "hugeCapacity",
+        "addElement",
+        "insertElementAt",
+        "size",
+        "isEmpty",
+        "firstElement",
+        "lastElement",
+        "elementAt",
+        "elementData",
+        "elements",
+        "indexOf",
+        "indexOf",
+        "contains",
+        "lastIndexOf",
+        "lastIndexOf",
+        "removeAllElements",
+        "clear",
+        "removeElementAt",
+        "removeElement",
+        "copyInto",
+        "remove",
+        "setElementAt",
+        "setSize",
+        "toString",
+        "toArray",
+        "remove",
+        "get",
+        "listIterator",
+        "listIterator",
+        "add",
+        "set",
+        "subList",
+        "toArray",
+        "addAll"
+      ],
+      "properties": [
+        "capacityIncrement",
+        "elementCount",
+        "elementData",
+        "MAX_ARRAY_SIZE"
+      ]
+    },
+    {
+      "id": "e76b413e69c9d53e",
+      "type": "file",
+      "name": "BufferCache.java",
+      "filePath": "src/jx/bio/buffercache/BufferCache.java",
+      "language": "java",
+      "totalLines": 552,
+      "nonEmptyLines": 463,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 21,
+        "functionCount": 25,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "7a761028e3221c30",
+      "type": "class",
+      "name": "BufferCache",
+      "filePath": "src/jx/bio/buffercache/BufferCache.java",
+      "startLine": 15,
+      "endLine": 552,
+      "methods": [
+        "BufferCache",
+        "stopDemon",
+        "writeBlock",
+        "readBlock",
+        "putFirstFree",
+        "putLastFree",
+        "findBuffer",
+        "getblk",
+        "brelse",
+        "release",
+        "bforget",
+        "bread",
+        "growBuffers",
+        "showBuffers",
+        "syncDevice",
+        "syncBuffers",
+        "flushCache",
+        "updateBuffer",
+        "bdwrite",
+        "bdirty",
+        "bawrite",
+        "bwrite",
+        "breadn",
+        "readAhead",
+        "printStatistics"
+      ],
+      "properties": [
+        "statistics",
+        "trace",
+        "debugSync",
+        "buffer_hashtable",
+        "free_list",
+        "nr_buffers",
+        "initialNumberOfBlocks",
+        "maximalNumberOfBlocks",
+        "incrementNumberOfBlocks",
+        "idedevice",
+        "hit",
+        "miss",
+        "clock",
+        "cpuManager",
+        "bufferSize",
+        "profiler",
+        "memMgr"
+      ]
+    },
+    {
+      "id": "4d49ad3d63aaa38d",
+      "type": "file",
+      "name": "BufferHashtable.java",
+      "filePath": "src/jx/bio/buffercache/BufferHashtable.java",
+      "language": "java",
+      "totalLines": 265,
+      "nonEmptyLines": 230,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 10,
+        "functionCount": 12,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "8578960bd4f5e15c",
+      "type": "class",
+      "name": "BufferHashtable",
+      "filePath": "src/jx/bio/buffercache/BufferHashtable.java",
+      "startLine": 10,
+      "endLine": 265,
+      "methods": [
+        "BufferHashtable",
+        "BufferHashtable",
+        "BufferHashtable",
+        "size",
+        "expandTable",
+        "putInTable",
+        "put",
+        "get",
+        "remove",
+        "printStatistics",
+        "iterator",
+        "alignString"
+      ],
+      "properties": [
+        "trace",
+        "DEFAULT_FILL_PERCENT",
+        "MINIMUM_SIZE",
+        "entryCount",
+        "fillPercent",
+        "entryLimit",
+        "hashTable",
+        "hashTable_length",
+        "doStatistics"
+      ]
+    },
+    {
+      "id": "5d258cdaf44fc1da",
+      "type": "file",
+      "name": "MethodData.java",
+      "filePath": "src/jx/classfile/MethodData.java",
+      "language": "java",
+      "totalLines": 269,
+      "nonEmptyLines": 230,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 35,
+        "functionCount": 37,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "89699ea589ae07b9",
+      "type": "class",
+      "name": "MethodData",
+      "filePath": "src/jx/classfile/MethodData.java",
+      "startLine": 15,
+      "endLine": 269,
+      "methods": [
+        "getDeclaringClass",
+        "getDeclaringClassSource",
+        "getMethodNameCPEntry",
+        "setMethodTypeCPEntry",
+        "MethodData",
+        "MethodData",
+        "MethodData",
+        "copy",
+        "getName",
+        "getMethodName",
+        "getMethodType",
+        "isPublic",
+        "isPrivate",
+        "isProtected",
+        "isStatic",
+        "isFinal",
+        "isNative",
+        "isAbstract",
+        "getInitialVariableTypes",
+        "getBasicReturnType",
+        "getReturnType",
+        "getParameterTypes",
+        "getCode",
+        "getBytecode",
+        "getNumLocalVariables",
+        "getNumStackSlots",
+        "getNumInstr",
+        "getExceptionHandlers",
+        "getLineNumberTable",
+        "readFromClassFile",
+        "readAttribute",
+        "readExceptionClasses",
+        "toString",
+        "getDescription",
+        "getModifiers",
+        "setVerifyResult",
+        "getVerifyResult"
+      ],
+      "properties": [
+        "accessFlags",
+        "methodNameCPIndex",
+        "methodTypeCPIndex",
+        "methodNameCPEntry",
+        "methodTypeCPEntry",
+        "numExceptionClasses",
+        "exceptionClassCPIndex",
+        "codeData",
+        "declaringClass",
+        "allowNative",
+        "verifyResults"
+      ]
+    },
+    {
+      "id": "ea70ec99fefbf24a",
+      "type": "file",
+      "name": "ClassFinder.java",
+      "filePath": "src/jx/classstore/ClassFinder.java",
+      "language": "java",
+      "totalLines": 16,
+      "nonEmptyLines": 13,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "f9bcacdccb172e9c",
+      "type": "class",
+      "name": "ClassFinder",
+      "filePath": "src/jx/classstore/ClassFinder.java",
+      "startLine": 6,
+      "endLine": 16,
+      "methods": [
+        "findClass",
+        "dump",
+        "getAllClasses"
+      ],
+      "properties": []
+    },
+    {
+      "id": "070b8fe60ce8c9b9",
+      "type": "file",
+      "name": "ClassManager.java",
+      "filePath": "src/jx/classstore/ClassManager.java",
+      "language": "java",
+      "totalLines": 232,
+      "nonEmptyLines": 205,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 6,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "631675794a3e87b7",
+      "type": "class",
+      "name": "ClassManager",
+      "filePath": "src/jx/classstore/ClassManager.java",
+      "startLine": 27,
+      "endLine": 232,
+      "methods": [
+        "addFromZip",
+        "computeClassGraph",
+        "getDomClasses",
+        "getAllClasses",
+        "findClass",
+        "dump"
+      ],
+      "properties": [
+        "libClassStore",
+        "domClassStore"
+      ]
+    },
+    {
+      "id": "689183eb9eb7aed8",
+      "type": "file",
+      "name": "ClassStore.java",
+      "filePath": "src/jx/classstore/ClassStore.java",
+      "language": "java",
+      "totalLines": 94,
+      "nonEmptyLines": 74,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 9,
+        "functionCount": 13,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "13e5cd1709030e86",
+      "type": "class",
+      "name": "ClassStore",
+      "filePath": "src/jx/classstore/ClassStore.java",
+      "startLine": 12,
+      "endLine": 94,
+      "methods": [
+        "ClassStore",
+        "ClassStore",
+        "size",
+        "initPrimitiveClasses",
+        "addPrimitiveClass",
+        "addArrayClass",
+        "addClass",
+        "elements",
+        "iterator",
+        "getAllClasses",
+        "classSourceIterator",
+        "findClass",
+        "dump"
+      ],
+      "properties": [
+        "classes",
+        "classList"
+      ]
+    },
+    {
+      "id": "8818d5999488972c",
+      "type": "file",
+      "name": "Iterator.java",
+      "filePath": "src/jx/collections/Iterator.java",
+      "language": "java",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "9f098d2555e0e4f2",
+      "type": "class",
+      "name": "Iterator",
+      "filePath": "src/jx/collections/Iterator.java",
+      "startLine": 3,
+      "endLine": 6,
+      "methods": [
+        "hasNext",
+        "next"
+      ],
+      "properties": []
+    },
+    {
+      "id": "e37f5cfd194c5559",
+      "type": "file",
+      "name": "List.java",
+      "filePath": "src/jx/collections/List.java",
+      "language": "java",
+      "totalLines": 43,
+      "nonEmptyLines": 36,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "40e6953dea06b2fb",
+      "type": "class",
+      "name": "List",
+      "filePath": "src/jx/collections/List.java",
+      "startLine": 6,
+      "endLine": 43,
+      "methods": [
+        "List",
+        "add",
+        "size",
+        "iterator",
+        "elements"
+      ],
+      "properties": [
+        "elements"
+      ]
+    },
+    {
+      "id": "6624942b5d145e35",
+      "type": "file",
+      "name": "QuickSort.java",
+      "filePath": "src/jx/collections/QuickSort.java",
+      "language": "java",
+      "totalLines": 141,
+      "nonEmptyLines": 113,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 7,
+        "functionCount": 12,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "d81e30d9bff179ac",
+      "type": "class",
+      "name": "QuickSort",
+      "filePath": "src/jx/collections/QuickSort.java",
+      "startLine": 6,
+      "endLine": 141,
+      "methods": [
+        "QuickSort",
+        "QuickSort",
+        "iterator",
+        "sort",
+        "add",
+        "size",
+        "qsort",
+        "sort3",
+        "quickPartition",
+        "sort2",
+        "sort2",
+        "swap"
+      ],
+      "properties": [
+        "comparator",
+        "elements"
+      ]
+    },
+    {
+      "id": "9477fc81b1c59ece",
+      "type": "file",
+      "name": "PCIGod.java",
+      "filePath": "src/jx/devices/pci/PCIGod.java",
+      "language": "java",
+      "totalLines": 297,
+      "nonEmptyLines": 244,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 11,
+        "functionCount": 17,
+        "classCount": 2
+      }
+    },
+    {
+      "id": "006894bcbb71837c",
+      "type": "class",
+      "name": "PCIGod",
+      "filePath": "src/jx/devices/pci/PCIGod.java",
+      "startLine": 18,
+      "endLine": 258,
+      "methods": [
+        "main",
+        "PCIGod",
+        "probePCI",
+        "lookForDevices",
+        "scanBus",
+        "dumpDevices",
+        "createAddress",
+        "createAddress",
+        "readDeviceConfig",
+        "writeDeviceConfig",
+        "getNumberOfDevices",
+        "getDeviceAt",
+        "getDevicesByID",
+        "getDevicesByClass",
+        "readDeviceConfig",
+        "writeDeviceConfig",
+        "DevVecToArray"
+      ],
+      "properties": [
+        "naming",
+        "ports",
+        "devices"
+      ]
+    },
+    {
+      "id": "30b27d02210f3a9d",
+      "type": "class",
+      "name": "PCIHB",
+      "filePath": "src/jx/devices/pci/PCIGod.java",
+      "startLine": 264,
+      "endLine": 297,
+      "methods": [],
+      "properties": [
+        "CONFIG_ADDRESS",
+        "CONFIG_DATA",
+        "CONFIG_ENABLE_CHECK",
+        "CONFIG_ENABLE_MASK",
+        "CONF1_ENABLE_CHK1",
+        "CONF1_ENABLE_MSK1",
+        "CONF1_ENABLE_RES1",
+        "BUS_OFFSET_BIT",
+        "DEV_OFFSET_BIT",
+        "FUN_OFFSET_BIT",
+        "REG_OFFSET_BIT",
+        "ECD_MASK",
+        "BUS_MASK",
+        "DEV_MASK",
+        "FUN_MASK",
+        "REG_MASK",
+        "MAX_PCI_FUNCTIONS",
+        "MAX_PCI_AGENTS",
+        "MAX_PCI_BUSSES",
+        "CLASSCODE_PCI_BRIDGE",
+        "INVALID_ID"
+      ]
+    },
+    {
+      "id": "ac31eb10d2b414a8",
+      "type": "file",
+      "name": "FilesystemImpl.java",
+      "filePath": "src/jx/fs/FilesystemImpl.java",
+      "language": "java",
+      "totalLines": 79,
+      "nonEmptyLines": 67,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 8,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "4243ce4d407906c5",
+      "type": "class",
+      "name": "FilesystemImpl",
+      "filePath": "src/jx/fs/FilesystemImpl.java",
+      "startLine": 7,
+      "endLine": 79,
+      "methods": [
+        "FilesystemImpl",
+        "getName",
+        "openRootDirectoryRO",
+        "openRootDirectoryRW",
+        "getDefaultPermission",
+        "mount",
+        "unmount",
+        "registerFSObj",
+        "finalize"
+      ],
+      "properties": [
+        "fs",
+        "defaultPermission",
+        "rInode",
+        "fsobjList",
+        "umounted"
+      ]
+    },
+    {
+      "id": "18966aa2b35d1ab9",
+      "type": "file",
+      "name": "RPCBind_Impl.java",
+      "filePath": "src/jx/rpcsvc/bind2/RPCBind_Impl.java",
+      "language": "java",
+      "totalLines": 44,
+      "nonEmptyLines": 35,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "e715daea69762561",
+      "type": "class",
+      "name": "RPCBind_Impl",
+      "filePath": "src/jx/rpcsvc/bind2/RPCBind_Impl.java",
+      "startLine": 7,
+      "endLine": 44,
+      "methods": [
+        "RPCBind_Impl",
+        "nullproc",
+        "nullproc1",
+        "nullproc2",
+        "getaddr",
+        "registerService"
+      ],
+      "properties": [
+        "rpc",
+        "services",
+        "debug"
+      ]
+    },
+    {
+      "id": "b0de801793e03dee",
+      "type": "file",
+      "name": "ZipEntry.java",
+      "filePath": "src/jx/zip/ZipEntry.java",
+      "language": "java",
+      "totalLines": 24,
+      "nonEmptyLines": 21,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "3d328dbadbd13e70",
+      "type": "class",
+      "name": "ZipEntry",
+      "filePath": "src/jx/zip/ZipEntry.java",
+      "startLine": 5,
+      "endLine": 24,
+      "methods": [
+        "isDirectory",
+        "getName",
+        "getSize",
+        "getData"
+      ],
+      "properties": [
+        "filename",
+        "uncompressed_size",
+        "compression_method",
+        "data",
+        "isDirectory"
+      ]
+    },
+    {
+      "id": "b1fdf4b5df452df9",
+      "type": "file",
+      "name": "ZipFile.java",
+      "filePath": "src/jx/zip/ZipFile.java",
+      "language": "java",
+      "totalLines": 180,
+      "nonEmptyLines": 162,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 3,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "27a26e80944476bd",
+      "type": "class",
+      "name": "ZipFile",
+      "filePath": "src/jx/zip/ZipFile.java",
+      "startLine": 7,
+      "endLine": 180,
+      "methods": [
+        "seek",
+        "read",
+        "ZipFile",
+        "getNextEntry",
+        "makeword",
+        "makelong",
+        "makestring"
+      ],
+      "properties": [
+        "doDebug",
+        "LREC_SIZE",
+        "CREC_SIZE",
+        "ECREC_SIZE",
+        "LOCAL_HEADER_SIGNATURE",
+        "L_VERSION_NEEDED_TO_EXTRACT_0",
+        "L_VERSION_NEEDED_TO_EXTRACT_1",
+        "L_GENERAL_PURPOSE_BIT_FLAG",
+        "L_COMPRESSION_METHOD",
+        "L_LAST_MOD_FILE_TIME",
+        "L_LAST_MOD_FILE_DATE",
+        "L_CRC32",
+        "L_COMPRESSED_SIZE",
+        "L_UNCOMPRESSED_SIZE",
+        "L_FILENAME_LENGTH",
+        "L_EXTRA_FIELD_LENGTH",
+        "CENTRAL_HEADER_SIGNATURE",
+        "C_SIGNATURE",
+        "C_VERSION_MADE_BY_0",
+        "C_VERSION_MADE_BY_1",
+        "C_VERSION_NEEDED_TO_EXTRACT_0",
+        "C_VERSION_NEEDED_TO_EXTRACT_1",
+        "C_GENERAL_PURPOSE_BIT_FLAG",
+        "C_COMPRESSION_METHOD",
+        "C_LAST_MOD_FILE_TIME",
+        "C_LAST_MOD_FILE_DATE",
+        "C_CRC32",
+        "C_COMPRESSED_SIZE",
+        "C_UNCOMPRESSED_SIZE",
+        "C_FILENAME_LENGTH",
+        "C_EXTRA_FIELD_LENGTH",
+        "C_COMMENT_LENGTH",
+        "C_DISK_NUMBER_START",
+        "C_INTERNAL_FILE_ATTRIBUTES",
+        "C_EXTERNAL_FILE_ATTRIBUTES",
+        "C_RELATIVE_OFFSET_LOCAL_HEADER",
+        "C_FILENAME",
+        "END_CENTRAL_DIR_SIGNATURE",
+        "NUMBER_THIS_DISK",
+        "NUM_DISK_WITH_START_CENTRAL_DIR",
+        "NUM_ENTRIES_CENTRL_DIR_THS_DISK",
+        "TOTAL_ENTRIES_CENTRAL_DIR",
+        "SIZE_CENTRAL_DIRECTORY",
+        "OFFSET_START_CENTRAL_DIRECTORY",
+        "ZIPFILE_COMMENT_LENGTH",
+        "zip",
+        "count",
+        "dirofs",
+        "mempos",
+        "dirbuf",
+        "current"
+      ]
+    },
+    {
+      "id": "d3029700411727d3",
+      "type": "dependency",
+      "name": "Vector.java",
+      "filePath": "src/java/util/Vector.java"
+    },
+    {
+      "id": "0f69c82c0f945e0b",
+      "type": "dependency",
+      "name": "Iterator.java",
+      "filePath": "src/jx/collections/Iterator.java"
+    },
+    {
+      "id": "65079c29c55b7d1f",
+      "type": "dependency",
+      "name": "Debug.java",
+      "filePath": "src/jx/zero/Debug.java"
+    },
+    {
+      "id": "cf934dc9c26e1eba",
+      "type": "dependency",
+      "name": "IOException.java",
+      "filePath": "src/java/io/IOException.java"
+    },
+    {
+      "id": "b222a764decf9a9f",
+      "type": "dependency",
+      "name": "ZipEntry.java",
+      "filePath": "src/jx/zip/ZipEntry.java"
+    },
+    {
+      "id": "eb24d92c572de841",
+      "type": "dependency",
+      "name": "ZipFile.java",
+      "filePath": "src/jx/zip/ZipFile.java"
+    },
+    {
+      "id": "dc00207e1498027a",
+      "type": "dependency",
+      "name": "List.java",
+      "filePath": "src/jx/collections/List.java"
+    },
+    {
+      "id": "2ab118ba7e14d6b8",
+      "type": "dependency",
+      "name": "Dump.java",
+      "filePath": "src/jx/zero/debug/Dump.java"
+    },
+    {
+      "id": "6f998b8d4a347e88",
+      "type": "dependency",
+      "name": "PropertyChangeSupport.java",
+      "filePath": "src/java/beans/PropertyChangeSupport.java"
+    },
+    {
+      "id": "788965fb666f736a",
+      "type": "dependency",
+      "name": "VetoableChangeSupport.java",
+      "filePath": "src/java/beans/VetoableChangeSupport.java"
+    },
+    {
+      "id": "a7baa49b860a0f00",
+      "type": "dependency",
+      "name": "Security.java",
+      "filePath": "src/java/security/Security.java"
+    },
+    {
+      "id": "2ae28aef93647710",
+      "type": "dependency",
+      "name": "DriverManager.java",
+      "filePath": "src/java/sql/DriverManager.java"
+    },
+    {
+      "id": "d3506882bb32901f",
+      "type": "dependency",
+      "name": "MessageFormat.java",
+      "filePath": "src/java/text/MessageFormat.java"
+    },
+    {
+      "id": "bf14f3a9f41cde47",
+      "type": "dependency",
+      "name": "SimpleDateFormat.java",
+      "filePath": "src/java/text/SimpleDateFormat.java"
+    },
+    {
+      "id": "66da20169b9a1950",
+      "type": "dependency",
+      "name": "Parser.java",
+      "filePath": "src/jx/db/parser/Parser.java"
+    },
+    {
+      "id": "554cf70df45c1263",
+      "type": "dependency",
+      "name": "MemoryImpl.java",
+      "filePath": "src/jx/emulation/MemoryImpl.java"
+    },
+    {
+      "id": "97e3f7829493db7b",
+      "type": "dependency",
+      "name": "ARPCache.java",
+      "filePath": "src/jx/net/protocol/arp/ARPCache.java"
+    },
+    {
+      "id": "97e6040c3e36f5b4",
+      "type": "dependency",
+      "name": "RPC.java",
+      "filePath": "src/jx/rpc/RPC.java"
+    }
+  ],
+  "edges": [
+    {
+      "source": "3a4ea380d7439d05",
+      "target": "ca77aa6fa84810de",
+      "type": "contains"
+    },
+    {
+      "source": "ca77aa6fa84810de",
+      "target": "3a4ea380d7439d05",
+      "type": "exports"
+    },
+    {
+      "source": "c52c63caa91ca699",
+      "target": "b3e6145ce26fee5e",
+      "type": "contains"
+    },
+    {
+      "source": "b3e6145ce26fee5e",
+      "target": "c52c63caa91ca699",
+      "type": "exports"
+    },
+    {
+      "source": "c52c63caa91ca699",
+      "target": "95d2d9a629250fa1",
+      "type": "contains"
+    },
+    {
+      "source": "95d2d9a629250fa1",
+      "target": "c52c63caa91ca699",
+      "type": "exports"
+    },
+    {
+      "source": "e76b413e69c9d53e",
+      "target": "7a761028e3221c30",
+      "type": "contains"
+    },
+    {
+      "source": "7a761028e3221c30",
+      "target": "e76b413e69c9d53e",
+      "type": "exports"
+    },
+    {
+      "source": "4d49ad3d63aaa38d",
+      "target": "8578960bd4f5e15c",
+      "type": "contains"
+    },
+    {
+      "source": "8578960bd4f5e15c",
+      "target": "4d49ad3d63aaa38d",
+      "type": "exports"
+    },
+    {
+      "source": "5d258cdaf44fc1da",
+      "target": "89699ea589ae07b9",
+      "type": "contains"
+    },
+    {
+      "source": "89699ea589ae07b9",
+      "target": "5d258cdaf44fc1da",
+      "type": "exports"
+    },
+    {
+      "source": "ea70ec99fefbf24a",
+      "target": "f9bcacdccb172e9c",
+      "type": "contains"
+    },
+    {
+      "source": "f9bcacdccb172e9c",
+      "target": "ea70ec99fefbf24a",
+      "type": "exports"
+    },
+    {
+      "source": "070b8fe60ce8c9b9",
+      "target": "631675794a3e87b7",
+      "type": "contains"
+    },
+    {
+      "source": "631675794a3e87b7",
+      "target": "070b8fe60ce8c9b9",
+      "type": "exports"
+    },
+    {
+      "source": "689183eb9eb7aed8",
+      "target": "13e5cd1709030e86",
+      "type": "contains"
+    },
+    {
+      "source": "13e5cd1709030e86",
+      "target": "689183eb9eb7aed8",
+      "type": "exports"
+    },
+    {
+      "source": "8818d5999488972c",
+      "target": "9f098d2555e0e4f2",
+      "type": "contains"
+    },
+    {
+      "source": "9f098d2555e0e4f2",
+      "target": "8818d5999488972c",
+      "type": "exports"
+    },
+    {
+      "source": "e37f5cfd194c5559",
+      "target": "40e6953dea06b2fb",
+      "type": "contains"
+    },
+    {
+      "source": "40e6953dea06b2fb",
+      "target": "e37f5cfd194c5559",
+      "type": "exports"
+    },
+    {
+      "source": "6624942b5d145e35",
+      "target": "d81e30d9bff179ac",
+      "type": "contains"
+    },
+    {
+      "source": "d81e30d9bff179ac",
+      "target": "6624942b5d145e35",
+      "type": "exports"
+    },
+    {
+      "source": "9477fc81b1c59ece",
+      "target": "006894bcbb71837c",
+      "type": "contains"
+    },
+    {
+      "source": "006894bcbb71837c",
+      "target": "9477fc81b1c59ece",
+      "type": "exports"
+    },
+    {
+      "source": "9477fc81b1c59ece",
+      "target": "30b27d02210f3a9d",
+      "type": "contains"
+    },
+    {
+      "source": "30b27d02210f3a9d",
+      "target": "9477fc81b1c59ece",
+      "type": "exports"
+    },
+    {
+      "source": "ac31eb10d2b414a8",
+      "target": "4243ce4d407906c5",
+      "type": "contains"
+    },
+    {
+      "source": "4243ce4d407906c5",
+      "target": "ac31eb10d2b414a8",
+      "type": "exports"
+    },
+    {
+      "source": "18966aa2b35d1ab9",
+      "target": "e715daea69762561",
+      "type": "contains"
+    },
+    {
+      "source": "e715daea69762561",
+      "target": "18966aa2b35d1ab9",
+      "type": "exports"
+    },
+    {
+      "source": "b0de801793e03dee",
+      "target": "3d328dbadbd13e70",
+      "type": "contains"
+    },
+    {
+      "source": "3d328dbadbd13e70",
+      "target": "b0de801793e03dee",
+      "type": "exports"
+    },
+    {
+      "source": "b1fdf4b5df452df9",
+      "target": "27a26e80944476bd",
+      "type": "contains"
+    },
+    {
+      "source": "27a26e80944476bd",
+      "target": "b1fdf4b5df452df9",
+      "type": "exports"
+    },
+    {
+      "source": "c52c63caa91ca699",
+      "target": "6f998b8d4a347e88",
+      "type": "imports"
+    },
+    {
+      "source": "c52c63caa91ca699",
+      "target": "6f998b8d4a347e88",
+      "type": "depends_on"
+    },
+    {
+      "source": "c52c63caa91ca699",
+      "target": "788965fb666f736a",
+      "type": "imports"
+    },
+    {
+      "source": "c52c63caa91ca699",
+      "target": "788965fb666f736a",
+      "type": "depends_on"
+    },
+    {
+      "source": "c52c63caa91ca699",
+      "target": "a7baa49b860a0f00",
+      "type": "imports"
+    },
+    {
+      "source": "c52c63caa91ca699",
+      "target": "a7baa49b860a0f00",
+      "type": "depends_on"
+    },
+    {
+      "source": "c52c63caa91ca699",
+      "target": "2ae28aef93647710",
+      "type": "imports"
+    },
+    {
+      "source": "c52c63caa91ca699",
+      "target": "2ae28aef93647710",
+      "type": "depends_on"
+    },
+    {
+      "source": "c52c63caa91ca699",
+      "target": "d3506882bb32901f",
+      "type": "imports"
+    },
+    {
+      "source": "c52c63caa91ca699",
+      "target": "d3506882bb32901f",
+      "type": "depends_on"
+    },
+    {
+      "source": "c52c63caa91ca699",
+      "target": "bf14f3a9f41cde47",
+      "type": "imports"
+    },
+    {
+      "source": "c52c63caa91ca699",
+      "target": "bf14f3a9f41cde47",
+      "type": "depends_on"
+    },
+    {
+      "source": "c52c63caa91ca699",
+      "target": "66da20169b9a1950",
+      "type": "imports"
+    },
+    {
+      "source": "c52c63caa91ca699",
+      "target": "66da20169b9a1950",
+      "type": "depends_on"
+    },
+    {
+      "source": "c52c63caa91ca699",
+      "target": "554cf70df45c1263",
+      "type": "imports"
+    },
+    {
+      "source": "c52c63caa91ca699",
+      "target": "554cf70df45c1263",
+      "type": "depends_on"
+    },
+    {
+      "source": "c52c63caa91ca699",
+      "target": "97e3f7829493db7b",
+      "type": "imports"
+    },
+    {
+      "source": "c52c63caa91ca699",
+      "target": "97e3f7829493db7b",
+      "type": "depends_on"
+    },
+    {
+      "source": "c52c63caa91ca699",
+      "target": "97e6040c3e36f5b4",
+      "type": "imports"
+    },
+    {
+      "source": "c52c63caa91ca699",
+      "target": "97e6040c3e36f5b4",
+      "type": "depends_on"
+    },
+    {
+      "source": "e76b413e69c9d53e",
+      "target": "65079c29c55b7d1f",
+      "type": "imports"
+    },
+    {
+      "source": "e76b413e69c9d53e",
+      "target": "65079c29c55b7d1f",
+      "type": "depends_on"
+    },
+    {
+      "source": "5d258cdaf44fc1da",
+      "target": "65079c29c55b7d1f",
+      "type": "imports"
+    },
+    {
+      "source": "5d258cdaf44fc1da",
+      "target": "65079c29c55b7d1f",
+      "type": "depends_on"
+    },
+    {
+      "source": "070b8fe60ce8c9b9",
+      "target": "cf934dc9c26e1eba",
+      "type": "imports"
+    },
+    {
+      "source": "070b8fe60ce8c9b9",
+      "target": "cf934dc9c26e1eba",
+      "type": "depends_on"
+    },
+    {
+      "source": "070b8fe60ce8c9b9",
+      "target": "65079c29c55b7d1f",
+      "type": "imports"
+    },
+    {
+      "source": "070b8fe60ce8c9b9",
+      "target": "65079c29c55b7d1f",
+      "type": "depends_on"
+    },
+    {
+      "source": "b1fdf4b5df452df9",
+      "target": "65079c29c55b7d1f",
+      "type": "imports"
+    },
+    {
+      "source": "b1fdf4b5df452df9",
+      "target": "65079c29c55b7d1f",
+      "type": "depends_on"
+    },
+    {
+      "source": "b1fdf4b5df452df9",
+      "target": "2ab118ba7e14d6b8",
+      "type": "imports"
+    },
+    {
+      "source": "b1fdf4b5df452df9",
+      "target": "2ab118ba7e14d6b8",
+      "type": "depends_on"
+    },
+    {
+      "source": "3a4ea380d7439d05",
+      "target": "d3029700411727d3",
+      "type": "imports"
+    },
+    {
+      "source": "e76b413e69c9d53e",
+      "target": "0f69c82c0f945e0b",
+      "type": "imports"
+    },
+    {
+      "source": "e76b413e69c9d53e",
+      "target": "65079c29c55b7d1f",
+      "type": "imports"
+    },
+    {
+      "source": "4d49ad3d63aaa38d",
+      "target": "0f69c82c0f945e0b",
+      "type": "imports"
+    },
+    {
+      "source": "5d258cdaf44fc1da",
+      "target": "d3029700411727d3",
+      "type": "imports"
+    },
+    {
+      "source": "5d258cdaf44fc1da",
+      "target": "65079c29c55b7d1f",
+      "type": "imports"
+    },
+    {
+      "source": "ea70ec99fefbf24a",
+      "target": "0f69c82c0f945e0b",
+      "type": "imports"
+    },
+    {
+      "source": "070b8fe60ce8c9b9",
+      "target": "cf934dc9c26e1eba",
+      "type": "imports"
+    },
+    {
+      "source": "070b8fe60ce8c9b9",
+      "target": "d3029700411727d3",
+      "type": "imports"
+    },
+    {
+      "source": "070b8fe60ce8c9b9",
+      "target": "0f69c82c0f945e0b",
+      "type": "imports"
+    },
+    {
+      "source": "070b8fe60ce8c9b9",
+      "target": "65079c29c55b7d1f",
+      "type": "imports"
+    },
+    {
+      "source": "070b8fe60ce8c9b9",
+      "target": "b222a764decf9a9f",
+      "type": "imports"
+    },
+    {
+      "source": "070b8fe60ce8c9b9",
+      "target": "eb24d92c572de841",
+      "type": "imports"
+    },
+    {
+      "source": "689183eb9eb7aed8",
+      "target": "0f69c82c0f945e0b",
+      "type": "imports"
+    },
+    {
+      "source": "689183eb9eb7aed8",
+      "target": "dc00207e1498027a",
+      "type": "imports"
+    },
+    {
+      "source": "e37f5cfd194c5559",
+      "target": "d3029700411727d3",
+      "type": "imports"
+    },
+    {
+      "source": "6624942b5d145e35",
+      "target": "d3029700411727d3",
+      "type": "imports"
+    },
+    {
+      "source": "9477fc81b1c59ece",
+      "target": "d3029700411727d3",
+      "type": "imports"
+    },
+    {
+      "source": "ac31eb10d2b414a8",
+      "target": "d3029700411727d3",
+      "type": "imports"
+    },
+    {
+      "source": "18966aa2b35d1ab9",
+      "target": "d3029700411727d3",
+      "type": "imports"
+    },
+    {
+      "source": "b1fdf4b5df452df9",
+      "target": "65079c29c55b7d1f",
+      "type": "imports"
+    },
+    {
+      "source": "b1fdf4b5df452df9",
+      "target": "2ab118ba7e14d6b8",
+      "type": "imports"
+    }
+  ]
+}

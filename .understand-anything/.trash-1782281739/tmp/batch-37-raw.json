@@ -1,0 +1,2017 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/jx/rpcsvc/nfs2/AttrStatErrIO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "AttrStatErrIO",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AttrStatErrIO",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "AttrStatErrIO"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AttrStatErrIO",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "AttrStatErrIO",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/AttrStatErrNoEnt.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "AttrStatErrNoEnt",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AttrStatErrNoEnt",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "AttrStatErrNoEnt"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AttrStatErrNoEnt",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "AttrStatErrNoEnt",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/AttrStatErrNotDir.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "AttrStatErrNotDir",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AttrStatErrNotDir",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "AttrStatErrNotDir"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AttrStatErrNotDir",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "AttrStatErrNotDir",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/AttrStatError.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 24,
+      "functions": [
+        {
+          "name": "AttrStatError",
+          "startLine": 25,
+          "endLine": 25,
+          "params": []
+        },
+        {
+          "name": "AttrStatError",
+          "startLine": 26,
+          "endLine": 26,
+          "params": [
+            "err"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AttrStatError",
+          "startLine": 5,
+          "endLine": 27,
+          "methods": [
+            "AttrStatError",
+            "AttrStatError"
+          ],
+          "properties": [
+            "NFS_OK",
+            "NFSERR_PERM",
+            "NFSERR_NOENT",
+            "NFSERR_IO",
+            "NFSERR_NXIO",
+            "NFSERR_ACCES",
+            "NFSERR_EXIST",
+            "NFSERR_NODEV",
+            "NFSERR_NOTDIR",
+            "NFSERR_ISDIR",
+            "NFSERR_FBIG",
+            "NFSERR_NOSPC",
+            "NFSERR_ROFS",
+            "NFSERR_NAMETOOLONG",
+            "NFSERR_NOTEMPTY",
+            "NFSERR_DQUOT",
+            "NFSERR_STALE",
+            "NFSERR_WFLUSH"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "NFS_OK",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_PERM",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_NOENT",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_IO",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_NXIO",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_ACCES",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_EXIST",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_NODEV",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_NOTDIR",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_ISDIR",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_FBIG",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_NOSPC",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_ROFS",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_NAMETOOLONG",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_NOTEMPTY",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_DQUOT",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_STALE",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_WFLUSH",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "AttrStatError",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "AttrStatError",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "AttrStatError",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 21,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/AttrStatErrStale.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "AttrStatErrStale",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AttrStatErrStale",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "AttrStatErrStale"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AttrStatErrStale",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "AttrStatErrStale",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/AttrStatOK.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "functions": [
+        {
+          "name": "AttrStatOK",
+          "startLine": 7,
+          "endLine": 7,
+          "params": [
+            "a"
+          ]
+        },
+        {
+          "name": "AttrStatOK",
+          "startLine": 8,
+          "endLine": 8,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AttrStatOK",
+          "startLine": 5,
+          "endLine": 9,
+          "methods": [
+            "AttrStatOK",
+            "AttrStatOK"
+          ],
+          "properties": [
+            "attributes"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "attributes",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "AttrStatOK",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "AttrStatOK",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "AttrStatOK",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirOpRes.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 15,
+      "functions": [
+        {
+          "name": "DirOpRes",
+          "startLine": 19,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "DirOpRes",
+          "startLine": 20,
+          "endLine": 20,
+          "params": [
+            "s"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DirOpRes",
+          "startLine": 5,
+          "endLine": 21,
+          "methods": [
+            "DirOpRes",
+            "DirOpRes"
+          ],
+          "properties": [
+            "SWITCH_DirOpResOK",
+            "SWITCH_DirOpResNoSuchFile",
+            "SWITCH_DirOpResErrStale",
+            "SWITCH_DirOpResErrIO",
+            "SWITCH_DirOpResErrNotDir",
+            "SWITCH_DirOpResErrAcces",
+            "SWITCH_DirOpResErrExist",
+            "SWITCHDEFAULT_DirOpResError",
+            "status"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SWITCH_DirOpResOK",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_DirOpResNoSuchFile",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_DirOpResErrStale",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_DirOpResErrIO",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_DirOpResErrNotDir",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_DirOpResErrAcces",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_DirOpResErrExist",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCHDEFAULT_DirOpResError",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "status",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "DirOpRes",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "DirOpRes",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "DirOpRes",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 12,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirOpResErrAcces.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "DirOpResErrAcces",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DirOpResErrAcces",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "DirOpResErrAcces"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DirOpResErrAcces",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "DirOpResErrAcces",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirOpResErrExist.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "DirOpResErrExist",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DirOpResErrExist",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "DirOpResErrExist"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DirOpResErrExist",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "DirOpResErrExist",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirOpResErrIO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "DirOpResErrIO",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DirOpResErrIO",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "DirOpResErrIO"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DirOpResErrIO",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "DirOpResErrIO",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirOpResErrNotDir.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "DirOpResErrNotDir",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DirOpResErrNotDir",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "DirOpResErrNotDir"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DirOpResErrNotDir",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "DirOpResErrNotDir",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirOpResError.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 6,
+      "functions": [
+        {
+          "name": "DirOpResError",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        },
+        {
+          "name": "DirOpResError",
+          "startLine": 7,
+          "endLine": 7,
+          "params": [
+            "err"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DirOpResError",
+          "startLine": 5,
+          "endLine": 8,
+          "methods": [
+            "DirOpResError",
+            "DirOpResError"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DirOpResError",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "DirOpResError",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "DirOpResError",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirOpResErrStale.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "DirOpResErrStale",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DirOpResErrStale",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "DirOpResErrStale"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DirOpResErrStale",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "DirOpResErrStale",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirOpResNoSuchFile.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "DirOpResNoSuchFile",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DirOpResNoSuchFile",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "DirOpResNoSuchFile"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DirOpResNoSuchFile",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "DirOpResNoSuchFile",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirOpResOK.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "DirOpResOK",
+          "startLine": 10,
+          "endLine": 10,
+          "params": []
+        },
+        {
+          "name": "DirOpResOK",
+          "startLine": 11,
+          "endLine": 15,
+          "params": [
+            "file",
+            "attributes"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DirOpResOK",
+          "startLine": 5,
+          "endLine": 16,
+          "methods": [
+            "DirOpResOK",
+            "DirOpResOK"
+          ],
+          "properties": [
+            "file",
+            "attributes"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "file",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "attributes",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "DirOpResOK",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "DirOpResOK",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "DirOpResOK",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirPath.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 7,
+      "functions": [
+        {
+          "name": "DirPath",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        },
+        {
+          "name": "DirPath",
+          "startLine": 7,
+          "endLine": 7,
+          "params": [
+            "d"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DirPath",
+          "startLine": 3,
+          "endLine": 8,
+          "methods": [
+            "DirPath",
+            "DirPath"
+          ],
+          "properties": [
+            "MAXLEN_data",
+            "data"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "MAXLEN_data",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "data",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "DirPath",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "DirPath",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "DirPath",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/Entries.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "functions": [
+        {
+          "name": "Entries",
+          "startLine": 7,
+          "endLine": 7,
+          "params": []
+        },
+        {
+          "name": "Entries",
+          "startLine": 8,
+          "endLine": 8,
+          "params": [
+            "n"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Entries",
+          "startLine": 4,
+          "endLine": 9,
+          "methods": [
+            "Entries",
+            "Entries"
+          ],
+          "properties": [
+            "node"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "node",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "Entries",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "Entries",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "Entries",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/Entry.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 13,
+      "functions": [
+        {
+          "name": "Entry",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "Entry",
+          "startLine": 10,
+          "endLine": 14,
+          "params": [
+            "fileid",
+            "name",
+            "cookie"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Entry",
+          "startLine": 3,
+          "endLine": 16,
+          "methods": [
+            "Entry",
+            "Entry"
+          ],
+          "properties": [
+            "fileid",
+            "name",
+            "cookie",
+            "next"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "fileid",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "name",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "cookie",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "next",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "Entry",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "Entry",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "Entry",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/FAttr.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 105,
+      "nonEmptyLines": 93,
+      "functions": [
+        {
+          "name": "FAttr",
+          "startLine": 104,
+          "endLine": 104,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "FAttr",
+          "startLine": 62,
+          "endLine": 105,
+          "methods": [
+            "FAttr"
+          ],
+          "properties": [
+            "MODE_ROWNER",
+            "MODE_WOWNER",
+            "MODE_RWOWNER",
+            "MODE_XOWNER",
+            "MODE_RGROUP",
+            "MODE_WGROUP",
+            "MODE_RWGROU",
+            "MODE_XGROUP",
+            "MODE_ROTHER",
+            "MODE_WOTHER",
+            "MODE_RWOTHER",
+            "MODE_XOTHER",
+            "MODE_DIR",
+            "MODE_REGFILE",
+            "MODE_SYMLINK",
+            "type",
+            "mode",
+            "nlink",
+            "uid",
+            "gid",
+            "size",
+            "blocksize",
+            "rdev",
+            "blocks",
+            "fsid",
+            "fileid",
+            "atime",
+            "mtime",
+            "ctime"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "MODE_ROWNER",
+          "line": 63,
+          "isDefault": false
+        },
+        {
+          "name": "MODE_WOWNER",
+          "line": 64,
+          "isDefault": false
+        },
+        {
+          "name": "MODE_RWOWNER",
+          "line": 65,
+          "isDefault": false
+        },
+        {
+          "name": "MODE_XOWNER",
+          "line": 66,
+          "isDefault": false
+        },
+        {
+          "name": "MODE_RGROUP",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "MODE_WGROUP",
+          "line": 68,
+          "isDefault": false
+        },
+        {
+          "name": "MODE_RWGROU",
+          "line": 69,
+          "isDefault": false
+        },
+        {
+          "name": "MODE_XGROUP",
+          "line": 70,
+          "isDefault": false
+        },
+        {
+          "name": "MODE_ROTHER",
+          "line": 71,
+          "isDefault": false
+        },
+        {
+          "name": "MODE_WOTHER",
+          "line": 72,
+          "isDefault": false
+        },
+        {
+          "name": "MODE_RWOTHER",
+          "line": 73,
+          "isDefault": false
+        },
+        {
+          "name": "MODE_XOTHER",
+          "line": 74,
+          "isDefault": false
+        },
+        {
+          "name": "MODE_DIR",
+          "line": 75,
+          "isDefault": false
+        },
+        {
+          "name": "MODE_REGFILE",
+          "line": 76,
+          "isDefault": false
+        },
+        {
+          "name": "MODE_SYMLINK",
+          "line": 77,
+          "isDefault": false
+        },
+        {
+          "name": "type",
+          "line": 89,
+          "isDefault": false
+        },
+        {
+          "name": "mode",
+          "line": 90,
+          "isDefault": false
+        },
+        {
+          "name": "nlink",
+          "line": 91,
+          "isDefault": false
+        },
+        {
+          "name": "uid",
+          "line": 92,
+          "isDefault": false
+        },
+        {
+          "name": "gid",
+          "line": 93,
+          "isDefault": false
+        },
+        {
+          "name": "size",
+          "line": 94,
+          "isDefault": false
+        },
+        {
+          "name": "blocksize",
+          "line": 95,
+          "isDefault": false
+        },
+        {
+          "name": "rdev",
+          "line": 96,
+          "isDefault": false
+        },
+        {
+          "name": "blocks",
+          "line": 97,
+          "isDefault": false
+        },
+        {
+          "name": "fsid",
+          "line": 98,
+          "isDefault": false
+        },
+        {
+          "name": "fileid",
+          "line": 99,
+          "isDefault": false
+        },
+        {
+          "name": "atime",
+          "line": 100,
+          "isDefault": false
+        },
+        {
+          "name": "mtime",
+          "line": 101,
+          "isDefault": false
+        },
+        {
+          "name": "ctime",
+          "line": 102,
+          "isDefault": false
+        },
+        {
+          "name": "FAttr",
+          "line": 104,
+          "isDefault": false
+        },
+        {
+          "name": "FAttr",
+          "line": 62,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 31,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/FHandle.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 17,
+      "functions": [
+        {
+          "name": "FHandle",
+          "startLine": 18,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "FHandle",
+          "startLine": 19,
+          "endLine": 21,
+          "params": [
+            "data"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "FHandle",
+          "startLine": 5,
+          "endLine": 22,
+          "methods": [
+            "FHandle",
+            "FHandle"
+          ],
+          "properties": [
+            "FIXLEN_data",
+            "data"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "FIXLEN_data",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "data",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "FHandle",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "FHandle",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "FHandle",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/FType.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 11,
+      "classes": [
+        {
+          "name": "FType",
+          "startLine": 5,
+          "endLine": 14,
+          "methods": [],
+          "properties": [
+            "ftype_NFNON",
+            "ftype_NFREG",
+            "ftype_NFDIR",
+            "ftype_NFBLK",
+            "ftype_NFCHR",
+            "ftype_NFLNK",
+            "ftype"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ftype_NFNON",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "ftype_NFREG",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "ftype_NFDIR",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "ftype_NFBLK",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "ftype_NFCHR",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "ftype_NFLNK",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "ftype",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "FType",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/MappedFHandle.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 85,
+      "nonEmptyLines": 73,
+      "functions": [
+        {
+          "name": "MappedFHandle",
+          "startLine": 16,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "MappedFHandle",
+          "startLine": 21,
+          "endLine": 27,
+          "params": [
+            "data"
+          ]
+        },
+        {
+          "name": "MappedFHandle",
+          "startLine": 29,
+          "endLine": 38,
+          "params": [
+            "deviceIdentifier",
+            "identifier",
+            "generation"
+          ]
+        },
+        {
+          "name": "MappedFHandle",
+          "startLine": 39,
+          "endLine": 41,
+          "params": [
+            "fh"
+          ]
+        },
+        {
+          "name": "renew",
+          "startLine": 43,
+          "endLine": 51,
+          "params": [
+            "deviceIdentifier",
+            "identifier",
+            "generation"
+          ]
+        },
+        {
+          "name": "renew",
+          "startLine": 52,
+          "endLine": 57,
+          "params": [
+            "data"
+          ]
+        },
+        {
+          "name": "getData",
+          "startLine": 59,
+          "endLine": 59,
+          "params": []
+        },
+        {
+          "name": "getFHandle",
+          "startLine": 60,
+          "endLine": 60,
+          "params": []
+        },
+        {
+          "name": "readInt",
+          "startLine": 62,
+          "endLine": 69,
+          "params": [
+            "o"
+          ]
+        },
+        {
+          "name": "readByte",
+          "startLine": 71,
+          "endLine": 73,
+          "params": [
+            "o"
+          ]
+        },
+        {
+          "name": "writeInt",
+          "startLine": 75,
+          "endLine": 80,
+          "params": [
+            "o",
+            "d"
+          ]
+        },
+        {
+          "name": "unsignedByteToInt",
+          "startLine": 82,
+          "endLine": 84,
+          "params": [
+            "b"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "MappedFHandle",
+          "startLine": 7,
+          "endLine": 85,
+          "methods": [
+            "MappedFHandle",
+            "MappedFHandle",
+            "MappedFHandle",
+            "MappedFHandle",
+            "renew",
+            "renew",
+            "getData",
+            "getFHandle",
+            "readInt",
+            "readByte",
+            "writeInt",
+            "unsignedByteToInt"
+          ],
+          "properties": [
+            "data",
+            "identifier",
+            "deviceIdentifier",
+            "generation"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "identifier",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "deviceIdentifier",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "generation",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "MappedFHandle",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "MappedFHandle",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "MappedFHandle",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "MappedFHandle",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "renew",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "renew",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "getData",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "getFHandle",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "unsignedByteToInt",
+          "line": 82,
+          "isDefault": false
+        },
+        {
+          "name": "MappedFHandle",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "MappedFHandle",
+          "callee": "readInt",
+          "lineNumber": 24
+        },
+        {
+          "caller": "MappedFHandle",
+          "callee": "readInt",
+          "lineNumber": 25
+        },
+        {
+          "caller": "MappedFHandle",
+          "callee": "readInt",
+          "lineNumber": 26
+        },
+        {
+          "caller": "MappedFHandle",
+          "callee": "writeInt",
+          "lineNumber": 35
+        },
+        {
+          "caller": "MappedFHandle",
+          "callee": "writeInt",
+          "lineNumber": 36
+        },
+        {
+          "caller": "MappedFHandle",
+          "callee": "writeInt",
+          "lineNumber": 37
+        },
+        {
+          "caller": "renew",
+          "callee": "writeInt",
+          "lineNumber": 48
+        },
+        {
+          "caller": "renew",
+          "callee": "writeInt",
+          "lineNumber": 49
+        },
+        {
+          "caller": "renew",
+          "callee": "writeInt",
+          "lineNumber": 50
+        },
+        {
+          "caller": "renew",
+          "callee": "readInt",
+          "lineNumber": 54
+        },
+        {
+          "caller": "renew",
+          "callee": "readInt",
+          "lineNumber": 55
+        },
+        {
+          "caller": "renew",
+          "callee": "readInt",
+          "lineNumber": 56
+        },
+        {
+          "caller": "getFHandle",
+          "callee": "new FHandle",
+          "lineNumber": 60
+        },
+        {
+          "caller": "readInt",
+          "callee": "unsignedByteToInt",
+          "lineNumber": 64
+        },
+        {
+          "caller": "readInt",
+          "callee": "readByte",
+          "lineNumber": 64
+        },
+        {
+          "caller": "readInt",
+          "callee": "unsignedByteToInt",
+          "lineNumber": 65
+        },
+        {
+          "caller": "readInt",
+          "callee": "readByte",
+          "lineNumber": 65
+        },
+        {
+          "caller": "readInt",
+          "callee": "unsignedByteToInt",
+          "lineNumber": 66
+        },
+        {
+          "caller": "readInt",
+          "callee": "readByte",
+          "lineNumber": 66
+        },
+        {
+          "caller": "readInt",
+          "callee": "unsignedByteToInt",
+          "lineNumber": 67
+        },
+        {
+          "caller": "readInt",
+          "callee": "readByte",
+          "lineNumber": 67
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 13,
+        "functionCount": 12,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/Name.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "functions": [
+        {
+          "name": "Name",
+          "startLine": 7,
+          "endLine": 7,
+          "params": []
+        },
+        {
+          "name": "Name",
+          "startLine": 8,
+          "endLine": 8,
+          "params": [
+            "d"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Name",
+          "startLine": 3,
+          "endLine": 9,
+          "methods": [
+            "Name",
+            "Name"
+          ],
+          "properties": [
+            "MAXLEN_data",
+            "data"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "MAXLEN_data",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "data",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "Name",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "Name",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "Name",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/NFSCookie.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 10,
+      "nonEmptyLines": 7,
+      "functions": [
+        {
+          "name": "NFSCookie",
+          "startLine": 8,
+          "endLine": 8,
+          "params": [
+            "d"
+          ]
+        },
+        {
+          "name": "NFSCookie",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "NFSCookie",
+          "startLine": 5,
+          "endLine": 10,
+          "methods": [
+            "NFSCookie",
+            "NFSCookie"
+          ],
+          "properties": [
+            "data"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "data",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "NFSCookie",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "NFSCookie",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "NFSCookie",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/NFSData.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 10,
+      "nonEmptyLines": 7,
+      "functions": [
+        {
+          "name": "NFSData",
+          "startLine": 8,
+          "endLine": 8,
+          "params": []
+        },
+        {
+          "name": "NFSData",
+          "startLine": 9,
+          "endLine": 9,
+          "params": [
+            "data"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "NFSData",
+          "startLine": 5,
+          "endLine": 10,
+          "methods": [
+            "NFSData",
+            "NFSData"
+          ],
+          "properties": [
+            "data"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "data",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "NFSData",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "NFSData",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "NFSData",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    }
+  ]
+}

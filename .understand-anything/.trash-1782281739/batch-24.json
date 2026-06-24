@@ -1,0 +1,789 @@
+{
+  "batchIndex": 24,
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "c3840c12f59ad58c",
+      "type": "file",
+      "name": "GuardedObject.java",
+      "filePath": "src/java/security/GuardedObject.java",
+      "language": "java",
+      "totalLines": 104,
+      "nonEmptyLines": 84,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "b3e8782ea6c22cb4",
+      "type": "class",
+      "name": "GuardedObject",
+      "filePath": "src/java/security/GuardedObject.java",
+      "startLine": 44,
+      "endLine": 103
+    },
+    {
+      "id": "afa59fb820d613be",
+      "type": "file",
+      "name": "InvalidAlgorithmParameterException.java",
+      "filePath": "src/java/security/InvalidAlgorithmParameterException.java",
+      "language": "java",
+      "totalLines": 68,
+      "nonEmptyLines": 55,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "ad3ba6358fe886bd",
+      "type": "class",
+      "name": "InvalidAlgorithmParameterException",
+      "filePath": "src/java/security/InvalidAlgorithmParameterException.java",
+      "startLine": 38,
+      "endLine": 67
+    },
+    {
+      "id": "e8b4b82461d2e942",
+      "type": "file",
+      "name": "InvalidKeyException.java",
+      "filePath": "src/java/security/InvalidKeyException.java",
+      "language": "java",
+      "totalLines": 65,
+      "nonEmptyLines": 52,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "5680a54e39076e60",
+      "type": "class",
+      "name": "InvalidKeyException",
+      "filePath": "src/java/security/InvalidKeyException.java",
+      "startLine": 37,
+      "endLine": 64
+    },
+    {
+      "id": "a64d48f8b22cd854",
+      "type": "file",
+      "name": "InvalidParameterException.java",
+      "filePath": "src/java/security/InvalidParameterException.java",
+      "language": "java",
+      "totalLines": 42,
+      "nonEmptyLines": 32,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "1008a5867f40d8b3",
+      "type": "class",
+      "name": "InvalidParameterException",
+      "filePath": "src/java/security/InvalidParameterException.java",
+      "startLine": 38,
+      "endLine": 41
+    },
+    {
+      "id": "3f54d0ed17625425",
+      "type": "file",
+      "name": "KeyException.java",
+      "filePath": "src/java/security/KeyException.java",
+      "language": "java",
+      "totalLines": 65,
+      "nonEmptyLines": 52,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "4648ff001cdf6d97",
+      "type": "class",
+      "name": "KeyException",
+      "filePath": "src/java/security/KeyException.java",
+      "startLine": 37,
+      "endLine": 64
+    },
+    {
+      "id": "a9ab61daf10f738a",
+      "type": "file",
+      "name": "KeyManagementException.java",
+      "filePath": "src/java/security/KeyManagementException.java",
+      "language": "java",
+      "totalLines": 66,
+      "nonEmptyLines": 53,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "b9732b6a98552ce0",
+      "type": "class",
+      "name": "KeyManagementException",
+      "filePath": "src/java/security/KeyManagementException.java",
+      "startLine": 38,
+      "endLine": 65
+    },
+    {
+      "id": "b2d838cdb202a0ea",
+      "type": "file",
+      "name": "KeyPair.java",
+      "filePath": "src/java/security/KeyPair.java",
+      "language": "java",
+      "totalLines": 77,
+      "nonEmptyLines": 60,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "8449c741f0e9cdf1",
+      "type": "class",
+      "name": "KeyPair",
+      "filePath": "src/java/security/KeyPair.java",
+      "startLine": 39,
+      "endLine": 77
+    },
+    {
+      "id": "c449e61e6c14146c",
+      "type": "file",
+      "name": "KeyStoreException.java",
+      "filePath": "src/java/security/KeyStoreException.java",
+      "language": "java",
+      "totalLines": 66,
+      "nonEmptyLines": 52,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "f056288c5e26b7f8",
+      "type": "class",
+      "name": "KeyStoreException",
+      "filePath": "src/java/security/KeyStoreException.java",
+      "startLine": 37,
+      "endLine": 65
+    },
+    {
+      "id": "8b438e028ca88d28",
+      "type": "file",
+      "name": "NoSuchAlgorithmException.java",
+      "filePath": "src/java/security/NoSuchAlgorithmException.java",
+      "language": "java",
+      "totalLines": 66,
+      "nonEmptyLines": 53,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "15874904b06d11cf",
+      "type": "class",
+      "name": "NoSuchAlgorithmException",
+      "filePath": "src/java/security/NoSuchAlgorithmException.java",
+      "startLine": 38,
+      "endLine": 65
+    },
+    {
+      "id": "3f6490aeadc193a5",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/java/security/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "9b8358afd0e8a02b",
+      "type": "file",
+      "name": "ProtectionDomain.java",
+      "filePath": "src/java/security/ProtectionDomain.java",
+      "language": "java",
+      "totalLines": 172,
+      "nonEmptyLines": 140,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "a2aebc71e26bd331",
+      "type": "class",
+      "name": "ProtectionDomain",
+      "filePath": "src/java/security/ProtectionDomain.java",
+      "startLine": 44,
+      "endLine": 171
+    },
+    {
+      "id": "e628376325805ca4",
+      "type": "file",
+      "name": "ProviderException.java",
+      "filePath": "src/java/security/ProviderException.java",
+      "language": "java",
+      "totalLines": 66,
+      "nonEmptyLines": 53,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "26136127bce52175",
+      "type": "class",
+      "name": "ProviderException",
+      "filePath": "src/java/security/ProviderException.java",
+      "startLine": 38,
+      "endLine": 65
+    },
+    {
+      "id": "653025ce7ef0323a",
+      "type": "file",
+      "name": "SecureClassLoader.java",
+      "filePath": "src/java/security/SecureClassLoader.java",
+      "language": "java",
+      "totalLines": 152,
+      "nonEmptyLines": 124,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "07a6890fc26abf0c",
+      "type": "class",
+      "name": "SecureClassLoader",
+      "filePath": "src/java/security/SecureClassLoader.java",
+      "startLine": 39,
+      "endLine": 152
+    },
+    {
+      "id": "20ae8dffc2e55e5e",
+      "type": "file",
+      "name": "SecurityPermission.java",
+      "filePath": "src/java/security/SecurityPermission.java",
+      "language": "java",
+      "totalLines": 106,
+      "nonEmptyLines": 93,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "4406734c819637ea",
+      "type": "class",
+      "name": "SecurityPermission",
+      "filePath": "src/java/security/SecurityPermission.java",
+      "startLine": 74,
+      "endLine": 105
+    },
+    {
+      "id": "6bd9583c7ef7f888",
+      "type": "file",
+      "name": "Signature.java",
+      "filePath": "src/java/security/Signature.java",
+      "language": "java",
+      "totalLines": 486,
+      "nonEmptyLines": 388,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 20,
+        "functionCount": 21,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "7cc218bde6eae7d1",
+      "type": "class",
+      "name": "Signature",
+      "filePath": "src/java/security/Signature.java",
+      "startLine": 67,
+      "endLine": 485
+    },
+    {
+      "id": "6b4adf321c287e6e",
+      "type": "file",
+      "name": "SignatureException.java",
+      "filePath": "src/java/security/SignatureException.java",
+      "language": "java",
+      "totalLines": 64,
+      "nonEmptyLines": 51,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "4bbb0ec3640d6290",
+      "type": "class",
+      "name": "SignatureException",
+      "filePath": "src/java/security/SignatureException.java",
+      "startLine": 38,
+      "endLine": 63
+    },
+    {
+      "id": "dfafc88c4313107a",
+      "type": "file",
+      "name": "DSAParameterSpec.java",
+      "filePath": "src/java/security/spec/DSAParameterSpec.java",
+      "language": "java",
+      "totalLines": 89,
+      "nonEmptyLines": 71,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "2cf0073e4cd8774c",
+      "type": "class",
+      "name": "DSAParameterSpec",
+      "filePath": "src/java/security/spec/DSAParameterSpec.java",
+      "startLine": 40,
+      "endLine": 89
+    },
+    {
+      "id": "2670c62cf411569c",
+      "type": "file",
+      "name": "DSAPrivateKeySpec.java",
+      "filePath": "src/java/security/spec/DSAPrivateKeySpec.java",
+      "language": "java",
+      "totalLines": 102,
+      "nonEmptyLines": 81,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "9b25a12bd07e8198",
+      "type": "class",
+      "name": "DSAPrivateKeySpec",
+      "filePath": "src/java/security/spec/DSAPrivateKeySpec.java",
+      "startLine": 39,
+      "endLine": 102
+    },
+    {
+      "id": "89e541f93687a84f",
+      "type": "file",
+      "name": "DSAPublicKeySpec.java",
+      "filePath": "src/java/security/spec/DSAPublicKeySpec.java",
+      "language": "java",
+      "totalLines": 102,
+      "nonEmptyLines": 81,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "a33e8ab74fc8239c",
+      "type": "class",
+      "name": "DSAPublicKeySpec",
+      "filePath": "src/java/security/spec/DSAPublicKeySpec.java",
+      "startLine": 39,
+      "endLine": 102
+    },
+    {
+      "id": "5bcd9835315d465b",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/java/security/spec/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "45663777d0596610",
+      "type": "file",
+      "name": "PKCS8EncodedKeySpec.java",
+      "filePath": "src/java/security/spec/PKCS8EncodedKeySpec.java",
+      "language": "java",
+      "totalLines": 70,
+      "nonEmptyLines": 54,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "05409a2f4a5da600",
+      "type": "class",
+      "name": "PKCS8EncodedKeySpec",
+      "filePath": "src/java/security/spec/PKCS8EncodedKeySpec.java",
+      "startLine": 38,
+      "endLine": 70
+    },
+    {
+      "id": "6992c139bb66171a",
+      "type": "file",
+      "name": "RSAKeyGenParameterSpec.j",
+      "filePath": "src/java/security/spec/RSAKeyGenParameterSpec.j",
+      "language": "j",
+      "totalLines": 86,
+      "nonEmptyLines": 68,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "24513423ce9223c4",
+      "type": "file",
+      "name": "RSAPrivateCrtKeySpec.java",
+      "filePath": "src/java/security/spec/RSAPrivateCrtKeySpec.java",
+      "language": "java",
+      "totalLines": 140,
+      "nonEmptyLines": 115,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "902fd80feb811af2",
+      "type": "class",
+      "name": "RSAPrivateCrtKeySpec",
+      "filePath": "src/java/security/spec/RSAPrivateCrtKeySpec.java",
+      "startLine": 40,
+      "endLine": 140
+    },
+    {
+      "id": "daad3c66f005380e",
+      "type": "file",
+      "name": "RSAPrivateKeySpec.java",
+      "filePath": "src/java/security/spec/RSAPrivateKeySpec.java",
+      "language": "java",
+      "totalLines": 77,
+      "nonEmptyLines": 60,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "2cf08aad6576b0c8",
+      "type": "class",
+      "name": "RSAPrivateKeySpec",
+      "filePath": "src/java/security/spec/RSAPrivateKeySpec.java",
+      "startLine": 39,
+      "endLine": 77
+    },
+    {
+      "id": "52e814114f4fd4e9",
+      "type": "file",
+      "name": "RSAPublicKeySpec.java",
+      "filePath": "src/java/security/spec/RSAPublicKeySpec.java",
+      "language": "java",
+      "totalLines": 77,
+      "nonEmptyLines": 60,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "3bdfbba6f54ac54b",
+      "type": "class",
+      "name": "RSAPublicKeySpec",
+      "filePath": "src/java/security/spec/RSAPublicKeySpec.java",
+      "startLine": 39,
+      "endLine": 77
+    }
+  ],
+  "edges": [
+    {
+      "source": "c3840c12f59ad58c",
+      "target": "b3e8782ea6c22cb4",
+      "type": "contains"
+    },
+    {
+      "source": "b3e8782ea6c22cb4",
+      "target": "c3840c12f59ad58c",
+      "type": "exports"
+    },
+    {
+      "source": "afa59fb820d613be",
+      "target": "ad3ba6358fe886bd",
+      "type": "contains"
+    },
+    {
+      "source": "ad3ba6358fe886bd",
+      "target": "afa59fb820d613be",
+      "type": "exports"
+    },
+    {
+      "source": "e8b4b82461d2e942",
+      "target": "5680a54e39076e60",
+      "type": "contains"
+    },
+    {
+      "source": "5680a54e39076e60",
+      "target": "e8b4b82461d2e942",
+      "type": "exports"
+    },
+    {
+      "source": "a64d48f8b22cd854",
+      "target": "1008a5867f40d8b3",
+      "type": "contains"
+    },
+    {
+      "source": "1008a5867f40d8b3",
+      "target": "a64d48f8b22cd854",
+      "type": "exports"
+    },
+    {
+      "source": "3f54d0ed17625425",
+      "target": "4648ff001cdf6d97",
+      "type": "contains"
+    },
+    {
+      "source": "4648ff001cdf6d97",
+      "target": "3f54d0ed17625425",
+      "type": "exports"
+    },
+    {
+      "source": "a9ab61daf10f738a",
+      "target": "b9732b6a98552ce0",
+      "type": "contains"
+    },
+    {
+      "source": "b9732b6a98552ce0",
+      "target": "a9ab61daf10f738a",
+      "type": "exports"
+    },
+    {
+      "source": "b2d838cdb202a0ea",
+      "target": "8449c741f0e9cdf1",
+      "type": "contains"
+    },
+    {
+      "source": "8449c741f0e9cdf1",
+      "target": "b2d838cdb202a0ea",
+      "type": "exports"
+    },
+    {
+      "source": "c449e61e6c14146c",
+      "target": "f056288c5e26b7f8",
+      "type": "contains"
+    },
+    {
+      "source": "f056288c5e26b7f8",
+      "target": "c449e61e6c14146c",
+      "type": "exports"
+    },
+    {
+      "source": "8b438e028ca88d28",
+      "target": "15874904b06d11cf",
+      "type": "contains"
+    },
+    {
+      "source": "15874904b06d11cf",
+      "target": "8b438e028ca88d28",
+      "type": "exports"
+    },
+    {
+      "source": "9b8358afd0e8a02b",
+      "target": "a2aebc71e26bd331",
+      "type": "contains"
+    },
+    {
+      "source": "a2aebc71e26bd331",
+      "target": "9b8358afd0e8a02b",
+      "type": "exports"
+    },
+    {
+      "source": "e628376325805ca4",
+      "target": "26136127bce52175",
+      "type": "contains"
+    },
+    {
+      "source": "26136127bce52175",
+      "target": "e628376325805ca4",
+      "type": "exports"
+    },
+    {
+      "source": "653025ce7ef0323a",
+      "target": "07a6890fc26abf0c",
+      "type": "contains"
+    },
+    {
+      "source": "07a6890fc26abf0c",
+      "target": "653025ce7ef0323a",
+      "type": "exports"
+    },
+    {
+      "source": "20ae8dffc2e55e5e",
+      "target": "4406734c819637ea",
+      "type": "contains"
+    },
+    {
+      "source": "4406734c819637ea",
+      "target": "20ae8dffc2e55e5e",
+      "type": "exports"
+    },
+    {
+      "source": "6bd9583c7ef7f888",
+      "target": "7cc218bde6eae7d1",
+      "type": "contains"
+    },
+    {
+      "source": "7cc218bde6eae7d1",
+      "target": "6bd9583c7ef7f888",
+      "type": "exports"
+    },
+    {
+      "source": "6b4adf321c287e6e",
+      "target": "4bbb0ec3640d6290",
+      "type": "contains"
+    },
+    {
+      "source": "4bbb0ec3640d6290",
+      "target": "6b4adf321c287e6e",
+      "type": "exports"
+    },
+    {
+      "source": "dfafc88c4313107a",
+      "target": "2cf0073e4cd8774c",
+      "type": "contains"
+    },
+    {
+      "source": "2cf0073e4cd8774c",
+      "target": "dfafc88c4313107a",
+      "type": "exports"
+    },
+    {
+      "source": "2670c62cf411569c",
+      "target": "9b25a12bd07e8198",
+      "type": "contains"
+    },
+    {
+      "source": "9b25a12bd07e8198",
+      "target": "2670c62cf411569c",
+      "type": "exports"
+    },
+    {
+      "source": "89e541f93687a84f",
+      "target": "a33e8ab74fc8239c",
+      "type": "contains"
+    },
+    {
+      "source": "a33e8ab74fc8239c",
+      "target": "89e541f93687a84f",
+      "type": "exports"
+    },
+    {
+      "source": "45663777d0596610",
+      "target": "05409a2f4a5da600",
+      "type": "contains"
+    },
+    {
+      "source": "05409a2f4a5da600",
+      "target": "45663777d0596610",
+      "type": "exports"
+    },
+    {
+      "source": "24513423ce9223c4",
+      "target": "902fd80feb811af2",
+      "type": "contains"
+    },
+    {
+      "source": "902fd80feb811af2",
+      "target": "24513423ce9223c4",
+      "type": "exports"
+    },
+    {
+      "source": "daad3c66f005380e",
+      "target": "2cf08aad6576b0c8",
+      "type": "contains"
+    },
+    {
+      "source": "2cf08aad6576b0c8",
+      "target": "daad3c66f005380e",
+      "type": "exports"
+    },
+    {
+      "source": "52e814114f4fd4e9",
+      "target": "3bdfbba6f54ac54b",
+      "type": "contains"
+    },
+    {
+      "source": "3bdfbba6f54ac54b",
+      "target": "52e814114f4fd4e9",
+      "type": "exports"
+    }
+  ]
+}

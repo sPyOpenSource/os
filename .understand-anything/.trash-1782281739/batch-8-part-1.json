@@ -1,0 +1,1515 @@
+{
+  "batchIndex": 8,
+  "part": 1,
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "f310c24c3460c5bf",
+      "type": "file",
+      "name": "CodeSource.java",
+      "filePath": "src/java/security/CodeSource.java",
+      "language": "java",
+      "totalLines": 366,
+      "nonEmptyLines": 299,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 8,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "212497a68449b046",
+      "type": "file",
+      "name": "DigestInputStream.java",
+      "filePath": "src/java/security/DigestInputStream.java",
+      "language": "java",
+      "totalLines": 157,
+      "nonEmptyLines": 125,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 8,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "86136f957d5ff4bc",
+      "type": "file",
+      "name": "DigestOutputStream.java",
+      "filePath": "src/java/security/DigestOutputStream.java",
+      "language": "java",
+      "totalLines": 147,
+      "nonEmptyLines": 116,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 8,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "437c73b82acb9e7b",
+      "type": "file",
+      "name": "Permissions.java",
+      "filePath": "src/java/security/Permissions.java",
+      "language": "java",
+      "totalLines": 228,
+      "nonEmptyLines": 192,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "3cceeadf59133e76",
+      "type": "file",
+      "name": "SignedObject.java",
+      "filePath": "src/java/security/SignedObject.java",
+      "language": "java",
+      "totalLines": 166,
+      "nonEmptyLines": 132,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "1ee5c9cb7d7675ff",
+      "type": "file",
+      "name": "ChoiceFormat.java",
+      "filePath": "src/java/text/ChoiceFormat.java",
+      "language": "java",
+      "totalLines": 455,
+      "nonEmptyLines": 389,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 16,
+        "functionCount": 15,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "214d86039fda987b",
+      "type": "file",
+      "name": "HashMap.java",
+      "filePath": "src/java/util/HashMap.java",
+      "language": "java",
+      "totalLines": 1939,
+      "nonEmptyLines": 1805,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 17,
+        "functionCount": 31,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "5cc067aa3c5005f2",
+      "type": "file",
+      "name": "HashSet.java",
+      "filePath": "src/java/util/HashSet.java",
+      "language": "java",
+      "totalLines": 264,
+      "nonEmptyLines": 230,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 14,
+        "functionCount": 17,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "0882806d77f5e155",
+      "type": "file",
+      "name": "Hashtable.java",
+      "filePath": "src/java/util/Hashtable.java",
+      "language": "java",
+      "totalLines": 346,
+      "nonEmptyLines": 270,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 18,
+        "functionCount": 19,
+        "classCount": 2
+      }
+    },
+    {
+      "id": "0f445ceb075828f8",
+      "type": "file",
+      "name": "LinkedHashMap.java",
+      "filePath": "src/java/util/LinkedHashMap.java",
+      "language": "java",
+      "totalLines": 770,
+      "nonEmptyLines": 716,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 15,
+        "functionCount": 26,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "b1f485210d5fe292",
+      "type": "file",
+      "name": "NoSuchElementException.java",
+      "filePath": "src/java/util/NoSuchElementException.java",
+      "language": "java",
+      "totalLines": 12,
+      "nonEmptyLines": 9,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "ed460fcdcd69fb65",
+      "type": "file",
+      "name": "StringTokenizer.java",
+      "filePath": "src/java/util/StringTokenizer.java",
+      "language": "java",
+      "totalLines": 261,
+      "nonEmptyLines": 243,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 10,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "ab8a716ff6bd21d3",
+      "type": "file",
+      "name": "TreeMap.java",
+      "filePath": "src/java/util/TreeMap.java",
+      "language": "java",
+      "totalLines": 1549,
+      "nonEmptyLines": 1339,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 37,
+        "functionCount": 62,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "d3f16cdaf9e4787e",
+      "type": "file",
+      "name": "InitialNaming.java",
+      "filePath": "src/jx/InitialNaming.java",
+      "language": "java",
+      "totalLines": 84,
+      "nonEmptyLines": 72,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 6,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "b76989a1156cf6be",
+      "type": "file",
+      "name": "LoadedClass.java",
+      "filePath": "src/jx/classstore/LoadedClass.java",
+      "language": "java",
+      "totalLines": 8,
+      "nonEmptyLines": 6,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "c45f13a05f1133d7",
+      "type": "file",
+      "name": "NamingImpl.java",
+      "filePath": "src/jx/emulation/NamingImpl.java",
+      "language": "java",
+      "totalLines": 31,
+      "nonEmptyLines": 25,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "7c2b2914de3dd268",
+      "type": "file",
+      "name": "TCPInputStream.java",
+      "filePath": "src/jx/net/TCPInputStream.java",
+      "language": "java",
+      "totalLines": 48,
+      "nonEmptyLines": 39,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "da8b14945624fb45",
+      "type": "file",
+      "name": "TCPOutputStream.java",
+      "filePath": "src/jx/net/TCPOutputStream.java",
+      "language": "java",
+      "totalLines": 65,
+      "nonEmptyLines": 49,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "914fa86f8ae0ef40",
+      "type": "file",
+      "name": "RPC.java",
+      "filePath": "src/jx/rpc/RPC.java",
+      "language": "java",
+      "totalLines": 434,
+      "nonEmptyLines": 379,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 17,
+        "functionCount": 15,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "91e1659e244cab0f",
+      "type": "file",
+      "name": "InputStreamPortal.java",
+      "filePath": "src/jx/streams/InputStreamPortal.java",
+      "language": "java",
+      "totalLines": 8,
+      "nonEmptyLines": 6,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "347f9a71bdf9511b",
+      "type": "file",
+      "name": "OutputStreamPortal.java",
+      "filePath": "src/jx/streams/OutputStreamPortal.java",
+      "language": "java",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "b56460057705527d",
+      "type": "file",
+      "name": "MemoryOutputStream.java",
+      "filePath": "src/jx/zero/memory/MemoryOutputStream.java",
+      "language": "java",
+      "totalLines": 22,
+      "nonEmptyLines": 17,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "36df5fde4cc36da6",
+      "type": "class",
+      "name": "CodeSource",
+      "filePath": "src/java/security/CodeSource.java",
+      "startLine": 43,
+      "endLine": 365,
+      "methods": [
+        "CodeSource",
+        "getLocation",
+        "getCertificates",
+        "implies",
+        "equals",
+        "hashCode",
+        "toString"
+      ],
+      "properties": [
+        "linesep",
+        "location",
+        "certs"
+      ]
+    },
+    {
+      "id": "6f5762cabd2de3bd",
+      "type": "class",
+      "name": "DigestInputStream",
+      "filePath": "src/java/security/DigestInputStream.java",
+      "startLine": 46,
+      "endLine": 157,
+      "methods": [
+        "DigestInputStream",
+        "getMessageDigest",
+        "setMessageDigest",
+        "read",
+        "read",
+        "on",
+        "toString"
+      ],
+      "properties": [
+        "digest",
+        "state"
+      ]
+    },
+    {
+      "id": "68b0ff615e669ed8",
+      "type": "class",
+      "name": "DigestOutputStream",
+      "filePath": "src/java/security/DigestOutputStream.java",
+      "startLine": 46,
+      "endLine": 147,
+      "methods": [
+        "DigestOutputStream",
+        "getMessageDigest",
+        "setMessageDigest",
+        "write",
+        "write",
+        "on",
+        "toString"
+      ],
+      "properties": [
+        "digest",
+        "state"
+      ]
+    },
+    {
+      "id": "a86fa55d27ddd3ff",
+      "type": "class",
+      "name": "Permissions",
+      "filePath": "src/java/security/Permissions.java",
+      "startLine": 50,
+      "endLine": 227,
+      "methods": [
+        "Permissions",
+        "add",
+        "implies",
+        "elements"
+      ],
+      "properties": [
+        "allPermission",
+        "perms"
+      ]
+    },
+    {
+      "id": "88c8cceb491e066b",
+      "type": "class",
+      "name": "SignedObject",
+      "filePath": "src/java/security/SignedObject.java",
+      "startLine": 70,
+      "endLine": 166,
+      "methods": [
+        "SignedObject",
+        "getObject",
+        "getSignature",
+        "getAlgorithm",
+        "verify"
+      ],
+      "properties": [
+        "content",
+        "signature",
+        "thealgorithm"
+      ]
+    },
+    {
+      "id": "23a6fa2953715c9e",
+      "type": "class",
+      "name": "ChoiceFormat",
+      "filePath": "src/java/text/ChoiceFormat.java",
+      "startLine": 65,
+      "endLine": 454,
+      "methods": [
+        "nextDouble",
+        "nextDouble",
+        "previousDouble",
+        "ChoiceFormat",
+        "ChoiceFormat",
+        "getLimits",
+        "getFormats",
+        "setChoices",
+        "applyPattern",
+        "toPattern",
+        "format",
+        "format",
+        "parse",
+        "equals",
+        "hashCode"
+      ],
+      "properties": [
+        "choiceFormats",
+        "choiceLimits"
+      ]
+    },
+    {
+      "id": "271735dfb2cd1759",
+      "type": "class",
+      "name": "HashMap",
+      "filePath": "src/java/util/HashMap.java",
+      "startLine": 62,
+      "endLine": 1939,
+      "methods": [
+        "HashMap",
+        "HashMap",
+        "HashMap",
+        "HashMap",
+        "reinitialize",
+        "tableSizeFor",
+        "resize",
+        "putVal",
+        "putMapEntries",
+        "getNode",
+        "removeNode",
+        "size",
+        "isEmpty",
+        "clear",
+        "clone",
+        "keySet",
+        "entrySet",
+        "values",
+        "hash",
+        "containsKey",
+        "containsValue",
+        "get",
+        "put",
+        "remove",
+        "internalPut",
+        "init",
+        "rehash",
+        "internalGet",
+        "containsEntry",
+        "writeObject",
+        "readObject"
+      ],
+      "properties": [
+        "DEFAULT_CAPACITY",
+        "DEFAULT_LOAD_FACTOR",
+        "NULL_KEY",
+        "KEYS",
+        "VALUES",
+        "ENTRIES",
+        "UNTREEIFY_THRESHOLD",
+        "serialVersionUID",
+        "capacity",
+        "size",
+        "loadFactor",
+        "threshold",
+        "buckets",
+        "modCount",
+        "table",
+        "entrySet",
+        "MAXIMUM_CAPACITY",
+        "DEFAULT_INITIAL_CAPACITY",
+        "TREEIFY_THRESHOLD"
+      ]
+    },
+    {
+      "id": "5c848f531571922f",
+      "type": "class",
+      "name": "HashSet",
+      "filePath": "src/java/util/HashSet.java",
+      "startLine": 51,
+      "endLine": 264,
+      "methods": [
+        "HashSet",
+        "HashSet",
+        "HashSet",
+        "HashSet",
+        "HashSet",
+        "add",
+        "clear",
+        "clone",
+        "contains",
+        "isEmpty",
+        "iterator",
+        "remove",
+        "size",
+        "internalAdd",
+        "writeObject",
+        "readObject",
+        "toArray"
+      ],
+      "properties": [
+        "map",
+        "serialVersionUID"
+      ]
+    },
+    {
+      "id": "1cdebac992465667",
+      "type": "class",
+      "name": "HashtableEnumeration",
+      "filePath": "src/java/util/Hashtable.java",
+      "startLine": 3,
+      "endLine": 51,
+      "methods": [
+        "next_element",
+        "hasMoreElements",
+        "nextElement",
+        "HashtableEnumeration"
+      ],
+      "properties": [
+        "source",
+        "index",
+        "next"
+      ]
+    },
+    {
+      "id": "92ebb14e7c756e7b",
+      "type": "class",
+      "name": "Hashtable",
+      "filePath": "src/java/util/Hashtable.java",
+      "startLine": 53,
+      "endLine": 346,
+      "methods": [
+        "rehash",
+        "toString",
+        "clear",
+        "get",
+        "put",
+        "remove",
+        "keys",
+        "elements",
+        "size",
+        "isEmpty",
+        "containsKey",
+        "contains",
+        "Hashtable",
+        "Hashtable",
+        "Hashtable"
+      ],
+      "properties": [
+        "keys",
+        "values",
+        "capacity",
+        "load",
+        "mask",
+        "size"
+      ]
+    },
+    {
+      "id": "f8a8b1dd8b500d5f",
+      "type": "class",
+      "name": "LinkedHashMap",
+      "filePath": "src/java/util/LinkedHashMap.java",
+      "startLine": 163,
+      "endLine": 770,
+      "methods": [
+        "linkNodeLast",
+        "transferLinks",
+        "reinitialize",
+        "newNode",
+        "replacementNode",
+        "newTreeNode",
+        "replacementTreeNode",
+        "afterNodeRemoval",
+        "afterNodeInsertion",
+        "afterNodeAccess",
+        "internalWriteEntries",
+        "LinkedHashMap",
+        "LinkedHashMap",
+        "LinkedHashMap",
+        "LinkedHashMap",
+        "LinkedHashMap",
+        "containsValue",
+        "get",
+        "getOrDefault",
+        "clear",
+        "removeEldestEntry",
+        "keySet",
+        "values",
+        "entrySet",
+        "forEach",
+        "replaceAll"
+      ],
+      "properties": [
+        "serialVersionUID",
+        "head",
+        "tail",
+        "accessOrder"
+      ]
+    },
+    {
+      "id": "c8d89f1eff6e0005",
+      "type": "class",
+      "name": "NoSuchElementException",
+      "filePath": "src/java/util/NoSuchElementException.java",
+      "startLine": 3,
+      "endLine": 11,
+      "methods": [
+        "NoSuchElementException",
+        "NoSuchElementException"
+      ],
+      "properties": []
+    },
+    {
+      "id": "ab85e0464c142399",
+      "type": "class",
+      "name": "StringTokenizer",
+      "filePath": "src/java/util/StringTokenizer.java",
+      "startLine": 62,
+      "endLine": 261,
+      "methods": [
+        "StringTokenizer",
+        "StringTokenizer",
+        "StringTokenizer",
+        "skipDelimiters",
+        "hasMoreTokens",
+        "nextToken",
+        "nextToken",
+        "hasMoreElements",
+        "nextElement",
+        "countTokens"
+      ],
+      "properties": [
+        "currentPosition",
+        "maxPosition",
+        "str",
+        "delimiters",
+        "retTokens"
+      ]
+    },
+    {
+      "id": "03fdcc84ca7afecd",
+      "type": "class",
+      "name": "TreeMap",
+      "filePath": "src/java/util/TreeMap.java",
+      "startLine": 64,
+      "endLine": 1549,
+      "methods": [
+        "TreeMap",
+        "TreeMap",
+        "TreeMap",
+        "TreeMap",
+        "clear",
+        "clone",
+        "comparator",
+        "containsKey",
+        "containsValue",
+        "firstKey",
+        "headMap",
+        "lastKey",
+        "put",
+        "putAll",
+        "size",
+        "subMap",
+        "tailMap",
+        "putAllLinear",
+        "writeObject",
+        "readObject",
+        "buildTree",
+        "compare",
+        "keyInMinRange",
+        "keyInMaxRange",
+        "keyInClosedMaxRange",
+        "keyInRange",
+        "keyInClosedRange",
+        "treeSearch",
+        "treeMin",
+        "treeMinConstrained",
+        "treeMax",
+        "treeMaxConstrained",
+        "lowerBound",
+        "upperBound",
+        "treeSuccessor",
+        "treePredecessor",
+        "getArgumentError",
+        "treeInsert",
+        "leftRotate",
+        "rightRotate",
+        "rbInsert",
+        "rbDelete",
+        "rbDeleteFixup",
+        "entrySet",
+        "lowerEntry",
+        "lowerKey",
+        "floorEntry",
+        "floorKey",
+        "ceilingEntry",
+        "ceilingKey",
+        "higherEntry",
+        "higherKey",
+        "firstEntry",
+        "lastEntry",
+        "pollFirstEntry",
+        "pollLastEntry",
+        "descendingMap",
+        "navigableKeySet",
+        "descendingKeySet",
+        "subMap",
+        "headMap",
+        "tailMap"
+      ],
+      "properties": [
+        "ENTRIES",
+        "KEYS",
+        "VALUES",
+        "RED",
+        "BLACK",
+        "NIL",
+        "_oRoot",
+        "_iSize",
+        "_iModCount",
+        "_oComparator",
+        "serialPersistentFields",
+        "serialVersionUID"
+      ]
+    },
+    {
+      "id": "1c8615a9cb84df8a",
+      "type": "class",
+      "name": "InitialNaming",
+      "filePath": "src/jx/InitialNaming.java",
+      "startLine": 9,
+      "endLine": 84,
+      "methods": [
+        "getInitialNaming",
+        "InitialNaming",
+        "registerPortal",
+        "lookup",
+        "add",
+        "serviceFinalizer",
+        "lookupOrWait"
+      ],
+      "properties": [
+        "baseNaming",
+        "names"
+      ]
+    },
+    {
+      "id": "1321f6a3042842b8",
+      "type": "class",
+      "name": "LoadedClass",
+      "filePath": "src/jx/classstore/LoadedClass.java",
+      "startLine": 5,
+      "endLine": 8,
+      "methods": [],
+      "properties": []
+    },
+    {
+      "id": "689ddf7e3261b1b6",
+      "type": "class",
+      "name": "NamingImpl",
+      "filePath": "src/jx/emulation/NamingImpl.java",
+      "startLine": 6,
+      "endLine": 31,
+      "methods": [
+        "NamingImpl",
+        "lookup",
+        "lookupOrWait",
+        "registerPortal"
+      ],
+      "properties": [
+        "portalNames"
+      ]
+    },
+    {
+      "id": "89fa8c6d3ccbae48",
+      "type": "class",
+      "name": "TCPInputStream",
+      "filePath": "src/jx/net/TCPInputStream.java",
+      "startLine": 13,
+      "endLine": 48,
+      "methods": [
+        "TCPInputStream",
+        "read"
+      ],
+      "properties": [
+        "tcpSocket",
+        "buffer",
+        "buf_pos"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "f310c24c3460c5bf",
+      "target": "36df5fde4cc36da6",
+      "type": "contains"
+    },
+    {
+      "source": "36df5fde4cc36da6",
+      "target": "f310c24c3460c5bf",
+      "type": "exports"
+    },
+    {
+      "source": "212497a68449b046",
+      "target": "6f5762cabd2de3bd",
+      "type": "contains"
+    },
+    {
+      "source": "6f5762cabd2de3bd",
+      "target": "212497a68449b046",
+      "type": "exports"
+    },
+    {
+      "source": "86136f957d5ff4bc",
+      "target": "68b0ff615e669ed8",
+      "type": "contains"
+    },
+    {
+      "source": "68b0ff615e669ed8",
+      "target": "86136f957d5ff4bc",
+      "type": "exports"
+    },
+    {
+      "source": "437c73b82acb9e7b",
+      "target": "a86fa55d27ddd3ff",
+      "type": "contains"
+    },
+    {
+      "source": "a86fa55d27ddd3ff",
+      "target": "437c73b82acb9e7b",
+      "type": "exports"
+    },
+    {
+      "source": "3cceeadf59133e76",
+      "target": "88c8cceb491e066b",
+      "type": "contains"
+    },
+    {
+      "source": "88c8cceb491e066b",
+      "target": "3cceeadf59133e76",
+      "type": "exports"
+    },
+    {
+      "source": "1ee5c9cb7d7675ff",
+      "target": "23a6fa2953715c9e",
+      "type": "contains"
+    },
+    {
+      "source": "23a6fa2953715c9e",
+      "target": "1ee5c9cb7d7675ff",
+      "type": "exports"
+    },
+    {
+      "source": "214d86039fda987b",
+      "target": "271735dfb2cd1759",
+      "type": "contains"
+    },
+    {
+      "source": "271735dfb2cd1759",
+      "target": "214d86039fda987b",
+      "type": "exports"
+    },
+    {
+      "source": "5cc067aa3c5005f2",
+      "target": "5c848f531571922f",
+      "type": "contains"
+    },
+    {
+      "source": "5c848f531571922f",
+      "target": "5cc067aa3c5005f2",
+      "type": "exports"
+    },
+    {
+      "source": "0882806d77f5e155",
+      "target": "1cdebac992465667",
+      "type": "contains"
+    },
+    {
+      "source": "1cdebac992465667",
+      "target": "0882806d77f5e155",
+      "type": "exports"
+    },
+    {
+      "source": "0882806d77f5e155",
+      "target": "92ebb14e7c756e7b",
+      "type": "contains"
+    },
+    {
+      "source": "92ebb14e7c756e7b",
+      "target": "0882806d77f5e155",
+      "type": "exports"
+    },
+    {
+      "source": "0f445ceb075828f8",
+      "target": "f8a8b1dd8b500d5f",
+      "type": "contains"
+    },
+    {
+      "source": "f8a8b1dd8b500d5f",
+      "target": "0f445ceb075828f8",
+      "type": "exports"
+    },
+    {
+      "source": "b1f485210d5fe292",
+      "target": "c8d89f1eff6e0005",
+      "type": "contains"
+    },
+    {
+      "source": "c8d89f1eff6e0005",
+      "target": "b1f485210d5fe292",
+      "type": "exports"
+    },
+    {
+      "source": "ed460fcdcd69fb65",
+      "target": "ab85e0464c142399",
+      "type": "contains"
+    },
+    {
+      "source": "ab85e0464c142399",
+      "target": "ed460fcdcd69fb65",
+      "type": "exports"
+    },
+    {
+      "source": "ab8a716ff6bd21d3",
+      "target": "03fdcc84ca7afecd",
+      "type": "contains"
+    },
+    {
+      "source": "03fdcc84ca7afecd",
+      "target": "ab8a716ff6bd21d3",
+      "type": "exports"
+    },
+    {
+      "source": "d3f16cdaf9e4787e",
+      "target": "1c8615a9cb84df8a",
+      "type": "contains"
+    },
+    {
+      "source": "1c8615a9cb84df8a",
+      "target": "d3f16cdaf9e4787e",
+      "type": "exports"
+    },
+    {
+      "source": "b76989a1156cf6be",
+      "target": "1321f6a3042842b8",
+      "type": "contains"
+    },
+    {
+      "source": "1321f6a3042842b8",
+      "target": "b76989a1156cf6be",
+      "type": "exports"
+    },
+    {
+      "source": "c45f13a05f1133d7",
+      "target": "689ddf7e3261b1b6",
+      "type": "contains"
+    },
+    {
+      "source": "689ddf7e3261b1b6",
+      "target": "c45f13a05f1133d7",
+      "type": "exports"
+    },
+    {
+      "source": "7c2b2914de3dd268",
+      "target": "89fa8c6d3ccbae48",
+      "type": "contains"
+    },
+    {
+      "source": "89fa8c6d3ccbae48",
+      "target": "7c2b2914de3dd268",
+      "type": "exports"
+    },
+    {
+      "source": "da8b14945624fb45",
+      "target": "3e260f23a0f25f09",
+      "type": "contains"
+    },
+    {
+      "source": "3e260f23a0f25f09",
+      "target": "da8b14945624fb45",
+      "type": "exports"
+    },
+    {
+      "source": "914fa86f8ae0ef40",
+      "target": "77d9d212b2b2fe9e",
+      "type": "contains"
+    },
+    {
+      "source": "77d9d212b2b2fe9e",
+      "target": "914fa86f8ae0ef40",
+      "type": "exports"
+    },
+    {
+      "source": "91e1659e244cab0f",
+      "target": "0284ad115f6d6c86",
+      "type": "contains"
+    },
+    {
+      "source": "0284ad115f6d6c86",
+      "target": "91e1659e244cab0f",
+      "type": "exports"
+    },
+    {
+      "source": "347f9a71bdf9511b",
+      "target": "434def55bda6bb6b",
+      "type": "contains"
+    },
+    {
+      "source": "434def55bda6bb6b",
+      "target": "347f9a71bdf9511b",
+      "type": "exports"
+    },
+    {
+      "source": "b56460057705527d",
+      "target": "c45e8732f1e773ae",
+      "type": "contains"
+    },
+    {
+      "source": "c45e8732f1e773ae",
+      "target": "b56460057705527d",
+      "type": "exports"
+    },
+    {
+      "source": "f310c24c3460c5bf",
+      "target": "4922235cb0c65792",
+      "type": "imports"
+    },
+    {
+      "source": "f310c24c3460c5bf",
+      "target": "9d1fdd15641f78a4",
+      "type": "imports"
+    },
+    {
+      "source": "212497a68449b046",
+      "target": "b959d01a8048ba08",
+      "type": "imports"
+    },
+    {
+      "source": "212497a68449b046",
+      "target": "28ba8a28519142b3",
+      "type": "imports"
+    },
+    {
+      "source": "86136f957d5ff4bc",
+      "target": "34543bf778fd1998",
+      "type": "imports"
+    },
+    {
+      "source": "86136f957d5ff4bc",
+      "target": "28ba8a28519142b3",
+      "type": "imports"
+    },
+    {
+      "source": "437c73b82acb9e7b",
+      "target": "13f3002fe28ab615",
+      "type": "imports"
+    },
+    {
+      "source": "437c73b82acb9e7b",
+      "target": "0882806d77f5e155",
+      "type": "imports"
+    },
+    {
+      "source": "437c73b82acb9e7b",
+      "target": "b1f485210d5fe292",
+      "type": "imports"
+    },
+    {
+      "source": "3cceeadf59133e76",
+      "target": "f411576d8dbdb282",
+      "type": "imports"
+    },
+    {
+      "source": "3cceeadf59133e76",
+      "target": "fa468b8a651f5b2b",
+      "type": "imports"
+    },
+    {
+      "source": "3cceeadf59133e76",
+      "target": "28ba8a28519142b3",
+      "type": "imports"
+    },
+    {
+      "source": "3cceeadf59133e76",
+      "target": "1590cd89ba611d2b",
+      "type": "imports"
+    },
+    {
+      "source": "3cceeadf59133e76",
+      "target": "304e7f96c408696f",
+      "type": "imports"
+    },
+    {
+      "source": "1ee5c9cb7d7675ff",
+      "target": "ed460fcdcd69fb65",
+      "type": "imports"
+    },
+    {
+      "source": "214d86039fda987b",
+      "target": "28ba8a28519142b3",
+      "type": "imports"
+    },
+    {
+      "source": "214d86039fda987b",
+      "target": "1590cd89ba611d2b",
+      "type": "imports"
+    },
+    {
+      "source": "214d86039fda987b",
+      "target": "304e7f96c408696f",
+      "type": "imports"
+    },
+    {
+      "source": "214d86039fda987b",
+      "target": "3c318f196d688583",
+      "type": "imports"
+    },
+    {
+      "source": "5cc067aa3c5005f2",
+      "target": "28ba8a28519142b3",
+      "type": "imports"
+    },
+    {
+      "source": "5cc067aa3c5005f2",
+      "target": "1590cd89ba611d2b",
+      "type": "imports"
+    },
+    {
+      "source": "5cc067aa3c5005f2",
+      "target": "304e7f96c408696f",
+      "type": "imports"
+    },
+    {
+      "source": "0f445ceb075828f8",
+      "target": "28ba8a28519142b3",
+      "type": "imports"
+    },
+    {
+      "source": "ab8a716ff6bd21d3",
+      "target": "28ba8a28519142b3",
+      "type": "imports"
+    },
+    {
+      "source": "ab8a716ff6bd21d3",
+      "target": "1590cd89ba611d2b",
+      "type": "imports"
+    },
+    {
+      "source": "ab8a716ff6bd21d3",
+      "target": "304e7f96c408696f",
+      "type": "imports"
+    },
+    {
+      "source": "ab8a716ff6bd21d3",
+      "target": "4c93a7a49eb3483e",
+      "type": "imports"
+    },
+    {
+      "source": "d3f16cdaf9e4787e",
+      "target": "0882806d77f5e155",
+      "type": "imports"
+    },
+    {
+      "source": "b76989a1156cf6be",
+      "target": "0882806d77f5e155",
+      "type": "imports"
+    },
+    {
+      "source": "c45f13a05f1133d7",
+      "target": "214d86039fda987b",
+      "type": "imports"
+    },
+    {
+      "source": "7c2b2914de3dd268",
+      "target": "28ba8a28519142b3",
+      "type": "imports"
+    },
+    {
+      "source": "914fa86f8ae0ef40",
+      "target": "0882806d77f5e155",
+      "type": "imports"
+    },
+    {
+      "source": "914fa86f8ae0ef40",
+      "target": "3c26d2167c08b76c",
+      "type": "imports"
+    },
+    {
+      "source": "91e1659e244cab0f",
+      "target": "28ba8a28519142b3",
+      "type": "imports"
+    },
+    {
+      "source": "347f9a71bdf9511b",
+      "target": "28ba8a28519142b3",
+      "type": "imports"
+    },
+    {
+      "source": "b56460057705527d",
+      "target": "28ba8a28519142b3",
+      "type": "imports"
+    },
+    {
+      "source": "f310c24c3460c5bf",
+      "target": "4922235cb0c65792",
+      "type": "depends_on"
+    },
+    {
+      "source": "f310c24c3460c5bf",
+      "target": "9d1fdd15641f78a4",
+      "type": "depends_on"
+    },
+    {
+      "source": "212497a68449b046",
+      "target": "b959d01a8048ba08",
+      "type": "depends_on"
+    },
+    {
+      "source": "212497a68449b046",
+      "target": "28ba8a28519142b3",
+      "type": "depends_on"
+    },
+    {
+      "source": "86136f957d5ff4bc",
+      "target": "34543bf778fd1998",
+      "type": "depends_on"
+    },
+    {
+      "source": "86136f957d5ff4bc",
+      "target": "28ba8a28519142b3",
+      "type": "depends_on"
+    },
+    {
+      "source": "437c73b82acb9e7b",
+      "target": "13f3002fe28ab615",
+      "type": "depends_on"
+    },
+    {
+      "source": "3cceeadf59133e76",
+      "target": "f411576d8dbdb282",
+      "type": "depends_on"
+    },
+    {
+      "source": "3cceeadf59133e76",
+      "target": "fa468b8a651f5b2b",
+      "type": "depends_on"
+    },
+    {
+      "source": "3cceeadf59133e76",
+      "target": "28ba8a28519142b3",
+      "type": "depends_on"
+    },
+    {
+      "source": "3cceeadf59133e76",
+      "target": "1590cd89ba611d2b",
+      "type": "depends_on"
+    },
+    {
+      "source": "3cceeadf59133e76",
+      "target": "304e7f96c408696f",
+      "type": "depends_on"
+    },
+    {
+      "source": "214d86039fda987b",
+      "target": "28ba8a28519142b3",
+      "type": "depends_on"
+    },
+    {
+      "source": "214d86039fda987b",
+      "target": "1590cd89ba611d2b",
+      "type": "depends_on"
+    },
+    {
+      "source": "214d86039fda987b",
+      "target": "304e7f96c408696f",
+      "type": "depends_on"
+    },
+    {
+      "source": "214d86039fda987b",
+      "target": "3c318f196d688583",
+      "type": "depends_on"
+    },
+    {
+      "source": "214d86039fda987b",
+      "target": "8ac4357fdb03122c",
+      "type": "depends_on"
+    },
+    {
+      "source": "214d86039fda987b",
+      "target": "f70cbf5996805a26",
+      "type": "depends_on"
+    },
+    {
+      "source": "214d86039fda987b",
+      "target": "e749832cbdfa0029",
+      "type": "depends_on"
+    },
+    {
+      "source": "5cc067aa3c5005f2",
+      "target": "28ba8a28519142b3",
+      "type": "depends_on"
+    },
+    {
+      "source": "5cc067aa3c5005f2",
+      "target": "1590cd89ba611d2b",
+      "type": "depends_on"
+    },
+    {
+      "source": "5cc067aa3c5005f2",
+      "target": "304e7f96c408696f",
+      "type": "depends_on"
+    },
+    {
+      "source": "0882806d77f5e155",
+      "target": "a85c6cd6359060e0",
+      "type": "depends_on"
+    },
+    {
+      "source": "0882806d77f5e155",
+      "target": "13f3002fe28ab615",
+      "type": "depends_on"
+    },
+    {
+      "source": "0882806d77f5e155",
+      "target": "d1137060c3e043cd",
+      "type": "depends_on"
+    },
+    {
+      "source": "0882806d77f5e155",
+      "target": "9543e4cdd603e276",
+      "type": "depends_on"
+    },
+    {
+      "source": "0882806d77f5e155",
+      "target": "304e7f96c408696f",
+      "type": "depends_on"
+    },
+    {
+      "source": "0882806d77f5e155",
+      "target": "de76ee2dce649be5",
+      "type": "depends_on"
+    },
+    {
+      "source": "0882806d77f5e155",
+      "target": "6450c0c5c396af1c",
+      "type": "depends_on"
+    },
+    {
+      "source": "0882806d77f5e155",
+      "target": "9d1fdd15641f78a4",
+      "type": "depends_on"
+    },
+    {
+      "source": "0882806d77f5e155",
+      "target": "c97d3ea53e7a634b",
+      "type": "depends_on"
+    },
+    {
+      "source": "0f445ceb075828f8",
+      "target": "28ba8a28519142b3",
+      "type": "depends_on"
+    },
+    {
+      "source": "ed460fcdcd69fb65",
+      "target": "a85c6cd6359060e0",
+      "type": "depends_on"
+    },
+    {
+      "source": "ed460fcdcd69fb65",
+      "target": "de76ee2dce649be5",
+      "type": "depends_on"
+    },
+    {
+      "source": "ed460fcdcd69fb65",
+      "target": "9d1fdd15641f78a4",
+      "type": "depends_on"
+    },
+    {
+      "source": "ed460fcdcd69fb65",
+      "target": "55744e604604a7a2",
+      "type": "depends_on"
+    },
+    {
+      "source": "ab8a716ff6bd21d3",
+      "target": "28ba8a28519142b3",
+      "type": "depends_on"
+    },
+    {
+      "source": "ab8a716ff6bd21d3",
+      "target": "1590cd89ba611d2b",
+      "type": "depends_on"
+    },
+    {
+      "source": "ab8a716ff6bd21d3",
+      "target": "304e7f96c408696f",
+      "type": "depends_on"
+    },
+    {
+      "source": "ab8a716ff6bd21d3",
+      "target": "4c93a7a49eb3483e",
+      "type": "depends_on"
+    },
+    {
+      "source": "7c2b2914de3dd268",
+      "target": "28ba8a28519142b3",
+      "type": "depends_on"
+    },
+    {
+      "source": "7c2b2914de3dd268",
+      "target": "ccdfcf732ddb072c",
+      "type": "depends_on"
+    },
+    {
+      "source": "da8b14945624fb45",
+      "target": "ccdfcf732ddb072c",
+      "type": "depends_on"
+    },
+    {
+      "source": "914fa86f8ae0ef40",
+      "target": "3c26d2167c08b76c",
+      "type": "depends_on"
+    },
+    {
+      "source": "91e1659e244cab0f",
+      "target": "28ba8a28519142b3",
+      "type": "depends_on"
+    },
+    {
+      "source": "347f9a71bdf9511b",
+      "target": "28ba8a28519142b3",
+      "type": "depends_on"
+    },
+    {
+      "source": "b56460057705527d",
+      "target": "28ba8a28519142b3",
+      "type": "depends_on"
+    }
+  ]
+}

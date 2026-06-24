@@ -1,0 +1,88 @@
+{
+  "tour": [
+    {
+      "order": 1,
+      "title": "Project Overview & Entry Point",
+      "description": "Start with the project README describing JX as a microkernel OS in Java, then inspect the build configuration (Ant + NetBeans), and finally the kernel initialization entry point at src/jx/emulation/Init.java where the system boots.",
+      "nodeIds": [
+        "document:README.rst",
+        "config:build.xml",
+        "config:nbproject/project.xml",
+        "file:src/jx/emulation/Init.java"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Kernel Core — Buffers, Domains, Timers & Concurrency",
+      "description": "Explore the microkernel core: buffer list management for I/O, domain abstraction for process isolation, the timer subsystem for scheduling, XDR encoding for inter-domain communication, and concurrency primitives (locks, monitors, condition variables).",
+      "nodeIds": [
+        "file:src/jx/buffer/BufferList.java",
+        "file:src/jx/zero/DomainStarter.java",
+        "file:src/jx/timer/Timer.java",
+        "file:src/jx/xdr/FormatMem.java",
+        "file:src/jx/concurrent/locks/ReentrantLock.java",
+        "file:src/jx/zero/env/Monitor.java"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Classfile System — Loading Java Classes",
+      "description": "The classfile subsystem parses Java .class files into runtime representations. ClassData is the central entry point; it delegates to MethodData, FieldData, CodeData, and the constant pool (ConstantPoolData) for resolving symbolic references.",
+      "nodeIds": [
+        "file:src/jx/classfile/ClassData.java",
+        "file:src/jx/classfile/MethodData.java",
+        "file:src/jx/classfile/FieldData.java",
+        "file:src/jx/classfile/CodeData.java",
+        "file:src/jx/classfile/constantpool/ConstantPoolData.java"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "File System — EXT2 & Block Buffer Cache",
+      "description": "The filesystem layer implements EXT2 with permission checks and a block buffer cache. FilesystemImpl coordinates reads/writes; BufferHead and BufferFreeList manage cached disk blocks; RegularFileImpl and ReadOnlyRegularFileImpl serve file I/O requests.",
+      "nodeIds": [
+        "file:src/jx/fs/FilesystemImpl.java",
+        "file:src/jx/fs/EXT2Permission.java",
+        "file:src/jx/fs/RegularFileImpl.java",
+        "file:src/jx/bio/buffercache/BufferHead.java",
+        "file:src/jx/bio/buffercache/BufferFreeList.java"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Networking Stack — TCP/IP Protocol Suite",
+      "description": "The networking stack implements a layered protocol model: Ethernet frames, ARP for address resolution, IP routing, and TCP for reliable connections. Dispatch.java handles demultiplexing incoming packets across protocol layers.",
+      "nodeIds": [
+        "file:src/jx/net/protocol/tcp/TCP.java",
+        "file:src/jx/net/protocol/ip/IP.java",
+        "file:src/jx/net/protocol/arp/ARP.java",
+        "file:src/jx/net/protocol/ether/Ether.java",
+        "file:src/jx/net/dispatch/Dispatch.java"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "Device Drivers — PCI & USB",
+      "description": "Device drivers span PCI enumeration (PCIDeviceImpl), a 3Com 3C905 NIC driver (metaxa package), and a USB UHCI host-controller framework (JNode). Befehl.java provides low-level port I/O for the NIC; UHCIIO handles USB scheduling.",
+      "nodeIds": [
+        "file:src/jx/devices/pci/PCIDeviceImpl.java",
+        "file:src/metaxa/os/devices/net/Befehl.java",
+        "file:src/org/jnode/driver/bus/usb/uhci/UHCIIO.java",
+        "file:src/org/jnode/driver/bus/usb/USBConfiguration.java"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "Security Framework & Java Standard Library",
+      "description": "The security framework provides crypto providers (JCE Cipher, KeyStore), permissions, and the Security manager. The Java standard library reimplements java.io, java.lang, java.net, and java.util atop the JX kernel, including file I/O (File, FilePermission) and character encoding (EncodingManager).",
+      "nodeIds": [
+        "file:src/java/security/Security.java",
+        "file:src/java/security/KeyStore.java",
+        "file:src/javax/crypto/Cipher.java",
+        "file:src/java/io/File.java",
+        "file:src/java/io/FilePermission.java",
+        "file:src/gnu/java/io/EncodingManager.java"
+      ]
+    }
+  ]
+}

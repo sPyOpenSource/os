@@ -1,0 +1,182 @@
+{
+  "projectRoot": "/Users/xuyi/Source/OS/armOS/lib/jcore/OS",
+  "batchFiles": [
+    {
+      "path": "src/jx/rpcsvc/nfs2/AttrStatErrIO.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/AttrStatErrNoEnt.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/AttrStatErrNotDir.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/AttrStatError.java",
+      "language": "java",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/AttrStatErrStale.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/AttrStatOK.java",
+      "language": "java",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirOpRes.java",
+      "language": "java",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirOpResErrAcces.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirOpResErrExist.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirOpResErrIO.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirOpResErrNotDir.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirOpResError.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirOpResErrStale.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirOpResNoSuchFile.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirOpResOK.java",
+      "language": "java",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/DirPath.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/Entries.java",
+      "language": "java",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/Entry.java",
+      "language": "java",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/FAttr.java",
+      "language": "java",
+      "sizeLines": 105,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/FHandle.java",
+      "language": "java",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/FType.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/MappedFHandle.java",
+      "language": "java",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/Name.java",
+      "language": "java",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/NFSCookie.java",
+      "language": "java",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/NFSData.java",
+      "language": "java",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/jx/rpcsvc/nfs2/AttrStatErrIO.java": [],
+    "src/jx/rpcsvc/nfs2/AttrStatErrNoEnt.java": [],
+    "src/jx/rpcsvc/nfs2/AttrStatErrNotDir.java": [],
+    "src/jx/rpcsvc/nfs2/AttrStatError.java": [],
+    "src/jx/rpcsvc/nfs2/AttrStatErrStale.java": [],
+    "src/jx/rpcsvc/nfs2/AttrStatOK.java": [],
+    "src/jx/rpcsvc/nfs2/DirOpRes.java": [],
+    "src/jx/rpcsvc/nfs2/DirOpResErrAcces.java": [],
+    "src/jx/rpcsvc/nfs2/DirOpResErrExist.java": [],
+    "src/jx/rpcsvc/nfs2/DirOpResErrIO.java": [],
+    "src/jx/rpcsvc/nfs2/DirOpResErrNotDir.java": [],
+    "src/jx/rpcsvc/nfs2/DirOpResError.java": [],
+    "src/jx/rpcsvc/nfs2/DirOpResErrStale.java": [],
+    "src/jx/rpcsvc/nfs2/DirOpResNoSuchFile.java": [],
+    "src/jx/rpcsvc/nfs2/DirOpResOK.java": [],
+    "src/jx/rpcsvc/nfs2/DirPath.java": [],
+    "src/jx/rpcsvc/nfs2/Entries.java": [],
+    "src/jx/rpcsvc/nfs2/Entry.java": [],
+    "src/jx/rpcsvc/nfs2/FAttr.java": [],
+    "src/jx/rpcsvc/nfs2/FHandle.java": [],
+    "src/jx/rpcsvc/nfs2/FType.java": [],
+    "src/jx/rpcsvc/nfs2/MappedFHandle.java": [],
+    "src/jx/rpcsvc/nfs2/Name.java": [],
+    "src/jx/rpcsvc/nfs2/NFSCookie.java": [],
+    "src/jx/rpcsvc/nfs2/NFSData.java": []
+  }
+}

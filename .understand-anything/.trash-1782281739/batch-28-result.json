@@ -1,0 +1,4438 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/jx/bootrc/StringTokenException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 3,
+      "nonEmptyLines": 2,
+      "classes": [
+        {
+          "name": "StringTokenException",
+          "startLine": 3,
+          "endLine": 3,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "StringTokenException",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/buffer/BufferHead.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 78,
+      "nonEmptyLines": 63,
+      "functions": [
+        {
+          "name": "BufferHead",
+          "startLine": 25,
+          "endLine": 29,
+          "params": [
+            "size"
+          ]
+        },
+        {
+          "name": "BufferHead",
+          "startLine": 30,
+          "endLine": 33,
+          "params": [
+            "mem"
+          ]
+        },
+        {
+          "name": "getData",
+          "startLine": 35,
+          "endLine": 36,
+          "params": []
+        },
+        {
+          "name": "setData",
+          "startLine": 37,
+          "endLine": 37,
+          "params": [
+            "data"
+          ]
+        },
+        {
+          "name": "markDirty",
+          "startLine": 39,
+          "endLine": 42,
+          "params": []
+        },
+        {
+          "name": "markUptodate",
+          "startLine": 44,
+          "endLine": 47,
+          "params": []
+        },
+        {
+          "name": "clear",
+          "startLine": 49,
+          "endLine": 52,
+          "params": []
+        },
+        {
+          "name": "getBlock",
+          "startLine": 54,
+          "endLine": 57,
+          "params": []
+        },
+        {
+          "name": "getSize",
+          "startLine": 59,
+          "endLine": 62,
+          "params": []
+        },
+        {
+          "name": "endIo",
+          "startLine": 64,
+          "endLine": 67,
+          "params": [
+            "b",
+            "b0"
+          ]
+        },
+        {
+          "name": "ref",
+          "startLine": 69,
+          "endLine": 72,
+          "params": []
+        },
+        {
+          "name": "dirty",
+          "startLine": 74,
+          "endLine": 77,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "BufferHead",
+          "startLine": 11,
+          "endLine": 78,
+          "methods": [
+            "BufferHead",
+            "BufferHead",
+            "getData",
+            "setData",
+            "markDirty",
+            "markUptodate",
+            "clear",
+            "getBlock",
+            "getSize",
+            "endIo",
+            "ref",
+            "dirty"
+          ],
+          "properties": [
+            "prev",
+            "next",
+            "inlist",
+            "data",
+            "size"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "inlist",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "data",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "size",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "BufferHead",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "BufferHead",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "getData",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "setData",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "markDirty",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "markUptodate",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "clear",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "getBlock",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "getSize",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "endIo",
+          "line": 64,
+          "isDefault": false
+        },
+        {
+          "name": "ref",
+          "line": 69,
+          "isDefault": false
+        },
+        {
+          "name": "dirty",
+          "line": 74,
+          "isDefault": false
+        },
+        {
+          "name": "BufferHead",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "BufferHead",
+          "callee": "InitialNaming.getInitialNaming().lookup",
+          "lineNumber": 27
+        },
+        {
+          "caller": "BufferHead",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 27
+        },
+        {
+          "caller": "BufferHead",
+          "callee": "memorymanager.alloc",
+          "lineNumber": 28
+        },
+        {
+          "caller": "BufferHead",
+          "callee": "mem.size",
+          "lineNumber": 31
+        },
+        {
+          "caller": "markDirty",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 41
+        },
+        {
+          "caller": "markUptodate",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 46
+        },
+        {
+          "caller": "clear",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 51
+        },
+        {
+          "caller": "getBlock",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 56
+        },
+        {
+          "caller": "getSize",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 61
+        },
+        {
+          "caller": "endIo",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 66
+        },
+        {
+          "caller": "ref",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 71
+        },
+        {
+          "caller": "dirty",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 76
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 16,
+        "functionCount": 12,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/buffer/multithread/Buffer.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 72,
+      "nonEmptyLines": 60,
+      "functions": [
+        {
+          "name": "Buffer",
+          "startLine": 13,
+          "endLine": 20,
+          "params": [
+            "mem"
+          ]
+        },
+        {
+          "name": "getMem",
+          "startLine": 22,
+          "endLine": 25,
+          "params": []
+        },
+        {
+          "name": "setMem",
+          "startLine": 27,
+          "endLine": 32,
+          "params": [
+            "m"
+          ]
+        },
+        {
+          "name": "getData",
+          "startLine": 34,
+          "endLine": 36,
+          "params": []
+        },
+        {
+          "name": "getMoreData",
+          "startLine": 38,
+          "endLine": 40,
+          "params": []
+        },
+        {
+          "name": "setMoreData",
+          "startLine": 42,
+          "endLine": 45,
+          "params": [
+            "m"
+          ]
+        },
+        {
+          "name": "setData",
+          "startLine": 46,
+          "endLine": 52,
+          "params": [
+            "m"
+          ]
+        },
+        {
+          "name": "copyDataFrom",
+          "startLine": 54,
+          "endLine": 62,
+          "params": [
+            "b"
+          ]
+        },
+        {
+          "name": "init",
+          "startLine": 68,
+          "endLine": 71,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "Buffer",
+          "startLine": 6,
+          "endLine": 72,
+          "methods": [
+            "Buffer",
+            "getMem",
+            "setMem",
+            "getData",
+            "getMoreData",
+            "setMoreData",
+            "setData",
+            "copyDataFrom",
+            "init"
+          ],
+          "properties": [
+            "next",
+            "data",
+            "moreData",
+            "cpuManager"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Buffer",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "getMem",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "setMem",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "getData",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "getMoreData",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "setMoreData",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "setData",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "copyDataFrom",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "init",
+          "line": 68,
+          "isDefault": false
+        },
+        {
+          "name": "Buffer",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Buffer",
+          "callee": "InitialNaming.getInitialNaming().lookup",
+          "lineNumber": 15
+        },
+        {
+          "caller": "Buffer",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 15
+        },
+        {
+          "caller": "Buffer",
+          "callee": "cpuManager.getAtomicVariable",
+          "lineNumber": 16
+        },
+        {
+          "caller": "setMoreData",
+          "callee": "new Error",
+          "lineNumber": 43
+        },
+        {
+          "caller": "copyDataFrom",
+          "callee": "data.size",
+          "lineNumber": 57
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/buffer/multithread/BufferConsumer.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 7,
+      "classes": [
+        {
+          "name": "BufferConsumer",
+          "startLine": 6,
+          "endLine": 8,
+          "methods": [
+            "undockFirstElement"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "BufferConsumer",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/buffer/multithread/BufferProducer.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 7,
+      "classes": [
+        {
+          "name": "BufferProducer",
+          "startLine": 6,
+          "endLine": 8,
+          "methods": [
+            "appendElement"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "BufferProducer",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/buffer/multithread/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/buffer/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/buffer/separator/MemoryConsumer2.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 16,
+      "classes": [
+        {
+          "name": "MemoryConsumer2",
+          "startLine": 16,
+          "endLine": 18,
+          "methods": [
+            "processMemory"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "MemoryConsumer2",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/buffer/separator/MemoryProducer.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 11,
+      "classes": [
+        {
+          "name": "MemoryProducer",
+          "startLine": 10,
+          "endLine": 12,
+          "methods": [
+            "restartProduction"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "MemoryProducer",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/buffer/separator/NonBlockingMemoryConsumer.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 17,
+      "classes": [
+        {
+          "name": "NonBlockingMemoryConsumer",
+          "startLine": 16,
+          "endLine": 19,
+          "methods": [
+            "processMemory",
+            "EtherQueueConsumerThread"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "NonBlockingMemoryConsumer",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/buffer/separator/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/classfile/BC.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 283,
+      "nonEmptyLines": 244,
+      "classes": [
+        {
+          "name": "BC",
+          "startLine": 9,
+          "endLine": 283,
+          "methods": [],
+          "properties": [
+            "NOP",
+            "ACONST_NULL",
+            "ICONST_M1",
+            "ICONST_0",
+            "ICONST_1",
+            "ICONST_2",
+            "ICONST_3",
+            "ICONST_4",
+            "ICONST_5",
+            "LCONST_0",
+            "LCONST_1",
+            "FCONST_0",
+            "FCONST_1",
+            "FCONST_2",
+            "DCONST_0",
+            "DCONST_1",
+            "BIPUSH",
+            "SIPUSH",
+            "LDC",
+            "LDC_W",
+            "LDC2_W",
+            "ILOAD",
+            "LLOAD",
+            "FLOAD",
+            "DLOAD",
+            "ALOAD",
+            "ILOAD_0",
+            "ILOAD_1",
+            "ILOAD_2",
+            "ILOAD_3",
+            "LLOAD_0",
+            "LLOAD_1",
+            "LLOAD_2",
+            "LLOAD_3",
+            "FLOAD_0",
+            "FLOAD_1",
+            "FLOAD_2",
+            "FLOAD_3",
+            "DLOAD_0",
+            "DLOAD_1",
+            "DLOAD_2",
+            "DLOAD_3",
+            "ALOAD_0",
+            "ALOAD_1",
+            "ALOAD_2",
+            "ALOAD_3",
+            "IALOAD",
+            "LALOAD",
+            "FALOAD",
+            "DALOAD",
+            "AALOAD",
+            "BALOAD",
+            "CALOAD",
+            "SALOAD",
+            "ISTORE",
+            "LSTORE",
+            "FSTORE",
+            "DSTORE",
+            "ASTORE",
+            "ISTORE_0",
+            "ISTORE_1",
+            "ISTORE_2",
+            "ISTORE_3",
+            "LSTORE_0",
+            "LSTORE_1",
+            "LSTORE_2",
+            "LSTORE_3",
+            "FSTORE_0",
+            "FSTORE_1",
+            "FSTORE_2",
+            "FSTORE_3",
+            "DSTORE_0",
+            "DSTORE_1",
+            "DSTORE_2",
+            "DSTORE_3",
+            "ASTORE_0",
+            "ASTORE_1",
+            "ASTORE_2",
+            "ASTORE_3",
+            "IASTORE",
+            "LASTORE",
+            "FASTORE",
+            "DASTORE",
+            "AASTORE",
+            "BASTORE",
+            "CASTORE",
+            "SASTORE",
+            "POP",
+            "POP2",
+            "DUP",
+            "DUP_X1",
+            "DUP_X2",
+            "DUP2",
+            "DUP2_X1",
+            "DUP2_X2",
+            "SWAP",
+            "IADD",
+            "LADD",
+            "FADD",
+            "DADD",
+            "ISUB",
+            "LSUB",
+            "FSUB",
+            "DSUB",
+            "IMUL",
+            "LMUL",
+            "FMUL",
+            "DMUL",
+            "IDIV",
+            "LDIV",
+            "FDIV",
+            "DDIV",
+            "IREM",
+            "LREM",
+            "FREM",
+            "DREM",
+            "INEG",
+            "LNEG",
+            "FNEG",
+            "DNEG",
+            "ISHL",
+            "LSHL",
+            "ISHR",
+            "LSHR",
+            "IUSHR",
+            "LUSHR",
+            "IAND",
+            "LAND",
+            "IOR",
+            "LOR",
+            "IXOR",
+            "LXOR",
+            "IINC",
+            "I2L",
+            "I2F",
+            "I2D",
+            "L2I",
+            "L2F",
+            "L2D",
+            "F2I",
+            "F2L",
+            "F2D",
+            "D2I",
+            "D2L",
+            "D2F",
+            "I2B",
+            "I2C",
+            "I2S",
+            "LCMP",
+            "FCMPL",
+            "FCMPG",
+            "DCMPL",
+            "DCMPG",
+            "IFEQ",
+            "IFNE",
+            "IFLT",
+            "IFGE",
+            "IFGT",
+            "IFLE",
+            "IF_ICMPEQ",
+            "IF_ICMPNE",
+            "IF_ICMPLT",
+            "IF_ICMPGE",
+            "IF_ICMPGT",
+            "IF_ICMPLE",
+            "IF_ACMPEQ",
+            "IF_ACMPNE",
+            "GOTO",
+            "JSR",
+            "RET",
+            "TABLESWITCH",
+            "LOOKUPSWITCH",
+            "IRETURN",
+            "LRETURN",
+            "FRETURN",
+            "DRETURN",
+            "ARETURN",
+            "RETURN",
+            "GETSTATIC",
+            "PUTSTATIC",
+            "GETFIELD",
+            "PUTFIELD",
+            "INVOKEVIRTUAL",
+            "INVOKESPECIAL",
+            "INVOKESTATIC",
+            "INVOKEINTERFACE",
+            "UNUSED",
+            "NEW",
+            "NEWARRAY",
+            "ANEWARRAY",
+            "ARRAYLENGTH",
+            "ATHROW",
+            "CHECKCAST",
+            "INSTANCEOF",
+            "MONITORENTER",
+            "MONITOREXIT",
+            "WIDE",
+            "MULTIANEWARRAY",
+            "IFNULL",
+            "IFNONNULL",
+            "GOTO_W",
+            "JSR_W",
+            "BREAKPOINT",
+            "IMPDEP1",
+            "IMPDEP2"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "NOP",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "ACONST_NULL",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "ICONST_M1",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "ICONST_0",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "ICONST_1",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "ICONST_2",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "ICONST_3",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "ICONST_4",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "ICONST_5",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "LCONST_0",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "LCONST_1",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "FCONST_0",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "FCONST_1",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "FCONST_2",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "DCONST_0",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "DCONST_1",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "BIPUSH",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "SIPUSH",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "LDC",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "LDC_W",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "LDC2_W",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "ILOAD",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "LLOAD",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "FLOAD",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "DLOAD",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "ALOAD",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "ILOAD_0",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "ILOAD_1",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "ILOAD_2",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "ILOAD_3",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "LLOAD_0",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "LLOAD_1",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "LLOAD_2",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "LLOAD_3",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "FLOAD_0",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "FLOAD_1",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "FLOAD_2",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "FLOAD_3",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "DLOAD_0",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "DLOAD_1",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "DLOAD_2",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "DLOAD_3",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "ALOAD_0",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "ALOAD_1",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "ALOAD_2",
+          "line": 61,
+          "isDefault": false
+        },
+        {
+          "name": "ALOAD_3",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "IALOAD",
+          "line": 66,
+          "isDefault": false
+        },
+        {
+          "name": "LALOAD",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "FALOAD",
+          "line": 68,
+          "isDefault": false
+        },
+        {
+          "name": "DALOAD",
+          "line": 69,
+          "isDefault": false
+        },
+        {
+          "name": "AALOAD",
+          "line": 70,
+          "isDefault": false
+        },
+        {
+          "name": "BALOAD",
+          "line": 71,
+          "isDefault": false
+        },
+        {
+          "name": "CALOAD",
+          "line": 72,
+          "isDefault": false
+        },
+        {
+          "name": "SALOAD",
+          "line": 73,
+          "isDefault": false
+        },
+        {
+          "name": "ISTORE",
+          "line": 76,
+          "isDefault": false
+        },
+        {
+          "name": "LSTORE",
+          "line": 77,
+          "isDefault": false
+        },
+        {
+          "name": "FSTORE",
+          "line": 78,
+          "isDefault": false
+        },
+        {
+          "name": "DSTORE",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "ASTORE",
+          "line": 80,
+          "isDefault": false
+        },
+        {
+          "name": "ISTORE_0",
+          "line": 82,
+          "isDefault": false
+        },
+        {
+          "name": "ISTORE_1",
+          "line": 83,
+          "isDefault": false
+        },
+        {
+          "name": "ISTORE_2",
+          "line": 84,
+          "isDefault": false
+        },
+        {
+          "name": "ISTORE_3",
+          "line": 85,
+          "isDefault": false
+        },
+        {
+          "name": "LSTORE_0",
+          "line": 86,
+          "isDefault": false
+        },
+        {
+          "name": "LSTORE_1",
+          "line": 87,
+          "isDefault": false
+        },
+        {
+          "name": "LSTORE_2",
+          "line": 88,
+          "isDefault": false
+        },
+        {
+          "name": "LSTORE_3",
+          "line": 89,
+          "isDefault": false
+        },
+        {
+          "name": "FSTORE_0",
+          "line": 90,
+          "isDefault": false
+        },
+        {
+          "name": "FSTORE_1",
+          "line": 91,
+          "isDefault": false
+        },
+        {
+          "name": "FSTORE_2",
+          "line": 92,
+          "isDefault": false
+        },
+        {
+          "name": "FSTORE_3",
+          "line": 93,
+          "isDefault": false
+        },
+        {
+          "name": "DSTORE_0",
+          "line": 94,
+          "isDefault": false
+        },
+        {
+          "name": "DSTORE_1",
+          "line": 95,
+          "isDefault": false
+        },
+        {
+          "name": "DSTORE_2",
+          "line": 96,
+          "isDefault": false
+        },
+        {
+          "name": "DSTORE_3",
+          "line": 97,
+          "isDefault": false
+        },
+        {
+          "name": "ASTORE_0",
+          "line": 98,
+          "isDefault": false
+        },
+        {
+          "name": "ASTORE_1",
+          "line": 99,
+          "isDefault": false
+        },
+        {
+          "name": "ASTORE_2",
+          "line": 100,
+          "isDefault": false
+        },
+        {
+          "name": "ASTORE_3",
+          "line": 101,
+          "isDefault": false
+        },
+        {
+          "name": "IASTORE",
+          "line": 105,
+          "isDefault": false
+        },
+        {
+          "name": "LASTORE",
+          "line": 106,
+          "isDefault": false
+        },
+        {
+          "name": "FASTORE",
+          "line": 107,
+          "isDefault": false
+        },
+        {
+          "name": "DASTORE",
+          "line": 108,
+          "isDefault": false
+        },
+        {
+          "name": "AASTORE",
+          "line": 109,
+          "isDefault": false
+        },
+        {
+          "name": "BASTORE",
+          "line": 110,
+          "isDefault": false
+        },
+        {
+          "name": "CASTORE",
+          "line": 111,
+          "isDefault": false
+        },
+        {
+          "name": "SASTORE",
+          "line": 112,
+          "isDefault": false
+        },
+        {
+          "name": "POP",
+          "line": 115,
+          "isDefault": false
+        },
+        {
+          "name": "POP2",
+          "line": 116,
+          "isDefault": false
+        },
+        {
+          "name": "DUP",
+          "line": 120,
+          "isDefault": false
+        },
+        {
+          "name": "DUP_X1",
+          "line": 123,
+          "isDefault": false
+        },
+        {
+          "name": "DUP_X2",
+          "line": 127,
+          "isDefault": false
+        },
+        {
+          "name": "DUP2",
+          "line": 129,
+          "isDefault": false
+        },
+        {
+          "name": "DUP2_X1",
+          "line": 130,
+          "isDefault": false
+        },
+        {
+          "name": "DUP2_X2",
+          "line": 131,
+          "isDefault": false
+        },
+        {
+          "name": "SWAP",
+          "line": 132,
+          "isDefault": false
+        },
+        {
+          "name": "IADD",
+          "line": 134,
+          "isDefault": false
+        },
+        {
+          "name": "LADD",
+          "line": 135,
+          "isDefault": false
+        },
+        {
+          "name": "FADD",
+          "line": 136,
+          "isDefault": false
+        },
+        {
+          "name": "DADD",
+          "line": 137,
+          "isDefault": false
+        },
+        {
+          "name": "ISUB",
+          "line": 139,
+          "isDefault": false
+        },
+        {
+          "name": "LSUB",
+          "line": 140,
+          "isDefault": false
+        },
+        {
+          "name": "FSUB",
+          "line": 141,
+          "isDefault": false
+        },
+        {
+          "name": "DSUB",
+          "line": 142,
+          "isDefault": false
+        },
+        {
+          "name": "IMUL",
+          "line": 144,
+          "isDefault": false
+        },
+        {
+          "name": "LMUL",
+          "line": 145,
+          "isDefault": false
+        },
+        {
+          "name": "FMUL",
+          "line": 146,
+          "isDefault": false
+        },
+        {
+          "name": "DMUL",
+          "line": 147,
+          "isDefault": false
+        },
+        {
+          "name": "IDIV",
+          "line": 149,
+          "isDefault": false
+        },
+        {
+          "name": "LDIV",
+          "line": 150,
+          "isDefault": false
+        },
+        {
+          "name": "FDIV",
+          "line": 151,
+          "isDefault": false
+        },
+        {
+          "name": "DDIV",
+          "line": 152,
+          "isDefault": false
+        },
+        {
+          "name": "IREM",
+          "line": 154,
+          "isDefault": false
+        },
+        {
+          "name": "LREM",
+          "line": 155,
+          "isDefault": false
+        },
+        {
+          "name": "FREM",
+          "line": 156,
+          "isDefault": false
+        },
+        {
+          "name": "DREM",
+          "line": 157,
+          "isDefault": false
+        },
+        {
+          "name": "INEG",
+          "line": 159,
+          "isDefault": false
+        },
+        {
+          "name": "LNEG",
+          "line": 160,
+          "isDefault": false
+        },
+        {
+          "name": "FNEG",
+          "line": 161,
+          "isDefault": false
+        },
+        {
+          "name": "DNEG",
+          "line": 162,
+          "isDefault": false
+        },
+        {
+          "name": "ISHL",
+          "line": 164,
+          "isDefault": false
+        },
+        {
+          "name": "LSHL",
+          "line": 165,
+          "isDefault": false
+        },
+        {
+          "name": "ISHR",
+          "line": 167,
+          "isDefault": false
+        },
+        {
+          "name": "LSHR",
+          "line": 168,
+          "isDefault": false
+        },
+        {
+          "name": "IUSHR",
+          "line": 170,
+          "isDefault": false
+        },
+        {
+          "name": "LUSHR",
+          "line": 171,
+          "isDefault": false
+        },
+        {
+          "name": "IAND",
+          "line": 173,
+          "isDefault": false
+        },
+        {
+          "name": "LAND",
+          "line": 174,
+          "isDefault": false
+        },
+        {
+          "name": "IOR",
+          "line": 176,
+          "isDefault": false
+        },
+        {
+          "name": "LOR",
+          "line": 177,
+          "isDefault": false
+        },
+        {
+          "name": "IXOR",
+          "line": 179,
+          "isDefault": false
+        },
+        {
+          "name": "LXOR",
+          "line": 180,
+          "isDefault": false
+        },
+        {
+          "name": "IINC",
+          "line": 182,
+          "isDefault": false
+        },
+        {
+          "name": "I2L",
+          "line": 184,
+          "isDefault": false
+        },
+        {
+          "name": "I2F",
+          "line": 185,
+          "isDefault": false
+        },
+        {
+          "name": "I2D",
+          "line": 186,
+          "isDefault": false
+        },
+        {
+          "name": "L2I",
+          "line": 188,
+          "isDefault": false
+        },
+        {
+          "name": "L2F",
+          "line": 189,
+          "isDefault": false
+        },
+        {
+          "name": "L2D",
+          "line": 190,
+          "isDefault": false
+        },
+        {
+          "name": "F2I",
+          "line": 192,
+          "isDefault": false
+        },
+        {
+          "name": "F2L",
+          "line": 193,
+          "isDefault": false
+        },
+        {
+          "name": "F2D",
+          "line": 194,
+          "isDefault": false
+        },
+        {
+          "name": "D2I",
+          "line": 196,
+          "isDefault": false
+        },
+        {
+          "name": "D2L",
+          "line": 197,
+          "isDefault": false
+        },
+        {
+          "name": "D2F",
+          "line": 198,
+          "isDefault": false
+        },
+        {
+          "name": "I2B",
+          "line": 200,
+          "isDefault": false
+        },
+        {
+          "name": "I2C",
+          "line": 201,
+          "isDefault": false
+        },
+        {
+          "name": "I2S",
+          "line": 202,
+          "isDefault": false
+        },
+        {
+          "name": "LCMP",
+          "line": 204,
+          "isDefault": false
+        },
+        {
+          "name": "FCMPL",
+          "line": 205,
+          "isDefault": false
+        },
+        {
+          "name": "FCMPG",
+          "line": 206,
+          "isDefault": false
+        },
+        {
+          "name": "DCMPL",
+          "line": 207,
+          "isDefault": false
+        },
+        {
+          "name": "DCMPG",
+          "line": 208,
+          "isDefault": false
+        },
+        {
+          "name": "IFEQ",
+          "line": 211,
+          "isDefault": false
+        },
+        {
+          "name": "IFNE",
+          "line": 212,
+          "isDefault": false
+        },
+        {
+          "name": "IFLT",
+          "line": 213,
+          "isDefault": false
+        },
+        {
+          "name": "IFGE",
+          "line": 214,
+          "isDefault": false
+        },
+        {
+          "name": "IFGT",
+          "line": 215,
+          "isDefault": false
+        },
+        {
+          "name": "IFLE",
+          "line": 216,
+          "isDefault": false
+        },
+        {
+          "name": "IF_ICMPEQ",
+          "line": 219,
+          "isDefault": false
+        },
+        {
+          "name": "IF_ICMPNE",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "IF_ICMPLT",
+          "line": 221,
+          "isDefault": false
+        },
+        {
+          "name": "IF_ICMPGE",
+          "line": 222,
+          "isDefault": false
+        },
+        {
+          "name": "IF_ICMPGT",
+          "line": 223,
+          "isDefault": false
+        },
+        {
+          "name": "IF_ICMPLE",
+          "line": 224,
+          "isDefault": false
+        },
+        {
+          "name": "IF_ACMPEQ",
+          "line": 225,
+          "isDefault": false
+        },
+        {
+          "name": "IF_ACMPNE",
+          "line": 226,
+          "isDefault": false
+        },
+        {
+          "name": "GOTO",
+          "line": 229,
+          "isDefault": false
+        },
+        {
+          "name": "JSR",
+          "line": 231,
+          "isDefault": false
+        },
+        {
+          "name": "RET",
+          "line": 233,
+          "isDefault": false
+        },
+        {
+          "name": "TABLESWITCH",
+          "line": 235,
+          "isDefault": false
+        },
+        {
+          "name": "LOOKUPSWITCH",
+          "line": 236,
+          "isDefault": false
+        },
+        {
+          "name": "IRETURN",
+          "line": 239,
+          "isDefault": false
+        },
+        {
+          "name": "LRETURN",
+          "line": 240,
+          "isDefault": false
+        },
+        {
+          "name": "FRETURN",
+          "line": 241,
+          "isDefault": false
+        },
+        {
+          "name": "DRETURN",
+          "line": 242,
+          "isDefault": false
+        },
+        {
+          "name": "ARETURN",
+          "line": 243,
+          "isDefault": false
+        },
+        {
+          "name": "RETURN",
+          "line": 244,
+          "isDefault": false
+        },
+        {
+          "name": "GETSTATIC",
+          "line": 246,
+          "isDefault": false
+        },
+        {
+          "name": "PUTSTATIC",
+          "line": 247,
+          "isDefault": false
+        },
+        {
+          "name": "GETFIELD",
+          "line": 249,
+          "isDefault": false
+        },
+        {
+          "name": "PUTFIELD",
+          "line": 250,
+          "isDefault": false
+        },
+        {
+          "name": "INVOKEVIRTUAL",
+          "line": 253,
+          "isDefault": false
+        },
+        {
+          "name": "INVOKESPECIAL",
+          "line": 254,
+          "isDefault": false
+        },
+        {
+          "name": "INVOKESTATIC",
+          "line": 255,
+          "isDefault": false
+        },
+        {
+          "name": "INVOKEINTERFACE",
+          "line": 256,
+          "isDefault": false
+        },
+        {
+          "name": "UNUSED",
+          "line": 258,
+          "isDefault": false
+        },
+        {
+          "name": "NEW",
+          "line": 260,
+          "isDefault": false
+        },
+        {
+          "name": "NEWARRAY",
+          "line": 261,
+          "isDefault": false
+        },
+        {
+          "name": "ANEWARRAY",
+          "line": 262,
+          "isDefault": false
+        },
+        {
+          "name": "ARRAYLENGTH",
+          "line": 263,
+          "isDefault": false
+        },
+        {
+          "name": "ATHROW",
+          "line": 264,
+          "isDefault": false
+        },
+        {
+          "name": "CHECKCAST",
+          "line": 265,
+          "isDefault": false
+        },
+        {
+          "name": "INSTANCEOF",
+          "line": 266,
+          "isDefault": false
+        },
+        {
+          "name": "MONITORENTER",
+          "line": 267,
+          "isDefault": false
+        },
+        {
+          "name": "MONITOREXIT",
+          "line": 268,
+          "isDefault": false
+        },
+        {
+          "name": "WIDE",
+          "line": 270,
+          "isDefault": false
+        },
+        {
+          "name": "MULTIANEWARRAY",
+          "line": 272,
+          "isDefault": false
+        },
+        {
+          "name": "IFNULL",
+          "line": 273,
+          "isDefault": false
+        },
+        {
+          "name": "IFNONNULL",
+          "line": 274,
+          "isDefault": false
+        },
+        {
+          "name": "GOTO_W",
+          "line": 275,
+          "isDefault": false
+        },
+        {
+          "name": "JSR_W",
+          "line": 276,
+          "isDefault": false
+        },
+        {
+          "name": "BREAKPOINT",
+          "line": 280,
+          "isDefault": false
+        },
+        {
+          "name": "IMPDEP1",
+          "line": 281,
+          "isDefault": false
+        },
+        {
+          "name": "IMPDEP2",
+          "line": 282,
+          "isDefault": false
+        },
+        {
+          "name": "BC",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 206,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/classfile/constantpool/ClassCPEntry.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 57,
+      "nonEmptyLines": 42,
+      "functions": [
+        {
+          "name": "ClassCPEntry",
+          "startLine": 10,
+          "endLine": 10,
+          "params": []
+        },
+        {
+          "name": "ClassCPEntry",
+          "startLine": 12,
+          "endLine": 14,
+          "params": [
+            "classNameCPIndex"
+          ]
+        },
+        {
+          "name": "ClassCPEntry",
+          "startLine": 17,
+          "endLine": 20,
+          "params": [
+            "classNameCPEntry"
+          ]
+        },
+        {
+          "name": "getTag",
+          "startLine": 22,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "readFromClassFile",
+          "startLine": 24,
+          "endLine": 26,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "linkCPEntries",
+          "startLine": 28,
+          "endLine": 30,
+          "params": [
+            "cPool"
+          ]
+        },
+        {
+          "name": "getSimpleDescription",
+          "startLine": 32,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "getClassName",
+          "startLine": 36,
+          "endLine": 38,
+          "params": []
+        },
+        {
+          "name": "getDescription",
+          "startLine": 40,
+          "endLine": 45,
+          "params": [
+            "cPool",
+            "withIndex"
+          ]
+        },
+        {
+          "name": "getDescription",
+          "startLine": 47,
+          "endLine": 49,
+          "params": []
+        },
+        {
+          "name": "getClassNameAddress",
+          "startLine": 51,
+          "endLine": 53,
+          "params": []
+        },
+        {
+          "name": "getStaticDataAddress",
+          "startLine": 55,
+          "endLine": 55,
+          "params": []
+        },
+        {
+          "name": "getClassID",
+          "startLine": 56,
+          "endLine": 56,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ClassCPEntry",
+          "startLine": 6,
+          "endLine": 57,
+          "methods": [
+            "ClassCPEntry",
+            "ClassCPEntry",
+            "ClassCPEntry",
+            "getTag",
+            "readFromClassFile",
+            "linkCPEntries",
+            "getSimpleDescription",
+            "getClassName",
+            "getDescription",
+            "getDescription",
+            "getClassNameAddress",
+            "getStaticDataAddress",
+            "getClassID"
+          ],
+          "properties": [
+            "classNameCPIndex",
+            "classNameCPEntry"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ClassCPEntry",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "ClassCPEntry",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "ClassCPEntry",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "getTag",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "linkCPEntries",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "getSimpleDescription",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "getClassName",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "getDescription",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "getDescription",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "getClassNameAddress",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "ClassCPEntry",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "readFromClassFile",
+          "callee": "input.readUnsignedShort",
+          "lineNumber": 25
+        },
+        {
+          "caller": "linkCPEntries",
+          "callee": "cPool.entryAt",
+          "lineNumber": 29
+        },
+        {
+          "caller": "getSimpleDescription",
+          "callee": "String.valueOf",
+          "lineNumber": 33
+        },
+        {
+          "caller": "getClassName",
+          "callee": "classNameCPEntry.value",
+          "lineNumber": 37
+        },
+        {
+          "caller": "getDescription",
+          "callee": "getIndexDescString",
+          "lineNumber": 42
+        },
+        {
+          "caller": "getDescription",
+          "callee": "classNameCPEntry.getDescription",
+          "lineNumber": 44
+        },
+        {
+          "caller": "getDescription",
+          "callee": "getClassName",
+          "lineNumber": 48
+        },
+        {
+          "caller": "getClassNameAddress",
+          "callee": "classNameCPEntry.getStringAddress",
+          "lineNumber": 52
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 11,
+        "functionCount": 13,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/classfile/constantpool/ClassMemberCPEntry.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 82,
+      "nonEmptyLines": 64,
+      "functions": [
+        {
+          "name": "ClassMemberCPEntry",
+          "startLine": 13,
+          "endLine": 13,
+          "params": []
+        },
+        {
+          "name": "ClassMemberCPEntry",
+          "startLine": 15,
+          "endLine": 18,
+          "params": [
+            "classCPIndex",
+            "nameAndTypeCPIndex"
+          ]
+        },
+        {
+          "name": "ClassMemberCPEntry",
+          "startLine": 21,
+          "endLine": 27,
+          "params": [
+            "classCPEntry",
+            "nameAndTypeCPEntry"
+          ]
+        },
+        {
+          "name": "readFromClassFile",
+          "startLine": 29,
+          "endLine": 32,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "linkCPEntries",
+          "startLine": 34,
+          "endLine": 37,
+          "params": [
+            "cPool"
+          ]
+        },
+        {
+          "name": "getSimpleDescription",
+          "startLine": 39,
+          "endLine": 42,
+          "params": []
+        },
+        {
+          "name": "getClassName",
+          "startLine": 44,
+          "endLine": 46,
+          "params": []
+        },
+        {
+          "name": "getClassCPEntry",
+          "startLine": 48,
+          "endLine": 50,
+          "params": []
+        },
+        {
+          "name": "getMemberName",
+          "startLine": 52,
+          "endLine": 54,
+          "params": []
+        },
+        {
+          "name": "getMemberTypeDesc",
+          "startLine": 56,
+          "endLine": 58,
+          "params": []
+        },
+        {
+          "name": "isMember",
+          "startLine": 60,
+          "endLine": 65,
+          "params": [
+            "className",
+            "memberName",
+            "typeDesc"
+          ]
+        },
+        {
+          "name": "getDescription",
+          "startLine": 67,
+          "endLine": 71,
+          "params": [
+            "cPool",
+            "withIndex"
+          ]
+        },
+        {
+          "name": "getDescription",
+          "startLine": 73,
+          "endLine": 75,
+          "params": []
+        },
+        {
+          "name": "getClassNameAddress",
+          "startLine": 77,
+          "endLine": 77,
+          "params": []
+        },
+        {
+          "name": "getTypeDescAddress",
+          "startLine": 78,
+          "endLine": 78,
+          "params": []
+        },
+        {
+          "name": "getNameAddress",
+          "startLine": 79,
+          "endLine": 79,
+          "params": []
+        },
+        {
+          "name": "getNameAndTypeIndex",
+          "startLine": 80,
+          "endLine": 80,
+          "params": []
+        },
+        {
+          "name": "getClassIndex",
+          "startLine": 81,
+          "endLine": 81,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ClassMemberCPEntry",
+          "startLine": 6,
+          "endLine": 82,
+          "methods": [
+            "ClassMemberCPEntry",
+            "ClassMemberCPEntry",
+            "ClassMemberCPEntry",
+            "readFromClassFile",
+            "linkCPEntries",
+            "getSimpleDescription",
+            "getClassName",
+            "getClassCPEntry",
+            "getMemberName",
+            "getMemberTypeDesc",
+            "isMember",
+            "getDescription",
+            "getDescription",
+            "getClassNameAddress",
+            "getTypeDescAddress",
+            "getNameAddress",
+            "getNameAndTypeIndex",
+            "getClassIndex"
+          ],
+          "properties": [
+            "classCPIndex",
+            "nameAndTypeCPIndex",
+            "classCPEntry",
+            "nameAndTypeCPEntry"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ClassMemberCPEntry",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "ClassMemberCPEntry",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "linkCPEntries",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "getSimpleDescription",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "getClassName",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "getClassCPEntry",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "getMemberName",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "getMemberTypeDesc",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "isMember",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "getDescription",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "getDescription",
+          "line": 73,
+          "isDefault": false
+        },
+        {
+          "name": "getNameAndTypeIndex",
+          "line": 80,
+          "isDefault": false
+        },
+        {
+          "name": "getClassIndex",
+          "line": 81,
+          "isDefault": false
+        },
+        {
+          "name": "ClassMemberCPEntry",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "readFromClassFile",
+          "callee": "input.readUnsignedShort",
+          "lineNumber": 30
+        },
+        {
+          "caller": "readFromClassFile",
+          "callee": "input.readUnsignedShort",
+          "lineNumber": 31
+        },
+        {
+          "caller": "linkCPEntries",
+          "callee": "cPool.entryAt",
+          "lineNumber": 35
+        },
+        {
+          "caller": "linkCPEntries",
+          "callee": "cPool.entryAt",
+          "lineNumber": 36
+        },
+        {
+          "caller": "getSimpleDescription",
+          "callee": "String.valueOf",
+          "lineNumber": 40
+        },
+        {
+          "caller": "getSimpleDescription",
+          "callee": "String.valueOf",
+          "lineNumber": 41
+        },
+        {
+          "caller": "getClassName",
+          "callee": "classCPEntry.getClassName",
+          "lineNumber": 45
+        },
+        {
+          "caller": "getMemberName",
+          "callee": "nameAndTypeCPEntry.getName",
+          "lineNumber": 53
+        },
+        {
+          "caller": "getMemberTypeDesc",
+          "callee": "nameAndTypeCPEntry.getTypeDesc",
+          "lineNumber": 57
+        },
+        {
+          "caller": "isMember",
+          "callee": "classCPEntry.getClassName().equals",
+          "lineNumber": 62
+        },
+        {
+          "caller": "isMember",
+          "callee": "classCPEntry.getClassName",
+          "lineNumber": 62
+        },
+        {
+          "caller": "isMember",
+          "callee": "nameAndTypeCPEntry.getName().equals",
+          "lineNumber": 63
+        },
+        {
+          "caller": "isMember",
+          "callee": "nameAndTypeCPEntry.getName",
+          "lineNumber": 63
+        },
+        {
+          "caller": "isMember",
+          "callee": "nameAndTypeCPEntry.getTypeDesc().equals",
+          "lineNumber": 64
+        },
+        {
+          "caller": "isMember",
+          "callee": "nameAndTypeCPEntry.getTypeDesc",
+          "lineNumber": 64
+        },
+        {
+          "caller": "getDescription",
+          "callee": "getIndexDescString",
+          "lineNumber": 68
+        },
+        {
+          "caller": "getDescription",
+          "callee": "nameAndTypeCPEntry.getDescription",
+          "lineNumber": 70
+        },
+        {
+          "caller": "getDescription",
+          "callee": "getClassName",
+          "lineNumber": 74
+        },
+        {
+          "caller": "getDescription",
+          "callee": "getMemberName",
+          "lineNumber": 74
+        },
+        {
+          "caller": "getDescription",
+          "callee": "getMemberTypeDesc",
+          "lineNumber": 74
+        },
+        {
+          "caller": "getClassNameAddress",
+          "callee": "classCPEntry.getClassNameAddress",
+          "lineNumber": 77
+        },
+        {
+          "caller": "getTypeDescAddress",
+          "callee": "nameAndTypeCPEntry.getTypeDescAddress",
+          "lineNumber": 78
+        },
+        {
+          "caller": "getNameAddress",
+          "callee": "nameAndTypeCPEntry.getNameAddress",
+          "lineNumber": 79
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 14,
+        "functionCount": 18,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/classfile/constantpool/ConstantPoolEntry.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 153,
+      "nonEmptyLines": 131,
+      "functions": [
+        {
+          "name": "ConstantPoolEntry",
+          "startLine": 35,
+          "endLine": 37,
+          "params": []
+        },
+        {
+          "name": "setCPIndex",
+          "startLine": 39,
+          "endLine": 39,
+          "params": [
+            "index"
+          ]
+        },
+        {
+          "name": "getCPIndex",
+          "startLine": 41,
+          "endLine": 41,
+          "params": []
+        },
+        {
+          "name": "getTag",
+          "startLine": 46,
+          "endLine": 46,
+          "params": []
+        },
+        {
+          "name": "readFromClassFile",
+          "startLine": 53,
+          "endLine": 53,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "readDummyValue",
+          "startLine": 60,
+          "endLine": 62,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "linkCPEntries",
+          "startLine": 68,
+          "endLine": 68,
+          "params": [
+            "cPool"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 84,
+          "endLine": 87,
+          "params": []
+        },
+        {
+          "name": "getTypeString",
+          "startLine": 92,
+          "endLine": 107,
+          "params": []
+        },
+        {
+          "name": "getSimpleDescription",
+          "startLine": 115,
+          "endLine": 115,
+          "params": []
+        },
+        {
+          "name": "getDescription",
+          "startLine": 126,
+          "endLine": 128,
+          "params": [
+            "cPool",
+            "withIndex"
+          ]
+        },
+        {
+          "name": "getDescription",
+          "startLine": 137,
+          "endLine": 139,
+          "params": []
+        },
+        {
+          "name": "getIndexDescString",
+          "startLine": 147,
+          "endLine": 149,
+          "params": [
+            "cPool",
+            "index"
+          ]
+        },
+        {
+          "name": "isResolved",
+          "startLine": 152,
+          "endLine": 152,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ConstantPoolEntry",
+          "startLine": 27,
+          "endLine": 153,
+          "methods": [
+            "ConstantPoolEntry",
+            "setCPIndex",
+            "getCPIndex",
+            "getTag",
+            "readFromClassFile",
+            "readDummyValue",
+            "linkCPEntries",
+            "toString",
+            "getTypeString",
+            "getSimpleDescription",
+            "getDescription",
+            "getDescription",
+            "getIndexDescString",
+            "isResolved"
+          ],
+          "properties": [
+            "cpIndex",
+            "CONSTANT_UTF8",
+            "CONSTANT_INTEGER",
+            "CONSTANT_FLOAT",
+            "CONSTANT_LONG",
+            "CONSTANT_DOUBLE",
+            "CONSTANT_CLASS",
+            "CONSTANT_STRING",
+            "CONSTANT_FIELDREF",
+            "CONSTANT_METHODREF",
+            "CONSTANT_INTERFACEMETHODREF",
+            "CONSTANT_NAMEANDTYPE",
+            "CONSTANT_INVOKEDYNAMIC",
+            "CONSTANT_METHODHANDLE"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ConstantPoolEntry",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "getCPIndex",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "getTag",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "CONSTANT_UTF8",
+          "line": 70,
+          "isDefault": false
+        },
+        {
+          "name": "CONSTANT_INTEGER",
+          "line": 71,
+          "isDefault": false
+        },
+        {
+          "name": "CONSTANT_FLOAT",
+          "line": 72,
+          "isDefault": false
+        },
+        {
+          "name": "CONSTANT_LONG",
+          "line": 73,
+          "isDefault": false
+        },
+        {
+          "name": "CONSTANT_DOUBLE",
+          "line": 74,
+          "isDefault": false
+        },
+        {
+          "name": "CONSTANT_CLASS",
+          "line": 75,
+          "isDefault": false
+        },
+        {
+          "name": "CONSTANT_STRING",
+          "line": 76,
+          "isDefault": false
+        },
+        {
+          "name": "CONSTANT_FIELDREF",
+          "line": 77,
+          "isDefault": false
+        },
+        {
+          "name": "CONSTANT_METHODREF",
+          "line": 78,
+          "isDefault": false
+        },
+        {
+          "name": "CONSTANT_INTERFACEMETHODREF",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "CONSTANT_NAMEANDTYPE",
+          "line": 80,
+          "isDefault": false
+        },
+        {
+          "name": "CONSTANT_INVOKEDYNAMIC",
+          "line": 81,
+          "isDefault": false
+        },
+        {
+          "name": "CONSTANT_METHODHANDLE",
+          "line": 82,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 84,
+          "isDefault": false
+        },
+        {
+          "name": "getTypeString",
+          "line": 92,
+          "isDefault": false
+        },
+        {
+          "name": "getSimpleDescription",
+          "line": 115,
+          "isDefault": false
+        },
+        {
+          "name": "getDescription",
+          "line": 126,
+          "isDefault": false
+        },
+        {
+          "name": "getDescription",
+          "line": 137,
+          "isDefault": false
+        },
+        {
+          "name": "ConstantPoolEntry",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "readDummyValue",
+          "callee": "new Error",
+          "lineNumber": 61
+        },
+        {
+          "caller": "toString",
+          "callee": "getTypeString",
+          "lineNumber": 86
+        },
+        {
+          "caller": "toString",
+          "callee": "getSimpleDescription",
+          "lineNumber": 86
+        },
+        {
+          "caller": "getTypeString",
+          "callee": "getTag",
+          "lineNumber": 93
+        },
+        {
+          "caller": "getDescription",
+          "callee": "getSimpleDescription",
+          "lineNumber": 127
+        },
+        {
+          "caller": "getDescription",
+          "callee": "getSimpleDescription",
+          "lineNumber": 138
+        },
+        {
+          "caller": "getIndexDescString",
+          "callee": "cPool.entryAt(index).getDescription",
+          "lineNumber": 148
+        },
+        {
+          "caller": "getIndexDescString",
+          "callee": "cPool.entryAt",
+          "lineNumber": 148
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 22,
+        "functionCount": 14,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/classfile/constantpool/FieldRefCPEntry.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 18,
+      "functions": [
+        {
+          "name": "FieldRefCPEntry",
+          "startLine": 8,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "FieldRefCPEntry",
+          "startLine": 11,
+          "endLine": 15,
+          "params": [
+            "classCPIndex",
+            "nameAndTypeCPIndex",
+            "fieldOffset"
+          ]
+        },
+        {
+          "name": "FieldRefCPEntry",
+          "startLine": 18,
+          "endLine": 21,
+          "params": [
+            "classCPEntry",
+            "nameAndTypeCPEntry"
+          ]
+        },
+        {
+          "name": "getTag",
+          "startLine": 24,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "getFieldOffset",
+          "startLine": 26,
+          "endLine": 26,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "FieldRefCPEntry",
+          "startLine": 4,
+          "endLine": 27,
+          "methods": [
+            "FieldRefCPEntry",
+            "FieldRefCPEntry",
+            "FieldRefCPEntry",
+            "getTag",
+            "getFieldOffset"
+          ],
+          "properties": [
+            "fieldOffset"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "FieldRefCPEntry",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "FieldRefCPEntry",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "getTag",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "FieldRefCPEntry",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/classfile/constantpool/MethodRefCPEntry.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 22,
+      "functions": [
+        {
+          "name": "MethodRefCPEntry",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "MethodRefCPEntry",
+          "startLine": 11,
+          "endLine": 13,
+          "params": [
+            "classCPIndex",
+            "nameAndTypeCPIndex"
+          ]
+        },
+        {
+          "name": "MethodRefCPEntry",
+          "startLine": 15,
+          "endLine": 19,
+          "params": [
+            "classCPIndex",
+            "nameAndTypeCPIndex",
+            "methodIndex"
+          ]
+        },
+        {
+          "name": "MethodRefCPEntry",
+          "startLine": 22,
+          "endLine": 25,
+          "params": [
+            "classCPEntry",
+            "nameAndTypeCPEntry"
+          ]
+        },
+        {
+          "name": "getTag",
+          "startLine": 27,
+          "endLine": 27,
+          "params": []
+        },
+        {
+          "name": "getMethodIndex",
+          "startLine": 29,
+          "endLine": 29,
+          "params": []
+        },
+        {
+          "name": "getStaticMethodAddress",
+          "startLine": 30,
+          "endLine": 30,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "MethodRefCPEntry",
+          "startLine": 4,
+          "endLine": 31,
+          "methods": [
+            "MethodRefCPEntry",
+            "MethodRefCPEntry",
+            "MethodRefCPEntry",
+            "MethodRefCPEntry",
+            "getTag",
+            "getMethodIndex",
+            "getStaticMethodAddress"
+          ],
+          "properties": [
+            "methodIndex"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "MethodRefCPEntry",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "MethodRefCPEntry",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "MethodRefCPEntry",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "getTag",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "MethodRefCPEntry",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/classfile/constantpool/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/classfile/constantpool/UTF8CPEntry.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 43,
+      "nonEmptyLines": 30,
+      "functions": [
+        {
+          "name": "UTF8CPEntry",
+          "startLine": 10,
+          "endLine": 10,
+          "params": []
+        },
+        {
+          "name": "UTF8CPEntry",
+          "startLine": 12,
+          "endLine": 15,
+          "params": [
+            "value",
+            "stringAddress"
+          ]
+        },
+        {
+          "name": "UTF8CPEntry",
+          "startLine": 17,
+          "endLine": 20,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "getTag",
+          "startLine": 22,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "readFromClassFile",
+          "startLine": 24,
+          "endLine": 26,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "value",
+          "startLine": 28,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "getSimpleDescription",
+          "startLine": 30,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "getDescription",
+          "startLine": 34,
+          "endLine": 36,
+          "params": [
+            "cPool",
+            "withIndex"
+          ]
+        },
+        {
+          "name": "getDescription",
+          "startLine": 38,
+          "endLine": 40,
+          "params": []
+        },
+        {
+          "name": "getStringAddress",
+          "startLine": 42,
+          "endLine": 42,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "UTF8CPEntry",
+          "startLine": 6,
+          "endLine": 43,
+          "methods": [
+            "UTF8CPEntry",
+            "UTF8CPEntry",
+            "UTF8CPEntry",
+            "getTag",
+            "readFromClassFile",
+            "value",
+            "getSimpleDescription",
+            "getDescription",
+            "getDescription",
+            "getStringAddress"
+          ],
+          "properties": [
+            "value",
+            "stringAddress"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "UTF8CPEntry",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "UTF8CPEntry",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "UTF8CPEntry",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "getTag",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "value",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "getSimpleDescription",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "getDescription",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "getDescription",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "UTF8CPEntry",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "readFromClassFile",
+          "callee": "input.readUTF",
+          "lineNumber": 25
+        },
+        {
+          "caller": "getDescription",
+          "callee": "getSimpleDescription",
+          "lineNumber": 35
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 10,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BasicTypeDescriptor.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 167,
+      "nonEmptyLines": 145,
+      "functions": [
+        {
+          "name": "BasicTypeDescriptor",
+          "startLine": 17,
+          "endLine": 20,
+          "params": [
+            "typeDesc"
+          ]
+        },
+        {
+          "name": "firstChar",
+          "startLine": 22,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "isPrimitive",
+          "startLine": 28,
+          "endLine": 30,
+          "params": []
+        },
+        {
+          "name": "toBasicDatatype",
+          "startLine": 36,
+          "endLine": 38,
+          "params": []
+        },
+        {
+          "name": "isArray",
+          "startLine": 40,
+          "endLine": 40,
+          "params": []
+        },
+        {
+          "name": "isClass",
+          "startLine": 41,
+          "endLine": 41,
+          "params": []
+        },
+        {
+          "name": "isVoid",
+          "startLine": 42,
+          "endLine": 42,
+          "params": []
+        },
+        {
+          "name": "isInteger",
+          "startLine": 43,
+          "endLine": 43,
+          "params": []
+        },
+        {
+          "name": "isShort",
+          "startLine": 44,
+          "endLine": 44,
+          "params": []
+        },
+        {
+          "name": "isLong",
+          "startLine": 45,
+          "endLine": 45,
+          "params": []
+        },
+        {
+          "name": "isByte",
+          "startLine": 46,
+          "endLine": 46,
+          "params": []
+        },
+        {
+          "name": "isFloat",
+          "startLine": 47,
+          "endLine": 47,
+          "params": []
+        },
+        {
+          "name": "isDouble",
+          "startLine": 48,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "isChar",
+          "startLine": 49,
+          "endLine": 49,
+          "params": []
+        },
+        {
+          "name": "isBoolean",
+          "startLine": 50,
+          "endLine": 50,
+          "params": []
+        },
+        {
+          "name": "getArrayDimension",
+          "startLine": 52,
+          "endLine": 56,
+          "params": []
+        },
+        {
+          "name": "getArrayTypeDesc",
+          "startLine": 62,
+          "endLine": 64,
+          "params": []
+        },
+        {
+          "name": "getComponentType",
+          "startLine": 67,
+          "endLine": 70,
+          "params": []
+        },
+        {
+          "name": "getClassName",
+          "startLine": 77,
+          "endLine": 81,
+          "params": []
+        },
+        {
+          "name": "getJavaLanguageType",
+          "startLine": 86,
+          "endLine": 105,
+          "params": []
+        },
+        {
+          "name": "isPrimitive",
+          "startLine": 124,
+          "endLine": 126,
+          "params": [
+            "firstChar"
+          ]
+        },
+        {
+          "name": "isArray",
+          "startLine": 128,
+          "endLine": 130,
+          "params": [
+            "firstChar"
+          ]
+        },
+        {
+          "name": "isClass",
+          "startLine": 132,
+          "endLine": 134,
+          "params": [
+            "firstChar"
+          ]
+        },
+        {
+          "name": "getBasicDatatypeOf",
+          "startLine": 142,
+          "endLine": 144,
+          "params": [
+            "typeDescriptor"
+          ]
+        },
+        {
+          "name": "toBasicDatatype",
+          "startLine": 146,
+          "endLine": 163,
+          "params": [
+            "typeDescriptor"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 165,
+          "endLine": 166,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "BasicTypeDescriptor",
+          "startLine": 11,
+          "endLine": 167,
+          "methods": [
+            "BasicTypeDescriptor",
+            "firstChar",
+            "isPrimitive",
+            "toBasicDatatype",
+            "isArray",
+            "isClass",
+            "isVoid",
+            "isInteger",
+            "isShort",
+            "isLong",
+            "isByte",
+            "isFloat",
+            "isDouble",
+            "isChar",
+            "isBoolean",
+            "getArrayDimension",
+            "getArrayTypeDesc",
+            "getComponentType",
+            "getClassName",
+            "getJavaLanguageType",
+            "isPrimitive",
+            "isArray",
+            "isClass",
+            "getBasicDatatypeOf",
+            "toBasicDatatype",
+            "toString"
+          ],
+          "properties": [
+            "typeDesc",
+            "BYTE",
+            "CHAR",
+            "DOUBLE",
+            "FLOAT",
+            "INT",
+            "LONG",
+            "SHORT",
+            "BOOLEAN",
+            "CLASS",
+            "ARRAY",
+            "VOID"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "BasicTypeDescriptor",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "isPrimitive",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "toBasicDatatype",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "isArray",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "isClass",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "isVoid",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "isInteger",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "isShort",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "isLong",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "isByte",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "isFloat",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "isDouble",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "isChar",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "isBoolean",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "getArrayDimension",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "getArrayTypeDesc",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "getComponentType",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "getClassName",
+          "line": 77,
+          "isDefault": false
+        },
+        {
+          "name": "getJavaLanguageType",
+          "line": 86,
+          "isDefault": false
+        },
+        {
+          "name": "BYTE",
+          "line": 108,
+          "isDefault": false
+        },
+        {
+          "name": "CHAR",
+          "line": 109,
+          "isDefault": false
+        },
+        {
+          "name": "DOUBLE",
+          "line": 110,
+          "isDefault": false
+        },
+        {
+          "name": "FLOAT",
+          "line": 111,
+          "isDefault": false
+        },
+        {
+          "name": "INT",
+          "line": 112,
+          "isDefault": false
+        },
+        {
+          "name": "LONG",
+          "line": 113,
+          "isDefault": false
+        },
+        {
+          "name": "SHORT",
+          "line": 114,
+          "isDefault": false
+        },
+        {
+          "name": "BOOLEAN",
+          "line": 115,
+          "isDefault": false
+        },
+        {
+          "name": "CLASS",
+          "line": 116,
+          "isDefault": false
+        },
+        {
+          "name": "ARRAY",
+          "line": 117,
+          "isDefault": false
+        },
+        {
+          "name": "VOID",
+          "line": 118,
+          "isDefault": false
+        },
+        {
+          "name": "isPrimitive",
+          "line": 124,
+          "isDefault": false
+        },
+        {
+          "name": "isArray",
+          "line": 128,
+          "isDefault": false
+        },
+        {
+          "name": "isClass",
+          "line": 132,
+          "isDefault": false
+        },
+        {
+          "name": "getBasicDatatypeOf",
+          "line": 142,
+          "isDefault": false
+        },
+        {
+          "name": "toBasicDatatype",
+          "line": 146,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 165,
+          "isDefault": false
+        },
+        {
+          "name": "BasicTypeDescriptor",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "firstChar",
+          "callee": "typeDesc.charAt",
+          "lineNumber": 22
+        },
+        {
+          "caller": "isPrimitive",
+          "callee": "firstChar",
+          "lineNumber": 29
+        },
+        {
+          "caller": "isPrimitive",
+          "callee": "firstChar",
+          "lineNumber": 29
+        },
+        {
+          "caller": "toBasicDatatype",
+          "callee": "toBasicDatatype",
+          "lineNumber": 37
+        },
+        {
+          "caller": "toBasicDatatype",
+          "callee": "firstChar",
+          "lineNumber": 37
+        },
+        {
+          "caller": "isArray",
+          "callee": "firstChar",
+          "lineNumber": 40
+        },
+        {
+          "caller": "isClass",
+          "callee": "firstChar",
+          "lineNumber": 41
+        },
+        {
+          "caller": "isVoid",
+          "callee": "firstChar",
+          "lineNumber": 42
+        },
+        {
+          "caller": "isInteger",
+          "callee": "firstChar",
+          "lineNumber": 43
+        },
+        {
+          "caller": "isShort",
+          "callee": "firstChar",
+          "lineNumber": 44
+        },
+        {
+          "caller": "isLong",
+          "callee": "firstChar",
+          "lineNumber": 45
+        },
+        {
+          "caller": "isByte",
+          "callee": "firstChar",
+          "lineNumber": 46
+        },
+        {
+          "caller": "isFloat",
+          "callee": "firstChar",
+          "lineNumber": 47
+        },
+        {
+          "caller": "isDouble",
+          "callee": "firstChar",
+          "lineNumber": 48
+        },
+        {
+          "caller": "isChar",
+          "callee": "firstChar",
+          "lineNumber": 49
+        },
+        {
+          "caller": "isBoolean",
+          "callee": "firstChar",
+          "lineNumber": 50
+        },
+        {
+          "caller": "getArrayDimension",
+          "callee": "typeDesc.charAt",
+          "lineNumber": 54
+        },
+        {
+          "caller": "getArrayTypeDesc",
+          "callee": "typeDesc.substring",
+          "lineNumber": 63
+        },
+        {
+          "caller": "getArrayTypeDesc",
+          "callee": "getArrayDimension",
+          "lineNumber": 63
+        },
+        {
+          "caller": "getComponentType",
+          "callee": "isArray",
+          "lineNumber": 68
+        },
+        {
+          "caller": "getComponentType",
+          "callee": "new BasicTypeDescriptor",
+          "lineNumber": 69
+        },
+        {
+          "caller": "getComponentType",
+          "callee": "typeDesc.substring",
+          "lineNumber": 69
+        },
+        {
+          "caller": "getComponentType",
+          "callee": "getArrayDimension",
+          "lineNumber": 69
+        },
+        {
+          "caller": "getClassName",
+          "callee": "typeDesc.substring",
+          "lineNumber": 80
+        },
+        {
+          "caller": "getClassName",
+          "callee": "typeDesc.length",
+          "lineNumber": 80
+        },
+        {
+          "caller": "getJavaLanguageType",
+          "callee": "isClass",
+          "lineNumber": 87
+        },
+        {
+          "caller": "getJavaLanguageType",
+          "callee": "getClassName().replace",
+          "lineNumber": 87
+        },
+        {
+          "caller": "getJavaLanguageType",
+          "callee": "getClassName",
+          "lineNumber": 87
+        },
+        {
+          "caller": "getJavaLanguageType",
+          "callee": "firstChar",
+          "lineNumber": 88
+        },
+        {
+          "caller": "getJavaLanguageType",
+          "callee": "typeDesc.substring",
+          "lineNumber": 89
+        },
+        {
+          "caller": "getJavaLanguageType",
+          "callee": "typeDesc.length",
+          "lineNumber": 89
+        },
+        {
+          "caller": "getJavaLanguageType",
+          "callee": "new BasicTypeDescriptor(s).getJavaLanguageType",
+          "lineNumber": 90
+        },
+        {
+          "caller": "getJavaLanguageType",
+          "callee": "new BasicTypeDescriptor",
+          "lineNumber": 90
+        },
+        {
+          "caller": "getJavaLanguageType",
+          "callee": "firstChar",
+          "lineNumber": 93
+        },
+        {
+          "caller": "getJavaLanguageType",
+          "callee": "new Error",
+          "lineNumber": 104
+        },
+        {
+          "caller": "getBasicDatatypeOf",
+          "callee": "toBasicDatatype",
+          "lineNumber": 143
+        },
+        {
+          "caller": "getBasicDatatypeOf",
+          "callee": "typeDescriptor.charAt",
+          "lineNumber": 143
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 37,
+        "functionCount": 26,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BCByte.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "BCByte",
+          "startLine": 6,
+          "endLine": 6,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "value",
+          "startLine": 7,
+          "endLine": 7,
+          "params": []
+        },
+        {
+          "name": "longValue",
+          "startLine": 8,
+          "endLine": 8,
+          "params": []
+        },
+        {
+          "name": "toString",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "type",
+          "startLine": 10,
+          "endLine": 10,
+          "params": []
+        },
+        {
+          "name": "getObjectFor",
+          "startLine": 12,
+          "endLine": 14,
+          "params": [
+            "value"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "BCByte",
+          "startLine": 3,
+          "endLine": 15,
+          "methods": [
+            "BCByte",
+            "value",
+            "longValue",
+            "toString",
+            "type",
+            "getObjectFor"
+          ],
+          "properties": [
+            "value"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "BCByte",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "value",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "longValue",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "type",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "BCByte",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "toString",
+          "callee": "String.valueOf",
+          "lineNumber": 9
+        },
+        {
+          "caller": "getObjectFor",
+          "callee": "new BCByte",
+          "lineNumber": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BCDouble.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 25,
+      "functions": [
+        {
+          "name": "BCDouble",
+          "startLine": 6,
+          "endLine": 6,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "value",
+          "startLine": 7,
+          "endLine": 7,
+          "params": []
+        },
+        {
+          "name": "doubleValue",
+          "startLine": 8,
+          "endLine": 8,
+          "params": []
+        },
+        {
+          "name": "type",
+          "startLine": 10,
+          "endLine": 10,
+          "params": []
+        },
+        {
+          "name": "getBits",
+          "startLine": 11,
+          "endLine": 11,
+          "params": []
+        },
+        {
+          "name": "combined",
+          "startLine": 16,
+          "endLine": 27,
+          "params": [
+            "operator",
+            "op2"
+          ]
+        },
+        {
+          "name": "negated",
+          "startLine": 29,
+          "endLine": 29,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "BCDouble",
+          "startLine": 3,
+          "endLine": 31,
+          "methods": [
+            "BCDouble",
+            "value",
+            "doubleValue",
+            "type",
+            "getBits",
+            "combined",
+            "negated"
+          ],
+          "properties": [
+            "value",
+            "VALUE_0",
+            "VALUE_1"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "BCDouble",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "value",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "doubleValue",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "type",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "getBits",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "VALUE_0",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "VALUE_1",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "combined",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "negated",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "BCDouble",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getBits",
+          "callee": "Double.doubleToLongBits",
+          "lineNumber": 11
+        },
+        {
+          "caller": "combined",
+          "callee": "new BCDouble",
+          "lineNumber": 26
+        },
+        {
+          "caller": "negated",
+          "callee": "new BCDouble",
+          "lineNumber": 29
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BCFloat.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 32,
+      "nonEmptyLines": 26,
+      "functions": [
+        {
+          "name": "BCFloat",
+          "startLine": 6,
+          "endLine": 6,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "value",
+          "startLine": 7,
+          "endLine": 7,
+          "params": []
+        },
+        {
+          "name": "doubleValue",
+          "startLine": 8,
+          "endLine": 8,
+          "params": []
+        },
+        {
+          "name": "type",
+          "startLine": 10,
+          "endLine": 10,
+          "params": []
+        },
+        {
+          "name": "getBits",
+          "startLine": 11,
+          "endLine": 11,
+          "params": []
+        },
+        {
+          "name": "combined",
+          "startLine": 17,
+          "endLine": 28,
+          "params": [
+            "operator",
+            "op2"
+          ]
+        },
+        {
+          "name": "negated",
+          "startLine": 30,
+          "endLine": 30,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "BCFloat",
+          "startLine": 3,
+          "endLine": 32,
+          "methods": [
+            "BCFloat",
+            "value",
+            "doubleValue",
+            "type",
+            "getBits",
+            "combined",
+            "negated"
+          ],
+          "properties": [
+            "value",
+            "VALUE_0",
+            "VALUE_1",
+            "VALUE_2"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "BCFloat",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "value",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "doubleValue",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "type",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "getBits",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "VALUE_0",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "VALUE_1",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "VALUE_2",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "combined",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "negated",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "BCFloat",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getBits",
+          "callee": "Float.floatToIntBits",
+          "lineNumber": 11
+        },
+        {
+          "caller": "combined",
+          "callee": "new BCFloat",
+          "lineNumber": 27
+        },
+        {
+          "caller": "negated",
+          "callee": "new BCFloat",
+          "lineNumber": 30
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 11,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BCFloatDatatype.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 4,
+      "functions": [
+        {
+          "name": "doubleValue",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "BCFloatDatatype",
+          "startLine": 4,
+          "endLine": 7,
+          "methods": [
+            "doubleValue"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "doubleValue",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "BCFloatDatatype",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BCInteger.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 19,
+      "functions": [
+        {
+          "name": "BCInteger",
+          "startLine": 6,
+          "endLine": 6,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "value",
+          "startLine": 7,
+          "endLine": 7,
+          "params": []
+        },
+        {
+          "name": "longValue",
+          "startLine": 8,
+          "endLine": 8,
+          "params": []
+        },
+        {
+          "name": "toString",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "type",
+          "startLine": 10,
+          "endLine": 10,
+          "params": []
+        },
+        {
+          "name": "getObjectFor",
+          "startLine": 20,
+          "endLine": 22,
+          "params": [
+            "value"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "BCInteger",
+          "startLine": 3,
+          "endLine": 23,
+          "methods": [
+            "BCInteger",
+            "value",
+            "longValue",
+            "toString",
+            "type",
+            "getObjectFor"
+          ],
+          "properties": [
+            "value",
+            "VALUE_M1",
+            "VALUE_0",
+            "VALUE_1",
+            "VALUE_2",
+            "VALUE_3",
+            "VALUE_4",
+            "VALUE_5"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "BCInteger",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "value",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "longValue",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "type",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "VALUE_M1",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "VALUE_0",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "VALUE_1",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "VALUE_2",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "VALUE_3",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "VALUE_4",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "VALUE_5",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "BCInteger",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "toString",
+          "callee": "String.valueOf",
+          "lineNumber": 9
+        },
+        {
+          "caller": "getObjectFor",
+          "callee": "new BCInteger",
+          "lineNumber": 21
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 13,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    }
+  ]
+}

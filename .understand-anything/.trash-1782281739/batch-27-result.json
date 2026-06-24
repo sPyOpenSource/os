@@ -1,0 +1,2212 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/javax/net/ssl/SSLSocket.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "functions": [
+        {
+          "name": "getSession",
+          "startLine": 3,
+          "endLine": 3,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "SSLSocket",
+          "startLine": 2,
+          "endLine": 4,
+          "methods": [
+            "getSession"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "getSession",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "SSLSocket",
+          "line": 2,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getSession",
+          "callee": "new Error",
+          "lineNumber": 3
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/javax/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/javax/security/cert/Certificate.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "functions": [
+        {
+          "name": "getEncoded",
+          "startLine": 3,
+          "endLine": 3,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "Certificate",
+          "startLine": 2,
+          "endLine": 4,
+          "methods": [
+            "getEncoded"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "getEncoded",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "Certificate",
+          "line": 2,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getEncoded",
+          "callee": "new Error",
+          "lineNumber": 3
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/javax/security/cert/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/javax/security/cert/X509Certificate.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "classes": [
+        {
+          "name": "X509Certificate",
+          "startLine": 2,
+          "endLine": 3,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "X509Certificate",
+          "line": 2,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/javax/security/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/bio/buffercache/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/bio/emulator/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/bio/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/bio/ram/BlockIORAM.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 78,
+      "nonEmptyLines": 68,
+      "functions": [
+        {
+          "name": "BlockIORAM",
+          "startLine": 20,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "BlockIORAM",
+          "startLine": 23,
+          "endLine": 27,
+          "params": [
+            "numberKiloBytes"
+          ]
+        },
+        {
+          "name": "BlockIORAM",
+          "startLine": 28,
+          "endLine": 31,
+          "params": [
+            "mem"
+          ]
+        },
+        {
+          "name": "init",
+          "startLine": 33,
+          "endLine": 37,
+          "params": [
+            "naming",
+            "args"
+          ]
+        },
+        {
+          "name": "main",
+          "startLine": 39,
+          "endLine": 46,
+          "params": [
+            "args"
+          ]
+        },
+        {
+          "name": "getCapacity",
+          "startLine": 48,
+          "endLine": 51,
+          "params": []
+        },
+        {
+          "name": "getSectorSize",
+          "startLine": 53,
+          "endLine": 54,
+          "params": []
+        },
+        {
+          "name": "readSectors",
+          "startLine": 56,
+          "endLine": 67,
+          "params": [
+            "startSector",
+            "numberOfSectors",
+            "buf",
+            "synchronous"
+          ]
+        },
+        {
+          "name": "writeSectors",
+          "startLine": 69,
+          "endLine": 77,
+          "params": [
+            "startSector",
+            "numberOfSectors",
+            "buf",
+            "synchronous"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "BlockIORAM",
+          "startLine": 13,
+          "endLine": 78,
+          "methods": [
+            "BlockIORAM",
+            "BlockIORAM",
+            "BlockIORAM",
+            "init",
+            "main",
+            "getCapacity",
+            "getSectorSize",
+            "readSectors",
+            "writeSectors"
+          ],
+          "properties": [
+            "DEFAULT_CAPACITY",
+            "capacity",
+            "buffer",
+            "sleepManager"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "BlockIORAM",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "BlockIORAM",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "BlockIORAM",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "init",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "main",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "getCapacity",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "getSectorSize",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "readSectors",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "writeSectors",
+          "line": 69,
+          "isDefault": false
+        },
+        {
+          "name": "BlockIORAM",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "BlockIORAM",
+          "callee": "InitialNaming.getInitialNaming().lookup",
+          "lineNumber": 25
+        },
+        {
+          "caller": "BlockIORAM",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 25
+        },
+        {
+          "caller": "BlockIORAM",
+          "callee": "memMgr.alloc",
+          "lineNumber": 26
+        },
+        {
+          "caller": "BlockIORAM",
+          "callee": "mem.size",
+          "lineNumber": 29
+        },
+        {
+          "caller": "init",
+          "callee": "naming.lookup",
+          "lineNumber": 34
+        },
+        {
+          "caller": "init",
+          "callee": "new DebugPrintStream",
+          "lineNumber": 35
+        },
+        {
+          "caller": "init",
+          "callee": "new DebugOutputStream",
+          "lineNumber": 35
+        },
+        {
+          "caller": "init",
+          "callee": "main",
+          "lineNumber": 36
+        },
+        {
+          "caller": "main",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 40
+        },
+        {
+          "caller": "main",
+          "callee": "naming.lookup",
+          "lineNumber": 41
+        },
+        {
+          "caller": "main",
+          "callee": "new BlockIORAM",
+          "lineNumber": 43
+        },
+        {
+          "caller": "main",
+          "callee": "naming.registerPortal",
+          "lineNumber": 44
+        },
+        {
+          "caller": "main",
+          "callee": "Debug.out.println",
+          "lineNumber": 45
+        },
+        {
+          "caller": "readSectors",
+          "callee": "Debug.out.println",
+          "lineNumber": 59
+        },
+        {
+          "caller": "readSectors",
+          "callee": "buf.size",
+          "lineNumber": 61
+        },
+        {
+          "caller": "readSectors",
+          "callee": "new Error",
+          "lineNumber": 63
+        },
+        {
+          "caller": "readSectors",
+          "callee": "buf.copyFromMemory",
+          "lineNumber": 65
+        },
+        {
+          "caller": "readSectors",
+          "callee": "sleepManager.mdelay",
+          "lineNumber": 66
+        },
+        {
+          "caller": "writeSectors",
+          "callee": "Debug.out.println",
+          "lineNumber": 72
+        },
+        {
+          "caller": "writeSectors",
+          "callee": "new Error",
+          "lineNumber": 73
+        },
+        {
+          "caller": "writeSectors",
+          "callee": "buf.copyToMemory",
+          "lineNumber": 75
+        },
+        {
+          "caller": "writeSectors",
+          "callee": "sleepManager.mdelay",
+          "lineNumber": 76
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 10,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/bio/ram/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/bio/ro/Main.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 27,
+      "functions": [
+        {
+          "name": "main",
+          "startLine": 7,
+          "endLine": 14,
+          "params": [
+            "args"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Main",
+          "startLine": 6,
+          "endLine": 29,
+          "methods": [
+            "main"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "main",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "main",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 8
+        },
+        {
+          "caller": "main",
+          "callee": "LookupHelper.waitUntilPortalAvailable",
+          "lineNumber": 11
+        },
+        {
+          "caller": "main",
+          "callee": "new BioRO",
+          "lineNumber": 12
+        },
+        {
+          "caller": "main",
+          "callee": "naming.registerPortal",
+          "lineNumber": 13
+        },
+        {
+          "caller": "getCapacity",
+          "callee": "bio.getCapacity",
+          "lineNumber": 20
+        },
+        {
+          "caller": "getSectorSize",
+          "callee": "bio.getSectorSize",
+          "lineNumber": 21
+        },
+        {
+          "caller": "readSectors",
+          "callee": "bio.readSectors",
+          "lineNumber": 23
+        },
+        {
+          "caller": "writeSectors",
+          "callee": "new Error",
+          "lineNumber": 26
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/bio/ro/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/bootrc/BootRC.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 345,
+      "nonEmptyLines": 296,
+      "functions": [
+        {
+          "name": "BootRC",
+          "startLine": 31,
+          "endLine": 34,
+          "params": [
+            "mem"
+          ]
+        },
+        {
+          "name": "nextLine",
+          "startLine": 36,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "readInParen",
+          "startLine": 50,
+          "endLine": 61,
+          "params": []
+        },
+        {
+          "name": "nextSection",
+          "startLine": 63,
+          "endLine": 78,
+          "params": []
+        },
+        {
+          "name": "nextRecord",
+          "startLine": 80,
+          "endLine": 115,
+          "params": []
+        },
+        {
+          "name": "nextStringOrNullToken",
+          "startLine": 117,
+          "endLine": 148,
+          "params": []
+        },
+        {
+          "name": "nextStringToken",
+          "startLine": 150,
+          "endLine": 174,
+          "params": []
+        },
+        {
+          "name": "nextIntToken",
+          "startLine": 176,
+          "endLine": 213,
+          "params": []
+        },
+        {
+          "name": "selectedConfig",
+          "startLine": 215,
+          "endLine": 218,
+          "params": []
+        },
+        {
+          "name": "haveMoreTokens",
+          "startLine": 220,
+          "endLine": 224,
+          "params": []
+        },
+        {
+          "name": "gotoFirstToken",
+          "startLine": 226,
+          "endLine": 243,
+          "params": []
+        },
+        {
+          "name": "gotoFirstTokenInLine",
+          "startLine": 245,
+          "endLine": 263,
+          "params": []
+        },
+        {
+          "name": "gotoNextSection",
+          "startLine": 265,
+          "endLine": 282,
+          "params": []
+        },
+        {
+          "name": "upToNextToken",
+          "startLine": 285,
+          "endLine": 294,
+          "params": []
+        },
+        {
+          "name": "parse",
+          "startLine": 298,
+          "endLine": 328,
+          "params": []
+        },
+        {
+          "name": "getSelectedName",
+          "startLine": 332,
+          "endLine": 334,
+          "params": []
+        },
+        {
+          "name": "getSelectedSection",
+          "startLine": 336,
+          "endLine": 344,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "BootRC",
+          "startLine": 5,
+          "endLine": 345,
+          "methods": [
+            "BootRC",
+            "nextLine",
+            "readInParen",
+            "nextSection",
+            "nextRecord",
+            "nextStringOrNullToken",
+            "nextStringToken",
+            "nextIntToken",
+            "selectedConfig",
+            "haveMoreTokens",
+            "gotoFirstToken",
+            "gotoFirstTokenInLine",
+            "gotoNextSection",
+            "upToNextToken",
+            "parse",
+            "getSelectedName",
+            "getSelectedSection"
+          ],
+          "properties": [
+            "MAXLINE",
+            "NEWLINE",
+            "QUOTATION",
+            "COMMA",
+            "SPACE",
+            "KILO",
+            "MEGA",
+            "SEPARATOR",
+            "NUM_ZERO",
+            "NUM_NINE",
+            "COMMENT",
+            "LPAREN",
+            "RPAREN",
+            "data",
+            "mem",
+            "pos",
+            "linenumber",
+            "debug",
+            "startConfig",
+            "firstSection"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "BootRC",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "getSelectedName",
+          "line": 332,
+          "isDefault": false
+        },
+        {
+          "name": "getSelectedSection",
+          "line": 336,
+          "isDefault": false
+        },
+        {
+          "name": "BootRC",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "BootRC",
+          "callee": "parse",
+          "lineNumber": 33
+        },
+        {
+          "caller": "nextLine",
+          "callee": "mem.get8",
+          "lineNumber": 39
+        },
+        {
+          "caller": "nextLine",
+          "callee": "new String",
+          "lineNumber": 46
+        },
+        {
+          "caller": "readInParen",
+          "callee": "mem.get8",
+          "lineNumber": 51
+        },
+        {
+          "caller": "readInParen",
+          "callee": "new Error",
+          "lineNumber": 52
+        },
+        {
+          "caller": "readInParen",
+          "callee": "mem.get8",
+          "lineNumber": 54
+        },
+        {
+          "caller": "readInParen",
+          "callee": "new String",
+          "lineNumber": 60
+        },
+        {
+          "caller": "nextSection",
+          "callee": "gotoNextSection",
+          "lineNumber": 64
+        },
+        {
+          "caller": "nextSection",
+          "callee": "new Section",
+          "lineNumber": 67
+        },
+        {
+          "caller": "nextSection",
+          "callee": "readInParen",
+          "lineNumber": 68
+        },
+        {
+          "caller": "nextSection",
+          "callee": "haveMoreTokens",
+          "lineNumber": 71
+        },
+        {
+          "caller": "nextSection",
+          "callee": "upToNextToken",
+          "lineNumber": 72
+        },
+        {
+          "caller": "nextSection",
+          "callee": "nextRecord",
+          "lineNumber": 74
+        },
+        {
+          "caller": "nextSection",
+          "callee": "s.add",
+          "lineNumber": 76
+        },
+        {
+          "caller": "nextRecord",
+          "callee": "gotoFirstTokenInLine",
+          "lineNumber": 81
+        },
+        {
+          "caller": "nextRecord",
+          "callee": "haveMoreTokens",
+          "lineNumber": 82
+        },
+        {
+          "caller": "nextRecord",
+          "callee": "new Record",
+          "lineNumber": 84
+        },
+        {
+          "caller": "nextRecord",
+          "callee": "nextStringToken",
+          "lineNumber": 85
+        },
+        {
+          "caller": "nextRecord",
+          "callee": "upToNextToken",
+          "lineNumber": 86
+        },
+        {
+          "caller": "nextRecord",
+          "callee": "nextStringToken",
+          "lineNumber": 87
+        },
+        {
+          "caller": "nextRecord",
+          "callee": "upToNextToken",
+          "lineNumber": 88
+        },
+        {
+          "caller": "nextRecord",
+          "callee": "nextStringToken",
+          "lineNumber": 89
+        },
+        {
+          "caller": "nextRecord",
+          "callee": "upToNextToken",
+          "lineNumber": 90
+        },
+        {
+          "caller": "nextRecord",
+          "callee": "mem.get8",
+          "lineNumber": 92
+        },
+        {
+          "caller": "nextRecord",
+          "callee": "mem.get8",
+          "lineNumber": 93
+        },
+        {
+          "caller": "nextRecord",
+          "callee": "nextStringToken",
+          "lineNumber": 94
+        },
+        {
+          "caller": "nextRecord",
+          "callee": "upToNextToken",
+          "lineNumber": 95
+        },
+        {
+          "caller": "nextRecord",
+          "callee": "nextIntToken",
+          "lineNumber": 100
+        },
+        {
+          "caller": "nextRecord",
+          "callee": "upToNextToken",
+          "lineNumber": 103
+        },
+        {
+          "caller": "nextRecord",
+          "callee": "nextStringOrNullToken",
+          "lineNumber": 104
+        },
+        {
+          "caller": "nextRecord",
+          "callee": "System.arraycopy",
+          "lineNumber": 108
+        },
+        {
+          "caller": "nextRecord",
+          "callee": "Debug.out.println",
+          "lineNumber": 111
+        },
+        {
+          "caller": "nextRecord",
+          "callee": "new Error",
+          "lineNumber": 112
+        },
+        {
+          "caller": "nextStringOrNullToken",
+          "callee": "mem.get8",
+          "lineNumber": 121
+        },
+        {
+          "caller": "nextStringOrNullToken",
+          "callee": "mem.get8",
+          "lineNumber": 123
+        },
+        {
+          "caller": "nextStringOrNullToken",
+          "callee": "mem.get8",
+          "lineNumber": 126
+        },
+        {
+          "caller": "nextStringOrNullToken",
+          "callee": "new Error",
+          "lineNumber": 126
+        },
+        {
+          "caller": "nextStringOrNullToken",
+          "callee": "mem.get8",
+          "lineNumber": 127
+        },
+        {
+          "caller": "nextStringOrNullToken",
+          "callee": "new Error",
+          "lineNumber": 127
+        },
+        {
+          "caller": "nextStringOrNullToken",
+          "callee": "mem.get8",
+          "lineNumber": 128
+        },
+        {
+          "caller": "nextStringOrNullToken",
+          "callee": "new Error",
+          "lineNumber": 128
+        },
+        {
+          "caller": "nextStringOrNullToken",
+          "callee": "Debug.out.println",
+          "lineNumber": 131
+        },
+        {
+          "caller": "nextStringOrNullToken",
+          "callee": "new StringTokenException",
+          "lineNumber": 132
+        },
+        {
+          "caller": "nextStringOrNullToken",
+          "callee": "mem.get8",
+          "lineNumber": 136
+        },
+        {
+          "caller": "nextStringOrNullToken",
+          "callee": "new String",
+          "lineNumber": 143
+        },
+        {
+          "caller": "nextStringToken",
+          "callee": "mem.get8",
+          "lineNumber": 154
+        },
+        {
+          "caller": "nextStringToken",
+          "callee": "mem.get8",
+          "lineNumber": 156
+        },
+        {
+          "caller": "nextStringToken",
+          "callee": "Debug.out.println",
+          "lineNumber": 157
+        },
+        {
+          "caller": "nextStringToken",
+          "callee": "new StringTokenException",
+          "lineNumber": 158
+        },
+        {
+          "caller": "nextStringToken",
+          "callee": "mem.get8",
+          "lineNumber": 162
+        },
+        {
+          "caller": "nextStringToken",
+          "callee": "new String",
+          "lineNumber": 169
+        },
+        {
+          "caller": "nextIntToken",
+          "callee": "mem.get8",
+          "lineNumber": 180
+        },
+        {
+          "caller": "nextIntToken",
+          "callee": "mem.get8",
+          "lineNumber": 183
+        },
+        {
+          "caller": "nextIntToken",
+          "callee": "new String",
+          "lineNumber": 211
+        },
+        {
+          "caller": "nextIntToken",
+          "callee": "Integer.parseInt",
+          "lineNumber": 212
+        },
+        {
+          "caller": "selectedConfig",
+          "callee": "gotoNextSection",
+          "lineNumber": 216
+        },
+        {
+          "caller": "selectedConfig",
+          "callee": "readInParen",
+          "lineNumber": 217
+        },
+        {
+          "caller": "haveMoreTokens",
+          "callee": "mem.size",
+          "lineNumber": 221
+        },
+        {
+          "caller": "haveMoreTokens",
+          "callee": "mem.get8",
+          "lineNumber": 222
+        },
+        {
+          "caller": "gotoFirstToken",
+          "callee": "mem.size",
+          "lineNumber": 228
+        },
+        {
+          "caller": "gotoFirstToken",
+          "callee": "mem.get8",
+          "lineNumber": 229
+        },
+        {
+          "caller": "gotoFirstToken",
+          "callee": "new Error",
+          "lineNumber": 230
+        },
+        {
+          "caller": "gotoFirstToken",
+          "callee": "mem.size",
+          "lineNumber": 232
+        },
+        {
+          "caller": "gotoFirstToken",
+          "callee": "mem.get8",
+          "lineNumber": 233
+        },
+        {
+          "caller": "gotoFirstTokenInLine",
+          "callee": "mem.size",
+          "lineNumber": 247
+        },
+        {
+          "caller": "gotoFirstTokenInLine",
+          "callee": "mem.get8",
+          "lineNumber": 248
+        },
+        {
+          "caller": "gotoFirstTokenInLine",
+          "callee": "mem.size",
+          "lineNumber": 251
+        },
+        {
+          "caller": "gotoFirstTokenInLine",
+          "callee": "mem.get8",
+          "lineNumber": 252
+        },
+        {
+          "caller": "gotoNextSection",
+          "callee": "mem.size",
+          "lineNumber": 267
+        },
+        {
+          "caller": "gotoNextSection",
+          "callee": "mem.get8",
+          "lineNumber": 268
+        },
+        {
+          "caller": "gotoNextSection",
+          "callee": "mem.size",
+          "lineNumber": 270
+        },
+        {
+          "caller": "gotoNextSection",
+          "callee": "mem.get8",
+          "lineNumber": 271
+        },
+        {
+          "caller": "upToNextToken",
+          "callee": "mem.size",
+          "lineNumber": 287
+        },
+        {
+          "caller": "upToNextToken",
+          "callee": "mem.get8",
+          "lineNumber": 288
+        },
+        {
+          "caller": "parse",
+          "callee": "selectedConfig",
+          "lineNumber": 303
+        },
+        {
+          "caller": "parse",
+          "callee": "Debug.out.println",
+          "lineNumber": 305
+        },
+        {
+          "caller": "parse",
+          "callee": "nextSection",
+          "lineNumber": 306
+        },
+        {
+          "caller": "parse",
+          "callee": "Debug.out.println",
+          "lineNumber": 315
+        },
+        {
+          "caller": "parse",
+          "callee": "s.nextRecord",
+          "lineNumber": 316
+        },
+        {
+          "caller": "parse",
+          "callee": "Debug.out.println",
+          "lineNumber": 317
+        },
+        {
+          "caller": "parse",
+          "callee": "Debug.out.println",
+          "lineNumber": 318
+        },
+        {
+          "caller": "parse",
+          "callee": "Debug.out.println",
+          "lineNumber": 319
+        },
+        {
+          "caller": "parse",
+          "callee": "Debug.out.println",
+          "lineNumber": 320
+        },
+        {
+          "caller": "parse",
+          "callee": "Debug.out.println",
+          "lineNumber": 321
+        },
+        {
+          "caller": "parse",
+          "callee": "Debug.out.println",
+          "lineNumber": 322
+        },
+        {
+          "caller": "getSelectedSection",
+          "callee": "s.name.equals",
+          "lineNumber": 339
+        },
+        {
+          "caller": "getSelectedSection",
+          "callee": "new Error",
+          "lineNumber": 343
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 17,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/bootrc/BootRC2.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 116,
+      "nonEmptyLines": 108,
+      "functions": [
+        {
+          "name": "BootRC2",
+          "startLine": 19,
+          "endLine": 72,
+          "params": [
+            "mem"
+          ]
+        },
+        {
+          "name": "getGlobalSpec",
+          "startLine": 74,
+          "endLine": 76,
+          "params": []
+        },
+        {
+          "name": "nextDomainSpec",
+          "startLine": 78,
+          "endLine": 81,
+          "params": []
+        },
+        {
+          "name": "splitByChar",
+          "startLine": 83,
+          "endLine": 101,
+          "params": [
+            "stringToParse",
+            "separator"
+          ]
+        },
+        {
+          "name": "readline",
+          "startLine": 103,
+          "endLine": 115,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "BootRC2",
+          "startLine": 6,
+          "endLine": 116,
+          "methods": [
+            "BootRC2",
+            "getGlobalSpec",
+            "nextDomainSpec",
+            "splitByChar",
+            "readline"
+          ],
+          "properties": [
+            "NEWLINE",
+            "MAXLINE",
+            "data",
+            "domains",
+            "components",
+            "mem",
+            "pos",
+            "curDomainSpec",
+            "global",
+            "verbose"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "BootRC2",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "getGlobalSpec",
+          "line": 74,
+          "isDefault": false
+        },
+        {
+          "name": "nextDomainSpec",
+          "line": 78,
+          "isDefault": false
+        },
+        {
+          "name": "BootRC2",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "BootRC2",
+          "callee": "readline",
+          "lineNumber": 25
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "line.trim",
+          "lineNumber": 27
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "Debug.out.println",
+          "lineNumber": 28
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "line.length",
+          "lineNumber": 29
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "line.charAt",
+          "lineNumber": 29
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "line.charAt",
+          "lineNumber": 30
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "line.equals",
+          "lineNumber": 33
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "new GlobalSpec",
+          "lineNumber": 34
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "line.startsWith",
+          "lineNumber": 36
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "new DomainSpec",
+          "lineNumber": 37
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "domains.addElement",
+          "lineNumber": 39
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "line.startsWith",
+          "lineNumber": 40
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "(line.substring(10, line.length() - 1)).trim",
+          "lineNumber": 41
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "line.substring",
+          "lineNumber": 41
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "line.length",
+          "lineNumber": 41
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "Debug.out.println",
+          "lineNumber": 42
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "new ComponentSpec",
+          "lineNumber": 43
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "components.put",
+          "lineNumber": 45
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "new Error",
+          "lineNumber": 47
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "splitByChar",
+          "lineNumber": 51
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "new Pair",
+          "lineNumber": 52
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "pair[0].trim",
+          "lineNumber": 52
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "pair[1].trim",
+          "lineNumber": 52
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "Debug.out.println",
+          "lineNumber": 53
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "spec.pairs.addElement",
+          "lineNumber": 54
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "domains.size",
+          "lineNumber": 57
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "domains.elementAt",
+          "lineNumber": 58
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "d.getStringArray",
+          "lineNumber": 60
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "components.get",
+          "lineNumber": 63
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "new Error",
+          "lineNumber": 65
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "d.setComponents",
+          "lineNumber": 67
+        },
+        {
+          "caller": "BootRC2",
+          "callee": "Debug.out.println",
+          "lineNumber": 69
+        },
+        {
+          "caller": "nextDomainSpec",
+          "callee": "domains.size",
+          "lineNumber": 79
+        },
+        {
+          "caller": "nextDomainSpec",
+          "callee": "domains.elementAt",
+          "lineNumber": 80
+        },
+        {
+          "caller": "splitByChar",
+          "callee": "new Vector",
+          "lineNumber": 85
+        },
+        {
+          "caller": "splitByChar",
+          "callee": "stringToParse.indexOf",
+          "lineNumber": 87
+        },
+        {
+          "caller": "splitByChar",
+          "callee": "stringToParse.substring",
+          "lineNumber": 93
+        },
+        {
+          "caller": "splitByChar",
+          "callee": "stringToParse.substring(c3 + 1).trim",
+          "lineNumber": 94
+        },
+        {
+          "caller": "splitByChar",
+          "callee": "stringToParse.substring",
+          "lineNumber": 94
+        },
+        {
+          "caller": "splitByChar",
+          "callee": "v.addElement",
+          "lineNumber": 96
+        },
+        {
+          "caller": "splitByChar",
+          "callee": "v.size",
+          "lineNumber": 98
+        },
+        {
+          "caller": "splitByChar",
+          "callee": "v.copyInto",
+          "lineNumber": 99
+        },
+        {
+          "caller": "readline",
+          "callee": "mem.size",
+          "lineNumber": 106
+        },
+        {
+          "caller": "readline",
+          "callee": "mem.get8",
+          "lineNumber": 106
+        },
+        {
+          "caller": "readline",
+          "callee": "mem.size",
+          "lineNumber": 111
+        },
+        {
+          "caller": "readline",
+          "callee": "new String",
+          "lineNumber": 113
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/bootrc/ComponentSpec.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 7,
+      "functions": [
+        {
+          "name": "ComponentSpec",
+          "startLine": 5,
+          "endLine": 7,
+          "params": [
+            "name"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ComponentSpec",
+          "startLine": 3,
+          "endLine": 8,
+          "methods": [
+            "ComponentSpec"
+          ],
+          "properties": [
+            "name"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ComponentSpec",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/bootrc/ConfigFile.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 49,
+      "nonEmptyLines": 44,
+      "functions": [
+        {
+          "name": "ConfigFile",
+          "startLine": 10,
+          "endLine": 25,
+          "params": [
+            "mem"
+          ]
+        },
+        {
+          "name": "get",
+          "startLine": 26,
+          "endLine": 28,
+          "params": [
+            "key"
+          ]
+        },
+        {
+          "name": "readline",
+          "startLine": 35,
+          "endLine": 47,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ConfigFile",
+          "startLine": 6,
+          "endLine": 49,
+          "methods": [
+            "ConfigFile",
+            "get",
+            "readline"
+          ],
+          "properties": [
+            "pairs",
+            "name2value",
+            "mem",
+            "pos",
+            "NEWLINE",
+            "MAXLINE",
+            "data"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ConfigFile",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "get",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "ConfigFile",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ConfigFile",
+          "callee": "readline",
+          "lineNumber": 14
+        },
+        {
+          "caller": "ConfigFile",
+          "callee": "line.trim",
+          "lineNumber": 16
+        },
+        {
+          "caller": "ConfigFile",
+          "callee": "line.length",
+          "lineNumber": 17
+        },
+        {
+          "caller": "ConfigFile",
+          "callee": "line.charAt",
+          "lineNumber": 17
+        },
+        {
+          "caller": "ConfigFile",
+          "callee": "BootRC2.splitByChar",
+          "lineNumber": 18
+        },
+        {
+          "caller": "ConfigFile",
+          "callee": "new Pair",
+          "lineNumber": 19
+        },
+        {
+          "caller": "ConfigFile",
+          "callee": "pair[0].trim",
+          "lineNumber": 19
+        },
+        {
+          "caller": "ConfigFile",
+          "callee": "pair[1].trim",
+          "lineNumber": 19
+        },
+        {
+          "caller": "ConfigFile",
+          "callee": "pairs.addElement",
+          "lineNumber": 22
+        },
+        {
+          "caller": "ConfigFile",
+          "callee": "name2value.put",
+          "lineNumber": 23
+        },
+        {
+          "caller": "get",
+          "callee": "name2value.get",
+          "lineNumber": 27
+        },
+        {
+          "caller": "readline",
+          "callee": "mem.size",
+          "lineNumber": 38
+        },
+        {
+          "caller": "readline",
+          "callee": "mem.get8",
+          "lineNumber": 38
+        },
+        {
+          "caller": "readline",
+          "callee": "mem.size",
+          "lineNumber": 43
+        },
+        {
+          "caller": "readline",
+          "callee": "new String",
+          "lineNumber": 45
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/bootrc/DomainSpec.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 10,
+      "functions": [
+        {
+          "name": "setComponents",
+          "startLine": 5,
+          "endLine": 7,
+          "params": [
+            "c"
+          ]
+        },
+        {
+          "name": "getComponents",
+          "startLine": 8,
+          "endLine": 10,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DomainSpec",
+          "startLine": 3,
+          "endLine": 11,
+          "methods": [
+            "setComponents",
+            "getComponents"
+          ],
+          "properties": [
+            "comp"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getComponents",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "DomainSpec",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/bootrc/GlobalSpec.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 4,
+      "nonEmptyLines": 3,
+      "classes": [
+        {
+          "name": "GlobalSpec",
+          "startLine": 3,
+          "endLine": 4,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "GlobalSpec",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/bootrc/NameNotFoundException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "NameNotFoundException",
+          "startLine": 4,
+          "endLine": 4,
+          "params": []
+        },
+        {
+          "name": "NameNotFoundException",
+          "startLine": 5,
+          "endLine": 5,
+          "params": [
+            "msg"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "NameNotFoundException",
+          "startLine": 3,
+          "endLine": 6,
+          "methods": [
+            "NameNotFoundException",
+            "NameNotFoundException"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "NameNotFoundException",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "NameNotFoundException",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "NameNotFoundException",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/bootrc/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/bootrc/Pair.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 10,
+      "nonEmptyLines": 9,
+      "functions": [
+        {
+          "name": "Pair",
+          "startLine": 6,
+          "endLine": 9,
+          "params": [
+            "name",
+            "value"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Pair",
+          "startLine": 3,
+          "endLine": 10,
+          "methods": [
+            "Pair"
+          ],
+          "properties": [
+            "name",
+            "value"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Pair",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/bootrc/Record.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 11,
+      "classes": [
+        {
+          "name": "Record",
+          "startLine": 5,
+          "endLine": 13,
+          "methods": [],
+          "properties": [
+            "domainName",
+            "mainLib",
+            "startClass",
+            "schedulerClass",
+            "heapSize",
+            "argv",
+            "next"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "domainName",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "mainLib",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "startClass",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "schedulerClass",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "heapSize",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "argv",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "next",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "Record",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/bootrc/Section.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 29,
+      "nonEmptyLines": 26,
+      "functions": [
+        {
+          "name": "nextRecord",
+          "startLine": 11,
+          "endLine": 16,
+          "params": []
+        },
+        {
+          "name": "reset",
+          "startLine": 17,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "add",
+          "startLine": 18,
+          "endLine": 27,
+          "params": [
+            "r"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Section",
+          "startLine": 5,
+          "endLine": 28,
+          "methods": [
+            "nextRecord",
+            "reset",
+            "add"
+          ],
+          "properties": [
+            "name",
+            "records",
+            "cur",
+            "last",
+            "next"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "name",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "records",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "cur",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "last",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "next",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "nextRecord",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "reset",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "add",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "Section",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/bootrc/Spec.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 25,
+      "functions": [
+        {
+          "name": "getString",
+          "startLine": 8,
+          "endLine": 11,
+          "params": [
+            "name"
+          ]
+        },
+        {
+          "name": "getInt",
+          "startLine": 13,
+          "endLine": 16,
+          "params": [
+            "name"
+          ]
+        },
+        {
+          "name": "getStringArray",
+          "startLine": 18,
+          "endLine": 22,
+          "params": [
+            "name"
+          ]
+        },
+        {
+          "name": "find",
+          "startLine": 24,
+          "endLine": 30,
+          "params": [
+            "name"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Spec",
+          "startLine": 5,
+          "endLine": 31,
+          "methods": [
+            "getString",
+            "getInt",
+            "getStringArray",
+            "find"
+          ],
+          "properties": [
+            "pairs"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getString",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "getInt",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "getStringArray",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "Spec",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getString",
+          "callee": "find",
+          "lineNumber": 9
+        },
+        {
+          "caller": "getInt",
+          "callee": "find",
+          "lineNumber": 14
+        },
+        {
+          "caller": "getInt",
+          "callee": "Integer.parseInt",
+          "lineNumber": 15
+        },
+        {
+          "caller": "getStringArray",
+          "callee": "find",
+          "lineNumber": 19
+        },
+        {
+          "caller": "getStringArray",
+          "callee": "BootRC2.splitByChar",
+          "lineNumber": 20
+        },
+        {
+          "caller": "find",
+          "callee": "pairs.size",
+          "lineNumber": 25
+        },
+        {
+          "caller": "find",
+          "callee": "pairs.elementAt",
+          "lineNumber": 26
+        },
+        {
+          "caller": "find",
+          "callee": "p.name.equals",
+          "lineNumber": 27
+        },
+        {
+          "caller": "find",
+          "callee": "new NameNotFoundException",
+          "lineNumber": 29
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    }
+  ]
+}

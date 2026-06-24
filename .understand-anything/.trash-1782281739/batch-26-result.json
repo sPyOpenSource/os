@@ -1,0 +1,2396 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/java/util/EmptyStackException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 46,
+      "nonEmptyLines": 43,
+      "functions": [
+        {
+          "name": "EmptyStackException",
+          "startLine": 44,
+          "endLine": 45,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "EmptyStackException",
+          "startLine": 36,
+          "endLine": 46,
+          "methods": [
+            "EmptyStackException"
+          ],
+          "properties": [
+            "serialVersionUID"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "EmptyStackException",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "EmptyStackException",
+          "line": 36,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/java/util/EventObject.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 66,
+      "nonEmptyLines": 54,
+      "functions": [
+        {
+          "name": "EventObject",
+          "startLine": 45,
+          "endLine": 48,
+          "params": [
+            "source"
+          ]
+        },
+        {
+          "name": "getSource",
+          "startLine": 53,
+          "endLine": 56,
+          "params": []
+        },
+        {
+          "name": "toString",
+          "startLine": 62,
+          "endLine": 65,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "EventObject",
+          "startLine": 37,
+          "endLine": 66,
+          "methods": [
+            "EventObject",
+            "getSource",
+            "toString"
+          ],
+          "properties": [
+            "serialVersionUID",
+            "source"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "EventObject",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "getSource",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "EventObject",
+          "line": 37,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "toString",
+          "callee": "this.getClass",
+          "lineNumber": 64
+        },
+        {
+          "caller": "toString",
+          "callee": "source.toString",
+          "lineNumber": 64
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/java/util/LinkedHashSet.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 195,
+      "nonEmptyLines": 186,
+      "functions": [
+        {
+          "name": "LinkedHashSet",
+          "startLine": 133,
+          "endLine": 135,
+          "params": [
+            "initialCapacity",
+            "loadFactor"
+          ]
+        },
+        {
+          "name": "LinkedHashSet",
+          "startLine": 145,
+          "endLine": 147,
+          "params": [
+            "initialCapacity"
+          ]
+        },
+        {
+          "name": "LinkedHashSet",
+          "startLine": 153,
+          "endLine": 155,
+          "params": []
+        },
+        {
+          "name": "LinkedHashSet",
+          "startLine": 167,
+          "endLine": 170,
+          "params": [
+            "c"
+          ]
+        },
+        {
+          "name": "spliterator",
+          "startLine": 191,
+          "endLine": 194,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "LinkedHashSet",
+          "startLine": 118,
+          "endLine": 195,
+          "methods": [
+            "LinkedHashSet",
+            "LinkedHashSet",
+            "LinkedHashSet",
+            "LinkedHashSet",
+            "spliterator"
+          ],
+          "properties": [
+            "serialVersionUID"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "LinkedHashSet",
+          "line": 133,
+          "isDefault": false
+        },
+        {
+          "name": "LinkedHashSet",
+          "line": 145,
+          "isDefault": false
+        },
+        {
+          "name": "LinkedHashSet",
+          "line": 153,
+          "isDefault": false
+        },
+        {
+          "name": "LinkedHashSet",
+          "line": 167,
+          "isDefault": false
+        },
+        {
+          "name": "spliterator",
+          "line": 191,
+          "isDefault": false
+        },
+        {
+          "name": "LinkedHashSet",
+          "line": 118,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "LinkedHashSet",
+          "callee": "Math.max",
+          "lineNumber": 168
+        },
+        {
+          "caller": "LinkedHashSet",
+          "callee": "c.size",
+          "lineNumber": 168
+        },
+        {
+          "caller": "LinkedHashSet",
+          "callee": "addAll",
+          "lineNumber": 169
+        },
+        {
+          "caller": "spliterator",
+          "callee": "Spliterators.spliterator",
+          "lineNumber": 193
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/java/util/LinkedList.j",
+      "language": "j",
+      "fileCategory": "code",
+      "totalLines": 677,
+      "nonEmptyLines": 601,
+      "metrics": {}
+    },
+    {
+      "path": "src/java/util/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/java/util/PropertyResourceBundle.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 131,
+      "nonEmptyLines": 120,
+      "functions": [
+        {
+          "name": "PropertyResourceBundle",
+          "startLine": 99,
+          "endLine": 104,
+          "params": [
+            "stream"
+          ]
+        },
+        {
+          "name": "handleGetObject",
+          "startLine": 112,
+          "endLine": 115,
+          "params": [
+            "key"
+          ]
+        },
+        {
+          "name": "getKeys",
+          "startLine": 121,
+          "endLine": 130,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "PropertyResourceBundle",
+          "startLine": 91,
+          "endLine": 131,
+          "methods": [
+            "PropertyResourceBundle",
+            "handleGetObject",
+            "getKeys"
+          ],
+          "properties": [
+            "properties"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "PropertyResourceBundle",
+          "line": 99,
+          "isDefault": false
+        },
+        {
+          "name": "getKeys",
+          "line": 121,
+          "isDefault": false
+        },
+        {
+          "name": "PropertyResourceBundle",
+          "line": 91,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "PropertyResourceBundle",
+          "callee": "new Properties",
+          "lineNumber": 102
+        },
+        {
+          "caller": "PropertyResourceBundle",
+          "callee": "properties.load",
+          "lineNumber": 103
+        },
+        {
+          "caller": "handleGetObject",
+          "callee": "properties.getProperty",
+          "lineNumber": 114
+        },
+        {
+          "caller": "getKeys",
+          "callee": "new DoubleEnumeration",
+          "lineNumber": 126
+        },
+        {
+          "caller": "getKeys",
+          "callee": "properties.propertyNames",
+          "lineNumber": 126
+        },
+        {
+          "caller": "getKeys",
+          "callee": "parent.getKeys",
+          "lineNumber": 127
+        },
+        {
+          "caller": "getKeys",
+          "callee": "properties.propertyNames",
+          "lineNumber": 129
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/java/util/Stack.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 23,
+      "functions": [
+        {
+          "name": "pop",
+          "startLine": 4,
+          "endLine": 12,
+          "params": []
+        },
+        {
+          "name": "peek",
+          "startLine": 13,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "push",
+          "startLine": 20,
+          "endLine": 23,
+          "params": [
+            "item"
+          ]
+        },
+        {
+          "name": "Stack",
+          "startLine": 24,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "empty",
+          "startLine": 25,
+          "endLine": 25,
+          "params": []
+        },
+        {
+          "name": "search",
+          "startLine": 26,
+          "endLine": 26,
+          "params": [
+            "arg0"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Stack",
+          "startLine": 3,
+          "endLine": 27,
+          "methods": [
+            "pop",
+            "peek",
+            "push",
+            "Stack",
+            "empty",
+            "search"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "pop",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "peek",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "push",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "Stack",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "empty",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "search",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "Stack",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "pop",
+          "callee": "size",
+          "lineNumber": 6
+        },
+        {
+          "caller": "pop",
+          "callee": "peek",
+          "lineNumber": 8
+        },
+        {
+          "caller": "pop",
+          "callee": "removeElementAt",
+          "lineNumber": 9
+        },
+        {
+          "caller": "peek",
+          "callee": "size",
+          "lineNumber": 14
+        },
+        {
+          "caller": "peek",
+          "callee": "new EmptyStackException",
+          "lineNumber": 17
+        },
+        {
+          "caller": "peek",
+          "callee": "elementAt",
+          "lineNumber": 18
+        },
+        {
+          "caller": "Stack",
+          "callee": "new Error",
+          "lineNumber": 24
+        },
+        {
+          "caller": "empty",
+          "callee": "new Error",
+          "lineNumber": 25
+        },
+        {
+          "caller": "search",
+          "callee": "new Error",
+          "lineNumber": 26
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/java/util/stream/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/java/util/stream/Streams.j",
+      "language": "j",
+      "fileCategory": "code",
+      "totalLines": 896,
+      "nonEmptyLines": 785,
+      "metrics": {}
+    },
+    {
+      "path": "src/java/util/stream/Streams.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 85,
+      "nonEmptyLines": 68,
+      "classes": [
+        {
+          "name": "Streams",
+          "startLine": 16,
+          "endLine": 85,
+          "methods": [],
+          "properties": [
+            "NONE"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Streams",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "IntStreamBuilderImpl",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 30
+        },
+        {
+          "caller": "accept",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 35
+        },
+        {
+          "caller": "build",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 40
+        },
+        {
+          "caller": "add",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 43
+        },
+        {
+          "caller": "trySplit",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 54
+        },
+        {
+          "caller": "tryAdvance",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 59
+        },
+        {
+          "caller": "tryAdvance",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 64
+        },
+        {
+          "caller": "forEachRemaining",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 67
+        },
+        {
+          "caller": "forEachRemaining",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 71
+        },
+        {
+          "caller": "estimateSize",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 76
+        },
+        {
+          "caller": "characteristics",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 81
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/java/util/TooManyListenersException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 60,
+      "nonEmptyLines": 49,
+      "functions": [
+        {
+          "name": "TooManyListenersException",
+          "startLine": 48,
+          "endLine": 50,
+          "params": []
+        },
+        {
+          "name": "TooManyListenersException",
+          "startLine": 56,
+          "endLine": 59,
+          "params": [
+            "detail"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "TooManyListenersException",
+          "startLine": 41,
+          "endLine": 60,
+          "methods": [
+            "TooManyListenersException",
+            "TooManyListenersException"
+          ],
+          "properties": [
+            "serialVersionUID"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "TooManyListenersException",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "TooManyListenersException",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "TooManyListenersException",
+          "line": 41,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/java/util/TreeSet.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 568,
+      "nonEmptyLines": 517,
+      "functions": [
+        {
+          "name": "TreeSet",
+          "startLine": 106,
+          "endLine": 108,
+          "params": [
+            "m"
+          ]
+        },
+        {
+          "name": "TreeSet",
+          "startLine": 123,
+          "endLine": 125,
+          "params": []
+        },
+        {
+          "name": "TreeSet",
+          "startLine": 140,
+          "endLine": 142,
+          "params": [
+            "comparator"
+          ]
+        },
+        {
+          "name": "TreeSet",
+          "startLine": 158,
+          "endLine": 161,
+          "params": [
+            "c"
+          ]
+        },
+        {
+          "name": "TreeSet",
+          "startLine": 170,
+          "endLine": 173,
+          "params": [
+            "s"
+          ]
+        },
+        {
+          "name": "iterator",
+          "startLine": 180,
+          "endLine": 182,
+          "params": []
+        },
+        {
+          "name": "descendingIterator",
+          "startLine": 190,
+          "endLine": 192,
+          "params": []
+        },
+        {
+          "name": "descendingSet",
+          "startLine": 197,
+          "endLine": 199,
+          "params": []
+        },
+        {
+          "name": "size",
+          "startLine": 206,
+          "endLine": 208,
+          "params": []
+        },
+        {
+          "name": "isEmpty",
+          "startLine": 215,
+          "endLine": 217,
+          "params": []
+        },
+        {
+          "name": "contains",
+          "startLine": 233,
+          "endLine": 235,
+          "params": [
+            "o"
+          ]
+        },
+        {
+          "name": "add",
+          "startLine": 254,
+          "endLine": 256,
+          "params": [
+            "e"
+          ]
+        },
+        {
+          "name": "remove",
+          "startLine": 275,
+          "endLine": 277,
+          "params": [
+            "o"
+          ]
+        },
+        {
+          "name": "clear",
+          "startLine": 283,
+          "endLine": 285,
+          "params": []
+        },
+        {
+          "name": "addAll",
+          "startLine": 298,
+          "endLine": 313,
+          "params": [
+            "c"
+          ]
+        },
+        {
+          "name": "subSet",
+          "startLine": 323,
+          "endLine": 327,
+          "params": [
+            "fromElement",
+            "fromInclusive",
+            "toElement",
+            "toInclusive"
+          ]
+        },
+        {
+          "name": "headSet",
+          "startLine": 337,
+          "endLine": 339,
+          "params": [
+            "toElement",
+            "inclusive"
+          ]
+        },
+        {
+          "name": "tailSet",
+          "startLine": 349,
+          "endLine": 351,
+          "params": [
+            "fromElement",
+            "inclusive"
+          ]
+        },
+        {
+          "name": "subSet",
+          "startLine": 360,
+          "endLine": 362,
+          "params": [
+            "fromElement",
+            "toElement"
+          ]
+        },
+        {
+          "name": "headSet",
+          "startLine": 371,
+          "endLine": 373,
+          "params": [
+            "toElement"
+          ]
+        },
+        {
+          "name": "tailSet",
+          "startLine": 382,
+          "endLine": 384,
+          "params": [
+            "fromElement"
+          ]
+        },
+        {
+          "name": "comparator",
+          "startLine": 386,
+          "endLine": 388,
+          "params": []
+        },
+        {
+          "name": "first",
+          "startLine": 393,
+          "endLine": 395,
+          "params": []
+        },
+        {
+          "name": "last",
+          "startLine": 400,
+          "endLine": 402,
+          "params": []
+        },
+        {
+          "name": "lower",
+          "startLine": 413,
+          "endLine": 415,
+          "params": [
+            "e"
+          ]
+        },
+        {
+          "name": "floor",
+          "startLine": 424,
+          "endLine": 426,
+          "params": [
+            "e"
+          ]
+        },
+        {
+          "name": "ceiling",
+          "startLine": 435,
+          "endLine": 437,
+          "params": [
+            "e"
+          ]
+        },
+        {
+          "name": "higher",
+          "startLine": 446,
+          "endLine": 448,
+          "params": [
+            "e"
+          ]
+        },
+        {
+          "name": "pollFirst",
+          "startLine": 453,
+          "endLine": 456,
+          "params": []
+        },
+        {
+          "name": "pollLast",
+          "startLine": 461,
+          "endLine": 464,
+          "params": []
+        },
+        {
+          "name": "clone",
+          "startLine": 472,
+          "endLine": 483,
+          "params": []
+        },
+        {
+          "name": "writeObject",
+          "startLine": 497,
+          "endLine": 511,
+          "params": [
+            "s"
+          ]
+        },
+        {
+          "name": "readObject",
+          "startLine": 517,
+          "endLine": 534,
+          "params": [
+            "s"
+          ]
+        },
+        {
+          "name": "spliterator",
+          "startLine": 555,
+          "endLine": 558,
+          "params": []
+        },
+        {
+          "name": "toArray",
+          "startLine": 562,
+          "endLine": 565,
+          "params": [
+            "a"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "TreeSet",
+          "startLine": 92,
+          "endLine": 568,
+          "methods": [
+            "TreeSet",
+            "TreeSet",
+            "TreeSet",
+            "TreeSet",
+            "TreeSet",
+            "iterator",
+            "descendingIterator",
+            "descendingSet",
+            "size",
+            "isEmpty",
+            "contains",
+            "add",
+            "remove",
+            "clear",
+            "addAll",
+            "subSet",
+            "headSet",
+            "tailSet",
+            "subSet",
+            "headSet",
+            "tailSet",
+            "comparator",
+            "first",
+            "last",
+            "lower",
+            "floor",
+            "ceiling",
+            "higher",
+            "pollFirst",
+            "pollLast",
+            "clone",
+            "writeObject",
+            "readObject",
+            "spliterator",
+            "toArray"
+          ],
+          "properties": [
+            "m",
+            "PRESENT",
+            "serialVersionUID"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "TreeSet",
+          "line": 123,
+          "isDefault": false
+        },
+        {
+          "name": "TreeSet",
+          "line": 140,
+          "isDefault": false
+        },
+        {
+          "name": "TreeSet",
+          "line": 158,
+          "isDefault": false
+        },
+        {
+          "name": "TreeSet",
+          "line": 170,
+          "isDefault": false
+        },
+        {
+          "name": "iterator",
+          "line": 180,
+          "isDefault": false
+        },
+        {
+          "name": "descendingIterator",
+          "line": 190,
+          "isDefault": false
+        },
+        {
+          "name": "descendingSet",
+          "line": 197,
+          "isDefault": false
+        },
+        {
+          "name": "size",
+          "line": 206,
+          "isDefault": false
+        },
+        {
+          "name": "isEmpty",
+          "line": 215,
+          "isDefault": false
+        },
+        {
+          "name": "contains",
+          "line": 233,
+          "isDefault": false
+        },
+        {
+          "name": "add",
+          "line": 254,
+          "isDefault": false
+        },
+        {
+          "name": "remove",
+          "line": 275,
+          "isDefault": false
+        },
+        {
+          "name": "clear",
+          "line": 283,
+          "isDefault": false
+        },
+        {
+          "name": "addAll",
+          "line": 298,
+          "isDefault": false
+        },
+        {
+          "name": "subSet",
+          "line": 323,
+          "isDefault": false
+        },
+        {
+          "name": "headSet",
+          "line": 337,
+          "isDefault": false
+        },
+        {
+          "name": "tailSet",
+          "line": 349,
+          "isDefault": false
+        },
+        {
+          "name": "subSet",
+          "line": 360,
+          "isDefault": false
+        },
+        {
+          "name": "headSet",
+          "line": 371,
+          "isDefault": false
+        },
+        {
+          "name": "tailSet",
+          "line": 382,
+          "isDefault": false
+        },
+        {
+          "name": "comparator",
+          "line": 386,
+          "isDefault": false
+        },
+        {
+          "name": "first",
+          "line": 393,
+          "isDefault": false
+        },
+        {
+          "name": "last",
+          "line": 400,
+          "isDefault": false
+        },
+        {
+          "name": "lower",
+          "line": 413,
+          "isDefault": false
+        },
+        {
+          "name": "floor",
+          "line": 424,
+          "isDefault": false
+        },
+        {
+          "name": "ceiling",
+          "line": 435,
+          "isDefault": false
+        },
+        {
+          "name": "higher",
+          "line": 446,
+          "isDefault": false
+        },
+        {
+          "name": "pollFirst",
+          "line": 453,
+          "isDefault": false
+        },
+        {
+          "name": "pollLast",
+          "line": 461,
+          "isDefault": false
+        },
+        {
+          "name": "clone",
+          "line": 472,
+          "isDefault": false
+        },
+        {
+          "name": "spliterator",
+          "line": 555,
+          "isDefault": false
+        },
+        {
+          "name": "toArray",
+          "line": 562,
+          "isDefault": false
+        },
+        {
+          "name": "TreeSet",
+          "line": 92,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "TreeSet",
+          "callee": "new TreeMap<E,Object>",
+          "lineNumber": 124
+        },
+        {
+          "caller": "TreeSet",
+          "callee": "new TreeMap<>",
+          "lineNumber": 141
+        },
+        {
+          "caller": "TreeSet",
+          "callee": "addAll",
+          "lineNumber": 160
+        },
+        {
+          "caller": "TreeSet",
+          "callee": "s.comparator",
+          "lineNumber": 171
+        },
+        {
+          "caller": "TreeSet",
+          "callee": "addAll",
+          "lineNumber": 172
+        },
+        {
+          "caller": "iterator",
+          "callee": "m.navigableKeySet().iterator",
+          "lineNumber": 181
+        },
+        {
+          "caller": "iterator",
+          "callee": "m.navigableKeySet",
+          "lineNumber": 181
+        },
+        {
+          "caller": "descendingIterator",
+          "callee": "m.descendingKeySet().iterator",
+          "lineNumber": 191
+        },
+        {
+          "caller": "descendingIterator",
+          "callee": "m.descendingKeySet",
+          "lineNumber": 191
+        },
+        {
+          "caller": "descendingSet",
+          "callee": "new TreeSet<>",
+          "lineNumber": 198
+        },
+        {
+          "caller": "descendingSet",
+          "callee": "m.descendingMap",
+          "lineNumber": 198
+        },
+        {
+          "caller": "size",
+          "callee": "m.size",
+          "lineNumber": 207
+        },
+        {
+          "caller": "isEmpty",
+          "callee": "m.isEmpty",
+          "lineNumber": 216
+        },
+        {
+          "caller": "contains",
+          "callee": "m.containsKey",
+          "lineNumber": 234
+        },
+        {
+          "caller": "add",
+          "callee": "m.put",
+          "lineNumber": 255
+        },
+        {
+          "caller": "remove",
+          "callee": "m.remove",
+          "lineNumber": 276
+        },
+        {
+          "caller": "clear",
+          "callee": "m.clear",
+          "lineNumber": 284
+        },
+        {
+          "caller": "addAll",
+          "callee": "m.size",
+          "lineNumber": 300
+        },
+        {
+          "caller": "addAll",
+          "callee": "c.size",
+          "lineNumber": 300
+        },
+        {
+          "caller": "addAll",
+          "callee": "set.comparator",
+          "lineNumber": 305
+        },
+        {
+          "caller": "addAll",
+          "callee": "map.comparator",
+          "lineNumber": 306
+        },
+        {
+          "caller": "addAll",
+          "callee": "cc.equals",
+          "lineNumber": 307
+        },
+        {
+          "caller": "addAll",
+          "callee": "super.addAll",
+          "lineNumber": 312
+        },
+        {
+          "caller": "subSet",
+          "callee": "new TreeSet<>",
+          "lineNumber": 325
+        },
+        {
+          "caller": "subSet",
+          "callee": "m.subMap",
+          "lineNumber": 325
+        },
+        {
+          "caller": "headSet",
+          "callee": "new TreeSet<>",
+          "lineNumber": 338
+        },
+        {
+          "caller": "headSet",
+          "callee": "m.headMap",
+          "lineNumber": 338
+        },
+        {
+          "caller": "tailSet",
+          "callee": "new TreeSet<>",
+          "lineNumber": 350
+        },
+        {
+          "caller": "tailSet",
+          "callee": "m.tailMap",
+          "lineNumber": 350
+        },
+        {
+          "caller": "subSet",
+          "callee": "subSet",
+          "lineNumber": 361
+        },
+        {
+          "caller": "headSet",
+          "callee": "headSet",
+          "lineNumber": 372
+        },
+        {
+          "caller": "tailSet",
+          "callee": "tailSet",
+          "lineNumber": 383
+        },
+        {
+          "caller": "comparator",
+          "callee": "m.comparator",
+          "lineNumber": 387
+        },
+        {
+          "caller": "first",
+          "callee": "m.firstKey",
+          "lineNumber": 394
+        },
+        {
+          "caller": "last",
+          "callee": "m.lastKey",
+          "lineNumber": 401
+        },
+        {
+          "caller": "lower",
+          "callee": "m.lowerKey",
+          "lineNumber": 414
+        },
+        {
+          "caller": "floor",
+          "callee": "m.floorKey",
+          "lineNumber": 425
+        },
+        {
+          "caller": "ceiling",
+          "callee": "m.ceilingKey",
+          "lineNumber": 436
+        },
+        {
+          "caller": "higher",
+          "callee": "m.higherKey",
+          "lineNumber": 447
+        },
+        {
+          "caller": "pollFirst",
+          "callee": "m.pollFirstEntry",
+          "lineNumber": 454
+        },
+        {
+          "caller": "pollFirst",
+          "callee": "e.getKey",
+          "lineNumber": 455
+        },
+        {
+          "caller": "pollLast",
+          "callee": "m.pollLastEntry",
+          "lineNumber": 462
+        },
+        {
+          "caller": "pollLast",
+          "callee": "e.getKey",
+          "lineNumber": 463
+        },
+        {
+          "caller": "clone",
+          "callee": "super.clone",
+          "lineNumber": 476
+        },
+        {
+          "caller": "clone",
+          "callee": "new InternalError",
+          "lineNumber": 478
+        },
+        {
+          "caller": "clone",
+          "callee": "new TreeMap<>",
+          "lineNumber": 481
+        },
+        {
+          "caller": "writeObject",
+          "callee": "s.defaultWriteObject",
+          "lineNumber": 500
+        },
+        {
+          "caller": "writeObject",
+          "callee": "s.writeObject",
+          "lineNumber": 503
+        },
+        {
+          "caller": "writeObject",
+          "callee": "m.comparator",
+          "lineNumber": 503
+        },
+        {
+          "caller": "writeObject",
+          "callee": "s.writeInt",
+          "lineNumber": 506
+        },
+        {
+          "caller": "writeObject",
+          "callee": "m.size",
+          "lineNumber": 506
+        },
+        {
+          "caller": "writeObject",
+          "callee": "m.keySet",
+          "lineNumber": 509
+        },
+        {
+          "caller": "writeObject",
+          "callee": "s.writeObject",
+          "lineNumber": 510
+        },
+        {
+          "caller": "readObject",
+          "callee": "s.defaultReadObject",
+          "lineNumber": 520
+        },
+        {
+          "caller": "readObject",
+          "callee": "s.readObject",
+          "lineNumber": 524
+        },
+        {
+          "caller": "readObject",
+          "callee": "new TreeMap<>",
+          "lineNumber": 527
+        },
+        {
+          "caller": "readObject",
+          "callee": "s.readInt",
+          "lineNumber": 531
+        },
+        {
+          "caller": "spliterator",
+          "callee": "new Error",
+          "lineNumber": 557
+        },
+        {
+          "caller": "toArray",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 564
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 33,
+        "functionCount": 35,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/java/util/UnsupportedOperationException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 9,
+      "functions": [
+        {
+          "name": "UnsupportedOperationException",
+          "startLine": 5,
+          "endLine": 7,
+          "params": [
+            "not_supported_yet"
+          ]
+        },
+        {
+          "name": "UnsupportedOperationException",
+          "startLine": 9,
+          "endLine": 11,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "UnsupportedOperationException",
+          "startLine": 3,
+          "endLine": 12,
+          "methods": [
+            "UnsupportedOperationException",
+            "UnsupportedOperationException"
+          ],
+          "properties": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "UnsupportedOperationException",
+          "callee": "new java.lang.UnsupportedOperationException",
+          "lineNumber": 6
+        },
+        {
+          "caller": "UnsupportedOperationException",
+          "callee": "new java.lang.UnsupportedOperationException",
+          "lineNumber": 10
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/java/util/zip/InflaterInputStream.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "functions": [
+        {
+          "name": "read",
+          "startLine": 3,
+          "endLine": 3,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "InflaterInputStream",
+          "startLine": 2,
+          "endLine": 4,
+          "methods": [
+            "read"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "read",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "InflaterInputStream",
+          "line": 2,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "read",
+          "callee": "new Error",
+          "lineNumber": 3
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/java/util/zip/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/java/util/zip/ZipEntry.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 8,
+      "functions": [
+        {
+          "name": "getSize",
+          "startLine": 3,
+          "endLine": 3,
+          "params": []
+        },
+        {
+          "name": "getName",
+          "startLine": 4,
+          "endLine": 4,
+          "params": []
+        },
+        {
+          "name": "isDirectory",
+          "startLine": 5,
+          "endLine": 5,
+          "params": []
+        },
+        {
+          "name": "ZipEntry",
+          "startLine": 6,
+          "endLine": 6,
+          "params": [
+            "arg0"
+          ]
+        },
+        {
+          "name": "setSize",
+          "startLine": 7,
+          "endLine": 7,
+          "params": [
+            "arg0"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ZipEntry",
+          "startLine": 2,
+          "endLine": 8,
+          "methods": [
+            "getSize",
+            "getName",
+            "isDirectory",
+            "ZipEntry",
+            "setSize"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "getSize",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "getName",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "isDirectory",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "ZipEntry",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "setSize",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "ZipEntry",
+          "line": 2,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getSize",
+          "callee": "new Error",
+          "lineNumber": 3
+        },
+        {
+          "caller": "getName",
+          "callee": "new Error",
+          "lineNumber": 4
+        },
+        {
+          "caller": "isDirectory",
+          "callee": "new Error",
+          "lineNumber": 5
+        },
+        {
+          "caller": "ZipEntry",
+          "callee": "new Error",
+          "lineNumber": 6
+        },
+        {
+          "caller": "setSize",
+          "callee": "new Error",
+          "lineNumber": 7
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/java/util/zip/ZipFile.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 8,
+      "functions": [
+        {
+          "name": "getInputStream",
+          "startLine": 3,
+          "endLine": 3,
+          "params": [
+            "arg0"
+          ]
+        },
+        {
+          "name": "close",
+          "startLine": 4,
+          "endLine": 4,
+          "params": []
+        },
+        {
+          "name": "ZipFile",
+          "startLine": 5,
+          "endLine": 5,
+          "params": [
+            "arg0"
+          ]
+        },
+        {
+          "name": "getEntry",
+          "startLine": 6,
+          "endLine": 6,
+          "params": [
+            "arg0"
+          ]
+        },
+        {
+          "name": "ZipFile",
+          "startLine": 7,
+          "endLine": 7,
+          "params": [
+            "arg0"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ZipFile",
+          "startLine": 2,
+          "endLine": 8,
+          "methods": [
+            "getInputStream",
+            "close",
+            "ZipFile",
+            "getEntry",
+            "ZipFile"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "getInputStream",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "close",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "ZipFile",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "getEntry",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "ZipFile",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "ZipFile",
+          "line": 2,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getInputStream",
+          "callee": "new Error",
+          "lineNumber": 3
+        },
+        {
+          "caller": "close",
+          "callee": "new Error",
+          "lineNumber": 4
+        },
+        {
+          "caller": "ZipFile",
+          "callee": "new Error",
+          "lineNumber": 5
+        },
+        {
+          "caller": "getEntry",
+          "callee": "new Error",
+          "lineNumber": 6
+        },
+        {
+          "caller": "ZipFile",
+          "callee": "new Error",
+          "lineNumber": 7
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/java/util/zip/ZipInputStream.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 7,
+      "functions": [
+        {
+          "name": "ZipInputStream",
+          "startLine": 3,
+          "endLine": 3,
+          "params": [
+            "arg0"
+          ]
+        },
+        {
+          "name": "getNextEntry",
+          "startLine": 4,
+          "endLine": 4,
+          "params": []
+        },
+        {
+          "name": "available",
+          "startLine": 5,
+          "endLine": 5,
+          "params": []
+        },
+        {
+          "name": "closeEntry",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ZipInputStream",
+          "startLine": 2,
+          "endLine": 7,
+          "methods": [
+            "ZipInputStream",
+            "getNextEntry",
+            "available",
+            "closeEntry"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ZipInputStream",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "getNextEntry",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "available",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "closeEntry",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "ZipInputStream",
+          "line": 2,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ZipInputStream",
+          "callee": "new Error",
+          "lineNumber": 3
+        },
+        {
+          "caller": "getNextEntry",
+          "callee": "new Error",
+          "lineNumber": 4
+        },
+        {
+          "caller": "available",
+          "callee": "new Error",
+          "lineNumber": 5
+        },
+        {
+          "caller": "closeEntry",
+          "callee": "new Error",
+          "lineNumber": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/java/util/zip/ZipOutputStream.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 10,
+      "nonEmptyLines": 10,
+      "functions": [
+        {
+          "name": "ZipOutputStream",
+          "startLine": 3,
+          "endLine": 3,
+          "params": [
+            "arg0"
+          ]
+        },
+        {
+          "name": "close",
+          "startLine": 4,
+          "endLine": 4,
+          "params": []
+        },
+        {
+          "name": "closeEntry",
+          "startLine": 5,
+          "endLine": 5,
+          "params": []
+        },
+        {
+          "name": "finish",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        },
+        {
+          "name": "putNextEntry",
+          "startLine": 7,
+          "endLine": 7,
+          "params": [
+            "arg0"
+          ]
+        },
+        {
+          "name": "setMethod",
+          "startLine": 8,
+          "endLine": 8,
+          "params": [
+            "arg0"
+          ]
+        },
+        {
+          "name": "write",
+          "startLine": 9,
+          "endLine": 9,
+          "params": [
+            "arg0",
+            "arg1",
+            "arg2"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ZipOutputStream",
+          "startLine": 2,
+          "endLine": 10,
+          "methods": [
+            "ZipOutputStream",
+            "close",
+            "closeEntry",
+            "finish",
+            "putNextEntry",
+            "setMethod",
+            "write"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ZipOutputStream",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "close",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "closeEntry",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "finish",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "putNextEntry",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "setMethod",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "write",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "ZipOutputStream",
+          "line": 2,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ZipOutputStream",
+          "callee": "new Error",
+          "lineNumber": 3
+        },
+        {
+          "caller": "close",
+          "callee": "new Error",
+          "lineNumber": 4
+        },
+        {
+          "caller": "closeEntry",
+          "callee": "new Error",
+          "lineNumber": 5
+        },
+        {
+          "caller": "finish",
+          "callee": "new Error",
+          "lineNumber": 6
+        },
+        {
+          "caller": "putNextEntry",
+          "callee": "new Error",
+          "lineNumber": 7
+        },
+        {
+          "caller": "setMethod",
+          "callee": "new Error",
+          "lineNumber": 8
+        },
+        {
+          "caller": "write",
+          "callee": "new Error",
+          "lineNumber": 9
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/javax/net/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/javax/net/ServerSocketFactory.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 6,
+      "functions": [
+        {
+          "name": "createServerSocket",
+          "startLine": 3,
+          "endLine": 3,
+          "params": [
+            "arg0"
+          ]
+        },
+        {
+          "name": "createServerSocket",
+          "startLine": 4,
+          "endLine": 4,
+          "params": [
+            "arg0",
+            "arg1"
+          ]
+        },
+        {
+          "name": "createServerSocket",
+          "startLine": 5,
+          "endLine": 5,
+          "params": [
+            "arg0",
+            "arg1",
+            "arg2"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ServerSocketFactory",
+          "startLine": 2,
+          "endLine": 6,
+          "methods": [
+            "createServerSocket",
+            "createServerSocket",
+            "createServerSocket"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "createServerSocket",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "createServerSocket",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "createServerSocket",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "ServerSocketFactory",
+          "line": 2,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createServerSocket",
+          "callee": "new Error",
+          "lineNumber": 3
+        },
+        {
+          "caller": "createServerSocket",
+          "callee": "new Error",
+          "lineNumber": 4
+        },
+        {
+          "caller": "createServerSocket",
+          "callee": "new Error",
+          "lineNumber": 5
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/javax/net/ssl/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/javax/net/ssl/SSLServerSocket.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 6,
+      "functions": [
+        {
+          "name": "getSupportedCipherSuites",
+          "startLine": 3,
+          "endLine": 3,
+          "params": []
+        },
+        {
+          "name": "setEnabledCipherSuites",
+          "startLine": 4,
+          "endLine": 4,
+          "params": [
+            "arg0"
+          ]
+        },
+        {
+          "name": "setNeedClientAuth",
+          "startLine": 5,
+          "endLine": 5,
+          "params": [
+            "arg0"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "SSLServerSocket",
+          "startLine": 2,
+          "endLine": 6,
+          "methods": [
+            "getSupportedCipherSuites",
+            "setEnabledCipherSuites",
+            "setNeedClientAuth"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "getSupportedCipherSuites",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "setEnabledCipherSuites",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "setNeedClientAuth",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "SSLServerSocket",
+          "line": 2,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getSupportedCipherSuites",
+          "callee": "new Error",
+          "lineNumber": 3
+        },
+        {
+          "caller": "setEnabledCipherSuites",
+          "callee": "new Error",
+          "lineNumber": 4
+        },
+        {
+          "caller": "setNeedClientAuth",
+          "callee": "new Error",
+          "lineNumber": 5
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/javax/net/ssl/SSLServerSocketFactory.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "classes": [
+        {
+          "name": "SSLServerSocketFactory",
+          "startLine": 2,
+          "endLine": 3,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SSLServerSocketFactory",
+          "line": 2,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/javax/net/ssl/SSLSession.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "functions": [
+        {
+          "name": "getPeerCertificateChain",
+          "startLine": 3,
+          "endLine": 3,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "SSLSession",
+          "startLine": 2,
+          "endLine": 4,
+          "methods": [
+            "getPeerCertificateChain"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "getPeerCertificateChain",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "SSLSession",
+          "line": 2,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getPeerCertificateChain",
+          "callee": "new Error",
+          "lineNumber": 3
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    }
+  ]
+}

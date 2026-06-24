@@ -1,0 +1,182 @@
+{
+  "batchIndex": 20,
+  "files": [
+    {
+      "path": "src/java/lang/Error.java",
+      "language": "java",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/Exception.java",
+      "language": "java",
+      "sizeLines": 83,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/ExceptionInInitializerError.java",
+      "language": "java",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/Float.java",
+      "language": "java",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/IllegalAccessException.java",
+      "language": "java",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/IllegalArgumentException.java",
+      "language": "java",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/IllegalMonitorStateException.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/IllegalStateException.java",
+      "language": "java",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/IllegalThreadStateException.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/IncompatibleClassChangeError.java",
+      "language": "java",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/IndexOutOfBoundsException.java",
+      "language": "java",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/InstantiationException.java",
+      "language": "java",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/InterruptedException.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/CallSite.java",
+      "language": "java",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/ConstantCallSite.java",
+      "language": "java",
+      "sizeLines": 120,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/DirectMethodHandle.java",
+      "language": "java",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/InnerClassLambdaMetafactory.java",
+      "language": "java",
+      "sizeLines": 474,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/Invokers.java",
+      "language": "java",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/LambdaConversionException.java",
+      "language": "java",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/LambdaForm.java",
+      "language": "java",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/LambdaFormEditor.java",
+      "language": "java",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/LambdaMetafactory.java",
+      "language": "java",
+      "sizeLines": 474,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/MethodTypeForm.java",
+      "language": "java",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/Name.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/invoke/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/java/lang/Error.java": [],
+    "src/java/lang/Exception.java": [],
+    "src/java/lang/ExceptionInInitializerError.java": [],
+    "src/java/lang/Float.java": [],
+    "src/java/lang/IllegalAccessException.java": [],
+    "src/java/lang/IllegalArgumentException.java": [],
+    "src/java/lang/IllegalMonitorStateException.java": [],
+    "src/java/lang/IllegalStateException.java": [],
+    "src/java/lang/IllegalThreadStateException.java": [],
+    "src/java/lang/IncompatibleClassChangeError.java": [],
+    "src/java/lang/IndexOutOfBoundsException.java": [],
+    "src/java/lang/InstantiationException.java": [],
+    "src/java/lang/InterruptedException.java": [],
+    "src/java/lang/invoke/CallSite.java": [],
+    "src/java/lang/invoke/ConstantCallSite.java": [],
+    "src/java/lang/invoke/DirectMethodHandle.java": [],
+    "src/java/lang/invoke/InnerClassLambdaMetafactory.java": [],
+    "src/java/lang/invoke/Invokers.java": [],
+    "src/java/lang/invoke/LambdaConversionException.java": [],
+    "src/java/lang/invoke/LambdaForm.java": [],
+    "src/java/lang/invoke/LambdaFormEditor.java": [],
+    "src/java/lang/invoke/LambdaMetafactory.java": [],
+    "src/java/lang/invoke/MethodTypeForm.java": [],
+    "src/java/lang/invoke/Name.java": [],
+    "src/java/lang/invoke/package.bluej": []
+  }
+}

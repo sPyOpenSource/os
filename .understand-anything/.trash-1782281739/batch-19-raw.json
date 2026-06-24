@@ -1,0 +1,182 @@
+{
+  "batchIndex": 19,
+  "files": [
+    {
+      "path": "src/java/io/NotActiveException.java",
+      "language": "java",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/NotSerializableException.java",
+      "language": "java",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/ObjectIdentityWrapper.java",
+      "language": "java",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/ObjectStreamClass.java",
+      "language": "java",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/OutputStreamWriter.java",
+      "language": "java",
+      "sizeLines": 215,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/RandomAccessFile.j",
+      "language": "j",
+      "sizeLines": 414,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/StreamCorruptedException.java",
+      "language": "java",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/StringBufferInputStream.java",
+      "language": "java",
+      "sizeLines": 187,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/StringReader.java",
+      "language": "java",
+      "sizeLines": 210,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/StringWriter.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/UTFDataFormatException.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/AbstractMethodError.java",
+      "language": "java",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/ArithmeticException.java",
+      "language": "java",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/ArrayIndexOutOfBoundsException.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/AssertionError.java",
+      "language": "java",
+      "sizeLines": 167,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/Boolean.java",
+      "language": "java",
+      "sizeLines": 144,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/Byte.java",
+      "language": "java",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/Character.java",
+      "language": "java",
+      "sizeLines": 585,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/ClassCastException.java",
+      "language": "java",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/ClassFormatError.java",
+      "language": "java",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/ClassNotFoundException.java",
+      "language": "java",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/ClassValue.java",
+      "language": "java",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/CloneNotSupportedException.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/lang/Double.java",
+      "language": "java",
+      "sizeLines": 105,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/java/io/NotActiveException.java": [],
+    "src/java/io/NotSerializableException.java": [],
+    "src/java/io/ObjectIdentityWrapper.java": [],
+    "src/java/io/ObjectStreamClass.java": [],
+    "src/java/io/OutputStreamWriter.java": [],
+    "src/java/io/package.bluej": [],
+    "src/java/io/RandomAccessFile.j": [],
+    "src/java/io/StreamCorruptedException.java": [],
+    "src/java/io/StringBufferInputStream.java": [],
+    "src/java/io/StringReader.java": [],
+    "src/java/io/StringWriter.java": [],
+    "src/java/io/UTFDataFormatException.java": [],
+    "src/java/lang/AbstractMethodError.java": [],
+    "src/java/lang/ArithmeticException.java": [],
+    "src/java/lang/ArrayIndexOutOfBoundsException.java": [],
+    "src/java/lang/AssertionError.java": [],
+    "src/java/lang/Boolean.java": [],
+    "src/java/lang/Byte.java": [],
+    "src/java/lang/Character.java": [],
+    "src/java/lang/ClassCastException.java": [],
+    "src/java/lang/ClassFormatError.java": [],
+    "src/java/lang/ClassNotFoundException.java": [],
+    "src/java/lang/ClassValue.java": [],
+    "src/java/lang/CloneNotSupportedException.java": [],
+    "src/java/lang/Double.java": []
+  }
+}

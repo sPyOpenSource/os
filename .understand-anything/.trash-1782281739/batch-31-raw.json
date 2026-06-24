@@ -1,0 +1,1991 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/jx/db/types/DbComparator.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 6,
+      "classes": [
+        {
+          "name": "DbComparator",
+          "startLine": 4,
+          "endLine": 8,
+          "methods": [
+            "compare",
+            "compare"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DbComparator",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/db/types/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/devices/DeviceInfo.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 13,
+      "functions": [
+        {
+          "name": "DeviceInfo",
+          "startLine": 9,
+          "endLine": 14,
+          "params": [
+            "name",
+            "description",
+            "vendor",
+            "version"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DeviceInfo",
+          "startLine": 3,
+          "endLine": 15,
+          "methods": [
+            "DeviceInfo"
+          ],
+          "properties": [
+            "name",
+            "description",
+            "vendor",
+            "version"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DeviceInfo",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "DeviceInfo",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/devices/net/emulation/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/devices/net/NetworkConfigurationTemplate.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 4,
+      "classes": [
+        {
+          "name": "NetworkConfigurationTemplate",
+          "startLine": 5,
+          "endLine": 6,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "NetworkConfigurationTemplate",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/devices/net/NoMoreElementsException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 3,
+      "nonEmptyLines": 2,
+      "classes": [
+        {
+          "name": "NoMoreElementsException",
+          "startLine": 3,
+          "endLine": 3,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "NoMoreElementsException",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/devices/net/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/devices/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/devices/pci/CapabilityAGP.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 26,
+      "functions": [
+        {
+          "name": "CapabilityAGP",
+          "startLine": 10,
+          "endLine": 12,
+          "params": [
+            "device",
+            "baseRegister"
+          ]
+        },
+        {
+          "name": "getRevision",
+          "startLine": 14,
+          "endLine": 16,
+          "params": []
+        },
+        {
+          "name": "getStatus",
+          "startLine": 18,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "getCommand",
+          "startLine": 22,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "setCommand",
+          "startLine": 25,
+          "endLine": 27,
+          "params": [
+            "mask",
+            "val"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 29,
+          "endLine": 31,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CapabilityAGP",
+          "startLine": 3,
+          "endLine": 32,
+          "methods": [
+            "CapabilityAGP",
+            "getRevision",
+            "getStatus",
+            "getCommand",
+            "setCommand",
+            "toString"
+          ],
+          "properties": [
+            "AGP_REV",
+            "AGP_REV_MASK",
+            "AGP_REV_SHIFT",
+            "AGP_STATUS",
+            "AGP_COMMAND"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getRevision",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "getStatus",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "getCommand",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "setCommand",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "CapabilityAGP",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getRevision",
+          "callee": "device.readPackedConfig",
+          "lineNumber": 15
+        },
+        {
+          "caller": "getStatus",
+          "callee": "device.readConfig",
+          "lineNumber": 19
+        },
+        {
+          "caller": "getCommand",
+          "callee": "device.readConfig",
+          "lineNumber": 23
+        },
+        {
+          "caller": "setCommand",
+          "callee": "device.writePackedConfig",
+          "lineNumber": 26
+        },
+        {
+          "caller": "toString",
+          "callee": "Integer.toHexString",
+          "lineNumber": 30
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/devices/pci/CapabilityPM.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 9,
+      "functions": [
+        {
+          "name": "CapabilityPM",
+          "startLine": 4,
+          "endLine": 6,
+          "params": [
+            "device",
+            "baseRegister"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 8,
+          "endLine": 10,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CapabilityPM",
+          "startLine": 3,
+          "endLine": 11,
+          "methods": [
+            "CapabilityPM",
+            "toString"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "toString",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "CapabilityPM",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "toString",
+          "callee": "Integer.toHexString",
+          "lineNumber": 9
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/devices/pci/CapabilitySI.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 9,
+      "functions": [
+        {
+          "name": "CapabilitySI",
+          "startLine": 4,
+          "endLine": 6,
+          "params": [
+            "device",
+            "baseRegister"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 8,
+          "endLine": 10,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CapabilitySI",
+          "startLine": 3,
+          "endLine": 11,
+          "methods": [
+            "CapabilitySI",
+            "toString"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "toString",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "CapabilitySI",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "toString",
+          "callee": "Integer.toHexString",
+          "lineNumber": 9
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/devices/pci/CapabilityVPD.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 9,
+      "functions": [
+        {
+          "name": "CapabilityVPD",
+          "startLine": 4,
+          "endLine": 6,
+          "params": [
+            "device",
+            "baseRegister"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 8,
+          "endLine": 10,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CapabilityVPD",
+          "startLine": 3,
+          "endLine": 11,
+          "methods": [
+            "CapabilityVPD",
+            "toString"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "toString",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "CapabilityVPD",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "toString",
+          "callee": "Integer.toHexString",
+          "lineNumber": 9
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/devices/pci/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/devices/pci/PCIAddressImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 44,
+      "nonEmptyLines": 36,
+      "functions": [
+        {
+          "name": "PCIAddressImpl",
+          "startLine": 8,
+          "endLine": 12,
+          "params": [
+            "bus",
+            "device",
+            "function"
+          ]
+        },
+        {
+          "name": "getSubfunction",
+          "startLine": 14,
+          "endLine": 16,
+          "params": [
+            "subfunction"
+          ]
+        },
+        {
+          "name": "equals",
+          "startLine": 18,
+          "endLine": 23,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 25,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "getBus",
+          "startLine": 30,
+          "endLine": 33,
+          "params": []
+        },
+        {
+          "name": "getDevice",
+          "startLine": 35,
+          "endLine": 38,
+          "params": []
+        },
+        {
+          "name": "getFunction",
+          "startLine": 40,
+          "endLine": 43,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "PCIAddressImpl",
+          "startLine": 3,
+          "endLine": 44,
+          "methods": [
+            "PCIAddressImpl",
+            "getSubfunction",
+            "equals",
+            "toString",
+            "getBus",
+            "getDevice",
+            "getFunction"
+          ],
+          "properties": [
+            "bus",
+            "device",
+            "function"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "PCIAddressImpl",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "getSubfunction",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "equals",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "getBus",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "getDevice",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "getFunction",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "PCIAddressImpl",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getSubfunction",
+          "callee": "new PCIAddressImpl",
+          "lineNumber": 15
+        },
+        {
+          "caller": "equals",
+          "callee": "other.getBus",
+          "lineNumber": 20
+        },
+        {
+          "caller": "equals",
+          "callee": "other.getDevice",
+          "lineNumber": 21
+        },
+        {
+          "caller": "equals",
+          "callee": "other.getFunction",
+          "lineNumber": 22
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/devices/pci/PCICapability.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 48,
+      "nonEmptyLines": 40,
+      "functions": [
+        {
+          "name": "PCICapability",
+          "startLine": 8,
+          "endLine": 10,
+          "params": [
+            "id",
+            "device",
+            "baseRegister"
+          ]
+        },
+        {
+          "name": "PCICapability",
+          "startLine": 12,
+          "endLine": 16,
+          "params": [
+            "id",
+            "device",
+            "baseRegister"
+          ]
+        },
+        {
+          "name": "getID",
+          "startLine": 18,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "getBaseRegister",
+          "startLine": 21,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "toString",
+          "startLine": 25,
+          "endLine": 27,
+          "params": []
+        },
+        {
+          "name": "createCapability",
+          "startLine": 29,
+          "endLine": 46,
+          "params": [
+            "device",
+            "baseRegister"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "PCICapability",
+          "startLine": 3,
+          "endLine": 47,
+          "methods": [
+            "PCICapability",
+            "PCICapability",
+            "getID",
+            "getBaseRegister",
+            "toString",
+            "createCapability"
+          ],
+          "properties": [
+            "device",
+            "baseRegister",
+            "id"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getID",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "getBaseRegister",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "PCICapability",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "toString",
+          "callee": "Integer.toHexString",
+          "lineNumber": 26
+        },
+        {
+          "caller": "toString",
+          "callee": "Integer.toHexString",
+          "lineNumber": 26
+        },
+        {
+          "caller": "createCapability",
+          "callee": "device.readPackedConfig",
+          "lineNumber": 30
+        },
+        {
+          "caller": "createCapability",
+          "callee": "new CapabilityPM",
+          "lineNumber": 34
+        },
+        {
+          "caller": "createCapability",
+          "callee": "new CapabilityAGP",
+          "lineNumber": 36
+        },
+        {
+          "caller": "createCapability",
+          "callee": "new CapabilityVPD",
+          "lineNumber": 38
+        },
+        {
+          "caller": "createCapability",
+          "callee": "new CapabilitySI",
+          "lineNumber": 40
+        },
+        {
+          "caller": "createCapability",
+          "callee": "new CapabilityVPD",
+          "lineNumber": 42
+        },
+        {
+          "caller": "createCapability",
+          "callee": "new PCICapability",
+          "lineNumber": 44
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/devices/pci/PCICodes.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 202,
+      "nonEmptyLines": 183,
+      "functions": [
+        {
+          "name": "lookup",
+          "startLine": 117,
+          "endLine": 120,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "lookup",
+          "startLine": 122,
+          "endLine": 124,
+          "params": [
+            "deviceID",
+            "vendorID"
+          ]
+        },
+        {
+          "name": "lookup",
+          "startLine": 126,
+          "endLine": 133,
+          "params": [
+            "deviceID",
+            "vendorID"
+          ]
+        },
+        {
+          "name": "lookupVendor",
+          "startLine": 135,
+          "endLine": 137,
+          "params": [
+            "vendorID"
+          ]
+        },
+        {
+          "name": "lookupVendor",
+          "startLine": 139,
+          "endLine": 145,
+          "params": [
+            "vendorID"
+          ]
+        },
+        {
+          "name": "lookupClass",
+          "startLine": 147,
+          "endLine": 158,
+          "params": [
+            "classID"
+          ]
+        },
+        {
+          "name": "PCIClassCode",
+          "startLine": 165,
+          "endLine": 168,
+          "params": [
+            "classID",
+            "className"
+          ]
+        },
+        {
+          "name": "PCIVendorCode",
+          "startLine": 175,
+          "endLine": 178,
+          "params": [
+            "vendorID",
+            "vendor"
+          ]
+        },
+        {
+          "name": "PCIVendorCode",
+          "startLine": 180,
+          "endLine": 182,
+          "params": [
+            "vendorID",
+            "vendor"
+          ]
+        },
+        {
+          "name": "PCIDeviceCode",
+          "startLine": 192,
+          "endLine": 197,
+          "params": [
+            "vendorID",
+            "deviceID",
+            "chipNumber",
+            "description"
+          ]
+        },
+        {
+          "name": "PCIDeviceCode",
+          "startLine": 198,
+          "endLine": 200,
+          "params": [
+            "vendorID",
+            "deviceID",
+            "chipNumber",
+            "description"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "PCICodes",
+          "startLine": 3,
+          "endLine": 159,
+          "methods": [
+            "lookup",
+            "lookup",
+            "lookup",
+            "lookupVendor",
+            "lookupVendor",
+            "lookupClass"
+          ],
+          "properties": [
+            "baseclass_code",
+            "class_code",
+            "vendor_code",
+            "device_code"
+          ]
+        },
+        {
+          "name": "PCIClassCode",
+          "startLine": 161,
+          "endLine": 169,
+          "methods": [
+            "PCIClassCode"
+          ],
+          "properties": [
+            "classID",
+            "className"
+          ]
+        },
+        {
+          "name": "PCIVendorCode",
+          "startLine": 171,
+          "endLine": 184,
+          "methods": [
+            "PCIVendorCode",
+            "PCIVendorCode"
+          ],
+          "properties": [
+            "vendorID",
+            "vendor"
+          ]
+        },
+        {
+          "name": "PCIDeviceCode",
+          "startLine": 186,
+          "endLine": 201,
+          "methods": [
+            "PCIDeviceCode",
+            "PCIDeviceCode"
+          ],
+          "properties": [
+            "vendorID",
+            "deviceID",
+            "chipNumber",
+            "description"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "baseclass_code",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "class_code",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "vendor_code",
+          "line": 82,
+          "isDefault": false
+        },
+        {
+          "name": "device_code",
+          "line": 92,
+          "isDefault": false
+        },
+        {
+          "name": "lookup",
+          "line": 117,
+          "isDefault": false
+        },
+        {
+          "name": "lookup",
+          "line": 122,
+          "isDefault": false
+        },
+        {
+          "name": "lookup",
+          "line": 126,
+          "isDefault": false
+        },
+        {
+          "name": "lookupVendor",
+          "line": 135,
+          "isDefault": false
+        },
+        {
+          "name": "lookupVendor",
+          "line": 139,
+          "isDefault": false
+        },
+        {
+          "name": "lookupClass",
+          "line": 147,
+          "isDefault": false
+        },
+        {
+          "name": "PCICodes",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "lookup",
+          "callee": "lookup",
+          "lineNumber": 118
+        },
+        {
+          "caller": "lookup",
+          "callee": "lookup",
+          "lineNumber": 123
+        },
+        {
+          "caller": "lookup",
+          "callee": "Integer.toHexString",
+          "lineNumber": 132
+        },
+        {
+          "caller": "lookup",
+          "callee": "lookupVendor",
+          "lineNumber": 132
+        },
+        {
+          "caller": "lookupVendor",
+          "callee": "lookupVendor",
+          "lineNumber": 136
+        },
+        {
+          "caller": "lookupVendor",
+          "callee": "Integer.toHexString",
+          "lineNumber": 144
+        },
+        {
+          "caller": "lookupClass",
+          "callee": "Integer.toHexString",
+          "lineNumber": 148
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 11,
+        "functionCount": 11,
+        "classCount": 4
+      }
+    },
+    {
+      "path": "src/jx/emulation/BlockIOFile.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 62,
+      "nonEmptyLines": 56,
+      "functions": [
+        {
+          "name": "BlockIOFile",
+          "startLine": 11,
+          "endLine": 22,
+          "params": [
+            "filename",
+            "sectors"
+          ]
+        },
+        {
+          "name": "getCapacity",
+          "startLine": 24,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "getSectorSize",
+          "startLine": 34,
+          "endLine": 35,
+          "params": []
+        },
+        {
+          "name": "readSectors",
+          "startLine": 37,
+          "endLine": 48,
+          "params": [
+            "startSector",
+            "numberOfSectors",
+            "buf",
+            "synchronous"
+          ]
+        },
+        {
+          "name": "writeSectors",
+          "startLine": 50,
+          "endLine": 61,
+          "params": [
+            "startSector",
+            "numberOfSectors",
+            "buf",
+            "synchronous"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "BlockIOFile",
+          "startLine": 7,
+          "endLine": 62,
+          "methods": [
+            "BlockIOFile",
+            "getCapacity",
+            "getSectorSize",
+            "readSectors",
+            "writeSectors"
+          ],
+          "properties": [
+            "file",
+            "SECTOR_SIZE",
+            "b"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "BlockIOFile",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "getCapacity",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "getSectorSize",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "readSectors",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "writeSectors",
+          "line": 50,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "BlockIOFile",
+          "callee": "new File",
+          "lineNumber": 15
+        },
+        {
+          "caller": "getCapacity",
+          "callee": "file.length",
+          "lineNumber": 27
+        },
+        {
+          "caller": "readSectors",
+          "callee": "buf.copyFromByteArray",
+          "lineNumber": 43
+        },
+        {
+          "caller": "readSectors",
+          "callee": "new Error",
+          "lineNumber": 46
+        },
+        {
+          "caller": "writeSectors",
+          "callee": "buf.copyToByteArray",
+          "lineNumber": 55
+        },
+        {
+          "caller": "writeSectors",
+          "callee": "new Error",
+          "lineNumber": 59
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/emulation/ClockImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 17,
+      "nonEmptyLines": 15,
+      "functions": [
+        {
+          "name": "getTimeInMillis",
+          "startLine": 8,
+          "endLine": 8,
+          "params": []
+        },
+        {
+          "name": "getTicks",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "getTicks_low",
+          "startLine": 10,
+          "endLine": 10,
+          "params": []
+        },
+        {
+          "name": "getTicks_high",
+          "startLine": 11,
+          "endLine": 11,
+          "params": []
+        },
+        {
+          "name": "getCycles",
+          "startLine": 12,
+          "endLine": 12,
+          "params": [
+            "c"
+          ]
+        },
+        {
+          "name": "subtract",
+          "startLine": 13,
+          "endLine": 13,
+          "params": [
+            "result",
+            "a",
+            "b"
+          ]
+        },
+        {
+          "name": "toMicroSec",
+          "startLine": 14,
+          "endLine": 14,
+          "params": [
+            "c"
+          ]
+        },
+        {
+          "name": "toNanoSec",
+          "startLine": 15,
+          "endLine": 15,
+          "params": [
+            "c"
+          ]
+        },
+        {
+          "name": "toMilliSec",
+          "startLine": 16,
+          "endLine": 16,
+          "params": [
+            "c"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ClockImpl",
+          "startLine": 6,
+          "endLine": 17,
+          "methods": [
+            "getTimeInMillis",
+            "getTicks",
+            "getTicks_low",
+            "getTicks_high",
+            "getCycles",
+            "subtract",
+            "toMicroSec",
+            "toNanoSec",
+            "toMilliSec"
+          ],
+          "properties": [
+            "t"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getTimeInMillis",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "getTicks",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "getTicks_low",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "getTicks_high",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "getCycles",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "subtract",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "toMicroSec",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "toNanoSec",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "toMilliSec",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getTimeInMillis",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 8
+        },
+        {
+          "caller": "getTicks_low",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 10
+        },
+        {
+          "caller": "getTicks_high",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 11
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/emulation/ComponentManagerImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 17,
+      "nonEmptyLines": 14,
+      "functions": [
+        {
+          "name": "registerLib",
+          "startLine": 6,
+          "endLine": 9,
+          "params": [
+            "name",
+            "libcode"
+          ]
+        },
+        {
+          "name": "load",
+          "startLine": 10,
+          "endLine": 11,
+          "params": [
+            "name"
+          ]
+        },
+        {
+          "name": "setInheritThread",
+          "startLine": 13,
+          "endLine": 16,
+          "params": [
+            "classname"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ComponentManagerImpl",
+          "startLine": 5,
+          "endLine": 17,
+          "methods": [
+            "registerLib",
+            "load",
+            "setInheritThread"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "registerLib",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "load",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "setInheritThread",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "ComponentManagerImpl",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "registerLib",
+          "callee": "new Error",
+          "lineNumber": 8
+        },
+        {
+          "caller": "load",
+          "callee": "new Error",
+          "lineNumber": 11
+        },
+        {
+          "caller": "setInheritThread",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 15
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/emulation/DebugChannelImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 25,
+      "nonEmptyLines": 23,
+      "functions": [
+        {
+          "name": "write",
+          "startLine": 7,
+          "endLine": 10,
+          "params": [
+            "b"
+          ]
+        },
+        {
+          "name": "read",
+          "startLine": 11,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "writeBuf",
+          "startLine": 19,
+          "endLine": 24,
+          "params": [
+            "b",
+            "off",
+            "len"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DebugChannelImpl",
+          "startLine": 6,
+          "endLine": 25,
+          "methods": [
+            "write",
+            "read",
+            "writeBuf"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "write",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "read",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "writeBuf",
+          "line": 19,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "write",
+          "callee": "System.out.write",
+          "lineNumber": 9
+        },
+        {
+          "caller": "read",
+          "callee": "System.in.read",
+          "lineNumber": 14
+        },
+        {
+          "caller": "writeBuf",
+          "callee": "write",
+          "lineNumber": 22
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/emulation/devices/ide/DebugConf.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "classes": [
+        {
+          "name": "DebugConf",
+          "startLine": 3,
+          "endLine": 5,
+          "methods": [],
+          "properties": [
+            "log_io"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "log_io",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "DebugConf",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/emulation/devices/ide/DeviceNaming.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 29,
+      "functions": [
+        {
+          "name": "deviceToName",
+          "startLine": 5,
+          "endLine": 17,
+          "params": [
+            "device"
+          ]
+        },
+        {
+          "name": "nameToDevice",
+          "startLine": 19,
+          "endLine": 32,
+          "params": [
+            "name"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DeviceNaming",
+          "startLine": 3,
+          "endLine": 33,
+          "methods": [
+            "deviceToName",
+            "nameToDevice"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "deviceToName",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "nameToDevice",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "DeviceNaming",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "deviceToName",
+          "callee": "String.valueOf",
+          "lineNumber": 15
+        },
+        {
+          "caller": "nameToDevice",
+          "callee": "name.equals",
+          "lineNumber": 22
+        },
+        {
+          "caller": "nameToDevice",
+          "callee": "name.startsWith",
+          "lineNumber": 23
+        },
+        {
+          "caller": "nameToDevice",
+          "callee": "name.startsWith",
+          "lineNumber": 24
+        },
+        {
+          "caller": "nameToDevice",
+          "callee": "name.startsWith",
+          "lineNumber": 25
+        },
+        {
+          "caller": "nameToDevice",
+          "callee": "name.startsWith",
+          "lineNumber": 26
+        },
+        {
+          "caller": "nameToDevice",
+          "callee": "name.length",
+          "lineNumber": 29
+        },
+        {
+          "caller": "nameToDevice",
+          "callee": "Integer.parseInt",
+          "lineNumber": 30
+        },
+        {
+          "caller": "nameToDevice",
+          "callee": "name.substring",
+          "lineNumber": 30
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/emulation/devices/ide/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/emulation/devices/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/emulation/DomainManagerImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 39,
+      "nonEmptyLines": 30,
+      "functions": [
+        {
+          "name": "createDomain",
+          "startLine": 7,
+          "endLine": 10,
+          "params": [
+            "name",
+            "cpus",
+            "HLSched",
+            "domainCode",
+            "libs",
+            "startClass",
+            "heapSize",
+            "naming"
+          ]
+        },
+        {
+          "name": "createDomainArgv",
+          "startLine": 11,
+          "endLine": 14,
+          "params": [
+            "name",
+            "cpus",
+            "HLSchedClass",
+            "domainCode",
+            "libs",
+            "startClass",
+            "heapSize",
+            "argv",
+            "naming"
+          ]
+        },
+        {
+          "name": "getDomainZero",
+          "startLine": 16,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "getCurrentDomain",
+          "startLine": 18,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "installInterceptor",
+          "startLine": 21,
+          "endLine": 21,
+          "params": [
+            "domain",
+            "border",
+            "thread"
+          ]
+        },
+        {
+          "name": "gc",
+          "startLine": 23,
+          "endLine": 23,
+          "params": [
+            "domain"
+          ]
+        },
+        {
+          "name": "freeze",
+          "startLine": 25,
+          "endLine": 25,
+          "params": [
+            "domain"
+          ]
+        },
+        {
+          "name": "thaw",
+          "startLine": 26,
+          "endLine": 26,
+          "params": [
+            "domain"
+          ]
+        },
+        {
+          "name": "terminate",
+          "startLine": 27,
+          "endLine": 27,
+          "params": [
+            "domain"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 29,
+          "endLine": 32,
+          "params": [
+            "name",
+            "cpus",
+            "HLSchedClass",
+            "domainCode",
+            "libs",
+            "startClass",
+            "gcinfo0",
+            "gcinfo1",
+            "gcinfo2",
+            "gcinfo3",
+            "gcinfo4",
+            "codeSize",
+            "argv",
+            "naming",
+            "moreArgs",
+            "garbageCollector",
+            "schedinfo"
+          ]
+        },
+        {
+          "name": "terminateCaller",
+          "startLine": 34,
+          "endLine": 37,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DomainManagerImpl",
+          "startLine": 6,
+          "endLine": 39,
+          "methods": [
+            "createDomain",
+            "createDomainArgv",
+            "getDomainZero",
+            "getCurrentDomain",
+            "installInterceptor",
+            "gc",
+            "freeze",
+            "thaw",
+            "terminate",
+            "createDomain",
+            "terminateCaller"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "createDomain",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "createDomainArgv",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "getDomainZero",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "getCurrentDomain",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "installInterceptor",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "gc",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "freeze",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "thaw",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "terminate",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "terminateCaller",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "DomainManagerImpl",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createDomain",
+          "callee": "new Error",
+          "lineNumber": 10
+        },
+        {
+          "caller": "createDomainArgv",
+          "callee": "new Error",
+          "lineNumber": 14
+        },
+        {
+          "caller": "getDomainZero",
+          "callee": "new Error",
+          "lineNumber": 17
+        },
+        {
+          "caller": "getCurrentDomain",
+          "callee": "new Error",
+          "lineNumber": 19
+        },
+        {
+          "caller": "installInterceptor",
+          "callee": "new Error",
+          "lineNumber": 21
+        },
+        {
+          "caller": "gc",
+          "callee": "new Error",
+          "lineNumber": 23
+        },
+        {
+          "caller": "freeze",
+          "callee": "new Error",
+          "lineNumber": 25
+        },
+        {
+          "caller": "thaw",
+          "callee": "new Error",
+          "lineNumber": 26
+        },
+        {
+          "caller": "terminate",
+          "callee": "new Error",
+          "lineNumber": 27
+        },
+        {
+          "caller": "createDomain",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 31
+        },
+        {
+          "caller": "terminateCaller",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 36
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 12,
+        "functionCount": 11,
+        "classCount": 1
+      }
+    }
+  ]
+}

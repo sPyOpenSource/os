@@ -1,0 +1,482 @@
+{
+  "schemaVersion": 1,
+  "batchIndex": 3,
+  "part": 3,
+  "nodes": [
+    {
+      "id": "cls:src/jx/fs/EXT2Permission.java:EXT2Permission",
+      "type": "class",
+      "label": "EXT2Permission",
+      "properties": {
+        "path": "src/jx/fs/EXT2Permission.java",
+        "name": "EXT2Permission",
+        "startLine": 3,
+        "endLine": 50,
+        "numMethods": 8
+      }
+    },
+    {
+      "id": "cls:src/jx/fs/NoDirectoryInodeException.java:NoDirectoryInodeException",
+      "type": "class",
+      "label": "NoDirectoryInodeException",
+      "properties": {
+        "path": "src/jx/fs/NoDirectoryInodeException.java",
+        "name": "NoDirectoryInodeException",
+        "startLine": 7,
+        "endLine": 15,
+        "numMethods": 2
+      }
+    },
+    {
+      "id": "cls:src/jx/fs/NoFileInodeException.java:NoFileInodeException",
+      "type": "class",
+      "label": "NoFileInodeException",
+      "properties": {
+        "path": "src/jx/fs/NoFileInodeException.java",
+        "name": "NoFileInodeException",
+        "startLine": 7,
+        "endLine": 15,
+        "numMethods": 2
+      }
+    },
+    {
+      "id": "cls:src/jx/fs/NoSymlinkInodeException.java:NoSymlinkInodeException",
+      "type": "class",
+      "label": "NoSymlinkInodeException",
+      "properties": {
+        "path": "src/jx/fs/NoSymlinkInodeException.java",
+        "name": "NoSymlinkInodeException",
+        "startLine": 7,
+        "endLine": 15,
+        "numMethods": 2
+      }
+    },
+    {
+      "id": "file:src/jx/fs/EXT2Permission.java",
+      "type": "file",
+      "label": "EXT2Permission.java",
+      "properties": {
+        "path": "src/jx/fs/EXT2Permission.java",
+        "language": "java",
+        "sizeLines": 25,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/jx/fs/NoDirectoryInodeException.java",
+      "type": "file",
+      "label": "NoDirectoryInodeException.java",
+      "properties": {
+        "path": "src/jx/fs/NoDirectoryInodeException.java",
+        "language": "java",
+        "sizeLines": 6,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/jx/fs/NoFileInodeException.java",
+      "type": "file",
+      "label": "NoFileInodeException.java",
+      "properties": {
+        "path": "src/jx/fs/NoFileInodeException.java",
+        "language": "java",
+        "sizeLines": 9,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/jx/fs/NoSymlinkInodeException.java",
+      "type": "file",
+      "label": "NoSymlinkInodeException.java",
+      "properties": {
+        "path": "src/jx/fs/NoSymlinkInodeException.java",
+        "language": "java",
+        "sizeLines": 6,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/EXT2Permission.java:EXT2Permission",
+      "type": "function",
+      "label": "EXT2Permission",
+      "properties": {
+        "path": "src/jx/fs/EXT2Permission.java",
+        "name": "EXT2Permission",
+        "startLine": 21,
+        "endLine": 21,
+        "params": [
+          "mode"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/EXT2Permission.java:addPermission",
+      "type": "function",
+      "label": "addPermission",
+      "properties": {
+        "path": "src/jx/fs/EXT2Permission.java",
+        "name": "addPermission",
+        "startLine": 23,
+        "endLine": 25,
+        "params": [
+          "field",
+          "perm"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/EXT2Permission.java:delPermission",
+      "type": "function",
+      "label": "delPermission",
+      "properties": {
+        "path": "src/jx/fs/EXT2Permission.java",
+        "name": "delPermission",
+        "startLine": 27,
+        "endLine": 31,
+        "params": [
+          "field",
+          "perm"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/EXT2Permission.java:getMode",
+      "type": "function",
+      "label": "getMode",
+      "properties": {
+        "path": "src/jx/fs/EXT2Permission.java",
+        "name": "getMode",
+        "startLine": 47,
+        "endLine": 49,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/EXT2Permission.java:getPermission",
+      "type": "function",
+      "label": "getPermission",
+      "properties": {
+        "path": "src/jx/fs/EXT2Permission.java",
+        "name": "getPermission",
+        "startLine": 33,
+        "endLine": 35,
+        "params": [
+          "field"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/EXT2Permission.java:setMode",
+      "type": "function",
+      "label": "setMode",
+      "properties": {
+        "path": "src/jx/fs/EXT2Permission.java",
+        "name": "setMode",
+        "startLine": 43,
+        "endLine": 45,
+        "params": [
+          "mode"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/NoDirectoryInodeException.java:NoDirectoryInodeException",
+      "type": "function",
+      "label": "NoDirectoryInodeException",
+      "properties": {
+        "path": "src/jx/fs/NoDirectoryInodeException.java",
+        "name": "NoDirectoryInodeException",
+        "startLine": 12,
+        "endLine": 14,
+        "params": [
+          "msg"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/NoFileInodeException.java:NoFileInodeException",
+      "type": "function",
+      "label": "NoFileInodeException",
+      "properties": {
+        "path": "src/jx/fs/NoFileInodeException.java",
+        "name": "NoFileInodeException",
+        "startLine": 12,
+        "endLine": 14,
+        "params": [
+          "msg"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/fs/NoSymlinkInodeException.java:NoSymlinkInodeException",
+      "type": "function",
+      "label": "NoSymlinkInodeException",
+      "properties": {
+        "path": "src/jx/fs/NoSymlinkInodeException.java",
+        "name": "NoSymlinkInodeException",
+        "startLine": 12,
+        "endLine": 14,
+        "params": [
+          "msg"
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/jx/fs/EXT2Permission.java",
+      "target": "cls:src/jx/fs/EXT2Permission.java:EXT2Permission",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/EXT2Permission.java",
+      "target": "cls:src/jx/fs/EXT2Permission.java:EXT2Permission",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/EXT2Permission.java",
+      "target": "fn:src/jx/fs/EXT2Permission.java:EXT2Permission",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/EXT2Permission.java",
+      "target": "fn:src/jx/fs/EXT2Permission.java:EXT2Permission",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/EXT2Permission.java",
+      "target": "fn:src/jx/fs/EXT2Permission.java:EXT2Permission",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/EXT2Permission.java",
+      "target": "fn:src/jx/fs/EXT2Permission.java:EXT2Permission",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/EXT2Permission.java",
+      "target": "fn:src/jx/fs/EXT2Permission.java:addPermission",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/EXT2Permission.java",
+      "target": "fn:src/jx/fs/EXT2Permission.java:addPermission",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/EXT2Permission.java",
+      "target": "fn:src/jx/fs/EXT2Permission.java:delPermission",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/EXT2Permission.java",
+      "target": "fn:src/jx/fs/EXT2Permission.java:delPermission",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/EXT2Permission.java",
+      "target": "fn:src/jx/fs/EXT2Permission.java:getPermission",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/EXT2Permission.java",
+      "target": "fn:src/jx/fs/EXT2Permission.java:getPermission",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/EXT2Permission.java",
+      "target": "fn:src/jx/fs/EXT2Permission.java:setMode",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/EXT2Permission.java",
+      "target": "fn:src/jx/fs/EXT2Permission.java:setMode",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/EXT2Permission.java",
+      "target": "fn:src/jx/fs/EXT2Permission.java:setMode",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/EXT2Permission.java",
+      "target": "fn:src/jx/fs/EXT2Permission.java:setMode",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/EXT2Permission.java",
+      "target": "fn:src/jx/fs/EXT2Permission.java:getMode",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/EXT2Permission.java",
+      "target": "fn:src/jx/fs/EXT2Permission.java:getMode",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/EXT2Permission.java:EXT2Permission",
+      "target": "fn:src/jx/fs/EXT2Permission.java:setMode",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/NoDirectoryInodeException.java",
+      "target": "cls:src/jx/fs/NoDirectoryInodeException.java:NoDirectoryInodeException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/NoDirectoryInodeException.java",
+      "target": "cls:src/jx/fs/NoDirectoryInodeException.java:NoDirectoryInodeException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/NoDirectoryInodeException.java",
+      "target": "fn:src/jx/fs/NoDirectoryInodeException.java:NoDirectoryInodeException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/NoDirectoryInodeException.java",
+      "target": "fn:src/jx/fs/NoDirectoryInodeException.java:NoDirectoryInodeException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/NoDirectoryInodeException.java",
+      "target": "fn:src/jx/fs/NoDirectoryInodeException.java:NoDirectoryInodeException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/NoDirectoryInodeException.java",
+      "target": "fn:src/jx/fs/NoDirectoryInodeException.java:NoDirectoryInodeException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/NoFileInodeException.java",
+      "target": "cls:src/jx/fs/NoFileInodeException.java:NoFileInodeException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/NoFileInodeException.java",
+      "target": "cls:src/jx/fs/NoFileInodeException.java:NoFileInodeException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/NoFileInodeException.java",
+      "target": "fn:src/jx/fs/NoFileInodeException.java:NoFileInodeException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/NoFileInodeException.java",
+      "target": "fn:src/jx/fs/NoFileInodeException.java:NoFileInodeException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/NoFileInodeException.java",
+      "target": "fn:src/jx/fs/NoFileInodeException.java:NoFileInodeException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/NoFileInodeException.java",
+      "target": "fn:src/jx/fs/NoFileInodeException.java:NoFileInodeException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/NoSymlinkInodeException.java",
+      "target": "cls:src/jx/fs/NoSymlinkInodeException.java:NoSymlinkInodeException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/NoSymlinkInodeException.java",
+      "target": "cls:src/jx/fs/NoSymlinkInodeException.java:NoSymlinkInodeException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/NoSymlinkInodeException.java",
+      "target": "fn:src/jx/fs/NoSymlinkInodeException.java:NoSymlinkInodeException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/NoSymlinkInodeException.java",
+      "target": "fn:src/jx/fs/NoSymlinkInodeException.java:NoSymlinkInodeException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/NoSymlinkInodeException.java",
+      "target": "fn:src/jx/fs/NoSymlinkInodeException.java:NoSymlinkInodeException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/fs/NoSymlinkInodeException.java",
+      "target": "fn:src/jx/fs/NoSymlinkInodeException.java:NoSymlinkInodeException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/fs/EXT2Permission.java:delPermission",
+      "target": "fn:src/jx/fs/EXT2Permission.java:new Error",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/fs/NoDirectoryInodeException.java",
+      "target": "file:src/jx/fs/FSException.java",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/jx/fs/NoFileInodeException.java",
+      "target": "file:src/jx/fs/FSException.java",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/jx/fs/NoSymlinkInodeException.java",
+      "target": "file:src/jx/fs/FSException.java",
+      "type": "inherits",
+      "weight": 0.9
+    }
+  ],
+  "metadata": {
+    "totalNodesInPart": 17,
+    "totalEdgesInPart": 41,
+    "algorithm": "file-analyzer"
+  }
+}

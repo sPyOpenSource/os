@@ -1,0 +1,899 @@
+{
+  "batchIndex": 10,
+  "part": 2,
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "711112f35427155a",
+      "type": "class",
+      "name": "UHCIRootHub",
+      "filePath": "src/org/jnode/driver/bus/usb/uhci/UHCIRootHub.java",
+      "startLine": 31,
+      "endLine": 214,
+      "methods": [
+        "UHCIRootHub",
+        "resetHub",
+        "getUSBBus",
+        "getDevice",
+        "setDevice",
+        "unsetDevice",
+        "getNumPorts",
+        "isPortEnabled",
+        "setPortEnabled",
+        "resetPort",
+        "isPortConnected",
+        "isPortConnectionStatusChanged",
+        "clearPortConnectionStatusChanged",
+        "isPortConnectedToLowSpeed",
+        "isPortConnectedToHighSpeed",
+        "getPortStatus",
+        "testPort"
+      ],
+      "properties": [
+        "io",
+        "bus",
+        "devices",
+        "sleepManager"
+      ]
+    },
+    {
+      "id": "57166a9597426d79",
+      "type": "class",
+      "name": "NumberUtils",
+      "filePath": "src/org/jnode/util/NumberUtils.java",
+      "startLine": 28,
+      "endLine": 386,
+      "methods": [
+        "toString",
+        "toUnsigned",
+        "toUnsigned",
+        "toUnsigned",
+        "hex",
+        "hex",
+        "hex",
+        "hex",
+        "hex",
+        "hexCompact",
+        "hex",
+        "hex",
+        "hex",
+        "hex",
+        "hex",
+        "prefixZero",
+        "size",
+        "toDecimalByte",
+        "toDecimalByte",
+        "toBinaryByte",
+        "toBinaryByte",
+        "getSize",
+        "getSizeUnit",
+        "int2HexString",
+        "long2HexString"
+      ],
+      "properties": []
+    },
+    {
+      "id": "d35d17e46dee1e7f",
+      "type": "dependency",
+      "name": "USBPacket.java",
+      "filePath": "src/org/jnode/driver/bus/usb/USBPacket.java"
+    },
+    {
+      "id": "8e4ef13d426d1b7b",
+      "type": "dependency",
+      "name": "USBConstants.java",
+      "filePath": "src/org/jnode/driver/bus/usb/USBConstants.java"
+    },
+    {
+      "id": "e749832cbdfa0029",
+      "type": "dependency",
+      "name": "USBDevice.java",
+      "filePath": "src/org/jnode/driver/bus/usb/USBDevice.java"
+    },
+    {
+      "id": "9286fe08dde4bd9d",
+      "type": "dependency",
+      "name": "SetupPacket.java",
+      "filePath": "src/org/jnode/driver/bus/usb/SetupPacket.java"
+    },
+    {
+      "id": "493ab0c129d8ec92",
+      "type": "dependency",
+      "name": "USBBus.java",
+      "filePath": "src/org/jnode/driver/bus/usb/USBBus.java"
+    },
+    {
+      "id": "1186eefdf9aa18e2",
+      "type": "dependency",
+      "name": "USBControlPipe.java",
+      "filePath": "src/org/jnode/driver/bus/usb/USBControlPipe.java"
+    },
+    {
+      "id": "8e4fe138b530782f",
+      "type": "dependency",
+      "name": "USBException.java",
+      "filePath": "src/org/jnode/driver/bus/usb/USBException.java"
+    },
+    {
+      "id": "c6d22b228397aa68",
+      "type": "dependency",
+      "name": "USBHubAPI.java",
+      "filePath": "src/org/jnode/driver/bus/usb/USBHubAPI.java"
+    },
+    {
+      "id": "774fe2160afbc0ea",
+      "type": "dependency",
+      "name": "USBHubMonitor.java",
+      "filePath": "src/org/jnode/driver/bus/usb/USBHubMonitor.java"
+    },
+    {
+      "id": "8e608b786e4c883c",
+      "type": "dependency",
+      "name": "USBRequest.java",
+      "filePath": "src/org/jnode/driver/bus/usb/USBRequest.java"
+    },
+    {
+      "id": "6fee822b7562c082",
+      "type": "dependency",
+      "name": "USBEndPoint.java",
+      "filePath": "src/org/jnode/driver/bus/usb/USBEndPoint.java"
+    },
+    {
+      "id": "489624da065e83ab",
+      "type": "dependency",
+      "name": "USBHostControllerAPI.java",
+      "filePath": "src/org/jnode/driver/bus/usb/USBHostControllerAPI.java"
+    },
+    {
+      "id": "993e731cab1f705a",
+      "type": "dependency",
+      "name": "USBPipe.java",
+      "filePath": "src/org/jnode/driver/bus/usb/USBPipe.java"
+    },
+    {
+      "id": "b65e4b60adfe9d2b",
+      "type": "dependency",
+      "name": "USBDataPipe.java",
+      "filePath": "src/org/jnode/driver/bus/usb/USBDataPipe.java"
+    },
+    {
+      "id": "87d8ee965462a03f",
+      "type": "dependency",
+      "name": "AbstractHostControllerDriver.java",
+      "filePath": "src/org/jnode/driver/bus/usb/AbstractHostControllerDriver.java"
+    },
+    {
+      "id": "e2719b77e9c65b32",
+      "type": "dependency",
+      "name": "AIQueue.java",
+      "filePath": "src/AI/util/AIQueue.java"
+    },
+    {
+      "id": "33c3f6c17232b585",
+      "type": "dependency",
+      "name": "ArrayList.java",
+      "filePath": "src/java/util/ArrayList.java"
+    },
+    {
+      "id": "40321863dd9d50ac",
+      "type": "dependency",
+      "name": "USBPipeListener.java",
+      "filePath": "src/org/jnode/driver/bus/usb/USBPipeListener.java"
+    },
+    {
+      "id": "c8ce90987ddb76f5",
+      "type": "dependency",
+      "name": "EndPointDescriptor.java",
+      "filePath": "src/org/jnode/driver/bus/usb/EndPointDescriptor.java"
+    },
+    {
+      "id": "0b8cc704284c61a8",
+      "type": "dependency",
+      "name": "DeviceDescriptor.java",
+      "filePath": "src/org/jnode/driver/bus/usb/DeviceDescriptor.java"
+    },
+    {
+      "id": "78e051dc8be629c8",
+      "type": "dependency",
+      "name": "HubDescriptor.java",
+      "filePath": "src/org/jnode/driver/bus/usb/hub/HubDescriptor.java"
+    }
+  ],
+  "edges": [
+    {
+      "source": "0debc8335c117f2b",
+      "target": "711112f35427155a",
+      "type": "contains"
+    },
+    {
+      "source": "711112f35427155a",
+      "target": "0debc8335c117f2b",
+      "type": "exports"
+    },
+    {
+      "source": "eddb37d84b0173c8",
+      "target": "57166a9597426d79",
+      "type": "contains"
+    },
+    {
+      "source": "57166a9597426d79",
+      "target": "eddb37d84b0173c8",
+      "type": "exports"
+    },
+    {
+      "source": "2699a439daf8414e",
+      "target": "d35d17e46dee1e7f",
+      "type": "imports"
+    },
+    {
+      "source": "56dedae5dbc33c8f",
+      "target": "8e4ef13d426d1b7b",
+      "type": "imports"
+    },
+    {
+      "source": "f071f0c0c0125d1e",
+      "target": "8e4ef13d426d1b7b",
+      "type": "imports"
+    },
+    {
+      "source": "f071f0c0c0125d1e",
+      "target": "e749832cbdfa0029",
+      "type": "imports"
+    },
+    {
+      "source": "7c641220d0d10e2e",
+      "target": "9286fe08dde4bd9d",
+      "type": "imports"
+    },
+    {
+      "source": "7c641220d0d10e2e",
+      "target": "493ab0c129d8ec92",
+      "type": "imports"
+    },
+    {
+      "source": "7c641220d0d10e2e",
+      "target": "1186eefdf9aa18e2",
+      "type": "imports"
+    },
+    {
+      "source": "7c641220d0d10e2e",
+      "target": "e749832cbdfa0029",
+      "type": "imports"
+    },
+    {
+      "source": "7c641220d0d10e2e",
+      "target": "8e4fe138b530782f",
+      "type": "imports"
+    },
+    {
+      "source": "7c641220d0d10e2e",
+      "target": "c6d22b228397aa68",
+      "type": "imports"
+    },
+    {
+      "source": "7c641220d0d10e2e",
+      "target": "774fe2160afbc0ea",
+      "type": "imports"
+    },
+    {
+      "source": "7c641220d0d10e2e",
+      "target": "8e608b786e4c883c",
+      "type": "imports"
+    },
+    {
+      "source": "660c261233aee0e7",
+      "target": "9286fe08dde4bd9d",
+      "type": "imports"
+    },
+    {
+      "source": "660c261233aee0e7",
+      "target": "d35d17e46dee1e7f",
+      "type": "imports"
+    },
+    {
+      "source": "3841dbb65af5486d",
+      "target": "d35d17e46dee1e7f",
+      "type": "imports"
+    },
+    {
+      "source": "f3cd470301797f04",
+      "target": "8e608b786e4c883c",
+      "type": "imports"
+    },
+    {
+      "source": "ab44e0ec682c9bcb",
+      "target": "8e4ef13d426d1b7b",
+      "type": "imports"
+    },
+    {
+      "source": "be2b9e5716d5b4a1",
+      "target": "9286fe08dde4bd9d",
+      "type": "imports"
+    },
+    {
+      "source": "be2b9e5716d5b4a1",
+      "target": "1186eefdf9aa18e2",
+      "type": "imports"
+    },
+    {
+      "source": "be2b9e5716d5b4a1",
+      "target": "e749832cbdfa0029",
+      "type": "imports"
+    },
+    {
+      "source": "be2b9e5716d5b4a1",
+      "target": "6fee822b7562c082",
+      "type": "imports"
+    },
+    {
+      "source": "be2b9e5716d5b4a1",
+      "target": "d35d17e46dee1e7f",
+      "type": "imports"
+    },
+    {
+      "source": "be2b9e5716d5b4a1",
+      "target": "8e608b786e4c883c",
+      "type": "imports"
+    },
+    {
+      "source": "a9e9cdcaccf9524c",
+      "target": "9286fe08dde4bd9d",
+      "type": "imports"
+    },
+    {
+      "source": "a9e9cdcaccf9524c",
+      "target": "8e4ef13d426d1b7b",
+      "type": "imports"
+    },
+    {
+      "source": "a9e9cdcaccf9524c",
+      "target": "8e4fe138b530782f",
+      "type": "imports"
+    },
+    {
+      "source": "a9e9cdcaccf9524c",
+      "target": "d35d17e46dee1e7f",
+      "type": "imports"
+    },
+    {
+      "source": "7cf636eb18e9f0c4",
+      "target": "493ab0c129d8ec92",
+      "type": "imports"
+    },
+    {
+      "source": "7cf636eb18e9f0c4",
+      "target": "1186eefdf9aa18e2",
+      "type": "imports"
+    },
+    {
+      "source": "7cf636eb18e9f0c4",
+      "target": "e749832cbdfa0029",
+      "type": "imports"
+    },
+    {
+      "source": "7cf636eb18e9f0c4",
+      "target": "6fee822b7562c082",
+      "type": "imports"
+    },
+    {
+      "source": "7cf636eb18e9f0c4",
+      "target": "489624da065e83ab",
+      "type": "imports"
+    },
+    {
+      "source": "7cf636eb18e9f0c4",
+      "target": "c6d22b228397aa68",
+      "type": "imports"
+    },
+    {
+      "source": "7cf636eb18e9f0c4",
+      "target": "993e731cab1f705a",
+      "type": "imports"
+    },
+    {
+      "source": "3ec6432a0dea8ecd",
+      "target": "b65e4b60adfe9d2b",
+      "type": "imports"
+    },
+    {
+      "source": "3ec6432a0dea8ecd",
+      "target": "e749832cbdfa0029",
+      "type": "imports"
+    },
+    {
+      "source": "3ec6432a0dea8ecd",
+      "target": "6fee822b7562c082",
+      "type": "imports"
+    },
+    {
+      "source": "3ec6432a0dea8ecd",
+      "target": "d35d17e46dee1e7f",
+      "type": "imports"
+    },
+    {
+      "source": "3ec6432a0dea8ecd",
+      "target": "8e608b786e4c883c",
+      "type": "imports"
+    },
+    {
+      "source": "f1cbe89e884a428d",
+      "target": "8e4ef13d426d1b7b",
+      "type": "imports"
+    },
+    {
+      "source": "f1cbe89e884a428d",
+      "target": "6fee822b7562c082",
+      "type": "imports"
+    },
+    {
+      "source": "f1cbe89e884a428d",
+      "target": "d35d17e46dee1e7f",
+      "type": "imports"
+    },
+    {
+      "source": "32c93eb787e4d117",
+      "target": "87d8ee965462a03f",
+      "type": "imports"
+    },
+    {
+      "source": "32c93eb787e4d117",
+      "target": "489624da065e83ab",
+      "type": "imports"
+    },
+    {
+      "source": "e0544a03d69e2b56",
+      "target": "e2719b77e9c65b32",
+      "type": "imports"
+    },
+    {
+      "source": "e0544a03d69e2b56",
+      "target": "33c3f6c17232b585",
+      "type": "imports"
+    },
+    {
+      "source": "e0544a03d69e2b56",
+      "target": "8e4ef13d426d1b7b",
+      "type": "imports"
+    },
+    {
+      "source": "e0544a03d69e2b56",
+      "target": "e749832cbdfa0029",
+      "type": "imports"
+    },
+    {
+      "source": "e0544a03d69e2b56",
+      "target": "6fee822b7562c082",
+      "type": "imports"
+    },
+    {
+      "source": "e0544a03d69e2b56",
+      "target": "8e4fe138b530782f",
+      "type": "imports"
+    },
+    {
+      "source": "e0544a03d69e2b56",
+      "target": "993e731cab1f705a",
+      "type": "imports"
+    },
+    {
+      "source": "e0544a03d69e2b56",
+      "target": "40321863dd9d50ac",
+      "type": "imports"
+    },
+    {
+      "source": "e0544a03d69e2b56",
+      "target": "8e608b786e4c883c",
+      "type": "imports"
+    },
+    {
+      "source": "f3cc3bcaac84ef4d",
+      "target": "33c3f6c17232b585",
+      "type": "imports"
+    },
+    {
+      "source": "f3cc3bcaac84ef4d",
+      "target": "c8ce90987ddb76f5",
+      "type": "imports"
+    },
+    {
+      "source": "f3cc3bcaac84ef4d",
+      "target": "8e4ef13d426d1b7b",
+      "type": "imports"
+    },
+    {
+      "source": "f3cc3bcaac84ef4d",
+      "target": "1186eefdf9aa18e2",
+      "type": "imports"
+    },
+    {
+      "source": "f3cc3bcaac84ef4d",
+      "target": "e749832cbdfa0029",
+      "type": "imports"
+    },
+    {
+      "source": "f3cc3bcaac84ef4d",
+      "target": "6fee822b7562c082",
+      "type": "imports"
+    },
+    {
+      "source": "f3cc3bcaac84ef4d",
+      "target": "993e731cab1f705a",
+      "type": "imports"
+    },
+    {
+      "source": "93b9f951963450cc",
+      "target": "8e4fe138b530782f",
+      "type": "imports"
+    },
+    {
+      "source": "93b9f951963450cc",
+      "target": "8e608b786e4c883c",
+      "type": "imports"
+    },
+    {
+      "source": "0debc8335c117f2b",
+      "target": "493ab0c129d8ec92",
+      "type": "imports"
+    },
+    {
+      "source": "0debc8335c117f2b",
+      "target": "e749832cbdfa0029",
+      "type": "imports"
+    },
+    {
+      "source": "0debc8335c117f2b",
+      "target": "c6d22b228397aa68",
+      "type": "imports"
+    },
+    {
+      "source": "2699a439daf8414e",
+      "target": "d35d17e46dee1e7f",
+      "type": "depends_on"
+    },
+    {
+      "source": "56dedae5dbc33c8f",
+      "target": "8e4ef13d426d1b7b",
+      "type": "depends_on"
+    },
+    {
+      "source": "f071f0c0c0125d1e",
+      "target": "8e4ef13d426d1b7b",
+      "type": "depends_on"
+    },
+    {
+      "source": "f071f0c0c0125d1e",
+      "target": "e749832cbdfa0029",
+      "type": "depends_on"
+    },
+    {
+      "source": "7c641220d0d10e2e",
+      "target": "9286fe08dde4bd9d",
+      "type": "depends_on"
+    },
+    {
+      "source": "7c641220d0d10e2e",
+      "target": "493ab0c129d8ec92",
+      "type": "depends_on"
+    },
+    {
+      "source": "7c641220d0d10e2e",
+      "target": "1186eefdf9aa18e2",
+      "type": "depends_on"
+    },
+    {
+      "source": "7c641220d0d10e2e",
+      "target": "e749832cbdfa0029",
+      "type": "depends_on"
+    },
+    {
+      "source": "7c641220d0d10e2e",
+      "target": "8e4fe138b530782f",
+      "type": "depends_on"
+    },
+    {
+      "source": "7c641220d0d10e2e",
+      "target": "c6d22b228397aa68",
+      "type": "depends_on"
+    },
+    {
+      "source": "7c641220d0d10e2e",
+      "target": "774fe2160afbc0ea",
+      "type": "depends_on"
+    },
+    {
+      "source": "7c641220d0d10e2e",
+      "target": "8e608b786e4c883c",
+      "type": "depends_on"
+    },
+    {
+      "source": "660c261233aee0e7",
+      "target": "9286fe08dde4bd9d",
+      "type": "depends_on"
+    },
+    {
+      "source": "660c261233aee0e7",
+      "target": "d35d17e46dee1e7f",
+      "type": "depends_on"
+    },
+    {
+      "source": "3841dbb65af5486d",
+      "target": "d35d17e46dee1e7f",
+      "type": "depends_on"
+    },
+    {
+      "source": "f3cd470301797f04",
+      "target": "8e608b786e4c883c",
+      "type": "depends_on"
+    },
+    {
+      "source": "ab44e0ec682c9bcb",
+      "target": "8e4ef13d426d1b7b",
+      "type": "depends_on"
+    },
+    {
+      "source": "be2b9e5716d5b4a1",
+      "target": "9286fe08dde4bd9d",
+      "type": "depends_on"
+    },
+    {
+      "source": "be2b9e5716d5b4a1",
+      "target": "1186eefdf9aa18e2",
+      "type": "depends_on"
+    },
+    {
+      "source": "be2b9e5716d5b4a1",
+      "target": "e749832cbdfa0029",
+      "type": "depends_on"
+    },
+    {
+      "source": "be2b9e5716d5b4a1",
+      "target": "6fee822b7562c082",
+      "type": "depends_on"
+    },
+    {
+      "source": "be2b9e5716d5b4a1",
+      "target": "d35d17e46dee1e7f",
+      "type": "depends_on"
+    },
+    {
+      "source": "be2b9e5716d5b4a1",
+      "target": "8e608b786e4c883c",
+      "type": "depends_on"
+    },
+    {
+      "source": "a9e9cdcaccf9524c",
+      "target": "9286fe08dde4bd9d",
+      "type": "depends_on"
+    },
+    {
+      "source": "a9e9cdcaccf9524c",
+      "target": "8e4ef13d426d1b7b",
+      "type": "depends_on"
+    },
+    {
+      "source": "a9e9cdcaccf9524c",
+      "target": "8e4fe138b530782f",
+      "type": "depends_on"
+    },
+    {
+      "source": "a9e9cdcaccf9524c",
+      "target": "d35d17e46dee1e7f",
+      "type": "depends_on"
+    },
+    {
+      "source": "7cf636eb18e9f0c4",
+      "target": "493ab0c129d8ec92",
+      "type": "depends_on"
+    },
+    {
+      "source": "7cf636eb18e9f0c4",
+      "target": "1186eefdf9aa18e2",
+      "type": "depends_on"
+    },
+    {
+      "source": "7cf636eb18e9f0c4",
+      "target": "e749832cbdfa0029",
+      "type": "depends_on"
+    },
+    {
+      "source": "7cf636eb18e9f0c4",
+      "target": "6fee822b7562c082",
+      "type": "depends_on"
+    },
+    {
+      "source": "7cf636eb18e9f0c4",
+      "target": "489624da065e83ab",
+      "type": "depends_on"
+    },
+    {
+      "source": "7cf636eb18e9f0c4",
+      "target": "c6d22b228397aa68",
+      "type": "depends_on"
+    },
+    {
+      "source": "7cf636eb18e9f0c4",
+      "target": "993e731cab1f705a",
+      "type": "depends_on"
+    },
+    {
+      "source": "7cf636eb18e9f0c4",
+      "target": "774fe2160afbc0ea",
+      "type": "depends_on"
+    },
+    {
+      "source": "3ec6432a0dea8ecd",
+      "target": "b65e4b60adfe9d2b",
+      "type": "depends_on"
+    },
+    {
+      "source": "3ec6432a0dea8ecd",
+      "target": "e749832cbdfa0029",
+      "type": "depends_on"
+    },
+    {
+      "source": "3ec6432a0dea8ecd",
+      "target": "6fee822b7562c082",
+      "type": "depends_on"
+    },
+    {
+      "source": "3ec6432a0dea8ecd",
+      "target": "d35d17e46dee1e7f",
+      "type": "depends_on"
+    },
+    {
+      "source": "3ec6432a0dea8ecd",
+      "target": "8e608b786e4c883c",
+      "type": "depends_on"
+    },
+    {
+      "source": "f1cbe89e884a428d",
+      "target": "8e4ef13d426d1b7b",
+      "type": "depends_on"
+    },
+    {
+      "source": "f1cbe89e884a428d",
+      "target": "6fee822b7562c082",
+      "type": "depends_on"
+    },
+    {
+      "source": "f1cbe89e884a428d",
+      "target": "d35d17e46dee1e7f",
+      "type": "depends_on"
+    },
+    {
+      "source": "32c93eb787e4d117",
+      "target": "87d8ee965462a03f",
+      "type": "depends_on"
+    },
+    {
+      "source": "32c93eb787e4d117",
+      "target": "489624da065e83ab",
+      "type": "depends_on"
+    },
+    {
+      "source": "e0544a03d69e2b56",
+      "target": "e2719b77e9c65b32",
+      "type": "depends_on"
+    },
+    {
+      "source": "e0544a03d69e2b56",
+      "target": "33c3f6c17232b585",
+      "type": "depends_on"
+    },
+    {
+      "source": "e0544a03d69e2b56",
+      "target": "8e4ef13d426d1b7b",
+      "type": "depends_on"
+    },
+    {
+      "source": "e0544a03d69e2b56",
+      "target": "e749832cbdfa0029",
+      "type": "depends_on"
+    },
+    {
+      "source": "e0544a03d69e2b56",
+      "target": "6fee822b7562c082",
+      "type": "depends_on"
+    },
+    {
+      "source": "e0544a03d69e2b56",
+      "target": "8e4fe138b530782f",
+      "type": "depends_on"
+    },
+    {
+      "source": "e0544a03d69e2b56",
+      "target": "993e731cab1f705a",
+      "type": "depends_on"
+    },
+    {
+      "source": "e0544a03d69e2b56",
+      "target": "40321863dd9d50ac",
+      "type": "depends_on"
+    },
+    {
+      "source": "e0544a03d69e2b56",
+      "target": "8e608b786e4c883c",
+      "type": "depends_on"
+    },
+    {
+      "source": "f3cc3bcaac84ef4d",
+      "target": "33c3f6c17232b585",
+      "type": "depends_on"
+    },
+    {
+      "source": "f3cc3bcaac84ef4d",
+      "target": "c8ce90987ddb76f5",
+      "type": "depends_on"
+    },
+    {
+      "source": "f3cc3bcaac84ef4d",
+      "target": "8e4ef13d426d1b7b",
+      "type": "depends_on"
+    },
+    {
+      "source": "f3cc3bcaac84ef4d",
+      "target": "1186eefdf9aa18e2",
+      "type": "depends_on"
+    },
+    {
+      "source": "f3cc3bcaac84ef4d",
+      "target": "e749832cbdfa0029",
+      "type": "depends_on"
+    },
+    {
+      "source": "f3cc3bcaac84ef4d",
+      "target": "6fee822b7562c082",
+      "type": "depends_on"
+    },
+    {
+      "source": "f3cc3bcaac84ef4d",
+      "target": "993e731cab1f705a",
+      "type": "depends_on"
+    },
+    {
+      "source": "93b9f951963450cc",
+      "target": "8e4fe138b530782f",
+      "type": "depends_on"
+    },
+    {
+      "source": "93b9f951963450cc",
+      "target": "8e608b786e4c883c",
+      "type": "depends_on"
+    },
+    {
+      "source": "0debc8335c117f2b",
+      "target": "493ab0c129d8ec92",
+      "type": "depends_on"
+    },
+    {
+      "source": "0debc8335c117f2b",
+      "target": "e749832cbdfa0029",
+      "type": "depends_on"
+    },
+    {
+      "source": "0debc8335c117f2b",
+      "target": "c6d22b228397aa68",
+      "type": "depends_on"
+    },
+    {
+      "source": "eddb37d84b0173c8",
+      "target": "0b8cc704284c61a8",
+      "type": "depends_on"
+    },
+    {
+      "source": "eddb37d84b0173c8",
+      "target": "78e051dc8be629c8",
+      "type": "depends_on"
+    },
+    {
+      "source": "eddb37d84b0173c8",
+      "target": "774fe2160afbc0ea",
+      "type": "depends_on"
+    },
+    {
+      "source": "eddb37d84b0173c8",
+      "target": "d35d17e46dee1e7f",
+      "type": "depends_on"
+    }
+  ]
+}

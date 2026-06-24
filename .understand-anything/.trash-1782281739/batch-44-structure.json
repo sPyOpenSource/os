@@ -1,0 +1,1019 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 14,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBConfiguration.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 92,
+      "nonEmptyLines": 83,
+      "functions": [
+        {
+          "name": "USBConfiguration",
+          "startLine": 42,
+          "endLine": 46,
+          "params": [
+            "device",
+            "descr"
+          ]
+        },
+        {
+          "name": "getDescriptor",
+          "startLine": 51,
+          "endLine": 53,
+          "params": []
+        },
+        {
+          "name": "getInterface",
+          "startLine": 58,
+          "endLine": 60,
+          "params": [
+            "index"
+          ]
+        },
+        {
+          "name": "setInterface",
+          "startLine": 66,
+          "endLine": 72,
+          "params": [
+            "index",
+            "intf"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 77,
+          "endLine": 90,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "USBConfiguration",
+          "startLine": 26,
+          "endLine": 92,
+          "methods": [
+            "USBConfiguration",
+            "getDescriptor",
+            "getInterface",
+            "setInterface",
+            "toString"
+          ],
+          "properties": [
+            "descr",
+            "interfaces"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "USBConfiguration",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "getDescriptor",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "getInterface",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 77,
+          "isDefault": false
+        },
+        {
+          "name": "USBConfiguration",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "USBConfiguration",
+          "callee": "descr.getNumInterfaces",
+          "lineNumber": 45
+        },
+        {
+          "caller": "setInterface",
+          "callee": "new SecurityException",
+          "lineNumber": 68
+        },
+        {
+          "caller": "toString",
+          "callee": "new StringBuffer",
+          "lineNumber": 78
+        },
+        {
+          "caller": "toString",
+          "callee": "b.append",
+          "lineNumber": 79
+        },
+        {
+          "caller": "toString",
+          "callee": "b.append",
+          "lineNumber": 80
+        },
+        {
+          "caller": "toString",
+          "callee": "b.append",
+          "lineNumber": 81
+        },
+        {
+          "caller": "toString",
+          "callee": "b.append",
+          "lineNumber": 84
+        },
+        {
+          "caller": "toString",
+          "callee": "b.append",
+          "lineNumber": 86
+        },
+        {
+          "caller": "toString",
+          "callee": "b.append",
+          "lineNumber": 88
+        },
+        {
+          "caller": "toString",
+          "callee": "b.toString",
+          "lineNumber": 89
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 5,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBInterface.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 148,
+      "nonEmptyLines": 136,
+      "functions": [
+        {
+          "name": "USBInterface",
+          "startLine": 47,
+          "endLine": 52,
+          "params": [
+            "conf",
+            "descr"
+          ]
+        },
+        {
+          "name": "getDescriptor",
+          "startLine": 57,
+          "endLine": 59,
+          "params": []
+        },
+        {
+          "name": "getConfuration",
+          "startLine": 64,
+          "endLine": 66,
+          "params": []
+        },
+        {
+          "name": "getEndPoint",
+          "startLine": 71,
+          "endLine": 73,
+          "params": [
+            "index"
+          ]
+        },
+        {
+          "name": "setEndPoint",
+          "startLine": 78,
+          "endLine": 84,
+          "params": [
+            "index",
+            "endPoint"
+          ]
+        },
+        {
+          "name": "getStatus",
+          "startLine": 92,
+          "endLine": 100,
+          "params": []
+        },
+        {
+          "name": "setFeature",
+          "startLine": 108,
+          "endLine": 114,
+          "params": [
+            "featureSelector"
+          ]
+        },
+        {
+          "name": "clearFeature",
+          "startLine": 122,
+          "endLine": 129,
+          "params": [
+            "featureSelector"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 134,
+          "endLine": 147,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "USBInterface",
+          "startLine": 26,
+          "endLine": 148,
+          "methods": [
+            "USBInterface",
+            "getDescriptor",
+            "getConfuration",
+            "getEndPoint",
+            "setEndPoint",
+            "getStatus",
+            "setFeature",
+            "clearFeature",
+            "toString"
+          ],
+          "properties": [
+            "conf",
+            "descr",
+            "endPoints"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "USBInterface",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "getDescriptor",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "getConfuration",
+          "line": 64,
+          "isDefault": false
+        },
+        {
+          "name": "getEndPoint",
+          "line": 71,
+          "isDefault": false
+        },
+        {
+          "name": "getStatus",
+          "line": 92,
+          "isDefault": false
+        },
+        {
+          "name": "setFeature",
+          "line": 108,
+          "isDefault": false
+        },
+        {
+          "name": "clearFeature",
+          "line": 122,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 134,
+          "isDefault": false
+        },
+        {
+          "name": "USBInterface",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "USBInterface",
+          "callee": "conf.getDevice",
+          "lineNumber": 48
+        },
+        {
+          "caller": "USBInterface",
+          "callee": "descr.getNumEndPoints",
+          "lineNumber": 51
+        },
+        {
+          "caller": "setEndPoint",
+          "callee": "new SecurityException",
+          "lineNumber": 80
+        },
+        {
+          "caller": "getStatus",
+          "callee": "new USBPacket",
+          "lineNumber": 94
+        },
+        {
+          "caller": "getStatus",
+          "callee": "getDevice().getDefaultControlPipe",
+          "lineNumber": 95
+        },
+        {
+          "caller": "getStatus",
+          "callee": "getDevice",
+          "lineNumber": 95
+        },
+        {
+          "caller": "getStatus",
+          "callee": "pipe.createRequest",
+          "lineNumber": 96
+        },
+        {
+          "caller": "getStatus",
+          "callee": "SetupPacket.createGetStatusPacket",
+          "lineNumber": 97
+        },
+        {
+          "caller": "getStatus",
+          "callee": "descr.getInterfaceNumber",
+          "lineNumber": 97
+        },
+        {
+          "caller": "getStatus",
+          "callee": "pipe.syncSubmit",
+          "lineNumber": 98
+        },
+        {
+          "caller": "getStatus",
+          "callee": "data.getShort",
+          "lineNumber": 99
+        },
+        {
+          "caller": "setFeature",
+          "callee": "getDevice().getDefaultControlPipe",
+          "lineNumber": 110
+        },
+        {
+          "caller": "setFeature",
+          "callee": "getDevice",
+          "lineNumber": 110
+        },
+        {
+          "caller": "setFeature",
+          "callee": "pipe.createRequest",
+          "lineNumber": 111
+        },
+        {
+          "caller": "setFeature",
+          "callee": "SetupPacket.createSetFeaturePacket",
+          "lineNumber": 112
+        },
+        {
+          "caller": "setFeature",
+          "callee": "descr.getInterfaceNumber",
+          "lineNumber": 112
+        },
+        {
+          "caller": "setFeature",
+          "callee": "pipe.syncSubmit",
+          "lineNumber": 113
+        },
+        {
+          "caller": "clearFeature",
+          "callee": "getDevice().getDefaultControlPipe",
+          "lineNumber": 124
+        },
+        {
+          "caller": "clearFeature",
+          "callee": "getDevice",
+          "lineNumber": 124
+        },
+        {
+          "caller": "clearFeature",
+          "callee": "pipe.createRequest",
+          "lineNumber": 125
+        },
+        {
+          "caller": "clearFeature",
+          "callee": "SetupPacket.createClearFeaturePacket",
+          "lineNumber": 126
+        },
+        {
+          "caller": "clearFeature",
+          "callee": "descr.getInterfaceNumber",
+          "lineNumber": 126
+        },
+        {
+          "caller": "clearFeature",
+          "callee": "pipe.syncSubmit",
+          "lineNumber": 128
+        },
+        {
+          "caller": "toString",
+          "callee": "new StringBuffer",
+          "lineNumber": 135
+        },
+        {
+          "caller": "toString",
+          "callee": "b.append",
+          "lineNumber": 136
+        },
+        {
+          "caller": "toString",
+          "callee": "b.append",
+          "lineNumber": 137
+        },
+        {
+          "caller": "toString",
+          "callee": "b.append",
+          "lineNumber": 138
+        },
+        {
+          "caller": "toString",
+          "callee": "b.append",
+          "lineNumber": 141
+        },
+        {
+          "caller": "toString",
+          "callee": "b.append",
+          "lineNumber": 143
+        },
+        {
+          "caller": "toString",
+          "callee": "b.append",
+          "lineNumber": 145
+        },
+        {
+          "caller": "toString",
+          "callee": "b.toString",
+          "lineNumber": 146
+        }
+      ],
+      "metrics": {
+        "importCount": 9,
+        "exportCount": 9,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/org/jnode/util/BinaryScaleFactor.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 87,
+      "nonEmptyLines": 77,
+      "functions": [
+        {
+          "name": "BinaryScaleFactor",
+          "startLine": 45,
+          "endLine": 48,
+          "params": [
+            "multiplier",
+            "unit"
+          ]
+        },
+        {
+          "name": "getMultiplier",
+          "startLine": 50,
+          "endLine": 53,
+          "params": []
+        },
+        {
+          "name": "getUnit",
+          "startLine": 55,
+          "endLine": 58,
+          "params": []
+        },
+        {
+          "name": "toString",
+          "startLine": 60,
+          "endLine": 63,
+          "params": []
+        },
+        {
+          "name": "apply",
+          "startLine": 72,
+          "endLine": 86,
+          "params": [
+            "value",
+            "nbDecimals"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "BinaryScaleFactor",
+          "startLine": 23,
+          "endLine": 87,
+          "methods": [
+            "BinaryScaleFactor",
+            "getMultiplier",
+            "getUnit",
+            "toString",
+            "apply"
+          ],
+          "properties": [
+            "values",
+            "keys",
+            "multiplier",
+            "unit"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "values",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "keys",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "BinaryScaleFactor",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "getMultiplier",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "getUnit",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "apply",
+          "line": 72,
+          "isDefault": false
+        },
+        {
+          "name": "BinaryScaleFactor",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "apply",
+          "callee": "new BinaryScaleFactor",
+          "lineNumber": 77
+        },
+        {
+          "caller": "apply",
+          "callee": "new BinaryScaleFactor",
+          "lineNumber": 83
+        },
+        {
+          "caller": "apply",
+          "callee": "unit.getMultiplier",
+          "lineNumber": 84
+        },
+        {
+          "caller": "apply",
+          "callee": "NumberUtils.toString",
+          "lineNumber": 85
+        },
+        {
+          "caller": "apply",
+          "callee": "unit.getUnit",
+          "lineNumber": 85
+        }
+      ],
+      "metrics": {
+        "importCount": 8,
+        "exportCount": 8,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/org/jnode/util/DecimalScaleFactor.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 87,
+      "nonEmptyLines": 76,
+      "functions": [
+        {
+          "name": "DecimalScaleFactor",
+          "startLine": 45,
+          "endLine": 48,
+          "params": [
+            "multiplier",
+            "unit"
+          ]
+        },
+        {
+          "name": "getMultiplier",
+          "startLine": 50,
+          "endLine": 53,
+          "params": []
+        },
+        {
+          "name": "getUnit",
+          "startLine": 55,
+          "endLine": 58,
+          "params": []
+        },
+        {
+          "name": "toString",
+          "startLine": 60,
+          "endLine": 63,
+          "params": []
+        },
+        {
+          "name": "apply",
+          "startLine": 72,
+          "endLine": 86,
+          "params": [
+            "value",
+            "nbDecimals"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DecimalScaleFactor",
+          "startLine": 24,
+          "endLine": 87,
+          "methods": [
+            "DecimalScaleFactor",
+            "getMultiplier",
+            "getUnit",
+            "toString",
+            "apply"
+          ],
+          "properties": [
+            "keys",
+            "multiplier",
+            "unit"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getMultiplier",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "getUnit",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "apply",
+          "line": 72,
+          "isDefault": false
+        },
+        {
+          "name": "DecimalScaleFactor",
+          "line": 24,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "apply",
+          "callee": "new DecimalScaleFactor",
+          "lineNumber": 77
+        },
+        {
+          "caller": "apply",
+          "callee": "new DecimalScaleFactor",
+          "lineNumber": 83
+        },
+        {
+          "caller": "apply",
+          "callee": "unit.getMultiplier",
+          "lineNumber": 84
+        },
+        {
+          "caller": "apply",
+          "callee": "NumberUtils.toString",
+          "lineNumber": 85
+        },
+        {
+          "caller": "apply",
+          "callee": "unit.getUnit",
+          "lineNumber": 85
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 5,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/org/jnode/util/ScaleFactor.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 24,
+      "classes": [
+        {
+          "name": "ScaleFactor",
+          "startLine": 23,
+          "endLine": 27,
+          "methods": [
+            "getMultiplier",
+            "getUnit"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ScaleFactor",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/org/jnode/util/SizeUnit.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 64,
+      "nonEmptyLines": 56,
+      "functions": [
+        {
+          "name": "SizeUnit",
+          "startLine": 47,
+          "endLine": 50,
+          "params": [
+            "multiplier",
+            "unit"
+          ]
+        },
+        {
+          "name": "getMultiplier",
+          "startLine": 52,
+          "endLine": 54,
+          "params": []
+        },
+        {
+          "name": "getUnit",
+          "startLine": 56,
+          "endLine": 58,
+          "params": []
+        },
+        {
+          "name": "toString",
+          "startLine": 60,
+          "endLine": 63,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "SizeUnit",
+          "startLine": 26,
+          "endLine": 64,
+          "methods": [
+            "SizeUnit",
+            "getMultiplier",
+            "getUnit",
+            "toString"
+          ],
+          "properties": [
+            "multiplier",
+            "unit"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SizeUnit",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "getMultiplier",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "getUnit",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "SizeUnit",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/sun/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/sun/security/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/sun/security/provider/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/sun/security/provider/Sun.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "functions": [
+        {
+          "name": "Sun",
+          "startLine": 4,
+          "endLine": 4,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "Sun",
+          "startLine": 3,
+          "endLine": 5,
+          "methods": [
+            "Sun"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Sun",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "Sun",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Sun",
+          "callee": "new Error",
+          "lineNumber": 4
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/sun/tools/javac/Main.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "Main",
+          "startLine": 4,
+          "endLine": 4,
+          "params": [
+            "arg0",
+            "arg1"
+          ]
+        },
+        {
+          "name": "compile",
+          "startLine": 5,
+          "endLine": 5,
+          "params": [
+            "arg0"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Main",
+          "startLine": 3,
+          "endLine": 6,
+          "methods": [
+            "Main",
+            "compile"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Main",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "compile",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "Main",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Main",
+          "callee": "new Error",
+          "lineNumber": 4
+        },
+        {
+          "caller": "compile",
+          "callee": "new Error",
+          "lineNumber": 5
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/sun/tools/javac/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/sun/tools/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    }
+  ]
+}

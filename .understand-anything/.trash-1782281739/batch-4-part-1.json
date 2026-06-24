@@ -1,0 +1,1289 @@
+{
+  "schemaVersion": 1,
+  "batchIndex": 4,
+  "part": 1,
+  "nodes": [
+    {
+      "id": "cls:src/java/applet/Applet.java:Applet",
+      "type": "class",
+      "label": "Applet",
+      "properties": {
+        "path": "src/java/applet/Applet.java",
+        "name": "Applet",
+        "startLine": 40,
+        "endLine": 183,
+        "numMethods": 14
+      }
+    },
+    {
+      "id": "cls:src/java/security/AlgorithmParameterGenerator.java:AlgorithmParameterGenerator",
+      "type": "class",
+      "label": "AlgorithmParameterGenerator",
+      "properties": {
+        "path": "src/java/security/AlgorithmParameterGenerator.java",
+        "name": "AlgorithmParameterGenerator",
+        "startLine": 40,
+        "endLine": 202,
+        "numMethods": 11
+      }
+    },
+    {
+      "id": "cls:src/java/security/AlgorithmParameters.java:AlgorithmParameters",
+      "type": "class",
+      "label": "AlgorithmParameters",
+      "properties": {
+        "path": "src/java/security/AlgorithmParameters.java",
+        "name": "AlgorithmParameters",
+        "startLine": 41,
+        "endLine": 250,
+        "numMethods": 13
+      }
+    },
+    {
+      "id": "cls:src/java/security/AllPermission.java:AllPermission",
+      "type": "class",
+      "label": "AllPermission",
+      "properties": {
+        "path": "src/java/security/AllPermission.java",
+        "name": "AllPermission",
+        "startLine": 39,
+        "endLine": 155,
+        "numMethods": 7
+      }
+    },
+    {
+      "id": "file:src/java/applet/Applet.java",
+      "type": "file",
+      "label": "Applet.java",
+      "properties": {
+        "path": "src/java/applet/Applet.java",
+        "language": "java",
+        "sizeLines": 183,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/security/AlgorithmParameterGenerator.java",
+      "type": "file",
+      "label": "AlgorithmParameterGenerator.java",
+      "properties": {
+        "path": "src/java/security/AlgorithmParameterGenerator.java",
+        "language": "java",
+        "sizeLines": 47,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/security/AlgorithmParameterGeneratorSpi.java",
+      "type": "file",
+      "label": "AlgorithmParameterGeneratorSpi.java",
+      "properties": {
+        "path": "src/java/security/AlgorithmParameterGeneratorSpi.java",
+        "language": "java",
+        "sizeLines": 27,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/java/security/AlgorithmParameters.java",
+      "type": "file",
+      "label": "AlgorithmParameters.java",
+      "properties": {
+        "path": "src/java/security/AlgorithmParameters.java",
+        "language": "java",
+        "sizeLines": 54,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/security/AlgorithmParametersSpi.java",
+      "type": "file",
+      "label": "AlgorithmParametersSpi.java",
+      "properties": {
+        "path": "src/java/security/AlgorithmParametersSpi.java",
+        "language": "java",
+        "sizeLines": 26,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/java/security/AllPermission.java",
+      "type": "file",
+      "label": "AllPermission.java",
+      "properties": {
+        "path": "src/java/security/AllPermission.java",
+        "language": "java",
+        "sizeLines": 65,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "fn:src/java/applet/Applet.java:Applet",
+      "type": "function",
+      "label": "Applet",
+      "properties": {
+        "path": "src/java/applet/Applet.java",
+        "name": "Applet",
+        "startLine": 48,
+        "endLine": 48,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/applet/Applet.java:destroy",
+      "type": "function",
+      "label": "destroy",
+      "properties": {
+        "path": "src/java/applet/Applet.java",
+        "name": "destroy",
+        "startLine": 156,
+        "endLine": 156,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/applet/Applet.java:getAppletContext",
+      "type": "function",
+      "label": "getAppletContext",
+      "properties": {
+        "path": "src/java/applet/Applet.java",
+        "name": "getAppletContext",
+        "startLine": 67,
+        "endLine": 70,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/applet/Applet.java:getAppletInfo",
+      "type": "function",
+      "label": "getAppletInfo",
+      "properties": {
+        "path": "src/java/applet/Applet.java",
+        "name": "getAppletInfo",
+        "startLine": 126,
+        "endLine": 129,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/applet/Applet.java:getLocale",
+      "type": "function",
+      "label": "getLocale",
+      "properties": {
+        "path": "src/java/applet/Applet.java",
+        "name": "getLocale",
+        "startLine": 113,
+        "endLine": 117,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/applet/Applet.java:getParameter",
+      "type": "function",
+      "label": "getParameter",
+      "properties": {
+        "path": "src/java/applet/Applet.java",
+        "name": "getParameter",
+        "startLine": 57,
+        "endLine": 60,
+        "params": [
+          "name"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/applet/Applet.java:getParameterInfo",
+      "type": "function",
+      "label": "getParameterInfo",
+      "properties": {
+        "path": "src/java/applet/Applet.java",
+        "name": "getParameterInfo",
+        "startLine": 139,
+        "endLine": 142,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/applet/Applet.java:init",
+      "type": "function",
+      "label": "init",
+      "properties": {
+        "path": "src/java/applet/Applet.java",
+        "name": "init",
+        "startLine": 149,
+        "endLine": 149,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/applet/Applet.java:isActive",
+      "type": "function",
+      "label": "isActive",
+      "properties": {
+        "path": "src/java/applet/Applet.java",
+        "name": "isActive",
+        "startLine": 78,
+        "endLine": 81,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/applet/Applet.java:resize",
+      "type": "function",
+      "label": "resize",
+      "properties": {
+        "path": "src/java/applet/Applet.java",
+        "name": "resize",
+        "startLine": 101,
+        "endLine": 105,
+        "params": [
+          "dim"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/applet/Applet.java:setStub",
+      "type": "function",
+      "label": "setStub",
+      "properties": {
+        "path": "src/java/applet/Applet.java",
+        "name": "setStub",
+        "startLine": 178,
+        "endLine": 181,
+        "params": [
+          "stub"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/applet/Applet.java:start",
+      "type": "function",
+      "label": "start",
+      "properties": {
+        "path": "src/java/applet/Applet.java",
+        "name": "start",
+        "startLine": 163,
+        "endLine": 163,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/applet/Applet.java:stop",
+      "type": "function",
+      "label": "stop",
+      "properties": {
+        "path": "src/java/applet/Applet.java",
+        "name": "stop",
+        "startLine": 170,
+        "endLine": 170,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/security/AlgorithmParameterGenerator.java:AlgorithmParameterGenerator",
+      "type": "function",
+      "label": "AlgorithmParameterGenerator",
+      "properties": {
+        "path": "src/java/security/AlgorithmParameterGenerator.java",
+        "name": "AlgorithmParameterGenerator",
+        "startLine": 53,
+        "endLine": 58,
+        "params": [
+          "paramGenSpi",
+          "provider",
+          "algorithm"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/AlgorithmParameterGenerator.java:generateParameters",
+      "type": "function",
+      "label": "generateParameters",
+      "properties": {
+        "path": "src/java/security/AlgorithmParameterGenerator.java",
+        "name": "generateParameters",
+        "startLine": 198,
+        "endLine": 201,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/security/AlgorithmParameterGenerator.java:getAlgorithm",
+      "type": "function",
+      "label": "getAlgorithm",
+      "properties": {
+        "path": "src/java/security/AlgorithmParameterGenerator.java",
+        "name": "getAlgorithm",
+        "startLine": 65,
+        "endLine": 68,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/security/AlgorithmParameterGenerator.java:getInstance",
+      "type": "function",
+      "label": "getInstance",
+      "properties": {
+        "path": "src/java/security/AlgorithmParameterGenerator.java",
+        "name": "getInstance",
+        "startLine": 118,
+        "endLine": 133,
+        "params": [
+          "classname",
+          "algorithm",
+          "provider"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/AlgorithmParameterGenerator.java:getProvider",
+      "type": "function",
+      "label": "getProvider",
+      "properties": {
+        "path": "src/java/security/AlgorithmParameterGenerator.java",
+        "name": "getProvider",
+        "startLine": 140,
+        "endLine": 143,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/security/AlgorithmParameterGenerator.java:init",
+      "type": "function",
+      "label": "init",
+      "properties": {
+        "path": "src/java/security/AlgorithmParameterGenerator.java",
+        "name": "init",
+        "startLine": 188,
+        "endLine": 191,
+        "params": [
+          "genParamSpec",
+          "random"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/AlgorithmParameters.java:AlgorithmParameters",
+      "type": "function",
+      "label": "AlgorithmParameters",
+      "properties": {
+        "path": "src/java/security/AlgorithmParameters.java",
+        "name": "AlgorithmParameters",
+        "startLine": 55,
+        "endLine": 60,
+        "params": [
+          "paramSpi",
+          "provider",
+          "algorithm"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/AlgorithmParameters.java:getAlgorithm",
+      "type": "function",
+      "label": "getAlgorithm",
+      "properties": {
+        "path": "src/java/security/AlgorithmParameters.java",
+        "name": "getAlgorithm",
+        "startLine": 67,
+        "endLine": 70,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/security/AlgorithmParameters.java:getEncoded",
+      "type": "function",
+      "label": "getEncoded",
+      "properties": {
+        "path": "src/java/security/AlgorithmParameters.java",
+        "name": "getEncoded",
+        "startLine": 236,
+        "endLine": 239,
+        "params": [
+          "format"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/AlgorithmParameters.java:getInstance",
+      "type": "function",
+      "label": "getInstance",
+      "properties": {
+        "path": "src/java/security/AlgorithmParameters.java",
+        "name": "getInstance",
+        "startLine": 126,
+        "endLine": 141,
+        "params": [
+          "classname",
+          "algorithm",
+          "provider"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/AlgorithmParameters.java:getParameterSpec",
+      "type": "function",
+      "label": "getParameterSpec",
+      "properties": {
+        "path": "src/java/security/AlgorithmParameters.java",
+        "name": "getParameterSpec",
+        "startLine": 211,
+        "endLine": 214,
+        "params": [
+          "paramSpec"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/AlgorithmParameters.java:getProvider",
+      "type": "function",
+      "label": "getProvider",
+      "properties": {
+        "path": "src/java/security/AlgorithmParameters.java",
+        "name": "getProvider",
+        "startLine": 148,
+        "endLine": 151,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/security/AlgorithmParameters.java:init",
+      "type": "function",
+      "label": "init",
+      "properties": {
+        "path": "src/java/security/AlgorithmParameters.java",
+        "name": "init",
+        "startLine": 195,
+        "endLine": 198,
+        "params": [
+          "params",
+          "format"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/AlgorithmParameters.java:toString",
+      "type": "function",
+      "label": "toString",
+      "properties": {
+        "path": "src/java/security/AlgorithmParameters.java",
+        "name": "toString",
+        "startLine": 246,
+        "endLine": 249,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/security/AllPermission.java:AllPermission",
+      "type": "function",
+      "label": "AllPermission",
+      "properties": {
+        "path": "src/java/security/AllPermission.java",
+        "name": "AllPermission",
+        "startLine": 70,
+        "endLine": 74,
+        "params": [
+          "name",
+          "actions"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/AllPermission.java:equals",
+      "type": "function",
+      "label": "equals",
+      "properties": {
+        "path": "src/java/security/AllPermission.java",
+        "name": "equals",
+        "startLine": 105,
+        "endLine": 112,
+        "params": [
+          "obj"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/AllPermission.java:getActions",
+      "type": "function",
+      "label": "getActions",
+      "properties": {
+        "path": "src/java/security/AllPermission.java",
+        "name": "getActions",
+        "startLine": 135,
+        "endLine": 139,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/security/AllPermission.java:hashCode",
+      "type": "function",
+      "label": "hashCode",
+      "properties": {
+        "path": "src/java/security/AllPermission.java",
+        "name": "hashCode",
+        "startLine": 121,
+        "endLine": 125,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/security/AllPermission.java:implies",
+      "type": "function",
+      "label": "implies",
+      "properties": {
+        "path": "src/java/security/AllPermission.java",
+        "name": "implies",
+        "startLine": 90,
+        "endLine": 94,
+        "params": [
+          "perm"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/AllPermission.java:newPermissionCollection",
+      "type": "function",
+      "label": "newPermissionCollection",
+      "properties": {
+        "path": "src/java/security/AllPermission.java",
+        "name": "newPermissionCollection",
+        "startLine": 149,
+        "endLine": 153,
+        "params": []
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "cls:src/java/applet/Applet.java:Applet",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "cls:src/java/applet/Applet.java:Applet",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "fn:src/java/applet/Applet.java:Applet",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "fn:src/java/applet/Applet.java:Applet",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "fn:src/java/applet/Applet.java:getParameter",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "fn:src/java/applet/Applet.java:getParameter",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "fn:src/java/applet/Applet.java:getAppletContext",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "fn:src/java/applet/Applet.java:getAppletContext",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "fn:src/java/applet/Applet.java:isActive",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "fn:src/java/applet/Applet.java:isActive",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "fn:src/java/applet/Applet.java:resize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "fn:src/java/applet/Applet.java:resize",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "fn:src/java/applet/Applet.java:resize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "fn:src/java/applet/Applet.java:resize",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "fn:src/java/applet/Applet.java:getLocale",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "fn:src/java/applet/Applet.java:getLocale",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "fn:src/java/applet/Applet.java:getAppletInfo",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "fn:src/java/applet/Applet.java:getAppletInfo",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "fn:src/java/applet/Applet.java:getParameterInfo",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "fn:src/java/applet/Applet.java:getParameterInfo",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "fn:src/java/applet/Applet.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "fn:src/java/applet/Applet.java:init",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "fn:src/java/applet/Applet.java:destroy",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "fn:src/java/applet/Applet.java:destroy",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "fn:src/java/applet/Applet.java:start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "fn:src/java/applet/Applet.java:start",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "fn:src/java/applet/Applet.java:stop",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "fn:src/java/applet/Applet.java:stop",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "fn:src/java/applet/Applet.java:setStub",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "fn:src/java/applet/Applet.java:setStub",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/applet/Applet.java:resize",
+      "target": "fn:src/java/applet/Applet.java:resize",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameterGenerator.java",
+      "target": "cls:src/java/security/AlgorithmParameterGenerator.java:AlgorithmParameterGenerator",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameterGenerator.java",
+      "target": "cls:src/java/security/AlgorithmParameterGenerator.java:AlgorithmParameterGenerator",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameterGenerator.java",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:AlgorithmParameterGenerator",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameterGenerator.java",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:AlgorithmParameterGenerator",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameterGenerator.java",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:getAlgorithm",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameterGenerator.java",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:getAlgorithm",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameterGenerator.java",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:getInstance",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameterGenerator.java",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:getInstance",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameterGenerator.java",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:getInstance",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameterGenerator.java",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:getInstance",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameterGenerator.java",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:getInstance",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameterGenerator.java",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:getInstance",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameterGenerator.java",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:getProvider",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameterGenerator.java",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:getProvider",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameterGenerator.java",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameterGenerator.java",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:init",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameterGenerator.java",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameterGenerator.java",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:init",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameterGenerator.java",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameterGenerator.java",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:init",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameterGenerator.java",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameterGenerator.java",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:init",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameterGenerator.java",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:generateParameters",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameterGenerator.java",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:generateParameters",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/AlgorithmParameterGenerator.java:getInstance",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:getInstance",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/AlgorithmParameterGenerator.java:init",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:init",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameters.java",
+      "target": "cls:src/java/security/AlgorithmParameters.java:AlgorithmParameters",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameters.java",
+      "target": "cls:src/java/security/AlgorithmParameters.java:AlgorithmParameters",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameters.java",
+      "target": "fn:src/java/security/AlgorithmParameters.java:AlgorithmParameters",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameters.java",
+      "target": "fn:src/java/security/AlgorithmParameters.java:AlgorithmParameters",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameters.java",
+      "target": "fn:src/java/security/AlgorithmParameters.java:getAlgorithm",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameters.java",
+      "target": "fn:src/java/security/AlgorithmParameters.java:getAlgorithm",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameters.java",
+      "target": "fn:src/java/security/AlgorithmParameters.java:getInstance",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameters.java",
+      "target": "fn:src/java/security/AlgorithmParameters.java:getInstance",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameters.java",
+      "target": "fn:src/java/security/AlgorithmParameters.java:getInstance",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameters.java",
+      "target": "fn:src/java/security/AlgorithmParameters.java:getInstance",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameters.java",
+      "target": "fn:src/java/security/AlgorithmParameters.java:getInstance",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameters.java",
+      "target": "fn:src/java/security/AlgorithmParameters.java:getInstance",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameters.java",
+      "target": "fn:src/java/security/AlgorithmParameters.java:getProvider",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameters.java",
+      "target": "fn:src/java/security/AlgorithmParameters.java:getProvider",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameters.java",
+      "target": "fn:src/java/security/AlgorithmParameters.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameters.java",
+      "target": "fn:src/java/security/AlgorithmParameters.java:init",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameters.java",
+      "target": "fn:src/java/security/AlgorithmParameters.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameters.java",
+      "target": "fn:src/java/security/AlgorithmParameters.java:init",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameters.java",
+      "target": "fn:src/java/security/AlgorithmParameters.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameters.java",
+      "target": "fn:src/java/security/AlgorithmParameters.java:init",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameters.java",
+      "target": "fn:src/java/security/AlgorithmParameters.java:getParameterSpec",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameters.java",
+      "target": "fn:src/java/security/AlgorithmParameters.java:getParameterSpec",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameters.java",
+      "target": "fn:src/java/security/AlgorithmParameters.java:getEncoded",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameters.java",
+      "target": "fn:src/java/security/AlgorithmParameters.java:getEncoded",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameters.java",
+      "target": "fn:src/java/security/AlgorithmParameters.java:getEncoded",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameters.java",
+      "target": "fn:src/java/security/AlgorithmParameters.java:getEncoded",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameters.java",
+      "target": "fn:src/java/security/AlgorithmParameters.java:toString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AlgorithmParameters.java",
+      "target": "fn:src/java/security/AlgorithmParameters.java:toString",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/AlgorithmParameters.java:getInstance",
+      "target": "fn:src/java/security/AlgorithmParameters.java:getInstance",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AllPermission.java",
+      "target": "cls:src/java/security/AllPermission.java:AllPermission",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AllPermission.java",
+      "target": "cls:src/java/security/AllPermission.java:AllPermission",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AllPermission.java",
+      "target": "fn:src/java/security/AllPermission.java:AllPermission",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AllPermission.java",
+      "target": "fn:src/java/security/AllPermission.java:AllPermission",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AllPermission.java",
+      "target": "fn:src/java/security/AllPermission.java:AllPermission",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AllPermission.java",
+      "target": "fn:src/java/security/AllPermission.java:AllPermission",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AllPermission.java",
+      "target": "fn:src/java/security/AllPermission.java:implies",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AllPermission.java",
+      "target": "fn:src/java/security/AllPermission.java:implies",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AllPermission.java",
+      "target": "fn:src/java/security/AllPermission.java:equals",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AllPermission.java",
+      "target": "fn:src/java/security/AllPermission.java:equals",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AllPermission.java",
+      "target": "fn:src/java/security/AllPermission.java:hashCode",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AllPermission.java",
+      "target": "fn:src/java/security/AllPermission.java:hashCode",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AllPermission.java",
+      "target": "fn:src/java/security/AllPermission.java:getActions",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AllPermission.java",
+      "target": "fn:src/java/security/AllPermission.java:getActions",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/AllPermission.java",
+      "target": "fn:src/java/security/AllPermission.java:newPermissionCollection",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/AllPermission.java",
+      "target": "fn:src/java/security/AllPermission.java:newPermissionCollection",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/applet/Applet.java",
+      "target": "file:src/java/util/Locale.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "fn:src/java/applet/Applet.java:getParameter",
+      "target": "fn:src/java/applet/Applet.java:stub.getParameter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/applet/Applet.java:getAppletContext",
+      "target": "fn:src/java/applet/Applet.java:stub.getAppletContext",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/applet/Applet.java:isActive",
+      "target": "fn:src/java/applet/Applet.java:stub.isActive",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/applet/Applet.java:resize",
+      "target": "fn:src/java/applet/Applet.java:stub.appletResize",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/applet/Applet.java:getLocale",
+      "target": "fn:src/java/applet/Applet.java:super.getLocale",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/AlgorithmParameterGenerator.java:getInstance",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:Security.getProviders",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/AlgorithmParameterGenerator.java:getInstance",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:p[i].getProperty",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/AlgorithmParameterGenerator.java:getInstance",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:new NoSuchAlgorithmException",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/AlgorithmParameterGenerator.java:getInstance",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:Security.getProvider",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/AlgorithmParameterGenerator.java:getInstance",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:new NoSuchProviderException",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/AlgorithmParameterGenerator.java:getInstance",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:p.getProperty",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/AlgorithmParameterGenerator.java:getInstance",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:new AlgorithmParameterGenerator",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/AlgorithmParameterGenerator.java:getInstance",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:Class.forName( classname ).newInstance",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/AlgorithmParameterGenerator.java:getInstance",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:Class.forName",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/AlgorithmParameterGenerator.java:init",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:new SecureRandom",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/AlgorithmParameterGenerator.java:init",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:paramGenSpi.engineInit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/AlgorithmParameterGenerator.java:generateParameters",
+      "target": "fn:src/java/security/AlgorithmParameterGenerator.java:paramGenSpi.engineGenerateParameters",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ],
+  "metadata": {
+    "totalNodesInPart": 43,
+    "totalEdgesInPart": 120,
+    "algorithm": "file-analyzer"
+  }
+}

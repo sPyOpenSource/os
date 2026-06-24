@@ -1,0 +1,1322 @@
+{
+  "schemaVersion": 1,
+  "batchIndex": 1,
+  "part": 1,
+  "nodes": [
+    {
+      "id": "cls:src/java/io/BufferedReader.java:BufferedReader",
+      "type": "class",
+      "label": "BufferedReader",
+      "properties": {
+        "path": "src/java/io/BufferedReader.java",
+        "name": "BufferedReader",
+        "startLine": 68,
+        "endLine": 582,
+        "numMethods": 10
+      }
+    },
+    {
+      "id": "cls:src/java/lang/Integer.java:Integer",
+      "type": "class",
+      "label": "Integer",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "Integer",
+        "startLine": 5,
+        "endLine": 276,
+        "numMethods": 25
+      }
+    },
+    {
+      "id": "cls:src/java/net/DatagramSocket.java:DatagramSocket",
+      "type": "class",
+      "label": "DatagramSocket",
+      "properties": {
+        "path": "src/java/net/DatagramSocket.java",
+        "name": "DatagramSocket",
+        "startLine": 16,
+        "endLine": 106,
+        "numMethods": 8
+      }
+    },
+    {
+      "id": "cls:src/java/net/UnknownHostException.java:UnknownHostException",
+      "type": "class",
+      "label": "UnknownHostException",
+      "properties": {
+        "path": "src/java/net/UnknownHostException.java",
+        "name": "UnknownHostException",
+        "startLine": 5,
+        "endLine": 8,
+        "numMethods": 2
+      }
+    },
+    {
+      "id": "file:src/java/io/BufferedReader.java",
+      "type": "file",
+      "label": "BufferedReader.java",
+      "properties": {
+        "path": "src/java/io/BufferedReader.java",
+        "language": "java",
+        "sizeLines": 582,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/lang/Integer.java",
+      "type": "file",
+      "label": "Integer.java",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "language": "java",
+        "sizeLines": 277,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/net/DatagramSocket.java",
+      "type": "file",
+      "label": "DatagramSocket.java",
+      "properties": {
+        "path": "src/java/net/DatagramSocket.java",
+        "language": "java",
+        "sizeLines": 106,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/net/UnknownHostException.java",
+      "type": "file",
+      "label": "UnknownHostException.java",
+      "properties": {
+        "path": "src/java/net/UnknownHostException.java",
+        "language": "java",
+        "sizeLines": 8,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/jx/bio/buffercache/BufferFreeList.java",
+      "type": "file",
+      "label": "BufferFreeList.java",
+      "properties": {
+        "path": "src/jx/bio/buffercache/BufferFreeList.java",
+        "language": "java",
+        "sizeLines": 16,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/jx/classfile/InterfaceClassData.java",
+      "type": "file",
+      "label": "InterfaceClassData.java",
+      "properties": {
+        "path": "src/jx/classfile/InterfaceClassData.java",
+        "language": "java",
+        "sizeLines": 79,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/jx/classfile/constantpool/ConstantPoolData.java",
+      "type": "file",
+      "label": "ConstantPoolData.java",
+      "properties": {
+        "path": "src/jx/classfile/constantpool/ConstantPoolData.java",
+        "language": "java",
+        "sizeLines": 24,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/jx/classfile/constantpool/LibraryClassConstantData.java",
+      "type": "file",
+      "label": "LibraryClassConstantData.java",
+      "properties": {
+        "path": "src/jx/classfile/constantpool/LibraryClassConstantData.java",
+        "language": "java",
+        "sizeLines": 32,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/jx/classfile/constantpool/LibraryMethodRefConstantData.java",
+      "type": "file",
+      "label": "LibraryMethodRefConstantData.java",
+      "properties": {
+        "path": "src/jx/classfile/constantpool/LibraryMethodRefConstantData.java",
+        "language": "java",
+        "sizeLines": 54,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "fn:src/java/io/BufferedReader.java:BufferedReader",
+      "type": "function",
+      "label": "BufferedReader",
+      "properties": {
+        "path": "src/java/io/BufferedReader.java",
+        "name": "BufferedReader",
+        "startLine": 117,
+        "endLine": 122,
+        "params": [
+          "in",
+          "size"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/BufferedReader.java:close",
+      "type": "function",
+      "label": "close",
+      "properties": {
+        "path": "src/java/io/BufferedReader.java",
+        "name": "close",
+        "startLine": 550,
+        "endLine": 553,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/BufferedReader.java:fill",
+      "type": "function",
+      "label": "fill",
+      "properties": {
+        "path": "src/java/io/BufferedReader.java",
+        "name": "fill",
+        "startLine": 343,
+        "endLine": 371,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/BufferedReader.java:lineEnd",
+      "type": "function",
+      "label": "lineEnd",
+      "properties": {
+        "path": "src/java/io/BufferedReader.java",
+        "name": "lineEnd",
+        "startLine": 388,
+        "endLine": 398,
+        "params": [
+          "limit"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/BufferedReader.java:markSupported",
+      "type": "function",
+      "label": "markSupported",
+      "properties": {
+        "path": "src/java/io/BufferedReader.java",
+        "name": "markSupported",
+        "startLine": 146,
+        "endLine": 150,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/BufferedReader.java:read",
+      "type": "function",
+      "label": "read",
+      "properties": {
+        "path": "src/java/io/BufferedReader.java",
+        "name": "read",
+        "startLine": 555,
+        "endLine": 581,
+        "params": [
+          "buf",
+          "offset",
+          "count"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/BufferedReader.java:readLine",
+      "type": "function",
+      "label": "readLine",
+      "properties": {
+        "path": "src/java/io/BufferedReader.java",
+        "name": "readLine",
+        "startLine": 411,
+        "endLine": 472,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/BufferedReader.java:skip",
+      "type": "function",
+      "label": "skip",
+      "properties": {
+        "path": "src/java/io/BufferedReader.java",
+        "name": "skip",
+        "startLine": 488,
+        "endLine": 542,
+        "params": [
+          "count"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:Integer",
+      "type": "function",
+      "label": "Integer",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "Integer",
+        "startLine": 91,
+        "endLine": 94,
+        "params": [
+          "s"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:decode",
+      "type": "function",
+      "label": "decode",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "decode",
+        "startLine": 233,
+        "endLine": 233,
+        "params": [
+          "s"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:doubleValue",
+      "type": "function",
+      "label": "doubleValue",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "doubleValue",
+        "startLine": 132,
+        "endLine": 135,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:equals",
+      "type": "function",
+      "label": "equals",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "equals",
+        "startLine": 101,
+        "endLine": 109,
+        "params": [
+          "obj"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:floatValue",
+      "type": "function",
+      "label": "floatValue",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "floatValue",
+        "startLine": 127,
+        "endLine": 130,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:getChars",
+      "type": "function",
+      "label": "getChars",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "getChars",
+        "startLine": 50,
+        "endLine": 82,
+        "params": [
+          "i",
+          "index",
+          "buf"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:getInteger",
+      "type": "function",
+      "label": "getInteger",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "getInteger",
+        "startLine": 256,
+        "endLine": 275,
+        "params": [
+          "nm",
+          "val"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:hashCode",
+      "type": "function",
+      "label": "hashCode",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "hashCode",
+        "startLine": 111,
+        "endLine": 114,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:intValue",
+      "type": "function",
+      "label": "intValue",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "intValue",
+        "startLine": 116,
+        "endLine": 119,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:longValue",
+      "type": "function",
+      "label": "longValue",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "longValue",
+        "startLine": 121,
+        "endLine": 124,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:parseInt",
+      "type": "function",
+      "label": "parseInt",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "parseInt",
+        "startLine": 205,
+        "endLine": 231,
+        "params": [
+          "s",
+          "radix"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:toBinaryString",
+      "type": "function",
+      "label": "toBinaryString",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "toBinaryString",
+        "startLine": 195,
+        "endLine": 198,
+        "params": [
+          "i"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:toHexString",
+      "type": "function",
+      "label": "toHexString",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "toHexString",
+        "startLine": 185,
+        "endLine": 188,
+        "params": [
+          "i"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:toOctalString",
+      "type": "function",
+      "label": "toOctalString",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "toOctalString",
+        "startLine": 190,
+        "endLine": 193,
+        "params": [
+          "i"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:toString",
+      "type": "function",
+      "label": "toString",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "toString",
+        "startLine": 142,
+        "endLine": 167,
+        "params": [
+          "value",
+          "radix"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:toUnsignedString",
+      "type": "function",
+      "label": "toUnsignedString",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "toUnsignedString",
+        "startLine": 170,
+        "endLine": 183,
+        "params": [
+          "value",
+          "shift"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:valueOf",
+      "type": "function",
+      "label": "valueOf",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "valueOf",
+        "startLine": 240,
+        "endLine": 243,
+        "params": [
+          "s",
+          "radix"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/DatagramSocket.java:DatagramSocket",
+      "type": "function",
+      "label": "DatagramSocket",
+      "properties": {
+        "path": "src/java/net/DatagramSocket.java",
+        "name": "DatagramSocket",
+        "startLine": 97,
+        "endLine": 99,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/DatagramSocket.java:close",
+      "type": "function",
+      "label": "close",
+      "properties": {
+        "path": "src/java/net/DatagramSocket.java",
+        "name": "close",
+        "startLine": 31,
+        "endLine": 33,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/DatagramSocket.java:getLocalPort",
+      "type": "function",
+      "label": "getLocalPort",
+      "properties": {
+        "path": "src/java/net/DatagramSocket.java",
+        "name": "getLocalPort",
+        "startLine": 84,
+        "endLine": 86,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/DatagramSocket.java:receive",
+      "type": "function",
+      "label": "receive",
+      "properties": {
+        "path": "src/java/net/DatagramSocket.java",
+        "name": "receive",
+        "startLine": 35,
+        "endLine": 67,
+        "params": [
+          "p"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/DatagramSocket.java:send",
+      "type": "function",
+      "label": "send",
+      "properties": {
+        "path": "src/java/net/DatagramSocket.java",
+        "name": "send",
+        "startLine": 69,
+        "endLine": 82,
+        "params": [
+          "p"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/DatagramSocket.java:setSoTimeout",
+      "type": "function",
+      "label": "setSoTimeout",
+      "properties": {
+        "path": "src/java/net/DatagramSocket.java",
+        "name": "setSoTimeout",
+        "startLine": 101,
+        "endLine": 105,
+        "params": [
+          "timeout"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/UnknownHostException.java:UnknownHostException",
+      "type": "function",
+      "label": "UnknownHostException",
+      "properties": {
+        "path": "src/java/net/UnknownHostException.java",
+        "name": "UnknownHostException",
+        "startLine": 7,
+        "endLine": 7,
+        "params": []
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/java/io/BufferedReader.java",
+      "target": "cls:src/java/io/BufferedReader.java:BufferedReader",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/BufferedReader.java",
+      "target": "cls:src/java/io/BufferedReader.java:BufferedReader",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/BufferedReader.java",
+      "target": "fn:src/java/io/BufferedReader.java:BufferedReader",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/BufferedReader.java",
+      "target": "fn:src/java/io/BufferedReader.java:BufferedReader",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/BufferedReader.java",
+      "target": "fn:src/java/io/BufferedReader.java:BufferedReader",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/BufferedReader.java",
+      "target": "fn:src/java/io/BufferedReader.java:BufferedReader",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/BufferedReader.java",
+      "target": "fn:src/java/io/BufferedReader.java:markSupported",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/BufferedReader.java",
+      "target": "fn:src/java/io/BufferedReader.java:markSupported",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/BufferedReader.java",
+      "target": "fn:src/java/io/BufferedReader.java:fill",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/BufferedReader.java",
+      "target": "fn:src/java/io/BufferedReader.java:lineEnd",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/BufferedReader.java",
+      "target": "fn:src/java/io/BufferedReader.java:readLine",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/BufferedReader.java",
+      "target": "fn:src/java/io/BufferedReader.java:readLine",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/BufferedReader.java",
+      "target": "fn:src/java/io/BufferedReader.java:skip",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/BufferedReader.java",
+      "target": "fn:src/java/io/BufferedReader.java:skip",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/BufferedReader.java",
+      "target": "fn:src/java/io/BufferedReader.java:close",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/BufferedReader.java",
+      "target": "fn:src/java/io/BufferedReader.java:close",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/BufferedReader.java",
+      "target": "fn:src/java/io/BufferedReader.java:read",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/BufferedReader.java",
+      "target": "fn:src/java/io/BufferedReader.java:read",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/BufferedReader.java:readLine",
+      "target": "fn:src/java/io/BufferedReader.java:read",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/BufferedReader.java:readLine",
+      "target": "fn:src/java/io/BufferedReader.java:lineEnd",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/BufferedReader.java:skip",
+      "target": "fn:src/java/io/BufferedReader.java:read",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/BufferedReader.java:skip",
+      "target": "fn:src/java/io/BufferedReader.java:fill",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "cls:src/java/lang/Integer.java:Integer",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "cls:src/java/lang/Integer.java:Integer",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:getChars",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:Integer",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:Integer",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:Integer",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:Integer",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:toString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:toString",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:equals",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:equals",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:hashCode",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:hashCode",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:intValue",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:intValue",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:longValue",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:longValue",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:floatValue",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:floatValue",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:doubleValue",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:doubleValue",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:toString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:toString",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:toString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:toString",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:toUnsignedString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:toHexString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:toHexString",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:toOctalString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:toOctalString",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:toBinaryString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:toBinaryString",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:parseInt",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:parseInt",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:parseInt",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:parseInt",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:decode",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:decode",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:valueOf",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:valueOf",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:valueOf",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:valueOf",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:getInteger",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:getInteger",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:getInteger",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:getInteger",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:getInteger",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:getInteger",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:Integer",
+      "target": "fn:src/java/lang/Integer.java:parseInt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:toString",
+      "target": "fn:src/java/lang/Integer.java:toString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:toHexString",
+      "target": "fn:src/java/lang/Integer.java:toUnsignedString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:toOctalString",
+      "target": "fn:src/java/lang/Integer.java:toUnsignedString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:toBinaryString",
+      "target": "fn:src/java/lang/Integer.java:toUnsignedString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:parseInt",
+      "target": "fn:src/java/lang/Integer.java:parseInt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:decode",
+      "target": "fn:src/java/lang/Integer.java:valueOf",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:valueOf",
+      "target": "fn:src/java/lang/Integer.java:parseInt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:getInteger",
+      "target": "fn:src/java/lang/Integer.java:getInteger",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:getInteger",
+      "target": "fn:src/java/lang/Integer.java:valueOf",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/DatagramSocket.java",
+      "target": "cls:src/java/net/DatagramSocket.java:DatagramSocket",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/DatagramSocket.java",
+      "target": "cls:src/java/net/DatagramSocket.java:DatagramSocket",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/DatagramSocket.java",
+      "target": "fn:src/java/net/DatagramSocket.java:close",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/DatagramSocket.java",
+      "target": "fn:src/java/net/DatagramSocket.java:close",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/DatagramSocket.java",
+      "target": "fn:src/java/net/DatagramSocket.java:receive",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/DatagramSocket.java",
+      "target": "fn:src/java/net/DatagramSocket.java:receive",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/DatagramSocket.java",
+      "target": "fn:src/java/net/DatagramSocket.java:send",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/DatagramSocket.java",
+      "target": "fn:src/java/net/DatagramSocket.java:send",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/DatagramSocket.java",
+      "target": "fn:src/java/net/DatagramSocket.java:getLocalPort",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/DatagramSocket.java",
+      "target": "fn:src/java/net/DatagramSocket.java:getLocalPort",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/DatagramSocket.java",
+      "target": "fn:src/java/net/DatagramSocket.java:DatagramSocket",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/DatagramSocket.java",
+      "target": "fn:src/java/net/DatagramSocket.java:DatagramSocket",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/DatagramSocket.java",
+      "target": "fn:src/java/net/DatagramSocket.java:DatagramSocket",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/DatagramSocket.java",
+      "target": "fn:src/java/net/DatagramSocket.java:DatagramSocket",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/DatagramSocket.java",
+      "target": "fn:src/java/net/DatagramSocket.java:setSoTimeout",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/DatagramSocket.java",
+      "target": "fn:src/java/net/DatagramSocket.java:setSoTimeout",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/UnknownHostException.java",
+      "target": "cls:src/java/net/UnknownHostException.java:UnknownHostException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/UnknownHostException.java",
+      "target": "cls:src/java/net/UnknownHostException.java:UnknownHostException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/UnknownHostException.java",
+      "target": "fn:src/java/net/UnknownHostException.java:UnknownHostException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/UnknownHostException.java",
+      "target": "fn:src/java/net/UnknownHostException.java:UnknownHostException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/UnknownHostException.java",
+      "target": "fn:src/java/net/UnknownHostException.java:UnknownHostException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/UnknownHostException.java",
+      "target": "fn:src/java/net/UnknownHostException.java:UnknownHostException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/BufferedReader.java",
+      "target": "file:src/jx/zero/Debug.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/java/io/BufferedReader.java",
+      "target": "file:src/jx/zero/LookupHelper.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "fn:src/java/io/BufferedReader.java:fill",
+      "target": "fn:src/java/io/BufferedReader.java:checkStatus",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/BufferedReader.java:fill",
+      "target": "fn:src/java/io/BufferedReader.java:in.read",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/BufferedReader.java:readLine",
+      "target": "fn:src/java/io/BufferedReader.java:checkStatus",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/BufferedReader.java:readLine",
+      "target": "fn:src/java/io/BufferedReader.java:new String",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/BufferedReader.java:readLine",
+      "target": "fn:src/java/io/BufferedReader.java:new StringBuilder",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/BufferedReader.java:readLine",
+      "target": "fn:src/java/io/BufferedReader.java:sbuf.length",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/BufferedReader.java:readLine",
+      "target": "fn:src/java/io/BufferedReader.java:sbuf.toString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/BufferedReader.java:skip",
+      "target": "fn:src/java/io/BufferedReader.java:checkStatus",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/BufferedReader.java:close",
+      "target": "fn:src/java/io/BufferedReader.java:new UnsupportedOperationException",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/BufferedReader.java:read",
+      "target": "fn:src/java/io/BufferedReader.java:InitialNaming.getInitialNaming().lookup",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/BufferedReader.java:read",
+      "target": "fn:src/java/io/BufferedReader.java:InitialNaming.getInitialNaming",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/BufferedReader.java:read",
+      "target": "fn:src/java/io/BufferedReader.java:memoryManager.alloc",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/BufferedReader.java:read",
+      "target": "fn:src/java/io/BufferedReader.java:LookupHelper.waitUntilPortalAvailable",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/BufferedReader.java:read",
+      "target": "fn:src/java/io/BufferedReader.java:fs.lookup",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/BufferedReader.java:read",
+      "target": "fn:src/java/io/BufferedReader.java:fsobj.getLength",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/BufferedReader.java:read",
+      "target": "fn:src/java/io/BufferedReader.java:Debug.out.println",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ],
+  "metadata": {
+    "totalNodesInPart": 45,
+    "totalEdgesInPart": 120,
+    "algorithm": "file-analyzer"
+  }
+}

@@ -1,0 +1,656 @@
+{
+  "batchIndex": 7,
+  "part": 2,
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "4c2b901fb6156322",
+      "type": "class",
+      "name": "USBPipe",
+      "filePath": "src/org/jnode/driver/bus/usb/USBPipe.java",
+      "startLine": 26,
+      "endLine": 96,
+      "methods": [
+        "isControlPipe",
+        "isInterruptPipe",
+        "isIsochronousPipe",
+        "isBulkPipe",
+        "isOpen",
+        "open",
+        "close",
+        "asyncSubmit",
+        "syncSubmit",
+        "addListener",
+        "removeListener"
+      ],
+      "properties": []
+    },
+    {
+      "id": "6483a733cceba0df",
+      "type": "class",
+      "name": "USBPipeListener",
+      "filePath": "src/org/jnode/driver/bus/usb/USBPipeListener.java",
+      "startLine": 26,
+      "endLine": 42,
+      "methods": [
+        "requestCompleted",
+        "requestFailed"
+      ],
+      "properties": []
+    },
+    {
+      "id": "59ab110de9c023f4",
+      "type": "class",
+      "name": "USBRequest",
+      "filePath": "src/org/jnode/driver/bus/usb/USBRequest.java",
+      "startLine": 26,
+      "endLine": 51,
+      "methods": [
+        "getActualLength",
+        "isCompleted",
+        "getStatus",
+        "waitUntilComplete"
+      ],
+      "properties": []
+    },
+    {
+      "id": "5752d23c8156a465",
+      "type": "class",
+      "name": "HubDescriptor",
+      "filePath": "src/org/jnode/driver/bus/usb/hub/HubDescriptor.java",
+      "startLine": 29,
+      "endLine": 114,
+      "methods": [
+        "HubDescriptor",
+        "getNumPorts",
+        "getCharacteristics",
+        "getLogicalPowerSwitchingMode",
+        "getPowerOn2PowerGood",
+        "getHubControllerCurrent",
+        "isRemovableDevice",
+        "toString"
+      ],
+      "properties": []
+    },
+    {
+      "id": "0f3bf9e35e60f5ea",
+      "type": "dependency",
+      "name": "NumberUtils.java",
+      "filePath": "src/org/jnode/util/NumberUtils.java"
+    },
+    {
+      "id": "ccdbdd1abdf0422e",
+      "type": "dependency",
+      "name": "HashMap.java",
+      "filePath": "src/java/util/HashMap.java"
+    },
+    {
+      "id": "9f8c27244e4712c4",
+      "type": "dependency",
+      "name": "UHCICore.java",
+      "filePath": "src/org/jnode/driver/bus/usb/uhci/UHCICore.java"
+    },
+    {
+      "id": "d849390c2126a99e",
+      "type": "dependency",
+      "name": "UHCIPipe.java",
+      "filePath": "src/org/jnode/driver/bus/usb/uhci/UHCIPipe.java"
+    },
+    {
+      "id": "a2bd5469180dfc05",
+      "type": "dependency",
+      "name": "MemberName.java",
+      "filePath": "src/java/lang/invoke/MemberName.java"
+    },
+    {
+      "id": "1242ccb2dd2bd17d",
+      "type": "dependency",
+      "name": "String.java",
+      "filePath": "src/java/lang/String.java"
+    },
+    {
+      "id": "5a374aa45f86a63b",
+      "type": "dependency",
+      "name": "Throwable.java",
+      "filePath": "src/java/lang/Throwable.java"
+    },
+    {
+      "id": "aef27ad7225cb970",
+      "type": "dependency",
+      "name": "UHCIPipeManager.java",
+      "filePath": "src/org/jnode/driver/bus/usb/uhci/UHCIPipeManager.java"
+    },
+    {
+      "id": "940ab53214411854",
+      "type": "dependency",
+      "name": "UHCIDriver.java",
+      "filePath": "src/org/jnode/driver/bus/usb/uhci/UHCIDriver.java"
+    },
+    {
+      "id": "6e06b1d948a7258b",
+      "type": "dependency",
+      "name": "USBHubDriver.java",
+      "filePath": "src/org/jnode/driver/bus/usb/hub/USBHubDriver.java"
+    },
+    {
+      "id": "ea234d4652eb6d99",
+      "type": "dependency",
+      "name": "AbstractUSBControlRequest.java",
+      "filePath": "src/org/jnode/driver/bus/usb/spi/AbstractUSBControlRequest.java"
+    },
+    {
+      "id": "cf5f27ef01908941",
+      "type": "dependency",
+      "name": "UHCIControlPipe.java",
+      "filePath": "src/org/jnode/driver/bus/usb/uhci/UHCIControlPipe.java"
+    },
+    {
+      "id": "90c6c68920958bab",
+      "type": "dependency",
+      "name": "UHCIControlRequest.java",
+      "filePath": "src/org/jnode/driver/bus/usb/uhci/UHCIControlRequest.java"
+    },
+    {
+      "id": "4481bd6a7f2d2f13",
+      "type": "dependency",
+      "name": "UHCIRootHub.java",
+      "filePath": "src/org/jnode/driver/bus/usb/uhci/UHCIRootHub.java"
+    },
+    {
+      "id": "bc9aea59cb87c5bd",
+      "type": "dependency",
+      "name": "USBHubConstants.java",
+      "filePath": "src/org/jnode/driver/bus/usb/hub/USBHubConstants.java"
+    },
+    {
+      "id": "07deafdc0eea0ded",
+      "type": "dependency",
+      "name": "USBHubDeviceToDriverMapper.java",
+      "filePath": "src/org/jnode/driver/bus/usb/hub/USBHubDeviceToDriverMapper.java"
+    },
+    {
+      "id": "c15c8e02651221c4",
+      "type": "dependency",
+      "name": "Schedule.java",
+      "filePath": "src/org/jnode/driver/bus/usb/uhci/Schedule.java"
+    },
+    {
+      "id": "04a996a4d23e48cd",
+      "type": "dependency",
+      "name": "UHCIDataRequest.java",
+      "filePath": "src/org/jnode/driver/bus/usb/uhci/UHCIDataRequest.java"
+    },
+    {
+      "id": "1a7a70073c6f0072",
+      "type": "dependency",
+      "name": "UHCIDataPipe.java",
+      "filePath": "src/org/jnode/driver/bus/usb/uhci/UHCIDataPipe.java"
+    },
+    {
+      "id": "b898b8e34e6fb398",
+      "type": "dependency",
+      "name": "UHCIRequest.java",
+      "filePath": "src/org/jnode/driver/bus/usb/uhci/UHCIRequest.java"
+    },
+    {
+      "id": "34a23e2585dd6a5d",
+      "type": "dependency",
+      "name": "PortStatus.java",
+      "filePath": "src/org/jnode/driver/bus/usb/hub/PortStatus.java"
+    },
+    {
+      "id": "3510bd6a3e4f45cc",
+      "type": "dependency",
+      "name": "AbstractUSBDataRequest.java",
+      "filePath": "src/org/jnode/driver/bus/usb/spi/AbstractUSBDataRequest.java"
+    },
+    {
+      "id": "f878ec034019f67f",
+      "type": "dependency",
+      "name": "AbstractUSBRequest.java",
+      "filePath": "src/org/jnode/driver/bus/usb/spi/AbstractUSBRequest.java"
+    }
+  ],
+  "edges": [
+    {
+      "source": "6893936043bd4ef7",
+      "target": "4c2b901fb6156322",
+      "type": "contains"
+    },
+    {
+      "source": "4c2b901fb6156322",
+      "target": "6893936043bd4ef7",
+      "type": "exports"
+    },
+    {
+      "source": "9624bbe4323f195a",
+      "target": "6483a733cceba0df",
+      "type": "contains"
+    },
+    {
+      "source": "6483a733cceba0df",
+      "target": "9624bbe4323f195a",
+      "type": "exports"
+    },
+    {
+      "source": "eb532e5dbcea491f",
+      "target": "59ab110de9c023f4",
+      "type": "contains"
+    },
+    {
+      "source": "59ab110de9c023f4",
+      "target": "eb532e5dbcea491f",
+      "type": "exports"
+    },
+    {
+      "source": "a297a8db9da378b0",
+      "target": "5752d23c8156a465",
+      "type": "contains"
+    },
+    {
+      "source": "5752d23c8156a465",
+      "target": "a297a8db9da378b0",
+      "type": "exports"
+    },
+    {
+      "source": "57d95c13e8218b09",
+      "target": "0f3bf9e35e60f5ea",
+      "type": "imports"
+    },
+    {
+      "source": "af297f278c7a747c",
+      "target": "ccdbdd1abdf0422e",
+      "type": "imports"
+    },
+    {
+      "source": "ab5c5599b45ef690",
+      "target": "9f8c27244e4712c4",
+      "type": "imports"
+    },
+    {
+      "source": "ab5c5599b45ef690",
+      "target": "0f3bf9e35e60f5ea",
+      "type": "imports"
+    },
+    {
+      "source": "e61248f14f0233ec",
+      "target": "0f3bf9e35e60f5ea",
+      "type": "imports"
+    },
+    {
+      "source": "a297a8db9da378b0",
+      "target": "0f3bf9e35e60f5ea",
+      "type": "imports"
+    },
+    {
+      "source": "4a3179f54d007b65",
+      "target": "d849390c2126a99e",
+      "type": "depends_on"
+    },
+    {
+      "source": "4f152b0b7709d041",
+      "target": "a2bd5469180dfc05",
+      "type": "depends_on"
+    },
+    {
+      "source": "4f152b0b7709d041",
+      "target": "1242ccb2dd2bd17d",
+      "type": "depends_on"
+    },
+    {
+      "source": "4f152b0b7709d041",
+      "target": "5a374aa45f86a63b",
+      "type": "depends_on"
+    },
+    {
+      "source": "4f152b0b7709d041",
+      "target": "d849390c2126a99e",
+      "type": "depends_on"
+    },
+    {
+      "source": "4f152b0b7709d041",
+      "target": "aef27ad7225cb970",
+      "type": "depends_on"
+    },
+    {
+      "source": "076ddf547a517e0f",
+      "target": "940ab53214411854",
+      "type": "depends_on"
+    },
+    {
+      "source": "57d95c13e8218b09",
+      "target": "0f3bf9e35e60f5ea",
+      "type": "depends_on"
+    },
+    {
+      "source": "fed3bf8d3a0cde39",
+      "target": "aef27ad7225cb970",
+      "type": "depends_on"
+    },
+    {
+      "source": "6d26fb67eb7ee99d",
+      "target": "6e06b1d948a7258b",
+      "type": "depends_on"
+    },
+    {
+      "source": "6d26fb67eb7ee99d",
+      "target": "ea234d4652eb6d99",
+      "type": "depends_on"
+    },
+    {
+      "source": "6d26fb67eb7ee99d",
+      "target": "cf5f27ef01908941",
+      "type": "depends_on"
+    },
+    {
+      "source": "6d26fb67eb7ee99d",
+      "target": "90c6c68920958bab",
+      "type": "depends_on"
+    },
+    {
+      "source": "f1dc8594172894a5",
+      "target": "6e06b1d948a7258b",
+      "type": "depends_on"
+    },
+    {
+      "source": "f1dc8594172894a5",
+      "target": "9f8c27244e4712c4",
+      "type": "depends_on"
+    },
+    {
+      "source": "f1dc8594172894a5",
+      "target": "4481bd6a7f2d2f13",
+      "type": "depends_on"
+    },
+    {
+      "source": "c00dd74772ead742",
+      "target": "bc9aea59cb87c5bd",
+      "type": "depends_on"
+    },
+    {
+      "source": "c00dd74772ead742",
+      "target": "07deafdc0eea0ded",
+      "type": "depends_on"
+    },
+    {
+      "source": "c00dd74772ead742",
+      "target": "c15c8e02651221c4",
+      "type": "depends_on"
+    },
+    {
+      "source": "c00dd74772ead742",
+      "target": "90c6c68920958bab",
+      "type": "depends_on"
+    },
+    {
+      "source": "c00dd74772ead742",
+      "target": "04a996a4d23e48cd",
+      "type": "depends_on"
+    },
+    {
+      "source": "c00dd74772ead742",
+      "target": "d849390c2126a99e",
+      "type": "depends_on"
+    },
+    {
+      "source": "c00dd74772ead742",
+      "target": "aef27ad7225cb970",
+      "type": "depends_on"
+    },
+    {
+      "source": "e488b78aa40cb794",
+      "target": "6e06b1d948a7258b",
+      "type": "depends_on"
+    },
+    {
+      "source": "e488b78aa40cb794",
+      "target": "cf5f27ef01908941",
+      "type": "depends_on"
+    },
+    {
+      "source": "e488b78aa40cb794",
+      "target": "9f8c27244e4712c4",
+      "type": "depends_on"
+    },
+    {
+      "source": "e488b78aa40cb794",
+      "target": "aef27ad7225cb970",
+      "type": "depends_on"
+    },
+    {
+      "source": "5262c3c276b4459d",
+      "target": "1a7a70073c6f0072",
+      "type": "depends_on"
+    },
+    {
+      "source": "af297f278c7a747c",
+      "target": "ccdbdd1abdf0422e",
+      "type": "depends_on"
+    },
+    {
+      "source": "af297f278c7a747c",
+      "target": "07deafdc0eea0ded",
+      "type": "depends_on"
+    },
+    {
+      "source": "af297f278c7a747c",
+      "target": "6e06b1d948a7258b",
+      "type": "depends_on"
+    },
+    {
+      "source": "af297f278c7a747c",
+      "target": "cf5f27ef01908941",
+      "type": "depends_on"
+    },
+    {
+      "source": "af297f278c7a747c",
+      "target": "9f8c27244e4712c4",
+      "type": "depends_on"
+    },
+    {
+      "source": "af297f278c7a747c",
+      "target": "1a7a70073c6f0072",
+      "type": "depends_on"
+    },
+    {
+      "source": "af297f278c7a747c",
+      "target": "d849390c2126a99e",
+      "type": "depends_on"
+    },
+    {
+      "source": "af297f278c7a747c",
+      "target": "aef27ad7225cb970",
+      "type": "depends_on"
+    },
+    {
+      "source": "af297f278c7a747c",
+      "target": "4481bd6a7f2d2f13",
+      "type": "depends_on"
+    },
+    {
+      "source": "8f1d35ed0297b767",
+      "target": "cf5f27ef01908941",
+      "type": "depends_on"
+    },
+    {
+      "source": "8f1d35ed0297b767",
+      "target": "9f8c27244e4712c4",
+      "type": "depends_on"
+    },
+    {
+      "source": "8f1d35ed0297b767",
+      "target": "1a7a70073c6f0072",
+      "type": "depends_on"
+    },
+    {
+      "source": "8f1d35ed0297b767",
+      "target": "04a996a4d23e48cd",
+      "type": "depends_on"
+    },
+    {
+      "source": "8f1d35ed0297b767",
+      "target": "d849390c2126a99e",
+      "type": "depends_on"
+    },
+    {
+      "source": "8f1d35ed0297b767",
+      "target": "aef27ad7225cb970",
+      "type": "depends_on"
+    },
+    {
+      "source": "1aa9a0e04881b764",
+      "target": "6e06b1d948a7258b",
+      "type": "depends_on"
+    },
+    {
+      "source": "1aa9a0e04881b764",
+      "target": "90c6c68920958bab",
+      "type": "depends_on"
+    },
+    {
+      "source": "1aa9a0e04881b764",
+      "target": "d849390c2126a99e",
+      "type": "depends_on"
+    },
+    {
+      "source": "1aa9a0e04881b764",
+      "target": "b898b8e34e6fb398",
+      "type": "depends_on"
+    },
+    {
+      "source": "a8b1d3979c9eb1ef",
+      "target": "9f8c27244e4712c4",
+      "type": "depends_on"
+    },
+    {
+      "source": "a8b1d3979c9eb1ef",
+      "target": "940ab53214411854",
+      "type": "depends_on"
+    },
+    {
+      "source": "4db9e7ffe6b1985f",
+      "target": "6e06b1d948a7258b",
+      "type": "depends_on"
+    },
+    {
+      "source": "4db9e7ffe6b1985f",
+      "target": "9f8c27244e4712c4",
+      "type": "depends_on"
+    },
+    {
+      "source": "4db9e7ffe6b1985f",
+      "target": "4481bd6a7f2d2f13",
+      "type": "depends_on"
+    },
+    {
+      "source": "ab5c5599b45ef690",
+      "target": "9f8c27244e4712c4",
+      "type": "depends_on"
+    },
+    {
+      "source": "ab5c5599b45ef690",
+      "target": "0f3bf9e35e60f5ea",
+      "type": "depends_on"
+    },
+    {
+      "source": "ab5c5599b45ef690",
+      "target": "6e06b1d948a7258b",
+      "type": "depends_on"
+    },
+    {
+      "source": "e61248f14f0233ec",
+      "target": "0f3bf9e35e60f5ea",
+      "type": "depends_on"
+    },
+    {
+      "source": "e61248f14f0233ec",
+      "target": "34a23e2585dd6a5d",
+      "type": "depends_on"
+    },
+    {
+      "source": "e61248f14f0233ec",
+      "target": "ea234d4652eb6d99",
+      "type": "depends_on"
+    },
+    {
+      "source": "e61248f14f0233ec",
+      "target": "3510bd6a3e4f45cc",
+      "type": "depends_on"
+    },
+    {
+      "source": "e61248f14f0233ec",
+      "target": "cf5f27ef01908941",
+      "type": "depends_on"
+    },
+    {
+      "source": "e61248f14f0233ec",
+      "target": "90c6c68920958bab",
+      "type": "depends_on"
+    },
+    {
+      "source": "e61248f14f0233ec",
+      "target": "1a7a70073c6f0072",
+      "type": "depends_on"
+    },
+    {
+      "source": "e61248f14f0233ec",
+      "target": "04a996a4d23e48cd",
+      "type": "depends_on"
+    },
+    {
+      "source": "6893936043bd4ef7",
+      "target": "9f8c27244e4712c4",
+      "type": "depends_on"
+    },
+    {
+      "source": "6893936043bd4ef7",
+      "target": "d849390c2126a99e",
+      "type": "depends_on"
+    },
+    {
+      "source": "6893936043bd4ef7",
+      "target": "aef27ad7225cb970",
+      "type": "depends_on"
+    },
+    {
+      "source": "9624bbe4323f195a",
+      "target": "d849390c2126a99e",
+      "type": "depends_on"
+    },
+    {
+      "source": "eb532e5dbcea491f",
+      "target": "6e06b1d948a7258b",
+      "type": "depends_on"
+    },
+    {
+      "source": "eb532e5dbcea491f",
+      "target": "f878ec034019f67f",
+      "type": "depends_on"
+    },
+    {
+      "source": "eb532e5dbcea491f",
+      "target": "cf5f27ef01908941",
+      "type": "depends_on"
+    },
+    {
+      "source": "eb532e5dbcea491f",
+      "target": "1a7a70073c6f0072",
+      "type": "depends_on"
+    },
+    {
+      "source": "eb532e5dbcea491f",
+      "target": "d849390c2126a99e",
+      "type": "depends_on"
+    },
+    {
+      "source": "eb532e5dbcea491f",
+      "target": "b898b8e34e6fb398",
+      "type": "depends_on"
+    },
+    {
+      "source": "a297a8db9da378b0",
+      "target": "0f3bf9e35e60f5ea",
+      "type": "depends_on"
+    }
+  ]
+}

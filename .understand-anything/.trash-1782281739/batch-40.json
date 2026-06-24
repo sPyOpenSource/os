@@ -1,0 +1,613 @@
+{
+  "batchIndex": 40,
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "3f1496c158da80",
+      "type": "file",
+      "name": "ThreadListCAS.java",
+      "filePath": "src/jx/scheduler/ThreadListCAS.java",
+      "language": "java",
+      "totalLines": 17,
+      "nonEmptyLines": 14,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "08fa7943a09b46",
+      "type": "class",
+      "name": "ThreadListCAS",
+      "filePath": "src/jx/scheduler/ThreadListCAS.java",
+      "startLine": 5,
+      "endLine": 17
+    },
+    {
+      "id": "a912b4d01cbf81",
+      "type": "file",
+      "name": "BlockIOSecurityPolicy.java",
+      "filePath": "src/jx/secmgr/BlockIOSecurityPolicy.java",
+      "language": "java",
+      "totalLines": 52,
+      "nonEmptyLines": 41,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "6eb0dbd7874a10",
+      "type": "class",
+      "name": "BlockIOSecurityPolicy",
+      "filePath": "src/jx/secmgr/BlockIOSecurityPolicy.java",
+      "startLine": 6,
+      "endLine": 52
+    },
+    {
+      "id": "b4c63304ba3069",
+      "type": "file",
+      "name": "FileSystemSecurityPolicy.java",
+      "filePath": "src/jx/secmgr/FileSystemSecurityPolicy.java",
+      "language": "java",
+      "totalLines": 146,
+      "nonEmptyLines": 129,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "e6fe847bf4fb6f",
+      "type": "class",
+      "name": "FileSystemSecurityPolicy",
+      "filePath": "src/jx/secmgr/FileSystemSecurityPolicy.java",
+      "startLine": 6,
+      "endLine": 146
+    },
+    {
+      "id": "05bbff3b691f51",
+      "type": "file",
+      "name": "MySecurityPolicy.java",
+      "filePath": "src/jx/secmgr/MySecurityPolicy.java",
+      "language": "java",
+      "totalLines": 92,
+      "nonEmptyLines": 77,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "62af8b89af1f67",
+      "type": "class",
+      "name": "MySecurityPolicy",
+      "filePath": "src/jx/secmgr/MySecurityPolicy.java",
+      "startLine": 6,
+      "endLine": 92
+    },
+    {
+      "id": "31c87a02cbfdd2",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/secmgr/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false
+    },
+    {
+      "id": "a664c89cf48269",
+      "type": "file",
+      "name": "Principal_impl.java",
+      "filePath": "src/jx/secmgr/Principal_impl.java",
+      "language": "java",
+      "totalLines": 17,
+      "nonEmptyLines": 12,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "65ce82acde3b23",
+      "type": "class",
+      "name": "Principal_impl",
+      "filePath": "src/jx/secmgr/Principal_impl.java",
+      "startLine": 5,
+      "endLine": 16
+    },
+    {
+      "id": "123af7f13a5c8a",
+      "type": "file",
+      "name": "SecMgr.java",
+      "filePath": "src/jx/secmgr/SecMgr.java",
+      "language": "java",
+      "totalLines": 83,
+      "nonEmptyLines": 68,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "521359f19cdee5",
+      "type": "class",
+      "name": "SecMgr",
+      "filePath": "src/jx/secmgr/SecMgr.java",
+      "startLine": 7,
+      "endLine": 83
+    },
+    {
+      "id": "549f6c582cb5aa",
+      "type": "file",
+      "name": "SecMgrSecurityPolicy.java",
+      "filePath": "src/jx/secmgr/SecMgrSecurityPolicy.java",
+      "language": "java",
+      "totalLines": 59,
+      "nonEmptyLines": 44,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "456f588d0e1c51",
+      "type": "class",
+      "name": "SecMgrSecurityPolicy",
+      "filePath": "src/jx/secmgr/SecMgrSecurityPolicy.java",
+      "startLine": 6,
+      "endLine": 59
+    },
+    {
+      "id": "4c7c9619b92dc0",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/streams/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false
+    },
+    {
+      "id": "6064306a70a3f6",
+      "type": "file",
+      "name": "StreamProvider.java",
+      "filePath": "src/jx/streams/StreamProvider.java",
+      "language": "java",
+      "totalLines": 10,
+      "nonEmptyLines": 8,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "3313f880312ac5",
+      "type": "class",
+      "name": "StreamProvider",
+      "filePath": "src/jx/streams/StreamProvider.java",
+      "startLine": 5,
+      "endLine": 10
+    },
+    {
+      "id": "734b5d1edb2ce2",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/synch/blocking/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false
+    },
+    {
+      "id": "172afcaa2960bc",
+      "type": "file",
+      "name": "Queue.java",
+      "filePath": "src/jx/synch/blocking/Queue.java",
+      "language": "java",
+      "totalLines": 45,
+      "nonEmptyLines": 36,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 2
+      }
+    },
+    {
+      "id": "45ee2c6f61f3a6",
+      "type": "class",
+      "name": "Node",
+      "filePath": "src/jx/synch/blocking/Queue.java",
+      "startLine": 11,
+      "endLine": 15
+    },
+    {
+      "id": "27f01958d5af27",
+      "type": "class",
+      "name": "Queue",
+      "filePath": "src/jx/synch/blocking/Queue.java",
+      "startLine": 17,
+      "endLine": 45
+    },
+    {
+      "id": "deecd97d42412e",
+      "type": "file",
+      "name": "Test.java",
+      "filePath": "src/jx/synch/blocking/Test.java",
+      "language": "java",
+      "totalLines": 41,
+      "nonEmptyLines": 31,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "5a18bf0116c18d",
+      "type": "class",
+      "name": "Test",
+      "filePath": "src/jx/synch/blocking/Test.java",
+      "startLine": 6,
+      "endLine": 41
+    },
+    {
+      "id": "a6fe207d0d44c6",
+      "type": "file",
+      "name": "BlockingLock.java",
+      "filePath": "src/jx/synch/mutex/BlockingLock.java",
+      "language": "java",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "586dd13323b00f",
+      "type": "class",
+      "name": "BlockingLock",
+      "filePath": "src/jx/synch/mutex/BlockingLock.java",
+      "startLine": 3,
+      "endLine": 6
+    },
+    {
+      "id": "b0d6a1d37d9c44",
+      "type": "file",
+      "name": "BlockingLockImpl.java",
+      "filePath": "src/jx/synch/mutex/BlockingLockImpl.java",
+      "language": "java",
+      "totalLines": 77,
+      "nonEmptyLines": 65,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "38b2301a1c9d09",
+      "type": "class",
+      "name": "BlockingLockImpl",
+      "filePath": "src/jx/synch/mutex/BlockingLockImpl.java",
+      "startLine": 5,
+      "endLine": 77
+    },
+    {
+      "id": "ade4d45c4d71a2",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/synch/mutex/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false
+    },
+    {
+      "id": "7f3bdd8b862fd8",
+      "type": "file",
+      "name": "Test.java",
+      "filePath": "src/jx/synch/mutex/Test.java",
+      "language": "java",
+      "totalLines": 29,
+      "nonEmptyLines": 23,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "b1473b0afb03f9",
+      "type": "class",
+      "name": "Test",
+      "filePath": "src/jx/synch/mutex/Test.java",
+      "startLine": 6,
+      "endLine": 29
+    },
+    {
+      "id": "d987479c8ce1f0",
+      "type": "file",
+      "name": "MPSCQueue.java",
+      "filePath": "src/jx/synch/nonblocking2/MPSCQueue.java",
+      "language": "java",
+      "totalLines": 38,
+      "nonEmptyLines": 31,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "6e0c01f310915e",
+      "type": "class",
+      "name": "MPSCQueue",
+      "filePath": "src/jx/synch/nonblocking2/MPSCQueue.java",
+      "startLine": 7,
+      "endLine": 38
+    },
+    {
+      "id": "463fca859517b8",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/synch/nonblocking2/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false
+    },
+    {
+      "id": "bfdb2824c57b31",
+      "type": "file",
+      "name": "Queue.java",
+      "filePath": "src/jx/synch/nonblocking2/Queue.java",
+      "language": "java",
+      "totalLines": 9,
+      "nonEmptyLines": 6,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "74963d97c45627",
+      "type": "class",
+      "name": "Queue",
+      "filePath": "src/jx/synch/nonblocking2/Queue.java",
+      "startLine": 5,
+      "endLine": 8
+    },
+    {
+      "id": "21c5347d5d3590",
+      "type": "file",
+      "name": "QueueEmptyException.java",
+      "filePath": "src/jx/synch/nonblocking2/QueueEmptyException.java",
+      "language": "java",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "9d6a745f898538",
+      "type": "class",
+      "name": "QueueEmptyException",
+      "filePath": "src/jx/synch/nonblocking2/QueueEmptyException.java",
+      "startLine": 3,
+      "endLine": 6
+    },
+    {
+      "id": "736cc3b50868a3",
+      "type": "file",
+      "name": "SPSCQueue.java",
+      "filePath": "src/jx/synch/nonblocking2/SPSCQueue.java",
+      "language": "java",
+      "totalLines": 41,
+      "nonEmptyLines": 32,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "4fa72394ca5a73",
+      "type": "class",
+      "name": "SPSCQueue",
+      "filePath": "src/jx/synch/nonblocking2/SPSCQueue.java",
+      "startLine": 7,
+      "endLine": 41
+    },
+    {
+      "id": "e9f13103c1961d",
+      "type": "file",
+      "name": "Test.java",
+      "filePath": "src/jx/synch/nonblocking2/Test.java",
+      "language": "java",
+      "totalLines": 54,
+      "nonEmptyLines": 42,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "e247a12c540c6f",
+      "type": "class",
+      "name": "Test",
+      "filePath": "src/jx/synch/nonblocking2/Test.java",
+      "startLine": 6,
+      "endLine": 54
+    },
+    {
+      "id": "3dfb0a404c74b2",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/synch/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false
+    },
+    {
+      "id": "f2c7050827b5b1",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/timer/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "3f1496c158da80",
+      "target": "08fa7943a09b46",
+      "type": "contains"
+    },
+    {
+      "source": "a912b4d01cbf81",
+      "target": "6eb0dbd7874a10",
+      "type": "contains"
+    },
+    {
+      "source": "b4c63304ba3069",
+      "target": "e6fe847bf4fb6f",
+      "type": "contains"
+    },
+    {
+      "source": "05bbff3b691f51",
+      "target": "62af8b89af1f67",
+      "type": "contains"
+    },
+    {
+      "source": "a664c89cf48269",
+      "target": "65ce82acde3b23",
+      "type": "contains"
+    },
+    {
+      "source": "123af7f13a5c8a",
+      "target": "521359f19cdee5",
+      "type": "contains"
+    },
+    {
+      "source": "549f6c582cb5aa",
+      "target": "456f588d0e1c51",
+      "type": "contains"
+    },
+    {
+      "source": "6064306a70a3f6",
+      "target": "3313f880312ac5",
+      "type": "contains"
+    },
+    {
+      "source": "172afcaa2960bc",
+      "target": "45ee2c6f61f3a6",
+      "type": "contains"
+    },
+    {
+      "source": "172afcaa2960bc",
+      "target": "27f01958d5af27",
+      "type": "contains"
+    },
+    {
+      "source": "deecd97d42412e",
+      "target": "5a18bf0116c18d",
+      "type": "contains"
+    },
+    {
+      "source": "a6fe207d0d44c6",
+      "target": "586dd13323b00f",
+      "type": "contains"
+    },
+    {
+      "source": "b0d6a1d37d9c44",
+      "target": "38b2301a1c9d09",
+      "type": "contains"
+    },
+    {
+      "source": "7f3bdd8b862fd8",
+      "target": "b1473b0afb03f9",
+      "type": "contains"
+    },
+    {
+      "source": "d987479c8ce1f0",
+      "target": "6e0c01f310915e",
+      "type": "contains"
+    },
+    {
+      "source": "bfdb2824c57b31",
+      "target": "74963d97c45627",
+      "type": "contains"
+    },
+    {
+      "source": "21c5347d5d3590",
+      "target": "9d6a745f898538",
+      "type": "contains"
+    },
+    {
+      "source": "736cc3b50868a3",
+      "target": "4fa72394ca5a73",
+      "type": "contains"
+    },
+    {
+      "source": "e9f13103c1961d",
+      "target": "e247a12c540c6f",
+      "type": "contains"
+    }
+  ]
+}

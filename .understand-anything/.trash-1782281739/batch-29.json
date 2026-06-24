@@ -1,0 +1,908 @@
+{
+  "batchIndex": 29,
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "e6e28f834eb0f6ca",
+      "type": "file",
+      "name": "BCIntegerDatatype.java",
+      "filePath": "src/jx/classfile/datatypes/BCIntegerDatatype.java",
+      "language": "java",
+      "totalLines": 35,
+      "nonEmptyLines": 28,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "4c99418f0e4baec4",
+      "type": "class",
+      "name": "BCIntegerDatatype",
+      "filePath": "src/jx/classfile/datatypes/BCIntegerDatatype.java",
+      "language": "java",
+      "startLine": 4,
+      "endLine": 35,
+      "totalLines": 32,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 4,
+        "propertyCount": 0
+      }
+    },
+    {
+      "id": "7b98abe2c94d4ce5",
+      "type": "file",
+      "name": "BCLong.java",
+      "filePath": "src/jx/classfile/datatypes/BCLong.java",
+      "language": "java",
+      "totalLines": 20,
+      "nonEmptyLines": 14,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "70f647cf0348a515",
+      "type": "class",
+      "name": "BCLong",
+      "filePath": "src/jx/classfile/datatypes/BCLong.java",
+      "language": "java",
+      "startLine": 3,
+      "endLine": 20,
+      "totalLines": 18,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 6,
+        "propertyCount": 3
+      }
+    },
+    {
+      "id": "3d67dffcee4a39e4",
+      "type": "file",
+      "name": "BCNumericDatatype.java",
+      "filePath": "src/jx/classfile/datatypes/BCNumericDatatype.java",
+      "language": "java",
+      "totalLines": 25,
+      "nonEmptyLines": 21,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 15,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "39c56b1d37a38d19",
+      "type": "class",
+      "name": "BCNumericDatatype",
+      "filePath": "src/jx/classfile/datatypes/BCNumericDatatype.java",
+      "language": "java",
+      "startLine": 6,
+      "endLine": 25,
+      "totalLines": 20,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 2,
+        "propertyCount": 12
+      }
+    },
+    {
+      "id": "3fb0ac1019c0e8bd",
+      "type": "file",
+      "name": "BCReference.java",
+      "filePath": "src/jx/classfile/datatypes/BCReference.java",
+      "language": "java",
+      "totalLines": 19,
+      "nonEmptyLines": 14,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "8cccaa9250d692fb",
+      "type": "class",
+      "name": "BCReference",
+      "filePath": "src/jx/classfile/datatypes/BCReference.java",
+      "language": "java",
+      "startLine": 4,
+      "endLine": 19,
+      "totalLines": 16,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 4,
+        "propertyCount": 2
+      }
+    },
+    {
+      "id": "26612c0d1f3771d1",
+      "type": "file",
+      "name": "BCShort.java",
+      "filePath": "src/jx/classfile/datatypes/BCShort.java",
+      "language": "java",
+      "totalLines": 15,
+      "nonEmptyLines": 12,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "406b1c887be8aba4",
+      "type": "class",
+      "name": "BCShort",
+      "filePath": "src/jx/classfile/datatypes/BCShort.java",
+      "language": "java",
+      "startLine": 3,
+      "endLine": 15,
+      "totalLines": 13,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 6,
+        "propertyCount": 1
+      }
+    },
+    {
+      "id": "d5105bde0948fb3e",
+      "type": "file",
+      "name": "DataType.java",
+      "filePath": "src/jx/classfile/datatypes/DataType.java",
+      "language": "java",
+      "totalLines": 38,
+      "nonEmptyLines": 36,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "5782382d82b1a872",
+      "type": "class",
+      "name": "DataType",
+      "filePath": "src/jx/classfile/datatypes/DataType.java",
+      "language": "java",
+      "startLine": 3,
+      "endLine": 38,
+      "totalLines": 36,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 6,
+        "propertyCount": 1
+      }
+    },
+    {
+      "id": "02a932071355d466",
+      "type": "file",
+      "name": "NoClassTypeException.java",
+      "filePath": "src/jx/classfile/datatypes/NoClassTypeException.java",
+      "language": "java",
+      "totalLines": 2,
+      "nonEmptyLines": 2,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "14b733d59d21eae1",
+      "type": "class",
+      "name": "NoClassTypeException",
+      "filePath": "src/jx/classfile/datatypes/NoClassTypeException.java",
+      "language": "java",
+      "startLine": 2,
+      "endLine": 2,
+      "totalLines": 1,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 0,
+        "propertyCount": 0
+      }
+    },
+    {
+      "id": "3005268afabc675b",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/classfile/datatypes/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "id": "4c84f26d52e449f4",
+      "type": "file",
+      "name": "TestTypeDesc.java",
+      "filePath": "src/jx/classfile/datatypes/TestTypeDesc.java",
+      "language": "java",
+      "totalLines": 53,
+      "nonEmptyLines": 45,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "d2675ac972bd3d73",
+      "type": "class",
+      "name": "TestTypeDesc",
+      "filePath": "src/jx/classfile/datatypes/TestTypeDesc.java",
+      "language": "java",
+      "startLine": 7,
+      "endLine": 52,
+      "totalLines": 46,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 0,
+        "propertyCount": 0
+      }
+    },
+    {
+      "id": "3d12d0dc09445c40",
+      "type": "file",
+      "name": "LineAttributeData.java",
+      "filePath": "src/jx/classfile/LineAttributeData.java",
+      "language": "java",
+      "totalLines": 13,
+      "nonEmptyLines": 12,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "72756afc9234d5f9",
+      "type": "class",
+      "name": "LineAttributeData",
+      "filePath": "src/jx/classfile/LineAttributeData.java",
+      "language": "java",
+      "startLine": 3,
+      "endLine": 13,
+      "totalLines": 11,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 2,
+        "propertyCount": 2
+      }
+    },
+    {
+      "id": "0acf3ab2d146a3ca",
+      "type": "file",
+      "name": "MethodSource.java",
+      "filePath": "src/jx/classfile/MethodSource.java",
+      "language": "java",
+      "totalLines": 32,
+      "nonEmptyLines": 26,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 19,
+        "functionCount": 18,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "63b04ea44539eb3a",
+      "type": "class",
+      "name": "MethodSource",
+      "filePath": "src/jx/classfile/MethodSource.java",
+      "language": "java",
+      "startLine": 9,
+      "endLine": 32,
+      "totalLines": 24,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 18,
+        "propertyCount": 0
+      }
+    },
+    {
+      "id": "b1e4c91b2a7cca29",
+      "type": "file",
+      "name": "NativeMethodException.java",
+      "filePath": "src/jx/classfile/NativeMethodException.java",
+      "language": "java",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "032ee206ddc396de",
+      "type": "class",
+      "name": "NativeMethodException",
+      "filePath": "src/jx/classfile/NativeMethodException.java",
+      "language": "java",
+      "startLine": 3,
+      "endLine": 5,
+      "totalLines": 3,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 1,
+        "propertyCount": 0
+      }
+    },
+    {
+      "id": "f099ab124a5693f4",
+      "type": "file",
+      "name": "NoMagicNumberException.java",
+      "filePath": "src/jx/classfile/NoMagicNumberException.java",
+      "language": "java",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "1edb1acbab46faf9",
+      "type": "class",
+      "name": "NoMagicNumberException",
+      "filePath": "src/jx/classfile/NoMagicNumberException.java",
+      "language": "java",
+      "startLine": 3,
+      "endLine": 6,
+      "totalLines": 4,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 2,
+        "propertyCount": 0
+      }
+    },
+    {
+      "id": "4a44d8961668e3c8",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/classfile/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "id": "f1aa6e285bdfd38a",
+      "type": "file",
+      "name": "VerifyResult.java",
+      "filePath": "src/jx/classfile/VerifyResult.java",
+      "language": "java",
+      "totalLines": 17,
+      "nonEmptyLines": 12,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "af5b47b36d9328fa",
+      "type": "class",
+      "name": "VerifyResult",
+      "filePath": "src/jx/classfile/VerifyResult.java",
+      "language": "java",
+      "startLine": 4,
+      "endLine": 17,
+      "totalLines": 14,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 2,
+        "propertyCount": 5
+      }
+    },
+    {
+      "id": "18c9be44f5331f8f",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/classstore/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "id": "156f87a8a1ae9e1c",
+      "type": "file",
+      "name": "Collection.java",
+      "filePath": "src/jx/collections/Collection.java",
+      "language": "java",
+      "totalLines": 7,
+      "nonEmptyLines": 6,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "a50ed528e1ce4a44",
+      "type": "class",
+      "name": "Collection",
+      "filePath": "src/jx/collections/Collection.java",
+      "language": "java",
+      "startLine": 3,
+      "endLine": 7,
+      "totalLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 3,
+        "propertyCount": 0
+      }
+    },
+    {
+      "id": "b2a93d4dcfe9cf3b",
+      "type": "file",
+      "name": "Comparator.java",
+      "filePath": "src/jx/collections/Comparator.java",
+      "language": "java",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "092773e888692858",
+      "type": "class",
+      "name": "Comparator",
+      "filePath": "src/jx/collections/Comparator.java",
+      "language": "java",
+      "startLine": 3,
+      "endLine": 5,
+      "totalLines": 3,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 1,
+        "propertyCount": 0
+      }
+    },
+    {
+      "id": "03a10c74492de9fa",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/collections/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "id": "f6166f63441d105b",
+      "type": "file",
+      "name": "SortedList.java",
+      "filePath": "src/jx/collections/SortedList.java",
+      "language": "java",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "6aacd6691530950b",
+      "type": "class",
+      "name": "SortedList",
+      "filePath": "src/jx/collections/SortedList.java",
+      "language": "java",
+      "startLine": 3,
+      "endLine": 5,
+      "totalLines": 3,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 1,
+        "propertyCount": 0
+      }
+    },
+    {
+      "id": "c02f5b51377ab5e4",
+      "type": "file",
+      "name": "AVLBaum.java",
+      "filePath": "src/jx/db/avltree/AVLBaum.java",
+      "language": "java",
+      "totalLines": 328,
+      "nonEmptyLines": 270,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 13,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "028f19409e8ca9f6",
+      "type": "class",
+      "name": "AVLBaum",
+      "filePath": "src/jx/db/avltree/AVLBaum.java",
+      "language": "java",
+      "startLine": 13,
+      "endLine": 328,
+      "totalLines": 316,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 13,
+        "propertyCount": 1
+      }
+    },
+    {
+      "id": "64b8528b9a9c6c70",
+      "type": "file",
+      "name": "Baum.java",
+      "filePath": "src/jx/db/avltree/Baum.java",
+      "language": "java",
+      "totalLines": 52,
+      "nonEmptyLines": 39,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "de2d612a47708795",
+      "type": "class",
+      "name": "Baum",
+      "filePath": "src/jx/db/avltree/Baum.java",
+      "language": "java",
+      "startLine": 11,
+      "endLine": 52,
+      "totalLines": 42,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 7,
+        "propertyCount": 4
+      }
+    },
+    {
+      "id": "9302d5a07ba5a89e",
+      "type": "file",
+      "name": "Comparable.java",
+      "filePath": "src/jx/db/avltree/Comparable.java",
+      "language": "java",
+      "totalLines": 22,
+      "nonEmptyLines": 17,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "da57fe31643e1b0f",
+      "type": "class",
+      "name": "Comparable",
+      "filePath": "src/jx/db/avltree/Comparable.java",
+      "language": "java",
+      "startLine": 19,
+      "endLine": 22,
+      "totalLines": 4,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 1,
+        "propertyCount": 0
+      }
+    },
+    {
+      "id": "5fd407e1ac1c4395",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/db/avltree/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "id": "25c7e5ee4ada6441",
+      "type": "file",
+      "name": "SuchBaum.java",
+      "filePath": "src/jx/db/avltree/SuchBaum.java",
+      "language": "java",
+      "totalLines": 72,
+      "nonEmptyLines": 59,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "18f2ec98ee3758e4",
+      "type": "class",
+      "name": "SuchBaum",
+      "filePath": "src/jx/db/avltree/SuchBaum.java",
+      "language": "java",
+      "startLine": 11,
+      "endLine": 72,
+      "totalLines": 62,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 5,
+        "propertyCount": 0
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "e6e28f834eb0f6ca",
+      "target": "4c99418f0e4baec4",
+      "type": "contains"
+    },
+    {
+      "source": "4c99418f0e4baec4",
+      "target": "e6e28f834eb0f6ca",
+      "type": "exports"
+    },
+    {
+      "source": "7b98abe2c94d4ce5",
+      "target": "70f647cf0348a515",
+      "type": "contains"
+    },
+    {
+      "source": "70f647cf0348a515",
+      "target": "7b98abe2c94d4ce5",
+      "type": "exports"
+    },
+    {
+      "source": "3d67dffcee4a39e4",
+      "target": "39c56b1d37a38d19",
+      "type": "contains"
+    },
+    {
+      "source": "39c56b1d37a38d19",
+      "target": "3d67dffcee4a39e4",
+      "type": "exports"
+    },
+    {
+      "source": "3fb0ac1019c0e8bd",
+      "target": "8cccaa9250d692fb",
+      "type": "contains"
+    },
+    {
+      "source": "8cccaa9250d692fb",
+      "target": "3fb0ac1019c0e8bd",
+      "type": "exports"
+    },
+    {
+      "source": "26612c0d1f3771d1",
+      "target": "406b1c887be8aba4",
+      "type": "contains"
+    },
+    {
+      "source": "406b1c887be8aba4",
+      "target": "26612c0d1f3771d1",
+      "type": "exports"
+    },
+    {
+      "source": "d5105bde0948fb3e",
+      "target": "5782382d82b1a872",
+      "type": "contains"
+    },
+    {
+      "source": "5782382d82b1a872",
+      "target": "d5105bde0948fb3e",
+      "type": "exports"
+    },
+    {
+      "source": "02a932071355d466",
+      "target": "14b733d59d21eae1",
+      "type": "contains"
+    },
+    {
+      "source": "14b733d59d21eae1",
+      "target": "02a932071355d466",
+      "type": "exports"
+    },
+    {
+      "source": "4c84f26d52e449f4",
+      "target": "d2675ac972bd3d73",
+      "type": "contains"
+    },
+    {
+      "source": "d2675ac972bd3d73",
+      "target": "4c84f26d52e449f4",
+      "type": "exports"
+    },
+    {
+      "source": "3d12d0dc09445c40",
+      "target": "72756afc9234d5f9",
+      "type": "contains"
+    },
+    {
+      "source": "72756afc9234d5f9",
+      "target": "3d12d0dc09445c40",
+      "type": "exports"
+    },
+    {
+      "source": "0acf3ab2d146a3ca",
+      "target": "63b04ea44539eb3a",
+      "type": "contains"
+    },
+    {
+      "source": "63b04ea44539eb3a",
+      "target": "0acf3ab2d146a3ca",
+      "type": "exports"
+    },
+    {
+      "source": "b1e4c91b2a7cca29",
+      "target": "032ee206ddc396de",
+      "type": "contains"
+    },
+    {
+      "source": "032ee206ddc396de",
+      "target": "b1e4c91b2a7cca29",
+      "type": "exports"
+    },
+    {
+      "source": "f099ab124a5693f4",
+      "target": "1edb1acbab46faf9",
+      "type": "contains"
+    },
+    {
+      "source": "1edb1acbab46faf9",
+      "target": "f099ab124a5693f4",
+      "type": "exports"
+    },
+    {
+      "source": "f1aa6e285bdfd38a",
+      "target": "af5b47b36d9328fa",
+      "type": "contains"
+    },
+    {
+      "source": "af5b47b36d9328fa",
+      "target": "f1aa6e285bdfd38a",
+      "type": "exports"
+    },
+    {
+      "source": "156f87a8a1ae9e1c",
+      "target": "a50ed528e1ce4a44",
+      "type": "contains"
+    },
+    {
+      "source": "a50ed528e1ce4a44",
+      "target": "156f87a8a1ae9e1c",
+      "type": "exports"
+    },
+    {
+      "source": "b2a93d4dcfe9cf3b",
+      "target": "092773e888692858",
+      "type": "contains"
+    },
+    {
+      "source": "092773e888692858",
+      "target": "b2a93d4dcfe9cf3b",
+      "type": "exports"
+    },
+    {
+      "source": "f6166f63441d105b",
+      "target": "6aacd6691530950b",
+      "type": "contains"
+    },
+    {
+      "source": "6aacd6691530950b",
+      "target": "f6166f63441d105b",
+      "type": "exports"
+    },
+    {
+      "source": "c02f5b51377ab5e4",
+      "target": "028f19409e8ca9f6",
+      "type": "contains"
+    },
+    {
+      "source": "028f19409e8ca9f6",
+      "target": "c02f5b51377ab5e4",
+      "type": "exports"
+    },
+    {
+      "source": "64b8528b9a9c6c70",
+      "target": "de2d612a47708795",
+      "type": "contains"
+    },
+    {
+      "source": "de2d612a47708795",
+      "target": "64b8528b9a9c6c70",
+      "type": "exports"
+    },
+    {
+      "source": "9302d5a07ba5a89e",
+      "target": "da57fe31643e1b0f",
+      "type": "contains"
+    },
+    {
+      "source": "da57fe31643e1b0f",
+      "target": "9302d5a07ba5a89e",
+      "type": "exports"
+    },
+    {
+      "source": "25c7e5ee4ada6441",
+      "target": "18f2ec98ee3758e4",
+      "type": "contains"
+    },
+    {
+      "source": "18f2ec98ee3758e4",
+      "target": "25c7e5ee4ada6441",
+      "type": "exports"
+    }
+  ]
+}

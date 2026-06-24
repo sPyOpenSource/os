@@ -1,0 +1,182 @@
+{
+  "batchIndex": 17,
+  "files": [
+    {
+      "path": "src/com/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/com/sun/net/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/com/sun/net/ssl/internal/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/com/sun/net/ssl/internal/ssl/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/com/sun/net/ssl/internal/ssl/Provider.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/com/sun/net/ssl/KeyManager.java",
+      "language": "java",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/com/sun/net/ssl/KeyManagerFactory.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/com/sun/net/ssl/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/com/sun/net/ssl/SSLContext.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/com/sun/net/ssl/TrustManager.java",
+      "language": "java",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/com/sun/net/ssl/TrustManagerFactory.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/com/sun/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/gnu/java/io/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/gnu/java/math/MPN.java",
+      "language": "java",
+      "sizeLines": 768,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/gnu/java/math/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/gnu/java/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/gnu/java/security/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/gnu/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/applet/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/BeanDescriptor.java",
+      "language": "java",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/Beans.j",
+      "language": "j",
+      "sizeLines": 194,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/EventSetDescriptor.j",
+      "language": "j",
+      "sizeLines": 429,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/FeatureDescriptor.java",
+      "language": "java",
+      "sizeLines": 155,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/IndexedPropertyDescriptor.j",
+      "language": "j",
+      "sizeLines": 295,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/IntrospectionException.java",
+      "language": "java",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/com/package.bluej": [],
+    "src/com/sun/net/package.bluej": [],
+    "src/com/sun/net/ssl/internal/package.bluej": [],
+    "src/com/sun/net/ssl/internal/ssl/package.bluej": [],
+    "src/com/sun/net/ssl/internal/ssl/Provider.java": [],
+    "src/com/sun/net/ssl/KeyManager.java": [],
+    "src/com/sun/net/ssl/KeyManagerFactory.java": [],
+    "src/com/sun/net/ssl/package.bluej": [],
+    "src/com/sun/net/ssl/SSLContext.java": [],
+    "src/com/sun/net/ssl/TrustManager.java": [],
+    "src/com/sun/net/ssl/TrustManagerFactory.java": [],
+    "src/com/sun/package.bluej": [],
+    "src/gnu/java/io/package.bluej": [],
+    "src/gnu/java/math/MPN.java": [],
+    "src/gnu/java/math/package.bluej": [],
+    "src/gnu/java/package.bluej": [],
+    "src/gnu/java/security/package.bluej": [],
+    "src/gnu/package.bluej": [],
+    "src/java/applet/package.bluej": [],
+    "src/java/beans/BeanDescriptor.java": [],
+    "src/java/beans/Beans.j": [],
+    "src/java/beans/EventSetDescriptor.j": [],
+    "src/java/beans/FeatureDescriptor.java": [],
+    "src/java/beans/IndexedPropertyDescriptor.j": [],
+    "src/java/beans/IntrospectionException.java": []
+  }
+}

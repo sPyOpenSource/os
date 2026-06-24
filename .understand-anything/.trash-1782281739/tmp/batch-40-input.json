@@ -1,0 +1,182 @@
+{
+  "projectRoot": "/Users/xuyi/Source/OS/armOS/lib/jcore/OS",
+  "batchFiles": [
+    {
+      "path": "src/jx/scheduler/ThreadListCAS.java",
+      "language": "java",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/secmgr/BlockIOSecurityPolicy.java",
+      "language": "java",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/secmgr/FileSystemSecurityPolicy.java",
+      "language": "java",
+      "sizeLines": 146,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/secmgr/MySecurityPolicy.java",
+      "language": "java",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/secmgr/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/secmgr/Principal_impl.java",
+      "language": "java",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/secmgr/SecMgr.java",
+      "language": "java",
+      "sizeLines": 83,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/secmgr/SecMgrSecurityPolicy.java",
+      "language": "java",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/streams/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/streams/StreamProvider.java",
+      "language": "java",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/synch/blocking/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/synch/blocking/Queue.java",
+      "language": "java",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/synch/blocking/Test.java",
+      "language": "java",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/synch/mutex/BlockingLock.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/synch/mutex/BlockingLockImpl.java",
+      "language": "java",
+      "sizeLines": 77,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/synch/mutex/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/synch/mutex/Test.java",
+      "language": "java",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/synch/nonblocking2/MPSCQueue.java",
+      "language": "java",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/synch/nonblocking2/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/synch/nonblocking2/Queue.java",
+      "language": "java",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/synch/nonblocking2/QueueEmptyException.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/synch/nonblocking2/SPSCQueue.java",
+      "language": "java",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/synch/nonblocking2/Test.java",
+      "language": "java",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/synch/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/timer/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/jx/scheduler/ThreadListCAS.java": [],
+    "src/jx/secmgr/BlockIOSecurityPolicy.java": [],
+    "src/jx/secmgr/FileSystemSecurityPolicy.java": [],
+    "src/jx/secmgr/MySecurityPolicy.java": [],
+    "src/jx/secmgr/package.bluej": [],
+    "src/jx/secmgr/Principal_impl.java": [],
+    "src/jx/secmgr/SecMgr.java": [],
+    "src/jx/secmgr/SecMgrSecurityPolicy.java": [],
+    "src/jx/streams/package.bluej": [],
+    "src/jx/streams/StreamProvider.java": [],
+    "src/jx/synch/blocking/package.bluej": [],
+    "src/jx/synch/blocking/Queue.java": [],
+    "src/jx/synch/blocking/Test.java": [],
+    "src/jx/synch/mutex/BlockingLock.java": [],
+    "src/jx/synch/mutex/BlockingLockImpl.java": [],
+    "src/jx/synch/mutex/package.bluej": [],
+    "src/jx/synch/mutex/Test.java": [],
+    "src/jx/synch/nonblocking2/MPSCQueue.java": [],
+    "src/jx/synch/nonblocking2/package.bluej": [],
+    "src/jx/synch/nonblocking2/Queue.java": [],
+    "src/jx/synch/nonblocking2/QueueEmptyException.java": [],
+    "src/jx/synch/nonblocking2/SPSCQueue.java": [],
+    "src/jx/synch/nonblocking2/Test.java": [],
+    "src/jx/synch/package.bluej": [],
+    "src/jx/timer/package.bluej": []
+  }
+}

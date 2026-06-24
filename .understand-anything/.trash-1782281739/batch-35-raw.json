@@ -1,0 +1,2579 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/jx/rdp/orders/PolyLineOrder.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 77,
+      "nonEmptyLines": 60,
+      "functions": [
+        {
+          "name": "PolyLineOrder",
+          "startLine": 13,
+          "endLine": 14,
+          "params": []
+        },
+        {
+          "name": "getX",
+          "startLine": 16,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "getY",
+          "startLine": 20,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "getFlags",
+          "startLine": 24,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "getForegroundColor",
+          "startLine": 28,
+          "endLine": 30,
+          "params": []
+        },
+        {
+          "name": "getLines",
+          "startLine": 32,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "getDataSize",
+          "startLine": 36,
+          "endLine": 38,
+          "params": []
+        },
+        {
+          "name": "getData",
+          "startLine": 40,
+          "endLine": 42,
+          "params": []
+        },
+        {
+          "name": "setX",
+          "startLine": 44,
+          "endLine": 46,
+          "params": [
+            "x"
+          ]
+        },
+        {
+          "name": "setY",
+          "startLine": 48,
+          "endLine": 50,
+          "params": [
+            "y"
+          ]
+        },
+        {
+          "name": "setFlags",
+          "startLine": 52,
+          "endLine": 54,
+          "params": [
+            "flags"
+          ]
+        },
+        {
+          "name": "setForegroundColor",
+          "startLine": 56,
+          "endLine": 58,
+          "params": [
+            "fgcolor"
+          ]
+        },
+        {
+          "name": "setDataSize",
+          "startLine": 60,
+          "endLine": 62,
+          "params": [
+            "datasize"
+          ]
+        },
+        {
+          "name": "setData",
+          "startLine": 64,
+          "endLine": 66,
+          "params": [
+            "data"
+          ]
+        },
+        {
+          "name": "reset",
+          "startLine": 68,
+          "endLine": 76,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "PolyLineOrder",
+          "startLine": 3,
+          "endLine": 77,
+          "methods": [
+            "PolyLineOrder",
+            "getX",
+            "getY",
+            "getFlags",
+            "getForegroundColor",
+            "getLines",
+            "getDataSize",
+            "getData",
+            "setX",
+            "setY",
+            "setFlags",
+            "setForegroundColor",
+            "setDataSize",
+            "setData",
+            "reset"
+          ],
+          "properties": [
+            "x",
+            "y",
+            "flags",
+            "fgcolor",
+            "lines",
+            "datasize",
+            "data"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "PolyLineOrder",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "getX",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "getY",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "getFlags",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "getForegroundColor",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "getLines",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "getDataSize",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "getData",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "setX",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "setY",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "setFlags",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "setForegroundColor",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "setDataSize",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "setData",
+          "line": 64,
+          "isDefault": false
+        },
+        {
+          "name": "reset",
+          "line": 68,
+          "isDefault": false
+        },
+        {
+          "name": "PolyLineOrder",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 16,
+        "functionCount": 15,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rdp/orders/RectangleOrder.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 62,
+      "nonEmptyLines": 47,
+      "functions": [
+        {
+          "name": "RectangleOrder",
+          "startLine": 11,
+          "endLine": 12,
+          "params": []
+        },
+        {
+          "name": "getX",
+          "startLine": 14,
+          "endLine": 16,
+          "params": []
+        },
+        {
+          "name": "getY",
+          "startLine": 18,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "getCX",
+          "startLine": 22,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "getCY",
+          "startLine": 26,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "getColor",
+          "startLine": 30,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "setX",
+          "startLine": 34,
+          "endLine": 36,
+          "params": [
+            "x"
+          ]
+        },
+        {
+          "name": "setY",
+          "startLine": 38,
+          "endLine": 40,
+          "params": [
+            "y"
+          ]
+        },
+        {
+          "name": "setCX",
+          "startLine": 42,
+          "endLine": 44,
+          "params": [
+            "cx"
+          ]
+        },
+        {
+          "name": "setCY",
+          "startLine": 46,
+          "endLine": 48,
+          "params": [
+            "cy"
+          ]
+        },
+        {
+          "name": "setColor",
+          "startLine": 50,
+          "endLine": 52,
+          "params": [
+            "color"
+          ]
+        },
+        {
+          "name": "reset",
+          "startLine": 54,
+          "endLine": 60,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "RectangleOrder",
+          "startLine": 3,
+          "endLine": 61,
+          "methods": [
+            "RectangleOrder",
+            "getX",
+            "getY",
+            "getCX",
+            "getCY",
+            "getColor",
+            "setX",
+            "setY",
+            "setCX",
+            "setCY",
+            "setColor",
+            "reset"
+          ],
+          "properties": [
+            "x",
+            "y",
+            "cx",
+            "cy",
+            "color"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RectangleOrder",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "getX",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "getY",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "getCX",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "getCY",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "getColor",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "setX",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "setY",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "setCX",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "setCY",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "setColor",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "reset",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "RectangleOrder",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 13,
+        "functionCount": 12,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rdp/orders/ScreenBltOrder.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 25,
+      "functions": [
+        {
+          "name": "ScreenBltOrder",
+          "startLine": 8,
+          "endLine": 10,
+          "params": []
+        },
+        {
+          "name": "getSTCX",
+          "startLine": 12,
+          "endLine": 14,
+          "params": []
+        },
+        {
+          "name": "getSTCY",
+          "startLine": 16,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "setSTCX",
+          "startLine": 20,
+          "endLine": 22,
+          "params": [
+            "stcx"
+          ]
+        },
+        {
+          "name": "setSTCY",
+          "startLine": 24,
+          "endLine": 26,
+          "params": [
+            "stcy"
+          ]
+        },
+        {
+          "name": "reset",
+          "startLine": 28,
+          "endLine": 32,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ScreenBltOrder",
+          "startLine": 3,
+          "endLine": 33,
+          "methods": [
+            "ScreenBltOrder",
+            "getSTCX",
+            "getSTCY",
+            "setSTCX",
+            "setSTCY",
+            "reset"
+          ],
+          "properties": [
+            "stcx",
+            "stcy"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ScreenBltOrder",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "getSTCX",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "getSTCY",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "setSTCX",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "setSTCY",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "reset",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "ScreenBltOrder",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "reset",
+          "callee": "super.reset",
+          "lineNumber": 29
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rdp/orders/Text2Order.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 193,
+      "nonEmptyLines": 151,
+      "functions": [
+        {
+          "name": "Text2Order",
+          "startLine": 26,
+          "endLine": 27,
+          "params": []
+        },
+        {
+          "name": "getFont",
+          "startLine": 29,
+          "endLine": 31,
+          "params": []
+        },
+        {
+          "name": "getClipLeft",
+          "startLine": 33,
+          "endLine": 35,
+          "params": []
+        },
+        {
+          "name": "getClipRight",
+          "startLine": 37,
+          "endLine": 39,
+          "params": []
+        },
+        {
+          "name": "getClipTop",
+          "startLine": 41,
+          "endLine": 43,
+          "params": []
+        },
+        {
+          "name": "getClipBottom",
+          "startLine": 45,
+          "endLine": 47,
+          "params": []
+        },
+        {
+          "name": "getBoxLeft",
+          "startLine": 49,
+          "endLine": 51,
+          "params": []
+        },
+        {
+          "name": "getBoxRight",
+          "startLine": 53,
+          "endLine": 55,
+          "params": []
+        },
+        {
+          "name": "getBoxTop",
+          "startLine": 57,
+          "endLine": 59,
+          "params": []
+        },
+        {
+          "name": "getBoxBottom",
+          "startLine": 61,
+          "endLine": 63,
+          "params": []
+        },
+        {
+          "name": "getX",
+          "startLine": 65,
+          "endLine": 67,
+          "params": []
+        },
+        {
+          "name": "getUnknown",
+          "startLine": 69,
+          "endLine": 71,
+          "params": []
+        },
+        {
+          "name": "getY",
+          "startLine": 73,
+          "endLine": 75,
+          "params": []
+        },
+        {
+          "name": "getFlags",
+          "startLine": 77,
+          "endLine": 79,
+          "params": []
+        },
+        {
+          "name": "getMixmode",
+          "startLine": 81,
+          "endLine": 83,
+          "params": []
+        },
+        {
+          "name": "getForegroundColor",
+          "startLine": 85,
+          "endLine": 87,
+          "params": []
+        },
+        {
+          "name": "getBackgroundColor",
+          "startLine": 89,
+          "endLine": 91,
+          "params": []
+        },
+        {
+          "name": "getLength",
+          "startLine": 93,
+          "endLine": 95,
+          "params": []
+        },
+        {
+          "name": "getText",
+          "startLine": 97,
+          "endLine": 99,
+          "params": []
+        },
+        {
+          "name": "setFont",
+          "startLine": 101,
+          "endLine": 103,
+          "params": [
+            "font"
+          ]
+        },
+        {
+          "name": "setX",
+          "startLine": 105,
+          "endLine": 107,
+          "params": [
+            "x"
+          ]
+        },
+        {
+          "name": "setUnknown",
+          "startLine": 109,
+          "endLine": 111,
+          "params": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "setY",
+          "startLine": 113,
+          "endLine": 115,
+          "params": [
+            "y"
+          ]
+        },
+        {
+          "name": "setMixmode",
+          "startLine": 117,
+          "endLine": 119,
+          "params": [
+            "mixmode"
+          ]
+        },
+        {
+          "name": "setFlags",
+          "startLine": 121,
+          "endLine": 123,
+          "params": [
+            "flags"
+          ]
+        },
+        {
+          "name": "setForegroundColor",
+          "startLine": 125,
+          "endLine": 127,
+          "params": [
+            "fgcolor"
+          ]
+        },
+        {
+          "name": "setBackgroundColor",
+          "startLine": 129,
+          "endLine": 131,
+          "params": [
+            "bgcolor"
+          ]
+        },
+        {
+          "name": "setClipLeft",
+          "startLine": 133,
+          "endLine": 135,
+          "params": [
+            "clipleft"
+          ]
+        },
+        {
+          "name": "setClipRight",
+          "startLine": 137,
+          "endLine": 139,
+          "params": [
+            "clipright"
+          ]
+        },
+        {
+          "name": "setClipTop",
+          "startLine": 141,
+          "endLine": 143,
+          "params": [
+            "cliptop"
+          ]
+        },
+        {
+          "name": "setClipBottom",
+          "startLine": 145,
+          "endLine": 147,
+          "params": [
+            "clipbottom"
+          ]
+        },
+        {
+          "name": "setBoxLeft",
+          "startLine": 149,
+          "endLine": 151,
+          "params": [
+            "boxleft"
+          ]
+        },
+        {
+          "name": "setBoxRight",
+          "startLine": 153,
+          "endLine": 155,
+          "params": [
+            "boxright"
+          ]
+        },
+        {
+          "name": "setBoxTop",
+          "startLine": 157,
+          "endLine": 159,
+          "params": [
+            "boxtop"
+          ]
+        },
+        {
+          "name": "setBoxBottom",
+          "startLine": 161,
+          "endLine": 163,
+          "params": [
+            "boxbottom"
+          ]
+        },
+        {
+          "name": "setText",
+          "startLine": 165,
+          "endLine": 167,
+          "params": [
+            "text"
+          ]
+        },
+        {
+          "name": "setLength",
+          "startLine": 169,
+          "endLine": 171,
+          "params": [
+            "length"
+          ]
+        },
+        {
+          "name": "reset",
+          "startLine": 173,
+          "endLine": 192,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "Text2Order",
+          "startLine": 3,
+          "endLine": 193,
+          "methods": [
+            "Text2Order",
+            "getFont",
+            "getClipLeft",
+            "getClipRight",
+            "getClipTop",
+            "getClipBottom",
+            "getBoxLeft",
+            "getBoxRight",
+            "getBoxTop",
+            "getBoxBottom",
+            "getX",
+            "getUnknown",
+            "getY",
+            "getFlags",
+            "getMixmode",
+            "getForegroundColor",
+            "getBackgroundColor",
+            "getLength",
+            "getText",
+            "setFont",
+            "setX",
+            "setUnknown",
+            "setY",
+            "setMixmode",
+            "setFlags",
+            "setForegroundColor",
+            "setBackgroundColor",
+            "setClipLeft",
+            "setClipRight",
+            "setClipTop",
+            "setClipBottom",
+            "setBoxLeft",
+            "setBoxRight",
+            "setBoxTop",
+            "setBoxBottom",
+            "setText",
+            "setLength",
+            "reset"
+          ],
+          "properties": [
+            "flags",
+            "mixmode",
+            "fgcolor",
+            "bgcolor",
+            "x",
+            "y",
+            "unknown",
+            "font",
+            "clipleft",
+            "cliptop",
+            "clipright",
+            "clipbottom",
+            "boxleft",
+            "boxtop",
+            "boxright",
+            "boxbottom",
+            "length",
+            "text"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Text2Order",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "getFont",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "getClipLeft",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "getClipRight",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "getClipTop",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "getClipBottom",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "getBoxLeft",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "getBoxRight",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "getBoxTop",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "getBoxBottom",
+          "line": 61,
+          "isDefault": false
+        },
+        {
+          "name": "getX",
+          "line": 65,
+          "isDefault": false
+        },
+        {
+          "name": "getUnknown",
+          "line": 69,
+          "isDefault": false
+        },
+        {
+          "name": "getY",
+          "line": 73,
+          "isDefault": false
+        },
+        {
+          "name": "getFlags",
+          "line": 77,
+          "isDefault": false
+        },
+        {
+          "name": "getMixmode",
+          "line": 81,
+          "isDefault": false
+        },
+        {
+          "name": "getForegroundColor",
+          "line": 85,
+          "isDefault": false
+        },
+        {
+          "name": "getBackgroundColor",
+          "line": 89,
+          "isDefault": false
+        },
+        {
+          "name": "getLength",
+          "line": 93,
+          "isDefault": false
+        },
+        {
+          "name": "getText",
+          "line": 97,
+          "isDefault": false
+        },
+        {
+          "name": "setFont",
+          "line": 101,
+          "isDefault": false
+        },
+        {
+          "name": "setX",
+          "line": 105,
+          "isDefault": false
+        },
+        {
+          "name": "setUnknown",
+          "line": 109,
+          "isDefault": false
+        },
+        {
+          "name": "setY",
+          "line": 113,
+          "isDefault": false
+        },
+        {
+          "name": "setMixmode",
+          "line": 117,
+          "isDefault": false
+        },
+        {
+          "name": "setFlags",
+          "line": 121,
+          "isDefault": false
+        },
+        {
+          "name": "setForegroundColor",
+          "line": 125,
+          "isDefault": false
+        },
+        {
+          "name": "setBackgroundColor",
+          "line": 129,
+          "isDefault": false
+        },
+        {
+          "name": "setClipLeft",
+          "line": 133,
+          "isDefault": false
+        },
+        {
+          "name": "setClipRight",
+          "line": 137,
+          "isDefault": false
+        },
+        {
+          "name": "setClipTop",
+          "line": 141,
+          "isDefault": false
+        },
+        {
+          "name": "setClipBottom",
+          "line": 145,
+          "isDefault": false
+        },
+        {
+          "name": "setBoxLeft",
+          "line": 149,
+          "isDefault": false
+        },
+        {
+          "name": "setBoxRight",
+          "line": 153,
+          "isDefault": false
+        },
+        {
+          "name": "setBoxTop",
+          "line": 157,
+          "isDefault": false
+        },
+        {
+          "name": "setBoxBottom",
+          "line": 161,
+          "isDefault": false
+        },
+        {
+          "name": "setText",
+          "line": 165,
+          "isDefault": false
+        },
+        {
+          "name": "setLength",
+          "line": 169,
+          "isDefault": false
+        },
+        {
+          "name": "reset",
+          "line": 173,
+          "isDefault": false
+        },
+        {
+          "name": "Text2Order",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 39,
+        "functionCount": 38,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rdp/orders/TriBltOrder.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 73,
+      "nonEmptyLines": 57,
+      "functions": [
+        {
+          "name": "TriBltOrder",
+          "startLine": 12,
+          "endLine": 14,
+          "params": []
+        },
+        {
+          "name": "getColorTable",
+          "startLine": 16,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "getCacheID",
+          "startLine": 20,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "getCacheIDX",
+          "startLine": 24,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "getSRCX",
+          "startLine": 28,
+          "endLine": 30,
+          "params": []
+        },
+        {
+          "name": "getSRCY",
+          "startLine": 32,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "getUnknown",
+          "startLine": 36,
+          "endLine": 38,
+          "params": []
+        },
+        {
+          "name": "setColorTable",
+          "startLine": 40,
+          "endLine": 42,
+          "params": [
+            "color_table"
+          ]
+        },
+        {
+          "name": "setCacheID",
+          "startLine": 44,
+          "endLine": 46,
+          "params": [
+            "cache_id"
+          ]
+        },
+        {
+          "name": "setCacheIDX",
+          "startLine": 48,
+          "endLine": 50,
+          "params": [
+            "cache_idx"
+          ]
+        },
+        {
+          "name": "setSRCX",
+          "startLine": 52,
+          "endLine": 54,
+          "params": [
+            "stcx"
+          ]
+        },
+        {
+          "name": "setSRCY",
+          "startLine": 56,
+          "endLine": 58,
+          "params": [
+            "stcy"
+          ]
+        },
+        {
+          "name": "setUnknown",
+          "startLine": 60,
+          "endLine": 62,
+          "params": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "reset",
+          "startLine": 64,
+          "endLine": 72,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "TriBltOrder",
+          "startLine": 3,
+          "endLine": 73,
+          "methods": [
+            "TriBltOrder",
+            "getColorTable",
+            "getCacheID",
+            "getCacheIDX",
+            "getSRCX",
+            "getSRCY",
+            "getUnknown",
+            "setColorTable",
+            "setCacheID",
+            "setCacheIDX",
+            "setSRCX",
+            "setSRCY",
+            "setUnknown",
+            "reset"
+          ],
+          "properties": [
+            "color_table",
+            "cache_id",
+            "cache_idx",
+            "srcx",
+            "srcy",
+            "unknown"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "TriBltOrder",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "getColorTable",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "getCacheID",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "getCacheIDX",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "getSRCX",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "getSRCY",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "getUnknown",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "setColorTable",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "setCacheID",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "setCacheIDX",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "setSRCX",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "setSRCY",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "setUnknown",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "reset",
+          "line": 64,
+          "isDefault": false
+        },
+        {
+          "name": "TriBltOrder",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "reset",
+          "callee": "super.reset",
+          "lineNumber": 65
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 15,
+        "functionCount": 14,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rdp/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/rexec/Encoder.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 81,
+      "nonEmptyLines": 68,
+      "functions": [
+        {
+          "name": "Encoder",
+          "startLine": 24,
+          "endLine": 24,
+          "params": [
+            "m"
+          ]
+        },
+        {
+          "name": "Encoder",
+          "startLine": 25,
+          "endLine": 29,
+          "params": [
+            "m",
+            "offset",
+            "len"
+          ]
+        },
+        {
+          "name": "Encoder",
+          "startLine": 30,
+          "endLine": 30,
+          "params": [
+            "b"
+          ]
+        },
+        {
+          "name": "writeInt",
+          "startLine": 32,
+          "endLine": 36,
+          "params": [
+            "d"
+          ]
+        },
+        {
+          "name": "writeString",
+          "startLine": 37,
+          "endLine": 46,
+          "params": [
+            "s"
+          ]
+        },
+        {
+          "name": "writeData",
+          "startLine": 47,
+          "endLine": 52,
+          "params": [
+            "m"
+          ]
+        },
+        {
+          "name": "writeData",
+          "startLine": 54,
+          "endLine": 56,
+          "params": [
+            "m"
+          ]
+        },
+        {
+          "name": "writeData",
+          "startLine": 58,
+          "endLine": 68,
+          "params": [
+            "m",
+            "offset",
+            "len"
+          ]
+        },
+        {
+          "name": "getLength",
+          "startLine": 70,
+          "endLine": 72,
+          "params": []
+        },
+        {
+          "name": "setLittleEndian32",
+          "startLine": 74,
+          "endLine": 79,
+          "params": [
+            "where",
+            "what"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Encoder",
+          "startLine": 5,
+          "endLine": 81,
+          "methods": [
+            "Encoder",
+            "Encoder",
+            "Encoder",
+            "writeInt",
+            "writeString",
+            "writeData",
+            "writeData",
+            "writeData",
+            "getLength",
+            "setLittleEndian32"
+          ],
+          "properties": [
+            "CMD_CREATEDOMAIN",
+            "CMD_DESTROYDOMAIN",
+            "CMD_DUMPDOMAIN",
+            "CMD_DATA",
+            "CMD_INSTALLZIP",
+            "MAGIC",
+            "REXEC_PORT",
+            "TRANSMISSION_OK",
+            "debugData",
+            "pos",
+            "m",
+            "offset",
+            "len",
+            "core"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "CMD_CREATEDOMAIN",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "CMD_DESTROYDOMAIN",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "CMD_DUMPDOMAIN",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "CMD_DATA",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "CMD_INSTALLZIP",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "MAGIC",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "REXEC_PORT",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "TRANSMISSION_OK",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "Encoder",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "Encoder",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "Encoder",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "writeInt",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "writeString",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "writeData",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "writeData",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "writeData",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "getLength",
+          "line": 70,
+          "isDefault": false
+        },
+        {
+          "name": "Encoder",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "writeInt",
+          "callee": "m.setLittleEndian32",
+          "lineNumber": 33
+        },
+        {
+          "caller": "writeInt",
+          "callee": "setLittleEndian32",
+          "lineNumber": 34
+        },
+        {
+          "caller": "writeString",
+          "callee": "s.length",
+          "lineNumber": 38
+        },
+        {
+          "caller": "writeString",
+          "callee": "writeInt",
+          "lineNumber": 39
+        },
+        {
+          "caller": "writeString",
+          "callee": "s.getBytes",
+          "lineNumber": 40
+        },
+        {
+          "caller": "writeString",
+          "callee": "m.set8",
+          "lineNumber": 42
+        },
+        {
+          "caller": "writeData",
+          "callee": "m.size",
+          "lineNumber": 48
+        },
+        {
+          "caller": "writeData",
+          "callee": "writeInt",
+          "lineNumber": 49
+        },
+        {
+          "caller": "writeData",
+          "callee": "m.copyToMemory",
+          "lineNumber": 50
+        },
+        {
+          "caller": "writeData",
+          "callee": "writeData",
+          "lineNumber": 55
+        },
+        {
+          "caller": "writeData",
+          "callee": "writeInt",
+          "lineNumber": 60
+        },
+        {
+          "caller": "writeData",
+          "callee": "this.m.copyFromByteArray",
+          "lineNumber": 61
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 18,
+        "functionCount": 10,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rexec/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/rexec/server/Main.j",
+      "language": "j",
+      "fileCategory": "code",
+      "totalLines": 177,
+      "nonEmptyLines": 151,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/rpc/Auth.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 9,
+      "functions": [
+        {
+          "name": "Auth",
+          "startLine": 10,
+          "endLine": 10,
+          "params": []
+        },
+        {
+          "name": "Auth",
+          "startLine": 11,
+          "endLine": 11,
+          "params": [
+            "id"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Auth",
+          "startLine": 3,
+          "endLine": 13,
+          "methods": [
+            "Auth",
+            "Auth"
+          ],
+          "properties": [
+            "SWITCH_AuthNone",
+            "SWITCH_AuthUnix",
+            "SWITCH_AuthShort",
+            "id"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SWITCH_AuthNone",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_AuthUnix",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_AuthShort",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "id",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "Auth",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "Auth",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "Auth",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpc/AuthNone.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 7,
+      "functions": [
+        {
+          "name": "AuthNone",
+          "startLine": 5,
+          "endLine": 7,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AuthNone",
+          "startLine": 3,
+          "endLine": 8,
+          "methods": [
+            "AuthNone"
+          ],
+          "properties": [
+            "length"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "length",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "AuthNone",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "AuthNone",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpc/AuthShort.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "classes": [
+        {
+          "name": "AuthShort",
+          "startLine": 3,
+          "endLine": 5,
+          "methods": [],
+          "properties": [
+            "length"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "length",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "AuthShort",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpc/AuthUnix.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 18,
+      "functions": [
+        {
+          "name": "AuthUnix",
+          "startLine": 13,
+          "endLine": 14,
+          "params": []
+        },
+        {
+          "name": "AuthUnix",
+          "startLine": 15,
+          "endLine": 21,
+          "params": [
+            "machinename",
+            "uid",
+            "gid",
+            "gids"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AuthUnix",
+          "startLine": 3,
+          "endLine": 22,
+          "methods": [
+            "AuthUnix",
+            "AuthUnix"
+          ],
+          "properties": [
+            "stamp",
+            "machinename",
+            "uid",
+            "gid",
+            "gids"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "stamp",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "machinename",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "uid",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "gid",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "gids",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "AuthUnix",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "AuthUnix",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "AuthUnix",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AuthUnix",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 16
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpc/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/rpc/RPCCall.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 19,
+      "functions": [
+        {
+          "name": "RPCCall",
+          "startLine": 11,
+          "endLine": 11,
+          "params": []
+        },
+        {
+          "name": "RPCCall",
+          "startLine": 13,
+          "endLine": 21,
+          "params": [
+            "xid",
+            "prog",
+            "progVersion",
+            "proc",
+            "a",
+            "c"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RPCCall",
+          "startLine": 3,
+          "endLine": 22,
+          "methods": [
+            "RPCCall",
+            "RPCCall"
+          ],
+          "properties": [
+            "version",
+            "prog",
+            "progVersion",
+            "proc",
+            "a",
+            "c"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "version",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "prog",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "progVersion",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "proc",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "a",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "c",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "RPCCall",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "RPCCall",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "RPCCall",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpc/RPCContinuation.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "classes": [
+        {
+          "name": "RPCContinuation",
+          "startLine": 5,
+          "endLine": 9,
+          "methods": [],
+          "properties": [
+            "buf",
+            "rpc",
+            "waiter"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "buf",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "rpc",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "waiter",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "RPCContinuation",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpc/RPCData.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 4,
+      "nonEmptyLines": 3,
+      "classes": [
+        {
+          "name": "RPCData",
+          "startLine": 3,
+          "endLine": 4,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RPCData",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpc/RPCEnum.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 4,
+      "nonEmptyLines": 3,
+      "classes": [
+        {
+          "name": "RPCEnum",
+          "startLine": 3,
+          "endLine": 4,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RPCEnum",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpc/RPCException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "RPCException",
+          "startLine": 4,
+          "endLine": 4,
+          "params": []
+        },
+        {
+          "name": "RPCException",
+          "startLine": 5,
+          "endLine": 5,
+          "params": [
+            "msg"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RPCException",
+          "startLine": 3,
+          "endLine": 6,
+          "methods": [
+            "RPCException",
+            "RPCException"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RPCException",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "RPCException",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "RPCException",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpc/RPCHeader.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "classes": [
+        {
+          "name": "RPCHeader",
+          "startLine": 6,
+          "endLine": 9,
+          "methods": [],
+          "properties": [
+            "xid",
+            "msg"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "xid",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "msg",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "RPCHeader",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpc/RPCInitException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "RPCInitException",
+          "startLine": 4,
+          "endLine": 4,
+          "params": []
+        },
+        {
+          "name": "RPCInitException",
+          "startLine": 5,
+          "endLine": 5,
+          "params": [
+            "msg"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RPCInitException",
+          "startLine": 3,
+          "endLine": 6,
+          "methods": [
+            "RPCInitException",
+            "RPCInitException"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RPCInitException",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "RPCInitException",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "RPCInitException",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpc/RPCMessage.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 14,
+      "functions": [
+        {
+          "name": "RPCMessage",
+          "startLine": 12,
+          "endLine": 12,
+          "params": []
+        },
+        {
+          "name": "RPCMessage",
+          "startLine": 13,
+          "endLine": 16,
+          "params": [
+            "xid",
+            "msgType"
+          ]
+        },
+        {
+          "name": "getID",
+          "startLine": 18,
+          "endLine": 18,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "RPCMessage",
+          "startLine": 3,
+          "endLine": 22,
+          "methods": [
+            "RPCMessage",
+            "RPCMessage",
+            "getID"
+          ],
+          "properties": [
+            "SWITCH_RPCCall",
+            "SWITCH_RPCReply",
+            "xid",
+            "msgType"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SWITCH_RPCCall",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_RPCReply",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "xid",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "msgType",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "RPCMessage",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "RPCMessage",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "getID",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "RPCMessage",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpc/RPCMsgAccepted.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 20,
+      "nonEmptyLines": 15,
+      "functions": [
+        {
+          "name": "RPCMsgAccepted",
+          "startLine": 11,
+          "endLine": 12,
+          "params": []
+        },
+        {
+          "name": "RPCMsgAccepted",
+          "startLine": 14,
+          "endLine": 18,
+          "params": [
+            "xid",
+            "verf",
+            "stat"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RPCMsgAccepted",
+          "startLine": 3,
+          "endLine": 20,
+          "methods": [
+            "RPCMsgAccepted",
+            "RPCMsgAccepted"
+          ],
+          "properties": [
+            "SWITCH_RPCMsgSuccess",
+            "SWITCH_RPCMsgProgUnavailable",
+            "SWITCH_RPCMsgProgMismatch",
+            "verf",
+            "stat"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SWITCH_RPCMsgSuccess",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_RPCMsgProgUnavailable",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_RPCMsgProgMismatch",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "verf",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "stat",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "RPCMsgAccepted",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "RPCMsgAccepted",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "RPCMsgAccepted",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpc/RPCMsgDenied.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 6,
+      "classes": [
+        {
+          "name": "RPCMsgDenied",
+          "startLine": 3,
+          "endLine": 8,
+          "methods": [],
+          "properties": [
+            "SWITCH_RPCMsgRejectMismatch",
+            "SWITCH_RPCMsgRejectAuth",
+            "status"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SWITCH_RPCMsgRejectMismatch",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_RPCMsgRejectAuth",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "status",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "RPCMsgDenied",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpc/RPCMsgProgMismatch.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 11,
+      "functions": [
+        {
+          "name": "RPCMsgProgMismatch",
+          "startLine": 8,
+          "endLine": 8,
+          "params": []
+        },
+        {
+          "name": "RPCMsgProgMismatch",
+          "startLine": 9,
+          "endLine": 13,
+          "params": [
+            "xid",
+            "verf",
+            "low",
+            "high"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RPCMsgProgMismatch",
+          "startLine": 3,
+          "endLine": 14,
+          "methods": [
+            "RPCMsgProgMismatch",
+            "RPCMsgProgMismatch"
+          ],
+          "properties": [
+            "low",
+            "high"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "low",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "high",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "RPCMsgProgMismatch",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "RPCMsgProgMismatch",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "RPCMsgProgMismatch",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    }
+  ]
+}

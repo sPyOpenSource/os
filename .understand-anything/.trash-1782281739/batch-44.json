@@ -1,0 +1,1901 @@
+{
+  "batchIndex": 44,
+  "nodes": [
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBConfiguration.java::class::USBConfiguration",
+      "type": "class",
+      "label": "USBConfiguration",
+      "properties": {
+        "startLine": 26,
+        "endLine": 92,
+        "methods": [
+          "USBConfiguration",
+          "getDescriptor",
+          "getInterface",
+          "setInterface",
+          "toString"
+        ],
+        "properties": [
+          "descr",
+          "interfaces"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::USBConfiguration",
+      "type": "function",
+      "label": "USBConfiguration",
+      "properties": {
+        "startLine": 42,
+        "endLine": 46,
+        "params": [
+          "device",
+          "descr"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::getDescriptor",
+      "type": "function",
+      "label": "getDescriptor",
+      "properties": {
+        "startLine": 51,
+        "endLine": 53,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::getInterface",
+      "type": "function",
+      "label": "getInterface",
+      "properties": {
+        "startLine": 58,
+        "endLine": 60,
+        "params": [
+          "index"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::setInterface",
+      "type": "function",
+      "label": "setInterface",
+      "properties": {
+        "startLine": 66,
+        "endLine": 72,
+        "params": [
+          "index",
+          "intf"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::toString",
+      "type": "function",
+      "label": "toString",
+      "properties": {
+        "startLine": 77,
+        "endLine": 90,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBConfiguration.java::export::USBConfiguration",
+      "type": "export",
+      "label": "USBConfiguration",
+      "properties": {
+        "line": 42,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBConfiguration.java::export::getDescriptor",
+      "type": "export",
+      "label": "getDescriptor",
+      "properties": {
+        "line": 51,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBConfiguration.java::export::getInterface",
+      "type": "export",
+      "label": "getInterface",
+      "properties": {
+        "line": 58,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBConfiguration.java::export::toString",
+      "type": "export",
+      "label": "toString",
+      "properties": {
+        "line": 77,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBConfiguration.java",
+      "type": "file",
+      "label": "USBConfiguration.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 92,
+        "nonEmptyLines": 83,
+        "metrics": {
+          "importCount": 5,
+          "exportCount": 5,
+          "functionCount": 5,
+          "classCount": 1
+        }
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBInterface.java::class::USBInterface",
+      "type": "class",
+      "label": "USBInterface",
+      "properties": {
+        "startLine": 26,
+        "endLine": 148,
+        "methods": [
+          "USBInterface",
+          "getDescriptor",
+          "getConfuration",
+          "getEndPoint",
+          "setEndPoint",
+          "getStatus",
+          "setFeature",
+          "clearFeature",
+          "toString"
+        ],
+        "properties": [
+          "conf",
+          "descr",
+          "endPoints"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBInterface.java::func::USBInterface",
+      "type": "function",
+      "label": "USBInterface",
+      "properties": {
+        "startLine": 47,
+        "endLine": 52,
+        "params": [
+          "conf",
+          "descr"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBInterface.java::func::getDescriptor",
+      "type": "function",
+      "label": "getDescriptor",
+      "properties": {
+        "startLine": 57,
+        "endLine": 59,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBInterface.java::func::getConfuration",
+      "type": "function",
+      "label": "getConfuration",
+      "properties": {
+        "startLine": 64,
+        "endLine": 66,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBInterface.java::func::getEndPoint",
+      "type": "function",
+      "label": "getEndPoint",
+      "properties": {
+        "startLine": 71,
+        "endLine": 73,
+        "params": [
+          "index"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBInterface.java::func::setEndPoint",
+      "type": "function",
+      "label": "setEndPoint",
+      "properties": {
+        "startLine": 78,
+        "endLine": 84,
+        "params": [
+          "index",
+          "endPoint"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBInterface.java::func::getStatus",
+      "type": "function",
+      "label": "getStatus",
+      "properties": {
+        "startLine": 92,
+        "endLine": 100,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBInterface.java::func::setFeature",
+      "type": "function",
+      "label": "setFeature",
+      "properties": {
+        "startLine": 108,
+        "endLine": 114,
+        "params": [
+          "featureSelector"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBInterface.java::func::clearFeature",
+      "type": "function",
+      "label": "clearFeature",
+      "properties": {
+        "startLine": 122,
+        "endLine": 129,
+        "params": [
+          "featureSelector"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBInterface.java::func::toString",
+      "type": "function",
+      "label": "toString",
+      "properties": {
+        "startLine": 134,
+        "endLine": 147,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBInterface.java::export::USBInterface",
+      "type": "export",
+      "label": "USBInterface",
+      "properties": {
+        "line": 47,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBInterface.java::export::getDescriptor",
+      "type": "export",
+      "label": "getDescriptor",
+      "properties": {
+        "line": 57,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBInterface.java::export::getConfuration",
+      "type": "export",
+      "label": "getConfuration",
+      "properties": {
+        "line": 64,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBInterface.java::export::getEndPoint",
+      "type": "export",
+      "label": "getEndPoint",
+      "properties": {
+        "line": 71,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBInterface.java::export::getStatus",
+      "type": "export",
+      "label": "getStatus",
+      "properties": {
+        "line": 92,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBInterface.java::export::setFeature",
+      "type": "export",
+      "label": "setFeature",
+      "properties": {
+        "line": 108,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBInterface.java::export::clearFeature",
+      "type": "export",
+      "label": "clearFeature",
+      "properties": {
+        "line": 122,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBInterface.java::export::toString",
+      "type": "export",
+      "label": "toString",
+      "properties": {
+        "line": 134,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/driver/bus/usb/USBInterface.java",
+      "type": "file",
+      "label": "USBInterface.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 148,
+        "nonEmptyLines": 136,
+        "metrics": {
+          "importCount": 9,
+          "exportCount": 9,
+          "functionCount": 9,
+          "classCount": 1
+        }
+      }
+    },
+    {
+      "id": "src/org/jnode/util/BinaryScaleFactor.java::class::BinaryScaleFactor",
+      "type": "class",
+      "label": "BinaryScaleFactor",
+      "properties": {
+        "startLine": 23,
+        "endLine": 87,
+        "methods": [
+          "BinaryScaleFactor",
+          "getMultiplier",
+          "getUnit",
+          "toString",
+          "apply"
+        ],
+        "properties": [
+          "values",
+          "keys",
+          "multiplier",
+          "unit"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/util/BinaryScaleFactor.java::func::BinaryScaleFactor",
+      "type": "function",
+      "label": "BinaryScaleFactor",
+      "properties": {
+        "startLine": 45,
+        "endLine": 48,
+        "params": [
+          "multiplier",
+          "unit"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/util/BinaryScaleFactor.java::func::getMultiplier",
+      "type": "function",
+      "label": "getMultiplier",
+      "properties": {
+        "startLine": 50,
+        "endLine": 53,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/util/BinaryScaleFactor.java::func::getUnit",
+      "type": "function",
+      "label": "getUnit",
+      "properties": {
+        "startLine": 55,
+        "endLine": 58,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/util/BinaryScaleFactor.java::func::toString",
+      "type": "function",
+      "label": "toString",
+      "properties": {
+        "startLine": 60,
+        "endLine": 63,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/util/BinaryScaleFactor.java::func::apply",
+      "type": "function",
+      "label": "apply",
+      "properties": {
+        "startLine": 72,
+        "endLine": 86,
+        "params": [
+          "value",
+          "nbDecimals"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/util/BinaryScaleFactor.java::export::values",
+      "type": "export",
+      "label": "values",
+      "properties": {
+        "line": 24,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/util/BinaryScaleFactor.java::export::keys",
+      "type": "export",
+      "label": "keys",
+      "properties": {
+        "line": 33,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/util/BinaryScaleFactor.java::export::BinaryScaleFactor",
+      "type": "export",
+      "label": "BinaryScaleFactor",
+      "properties": {
+        "line": 45,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/util/BinaryScaleFactor.java::export::getMultiplier",
+      "type": "export",
+      "label": "getMultiplier",
+      "properties": {
+        "line": 50,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/util/BinaryScaleFactor.java::export::getUnit",
+      "type": "export",
+      "label": "getUnit",
+      "properties": {
+        "line": 55,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/util/BinaryScaleFactor.java::export::toString",
+      "type": "export",
+      "label": "toString",
+      "properties": {
+        "line": 60,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/util/BinaryScaleFactor.java::export::apply",
+      "type": "export",
+      "label": "apply",
+      "properties": {
+        "line": 72,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/util/BinaryScaleFactor.java",
+      "type": "file",
+      "label": "BinaryScaleFactor.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 87,
+        "nonEmptyLines": 77,
+        "metrics": {
+          "importCount": 8,
+          "exportCount": 8,
+          "functionCount": 5,
+          "classCount": 1
+        }
+      }
+    },
+    {
+      "id": "src/org/jnode/util/DecimalScaleFactor.java::class::DecimalScaleFactor",
+      "type": "class",
+      "label": "DecimalScaleFactor",
+      "properties": {
+        "startLine": 24,
+        "endLine": 87,
+        "methods": [
+          "DecimalScaleFactor",
+          "getMultiplier",
+          "getUnit",
+          "toString",
+          "apply"
+        ],
+        "properties": [
+          "keys",
+          "multiplier",
+          "unit"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/util/DecimalScaleFactor.java::func::DecimalScaleFactor",
+      "type": "function",
+      "label": "DecimalScaleFactor",
+      "properties": {
+        "startLine": 45,
+        "endLine": 48,
+        "params": [
+          "multiplier",
+          "unit"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/util/DecimalScaleFactor.java::func::getMultiplier",
+      "type": "function",
+      "label": "getMultiplier",
+      "properties": {
+        "startLine": 50,
+        "endLine": 53,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/util/DecimalScaleFactor.java::func::getUnit",
+      "type": "function",
+      "label": "getUnit",
+      "properties": {
+        "startLine": 55,
+        "endLine": 58,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/util/DecimalScaleFactor.java::func::toString",
+      "type": "function",
+      "label": "toString",
+      "properties": {
+        "startLine": 60,
+        "endLine": 63,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/util/DecimalScaleFactor.java::func::apply",
+      "type": "function",
+      "label": "apply",
+      "properties": {
+        "startLine": 72,
+        "endLine": 86,
+        "params": [
+          "value",
+          "nbDecimals"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/util/DecimalScaleFactor.java::export::getMultiplier",
+      "type": "export",
+      "label": "getMultiplier",
+      "properties": {
+        "line": 50,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/util/DecimalScaleFactor.java::export::getUnit",
+      "type": "export",
+      "label": "getUnit",
+      "properties": {
+        "line": 55,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/util/DecimalScaleFactor.java::export::toString",
+      "type": "export",
+      "label": "toString",
+      "properties": {
+        "line": 60,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/util/DecimalScaleFactor.java::export::apply",
+      "type": "export",
+      "label": "apply",
+      "properties": {
+        "line": 72,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/util/DecimalScaleFactor.java::export::DecimalScaleFactor",
+      "type": "export",
+      "label": "DecimalScaleFactor",
+      "properties": {
+        "line": 24,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/util/DecimalScaleFactor.java",
+      "type": "file",
+      "label": "DecimalScaleFactor.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 87,
+        "nonEmptyLines": 76,
+        "metrics": {
+          "importCount": 5,
+          "exportCount": 5,
+          "functionCount": 5,
+          "classCount": 1
+        }
+      }
+    },
+    {
+      "id": "src/org/jnode/util/ScaleFactor.java::class::ScaleFactor",
+      "type": "class",
+      "label": "ScaleFactor",
+      "properties": {
+        "startLine": 23,
+        "endLine": 27,
+        "methods": [
+          "getMultiplier",
+          "getUnit"
+        ],
+        "properties": []
+      }
+    },
+    {
+      "id": "src/org/jnode/util/ScaleFactor.java::export::ScaleFactor",
+      "type": "export",
+      "label": "ScaleFactor",
+      "properties": {
+        "line": 23,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/util/ScaleFactor.java",
+      "type": "file",
+      "label": "ScaleFactor.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 27,
+        "nonEmptyLines": 24,
+        "metrics": {
+          "importCount": 1,
+          "exportCount": 1,
+          "functionCount": 0,
+          "classCount": 1
+        }
+      }
+    },
+    {
+      "id": "src/org/jnode/util/SizeUnit.java::class::SizeUnit",
+      "type": "class",
+      "label": "SizeUnit",
+      "properties": {
+        "startLine": 26,
+        "endLine": 64,
+        "methods": [
+          "SizeUnit",
+          "getMultiplier",
+          "getUnit",
+          "toString"
+        ],
+        "properties": [
+          "multiplier",
+          "unit"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/util/SizeUnit.java::func::SizeUnit",
+      "type": "function",
+      "label": "SizeUnit",
+      "properties": {
+        "startLine": 47,
+        "endLine": 50,
+        "params": [
+          "multiplier",
+          "unit"
+        ]
+      }
+    },
+    {
+      "id": "src/org/jnode/util/SizeUnit.java::func::getMultiplier",
+      "type": "function",
+      "label": "getMultiplier",
+      "properties": {
+        "startLine": 52,
+        "endLine": 54,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/util/SizeUnit.java::func::getUnit",
+      "type": "function",
+      "label": "getUnit",
+      "properties": {
+        "startLine": 56,
+        "endLine": 58,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/util/SizeUnit.java::func::toString",
+      "type": "function",
+      "label": "toString",
+      "properties": {
+        "startLine": 60,
+        "endLine": 63,
+        "params": []
+      }
+    },
+    {
+      "id": "src/org/jnode/util/SizeUnit.java::export::SizeUnit",
+      "type": "export",
+      "label": "SizeUnit",
+      "properties": {
+        "line": 47,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/util/SizeUnit.java::export::getMultiplier",
+      "type": "export",
+      "label": "getMultiplier",
+      "properties": {
+        "line": 52,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/util/SizeUnit.java::export::getUnit",
+      "type": "export",
+      "label": "getUnit",
+      "properties": {
+        "line": 56,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/util/SizeUnit.java::export::toString",
+      "type": "export",
+      "label": "toString",
+      "properties": {
+        "line": 60,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/org/jnode/util/SizeUnit.java",
+      "type": "file",
+      "label": "SizeUnit.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 64,
+        "nonEmptyLines": 56,
+        "metrics": {
+          "importCount": 5,
+          "exportCount": 5,
+          "functionCount": 4,
+          "classCount": 1
+        }
+      }
+    },
+    {
+      "id": "src/package.bluej",
+      "type": "file",
+      "label": "package.bluej",
+      "properties": {
+        "language": "bluej",
+        "category": "code",
+        "totalLines": 1,
+        "nonEmptyLines": 0,
+        "metrics": {}
+      }
+    },
+    {
+      "id": "src/sun/package.bluej",
+      "type": "file",
+      "label": "package.bluej",
+      "properties": {
+        "language": "bluej",
+        "category": "code",
+        "totalLines": 1,
+        "nonEmptyLines": 0,
+        "metrics": {}
+      }
+    },
+    {
+      "id": "src/sun/security/package.bluej",
+      "type": "file",
+      "label": "package.bluej",
+      "properties": {
+        "language": "bluej",
+        "category": "code",
+        "totalLines": 1,
+        "nonEmptyLines": 0,
+        "metrics": {}
+      }
+    },
+    {
+      "id": "src/sun/security/provider/package.bluej",
+      "type": "file",
+      "label": "package.bluej",
+      "properties": {
+        "language": "bluej",
+        "category": "code",
+        "totalLines": 1,
+        "nonEmptyLines": 0,
+        "metrics": {}
+      }
+    },
+    {
+      "id": "src/sun/security/provider/Sun.java::class::Sun",
+      "type": "class",
+      "label": "Sun",
+      "properties": {
+        "startLine": 3,
+        "endLine": 5,
+        "methods": [
+          "Sun"
+        ],
+        "properties": []
+      }
+    },
+    {
+      "id": "src/sun/security/provider/Sun.java::func::Sun",
+      "type": "function",
+      "label": "Sun",
+      "properties": {
+        "startLine": 4,
+        "endLine": 4,
+        "params": []
+      }
+    },
+    {
+      "id": "src/sun/security/provider/Sun.java::export::Sun",
+      "type": "export",
+      "label": "Sun",
+      "properties": {
+        "line": 4,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/sun/security/provider/Sun.java",
+      "type": "file",
+      "label": "Sun.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 5,
+        "nonEmptyLines": 4,
+        "metrics": {
+          "importCount": 2,
+          "exportCount": 2,
+          "functionCount": 1,
+          "classCount": 1
+        }
+      }
+    },
+    {
+      "id": "src/sun/tools/javac/Main.java::class::Main",
+      "type": "class",
+      "label": "Main",
+      "properties": {
+        "startLine": 3,
+        "endLine": 6,
+        "methods": [
+          "Main",
+          "compile"
+        ],
+        "properties": []
+      }
+    },
+    {
+      "id": "src/sun/tools/javac/Main.java::func::Main",
+      "type": "function",
+      "label": "Main",
+      "properties": {
+        "startLine": 4,
+        "endLine": 4,
+        "params": [
+          "arg0",
+          "arg1"
+        ]
+      }
+    },
+    {
+      "id": "src/sun/tools/javac/Main.java::func::compile",
+      "type": "function",
+      "label": "compile",
+      "properties": {
+        "startLine": 5,
+        "endLine": 5,
+        "params": [
+          "arg0"
+        ]
+      }
+    },
+    {
+      "id": "src/sun/tools/javac/Main.java::export::Main",
+      "type": "export",
+      "label": "Main",
+      "properties": {
+        "line": 4,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/sun/tools/javac/Main.java::export::compile",
+      "type": "export",
+      "label": "compile",
+      "properties": {
+        "line": 5,
+        "isDefault": false
+      }
+    },
+    {
+      "id": "src/sun/tools/javac/Main.java",
+      "type": "file",
+      "label": "Main.java",
+      "properties": {
+        "language": "java",
+        "category": "code",
+        "totalLines": 6,
+        "nonEmptyLines": 5,
+        "metrics": {
+          "importCount": 3,
+          "exportCount": 3,
+          "functionCount": 2,
+          "classCount": 1
+        }
+      }
+    },
+    {
+      "id": "src/sun/tools/javac/package.bluej",
+      "type": "file",
+      "label": "package.bluej",
+      "properties": {
+        "language": "bluej",
+        "category": "code",
+        "totalLines": 1,
+        "nonEmptyLines": 0,
+        "metrics": {}
+      }
+    },
+    {
+      "id": "src/sun/tools/package.bluej",
+      "type": "file",
+      "label": "package.bluej",
+      "properties": {
+        "language": "bluej",
+        "category": "code",
+        "totalLines": 1,
+        "nonEmptyLines": 0,
+        "metrics": {}
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBConfiguration.java::class::USBConfiguration",
+      "target": "src/org/jnode/driver/bus/usb/USBConfiguration.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::USBConfiguration",
+      "target": "src/org/jnode/driver/bus/usb/USBConfiguration.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::getDescriptor",
+      "target": "src/org/jnode/driver/bus/usb/USBConfiguration.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::getInterface",
+      "target": "src/org/jnode/driver/bus/usb/USBConfiguration.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::setInterface",
+      "target": "src/org/jnode/driver/bus/usb/USBConfiguration.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/USBConfiguration.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::USBConfiguration",
+      "target": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::descr.getNumInterfaces",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 45
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::setInterface",
+      "target": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::new SecurityException",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 68
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::new StringBuffer",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 78
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::b.append",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 79
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::b.append",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 80
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::b.append",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 81
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::b.append",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 84
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::b.append",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 86
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::b.append",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 88
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/USBConfiguration.java::func::b.toString",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 89
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBConfiguration.java",
+      "target": "src/org/jnode/driver/bus/usb/USBConfiguration.java::export::USBConfiguration",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBConfiguration.java",
+      "target": "src/org/jnode/driver/bus/usb/USBConfiguration.java::export::getDescriptor",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBConfiguration.java",
+      "target": "src/org/jnode/driver/bus/usb/USBConfiguration.java::export::getInterface",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBConfiguration.java",
+      "target": "src/org/jnode/driver/bus/usb/USBConfiguration.java::export::toString",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBConfiguration.java",
+      "target": "src/org/jnode/driver/bus/usb/USBConfiguration.java::export::USBConfiguration",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::class::USBInterface",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::USBInterface",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::getDescriptor",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::getConfuration",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::getEndPoint",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::setEndPoint",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::getStatus",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::setFeature",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::clearFeature",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::USBInterface",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::conf.getDevice",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 48
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::USBInterface",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::descr.getNumEndPoints",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 51
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::setEndPoint",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::new SecurityException",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 80
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::getStatus",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::new USBPacket",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 94
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::getStatus",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::getDevice().getDefaultControlPipe",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 95
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::getStatus",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::getDevice",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 95
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::getStatus",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::pipe.createRequest",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 96
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::getStatus",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::SetupPacket.createGetStatusPacket",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 97
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::getStatus",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::descr.getInterfaceNumber",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 97
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::getStatus",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::pipe.syncSubmit",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 98
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::getStatus",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::data.getShort",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 99
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::setFeature",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::getDevice().getDefaultControlPipe",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 110
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::setFeature",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::getDevice",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 110
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::setFeature",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::pipe.createRequest",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 111
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::setFeature",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::SetupPacket.createSetFeaturePacket",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 112
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::setFeature",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::descr.getInterfaceNumber",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 112
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::setFeature",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::pipe.syncSubmit",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 113
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::clearFeature",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::getDevice().getDefaultControlPipe",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 124
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::clearFeature",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::getDevice",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 124
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::clearFeature",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::pipe.createRequest",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 125
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::clearFeature",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::SetupPacket.createClearFeaturePacket",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 126
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::clearFeature",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::descr.getInterfaceNumber",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 126
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::clearFeature",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::pipe.syncSubmit",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 128
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::new StringBuffer",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 135
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::b.append",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 136
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::b.append",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 137
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::b.append",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 138
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::b.append",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 141
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::b.append",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 143
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::b.append",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 145
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java::func::toString",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::func::b.toString",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 146
+      }
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::export::USBInterface",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::export::getDescriptor",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::export::getConfuration",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::export::getEndPoint",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::export::getStatus",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::export::setFeature",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::export::clearFeature",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::export::toString",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/driver/bus/usb/USBInterface.java",
+      "target": "src/org/jnode/driver/bus/usb/USBInterface.java::export::USBInterface",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/BinaryScaleFactor.java::class::BinaryScaleFactor",
+      "target": "src/org/jnode/util/BinaryScaleFactor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/BinaryScaleFactor.java::func::BinaryScaleFactor",
+      "target": "src/org/jnode/util/BinaryScaleFactor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/BinaryScaleFactor.java::func::getMultiplier",
+      "target": "src/org/jnode/util/BinaryScaleFactor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/BinaryScaleFactor.java::func::getUnit",
+      "target": "src/org/jnode/util/BinaryScaleFactor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/BinaryScaleFactor.java::func::toString",
+      "target": "src/org/jnode/util/BinaryScaleFactor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/BinaryScaleFactor.java::func::apply",
+      "target": "src/org/jnode/util/BinaryScaleFactor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/BinaryScaleFactor.java::func::apply",
+      "target": "src/org/jnode/util/BinaryScaleFactor.java::func::new BinaryScaleFactor",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 77
+      }
+    },
+    {
+      "source": "src/org/jnode/util/BinaryScaleFactor.java::func::apply",
+      "target": "src/org/jnode/util/BinaryScaleFactor.java::func::new BinaryScaleFactor",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 83
+      }
+    },
+    {
+      "source": "src/org/jnode/util/BinaryScaleFactor.java::func::apply",
+      "target": "src/org/jnode/util/BinaryScaleFactor.java::func::unit.getMultiplier",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 84
+      }
+    },
+    {
+      "source": "src/org/jnode/util/BinaryScaleFactor.java::func::apply",
+      "target": "src/org/jnode/util/BinaryScaleFactor.java::func::NumberUtils.toString",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 85
+      }
+    },
+    {
+      "source": "src/org/jnode/util/BinaryScaleFactor.java::func::apply",
+      "target": "src/org/jnode/util/BinaryScaleFactor.java::func::unit.getUnit",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 85
+      }
+    },
+    {
+      "source": "src/org/jnode/util/BinaryScaleFactor.java",
+      "target": "src/org/jnode/util/BinaryScaleFactor.java::export::values",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/BinaryScaleFactor.java",
+      "target": "src/org/jnode/util/BinaryScaleFactor.java::export::keys",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/BinaryScaleFactor.java",
+      "target": "src/org/jnode/util/BinaryScaleFactor.java::export::BinaryScaleFactor",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/BinaryScaleFactor.java",
+      "target": "src/org/jnode/util/BinaryScaleFactor.java::export::getMultiplier",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/BinaryScaleFactor.java",
+      "target": "src/org/jnode/util/BinaryScaleFactor.java::export::getUnit",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/BinaryScaleFactor.java",
+      "target": "src/org/jnode/util/BinaryScaleFactor.java::export::toString",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/BinaryScaleFactor.java",
+      "target": "src/org/jnode/util/BinaryScaleFactor.java::export::apply",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/BinaryScaleFactor.java",
+      "target": "src/org/jnode/util/BinaryScaleFactor.java::export::BinaryScaleFactor",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/DecimalScaleFactor.java::class::DecimalScaleFactor",
+      "target": "src/org/jnode/util/DecimalScaleFactor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/DecimalScaleFactor.java::func::DecimalScaleFactor",
+      "target": "src/org/jnode/util/DecimalScaleFactor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/DecimalScaleFactor.java::func::getMultiplier",
+      "target": "src/org/jnode/util/DecimalScaleFactor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/DecimalScaleFactor.java::func::getUnit",
+      "target": "src/org/jnode/util/DecimalScaleFactor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/DecimalScaleFactor.java::func::toString",
+      "target": "src/org/jnode/util/DecimalScaleFactor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/DecimalScaleFactor.java::func::apply",
+      "target": "src/org/jnode/util/DecimalScaleFactor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/DecimalScaleFactor.java::func::apply",
+      "target": "src/org/jnode/util/DecimalScaleFactor.java::func::new DecimalScaleFactor",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 77
+      }
+    },
+    {
+      "source": "src/org/jnode/util/DecimalScaleFactor.java::func::apply",
+      "target": "src/org/jnode/util/DecimalScaleFactor.java::func::new DecimalScaleFactor",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 83
+      }
+    },
+    {
+      "source": "src/org/jnode/util/DecimalScaleFactor.java::func::apply",
+      "target": "src/org/jnode/util/DecimalScaleFactor.java::func::unit.getMultiplier",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 84
+      }
+    },
+    {
+      "source": "src/org/jnode/util/DecimalScaleFactor.java::func::apply",
+      "target": "src/org/jnode/util/DecimalScaleFactor.java::func::NumberUtils.toString",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 85
+      }
+    },
+    {
+      "source": "src/org/jnode/util/DecimalScaleFactor.java::func::apply",
+      "target": "src/org/jnode/util/DecimalScaleFactor.java::func::unit.getUnit",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 85
+      }
+    },
+    {
+      "source": "src/org/jnode/util/DecimalScaleFactor.java",
+      "target": "src/org/jnode/util/DecimalScaleFactor.java::export::getMultiplier",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/DecimalScaleFactor.java",
+      "target": "src/org/jnode/util/DecimalScaleFactor.java::export::getUnit",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/DecimalScaleFactor.java",
+      "target": "src/org/jnode/util/DecimalScaleFactor.java::export::toString",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/DecimalScaleFactor.java",
+      "target": "src/org/jnode/util/DecimalScaleFactor.java::export::apply",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/DecimalScaleFactor.java",
+      "target": "src/org/jnode/util/DecimalScaleFactor.java::export::DecimalScaleFactor",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/ScaleFactor.java::class::ScaleFactor",
+      "target": "src/org/jnode/util/ScaleFactor.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/ScaleFactor.java",
+      "target": "src/org/jnode/util/ScaleFactor.java::export::ScaleFactor",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/SizeUnit.java::class::SizeUnit",
+      "target": "src/org/jnode/util/SizeUnit.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/SizeUnit.java::func::SizeUnit",
+      "target": "src/org/jnode/util/SizeUnit.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/SizeUnit.java::func::getMultiplier",
+      "target": "src/org/jnode/util/SizeUnit.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/SizeUnit.java::func::getUnit",
+      "target": "src/org/jnode/util/SizeUnit.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/SizeUnit.java::func::toString",
+      "target": "src/org/jnode/util/SizeUnit.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/SizeUnit.java",
+      "target": "src/org/jnode/util/SizeUnit.java::export::SizeUnit",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/SizeUnit.java",
+      "target": "src/org/jnode/util/SizeUnit.java::export::getMultiplier",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/SizeUnit.java",
+      "target": "src/org/jnode/util/SizeUnit.java::export::getUnit",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/SizeUnit.java",
+      "target": "src/org/jnode/util/SizeUnit.java::export::toString",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/org/jnode/util/SizeUnit.java",
+      "target": "src/org/jnode/util/SizeUnit.java::export::SizeUnit",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/sun/security/provider/Sun.java::class::Sun",
+      "target": "src/sun/security/provider/Sun.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/sun/security/provider/Sun.java::func::Sun",
+      "target": "src/sun/security/provider/Sun.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/sun/security/provider/Sun.java::func::Sun",
+      "target": "src/sun/security/provider/Sun.java::func::new Error",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 4
+      }
+    },
+    {
+      "source": "src/sun/security/provider/Sun.java",
+      "target": "src/sun/security/provider/Sun.java::export::Sun",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/sun/security/provider/Sun.java",
+      "target": "src/sun/security/provider/Sun.java::export::Sun",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/sun/tools/javac/Main.java::class::Main",
+      "target": "src/sun/tools/javac/Main.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/sun/tools/javac/Main.java::func::Main",
+      "target": "src/sun/tools/javac/Main.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/sun/tools/javac/Main.java::func::compile",
+      "target": "src/sun/tools/javac/Main.java",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "source": "src/sun/tools/javac/Main.java::func::Main",
+      "target": "src/sun/tools/javac/Main.java::func::new Error",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 4
+      }
+    },
+    {
+      "source": "src/sun/tools/javac/Main.java::func::compile",
+      "target": "src/sun/tools/javac/Main.java::func::new Error",
+      "type": "CALLS",
+      "properties": {
+        "lineNumber": 5
+      }
+    },
+    {
+      "source": "src/sun/tools/javac/Main.java",
+      "target": "src/sun/tools/javac/Main.java::export::Main",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/sun/tools/javac/Main.java",
+      "target": "src/sun/tools/javac/Main.java::export::compile",
+      "type": "EXPORTS",
+      "properties": {}
+    },
+    {
+      "source": "src/sun/tools/javac/Main.java",
+      "target": "src/sun/tools/javac/Main.java::export::Main",
+      "type": "EXPORTS",
+      "properties": {}
+    }
+  ],
+  "metadata": {
+    "filesAnalyzed": 14,
+    "filesSkipped": [],
+    "totalNodes": 85,
+    "totalEdges": 131
+  }
+}

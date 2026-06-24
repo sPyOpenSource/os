@@ -1,0 +1,2299 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/jx/classfile/datatypes/BCIntegerDatatype.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 28,
+      "functions": [
+        {
+          "name": "longValue",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        },
+        {
+          "name": "getObjectFor",
+          "startLine": 8,
+          "endLine": 8,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "combined",
+          "startLine": 11,
+          "endLine": 29,
+          "params": [
+            "operator",
+            "op2"
+          ]
+        },
+        {
+          "name": "negated",
+          "startLine": 31,
+          "endLine": 33,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "BCIntegerDatatype",
+          "startLine": 4,
+          "endLine": 35,
+          "methods": [
+            "longValue",
+            "getObjectFor",
+            "combined",
+            "negated"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "combined",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "negated",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "BCIntegerDatatype",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "combined",
+          "callee": "this.longValue",
+          "lineNumber": 12
+        },
+        {
+          "caller": "combined",
+          "callee": "((BCIntegerDatatype)op2).longValue",
+          "lineNumber": 13
+        },
+        {
+          "caller": "combined",
+          "callee": "getObjectFor",
+          "lineNumber": 28
+        },
+        {
+          "caller": "negated",
+          "callee": "getObjectFor",
+          "lineNumber": 32
+        },
+        {
+          "caller": "negated",
+          "callee": "this.longValue",
+          "lineNumber": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BCLong.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 20,
+      "nonEmptyLines": 14,
+      "functions": [
+        {
+          "name": "BCLong",
+          "startLine": 6,
+          "endLine": 6,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "value",
+          "startLine": 7,
+          "endLine": 7,
+          "params": []
+        },
+        {
+          "name": "longValue",
+          "startLine": 8,
+          "endLine": 8,
+          "params": []
+        },
+        {
+          "name": "type",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "toString",
+          "startLine": 11,
+          "endLine": 11,
+          "params": []
+        },
+        {
+          "name": "getObjectFor",
+          "startLine": 16,
+          "endLine": 18,
+          "params": [
+            "value"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "BCLong",
+          "startLine": 3,
+          "endLine": 20,
+          "methods": [
+            "BCLong",
+            "value",
+            "longValue",
+            "type",
+            "toString",
+            "getObjectFor"
+          ],
+          "properties": [
+            "value",
+            "VALUE_0",
+            "VALUE_1"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "BCLong",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "value",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "longValue",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "type",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "VALUE_0",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "VALUE_1",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "BCLong",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "toString",
+          "callee": "String.valueOf",
+          "lineNumber": 11
+        },
+        {
+          "caller": "getObjectFor",
+          "callee": "new BCLong",
+          "lineNumber": 17
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BCNumericDatatype.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 25,
+      "nonEmptyLines": 21,
+      "functions": [
+        {
+          "name": "combined",
+          "startLine": 23,
+          "endLine": 23,
+          "params": [
+            "operator",
+            "op2"
+          ]
+        },
+        {
+          "name": "negated",
+          "startLine": 24,
+          "endLine": 24,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "BCNumericDatatype",
+          "startLine": 6,
+          "endLine": 25,
+          "methods": [
+            "combined",
+            "negated"
+          ],
+          "properties": [
+            "ADD",
+            "SUB",
+            "MUL",
+            "DIV",
+            "REM",
+            "NEG",
+            "SHL",
+            "SHR",
+            "USHR",
+            "AND",
+            "OR",
+            "XOR"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ADD",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "SUB",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "MUL",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "DIV",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "REM",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "NEG",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "SHL",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "SHR",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "USHR",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "AND",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "OR",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "XOR",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "combined",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "negated",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "BCNumericDatatype",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 15,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BCReference.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 14,
+      "functions": [
+        {
+          "name": "BCReference",
+          "startLine": 7,
+          "endLine": 7,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "value",
+          "startLine": 8,
+          "endLine": 8,
+          "params": []
+        },
+        {
+          "name": "toString",
+          "startLine": 9,
+          "endLine": 14,
+          "params": []
+        },
+        {
+          "name": "type",
+          "startLine": 15,
+          "endLine": 15,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "BCReference",
+          "startLine": 4,
+          "endLine": 19,
+          "methods": [
+            "BCReference",
+            "value",
+            "toString",
+            "type"
+          ],
+          "properties": [
+            "value",
+            "NULL"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "BCReference",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "value",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "type",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "NULL",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "BCReference",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "toString",
+          "callee": "String.valueOf",
+          "lineNumber": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BCShort.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "BCShort",
+          "startLine": 6,
+          "endLine": 6,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "value",
+          "startLine": 7,
+          "endLine": 7,
+          "params": []
+        },
+        {
+          "name": "longValue",
+          "startLine": 8,
+          "endLine": 8,
+          "params": []
+        },
+        {
+          "name": "toString",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "type",
+          "startLine": 10,
+          "endLine": 10,
+          "params": []
+        },
+        {
+          "name": "getObjectFor",
+          "startLine": 12,
+          "endLine": 14,
+          "params": [
+            "value"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "BCShort",
+          "startLine": 3,
+          "endLine": 15,
+          "methods": [
+            "BCShort",
+            "value",
+            "longValue",
+            "toString",
+            "type",
+            "getObjectFor"
+          ],
+          "properties": [
+            "value"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "BCShort",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "value",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "longValue",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "type",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "BCShort",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "toString",
+          "callee": "String.valueOf",
+          "lineNumber": 9
+        },
+        {
+          "caller": "getObjectFor",
+          "callee": "new BCShort",
+          "lineNumber": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/classfile/datatypes/DataType.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 38,
+      "nonEmptyLines": 36,
+      "functions": [
+        {
+          "name": "DataType",
+          "startLine": 5,
+          "endLine": 5,
+          "params": [
+            "t"
+          ]
+        },
+        {
+          "name": "isClass",
+          "startLine": 6,
+          "endLine": 8,
+          "params": []
+        },
+        {
+          "name": "isArray",
+          "startLine": 9,
+          "endLine": 11,
+          "params": []
+        },
+        {
+          "name": "getClassName",
+          "startLine": 12,
+          "endLine": 15,
+          "params": []
+        },
+        {
+          "name": "getElementType",
+          "startLine": 16,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "getReferenceType",
+          "startLine": 23,
+          "endLine": 36,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DataType",
+          "startLine": 3,
+          "endLine": 38,
+          "methods": [
+            "DataType",
+            "isClass",
+            "isArray",
+            "getClassName",
+            "getElementType",
+            "getReferenceType"
+          ],
+          "properties": [
+            "typeDesc"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DataType",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "isClass",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "isArray",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "getClassName",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "getElementType",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "getReferenceType",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "DataType",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "isClass",
+          "callee": "typeDesc.charAt",
+          "lineNumber": 7
+        },
+        {
+          "caller": "isArray",
+          "callee": "typeDesc.charAt",
+          "lineNumber": 10
+        },
+        {
+          "caller": "getClassName",
+          "callee": "isClass",
+          "lineNumber": 13
+        },
+        {
+          "caller": "getClassName",
+          "callee": "typeDesc.substring",
+          "lineNumber": 13
+        },
+        {
+          "caller": "getClassName",
+          "callee": "typeDesc.length",
+          "lineNumber": 13
+        },
+        {
+          "caller": "getClassName",
+          "callee": "new NoClassTypeException",
+          "lineNumber": 14
+        },
+        {
+          "caller": "getElementType",
+          "callee": "isArray",
+          "lineNumber": 17
+        },
+        {
+          "caller": "getElementType",
+          "callee": "new NoClassTypeException",
+          "lineNumber": 17
+        },
+        {
+          "caller": "getElementType",
+          "callee": "typeDesc.charAt",
+          "lineNumber": 19
+        },
+        {
+          "caller": "getElementType",
+          "callee": "new DataType",
+          "lineNumber": 20
+        },
+        {
+          "caller": "getElementType",
+          "callee": "typeDesc.substring",
+          "lineNumber": 20
+        },
+        {
+          "caller": "getElementType",
+          "callee": "typeDesc.length",
+          "lineNumber": 20
+        },
+        {
+          "caller": "getReferenceType",
+          "callee": "isClass",
+          "lineNumber": 25
+        },
+        {
+          "caller": "getReferenceType",
+          "callee": "isArray",
+          "lineNumber": 25
+        },
+        {
+          "caller": "getReferenceType",
+          "callee": "isClass",
+          "lineNumber": 27
+        },
+        {
+          "caller": "getReferenceType",
+          "callee": "getClassName",
+          "lineNumber": 28
+        },
+        {
+          "caller": "getReferenceType",
+          "callee": "getElementType",
+          "lineNumber": 30
+        },
+        {
+          "caller": "getReferenceType",
+          "callee": "ty1.isClass",
+          "lineNumber": 31
+        },
+        {
+          "caller": "getReferenceType",
+          "callee": "ty1.getClassName",
+          "lineNumber": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/classfile/datatypes/NoClassTypeException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 2,
+      "nonEmptyLines": 2,
+      "classes": [
+        {
+          "name": "NoClassTypeException",
+          "startLine": 2,
+          "endLine": 2,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "NoClassTypeException",
+          "line": 2,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/classfile/datatypes/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/classfile/datatypes/TestTypeDesc.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 53,
+      "nonEmptyLines": 45,
+      "classes": [
+        {
+          "name": "TestTypeDesc",
+          "startLine": 7,
+          "endLine": 52,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/classfile/LineAttributeData.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "LineAttributeData",
+          "startLine": 6,
+          "endLine": 9,
+          "params": [
+            "startBytecodepos",
+            "lineNumber"
+          ]
+        },
+        {
+          "name": "copy",
+          "startLine": 10,
+          "endLine": 12,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "LineAttributeData",
+          "startLine": 3,
+          "endLine": 13,
+          "methods": [
+            "LineAttributeData",
+            "copy"
+          ],
+          "properties": [
+            "startBytecodepos",
+            "lineNumber"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "startBytecodepos",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "lineNumber",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "LineAttributeData",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "copy",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "LineAttributeData",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "copy",
+          "callee": "new LineAttributeData",
+          "lineNumber": 11
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/classfile/MethodSource.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 32,
+      "nonEmptyLines": 26,
+      "functions": [
+        {
+          "name": "getDeclaringClassSource",
+          "startLine": 11,
+          "endLine": 11,
+          "params": []
+        },
+        {
+          "name": "getMethodName",
+          "startLine": 12,
+          "endLine": 12,
+          "params": []
+        },
+        {
+          "name": "getMethodType",
+          "startLine": 13,
+          "endLine": 13,
+          "params": []
+        },
+        {
+          "name": "isPublic",
+          "startLine": 15,
+          "endLine": 15,
+          "params": []
+        },
+        {
+          "name": "isPrivate",
+          "startLine": 16,
+          "endLine": 16,
+          "params": []
+        },
+        {
+          "name": "isProtected",
+          "startLine": 17,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "isStatic",
+          "startLine": 18,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "isFinal",
+          "startLine": 19,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "isAbstract",
+          "startLine": 20,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "isNative",
+          "startLine": 21,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "getBytecode",
+          "startLine": 23,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "getNumInstr",
+          "startLine": 24,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "getNumLocalVariables",
+          "startLine": 25,
+          "endLine": 25,
+          "params": []
+        },
+        {
+          "name": "getNumStackSlots",
+          "startLine": 26,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "getExceptionHandlers",
+          "startLine": 27,
+          "endLine": 27,
+          "params": []
+        },
+        {
+          "name": "getLineNumberTable",
+          "startLine": 28,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "getVerifyResult",
+          "startLine": 30,
+          "endLine": 30,
+          "params": [
+            "type"
+          ]
+        },
+        {
+          "name": "setVerifyResult",
+          "startLine": 31,
+          "endLine": 31,
+          "params": [
+            "newElm"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "MethodSource",
+          "startLine": 9,
+          "endLine": 32,
+          "methods": [
+            "getDeclaringClassSource",
+            "getMethodName",
+            "getMethodType",
+            "isPublic",
+            "isPrivate",
+            "isProtected",
+            "isStatic",
+            "isFinal",
+            "isAbstract",
+            "isNative",
+            "getBytecode",
+            "getNumInstr",
+            "getNumLocalVariables",
+            "getNumStackSlots",
+            "getExceptionHandlers",
+            "getLineNumberTable",
+            "getVerifyResult",
+            "setVerifyResult"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "getDeclaringClassSource",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "getMethodName",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "getMethodType",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "isPublic",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "isPrivate",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "isProtected",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "isStatic",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "isFinal",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "isAbstract",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "isNative",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "getBytecode",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "getNumInstr",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "getNumLocalVariables",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "getNumStackSlots",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "getExceptionHandlers",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "getLineNumberTable",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "getVerifyResult",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "setVerifyResult",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "MethodSource",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 19,
+        "functionCount": 18,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/classfile/NativeMethodException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "functions": [
+        {
+          "name": "NativeMethodException",
+          "startLine": 4,
+          "endLine": 4,
+          "params": [
+            "m"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "NativeMethodException",
+          "startLine": 3,
+          "endLine": 5,
+          "methods": [
+            "NativeMethodException"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "NativeMethodException",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "NativeMethodException",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/classfile/NoMagicNumberException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "NoMagicNumberException",
+          "startLine": 4,
+          "endLine": 4,
+          "params": []
+        },
+        {
+          "name": "NoMagicNumberException",
+          "startLine": 5,
+          "endLine": 5,
+          "params": [
+            "m"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "NoMagicNumberException",
+          "startLine": 3,
+          "endLine": 6,
+          "methods": [
+            "NoMagicNumberException",
+            "NoMagicNumberException"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "NoMagicNumberException",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "NoMagicNumberException",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "NoMagicNumberException",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/classfile/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/classfile/VerifyResult.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 17,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "getType",
+          "startLine": 11,
+          "endLine": 11,
+          "params": []
+        },
+        {
+          "name": "VerifyResult",
+          "startLine": 13,
+          "endLine": 15,
+          "params": [
+            "type"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "VerifyResult",
+          "startLine": 4,
+          "endLine": 17,
+          "methods": [
+            "getType",
+            "VerifyResult"
+          ],
+          "properties": [
+            "NPA_RESULT",
+            "FLA_RESULT",
+            "WCET_RESULT",
+            "CINSTR_RESULT",
+            "type"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "NPA_RESULT",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "FLA_RESULT",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "WCET_RESULT",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "CINSTR_RESULT",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "getType",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "VerifyResult",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "VerifyResult",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/classstore/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/collections/Collection.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 6,
+      "classes": [
+        {
+          "name": "Collection",
+          "startLine": 3,
+          "endLine": 7,
+          "methods": [
+            "iterator",
+            "add",
+            "size"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Collection",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/collections/Comparator.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "classes": [
+        {
+          "name": "Comparator",
+          "startLine": 3,
+          "endLine": 5,
+          "methods": [
+            "compare"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Comparator",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/collections/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/collections/SortedList.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "classes": [
+        {
+          "name": "SortedList",
+          "startLine": 3,
+          "endLine": 5,
+          "methods": [
+            "iterator"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SortedList",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/db/avltree/AVLBaum.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 328,
+      "nonEmptyLines": 270,
+      "functions": [
+        {
+          "name": "AVLBaum",
+          "startLine": 17,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "toString",
+          "startLine": 31,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "insert",
+          "startLine": 36,
+          "endLine": 40,
+          "params": [
+            "x"
+          ]
+        },
+        {
+          "name": "insertAVL",
+          "startLine": 42,
+          "endLine": 112,
+          "params": [
+            "x",
+            "s"
+          ]
+        },
+        {
+          "name": "rotateLL",
+          "startLine": 114,
+          "endLine": 134,
+          "params": []
+        },
+        {
+          "name": "rotateLR",
+          "startLine": 136,
+          "endLine": 164,
+          "params": []
+        },
+        {
+          "name": "rotateRR",
+          "startLine": 166,
+          "endLine": 186,
+          "params": []
+        },
+        {
+          "name": "rotateRL",
+          "startLine": 188,
+          "endLine": 216,
+          "params": []
+        },
+        {
+          "name": "delete",
+          "startLine": 218,
+          "endLine": 223,
+          "params": [
+            "x"
+          ]
+        },
+        {
+          "name": "deleteAVL",
+          "startLine": 225,
+          "endLine": 260,
+          "params": [
+            "x",
+            "s"
+          ]
+        },
+        {
+          "name": "del",
+          "startLine": 262,
+          "endLine": 277,
+          "params": [
+            "s"
+          ]
+        },
+        {
+          "name": "balance1",
+          "startLine": 279,
+          "endLine": 302,
+          "params": [
+            "s"
+          ]
+        },
+        {
+          "name": "balance2",
+          "startLine": 304,
+          "endLine": 327,
+          "params": [
+            "s"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AVLBaum",
+          "startLine": 13,
+          "endLine": 328,
+          "methods": [
+            "AVLBaum",
+            "toString",
+            "insert",
+            "insertAVL",
+            "rotateLL",
+            "rotateLR",
+            "rotateRR",
+            "rotateRL",
+            "delete",
+            "deleteAVL",
+            "del",
+            "balance1",
+            "balance2"
+          ],
+          "properties": [
+            "balance"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AVLBaum",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "insert",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "rotateLL",
+          "line": 114,
+          "isDefault": false
+        },
+        {
+          "name": "rotateLR",
+          "line": 136,
+          "isDefault": false
+        },
+        {
+          "name": "rotateRR",
+          "line": 166,
+          "isDefault": false
+        },
+        {
+          "name": "rotateRL",
+          "line": 188,
+          "isDefault": false
+        },
+        {
+          "name": "delete",
+          "line": 218,
+          "isDefault": false
+        },
+        {
+          "name": "AVLBaum",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "insert",
+          "callee": "insertAVL",
+          "lineNumber": 39
+        },
+        {
+          "caller": "insert",
+          "callee": "new Status",
+          "lineNumber": 39
+        },
+        {
+          "caller": "insertAVL",
+          "callee": "empty",
+          "lineNumber": 46
+        },
+        {
+          "caller": "insertAVL",
+          "callee": "new AVLBaum",
+          "lineNumber": 48
+        },
+        {
+          "caller": "insertAVL",
+          "callee": "new AVLBaum",
+          "lineNumber": 49
+        },
+        {
+          "caller": "insertAVL",
+          "callee": "((Comparable) value()).compareTo",
+          "lineNumber": 54
+        },
+        {
+          "caller": "insertAVL",
+          "callee": "value",
+          "lineNumber": 54
+        },
+        {
+          "caller": "insertAVL",
+          "callee": "((Comparable) value()).compareTo",
+          "lineNumber": 57
+        },
+        {
+          "caller": "insertAVL",
+          "callee": "value",
+          "lineNumber": 57
+        },
+        {
+          "caller": "insertAVL",
+          "callee": "((AVLBaum) left()).insertAVL",
+          "lineNumber": 58
+        },
+        {
+          "caller": "insertAVL",
+          "callee": "left",
+          "lineNumber": 58
+        },
+        {
+          "caller": "insertAVL",
+          "callee": "rotateLL",
+          "lineNumber": 75
+        },
+        {
+          "caller": "insertAVL",
+          "callee": "rotateLR",
+          "lineNumber": 77
+        },
+        {
+          "caller": "insertAVL",
+          "callee": "((AVLBaum) right()).insertAVL",
+          "lineNumber": 85
+        },
+        {
+          "caller": "insertAVL",
+          "callee": "right",
+          "lineNumber": 85
+        },
+        {
+          "caller": "insertAVL",
+          "callee": "rotateRR",
+          "lineNumber": 102
+        },
+        {
+          "caller": "insertAVL",
+          "callee": "rotateRL",
+          "lineNumber": 104
+        },
+        {
+          "caller": "delete",
+          "callee": "deleteAVL",
+          "lineNumber": 222
+        },
+        {
+          "caller": "delete",
+          "callee": "new Status",
+          "lineNumber": 222
+        },
+        {
+          "caller": "deleteAVL",
+          "callee": "empty",
+          "lineNumber": 229
+        },
+        {
+          "caller": "deleteAVL",
+          "callee": "((Comparable) value()).compareTo",
+          "lineNumber": 231
+        },
+        {
+          "caller": "deleteAVL",
+          "callee": "value",
+          "lineNumber": 231
+        },
+        {
+          "caller": "deleteAVL",
+          "callee": "((AVLBaum) rechts).deleteAVL",
+          "lineNumber": 233
+        },
+        {
+          "caller": "deleteAVL",
+          "callee": "balance2",
+          "lineNumber": 234
+        },
+        {
+          "caller": "deleteAVL",
+          "callee": "((Comparable) value()).compareTo",
+          "lineNumber": 236
+        },
+        {
+          "caller": "deleteAVL",
+          "callee": "value",
+          "lineNumber": 236
+        },
+        {
+          "caller": "deleteAVL",
+          "callee": "((AVLBaum) links).deleteAVL",
+          "lineNumber": 238
+        },
+        {
+          "caller": "deleteAVL",
+          "callee": "balance1",
+          "lineNumber": 239
+        },
+        {
+          "caller": "deleteAVL",
+          "callee": "rechts.empty",
+          "lineNumber": 242
+        },
+        {
+          "caller": "deleteAVL",
+          "callee": "links.empty",
+          "lineNumber": 247
+        },
+        {
+          "caller": "deleteAVL",
+          "callee": "((AVLBaum) links).del",
+          "lineNumber": 253
+        },
+        {
+          "caller": "deleteAVL",
+          "callee": "balance1",
+          "lineNumber": 255
+        },
+        {
+          "caller": "del",
+          "callee": "rechts.empty",
+          "lineNumber": 265
+        },
+        {
+          "caller": "del",
+          "callee": "((AVLBaum) rechts).del",
+          "lineNumber": 266
+        },
+        {
+          "caller": "del",
+          "callee": "balance2",
+          "lineNumber": 268
+        },
+        {
+          "caller": "balance1",
+          "callee": "rotateRR",
+          "lineNumber": 292
+        },
+        {
+          "caller": "balance1",
+          "callee": "rotateRL",
+          "lineNumber": 299
+        },
+        {
+          "caller": "balance2",
+          "callee": "rotateLL",
+          "lineNumber": 317
+        },
+        {
+          "caller": "balance2",
+          "callee": "rotateLR",
+          "lineNumber": 324
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 13,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/db/avltree/Baum.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 52,
+      "nonEmptyLines": 39,
+      "functions": [
+        {
+          "name": "Baum",
+          "startLine": 18,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "Baum",
+          "startLine": 24,
+          "endLine": 26,
+          "params": [
+            "x"
+          ]
+        },
+        {
+          "name": "Baum",
+          "startLine": 28,
+          "endLine": 32,
+          "params": [
+            "l",
+            "x",
+            "r"
+          ]
+        },
+        {
+          "name": "empty",
+          "startLine": 34,
+          "endLine": 36,
+          "params": []
+        },
+        {
+          "name": "left",
+          "startLine": 38,
+          "endLine": 41,
+          "params": []
+        },
+        {
+          "name": "right",
+          "startLine": 43,
+          "endLine": 46,
+          "params": []
+        },
+        {
+          "name": "value",
+          "startLine": 48,
+          "endLine": 51,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "Baum",
+          "startLine": 11,
+          "endLine": 52,
+          "methods": [
+            "Baum",
+            "Baum",
+            "Baum",
+            "empty",
+            "left",
+            "right",
+            "value"
+          ],
+          "properties": [
+            "inhalt",
+            "links",
+            "rechts",
+            "LEER"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "LEER",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "Baum",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "Baum",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "Baum",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "empty",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "left",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "right",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "value",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "Baum",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "left",
+          "callee": "empty",
+          "lineNumber": 39
+        },
+        {
+          "caller": "left",
+          "callee": "new Exception",
+          "lineNumber": 39
+        },
+        {
+          "caller": "right",
+          "callee": "empty",
+          "lineNumber": 44
+        },
+        {
+          "caller": "right",
+          "callee": "new Exception",
+          "lineNumber": 44
+        },
+        {
+          "caller": "value",
+          "callee": "empty",
+          "lineNumber": 49
+        },
+        {
+          "caller": "value",
+          "callee": "new Exception",
+          "lineNumber": 49
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/db/avltree/Comparable.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 17,
+      "classes": [
+        {
+          "name": "Comparable",
+          "startLine": 19,
+          "endLine": 22,
+          "methods": [
+            "compareTo"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Comparable",
+          "line": 19,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/db/avltree/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/db/avltree/SuchBaum.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 72,
+      "nonEmptyLines": 59,
+      "functions": [
+        {
+          "name": "find",
+          "startLine": 14,
+          "endLine": 21,
+          "params": [
+            "x"
+          ]
+        },
+        {
+          "name": "lookup",
+          "startLine": 25,
+          "endLine": 27,
+          "params": [
+            "x"
+          ]
+        },
+        {
+          "name": "insert",
+          "startLine": 30,
+          "endLine": 39,
+          "params": [
+            "x"
+          ]
+        },
+        {
+          "name": "delete",
+          "startLine": 43,
+          "endLine": 62,
+          "params": [
+            "x"
+          ]
+        },
+        {
+          "name": "findMax",
+          "startLine": 66,
+          "endLine": 71,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "SuchBaum",
+          "startLine": 11,
+          "endLine": 72,
+          "methods": [
+            "find",
+            "lookup",
+            "insert",
+            "delete",
+            "findMax"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "lookup",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "insert",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "delete",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "SuchBaum",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "find",
+          "callee": "empty",
+          "lineNumber": 15
+        },
+        {
+          "caller": "find",
+          "callee": "((jx.db.avltree.Comparable) value()).compareTo",
+          "lineNumber": 16
+        },
+        {
+          "caller": "find",
+          "callee": "value",
+          "lineNumber": 16
+        },
+        {
+          "caller": "find",
+          "callee": "((jx.db.avltree.Comparable) value()).compareTo",
+          "lineNumber": 17
+        },
+        {
+          "caller": "find",
+          "callee": "value",
+          "lineNumber": 17
+        },
+        {
+          "caller": "find",
+          "callee": "((SuchBaum) left()).find",
+          "lineNumber": 18
+        },
+        {
+          "caller": "find",
+          "callee": "left",
+          "lineNumber": 18
+        },
+        {
+          "caller": "find",
+          "callee": "((SuchBaum) right()).find",
+          "lineNumber": 20
+        },
+        {
+          "caller": "find",
+          "callee": "right",
+          "lineNumber": 20
+        },
+        {
+          "caller": "lookup",
+          "callee": "find",
+          "lineNumber": 26
+        },
+        {
+          "caller": "insert",
+          "callee": "find",
+          "lineNumber": 31
+        },
+        {
+          "caller": "insert",
+          "callee": "s.empty",
+          "lineNumber": 33
+        },
+        {
+          "caller": "insert",
+          "callee": "new SuchBaum",
+          "lineNumber": 35
+        },
+        {
+          "caller": "insert",
+          "callee": "new SuchBaum",
+          "lineNumber": 36
+        },
+        {
+          "caller": "delete",
+          "callee": "find",
+          "lineNumber": 44
+        },
+        {
+          "caller": "delete",
+          "callee": "s.empty",
+          "lineNumber": 47
+        },
+        {
+          "caller": "delete",
+          "callee": "s.left().empty",
+          "lineNumber": 49
+        },
+        {
+          "caller": "delete",
+          "callee": "s.left",
+          "lineNumber": 49
+        },
+        {
+          "caller": "delete",
+          "callee": "s.right",
+          "lineNumber": 49
+        },
+        {
+          "caller": "delete",
+          "callee": "s.right().empty",
+          "lineNumber": 50
+        },
+        {
+          "caller": "delete",
+          "callee": "s.right",
+          "lineNumber": 50
+        },
+        {
+          "caller": "delete",
+          "callee": "s.left",
+          "lineNumber": 50
+        },
+        {
+          "caller": "delete",
+          "callee": "((SuchBaum) s.left()).findMax",
+          "lineNumber": 52
+        },
+        {
+          "caller": "delete",
+          "callee": "s.left",
+          "lineNumber": 52
+        },
+        {
+          "caller": "delete",
+          "callee": "ersatz.left",
+          "lineNumber": 55
+        },
+        {
+          "caller": "findMax",
+          "callee": "hilf.right().empty",
+          "lineNumber": 69
+        },
+        {
+          "caller": "findMax",
+          "callee": "hilf.right",
+          "lineNumber": 69
+        },
+        {
+          "caller": "findMax",
+          "callee": "hilf.right",
+          "lineNumber": 69
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    }
+  ]
+}

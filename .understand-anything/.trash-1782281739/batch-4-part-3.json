@@ -1,0 +1,1374 @@
+{
+  "schemaVersion": 1,
+  "batchIndex": 4,
+  "part": 3,
+  "nodes": [
+    {
+      "id": "cls:src/java/security/KeyFactory.java:KeyFactory",
+      "type": "class",
+      "label": "KeyFactory",
+      "properties": {
+        "path": "src/java/security/KeyFactory.java",
+        "name": "KeyFactory",
+        "startLine": 48,
+        "endLine": 224,
+        "numMethods": 10
+      }
+    },
+    {
+      "id": "cls:src/java/security/KeyManagementException.java:KeyManagementException",
+      "type": "class",
+      "label": "KeyManagementException",
+      "properties": {
+        "path": "src/java/security/KeyManagementException.java",
+        "name": "KeyManagementException",
+        "startLine": 38,
+        "endLine": 65,
+        "numMethods": 2
+      }
+    },
+    {
+      "id": "cls:src/java/security/KeyPair.java:KeyPair",
+      "type": "class",
+      "label": "KeyPair",
+      "properties": {
+        "path": "src/java/security/KeyPair.java",
+        "name": "KeyPair",
+        "startLine": 39,
+        "endLine": 77,
+        "numMethods": 3
+      }
+    },
+    {
+      "id": "cls:src/java/security/KeyStore.java:KeyStore",
+      "type": "class",
+      "label": "KeyStore",
+      "properties": {
+        "path": "src/java/security/KeyStore.java",
+        "name": "KeyStore",
+        "startLine": 62,
+        "endLine": 443,
+        "numMethods": 23
+      }
+    },
+    {
+      "id": "cls:src/java/security/KeyStoreException.java:KeyStoreException",
+      "type": "class",
+      "label": "KeyStoreException",
+      "properties": {
+        "path": "src/java/security/KeyStoreException.java",
+        "name": "KeyStoreException",
+        "startLine": 37,
+        "endLine": 65,
+        "numMethods": 2
+      }
+    },
+    {
+      "id": "file:src/java/security/KeyFactory.java",
+      "type": "file",
+      "label": "KeyFactory.java",
+      "properties": {
+        "path": "src/java/security/KeyFactory.java",
+        "language": "java",
+        "sizeLines": 55,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/security/KeyFactorySpi.java",
+      "type": "file",
+      "label": "KeyFactorySpi.java",
+      "properties": {
+        "path": "src/java/security/KeyFactorySpi.java",
+        "language": "java",
+        "sizeLines": 32,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/java/security/KeyManagementException.java",
+      "type": "file",
+      "label": "KeyManagementException.java",
+      "properties": {
+        "path": "src/java/security/KeyManagementException.java",
+        "language": "java",
+        "sizeLines": 8,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/security/KeyPair.java",
+      "type": "file",
+      "label": "KeyPair.java",
+      "properties": {
+        "path": "src/java/security/KeyPair.java",
+        "language": "java",
+        "sizeLines": 58,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/security/KeyPairGenerator.java",
+      "type": "file",
+      "label": "KeyPairGenerator.java",
+      "properties": {
+        "path": "src/java/security/KeyPairGenerator.java",
+        "language": "java",
+        "sizeLines": 130,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/java/security/KeyPairGeneratorSpi.java",
+      "type": "file",
+      "label": "KeyPairGeneratorSpi.java",
+      "properties": {
+        "path": "src/java/security/KeyPairGeneratorSpi.java",
+        "language": "java",
+        "sizeLines": 43,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/java/security/KeyStore.java",
+      "type": "file",
+      "label": "KeyStore.java",
+      "properties": {
+        "path": "src/java/security/KeyStore.java",
+        "language": "java",
+        "sizeLines": 502,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/security/KeyStoreException.java",
+      "type": "file",
+      "label": "KeyStoreException.java",
+      "properties": {
+        "path": "src/java/security/KeyStoreException.java",
+        "language": "java",
+        "sizeLines": 8,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/security/KeyStoreSpi.java",
+      "type": "file",
+      "label": "KeyStoreSpi.java",
+      "properties": {
+        "path": "src/java/security/KeyStoreSpi.java",
+        "language": "java",
+        "sizeLines": 164,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/java/security/MessageDigest.java",
+      "type": "file",
+      "label": "MessageDigest.java",
+      "properties": {
+        "path": "src/java/security/MessageDigest.java",
+        "language": "java",
+        "sizeLines": 186,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyFactory.java:KeyFactory",
+      "type": "function",
+      "label": "KeyFactory",
+      "properties": {
+        "path": "src/java/security/KeyFactory.java",
+        "name": "KeyFactory",
+        "startLine": 62,
+        "endLine": 67,
+        "params": [
+          "keyFacSpi",
+          "provider",
+          "algorithm"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyFactory.java:generatePrivate",
+      "type": "function",
+      "label": "generatePrivate",
+      "properties": {
+        "path": "src/java/security/KeyFactory.java",
+        "name": "generatePrivate",
+        "startLine": 181,
+        "endLine": 184,
+        "params": [
+          "keySpec"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyFactory.java:generatePublic",
+      "type": "function",
+      "label": "generatePublic",
+      "properties": {
+        "path": "src/java/security/KeyFactory.java",
+        "name": "generatePublic",
+        "startLine": 166,
+        "endLine": 169,
+        "params": [
+          "keySpec"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyFactory.java:getAlgorithm",
+      "type": "function",
+      "label": "getAlgorithm",
+      "properties": {
+        "path": "src/java/security/KeyFactory.java",
+        "name": "getAlgorithm",
+        "startLine": 151,
+        "endLine": 154,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyFactory.java:getInstance",
+      "type": "function",
+      "label": "getInstance",
+      "properties": {
+        "path": "src/java/security/KeyFactory.java",
+        "name": "getInstance",
+        "startLine": 119,
+        "endLine": 134,
+        "params": [
+          "classname",
+          "algorithm",
+          "provider"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyFactory.java:getKeySpec",
+      "type": "function",
+      "label": "getKeySpec",
+      "properties": {
+        "path": "src/java/security/KeyFactory.java",
+        "name": "getKeySpec",
+        "startLine": 202,
+        "endLine": 206,
+        "params": [
+          "key",
+          "keySpec"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyFactory.java:getProvider",
+      "type": "function",
+      "label": "getProvider",
+      "properties": {
+        "path": "src/java/security/KeyFactory.java",
+        "name": "getProvider",
+        "startLine": 141,
+        "endLine": 144,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyFactory.java:translateKey",
+      "type": "function",
+      "label": "translateKey",
+      "properties": {
+        "path": "src/java/security/KeyFactory.java",
+        "name": "translateKey",
+        "startLine": 219,
+        "endLine": 222,
+        "params": [
+          "key"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyManagementException.java:KeyManagementException",
+      "type": "function",
+      "label": "KeyManagementException",
+      "properties": {
+        "path": "src/java/security/KeyManagementException.java",
+        "name": "KeyManagementException",
+        "startLine": 59,
+        "endLine": 63,
+        "params": [
+          "msg"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyPair.java:KeyPair",
+      "type": "function",
+      "label": "KeyPair",
+      "properties": {
+        "path": "src/java/security/KeyPair.java",
+        "name": "KeyPair",
+        "startLine": 51,
+        "endLine": 55,
+        "params": [
+          "publicKey",
+          "privateKey"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyPair.java:getPrivate",
+      "type": "function",
+      "label": "getPrivate",
+      "properties": {
+        "path": "src/java/security/KeyPair.java",
+        "name": "getPrivate",
+        "startLine": 72,
+        "endLine": 75,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyPair.java:getPublic",
+      "type": "function",
+      "label": "getPublic",
+      "properties": {
+        "path": "src/java/security/KeyPair.java",
+        "name": "getPublic",
+        "startLine": 62,
+        "endLine": 65,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyStore.java:KeyStore",
+      "type": "function",
+      "label": "KeyStore",
+      "properties": {
+        "path": "src/java/security/KeyStore.java",
+        "name": "KeyStore",
+        "startLine": 76,
+        "endLine": 81,
+        "params": [
+          "keyStoreSpi",
+          "provider",
+          "type"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyStore.java:aliases",
+      "type": "function",
+      "label": "aliases",
+      "properties": {
+        "path": "src/java/security/KeyStore.java",
+        "name": "aliases",
+        "startLine": 311,
+        "endLine": 315,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyStore.java:containsAlias",
+      "type": "function",
+      "label": "containsAlias",
+      "properties": {
+        "path": "src/java/security/KeyStore.java",
+        "name": "containsAlias",
+        "startLine": 324,
+        "endLine": 328,
+        "params": [
+          "alias"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyStore.java:deleteEntry",
+      "type": "function",
+      "label": "deleteEntry",
+      "properties": {
+        "path": "src/java/security/KeyStore.java",
+        "name": "deleteEntry",
+        "startLine": 300,
+        "endLine": 304,
+        "params": [
+          "alias"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyStore.java:getCertificate",
+      "type": "function",
+      "label": "getCertificate",
+      "properties": {
+        "path": "src/java/security/KeyStore.java",
+        "name": "getCertificate",
+        "startLine": 220,
+        "endLine": 224,
+        "params": [
+          "alias"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyStore.java:getCertificateAlias",
+      "type": "function",
+      "label": "getCertificateAlias",
+      "properties": {
+        "path": "src/java/security/KeyStore.java",
+        "name": "getCertificateAlias",
+        "startLine": 382,
+        "endLine": 386,
+        "params": [
+          "cert"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyStore.java:getCertificateChain",
+      "type": "function",
+      "label": "getCertificateChain",
+      "properties": {
+        "path": "src/java/security/KeyStore.java",
+        "name": "getCertificateChain",
+        "startLine": 202,
+        "endLine": 206,
+        "params": [
+          "alias"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyStore.java:getCreationDate",
+      "type": "function",
+      "label": "getCreationDate",
+      "properties": {
+        "path": "src/java/security/KeyStore.java",
+        "name": "getCreationDate",
+        "startLine": 233,
+        "endLine": 237,
+        "params": [
+          "alias"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyStore.java:getDefaultType",
+      "type": "function",
+      "label": "getDefaultType",
+      "properties": {
+        "path": "src/java/security/KeyStore.java",
+        "name": "getDefaultType",
+        "startLine": 431,
+        "endLine": 442,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyStore.java:getInstance",
+      "type": "function",
+      "label": "getInstance",
+      "properties": {
+        "path": "src/java/security/KeyStore.java",
+        "name": "getInstance",
+        "startLine": 134,
+        "endLine": 148,
+        "params": [
+          "classname",
+          "type",
+          "provider"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyStore.java:getKey",
+      "type": "function",
+      "label": "getKey",
+      "properties": {
+        "path": "src/java/security/KeyStore.java",
+        "name": "getKey",
+        "startLine": 185,
+        "endLine": 189,
+        "params": [
+          "alias",
+          "password"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyStore.java:getProvider",
+      "type": "function",
+      "label": "getProvider",
+      "properties": {
+        "path": "src/java/security/KeyStore.java",
+        "name": "getProvider",
+        "startLine": 156,
+        "endLine": 159,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyStore.java:getType",
+      "type": "function",
+      "label": "getType",
+      "properties": {
+        "path": "src/java/security/KeyStore.java",
+        "name": "getType",
+        "startLine": 166,
+        "endLine": 169,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyStore.java:isCertificateEntry",
+      "type": "function",
+      "label": "isCertificateEntry",
+      "properties": {
+        "path": "src/java/security/KeyStore.java",
+        "name": "isCertificateEntry",
+        "startLine": 364,
+        "endLine": 368,
+        "params": [
+          "alias"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyStore.java:isKeyEntry",
+      "type": "function",
+      "label": "isKeyEntry",
+      "properties": {
+        "path": "src/java/security/KeyStore.java",
+        "name": "isKeyEntry",
+        "startLine": 349,
+        "endLine": 353,
+        "params": [
+          "alias"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyStore.java:load",
+      "type": "function",
+      "label": "load",
+      "properties": {
+        "path": "src/java/security/KeyStore.java",
+        "name": "load",
+        "startLine": 420,
+        "endLine": 424,
+        "params": [
+          "stream",
+          "password"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyStore.java:setCertificateEntry",
+      "type": "function",
+      "label": "setCertificateEntry",
+      "properties": {
+        "path": "src/java/security/KeyStore.java",
+        "name": "setCertificateEntry",
+        "startLine": 287,
+        "endLine": 291,
+        "params": [
+          "alias",
+          "cert"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyStore.java:setKeyEntry",
+      "type": "function",
+      "label": "setKeyEntry",
+      "properties": {
+        "path": "src/java/security/KeyStore.java",
+        "name": "setKeyEntry",
+        "startLine": 272,
+        "endLine": 276,
+        "params": [
+          "alias",
+          "key",
+          "chain"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyStore.java:size",
+      "type": "function",
+      "label": "size",
+      "properties": {
+        "path": "src/java/security/KeyStore.java",
+        "name": "size",
+        "startLine": 335,
+        "endLine": 339,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyStore.java:store",
+      "type": "function",
+      "label": "store",
+      "properties": {
+        "path": "src/java/security/KeyStore.java",
+        "name": "store",
+        "startLine": 401,
+        "endLine": 405,
+        "params": [
+          "stream",
+          "password"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/security/KeyStoreException.java:KeyStoreException",
+      "type": "function",
+      "label": "KeyStoreException",
+      "properties": {
+        "path": "src/java/security/KeyStoreException.java",
+        "name": "KeyStoreException",
+        "startLine": 58,
+        "endLine": 62,
+        "params": [
+          "msg"
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/java/security/KeyFactory.java",
+      "target": "cls:src/java/security/KeyFactory.java:KeyFactory",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyFactory.java",
+      "target": "cls:src/java/security/KeyFactory.java:KeyFactory",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyFactory.java",
+      "target": "fn:src/java/security/KeyFactory.java:KeyFactory",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyFactory.java",
+      "target": "fn:src/java/security/KeyFactory.java:KeyFactory",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyFactory.java",
+      "target": "fn:src/java/security/KeyFactory.java:getInstance",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyFactory.java",
+      "target": "fn:src/java/security/KeyFactory.java:getInstance",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyFactory.java",
+      "target": "fn:src/java/security/KeyFactory.java:getInstance",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyFactory.java",
+      "target": "fn:src/java/security/KeyFactory.java:getInstance",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyFactory.java",
+      "target": "fn:src/java/security/KeyFactory.java:getInstance",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyFactory.java",
+      "target": "fn:src/java/security/KeyFactory.java:getInstance",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyFactory.java",
+      "target": "fn:src/java/security/KeyFactory.java:getProvider",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyFactory.java",
+      "target": "fn:src/java/security/KeyFactory.java:getProvider",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyFactory.java",
+      "target": "fn:src/java/security/KeyFactory.java:getAlgorithm",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyFactory.java",
+      "target": "fn:src/java/security/KeyFactory.java:getAlgorithm",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyFactory.java",
+      "target": "fn:src/java/security/KeyFactory.java:generatePublic",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyFactory.java",
+      "target": "fn:src/java/security/KeyFactory.java:generatePublic",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyFactory.java",
+      "target": "fn:src/java/security/KeyFactory.java:generatePrivate",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyFactory.java",
+      "target": "fn:src/java/security/KeyFactory.java:generatePrivate",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyFactory.java",
+      "target": "fn:src/java/security/KeyFactory.java:getKeySpec",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyFactory.java",
+      "target": "fn:src/java/security/KeyFactory.java:getKeySpec",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyFactory.java",
+      "target": "fn:src/java/security/KeyFactory.java:translateKey",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyFactory.java",
+      "target": "fn:src/java/security/KeyFactory.java:translateKey",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/KeyFactory.java:getInstance",
+      "target": "fn:src/java/security/KeyFactory.java:getInstance",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyManagementException.java",
+      "target": "cls:src/java/security/KeyManagementException.java:KeyManagementException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyManagementException.java",
+      "target": "cls:src/java/security/KeyManagementException.java:KeyManagementException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyManagementException.java",
+      "target": "fn:src/java/security/KeyManagementException.java:KeyManagementException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyManagementException.java",
+      "target": "fn:src/java/security/KeyManagementException.java:KeyManagementException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyManagementException.java",
+      "target": "fn:src/java/security/KeyManagementException.java:KeyManagementException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyManagementException.java",
+      "target": "fn:src/java/security/KeyManagementException.java:KeyManagementException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyPair.java",
+      "target": "cls:src/java/security/KeyPair.java:KeyPair",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyPair.java",
+      "target": "cls:src/java/security/KeyPair.java:KeyPair",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyPair.java",
+      "target": "fn:src/java/security/KeyPair.java:KeyPair",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyPair.java",
+      "target": "fn:src/java/security/KeyPair.java:KeyPair",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyPair.java",
+      "target": "fn:src/java/security/KeyPair.java:getPublic",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyPair.java",
+      "target": "fn:src/java/security/KeyPair.java:getPublic",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyPair.java",
+      "target": "fn:src/java/security/KeyPair.java:getPrivate",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyPair.java",
+      "target": "fn:src/java/security/KeyPair.java:getPrivate",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "cls:src/java/security/KeyStore.java:KeyStore",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "cls:src/java/security/KeyStore.java:KeyStore",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:KeyStore",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:KeyStore",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:getInstance",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:getInstance",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:getInstance",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:getInstance",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:getInstance",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:getInstance",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:getProvider",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:getProvider",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:getType",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:getType",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:getKey",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:getKey",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:getCertificateChain",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:getCertificateChain",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:getCertificate",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:getCertificate",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:getCreationDate",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:getCreationDate",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:setKeyEntry",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:setKeyEntry",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:setKeyEntry",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:setKeyEntry",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:setCertificateEntry",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:setCertificateEntry",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:deleteEntry",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:deleteEntry",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:aliases",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:aliases",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:containsAlias",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:containsAlias",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:size",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:size",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:isKeyEntry",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:isKeyEntry",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:isCertificateEntry",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:isCertificateEntry",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:getCertificateAlias",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:getCertificateAlias",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:store",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:store",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:load",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:load",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:getDefaultType",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "fn:src/java/security/KeyStore.java:getDefaultType",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/KeyStore.java:getInstance",
+      "target": "fn:src/java/security/KeyStore.java:getInstance",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyStoreException.java",
+      "target": "cls:src/java/security/KeyStoreException.java:KeyStoreException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyStoreException.java",
+      "target": "cls:src/java/security/KeyStoreException.java:KeyStoreException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyStoreException.java",
+      "target": "fn:src/java/security/KeyStoreException.java:KeyStoreException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyStoreException.java",
+      "target": "fn:src/java/security/KeyStoreException.java:KeyStoreException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyStoreException.java",
+      "target": "fn:src/java/security/KeyStoreException.java:KeyStoreException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/security/KeyStoreException.java",
+      "target": "fn:src/java/security/KeyStoreException.java:KeyStoreException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyFactory.java",
+      "target": "file:src/java/security/spec/InvalidKeySpecException.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "fn:src/java/security/KeyFactory.java:getInstance",
+      "target": "fn:src/java/security/KeyFactory.java:Security.getProviders",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/KeyFactory.java:getInstance",
+      "target": "fn:src/java/security/KeyFactory.java:p[i].getProperty",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/KeyFactory.java:getInstance",
+      "target": "fn:src/java/security/KeyFactory.java:new NoSuchAlgorithmException",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/KeyFactory.java:getInstance",
+      "target": "fn:src/java/security/KeyFactory.java:Security.getProvider",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/KeyFactory.java:getInstance",
+      "target": "fn:src/java/security/KeyFactory.java:new NoSuchProviderException",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/KeyFactory.java:getInstance",
+      "target": "fn:src/java/security/KeyFactory.java:p.getProperty",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/KeyFactory.java:getInstance",
+      "target": "fn:src/java/security/KeyFactory.java:new KeyFactory",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/KeyFactory.java:getInstance",
+      "target": "fn:src/java/security/KeyFactory.java:Class.forName( classname ).newInstance",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/KeyFactory.java:getInstance",
+      "target": "fn:src/java/security/KeyFactory.java:Class.forName",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/KeyFactory.java:generatePublic",
+      "target": "fn:src/java/security/KeyFactory.java:keyFacSpi.engineGeneratePublic",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/KeyFactory.java:generatePrivate",
+      "target": "fn:src/java/security/KeyFactory.java:keyFacSpi.engineGeneratePrivate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/KeyFactory.java:getKeySpec",
+      "target": "fn:src/java/security/KeyFactory.java:keyFacSpi.engineGetKeySpec",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/KeyFactory.java:translateKey",
+      "target": "fn:src/java/security/KeyFactory.java:keyFacSpi.engineTranslateKey",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/security/KeyManagementException.java",
+      "target": "file:src/java/security/KeyException.java",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "file:src/java/io/IOException.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "file:src/java/security/cert/CertificateException.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/java/security/KeyStore.java",
+      "target": "file:src/java/util/Date.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "fn:src/java/security/KeyStore.java:getInstance",
+      "target": "fn:src/java/security/KeyStore.java:Security.getProviders",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/KeyStore.java:getInstance",
+      "target": "fn:src/java/security/KeyStore.java:p[i].getProperty",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/KeyStore.java:getInstance",
+      "target": "fn:src/java/security/KeyStore.java:new KeyStoreException",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/KeyStore.java:getInstance",
+      "target": "fn:src/java/security/KeyStore.java:Security.getProvider",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/KeyStore.java:getInstance",
+      "target": "fn:src/java/security/KeyStore.java:new NoSuchProviderException",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/KeyStore.java:getInstance",
+      "target": "fn:src/java/security/KeyStore.java:p.getProperty",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/KeyStore.java:getInstance",
+      "target": "fn:src/java/security/KeyStore.java:new KeyStore",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/KeyStore.java:getInstance",
+      "target": "fn:src/java/security/KeyStore.java:Class.forName( classname ).newInstance",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/KeyStore.java:getInstance",
+      "target": "fn:src/java/security/KeyStore.java:Class.forName",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/security/KeyStore.java:getKey",
+      "target": "fn:src/java/security/KeyStore.java:keyStoreSpi.engineGetKey",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ],
+  "metadata": {
+    "totalNodesInPart": 48,
+    "totalEdgesInPart": 120,
+    "algorithm": "file-analyzer"
+  }
+}

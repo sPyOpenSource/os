@@ -1,0 +1,3761 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/jx/rpcsvc/nfs2/NFSException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 6,
+      "functions": [
+        {
+          "name": "NFSException",
+          "startLine": 6,
+          "endLine": 6,
+          "params": [
+            "msg"
+          ]
+        },
+        {
+          "name": "NFSException",
+          "startLine": 7,
+          "endLine": 7,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "NFSException",
+          "startLine": 5,
+          "endLine": 8,
+          "methods": [
+            "NFSException",
+            "NFSException"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "NFSException",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "NFSException",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "NFSException",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/NFSMountError.j",
+      "language": "j",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/NFSProc_Impl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 1259,
+      "nonEmptyLines": 958,
+      "functions": [
+        {
+          "name": "NFSProc_Impl",
+          "startLine": 47,
+          "endLine": 79,
+          "params": [
+            "fs"
+          ]
+        },
+        {
+          "name": "nullproc",
+          "startLine": 84,
+          "endLine": 85,
+          "params": []
+        },
+        {
+          "name": "getattr",
+          "startLine": 87,
+          "endLine": 154,
+          "params": [
+            "fh0"
+          ]
+        },
+        {
+          "name": "setattr",
+          "startLine": 160,
+          "endLine": 206,
+          "params": [
+            "fh0",
+            "attributes"
+          ]
+        },
+        {
+          "name": "root",
+          "startLine": 210,
+          "endLine": 212,
+          "params": []
+        },
+        {
+          "name": "lookup",
+          "startLine": 219,
+          "endLine": 312,
+          "params": [
+            "dir0",
+            "name"
+          ]
+        },
+        {
+          "name": "readlink",
+          "startLine": 317,
+          "endLine": 356,
+          "params": [
+            "a0"
+          ]
+        },
+        {
+          "name": "read",
+          "startLine": 361,
+          "endLine": 407,
+          "params": [
+            "fh0",
+            "offset",
+            "count",
+            "totalcount"
+          ]
+        },
+        {
+          "name": "writeCache",
+          "startLine": 411,
+          "endLine": 413,
+          "params": []
+        },
+        {
+          "name": "write",
+          "startLine": 420,
+          "endLine": 476,
+          "params": [
+            "fh0",
+            "beginoffset",
+            "offset",
+            "totalcount",
+            "data"
+          ]
+        },
+        {
+          "name": "create",
+          "startLine": 484,
+          "endLine": 549,
+          "params": [
+            "dir0",
+            "name",
+            "attributes"
+          ]
+        },
+        {
+          "name": "remove",
+          "startLine": 556,
+          "endLine": 593,
+          "params": [
+            "dir0",
+            "name"
+          ]
+        },
+        {
+          "name": "rename",
+          "startLine": 597,
+          "endLine": 638,
+          "params": [
+            "fromDir0",
+            "fromName",
+            "toDir0",
+            "toName"
+          ]
+        },
+        {
+          "name": "link",
+          "startLine": 643,
+          "endLine": 645,
+          "params": [
+            "from",
+            "toDir",
+            "toName"
+          ]
+        },
+        {
+          "name": "symlink",
+          "startLine": 650,
+          "endLine": 687,
+          "params": [
+            "fromDir0",
+            "fromName",
+            "to",
+            "attributes"
+          ]
+        },
+        {
+          "name": "mkdir",
+          "startLine": 694,
+          "endLine": 737,
+          "params": [
+            "dir0",
+            "name",
+            "attributes"
+          ]
+        },
+        {
+          "name": "rmdir",
+          "startLine": 742,
+          "endLine": 775,
+          "params": [
+            "dir0",
+            "name"
+          ]
+        },
+        {
+          "name": "readdir",
+          "startLine": 780,
+          "endLine": 828,
+          "params": [
+            "fh0",
+            "cookie",
+            "count"
+          ]
+        },
+        {
+          "name": "statfs",
+          "startLine": 833,
+          "endLine": 893,
+          "params": [
+            "fh0"
+          ]
+        },
+        {
+          "name": "getNode",
+          "startLine": 909,
+          "endLine": 918,
+          "params": [
+            "fh"
+          ]
+        },
+        {
+          "name": "getFAttr",
+          "startLine": 921,
+          "endLine": 950,
+          "params": [
+            "fh"
+          ]
+        },
+        {
+          "name": "getFAttr",
+          "startLine": 955,
+          "endLine": 1018,
+          "params": [
+            "inode",
+            "fh"
+          ]
+        },
+        {
+          "name": "setAttr",
+          "startLine": 1021,
+          "endLine": 1057,
+          "params": [
+            "inode",
+            "fh",
+            "attr"
+          ]
+        },
+        {
+          "name": "StaleHandleException",
+          "startLine": 1109,
+          "endLine": 1111,
+          "params": []
+        },
+        {
+          "name": "LookupCache_Result",
+          "startLine": 1118,
+          "endLine": 1121,
+          "params": [
+            "fh"
+          ]
+        },
+        {
+          "name": "LookupCache_firstImpl",
+          "startLine": 1141,
+          "endLine": 1143,
+          "params": []
+        },
+        {
+          "name": "LookupCache_firstImpl",
+          "startLine": 1145,
+          "endLine": 1149,
+          "params": [
+            "debug"
+          ]
+        },
+        {
+          "name": "addEntry",
+          "startLine": 1152,
+          "endLine": 1156,
+          "params": [
+            "name",
+            "dirIdentifier",
+            "fh"
+          ]
+        },
+        {
+          "name": "getEntry",
+          "startLine": 1158,
+          "endLine": 1168,
+          "params": [
+            "name",
+            "dirIdentifier"
+          ]
+        },
+        {
+          "name": "delEntry",
+          "startLine": 1170,
+          "endLine": 1174,
+          "params": [
+            "name",
+            "dirIdentifier"
+          ]
+        },
+        {
+          "name": "flush",
+          "startLine": 1176,
+          "endLine": 1177,
+          "params": []
+        },
+        {
+          "name": "printStatistics",
+          "startLine": 1179,
+          "endLine": 1184,
+          "params": []
+        },
+        {
+          "name": "LookupCache_2ndImpl_Entry",
+          "startLine": 1192,
+          "endLine": 1195,
+          "params": [
+            "dirIdentifier",
+            "fh"
+          ]
+        },
+        {
+          "name": "LookupCache_2ndImpl",
+          "startLine": 1208,
+          "endLine": 1210,
+          "params": []
+        },
+        {
+          "name": "LookupCache_2ndImpl",
+          "startLine": 1212,
+          "endLine": 1217,
+          "params": [
+            "debug"
+          ]
+        },
+        {
+          "name": "addEntry",
+          "startLine": 1220,
+          "endLine": 1224,
+          "params": [
+            "name",
+            "dirIdentifier",
+            "fh"
+          ]
+        },
+        {
+          "name": "getEntry",
+          "startLine": 1226,
+          "endLine": 1243,
+          "params": [
+            "name",
+            "dirIdentifier"
+          ]
+        },
+        {
+          "name": "delEntry",
+          "startLine": 1246,
+          "endLine": 1247,
+          "params": [
+            "name",
+            "dirIdentifier"
+          ]
+        },
+        {
+          "name": "flush",
+          "startLine": 1249,
+          "endLine": 1250,
+          "params": []
+        },
+        {
+          "name": "printStatistics",
+          "startLine": 1252,
+          "endLine": 1257,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "NFSProc_Impl",
+          "startLine": 8,
+          "endLine": 1105,
+          "methods": [
+            "NFSProc_Impl",
+            "nullproc",
+            "getattr",
+            "setattr",
+            "root",
+            "lookup",
+            "readlink",
+            "read",
+            "writeCache",
+            "write",
+            "create",
+            "remove",
+            "rename",
+            "link",
+            "symlink",
+            "mkdir",
+            "rmdir",
+            "readdir",
+            "statfs",
+            "getNode",
+            "getFAttr",
+            "getFAttr",
+            "setAttr"
+          ],
+          "properties": [
+            "cpuManager",
+            "event_getattr_in",
+            "event_getattr_out",
+            "fs",
+            "inodes",
+            "epoch",
+            "production",
+            "fireProfiler",
+            "rootInode",
+            "memMgr",
+            "readbuffer",
+            "debug_nfs",
+            "profiler",
+            "useAttrCache",
+            "debugAttrCache",
+            "attrCache_lastFhIdentifier",
+            "attrCache_lastFAttr",
+            "attrCache_cacheMisses",
+            "attrCache_cacheHits",
+            "useLookupCache",
+            "debugLookupCache",
+            "lookupCache",
+            "helperMFh",
+            "helperDirMFh"
+          ]
+        },
+        {
+          "name": "StaleHandleException",
+          "startLine": 1108,
+          "endLine": 1112,
+          "methods": [
+            "StaleHandleException"
+          ],
+          "properties": []
+        },
+        {
+          "name": "LookupCache_Result",
+          "startLine": 1115,
+          "endLine": 1122,
+          "methods": [
+            "LookupCache_Result"
+          ],
+          "properties": [
+            "fh"
+          ]
+        },
+        {
+          "name": "LookupCache",
+          "startLine": 1125,
+          "endLine": 1131,
+          "methods": [
+            "addEntry",
+            "getEntry",
+            "delEntry",
+            "flush",
+            "printStatistics"
+          ],
+          "properties": []
+        },
+        {
+          "name": "LookupCache_firstImpl",
+          "startLine": 1133,
+          "endLine": 1186,
+          "methods": [
+            "LookupCache_firstImpl",
+            "LookupCache_firstImpl",
+            "addEntry",
+            "getEntry",
+            "delEntry",
+            "flush",
+            "printStatistics"
+          ],
+          "properties": [
+            "debug",
+            "lastDirIdentifier",
+            "lastName",
+            "lastFh",
+            "cacheMisses",
+            "cacheHits"
+          ]
+        },
+        {
+          "name": "LookupCache_2ndImpl_Entry",
+          "startLine": 1188,
+          "endLine": 1196,
+          "methods": [
+            "LookupCache_2ndImpl_Entry"
+          ],
+          "properties": [
+            "dirIdentifier",
+            "fh"
+          ]
+        },
+        {
+          "name": "LookupCache_2ndImpl",
+          "startLine": 1198,
+          "endLine": 1259,
+          "methods": [
+            "LookupCache_2ndImpl",
+            "LookupCache_2ndImpl",
+            "addEntry",
+            "getEntry",
+            "delEntry",
+            "flush",
+            "printStatistics"
+          ],
+          "properties": [
+            "debug",
+            "nameHt",
+            "lastDirIdentifier",
+            "lastName",
+            "lastFh",
+            "cacheMisses",
+            "cacheHits"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "NFSProc_Impl",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "nullproc",
+          "line": 84,
+          "isDefault": false
+        },
+        {
+          "name": "getattr",
+          "line": 87,
+          "isDefault": false
+        },
+        {
+          "name": "setattr",
+          "line": 160,
+          "isDefault": false
+        },
+        {
+          "name": "root",
+          "line": 210,
+          "isDefault": false
+        },
+        {
+          "name": "lookup",
+          "line": 219,
+          "isDefault": false
+        },
+        {
+          "name": "readlink",
+          "line": 317,
+          "isDefault": false
+        },
+        {
+          "name": "read",
+          "line": 361,
+          "isDefault": false
+        },
+        {
+          "name": "writeCache",
+          "line": 411,
+          "isDefault": false
+        },
+        {
+          "name": "write",
+          "line": 420,
+          "isDefault": false
+        },
+        {
+          "name": "create",
+          "line": 484,
+          "isDefault": false
+        },
+        {
+          "name": "remove",
+          "line": 556,
+          "isDefault": false
+        },
+        {
+          "name": "rename",
+          "line": 597,
+          "isDefault": false
+        },
+        {
+          "name": "link",
+          "line": 643,
+          "isDefault": false
+        },
+        {
+          "name": "symlink",
+          "line": 650,
+          "isDefault": false
+        },
+        {
+          "name": "mkdir",
+          "line": 694,
+          "isDefault": false
+        },
+        {
+          "name": "rmdir",
+          "line": 742,
+          "isDefault": false
+        },
+        {
+          "name": "readdir",
+          "line": 780,
+          "isDefault": false
+        },
+        {
+          "name": "statfs",
+          "line": 833,
+          "isDefault": false
+        },
+        {
+          "name": "NFSProc_Impl",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "StaleHandleException",
+          "line": 1109,
+          "isDefault": false
+        },
+        {
+          "name": "LookupCache_Result",
+          "line": 1118,
+          "isDefault": false
+        },
+        {
+          "name": "LookupCache_firstImpl",
+          "line": 1141,
+          "isDefault": false
+        },
+        {
+          "name": "LookupCache_firstImpl",
+          "line": 1145,
+          "isDefault": false
+        },
+        {
+          "name": "addEntry",
+          "line": 1152,
+          "isDefault": false
+        },
+        {
+          "name": "getEntry",
+          "line": 1158,
+          "isDefault": false
+        },
+        {
+          "name": "delEntry",
+          "line": 1170,
+          "isDefault": false
+        },
+        {
+          "name": "flush",
+          "line": 1176,
+          "isDefault": false
+        },
+        {
+          "name": "printStatistics",
+          "line": 1179,
+          "isDefault": false
+        },
+        {
+          "name": "LookupCache_2ndImpl_Entry",
+          "line": 1192,
+          "isDefault": false
+        },
+        {
+          "name": "LookupCache_2ndImpl",
+          "line": 1208,
+          "isDefault": false
+        },
+        {
+          "name": "LookupCache_2ndImpl",
+          "line": 1212,
+          "isDefault": false
+        },
+        {
+          "name": "addEntry",
+          "line": 1220,
+          "isDefault": false
+        },
+        {
+          "name": "getEntry",
+          "line": 1226,
+          "isDefault": false
+        },
+        {
+          "name": "delEntry",
+          "line": 1246,
+          "isDefault": false
+        },
+        {
+          "name": "flush",
+          "line": 1249,
+          "isDefault": false
+        },
+        {
+          "name": "printStatistics",
+          "line": 1252,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "NFSProc_Impl",
+          "callee": "InitialNaming.getInitialNaming().lookup",
+          "lineNumber": 49
+        },
+        {
+          "caller": "NFSProc_Impl",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 49
+        },
+        {
+          "caller": "NFSProc_Impl",
+          "callee": "cpuManager.createNewEvent",
+          "lineNumber": 50
+        },
+        {
+          "caller": "NFSProc_Impl",
+          "callee": "cpuManager.createNewEvent",
+          "lineNumber": 51
+        },
+        {
+          "caller": "NFSProc_Impl",
+          "callee": "InitialNaming.getInitialNaming().lookup",
+          "lineNumber": 53
+        },
+        {
+          "caller": "NFSProc_Impl",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 53
+        },
+        {
+          "caller": "NFSProc_Impl",
+          "callee": "clock.getTicks_low",
+          "lineNumber": 54
+        },
+        {
+          "caller": "NFSProc_Impl",
+          "callee": "fs.lookup",
+          "lineNumber": 57
+        },
+        {
+          "caller": "NFSProc_Impl",
+          "callee": "new Error",
+          "lineNumber": 59
+        },
+        {
+          "caller": "NFSProc_Impl",
+          "callee": "InitialNaming.getInitialNaming().lookup",
+          "lineNumber": 62
+        },
+        {
+          "caller": "NFSProc_Impl",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 62
+        },
+        {
+          "caller": "NFSProc_Impl",
+          "callee": "new LookupCache_2ndImpl",
+          "lineNumber": 65
+        },
+        {
+          "caller": "NFSProc_Impl",
+          "callee": "new MappedFHandle",
+          "lineNumber": 77
+        },
+        {
+          "caller": "NFSProc_Impl",
+          "callee": "new MappedFHandle",
+          "lineNumber": 78
+        },
+        {
+          "caller": "getattr",
+          "callee": "cpuManager.recordEvent",
+          "lineNumber": 88
+        },
+        {
+          "caller": "getattr",
+          "callee": "new MappedFHandle",
+          "lineNumber": 90
+        },
+        {
+          "caller": "getattr",
+          "callee": "new MappedFHandle",
+          "lineNumber": 91
+        },
+        {
+          "caller": "getattr",
+          "callee": "helperMFh.renew",
+          "lineNumber": 93
+        },
+        {
+          "caller": "getattr",
+          "callee": "Debug.out.println",
+          "lineNumber": 95
+        },
+        {
+          "caller": "getattr",
+          "callee": "InitialNaming.getInitialNaming().lookup",
+          "lineNumber": 104
+        },
+        {
+          "caller": "getattr",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 104
+        },
+        {
+          "caller": "getattr",
+          "callee": "profiler.startSampling",
+          "lineNumber": 105
+        },
+        {
+          "caller": "getattr",
+          "callee": "getFAttr",
+          "lineNumber": 111
+        },
+        {
+          "caller": "getattr",
+          "callee": "Debug.out.println",
+          "lineNumber": 112
+        },
+        {
+          "caller": "getattr",
+          "callee": "cpuManager.recordEvent",
+          "lineNumber": 114
+        },
+        {
+          "caller": "getattr",
+          "callee": "new AttrStatOK",
+          "lineNumber": 120
+        },
+        {
+          "caller": "getattr",
+          "callee": "Debug.out.println",
+          "lineNumber": 123
+        },
+        {
+          "caller": "getattr",
+          "callee": "cpuManager.recordEvent",
+          "lineNumber": 124
+        },
+        {
+          "caller": "getattr",
+          "callee": "new AttrStatErrIO",
+          "lineNumber": 125
+        },
+        {
+          "caller": "getattr",
+          "callee": "Debug.out.println",
+          "lineNumber": 127
+        },
+        {
+          "caller": "getattr",
+          "callee": "cpuManager.recordEvent",
+          "lineNumber": 128
+        },
+        {
+          "caller": "getattr",
+          "callee": "new AttrStatErrNoEnt",
+          "lineNumber": 129
+        },
+        {
+          "caller": "getattr",
+          "callee": "Debug.out.println",
+          "lineNumber": 131
+        },
+        {
+          "caller": "getattr",
+          "callee": "cpuManager.recordEvent",
+          "lineNumber": 132
+        },
+        {
+          "caller": "getattr",
+          "callee": "new AttrStatErrNotDir",
+          "lineNumber": 133
+        },
+        {
+          "caller": "getattr",
+          "callee": "Debug.out.println",
+          "lineNumber": 135
+        },
+        {
+          "caller": "getattr",
+          "callee": "cpuManager.recordEvent",
+          "lineNumber": 136
+        },
+        {
+          "caller": "getattr",
+          "callee": "new AttrStatErrNoEnt",
+          "lineNumber": 137
+        },
+        {
+          "caller": "getattr",
+          "callee": "Debug.out.println",
+          "lineNumber": 139
+        },
+        {
+          "caller": "getattr",
+          "callee": "cpuManager.recordEvent",
+          "lineNumber": 140
+        },
+        {
+          "caller": "getattr",
+          "callee": "new AttrStatErrAcces",
+          "lineNumber": 141
+        },
+        {
+          "caller": "getattr",
+          "callee": "Debug.out.println",
+          "lineNumber": 143
+        },
+        {
+          "caller": "getattr",
+          "callee": "cpuManager.recordEvent",
+          "lineNumber": 144
+        },
+        {
+          "caller": "getattr",
+          "callee": "new AttrStatErrIO",
+          "lineNumber": 145
+        },
+        {
+          "caller": "getattr",
+          "callee": "Debug.out.println",
+          "lineNumber": 147
+        },
+        {
+          "caller": "getattr",
+          "callee": "cpuManager.recordEvent",
+          "lineNumber": 148
+        },
+        {
+          "caller": "getattr",
+          "callee": "new AttrStatErrStale",
+          "lineNumber": 149
+        },
+        {
+          "caller": "setattr",
+          "callee": "new MappedFHandle",
+          "lineNumber": 165
+        },
+        {
+          "caller": "setattr",
+          "callee": "new MappedFHandle",
+          "lineNumber": 166
+        },
+        {
+          "caller": "setattr",
+          "callee": "helperMFh.renew",
+          "lineNumber": 168
+        },
+        {
+          "caller": "setattr",
+          "callee": "Debug.out.println",
+          "lineNumber": 170
+        },
+        {
+          "caller": "setattr",
+          "callee": "this.getNode",
+          "lineNumber": 177
+        },
+        {
+          "caller": "setattr",
+          "callee": "setAttr",
+          "lineNumber": 178
+        },
+        {
+          "caller": "setattr",
+          "callee": "new AttrStatOK",
+          "lineNumber": 179
+        },
+        {
+          "caller": "setattr",
+          "callee": "cpuManager.recordEvent",
+          "lineNumber": 182
+        },
+        {
+          "caller": "setattr",
+          "callee": "new AttrStatErrIO",
+          "lineNumber": 183
+        },
+        {
+          "caller": "setattr",
+          "callee": "cpuManager.recordEvent",
+          "lineNumber": 185
+        },
+        {
+          "caller": "setattr",
+          "callee": "new AttrStatErrNoEnt",
+          "lineNumber": 186
+        },
+        {
+          "caller": "setattr",
+          "callee": "cpuManager.recordEvent",
+          "lineNumber": 188
+        },
+        {
+          "caller": "setattr",
+          "callee": "new AttrStatErrNotDir",
+          "lineNumber": 189
+        },
+        {
+          "caller": "setattr",
+          "callee": "cpuManager.recordEvent",
+          "lineNumber": 191
+        },
+        {
+          "caller": "setattr",
+          "callee": "new AttrStatErrNoEnt",
+          "lineNumber": 192
+        },
+        {
+          "caller": "setattr",
+          "callee": "cpuManager.recordEvent",
+          "lineNumber": 194
+        },
+        {
+          "caller": "setattr",
+          "callee": "new AttrStatErrAcces",
+          "lineNumber": 195
+        },
+        {
+          "caller": "setattr",
+          "callee": "cpuManager.recordEvent",
+          "lineNumber": 197
+        },
+        {
+          "caller": "setattr",
+          "callee": "new AttrStatErrIO",
+          "lineNumber": 198
+        },
+        {
+          "caller": "setattr",
+          "callee": "cpuManager.recordEvent",
+          "lineNumber": 200
+        },
+        {
+          "caller": "setattr",
+          "callee": "new AttrStatErrStale",
+          "lineNumber": 201
+        },
+        {
+          "caller": "root",
+          "callee": "new Error",
+          "lineNumber": 211
+        },
+        {
+          "caller": "lookup",
+          "callee": "new MappedFHandle",
+          "lineNumber": 224
+        },
+        {
+          "caller": "lookup",
+          "callee": "new MappedFHandle",
+          "lineNumber": 225
+        },
+        {
+          "caller": "lookup",
+          "callee": "helperDirMFh.renew",
+          "lineNumber": 227
+        },
+        {
+          "caller": "lookup",
+          "callee": "Debug.out.println",
+          "lineNumber": 229
+        },
+        {
+          "caller": "lookup",
+          "callee": "lookupCache.getEntry",
+          "lineNumber": 243
+        },
+        {
+          "caller": "lookup",
+          "callee": "this.getNode",
+          "lineNumber": 247
+        },
+        {
+          "caller": "lookup",
+          "callee": "new DirOpResNoSuchFile",
+          "lineNumber": 248
+        },
+        {
+          "caller": "lookup",
+          "callee": "dirInode.lookup",
+          "lineNumber": 249
+        },
+        {
+          "caller": "lookup",
+          "callee": "new MappedFHandle",
+          "lineNumber": 252
+        },
+        {
+          "caller": "lookup",
+          "callee": "inode.getIdentifier",
+          "lineNumber": 253
+        },
+        {
+          "caller": "lookup",
+          "callee": "inode.getVersion",
+          "lineNumber": 254
+        },
+        {
+          "caller": "lookup",
+          "callee": "lookupCache.addEntry",
+          "lineNumber": 260
+        },
+        {
+          "caller": "lookup",
+          "callee": "lookupCache.printStatistics",
+          "lineNumber": 265
+        },
+        {
+          "caller": "lookup",
+          "callee": "this.getNode",
+          "lineNumber": 269
+        },
+        {
+          "caller": "lookup",
+          "callee": "dirInode.lookup",
+          "lineNumber": 270
+        },
+        {
+          "caller": "lookup",
+          "callee": "new MappedFHandle",
+          "lineNumber": 273
+        },
+        {
+          "caller": "lookup",
+          "callee": "inode.getIdentifier",
+          "lineNumber": 274
+        },
+        {
+          "caller": "lookup",
+          "callee": "inode.getVersion",
+          "lineNumber": 275
+        },
+        {
+          "caller": "lookup",
+          "callee": "new DirOpResNoSuchFile",
+          "lineNumber": 281
+        },
+        {
+          "caller": "lookup",
+          "callee": "Debug.out.println",
+          "lineNumber": 282
+        },
+        {
+          "caller": "lookup",
+          "callee": "new DirOpResOK",
+          "lineNumber": 284
+        },
+        {
+          "caller": "lookup",
+          "callee": "helperMFh.getFHandle",
+          "lineNumber": 284
+        },
+        {
+          "caller": "lookup",
+          "callee": "getFAttr",
+          "lineNumber": 284
+        },
+        {
+          "caller": "lookup",
+          "callee": "new DirOpResErrIO",
+          "lineNumber": 289
+        },
+        {
+          "caller": "lookup",
+          "callee": "new DirOpResNoSuchFile",
+          "lineNumber": 292
+        },
+        {
+          "caller": "lookup",
+          "callee": "new DirOpResErrNotDir",
+          "lineNumber": 295
+        },
+        {
+          "caller": "lookup",
+          "callee": "new DirOpResErrStale",
+          "lineNumber": 298
+        },
+        {
+          "caller": "lookup",
+          "callee": "new DirOpResErrAcces",
+          "lineNumber": 301
+        },
+        {
+          "caller": "lookup",
+          "callee": "new DirOpResErrIO",
+          "lineNumber": 304
+        },
+        {
+          "caller": "lookup",
+          "callee": "new DirOpResErrStale",
+          "lineNumber": 307
+        },
+        {
+          "caller": "readlink",
+          "callee": "new MappedFHandle",
+          "lineNumber": 321
+        },
+        {
+          "caller": "readlink",
+          "callee": "new MappedFHandle",
+          "lineNumber": 322
+        },
+        {
+          "caller": "readlink",
+          "callee": "helperMFh.renew",
+          "lineNumber": 324
+        },
+        {
+          "caller": "readlink",
+          "callee": "Debug.out.println",
+          "lineNumber": 326
+        },
+        {
+          "caller": "readlink",
+          "callee": "this.getNode",
+          "lineNumber": 332
+        },
+        {
+          "caller": "readlink",
+          "callee": "new ReadLinkResError",
+          "lineNumber": 333
+        },
+        {
+          "caller": "readlink",
+          "callee": "symlinkInode.isSymlink",
+          "lineNumber": 336
+        },
+        {
+          "caller": "readlink",
+          "callee": "new ReadLinkResError",
+          "lineNumber": 336
+        },
+        {
+          "caller": "readlink",
+          "callee": "symlinkInode.getSymlink",
+          "lineNumber": 339
+        },
+        {
+          "caller": "readlink",
+          "callee": "new ReadLinkResOK",
+          "lineNumber": 342
+        },
+        {
+          "caller": "readlink",
+          "callee": "new DirPath",
+          "lineNumber": 342
+        },
+        {
+          "caller": "readlink",
+          "callee": "Debug.out.println",
+          "lineNumber": 345
+        },
+        {
+          "caller": "readlink",
+          "callee": "new ReadLinkResError",
+          "lineNumber": 346
+        },
+        {
+          "caller": "readlink",
+          "callee": "new ReadLinkResError",
+          "lineNumber": 348
+        },
+        {
+          "caller": "readlink",
+          "callee": "cpuManager.recordEvent",
+          "lineNumber": 350
+        },
+        {
+          "caller": "readlink",
+          "callee": "new ReadLinkResErrStale",
+          "lineNumber": 351
+        },
+        {
+          "caller": "read",
+          "callee": "new MappedFHandle",
+          "lineNumber": 363
+        },
+        {
+          "caller": "read",
+          "callee": "new MappedFHandle",
+          "lineNumber": 364
+        },
+        {
+          "caller": "read",
+          "callee": "helperMFh.renew",
+          "lineNumber": 367
+        },
+        {
+          "caller": "read",
+          "callee": "Debug.out.println",
+          "lineNumber": 371
+        },
+        {
+          "caller": "read",
+          "callee": "this.getNode",
+          "lineNumber": 380
+        },
+        {
+          "caller": "read",
+          "callee": "Debug.out.println",
+          "lineNumber": 383
+        },
+        {
+          "caller": "read",
+          "callee": "new ReadResError",
+          "lineNumber": 384
+        },
+        {
+          "caller": "read",
+          "callee": "readbuffer.size",
+          "lineNumber": 387
+        },
+        {
+          "caller": "read",
+          "callee": "new ReadResErrNoEnt",
+          "lineNumber": 390
+        },
+        {
+          "caller": "read",
+          "callee": "inode.read",
+          "lineNumber": 393
+        },
+        {
+          "caller": "read",
+          "callee": "readbuffer.copyToByteArray",
+          "lineNumber": 396
+        },
+        {
+          "caller": "read",
+          "callee": "new ReadResOK",
+          "lineNumber": 398
+        },
+        {
+          "caller": "read",
+          "callee": "getFAttr",
+          "lineNumber": 398
+        },
+        {
+          "caller": "read",
+          "callee": "new NFSData",
+          "lineNumber": 398
+        },
+        {
+          "caller": "read",
+          "callee": "cpuManager.recordEvent",
+          "lineNumber": 401
+        },
+        {
+          "caller": "read",
+          "callee": "new ReadResErrStale",
+          "lineNumber": 402
+        },
+        {
+          "caller": "read",
+          "callee": "Debug.out.println",
+          "lineNumber": 404
+        },
+        {
+          "caller": "read",
+          "callee": "new ReadResError",
+          "lineNumber": 405
+        },
+        {
+          "caller": "writeCache",
+          "callee": "new Error",
+          "lineNumber": 412
+        },
+        {
+          "caller": "write",
+          "callee": "new MappedFHandle",
+          "lineNumber": 422
+        },
+        {
+          "caller": "write",
+          "callee": "new MappedFHandle",
+          "lineNumber": 423
+        },
+        {
+          "caller": "write",
+          "callee": "helperMFh.renew",
+          "lineNumber": 425
+        },
+        {
+          "caller": "write",
+          "callee": "Debug.out.println",
+          "lineNumber": 429
+        },
+        {
+          "caller": "write",
+          "callee": "this.getNode",
+          "lineNumber": 438
+        },
+        {
+          "caller": "write",
+          "callee": "InitialNaming.getInitialNaming().lookup",
+          "lineNumber": 441
+        },
+        {
+          "caller": "write",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 441
+        },
+        {
+          "caller": "write",
+          "callee": "memMgr.alloc",
+          "lineNumber": 442
+        },
+        {
+          "caller": "write",
+          "callee": "buffer.copyFromByteArray",
+          "lineNumber": 446
+        },
+        {
+          "caller": "write",
+          "callee": "inode.write",
+          "lineNumber": 448
+        },
+        {
+          "caller": "write",
+          "callee": "inode.setLastAccessed",
+          "lineNumber": 449
+        },
+        {
+          "caller": "write",
+          "callee": "inode.lastAccessed",
+          "lineNumber": 449
+        },
+        {
+          "caller": "write",
+          "callee": "inode.setLastModified",
+          "lineNumber": 450
+        },
+        {
+          "caller": "write",
+          "callee": "inode.lastModified",
+          "lineNumber": 450
+        },
+        {
+          "caller": "write",
+          "callee": "Debug.out.println",
+          "lineNumber": 453
+        },
+        {
+          "caller": "write",
+          "callee": "new AttrStatError",
+          "lineNumber": 454
+        },
+        {
+          "caller": "write",
+          "callee": "Debug.out.println",
+          "lineNumber": 457
+        },
+        {
+          "caller": "write",
+          "callee": "new AttrStatError",
+          "lineNumber": 458
+        },
+        {
+          "caller": "write",
+          "callee": "new AttrStatOK",
+          "lineNumber": 465
+        },
+        {
+          "caller": "write",
+          "callee": "getFAttr",
+          "lineNumber": 465
+        },
+        {
+          "caller": "write",
+          "callee": "new AttrStatErrStale",
+          "lineNumber": 468
+        },
+        {
+          "caller": "write",
+          "callee": "Debug.out.println",
+          "lineNumber": 470
+        },
+        {
+          "caller": "write",
+          "callee": "new AttrStatError",
+          "lineNumber": 471
+        },
+        {
+          "caller": "create",
+          "callee": "new MappedFHandle",
+          "lineNumber": 486
+        },
+        {
+          "caller": "create",
+          "callee": "new MappedFHandle",
+          "lineNumber": 487
+        },
+        {
+          "caller": "create",
+          "callee": "helperDirMFh.renew",
+          "lineNumber": 489
+        },
+        {
+          "caller": "create",
+          "callee": "Debug.out.println",
+          "lineNumber": 493
+        },
+        {
+          "caller": "create",
+          "callee": "this.getNode",
+          "lineNumber": 499
+        },
+        {
+          "caller": "create",
+          "callee": "new DirOpResError",
+          "lineNumber": 501
+        },
+        {
+          "caller": "create",
+          "callee": "dirInode.isDirectory",
+          "lineNumber": 503
+        },
+        {
+          "caller": "create",
+          "callee": "dirInode.create",
+          "lineNumber": 506
+        },
+        {
+          "caller": "create",
+          "callee": "dirInode.lookup",
+          "lineNumber": 508
+        },
+        {
+          "caller": "create",
+          "callee": "Debug.out.println",
+          "lineNumber": 511
+        },
+        {
+          "caller": "create",
+          "callee": "inode.getIdentifier",
+          "lineNumber": 512
+        },
+        {
+          "caller": "create",
+          "callee": "helperMFh.renew",
+          "lineNumber": 514
+        },
+        {
+          "caller": "create",
+          "callee": "inode.getIdentifier",
+          "lineNumber": 515
+        },
+        {
+          "caller": "create",
+          "callee": "inode.getVersion",
+          "lineNumber": 516
+        },
+        {
+          "caller": "create",
+          "callee": "lookupCache.addEntry",
+          "lineNumber": 518
+        },
+        {
+          "caller": "create",
+          "callee": "getFAttr",
+          "lineNumber": 519
+        },
+        {
+          "caller": "create",
+          "callee": "new DirOpResOK",
+          "lineNumber": 521
+        },
+        {
+          "caller": "create",
+          "callee": "helperMFh.getFHandle",
+          "lineNumber": 521
+        },
+        {
+          "caller": "create",
+          "callee": "new DirOpResError",
+          "lineNumber": 523
+        },
+        {
+          "caller": "create",
+          "callee": "cpuManager.recordEvent",
+          "lineNumber": 526
+        },
+        {
+          "caller": "create",
+          "callee": "new DirOpResErrStale",
+          "lineNumber": 527
+        },
+        {
+          "caller": "create",
+          "callee": "new DirOpResErrExist",
+          "lineNumber": 529
+        },
+        {
+          "caller": "create",
+          "callee": "Debug.out.println",
+          "lineNumber": 531
+        },
+        {
+          "caller": "create",
+          "callee": "new DirOpResError",
+          "lineNumber": 532
+        },
+        {
+          "caller": "create",
+          "callee": "new DirOpResErrIO",
+          "lineNumber": 534
+        },
+        {
+          "caller": "create",
+          "callee": "Debug.out.println",
+          "lineNumber": 536
+        },
+        {
+          "caller": "create",
+          "callee": "new DirOpResError",
+          "lineNumber": 537
+        },
+        {
+          "caller": "create",
+          "callee": "Debug.out.println",
+          "lineNumber": 539
+        },
+        {
+          "caller": "create",
+          "callee": "new DirOpResError",
+          "lineNumber": 540
+        },
+        {
+          "caller": "create",
+          "callee": "new DirOpResError",
+          "lineNumber": 542
+        },
+        {
+          "caller": "create",
+          "callee": "Debug.out.println",
+          "lineNumber": 544
+        },
+        {
+          "caller": "create",
+          "callee": "e.printStackTrace",
+          "lineNumber": 545
+        },
+        {
+          "caller": "create",
+          "callee": "new DirOpResError",
+          "lineNumber": 546
+        },
+        {
+          "caller": "remove",
+          "callee": "new MappedFHandle",
+          "lineNumber": 558
+        },
+        {
+          "caller": "remove",
+          "callee": "new MappedFHandle",
+          "lineNumber": 559
+        },
+        {
+          "caller": "remove",
+          "callee": "helperDirMFh.renew",
+          "lineNumber": 561
+        },
+        {
+          "caller": "remove",
+          "callee": "Debug.out.println",
+          "lineNumber": 565
+        },
+        {
+          "caller": "remove",
+          "callee": "this.getNode",
+          "lineNumber": 572
+        },
+        {
+          "caller": "remove",
+          "callee": "new Stat",
+          "lineNumber": 575
+        },
+        {
+          "caller": "remove",
+          "callee": "dirInode.isDirectory",
+          "lineNumber": 578
+        },
+        {
+          "caller": "remove",
+          "callee": "new Stat",
+          "lineNumber": 578
+        },
+        {
+          "caller": "remove",
+          "callee": "dirInode.unlink",
+          "lineNumber": 581
+        },
+        {
+          "caller": "remove",
+          "callee": "new Stat",
+          "lineNumber": 584
+        },
+        {
+          "caller": "remove",
+          "callee": "new Stat",
+          "lineNumber": 587
+        },
+        {
+          "caller": "remove",
+          "callee": "Debug.out.println",
+          "lineNumber": 589
+        },
+        {
+          "caller": "remove",
+          "callee": "new Stat",
+          "lineNumber": 590
+        },
+        {
+          "caller": "rename",
+          "callee": "new MappedFHandle",
+          "lineNumber": 599
+        },
+        {
+          "caller": "rename",
+          "callee": "new MappedFHandle",
+          "lineNumber": 600
+        },
+        {
+          "caller": "rename",
+          "callee": "helperMFh.renew",
+          "lineNumber": 602
+        },
+        {
+          "caller": "rename",
+          "callee": "helperDirMFh.renew",
+          "lineNumber": 603
+        },
+        {
+          "caller": "rename",
+          "callee": "Debug.out.println",
+          "lineNumber": 611
+        },
+        {
+          "caller": "rename",
+          "callee": "this.getNode",
+          "lineNumber": 619
+        },
+        {
+          "caller": "rename",
+          "callee": "this.getNode",
+          "lineNumber": 620
+        },
+        {
+          "caller": "rename",
+          "callee": "new Stat",
+          "lineNumber": 622
+        },
+        {
+          "caller": "rename",
+          "callee": "fromDirInode.isDirectory",
+          "lineNumber": 624
+        },
+        {
+          "caller": "rename",
+          "callee": "toDirInode.isDirectory",
+          "lineNumber": 624
+        },
+        {
+          "caller": "rename",
+          "callee": "fromDirInode.rename",
+          "lineNumber": 626
+        },
+        {
+          "caller": "rename",
+          "callee": "new Stat",
+          "lineNumber": 628
+        },
+        {
+          "caller": "rename",
+          "callee": "new Stat",
+          "lineNumber": 630
+        },
+        {
+          "caller": "rename",
+          "callee": "new Stat",
+          "lineNumber": 633
+        },
+        {
+          "caller": "rename",
+          "callee": "Debug.out.println",
+          "lineNumber": 635
+        },
+        {
+          "caller": "rename",
+          "callee": "new Stat",
+          "lineNumber": 636
+        },
+        {
+          "caller": "link",
+          "callee": "new Error",
+          "lineNumber": 644
+        },
+        {
+          "caller": "symlink",
+          "callee": "new MappedFHandle",
+          "lineNumber": 652
+        },
+        {
+          "caller": "symlink",
+          "callee": "new MappedFHandle",
+          "lineNumber": 653
+        },
+        {
+          "caller": "symlink",
+          "callee": "helperDirMFh.renew",
+          "lineNumber": 655
+        },
+        {
+          "caller": "symlink",
+          "callee": "Debug.out.println",
+          "lineNumber": 660
+        },
+        {
+          "caller": "symlink",
+          "callee": "this.getNode",
+          "lineNumber": 663
+        },
+        {
+          "caller": "symlink",
+          "callee": "new Stat",
+          "lineNumber": 665
+        },
+        {
+          "caller": "symlink",
+          "callee": "dirInode.isDirectory",
+          "lineNumber": 667
+        },
+        {
+          "caller": "symlink",
+          "callee": "new Stat",
+          "lineNumber": 667
+        },
+        {
+          "caller": "symlink",
+          "callee": "dirInode.symlink",
+          "lineNumber": 670
+        },
+        {
+          "caller": "symlink",
+          "callee": "helperMFh.renew",
+          "lineNumber": 672
+        },
+        {
+          "caller": "symlink",
+          "callee": "inode.getIdentifier",
+          "lineNumber": 673
+        },
+        {
+          "caller": "symlink",
+          "callee": "inode.getVersion",
+          "lineNumber": 674
+        },
+        {
+          "caller": "symlink",
+          "callee": "getFAttr",
+          "lineNumber": 676
+        },
+        {
+          "caller": "symlink",
+          "callee": "new Stat",
+          "lineNumber": 678
+        },
+        {
+          "caller": "symlink",
+          "callee": "new Stat",
+          "lineNumber": 680
+        },
+        {
+          "caller": "symlink",
+          "callee": "Debug.out.println",
+          "lineNumber": 682
+        },
+        {
+          "caller": "symlink",
+          "callee": "new Stat",
+          "lineNumber": 683
+        },
+        {
+          "caller": "mkdir",
+          "callee": "new MappedFHandle",
+          "lineNumber": 696
+        },
+        {
+          "caller": "mkdir",
+          "callee": "new MappedFHandle",
+          "lineNumber": 697
+        },
+        {
+          "caller": "mkdir",
+          "callee": "helperDirMFh.renew",
+          "lineNumber": 699
+        },
+        {
+          "caller": "mkdir",
+          "callee": "Debug.out.println",
+          "lineNumber": 703
+        },
+        {
+          "caller": "mkdir",
+          "callee": "this.getNode",
+          "lineNumber": 706
+        },
+        {
+          "caller": "mkdir",
+          "callee": "new DirOpResError",
+          "lineNumber": 708
+        },
+        {
+          "caller": "mkdir",
+          "callee": "dirInode.isDirectory",
+          "lineNumber": 710
+        },
+        {
+          "caller": "mkdir",
+          "callee": "new DirOpResError",
+          "lineNumber": 710
+        },
+        {
+          "caller": "mkdir",
+          "callee": "dirInode.mkdir",
+          "lineNumber": 713
+        },
+        {
+          "caller": "mkdir",
+          "callee": "Debug.out.println",
+          "lineNumber": 714
+        },
+        {
+          "caller": "mkdir",
+          "callee": "inode.getIdentifier",
+          "lineNumber": 714
+        },
+        {
+          "caller": "mkdir",
+          "callee": "helperMFh.renew",
+          "lineNumber": 717
+        },
+        {
+          "caller": "mkdir",
+          "callee": "inode.getIdentifier",
+          "lineNumber": 718
+        },
+        {
+          "caller": "mkdir",
+          "callee": "inode.getVersion",
+          "lineNumber": 719
+        },
+        {
+          "caller": "mkdir",
+          "callee": "lookupCache.addEntry",
+          "lineNumber": 722
+        },
+        {
+          "caller": "mkdir",
+          "callee": "getFAttr",
+          "lineNumber": 724
+        },
+        {
+          "caller": "mkdir",
+          "callee": "new DirOpResOK",
+          "lineNumber": 726
+        },
+        {
+          "caller": "mkdir",
+          "callee": "fh.getFHandle",
+          "lineNumber": 726
+        },
+        {
+          "caller": "mkdir",
+          "callee": "new DirOpResErrStale",
+          "lineNumber": 728
+        },
+        {
+          "caller": "mkdir",
+          "callee": "new DirOpResErrExist",
+          "lineNumber": 730
+        },
+        {
+          "caller": "mkdir",
+          "callee": "Debug.out.println",
+          "lineNumber": 732
+        },
+        {
+          "caller": "mkdir",
+          "callee": "new DirOpResError",
+          "lineNumber": 733
+        },
+        {
+          "caller": "rmdir",
+          "callee": "new MappedFHandle",
+          "lineNumber": 745
+        },
+        {
+          "caller": "rmdir",
+          "callee": "new MappedFHandle",
+          "lineNumber": 746
+        },
+        {
+          "caller": "rmdir",
+          "callee": "helperDirMFh.renew",
+          "lineNumber": 748
+        },
+        {
+          "caller": "rmdir",
+          "callee": "Debug.out.println",
+          "lineNumber": 752
+        },
+        {
+          "caller": "rmdir",
+          "callee": "this.getNode",
+          "lineNumber": 755
+        },
+        {
+          "caller": "rmdir",
+          "callee": "new Stat",
+          "lineNumber": 757
+        },
+        {
+          "caller": "rmdir",
+          "callee": "dirInode.isDirectory",
+          "lineNumber": 759
+        },
+        {
+          "caller": "rmdir",
+          "callee": "new Stat",
+          "lineNumber": 759
+        },
+        {
+          "caller": "rmdir",
+          "callee": "dirInode.rmdir",
+          "lineNumber": 762
+        },
+        {
+          "caller": "rmdir",
+          "callee": "new Stat",
+          "lineNumber": 765
+        },
+        {
+          "caller": "rmdir",
+          "callee": "new Stat",
+          "lineNumber": 768
+        },
+        {
+          "caller": "rmdir",
+          "callee": "Debug.out.println",
+          "lineNumber": 770
+        },
+        {
+          "caller": "rmdir",
+          "callee": "new Stat",
+          "lineNumber": 771
+        },
+        {
+          "caller": "readdir",
+          "callee": "new MappedFHandle",
+          "lineNumber": 782
+        },
+        {
+          "caller": "readdir",
+          "callee": "new MappedFHandle",
+          "lineNumber": 783
+        },
+        {
+          "caller": "readdir",
+          "callee": "helperMFh.renew",
+          "lineNumber": 785
+        },
+        {
+          "caller": "readdir",
+          "callee": "Debug.out.println",
+          "lineNumber": 789
+        },
+        {
+          "caller": "readdir",
+          "callee": "this.getNode",
+          "lineNumber": 792
+        },
+        {
+          "caller": "readdir",
+          "callee": "new ReadDirResError",
+          "lineNumber": 794
+        },
+        {
+          "caller": "readdir",
+          "callee": "dirInode.isDirectory",
+          "lineNumber": 797
+        },
+        {
+          "caller": "readdir",
+          "callee": "new ReadDirResError",
+          "lineNumber": 797
+        },
+        {
+          "caller": "readdir",
+          "callee": "dirInode.readdirNames",
+          "lineNumber": 800
+        },
+        {
+          "caller": "readdir",
+          "callee": "Debug.out.println",
+          "lineNumber": 807
+        },
+        {
+          "caller": "readdir",
+          "callee": "dirInode.getNode(dirName).getIdentifier",
+          "lineNumber": 809
+        },
+        {
+          "caller": "readdir",
+          "callee": "dirInode.getNode",
+          "lineNumber": 809
+        },
+        {
+          "caller": "readdir",
+          "callee": "new Entry",
+          "lineNumber": 810
+        },
+        {
+          "caller": "readdir",
+          "callee": "new Name",
+          "lineNumber": 810
+        },
+        {
+          "caller": "readdir",
+          "callee": "new NFSCookie",
+          "lineNumber": 810
+        },
+        {
+          "caller": "readdir",
+          "callee": "new Entries",
+          "lineNumber": 812
+        },
+        {
+          "caller": "readdir",
+          "callee": "new Entries",
+          "lineNumber": 817
+        },
+        {
+          "caller": "readdir",
+          "callee": "new ReadDirResOK",
+          "lineNumber": 818
+        },
+        {
+          "caller": "readdir",
+          "callee": "new ReadDirResErrStale",
+          "lineNumber": 821
+        },
+        {
+          "caller": "readdir",
+          "callee": "Debug.out.println",
+          "lineNumber": 823
+        },
+        {
+          "caller": "readdir",
+          "callee": "new ReadDirResError",
+          "lineNumber": 824
+        },
+        {
+          "caller": "statfs",
+          "callee": "Debug.out.println",
+          "lineNumber": 835
+        },
+        {
+          "caller": "statfs",
+          "callee": "new MappedFHandle",
+          "lineNumber": 839
+        },
+        {
+          "caller": "statfs",
+          "callee": "new MappedFHandle",
+          "lineNumber": 840
+        },
+        {
+          "caller": "statfs",
+          "callee": "helperMFh.renew",
+          "lineNumber": 842
+        },
+        {
+          "caller": "statfs",
+          "callee": "Debug.out.println",
+          "lineNumber": 845
+        },
+        {
+          "caller": "statfs",
+          "callee": "this.getNode",
+          "lineNumber": 851
+        },
+        {
+          "caller": "statfs",
+          "callee": "inode.getStatFS",
+          "lineNumber": 852
+        },
+        {
+          "caller": "statfs",
+          "callee": "new StatFSResOK",
+          "lineNumber": 854
+        },
+        {
+          "caller": "statfs",
+          "callee": "sfs.getSize",
+          "lineNumber": 855
+        },
+        {
+          "caller": "statfs",
+          "callee": "sfs.getBlockSize",
+          "lineNumber": 856
+        },
+        {
+          "caller": "statfs",
+          "callee": "cpuManager.recordEvent",
+          "lineNumber": 869
+        },
+        {
+          "caller": "statfs",
+          "callee": "new StatFSResErrIO",
+          "lineNumber": 870
+        },
+        {
+          "caller": "statfs",
+          "callee": "cpuManager.recordEvent",
+          "lineNumber": 872
+        },
+        {
+          "caller": "statfs",
+          "callee": "new StatFSResErrNoEnt",
+          "lineNumber": 873
+        },
+        {
+          "caller": "statfs",
+          "callee": "cpuManager.recordEvent",
+          "lineNumber": 875
+        },
+        {
+          "caller": "statfs",
+          "callee": "new StatFSResErrNotDir",
+          "lineNumber": 876
+        },
+        {
+          "caller": "statfs",
+          "callee": "cpuManager.recordEvent",
+          "lineNumber": 878
+        },
+        {
+          "caller": "statfs",
+          "callee": "new StatFSResErrNoEnt",
+          "lineNumber": 879
+        },
+        {
+          "caller": "statfs",
+          "callee": "cpuManager.recordEvent",
+          "lineNumber": 881
+        },
+        {
+          "caller": "statfs",
+          "callee": "new StatFSResErrAcces",
+          "lineNumber": 882
+        },
+        {
+          "caller": "statfs",
+          "callee": "cpuManager.recordEvent",
+          "lineNumber": 884
+        },
+        {
+          "caller": "statfs",
+          "callee": "new StatFSResErrIO",
+          "lineNumber": 885
+        },
+        {
+          "caller": "statfs",
+          "callee": "cpuManager.recordEvent",
+          "lineNumber": 887
+        },
+        {
+          "caller": "statfs",
+          "callee": "new StatFSResErrStale",
+          "lineNumber": 888
+        },
+        {
+          "caller": "getNode",
+          "callee": "fs.getNode",
+          "lineNumber": 912
+        },
+        {
+          "caller": "getNode",
+          "callee": "inode.getVersion",
+          "lineNumber": 914
+        },
+        {
+          "caller": "getNode",
+          "callee": "new StaleHandleException",
+          "lineNumber": 915
+        },
+        {
+          "caller": "getFAttr",
+          "callee": "this.getNode",
+          "lineNumber": 930
+        },
+        {
+          "caller": "getFAttr",
+          "callee": "getFAttr",
+          "lineNumber": 931
+        },
+        {
+          "caller": "getFAttr",
+          "callee": "Debug.out.println",
+          "lineNumber": 940
+        },
+        {
+          "caller": "getFAttr",
+          "callee": "this.getNode",
+          "lineNumber": 945
+        },
+        {
+          "caller": "getFAttr",
+          "callee": "getFAttr",
+          "lineNumber": 946
+        },
+        {
+          "caller": "getFAttr",
+          "callee": "new FAttr",
+          "lineNumber": 957
+        },
+        {
+          "caller": "getFAttr",
+          "callee": "new FType",
+          "lineNumber": 960
+        },
+        {
+          "caller": "getFAttr",
+          "callee": "inode.isDirectory",
+          "lineNumber": 963
+        },
+        {
+          "caller": "getFAttr",
+          "callee": "inode.isFile",
+          "lineNumber": 967
+        },
+        {
+          "caller": "getFAttr",
+          "callee": "inode.isSymlink",
+          "lineNumber": 971
+        },
+        {
+          "caller": "getFAttr",
+          "callee": "inode.isWritable",
+          "lineNumber": 976
+        },
+        {
+          "caller": "getFAttr",
+          "callee": "inode.isReadable",
+          "lineNumber": 981
+        },
+        {
+          "caller": "getFAttr",
+          "callee": "inode.isExecutable",
+          "lineNumber": 987
+        },
+        {
+          "caller": "getFAttr",
+          "callee": "inode.i_nlinks",
+          "lineNumber": 993
+        },
+        {
+          "caller": "getFAttr",
+          "callee": "inode.getLength",
+          "lineNumber": 1000
+        },
+        {
+          "caller": "getFAttr",
+          "callee": "inode.getStatFS().getSize",
+          "lineNumber": 1001
+        },
+        {
+          "caller": "getFAttr",
+          "callee": "inode.getStatFS",
+          "lineNumber": 1001
+        },
+        {
+          "caller": "getFAttr",
+          "callee": "inode.getIdentifier",
+          "lineNumber": 1006
+        },
+        {
+          "caller": "getFAttr",
+          "callee": "new Timeval",
+          "lineNumber": 1013
+        },
+        {
+          "caller": "getFAttr",
+          "callee": "inode.lastAccessed",
+          "lineNumber": 1013
+        },
+        {
+          "caller": "getFAttr",
+          "callee": "new Timeval",
+          "lineNumber": 1014
+        },
+        {
+          "caller": "getFAttr",
+          "callee": "inode.lastChanged",
+          "lineNumber": 1014
+        },
+        {
+          "caller": "getFAttr",
+          "callee": "new Timeval",
+          "lineNumber": 1015
+        },
+        {
+          "caller": "getFAttr",
+          "callee": "inode.lastModified",
+          "lineNumber": 1015
+        },
+        {
+          "caller": "getFAttr",
+          "callee": "new Error",
+          "lineNumber": 1017
+        },
+        {
+          "caller": "setAttr",
+          "callee": "inode.setLastAccessed",
+          "lineNumber": 1022
+        },
+        {
+          "caller": "setAttr",
+          "callee": "inode.setLastModified",
+          "lineNumber": 1023
+        },
+        {
+          "caller": "setAttr",
+          "callee": "getFAttr",
+          "lineNumber": 1024
+        },
+        {
+          "caller": "getEntry",
+          "callee": "name.equals",
+          "lineNumber": 1160
+        },
+        {
+          "caller": "getEntry",
+          "callee": "new LookupCache_Result",
+          "lineNumber": 1166
+        },
+        {
+          "caller": "printStatistics",
+          "callee": "Debug.out.println",
+          "lineNumber": 1180
+        },
+        {
+          "caller": "LookupCache_2ndImpl",
+          "callee": "new java.util.Hashtable",
+          "lineNumber": 1216
+        },
+        {
+          "caller": "addEntry",
+          "callee": "new LookupCache_2ndImpl_Entry",
+          "lineNumber": 1222
+        },
+        {
+          "caller": "addEntry",
+          "callee": "nameHt.put",
+          "lineNumber": 1223
+        },
+        {
+          "caller": "getEntry",
+          "callee": "nameHt.get",
+          "lineNumber": 1228
+        },
+        {
+          "caller": "getEntry",
+          "callee": "new LookupCache_Result",
+          "lineNumber": 1232
+        },
+        {
+          "caller": "getEntry",
+          "callee": "Debug.out.println",
+          "lineNumber": 1236
+        },
+        {
+          "caller": "printStatistics",
+          "callee": "Debug.out.println",
+          "lineNumber": 1253
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 37,
+        "functionCount": 40,
+        "classCount": 7
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/NFSProc.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 49,
+      "nonEmptyLines": 45,
+      "classes": [
+        {
+          "name": "NFSProc",
+          "startLine": 8,
+          "endLine": 49,
+          "methods": [
+            "nullproc",
+            "getattr",
+            "setattr",
+            "root",
+            "lookup",
+            "readlink",
+            "read",
+            "writeCache",
+            "write",
+            "create",
+            "remove",
+            "rename",
+            "link",
+            "symlink",
+            "mkdir",
+            "rmdir",
+            "readdir",
+            "statfs"
+          ],
+          "properties": [
+            "VERSION",
+            "PROGRAM",
+            "MID_nullproc_0",
+            "MID_getattr_1",
+            "MID_setattr_2",
+            "MID_root_3",
+            "MID_lookup_4",
+            "MID_readlink_5",
+            "MID_read_6",
+            "MID_writeCache_7",
+            "MID_write_8",
+            "MID_create_9",
+            "MID_remove_10",
+            "MID_rename_11",
+            "MID_link_12",
+            "MID_symlink_13",
+            "MID_mkdir_14",
+            "MID_rmdir_15",
+            "MID_readdir_16",
+            "MID_statfs_17"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "NFSProc",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadDirRes.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 20,
+      "nonEmptyLines": 14,
+      "functions": [
+        {
+          "name": "ReadDirRes",
+          "startLine": 18,
+          "endLine": 18,
+          "params": [
+            "status"
+          ]
+        },
+        {
+          "name": "ReadDirRes",
+          "startLine": 19,
+          "endLine": 19,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReadDirRes",
+          "startLine": 5,
+          "endLine": 20,
+          "methods": [
+            "ReadDirRes",
+            "ReadDirRes"
+          ],
+          "properties": [
+            "SWITCH_ReadDirResOK",
+            "SWITCH_ReadDirResErrNoEnt",
+            "SWITCH_ReadDirResErrIO",
+            "SWITCH_ReadDirResErrAcces",
+            "SWITCH_ReadDirResErrNotDir",
+            "SWITCH_ReadDirResErrStale",
+            "SWITCHDEFAULT_ReadDirResError",
+            "status"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SWITCH_ReadDirResOK",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_ReadDirResErrNoEnt",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_ReadDirResErrIO",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_ReadDirResErrAcces",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_ReadDirResErrNotDir",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_ReadDirResErrStale",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCHDEFAULT_ReadDirResError",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "status",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "ReadDirRes",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "ReadDirRes",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "ReadDirRes",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 11,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadDirResErrAcces.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "ReadDirResErrAcces",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReadDirResErrAcces",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "ReadDirResErrAcces"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ReadDirResErrAcces",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "ReadDirResErrAcces",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadDirResErrIO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "ReadDirResErrIO",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReadDirResErrIO",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "ReadDirResErrIO"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ReadDirResErrIO",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "ReadDirResErrIO",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadDirResErrNoEnt.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "ReadDirResErrNoEnt",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReadDirResErrNoEnt",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "ReadDirResErrNoEnt"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ReadDirResErrNoEnt",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "ReadDirResErrNoEnt",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadDirResErrNotDir.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "ReadDirResErrNotDir",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReadDirResErrNotDir",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "ReadDirResErrNotDir"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ReadDirResErrNotDir",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "ReadDirResErrNotDir",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadDirResError.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "ReadDirResError",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReadDirResError",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "ReadDirResError"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ReadDirResError",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "ReadDirResError",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadDirResErrStale.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "ReadDirResErrStale",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReadDirResErrStale",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "ReadDirResErrStale"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ReadDirResErrStale",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "ReadDirResErrStale",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadDirResOK.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 14,
+      "functions": [
+        {
+          "name": "ReadDirResOK",
+          "startLine": 9,
+          "endLine": 11,
+          "params": []
+        },
+        {
+          "name": "ReadDirResOK",
+          "startLine": 12,
+          "endLine": 16,
+          "params": [
+            "entries",
+            "eof"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReadDirResOK",
+          "startLine": 5,
+          "endLine": 18,
+          "methods": [
+            "ReadDirResOK",
+            "ReadDirResOK"
+          ],
+          "properties": [
+            "entries",
+            "eof"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "entries",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "eof",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "ReadDirResOK",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "ReadDirResOK",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "ReadDirResOK",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadLinkRes.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 14,
+      "functions": [
+        {
+          "name": "ReadLinkRes",
+          "startLine": 18,
+          "endLine": 18,
+          "params": [
+            "status"
+          ]
+        },
+        {
+          "name": "ReadLinkRes",
+          "startLine": 19,
+          "endLine": 19,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReadLinkRes",
+          "startLine": 5,
+          "endLine": 21,
+          "methods": [
+            "ReadLinkRes",
+            "ReadLinkRes"
+          ],
+          "properties": [
+            "SWITCH_ReadLinkResOK",
+            "SWITCH_ReadLinkResErrNoEnt",
+            "SWITCH_ReadLinkResErrIO",
+            "SWITCH_ReadLinkResErrAcces",
+            "SWITCH_ReadLinkResErrNotDir",
+            "SWITCH_ReadLinkResErrStale",
+            "SWITCHDEFAULT_ReadLinkResError",
+            "status"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SWITCH_ReadLinkResOK",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_ReadLinkResErrNoEnt",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_ReadLinkResErrIO",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_ReadLinkResErrAcces",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_ReadLinkResErrNotDir",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_ReadLinkResErrStale",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCHDEFAULT_ReadLinkResError",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "status",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "ReadLinkRes",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "ReadLinkRes",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "ReadLinkRes",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 11,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadLinkResErrAcces.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "ReadLinkResErrAcces",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReadLinkResErrAcces",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "ReadLinkResErrAcces"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ReadLinkResErrAcces",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "ReadLinkResErrAcces",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadLinkResErrIO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "ReadLinkResErrIO",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReadLinkResErrIO",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "ReadLinkResErrIO"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ReadLinkResErrIO",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "ReadLinkResErrIO",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadLinkResErrNoEnt.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "ReadLinkResErrNoEnt",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReadLinkResErrNoEnt",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "ReadLinkResErrNoEnt"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ReadLinkResErrNoEnt",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "ReadLinkResErrNoEnt",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadLinkResErrNotDir.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "ReadLinkResErrNotDir",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReadLinkResErrNotDir",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "ReadLinkResErrNotDir"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ReadLinkResErrNotDir",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "ReadLinkResErrNotDir",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadLinkResError.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 6,
+      "functions": [
+        {
+          "name": "ReadLinkResError",
+          "startLine": 7,
+          "endLine": 7,
+          "params": []
+        },
+        {
+          "name": "ReadLinkResError",
+          "startLine": 8,
+          "endLine": 8,
+          "params": [
+            "err"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReadLinkResError",
+          "startLine": 5,
+          "endLine": 9,
+          "methods": [
+            "ReadLinkResError",
+            "ReadLinkResError"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ReadLinkResError",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "ReadLinkResError",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "ReadLinkResError",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadLinkResErrStale.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "ReadLinkResErrStale",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReadLinkResErrStale",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "ReadLinkResErrStale"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ReadLinkResErrStale",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "ReadLinkResErrStale",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadLinkResOK.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 17,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "ReadLinkResOK",
+          "startLine": 8,
+          "endLine": 10,
+          "params": []
+        },
+        {
+          "name": "ReadLinkResOK",
+          "startLine": 12,
+          "endLine": 15,
+          "params": [
+            "p"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReadLinkResOK",
+          "startLine": 5,
+          "endLine": 17,
+          "methods": [
+            "ReadLinkResOK",
+            "ReadLinkResOK"
+          ],
+          "properties": [
+            "path"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "path",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "ReadLinkResOK",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "ReadLinkResOK",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "ReadLinkResOK",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadRes.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 14,
+      "functions": [
+        {
+          "name": "ReadRes",
+          "startLine": 17,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "ReadRes",
+          "startLine": 18,
+          "endLine": 18,
+          "params": [
+            "status"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReadRes",
+          "startLine": 5,
+          "endLine": 19,
+          "methods": [
+            "ReadRes",
+            "ReadRes"
+          ],
+          "properties": [
+            "SWITCH_ReadResOK",
+            "SWITCH_ReadResErrNoEnt",
+            "SWITCH_ReadResErrIO",
+            "SWITCH_ReadResErrAcces",
+            "SWITCH_ReadResErrNotDir",
+            "SWITCH_ReadResErrStale",
+            "SWITCHDEFAULT_ReadResError",
+            "status"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SWITCH_ReadResOK",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_ReadResErrNoEnt",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_ReadResErrIO",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_ReadResErrAcces",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_ReadResErrNotDir",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_ReadResErrStale",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCHDEFAULT_ReadResError",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "status",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "ReadRes",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "ReadRes",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "ReadRes",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 11,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadResErrAcces.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "ReadResErrAcces",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReadResErrAcces",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "ReadResErrAcces"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ReadResErrAcces",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "ReadResErrAcces",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadResErrIO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "ReadResErrIO",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReadResErrIO",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "ReadResErrIO"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ReadResErrIO",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "ReadResErrIO",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadResErrNoEnt.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "ReadResErrNoEnt",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReadResErrNoEnt",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "ReadResErrNoEnt"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ReadResErrNoEnt",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "ReadResErrNoEnt",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    }
+  ]
+}

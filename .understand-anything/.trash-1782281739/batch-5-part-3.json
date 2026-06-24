@@ -1,0 +1,1177 @@
+{
+  "schemaVersion": 1,
+  "batchIndex": 5,
+  "part": 3,
+  "nodes": [
+    {
+      "id": "cls:src/java/io/NotActiveException.java:NotActiveException",
+      "type": "class",
+      "label": "NotActiveException",
+      "properties": {
+        "path": "src/java/io/NotActiveException.java",
+        "name": "NotActiveException",
+        "startLine": 34,
+        "endLine": 53,
+        "numMethods": 2
+      }
+    },
+    {
+      "id": "cls:src/java/io/NotSerializableException.java:NotSerializableException",
+      "type": "class",
+      "label": "NotSerializableException",
+      "properties": {
+        "path": "src/java/io/NotSerializableException.java",
+        "name": "NotSerializableException",
+        "startLine": 36,
+        "endLine": 55,
+        "numMethods": 2
+      }
+    },
+    {
+      "id": "cls:src/java/io/OutputStreamWriter.java:OutputStreamWriter",
+      "type": "class",
+      "label": "OutputStreamWriter",
+      "properties": {
+        "path": "src/java/io/OutputStreamWriter.java",
+        "name": "OutputStreamWriter",
+        "startLine": 66,
+        "endLine": 214,
+        "numMethods": 8
+      }
+    },
+    {
+      "id": "cls:src/java/io/PushbackInputStream.java:PushbackInputStream",
+      "type": "class",
+      "label": "PushbackInputStream",
+      "properties": {
+        "path": "src/java/io/PushbackInputStream.java",
+        "name": "PushbackInputStream",
+        "startLine": 3,
+        "endLine": 77,
+        "numMethods": 7
+      }
+    },
+    {
+      "id": "cls:src/java/io/SerializablePermission.java:SerializablePermission",
+      "type": "class",
+      "label": "SerializablePermission",
+      "properties": {
+        "path": "src/java/io/SerializablePermission.java",
+        "name": "SerializablePermission",
+        "startLine": 91,
+        "endLine": 131,
+        "numMethods": 2
+      }
+    },
+    {
+      "id": "cls:src/java/io/StreamCorruptedException.java:StreamCorruptedException",
+      "type": "class",
+      "label": "StreamCorruptedException",
+      "properties": {
+        "path": "src/java/io/StreamCorruptedException.java",
+        "name": "StreamCorruptedException",
+        "startLine": 35,
+        "endLine": 54,
+        "numMethods": 2
+      }
+    },
+    {
+      "id": "cls:src/java/io/StringBufferInputStream.java:StringBufferInputStream",
+      "type": "class",
+      "label": "StringBufferInputStream",
+      "properties": {
+        "path": "src/java/io/StringBufferInputStream.java",
+        "name": "StringBufferInputStream",
+        "startLine": 70,
+        "endLine": 187,
+        "numMethods": 6
+      }
+    },
+    {
+      "id": "cls:src/java/io/StringWriter.java:StringWriter",
+      "type": "class",
+      "label": "StringWriter",
+      "properties": {
+        "path": "src/java/io/StringWriter.java",
+        "name": "StringWriter",
+        "startLine": 2,
+        "endLine": 7,
+        "numMethods": 4
+      }
+    },
+    {
+      "id": "cls:src/java/io/UTFDataFormatException.java:UTFDataFormatException",
+      "type": "class",
+      "label": "UTFDataFormatException",
+      "properties": {
+        "path": "src/java/io/UTFDataFormatException.java",
+        "name": "UTFDataFormatException",
+        "startLine": 3,
+        "endLine": 6,
+        "numMethods": 2
+      }
+    },
+    {
+      "id": "file:src/java/io/NotActiveException.java",
+      "type": "file",
+      "label": "NotActiveException.java",
+      "properties": {
+        "path": "src/java/io/NotActiveException.java",
+        "language": "java",
+        "sizeLines": 53,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/io/NotSerializableException.java",
+      "type": "file",
+      "label": "NotSerializableException.java",
+      "properties": {
+        "path": "src/java/io/NotSerializableException.java",
+        "language": "java",
+        "sizeLines": 55,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/io/OutputStreamWriter.java",
+      "type": "file",
+      "label": "OutputStreamWriter.java",
+      "properties": {
+        "path": "src/java/io/OutputStreamWriter.java",
+        "language": "java",
+        "sizeLines": 215,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/io/PushbackInputStream.java",
+      "type": "file",
+      "label": "PushbackInputStream.java",
+      "properties": {
+        "path": "src/java/io/PushbackInputStream.java",
+        "language": "java",
+        "sizeLines": 78,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/io/SerializablePermission.java",
+      "type": "file",
+      "label": "SerializablePermission.java",
+      "properties": {
+        "path": "src/java/io/SerializablePermission.java",
+        "language": "java",
+        "sizeLines": 131,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/io/StreamCorruptedException.java",
+      "type": "file",
+      "label": "StreamCorruptedException.java",
+      "properties": {
+        "path": "src/java/io/StreamCorruptedException.java",
+        "language": "java",
+        "sizeLines": 54,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/io/StringBufferInputStream.java",
+      "type": "file",
+      "label": "StringBufferInputStream.java",
+      "properties": {
+        "path": "src/java/io/StringBufferInputStream.java",
+        "language": "java",
+        "sizeLines": 187,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/io/StringWriter.java",
+      "type": "file",
+      "label": "StringWriter.java",
+      "properties": {
+        "path": "src/java/io/StringWriter.java",
+        "language": "java",
+        "sizeLines": 7,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/io/UTFDataFormatException.java",
+      "type": "file",
+      "label": "UTFDataFormatException.java",
+      "properties": {
+        "path": "src/java/io/UTFDataFormatException.java",
+        "language": "java",
+        "sizeLines": 7,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "fn:src/java/io/NotActiveException.java:NotActiveException",
+      "type": "function",
+      "label": "NotActiveException",
+      "properties": {
+        "path": "src/java/io/NotActiveException.java",
+        "name": "NotActiveException",
+        "startLine": 50,
+        "endLine": 52,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/NotSerializableException.java:NotSerializableException",
+      "type": "function",
+      "label": "NotSerializableException",
+      "properties": {
+        "path": "src/java/io/NotSerializableException.java",
+        "name": "NotSerializableException",
+        "startLine": 52,
+        "endLine": 54,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/OutputStreamWriter.java:OutputStreamWriter",
+      "type": "function",
+      "label": "OutputStreamWriter",
+      "properties": {
+        "path": "src/java/io/OutputStreamWriter.java",
+        "name": "OutputStreamWriter",
+        "startLine": 109,
+        "endLine": 114,
+        "params": [
+          "out",
+          "encoding_scheme"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/OutputStreamWriter.java:close",
+      "type": "function",
+      "label": "close",
+      "properties": {
+        "path": "src/java/io/OutputStreamWriter.java",
+        "name": "close",
+        "startLine": 127,
+        "endLine": 131,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/OutputStreamWriter.java:flush",
+      "type": "function",
+      "label": "flush",
+      "properties": {
+        "path": "src/java/io/OutputStreamWriter.java",
+        "name": "flush",
+        "startLine": 140,
+        "endLine": 144,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/OutputStreamWriter.java:getEncoding",
+      "type": "function",
+      "label": "getEncoding",
+      "properties": {
+        "path": "src/java/io/OutputStreamWriter.java",
+        "name": "getEncoding",
+        "startLine": 155,
+        "endLine": 159,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/OutputStreamWriter.java:write",
+      "type": "function",
+      "label": "write",
+      "properties": {
+        "path": "src/java/io/OutputStreamWriter.java",
+        "name": "write",
+        "startLine": 208,
+        "endLine": 212,
+        "params": [
+          "str",
+          "offset",
+          "len"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/PushbackInputStream.java:PushbackInputStream",
+      "type": "function",
+      "label": "PushbackInputStream",
+      "properties": {
+        "path": "src/java/io/PushbackInputStream.java",
+        "name": "PushbackInputStream",
+        "startLine": 73,
+        "endLine": 76,
+        "params": [
+          "in",
+          "size"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/PushbackInputStream.java:available",
+      "type": "function",
+      "label": "available",
+      "properties": {
+        "path": "src/java/io/PushbackInputStream.java",
+        "name": "available",
+        "startLine": 7,
+        "endLine": 11,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/PushbackInputStream.java:markSupported",
+      "type": "function",
+      "label": "markSupported",
+      "properties": {
+        "path": "src/java/io/PushbackInputStream.java",
+        "name": "markSupported",
+        "startLine": 13,
+        "endLine": 17,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/PushbackInputStream.java:read",
+      "type": "function",
+      "label": "read",
+      "properties": {
+        "path": "src/java/io/PushbackInputStream.java",
+        "name": "read",
+        "startLine": 46,
+        "endLine": 57,
+        "params": [
+          "b",
+          "off",
+          "len"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/PushbackInputStream.java:unread",
+      "type": "function",
+      "label": "unread",
+      "properties": {
+        "path": "src/java/io/PushbackInputStream.java",
+        "name": "unread",
+        "startLine": 59,
+        "endLine": 65,
+        "params": [
+          "c"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/SerializablePermission.java:SerializablePermission",
+      "type": "function",
+      "label": "SerializablePermission",
+      "properties": {
+        "path": "src/java/io/SerializablePermission.java",
+        "name": "SerializablePermission",
+        "startLine": 127,
+        "endLine": 130,
+        "params": [
+          "name",
+          "actions"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/StreamCorruptedException.java:StreamCorruptedException",
+      "type": "function",
+      "label": "StreamCorruptedException",
+      "properties": {
+        "path": "src/java/io/StreamCorruptedException.java",
+        "name": "StreamCorruptedException",
+        "startLine": 51,
+        "endLine": 53,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/StringBufferInputStream.java:StringBufferInputStream",
+      "type": "function",
+      "label": "StringBufferInputStream",
+      "properties": {
+        "path": "src/java/io/StringBufferInputStream.java",
+        "name": "StringBufferInputStream",
+        "startLine": 88,
+        "endLine": 92,
+        "params": [
+          "s"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/StringBufferInputStream.java:available",
+      "type": "function",
+      "label": "available",
+      "properties": {
+        "path": "src/java/io/StringBufferInputStream.java",
+        "name": "available",
+        "startLine": 101,
+        "endLine": 104,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/StringBufferInputStream.java:read",
+      "type": "function",
+      "label": "read",
+      "properties": {
+        "path": "src/java/io/StringBufferInputStream.java",
+        "name": "read",
+        "startLine": 140,
+        "endLine": 155,
+        "params": [
+          "b",
+          "off",
+          "len"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/StringBufferInputStream.java:reset",
+      "type": "function",
+      "label": "reset",
+      "properties": {
+        "path": "src/java/io/StringBufferInputStream.java",
+        "name": "reset",
+        "startLine": 162,
+        "endLine": 165,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/StringBufferInputStream.java:skip",
+      "type": "function",
+      "label": "skip",
+      "properties": {
+        "path": "src/java/io/StringBufferInputStream.java",
+        "name": "skip",
+        "startLine": 178,
+        "endLine": 186,
+        "params": [
+          "n"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/StringWriter.java:StringWriter",
+      "type": "function",
+      "label": "StringWriter",
+      "properties": {
+        "path": "src/java/io/StringWriter.java",
+        "name": "StringWriter",
+        "startLine": 3,
+        "endLine": 3,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/StringWriter.java:close",
+      "type": "function",
+      "label": "close",
+      "properties": {
+        "path": "src/java/io/StringWriter.java",
+        "name": "close",
+        "startLine": 5,
+        "endLine": 5,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/StringWriter.java:getBuffer",
+      "type": "function",
+      "label": "getBuffer",
+      "properties": {
+        "path": "src/java/io/StringWriter.java",
+        "name": "getBuffer",
+        "startLine": 6,
+        "endLine": 6,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/StringWriter.java:toString",
+      "type": "function",
+      "label": "toString",
+      "properties": {
+        "path": "src/java/io/StringWriter.java",
+        "name": "toString",
+        "startLine": 4,
+        "endLine": 4,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/UTFDataFormatException.java:UTFDataFormatException",
+      "type": "function",
+      "label": "UTFDataFormatException",
+      "properties": {
+        "path": "src/java/io/UTFDataFormatException.java",
+        "name": "UTFDataFormatException",
+        "startLine": 5,
+        "endLine": 5,
+        "params": [
+          "msg"
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/java/io/NotActiveException.java",
+      "target": "cls:src/java/io/NotActiveException.java:NotActiveException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/NotActiveException.java",
+      "target": "cls:src/java/io/NotActiveException.java:NotActiveException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/NotActiveException.java",
+      "target": "fn:src/java/io/NotActiveException.java:NotActiveException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/NotActiveException.java",
+      "target": "fn:src/java/io/NotActiveException.java:NotActiveException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/NotActiveException.java",
+      "target": "fn:src/java/io/NotActiveException.java:NotActiveException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/NotActiveException.java",
+      "target": "fn:src/java/io/NotActiveException.java:NotActiveException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/NotSerializableException.java",
+      "target": "cls:src/java/io/NotSerializableException.java:NotSerializableException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/NotSerializableException.java",
+      "target": "cls:src/java/io/NotSerializableException.java:NotSerializableException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/NotSerializableException.java",
+      "target": "fn:src/java/io/NotSerializableException.java:NotSerializableException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/NotSerializableException.java",
+      "target": "fn:src/java/io/NotSerializableException.java:NotSerializableException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/NotSerializableException.java",
+      "target": "fn:src/java/io/NotSerializableException.java:NotSerializableException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/NotSerializableException.java",
+      "target": "fn:src/java/io/NotSerializableException.java:NotSerializableException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/OutputStreamWriter.java",
+      "target": "cls:src/java/io/OutputStreamWriter.java:OutputStreamWriter",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/OutputStreamWriter.java",
+      "target": "cls:src/java/io/OutputStreamWriter.java:OutputStreamWriter",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/OutputStreamWriter.java",
+      "target": "fn:src/java/io/OutputStreamWriter.java:OutputStreamWriter",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/OutputStreamWriter.java",
+      "target": "fn:src/java/io/OutputStreamWriter.java:OutputStreamWriter",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/OutputStreamWriter.java",
+      "target": "fn:src/java/io/OutputStreamWriter.java:OutputStreamWriter",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/OutputStreamWriter.java",
+      "target": "fn:src/java/io/OutputStreamWriter.java:OutputStreamWriter",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/OutputStreamWriter.java",
+      "target": "fn:src/java/io/OutputStreamWriter.java:close",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/OutputStreamWriter.java",
+      "target": "fn:src/java/io/OutputStreamWriter.java:close",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/OutputStreamWriter.java",
+      "target": "fn:src/java/io/OutputStreamWriter.java:flush",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/OutputStreamWriter.java",
+      "target": "fn:src/java/io/OutputStreamWriter.java:flush",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/OutputStreamWriter.java",
+      "target": "fn:src/java/io/OutputStreamWriter.java:getEncoding",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/OutputStreamWriter.java",
+      "target": "fn:src/java/io/OutputStreamWriter.java:getEncoding",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/OutputStreamWriter.java",
+      "target": "fn:src/java/io/OutputStreamWriter.java:write",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/OutputStreamWriter.java",
+      "target": "fn:src/java/io/OutputStreamWriter.java:write",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/OutputStreamWriter.java",
+      "target": "fn:src/java/io/OutputStreamWriter.java:write",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/OutputStreamWriter.java",
+      "target": "fn:src/java/io/OutputStreamWriter.java:write",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/OutputStreamWriter.java",
+      "target": "fn:src/java/io/OutputStreamWriter.java:write",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/OutputStreamWriter.java",
+      "target": "fn:src/java/io/OutputStreamWriter.java:write",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/PushbackInputStream.java",
+      "target": "cls:src/java/io/PushbackInputStream.java:PushbackInputStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/PushbackInputStream.java",
+      "target": "cls:src/java/io/PushbackInputStream.java:PushbackInputStream",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/PushbackInputStream.java",
+      "target": "fn:src/java/io/PushbackInputStream.java:available",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/PushbackInputStream.java",
+      "target": "fn:src/java/io/PushbackInputStream.java:available",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/PushbackInputStream.java",
+      "target": "fn:src/java/io/PushbackInputStream.java:markSupported",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/PushbackInputStream.java",
+      "target": "fn:src/java/io/PushbackInputStream.java:markSupported",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/PushbackInputStream.java",
+      "target": "fn:src/java/io/PushbackInputStream.java:read",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/PushbackInputStream.java",
+      "target": "fn:src/java/io/PushbackInputStream.java:read",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/PushbackInputStream.java",
+      "target": "fn:src/java/io/PushbackInputStream.java:read",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/PushbackInputStream.java",
+      "target": "fn:src/java/io/PushbackInputStream.java:read",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/PushbackInputStream.java",
+      "target": "fn:src/java/io/PushbackInputStream.java:unread",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/PushbackInputStream.java",
+      "target": "fn:src/java/io/PushbackInputStream.java:unread",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/PushbackInputStream.java",
+      "target": "fn:src/java/io/PushbackInputStream.java:PushbackInputStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/PushbackInputStream.java",
+      "target": "fn:src/java/io/PushbackInputStream.java:PushbackInputStream",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/PushbackInputStream.java",
+      "target": "fn:src/java/io/PushbackInputStream.java:PushbackInputStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/PushbackInputStream.java",
+      "target": "fn:src/java/io/PushbackInputStream.java:PushbackInputStream",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/SerializablePermission.java",
+      "target": "cls:src/java/io/SerializablePermission.java:SerializablePermission",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/SerializablePermission.java",
+      "target": "cls:src/java/io/SerializablePermission.java:SerializablePermission",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/SerializablePermission.java",
+      "target": "fn:src/java/io/SerializablePermission.java:SerializablePermission",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/SerializablePermission.java",
+      "target": "fn:src/java/io/SerializablePermission.java:SerializablePermission",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/SerializablePermission.java",
+      "target": "fn:src/java/io/SerializablePermission.java:SerializablePermission",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/SerializablePermission.java",
+      "target": "fn:src/java/io/SerializablePermission.java:SerializablePermission",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/StreamCorruptedException.java",
+      "target": "cls:src/java/io/StreamCorruptedException.java:StreamCorruptedException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/StreamCorruptedException.java",
+      "target": "cls:src/java/io/StreamCorruptedException.java:StreamCorruptedException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/StreamCorruptedException.java",
+      "target": "fn:src/java/io/StreamCorruptedException.java:StreamCorruptedException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/StreamCorruptedException.java",
+      "target": "fn:src/java/io/StreamCorruptedException.java:StreamCorruptedException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/StreamCorruptedException.java",
+      "target": "fn:src/java/io/StreamCorruptedException.java:StreamCorruptedException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/StreamCorruptedException.java",
+      "target": "fn:src/java/io/StreamCorruptedException.java:StreamCorruptedException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/StringBufferInputStream.java",
+      "target": "cls:src/java/io/StringBufferInputStream.java:StringBufferInputStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/StringBufferInputStream.java",
+      "target": "cls:src/java/io/StringBufferInputStream.java:StringBufferInputStream",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/StringBufferInputStream.java",
+      "target": "fn:src/java/io/StringBufferInputStream.java:StringBufferInputStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/StringBufferInputStream.java",
+      "target": "fn:src/java/io/StringBufferInputStream.java:StringBufferInputStream",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/StringBufferInputStream.java",
+      "target": "fn:src/java/io/StringBufferInputStream.java:available",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/StringBufferInputStream.java",
+      "target": "fn:src/java/io/StringBufferInputStream.java:available",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/StringBufferInputStream.java",
+      "target": "fn:src/java/io/StringBufferInputStream.java:read",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/StringBufferInputStream.java",
+      "target": "fn:src/java/io/StringBufferInputStream.java:read",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/StringBufferInputStream.java",
+      "target": "fn:src/java/io/StringBufferInputStream.java:read",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/StringBufferInputStream.java",
+      "target": "fn:src/java/io/StringBufferInputStream.java:read",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/StringBufferInputStream.java",
+      "target": "fn:src/java/io/StringBufferInputStream.java:reset",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/StringBufferInputStream.java",
+      "target": "fn:src/java/io/StringBufferInputStream.java:reset",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/StringBufferInputStream.java",
+      "target": "fn:src/java/io/StringBufferInputStream.java:skip",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/StringBufferInputStream.java",
+      "target": "fn:src/java/io/StringBufferInputStream.java:skip",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/StringWriter.java",
+      "target": "cls:src/java/io/StringWriter.java:StringWriter",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/StringWriter.java",
+      "target": "cls:src/java/io/StringWriter.java:StringWriter",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/StringWriter.java",
+      "target": "fn:src/java/io/StringWriter.java:StringWriter",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/StringWriter.java",
+      "target": "fn:src/java/io/StringWriter.java:StringWriter",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/StringWriter.java",
+      "target": "fn:src/java/io/StringWriter.java:toString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/StringWriter.java",
+      "target": "fn:src/java/io/StringWriter.java:toString",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/StringWriter.java",
+      "target": "fn:src/java/io/StringWriter.java:close",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/StringWriter.java",
+      "target": "fn:src/java/io/StringWriter.java:close",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/StringWriter.java",
+      "target": "fn:src/java/io/StringWriter.java:getBuffer",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/StringWriter.java",
+      "target": "fn:src/java/io/StringWriter.java:getBuffer",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/UTFDataFormatException.java",
+      "target": "cls:src/java/io/UTFDataFormatException.java:UTFDataFormatException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/UTFDataFormatException.java",
+      "target": "cls:src/java/io/UTFDataFormatException.java:UTFDataFormatException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/UTFDataFormatException.java",
+      "target": "fn:src/java/io/UTFDataFormatException.java:UTFDataFormatException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/UTFDataFormatException.java",
+      "target": "fn:src/java/io/UTFDataFormatException.java:UTFDataFormatException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/UTFDataFormatException.java",
+      "target": "fn:src/java/io/UTFDataFormatException.java:UTFDataFormatException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/UTFDataFormatException.java",
+      "target": "fn:src/java/io/UTFDataFormatException.java:UTFDataFormatException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/PushbackInputStream.java:available",
+      "target": "fn:src/java/io/PushbackInputStream.java:super.available",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/PushbackInputStream.java:read",
+      "target": "fn:src/java/io/PushbackInputStream.java:super.read",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/PushbackInputStream.java:unread",
+      "target": "fn:src/java/io/PushbackInputStream.java:new IOException",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/PushbackInputStream.java",
+      "target": "file:src/java/io/FilterInputStream.java",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/java/io/SerializablePermission.java",
+      "target": "file:src/java/util/Hashtable.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/java/io/SerializablePermission.java",
+      "target": "file:src/java/util/StringTokenizer.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "fn:src/java/io/StringBufferInputStream.java:StringBufferInputStream",
+      "target": "fn:src/java/io/StringBufferInputStream.java:s.length",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/StringBufferInputStream.java:read",
+      "target": "fn:src/java/io/StringBufferInputStream.java:buffer.charAt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/StringBufferInputStream.java:read",
+      "target": "fn:src/java/io/StringBufferInputStream.java:new ArrayIndexOutOfBoundsException",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/StringBufferInputStream.java:read",
+      "target": "fn:src/java/io/StringBufferInputStream.java:Math.min",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/StringBufferInputStream.java:read",
+      "target": "fn:src/java/io/StringBufferInputStream.java:buffer.getBytes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/StringBufferInputStream.java:skip",
+      "target": "fn:src/java/io/StringBufferInputStream.java:Math.min",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/StringWriter.java:StringWriter",
+      "target": "fn:src/java/io/StringWriter.java:new Error",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/StringWriter.java:toString",
+      "target": "fn:src/java/io/StringWriter.java:new Error",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/StringWriter.java:close",
+      "target": "fn:src/java/io/StringWriter.java:new Error",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/StringWriter.java:getBuffer",
+      "target": "fn:src/java/io/StringWriter.java:new Error",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/UTFDataFormatException.java",
+      "target": "file:src/java/io/IOException.java",
+      "type": "inherits",
+      "weight": 0.9
+    }
+  ],
+  "metadata": {
+    "totalNodesInPart": 42,
+    "totalEdgesInPart": 105,
+    "algorithm": "file-analyzer"
+  }
+}

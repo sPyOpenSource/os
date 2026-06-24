@@ -1,0 +1,1664 @@
+{
+  "batchIndex": 9,
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "15e5cf7a41421179",
+      "type": "file",
+      "name": "Main.java",
+      "filePath": "src/jx/bio/emulator/Main.java",
+      "language": "java",
+      "totalLines": 54,
+      "nonEmptyLines": 44,
+      "entryPoint": true,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "3e29e7a41c2fa76b",
+      "type": "file",
+      "name": "Main.java",
+      "filePath": "src/jx/bio/ram/Main.java",
+      "language": "java",
+      "totalLines": 35,
+      "nonEmptyLines": 29,
+      "entryPoint": true,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "f9d024e0be49938f",
+      "type": "file",
+      "name": "Buffer2.java",
+      "filePath": "src/jx/buffer/multithread/Buffer2.java",
+      "language": "java",
+      "totalLines": 95,
+      "nonEmptyLines": 78,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 10,
+        "functionCount": 10,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "8a720f18107616d7",
+      "type": "file",
+      "name": "MultiThreadBufferList.java",
+      "filePath": "src/jx/buffer/multithread/MultiThreadBufferList.java",
+      "language": "java",
+      "totalLines": 216,
+      "nonEmptyLines": 188,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 17,
+        "functionCount": 17,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "e39116ec046683df",
+      "type": "file",
+      "name": "MultiThreadBufferList2.java",
+      "filePath": "src/jx/buffer/multithread/MultiThreadBufferList2.java",
+      "language": "java",
+      "totalLines": 24,
+      "nonEmptyLines": 20,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "31197486ee5837cc",
+      "type": "file",
+      "name": "EmulNetFinder.java",
+      "filePath": "src/jx/devices/net/emulation/EmulNetFinder.java",
+      "language": "java",
+      "totalLines": 126,
+      "nonEmptyLines": 110,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 13,
+        "functionCount": 14,
+        "classCount": 2
+      }
+    },
+    {
+      "id": "83d6e8d202ce0f80",
+      "type": "file",
+      "name": "Init.java",
+      "filePath": "src/jx/emulation/Init.java",
+      "language": "java",
+      "totalLines": 31,
+      "nonEmptyLines": 28,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 4,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "96b88585cf704d7f",
+      "type": "file",
+      "name": "StartNetDevice.java",
+      "filePath": "src/jx/net/StartNetDevice.java",
+      "language": "java",
+      "totalLines": 62,
+      "nonEmptyLines": 47,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "9f3b06761292c9d5",
+      "type": "file",
+      "name": "HLRRobin.java",
+      "filePath": "src/jx/scheduler/HLRRobin.java",
+      "language": "java",
+      "totalLines": 176,
+      "nonEmptyLines": 143,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 20,
+        "functionCount": 18,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "cd6d6b0ceddcd7bb",
+      "type": "file",
+      "name": "HLRRobin_all.java",
+      "filePath": "src/jx/scheduler/HLRRobin_all.java",
+      "language": "java",
+      "totalLines": 192,
+      "nonEmptyLines": 159,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 22,
+        "functionCount": 20,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "ec1aaed4da4efc15",
+      "type": "file",
+      "name": "HLRRobin_mini.java",
+      "filePath": "src/jx/scheduler/HLRRobin_mini.java",
+      "language": "java",
+      "totalLines": 136,
+      "nonEmptyLines": 113,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 16,
+        "functionCount": 14,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "01b0df1d6bb6ce85",
+      "type": "file",
+      "name": "HLRRobin_nonpreemptive.java",
+      "filePath": "src/jx/scheduler/HLRRobin_nonpreemptive.java",
+      "language": "java",
+      "totalLines": 161,
+      "nonEmptyLines": 138,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 22,
+        "functionCount": 18,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "78d0a5031d65be24",
+      "type": "file",
+      "name": "JAVARRobin.java",
+      "filePath": "src/jx/scheduler/JAVARRobin.java",
+      "language": "java",
+      "totalLines": 154,
+      "nonEmptyLines": 125,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 8,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "016b3ec165b751aa",
+      "type": "file",
+      "name": "LLMtR.java",
+      "filePath": "src/jx/scheduler/LLMtR.java",
+      "language": "java",
+      "totalLines": 243,
+      "nonEmptyLines": 209,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 10,
+        "functionCount": 19,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "5177fc39c19a312b",
+      "type": "file",
+      "name": "LLRRobin.java",
+      "filePath": "src/jx/scheduler/LLRRobin.java",
+      "language": "java",
+      "totalLines": 271,
+      "nonEmptyLines": 226,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 11,
+        "functionCount": 14,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "88609949c42bdba7",
+      "type": "file",
+      "name": "LLRRobinTest.java",
+      "filePath": "src/jx/scheduler/LLRRobinTest.java",
+      "language": "java",
+      "totalLines": 181,
+      "nonEmptyLines": 147,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 11,
+        "functionCount": 14,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "16cd9ddcd549eb33",
+      "type": "file",
+      "name": "DebugInputStream.java",
+      "filePath": "src/jx/zero/debug/DebugInputStream.java",
+      "language": "java",
+      "totalLines": 18,
+      "nonEmptyLines": 13,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "4951c0817dfce13f",
+      "type": "file",
+      "name": "DebugOutputStream.java",
+      "filePath": "src/jx/zero/debug/DebugOutputStream.java",
+      "language": "java",
+      "totalLines": 25,
+      "nonEmptyLines": 21,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "65aaf1f7e69b8621",
+      "type": "file",
+      "name": "DebugPrintStream.java",
+      "filePath": "src/jx/zero/debug/DebugPrintStream.java",
+      "language": "java",
+      "totalLines": 462,
+      "nonEmptyLines": 386,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 23,
+        "functionCount": 23,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "5d31d213e0fdcbdb",
+      "type": "file",
+      "name": "ComInit.java",
+      "filePath": "src/metaxa/os/devices/net/ComInit.java",
+      "language": "java",
+      "totalLines": 436,
+      "nonEmptyLines": 369,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 6,
+        "functionCount": 7,
+        "classCount": 2
+      }
+    },
+    {
+      "id": "f8e1d2264cf9a85e",
+      "type": "file",
+      "name": "D3C905.java",
+      "filePath": "src/metaxa/os/devices/net/D3C905.java",
+      "language": "java",
+      "totalLines": 4176,
+      "nonEmptyLines": 3297,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 26,
+        "functionCount": 59,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "de5df7384cc1238e",
+      "type": "file",
+      "name": "DpdListEntry.java",
+      "filePath": "src/metaxa/os/devices/net/DpdListEntry.java",
+      "language": "java",
+      "totalLines": 133,
+      "nonEmptyLines": 117,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 16,
+        "functionCount": 16,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "a2532352d4735df1",
+      "type": "class",
+      "name": "Main",
+      "filePath": "src/jx/bio/emulator/Main.java",
+      "startLine": 9,
+      "endLine": 52,
+      "methods": [
+        "main",
+        "init"
+      ],
+      "properties": []
+    },
+    {
+      "id": "c889068ac6149655",
+      "type": "class",
+      "name": "Main",
+      "filePath": "src/jx/bio/ram/Main.java",
+      "startLine": 8,
+      "endLine": 35,
+      "methods": [
+        "main",
+        "init",
+        "Main"
+      ],
+      "properties": [
+        "naming"
+      ]
+    },
+    {
+      "id": "61ad9322c868b85e",
+      "type": "class",
+      "name": "Buffer2",
+      "filePath": "src/jx/buffer/multithread/Buffer2.java",
+      "startLine": 8,
+      "endLine": 95,
+      "methods": [
+        "Buffer2",
+        "getMem",
+        "getData",
+        "setData",
+        "setData",
+        "copyDataFrom",
+        "getRawData",
+        "getOffset",
+        "getSize",
+        "join"
+      ],
+      "properties": [
+        "offs",
+        "size",
+        "avoidSplitting"
+      ]
+    },
+    {
+      "id": "652f4662a57b8715",
+      "type": "class",
+      "name": "MultiThreadBufferList",
+      "filePath": "src/jx/buffer/multithread/MultiThreadBufferList.java",
+      "startLine": 15,
+      "endLine": 216,
+      "methods": [
+        "getLast",
+        "MultiThreadBufferList",
+        "MultiThreadBufferList",
+        "MultiThreadBufferList",
+        "setListName",
+        "enableRecording",
+        "MultiThreadBufferList",
+        "setConsumer",
+        "getConsumer",
+        "appendElement",
+        "undockFirstElement",
+        "nonblockingUndockFirstElement",
+        "dump",
+        "checkConsistency",
+        "size",
+        "setVerbose",
+        "requireMoredata"
+      ],
+      "properties": [
+        "check",
+        "trace",
+        "verbose",
+        "requireMoreData",
+        "first",
+        "last",
+        "cpuManager",
+        "consumer",
+        "size",
+        "name",
+        "event_list",
+        "recording"
+      ]
+    },
+    {
+      "id": "c72330360178e645",
+      "type": "class",
+      "name": "MultiThreadBufferList2",
+      "filePath": "src/jx/buffer/multithread/MultiThreadBufferList2.java",
+      "startLine": 5,
+      "endLine": 24,
+      "methods": [
+        "MultiThreadBufferList2",
+        "MultiThreadBufferList2"
+      ],
+      "properties": []
+    },
+    {
+      "id": "2874f3ba9e251568",
+      "type": "class",
+      "name": "EmulNetFinder",
+      "filePath": "src/jx/devices/net/emulation/EmulNetFinder.java",
+      "startLine": 17,
+      "endLine": 30,
+      "methods": [
+        "EmulNetFinder",
+        "find"
+      ],
+      "properties": [
+        "name",
+        "macaddr"
+      ]
+    },
+    {
+      "id": "b7c91549c90d84af",
+      "type": "class",
+      "name": "NetImpl",
+      "filePath": "src/jx/devices/net/emulation/EmulNetFinder.java",
+      "startLine": 32,
+      "endLine": 126,
+      "methods": [
+        "NetImpl",
+        "eventloop",
+        "setReceiveMode",
+        "transmit1",
+        "transmit",
+        "getMACAddress",
+        "getMTU",
+        "registerNonBlockingConsumer",
+        "open",
+        "getSupportedConfigurations",
+        "close",
+        "getId"
+      ],
+      "properties": [
+        "naming",
+        "net",
+        "buffer",
+        "memoryManager",
+        "consumer"
+      ]
+    },
+    {
+      "id": "250838caca178c6b",
+      "type": "class",
+      "name": "Init",
+      "filePath": "src/jx/emulation/Init.java",
+      "startLine": 11,
+      "endLine": 31,
+      "methods": [
+        "init",
+        "main"
+      ],
+      "properties": [
+        "naming"
+      ]
+    },
+    {
+      "id": "d80c1f3caa12758a",
+      "type": "class",
+      "name": "StartNetDevice",
+      "filePath": "src/jx/net/StartNetDevice.java",
+      "startLine": 15,
+      "endLine": 62,
+      "methods": [
+        "init3com",
+        "main"
+      ],
+      "properties": []
+    },
+    {
+      "id": "4b3b740ed9a48bab",
+      "type": "class",
+      "name": "HLRRobin",
+      "filePath": "src/jx/scheduler/HLRRobin.java",
+      "startLine": 11,
+      "endLine": 176,
+      "methods": [
+        "HLRRobin",
+        "registered",
+        "Scheduler_interrupted",
+        "Scheduler_preempted",
+        "interrupted",
+        "preempted",
+        "yielded",
+        "unblocked",
+        "created",
+        "switchedTo",
+        "blockedInPortalCall",
+        "portalCalled",
+        "startGCThread",
+        "unblockedGCThread",
+        "destroyedGCThread",
+        "activated",
+        "toString",
+        "dump"
+      ],
+      "properties": [
+        "cpuManager",
+        "SMPcpuManager",
+        "HLschedulerSupport",
+        "out",
+        "runnables",
+        "MyCPU",
+        "anzSchedInterrupted",
+        "anzSchedPreempted",
+        "yielded",
+        "uninterruptable",
+        "unINTthread",
+        "DomainName",
+        "instNr",
+        "debug"
+      ]
+    },
+    {
+      "id": "f725fb78ae91d165",
+      "type": "class",
+      "name": "HLRRobin_all",
+      "filePath": "src/jx/scheduler/HLRRobin_all.java",
+      "startLine": 9,
+      "endLine": 192,
+      "methods": [
+        "HLRRobin_all",
+        "registered",
+        "Scheduler_interrupted",
+        "Scheduler_preempted",
+        "interrupted",
+        "preempted",
+        "yielded",
+        "unblocked",
+        "created",
+        "switchedTo",
+        "blockedInPortalCall",
+        "portalCalled",
+        "blocked",
+        "destroyed",
+        "startGCThread",
+        "unblockedGCThread",
+        "destroyedGCThread",
+        "activated",
+        "toString",
+        "dump"
+      ],
+      "properties": [
+        "domainZero",
+        "cpuManager",
+        "SMPcpuManager",
+        "HLschedulerSupport",
+        "out",
+        "runnables",
+        "blocked",
+        "MyCPU",
+        "anzSchedInterrupted",
+        "anzSchedPreempted",
+        "yielded",
+        "uninterruptable",
+        "unINTthread",
+        "DomainName",
+        "instNr",
+        "debug"
+      ]
+    },
+    {
+      "id": "49218cd935c36e78",
+      "type": "class",
+      "name": "HLRRobin_mini",
+      "filePath": "src/jx/scheduler/HLRRobin_mini.java",
+      "startLine": 11,
+      "endLine": 136,
+      "methods": [
+        "HLRRobin_mini",
+        "registered",
+        "Scheduler_interrupted",
+        "Scheduler_preempted",
+        "interrupted",
+        "preempted",
+        "yielded",
+        "unblocked",
+        "created",
+        "startGCThread",
+        "unblockedGCThread",
+        "destroyedGCThread",
+        "activated",
+        "dump"
+      ],
+      "properties": [
+        "domainZero",
+        "cpuManager",
+        "SMPcpuManager",
+        "HLschedulerSupport",
+        "out",
+        "runnables",
+        "MyCPU",
+        "uninterruptable",
+        "unINTthread",
+        "DomainName",
+        "debug"
+      ]
+    },
+    {
+      "id": "ab1e368cc1c16650",
+      "type": "class",
+      "name": "HLRRobin_nonpreemptive",
+      "filePath": "src/jx/scheduler/HLRRobin_nonpreemptive.java",
+      "startLine": 11,
+      "endLine": 161,
+      "methods": [
+        "HLRRobin_nonpreemptive",
+        "registered",
+        "Scheduler_interrupted",
+        "Scheduler_preempted",
+        "interrupted",
+        "preempted",
+        "yielded",
+        "unblocked",
+        "created",
+        "switchedTo",
+        "blockedInService",
+        "serviceCalled",
+        "startGCThread",
+        "unblockedGCThread",
+        "destroyedGCThread",
+        "activated",
+        "toString",
+        "dump"
+      ],
+      "properties": [
+        "domainZero",
+        "cpuManager",
+        "SMPcpuManager",
+        "HLschedulerSupport",
+        "out",
+        "runnables",
+        "portalThreads",
+        "MyCPU",
+        "active",
+        "INTbyGC",
+        "DomainName",
+        "debug"
+      ]
+    },
+    {
+      "id": "2b4662ca10ebadec",
+      "type": "class",
+      "name": "JAVARRobin",
+      "filePath": "src/jx/scheduler/JAVARRobin.java",
+      "startLine": 9,
+      "endLine": 154,
+      "methods": [
+        "JAVARRobin",
+        "init",
+        "interrupt",
+        "add",
+        "removeNext",
+        "toString",
+        "dump",
+        "getNewContainer",
+        "releaseContainer"
+      ],
+      "properties": [
+        "domainZero",
+        "irq",
+        "cpuManager",
+        "SMPcpuManager",
+        "JAVAschedulerSupport",
+        "out",
+        "first",
+        "last",
+        "idleThread",
+        "MyCPU",
+        "ContainerPool",
+        "ContainerPoolSize"
+      ]
+    },
+    {
+      "id": "0f9ed88b1d4769d5",
+      "type": "class",
+      "name": "LLMtR",
+      "filePath": "src/jx/scheduler/LLMtR.java",
+      "startLine": 10,
+      "endLine": 243,
+      "methods": [
+        "LLMtR",
+        "registered",
+        "interrupt",
+        "registerDomain",
+        "unregisterDomain",
+        "setTimeSlice",
+        "activate_currDomain",
+        "activate_nextDomain",
+        "dump",
+        "dumpTokens",
+        "Decision_Epoche",
+        "Update_Domain",
+        "Run_a_Domain",
+        "MoveToRear",
+        "Combine_Elements",
+        "getFirstRunnable",
+        "getNewContainer",
+        "getNewContainer",
+        "releaseContainer"
+      ],
+      "properties": [
+        "naming",
+        "irq",
+        "cpuManager",
+        "SMPcpuManager",
+        "LLschedulerSupport",
+        "out",
+        "tokens",
+        "MyCPU",
+        "TimeSlice_init",
+        "left",
+        "activeDomain",
+        "ContainerPool",
+        "ContainerPoolSize"
+      ]
+    },
+    {
+      "id": "c48ed29dc636b52b",
+      "type": "class",
+      "name": "LLRRobin",
+      "filePath": "src/jx/scheduler/LLRRobin.java",
+      "startLine": 6,
+      "endLine": 271,
+      "methods": [
+        "LLRRobin",
+        "registered",
+        "interrupt",
+        "registerDomain",
+        "unregisterDomain",
+        "setTimeSlice",
+        "activate_currDomain",
+        "__activate_currDomain",
+        "activate_nextDomain",
+        "toString",
+        "dump",
+        "nextDomain",
+        "getNewContainer",
+        "releaseContainer"
+      ],
+      "properties": [
+        "irq",
+        "cpuManager",
+        "SMPcpuManager",
+        "LLschedulerSupport",
+        "out",
+        "first",
+        "activeDom",
+        "MyCPU",
+        "GlobalTimeSlice_init",
+        "GlobalTimeSlice",
+        "debug",
+        "ContainerPool",
+        "ContainerPoolSize"
+      ]
+    },
+    {
+      "id": "a1d33498ce0faec0",
+      "type": "class",
+      "name": "LLRRobinTest",
+      "filePath": "src/jx/scheduler/LLRRobinTest.java",
+      "startLine": 9,
+      "endLine": 181,
+      "methods": [
+        "LLRRobinTest",
+        "registered",
+        "interrupt",
+        "registerDomain",
+        "unregisterDomain",
+        "setTimeSlice",
+        "activate_currDomain",
+        "__activate_currDomain",
+        "activate_nextDomain",
+        "toString",
+        "dump",
+        "nextDomain",
+        "getNewContainer",
+        "releaseContainer"
+      ],
+      "properties": [
+        "naming",
+        "irq",
+        "cpuManager",
+        "SMPcpuManager",
+        "LLschedulerSupport",
+        "out",
+        "first",
+        "activeDom",
+        "MyCPU",
+        "ContainerPool",
+        "ContainerPoolSize"
+      ]
+    },
+    {
+      "id": "fdad4f331b8ba1c5",
+      "type": "class",
+      "name": "DebugInputStream",
+      "filePath": "src/jx/zero/debug/DebugInputStream.java",
+      "startLine": 7,
+      "endLine": 18,
+      "methods": [
+        "DebugInputStream",
+        "read"
+      ],
+      "properties": [
+        "channel"
+      ]
+    },
+    {
+      "id": "c2ea2827e737edb6",
+      "type": "class",
+      "name": "DebugOutputStream",
+      "filePath": "src/jx/zero/debug/DebugOutputStream.java",
+      "startLine": 6,
+      "endLine": 25,
+      "methods": [
+        "DebugOutputStream",
+        "write",
+        "write"
+      ],
+      "properties": [
+        "debugChannel"
+      ]
+    },
+    {
+      "id": "064c949b041f67fd",
+      "type": "class",
+      "name": "DebugPrintStream",
+      "filePath": "src/jx/zero/debug/DebugPrintStream.java",
+      "startLine": 9,
+      "endLine": 461,
+      "methods": [
+        "DebugPrintStream",
+        "checkError",
+        "close",
+        "flush",
+        "write",
+        "write",
+        "print",
+        "print",
+        "print",
+        "print",
+        "print",
+        "print",
+        "print",
+        "printBuffer",
+        "println",
+        "println",
+        "println",
+        "println",
+        "println",
+        "println",
+        "println",
+        "println",
+        "intToString"
+      ],
+      "properties": [
+        "out",
+        "error",
+        "autoflush",
+        "buffer"
+      ]
+    },
+    {
+      "id": "f7b6494225817ac7",
+      "type": "class",
+      "name": "User",
+      "filePath": "src/metaxa/os/devices/net/ComInit.java",
+      "startLine": 12,
+      "endLine": 14,
+      "methods": [],
+      "properties": [
+        "out"
+      ]
+    },
+    {
+      "id": "75cbf8558908ade5",
+      "type": "class",
+      "name": "ComInit",
+      "filePath": "src/metaxa/os/devices/net/ComInit.java",
+      "startLine": 16,
+      "endLine": 436,
+      "methods": [
+        "udelay",
+        "sleep",
+        "ComInit",
+        "find",
+        "findDevice",
+        "doBasicConfig",
+        "setupIOBase"
+      ],
+      "properties": [
+        "cpuManager",
+        "sleepManager",
+        "ID_DEVICE_MASK",
+        "ID_DEVICE_OFFSET_BIT",
+        "ID_VENDOR_MASK",
+        "ID_VENDOR_OFFSET_BIT",
+        "NIC_VENDOR_ID",
+        "NIC_PCI_DEVICE_ID_9055",
+        "NIC_PCI_DEVICE_ID_9056",
+        "NIC_PCI_DEVICE_ID_9058",
+        "NIC_PCI_DEVICE_ID_9004",
+        "NIC_PCI_DEVICE_ID_9005",
+        "NIC_PCI_DEVICE_ID_9006",
+        "NIC_PCI_DEVICE_ID_900A",
+        "NIC_PCI_DEVICE_ID_905A",
+        "NIC_PCI_DEVICE_ID_9200",
+        "NIC_PCI_DEVICE_ID_9800",
+        "NIC_PCI_DEVICE_ID_9805",
+        "NIC_ASIC_CYCLONE_KRAKATOA_LUCENT",
+        "NIC_ASIC_HURRICANE_TORNADO_LUCENT",
+        "NIC_ASIC_HURRICANE_NATIONAL",
+        "NIC_ASIC_HURRICANE_TORNADO_BROADCOM",
+        "REG_CMD",
+        "CMD_MASK_BM",
+        "PCI_BASE_ADDRESS_0",
+        "PCI_BASE_ADDRESS_1",
+        "PCI_REVISION_ID",
+        "PCI_CACHE_LINE_SIZE",
+        "PCI_LATENCY_TIMER",
+        "PCI_HEADER_TYPE",
+        "PCI_POWER_CONTROL",
+        "PCI_PME_ENABLE",
+        "PCI_PME_STATUS",
+        "PCI_POWER_STATE_D0",
+        "PCI_POWER_STATE_D1",
+        "PCI_POWER_STATE_D2",
+        "PCI_POWER_STATE_D3",
+        "PCI_BASE_ADDRESS_MEM_MASK",
+        "PCI_BASE_ADDRESS_IO_MASK",
+        "foundNics",
+        "ports",
+        "clock",
+        "irq",
+        "memMgr",
+        "timerManager",
+        "etherConsumer"
+      ]
+    },
+    {
+      "id": "2b2e36643dc10020",
+      "type": "class",
+      "name": "D3C905",
+      "filePath": "src/metaxa/os/devices/net/D3C905.java",
+      "startLine": 26,
+      "endLine": 4176,
+      "methods": [
+        "D3C905",
+        "NicInfo",
+        "getMACAddress",
+        "getMTU",
+        "GetAdapterProperties",
+        "BasicInitializeAdapter",
+        "TestAdapter",
+        "StartAdapter",
+        "SoftwareWork",
+        "ReStartAdapter",
+        "getSupportedConfigurations",
+        "open",
+        "close",
+        "NicOpen",
+        "FreeAdapterResources",
+        "NicClose",
+        "CleanupSendLogic",
+        "transmit1",
+        "transmit",
+        "SetCountDownTimer",
+        "HurricaneEarlyRevision",
+        "FlowControl",
+        "SetupMedia",
+        "TickMediaHandler",
+        "CheckTPLinkState",
+        "CheckFXLinkState",
+        "IndicateToOSLinkStateChange",
+        "GetLinkSpeed",
+        "ProcessMediaOverrides",
+        "SetupNewDuplex",
+        "SetupNewSpeed",
+        "setPromiscousMode",
+        "setNormalReceiveMode",
+        "setReceiveMode",
+        "NICSetReceiveMode",
+        "HashAddress",
+        "SetMulticastAddresses",
+        "InitializeHashFilter",
+        "MainAutoSelectionRoutine",
+        "CheckDCConverter",
+        "SetupConnector",
+        "TryMII",
+        "TryLinkBeat",
+        "DownloadSelfDirected",
+        "CheckTransmitInProgress",
+        "TestPacket",
+        "ResetAndEnableReceiver",
+        "ResetAndEnableTransmitter",
+        "interrupt",
+        "HostErrorEvent",
+        "CountDownTimerEvent",
+        "UpCompleteEvent",
+        "TxCompleteEvent",
+        "UpdateStatisticsEvent",
+        "unmaskInterrupts",
+        "TestReceive",
+        "registerNonBlockingConsumer",
+        "restartProduction",
+        "getId"
+      ],
+      "properties": [
+        "debug",
+        "debugSend",
+        "debugReceive",
+        "debugPacketNotice",
+        "debugLargeMemory",
+        "assertions",
+        "NIC_PCI_DEVICE_ID_9055",
+        "NIC_PCI_DEVICE_ID_9056",
+        "NIC_PCI_DEVICE_ID_9058",
+        "NIC_PCI_DEVICE_ID_9004",
+        "NIC_PCI_DEVICE_ID_9005",
+        "NIC_PCI_DEVICE_ID_9006",
+        "NIC_PCI_DEVICE_ID_900A",
+        "NIC_PCI_DEVICE_ID_905A",
+        "NIC_PCI_DEVICE_ID_9200",
+        "NIC_PCI_DEVICE_ID_9800",
+        "NIC_PCI_DEVICE_ID_9805",
+        "NIC_IO_PORT_REGISTERED",
+        "NIC_INTERRUPT_REGISTERED",
+        "NIC_SHARED_MEMORY_ALLOCATED",
+        "NIC_TIMER_REGISTERED",
+        "NIC_VENDOR_ID",
+        "IFF_PROMISC",
+        "IFF_ALLMULTI",
+        "IFF_MULTICAST",
+        "befehl",
+        "eeprom",
+        "register",
+        "bits",
+        "clock",
+        "waitglobal",
+        "irq",
+        "timerManager",
+        "memMgr",
+        "cpuManager",
+        "ports",
+        "Adapter",
+        "mii",
+        "firstdpd",
+        "firstupd",
+        "firsttestdpd",
+        "currentdpd",
+        "currentupd",
+        "previousdpd",
+        "previousupd",
+        "testhelpdpd",
+        "previoustestdpd",
+        "count",
+        "storage",
+        "etherConsumer",
+        "usableBufs",
+        "event_interrupt",
+        "event_snd",
+        "event_rcv",
+        "SLOWDOWN"
+      ]
+    },
+    {
+      "id": "27886894b7ad7a0b",
+      "type": "class",
+      "name": "DpdListEntry",
+      "filePath": "src/metaxa/os/devices/net/DpdListEntry.java",
+      "startLine": 6,
+      "endLine": 133,
+      "methods": [
+        "DpdListEntry",
+        "FrameStartHeader",
+        "StoreMem",
+        "StoreMem",
+        "Next",
+        "Previous",
+        "DownNextPointer",
+        "clear_StoreMem",
+        "FrameStartHeader",
+        "DpdMemory",
+        "StoreMem",
+        "Next",
+        "Previous",
+        "DPDPhysicalAddress",
+        "PacketLength",
+        "toString"
+      ],
+      "properties": [
+        "Next",
+        "Previous",
+        "DpdMemory",
+        "storeMem",
+        "DPDPhysicalAddress",
+        "PacketLength",
+        "addr",
+        "buffer"
+      ]
+    },
+    {
+      "id": "3c318f196d688583",
+      "type": "dependency",
+      "name": "Debug.java",
+      "filePath": "src/jx/zero/Debug.java"
+    },
+    {
+      "id": "64e01ca5ff57c94b",
+      "type": "dependency",
+      "name": "Method.java",
+      "filePath": "src/java/lang/reflect/Method.java"
+    },
+    {
+      "id": "67607610ac4dd9d7",
+      "type": "dependency",
+      "name": "Dump.java",
+      "filePath": "src/jx/zero/debug/Dump.java"
+    },
+    {
+      "id": "28ba8a28519142b3",
+      "type": "dependency",
+      "name": "IOException.java",
+      "filePath": "src/java/io/IOException.java"
+    },
+    {
+      "id": "4ec6193ddb472b0a",
+      "type": "dependency",
+      "name": "System.java",
+      "filePath": "src/java/lang/System.java"
+    }
+  ],
+  "edges": [
+    {
+      "source": "15e5cf7a41421179",
+      "target": "a2532352d4735df1",
+      "type": "contains"
+    },
+    {
+      "source": "3e29e7a41c2fa76b",
+      "target": "c889068ac6149655",
+      "type": "contains"
+    },
+    {
+      "source": "c889068ac6149655",
+      "target": "3e29e7a41c2fa76b",
+      "type": "exports"
+    },
+    {
+      "source": "f9d024e0be49938f",
+      "target": "61ad9322c868b85e",
+      "type": "contains"
+    },
+    {
+      "source": "61ad9322c868b85e",
+      "target": "f9d024e0be49938f",
+      "type": "exports"
+    },
+    {
+      "source": "8a720f18107616d7",
+      "target": "652f4662a57b8715",
+      "type": "contains"
+    },
+    {
+      "source": "652f4662a57b8715",
+      "target": "8a720f18107616d7",
+      "type": "exports"
+    },
+    {
+      "source": "e39116ec046683df",
+      "target": "c72330360178e645",
+      "type": "contains"
+    },
+    {
+      "source": "c72330360178e645",
+      "target": "e39116ec046683df",
+      "type": "exports"
+    },
+    {
+      "source": "31197486ee5837cc",
+      "target": "2874f3ba9e251568",
+      "type": "contains"
+    },
+    {
+      "source": "2874f3ba9e251568",
+      "target": "31197486ee5837cc",
+      "type": "exports"
+    },
+    {
+      "source": "31197486ee5837cc",
+      "target": "b7c91549c90d84af",
+      "type": "contains"
+    },
+    {
+      "source": "83d6e8d202ce0f80",
+      "target": "250838caca178c6b",
+      "type": "contains"
+    },
+    {
+      "source": "250838caca178c6b",
+      "target": "83d6e8d202ce0f80",
+      "type": "exports"
+    },
+    {
+      "source": "96b88585cf704d7f",
+      "target": "d80c1f3caa12758a",
+      "type": "contains"
+    },
+    {
+      "source": "d80c1f3caa12758a",
+      "target": "96b88585cf704d7f",
+      "type": "exports"
+    },
+    {
+      "source": "9f3b06761292c9d5",
+      "target": "4b3b740ed9a48bab",
+      "type": "contains"
+    },
+    {
+      "source": "4b3b740ed9a48bab",
+      "target": "9f3b06761292c9d5",
+      "type": "exports"
+    },
+    {
+      "source": "cd6d6b0ceddcd7bb",
+      "target": "f725fb78ae91d165",
+      "type": "contains"
+    },
+    {
+      "source": "f725fb78ae91d165",
+      "target": "cd6d6b0ceddcd7bb",
+      "type": "exports"
+    },
+    {
+      "source": "ec1aaed4da4efc15",
+      "target": "49218cd935c36e78",
+      "type": "contains"
+    },
+    {
+      "source": "49218cd935c36e78",
+      "target": "ec1aaed4da4efc15",
+      "type": "exports"
+    },
+    {
+      "source": "01b0df1d6bb6ce85",
+      "target": "ab1e368cc1c16650",
+      "type": "contains"
+    },
+    {
+      "source": "ab1e368cc1c16650",
+      "target": "01b0df1d6bb6ce85",
+      "type": "exports"
+    },
+    {
+      "source": "78d0a5031d65be24",
+      "target": "2b4662ca10ebadec",
+      "type": "contains"
+    },
+    {
+      "source": "2b4662ca10ebadec",
+      "target": "78d0a5031d65be24",
+      "type": "exports"
+    },
+    {
+      "source": "016b3ec165b751aa",
+      "target": "0f9ed88b1d4769d5",
+      "type": "contains"
+    },
+    {
+      "source": "0f9ed88b1d4769d5",
+      "target": "016b3ec165b751aa",
+      "type": "exports"
+    },
+    {
+      "source": "5177fc39c19a312b",
+      "target": "c48ed29dc636b52b",
+      "type": "contains"
+    },
+    {
+      "source": "c48ed29dc636b52b",
+      "target": "5177fc39c19a312b",
+      "type": "exports"
+    },
+    {
+      "source": "88609949c42bdba7",
+      "target": "a1d33498ce0faec0",
+      "type": "contains"
+    },
+    {
+      "source": "a1d33498ce0faec0",
+      "target": "88609949c42bdba7",
+      "type": "exports"
+    },
+    {
+      "source": "16cd9ddcd549eb33",
+      "target": "fdad4f331b8ba1c5",
+      "type": "contains"
+    },
+    {
+      "source": "fdad4f331b8ba1c5",
+      "target": "16cd9ddcd549eb33",
+      "type": "exports"
+    },
+    {
+      "source": "4951c0817dfce13f",
+      "target": "c2ea2827e737edb6",
+      "type": "contains"
+    },
+    {
+      "source": "c2ea2827e737edb6",
+      "target": "4951c0817dfce13f",
+      "type": "exports"
+    },
+    {
+      "source": "65aaf1f7e69b8621",
+      "target": "064c949b041f67fd",
+      "type": "contains"
+    },
+    {
+      "source": "064c949b041f67fd",
+      "target": "65aaf1f7e69b8621",
+      "type": "exports"
+    },
+    {
+      "source": "5d31d213e0fdcbdb",
+      "target": "f7b6494225817ac7",
+      "type": "contains"
+    },
+    {
+      "source": "5d31d213e0fdcbdb",
+      "target": "75cbf8558908ade5",
+      "type": "contains"
+    },
+    {
+      "source": "75cbf8558908ade5",
+      "target": "5d31d213e0fdcbdb",
+      "type": "exports"
+    },
+    {
+      "source": "f8e1d2264cf9a85e",
+      "target": "2b2e36643dc10020",
+      "type": "contains"
+    },
+    {
+      "source": "2b2e36643dc10020",
+      "target": "f8e1d2264cf9a85e",
+      "type": "exports"
+    },
+    {
+      "source": "de5df7384cc1238e",
+      "target": "27886894b7ad7a0b",
+      "type": "contains"
+    },
+    {
+      "source": "27886894b7ad7a0b",
+      "target": "de5df7384cc1238e",
+      "type": "exports"
+    },
+    {
+      "source": "15e5cf7a41421179",
+      "target": "4951c0817dfce13f",
+      "type": "imports"
+    },
+    {
+      "source": "15e5cf7a41421179",
+      "target": "65aaf1f7e69b8621",
+      "type": "imports"
+    },
+    {
+      "source": "3e29e7a41c2fa76b",
+      "target": "4951c0817dfce13f",
+      "type": "imports"
+    },
+    {
+      "source": "3e29e7a41c2fa76b",
+      "target": "65aaf1f7e69b8621",
+      "type": "imports"
+    },
+    {
+      "source": "f9d024e0be49938f",
+      "target": "3c318f196d688583",
+      "type": "imports"
+    },
+    {
+      "source": "83d6e8d202ce0f80",
+      "target": "64e01ca5ff57c94b",
+      "type": "imports"
+    },
+    {
+      "source": "83d6e8d202ce0f80",
+      "target": "3c318f196d688583",
+      "type": "imports"
+    },
+    {
+      "source": "83d6e8d202ce0f80",
+      "target": "16cd9ddcd549eb33",
+      "type": "imports"
+    },
+    {
+      "source": "83d6e8d202ce0f80",
+      "target": "4951c0817dfce13f",
+      "type": "imports"
+    },
+    {
+      "source": "83d6e8d202ce0f80",
+      "target": "65aaf1f7e69b8621",
+      "type": "imports"
+    },
+    {
+      "source": "96b88585cf704d7f",
+      "target": "31197486ee5837cc",
+      "type": "imports"
+    },
+    {
+      "source": "96b88585cf704d7f",
+      "target": "67607610ac4dd9d7",
+      "type": "imports"
+    },
+    {
+      "source": "96b88585cf704d7f",
+      "target": "5d31d213e0fdcbdb",
+      "type": "imports"
+    },
+    {
+      "source": "96b88585cf704d7f",
+      "target": "f8e1d2264cf9a85e",
+      "type": "imports"
+    },
+    {
+      "source": "9f3b06761292c9d5",
+      "target": "4951c0817dfce13f",
+      "type": "imports"
+    },
+    {
+      "source": "9f3b06761292c9d5",
+      "target": "65aaf1f7e69b8621",
+      "type": "imports"
+    },
+    {
+      "source": "cd6d6b0ceddcd7bb",
+      "target": "4951c0817dfce13f",
+      "type": "imports"
+    },
+    {
+      "source": "cd6d6b0ceddcd7bb",
+      "target": "65aaf1f7e69b8621",
+      "type": "imports"
+    },
+    {
+      "source": "ec1aaed4da4efc15",
+      "target": "4951c0817dfce13f",
+      "type": "imports"
+    },
+    {
+      "source": "ec1aaed4da4efc15",
+      "target": "65aaf1f7e69b8621",
+      "type": "imports"
+    },
+    {
+      "source": "01b0df1d6bb6ce85",
+      "target": "4951c0817dfce13f",
+      "type": "imports"
+    },
+    {
+      "source": "01b0df1d6bb6ce85",
+      "target": "65aaf1f7e69b8621",
+      "type": "imports"
+    },
+    {
+      "source": "78d0a5031d65be24",
+      "target": "4951c0817dfce13f",
+      "type": "imports"
+    },
+    {
+      "source": "78d0a5031d65be24",
+      "target": "65aaf1f7e69b8621",
+      "type": "imports"
+    },
+    {
+      "source": "016b3ec165b751aa",
+      "target": "4951c0817dfce13f",
+      "type": "imports"
+    },
+    {
+      "source": "016b3ec165b751aa",
+      "target": "65aaf1f7e69b8621",
+      "type": "imports"
+    },
+    {
+      "source": "5177fc39c19a312b",
+      "target": "65aaf1f7e69b8621",
+      "type": "imports"
+    },
+    {
+      "source": "88609949c42bdba7",
+      "target": "4951c0817dfce13f",
+      "type": "imports"
+    },
+    {
+      "source": "88609949c42bdba7",
+      "target": "65aaf1f7e69b8621",
+      "type": "imports"
+    },
+    {
+      "source": "16cd9ddcd549eb33",
+      "target": "28ba8a28519142b3",
+      "type": "imports"
+    },
+    {
+      "source": "4951c0817dfce13f",
+      "target": "28ba8a28519142b3",
+      "type": "imports"
+    },
+    {
+      "source": "65aaf1f7e69b8621",
+      "target": "28ba8a28519142b3",
+      "type": "imports"
+    },
+    {
+      "source": "5d31d213e0fdcbdb",
+      "target": "65aaf1f7e69b8621",
+      "type": "imports"
+    },
+    {
+      "source": "f8e1d2264cf9a85e",
+      "target": "f9d024e0be49938f",
+      "type": "imports"
+    },
+    {
+      "source": "f8e1d2264cf9a85e",
+      "target": "8a720f18107616d7",
+      "type": "imports"
+    },
+    {
+      "source": "f8e1d2264cf9a85e",
+      "target": "e39116ec046683df",
+      "type": "imports"
+    },
+    {
+      "source": "de5df7384cc1238e",
+      "target": "f9d024e0be49938f",
+      "type": "imports"
+    },
+    {
+      "source": "f9d024e0be49938f",
+      "target": "3c318f196d688583",
+      "type": "depends_on"
+    },
+    {
+      "source": "83d6e8d202ce0f80",
+      "target": "64e01ca5ff57c94b",
+      "type": "depends_on"
+    },
+    {
+      "source": "83d6e8d202ce0f80",
+      "target": "3c318f196d688583",
+      "type": "depends_on"
+    },
+    {
+      "source": "96b88585cf704d7f",
+      "target": "67607610ac4dd9d7",
+      "type": "depends_on"
+    },
+    {
+      "source": "16cd9ddcd549eb33",
+      "target": "28ba8a28519142b3",
+      "type": "depends_on"
+    },
+    {
+      "source": "4951c0817dfce13f",
+      "target": "28ba8a28519142b3",
+      "type": "depends_on"
+    },
+    {
+      "source": "4951c0817dfce13f",
+      "target": "4ec6193ddb472b0a",
+      "type": "depends_on"
+    },
+    {
+      "source": "4951c0817dfce13f",
+      "target": "3c318f196d688583",
+      "type": "depends_on"
+    },
+    {
+      "source": "65aaf1f7e69b8621",
+      "target": "28ba8a28519142b3",
+      "type": "depends_on"
+    },
+    {
+      "source": "65aaf1f7e69b8621",
+      "target": "3c318f196d688583",
+      "type": "depends_on"
+    }
+  ]
+}

@@ -1,0 +1,1312 @@
+{
+  "schemaVersion": 1,
+  "batchIndex": 5,
+  "part": 2,
+  "nodes": [
+    {
+      "id": "cls:src/java/io/CharArrayWriter.java:CharArrayWriter",
+      "type": "class",
+      "label": "CharArrayWriter",
+      "properties": {
+        "path": "src/java/io/CharArrayWriter.java",
+        "name": "CharArrayWriter",
+        "startLine": 2,
+        "endLine": 11,
+        "numMethods": 8
+      }
+    },
+    {
+      "id": "cls:src/java/io/CharConversionException.java:CharConversionException",
+      "type": "class",
+      "label": "CharConversionException",
+      "properties": {
+        "path": "src/java/io/CharConversionException.java",
+        "name": "CharConversionException",
+        "startLine": 56,
+        "endLine": 85,
+        "numMethods": 2
+      }
+    },
+    {
+      "id": "cls:src/java/io/DataOutputStream.java:DataOutputStream",
+      "type": "class",
+      "label": "DataOutputStream",
+      "properties": {
+        "path": "src/java/io/DataOutputStream.java",
+        "name": "DataOutputStream",
+        "startLine": 3,
+        "endLine": 140,
+        "numMethods": 16
+      }
+    },
+    {
+      "id": "cls:src/java/io/FilePermission.java:FilePermission",
+      "type": "class",
+      "label": "FilePermission",
+      "properties": {
+        "path": "src/java/io/FilePermission.java",
+        "name": "FilePermission",
+        "startLine": 2,
+        "endLine": 4,
+        "numMethods": 1
+      }
+    },
+    {
+      "id": "cls:src/java/io/FileReader.java:FileReader",
+      "type": "class",
+      "label": "FileReader",
+      "properties": {
+        "path": "src/java/io/FileReader.java",
+        "name": "FileReader",
+        "startLine": 26,
+        "endLine": 66,
+        "numMethods": 3
+      }
+    },
+    {
+      "id": "cls:src/java/io/FileWriter.java:FileWriter",
+      "type": "class",
+      "label": "FileWriter",
+      "properties": {
+        "path": "src/java/io/FileWriter.java",
+        "name": "FileWriter",
+        "startLine": 2,
+        "endLine": 6,
+        "numMethods": 3
+      }
+    },
+    {
+      "id": "cls:src/java/io/FilterOutputStream.java:FilterOutputStream",
+      "type": "class",
+      "label": "FilterOutputStream",
+      "properties": {
+        "path": "src/java/io/FilterOutputStream.java",
+        "name": "FilterOutputStream",
+        "startLine": 3,
+        "endLine": 12,
+        "numMethods": 2
+      }
+    },
+    {
+      "id": "cls:src/java/io/InvalidObjectException.java:InvalidObjectException",
+      "type": "class",
+      "label": "InvalidObjectException",
+      "properties": {
+        "path": "src/java/io/InvalidObjectException.java",
+        "name": "InvalidObjectException",
+        "startLine": 38,
+        "endLine": 56,
+        "numMethods": 1
+      }
+    },
+    {
+      "id": "file:src/java/io/CharArrayWriter.java",
+      "type": "file",
+      "label": "CharArrayWriter.java",
+      "properties": {
+        "path": "src/java/io/CharArrayWriter.java",
+        "language": "java",
+        "sizeLines": 11,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/io/CharConversionException.java",
+      "type": "file",
+      "label": "CharConversionException.java",
+      "properties": {
+        "path": "src/java/io/CharConversionException.java",
+        "language": "java",
+        "sizeLines": 86,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/io/DataOutputStream.java",
+      "type": "file",
+      "label": "DataOutputStream.java",
+      "properties": {
+        "path": "src/java/io/DataOutputStream.java",
+        "language": "java",
+        "sizeLines": 140,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/io/FilePermission.java",
+      "type": "file",
+      "label": "FilePermission.java",
+      "properties": {
+        "path": "src/java/io/FilePermission.java",
+        "language": "java",
+        "sizeLines": 4,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/io/FileReader.java",
+      "type": "file",
+      "label": "FileReader.java",
+      "properties": {
+        "path": "src/java/io/FileReader.java",
+        "language": "java",
+        "sizeLines": 65,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/io/FileWriter.java",
+      "type": "file",
+      "label": "FileWriter.java",
+      "properties": {
+        "path": "src/java/io/FileWriter.java",
+        "language": "java",
+        "sizeLines": 6,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/io/FilterOutputStream.java",
+      "type": "file",
+      "label": "FilterOutputStream.java",
+      "properties": {
+        "path": "src/java/io/FilterOutputStream.java",
+        "language": "java",
+        "sizeLines": 12,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/io/InvalidObjectException.java",
+      "type": "file",
+      "label": "InvalidObjectException.java",
+      "properties": {
+        "path": "src/java/io/InvalidObjectException.java",
+        "language": "java",
+        "sizeLines": 57,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "fn:src/java/io/CharArrayWriter.java:CharArrayWriter",
+      "type": "function",
+      "label": "CharArrayWriter",
+      "properties": {
+        "path": "src/java/io/CharArrayWriter.java",
+        "name": "CharArrayWriter",
+        "startLine": 3,
+        "endLine": 3,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/CharArrayWriter.java:close",
+      "type": "function",
+      "label": "close",
+      "properties": {
+        "path": "src/java/io/CharArrayWriter.java",
+        "name": "close",
+        "startLine": 6,
+        "endLine": 6,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/CharArrayWriter.java:toCharArray",
+      "type": "function",
+      "label": "toCharArray",
+      "properties": {
+        "path": "src/java/io/CharArrayWriter.java",
+        "name": "toCharArray",
+        "startLine": 7,
+        "endLine": 7,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/CharArrayWriter.java:toString",
+      "type": "function",
+      "label": "toString",
+      "properties": {
+        "path": "src/java/io/CharArrayWriter.java",
+        "name": "toString",
+        "startLine": 4,
+        "endLine": 4,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/CharArrayWriter.java:write",
+      "type": "function",
+      "label": "write",
+      "properties": {
+        "path": "src/java/io/CharArrayWriter.java",
+        "name": "write",
+        "startLine": 9,
+        "endLine": 9,
+        "params": [
+          "arg0",
+          "arg1",
+          "arg2"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/CharArrayWriter.java:writeTo",
+      "type": "function",
+      "label": "writeTo",
+      "properties": {
+        "path": "src/java/io/CharArrayWriter.java",
+        "name": "writeTo",
+        "startLine": 10,
+        "endLine": 10,
+        "params": [
+          "arg0"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/CharConversionException.java:CharConversionException",
+      "type": "function",
+      "label": "CharConversionException",
+      "properties": {
+        "path": "src/java/io/CharConversionException.java",
+        "name": "CharConversionException",
+        "startLine": 79,
+        "endLine": 83,
+        "params": [
+          "message"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/DataOutputStream.java:DataOutputStream",
+      "type": "function",
+      "label": "DataOutputStream",
+      "properties": {
+        "path": "src/java/io/DataOutputStream.java",
+        "name": "DataOutputStream",
+        "startLine": 6,
+        "endLine": 8,
+        "params": [
+          "out"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/DataOutputStream.java:flush",
+      "type": "function",
+      "label": "flush",
+      "properties": {
+        "path": "src/java/io/DataOutputStream.java",
+        "name": "flush",
+        "startLine": 20,
+        "endLine": 22,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/DataOutputStream.java:size",
+      "type": "function",
+      "label": "size",
+      "properties": {
+        "path": "src/java/io/DataOutputStream.java",
+        "name": "size",
+        "startLine": 137,
+        "endLine": 139,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/DataOutputStream.java:write",
+      "type": "function",
+      "label": "write",
+      "properties": {
+        "path": "src/java/io/DataOutputStream.java",
+        "name": "write",
+        "startLine": 15,
+        "endLine": 18,
+        "params": [
+          "b",
+          "off",
+          "len"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/DataOutputStream.java:writeBoolean",
+      "type": "function",
+      "label": "writeBoolean",
+      "properties": {
+        "path": "src/java/io/DataOutputStream.java",
+        "name": "writeBoolean",
+        "startLine": 24,
+        "endLine": 27,
+        "params": [
+          "v"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/DataOutputStream.java:writeByte",
+      "type": "function",
+      "label": "writeByte",
+      "properties": {
+        "path": "src/java/io/DataOutputStream.java",
+        "name": "writeByte",
+        "startLine": 29,
+        "endLine": 32,
+        "params": [
+          "v"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/DataOutputStream.java:writeBytes",
+      "type": "function",
+      "label": "writeBytes",
+      "properties": {
+        "path": "src/java/io/DataOutputStream.java",
+        "name": "writeBytes",
+        "startLine": 78,
+        "endLine": 85,
+        "params": [
+          "s"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/DataOutputStream.java:writeChar",
+      "type": "function",
+      "label": "writeChar",
+      "properties": {
+        "path": "src/java/io/DataOutputStream.java",
+        "name": "writeChar",
+        "startLine": 41,
+        "endLine": 46,
+        "params": [
+          "v"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/DataOutputStream.java:writeChars",
+      "type": "function",
+      "label": "writeChars",
+      "properties": {
+        "path": "src/java/io/DataOutputStream.java",
+        "name": "writeChars",
+        "startLine": 87,
+        "endLine": 96,
+        "params": [
+          "s"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/DataOutputStream.java:writeDouble",
+      "type": "function",
+      "label": "writeDouble",
+      "properties": {
+        "path": "src/java/io/DataOutputStream.java",
+        "name": "writeDouble",
+        "startLine": 74,
+        "endLine": 76,
+        "params": [
+          "v"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/DataOutputStream.java:writeFloat",
+      "type": "function",
+      "label": "writeFloat",
+      "properties": {
+        "path": "src/java/io/DataOutputStream.java",
+        "name": "writeFloat",
+        "startLine": 70,
+        "endLine": 72,
+        "params": [
+          "v"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/DataOutputStream.java:writeInt",
+      "type": "function",
+      "label": "writeInt",
+      "properties": {
+        "path": "src/java/io/DataOutputStream.java",
+        "name": "writeInt",
+        "startLine": 48,
+        "endLine": 55,
+        "params": [
+          "v"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/DataOutputStream.java:writeLong",
+      "type": "function",
+      "label": "writeLong",
+      "properties": {
+        "path": "src/java/io/DataOutputStream.java",
+        "name": "writeLong",
+        "startLine": 57,
+        "endLine": 68,
+        "params": [
+          "v"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/DataOutputStream.java:writeShort",
+      "type": "function",
+      "label": "writeShort",
+      "properties": {
+        "path": "src/java/io/DataOutputStream.java",
+        "name": "writeShort",
+        "startLine": 34,
+        "endLine": 39,
+        "params": [
+          "v"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/DataOutputStream.java:writeUTF",
+      "type": "function",
+      "label": "writeUTF",
+      "properties": {
+        "path": "src/java/io/DataOutputStream.java",
+        "name": "writeUTF",
+        "startLine": 98,
+        "endLine": 135,
+        "params": [
+          "str"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/FilePermission.java:FilePermission",
+      "type": "function",
+      "label": "FilePermission",
+      "properties": {
+        "path": "src/java/io/FilePermission.java",
+        "name": "FilePermission",
+        "startLine": 3,
+        "endLine": 3,
+        "params": [
+          "arg0",
+          "arg1"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/FileReader.java:FileReader",
+      "type": "function",
+      "label": "FileReader",
+      "properties": {
+        "path": "src/java/io/FileReader.java",
+        "name": "FileReader",
+        "startLine": 62,
+        "endLine": 64,
+        "params": [
+          "fd"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/FileWriter.java:FileWriter",
+      "type": "function",
+      "label": "FileWriter",
+      "properties": {
+        "path": "src/java/io/FileWriter.java",
+        "name": "FileWriter",
+        "startLine": 5,
+        "endLine": 5,
+        "params": [
+          "arg0",
+          "arg1"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/FilterOutputStream.java:FilterOutputStream",
+      "type": "function",
+      "label": "FilterOutputStream",
+      "properties": {
+        "path": "src/java/io/FilterOutputStream.java",
+        "name": "FilterOutputStream",
+        "startLine": 6,
+        "endLine": 8,
+        "params": [
+          "o"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/FilterOutputStream.java:write",
+      "type": "function",
+      "label": "write",
+      "properties": {
+        "path": "src/java/io/FilterOutputStream.java",
+        "name": "write",
+        "startLine": 10,
+        "endLine": 11,
+        "params": [
+          "a"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/InvalidObjectException.java:InvalidObjectException",
+      "type": "function",
+      "label": "InvalidObjectException",
+      "properties": {
+        "path": "src/java/io/InvalidObjectException.java",
+        "name": "InvalidObjectException",
+        "startLine": 50,
+        "endLine": 54,
+        "params": [
+          "message"
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/java/io/CharArrayWriter.java",
+      "target": "cls:src/java/io/CharArrayWriter.java:CharArrayWriter",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/CharArrayWriter.java",
+      "target": "cls:src/java/io/CharArrayWriter.java:CharArrayWriter",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/CharArrayWriter.java",
+      "target": "fn:src/java/io/CharArrayWriter.java:CharArrayWriter",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/CharArrayWriter.java",
+      "target": "fn:src/java/io/CharArrayWriter.java:CharArrayWriter",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/CharArrayWriter.java",
+      "target": "fn:src/java/io/CharArrayWriter.java:toString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/CharArrayWriter.java",
+      "target": "fn:src/java/io/CharArrayWriter.java:toString",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/CharArrayWriter.java",
+      "target": "fn:src/java/io/CharArrayWriter.java:write",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/CharArrayWriter.java",
+      "target": "fn:src/java/io/CharArrayWriter.java:write",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/CharArrayWriter.java",
+      "target": "fn:src/java/io/CharArrayWriter.java:close",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/CharArrayWriter.java",
+      "target": "fn:src/java/io/CharArrayWriter.java:close",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/CharArrayWriter.java",
+      "target": "fn:src/java/io/CharArrayWriter.java:toCharArray",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/CharArrayWriter.java",
+      "target": "fn:src/java/io/CharArrayWriter.java:toCharArray",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/CharArrayWriter.java",
+      "target": "fn:src/java/io/CharArrayWriter.java:write",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/CharArrayWriter.java",
+      "target": "fn:src/java/io/CharArrayWriter.java:write",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/CharArrayWriter.java",
+      "target": "fn:src/java/io/CharArrayWriter.java:write",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/CharArrayWriter.java",
+      "target": "fn:src/java/io/CharArrayWriter.java:write",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/CharArrayWriter.java",
+      "target": "fn:src/java/io/CharArrayWriter.java:writeTo",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/CharArrayWriter.java",
+      "target": "fn:src/java/io/CharArrayWriter.java:writeTo",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/CharConversionException.java",
+      "target": "cls:src/java/io/CharConversionException.java:CharConversionException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/CharConversionException.java",
+      "target": "cls:src/java/io/CharConversionException.java:CharConversionException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/CharConversionException.java",
+      "target": "fn:src/java/io/CharConversionException.java:CharConversionException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/CharConversionException.java",
+      "target": "fn:src/java/io/CharConversionException.java:CharConversionException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/CharConversionException.java",
+      "target": "fn:src/java/io/CharConversionException.java:CharConversionException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/CharConversionException.java",
+      "target": "fn:src/java/io/CharConversionException.java:CharConversionException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "cls:src/java/io/DataOutputStream.java:DataOutputStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "cls:src/java/io/DataOutputStream.java:DataOutputStream",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:DataOutputStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:DataOutputStream",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:write",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:write",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:write",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:write",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:flush",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:flush",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:writeBoolean",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:writeBoolean",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:writeByte",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:writeByte",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:writeShort",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:writeShort",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:writeChar",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:writeChar",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:writeInt",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:writeInt",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:writeLong",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:writeLong",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:writeFloat",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:writeFloat",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:writeDouble",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:writeDouble",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:writeBytes",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:writeBytes",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:writeChars",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:writeChars",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:writeUTF",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:writeUTF",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:size",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "fn:src/java/io/DataOutputStream.java:size",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/DataOutputStream.java:writeFloat",
+      "target": "fn:src/java/io/DataOutputStream.java:writeInt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/DataOutputStream.java:writeDouble",
+      "target": "fn:src/java/io/DataOutputStream.java:writeLong",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/DataOutputStream.java",
+      "target": "file:src/java/io/FilterOutputStream.java",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/java/io/FilePermission.java",
+      "target": "cls:src/java/io/FilePermission.java:FilePermission",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/FilePermission.java",
+      "target": "cls:src/java/io/FilePermission.java:FilePermission",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/FilePermission.java",
+      "target": "fn:src/java/io/FilePermission.java:FilePermission",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/FilePermission.java",
+      "target": "fn:src/java/io/FilePermission.java:FilePermission",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/FileReader.java",
+      "target": "cls:src/java/io/FileReader.java:FileReader",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/FileReader.java",
+      "target": "cls:src/java/io/FileReader.java:FileReader",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/FileReader.java",
+      "target": "fn:src/java/io/FileReader.java:FileReader",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/FileReader.java",
+      "target": "fn:src/java/io/FileReader.java:FileReader",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/FileReader.java",
+      "target": "fn:src/java/io/FileReader.java:FileReader",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/FileReader.java",
+      "target": "fn:src/java/io/FileReader.java:FileReader",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/FileReader.java",
+      "target": "fn:src/java/io/FileReader.java:FileReader",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/FileReader.java",
+      "target": "fn:src/java/io/FileReader.java:FileReader",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/FileWriter.java",
+      "target": "cls:src/java/io/FileWriter.java:FileWriter",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/FileWriter.java",
+      "target": "cls:src/java/io/FileWriter.java:FileWriter",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/FileWriter.java",
+      "target": "fn:src/java/io/FileWriter.java:FileWriter",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/FileWriter.java",
+      "target": "fn:src/java/io/FileWriter.java:FileWriter",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/FileWriter.java",
+      "target": "fn:src/java/io/FileWriter.java:FileWriter",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/FileWriter.java",
+      "target": "fn:src/java/io/FileWriter.java:FileWriter",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/FileWriter.java",
+      "target": "fn:src/java/io/FileWriter.java:FileWriter",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/FileWriter.java",
+      "target": "fn:src/java/io/FileWriter.java:FileWriter",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/FilterOutputStream.java",
+      "target": "cls:src/java/io/FilterOutputStream.java:FilterOutputStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/FilterOutputStream.java",
+      "target": "cls:src/java/io/FilterOutputStream.java:FilterOutputStream",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/FilterOutputStream.java",
+      "target": "fn:src/java/io/FilterOutputStream.java:FilterOutputStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/FilterOutputStream.java",
+      "target": "fn:src/java/io/FilterOutputStream.java:FilterOutputStream",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/FilterOutputStream.java",
+      "target": "fn:src/java/io/FilterOutputStream.java:write",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/FilterOutputStream.java",
+      "target": "fn:src/java/io/FilterOutputStream.java:write",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/InvalidObjectException.java",
+      "target": "cls:src/java/io/InvalidObjectException.java:InvalidObjectException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/InvalidObjectException.java",
+      "target": "cls:src/java/io/InvalidObjectException.java:InvalidObjectException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/InvalidObjectException.java",
+      "target": "fn:src/java/io/InvalidObjectException.java:InvalidObjectException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/InvalidObjectException.java",
+      "target": "fn:src/java/io/InvalidObjectException.java:InvalidObjectException",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/CharArrayWriter.java:CharArrayWriter",
+      "target": "fn:src/java/io/CharArrayWriter.java:new Error",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/CharArrayWriter.java:toString",
+      "target": "fn:src/java/io/CharArrayWriter.java:new Error",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/CharArrayWriter.java:write",
+      "target": "fn:src/java/io/CharArrayWriter.java:new Error",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/CharArrayWriter.java:close",
+      "target": "fn:src/java/io/CharArrayWriter.java:new Error",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/CharArrayWriter.java:toCharArray",
+      "target": "fn:src/java/io/CharArrayWriter.java:new Error",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/CharArrayWriter.java:writeTo",
+      "target": "fn:src/java/io/CharArrayWriter.java:new Error",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/CharConversionException.java",
+      "target": "file:src/java/io/IOException.java",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "fn:src/java/io/DataOutputStream.java:write",
+      "target": "fn:src/java/io/DataOutputStream.java:out.write",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/DataOutputStream.java:flush",
+      "target": "fn:src/java/io/DataOutputStream.java:out.flush",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/DataOutputStream.java:writeBoolean",
+      "target": "fn:src/java/io/DataOutputStream.java:out.write",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/DataOutputStream.java:writeByte",
+      "target": "fn:src/java/io/DataOutputStream.java:out.write",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/DataOutputStream.java:writeShort",
+      "target": "fn:src/java/io/DataOutputStream.java:out.write",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/DataOutputStream.java:writeChar",
+      "target": "fn:src/java/io/DataOutputStream.java:out.write",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/DataOutputStream.java:writeInt",
+      "target": "fn:src/java/io/DataOutputStream.java:out.write",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/DataOutputStream.java:writeLong",
+      "target": "fn:src/java/io/DataOutputStream.java:out.write",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/DataOutputStream.java:writeFloat",
+      "target": "fn:src/java/io/DataOutputStream.java:Float.floatToIntBits",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/DataOutputStream.java:writeDouble",
+      "target": "fn:src/java/io/DataOutputStream.java:Double.doubleToLongBits",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/DataOutputStream.java:writeBytes",
+      "target": "fn:src/java/io/DataOutputStream.java:s.length",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/DataOutputStream.java:writeBytes",
+      "target": "fn:src/java/io/DataOutputStream.java:out.write",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/DataOutputStream.java:writeBytes",
+      "target": "fn:src/java/io/DataOutputStream.java:s.charAt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/DataOutputStream.java:writeChars",
+      "target": "fn:src/java/io/DataOutputStream.java:s.length",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/DataOutputStream.java:writeChars",
+      "target": "fn:src/java/io/DataOutputStream.java:s.charAt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/DataOutputStream.java:writeChars",
+      "target": "fn:src/java/io/DataOutputStream.java:out.write",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/DataOutputStream.java:writeUTF",
+      "target": "fn:src/java/io/DataOutputStream.java:str.length",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/DataOutputStream.java:writeUTF",
+      "target": "fn:src/java/io/DataOutputStream.java:str.charAt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/DataOutputStream.java:writeUTF",
+      "target": "fn:src/java/io/DataOutputStream.java:new UTFDataFormatException",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/DataOutputStream.java:writeUTF",
+      "target": "fn:src/java/io/DataOutputStream.java:out.write",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/FilePermission.java:FilePermission",
+      "target": "fn:src/java/io/FilePermission.java:new Error",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/FileReader.java:FileReader",
+      "target": "fn:src/java/io/FileReader.java:new FileInputStream",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ],
+  "metadata": {
+    "totalNodesInPart": 44,
+    "totalEdgesInPart": 120,
+    "algorithm": "file-analyzer"
+  }
+}

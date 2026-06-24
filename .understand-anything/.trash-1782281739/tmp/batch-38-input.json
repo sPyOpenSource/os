@@ -1,0 +1,184 @@
+{
+  "projectRoot": "/Users/xuyi/Source/OS/armOS/lib/jcore/OS",
+  "batchFiles": [
+    {
+      "path": "src/jx/rpcsvc/nfs2/NFSException.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/NFSMountError.j",
+      "language": "j",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/NFSProc_Impl.java",
+      "language": "java",
+      "sizeLines": 1259,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/NFSProc.java",
+      "language": "java",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadDirRes.java",
+      "language": "java",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadDirResErrAcces.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadDirResErrIO.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadDirResErrNoEnt.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadDirResErrNotDir.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadDirResError.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadDirResErrStale.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadDirResOK.java",
+      "language": "java",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadLinkRes.java",
+      "language": "java",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadLinkResErrAcces.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadLinkResErrIO.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadLinkResErrNoEnt.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadLinkResErrNotDir.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadLinkResError.java",
+      "language": "java",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadLinkResErrStale.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadLinkResOK.java",
+      "language": "java",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadRes.java",
+      "language": "java",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadResErrAcces.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadResErrIO.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadResErrNoEnt.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/jx/rpcsvc/nfs2/NFSException.java": [
+      "src/jx/fs/FSException.java"
+    ],
+    "src/jx/rpcsvc/nfs2/NFSMountError.j": [],
+    "src/jx/rpcsvc/nfs2/NFSProc_Impl.java": [],
+    "src/jx/rpcsvc/nfs2/NFSProc.java": [],
+    "src/jx/rpcsvc/nfs2/package.bluej": [],
+    "src/jx/rpcsvc/nfs2/ReadDirRes.java": [],
+    "src/jx/rpcsvc/nfs2/ReadDirResErrAcces.java": [],
+    "src/jx/rpcsvc/nfs2/ReadDirResErrIO.java": [],
+    "src/jx/rpcsvc/nfs2/ReadDirResErrNoEnt.java": [],
+    "src/jx/rpcsvc/nfs2/ReadDirResErrNotDir.java": [],
+    "src/jx/rpcsvc/nfs2/ReadDirResError.java": [],
+    "src/jx/rpcsvc/nfs2/ReadDirResErrStale.java": [],
+    "src/jx/rpcsvc/nfs2/ReadDirResOK.java": [],
+    "src/jx/rpcsvc/nfs2/ReadLinkRes.java": [],
+    "src/jx/rpcsvc/nfs2/ReadLinkResErrAcces.java": [],
+    "src/jx/rpcsvc/nfs2/ReadLinkResErrIO.java": [],
+    "src/jx/rpcsvc/nfs2/ReadLinkResErrNoEnt.java": [],
+    "src/jx/rpcsvc/nfs2/ReadLinkResErrNotDir.java": [],
+    "src/jx/rpcsvc/nfs2/ReadLinkResError.java": [],
+    "src/jx/rpcsvc/nfs2/ReadLinkResErrStale.java": [],
+    "src/jx/rpcsvc/nfs2/ReadLinkResOK.java": [],
+    "src/jx/rpcsvc/nfs2/ReadRes.java": [],
+    "src/jx/rpcsvc/nfs2/ReadResErrAcces.java": [],
+    "src/jx/rpcsvc/nfs2/ReadResErrIO.java": [],
+    "src/jx/rpcsvc/nfs2/ReadResErrNoEnt.java": []
+  }
+}

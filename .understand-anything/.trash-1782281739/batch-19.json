@@ -1,0 +1,877 @@
+{
+  "batchIndex": 19,
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "6908bf87210b0cb2",
+      "type": "file",
+      "name": "NotActiveException.java",
+      "filePath": "src/java/io/NotActiveException.java",
+      "language": "java",
+      "totalLines": 53,
+      "nonEmptyLines": 48,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "9add729f5ab40f64",
+      "type": "file",
+      "name": "NotSerializableException.java",
+      "filePath": "src/java/io/NotSerializableException.java",
+      "language": "java",
+      "totalLines": 55,
+      "nonEmptyLines": 50,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "42f72feef64a0c7a",
+      "type": "file",
+      "name": "ObjectIdentityWrapper.java",
+      "filePath": "src/java/io/ObjectIdentityWrapper.java",
+      "language": "java",
+      "totalLines": 17,
+      "nonEmptyLines": 14,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "2faaa87f92014808",
+      "type": "file",
+      "name": "ObjectStreamClass.java",
+      "filePath": "src/java/io/ObjectStreamClass.java",
+      "language": "java",
+      "totalLines": 47,
+      "nonEmptyLines": 37,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 11,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "4840792faaa6c0f2",
+      "type": "file",
+      "name": "OutputStreamWriter.java",
+      "filePath": "src/java/io/OutputStreamWriter.java",
+      "language": "java",
+      "totalLines": 215,
+      "nonEmptyLines": 184,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "7db6f5d84eb83f33",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/java/io/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "fileCategory": "package-marker"
+    },
+    {
+      "id": "ea03ef1c99cfbfe0",
+      "type": "file",
+      "name": "RandomAccessFile.j",
+      "filePath": "src/java/io/RandomAccessFile.j",
+      "language": "j",
+      "totalLines": 414,
+      "nonEmptyLines": 343,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "id": "f496e23b20e49f65",
+      "type": "file",
+      "name": "StreamCorruptedException.java",
+      "filePath": "src/java/io/StreamCorruptedException.java",
+      "language": "java",
+      "totalLines": 54,
+      "nonEmptyLines": 49,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "2fb2b2ac5b1412c4",
+      "type": "file",
+      "name": "StringBufferInputStream.java",
+      "filePath": "src/java/io/StringBufferInputStream.java",
+      "language": "java",
+      "totalLines": 187,
+      "nonEmptyLines": 164,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "9cfc907d51358c5e",
+      "type": "file",
+      "name": "StringReader.java",
+      "filePath": "src/java/io/StringReader.java",
+      "language": "java",
+      "totalLines": 210,
+      "nonEmptyLines": 180,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "2c518172430170d7",
+      "type": "file",
+      "name": "StringWriter.java",
+      "filePath": "src/java/io/StringWriter.java",
+      "language": "java",
+      "totalLines": 7,
+      "nonEmptyLines": 7,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "8cdb9ec919c8eff0",
+      "type": "file",
+      "name": "UTFDataFormatException.java",
+      "filePath": "src/java/io/UTFDataFormatException.java",
+      "language": "java",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "2bf3e5db5dd42ab4",
+      "type": "file",
+      "name": "AbstractMethodError.java",
+      "filePath": "src/java/lang/AbstractMethodError.java",
+      "language": "java",
+      "totalLines": 59,
+      "nonEmptyLines": 49,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "14cd9421f03a33e5",
+      "type": "file",
+      "name": "ArithmeticException.java",
+      "filePath": "src/java/lang/ArithmeticException.java",
+      "language": "java",
+      "totalLines": 60,
+      "nonEmptyLines": 50,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "21ab7dcfad446b52",
+      "type": "file",
+      "name": "ArrayIndexOutOfBoundsException.java",
+      "filePath": "src/java/lang/ArrayIndexOutOfBoundsException.java",
+      "language": "java",
+      "totalLines": 8,
+      "nonEmptyLines": 6,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "842c8af29c8c97f7",
+      "type": "file",
+      "name": "AssertionError.java",
+      "filePath": "src/java/lang/AssertionError.java",
+      "language": "java",
+      "totalLines": 167,
+      "nonEmptyLines": 155,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 10,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "f7a0eef8f37d845f",
+      "type": "file",
+      "name": "Boolean.java",
+      "filePath": "src/java/lang/Boolean.java",
+      "language": "java",
+      "totalLines": 144,
+      "nonEmptyLines": 123,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 12,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "523712ce0eb77194",
+      "type": "file",
+      "name": "Byte.java",
+      "filePath": "src/java/lang/Byte.java",
+      "language": "java",
+      "totalLines": 20,
+      "nonEmptyLines": 17,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "5fdfa5791e651376",
+      "type": "file",
+      "name": "Character.java",
+      "filePath": "src/java/lang/Character.java",
+      "language": "java",
+      "totalLines": 585,
+      "nonEmptyLines": 515,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 31,
+        "functionCount": 30,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "83eed0575f59daad",
+      "type": "file",
+      "name": "ClassCastException.java",
+      "filePath": "src/java/lang/ClassCastException.java",
+      "language": "java",
+      "totalLines": 65,
+      "nonEmptyLines": 55,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "03d85cd37c1fd458",
+      "type": "file",
+      "name": "ClassFormatError.java",
+      "filePath": "src/java/lang/ClassFormatError.java",
+      "language": "java",
+      "totalLines": 58,
+      "nonEmptyLines": 48,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "378fca3104493286",
+      "type": "file",
+      "name": "ClassNotFoundException.java",
+      "filePath": "src/java/lang/ClassNotFoundException.java",
+      "language": "java",
+      "totalLines": 27,
+      "nonEmptyLines": 23,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "28355968b7e6acb3",
+      "type": "file",
+      "name": "ClassValue.java",
+      "filePath": "src/java/lang/ClassValue.java",
+      "language": "java",
+      "totalLines": 36,
+      "nonEmptyLines": 32,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "96ca63308181802b",
+      "type": "file",
+      "name": "CloneNotSupportedException.java",
+      "filePath": "src/java/lang/CloneNotSupportedException.java",
+      "language": "java",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "ed3e8ef4d5368a45",
+      "type": "file",
+      "name": "Double.java",
+      "filePath": "src/java/lang/Double.java",
+      "language": "java",
+      "totalLines": 105,
+      "nonEmptyLines": 78,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 29,
+        "functionCount": 23,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "40f1655a7d5e5a26",
+      "type": "class",
+      "name": "NotActiveException",
+      "filePath": "src/java/io/NotActiveException.java",
+      "startLine": 34,
+      "endLine": 53,
+      "methods": [
+        "NotActiveException",
+        "NotActiveException"
+      ],
+      "properties": [
+        "serialVersionUID"
+      ]
+    },
+    {
+      "id": "bd8f19bdf575c820",
+      "type": "class",
+      "name": "NotSerializableException",
+      "filePath": "src/java/io/NotSerializableException.java",
+      "startLine": 36,
+      "endLine": 55,
+      "methods": [
+        "NotSerializableException",
+        "NotSerializableException"
+      ],
+      "properties": [
+        "serialVersionUID"
+      ]
+    },
+    {
+      "id": "d8e27f7a27f52422",
+      "type": "class",
+      "name": "ObjectIdentityWrapper",
+      "filePath": "src/java/io/ObjectIdentityWrapper.java",
+      "startLine": 12,
+      "endLine": 17,
+      "methods": [
+        "ObjectIdentityWrapper"
+      ],
+      "properties": []
+    },
+    {
+      "id": "1382f40127c7ff0a",
+      "type": "class",
+      "name": "ObjectStreamClass",
+      "filePath": "src/java/io/ObjectStreamClass.java",
+      "startLine": 2,
+      "endLine": 47,
+      "methods": [
+        "lookup",
+        "getObjectStreamClasses",
+        "getName",
+        "getSerialVersionUID",
+        "getFlags",
+        "isExternalizable",
+        "forClass",
+        "isSerializable",
+        "getSuper",
+        "hasWriteMethod",
+        "getField"
+      ],
+      "properties": [
+        "fields",
+        "primFieldSize",
+        "objectFieldCount"
+      ]
+    },
+    {
+      "id": "6041fe986d65709f",
+      "type": "class",
+      "name": "OutputStreamWriter",
+      "filePath": "src/java/io/OutputStreamWriter.java",
+      "startLine": 66,
+      "endLine": 214,
+      "methods": [
+        "OutputStreamWriter",
+        "OutputStreamWriter",
+        "close",
+        "flush",
+        "getEncoding",
+        "write",
+        "write",
+        "write"
+      ],
+      "properties": []
+    },
+    {
+      "id": "6fd197cdc1b69a4c",
+      "type": "class",
+      "name": "StreamCorruptedException",
+      "filePath": "src/java/io/StreamCorruptedException.java",
+      "startLine": 35,
+      "endLine": 54,
+      "methods": [
+        "StreamCorruptedException",
+        "StreamCorruptedException"
+      ],
+      "properties": [
+        "serialVersionUID"
+      ]
+    },
+    {
+      "id": "ecdd0e1f5d3b3c07",
+      "type": "class",
+      "name": "StringBufferInputStream",
+      "filePath": "src/java/io/StringBufferInputStream.java",
+      "startLine": 70,
+      "endLine": 187,
+      "methods": [
+        "StringBufferInputStream",
+        "available",
+        "read",
+        "read",
+        "reset",
+        "skip"
+      ],
+      "properties": [
+        "buffer",
+        "pos",
+        "count"
+      ]
+    },
+    {
+      "id": "2b858465f9f1615a",
+      "type": "class",
+      "name": "StringReader",
+      "filePath": "src/java/io/StringReader.java",
+      "startLine": 60,
+      "endLine": 210,
+      "methods": [
+        "StringReader",
+        "close",
+        "mark",
+        "markSupported",
+        "read",
+        "read",
+        "ready",
+        "reset",
+        "skip"
+      ],
+      "properties": [
+        "buf",
+        "pos",
+        "markedPos",
+        "count"
+      ]
+    },
+    {
+      "id": "8e347485b68ed9c8",
+      "type": "class",
+      "name": "StringWriter",
+      "filePath": "src/java/io/StringWriter.java",
+      "startLine": 2,
+      "endLine": 7,
+      "methods": [
+        "StringWriter",
+        "toString",
+        "close",
+        "getBuffer"
+      ],
+      "properties": []
+    },
+    {
+      "id": "5490d90874ac1894",
+      "type": "class",
+      "name": "UTFDataFormatException",
+      "filePath": "src/java/io/UTFDataFormatException.java",
+      "startLine": 3,
+      "endLine": 6,
+      "methods": [
+        "UTFDataFormatException",
+        "UTFDataFormatException"
+      ],
+      "properties": []
+    },
+    {
+      "id": "5f7de861100f5b5a",
+      "type": "class",
+      "name": "AbstractMethodError",
+      "filePath": "src/java/lang/AbstractMethodError.java",
+      "startLine": 40,
+      "endLine": 59,
+      "methods": [
+        "AbstractMethodError",
+        "AbstractMethodError"
+      ],
+      "properties": [
+        "serialVersionUID"
+      ]
+    },
+    {
+      "id": "bd96fa3beb0f1d6e",
+      "type": "class",
+      "name": "ArithmeticException",
+      "filePath": "src/java/lang/ArithmeticException.java",
+      "startLine": 41,
+      "endLine": 60,
+      "methods": [
+        "ArithmeticException",
+        "ArithmeticException"
+      ],
+      "properties": [
+        "serialVersionUID"
+      ]
+    },
+    {
+      "id": "8f5d95f5b7f3b742",
+      "type": "class",
+      "name": "ArrayIndexOutOfBoundsException",
+      "filePath": "src/java/lang/ArrayIndexOutOfBoundsException.java",
+      "startLine": 3,
+      "endLine": 7,
+      "methods": [
+        "ArrayIndexOutOfBoundsException",
+        "ArrayIndexOutOfBoundsException",
+        "ArrayIndexOutOfBoundsException"
+      ],
+      "properties": []
+    },
+    {
+      "id": "c0a6b359d9766b7c",
+      "type": "class",
+      "name": "AssertionError",
+      "filePath": "src/java/lang/AssertionError.java",
+      "startLine": 43,
+      "endLine": 167,
+      "methods": [
+        "AssertionError",
+        "AssertionError",
+        "AssertionError",
+        "AssertionError",
+        "AssertionError",
+        "AssertionError",
+        "AssertionError",
+        "AssertionError",
+        "AssertionError",
+        "AssertionError"
+      ],
+      "properties": [
+        "serialVersionUID"
+      ]
+    },
+    {
+      "id": "a4b118c3a9478730",
+      "type": "class",
+      "name": "Boolean",
+      "filePath": "src/java/lang/Boolean.java",
+      "startLine": 39,
+      "endLine": 144,
+      "methods": [
+        "Boolean",
+        "Boolean",
+        "booleanValue",
+        "valueOf",
+        "hashCode",
+        "equals",
+        "getBoolean",
+        "toString"
+      ],
+      "properties": [
+        "serialVersionUID",
+        "TRUE",
+        "FALSE",
+        "TYPE",
+        "value"
+      ]
+    },
+    {
+      "id": "f373a545937272e7",
+      "type": "class",
+      "name": "Byte",
+      "filePath": "src/java/lang/Byte.java",
+      "startLine": 2,
+      "endLine": 20,
+      "methods": [
+        "Byte",
+        "Byte",
+        "Byte",
+        "toString",
+        "parseByte",
+        "valueOf",
+        "byteValue"
+      ],
+      "properties": [
+        "TYPE",
+        "value"
+      ]
+    },
+    {
+      "id": "46b53a8b22724c93",
+      "type": "class",
+      "name": "Character",
+      "filePath": "src/java/lang/Character.java",
+      "startLine": 7,
+      "endLine": 584,
+      "methods": [
+        "codePointAt",
+        "codePointCountImpl",
+        "codePointBefore",
+        "offsetByCodePointsImpl",
+        "isBmpCodePoint",
+        "isValidCodePoint",
+        "toSurrogates",
+        "isLowSurrogate",
+        "isHighSurrogate",
+        "Character",
+        "toString",
+        "equals",
+        "hashCode",
+        "charValue",
+        "isDefined",
+        "isWhitespace",
+        "isLowerCase",
+        "isUpperCase",
+        "isTitleCase",
+        "isDigit",
+        "isLetter",
+        "isLetterOrDigit",
+        "isJavaLetter",
+        "isJavaLetterOrDigit",
+        "toTitleCase",
+        "digit",
+        "forDigit",
+        "isSpace",
+        "toLowerCase",
+        "toUpperCase"
+      ],
+      "properties": [
+        "MIN_VALUE",
+        "MAX_VALUE",
+        "MIN_RADIX",
+        "MAX_RADIX",
+        "TYPE",
+        "MAX_SURROGATE",
+        "MIN_SURROGATE",
+        "MIN_HIGH_SURROGATE",
+        "MAX_HIGH_SURROGATE",
+        "MIN_LOW_SURROGATE",
+        "MAX_LOW_SURROGATE",
+        "value",
+        "fassela",
+        "fasela",
+        "fasel",
+        "isLowerCaseTable",
+        "isLowerCaseRangeTable",
+        "isLowerCaseRangeOddTable",
+        "isLowerCaseRangeEvenTable",
+        "isUpperCaseTable",
+        "isUpperCaseRangeTable",
+        "isUpperCaseRangeOddTable",
+        "isUpperCaseRangeEvenTable",
+        "isTitleCaseTable",
+        "isDigitRangeTable",
+        "isLetterOrDigitTable",
+        "isLetterOrDigitRangeTable"
+      ]
+    },
+    {
+      "id": "7edb5b5edc984b15",
+      "type": "class",
+      "name": "ClassCastException",
+      "filePath": "src/java/lang/ClassCastException.java",
+      "startLine": 45,
+      "endLine": 65,
+      "methods": [
+        "ClassCastException",
+        "ClassCastException"
+      ],
+      "properties": [
+        "serialVersionUID"
+      ]
+    },
+    {
+      "id": "fee29c7d365e7f38",
+      "type": "class",
+      "name": "ClassFormatError",
+      "filePath": "src/java/lang/ClassFormatError.java",
+      "startLine": 39,
+      "endLine": 58,
+      "methods": [
+        "ClassFormatError",
+        "ClassFormatError"
+      ],
+      "properties": [
+        "serialVersionUID"
+      ]
+    },
+    {
+      "id": "4125035605478847",
+      "type": "class",
+      "name": "ClassNotFoundException",
+      "filePath": "src/java/lang/ClassNotFoundException.java",
+      "startLine": 15,
+      "endLine": 26,
+      "methods": [
+        "ClassNotFoundException",
+        "ClassNotFoundException"
+      ],
+      "properties": []
+    },
+    {
+      "id": "8b7ce6e3b49dd3ab",
+      "type": "class",
+      "name": "ClassValue",
+      "filePath": "src/java/lang/ClassValue.java",
+      "startLine": 14,
+      "endLine": 36,
+      "methods": [
+        "get"
+      ],
+      "properties": []
+    },
+    {
+      "id": "d8a745c735f7d4c6",
+      "type": "class",
+      "name": "CloneNotSupportedException",
+      "filePath": "src/java/lang/CloneNotSupportedException.java",
+      "startLine": 3,
+      "endLine": 6,
+      "methods": [
+        "CloneNotSupportedException",
+        "CloneNotSupportedException"
+      ],
+      "properties": []
+    },
+    {
+      "id": "db86fd4843aedf4f",
+      "type": "class",
+      "name": "Double",
+      "filePath": "src/java/lang/Double.java",
+      "startLine": 3,
+      "endLine": 105,
+      "methods": [
+        "toHexString",
+        "Double",
+        "toString",
+        "byteValue",
+        "shortValue",
+        "intValue",
+        "longValue",
+        "floatValue",
+        "doubleValue",
+        "valueOf",
+        "isNaN",
+        "isInfinite",
+        "Double",
+        "isNaN",
+        "isInfinite",
+        "toString",
+        "hashCode",
+        "equals",
+        "longBitsToDouble",
+        "valueOf0",
+        "doubleToLongBits",
+        "parseDouble",
+        "compare"
+      ],
+      "properties": [
+        "POSITIVE_INFINITY",
+        "NEGATIVE_INFINITY",
+        "NaN",
+        "MAX_VALUE",
+        "MIN_VALUE",
+        "TYPE",
+        "value",
+        "serialVersionUID"
+      ]
+    }
+  ],
+  "edges": []
+}

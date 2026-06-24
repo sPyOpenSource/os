@@ -1,0 +1,830 @@
+{
+  "batchIndex": 22,
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "b3d394a66b92f95b",
+      "type": "file",
+      "name": "RuntimeException.java",
+      "filePath": "src/java/lang/RuntimeException.java",
+      "language": "java",
+      "totalLines": 13,
+      "nonEmptyLines": 12,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "25df7c2ea28b766a",
+      "type": "class",
+      "name": "RuntimeException",
+      "filePath": "src/java/lang/RuntimeException.java",
+      "startLine": 3,
+      "endLine": 13
+    },
+    {
+      "id": "ce9dfb6bd47d564e",
+      "type": "file",
+      "name": "RuntimePermission.java",
+      "filePath": "src/java/lang/RuntimePermission.java",
+      "language": "java",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "fe692738d34b5b67",
+      "type": "class",
+      "name": "RuntimePermission",
+      "filePath": "src/java/lang/RuntimePermission.java",
+      "startLine": 2,
+      "endLine": 4
+    },
+    {
+      "id": "ee84836c94533540",
+      "type": "file",
+      "name": "SecurityException.java",
+      "filePath": "src/java/lang/SecurityException.java",
+      "language": "java",
+      "totalLines": 60,
+      "nonEmptyLines": 50,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "df987b3cb17e17af",
+      "type": "class",
+      "name": "SecurityException",
+      "filePath": "src/java/lang/SecurityException.java",
+      "startLine": 41,
+      "endLine": 60
+    },
+    {
+      "id": "f38a004ac6c72501",
+      "type": "file",
+      "name": "SecurityManager.java",
+      "filePath": "src/java/lang/SecurityManager.java",
+      "language": "java",
+      "totalLines": 747,
+      "nonEmptyLines": 696,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 34,
+        "functionCount": 41,
+        "classCount": 2
+      }
+    },
+    {
+      "id": "c3ffa24b1e574fb6",
+      "type": "class",
+      "name": "SecurityManager",
+      "filePath": "src/java/lang/SecurityManager.java",
+      "startLine": 47,
+      "endLine": 740
+    },
+    {
+      "id": "2f177ecf7c83ae55",
+      "type": "class",
+      "name": "SecurityContext",
+      "filePath": "src/java/lang/SecurityManager.java",
+      "startLine": 742,
+      "endLine": 747
+    },
+    {
+      "id": "62a756ca51016ce2",
+      "type": "file",
+      "name": "Short.java",
+      "filePath": "src/java/lang/Short.java",
+      "language": "java",
+      "totalLines": 18,
+      "nonEmptyLines": 15,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "3e122f01d4eed913",
+      "type": "class",
+      "name": "Short",
+      "filePath": "src/java/lang/Short.java",
+      "startLine": 3,
+      "endLine": 18
+    },
+    {
+      "id": "c86b56cb43b06085",
+      "type": "file",
+      "name": "StackTraceElement.java",
+      "filePath": "src/java/lang/StackTraceElement.java",
+      "language": "java",
+      "totalLines": 18,
+      "nonEmptyLines": 14,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "06d2db00112f2c86",
+      "type": "class",
+      "name": "StackTraceElement",
+      "filePath": "src/java/lang/StackTraceElement.java",
+      "startLine": 3,
+      "endLine": 18
+    },
+    {
+      "id": "9594b78951708dcd",
+      "type": "file",
+      "name": "StringBuffer.java",
+      "filePath": "src/java/lang/StringBuffer.java",
+      "language": "java",
+      "totalLines": 244,
+      "nonEmptyLines": 207,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 31,
+        "functionCount": 31,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "f340d7814caef276",
+      "type": "class",
+      "name": "StringBuffer",
+      "filePath": "src/java/lang/StringBuffer.java",
+      "startLine": 3,
+      "endLine": 244
+    },
+    {
+      "id": "28580f7c2b00f10a",
+      "type": "file",
+      "name": "StringBuilder.java",
+      "filePath": "src/java/lang/StringBuilder.java",
+      "language": "java",
+      "totalLines": 103,
+      "nonEmptyLines": 88,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 14,
+        "functionCount": 13,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "a9b99f0c7e1c5ec2",
+      "type": "class",
+      "name": "StringBuilder",
+      "filePath": "src/java/lang/StringBuilder.java",
+      "startLine": 3,
+      "endLine": 103
+    },
+    {
+      "id": "60d36d84f45de60d",
+      "type": "file",
+      "name": "StringIndexOutOfBoundsException.java",
+      "filePath": "src/java/lang/StringIndexOutOfBoundsException.java",
+      "language": "java",
+      "totalLines": 8,
+      "nonEmptyLines": 6,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "ce5234d9d91a684b",
+      "type": "class",
+      "name": "StringIndexOutOfBoundsException",
+      "filePath": "src/java/lang/StringIndexOutOfBoundsException.java",
+      "startLine": 3,
+      "endLine": 7
+    },
+    {
+      "id": "a68ca11b3d8a2b92",
+      "type": "file",
+      "name": "Thread.java",
+      "filePath": "src/java/lang/Thread.java",
+      "language": "java",
+      "totalLines": 263,
+      "nonEmptyLines": 210,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 42,
+        "functionCount": 39,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "2fd6ac0bbe2e1420",
+      "type": "class",
+      "name": "Thread",
+      "filePath": "src/java/lang/Thread.java",
+      "startLine": 8,
+      "endLine": 263
+    },
+    {
+      "id": "1af28232d86ccf83",
+      "type": "file",
+      "name": "ThreadDeath.java",
+      "filePath": "src/java/lang/ThreadDeath.java",
+      "language": "java",
+      "totalLines": 3,
+      "nonEmptyLines": 2,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "a297d82636c9d8f1",
+      "type": "class",
+      "name": "ThreadDeath",
+      "filePath": "src/java/lang/ThreadDeath.java",
+      "startLine": 3,
+      "endLine": 3
+    },
+    {
+      "id": "8e2878b62cc0ec1d",
+      "type": "file",
+      "name": "TypeNotPresentException.java",
+      "filePath": "src/java/lang/TypeNotPresentException.java",
+      "language": "java",
+      "totalLines": 70,
+      "nonEmptyLines": 65,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "0b5c0c08bca0729c",
+      "type": "class",
+      "name": "TypeNotPresentException",
+      "filePath": "src/java/lang/TypeNotPresentException.java",
+      "startLine": 46,
+      "endLine": 70
+    },
+    {
+      "id": "541864ab9d1c0c20",
+      "type": "file",
+      "name": "UnsatisfiedLinkError.java",
+      "filePath": "src/java/lang/UnsatisfiedLinkError.java",
+      "language": "java",
+      "totalLines": 58,
+      "nonEmptyLines": 48,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "44701cfa8a9f2a1b",
+      "type": "class",
+      "name": "UnsatisfiedLinkError",
+      "filePath": "src/java/lang/UnsatisfiedLinkError.java",
+      "startLine": 39,
+      "endLine": 58
+    },
+    {
+      "id": "aaf844fa0f44d332",
+      "type": "file",
+      "name": "UnsupportedOperationException.java",
+      "filePath": "src/java/lang/UnsupportedOperationException.java",
+      "language": "java",
+      "totalLines": 57,
+      "nonEmptyLines": 47,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "1fd093e469cede04",
+      "type": "class",
+      "name": "UnsupportedOperationException",
+      "filePath": "src/java/lang/UnsupportedOperationException.java",
+      "startLine": 37,
+      "endLine": 57
+    },
+    {
+      "id": "4aa0ea5256fa4e76",
+      "type": "file",
+      "name": "VirtualMachineError.java",
+      "filePath": "src/java/lang/VirtualMachineError.java",
+      "language": "java",
+      "totalLines": 11,
+      "nonEmptyLines": 8,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "b41a0bc4f5489ead",
+      "type": "class",
+      "name": "VirtualMachineError",
+      "filePath": "src/java/lang/VirtualMachineError.java",
+      "startLine": 3,
+      "endLine": 11
+    },
+    {
+      "id": "018b44d5fecd1450",
+      "type": "file",
+      "name": "Void.java",
+      "filePath": "src/java/lang/Void.java",
+      "language": "java",
+      "totalLines": 50,
+      "nonEmptyLines": 46,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "9acbb819df3896bb",
+      "type": "class",
+      "name": "Void",
+      "filePath": "src/java/lang/Void.java",
+      "startLine": 36,
+      "endLine": 50
+    },
+    {
+      "id": "9c9c08c79c76dace",
+      "type": "file",
+      "name": "BigDecimal.java",
+      "filePath": "src/java/math/BigDecimal.java",
+      "language": "java",
+      "totalLines": 350,
+      "nonEmptyLines": 289,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 38,
+        "functionCount": 29,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "2727fc3fd6f03eaf",
+      "type": "class",
+      "name": "BigDecimal",
+      "filePath": "src/java/math/BigDecimal.java",
+      "startLine": 31,
+      "endLine": 350
+    },
+    {
+      "id": "fe0348548434e41f",
+      "type": "file",
+      "name": "BigInteger.j",
+      "filePath": "src/java/math/BigInteger.j",
+      "language": "j",
+      "totalLines": 2267,
+      "nonEmptyLines": 2057,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "1fc6fa148fdb2437",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/java/math/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "e0dd557f75d5dc2f",
+      "type": "file",
+      "name": "BindException.java",
+      "filePath": "src/java/net/BindException.java",
+      "language": "java",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "2b6a3377de82c798",
+      "type": "class",
+      "name": "BindException",
+      "filePath": "src/java/net/BindException.java",
+      "startLine": 3,
+      "endLine": 6
+    },
+    {
+      "id": "f4f86fa3481f24b5",
+      "type": "file",
+      "name": "ConnectException.java",
+      "filePath": "src/java/net/ConnectException.java",
+      "language": "java",
+      "totalLines": 69,
+      "nonEmptyLines": 55,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "c7afac5479920416",
+      "type": "class",
+      "name": "ConnectException",
+      "filePath": "src/java/net/ConnectException.java",
+      "startLine": 37,
+      "endLine": 68
+    },
+    {
+      "id": "40dc3f06008896c6",
+      "type": "file",
+      "name": "DatagramPacket.java",
+      "filePath": "src/java/net/DatagramPacket.java",
+      "language": "java",
+      "totalLines": 50,
+      "nonEmptyLines": 41,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "2b7eb3079ada1e42",
+      "type": "class",
+      "name": "DatagramPacket",
+      "filePath": "src/java/net/DatagramPacket.java",
+      "startLine": 3,
+      "endLine": 50
+    },
+    {
+      "id": "14c4aec64f1aef06",
+      "type": "file",
+      "name": "HttpURLConnection.java",
+      "filePath": "src/java/net/HttpURLConnection.java",
+      "language": "java",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "69cd092ac21e914a",
+      "type": "class",
+      "name": "HttpURLConnection",
+      "filePath": "src/java/net/HttpURLConnection.java",
+      "startLine": 2,
+      "endLine": 4
+    },
+    {
+      "id": "06026fc93e9551a5",
+      "type": "file",
+      "name": "MalformedURLException.java",
+      "filePath": "src/java/net/MalformedURLException.java",
+      "language": "java",
+      "totalLines": 67,
+      "nonEmptyLines": 54,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "b4bae258eda588ba",
+      "type": "class",
+      "name": "MalformedURLException",
+      "filePath": "src/java/net/MalformedURLException.java",
+      "startLine": 35,
+      "endLine": 66
+    },
+    {
+      "id": "0c4e3ad69a998798",
+      "type": "file",
+      "name": "NetPermission.java",
+      "filePath": "src/java/net/NetPermission.java",
+      "language": "java",
+      "totalLines": 78,
+      "nonEmptyLines": 63,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "6764c6ac16dc3c7a",
+      "type": "class",
+      "name": "NetPermission",
+      "filePath": "src/java/net/NetPermission.java",
+      "startLine": 39,
+      "endLine": 77
+    }
+  ],
+  "edges": [
+    {
+      "source": "b3d394a66b92f95b",
+      "target": "25df7c2ea28b766a",
+      "type": "contains"
+    },
+    {
+      "source": "25df7c2ea28b766a",
+      "target": "b3d394a66b92f95b",
+      "type": "exports"
+    },
+    {
+      "source": "ce9dfb6bd47d564e",
+      "target": "fe692738d34b5b67",
+      "type": "contains"
+    },
+    {
+      "source": "fe692738d34b5b67",
+      "target": "ce9dfb6bd47d564e",
+      "type": "exports"
+    },
+    {
+      "source": "ee84836c94533540",
+      "target": "df987b3cb17e17af",
+      "type": "contains"
+    },
+    {
+      "source": "df987b3cb17e17af",
+      "target": "ee84836c94533540",
+      "type": "exports"
+    },
+    {
+      "source": "f38a004ac6c72501",
+      "target": "c3ffa24b1e574fb6",
+      "type": "contains"
+    },
+    {
+      "source": "c3ffa24b1e574fb6",
+      "target": "f38a004ac6c72501",
+      "type": "exports"
+    },
+    {
+      "source": "f38a004ac6c72501",
+      "target": "2f177ecf7c83ae55",
+      "type": "contains"
+    },
+    {
+      "source": "2f177ecf7c83ae55",
+      "target": "f38a004ac6c72501",
+      "type": "exports"
+    },
+    {
+      "source": "62a756ca51016ce2",
+      "target": "3e122f01d4eed913",
+      "type": "contains"
+    },
+    {
+      "source": "3e122f01d4eed913",
+      "target": "62a756ca51016ce2",
+      "type": "exports"
+    },
+    {
+      "source": "c86b56cb43b06085",
+      "target": "06d2db00112f2c86",
+      "type": "contains"
+    },
+    {
+      "source": "06d2db00112f2c86",
+      "target": "c86b56cb43b06085",
+      "type": "exports"
+    },
+    {
+      "source": "9594b78951708dcd",
+      "target": "f340d7814caef276",
+      "type": "contains"
+    },
+    {
+      "source": "f340d7814caef276",
+      "target": "9594b78951708dcd",
+      "type": "exports"
+    },
+    {
+      "source": "28580f7c2b00f10a",
+      "target": "a9b99f0c7e1c5ec2",
+      "type": "contains"
+    },
+    {
+      "source": "a9b99f0c7e1c5ec2",
+      "target": "28580f7c2b00f10a",
+      "type": "exports"
+    },
+    {
+      "source": "60d36d84f45de60d",
+      "target": "ce5234d9d91a684b",
+      "type": "contains"
+    },
+    {
+      "source": "ce5234d9d91a684b",
+      "target": "60d36d84f45de60d",
+      "type": "exports"
+    },
+    {
+      "source": "a68ca11b3d8a2b92",
+      "target": "2fd6ac0bbe2e1420",
+      "type": "contains"
+    },
+    {
+      "source": "2fd6ac0bbe2e1420",
+      "target": "a68ca11b3d8a2b92",
+      "type": "exports"
+    },
+    {
+      "source": "1af28232d86ccf83",
+      "target": "a297d82636c9d8f1",
+      "type": "contains"
+    },
+    {
+      "source": "a297d82636c9d8f1",
+      "target": "1af28232d86ccf83",
+      "type": "exports"
+    },
+    {
+      "source": "8e2878b62cc0ec1d",
+      "target": "0b5c0c08bca0729c",
+      "type": "contains"
+    },
+    {
+      "source": "0b5c0c08bca0729c",
+      "target": "8e2878b62cc0ec1d",
+      "type": "exports"
+    },
+    {
+      "source": "541864ab9d1c0c20",
+      "target": "44701cfa8a9f2a1b",
+      "type": "contains"
+    },
+    {
+      "source": "44701cfa8a9f2a1b",
+      "target": "541864ab9d1c0c20",
+      "type": "exports"
+    },
+    {
+      "source": "aaf844fa0f44d332",
+      "target": "1fd093e469cede04",
+      "type": "contains"
+    },
+    {
+      "source": "1fd093e469cede04",
+      "target": "aaf844fa0f44d332",
+      "type": "exports"
+    },
+    {
+      "source": "4aa0ea5256fa4e76",
+      "target": "b41a0bc4f5489ead",
+      "type": "contains"
+    },
+    {
+      "source": "b41a0bc4f5489ead",
+      "target": "4aa0ea5256fa4e76",
+      "type": "exports"
+    },
+    {
+      "source": "018b44d5fecd1450",
+      "target": "9acbb819df3896bb",
+      "type": "contains"
+    },
+    {
+      "source": "9acbb819df3896bb",
+      "target": "018b44d5fecd1450",
+      "type": "exports"
+    },
+    {
+      "source": "9c9c08c79c76dace",
+      "target": "2727fc3fd6f03eaf",
+      "type": "contains"
+    },
+    {
+      "source": "2727fc3fd6f03eaf",
+      "target": "9c9c08c79c76dace",
+      "type": "exports"
+    },
+    {
+      "source": "e0dd557f75d5dc2f",
+      "target": "2b6a3377de82c798",
+      "type": "contains"
+    },
+    {
+      "source": "2b6a3377de82c798",
+      "target": "e0dd557f75d5dc2f",
+      "type": "exports"
+    },
+    {
+      "source": "f4f86fa3481f24b5",
+      "target": "c7afac5479920416",
+      "type": "contains"
+    },
+    {
+      "source": "c7afac5479920416",
+      "target": "f4f86fa3481f24b5",
+      "type": "exports"
+    },
+    {
+      "source": "40dc3f06008896c6",
+      "target": "2b7eb3079ada1e42",
+      "type": "contains"
+    },
+    {
+      "source": "2b7eb3079ada1e42",
+      "target": "40dc3f06008896c6",
+      "type": "exports"
+    },
+    {
+      "source": "14c4aec64f1aef06",
+      "target": "69cd092ac21e914a",
+      "type": "contains"
+    },
+    {
+      "source": "69cd092ac21e914a",
+      "target": "14c4aec64f1aef06",
+      "type": "exports"
+    },
+    {
+      "source": "06026fc93e9551a5",
+      "target": "b4bae258eda588ba",
+      "type": "contains"
+    },
+    {
+      "source": "b4bae258eda588ba",
+      "target": "06026fc93e9551a5",
+      "type": "exports"
+    },
+    {
+      "source": "0c4e3ad69a998798",
+      "target": "6764c6ac16dc3c7a",
+      "type": "contains"
+    },
+    {
+      "source": "6764c6ac16dc3c7a",
+      "target": "0c4e3ad69a998798",
+      "type": "exports"
+    }
+  ]
+}

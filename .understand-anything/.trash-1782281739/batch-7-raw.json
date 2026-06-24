@@ -1,0 +1,1372 @@
+{
+  "batchIndex": 7,
+  "files": [
+    {
+      "path": "src/AI/util/AIQueue.java",
+      "language": "java",
+      "sizeLines": 256,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/util/ArrayList.java",
+      "language": "java",
+      "sizeLines": 1510,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/AbstractDescriptor.java",
+      "language": "java",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/AbstractHostControllerDriver.java",
+      "language": "java",
+      "sizeLines": 98,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/DeviceDescriptor.java",
+      "language": "java",
+      "sizeLines": 190,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/EndPointDescriptor.java",
+      "language": "java",
+      "sizeLines": 146,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/SetupPacket.java",
+      "language": "java",
+      "sizeLines": 175,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBBus.java",
+      "language": "java",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBConstants.java",
+      "language": "java",
+      "sizeLines": 192,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBControlPipe.java",
+      "language": "java",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBDataPipe.java",
+      "language": "java",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBDevice.java",
+      "language": "java",
+      "sizeLines": 413,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBEndPoint.java",
+      "language": "java",
+      "sizeLines": 164,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBException.java",
+      "language": "java",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBHostControllerAPI.java",
+      "language": "java",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBHubAPI.java",
+      "language": "java",
+      "sizeLines": 133,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBHubMonitor.java",
+      "language": "java",
+      "sizeLines": 376,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBPacket.java",
+      "language": "java",
+      "sizeLines": 179,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBPipe.java",
+      "language": "java",
+      "sizeLines": 96,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBPipeListener.java",
+      "language": "java",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/USBRequest.java",
+      "language": "java",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/hub/HubDescriptor.java",
+      "language": "java",
+      "sizeLines": 114,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/AI/util/AIQueue.java": [
+      "src/java/util/ArrayList.java"
+    ],
+    "src/java/util/ArrayList.java": [],
+    "src/org/jnode/driver/bus/usb/AbstractDescriptor.java": [],
+    "src/org/jnode/driver/bus/usb/AbstractHostControllerDriver.java": [],
+    "src/org/jnode/driver/bus/usb/DeviceDescriptor.java": [
+      "src/org/jnode/util/NumberUtils.java"
+    ],
+    "src/org/jnode/driver/bus/usb/EndPointDescriptor.java": [],
+    "src/org/jnode/driver/bus/usb/SetupPacket.java": [],
+    "src/org/jnode/driver/bus/usb/USBBus.java": [],
+    "src/org/jnode/driver/bus/usb/USBConstants.java": [],
+    "src/org/jnode/driver/bus/usb/USBControlPipe.java": [],
+    "src/org/jnode/driver/bus/usb/USBDataPipe.java": [],
+    "src/org/jnode/driver/bus/usb/USBDevice.java": [
+      "src/java/util/HashMap.java"
+    ],
+    "src/org/jnode/driver/bus/usb/USBEndPoint.java": [],
+    "src/org/jnode/driver/bus/usb/USBException.java": [],
+    "src/org/jnode/driver/bus/usb/USBHostControllerAPI.java": [],
+    "src/org/jnode/driver/bus/usb/USBHubAPI.java": [],
+    "src/org/jnode/driver/bus/usb/USBHubMonitor.java": [
+      "src/org/jnode/driver/bus/usb/uhci/UHCICore.java",
+      "src/org/jnode/util/NumberUtils.java"
+    ],
+    "src/org/jnode/driver/bus/usb/USBPacket.java": [
+      "src/org/jnode/util/NumberUtils.java"
+    ],
+    "src/org/jnode/driver/bus/usb/USBPipe.java": [],
+    "src/org/jnode/driver/bus/usb/USBPipeListener.java": [],
+    "src/org/jnode/driver/bus/usb/USBRequest.java": [],
+    "src/org/jnode/driver/bus/usb/hub/HubDescriptor.java": [
+      "src/org/jnode/driver/bus/usb/AbstractDescriptor.java",
+      "src/org/jnode/util/NumberUtils.java"
+    ]
+  },
+  "neighborMap": {
+    "src/AI/util/AIQueue.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIPipe.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIPipe",
+          "isControlPipe",
+          "isInterruptPipe",
+          "isIsochronousPipe",
+          "isBulkPipe",
+          "isOpen",
+          "open",
+          "close",
+          "asyncSubmit",
+          "syncSubmit",
+          "addListener",
+          "removeListener",
+          "getEndPoint",
+          "UHCIPipe"
+        ]
+      }
+    ],
+    "src/java/util/ArrayList.java": [
+      {
+        "path": "src/java/lang/invoke/MemberName.java",
+        "batchIndex": 2,
+        "symbols": [
+          "getDeclaringClass",
+          "getName",
+          "getModifiers",
+          "isSynthetic"
+        ]
+      },
+      {
+        "path": "src/java/lang/String.java",
+        "batchIndex": 5,
+        "symbols": [
+          "format",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "toString",
+          "hashCode",
+          "length",
+          "charAt",
+          "getChars",
+          "getBytes",
+          "getBytes",
+          "getBytes",
+          "toCharArray",
+          "substring",
+          "substring",
+          "equals",
+          "equalsIgnoreCase",
+          "compareTo",
+          "regionMatches",
+          "regionMatches",
+          "startsWith",
+          "startsWith",
+          "endsWith",
+          "concat",
+          "replace",
+          "toLowerCase",
+          "toUpperCase",
+          "trim",
+          "indexOf",
+          "indexOf",
+          "indexOf",
+          "indexOf",
+          "lastIndexOf",
+          "lastIndexOf",
+          "lastIndexOf",
+          "lastIndexOf",
+          "intern",
+          "copyValueOf",
+          "copyValueOf",
+          "valueOf",
+          "valueOf",
+          "valueOf",
+          "valueOf",
+          "valueOf",
+          "valueOf",
+          "valueOf",
+          "valueOf",
+          "valueOf",
+          "split",
+          "split",
+          "subSequence",
+          "isEmpty",
+          "String"
+        ]
+      },
+      {
+        "path": "src/java/lang/Throwable.java",
+        "batchIndex": 2,
+        "symbols": [
+          "Throwable",
+          "Throwable",
+          "Throwable",
+          "Throwable",
+          "toString",
+          "getMessage",
+          "printStackTrace",
+          "printStackTrace",
+          "getLocalizedMessage",
+          "initCause",
+          "addSuppressed",
+          "getStackTrace",
+          "Throwable"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIPipe.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIPipe",
+          "isControlPipe",
+          "isInterruptPipe",
+          "isIsochronousPipe",
+          "isBulkPipe",
+          "isOpen",
+          "open",
+          "close",
+          "asyncSubmit",
+          "syncSubmit",
+          "addListener",
+          "removeListener",
+          "getEndPoint",
+          "UHCIPipe"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIPipeManager.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIPipeManager",
+          "createDefaultControlPipe",
+          "createPipe",
+          "handleInterrupt",
+          "deviceStarted",
+          "deviceStop",
+          "UHCIPipeManager"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/AbstractHostControllerDriver.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIDriver.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIDriver",
+          "getAPI",
+          "UHCIDriver"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/DeviceDescriptor.java": [
+      {
+        "path": "src/org/jnode/util/NumberUtils.java",
+        "batchIndex": 10,
+        "symbols": [
+          "toString",
+          "toUnsigned",
+          "toUnsigned",
+          "toUnsigned",
+          "hex",
+          "hex",
+          "hex",
+          "hex",
+          "hex",
+          "hexCompact",
+          "hex",
+          "hex",
+          "hex",
+          "hex",
+          "hex",
+          "size",
+          "toDecimalByte",
+          "toDecimalByte",
+          "toBinaryByte",
+          "toBinaryByte",
+          "getSize",
+          "getSizeUnit",
+          "NumberUtils"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/EndPointDescriptor.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIPipeManager.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIPipeManager",
+          "createDefaultControlPipe",
+          "createPipe",
+          "handleInterrupt",
+          "deviceStarted",
+          "deviceStop",
+          "UHCIPipeManager"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/SetupPacket.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/hub/USBHubDriver.java",
+        "batchIndex": 10,
+        "symbols": [
+          "clearPortConnectionStatusChanged",
+          "getDevice",
+          "getNumPorts",
+          "getPortStatus",
+          "getUSBBus",
+          "isPortConnected",
+          "isPortConnectedToHighSpeed",
+          "isPortConnectedToLowSpeed",
+          "isPortConnectionStatusChanged",
+          "isPortEnabled",
+          "resetPort",
+          "setDevice",
+          "setPortEnabled",
+          "unsetDevice",
+          "USBHubDriver"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/spi/AbstractUSBControlRequest.java",
+        "batchIndex": 10,
+        "symbols": [
+          "AbstractUSBControlRequest",
+          "getSetupPacket",
+          "AbstractUSBControlRequest"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIControlPipe.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIControlPipe",
+          "createRequest",
+          "UHCIControlPipe"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIControlRequest.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIControlRequest",
+          "createTDs",
+          "getFirstTD",
+          "toString",
+          "UHCIControlRequest"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/USBBus.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/hub/USBHubDriver.java",
+        "batchIndex": 10,
+        "symbols": [
+          "clearPortConnectionStatusChanged",
+          "getDevice",
+          "getNumPorts",
+          "getPortStatus",
+          "getUSBBus",
+          "isPortConnected",
+          "isPortConnectedToHighSpeed",
+          "isPortConnectedToLowSpeed",
+          "isPortConnectionStatusChanged",
+          "isPortEnabled",
+          "resetPort",
+          "setDevice",
+          "setPortEnabled",
+          "unsetDevice",
+          "USBHubDriver"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCICore.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCICore",
+          "release",
+          "createDefaultControlPipe",
+          "createPipe",
+          "interrupt",
+          "getRootHUB",
+          "getVersion",
+          "UHCICore"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIRootHub.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIRootHub",
+          "resetHub",
+          "getUSBBus",
+          "getDevice",
+          "setDevice",
+          "unsetDevice",
+          "getNumPorts",
+          "isPortEnabled",
+          "setPortEnabled",
+          "resetPort",
+          "isPortConnected",
+          "isPortConnectionStatusChanged",
+          "clearPortConnectionStatusChanged",
+          "isPortConnectedToLowSpeed",
+          "isPortConnectedToHighSpeed",
+          "getPortStatus",
+          "UHCIRootHub"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/USBConstants.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/hub/USBHubConstants.java",
+        "batchIndex": 10,
+        "symbols": [
+          "USBHubConstants"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/hub/USBHubDeviceToDriverMapper.java",
+        "batchIndex": 10,
+        "symbols": [
+          "findDriver",
+          "getMatchLevel",
+          "USBHubDeviceToDriverMapper"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/Schedule.java",
+        "batchIndex": 10,
+        "symbols": [
+          "Schedule",
+          "getFrameList",
+          "getInterruptQH",
+          "toString",
+          "getBulkQH",
+          "getHighSpeedControlQH",
+          "getLowSpeedControlQH",
+          "Schedule"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIControlRequest.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIControlRequest",
+          "createTDs",
+          "getFirstTD",
+          "toString",
+          "UHCIControlRequest"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIDataRequest.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIDataRequest",
+          "createTDs",
+          "getFirstTD",
+          "UHCIDataRequest"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIPipe.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIPipe",
+          "isControlPipe",
+          "isInterruptPipe",
+          "isIsochronousPipe",
+          "isBulkPipe",
+          "isOpen",
+          "open",
+          "close",
+          "asyncSubmit",
+          "syncSubmit",
+          "addListener",
+          "removeListener",
+          "getEndPoint",
+          "UHCIPipe"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIPipeManager.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIPipeManager",
+          "createDefaultControlPipe",
+          "createPipe",
+          "handleInterrupt",
+          "deviceStarted",
+          "deviceStop",
+          "UHCIPipeManager"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/USBControlPipe.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/hub/USBHubDriver.java",
+        "batchIndex": 10,
+        "symbols": [
+          "clearPortConnectionStatusChanged",
+          "getDevice",
+          "getNumPorts",
+          "getPortStatus",
+          "getUSBBus",
+          "isPortConnected",
+          "isPortConnectedToHighSpeed",
+          "isPortConnectedToLowSpeed",
+          "isPortConnectionStatusChanged",
+          "isPortEnabled",
+          "resetPort",
+          "setDevice",
+          "setPortEnabled",
+          "unsetDevice",
+          "USBHubDriver"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIControlPipe.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIControlPipe",
+          "createRequest",
+          "UHCIControlPipe"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCICore.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCICore",
+          "release",
+          "createDefaultControlPipe",
+          "createPipe",
+          "interrupt",
+          "getRootHUB",
+          "getVersion",
+          "UHCICore"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIPipeManager.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIPipeManager",
+          "createDefaultControlPipe",
+          "createPipe",
+          "handleInterrupt",
+          "deviceStarted",
+          "deviceStop",
+          "UHCIPipeManager"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/USBDataPipe.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIDataPipe.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIDataPipe",
+          "createRequest",
+          "UHCIDataPipe"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/USBDevice.java": [
+      {
+        "path": "src/java/util/HashMap.java",
+        "batchIndex": 8,
+        "symbols": [
+          "HashMap",
+          "HashMap",
+          "HashMap",
+          "HashMap",
+          "size",
+          "isEmpty",
+          "clear",
+          "clone",
+          "keySet",
+          "entrySet",
+          "values",
+          "containsKey",
+          "containsValue",
+          "get",
+          "put",
+          "remove",
+          "HashMap"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/hub/USBHubDeviceToDriverMapper.java",
+        "batchIndex": 10,
+        "symbols": [
+          "findDriver",
+          "getMatchLevel",
+          "USBHubDeviceToDriverMapper"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/hub/USBHubDriver.java",
+        "batchIndex": 10,
+        "symbols": [
+          "clearPortConnectionStatusChanged",
+          "getDevice",
+          "getNumPorts",
+          "getPortStatus",
+          "getUSBBus",
+          "isPortConnected",
+          "isPortConnectedToHighSpeed",
+          "isPortConnectedToLowSpeed",
+          "isPortConnectionStatusChanged",
+          "isPortEnabled",
+          "resetPort",
+          "setDevice",
+          "setPortEnabled",
+          "unsetDevice",
+          "USBHubDriver"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIControlPipe.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIControlPipe",
+          "createRequest",
+          "UHCIControlPipe"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCICore.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCICore",
+          "release",
+          "createDefaultControlPipe",
+          "createPipe",
+          "interrupt",
+          "getRootHUB",
+          "getVersion",
+          "UHCICore"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIDataPipe.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIDataPipe",
+          "createRequest",
+          "UHCIDataPipe"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIPipe.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIPipe",
+          "isControlPipe",
+          "isInterruptPipe",
+          "isIsochronousPipe",
+          "isBulkPipe",
+          "isOpen",
+          "open",
+          "close",
+          "asyncSubmit",
+          "syncSubmit",
+          "addListener",
+          "removeListener",
+          "getEndPoint",
+          "UHCIPipe"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIPipeManager.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIPipeManager",
+          "createDefaultControlPipe",
+          "createPipe",
+          "handleInterrupt",
+          "deviceStarted",
+          "deviceStop",
+          "UHCIPipeManager"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIRootHub.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIRootHub",
+          "resetHub",
+          "getUSBBus",
+          "getDevice",
+          "setDevice",
+          "unsetDevice",
+          "getNumPorts",
+          "isPortEnabled",
+          "setPortEnabled",
+          "resetPort",
+          "isPortConnected",
+          "isPortConnectionStatusChanged",
+          "clearPortConnectionStatusChanged",
+          "isPortConnectedToLowSpeed",
+          "isPortConnectedToHighSpeed",
+          "getPortStatus",
+          "UHCIRootHub"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/USBEndPoint.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIControlPipe.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIControlPipe",
+          "createRequest",
+          "UHCIControlPipe"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCICore.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCICore",
+          "release",
+          "createDefaultControlPipe",
+          "createPipe",
+          "interrupt",
+          "getRootHUB",
+          "getVersion",
+          "UHCICore"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIDataPipe.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIDataPipe",
+          "createRequest",
+          "UHCIDataPipe"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIDataRequest.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIDataRequest",
+          "createTDs",
+          "getFirstTD",
+          "UHCIDataRequest"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIPipe.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIPipe",
+          "isControlPipe",
+          "isInterruptPipe",
+          "isIsochronousPipe",
+          "isBulkPipe",
+          "isOpen",
+          "open",
+          "close",
+          "asyncSubmit",
+          "syncSubmit",
+          "addListener",
+          "removeListener",
+          "getEndPoint",
+          "UHCIPipe"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIPipeManager.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIPipeManager",
+          "createDefaultControlPipe",
+          "createPipe",
+          "handleInterrupt",
+          "deviceStarted",
+          "deviceStop",
+          "UHCIPipeManager"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/USBException.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/hub/USBHubDriver.java",
+        "batchIndex": 10,
+        "symbols": [
+          "clearPortConnectionStatusChanged",
+          "getDevice",
+          "getNumPorts",
+          "getPortStatus",
+          "getUSBBus",
+          "isPortConnected",
+          "isPortConnectedToHighSpeed",
+          "isPortConnectedToLowSpeed",
+          "isPortConnectionStatusChanged",
+          "isPortEnabled",
+          "resetPort",
+          "setDevice",
+          "setPortEnabled",
+          "unsetDevice",
+          "USBHubDriver"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIControlRequest.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIControlRequest",
+          "createTDs",
+          "getFirstTD",
+          "toString",
+          "UHCIControlRequest"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIPipe.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIPipe",
+          "isControlPipe",
+          "isInterruptPipe",
+          "isIsochronousPipe",
+          "isBulkPipe",
+          "isOpen",
+          "open",
+          "close",
+          "asyncSubmit",
+          "syncSubmit",
+          "addListener",
+          "removeListener",
+          "getEndPoint",
+          "UHCIPipe"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIRequest.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIRequest"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/USBHostControllerAPI.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCICore.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCICore",
+          "release",
+          "createDefaultControlPipe",
+          "createPipe",
+          "interrupt",
+          "getRootHUB",
+          "getVersion",
+          "UHCICore"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIDriver.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIDriver",
+          "getAPI",
+          "UHCIDriver"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/USBHubAPI.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/hub/USBHubDriver.java",
+        "batchIndex": 10,
+        "symbols": [
+          "clearPortConnectionStatusChanged",
+          "getDevice",
+          "getNumPorts",
+          "getPortStatus",
+          "getUSBBus",
+          "isPortConnected",
+          "isPortConnectedToHighSpeed",
+          "isPortConnectedToLowSpeed",
+          "isPortConnectionStatusChanged",
+          "isPortEnabled",
+          "resetPort",
+          "setDevice",
+          "setPortEnabled",
+          "unsetDevice",
+          "USBHubDriver"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCICore.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCICore",
+          "release",
+          "createDefaultControlPipe",
+          "createPipe",
+          "interrupt",
+          "getRootHUB",
+          "getVersion",
+          "UHCICore"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIRootHub.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIRootHub",
+          "resetHub",
+          "getUSBBus",
+          "getDevice",
+          "setDevice",
+          "unsetDevice",
+          "getNumPorts",
+          "isPortEnabled",
+          "setPortEnabled",
+          "resetPort",
+          "isPortConnected",
+          "isPortConnectionStatusChanged",
+          "clearPortConnectionStatusChanged",
+          "isPortConnectedToLowSpeed",
+          "isPortConnectedToHighSpeed",
+          "getPortStatus",
+          "UHCIRootHub"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/USBHubMonitor.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCICore.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCICore",
+          "release",
+          "createDefaultControlPipe",
+          "createPipe",
+          "interrupt",
+          "getRootHUB",
+          "getVersion",
+          "UHCICore"
+        ]
+      },
+      {
+        "path": "src/org/jnode/util/NumberUtils.java",
+        "batchIndex": 10,
+        "symbols": [
+          "toString",
+          "toUnsigned",
+          "toUnsigned",
+          "toUnsigned",
+          "hex",
+          "hex",
+          "hex",
+          "hex",
+          "hex",
+          "hexCompact",
+          "hex",
+          "hex",
+          "hex",
+          "hex",
+          "hex",
+          "size",
+          "toDecimalByte",
+          "toDecimalByte",
+          "toBinaryByte",
+          "toBinaryByte",
+          "getSize",
+          "getSizeUnit",
+          "NumberUtils"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/hub/USBHubDriver.java",
+        "batchIndex": 10,
+        "symbols": [
+          "clearPortConnectionStatusChanged",
+          "getDevice",
+          "getNumPorts",
+          "getPortStatus",
+          "getUSBBus",
+          "isPortConnected",
+          "isPortConnectedToHighSpeed",
+          "isPortConnectedToLowSpeed",
+          "isPortConnectionStatusChanged",
+          "isPortEnabled",
+          "resetPort",
+          "setDevice",
+          "setPortEnabled",
+          "unsetDevice",
+          "USBHubDriver"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/USBPacket.java": [
+      {
+        "path": "src/org/jnode/util/NumberUtils.java",
+        "batchIndex": 10,
+        "symbols": [
+          "toString",
+          "toUnsigned",
+          "toUnsigned",
+          "toUnsigned",
+          "hex",
+          "hex",
+          "hex",
+          "hex",
+          "hex",
+          "hexCompact",
+          "hex",
+          "hex",
+          "hex",
+          "hex",
+          "hex",
+          "size",
+          "toDecimalByte",
+          "toDecimalByte",
+          "toBinaryByte",
+          "toBinaryByte",
+          "getSize",
+          "getSizeUnit",
+          "NumberUtils"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/hub/PortStatus.java",
+        "batchIndex": 10,
+        "symbols": [
+          "PortStatus",
+          "getPortStatus",
+          "getPortStatusBits",
+          "getPortChange",
+          "getPortChangeBits",
+          "toString",
+          "PortStatus"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/spi/AbstractUSBControlRequest.java",
+        "batchIndex": 10,
+        "symbols": [
+          "AbstractUSBControlRequest",
+          "getSetupPacket",
+          "AbstractUSBControlRequest"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/spi/AbstractUSBDataRequest.java",
+        "batchIndex": 10,
+        "symbols": [
+          "AbstractUSBDataRequest",
+          "getDataPacket",
+          "AbstractUSBDataRequest"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIControlPipe.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIControlPipe",
+          "createRequest",
+          "UHCIControlPipe"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIControlRequest.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIControlRequest",
+          "createTDs",
+          "getFirstTD",
+          "toString",
+          "UHCIControlRequest"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIDataPipe.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIDataPipe",
+          "createRequest",
+          "UHCIDataPipe"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIDataRequest.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIDataRequest",
+          "createTDs",
+          "getFirstTD",
+          "UHCIDataRequest"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/USBPipe.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCICore.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCICore",
+          "release",
+          "createDefaultControlPipe",
+          "createPipe",
+          "interrupt",
+          "getRootHUB",
+          "getVersion",
+          "UHCICore"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIPipe.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIPipe",
+          "isControlPipe",
+          "isInterruptPipe",
+          "isIsochronousPipe",
+          "isBulkPipe",
+          "isOpen",
+          "open",
+          "close",
+          "asyncSubmit",
+          "syncSubmit",
+          "addListener",
+          "removeListener",
+          "getEndPoint",
+          "UHCIPipe"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIPipeManager.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIPipeManager",
+          "createDefaultControlPipe",
+          "createPipe",
+          "handleInterrupt",
+          "deviceStarted",
+          "deviceStop",
+          "UHCIPipeManager"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/USBPipeListener.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIPipe.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIPipe",
+          "isControlPipe",
+          "isInterruptPipe",
+          "isIsochronousPipe",
+          "isBulkPipe",
+          "isOpen",
+          "open",
+          "close",
+          "asyncSubmit",
+          "syncSubmit",
+          "addListener",
+          "removeListener",
+          "getEndPoint",
+          "UHCIPipe"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/USBRequest.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/hub/USBHubDriver.java",
+        "batchIndex": 10,
+        "symbols": [
+          "clearPortConnectionStatusChanged",
+          "getDevice",
+          "getNumPorts",
+          "getPortStatus",
+          "getUSBBus",
+          "isPortConnected",
+          "isPortConnectedToHighSpeed",
+          "isPortConnectedToLowSpeed",
+          "isPortConnectionStatusChanged",
+          "isPortEnabled",
+          "resetPort",
+          "setDevice",
+          "setPortEnabled",
+          "unsetDevice",
+          "USBHubDriver"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/spi/AbstractUSBRequest.java",
+        "batchIndex": 10,
+        "symbols": [
+          "getActualLength",
+          "isCompleted",
+          "getStatus",
+          "setActualLength",
+          "setCompleted",
+          "setStatus",
+          "waitUntilComplete",
+          "AbstractUSBRequest"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIControlPipe.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIControlPipe",
+          "createRequest",
+          "UHCIControlPipe"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIDataPipe.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIDataPipe",
+          "createRequest",
+          "UHCIDataPipe"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIPipe.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIPipe",
+          "isControlPipe",
+          "isInterruptPipe",
+          "isIsochronousPipe",
+          "isBulkPipe",
+          "isOpen",
+          "open",
+          "close",
+          "asyncSubmit",
+          "syncSubmit",
+          "addListener",
+          "removeListener",
+          "getEndPoint",
+          "UHCIPipe"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/uhci/UHCIRequest.java",
+        "batchIndex": 10,
+        "symbols": [
+          "UHCIRequest"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/hub/HubDescriptor.java": [
+      {
+        "path": "src/org/jnode/util/NumberUtils.java",
+        "batchIndex": 10,
+        "symbols": [
+          "toString",
+          "toUnsigned",
+          "toUnsigned",
+          "toUnsigned",
+          "hex",
+          "hex",
+          "hex",
+          "hex",
+          "hex",
+          "hexCompact",
+          "hex",
+          "hex",
+          "hex",
+          "hex",
+          "hex",
+          "size",
+          "toDecimalByte",
+          "toDecimalByte",
+          "toBinaryByte",
+          "toBinaryByte",
+          "getSize",
+          "getSizeUnit",
+          "NumberUtils"
+        ]
+      }
+    ]
+  }
+}

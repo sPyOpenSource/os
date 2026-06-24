@@ -1,0 +1,589 @@
+{
+  "batchIndex": 17,
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "65ddddba403652c6",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/com/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "fileCategory": "package-marker"
+    },
+    {
+      "id": "fd296ddf7308aad5",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/com/sun/net/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "fileCategory": "package-marker"
+    },
+    {
+      "id": "628c496d4b362b9b",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/com/sun/net/ssl/internal/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "fileCategory": "package-marker"
+    },
+    {
+      "id": "0e188a9f28a5b9ed",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/com/sun/net/ssl/internal/ssl/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "fileCategory": "package-marker"
+    },
+    {
+      "id": "0267f6a1af188ff4",
+      "type": "file",
+      "name": "Provider.java",
+      "filePath": "src/com/sun/net/ssl/internal/ssl/Provider.java",
+      "language": "java",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "4d425f4b03d1a43e",
+      "type": "file",
+      "name": "KeyManager.java",
+      "filePath": "src/com/sun/net/ssl/KeyManager.java",
+      "language": "java",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "72528bf5c6dc68fa",
+      "type": "file",
+      "name": "KeyManagerFactory.java",
+      "filePath": "src/com/sun/net/ssl/KeyManagerFactory.java",
+      "language": "java",
+      "totalLines": 6,
+      "nonEmptyLines": 6,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "16bd6e370e05a7ab",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/com/sun/net/ssl/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "fileCategory": "package-marker"
+    },
+    {
+      "id": "352d232b86cd9565",
+      "type": "file",
+      "name": "SSLContext.java",
+      "filePath": "src/com/sun/net/ssl/SSLContext.java",
+      "language": "java",
+      "totalLines": 6,
+      "nonEmptyLines": 6,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "5161bc928f51a226",
+      "type": "file",
+      "name": "TrustManager.java",
+      "filePath": "src/com/sun/net/ssl/TrustManager.java",
+      "language": "java",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "b8ba527d0a35c537",
+      "type": "file",
+      "name": "TrustManagerFactory.java",
+      "filePath": "src/com/sun/net/ssl/TrustManagerFactory.java",
+      "language": "java",
+      "totalLines": 6,
+      "nonEmptyLines": 6,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "ae46e02cbe52969a",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/com/sun/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "fileCategory": "package-marker"
+    },
+    {
+      "id": "c93cfd4014ff161c",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/gnu/java/io/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "fileCategory": "package-marker"
+    },
+    {
+      "id": "4314d8b87d552361",
+      "type": "file",
+      "name": "MPN.java",
+      "filePath": "src/gnu/java/math/MPN.java",
+      "language": "java",
+      "totalLines": 768,
+      "nonEmptyLines": 708,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 24,
+        "functionCount": 23,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "eeea079461c237b3",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/gnu/java/math/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "fileCategory": "package-marker"
+    },
+    {
+      "id": "afe937eabded81f7",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/gnu/java/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "fileCategory": "package-marker"
+    },
+    {
+      "id": "6ff233819e7d0805",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/gnu/java/security/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "fileCategory": "package-marker"
+    },
+    {
+      "id": "a7ed8f87c8824367",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/gnu/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "fileCategory": "package-marker"
+    },
+    {
+      "id": "9a9b0a0d41dce582",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/java/applet/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "fileCategory": "package-marker"
+    },
+    {
+      "id": "f5a24fc4c96c465a",
+      "type": "file",
+      "name": "BeanDescriptor.java",
+      "filePath": "src/java/beans/BeanDescriptor.java",
+      "language": "java",
+      "totalLines": 70,
+      "nonEmptyLines": 57,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "45d527b09295c01f",
+      "type": "file",
+      "name": "Beans.j",
+      "filePath": "src/java/beans/Beans.j",
+      "language": "j",
+      "totalLines": 194,
+      "nonEmptyLines": 173,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "id": "e74c3f1702bac342",
+      "type": "file",
+      "name": "EventSetDescriptor.j",
+      "filePath": "src/java/beans/EventSetDescriptor.j",
+      "language": "j",
+      "totalLines": 429,
+      "nonEmptyLines": 387,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "id": "0cf916a0745817e1",
+      "type": "file",
+      "name": "FeatureDescriptor.java",
+      "filePath": "src/java/beans/FeatureDescriptor.java",
+      "language": "java",
+      "totalLines": 155,
+      "nonEmptyLines": 129,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 15,
+        "functionCount": 14,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "a40cf20e7dfb94a4",
+      "type": "file",
+      "name": "IndexedPropertyDescriptor.j",
+      "filePath": "src/java/beans/IndexedPropertyDescriptor.j",
+      "language": "j",
+      "totalLines": 295,
+      "nonEmptyLines": 271,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "id": "12cab011311eca4d",
+      "type": "file",
+      "name": "IntrospectionException.java",
+      "filePath": "src/java/beans/IntrospectionException.java",
+      "language": "java",
+      "totalLines": 46,
+      "nonEmptyLines": 37,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "e927b37bce73c46c",
+      "type": "class",
+      "name": "Provider",
+      "filePath": "src/com/sun/net/ssl/internal/ssl/Provider.java",
+      "startLine": 2,
+      "endLine": 4,
+      "methods": [
+        "Provider"
+      ],
+      "properties": []
+    },
+    {
+      "id": "11f3ef208f1e281d",
+      "type": "class",
+      "name": "KeyManager",
+      "filePath": "src/com/sun/net/ssl/KeyManager.java",
+      "startLine": 2,
+      "endLine": 3,
+      "methods": [],
+      "properties": []
+    },
+    {
+      "id": "d82e191ba05bec71",
+      "type": "class",
+      "name": "KeyManagerFactory",
+      "filePath": "src/com/sun/net/ssl/KeyManagerFactory.java",
+      "startLine": 2,
+      "endLine": 6,
+      "methods": [
+        "getInstance",
+        "init",
+        "getKeyManagers"
+      ],
+      "properties": []
+    },
+    {
+      "id": "63d87be35e0d62b3",
+      "type": "class",
+      "name": "SSLContext",
+      "filePath": "src/com/sun/net/ssl/SSLContext.java",
+      "startLine": 2,
+      "endLine": 6,
+      "methods": [
+        "getInstance",
+        "init",
+        "getServerSocketFactory"
+      ],
+      "properties": []
+    },
+    {
+      "id": "4d7ca1d453acdafd",
+      "type": "class",
+      "name": "TrustManager",
+      "filePath": "src/com/sun/net/ssl/TrustManager.java",
+      "startLine": 2,
+      "endLine": 3,
+      "methods": [],
+      "properties": []
+    },
+    {
+      "id": "1055e90db69d3098",
+      "type": "class",
+      "name": "TrustManagerFactory",
+      "filePath": "src/com/sun/net/ssl/TrustManagerFactory.java",
+      "startLine": 2,
+      "endLine": 6,
+      "methods": [
+        "getInstance",
+        "init",
+        "getTrustManagers"
+      ],
+      "properties": []
+    },
+    {
+      "id": "0977530df8c60bb9",
+      "type": "class",
+      "name": "MPN",
+      "filePath": "src/gnu/java/math/MPN.java",
+      "startLine": 50,
+      "endLine": 768,
+      "methods": [
+        "add_1",
+        "add_n",
+        "sub_n",
+        "mul_1",
+        "mul",
+        "udiv_qrnnd",
+        "divmod_1",
+        "submul_1",
+        "divide",
+        "chars_per_word",
+        "count_leading_zeros",
+        "set_str",
+        "cmp",
+        "cmp",
+        "rshift",
+        "rshift0",
+        "rshift_long",
+        "lshift",
+        "findLowestBit",
+        "findLowestBit",
+        "gcd",
+        "intLength",
+        "intLength"
+      ],
+      "properties": []
+    },
+    {
+      "id": "726f393de8aa8797",
+      "type": "class",
+      "name": "BeanDescriptor",
+      "filePath": "src/java/beans/BeanDescriptor.java",
+      "startLine": 39,
+      "endLine": 70,
+      "methods": [
+        "BeanDescriptor",
+        "BeanDescriptor",
+        "getBeanClass",
+        "getCustomizerClass"
+      ],
+      "properties": [
+        "beanClass",
+        "customizerClass"
+      ]
+    },
+    {
+      "id": "2a36e88c22e1f42a",
+      "type": "class",
+      "name": "FeatureDescriptor",
+      "filePath": "src/java/beans/FeatureDescriptor.java",
+      "startLine": 51,
+      "endLine": 155,
+      "methods": [
+        "FeatureDescriptor",
+        "getName",
+        "setName",
+        "getDisplayName",
+        "setDisplayName",
+        "getShortDescription",
+        "setShortDescription",
+        "isExpert",
+        "setExpert",
+        "isHidden",
+        "setHidden",
+        "getValue",
+        "setValue",
+        "attributeNames"
+      ],
+      "properties": [
+        "name",
+        "displayName",
+        "shortDescription",
+        "expert",
+        "hidden",
+        "valueHash"
+      ]
+    },
+    {
+      "id": "c2103846d5320c17",
+      "type": "class",
+      "name": "IntrospectionException",
+      "filePath": "src/java/beans/IntrospectionException.java",
+      "startLine": 39,
+      "endLine": 46,
+      "methods": [
+        "IntrospectionException"
+      ],
+      "properties": []
+    }
+  ],
+  "edges": []
+}

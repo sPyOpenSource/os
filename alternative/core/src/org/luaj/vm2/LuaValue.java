@@ -1479,7 +1479,7 @@ public class LuaValue extends Varargs {
 	 * @see #method(String,LuaValue,LuaValue)
 	 * @see #method(LuaValue,LuaValue,LuaValue)
 	 */
-	public LuaValue call(LuaValue arg1, LuaValue arg2) { return callmt().call(this,arg1,arg2); }
+	public LuaValue call(LuaValue arg1, LuaValue arg2) { return callmt().call(this, arg1, arg2); }
 
 	/** Call {@code this} with 3 arguments, including metatag processing,
 	 * and return only the first return value.

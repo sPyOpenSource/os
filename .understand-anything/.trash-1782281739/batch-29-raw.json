@@ -1,0 +1,184 @@
+{
+  "projectRoot": "/Users/xuyi/Source/OS/armOS/lib/jcore/OS",
+  "batchIndex": 29,
+  "batchFiles": [
+    {
+      "path": "src/jx/classfile/datatypes/BCIntegerDatatype.java",
+      "language": "java",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BCLong.java",
+      "language": "java",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BCNumericDatatype.java",
+      "language": "java",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BCReference.java",
+      "language": "java",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/BCShort.java",
+      "language": "java",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/DataType.java",
+      "language": "java",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/NoClassTypeException.java",
+      "language": "java",
+      "sizeLines": 2,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/datatypes/TestTypeDesc.java",
+      "language": "java",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/LineAttributeData.java",
+      "language": "java",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/MethodSource.java",
+      "language": "java",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/NativeMethodException.java",
+      "language": "java",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/NoMagicNumberException.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classfile/VerifyResult.java",
+      "language": "java",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/classstore/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/collections/Collection.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/collections/Comparator.java",
+      "language": "java",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/collections/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/collections/SortedList.java",
+      "language": "java",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/avltree/AVLBaum.java",
+      "language": "java",
+      "sizeLines": 328,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/avltree/Baum.java",
+      "language": "java",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/avltree/Comparable.java",
+      "language": "java",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/avltree/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/db/avltree/SuchBaum.java",
+      "language": "java",
+      "sizeLines": 72,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/jx/classfile/datatypes/BCIntegerDatatype.java": [],
+    "src/jx/classfile/datatypes/BCLong.java": [],
+    "src/jx/classfile/datatypes/BCNumericDatatype.java": [],
+    "src/jx/classfile/datatypes/BCReference.java": [],
+    "src/jx/classfile/datatypes/BCShort.java": [],
+    "src/jx/classfile/datatypes/DataType.java": [],
+    "src/jx/classfile/datatypes/NoClassTypeException.java": [],
+    "src/jx/classfile/datatypes/package.bluej": [],
+    "src/jx/classfile/datatypes/TestTypeDesc.java": [],
+    "src/jx/classfile/LineAttributeData.java": [],
+    "src/jx/classfile/MethodSource.java": [],
+    "src/jx/classfile/NativeMethodException.java": [],
+    "src/jx/classfile/NoMagicNumberException.java": [],
+    "src/jx/classfile/package.bluej": [],
+    "src/jx/classfile/VerifyResult.java": [],
+    "src/jx/classstore/package.bluej": [],
+    "src/jx/collections/Collection.java": [],
+    "src/jx/collections/Comparator.java": [],
+    "src/jx/collections/package.bluej": [],
+    "src/jx/collections/SortedList.java": [],
+    "src/jx/db/avltree/AVLBaum.java": [],
+    "src/jx/db/avltree/Baum.java": [],
+    "src/jx/db/avltree/Comparable.java": [],
+    "src/jx/db/avltree/package.bluej": [],
+    "src/jx/db/avltree/SuchBaum.java": []
+  },
+  "neighborMap": {}
+}

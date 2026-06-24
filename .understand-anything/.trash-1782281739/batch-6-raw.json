@@ -1,0 +1,373 @@
+{
+  "batchIndex": 6,
+  "files": [
+    {
+      "path": "src/jx/buffer/separator/MemoryConsumer.java",
+      "language": "java",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/UDPDataImpl.java",
+      "language": "java",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/protocol/udp/UDP.java",
+      "language": "java",
+      "sizeLines": 205,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rexec/Decoder.java",
+      "language": "java",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCBuffer.java",
+      "language": "java",
+      "sizeLines": 154,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterAuth.java",
+      "language": "java",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterAuthNone.java",
+      "language": "java",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterAuthShort.java",
+      "language": "java",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterAuthUnix.java",
+      "language": "java",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterRPCCall.java",
+      "language": "java",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterRPCHeader.java",
+      "language": "java",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterRPCMessage.java",
+      "language": "java",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterRPCMsgAccepted.java",
+      "language": "java",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterRPCMsgDenied.java",
+      "language": "java",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterRPCMsgProgMismatch.java",
+      "language": "java",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterRPCMsgProgUnavailable.java",
+      "language": "java",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterRPCMsgRejectAuth.java",
+      "language": "java",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterRPCMsgRejectMismatch.java",
+      "language": "java",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterRPCMsgSuccess.java",
+      "language": "java",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCFormatterRPCReply.java",
+      "language": "java",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/bind2/Service.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/xdr/Format.java",
+      "language": "java",
+      "sizeLines": 290,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/zero/debug/Dump.java",
+      "language": "java",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/jx/buffer/separator/MemoryConsumer.java": [],
+    "src/jx/net/UDPDataImpl.java": [],
+    "src/jx/net/protocol/udp/UDP.java": [
+      "src/jx/buffer/separator/MemoryConsumer.java",
+      "src/jx/net/UDPDataImpl.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rexec/Decoder.java": [
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCBuffer.java": [
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCFormatterAuth.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCFormatterAuthNone.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCFormatterAuthShort.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCFormatterAuthUnix.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/Debug.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCFormatterRPCCall.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/Debug.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCFormatterRPCHeader.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCFormatterRPCMessage.java": [
+      "src/jx/xdr/Format.java"
+    ],
+    "src/jx/rpc/RPCFormatterRPCMsgAccepted.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCFormatterRPCMsgDenied.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCFormatterRPCMsgProgMismatch.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCFormatterRPCMsgProgUnavailable.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCFormatterRPCMsgRejectAuth.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCFormatterRPCMsgRejectMismatch.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCFormatterRPCMsgSuccess.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpc/RPCFormatterRPCReply.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/rpcsvc/bind2/Service.java": [
+      "src/jx/xdr/Format.java",
+      "src/jx/zero/debug/Dump.java"
+    ],
+    "src/jx/xdr/Format.java": [
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/zero/debug/Dump.java": [
+      "src/java/io/PrintStream.java",
+      "src/jx/zero/Debug.java"
+    ]
+  },
+  "neighborMap": {
+    "src/jx/rpc/RPCFormatterAuthUnix.java": [
+      {
+        "path": "src/jx/zero/Debug.java",
+        "batchIndex": 3,
+        "symbols": [
+          "debug",
+          "in",
+          "out",
+          "err",
+          "throwError",
+          "throwError",
+          "message",
+          "verbose",
+          "check",
+          "Debug"
+        ]
+      }
+    ],
+    "src/jx/rpc/RPCFormatterRPCCall.java": [
+      {
+        "path": "src/jx/zero/Debug.java",
+        "batchIndex": 3,
+        "symbols": [
+          "debug",
+          "in",
+          "out",
+          "err",
+          "throwError",
+          "throwError",
+          "message",
+          "verbose",
+          "check",
+          "Debug"
+        ]
+      }
+    ],
+    "src/jx/xdr/Format.java": [
+      {
+        "path": "src/jx/zero/Debug.java",
+        "batchIndex": 3,
+        "symbols": [
+          "debug",
+          "in",
+          "out",
+          "err",
+          "throwError",
+          "throwError",
+          "message",
+          "verbose",
+          "check",
+          "Debug"
+        ]
+      }
+    ],
+    "src/jx/zero/debug/Dump.java": [
+      {
+        "path": "src/java/io/PrintStream.java",
+        "batchIndex": 12,
+        "symbols": [
+          "PrintStream",
+          "checkError",
+          "close",
+          "flush",
+          "write",
+          "write",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "println",
+          "println",
+          "println",
+          "println",
+          "println",
+          "println",
+          "println",
+          "println",
+          "PrintStream"
+        ]
+      },
+      {
+        "path": "src/jx/zero/Debug.java",
+        "batchIndex": 3,
+        "symbols": [
+          "debug",
+          "in",
+          "out",
+          "err",
+          "throwError",
+          "throwError",
+          "message",
+          "verbose",
+          "check",
+          "Debug"
+        ]
+      },
+      {
+        "path": "src/jx/net/protocol/ether/Ether.java",
+        "batchIndex": 3,
+        "symbols": [
+          "ETHERNET_MAXIMUM_FRAME_SIZE",
+          "ADDR_SIZE",
+          "ETHER_BCAST",
+          "PROTO_IP",
+          "PROTO_ARP",
+          "PROTO_RARP",
+          "Ether",
+          "getMTU",
+          "getMacAddress",
+          "registerConsumerEther",
+          "registerConsumer",
+          "getTransmitter1",
+          "getTransmitter",
+          "getNonBlockingReceiver",
+          "getBroadcastAddr",
+          "transmitARPBroadcast",
+          "transmitSpecial",
+          "Ether"
+        ]
+      },
+      {
+        "path": "src/jx/net/StartNetDevice.java",
+        "batchIndex": 9,
+        "symbols": [
+          "main",
+          "StartNetDevice"
+        ]
+      },
+      {
+        "path": "src/jx/zip/ZipFile.java",
+        "batchIndex": 11,
+        "symbols": [
+          "ZipFile",
+          "getNextEntry",
+          "ZipFile"
+        ]
+      }
+    ]
+  }
+}

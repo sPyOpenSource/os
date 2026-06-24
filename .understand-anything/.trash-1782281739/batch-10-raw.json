@@ -1,0 +1,1331 @@
+{
+  "batchIndex": 10,
+  "files": [
+    {
+      "path": "src/org/jnode/driver/bus/usb/hub/PortStatus.java",
+      "language": "java",
+      "sizeLines": 75,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/hub/USBHubConstants.java",
+      "language": "java",
+      "sizeLines": 120,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/hub/USBHubDeviceToDriverMapper.java",
+      "language": "java",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/hub/USBHubDriver.java",
+      "language": "java",
+      "sizeLines": 324,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/spi/AbstractUSBControlRequest.java",
+      "language": "java",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/spi/AbstractUSBDataRequest.java",
+      "language": "java",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/spi/AbstractUSBRequest.java",
+      "language": "java",
+      "sizeLines": 99,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/QueueHead.java",
+      "language": "java",
+      "sizeLines": 205,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/Schedule.java",
+      "language": "java",
+      "sizeLines": 223,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/TransferDescriptor.java",
+      "language": "java",
+      "sizeLines": 319,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/UHCIControlPipe.java",
+      "language": "java",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/UHCIControlRequest.java",
+      "language": "java",
+      "sizeLines": 106,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/UHCICore.java",
+      "language": "java",
+      "sizeLines": 273,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/UHCIDataPipe.java",
+      "language": "java",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/UHCIDataRequest.java",
+      "language": "java",
+      "sizeLines": 86,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/UHCIDriver.java",
+      "language": "java",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/UHCIPipe.java",
+      "language": "java",
+      "sizeLines": 430,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/UHCIPipeManager.java",
+      "language": "java",
+      "sizeLines": 161,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/UHCIRequest.java",
+      "language": "java",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/UHCIRootHub.java",
+      "language": "java",
+      "sizeLines": 214,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/org/jnode/util/NumberUtils.java",
+      "language": "java",
+      "sizeLines": 386,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/org/jnode/driver/bus/usb/hub/PortStatus.java": [
+      "src/org/jnode/driver/bus/usb/USBPacket.java",
+      "src/org/jnode/util/NumberUtils.java"
+    ],
+    "src/org/jnode/driver/bus/usb/hub/USBHubConstants.java": [
+      "src/org/jnode/driver/bus/usb/USBConstants.java"
+    ],
+    "src/org/jnode/driver/bus/usb/hub/USBHubDeviceToDriverMapper.java": [
+      "src/org/jnode/driver/bus/usb/USBConstants.java",
+      "src/org/jnode/driver/bus/usb/USBDevice.java"
+    ],
+    "src/org/jnode/driver/bus/usb/hub/USBHubDriver.java": [
+      "src/org/jnode/driver/bus/usb/SetupPacket.java",
+      "src/org/jnode/driver/bus/usb/USBBus.java",
+      "src/org/jnode/driver/bus/usb/USBControlPipe.java",
+      "src/org/jnode/driver/bus/usb/USBDevice.java",
+      "src/org/jnode/driver/bus/usb/USBException.java",
+      "src/org/jnode/driver/bus/usb/USBHubAPI.java",
+      "src/org/jnode/driver/bus/usb/USBHubMonitor.java",
+      "src/org/jnode/driver/bus/usb/USBRequest.java"
+    ],
+    "src/org/jnode/driver/bus/usb/spi/AbstractUSBControlRequest.java": [
+      "src/org/jnode/driver/bus/usb/SetupPacket.java",
+      "src/org/jnode/driver/bus/usb/USBPacket.java"
+    ],
+    "src/org/jnode/driver/bus/usb/spi/AbstractUSBDataRequest.java": [
+      "src/org/jnode/driver/bus/usb/USBPacket.java"
+    ],
+    "src/org/jnode/driver/bus/usb/spi/AbstractUSBRequest.java": [
+      "src/org/jnode/driver/bus/usb/USBRequest.java"
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/QueueHead.java": [
+      "src/org/jnode/util/NumberUtils.java"
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/Schedule.java": [
+      "src/org/jnode/driver/bus/usb/USBConstants.java"
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/TransferDescriptor.java": [
+      "src/org/jnode/util/NumberUtils.java"
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCIControlPipe.java": [
+      "src/org/jnode/driver/bus/usb/SetupPacket.java",
+      "src/org/jnode/driver/bus/usb/USBControlPipe.java",
+      "src/org/jnode/driver/bus/usb/USBDevice.java",
+      "src/org/jnode/driver/bus/usb/USBEndPoint.java",
+      "src/org/jnode/driver/bus/usb/USBPacket.java",
+      "src/org/jnode/driver/bus/usb/USBRequest.java"
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCIControlRequest.java": [
+      "src/org/jnode/driver/bus/usb/SetupPacket.java",
+      "src/org/jnode/driver/bus/usb/spi/AbstractUSBControlRequest.java",
+      "src/org/jnode/driver/bus/usb/USBConstants.java",
+      "src/org/jnode/driver/bus/usb/USBException.java",
+      "src/org/jnode/driver/bus/usb/USBPacket.java"
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCICore.java": [
+      "src/org/jnode/driver/bus/usb/USBBus.java",
+      "src/org/jnode/driver/bus/usb/USBControlPipe.java",
+      "src/org/jnode/driver/bus/usb/USBDevice.java",
+      "src/org/jnode/driver/bus/usb/USBEndPoint.java",
+      "src/org/jnode/driver/bus/usb/USBHostControllerAPI.java",
+      "src/org/jnode/driver/bus/usb/USBHubAPI.java",
+      "src/org/jnode/driver/bus/usb/USBPipe.java",
+      "src/org/jnode/util/NumberUtils.java"
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCIDataPipe.java": [
+      "src/org/jnode/driver/bus/usb/USBDataPipe.java",
+      "src/org/jnode/driver/bus/usb/USBDevice.java",
+      "src/org/jnode/driver/bus/usb/USBEndPoint.java",
+      "src/org/jnode/driver/bus/usb/USBPacket.java",
+      "src/org/jnode/driver/bus/usb/USBRequest.java"
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCIDataRequest.java": [
+      "src/org/jnode/driver/bus/usb/spi/AbstractUSBDataRequest.java",
+      "src/org/jnode/driver/bus/usb/USBConstants.java",
+      "src/org/jnode/driver/bus/usb/USBEndPoint.java",
+      "src/org/jnode/driver/bus/usb/USBPacket.java"
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCIDriver.java": [
+      "src/org/jnode/driver/bus/usb/AbstractHostControllerDriver.java",
+      "src/org/jnode/driver/bus/usb/USBHostControllerAPI.java"
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCIPipe.java": [
+      "src/AI/util/AIQueue.java",
+      "src/java/util/ArrayList.java",
+      "src/org/jnode/driver/bus/usb/spi/AbstractUSBRequest.java",
+      "src/org/jnode/driver/bus/usb/USBConstants.java",
+      "src/org/jnode/driver/bus/usb/USBDevice.java",
+      "src/org/jnode/driver/bus/usb/USBEndPoint.java",
+      "src/org/jnode/driver/bus/usb/USBException.java",
+      "src/org/jnode/driver/bus/usb/USBPipe.java",
+      "src/org/jnode/driver/bus/usb/USBPipeListener.java",
+      "src/org/jnode/driver/bus/usb/USBRequest.java",
+      "src/org/jnode/util/NumberUtils.java"
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCIPipeManager.java": [
+      "src/java/util/ArrayList.java",
+      "src/org/jnode/driver/bus/usb/EndPointDescriptor.java",
+      "src/org/jnode/driver/bus/usb/USBConstants.java",
+      "src/org/jnode/driver/bus/usb/USBControlPipe.java",
+      "src/org/jnode/driver/bus/usb/USBDevice.java",
+      "src/org/jnode/driver/bus/usb/USBEndPoint.java",
+      "src/org/jnode/driver/bus/usb/USBPipe.java"
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCIRequest.java": [
+      "src/org/jnode/driver/bus/usb/USBException.java",
+      "src/org/jnode/driver/bus/usb/USBRequest.java"
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCIRootHub.java": [
+      "src/org/jnode/driver/bus/usb/USBBus.java",
+      "src/org/jnode/driver/bus/usb/USBDevice.java",
+      "src/org/jnode/driver/bus/usb/USBHubAPI.java"
+    ],
+    "src/org/jnode/util/NumberUtils.java": []
+  },
+  "neighborMap": {
+    "src/org/jnode/driver/bus/usb/hub/PortStatus.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBPacket.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBPacket",
+          "USBPacket",
+          "USBPacket",
+          "getData",
+          "getOffset",
+          "getSize",
+          "toString",
+          "USBPacket"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/hub/USBHubConstants.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBConstants.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBConstants"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/hub/USBHubDeviceToDriverMapper.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBConstants.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBConstants"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBDevice.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBDevice",
+          "getUSBBus",
+          "getUSBDeviceId",
+          "finalize",
+          "getSpeed",
+          "isLowSpeed",
+          "isFullSpeed",
+          "isHighSpeed",
+          "getMaxPacketSize",
+          "getDescriptor",
+          "getConfiguration",
+          "getString",
+          "readDescriptor",
+          "getConfiguration",
+          "setConfiguration",
+          "getStatus",
+          "setFeature",
+          "clearFeature",
+          "getDefaultControlPipe",
+          "getSupportedConfigurations",
+          "open",
+          "close",
+          "getId",
+          "USBDevice"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/hub/USBHubDriver.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/SetupPacket.java",
+        "batchIndex": 7,
+        "symbols": [
+          "SetupPacket",
+          "getRequestType",
+          "getRequest",
+          "getValue",
+          "getIndex",
+          "getLength",
+          "isDirOut",
+          "isDirIn",
+          "createDeviceSetAddressPacket",
+          "createDeviceGetConfigurationPacket",
+          "createDeviceSetConfigurationPacket",
+          "createInterfaceGetInterfacePacket",
+          "createInterfaceSetInterfacePacket",
+          "createEndPointSyncFramePacket",
+          "createEndPointSetInterfacePacket",
+          "createGetDescriptorPacket",
+          "createGetStatusPacket",
+          "createClearFeaturePacket",
+          "createSetFeaturePacket",
+          "SetupPacket"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBBus.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBBus",
+          "getHcApi",
+          "getChild",
+          "getSupportedConfigurations",
+          "open",
+          "close",
+          "getId",
+          "USBBus"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBControlPipe.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBControlPipe"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBDevice.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBDevice",
+          "getUSBBus",
+          "getUSBDeviceId",
+          "finalize",
+          "getSpeed",
+          "isLowSpeed",
+          "isFullSpeed",
+          "isHighSpeed",
+          "getMaxPacketSize",
+          "getDescriptor",
+          "getConfiguration",
+          "getString",
+          "readDescriptor",
+          "getConfiguration",
+          "setConfiguration",
+          "getStatus",
+          "setFeature",
+          "clearFeature",
+          "getDefaultControlPipe",
+          "getSupportedConfigurations",
+          "open",
+          "close",
+          "getId",
+          "USBDevice"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBException.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBException",
+          "USBException",
+          "USBException",
+          "USBException",
+          "USBException"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBHubAPI.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBHubAPI"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBHubMonitor.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBHubMonitor",
+          "startMonitor",
+          "stopMonitor",
+          "USBHubMonitor"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBRequest.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBRequest"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/spi/AbstractUSBControlRequest.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/SetupPacket.java",
+        "batchIndex": 7,
+        "symbols": [
+          "SetupPacket",
+          "getRequestType",
+          "getRequest",
+          "getValue",
+          "getIndex",
+          "getLength",
+          "isDirOut",
+          "isDirIn",
+          "createDeviceSetAddressPacket",
+          "createDeviceGetConfigurationPacket",
+          "createDeviceSetConfigurationPacket",
+          "createInterfaceGetInterfacePacket",
+          "createInterfaceSetInterfacePacket",
+          "createEndPointSyncFramePacket",
+          "createEndPointSetInterfacePacket",
+          "createGetDescriptorPacket",
+          "createGetStatusPacket",
+          "createClearFeaturePacket",
+          "createSetFeaturePacket",
+          "SetupPacket"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBPacket.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBPacket",
+          "USBPacket",
+          "USBPacket",
+          "getData",
+          "getOffset",
+          "getSize",
+          "toString",
+          "USBPacket"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/spi/AbstractUSBDataRequest.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBPacket.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBPacket",
+          "USBPacket",
+          "USBPacket",
+          "getData",
+          "getOffset",
+          "getSize",
+          "toString",
+          "USBPacket"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/spi/AbstractUSBRequest.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBRequest.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBRequest"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/Schedule.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBConstants.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBConstants"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCIControlPipe.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/SetupPacket.java",
+        "batchIndex": 7,
+        "symbols": [
+          "SetupPacket",
+          "getRequestType",
+          "getRequest",
+          "getValue",
+          "getIndex",
+          "getLength",
+          "isDirOut",
+          "isDirIn",
+          "createDeviceSetAddressPacket",
+          "createDeviceGetConfigurationPacket",
+          "createDeviceSetConfigurationPacket",
+          "createInterfaceGetInterfacePacket",
+          "createInterfaceSetInterfacePacket",
+          "createEndPointSyncFramePacket",
+          "createEndPointSetInterfacePacket",
+          "createGetDescriptorPacket",
+          "createGetStatusPacket",
+          "createClearFeaturePacket",
+          "createSetFeaturePacket",
+          "SetupPacket"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBControlPipe.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBControlPipe"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBDevice.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBDevice",
+          "getUSBBus",
+          "getUSBDeviceId",
+          "finalize",
+          "getSpeed",
+          "isLowSpeed",
+          "isFullSpeed",
+          "isHighSpeed",
+          "getMaxPacketSize",
+          "getDescriptor",
+          "getConfiguration",
+          "getString",
+          "readDescriptor",
+          "getConfiguration",
+          "setConfiguration",
+          "getStatus",
+          "setFeature",
+          "clearFeature",
+          "getDefaultControlPipe",
+          "getSupportedConfigurations",
+          "open",
+          "close",
+          "getId",
+          "USBDevice"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBEndPoint.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBEndPoint",
+          "getDescriptor",
+          "getInterface",
+          "toString",
+          "getDataToggle",
+          "toggle",
+          "getStatus",
+          "setFeature",
+          "clearFeature",
+          "syncFrame",
+          "getPipe",
+          "USBEndPoint"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBPacket.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBPacket",
+          "USBPacket",
+          "USBPacket",
+          "getData",
+          "getOffset",
+          "getSize",
+          "toString",
+          "USBPacket"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBRequest.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBRequest"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCIControlRequest.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/SetupPacket.java",
+        "batchIndex": 7,
+        "symbols": [
+          "SetupPacket",
+          "getRequestType",
+          "getRequest",
+          "getValue",
+          "getIndex",
+          "getLength",
+          "isDirOut",
+          "isDirIn",
+          "createDeviceSetAddressPacket",
+          "createDeviceGetConfigurationPacket",
+          "createDeviceSetConfigurationPacket",
+          "createInterfaceGetInterfacePacket",
+          "createInterfaceSetInterfacePacket",
+          "createEndPointSyncFramePacket",
+          "createEndPointSetInterfacePacket",
+          "createGetDescriptorPacket",
+          "createGetStatusPacket",
+          "createClearFeaturePacket",
+          "createSetFeaturePacket",
+          "SetupPacket"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBConstants.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBConstants"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBException.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBException",
+          "USBException",
+          "USBException",
+          "USBException",
+          "USBException"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBPacket.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBPacket",
+          "USBPacket",
+          "USBPacket",
+          "getData",
+          "getOffset",
+          "getSize",
+          "toString",
+          "USBPacket"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCICore.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBBus.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBBus",
+          "getHcApi",
+          "getChild",
+          "getSupportedConfigurations",
+          "open",
+          "close",
+          "getId",
+          "USBBus"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBControlPipe.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBControlPipe"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBDevice.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBDevice",
+          "getUSBBus",
+          "getUSBDeviceId",
+          "finalize",
+          "getSpeed",
+          "isLowSpeed",
+          "isFullSpeed",
+          "isHighSpeed",
+          "getMaxPacketSize",
+          "getDescriptor",
+          "getConfiguration",
+          "getString",
+          "readDescriptor",
+          "getConfiguration",
+          "setConfiguration",
+          "getStatus",
+          "setFeature",
+          "clearFeature",
+          "getDefaultControlPipe",
+          "getSupportedConfigurations",
+          "open",
+          "close",
+          "getId",
+          "USBDevice"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBEndPoint.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBEndPoint",
+          "getDescriptor",
+          "getInterface",
+          "toString",
+          "getDataToggle",
+          "toggle",
+          "getStatus",
+          "setFeature",
+          "clearFeature",
+          "syncFrame",
+          "getPipe",
+          "USBEndPoint"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBHostControllerAPI.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBHostControllerAPI"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBHubAPI.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBHubAPI"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBPipe.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBPipe"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBHubMonitor.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBHubMonitor",
+          "startMonitor",
+          "stopMonitor",
+          "USBHubMonitor"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCIDataPipe.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBDataPipe.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBDataPipe"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBDevice.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBDevice",
+          "getUSBBus",
+          "getUSBDeviceId",
+          "finalize",
+          "getSpeed",
+          "isLowSpeed",
+          "isFullSpeed",
+          "isHighSpeed",
+          "getMaxPacketSize",
+          "getDescriptor",
+          "getConfiguration",
+          "getString",
+          "readDescriptor",
+          "getConfiguration",
+          "setConfiguration",
+          "getStatus",
+          "setFeature",
+          "clearFeature",
+          "getDefaultControlPipe",
+          "getSupportedConfigurations",
+          "open",
+          "close",
+          "getId",
+          "USBDevice"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBEndPoint.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBEndPoint",
+          "getDescriptor",
+          "getInterface",
+          "toString",
+          "getDataToggle",
+          "toggle",
+          "getStatus",
+          "setFeature",
+          "clearFeature",
+          "syncFrame",
+          "getPipe",
+          "USBEndPoint"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBPacket.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBPacket",
+          "USBPacket",
+          "USBPacket",
+          "getData",
+          "getOffset",
+          "getSize",
+          "toString",
+          "USBPacket"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBRequest.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBRequest"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCIDataRequest.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBConstants.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBConstants"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBEndPoint.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBEndPoint",
+          "getDescriptor",
+          "getInterface",
+          "toString",
+          "getDataToggle",
+          "toggle",
+          "getStatus",
+          "setFeature",
+          "clearFeature",
+          "syncFrame",
+          "getPipe",
+          "USBEndPoint"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBPacket.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBPacket",
+          "USBPacket",
+          "USBPacket",
+          "getData",
+          "getOffset",
+          "getSize",
+          "toString",
+          "USBPacket"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCIDriver.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/AbstractHostControllerDriver.java",
+        "batchIndex": 7,
+        "symbols": [
+          "AbstractHostControllerDriver"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBHostControllerAPI.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBHostControllerAPI"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCIPipe.java": [
+      {
+        "path": "src/AI/util/AIQueue.java",
+        "batchIndex": 7,
+        "symbols": [
+          "NO_WAIT",
+          "get",
+          "get",
+          "get",
+          "get",
+          "add",
+          "remove",
+          "contains",
+          "size",
+          "isEmpty",
+          "close",
+          "isClosed",
+          "offer",
+          "remove",
+          "poll",
+          "element",
+          "peek",
+          "iterator",
+          "toArray",
+          "toArray",
+          "containsAll",
+          "addAll",
+          "removeAll",
+          "retainAll",
+          "clear",
+          "AIQueue"
+        ]
+      },
+      {
+        "path": "src/java/util/ArrayList.java",
+        "batchIndex": 7,
+        "symbols": [
+          "ArrayList",
+          "ArrayList",
+          "ArrayList",
+          "trimToSize",
+          "ensureCapacity",
+          "size",
+          "isEmpty",
+          "contains",
+          "indexOf",
+          "lastIndexOf",
+          "clone",
+          "toArray",
+          "toArray",
+          "get",
+          "set",
+          "add",
+          "add",
+          "remove",
+          "remove",
+          "clear",
+          "addAll",
+          "addAll",
+          "removeAll",
+          "retainAll",
+          "iterator",
+          "listIterator",
+          "listIterator",
+          "subList",
+          "forEach",
+          "spliterator",
+          "ArrayList"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBConstants.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBConstants"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBDevice.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBDevice",
+          "getUSBBus",
+          "getUSBDeviceId",
+          "finalize",
+          "getSpeed",
+          "isLowSpeed",
+          "isFullSpeed",
+          "isHighSpeed",
+          "getMaxPacketSize",
+          "getDescriptor",
+          "getConfiguration",
+          "getString",
+          "readDescriptor",
+          "getConfiguration",
+          "setConfiguration",
+          "getStatus",
+          "setFeature",
+          "clearFeature",
+          "getDefaultControlPipe",
+          "getSupportedConfigurations",
+          "open",
+          "close",
+          "getId",
+          "USBDevice"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBEndPoint.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBEndPoint",
+          "getDescriptor",
+          "getInterface",
+          "toString",
+          "getDataToggle",
+          "toggle",
+          "getStatus",
+          "setFeature",
+          "clearFeature",
+          "syncFrame",
+          "getPipe",
+          "USBEndPoint"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBException.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBException",
+          "USBException",
+          "USBException",
+          "USBException",
+          "USBException"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBPipe.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBPipe"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBPipeListener.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBPipeListener"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBRequest.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBRequest"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCIPipeManager.java": [
+      {
+        "path": "src/java/util/ArrayList.java",
+        "batchIndex": 7,
+        "symbols": [
+          "ArrayList",
+          "ArrayList",
+          "ArrayList",
+          "trimToSize",
+          "ensureCapacity",
+          "size",
+          "isEmpty",
+          "contains",
+          "indexOf",
+          "lastIndexOf",
+          "clone",
+          "toArray",
+          "toArray",
+          "get",
+          "set",
+          "add",
+          "add",
+          "remove",
+          "remove",
+          "clear",
+          "addAll",
+          "addAll",
+          "removeAll",
+          "retainAll",
+          "iterator",
+          "listIterator",
+          "listIterator",
+          "subList",
+          "forEach",
+          "spliterator",
+          "ArrayList"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/EndPointDescriptor.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USB_ENDPOINT_XFER_NAMES",
+          "EndPointDescriptor",
+          "EndPointDescriptor",
+          "getEndPointAddress",
+          "getEndPointNumber",
+          "isDirIn",
+          "isDirOut",
+          "getAttributes",
+          "getTransferType",
+          "isControlTransfer",
+          "isIntTransfer",
+          "isBulkTransfer",
+          "isIsochronousTransfer",
+          "getMaxPacketSize",
+          "getInterval",
+          "toString",
+          "EndPointDescriptor"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBConstants.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBConstants"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBControlPipe.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBControlPipe"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBDevice.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBDevice",
+          "getUSBBus",
+          "getUSBDeviceId",
+          "finalize",
+          "getSpeed",
+          "isLowSpeed",
+          "isFullSpeed",
+          "isHighSpeed",
+          "getMaxPacketSize",
+          "getDescriptor",
+          "getConfiguration",
+          "getString",
+          "readDescriptor",
+          "getConfiguration",
+          "setConfiguration",
+          "getStatus",
+          "setFeature",
+          "clearFeature",
+          "getDefaultControlPipe",
+          "getSupportedConfigurations",
+          "open",
+          "close",
+          "getId",
+          "USBDevice"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBEndPoint.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBEndPoint",
+          "getDescriptor",
+          "getInterface",
+          "toString",
+          "getDataToggle",
+          "toggle",
+          "getStatus",
+          "setFeature",
+          "clearFeature",
+          "syncFrame",
+          "getPipe",
+          "USBEndPoint"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBPipe.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBPipe"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCIRequest.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBException.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBException",
+          "USBException",
+          "USBException",
+          "USBException",
+          "USBException"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBRequest.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBRequest"
+        ]
+      }
+    ],
+    "src/org/jnode/driver/bus/usb/uhci/UHCIRootHub.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBBus.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBBus",
+          "getHcApi",
+          "getChild",
+          "getSupportedConfigurations",
+          "open",
+          "close",
+          "getId",
+          "USBBus"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBDevice.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBDevice",
+          "getUSBBus",
+          "getUSBDeviceId",
+          "finalize",
+          "getSpeed",
+          "isLowSpeed",
+          "isFullSpeed",
+          "isHighSpeed",
+          "getMaxPacketSize",
+          "getDescriptor",
+          "getConfiguration",
+          "getString",
+          "readDescriptor",
+          "getConfiguration",
+          "setConfiguration",
+          "getStatus",
+          "setFeature",
+          "clearFeature",
+          "getDefaultControlPipe",
+          "getSupportedConfigurations",
+          "open",
+          "close",
+          "getId",
+          "USBDevice"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBHubAPI.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBHubAPI"
+        ]
+      }
+    ],
+    "src/org/jnode/util/NumberUtils.java": [
+      {
+        "path": "src/org/jnode/driver/bus/usb/DeviceDescriptor.java",
+        "batchIndex": 7,
+        "symbols": [
+          "DeviceDescriptor",
+          "getUSBVersion",
+          "getDeviceClass",
+          "getDeviceSubClass",
+          "getDeviceProtocol",
+          "getMaxPacketSize0",
+          "getVendorID",
+          "getProductID",
+          "getDeviceRelease",
+          "getManufacturerStringIndex",
+          "getProductStringIndex",
+          "getSerialNumberStringIndex",
+          "getNumConfigurations",
+          "getManufacturerName",
+          "getProductName",
+          "getSerialNumber",
+          "toString",
+          "DeviceDescriptor"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/hub/HubDescriptor.java",
+        "batchIndex": 7,
+        "symbols": [
+          "HubDescriptor",
+          "getNumPorts",
+          "getCharacteristics",
+          "getLogicalPowerSwitchingMode",
+          "getPowerOn2PowerGood",
+          "getHubControllerCurrent",
+          "isRemovableDevice",
+          "toString",
+          "HubDescriptor"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBHubMonitor.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBHubMonitor",
+          "startMonitor",
+          "stopMonitor",
+          "USBHubMonitor"
+        ]
+      },
+      {
+        "path": "src/org/jnode/driver/bus/usb/USBPacket.java",
+        "batchIndex": 7,
+        "symbols": [
+          "USBPacket",
+          "USBPacket",
+          "USBPacket",
+          "getData",
+          "getOffset",
+          "getSize",
+          "toString",
+          "USBPacket"
+        ]
+      }
+    ]
+  }
+}

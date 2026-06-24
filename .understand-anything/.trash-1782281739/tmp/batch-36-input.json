@@ -1,0 +1,182 @@
+{
+  "projectRoot": "/Users/xuyi/Source/OS/armOS/lib/jcore/OS",
+  "batchFiles": [
+    {
+      "path": "src/jx/rpc/RPCMsgProgUnavailable.java",
+      "language": "java",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCMsgRejectAuth.java",
+      "language": "java",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCMsgRejectMismatch.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCMsgSuccess.java",
+      "language": "java",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCOpaque.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCOptional.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCProc.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCReader.java",
+      "language": "java",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCReply.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCUnion.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/RPCWriter.java",
+      "language": "java",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpc/Waiter.java",
+      "language": "java",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/bind2/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/bind2/RPCB.java",
+      "language": "java",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/bind2/RPCBind.java",
+      "language": "java",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/mount1/ExportNode.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/mount1/Exports.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/mount1/GroupNode.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/mount1/Groups.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/mount1/MountBody.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/mount1/MountList.java",
+      "language": "java",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/mount1/MountProc_Impl.java",
+      "language": "java",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/mount1/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/AttrStat.java",
+      "language": "java",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/AttrStatErrAcces.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/jx/rpc/RPCMsgProgUnavailable.java": [],
+    "src/jx/rpc/RPCMsgRejectAuth.java": [],
+    "src/jx/rpc/RPCMsgRejectMismatch.java": [],
+    "src/jx/rpc/RPCMsgSuccess.java": [],
+    "src/jx/rpc/RPCOpaque.java": [],
+    "src/jx/rpc/RPCOptional.java": [],
+    "src/jx/rpc/RPCProc.java": [],
+    "src/jx/rpc/RPCReader.java": [],
+    "src/jx/rpc/RPCReply.java": [],
+    "src/jx/rpc/RPCUnion.java": [],
+    "src/jx/rpc/RPCWriter.java": [],
+    "src/jx/rpc/Waiter.java": [],
+    "src/jx/rpcsvc/bind2/package.bluej": [],
+    "src/jx/rpcsvc/bind2/RPCB.java": [],
+    "src/jx/rpcsvc/bind2/RPCBind.java": [],
+    "src/jx/rpcsvc/mount1/ExportNode.java": [],
+    "src/jx/rpcsvc/mount1/Exports.java": [],
+    "src/jx/rpcsvc/mount1/GroupNode.java": [],
+    "src/jx/rpcsvc/mount1/Groups.java": [],
+    "src/jx/rpcsvc/mount1/MountBody.java": [],
+    "src/jx/rpcsvc/mount1/MountList.java": [],
+    "src/jx/rpcsvc/mount1/MountProc_Impl.java": [],
+    "src/jx/rpcsvc/mount1/package.bluej": [],
+    "src/jx/rpcsvc/nfs2/AttrStat.java": [],
+    "src/jx/rpcsvc/nfs2/AttrStatErrAcces.java": []
+  }
+}

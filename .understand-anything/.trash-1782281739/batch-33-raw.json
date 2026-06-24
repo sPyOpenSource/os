@@ -1,0 +1,2912 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/jx/fs/FileExistsException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "FileExistsException",
+          "startLine": 7,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "FileExistsException",
+          "startLine": 11,
+          "endLine": 13,
+          "params": [
+            "msg"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "FileExistsException",
+          "startLine": 6,
+          "endLine": 14,
+          "methods": [
+            "FileExistsException",
+            "FileExistsException"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "FileExistsException",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "FileExistsException",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "FileExistsException",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/fs/FSException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "functions": [
+        {
+          "name": "FSException",
+          "startLine": 4,
+          "endLine": 6,
+          "params": []
+        },
+        {
+          "name": "FSException",
+          "startLine": 8,
+          "endLine": 10,
+          "params": [
+            "msg"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "FSException",
+          "startLine": 3,
+          "endLine": 11,
+          "methods": [
+            "FSException",
+            "FSException"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "FSException",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "FSException",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "FSException",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/fs/FSInterfaceDomain.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 77,
+      "nonEmptyLines": 60,
+      "functions": [
+        {
+          "name": "getTimeInMillis",
+          "startLine": 13,
+          "endLine": 14,
+          "params": []
+        },
+        {
+          "name": "getTicks",
+          "startLine": 15,
+          "endLine": 16,
+          "params": []
+        },
+        {
+          "name": "getTicks_low",
+          "startLine": 17,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "getTicks_high",
+          "startLine": 19,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "getCycles",
+          "startLine": 21,
+          "endLine": 22,
+          "params": [
+            "c"
+          ]
+        },
+        {
+          "name": "subtract",
+          "startLine": 23,
+          "endLine": 24,
+          "params": [
+            "result",
+            "a",
+            "b"
+          ]
+        },
+        {
+          "name": "toMicroSec",
+          "startLine": 25,
+          "endLine": 26,
+          "params": [
+            "c"
+          ]
+        },
+        {
+          "name": "toNanoSec",
+          "startLine": 27,
+          "endLine": 28,
+          "params": [
+            "c"
+          ]
+        },
+        {
+          "name": "toMilliSec",
+          "startLine": 29,
+          "endLine": 30,
+          "params": [
+            "c"
+          ]
+        },
+        {
+          "name": "init",
+          "startLine": 40,
+          "endLine": 53,
+          "params": [
+            "naming",
+            "args"
+          ]
+        },
+        {
+          "name": "FSInterfaceDomain",
+          "startLine": 55,
+          "endLine": 76,
+          "params": [
+            "naming",
+            "bio"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "MyDummyClock",
+          "startLine": 11,
+          "endLine": 31,
+          "methods": [
+            "getTimeInMillis",
+            "getTicks",
+            "getTicks_low",
+            "getTicks_high",
+            "getCycles",
+            "subtract",
+            "toMicroSec",
+            "toNanoSec",
+            "toMilliSec"
+          ],
+          "properties": [
+            "t"
+          ]
+        },
+        {
+          "name": "FSInterfaceDomain",
+          "startLine": 34,
+          "endLine": 77,
+          "methods": [
+            "init",
+            "FSInterfaceDomain"
+          ],
+          "properties": [
+            "naming",
+            "EXT2FS_BLOCKSIZE"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getTimeInMillis",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "getTicks",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "getTicks_low",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "getTicks_high",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "getCycles",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "subtract",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "toMicroSec",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "toNanoSec",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "toMilliSec",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "init",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "FSInterfaceDomain",
+          "line": 34,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "init",
+          "callee": "naming.lookup",
+          "lineNumber": 41
+        },
+        {
+          "caller": "init",
+          "callee": "naming.lookup",
+          "lineNumber": 42
+        },
+        {
+          "caller": "init",
+          "callee": "new DebugPrintStream",
+          "lineNumber": 43
+        },
+        {
+          "caller": "init",
+          "callee": "new DebugOutputStream",
+          "lineNumber": 43
+        },
+        {
+          "caller": "init",
+          "callee": "Debug.out.println",
+          "lineNumber": 47
+        },
+        {
+          "caller": "init",
+          "callee": "cpuManager.setThreadName",
+          "lineNumber": 48
+        },
+        {
+          "caller": "init",
+          "callee": "LookupHelper.waitUntilPortalAvailable",
+          "lineNumber": 50
+        },
+        {
+          "caller": "init",
+          "callee": "new FSInterfaceDomain",
+          "lineNumber": 52
+        },
+        {
+          "caller": "FSInterfaceDomain",
+          "callee": "Debug.out.println",
+          "lineNumber": 59
+        },
+        {
+          "caller": "FSInterfaceDomain",
+          "callee": "Debug.out.println",
+          "lineNumber": 60
+        },
+        {
+          "caller": "FSInterfaceDomain",
+          "callee": "bio.getCapacity",
+          "lineNumber": 60
+        },
+        {
+          "caller": "FSInterfaceDomain",
+          "callee": "new MyDummyClock",
+          "lineNumber": 63
+        },
+        {
+          "caller": "FSInterfaceDomain",
+          "callee": "Debug.out.println",
+          "lineNumber": 69
+        },
+        {
+          "caller": "FSInterfaceDomain",
+          "callee": "e.printStackTrace",
+          "lineNumber": 73
+        },
+        {
+          "caller": "FSInterfaceDomain",
+          "callee": "new Error",
+          "lineNumber": 74
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 11,
+        "functionCount": 11,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "src/jx/fs/FSObjectImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 72,
+      "nonEmptyLines": 59,
+      "functions": [
+        {
+          "name": "getLength",
+          "startLine": 12,
+          "endLine": 13,
+          "params": []
+        },
+        {
+          "name": "FSObjectImpl",
+          "startLine": 15,
+          "endLine": 23,
+          "params": [
+            "fs_impl",
+            "fs",
+            "parent",
+            "inode"
+          ]
+        },
+        {
+          "name": "close",
+          "startLine": 25,
+          "endLine": 30,
+          "params": []
+        },
+        {
+          "name": "sync",
+          "startLine": 32,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "getFileSystem",
+          "startLine": 34,
+          "endLine": 37,
+          "params": []
+        },
+        {
+          "name": "isFile",
+          "startLine": 39,
+          "endLine": 42,
+          "params": []
+        },
+        {
+          "name": "isDirectory",
+          "startLine": 44,
+          "endLine": 47,
+          "params": []
+        },
+        {
+          "name": "isExecuteable",
+          "startLine": 49,
+          "endLine": 51,
+          "params": []
+        },
+        {
+          "name": "getPermission",
+          "startLine": 53,
+          "endLine": 56,
+          "params": []
+        },
+        {
+          "name": "getAttribute",
+          "startLine": 58,
+          "endLine": 62,
+          "params": []
+        },
+        {
+          "name": "hashCode",
+          "startLine": 64,
+          "endLine": 71,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "FSObjectImpl",
+          "startLine": 3,
+          "endLine": 72,
+          "methods": [
+            "getLength",
+            "FSObjectImpl",
+            "close",
+            "sync",
+            "getFileSystem",
+            "isFile",
+            "isDirectory",
+            "isExecuteable",
+            "getPermission",
+            "getAttribute",
+            "hashCode"
+          ],
+          "properties": [
+            "fs_impl",
+            "fs",
+            "parent",
+            "inode",
+            "perm",
+            "attr"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getLength",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "FSObjectImpl",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "close",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "sync",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "getFileSystem",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "isFile",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "isDirectory",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "isExecuteable",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "getPermission",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "getAttribute",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "hashCode",
+          "line": 64,
+          "isDefault": false
+        },
+        {
+          "name": "FSObjectImpl",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "FSObjectImpl",
+          "callee": "fs_impl.getDefaultPermission",
+          "lineNumber": 20
+        },
+        {
+          "caller": "FSObjectImpl",
+          "callee": "new EXT2Attribute",
+          "lineNumber": 21
+        },
+        {
+          "caller": "close",
+          "callee": "sync",
+          "lineNumber": 27
+        },
+        {
+          "caller": "close",
+          "callee": "inode.decUseCount",
+          "lineNumber": 28
+        },
+        {
+          "caller": "isFile",
+          "callee": "inode.isFile",
+          "lineNumber": 41
+        },
+        {
+          "caller": "isDirectory",
+          "callee": "inode.isDirectory",
+          "lineNumber": 46
+        },
+        {
+          "caller": "isExecuteable",
+          "callee": "inode.isExecutable",
+          "lineNumber": 50
+        },
+        {
+          "caller": "getAttribute",
+          "callee": "new EXT2Attribute",
+          "lineNumber": 60
+        },
+        {
+          "caller": "hashCode",
+          "callee": "inode.getIdentifier",
+          "lineNumber": 67
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 12,
+        "functionCount": 11,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/fs/InodeImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 353,
+      "nonEmptyLines": 296,
+      "functions": [
+        {
+          "name": "InodeImpl",
+          "startLine": 116,
+          "endLine": 121,
+          "params": [
+            "parent"
+          ]
+        },
+        {
+          "name": "InodeImpl",
+          "startLine": 122,
+          "endLine": 124,
+          "params": []
+        },
+        {
+          "name": "getParent",
+          "startLine": 126,
+          "endLine": 127,
+          "params": []
+        },
+        {
+          "name": "setParent",
+          "startLine": 129,
+          "endLine": 132,
+          "params": [
+            "parent"
+          ]
+        },
+        {
+          "name": "isDirty",
+          "startLine": 134,
+          "endLine": 137,
+          "params": []
+        },
+        {
+          "name": "setDirty",
+          "startLine": 139,
+          "endLine": 140,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "incUseCount",
+          "startLine": 142,
+          "endLine": 143,
+          "params": []
+        },
+        {
+          "name": "decUseCount",
+          "startLine": 145,
+          "endLine": 146,
+          "params": []
+        },
+        {
+          "name": "finalize",
+          "startLine": 148,
+          "endLine": 152,
+          "params": []
+        },
+        {
+          "name": "i_nlinks",
+          "startLine": 154,
+          "endLine": 155,
+          "params": []
+        },
+        {
+          "name": "deleteNode",
+          "startLine": 157,
+          "endLine": 158,
+          "params": []
+        },
+        {
+          "name": "writeNode",
+          "startLine": 160,
+          "endLine": 161,
+          "params": []
+        },
+        {
+          "name": "putNode",
+          "startLine": 163,
+          "endLine": 164,
+          "params": []
+        },
+        {
+          "name": "overlay",
+          "startLine": 166,
+          "endLine": 181,
+          "params": [
+            "newChild",
+            "name"
+          ]
+        },
+        {
+          "name": "removeOverlay",
+          "startLine": 183,
+          "endLine": 204,
+          "params": [
+            "child"
+          ]
+        },
+        {
+          "name": "removeAllOverlays",
+          "startLine": 206,
+          "endLine": 220,
+          "params": []
+        },
+        {
+          "name": "isOverlayed",
+          "startLine": 222,
+          "endLine": 231,
+          "params": [
+            "name"
+          ]
+        },
+        {
+          "name": "lookup",
+          "startLine": 233,
+          "endLine": 258,
+          "params": [
+            "name"
+          ]
+        },
+        {
+          "name": "isSymlink",
+          "startLine": 260,
+          "endLine": 261,
+          "params": []
+        },
+        {
+          "name": "isFile",
+          "startLine": 263,
+          "endLine": 264,
+          "params": []
+        },
+        {
+          "name": "isDirectory",
+          "startLine": 266,
+          "endLine": 267,
+          "params": []
+        },
+        {
+          "name": "isWritable",
+          "startLine": 269,
+          "endLine": 270,
+          "params": []
+        },
+        {
+          "name": "isReadable",
+          "startLine": 272,
+          "endLine": 273,
+          "params": []
+        },
+        {
+          "name": "isExecutable",
+          "startLine": 275,
+          "endLine": 276,
+          "params": []
+        },
+        {
+          "name": "lastModified",
+          "startLine": 278,
+          "endLine": 279,
+          "params": []
+        },
+        {
+          "name": "lastAccessed",
+          "startLine": 280,
+          "endLine": 281,
+          "params": []
+        },
+        {
+          "name": "lastChanged",
+          "startLine": 282,
+          "endLine": 283,
+          "params": []
+        },
+        {
+          "name": "setLastModified",
+          "startLine": 285,
+          "endLine": 286,
+          "params": [
+            "time"
+          ]
+        },
+        {
+          "name": "setLastAccessed",
+          "startLine": 287,
+          "endLine": 288,
+          "params": [
+            "time"
+          ]
+        },
+        {
+          "name": "readdirNames",
+          "startLine": 290,
+          "endLine": 291,
+          "params": []
+        },
+        {
+          "name": "getNode",
+          "startLine": 293,
+          "endLine": 294,
+          "params": [
+            "name"
+          ]
+        },
+        {
+          "name": "mkdir",
+          "startLine": 296,
+          "endLine": 297,
+          "params": [
+            "name",
+            "mode"
+          ]
+        },
+        {
+          "name": "rmdir",
+          "startLine": 299,
+          "endLine": 300,
+          "params": [
+            "name"
+          ]
+        },
+        {
+          "name": "create",
+          "startLine": 302,
+          "endLine": 303,
+          "params": [
+            "name",
+            "mode"
+          ]
+        },
+        {
+          "name": "unlink",
+          "startLine": 305,
+          "endLine": 306,
+          "params": [
+            "name"
+          ]
+        },
+        {
+          "name": "symlink",
+          "startLine": 308,
+          "endLine": 309,
+          "params": [
+            "symname",
+            "newname"
+          ]
+        },
+        {
+          "name": "getSymlink",
+          "startLine": 311,
+          "endLine": 312,
+          "params": []
+        },
+        {
+          "name": "rename",
+          "startLine": 314,
+          "endLine": 315,
+          "params": [
+            "oldname",
+            "new_dir",
+            "newname"
+          ]
+        },
+        {
+          "name": "read",
+          "startLine": 317,
+          "endLine": 318,
+          "params": [
+            "m",
+            "off",
+            "len"
+          ]
+        },
+        {
+          "name": "read",
+          "startLine": 319,
+          "endLine": 320,
+          "params": [
+            "pos",
+            "m",
+            "bufoff",
+            "len"
+          ]
+        },
+        {
+          "name": "readWeak",
+          "startLine": 321,
+          "endLine": 323,
+          "params": [
+            "off",
+            "len"
+          ]
+        },
+        {
+          "name": "write",
+          "startLine": 325,
+          "endLine": 326,
+          "params": [
+            "m",
+            "off",
+            "len"
+          ]
+        },
+        {
+          "name": "write",
+          "startLine": 327,
+          "endLine": 328,
+          "params": [
+            "pos",
+            "m",
+            "bufoff",
+            "len"
+          ]
+        },
+        {
+          "name": "available",
+          "startLine": 330,
+          "endLine": 331,
+          "params": []
+        },
+        {
+          "name": "getLength",
+          "startLine": 333,
+          "endLine": 334,
+          "params": []
+        },
+        {
+          "name": "getIdentifier",
+          "startLine": 336,
+          "endLine": 340,
+          "params": []
+        },
+        {
+          "name": "getVersion",
+          "startLine": 341,
+          "endLine": 342,
+          "params": []
+        },
+        {
+          "name": "getFileSystem",
+          "startLine": 344,
+          "endLine": 348,
+          "params": []
+        },
+        {
+          "name": "getStatFS",
+          "startLine": 350,
+          "endLine": 351,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "InodeImpl",
+          "startLine": 10,
+          "endLine": 353,
+          "methods": [
+            "InodeImpl",
+            "InodeImpl",
+            "getParent",
+            "setParent",
+            "isDirty",
+            "setDirty",
+            "incUseCount",
+            "decUseCount",
+            "finalize",
+            "i_nlinks",
+            "deleteNode",
+            "writeNode",
+            "putNode",
+            "overlay",
+            "removeOverlay",
+            "removeAllOverlays",
+            "isOverlayed",
+            "lookup",
+            "isSymlink",
+            "isFile",
+            "isDirectory",
+            "isWritable",
+            "isReadable",
+            "isExecutable",
+            "lastModified",
+            "lastAccessed",
+            "lastChanged",
+            "setLastModified",
+            "setLastAccessed",
+            "readdirNames",
+            "getNode",
+            "mkdir",
+            "rmdir",
+            "create",
+            "unlink",
+            "symlink",
+            "getSymlink",
+            "rename",
+            "read",
+            "read",
+            "readWeak",
+            "write",
+            "write",
+            "available",
+            "getLength",
+            "getIdentifier",
+            "getVersion",
+            "getFileSystem",
+            "getStatFS"
+          ],
+          "properties": [
+            "parent",
+            "overlayNames",
+            "overlayInodes",
+            "i_dirty",
+            "i_released",
+            "S_IFMT",
+            "S_IFLNK",
+            "S_IFREG",
+            "S_IFDIR",
+            "S_ISUID",
+            "S_ISGID",
+            "S_ISVTX",
+            "S_IRWXU",
+            "S_IRUSR",
+            "S_IWUSR",
+            "S_IXUSR",
+            "S_IRWXG",
+            "S_IRGRP",
+            "S_IWGRP",
+            "S_IXGRP",
+            "S_IRWXO",
+            "S_IROTH",
+            "S_IWOTH",
+            "S_IXOTH",
+            "S_IRWXUGO",
+            "S_IALLUGO",
+            "S_IRUGO",
+            "S_IWUGO",
+            "S_IXUGO"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "S_IFMT",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "S_IFLNK",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "S_IFREG",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "S_IFDIR",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "S_ISUID",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "S_ISGID",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "S_ISVTX",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "S_IRWXU",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "S_IRUSR",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "S_IWUSR",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "S_IXUSR",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "S_IRWXG",
+          "line": 61,
+          "isDefault": false
+        },
+        {
+          "name": "S_IRGRP",
+          "line": 66,
+          "isDefault": false
+        },
+        {
+          "name": "S_IWGRP",
+          "line": 71,
+          "isDefault": false
+        },
+        {
+          "name": "S_IXGRP",
+          "line": 76,
+          "isDefault": false
+        },
+        {
+          "name": "S_IRWXO",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "S_IROTH",
+          "line": 84,
+          "isDefault": false
+        },
+        {
+          "name": "S_IWOTH",
+          "line": 89,
+          "isDefault": false
+        },
+        {
+          "name": "S_IXOTH",
+          "line": 94,
+          "isDefault": false
+        },
+        {
+          "name": "S_IRWXUGO",
+          "line": 97,
+          "isDefault": false
+        },
+        {
+          "name": "S_IALLUGO",
+          "line": 99,
+          "isDefault": false
+        },
+        {
+          "name": "S_IRUGO",
+          "line": 104,
+          "isDefault": false
+        },
+        {
+          "name": "S_IWUGO",
+          "line": 109,
+          "isDefault": false
+        },
+        {
+          "name": "S_IXUGO",
+          "line": 114,
+          "isDefault": false
+        },
+        {
+          "name": "getParent",
+          "line": 126,
+          "isDefault": false
+        },
+        {
+          "name": "setParent",
+          "line": 129,
+          "isDefault": false
+        },
+        {
+          "name": "isDirty",
+          "line": 134,
+          "isDefault": false
+        },
+        {
+          "name": "setDirty",
+          "line": 139,
+          "isDefault": false
+        },
+        {
+          "name": "incUseCount",
+          "line": 142,
+          "isDefault": false
+        },
+        {
+          "name": "decUseCount",
+          "line": 145,
+          "isDefault": false
+        },
+        {
+          "name": "finalize",
+          "line": 148,
+          "isDefault": false
+        },
+        {
+          "name": "i_nlinks",
+          "line": 154,
+          "isDefault": false
+        },
+        {
+          "name": "deleteNode",
+          "line": 157,
+          "isDefault": false
+        },
+        {
+          "name": "writeNode",
+          "line": 160,
+          "isDefault": false
+        },
+        {
+          "name": "putNode",
+          "line": 163,
+          "isDefault": false
+        },
+        {
+          "name": "overlay",
+          "line": 166,
+          "isDefault": false
+        },
+        {
+          "name": "removeOverlay",
+          "line": 183,
+          "isDefault": false
+        },
+        {
+          "name": "removeAllOverlays",
+          "line": 206,
+          "isDefault": false
+        },
+        {
+          "name": "isOverlayed",
+          "line": 222,
+          "isDefault": false
+        },
+        {
+          "name": "lookup",
+          "line": 233,
+          "isDefault": false
+        },
+        {
+          "name": "isSymlink",
+          "line": 260,
+          "isDefault": false
+        },
+        {
+          "name": "isFile",
+          "line": 263,
+          "isDefault": false
+        },
+        {
+          "name": "isDirectory",
+          "line": 266,
+          "isDefault": false
+        },
+        {
+          "name": "isWritable",
+          "line": 269,
+          "isDefault": false
+        },
+        {
+          "name": "isReadable",
+          "line": 272,
+          "isDefault": false
+        },
+        {
+          "name": "isExecutable",
+          "line": 275,
+          "isDefault": false
+        },
+        {
+          "name": "lastModified",
+          "line": 278,
+          "isDefault": false
+        },
+        {
+          "name": "lastAccessed",
+          "line": 280,
+          "isDefault": false
+        },
+        {
+          "name": "lastChanged",
+          "line": 282,
+          "isDefault": false
+        },
+        {
+          "name": "setLastModified",
+          "line": 285,
+          "isDefault": false
+        },
+        {
+          "name": "setLastAccessed",
+          "line": 287,
+          "isDefault": false
+        },
+        {
+          "name": "readdirNames",
+          "line": 290,
+          "isDefault": false
+        },
+        {
+          "name": "getNode",
+          "line": 293,
+          "isDefault": false
+        },
+        {
+          "name": "mkdir",
+          "line": 296,
+          "isDefault": false
+        },
+        {
+          "name": "rmdir",
+          "line": 299,
+          "isDefault": false
+        },
+        {
+          "name": "create",
+          "line": 302,
+          "isDefault": false
+        },
+        {
+          "name": "unlink",
+          "line": 305,
+          "isDefault": false
+        },
+        {
+          "name": "symlink",
+          "line": 308,
+          "isDefault": false
+        },
+        {
+          "name": "getSymlink",
+          "line": 311,
+          "isDefault": false
+        },
+        {
+          "name": "rename",
+          "line": 314,
+          "isDefault": false
+        },
+        {
+          "name": "read",
+          "line": 317,
+          "isDefault": false
+        },
+        {
+          "name": "read",
+          "line": 319,
+          "isDefault": false
+        },
+        {
+          "name": "readWeak",
+          "line": 321,
+          "isDefault": false
+        },
+        {
+          "name": "write",
+          "line": 325,
+          "isDefault": false
+        },
+        {
+          "name": "write",
+          "line": 327,
+          "isDefault": false
+        },
+        {
+          "name": "available",
+          "line": 330,
+          "isDefault": false
+        },
+        {
+          "name": "getLength",
+          "line": 333,
+          "isDefault": false
+        },
+        {
+          "name": "getIdentifier",
+          "line": 336,
+          "isDefault": false
+        },
+        {
+          "name": "getVersion",
+          "line": 341,
+          "isDefault": false
+        },
+        {
+          "name": "getFileSystem",
+          "line": 344,
+          "isDefault": false
+        },
+        {
+          "name": "getStatFS",
+          "line": 350,
+          "isDefault": false
+        },
+        {
+          "name": "InodeImpl",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "InodeImpl",
+          "callee": "new Vector",
+          "lineNumber": 118
+        },
+        {
+          "caller": "InodeImpl",
+          "callee": "new Vector",
+          "lineNumber": 119
+        },
+        {
+          "caller": "finalize",
+          "callee": "decUseCount",
+          "lineNumber": 151
+        },
+        {
+          "caller": "overlay",
+          "callee": "new NotExistException",
+          "lineNumber": 170
+        },
+        {
+          "caller": "overlay",
+          "callee": "isDirectory",
+          "lineNumber": 172
+        },
+        {
+          "caller": "overlay",
+          "callee": "new NoDirectoryInodeException",
+          "lineNumber": 173
+        },
+        {
+          "caller": "overlay",
+          "callee": "lookup",
+          "lineNumber": 176
+        },
+        {
+          "caller": "overlay",
+          "callee": "inodeToOverlay.decUseCount",
+          "lineNumber": 177
+        },
+        {
+          "caller": "overlay",
+          "callee": "overlayNames.addElement",
+          "lineNumber": 179
+        },
+        {
+          "caller": "overlay",
+          "callee": "overlayInodes.addElement",
+          "lineNumber": 180
+        },
+        {
+          "caller": "removeOverlay",
+          "callee": "isDirectory",
+          "lineNumber": 190
+        },
+        {
+          "caller": "removeOverlay",
+          "callee": "overlayInodes.indexOf",
+          "lineNumber": 195
+        },
+        {
+          "caller": "removeOverlay",
+          "callee": "overlayNames.removeElementAt",
+          "lineNumber": 201
+        },
+        {
+          "caller": "removeOverlay",
+          "callee": "overlayInodes.removeElementAt",
+          "lineNumber": 202
+        },
+        {
+          "caller": "removeOverlay",
+          "callee": "child.decUseCount",
+          "lineNumber": 203
+        },
+        {
+          "caller": "removeAllOverlays",
+          "callee": "overlayInodes.size",
+          "lineNumber": 214
+        },
+        {
+          "caller": "removeAllOverlays",
+          "callee": "overlayInodes.elementAt",
+          "lineNumber": 215
+        },
+        {
+          "caller": "removeAllOverlays",
+          "callee": "inode.decUseCount",
+          "lineNumber": 216
+        },
+        {
+          "caller": "removeAllOverlays",
+          "callee": "overlayNames.removeAllElements",
+          "lineNumber": 218
+        },
+        {
+          "caller": "removeAllOverlays",
+          "callee": "overlayInodes.removeAllElements",
+          "lineNumber": 219
+        },
+        {
+          "caller": "isOverlayed",
+          "callee": "overlayNames.contains",
+          "lineNumber": 230
+        },
+        {
+          "caller": "lookup",
+          "callee": "new NotExistException",
+          "lineNumber": 237
+        },
+        {
+          "caller": "lookup",
+          "callee": "isDirectory",
+          "lineNumber": 238
+        },
+        {
+          "caller": "lookup",
+          "callee": "new NoDirectoryInodeException",
+          "lineNumber": 239
+        },
+        {
+          "caller": "lookup",
+          "callee": "name.equals",
+          "lineNumber": 241
+        },
+        {
+          "caller": "lookup",
+          "callee": "incUseCount",
+          "lineNumber": 242
+        },
+        {
+          "caller": "lookup",
+          "callee": "name.equals",
+          "lineNumber": 245
+        },
+        {
+          "caller": "lookup",
+          "callee": "parent.incUseCount",
+          "lineNumber": 246
+        },
+        {
+          "caller": "lookup",
+          "callee": "overlayNames.size",
+          "lineNumber": 249
+        },
+        {
+          "caller": "lookup",
+          "callee": "name.equals",
+          "lineNumber": 250
+        },
+        {
+          "caller": "lookup",
+          "callee": "overlayNames.elementAt",
+          "lineNumber": 250
+        },
+        {
+          "caller": "lookup",
+          "callee": "overlayInodes.elementAt",
+          "lineNumber": 251
+        },
+        {
+          "caller": "lookup",
+          "callee": "inode.incUseCount",
+          "lineNumber": 252
+        },
+        {
+          "caller": "lookup",
+          "callee": "getNode",
+          "lineNumber": 257
+        },
+        {
+          "caller": "readWeak",
+          "callee": "new Error",
+          "lineNumber": 323
+        },
+        {
+          "caller": "getIdentifier",
+          "callee": "new Error",
+          "lineNumber": 339
+        },
+        {
+          "caller": "getFileSystem",
+          "callee": "new Error",
+          "lineNumber": 347
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 72,
+        "functionCount": 49,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/fs/InodeIOException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "InodeIOException",
+          "startLine": 7,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "InodeIOException",
+          "startLine": 11,
+          "endLine": 13,
+          "params": [
+            "msg"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "InodeIOException",
+          "startLine": 6,
+          "endLine": 14,
+          "methods": [
+            "InodeIOException",
+            "InodeIOException"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "InodeIOException",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "InodeIOException",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "InodeIOException",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/fs/InodeNotFoundException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "InodeNotFoundException",
+          "startLine": 7,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "InodeNotFoundException",
+          "startLine": 11,
+          "endLine": 13,
+          "params": [
+            "msg"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "InodeNotFoundException",
+          "startLine": 6,
+          "endLine": 14,
+          "methods": [
+            "InodeNotFoundException",
+            "InodeNotFoundException"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "InodeNotFoundException",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "InodeNotFoundException",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "InodeNotFoundException",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/fs/NoDirectoryInodeException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 13,
+      "functions": [
+        {
+          "name": "NoDirectoryInodeException",
+          "startLine": 8,
+          "endLine": 10,
+          "params": []
+        },
+        {
+          "name": "NoDirectoryInodeException",
+          "startLine": 12,
+          "endLine": 14,
+          "params": [
+            "msg"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "NoDirectoryInodeException",
+          "startLine": 7,
+          "endLine": 15,
+          "methods": [
+            "NoDirectoryInodeException",
+            "NoDirectoryInodeException"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "NoDirectoryInodeException",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "NoDirectoryInodeException",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "NoDirectoryInodeException",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/fs/NoFileInodeException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 13,
+      "functions": [
+        {
+          "name": "NoFileInodeException",
+          "startLine": 8,
+          "endLine": 10,
+          "params": []
+        },
+        {
+          "name": "NoFileInodeException",
+          "startLine": 12,
+          "endLine": 14,
+          "params": [
+            "msg"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "NoFileInodeException",
+          "startLine": 7,
+          "endLine": 15,
+          "methods": [
+            "NoFileInodeException",
+            "NoFileInodeException"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "NoFileInodeException",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "NoFileInodeException",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "NoFileInodeException",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/fs/NoSymlinkInodeException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 13,
+      "functions": [
+        {
+          "name": "NoSymlinkInodeException",
+          "startLine": 8,
+          "endLine": 10,
+          "params": []
+        },
+        {
+          "name": "NoSymlinkInodeException",
+          "startLine": 12,
+          "endLine": 14,
+          "params": [
+            "msg"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "NoSymlinkInodeException",
+          "startLine": 7,
+          "endLine": 15,
+          "methods": [
+            "NoSymlinkInodeException",
+            "NoSymlinkInodeException"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "NoSymlinkInodeException",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "NoSymlinkInodeException",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "NoSymlinkInodeException",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/fs/NotExistException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "NotExistException",
+          "startLine": 7,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "NotExistException",
+          "startLine": 11,
+          "endLine": 13,
+          "params": [
+            "msg"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "NotExistException",
+          "startLine": 6,
+          "endLine": 14,
+          "methods": [
+            "NotExistException",
+            "NotExistException"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "NotExistException",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "NotExistException",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "NotExistException",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/fs/NotSupportedException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "NotSupportedException",
+          "startLine": 7,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "NotSupportedException",
+          "startLine": 11,
+          "endLine": 13,
+          "params": [
+            "msg"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "NotSupportedException",
+          "startLine": 6,
+          "endLine": 14,
+          "methods": [
+            "NotSupportedException",
+            "NotSupportedException"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "NotSupportedException",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "NotSupportedException",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "NotSupportedException",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/fs/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/fs/PermissionException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "PermissionException",
+          "startLine": 7,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "PermissionException",
+          "startLine": 11,
+          "endLine": 13,
+          "params": [
+            "msg"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "PermissionException",
+          "startLine": 6,
+          "endLine": 14,
+          "methods": [
+            "PermissionException",
+            "PermissionException"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "PermissionException",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "PermissionException",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "PermissionException",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/fs/ReadOnlyDirectoryImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 69,
+      "nonEmptyLines": 59,
+      "functions": [
+        {
+          "name": "ReadOnlyDirectoryImpl",
+          "startLine": 5,
+          "endLine": 7,
+          "params": [
+            "impl",
+            "fs",
+            "parent",
+            "inode"
+          ]
+        },
+        {
+          "name": "getParent",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "list",
+          "startLine": 11,
+          "endLine": 15,
+          "params": []
+        },
+        {
+          "name": "close",
+          "startLine": 17,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "getLength",
+          "startLine": 23,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "openRO",
+          "startLine": 26,
+          "endLine": 41,
+          "params": [
+            "filename"
+          ]
+        },
+        {
+          "name": "openRW",
+          "startLine": 43,
+          "endLine": 58,
+          "params": [
+            "filename"
+          ]
+        },
+        {
+          "name": "finalize",
+          "startLine": 60,
+          "endLine": 63,
+          "params": []
+        },
+        {
+          "name": "isValid",
+          "startLine": 65,
+          "endLine": 68,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReadOnlyDirectoryImpl",
+          "startLine": 3,
+          "endLine": 69,
+          "methods": [
+            "ReadOnlyDirectoryImpl",
+            "getParent",
+            "list",
+            "close",
+            "getLength",
+            "openRO",
+            "openRW",
+            "finalize",
+            "isValid"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ReadOnlyDirectoryImpl",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "getParent",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "list",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "close",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "getLength",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "openRO",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "openRW",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "isValid",
+          "line": 65,
+          "isDefault": false
+        },
+        {
+          "name": "ReadOnlyDirectoryImpl",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "list",
+          "callee": "inode.readdirNames",
+          "lineNumber": 13
+        },
+        {
+          "caller": "list",
+          "callee": "inode.readdirNames",
+          "lineNumber": 14
+        },
+        {
+          "caller": "close",
+          "callee": "inode.decUseCount",
+          "lineNumber": 19
+        },
+        {
+          "caller": "openRO",
+          "callee": "inode.lookup",
+          "lineNumber": 29
+        },
+        {
+          "caller": "openRO",
+          "callee": "nInode.isDirectory",
+          "lineNumber": 30
+        },
+        {
+          "caller": "openRO",
+          "callee": "fs_impl.registerFSObj",
+          "lineNumber": 31
+        },
+        {
+          "caller": "openRO",
+          "callee": "new ReadOnlyDirectoryImpl",
+          "lineNumber": 31
+        },
+        {
+          "caller": "openRO",
+          "callee": "nInode.isFile",
+          "lineNumber": 32
+        },
+        {
+          "caller": "openRO",
+          "callee": "fs_impl.registerFSObj",
+          "lineNumber": 33
+        },
+        {
+          "caller": "openRO",
+          "callee": "new ReadOnlyRegularFileImpl",
+          "lineNumber": 33
+        },
+        {
+          "caller": "openRW",
+          "callee": "inode.lookup",
+          "lineNumber": 46
+        },
+        {
+          "caller": "openRW",
+          "callee": "nInode.isDirectory",
+          "lineNumber": 47
+        },
+        {
+          "caller": "openRW",
+          "callee": "new DirectoryImpl",
+          "lineNumber": 48
+        },
+        {
+          "caller": "openRW",
+          "callee": "nInode.isFile",
+          "lineNumber": 49
+        },
+        {
+          "caller": "openRW",
+          "callee": "new RegularFileImpl",
+          "lineNumber": 50
+        },
+        {
+          "caller": "finalize",
+          "callee": "inode.decUseCount",
+          "lineNumber": 62
+        },
+        {
+          "caller": "isValid",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 67
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/fs/RegularFileImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 80,
+      "nonEmptyLines": 66,
+      "functions": [
+        {
+          "name": "RegularFileImpl",
+          "startLine": 7,
+          "endLine": 9,
+          "params": [
+            "impl",
+            "fs",
+            "parent",
+            "inode"
+          ]
+        },
+        {
+          "name": "read",
+          "startLine": 21,
+          "endLine": 24,
+          "params": [
+            "pos",
+            "mem",
+            "off",
+            "len"
+          ]
+        },
+        {
+          "name": "write",
+          "startLine": 36,
+          "endLine": 39,
+          "params": [
+            "pos",
+            "mem",
+            "off",
+            "len"
+          ]
+        },
+        {
+          "name": "append",
+          "startLine": 50,
+          "endLine": 53,
+          "params": [
+            "mem",
+            "off",
+            "len"
+          ]
+        },
+        {
+          "name": "setLength",
+          "startLine": 61,
+          "endLine": 64,
+          "params": [
+            "newLength"
+          ]
+        },
+        {
+          "name": "getLength",
+          "startLine": 66,
+          "endLine": 69,
+          "params": []
+        },
+        {
+          "name": "finalize",
+          "startLine": 71,
+          "endLine": 74,
+          "params": []
+        },
+        {
+          "name": "isValid",
+          "startLine": 76,
+          "endLine": 79,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "RegularFileImpl",
+          "startLine": 5,
+          "endLine": 80,
+          "methods": [
+            "RegularFileImpl",
+            "read",
+            "write",
+            "append",
+            "setLength",
+            "getLength",
+            "finalize",
+            "isValid"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RegularFileImpl",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "read",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "write",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "append",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "setLength",
+          "line": 61,
+          "isDefault": false
+        },
+        {
+          "name": "getLength",
+          "line": 66,
+          "isDefault": false
+        },
+        {
+          "name": "isValid",
+          "line": 76,
+          "isDefault": false
+        },
+        {
+          "name": "RegularFileImpl",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "read",
+          "callee": "inode.read",
+          "lineNumber": 23
+        },
+        {
+          "caller": "write",
+          "callee": "inode.write",
+          "lineNumber": 38
+        },
+        {
+          "caller": "append",
+          "callee": "inode.write",
+          "lineNumber": 52
+        },
+        {
+          "caller": "append",
+          "callee": "getLength",
+          "lineNumber": 52
+        },
+        {
+          "caller": "setLength",
+          "callee": "new Error",
+          "lineNumber": 63
+        },
+        {
+          "caller": "getLength",
+          "callee": "inode.getLength",
+          "lineNumber": 68
+        },
+        {
+          "caller": "finalize",
+          "callee": "inode.decUseCount",
+          "lineNumber": 73
+        },
+        {
+          "caller": "isValid",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 78
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/fs/StatFSImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 39,
+      "nonEmptyLines": 32,
+      "functions": [
+        {
+          "name": "setSize",
+          "startLine": 10,
+          "endLine": 13,
+          "params": [
+            "size"
+          ]
+        },
+        {
+          "name": "getSize",
+          "startLine": 15,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "getBlockSize",
+          "startLine": 20,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "setBlockSize",
+          "startLine": 25,
+          "endLine": 28,
+          "params": [
+            "s_blocksize"
+          ]
+        },
+        {
+          "name": "setBlocks",
+          "startLine": 30,
+          "endLine": 33,
+          "params": [
+            "numberOfBlocks"
+          ]
+        },
+        {
+          "name": "setFreeBlocks",
+          "startLine": 35,
+          "endLine": 38,
+          "params": [
+            "numberOfFreeBlocks"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "StatFSImpl",
+          "startLine": 3,
+          "endLine": 39,
+          "methods": [
+            "setSize",
+            "getSize",
+            "getBlockSize",
+            "setBlockSize",
+            "setBlocks",
+            "setFreeBlocks"
+          ],
+          "properties": [
+            "tsize",
+            "bsize",
+            "blocks",
+            "bfree",
+            "bavail"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "tsize",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "bsize",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "blocks",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "bfree",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "bavail",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "setSize",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "getSize",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "getBlockSize",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "setBlockSize",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "setBlocks",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "setFreeBlocks",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "StatFSImpl",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "setSize",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 12
+        },
+        {
+          "caller": "getSize",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 17
+        },
+        {
+          "caller": "getBlockSize",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 22
+        },
+        {
+          "caller": "setBlockSize",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 27
+        },
+        {
+          "caller": "setBlocks",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 32
+        },
+        {
+          "caller": "setFreeBlocks",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 37
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 12,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/net/dispatch/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/net/dispatch/UpperLayer.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 8,
+      "functions": [
+        {
+          "name": "UpperLayer",
+          "startLine": 10,
+          "endLine": 10,
+          "params": [
+            "id",
+            "name"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "UpperLayer",
+          "startLine": 6,
+          "endLine": 11,
+          "methods": [
+            "UpperLayer"
+          ],
+          "properties": [
+            "id",
+            "name",
+            "consumer"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "UpperLayer",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/net/format/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/net/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/net/protocol/arp/ARPTimer.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 22,
+      "functions": [
+        {
+          "name": "ARPTimer",
+          "startLine": 13,
+          "endLine": 15,
+          "params": [
+            "timerManager"
+          ]
+        },
+        {
+          "name": "timer",
+          "startLine": 17,
+          "endLine": 24,
+          "params": [
+            "arg"
+          ]
+        },
+        {
+          "name": "equals",
+          "startLine": 26,
+          "endLine": 29,
+          "params": [
+            "obj"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ARPTimer",
+          "startLine": 9,
+          "endLine": 31,
+          "methods": [
+            "ARPTimer",
+            "timer",
+            "equals"
+          ],
+          "properties": [
+            "timerManager"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "timer",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "equals",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "timer",
+          "callee": "((ARPTimerArg)arg).handle",
+          "lineNumber": 19
+        },
+        {
+          "caller": "timer",
+          "callee": "arp.clearCache",
+          "lineNumber": 21
+        },
+        {
+          "caller": "timer",
+          "callee": "timerManager.addMillisTimer",
+          "lineNumber": 23
+        },
+        {
+          "caller": "timer",
+          "callee": "new ARPTimer",
+          "lineNumber": 23
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/net/protocol/arp/ARPTimerArg.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 20,
+      "nonEmptyLines": 14,
+      "functions": [
+        {
+          "name": "ARPTimerArg",
+          "startLine": 12,
+          "endLine": 14,
+          "params": [
+            "h"
+          ]
+        },
+        {
+          "name": "handle",
+          "startLine": 16,
+          "endLine": 18,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ARPTimerArg",
+          "startLine": 8,
+          "endLine": 20,
+          "methods": [
+            "ARPTimerArg",
+            "handle"
+          ],
+          "properties": [
+            "handle"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ARPTimerArg",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "handle",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/net/protocol/arp/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/net/protocol/bootp/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    }
+  ]
+}

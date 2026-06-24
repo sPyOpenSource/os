@@ -1,0 +1,748 @@
+{
+  "batchIndex": 23,
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "4f35e92e5ffb55ba",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/java/net/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "1a92f6f8372b7137",
+      "type": "file",
+      "name": "ServerSocket.java",
+      "filePath": "src/java/net/ServerSocket.java",
+      "language": "java",
+      "totalLines": 40,
+      "nonEmptyLines": 30,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "55404546961e478d",
+      "type": "class",
+      "name": "ServerSocket",
+      "filePath": "src/java/net/ServerSocket.java",
+      "startLine": 8,
+      "endLine": 40
+    },
+    {
+      "id": "ed3d61b43840a399",
+      "type": "file",
+      "name": "SocketTimeoutException.java",
+      "filePath": "src/java/net/SocketTimeoutException.java",
+      "language": "java",
+      "totalLines": 50,
+      "nonEmptyLines": 45,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "2b2a8f9e4ac694da",
+      "type": "class",
+      "name": "SocketTimeoutException",
+      "filePath": "src/java/net/SocketTimeoutException.java",
+      "startLine": 34,
+      "endLine": 50
+    },
+    {
+      "id": "e3df745ca3a55f8b",
+      "type": "file",
+      "name": "UnknownServiceException.java",
+      "filePath": "src/java/net/UnknownServiceException.java",
+      "language": "java",
+      "totalLines": 69,
+      "nonEmptyLines": 56,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "e432f38916f724a0",
+      "type": "class",
+      "name": "UnknownServiceException",
+      "filePath": "src/java/net/UnknownServiceException.java",
+      "startLine": 37,
+      "endLine": 68
+    },
+    {
+      "id": "38e6ea44331a8146",
+      "type": "file",
+      "name": "URLClassLoader.java",
+      "filePath": "src/java/net/URLClassLoader.java",
+      "language": "java",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "35edc658e3a904d7",
+      "type": "class",
+      "name": "URLClassLoader",
+      "filePath": "src/java/net/URLClassLoader.java",
+      "startLine": 3,
+      "endLine": 6
+    },
+    {
+      "id": "ff209245abd535b2",
+      "type": "file",
+      "name": "URLEncoder.java",
+      "filePath": "src/java/net/URLEncoder.java",
+      "language": "java",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "6688b5295f7f68fd",
+      "type": "class",
+      "name": "URLEncoder",
+      "filePath": "src/java/net/URLEncoder.java",
+      "startLine": 2,
+      "endLine": 4
+    },
+    {
+      "id": "1f3987e133d07bcd",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/java/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "6b628bb1c0bbd1d8",
+      "type": "file",
+      "name": "AccessControlContext.java",
+      "filePath": "src/java/security/AccessControlContext.java",
+      "language": "java",
+      "totalLines": 162,
+      "nonEmptyLines": 128,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "5c4e15ce31635b92",
+      "type": "class",
+      "name": "AccessControlContext",
+      "filePath": "src/java/security/AccessControlContext.java",
+      "startLine": 44,
+      "endLine": 162
+    },
+    {
+      "id": "7dc62ebb3129c251",
+      "type": "file",
+      "name": "AccessControlException.java",
+      "filePath": "src/java/security/AccessControlException.java",
+      "language": "java",
+      "totalLines": 108,
+      "nonEmptyLines": 86,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "7e99fdd38d7b7adf",
+      "type": "class",
+      "name": "AccessControlException",
+      "filePath": "src/java/security/AccessControlException.java",
+      "startLine": 38,
+      "endLine": 107
+    },
+    {
+      "id": "87719ccfa22e5944",
+      "type": "file",
+      "name": "AclNotFoundException.java",
+      "filePath": "src/java/security/acl/AclNotFoundException.java",
+      "language": "java",
+      "totalLines": 51,
+      "nonEmptyLines": 40,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "e96f090fe02c9654",
+      "type": "class",
+      "name": "AclNotFoundException",
+      "filePath": "src/java/security/acl/AclNotFoundException.java",
+      "startLine": 38,
+      "endLine": 50
+    },
+    {
+      "id": "01c498f54bfd14e3",
+      "type": "file",
+      "name": "LastOwnerException.java",
+      "filePath": "src/java/security/acl/LastOwnerException.java",
+      "language": "java",
+      "totalLines": 52,
+      "nonEmptyLines": 41,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "32bf162ac3192fe7",
+      "type": "class",
+      "name": "LastOwnerException",
+      "filePath": "src/java/security/acl/LastOwnerException.java",
+      "startLine": 38,
+      "endLine": 51
+    },
+    {
+      "id": "ce50bd1a89a377c3",
+      "type": "file",
+      "name": "NotOwnerException.java",
+      "filePath": "src/java/security/acl/NotOwnerException.java",
+      "language": "java",
+      "totalLines": 53,
+      "nonEmptyLines": 42,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "c939b35015c7f366",
+      "type": "class",
+      "name": "NotOwnerException",
+      "filePath": "src/java/security/acl/NotOwnerException.java",
+      "startLine": 39,
+      "endLine": 52
+    },
+    {
+      "id": "af94d85d4fba392b",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/java/security/acl/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "ce0085c3c461cbfd",
+      "type": "file",
+      "name": "AlgorithmParameterGenerator.java",
+      "filePath": "src/java/security/AlgorithmParameterGenerator.java",
+      "language": "java",
+      "totalLines": 202,
+      "nonEmptyLines": 166,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 11,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "0271d0562aaca754",
+      "type": "class",
+      "name": "AlgorithmParameterGenerator",
+      "filePath": "src/java/security/AlgorithmParameterGenerator.java",
+      "startLine": 40,
+      "endLine": 202
+    },
+    {
+      "id": "ed1cc7956453fa14",
+      "type": "file",
+      "name": "AllPermission.java",
+      "filePath": "src/java/security/AllPermission.java",
+      "language": "java",
+      "totalLines": 156,
+      "nonEmptyLines": 129,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "bf728c8ea9e46aab",
+      "type": "class",
+      "name": "AllPermission",
+      "filePath": "src/java/security/AllPermission.java",
+      "startLine": 39,
+      "endLine": 155
+    },
+    {
+      "id": "bcf87dd9ab8def04",
+      "type": "file",
+      "name": "BasicPermission$1.j",
+      "filePath": "src/java/security/BasicPermission$1.j",
+      "language": "j",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "31a9a75417921cdf",
+      "type": "file",
+      "name": "CertificateEncodingException.java",
+      "filePath": "src/java/security/cert/CertificateEncodingException.java",
+      "language": "java",
+      "totalLines": 58,
+      "nonEmptyLines": 44,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "3ee68f39c3096df2",
+      "type": "class",
+      "name": "CertificateEncodingException",
+      "filePath": "src/java/security/cert/CertificateEncodingException.java",
+      "startLine": 37,
+      "endLine": 58
+    },
+    {
+      "id": "207b496de49104b1",
+      "type": "file",
+      "name": "CertificateExpiredException.java",
+      "filePath": "src/java/security/cert/CertificateExpiredException.java",
+      "language": "java",
+      "totalLines": 58,
+      "nonEmptyLines": 44,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "c9fff9cd4255f5e6",
+      "type": "class",
+      "name": "CertificateExpiredException",
+      "filePath": "src/java/security/cert/CertificateExpiredException.java",
+      "startLine": 37,
+      "endLine": 58
+    },
+    {
+      "id": "be0b3678f754dfb0",
+      "type": "file",
+      "name": "CertificateNotYetValidException.java",
+      "filePath": "src/java/security/cert/CertificateNotYetValidException.java",
+      "language": "java",
+      "totalLines": 58,
+      "nonEmptyLines": 44,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "319b95fd1c0c2af7",
+      "type": "class",
+      "name": "CertificateNotYetValidException",
+      "filePath": "src/java/security/cert/CertificateNotYetValidException.java",
+      "startLine": 37,
+      "endLine": 58
+    },
+    {
+      "id": "69004fc05b9ae7e8",
+      "type": "file",
+      "name": "CertificateParsingException.java",
+      "filePath": "src/java/security/cert/CertificateParsingException.java",
+      "language": "java",
+      "totalLines": 58,
+      "nonEmptyLines": 44,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "5d5aaa6361339f04",
+      "type": "class",
+      "name": "CertificateParsingException",
+      "filePath": "src/java/security/cert/CertificateParsingException.java",
+      "startLine": 37,
+      "endLine": 58
+    },
+    {
+      "id": "26a8b90d9203cea9",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/java/security/cert/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "b78e72dca21d07b3",
+      "type": "file",
+      "name": "DigestException.java",
+      "filePath": "src/java/security/DigestException.java",
+      "language": "java",
+      "totalLines": 66,
+      "nonEmptyLines": 53,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "fe168803f20ed446",
+      "type": "class",
+      "name": "DigestException",
+      "filePath": "src/java/security/DigestException.java",
+      "startLine": 38,
+      "endLine": 65
+    },
+    {
+      "id": "b9751994f0664aa3",
+      "type": "file",
+      "name": "DummyKeyPairGenerator.java",
+      "filePath": "src/java/security/DummyKeyPairGenerator.java",
+      "language": "java",
+      "totalLines": 49,
+      "nonEmptyLines": 38,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "19247d41637cc929",
+      "type": "class",
+      "name": "DummyKeyPairGenerator",
+      "filePath": "src/java/security/DummyKeyPairGenerator.java",
+      "startLine": 30,
+      "endLine": 49
+    },
+    {
+      "id": "34ee5683f74340d2",
+      "type": "file",
+      "name": "DummyMessageDigest.java",
+      "filePath": "src/java/security/DummyMessageDigest.java",
+      "language": "java",
+      "totalLines": 62,
+      "nonEmptyLines": 49,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "dcbdb258ded0f195",
+      "type": "class",
+      "name": "DummyMessageDigest",
+      "filePath": "src/java/security/DummyMessageDigest.java",
+      "startLine": 33,
+      "endLine": 62
+    },
+    {
+      "id": "4276880e178290af",
+      "type": "file",
+      "name": "DummySignature.java",
+      "filePath": "src/java/security/DummySignature.java",
+      "language": "java",
+      "totalLines": 86,
+      "nonEmptyLines": 69,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "88e2642c032def98",
+      "type": "class",
+      "name": "DummySignature",
+      "filePath": "src/java/security/DummySignature.java",
+      "startLine": 30,
+      "endLine": 86
+    }
+  ],
+  "edges": [
+    {
+      "source": "1a92f6f8372b7137",
+      "target": "55404546961e478d",
+      "type": "contains"
+    },
+    {
+      "source": "55404546961e478d",
+      "target": "1a92f6f8372b7137",
+      "type": "exports"
+    },
+    {
+      "source": "ed3d61b43840a399",
+      "target": "2b2a8f9e4ac694da",
+      "type": "contains"
+    },
+    {
+      "source": "2b2a8f9e4ac694da",
+      "target": "ed3d61b43840a399",
+      "type": "exports"
+    },
+    {
+      "source": "e3df745ca3a55f8b",
+      "target": "e432f38916f724a0",
+      "type": "contains"
+    },
+    {
+      "source": "e432f38916f724a0",
+      "target": "e3df745ca3a55f8b",
+      "type": "exports"
+    },
+    {
+      "source": "38e6ea44331a8146",
+      "target": "35edc658e3a904d7",
+      "type": "contains"
+    },
+    {
+      "source": "35edc658e3a904d7",
+      "target": "38e6ea44331a8146",
+      "type": "exports"
+    },
+    {
+      "source": "ff209245abd535b2",
+      "target": "6688b5295f7f68fd",
+      "type": "contains"
+    },
+    {
+      "source": "6688b5295f7f68fd",
+      "target": "ff209245abd535b2",
+      "type": "exports"
+    },
+    {
+      "source": "6b628bb1c0bbd1d8",
+      "target": "5c4e15ce31635b92",
+      "type": "contains"
+    },
+    {
+      "source": "5c4e15ce31635b92",
+      "target": "6b628bb1c0bbd1d8",
+      "type": "exports"
+    },
+    {
+      "source": "7dc62ebb3129c251",
+      "target": "7e99fdd38d7b7adf",
+      "type": "contains"
+    },
+    {
+      "source": "7e99fdd38d7b7adf",
+      "target": "7dc62ebb3129c251",
+      "type": "exports"
+    },
+    {
+      "source": "87719ccfa22e5944",
+      "target": "e96f090fe02c9654",
+      "type": "contains"
+    },
+    {
+      "source": "e96f090fe02c9654",
+      "target": "87719ccfa22e5944",
+      "type": "exports"
+    },
+    {
+      "source": "01c498f54bfd14e3",
+      "target": "32bf162ac3192fe7",
+      "type": "contains"
+    },
+    {
+      "source": "32bf162ac3192fe7",
+      "target": "01c498f54bfd14e3",
+      "type": "exports"
+    },
+    {
+      "source": "ce50bd1a89a377c3",
+      "target": "c939b35015c7f366",
+      "type": "contains"
+    },
+    {
+      "source": "c939b35015c7f366",
+      "target": "ce50bd1a89a377c3",
+      "type": "exports"
+    },
+    {
+      "source": "ce0085c3c461cbfd",
+      "target": "0271d0562aaca754",
+      "type": "contains"
+    },
+    {
+      "source": "0271d0562aaca754",
+      "target": "ce0085c3c461cbfd",
+      "type": "exports"
+    },
+    {
+      "source": "ed1cc7956453fa14",
+      "target": "bf728c8ea9e46aab",
+      "type": "contains"
+    },
+    {
+      "source": "bf728c8ea9e46aab",
+      "target": "ed1cc7956453fa14",
+      "type": "exports"
+    },
+    {
+      "source": "31a9a75417921cdf",
+      "target": "3ee68f39c3096df2",
+      "type": "contains"
+    },
+    {
+      "source": "3ee68f39c3096df2",
+      "target": "31a9a75417921cdf",
+      "type": "exports"
+    },
+    {
+      "source": "207b496de49104b1",
+      "target": "c9fff9cd4255f5e6",
+      "type": "contains"
+    },
+    {
+      "source": "c9fff9cd4255f5e6",
+      "target": "207b496de49104b1",
+      "type": "exports"
+    },
+    {
+      "source": "be0b3678f754dfb0",
+      "target": "319b95fd1c0c2af7",
+      "type": "contains"
+    },
+    {
+      "source": "319b95fd1c0c2af7",
+      "target": "be0b3678f754dfb0",
+      "type": "exports"
+    },
+    {
+      "source": "69004fc05b9ae7e8",
+      "target": "5d5aaa6361339f04",
+      "type": "contains"
+    },
+    {
+      "source": "5d5aaa6361339f04",
+      "target": "69004fc05b9ae7e8",
+      "type": "exports"
+    },
+    {
+      "source": "b78e72dca21d07b3",
+      "target": "fe168803f20ed446",
+      "type": "contains"
+    },
+    {
+      "source": "fe168803f20ed446",
+      "target": "b78e72dca21d07b3",
+      "type": "exports"
+    },
+    {
+      "source": "b9751994f0664aa3",
+      "target": "19247d41637cc929",
+      "type": "contains"
+    },
+    {
+      "source": "19247d41637cc929",
+      "target": "b9751994f0664aa3",
+      "type": "exports"
+    },
+    {
+      "source": "34ee5683f74340d2",
+      "target": "dcbdb258ded0f195",
+      "type": "contains"
+    },
+    {
+      "source": "dcbdb258ded0f195",
+      "target": "34ee5683f74340d2",
+      "type": "exports"
+    },
+    {
+      "source": "4276880e178290af",
+      "target": "88e2642c032def98",
+      "type": "contains"
+    },
+    {
+      "source": "88e2642c032def98",
+      "target": "4276880e178290af",
+      "type": "exports"
+    },
+    {
+      "source": "34ee5683f74340d2",
+      "target": "b78e72dca21d07b3",
+      "type": "imports"
+    }
+  ]
+}

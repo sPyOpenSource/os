@@ -1,0 +1,720 @@
+{
+  "batchIndex": 25,
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "8008373c7d7b6bf7",
+      "type": "file",
+      "name": "X509EncodedKeySpec.java",
+      "filePath": "src/java/security/spec/X509EncodedKeySpec.java",
+      "language": "java",
+      "totalLines": 71,
+      "nonEmptyLines": 54,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "57c81794bc1241db",
+      "type": "class",
+      "name": "X509EncodedKeySpec",
+      "filePath": "src/java/security/spec/X509EncodedKeySpec.java",
+      "startLine": 38,
+      "endLine": 71
+    },
+    {
+      "id": "01df6d58567b354b",
+      "type": "file",
+      "name": "UnrecoverableKeyException.java",
+      "filePath": "src/java/security/UnrecoverableKeyException.java",
+      "language": "java",
+      "totalLines": 67,
+      "nonEmptyLines": 53,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "64ad58a6353ea0a6",
+      "type": "class",
+      "name": "UnrecoverableKeyException",
+      "filePath": "src/java/security/UnrecoverableKeyException.java",
+      "startLine": 38,
+      "endLine": 66
+    },
+    {
+      "id": "4fb6ee351956b6ae",
+      "type": "file",
+      "name": "UnresolvedPermission.java",
+      "filePath": "src/java/security/UnresolvedPermission.java",
+      "language": "java",
+      "totalLines": 222,
+      "nonEmptyLines": 183,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "3e09f012643e7437",
+      "type": "class",
+      "name": "UnresolvedPermission",
+      "filePath": "src/java/security/UnresolvedPermission.java",
+      "startLine": 48,
+      "endLine": 221
+    },
+    {
+      "id": "30c0559c0bf0c2c7",
+      "type": "file",
+      "name": "BatchUpdateException.java",
+      "filePath": "src/java/sql/BatchUpdateException.java",
+      "language": "java",
+      "totalLines": 169,
+      "nonEmptyLines": 138,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "8779e57c00095198",
+      "type": "class",
+      "name": "BatchUpdateException",
+      "filePath": "src/java/sql/BatchUpdateException.java",
+      "startLine": 37,
+      "endLine": 168
+    },
+    {
+      "id": "9f263075bae2bede",
+      "type": "file",
+      "name": "DataTruncation.java",
+      "filePath": "src/java/sql/DataTruncation.java",
+      "language": "java",
+      "totalLines": 196,
+      "nonEmptyLines": 161,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "39afd26fa4669989",
+      "type": "class",
+      "name": "DataTruncation",
+      "filePath": "src/java/sql/DataTruncation.java",
+      "startLine": 36,
+      "endLine": 195
+    },
+    {
+      "id": "05ab00f73b3bde1b",
+      "type": "file",
+      "name": "DriverPropertyInfo.java",
+      "filePath": "src/java/sql/DriverPropertyInfo.java",
+      "language": "java",
+      "totalLines": 91,
+      "nonEmptyLines": 72,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "3a5d66096efbf362",
+      "type": "class",
+      "name": "DriverPropertyInfo",
+      "filePath": "src/java/sql/DriverPropertyInfo.java",
+      "startLine": 36,
+      "endLine": 90
+    },
+    {
+      "id": "81bc9c63f5046080",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/java/sql/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "21e57411b72d4006",
+      "type": "file",
+      "name": "SQLException.java",
+      "filePath": "src/java/sql/SQLException.java",
+      "language": "java",
+      "totalLines": 210,
+      "nonEmptyLines": 171,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "9384c2ed8c1918f1",
+      "type": "class",
+      "name": "SQLException",
+      "filePath": "src/java/sql/SQLException.java",
+      "startLine": 35,
+      "endLine": 209
+    },
+    {
+      "id": "d9790a1f38dca8fb",
+      "type": "file",
+      "name": "SQLWarning.java",
+      "filePath": "src/java/sql/SQLWarning.java",
+      "language": "java",
+      "totalLines": 147,
+      "nonEmptyLines": 120,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "635277b21b812418",
+      "type": "class",
+      "name": "SQLWarning",
+      "filePath": "src/java/sql/SQLWarning.java",
+      "startLine": 35,
+      "endLine": 146
+    },
+    {
+      "id": "ce6846c6c236e8b8",
+      "type": "file",
+      "name": "Types.java",
+      "filePath": "src/java/sql/Types.java",
+      "language": "java",
+      "totalLines": 71,
+      "nonEmptyLines": 59,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 29,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "350192bbe0d2f51d",
+      "type": "class",
+      "name": "Types",
+      "filePath": "src/java/sql/Types.java",
+      "startLine": 35,
+      "endLine": 70
+    },
+    {
+      "id": "fd94df60bdfcdbdf",
+      "type": "file",
+      "name": "Annotation.java",
+      "filePath": "src/java/text/Annotation.java",
+      "language": "java",
+      "totalLines": 102,
+      "nonEmptyLines": 82,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "25767da8b36b4f3b",
+      "type": "class",
+      "name": "Annotation",
+      "filePath": "src/java/text/Annotation.java",
+      "startLine": 39,
+      "endLine": 101
+    },
+    {
+      "id": "da95750ea250449f",
+      "type": "file",
+      "name": "AttributedString.j",
+      "filePath": "src/java/text/AttributedString.j",
+      "language": "j",
+      "totalLines": 433,
+      "nonEmptyLines": 358,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "59ed8527adbda2f5",
+      "type": "file",
+      "name": "AttributedStringIterator.j",
+      "filePath": "src/java/text/AttributedStringIterator.j",
+      "language": "j",
+      "totalLines": 344,
+      "nonEmptyLines": 273,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "39da25cd320b8237",
+      "type": "file",
+      "name": "CollationElementIterator.java",
+      "filePath": "src/java/text/CollationElementIterator.java",
+      "language": "java",
+      "totalLines": 300,
+      "nonEmptyLines": 250,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 13,
+        "functionCount": 12,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "8c56e2c7c6228147",
+      "type": "class",
+      "name": "CollationElementIterator",
+      "filePath": "src/java/text/CollationElementIterator.java",
+      "startLine": 40,
+      "endLine": 299
+    },
+    {
+      "id": "096273ca68648450",
+      "type": "file",
+      "name": "CollationKey.java",
+      "filePath": "src/java/text/CollationKey.java",
+      "language": "java",
+      "totalLines": 225,
+      "nonEmptyLines": 186,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "1f4a6de8644e49ae",
+      "type": "class",
+      "name": "CollationKey",
+      "filePath": "src/java/text/CollationKey.java",
+      "startLine": 50,
+      "endLine": 224
+    },
+    {
+      "id": "7c2edf20acab98c0",
+      "type": "file",
+      "name": "DecimalFormat.java",
+      "filePath": "src/java/text/DecimalFormat.java",
+      "language": "java",
+      "totalLines": 19,
+      "nonEmptyLines": 17,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "a765b5dc7567ad4d",
+      "type": "class",
+      "name": "DecimalFormat",
+      "filePath": "src/java/text/DecimalFormat.java",
+      "startLine": 3,
+      "endLine": 19
+    },
+    {
+      "id": "c989f8ea34d62b05",
+      "type": "file",
+      "name": "DefaultBreakIterator.java",
+      "filePath": "src/java/text/DefaultBreakIterator.java",
+      "language": "java",
+      "totalLines": 357,
+      "nonEmptyLines": 294,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 14,
+        "functionCount": 14,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "a80b3f99a8e7b05c",
+      "type": "class",
+      "name": "DefaultBreakIterator",
+      "filePath": "src/java/text/DefaultBreakIterator.java",
+      "startLine": 39,
+      "endLine": 356
+    },
+    {
+      "id": "2e6d07036d214f54",
+      "type": "file",
+      "name": "FieldPosition.java",
+      "filePath": "src/java/text/FieldPosition.java",
+      "language": "java",
+      "totalLines": 207,
+      "nonEmptyLines": 168,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "89683e1ce19e39d9",
+      "type": "class",
+      "name": "FieldPosition",
+      "filePath": "src/java/text/FieldPosition.java",
+      "startLine": 40,
+      "endLine": 206
+    },
+    {
+      "id": "870038c0bfd7964d",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/java/text/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "1f8f2a5ae3f55582",
+      "type": "file",
+      "name": "StringCharacterIterator.java",
+      "filePath": "src/java/text/StringCharacterIterator.java",
+      "language": "java",
+      "totalLines": 393,
+      "nonEmptyLines": 327,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 15,
+        "functionCount": 16,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "8f13cd686130078d",
+      "type": "class",
+      "name": "StringCharacterIterator",
+      "filePath": "src/java/text/StringCharacterIterator.java",
+      "startLine": 41,
+      "endLine": 392
+    },
+    {
+      "id": "7a2594144754a4c8",
+      "type": "file",
+      "name": "AbstractCollection.j",
+      "filePath": "src/java/util/AbstractCollection.j",
+      "language": "j",
+      "totalLines": 347,
+      "nonEmptyLines": 325,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "cc800a5477fd6b63",
+      "type": "file",
+      "name": "AbstractList.j",
+      "filePath": "src/java/util/AbstractList.j",
+      "language": "j",
+      "totalLines": 538,
+      "nonEmptyLines": 470,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "3d987df7ac43f085",
+      "type": "file",
+      "name": "BasicMapEntry.java",
+      "filePath": "src/java/util/BasicMapEntry.java",
+      "language": "java",
+      "totalLines": 139,
+      "nonEmptyLines": 126,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "ad77f4a5b3beaed4",
+      "type": "class",
+      "name": "BasicMapEntry",
+      "filePath": "src/java/util/BasicMapEntry.java",
+      "startLine": 37,
+      "endLine": 139
+    },
+    {
+      "id": "6c4d785b22e0febd",
+      "type": "file",
+      "name": "ConcurrentModificationException.java",
+      "filePath": "src/java/util/ConcurrentModificationException.java",
+      "language": "java",
+      "totalLines": 59,
+      "nonEmptyLines": 49,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "878d074a1fc0841a",
+      "type": "class",
+      "name": "ConcurrentModificationException",
+      "filePath": "src/java/util/ConcurrentModificationException.java",
+      "startLine": 38,
+      "endLine": 59
+    },
+    {
+      "id": "7613bd93d3160ca8",
+      "type": "file",
+      "name": "DoubleEnumeration.java",
+      "filePath": "src/java/util/DoubleEnumeration.java",
+      "language": "java",
+      "totalLines": 103,
+      "nonEmptyLines": 92,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "e046169c0088c6be",
+      "type": "class",
+      "name": "DoubleEnumeration",
+      "filePath": "src/java/util/DoubleEnumeration.java",
+      "startLine": 47,
+      "endLine": 103
+    }
+  ],
+  "edges": [
+    {
+      "source": "8008373c7d7b6bf7",
+      "target": "57c81794bc1241db",
+      "type": "contains"
+    },
+    {
+      "source": "57c81794bc1241db",
+      "target": "8008373c7d7b6bf7",
+      "type": "exports"
+    },
+    {
+      "source": "01df6d58567b354b",
+      "target": "64ad58a6353ea0a6",
+      "type": "contains"
+    },
+    {
+      "source": "64ad58a6353ea0a6",
+      "target": "01df6d58567b354b",
+      "type": "exports"
+    },
+    {
+      "source": "4fb6ee351956b6ae",
+      "target": "3e09f012643e7437",
+      "type": "contains"
+    },
+    {
+      "source": "3e09f012643e7437",
+      "target": "4fb6ee351956b6ae",
+      "type": "exports"
+    },
+    {
+      "source": "30c0559c0bf0c2c7",
+      "target": "8779e57c00095198",
+      "type": "contains"
+    },
+    {
+      "source": "8779e57c00095198",
+      "target": "30c0559c0bf0c2c7",
+      "type": "exports"
+    },
+    {
+      "source": "9f263075bae2bede",
+      "target": "39afd26fa4669989",
+      "type": "contains"
+    },
+    {
+      "source": "39afd26fa4669989",
+      "target": "9f263075bae2bede",
+      "type": "exports"
+    },
+    {
+      "source": "05ab00f73b3bde1b",
+      "target": "3a5d66096efbf362",
+      "type": "contains"
+    },
+    {
+      "source": "3a5d66096efbf362",
+      "target": "05ab00f73b3bde1b",
+      "type": "exports"
+    },
+    {
+      "source": "21e57411b72d4006",
+      "target": "9384c2ed8c1918f1",
+      "type": "contains"
+    },
+    {
+      "source": "9384c2ed8c1918f1",
+      "target": "21e57411b72d4006",
+      "type": "exports"
+    },
+    {
+      "source": "d9790a1f38dca8fb",
+      "target": "635277b21b812418",
+      "type": "contains"
+    },
+    {
+      "source": "635277b21b812418",
+      "target": "d9790a1f38dca8fb",
+      "type": "exports"
+    },
+    {
+      "source": "ce6846c6c236e8b8",
+      "target": "350192bbe0d2f51d",
+      "type": "contains"
+    },
+    {
+      "source": "350192bbe0d2f51d",
+      "target": "ce6846c6c236e8b8",
+      "type": "exports"
+    },
+    {
+      "source": "fd94df60bdfcdbdf",
+      "target": "25767da8b36b4f3b",
+      "type": "contains"
+    },
+    {
+      "source": "25767da8b36b4f3b",
+      "target": "fd94df60bdfcdbdf",
+      "type": "exports"
+    },
+    {
+      "source": "39da25cd320b8237",
+      "target": "8c56e2c7c6228147",
+      "type": "contains"
+    },
+    {
+      "source": "8c56e2c7c6228147",
+      "target": "39da25cd320b8237",
+      "type": "exports"
+    },
+    {
+      "source": "096273ca68648450",
+      "target": "1f4a6de8644e49ae",
+      "type": "contains"
+    },
+    {
+      "source": "1f4a6de8644e49ae",
+      "target": "096273ca68648450",
+      "type": "exports"
+    },
+    {
+      "source": "7c2edf20acab98c0",
+      "target": "a765b5dc7567ad4d",
+      "type": "contains"
+    },
+    {
+      "source": "a765b5dc7567ad4d",
+      "target": "7c2edf20acab98c0",
+      "type": "exports"
+    },
+    {
+      "source": "c989f8ea34d62b05",
+      "target": "a80b3f99a8e7b05c",
+      "type": "contains"
+    },
+    {
+      "source": "a80b3f99a8e7b05c",
+      "target": "c989f8ea34d62b05",
+      "type": "exports"
+    },
+    {
+      "source": "2e6d07036d214f54",
+      "target": "89683e1ce19e39d9",
+      "type": "contains"
+    },
+    {
+      "source": "89683e1ce19e39d9",
+      "target": "2e6d07036d214f54",
+      "type": "exports"
+    },
+    {
+      "source": "1f8f2a5ae3f55582",
+      "target": "8f13cd686130078d",
+      "type": "contains"
+    },
+    {
+      "source": "8f13cd686130078d",
+      "target": "1f8f2a5ae3f55582",
+      "type": "exports"
+    },
+    {
+      "source": "3d987df7ac43f085",
+      "target": "ad77f4a5b3beaed4",
+      "type": "contains"
+    },
+    {
+      "source": "ad77f4a5b3beaed4",
+      "target": "3d987df7ac43f085",
+      "type": "exports"
+    },
+    {
+      "source": "6c4d785b22e0febd",
+      "target": "878d074a1fc0841a",
+      "type": "contains"
+    },
+    {
+      "source": "878d074a1fc0841a",
+      "target": "6c4d785b22e0febd",
+      "type": "exports"
+    },
+    {
+      "source": "7613bd93d3160ca8",
+      "target": "e046169c0088c6be",
+      "type": "contains"
+    },
+    {
+      "source": "e046169c0088c6be",
+      "target": "7613bd93d3160ca8",
+      "type": "exports"
+    }
+  ]
+}

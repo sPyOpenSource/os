@@ -1,0 +1,2875 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/jx/scheduler/ThreadListCAS.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 17,
+      "nonEmptyLines": 14,
+      "functions": [
+        {
+          "name": "dump",
+          "startLine": 8,
+          "endLine": 16,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ThreadListCAS",
+          "startLine": 5,
+          "endLine": 17,
+          "methods": [
+            "dump"
+          ],
+          "properties": [
+            "HLschedulerSupport"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "dump",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "ThreadListCAS",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "dump",
+          "callee": "getFirst",
+          "lineNumber": 9
+        },
+        {
+          "caller": "dump",
+          "callee": "Debug.out.println",
+          "lineNumber": 10
+        },
+        {
+          "caller": "dump",
+          "callee": "getFirst",
+          "lineNumber": 12
+        },
+        {
+          "caller": "dump",
+          "callee": "getNext",
+          "lineNumber": 12
+        },
+        {
+          "caller": "dump",
+          "callee": "HLschedulerSupport.dumpThread",
+          "lineNumber": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/secmgr/BlockIOSecurityPolicy.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 52,
+      "nonEmptyLines": 41,
+      "functions": [
+        {
+          "name": "BlockIOSecurityPolicy",
+          "startLine": 15,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "outBound",
+          "startLine": 22,
+          "endLine": 25,
+          "params": [
+            "info"
+          ]
+        },
+        {
+          "name": "inBound",
+          "startLine": 26,
+          "endLine": 29,
+          "params": [
+            "info"
+          ]
+        },
+        {
+          "name": "createPortal",
+          "startLine": 31,
+          "endLine": 33,
+          "params": [
+            "info"
+          ]
+        },
+        {
+          "name": "destroyPortal",
+          "startLine": 35,
+          "endLine": 36,
+          "params": [
+            "info"
+          ]
+        },
+        {
+          "name": "checkCall",
+          "startLine": 38,
+          "endLine": 50,
+          "params": [
+            "sourceDom",
+            "targetDom",
+            "m",
+            "params"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "BlockIOSecurityPolicy",
+          "startLine": 6,
+          "endLine": 52,
+          "methods": [
+            "BlockIOSecurityPolicy",
+            "outBound",
+            "inBound",
+            "createPortal",
+            "destroyPortal",
+            "checkCall"
+          ],
+          "properties": [
+            "debug",
+            "tcb",
+            "naming",
+            "secMgr"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "outBound",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "inBound",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "createPortal",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "destroyPortal",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "BlockIOSecurityPolicy",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "BlockIOSecurityPolicy",
+          "callee": "new Principal_impl",
+          "lineNumber": 16
+        },
+        {
+          "caller": "BlockIOSecurityPolicy",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 17
+        },
+        {
+          "caller": "BlockIOSecurityPolicy",
+          "callee": "naming.lookup",
+          "lineNumber": 18
+        },
+        {
+          "caller": "BlockIOSecurityPolicy",
+          "callee": "new Error",
+          "lineNumber": 19
+        },
+        {
+          "caller": "outBound",
+          "callee": "Debug.out.println",
+          "lineNumber": 23
+        },
+        {
+          "caller": "outBound",
+          "callee": "checkCall",
+          "lineNumber": 24
+        },
+        {
+          "caller": "outBound",
+          "callee": "info.getSourceDomain",
+          "lineNumber": 24
+        },
+        {
+          "caller": "outBound",
+          "callee": "info.getTargetDomain",
+          "lineNumber": 24
+        },
+        {
+          "caller": "outBound",
+          "callee": "info.getMethod",
+          "lineNumber": 24
+        },
+        {
+          "caller": "outBound",
+          "callee": "info.getParameters",
+          "lineNumber": 24
+        },
+        {
+          "caller": "inBound",
+          "callee": "Debug.out.println",
+          "lineNumber": 27
+        },
+        {
+          "caller": "inBound",
+          "callee": "checkCall",
+          "lineNumber": 28
+        },
+        {
+          "caller": "inBound",
+          "callee": "info.getSourceDomain",
+          "lineNumber": 28
+        },
+        {
+          "caller": "inBound",
+          "callee": "info.getTargetDomain",
+          "lineNumber": 28
+        },
+        {
+          "caller": "inBound",
+          "callee": "info.getMethod",
+          "lineNumber": 28
+        },
+        {
+          "caller": "checkCall",
+          "callee": "secMgr.getPrincipal",
+          "lineNumber": 39
+        },
+        {
+          "caller": "checkCall",
+          "callee": "secMgr.getPrincipal",
+          "lineNumber": 40
+        },
+        {
+          "caller": "checkCall",
+          "callee": "Debug.out.println",
+          "lineNumber": 42
+        },
+        {
+          "caller": "checkCall",
+          "callee": "sourceDom.getName",
+          "lineNumber": 42
+        },
+        {
+          "caller": "checkCall",
+          "callee": "Debug.out.println",
+          "lineNumber": 43
+        },
+        {
+          "caller": "checkCall",
+          "callee": "targetDom.getName",
+          "lineNumber": 43
+        },
+        {
+          "caller": "checkCall",
+          "callee": "Debug.out.println",
+          "lineNumber": 44
+        },
+        {
+          "caller": "checkCall",
+          "callee": "m.getName",
+          "lineNumber": 44
+        },
+        {
+          "caller": "checkCall",
+          "callee": "m.getSignature",
+          "lineNumber": 44
+        },
+        {
+          "caller": "checkCall",
+          "callee": "sourcePrincipal.equals",
+          "lineNumber": 47
+        },
+        {
+          "caller": "checkCall",
+          "callee": "targetPrincipal.equals",
+          "lineNumber": 47
+        },
+        {
+          "caller": "checkCall",
+          "callee": "Debug.out.println",
+          "lineNumber": 48
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/secmgr/FileSystemSecurityPolicy.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 146,
+      "nonEmptyLines": 129,
+      "functions": [
+        {
+          "name": "FileSystemSecurityPolicy",
+          "startLine": 31,
+          "endLine": 60,
+          "params": []
+        },
+        {
+          "name": "inBound",
+          "startLine": 67,
+          "endLine": 81,
+          "params": [
+            "info"
+          ]
+        },
+        {
+          "name": "check_FilesystemInterface",
+          "startLine": 83,
+          "endLine": 94,
+          "params": [
+            "fs",
+            "method"
+          ]
+        },
+        {
+          "name": "check_Directory",
+          "startLine": 96,
+          "endLine": 112,
+          "params": [
+            "dir",
+            "info"
+          ]
+        },
+        {
+          "name": "check_RegularFile",
+          "startLine": 114,
+          "endLine": 123,
+          "params": [
+            "fo",
+            "method"
+          ]
+        },
+        {
+          "name": "checkPerm",
+          "startLine": 125,
+          "endLine": 136,
+          "params": [
+            "fsobj",
+            "right"
+          ]
+        },
+        {
+          "name": "createPortal",
+          "startLine": 138,
+          "endLine": 141,
+          "params": [
+            "info"
+          ]
+        },
+        {
+          "name": "destroyPortal",
+          "startLine": 143,
+          "endLine": 144,
+          "params": [
+            "info"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "FileSystemSecurityPolicy",
+          "startLine": 6,
+          "endLine": 146,
+          "methods": [
+            "FileSystemSecurityPolicy",
+            "inBound",
+            "check_FilesystemInterface",
+            "check_Directory",
+            "check_RegularFile",
+            "checkPerm",
+            "createPortal",
+            "destroyPortal"
+          ],
+          "properties": [
+            "doNothing",
+            "doOpenOnly",
+            "debug",
+            "tcb",
+            "naming",
+            "cpuManager",
+            "secMgr",
+            "refFilesystemImpl",
+            "refDirectoryImpl",
+            "refRegularFileImpl",
+            "read_RegularFile",
+            "write_RegularFile",
+            "openRW_Directory",
+            "create_Directory",
+            "getDefaultPermission_FilesystemInterface",
+            "openRootDirectoryRW_FilesystemInterface",
+            "curPrincipal"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "inBound",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "createPortal",
+          "line": 138,
+          "isDefault": false
+        },
+        {
+          "name": "destroyPortal",
+          "line": 143,
+          "isDefault": false
+        },
+        {
+          "name": "FileSystemSecurityPolicy",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "FileSystemSecurityPolicy",
+          "callee": "new Principal_impl",
+          "lineNumber": 32
+        },
+        {
+          "caller": "FileSystemSecurityPolicy",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 33
+        },
+        {
+          "caller": "FileSystemSecurityPolicy",
+          "callee": "naming.lookup",
+          "lineNumber": 34
+        },
+        {
+          "caller": "FileSystemSecurityPolicy",
+          "callee": "new Error",
+          "lineNumber": 35
+        },
+        {
+          "caller": "FileSystemSecurityPolicy",
+          "callee": "naming.lookup",
+          "lineNumber": 36
+        },
+        {
+          "caller": "FileSystemSecurityPolicy",
+          "callee": "Debug.out.println",
+          "lineNumber": 37
+        },
+        {
+          "caller": "FileSystemSecurityPolicy",
+          "callee": "cpuManager.getClass",
+          "lineNumber": 39
+        },
+        {
+          "caller": "FileSystemSecurityPolicy",
+          "callee": "cpuManager.getClass",
+          "lineNumber": 40
+        },
+        {
+          "caller": "FileSystemSecurityPolicy",
+          "callee": "cpuManager.getClass",
+          "lineNumber": 41
+        },
+        {
+          "caller": "FileSystemSecurityPolicy",
+          "callee": "refRegularFileImpl.getMethods",
+          "lineNumber": 42
+        },
+        {
+          "caller": "FileSystemSecurityPolicy",
+          "callee": "methods[i].getName().equals",
+          "lineNumber": 44
+        },
+        {
+          "caller": "FileSystemSecurityPolicy",
+          "callee": "methods[i].getName",
+          "lineNumber": 44
+        },
+        {
+          "caller": "FileSystemSecurityPolicy",
+          "callee": "methods[i].getName().equals",
+          "lineNumber": 46
+        },
+        {
+          "caller": "FileSystemSecurityPolicy",
+          "callee": "methods[i].getName",
+          "lineNumber": 46
+        },
+        {
+          "caller": "FileSystemSecurityPolicy",
+          "callee": "refDirectoryImpl.getMethods",
+          "lineNumber": 48
+        },
+        {
+          "caller": "FileSystemSecurityPolicy",
+          "callee": "methods[i].getName().equals",
+          "lineNumber": 50
+        },
+        {
+          "caller": "FileSystemSecurityPolicy",
+          "callee": "methods[i].getName",
+          "lineNumber": 50
+        },
+        {
+          "caller": "FileSystemSecurityPolicy",
+          "callee": "methods[i].getName().equals",
+          "lineNumber": 52
+        },
+        {
+          "caller": "FileSystemSecurityPolicy",
+          "callee": "methods[i].getName",
+          "lineNumber": 52
+        },
+        {
+          "caller": "FileSystemSecurityPolicy",
+          "callee": "refFilesystemImpl.getMethods",
+          "lineNumber": 54
+        },
+        {
+          "caller": "FileSystemSecurityPolicy",
+          "callee": "methods[i].getName().equals",
+          "lineNumber": 56
+        },
+        {
+          "caller": "FileSystemSecurityPolicy",
+          "callee": "methods[i].getName",
+          "lineNumber": 56
+        },
+        {
+          "caller": "FileSystemSecurityPolicy",
+          "callee": "methods[i].getName().equals",
+          "lineNumber": 58
+        },
+        {
+          "caller": "FileSystemSecurityPolicy",
+          "callee": "methods[i].getName",
+          "lineNumber": 58
+        },
+        {
+          "caller": "inBound",
+          "callee": "Debug.out.println",
+          "lineNumber": 69
+        },
+        {
+          "caller": "inBound",
+          "callee": "info.getServiceObject",
+          "lineNumber": 71
+        },
+        {
+          "caller": "inBound",
+          "callee": "secMgr.getPrincipal",
+          "lineNumber": 72
+        },
+        {
+          "caller": "inBound",
+          "callee": "info.getSourceDomain",
+          "lineNumber": 72
+        },
+        {
+          "caller": "inBound",
+          "callee": "cpuManager.getVMClass(o).equals",
+          "lineNumber": 73
+        },
+        {
+          "caller": "inBound",
+          "callee": "cpuManager.getVMClass",
+          "lineNumber": 73
+        },
+        {
+          "caller": "inBound",
+          "callee": "check_RegularFile",
+          "lineNumber": 75
+        },
+        {
+          "caller": "inBound",
+          "callee": "info.getMethod",
+          "lineNumber": 75
+        },
+        {
+          "caller": "inBound",
+          "callee": "cpuManager.getVMClass(o).equals",
+          "lineNumber": 76
+        },
+        {
+          "caller": "inBound",
+          "callee": "cpuManager.getVMClass",
+          "lineNumber": 76
+        },
+        {
+          "caller": "inBound",
+          "callee": "check_FilesystemInterface",
+          "lineNumber": 77
+        },
+        {
+          "caller": "inBound",
+          "callee": "info.getMethod",
+          "lineNumber": 77
+        },
+        {
+          "caller": "inBound",
+          "callee": "cpuManager.getVMClass(o).equals",
+          "lineNumber": 78
+        },
+        {
+          "caller": "inBound",
+          "callee": "cpuManager.getVMClass",
+          "lineNumber": 78
+        },
+        {
+          "caller": "inBound",
+          "callee": "check_Directory",
+          "lineNumber": 79
+        },
+        {
+          "caller": "check_FilesystemInterface",
+          "callee": "method.equals",
+          "lineNumber": 84
+        },
+        {
+          "caller": "check_FilesystemInterface",
+          "callee": "method.equals",
+          "lineNumber": 86
+        },
+        {
+          "caller": "check_FilesystemInterface",
+          "callee": "Debug.out.println",
+          "lineNumber": 87
+        },
+        {
+          "caller": "check_FilesystemInterface",
+          "callee": "fs.openRootDirectoryRW",
+          "lineNumber": 89
+        },
+        {
+          "caller": "check_FilesystemInterface",
+          "callee": "checkPerm",
+          "lineNumber": 90
+        },
+        {
+          "caller": "check_FilesystemInterface",
+          "callee": "Debug.out.println",
+          "lineNumber": 91
+        },
+        {
+          "caller": "check_Directory",
+          "callee": "info.getMethod",
+          "lineNumber": 97
+        },
+        {
+          "caller": "check_Directory",
+          "callee": "method.equals",
+          "lineNumber": 98
+        },
+        {
+          "caller": "check_Directory",
+          "callee": "Debug.out.println",
+          "lineNumber": 99
+        },
+        {
+          "caller": "check_Directory",
+          "callee": "cpuManager.getVMObject",
+          "lineNumber": 100
+        },
+        {
+          "caller": "check_Directory",
+          "callee": "info.getFirstParameter",
+          "lineNumber": 101
+        },
+        {
+          "caller": "check_Directory",
+          "callee": "dir.openRW",
+          "lineNumber": 103
+        },
+        {
+          "caller": "check_Directory",
+          "callee": "obj.getString",
+          "lineNumber": 103
+        },
+        {
+          "caller": "check_Directory",
+          "callee": "checkPerm",
+          "lineNumber": 105
+        },
+        {
+          "caller": "check_Directory",
+          "callee": "Debug.out.println",
+          "lineNumber": 106
+        },
+        {
+          "caller": "check_Directory",
+          "callee": "method.equals",
+          "lineNumber": 107
+        },
+        {
+          "caller": "check_Directory",
+          "callee": "Debug.out.println",
+          "lineNumber": 108
+        },
+        {
+          "caller": "check_Directory",
+          "callee": "checkPerm",
+          "lineNumber": 109
+        },
+        {
+          "caller": "check_RegularFile",
+          "callee": "method.equals",
+          "lineNumber": 115
+        },
+        {
+          "caller": "check_RegularFile",
+          "callee": "Debug.out.println",
+          "lineNumber": 116
+        },
+        {
+          "caller": "check_RegularFile",
+          "callee": "checkPerm",
+          "lineNumber": 117
+        },
+        {
+          "caller": "check_RegularFile",
+          "callee": "method.equals",
+          "lineNumber": 118
+        },
+        {
+          "caller": "check_RegularFile",
+          "callee": "Debug.out.println",
+          "lineNumber": 119
+        },
+        {
+          "caller": "check_RegularFile",
+          "callee": "checkPerm",
+          "lineNumber": 120
+        },
+        {
+          "caller": "checkPerm",
+          "callee": "fsobj.getAttribute",
+          "lineNumber": 127
+        },
+        {
+          "caller": "checkPerm",
+          "callee": "fsobj.getPermission",
+          "lineNumber": 128
+        },
+        {
+          "caller": "checkPerm",
+          "callee": "Debug.out.println",
+          "lineNumber": 129
+        },
+        {
+          "caller": "checkPerm",
+          "callee": "a.getUserID",
+          "lineNumber": 129
+        },
+        {
+          "caller": "checkPerm",
+          "callee": "p.getPermission",
+          "lineNumber": 129
+        },
+        {
+          "caller": "checkPerm",
+          "callee": "p.getPermission",
+          "lineNumber": 131
+        },
+        {
+          "caller": "checkPerm",
+          "callee": "a.getUserID",
+          "lineNumber": 132
+        },
+        {
+          "caller": "checkPerm",
+          "callee": "Debug.out.println",
+          "lineNumber": 134
+        },
+        {
+          "caller": "createPortal",
+          "callee": "Debug.out.println",
+          "lineNumber": 139
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/secmgr/MySecurityPolicy.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 92,
+      "nonEmptyLines": 77,
+      "functions": [
+        {
+          "name": "MySecurityPolicy",
+          "startLine": 17,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "outBound",
+          "startLine": 24,
+          "endLine": 29,
+          "params": [
+            "info"
+          ]
+        },
+        {
+          "name": "inBound",
+          "startLine": 30,
+          "endLine": 40,
+          "params": [
+            "info"
+          ]
+        },
+        {
+          "name": "createPortal",
+          "startLine": 42,
+          "endLine": 45,
+          "params": [
+            "info"
+          ]
+        },
+        {
+          "name": "destroyPortal",
+          "startLine": 47,
+          "endLine": 49,
+          "params": [
+            "info"
+          ]
+        },
+        {
+          "name": "checkCall",
+          "startLine": 51,
+          "endLine": 70,
+          "params": [
+            "sourceDom",
+            "targetDom",
+            "m",
+            "params"
+          ]
+        },
+        {
+          "name": "dumpVMObject",
+          "startLine": 72,
+          "endLine": 90,
+          "params": [
+            "obj",
+            "prefix"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "MySecurityPolicy",
+          "startLine": 6,
+          "endLine": 92,
+          "methods": [
+            "MySecurityPolicy",
+            "outBound",
+            "inBound",
+            "createPortal",
+            "destroyPortal",
+            "checkCall",
+            "dumpVMObject"
+          ],
+          "properties": [
+            "debug",
+            "tcb",
+            "naming",
+            "cpuManager",
+            "secMgr"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "outBound",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "inBound",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "createPortal",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "destroyPortal",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "MySecurityPolicy",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "MySecurityPolicy",
+          "callee": "new Principal_impl",
+          "lineNumber": 18
+        },
+        {
+          "caller": "MySecurityPolicy",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 19
+        },
+        {
+          "caller": "MySecurityPolicy",
+          "callee": "naming.lookup",
+          "lineNumber": 20
+        },
+        {
+          "caller": "MySecurityPolicy",
+          "callee": "new Error",
+          "lineNumber": 21
+        },
+        {
+          "caller": "outBound",
+          "callee": "Debug.out.println",
+          "lineNumber": 25
+        },
+        {
+          "caller": "outBound",
+          "callee": "checkCall",
+          "lineNumber": 27
+        },
+        {
+          "caller": "outBound",
+          "callee": "info.getSourceDomain",
+          "lineNumber": 27
+        },
+        {
+          "caller": "outBound",
+          "callee": "info.getTargetDomain",
+          "lineNumber": 27
+        },
+        {
+          "caller": "outBound",
+          "callee": "info.getMethod",
+          "lineNumber": 27
+        },
+        {
+          "caller": "outBound",
+          "callee": "info.getParameters",
+          "lineNumber": 27
+        },
+        {
+          "caller": "inBound",
+          "callee": "Debug.out.println",
+          "lineNumber": 31
+        },
+        {
+          "caller": "inBound",
+          "callee": "checkCall",
+          "lineNumber": 33
+        },
+        {
+          "caller": "inBound",
+          "callee": "info.getSourceDomain",
+          "lineNumber": 33
+        },
+        {
+          "caller": "inBound",
+          "callee": "info.getTargetDomain",
+          "lineNumber": 33
+        },
+        {
+          "caller": "inBound",
+          "callee": "info.getMethod",
+          "lineNumber": 33
+        },
+        {
+          "caller": "createPortal",
+          "callee": "Debug.out.println",
+          "lineNumber": 43
+        },
+        {
+          "caller": "destroyPortal",
+          "callee": "Debug.out.println",
+          "lineNumber": 48
+        },
+        {
+          "caller": "checkCall",
+          "callee": "secMgr.getPrincipal",
+          "lineNumber": 52
+        },
+        {
+          "caller": "checkCall",
+          "callee": "secMgr.getPrincipal",
+          "lineNumber": 53
+        },
+        {
+          "caller": "checkCall",
+          "callee": "Debug.out.println",
+          "lineNumber": 55
+        },
+        {
+          "caller": "checkCall",
+          "callee": "sourceDom.getName",
+          "lineNumber": 55
+        },
+        {
+          "caller": "checkCall",
+          "callee": "Debug.out.println",
+          "lineNumber": 56
+        },
+        {
+          "caller": "checkCall",
+          "callee": "targetDom.getName",
+          "lineNumber": 56
+        },
+        {
+          "caller": "checkCall",
+          "callee": "Debug.out.println",
+          "lineNumber": 58
+        },
+        {
+          "caller": "checkCall",
+          "callee": "m.getName",
+          "lineNumber": 58
+        },
+        {
+          "caller": "checkCall",
+          "callee": "m.getSignature",
+          "lineNumber": 58
+        },
+        {
+          "caller": "checkCall",
+          "callee": "Debug.out.println",
+          "lineNumber": 60
+        },
+        {
+          "caller": "checkCall",
+          "callee": "Debug.out.println",
+          "lineNumber": 62
+        },
+        {
+          "caller": "checkCall",
+          "callee": "sourcePrincipal.equals",
+          "lineNumber": 66
+        },
+        {
+          "caller": "checkCall",
+          "callee": "targetPrincipal.equals",
+          "lineNumber": 67
+        },
+        {
+          "caller": "checkCall",
+          "callee": "Debug.out.println",
+          "lineNumber": 68
+        },
+        {
+          "caller": "dumpVMObject",
+          "callee": "obj.getVMClass",
+          "lineNumber": 74
+        },
+        {
+          "caller": "dumpVMObject",
+          "callee": "Debug.out.println",
+          "lineNumber": 76
+        },
+        {
+          "caller": "dumpVMObject",
+          "callee": "obj.getPrimitiveData",
+          "lineNumber": 76
+        },
+        {
+          "caller": "dumpVMObject",
+          "callee": "Debug.out.print",
+          "lineNumber": 78
+        },
+        {
+          "caller": "dumpVMObject",
+          "callee": "cl.getName",
+          "lineNumber": 78
+        },
+        {
+          "caller": "dumpVMObject",
+          "callee": "cl.getName().equals",
+          "lineNumber": 79
+        },
+        {
+          "caller": "dumpVMObject",
+          "callee": "cl.getName",
+          "lineNumber": 79
+        },
+        {
+          "caller": "dumpVMObject",
+          "callee": "Debug.out.println",
+          "lineNumber": 80
+        },
+        {
+          "caller": "dumpVMObject",
+          "callee": "obj.getString",
+          "lineNumber": 80
+        },
+        {
+          "caller": "dumpVMObject",
+          "callee": "Debug.out.println",
+          "lineNumber": 82
+        },
+        {
+          "caller": "dumpVMObject",
+          "callee": "cpuManager.getVMObject",
+          "lineNumber": 83
+        },
+        {
+          "caller": "dumpVMObject",
+          "callee": "obj.getFirstSubObject",
+          "lineNumber": 84
+        },
+        {
+          "caller": "dumpVMObject",
+          "callee": "obj.getNextSubObject",
+          "lineNumber": 84
+        },
+        {
+          "caller": "dumpVMObject",
+          "callee": "obj2.getVMClass",
+          "lineNumber": 85
+        },
+        {
+          "caller": "dumpVMObject",
+          "callee": "dumpVMObject",
+          "lineNumber": 86
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/secmgr/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/secmgr/Principal_impl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 17,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "Principal_impl",
+          "startLine": 8,
+          "endLine": 11,
+          "params": [
+            "name",
+            "uid"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 12,
+          "endLine": 12,
+          "params": []
+        },
+        {
+          "name": "equals",
+          "startLine": 14,
+          "endLine": 14,
+          "params": [
+            "p"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Principal_impl",
+          "startLine": 5,
+          "endLine": 16,
+          "methods": [
+            "Principal_impl",
+            "toString",
+            "equals"
+          ],
+          "properties": [
+            "name",
+            "uid"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Principal_impl",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "equals",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "Principal_impl",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "toString",
+          "callee": "Integer.toString",
+          "lineNumber": 12
+        },
+        {
+          "caller": "equals",
+          "callee": "name.equals",
+          "lineNumber": 14
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/secmgr/SecMgr.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 83,
+      "nonEmptyLines": 68,
+      "functions": [
+        {
+          "name": "init",
+          "startLine": 17,
+          "endLine": 20,
+          "params": [
+            "naming",
+            "args"
+          ]
+        },
+        {
+          "name": "SecMgr",
+          "startLine": 22,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "SecMgr",
+          "startLine": 26,
+          "endLine": 37,
+          "params": [
+            "naming"
+          ]
+        },
+        {
+          "name": "addDomainAndPrincipal",
+          "startLine": 39,
+          "endLine": 41,
+          "params": [
+            "d",
+            "p"
+          ]
+        },
+        {
+          "name": "getPrincipal",
+          "startLine": 43,
+          "endLine": 45,
+          "params": [
+            "d"
+          ]
+        },
+        {
+          "name": "inheritPrincipal",
+          "startLine": 46,
+          "endLine": 53,
+          "params": [
+            "source",
+            "destination"
+          ]
+        },
+        {
+          "name": "inheritInterceptor",
+          "startLine": 55,
+          "endLine": 64,
+          "params": [
+            "source",
+            "destination"
+          ]
+        },
+        {
+          "name": "installInterceptor",
+          "startLine": 66,
+          "endLine": 81,
+          "params": [
+            "domain",
+            "interceptorClass"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "SecMgr",
+          "startLine": 7,
+          "endLine": 83,
+          "methods": [
+            "init",
+            "SecMgr",
+            "SecMgr",
+            "addDomainAndPrincipal",
+            "getPrincipal",
+            "inheritPrincipal",
+            "inheritInterceptor",
+            "installInterceptor"
+          ],
+          "properties": [
+            "domain2principal",
+            "domain2interceptor",
+            "tcb",
+            "naming",
+            "cpuManager"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "init",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "SecMgr",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "SecMgr",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "addDomainAndPrincipal",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "getPrincipal",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "inheritPrincipal",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "inheritInterceptor",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "installInterceptor",
+          "line": 66,
+          "isDefault": false
+        },
+        {
+          "name": "SecMgr",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "init",
+          "callee": "new DebugPrintStream",
+          "lineNumber": 18
+        },
+        {
+          "caller": "init",
+          "callee": "new DebugOutputStream",
+          "lineNumber": 18
+        },
+        {
+          "caller": "init",
+          "callee": "naming.lookup",
+          "lineNumber": 18
+        },
+        {
+          "caller": "init",
+          "callee": "new SecMgr",
+          "lineNumber": 19
+        },
+        {
+          "caller": "SecMgr",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 23
+        },
+        {
+          "caller": "SecMgr",
+          "callee": "new Principal_impl",
+          "lineNumber": 27
+        },
+        {
+          "caller": "SecMgr",
+          "callee": "naming.lookup",
+          "lineNumber": 29
+        },
+        {
+          "caller": "SecMgr",
+          "callee": "naming.lookup",
+          "lineNumber": 31
+        },
+        {
+          "caller": "SecMgr",
+          "callee": "domainManager.getDomainZero",
+          "lineNumber": 32
+        },
+        {
+          "caller": "SecMgr",
+          "callee": "addDomainAndPrincipal",
+          "lineNumber": 33
+        },
+        {
+          "caller": "SecMgr",
+          "callee": "addDomainAndPrincipal",
+          "lineNumber": 34
+        },
+        {
+          "caller": "SecMgr",
+          "callee": "domainManager.getCurrentDomain",
+          "lineNumber": 34
+        },
+        {
+          "caller": "SecMgr",
+          "callee": "naming.registerPortal",
+          "lineNumber": 35
+        },
+        {
+          "caller": "SecMgr",
+          "callee": "installInterceptor",
+          "lineNumber": 36
+        },
+        {
+          "caller": "SecMgr",
+          "callee": "domainManager.getCurrentDomain",
+          "lineNumber": 36
+        },
+        {
+          "caller": "addDomainAndPrincipal",
+          "callee": "domain2principal.put",
+          "lineNumber": 40
+        },
+        {
+          "caller": "getPrincipal",
+          "callee": "domain2principal.get",
+          "lineNumber": 44
+        },
+        {
+          "caller": "inheritPrincipal",
+          "callee": "Debug.out.println",
+          "lineNumber": 47
+        },
+        {
+          "caller": "inheritPrincipal",
+          "callee": "destination.getName",
+          "lineNumber": 47
+        },
+        {
+          "caller": "inheritPrincipal",
+          "callee": "source.getName",
+          "lineNumber": 47
+        },
+        {
+          "caller": "inheritPrincipal",
+          "callee": "domain2principal.containsKey",
+          "lineNumber": 48
+        },
+        {
+          "caller": "inheritPrincipal",
+          "callee": "getPrincipal",
+          "lineNumber": 50
+        },
+        {
+          "caller": "inheritPrincipal",
+          "callee": "addDomainAndPrincipal",
+          "lineNumber": 52
+        },
+        {
+          "caller": "installInterceptor",
+          "callee": "cpuManager.createCPUState",
+          "lineNumber": 68
+        },
+        {
+          "caller": "installInterceptor",
+          "callee": "new ThreadEntry",
+          "lineNumber": 68
+        },
+        {
+          "caller": "installInterceptor",
+          "callee": "naming.lookup",
+          "lineNumber": 72
+        },
+        {
+          "caller": "installInterceptor",
+          "callee": "cpuManager.getClass",
+          "lineNumber": 75
+        },
+        {
+          "caller": "installInterceptor",
+          "callee": "cl.newInstance",
+          "lineNumber": 76
+        },
+        {
+          "caller": "installInterceptor",
+          "callee": "domainManager.installInterceptor",
+          "lineNumber": 78
+        },
+        {
+          "caller": "installInterceptor",
+          "callee": "domain2interceptor.put",
+          "lineNumber": 79
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/secmgr/SecMgrSecurityPolicy.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 59,
+      "nonEmptyLines": 44,
+      "functions": [
+        {
+          "name": "SecMgrSecurityPolicy",
+          "startLine": 15,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "inBound",
+          "startLine": 22,
+          "endLine": 25,
+          "params": [
+            "info"
+          ]
+        },
+        {
+          "name": "createPortal",
+          "startLine": 27,
+          "endLine": 29,
+          "params": [
+            "info"
+          ]
+        },
+        {
+          "name": "destroyPortal",
+          "startLine": 31,
+          "endLine": 32,
+          "params": [
+            "info"
+          ]
+        },
+        {
+          "name": "checkCall",
+          "startLine": 34,
+          "endLine": 57,
+          "params": [
+            "sourceDom",
+            "targetDom",
+            "m",
+            "params"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "SecMgrSecurityPolicy",
+          "startLine": 6,
+          "endLine": 59,
+          "methods": [
+            "SecMgrSecurityPolicy",
+            "inBound",
+            "createPortal",
+            "destroyPortal",
+            "checkCall"
+          ],
+          "properties": [
+            "debug",
+            "tcb",
+            "naming",
+            "secMgr"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "inBound",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "createPortal",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "destroyPortal",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "SecMgrSecurityPolicy",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SecMgrSecurityPolicy",
+          "callee": "new Principal_impl",
+          "lineNumber": 16
+        },
+        {
+          "caller": "SecMgrSecurityPolicy",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 17
+        },
+        {
+          "caller": "SecMgrSecurityPolicy",
+          "callee": "naming.lookup",
+          "lineNumber": 18
+        },
+        {
+          "caller": "SecMgrSecurityPolicy",
+          "callee": "new Error",
+          "lineNumber": 19
+        },
+        {
+          "caller": "inBound",
+          "callee": "Debug.out.println",
+          "lineNumber": 23
+        },
+        {
+          "caller": "inBound",
+          "callee": "checkCall",
+          "lineNumber": 24
+        },
+        {
+          "caller": "inBound",
+          "callee": "info.getSourceDomain",
+          "lineNumber": 24
+        },
+        {
+          "caller": "inBound",
+          "callee": "info.getTargetDomain",
+          "lineNumber": 24
+        },
+        {
+          "caller": "inBound",
+          "callee": "info.getMethod",
+          "lineNumber": 24
+        },
+        {
+          "caller": "checkCall",
+          "callee": "secMgr.getPrincipal",
+          "lineNumber": 35
+        },
+        {
+          "caller": "checkCall",
+          "callee": "secMgr.getPrincipal",
+          "lineNumber": 36
+        },
+        {
+          "caller": "checkCall",
+          "callee": "Debug.out.println",
+          "lineNumber": 38
+        },
+        {
+          "caller": "checkCall",
+          "callee": "sourceDom.getName",
+          "lineNumber": 38
+        },
+        {
+          "caller": "checkCall",
+          "callee": "Debug.out.println",
+          "lineNumber": 39
+        },
+        {
+          "caller": "checkCall",
+          "callee": "targetDom.getName",
+          "lineNumber": 39
+        },
+        {
+          "caller": "checkCall",
+          "callee": "Debug.out.println",
+          "lineNumber": 40
+        },
+        {
+          "caller": "checkCall",
+          "callee": "m.getName",
+          "lineNumber": 40
+        },
+        {
+          "caller": "checkCall",
+          "callee": "m.getSignature",
+          "lineNumber": 40
+        },
+        {
+          "caller": "checkCall",
+          "callee": "Debug.out.println",
+          "lineNumber": 45
+        },
+        {
+          "caller": "checkCall",
+          "callee": "m.getName().equals",
+          "lineNumber": 49
+        },
+        {
+          "caller": "checkCall",
+          "callee": "m.getName",
+          "lineNumber": 49
+        },
+        {
+          "caller": "checkCall",
+          "callee": "m.getName().equals",
+          "lineNumber": 49
+        },
+        {
+          "caller": "checkCall",
+          "callee": "m.getName",
+          "lineNumber": 49
+        },
+        {
+          "caller": "checkCall",
+          "callee": "targetPrincipal.equals",
+          "lineNumber": 52
+        },
+        {
+          "caller": "checkCall",
+          "callee": "new Error",
+          "lineNumber": 52
+        },
+        {
+          "caller": "checkCall",
+          "callee": "sourcePrincipal.equals",
+          "lineNumber": 54
+        },
+        {
+          "caller": "checkCall",
+          "callee": "targetPrincipal.equals",
+          "lineNumber": 54
+        },
+        {
+          "caller": "checkCall",
+          "callee": "Debug.out.println",
+          "lineNumber": 55
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/streams/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/streams/StreamProvider.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 10,
+      "nonEmptyLines": 8,
+      "classes": [
+        {
+          "name": "StreamProvider",
+          "startLine": 5,
+          "endLine": 10,
+          "methods": [
+            "getInputStream",
+            "getOutputStream",
+            "getErrorStream",
+            "close"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "StreamProvider",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/synch/blocking/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/synch/blocking/Queue.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 45,
+      "nonEmptyLines": 36,
+      "functions": [
+        {
+          "name": "Queue",
+          "startLine": 24,
+          "endLine": 28,
+          "params": [
+            "consumer"
+          ]
+        },
+        {
+          "name": "enqueue",
+          "startLine": 31,
+          "endLine": 37,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "dequeue",
+          "startLine": 39,
+          "endLine": 44,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "Node",
+          "startLine": 11,
+          "endLine": 15,
+          "methods": [],
+          "properties": [
+            "cpuManager",
+            "value",
+            "next"
+          ]
+        },
+        {
+          "name": "Queue",
+          "startLine": 17,
+          "endLine": 45,
+          "methods": [
+            "Queue",
+            "enqueue",
+            "dequeue"
+          ],
+          "properties": [
+            "head",
+            "tail",
+            "cpuManager",
+            "consumer"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Queue",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "enqueue",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "dequeue",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "Queue",
+          "line": 17,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Queue",
+          "callee": "new Node",
+          "lineNumber": 26
+        },
+        {
+          "caller": "enqueue",
+          "callee": "new Node",
+          "lineNumber": 32
+        },
+        {
+          "caller": "enqueue",
+          "callee": "node.next.set",
+          "lineNumber": 34
+        },
+        {
+          "caller": "enqueue",
+          "callee": "tail.next.atomicUpdateUnblock",
+          "lineNumber": 35
+        },
+        {
+          "caller": "dequeue",
+          "callee": "head.next.blockIfEqual",
+          "lineNumber": 41
+        },
+        {
+          "caller": "dequeue",
+          "callee": "head.next.get",
+          "lineNumber": 42
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "src/jx/synch/blocking/Test.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 41,
+      "nonEmptyLines": 31,
+      "functions": [
+        {
+          "name": "init",
+          "startLine": 7,
+          "endLine": 20,
+          "params": [
+            "naming"
+          ]
+        },
+        {
+          "name": "produce",
+          "startLine": 22,
+          "endLine": 29,
+          "params": [
+            "q"
+          ]
+        },
+        {
+          "name": "consume",
+          "startLine": 31,
+          "endLine": 39,
+          "params": [
+            "q"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Test",
+          "startLine": 6,
+          "endLine": 41,
+          "methods": [
+            "init",
+            "produce",
+            "consume"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "init",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "produce",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "consume",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "Test",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "init",
+          "callee": "new DebugPrintStream",
+          "lineNumber": 8
+        },
+        {
+          "caller": "init",
+          "callee": "new DebugOutputStream",
+          "lineNumber": 8
+        },
+        {
+          "caller": "init",
+          "callee": "naming.lookup",
+          "lineNumber": 8
+        },
+        {
+          "caller": "init",
+          "callee": "naming.lookup",
+          "lineNumber": 9
+        },
+        {
+          "caller": "init",
+          "callee": "new Queue",
+          "lineNumber": 11
+        },
+        {
+          "caller": "init",
+          "callee": "cpuManager.getCPUState",
+          "lineNumber": 11
+        },
+        {
+          "caller": "init",
+          "callee": "new Thread() {\n\t\tpublic void run() { consume(q); }\n\t    }.start",
+          "lineNumber": 14
+        },
+        {
+          "caller": "init",
+          "callee": "new Thread",
+          "lineNumber": 14
+        },
+        {
+          "caller": "run",
+          "callee": "consume",
+          "lineNumber": 15
+        },
+        {
+          "caller": "init",
+          "callee": "produce",
+          "lineNumber": 19
+        },
+        {
+          "caller": "produce",
+          "callee": "new Integer",
+          "lineNumber": 25
+        },
+        {
+          "caller": "produce",
+          "callee": "q.enqueue",
+          "lineNumber": 26
+        },
+        {
+          "caller": "consume",
+          "callee": "q.dequeue",
+          "lineNumber": 34
+        },
+        {
+          "caller": "consume",
+          "callee": "i.intValue",
+          "lineNumber": 35
+        },
+        {
+          "caller": "consume",
+          "callee": "new Error",
+          "lineNumber": 35
+        },
+        {
+          "caller": "consume",
+          "callee": "Debug.out.print",
+          "lineNumber": 37
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/synch/mutex/BlockingLock.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "classes": [
+        {
+          "name": "BlockingLock",
+          "startLine": 3,
+          "endLine": 6,
+          "methods": [
+            "lock",
+            "unlock"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "BlockingLock",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/synch/mutex/BlockingLockImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 77,
+      "nonEmptyLines": 65,
+      "functions": [
+        {
+          "name": "lock",
+          "startLine": 47,
+          "endLine": 61,
+          "params": []
+        },
+        {
+          "name": "unlock",
+          "startLine": 63,
+          "endLine": 75,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "BlockingLockImpl",
+          "startLine": 5,
+          "endLine": 77,
+          "methods": [
+            "lock",
+            "unlock"
+          ],
+          "properties": [
+            "waiting",
+            "cpuManager",
+            "scheduler",
+            "owner"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "lock",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "unlock",
+          "line": 63,
+          "isDefault": false
+        },
+        {
+          "name": "BlockingLockImpl",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Queue",
+          "callee": "new Node",
+          "lineNumber": 17
+        },
+        {
+          "caller": "enqueue",
+          "callee": "new Node",
+          "lineNumber": 23
+        },
+        {
+          "caller": "lock",
+          "callee": "cpuManager.getCPUState",
+          "lineNumber": 49
+        },
+        {
+          "caller": "lock",
+          "callee": "scheduler.disableThreadSwitching",
+          "lineNumber": 51
+        },
+        {
+          "caller": "lock",
+          "callee": "scheduler.enableThreadSwitching",
+          "lineNumber": 54
+        },
+        {
+          "caller": "lock",
+          "callee": "waiting.enqueue",
+          "lineNumber": 57
+        },
+        {
+          "caller": "lock",
+          "callee": "scheduler.blockAndEnableThreadSwitching",
+          "lineNumber": 58
+        },
+        {
+          "caller": "unlock",
+          "callee": "cpuManager.getCPUState",
+          "lineNumber": 65
+        },
+        {
+          "caller": "unlock",
+          "callee": "scheduler.disableThreadSwitching",
+          "lineNumber": 66
+        },
+        {
+          "caller": "unlock",
+          "callee": "waiting.dequeue",
+          "lineNumber": 67
+        },
+        {
+          "caller": "unlock",
+          "callee": "cpuManager.unblock",
+          "lineNumber": 70
+        },
+        {
+          "caller": "unlock",
+          "callee": "scheduler.enableThreadSwitching",
+          "lineNumber": 74
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/synch/mutex/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/synch/mutex/Test.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 29,
+      "nonEmptyLines": 23,
+      "functions": [
+        {
+          "name": "init",
+          "startLine": 7,
+          "endLine": 10,
+          "params": [
+            "naming"
+          ]
+        },
+        {
+          "name": "Test",
+          "startLine": 15,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "run",
+          "startLine": 21,
+          "endLine": 27,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "Test",
+          "startLine": 6,
+          "endLine": 29,
+          "methods": [
+            "init",
+            "Test",
+            "run"
+          ],
+          "properties": [
+            "a",
+            "mutex"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "init",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "run",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "Test",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "init",
+          "callee": "new DebugPrintStream",
+          "lineNumber": 8
+        },
+        {
+          "caller": "init",
+          "callee": "new DebugOutputStream",
+          "lineNumber": 8
+        },
+        {
+          "caller": "init",
+          "callee": "naming.lookup",
+          "lineNumber": 8
+        },
+        {
+          "caller": "init",
+          "callee": "new Test",
+          "lineNumber": 9
+        },
+        {
+          "caller": "Test",
+          "callee": "new Thread(this).start",
+          "lineNumber": 17
+        },
+        {
+          "caller": "Test",
+          "callee": "new Thread",
+          "lineNumber": 17
+        },
+        {
+          "caller": "run",
+          "callee": "mutex.lock",
+          "lineNumber": 23
+        },
+        {
+          "caller": "run",
+          "callee": "mutex.unlock",
+          "lineNumber": 25
+        },
+        {
+          "caller": "run",
+          "callee": "Debug.out.println",
+          "lineNumber": 26
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/synch/nonblocking2/MPSCQueue.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 38,
+      "nonEmptyLines": 31,
+      "functions": [
+        {
+          "name": "MPSCQueue",
+          "startLine": 12,
+          "endLine": 15,
+          "params": []
+        },
+        {
+          "name": "enqueue",
+          "startLine": 18,
+          "endLine": 37,
+          "params": [
+            "value"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "MPSCQueue",
+          "startLine": 7,
+          "endLine": 38,
+          "methods": [
+            "MPSCQueue",
+            "enqueue"
+          ],
+          "properties": [
+            "cas_next",
+            "cas_tail",
+            "cpuManager"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "enqueue",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "MPSCQueue",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "MPSCQueue",
+          "callee": "cpuManager.getCAS",
+          "lineNumber": 13
+        },
+        {
+          "caller": "MPSCQueue",
+          "callee": "cpuManager.getCAS",
+          "lineNumber": 14
+        },
+        {
+          "caller": "enqueue",
+          "callee": "new Node",
+          "lineNumber": 19
+        },
+        {
+          "caller": "enqueue",
+          "callee": "cas_next.casObject",
+          "lineNumber": 28
+        },
+        {
+          "caller": "enqueue",
+          "callee": "cas_tail.casObject",
+          "lineNumber": 32
+        },
+        {
+          "caller": "enqueue",
+          "callee": "cas_tail.casObject",
+          "lineNumber": 36
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/synch/nonblocking2/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/synch/nonblocking2/Queue.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 6,
+      "classes": [
+        {
+          "name": "Queue",
+          "startLine": 5,
+          "endLine": 8,
+          "methods": [
+            "enqueue",
+            "dequeue"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Queue",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/synch/nonblocking2/QueueEmptyException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "QueueEmptyException",
+          "startLine": 4,
+          "endLine": 4,
+          "params": []
+        },
+        {
+          "name": "QueueEmptyException",
+          "startLine": 5,
+          "endLine": 5,
+          "params": [
+            "msg"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "QueueEmptyException",
+          "startLine": 3,
+          "endLine": 6,
+          "methods": [
+            "QueueEmptyException",
+            "QueueEmptyException"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "QueueEmptyException",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "QueueEmptyException",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/synch/nonblocking2/SPSCQueue.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 41,
+      "nonEmptyLines": 32,
+      "functions": [
+        {
+          "name": "SPSCQueue",
+          "startLine": 16,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "enqueue",
+          "startLine": 22,
+          "endLine": 28,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "dequeue",
+          "startLine": 32,
+          "endLine": 40,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "SPSCQueue",
+          "startLine": 7,
+          "endLine": 41,
+          "methods": [
+            "SPSCQueue",
+            "enqueue",
+            "dequeue"
+          ],
+          "properties": [
+            "head",
+            "tail"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SPSCQueue",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "enqueue",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "dequeue",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "SPSCQueue",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SPSCQueue",
+          "callee": "new Node",
+          "lineNumber": 17
+        },
+        {
+          "caller": "enqueue",
+          "callee": "new Node",
+          "lineNumber": 23
+        },
+        {
+          "caller": "dequeue",
+          "callee": "new QueueEmptyException",
+          "lineNumber": 36
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/synch/nonblocking2/Test.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 54,
+      "nonEmptyLines": 42,
+      "functions": [
+        {
+          "name": "init",
+          "startLine": 13,
+          "endLine": 33,
+          "params": [
+            "naming"
+          ]
+        },
+        {
+          "name": "produce",
+          "startLine": 35,
+          "endLine": 42,
+          "params": [
+            "id",
+            "q"
+          ]
+        },
+        {
+          "name": "consume",
+          "startLine": 44,
+          "endLine": 52,
+          "params": [
+            "q"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Test",
+          "startLine": 6,
+          "endLine": 54,
+          "methods": [
+            "init",
+            "produce",
+            "consume"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "init",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "produce",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "consume",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "Test",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "init",
+          "callee": "new DebugPrintStream",
+          "lineNumber": 14
+        },
+        {
+          "caller": "init",
+          "callee": "new DebugOutputStream",
+          "lineNumber": 14
+        },
+        {
+          "caller": "init",
+          "callee": "naming.lookup",
+          "lineNumber": 14
+        },
+        {
+          "caller": "init",
+          "callee": "naming.lookup",
+          "lineNumber": 15
+        },
+        {
+          "caller": "init",
+          "callee": "new MPSCQueue",
+          "lineNumber": 17
+        },
+        {
+          "caller": "init",
+          "callee": "new Thread() {\n                @Override\n\t\tpublic void run() { consume(q); }\n\t    }.start",
+          "lineNumber": 20
+        },
+        {
+          "caller": "init",
+          "callee": "new Thread",
+          "lineNumber": 20
+        },
+        {
+          "caller": "run",
+          "callee": "consume",
+          "lineNumber": 22
+        },
+        {
+          "caller": "init",
+          "callee": "new Thread() {\n                @Override\n\t\tpublic void run() { produce(1, q); }\n\t    }.start",
+          "lineNumber": 26
+        },
+        {
+          "caller": "init",
+          "callee": "new Thread",
+          "lineNumber": 26
+        },
+        {
+          "caller": "run",
+          "callee": "produce",
+          "lineNumber": 28
+        },
+        {
+          "caller": "init",
+          "callee": "produce",
+          "lineNumber": 32
+        },
+        {
+          "caller": "produce",
+          "callee": "new ID",
+          "lineNumber": 38
+        },
+        {
+          "caller": "produce",
+          "callee": "q.enqueue",
+          "lineNumber": 39
+        },
+        {
+          "caller": "consume",
+          "callee": "q.dequeue",
+          "lineNumber": 47
+        },
+        {
+          "caller": "consume",
+          "callee": "Debug.out.print",
+          "lineNumber": 49
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/synch/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/timer/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    }
+  ]
+}

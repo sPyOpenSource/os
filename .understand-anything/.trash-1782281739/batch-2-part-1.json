@@ -1,0 +1,1325 @@
+{
+  "schemaVersion": 1,
+  "batchIndex": 2,
+  "part": 1,
+  "nodes": [
+    {
+      "id": "cls:src/java/io/ObjectStreamField.java:ObjectStreamField",
+      "type": "class",
+      "label": "ObjectStreamField",
+      "properties": {
+        "path": "src/java/io/ObjectStreamField.java",
+        "name": "ObjectStreamField",
+        "startLine": 40,
+        "endLine": 332,
+        "numMethods": 16
+      }
+    },
+    {
+      "id": "cls:src/java/lang/Integer.java:Integer",
+      "type": "class",
+      "label": "Integer",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "Integer",
+        "startLine": 5,
+        "endLine": 276,
+        "numMethods": 25
+      }
+    },
+    {
+      "id": "file:src/java/io/ObjectStreamField.java",
+      "type": "file",
+      "label": "ObjectStreamField.java",
+      "properties": {
+        "path": "src/java/io/ObjectStreamField.java",
+        "language": "java",
+        "sizeLines": 332,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/lang/Appendable.java",
+      "type": "file",
+      "label": "Appendable.java",
+      "properties": {
+        "path": "src/java/lang/Appendable.java",
+        "language": "java",
+        "sizeLines": 59,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/java/lang/ArrayStoreException.java",
+      "type": "file",
+      "label": "ArrayStoreException.java",
+      "properties": {
+        "path": "src/java/lang/ArrayStoreException.java",
+        "language": "java",
+        "sizeLines": 8,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/java/lang/AutoCloseable.java",
+      "type": "file",
+      "label": "AutoCloseable.java",
+      "properties": {
+        "path": "src/java/lang/AutoCloseable.java",
+        "language": "java",
+        "sizeLines": 8,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/java/lang/Cloneable.java",
+      "type": "file",
+      "label": "Cloneable.java",
+      "properties": {
+        "path": "src/java/lang/Cloneable.java",
+        "language": "java",
+        "sizeLines": 6,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/java/lang/Comparable.java",
+      "type": "file",
+      "label": "Comparable.java",
+      "properties": {
+        "path": "src/java/lang/Comparable.java",
+        "language": "java",
+        "sizeLines": 6,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/java/lang/Compiler.java",
+      "type": "file",
+      "label": "Compiler.java",
+      "properties": {
+        "path": "src/java/lang/Compiler.java",
+        "language": "java",
+        "sizeLines": 6,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/java/lang/Daemon.java",
+      "type": "file",
+      "label": "Daemon.java",
+      "properties": {
+        "path": "src/java/lang/Daemon.java",
+        "language": "java",
+        "sizeLines": 71,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/java/lang/Integer.java",
+      "type": "file",
+      "label": "Integer.java",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "language": "java",
+        "sizeLines": 277,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/javax/crypto/BadPaddingException.java",
+      "type": "file",
+      "label": "BadPaddingException.java",
+      "properties": {
+        "path": "src/javax/crypto/BadPaddingException.java",
+        "language": "java",
+        "sizeLines": 7,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/javax/crypto/Cipher.java",
+      "type": "file",
+      "label": "Cipher.java",
+      "properties": {
+        "path": "src/javax/crypto/Cipher.java",
+        "language": "java",
+        "sizeLines": 637,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/javax/crypto/CipherInputStream.java",
+      "type": "file",
+      "label": "CipherInputStream.java",
+      "properties": {
+        "path": "src/javax/crypto/CipherInputStream.java",
+        "language": "java",
+        "sizeLines": 186,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/javax/crypto/CipherOutputStream.java",
+      "type": "file",
+      "label": "CipherOutputStream.java",
+      "properties": {
+        "path": "src/javax/crypto/CipherOutputStream.java",
+        "language": "java",
+        "sizeLines": 130,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/javax/crypto/CipherSpi.java",
+      "type": "file",
+      "label": "CipherSpi.java",
+      "properties": {
+        "path": "src/javax/crypto/CipherSpi.java",
+        "language": "java",
+        "sizeLines": 73,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/javax/crypto/EncryptedPrivateKeyInfo.java",
+      "type": "file",
+      "label": "EncryptedPrivateKeyInfo.java",
+      "properties": {
+        "path": "src/javax/crypto/EncryptedPrivateKeyInfo.java",
+        "language": "java",
+        "sizeLines": 210,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/javax/crypto/IllegalBlockSizeException.java",
+      "type": "file",
+      "label": "IllegalBlockSizeException.java",
+      "properties": {
+        "path": "src/javax/crypto/IllegalBlockSizeException.java",
+        "language": "java",
+        "sizeLines": 7,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/javax/crypto/KeyGenerator.java",
+      "type": "file",
+      "label": "KeyGenerator.java",
+      "properties": {
+        "path": "src/javax/crypto/KeyGenerator.java",
+        "language": "java",
+        "sizeLines": 6,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "fn:src/java/io/ObjectStreamField.java:ObjectStreamField",
+      "type": "function",
+      "label": "ObjectStreamField",
+      "properties": {
+        "path": "src/java/io/ObjectStreamField.java",
+        "name": "ObjectStreamField",
+        "startLine": 100,
+        "endLine": 122,
+        "params": [
+          "name",
+          "signature",
+          "unshared"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/ObjectStreamField.java:compareTo",
+      "type": "function",
+      "label": "compareTo",
+      "properties": {
+        "path": "src/java/io/ObjectStreamField.java",
+        "name": "compareTo",
+        "startLine": 258,
+        "endLine": 265,
+        "params": [
+          "obj"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/ObjectStreamField.java:getClassSignature",
+      "type": "function",
+      "label": "getClassSignature",
+      "properties": {
+        "path": "src/java/io/ObjectStreamField.java",
+        "name": "getClassSignature",
+        "startLine": 299,
+        "endLine": 331,
+        "params": [
+          "cl"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/io/ObjectStreamField.java:getName",
+      "type": "function",
+      "label": "getName",
+      "properties": {
+        "path": "src/java/io/ObjectStreamField.java",
+        "name": "getName",
+        "startLine": 147,
+        "endLine": 149,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/ObjectStreamField.java:getOffset",
+      "type": "function",
+      "label": "getOffset",
+      "properties": {
+        "path": "src/java/io/ObjectStreamField.java",
+        "name": "getOffset",
+        "startLine": 211,
+        "endLine": 213,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/ObjectStreamField.java:getTypeCode",
+      "type": "function",
+      "label": "getTypeCode",
+      "properties": {
+        "path": "src/java/io/ObjectStreamField.java",
+        "name": "getTypeCode",
+        "startLine": 190,
+        "endLine": 192,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/ObjectStreamField.java:getTypeString",
+      "type": "function",
+      "label": "getTypeString",
+      "properties": {
+        "path": "src/java/io/ObjectStreamField.java",
+        "name": "getTypeString",
+        "startLine": 200,
+        "endLine": 202,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/ObjectStreamField.java:isPrimitive",
+      "type": "function",
+      "label": "isPrimitive",
+      "properties": {
+        "path": "src/java/io/ObjectStreamField.java",
+        "name": "isPrimitive",
+        "startLine": 232,
+        "endLine": 235,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/ObjectStreamField.java:isUnshared",
+      "type": "function",
+      "label": "isUnshared",
+      "properties": {
+        "path": "src/java/io/ObjectStreamField.java",
+        "name": "isUnshared",
+        "startLine": 245,
+        "endLine": 247,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/io/ObjectStreamField.java:toString",
+      "type": "function",
+      "label": "toString",
+      "properties": {
+        "path": "src/java/io/ObjectStreamField.java",
+        "name": "toString",
+        "startLine": 271,
+        "endLine": 274,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:Integer",
+      "type": "function",
+      "label": "Integer",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "Integer",
+        "startLine": 91,
+        "endLine": 94,
+        "params": [
+          "s"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:decode",
+      "type": "function",
+      "label": "decode",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "decode",
+        "startLine": 233,
+        "endLine": 233,
+        "params": [
+          "s"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:doubleValue",
+      "type": "function",
+      "label": "doubleValue",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "doubleValue",
+        "startLine": 132,
+        "endLine": 135,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:equals",
+      "type": "function",
+      "label": "equals",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "equals",
+        "startLine": 101,
+        "endLine": 109,
+        "params": [
+          "obj"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:floatValue",
+      "type": "function",
+      "label": "floatValue",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "floatValue",
+        "startLine": 127,
+        "endLine": 130,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:getChars",
+      "type": "function",
+      "label": "getChars",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "getChars",
+        "startLine": 50,
+        "endLine": 82,
+        "params": [
+          "i",
+          "index",
+          "buf"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:getInteger",
+      "type": "function",
+      "label": "getInteger",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "getInteger",
+        "startLine": 256,
+        "endLine": 275,
+        "params": [
+          "nm",
+          "val"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:hashCode",
+      "type": "function",
+      "label": "hashCode",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "hashCode",
+        "startLine": 111,
+        "endLine": 114,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:intValue",
+      "type": "function",
+      "label": "intValue",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "intValue",
+        "startLine": 116,
+        "endLine": 119,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:longValue",
+      "type": "function",
+      "label": "longValue",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "longValue",
+        "startLine": 121,
+        "endLine": 124,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:parseInt",
+      "type": "function",
+      "label": "parseInt",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "parseInt",
+        "startLine": 205,
+        "endLine": 231,
+        "params": [
+          "s",
+          "radix"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:toBinaryString",
+      "type": "function",
+      "label": "toBinaryString",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "toBinaryString",
+        "startLine": 195,
+        "endLine": 198,
+        "params": [
+          "i"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:toHexString",
+      "type": "function",
+      "label": "toHexString",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "toHexString",
+        "startLine": 185,
+        "endLine": 188,
+        "params": [
+          "i"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:toOctalString",
+      "type": "function",
+      "label": "toOctalString",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "toOctalString",
+        "startLine": 190,
+        "endLine": 193,
+        "params": [
+          "i"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:toString",
+      "type": "function",
+      "label": "toString",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "toString",
+        "startLine": 142,
+        "endLine": 167,
+        "params": [
+          "value",
+          "radix"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:toUnsignedString",
+      "type": "function",
+      "label": "toUnsignedString",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "toUnsignedString",
+        "startLine": 170,
+        "endLine": 183,
+        "params": [
+          "value",
+          "shift"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/Integer.java:valueOf",
+      "type": "function",
+      "label": "valueOf",
+      "properties": {
+        "path": "src/java/lang/Integer.java",
+        "name": "valueOf",
+        "startLine": 240,
+        "endLine": 243,
+        "params": [
+          "s",
+          "radix"
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/java/io/ObjectStreamField.java",
+      "target": "cls:src/java/io/ObjectStreamField.java:ObjectStreamField",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/ObjectStreamField.java",
+      "target": "cls:src/java/io/ObjectStreamField.java:ObjectStreamField",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/ObjectStreamField.java",
+      "target": "fn:src/java/io/ObjectStreamField.java:ObjectStreamField",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/ObjectStreamField.java",
+      "target": "fn:src/java/io/ObjectStreamField.java:ObjectStreamField",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/ObjectStreamField.java",
+      "target": "fn:src/java/io/ObjectStreamField.java:ObjectStreamField",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/ObjectStreamField.java",
+      "target": "fn:src/java/io/ObjectStreamField.java:ObjectStreamField",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/ObjectStreamField.java",
+      "target": "fn:src/java/io/ObjectStreamField.java:ObjectStreamField",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/ObjectStreamField.java",
+      "target": "fn:src/java/io/ObjectStreamField.java:ObjectStreamField",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/ObjectStreamField.java",
+      "target": "fn:src/java/io/ObjectStreamField.java:getName",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/ObjectStreamField.java",
+      "target": "fn:src/java/io/ObjectStreamField.java:getName",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/ObjectStreamField.java",
+      "target": "fn:src/java/io/ObjectStreamField.java:getTypeCode",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/ObjectStreamField.java",
+      "target": "fn:src/java/io/ObjectStreamField.java:getTypeCode",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/ObjectStreamField.java",
+      "target": "fn:src/java/io/ObjectStreamField.java:getTypeString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/ObjectStreamField.java",
+      "target": "fn:src/java/io/ObjectStreamField.java:getTypeString",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/ObjectStreamField.java",
+      "target": "fn:src/java/io/ObjectStreamField.java:getOffset",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/ObjectStreamField.java",
+      "target": "fn:src/java/io/ObjectStreamField.java:getOffset",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/ObjectStreamField.java",
+      "target": "fn:src/java/io/ObjectStreamField.java:isPrimitive",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/ObjectStreamField.java",
+      "target": "fn:src/java/io/ObjectStreamField.java:isPrimitive",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/ObjectStreamField.java",
+      "target": "fn:src/java/io/ObjectStreamField.java:isUnshared",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/ObjectStreamField.java",
+      "target": "fn:src/java/io/ObjectStreamField.java:isUnshared",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/ObjectStreamField.java",
+      "target": "fn:src/java/io/ObjectStreamField.java:compareTo",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/ObjectStreamField.java",
+      "target": "fn:src/java/io/ObjectStreamField.java:compareTo",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/ObjectStreamField.java",
+      "target": "fn:src/java/io/ObjectStreamField.java:toString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/io/ObjectStreamField.java",
+      "target": "fn:src/java/io/ObjectStreamField.java:toString",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/ObjectStreamField.java",
+      "target": "fn:src/java/io/ObjectStreamField.java:getClassSignature",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "fn:src/java/io/ObjectStreamField.java:getTypeString",
+      "target": "fn:src/java/io/ObjectStreamField.java:isPrimitive",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/ObjectStreamField.java:compareTo",
+      "target": "fn:src/java/io/ObjectStreamField.java:isPrimitive",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "cls:src/java/lang/Integer.java:Integer",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "cls:src/java/lang/Integer.java:Integer",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:getChars",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:Integer",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:Integer",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:Integer",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:Integer",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:toString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:toString",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:equals",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:equals",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:hashCode",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:hashCode",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:intValue",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:intValue",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:longValue",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:longValue",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:floatValue",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:floatValue",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:doubleValue",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:doubleValue",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:toString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:toString",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:toString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:toString",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:toUnsignedString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:toHexString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:toHexString",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:toOctalString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:toOctalString",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:toBinaryString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:toBinaryString",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:parseInt",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:parseInt",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:parseInt",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:parseInt",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:decode",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:decode",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:valueOf",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:valueOf",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:valueOf",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:valueOf",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:getInteger",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:getInteger",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:getInteger",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:getInteger",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:getInteger",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "fn:src/java/lang/Integer.java:getInteger",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:Integer",
+      "target": "fn:src/java/lang/Integer.java:parseInt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:toString",
+      "target": "fn:src/java/lang/Integer.java:toString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:toHexString",
+      "target": "fn:src/java/lang/Integer.java:toUnsignedString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:toOctalString",
+      "target": "fn:src/java/lang/Integer.java:toUnsignedString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:toBinaryString",
+      "target": "fn:src/java/lang/Integer.java:toUnsignedString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:parseInt",
+      "target": "fn:src/java/lang/Integer.java:parseInt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:decode",
+      "target": "fn:src/java/lang/Integer.java:valueOf",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:valueOf",
+      "target": "fn:src/java/lang/Integer.java:parseInt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:getInteger",
+      "target": "fn:src/java/lang/Integer.java:getInteger",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:getInteger",
+      "target": "fn:src/java/lang/Integer.java:valueOf",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/io/ObjectStreamField.java",
+      "target": "file:src/java/lang/reflect/Field.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "fn:src/java/io/ObjectStreamField.java:ObjectStreamField",
+      "target": "fn:src/java/io/ObjectStreamField.java:new NullPointerException",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/ObjectStreamField.java:ObjectStreamField",
+      "target": "fn:src/java/io/ObjectStreamField.java:signature.intern",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/ObjectStreamField.java:ObjectStreamField",
+      "target": "fn:src/java/io/ObjectStreamField.java:signature.charAt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/ObjectStreamField.java:ObjectStreamField",
+      "target": "fn:src/java/io/ObjectStreamField.java:new IllegalArgumentException",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/ObjectStreamField.java:getTypeCode",
+      "target": "fn:src/java/io/ObjectStreamField.java:signature.charAt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/ObjectStreamField.java:isPrimitive",
+      "target": "fn:src/java/io/ObjectStreamField.java:signature.charAt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/ObjectStreamField.java:compareTo",
+      "target": "fn:src/java/io/ObjectStreamField.java:other.isPrimitive",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/ObjectStreamField.java:compareTo",
+      "target": "fn:src/java/io/ObjectStreamField.java:name.compareTo",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/ObjectStreamField.java:getClassSignature",
+      "target": "fn:src/java/io/ObjectStreamField.java:new StringBuilder",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/ObjectStreamField.java:getClassSignature",
+      "target": "fn:src/java/io/ObjectStreamField.java:cl.isArray",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/ObjectStreamField.java:getClassSignature",
+      "target": "fn:src/java/io/ObjectStreamField.java:sbuf.append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/ObjectStreamField.java:getClassSignature",
+      "target": "fn:src/java/io/ObjectStreamField.java:cl.getComponentType",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/ObjectStreamField.java:getClassSignature",
+      "target": "fn:src/java/io/ObjectStreamField.java:cl.isPrimitive",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/ObjectStreamField.java:getClassSignature",
+      "target": "fn:src/java/io/ObjectStreamField.java:new InternalError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/ObjectStreamField.java:getClassSignature",
+      "target": "fn:src/java/io/ObjectStreamField.java:sbuf.append('L').append(cl.getName().replace('.', '/')).append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/ObjectStreamField.java:getClassSignature",
+      "target": "fn:src/java/io/ObjectStreamField.java:sbuf.append('L').append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/ObjectStreamField.java:getClassSignature",
+      "target": "fn:src/java/io/ObjectStreamField.java:cl.getName().replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/ObjectStreamField.java:getClassSignature",
+      "target": "fn:src/java/io/ObjectStreamField.java:cl.getName",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/io/ObjectStreamField.java:getClassSignature",
+      "target": "fn:src/java/io/ObjectStreamField.java:sbuf.toString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/Integer.java",
+      "target": "file:src/jx/zero/Debug.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:equals",
+      "target": "fn:src/java/lang/Integer.java:Debug.out.println",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:floatValue",
+      "target": "fn:src/java/lang/Integer.java:new Error",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:doubleValue",
+      "target": "fn:src/java/lang/Integer.java:new Error",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:toString",
+      "target": "fn:src/java/lang/Integer.java:new StringBuilder",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:toString",
+      "target": "fn:src/java/lang/Integer.java:buffer.append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:toString",
+      "target": "fn:src/java/lang/Integer.java:buffer.toString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:toString",
+      "target": "fn:src/java/lang/Integer.java:Character.forDigit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:toString",
+      "target": "fn:src/java/lang/Integer.java:buffer.reverse",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:toUnsignedString",
+      "target": "fn:src/java/lang/Integer.java:Character.forDigit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:parseInt",
+      "target": "fn:src/java/lang/Integer.java:s.equals",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:parseInt",
+      "target": "fn:src/java/lang/Integer.java:new NumberFormatException",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:parseInt",
+      "target": "fn:src/java/lang/Integer.java:s.charAt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:parseInt",
+      "target": "fn:src/java/lang/Integer.java:s.length",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/Integer.java:parseInt",
+      "target": "fn:src/java/lang/Integer.java:Character.digit",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ],
+  "metadata": {
+    "totalNodesInPart": 46,
+    "totalEdgesInPart": 120,
+    "algorithm": "file-analyzer"
+  }
+}

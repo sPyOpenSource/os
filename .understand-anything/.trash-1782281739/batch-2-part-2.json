@@ -1,0 +1,1136 @@
+{
+  "schemaVersion": 1,
+  "batchIndex": 2,
+  "part": 2,
+  "nodes": [
+    {
+      "id": "cls:src/java/lang/AbstractStringBuilder.java:AbstractStringBuilder",
+      "type": "class",
+      "label": "AbstractStringBuilder",
+      "properties": {
+        "path": "src/java/lang/AbstractStringBuilder.java",
+        "name": "AbstractStringBuilder",
+        "startLine": 42,
+        "endLine": 1413,
+        "numMethods": 55
+      }
+    },
+    {
+      "id": "file:src/java/lang/AbstractStringBuilder.java",
+      "type": "file",
+      "label": "AbstractStringBuilder.java",
+      "properties": {
+        "path": "src/java/lang/AbstractStringBuilder.java",
+        "language": "java",
+        "sizeLines": 1413,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/javax/crypto/KeyGeneratorSpi.java",
+      "type": "file",
+      "label": "KeyGeneratorSpi.java",
+      "properties": {
+        "path": "src/javax/crypto/KeyGeneratorSpi.java",
+        "language": "java",
+        "sizeLines": 5,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/javax/crypto/Mac.java",
+      "type": "file",
+      "label": "Mac.java",
+      "properties": {
+        "path": "src/javax/crypto/Mac.java",
+        "language": "java",
+        "sizeLines": 6,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "fn:src/java/lang/AbstractStringBuilder.java:append",
+      "type": "function",
+      "label": "append",
+      "properties": {
+        "path": "src/java/lang/AbstractStringBuilder.java",
+        "name": "append",
+        "startLine": 678,
+        "endLine": 681,
+        "params": [
+          "d"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/AbstractStringBuilder.java:appendCodePoint",
+      "type": "function",
+      "label": "appendCodePoint",
+      "properties": {
+        "path": "src/java/lang/AbstractStringBuilder.java",
+        "name": "appendCodePoint",
+        "startLine": 731,
+        "endLine": 746,
+        "params": [
+          "codePoint"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/AbstractStringBuilder.java:capacity",
+      "type": "function",
+      "label": "capacity",
+      "properties": {
+        "path": "src/java/lang/AbstractStringBuilder.java",
+        "name": "capacity",
+        "startLine": 85,
+        "endLine": 87,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/lang/AbstractStringBuilder.java:charAt",
+      "type": "function",
+      "label": "charAt",
+      "properties": {
+        "path": "src/java/lang/AbstractStringBuilder.java",
+        "name": "charAt",
+        "startLine": 202,
+        "endLine": 207,
+        "params": [
+          "index"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/AbstractStringBuilder.java:codePointAt",
+      "type": "function",
+      "label": "codePointAt",
+      "properties": {
+        "path": "src/java/lang/AbstractStringBuilder.java",
+        "name": "codePointAt",
+        "startLine": 230,
+        "endLine": 235,
+        "params": [
+          "index"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/AbstractStringBuilder.java:codePointBefore",
+      "type": "function",
+      "label": "codePointBefore",
+      "properties": {
+        "path": "src/java/lang/AbstractStringBuilder.java",
+        "name": "codePointBefore",
+        "startLine": 258,
+        "endLine": 264,
+        "params": [
+          "index"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/AbstractStringBuilder.java:codePointCount",
+      "type": "function",
+      "label": "codePointCount",
+      "properties": {
+        "path": "src/java/lang/AbstractStringBuilder.java",
+        "name": "codePointCount",
+        "startLine": 286,
+        "endLine": 291,
+        "params": [
+          "beginIndex",
+          "endIndex"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/AbstractStringBuilder.java:delete",
+      "type": "function",
+      "label": "delete",
+      "properties": {
+        "path": "src/java/lang/AbstractStringBuilder.java",
+        "name": "delete",
+        "startLine": 697,
+        "endLine": 710,
+        "params": [
+          "start",
+          "end"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/AbstractStringBuilder.java:deleteCharAt",
+      "type": "function",
+      "label": "deleteCharAt",
+      "properties": {
+        "path": "src/java/lang/AbstractStringBuilder.java",
+        "name": "deleteCharAt",
+        "startLine": 765,
+        "endLine": 771,
+        "params": [
+          "index"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/AbstractStringBuilder.java:ensureCapacity",
+      "type": "function",
+      "label": "ensureCapacity",
+      "properties": {
+        "path": "src/java/lang/AbstractStringBuilder.java",
+        "name": "ensureCapacity",
+        "startLine": 103,
+        "endLine": 106,
+        "params": [
+          "minimumCapacity"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/AbstractStringBuilder.java:expandCapacity",
+      "type": "function",
+      "label": "expandCapacity",
+      "properties": {
+        "path": "src/java/lang/AbstractStringBuilder.java",
+        "name": "expandCapacity",
+        "startLine": 122,
+        "endLine": 132,
+        "params": [
+          "minimumCapacity"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/AbstractStringBuilder.java:getChars",
+      "type": "function",
+      "label": "getChars",
+      "properties": {
+        "path": "src/java/lang/AbstractStringBuilder.java",
+        "name": "getChars",
+        "startLine": 350,
+        "endLine": 359,
+        "params": [
+          "srcBegin",
+          "srcEnd",
+          "dst",
+          "dstBegin"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/AbstractStringBuilder.java:indexOf",
+      "type": "function",
+      "label": "indexOf",
+      "properties": {
+        "path": "src/java/lang/AbstractStringBuilder.java",
+        "name": "indexOf",
+        "startLine": 1294,
+        "endLine": 1297,
+        "params": [
+          "str",
+          "fromIndex"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/AbstractStringBuilder.java:insert",
+      "type": "function",
+      "label": "insert",
+      "properties": {
+        "path": "src/java/lang/AbstractStringBuilder.java",
+        "name": "insert",
+        "startLine": 1252,
+        "endLine": 1254,
+        "params": [
+          "offset",
+          "d"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/AbstractStringBuilder.java:lastIndexOf",
+      "type": "function",
+      "label": "lastIndexOf",
+      "properties": {
+        "path": "src/java/lang/AbstractStringBuilder.java",
+        "name": "lastIndexOf",
+        "startLine": 1338,
+        "endLine": 1341,
+        "params": [
+          "str",
+          "fromIndex"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/AbstractStringBuilder.java:length",
+      "type": "function",
+      "label": "length",
+      "properties": {
+        "path": "src/java/lang/AbstractStringBuilder.java",
+        "name": "length",
+        "startLine": 73,
+        "endLine": 76,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/lang/AbstractStringBuilder.java:offsetByCodePoints",
+      "type": "function",
+      "label": "offsetByCodePoints",
+      "properties": {
+        "path": "src/java/lang/AbstractStringBuilder.java",
+        "name": "offsetByCodePoints",
+        "startLine": 312,
+        "endLine": 318,
+        "params": [
+          "index",
+          "codePointOffset"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/AbstractStringBuilder.java:replace",
+      "type": "function",
+      "label": "replace",
+      "properties": {
+        "path": "src/java/lang/AbstractStringBuilder.java",
+        "name": "replace",
+        "startLine": 792,
+        "endLine": 810,
+        "params": [
+          "start",
+          "end",
+          "str"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/AbstractStringBuilder.java:reverse",
+      "type": "function",
+      "label": "reverse",
+      "properties": {
+        "path": "src/java/lang/AbstractStringBuilder.java",
+        "name": "reverse",
+        "startLine": 1365,
+        "endLine": 1392,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/lang/AbstractStringBuilder.java:setCharAt",
+      "type": "function",
+      "label": "setCharAt",
+      "properties": {
+        "path": "src/java/lang/AbstractStringBuilder.java",
+        "name": "setCharAt",
+        "startLine": 375,
+        "endLine": 379,
+        "params": [
+          "index",
+          "ch"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/AbstractStringBuilder.java:setLength",
+      "type": "function",
+      "label": "setLength",
+      "properties": {
+        "path": "src/java/lang/AbstractStringBuilder.java",
+        "name": "setLength",
+        "startLine": 172,
+        "endLine": 183,
+        "params": [
+          "newLength"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/AbstractStringBuilder.java:subSequence",
+      "type": "function",
+      "label": "subSequence",
+      "properties": {
+        "path": "src/java/lang/AbstractStringBuilder.java",
+        "name": "subSequence",
+        "startLine": 853,
+        "endLine": 856,
+        "params": [
+          "start",
+          "end"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/AbstractStringBuilder.java:substring",
+      "type": "function",
+      "label": "substring",
+      "properties": {
+        "path": "src/java/lang/AbstractStringBuilder.java",
+        "name": "substring",
+        "startLine": 872,
+        "endLine": 880,
+        "params": [
+          "start",
+          "end"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/lang/AbstractStringBuilder.java:toString",
+      "type": "function",
+      "label": "toString",
+      "properties": {
+        "path": "src/java/lang/AbstractStringBuilder.java",
+        "name": "toString",
+        "startLine": 1404,
+        "endLine": 1405,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/lang/AbstractStringBuilder.java:trimToSize",
+      "type": "function",
+      "label": "trimToSize",
+      "properties": {
+        "path": "src/java/lang/AbstractStringBuilder.java",
+        "name": "trimToSize",
+        "startLine": 141,
+        "endLine": 145,
+        "params": []
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "cls:src/java/lang/AbstractStringBuilder.java:AbstractStringBuilder",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:length",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:length",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:capacity",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:capacity",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:ensureCapacity",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:ensureCapacity",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:expandCapacity",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:trimToSize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:trimToSize",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:setLength",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:setLength",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:charAt",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:charAt",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:codePointAt",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:codePointAt",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:codePointBefore",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:codePointBefore",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:codePointCount",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:codePointCount",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:offsetByCodePoints",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:offsetByCodePoints",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:getChars",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:getChars",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:setCharAt",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:setCharAt",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:append",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:append",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:append",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:append",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:append",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:append",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:append",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:append",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:append",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:append",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:append",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:append",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:append",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:append",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:append",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:append",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:append",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:append",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:append",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:append",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:append",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:append",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:append",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:append",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:append",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:append",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:delete",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:delete",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:appendCodePoint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:appendCodePoint",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:deleteCharAt",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:deleteCharAt",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:replace",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:replace",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:substring",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:substring",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:subSequence",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:subSequence",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:substring",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:substring",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:insert",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:insert",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:insert",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:insert",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:insert",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:insert",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:insert",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:insert",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:insert",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:insert",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:insert",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:insert",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:insert",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:insert",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:insert",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:insert",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:insert",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:insert",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:insert",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:insert",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:insert",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:insert",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:insert",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:insert",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:indexOf",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:indexOf",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:indexOf",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:indexOf",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:lastIndexOf",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:lastIndexOf",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:lastIndexOf",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:lastIndexOf",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:reverse",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:reverse",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:toString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:toString",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/AbstractStringBuilder.java:append",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/AbstractStringBuilder.java:substring",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:substring",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/AbstractStringBuilder.java:subSequence",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:substring",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/AbstractStringBuilder.java:insert",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:length",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/AbstractStringBuilder.java:insert",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:insert",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/AbstractStringBuilder.java:indexOf",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:indexOf",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/AbstractStringBuilder.java:lastIndexOf",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:lastIndexOf",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/lang/AbstractStringBuilder.java",
+      "target": "file:src/java/util/Arrays.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "fn:src/java/lang/AbstractStringBuilder.java:ensureCapacity",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:ensureCapacityInternal",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/AbstractStringBuilder.java:ensureCapacityInternal",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:expandCapacity",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/AbstractStringBuilder.java:expandCapacity",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:new OutOfMemoryError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/AbstractStringBuilder.java:expandCapacity",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:Arrays.copyOf",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/AbstractStringBuilder.java:setLength",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:new StringIndexOutOfBoundsException",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/AbstractStringBuilder.java:setLength",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:ensureCapacityInternal",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/AbstractStringBuilder.java:charAt",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:new StringIndexOutOfBoundsException",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/AbstractStringBuilder.java:codePointAt",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:new StringIndexOutOfBoundsException",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/AbstractStringBuilder.java:codePointAt",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:Character.codePointAt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/lang/AbstractStringBuilder.java:codePointBefore",
+      "target": "fn:src/java/lang/AbstractStringBuilder.java:new StringIndexOutOfBoundsException",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ],
+  "metadata": {
+    "totalNodesInPart": 29,
+    "totalEdgesInPart": 120,
+    "algorithm": "file-analyzer"
+  }
+}

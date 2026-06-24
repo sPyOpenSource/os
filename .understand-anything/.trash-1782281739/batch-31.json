@@ -1,0 +1,646 @@
+{
+  "batchIndex": 31,
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "0b98c95ba40c08",
+      "type": "file",
+      "name": "DbComparator.java",
+      "filePath": "src/jx/db/types/DbComparator.java",
+      "language": "java",
+      "totalLines": 8,
+      "nonEmptyLines": 6,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "3f9b0a78aa0ca",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/db/types/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "8e787374f754b",
+      "type": "file",
+      "name": "DeviceInfo.java",
+      "filePath": "src/jx/devices/DeviceInfo.java",
+      "language": "java",
+      "totalLines": 15,
+      "nonEmptyLines": 13,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "a727342d882be",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/devices/net/emulation/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "b2f7bd3751ddd",
+      "type": "file",
+      "name": "NetworkConfigurationTemplate.java",
+      "filePath": "src/jx/devices/net/NetworkConfigurationTemplate.java",
+      "language": "java",
+      "totalLines": 6,
+      "nonEmptyLines": 4,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "60c338ea277668",
+      "type": "file",
+      "name": "NoMoreElementsException.java",
+      "filePath": "src/jx/devices/net/NoMoreElementsException.java",
+      "language": "java",
+      "totalLines": 3,
+      "nonEmptyLines": 2,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "3b29e9d23a0a18",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/devices/net/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "ceb54f2abf67d",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/devices/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "df5d825582bca",
+      "type": "file",
+      "name": "CapabilityAGP.java",
+      "filePath": "src/jx/devices/pci/CapabilityAGP.java",
+      "language": "java",
+      "totalLines": 33,
+      "nonEmptyLines": 26,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "a711376df3e5a",
+      "type": "file",
+      "name": "CapabilityPM.java",
+      "filePath": "src/jx/devices/pci/CapabilityPM.java",
+      "language": "java",
+      "totalLines": 12,
+      "nonEmptyLines": 9,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "2b850ea7930f2",
+      "type": "file",
+      "name": "CapabilitySI.java",
+      "filePath": "src/jx/devices/pci/CapabilitySI.java",
+      "language": "java",
+      "totalLines": 12,
+      "nonEmptyLines": 9,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "54f349b0ce6c7",
+      "type": "file",
+      "name": "CapabilityVPD.java",
+      "filePath": "src/jx/devices/pci/CapabilityVPD.java",
+      "language": "java",
+      "totalLines": 12,
+      "nonEmptyLines": 9,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "46608e722ded9",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/devices/pci/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "93e2b902e2ef3",
+      "type": "file",
+      "name": "PCIAddressImpl.java",
+      "filePath": "src/jx/devices/pci/PCIAddressImpl.java",
+      "language": "java",
+      "totalLines": 44,
+      "nonEmptyLines": 36,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "858b2ea012e668",
+      "type": "file",
+      "name": "PCICapability.java",
+      "filePath": "src/jx/devices/pci/PCICapability.java",
+      "language": "java",
+      "totalLines": 48,
+      "nonEmptyLines": 40,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "1aef10190d1958",
+      "type": "file",
+      "name": "PCICodes.java",
+      "filePath": "src/jx/devices/pci/PCICodes.java",
+      "language": "java",
+      "totalLines": 202,
+      "nonEmptyLines": 183,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 11,
+        "functionCount": 11,
+        "classCount": 4
+      }
+    },
+    {
+      "id": "66006ff2c83df8",
+      "type": "file",
+      "name": "BlockIOFile.java",
+      "filePath": "src/jx/emulation/BlockIOFile.java",
+      "language": "java",
+      "totalLines": 62,
+      "nonEmptyLines": 56,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "d50c3f53c6fda8",
+      "type": "file",
+      "name": "ClockImpl.java",
+      "filePath": "src/jx/emulation/ClockImpl.java",
+      "language": "java",
+      "totalLines": 17,
+      "nonEmptyLines": 15,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "9287ea4317c6a",
+      "type": "file",
+      "name": "ComponentManagerImpl.java",
+      "filePath": "src/jx/emulation/ComponentManagerImpl.java",
+      "language": "java",
+      "totalLines": 17,
+      "nonEmptyLines": 14,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "69b6aa5c7ab958",
+      "type": "file",
+      "name": "DebugChannelImpl.java",
+      "filePath": "src/jx/emulation/DebugChannelImpl.java",
+      "language": "java",
+      "totalLines": 25,
+      "nonEmptyLines": 23,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "ddad304d381ba",
+      "type": "file",
+      "name": "DebugConf.java",
+      "filePath": "src/jx/emulation/devices/ide/DebugConf.java",
+      "language": "java",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "62b87dad477b08",
+      "type": "file",
+      "name": "DeviceNaming.java",
+      "filePath": "src/jx/emulation/devices/ide/DeviceNaming.java",
+      "language": "java",
+      "totalLines": 33,
+      "nonEmptyLines": 29,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "3cf1f107c9c6e8",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/emulation/devices/ide/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "db6b230a45011",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/emulation/devices/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "13b8dbe844f438",
+      "type": "file",
+      "name": "DomainManagerImpl.java",
+      "filePath": "src/jx/emulation/DomainManagerImpl.java",
+      "language": "java",
+      "totalLines": 39,
+      "nonEmptyLines": 30,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 12,
+        "functionCount": 11,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "9f459eaf2c044",
+      "type": "class",
+      "name": "DbComparator",
+      "filePath": "src/jx/db/types/DbComparator.java",
+      "startLine": 4,
+      "endLine": 8
+    },
+    {
+      "id": "31370f7b9418c8",
+      "type": "class",
+      "name": "DeviceInfo",
+      "filePath": "src/jx/devices/DeviceInfo.java",
+      "startLine": 3,
+      "endLine": 15
+    },
+    {
+      "id": "3905d12eee2f98",
+      "type": "class",
+      "name": "NetworkConfigurationTemplate",
+      "filePath": "src/jx/devices/net/NetworkConfigurationTemplate.java",
+      "startLine": 5,
+      "endLine": 6
+    },
+    {
+      "id": "a4512b58c7e23",
+      "type": "class",
+      "name": "NoMoreElementsException",
+      "filePath": "src/jx/devices/net/NoMoreElementsException.java",
+      "startLine": 3,
+      "endLine": 3
+    },
+    {
+      "id": "94600a12697dc8",
+      "type": "class",
+      "name": "CapabilityAGP",
+      "filePath": "src/jx/devices/pci/CapabilityAGP.java",
+      "startLine": 3,
+      "endLine": 32
+    },
+    {
+      "id": "3109ea0271a6e8",
+      "type": "class",
+      "name": "CapabilityPM",
+      "filePath": "src/jx/devices/pci/CapabilityPM.java",
+      "startLine": 3,
+      "endLine": 11
+    },
+    {
+      "id": "885b485a65f5e",
+      "type": "class",
+      "name": "CapabilitySI",
+      "filePath": "src/jx/devices/pci/CapabilitySI.java",
+      "startLine": 3,
+      "endLine": 11
+    },
+    {
+      "id": "f9298a80f6e8a",
+      "type": "class",
+      "name": "CapabilityVPD",
+      "filePath": "src/jx/devices/pci/CapabilityVPD.java",
+      "startLine": 3,
+      "endLine": 11
+    },
+    {
+      "id": "139312c5c3d13",
+      "type": "class",
+      "name": "PCIAddressImpl",
+      "filePath": "src/jx/devices/pci/PCIAddressImpl.java",
+      "startLine": 3,
+      "endLine": 44
+    },
+    {
+      "id": "b9ad54a62f737",
+      "type": "class",
+      "name": "PCICapability",
+      "filePath": "src/jx/devices/pci/PCICapability.java",
+      "startLine": 3,
+      "endLine": 47
+    },
+    {
+      "id": "89a7fc4733de28",
+      "type": "class",
+      "name": "PCICodes",
+      "filePath": "src/jx/devices/pci/PCICodes.java",
+      "startLine": 3,
+      "endLine": 159
+    },
+    {
+      "id": "0553e86ab2b158",
+      "type": "class",
+      "name": "PCIClassCode",
+      "filePath": "src/jx/devices/pci/PCICodes.java",
+      "startLine": 161,
+      "endLine": 169
+    },
+    {
+      "id": "2227cd5da73e1",
+      "type": "class",
+      "name": "PCIVendorCode",
+      "filePath": "src/jx/devices/pci/PCICodes.java",
+      "startLine": 171,
+      "endLine": 184
+    },
+    {
+      "id": "d36829e8383ed8",
+      "type": "class",
+      "name": "PCIDeviceCode",
+      "filePath": "src/jx/devices/pci/PCICodes.java",
+      "startLine": 186,
+      "endLine": 201
+    },
+    {
+      "id": "9e98d0dfae99f",
+      "type": "class",
+      "name": "BlockIOFile",
+      "filePath": "src/jx/emulation/BlockIOFile.java",
+      "startLine": 7,
+      "endLine": 62
+    },
+    {
+      "id": "75842c70e9e73",
+      "type": "class",
+      "name": "ClockImpl",
+      "filePath": "src/jx/emulation/ClockImpl.java",
+      "startLine": 6,
+      "endLine": 17
+    },
+    {
+      "id": "8eb7bccb566be8",
+      "type": "class",
+      "name": "ComponentManagerImpl",
+      "filePath": "src/jx/emulation/ComponentManagerImpl.java",
+      "startLine": 5,
+      "endLine": 17
+    },
+    {
+      "id": "bc299c8e34e318",
+      "type": "class",
+      "name": "DebugChannelImpl",
+      "filePath": "src/jx/emulation/DebugChannelImpl.java",
+      "startLine": 6,
+      "endLine": 25
+    },
+    {
+      "id": "fa3a8791497d68",
+      "type": "class",
+      "name": "DebugConf",
+      "filePath": "src/jx/emulation/devices/ide/DebugConf.java",
+      "startLine": 3,
+      "endLine": 5
+    },
+    {
+      "id": "bb23edfa61aba",
+      "type": "class",
+      "name": "DeviceNaming",
+      "filePath": "src/jx/emulation/devices/ide/DeviceNaming.java",
+      "startLine": 3,
+      "endLine": 33
+    },
+    {
+      "id": "61ad2e4168c91",
+      "type": "class",
+      "name": "DomainManagerImpl",
+      "filePath": "src/jx/emulation/DomainManagerImpl.java",
+      "startLine": 6,
+      "endLine": 39
+    }
+  ],
+  "edges": [
+    {
+      "source": "0b98c95ba40c08",
+      "target": "9f459eaf2c044",
+      "type": "contains"
+    },
+    {
+      "source": "8e787374f754b",
+      "target": "31370f7b9418c8",
+      "type": "contains"
+    },
+    {
+      "source": "b2f7bd3751ddd",
+      "target": "3905d12eee2f98",
+      "type": "contains"
+    },
+    {
+      "source": "60c338ea277668",
+      "target": "a4512b58c7e23",
+      "type": "contains"
+    },
+    {
+      "source": "df5d825582bca",
+      "target": "94600a12697dc8",
+      "type": "contains"
+    },
+    {
+      "source": "a711376df3e5a",
+      "target": "3109ea0271a6e8",
+      "type": "contains"
+    },
+    {
+      "source": "2b850ea7930f2",
+      "target": "885b485a65f5e",
+      "type": "contains"
+    },
+    {
+      "source": "54f349b0ce6c7",
+      "target": "f9298a80f6e8a",
+      "type": "contains"
+    },
+    {
+      "source": "93e2b902e2ef3",
+      "target": "139312c5c3d13",
+      "type": "contains"
+    },
+    {
+      "source": "858b2ea012e668",
+      "target": "b9ad54a62f737",
+      "type": "contains"
+    },
+    {
+      "source": "1aef10190d1958",
+      "target": "89a7fc4733de28",
+      "type": "contains"
+    },
+    {
+      "source": "1aef10190d1958",
+      "target": "0553e86ab2b158",
+      "type": "contains"
+    },
+    {
+      "source": "1aef10190d1958",
+      "target": "2227cd5da73e1",
+      "type": "contains"
+    },
+    {
+      "source": "1aef10190d1958",
+      "target": "d36829e8383ed8",
+      "type": "contains"
+    },
+    {
+      "source": "66006ff2c83df8",
+      "target": "9e98d0dfae99f",
+      "type": "contains"
+    },
+    {
+      "source": "d50c3f53c6fda8",
+      "target": "75842c70e9e73",
+      "type": "contains"
+    },
+    {
+      "source": "9287ea4317c6a",
+      "target": "8eb7bccb566be8",
+      "type": "contains"
+    },
+    {
+      "source": "69b6aa5c7ab958",
+      "target": "bc299c8e34e318",
+      "type": "contains"
+    },
+    {
+      "source": "ddad304d381ba",
+      "target": "fa3a8791497d68",
+      "type": "contains"
+    },
+    {
+      "source": "62b87dad477b08",
+      "target": "bb23edfa61aba",
+      "type": "contains"
+    },
+    {
+      "source": "13b8dbe844f438",
+      "target": "61ad2e4168c91",
+      "type": "contains"
+    }
+  ]
+}

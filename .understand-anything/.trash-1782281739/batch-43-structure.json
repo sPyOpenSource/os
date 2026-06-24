@@ -1,0 +1,3447 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/metaxa/os/devices/net/SoftwareInformation1.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 43,
+      "nonEmptyLines": 36,
+      "functions": [
+        {
+          "name": "SoftwareInformation1",
+          "startLine": 17,
+          "endLine": 21,
+          "params": [
+            "optimizefor",
+            "linkbeatdisable",
+            "fullduplexmode"
+          ]
+        },
+        {
+          "name": "set_OptimizeFor",
+          "startLine": 23,
+          "endLine": 25,
+          "params": [
+            "optimizefor"
+          ]
+        },
+        {
+          "name": "set_LinkBeatDisable",
+          "startLine": 26,
+          "endLine": 28,
+          "params": [
+            "linkbeatdisable"
+          ]
+        },
+        {
+          "name": "set_FullDuplexMode",
+          "startLine": 29,
+          "endLine": 31,
+          "params": [
+            "fullduplexmode"
+          ]
+        },
+        {
+          "name": "get_OptimizeFor",
+          "startLine": 33,
+          "endLine": 35,
+          "params": []
+        },
+        {
+          "name": "get_LinkBeatDisable",
+          "startLine": 37,
+          "endLine": 39,
+          "params": []
+        },
+        {
+          "name": "get_FullDuplexMode",
+          "startLine": 40,
+          "endLine": 42,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "SoftwareInformation1",
+          "startLine": 3,
+          "endLine": 43,
+          "methods": [
+            "SoftwareInformation1",
+            "set_OptimizeFor",
+            "set_LinkBeatDisable",
+            "set_FullDuplexMode",
+            "get_OptimizeFor",
+            "get_LinkBeatDisable",
+            "get_FullDuplexMode"
+          ],
+          "properties": [
+            "EEPROM_OPTIMIZE_NORMAL",
+            "EEPROM_OPTIMIZE_FOR_THROUGHPUT",
+            "EEPROM_OPTIMIZE_FOR_CPU",
+            "EEPROM_DISABLE_FULL_DUPLEX",
+            "EEPROM_ENABLE_FULL_DUPLEX",
+            "Reserved1",
+            "OptimizeFor",
+            "Reserved2",
+            "LinkBeatDisable",
+            "FullDuplexMode"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "set_OptimizeFor",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "set_LinkBeatDisable",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "set_FullDuplexMode",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "get_OptimizeFor",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "get_LinkBeatDisable",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "get_FullDuplexMode",
+          "line": 40,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SoftwareInformation1",
+          "callee": "set_OptimizeFor",
+          "lineNumber": 18
+        },
+        {
+          "caller": "SoftwareInformation1",
+          "callee": "set_LinkBeatDisable",
+          "lineNumber": 19
+        },
+        {
+          "caller": "SoftwareInformation1",
+          "callee": "set_FullDuplexMode",
+          "lineNumber": 20
+        }
+      ],
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 6,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/SoftwareInformation2.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 70,
+      "nonEmptyLines": 63,
+      "functions": [
+        {
+          "name": "SoftwareInformation2",
+          "startLine": 13,
+          "endLine": 22,
+          "params": [
+            "broadcastrxerrdone",
+            "encoderdecoderloopbackerrdone",
+            "wolconnectorpresent",
+            "pmepulsed",
+            "mwierrdone",
+            "autoresettod0",
+            "d3work"
+          ]
+        },
+        {
+          "name": "SoftwareInformation2",
+          "startLine": 24,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "set_BroadcastRxErrDone",
+          "startLine": 26,
+          "endLine": 28,
+          "params": [
+            "broadcastrxerrdone"
+          ]
+        },
+        {
+          "name": "set_EncoderDecoderLoopBackErrDone",
+          "startLine": 29,
+          "endLine": 31,
+          "params": [
+            "encoderdecoderloopbackerrdone"
+          ]
+        },
+        {
+          "name": "set_WOLConnectorPresent",
+          "startLine": 32,
+          "endLine": 34,
+          "params": [
+            "wolconnectorpresent"
+          ]
+        },
+        {
+          "name": "set_PMEPulsed",
+          "startLine": 35,
+          "endLine": 37,
+          "params": [
+            "pmepulsed"
+          ]
+        },
+        {
+          "name": "set_MWIErrDone",
+          "startLine": 38,
+          "endLine": 40,
+          "params": [
+            "mwierrdone"
+          ]
+        },
+        {
+          "name": "set_AutoResetToD0",
+          "startLine": 41,
+          "endLine": 43,
+          "params": [
+            "autoresettod0"
+          ]
+        },
+        {
+          "name": "set_D3Work",
+          "startLine": 44,
+          "endLine": 46,
+          "params": [
+            "d3work"
+          ]
+        },
+        {
+          "name": "get_BroadcastRxErrDone",
+          "startLine": 48,
+          "endLine": 50,
+          "params": []
+        },
+        {
+          "name": "get_EncoderDecoderLoopBackErrDone",
+          "startLine": 51,
+          "endLine": 53,
+          "params": []
+        },
+        {
+          "name": "get_WOLConnectorPresent",
+          "startLine": 54,
+          "endLine": 56,
+          "params": []
+        },
+        {
+          "name": "get_PMEPulsed",
+          "startLine": 57,
+          "endLine": 59,
+          "params": []
+        },
+        {
+          "name": "get_MWIErrDone",
+          "startLine": 60,
+          "endLine": 62,
+          "params": []
+        },
+        {
+          "name": "get_AutoResetToD0",
+          "startLine": 63,
+          "endLine": 65,
+          "params": []
+        },
+        {
+          "name": "get_D3Work",
+          "startLine": 66,
+          "endLine": 68,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "SoftwareInformation2",
+          "startLine": 3,
+          "endLine": 70,
+          "methods": [
+            "SoftwareInformation2",
+            "SoftwareInformation2",
+            "set_BroadcastRxErrDone",
+            "set_EncoderDecoderLoopBackErrDone",
+            "set_WOLConnectorPresent",
+            "set_PMEPulsed",
+            "set_MWIErrDone",
+            "set_AutoResetToD0",
+            "set_D3Work",
+            "get_BroadcastRxErrDone",
+            "get_EncoderDecoderLoopBackErrDone",
+            "get_WOLConnectorPresent",
+            "get_PMEPulsed",
+            "get_MWIErrDone",
+            "get_AutoResetToD0",
+            "get_D3Work"
+          ],
+          "properties": [
+            "BroadcastRxErrDone",
+            "EncoderDecoderLoopBackErrDone",
+            "WOLConnectorPresent",
+            "PMEPulsed",
+            "MWIErrDone",
+            "AutoResetToD0",
+            "D3Work"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SoftwareInformation2",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "SoftwareInformation2",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "set_BroadcastRxErrDone",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "set_EncoderDecoderLoopBackErrDone",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "set_WOLConnectorPresent",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "set_PMEPulsed",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "set_MWIErrDone",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "set_AutoResetToD0",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "set_D3Work",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "get_BroadcastRxErrDone",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "get_EncoderDecoderLoopBackErrDone",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "get_WOLConnectorPresent",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "get_PMEPulsed",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "get_MWIErrDone",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "get_AutoResetToD0",
+          "line": 63,
+          "isDefault": false
+        },
+        {
+          "name": "get_D3Work",
+          "line": 66,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SoftwareInformation2",
+          "callee": "set_BroadcastRxErrDone",
+          "lineNumber": 15
+        },
+        {
+          "caller": "SoftwareInformation2",
+          "callee": "set_EncoderDecoderLoopBackErrDone",
+          "lineNumber": 16
+        },
+        {
+          "caller": "SoftwareInformation2",
+          "callee": "set_WOLConnectorPresent",
+          "lineNumber": 17
+        },
+        {
+          "caller": "SoftwareInformation2",
+          "callee": "set_PMEPulsed",
+          "lineNumber": 18
+        },
+        {
+          "caller": "SoftwareInformation2",
+          "callee": "set_MWIErrDone",
+          "lineNumber": 19
+        },
+        {
+          "caller": "SoftwareInformation2",
+          "callee": "set_AutoResetToD0",
+          "lineNumber": 20
+        },
+        {
+          "caller": "SoftwareInformation2",
+          "callee": "set_D3Work",
+          "lineNumber": 21
+        }
+      ],
+      "metrics": {
+        "importCount": 16,
+        "exportCount": 16,
+        "functionCount": 16,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/SoftwareInformation3.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 20,
+      "functions": [
+        {
+          "name": "SoftwareInformation3",
+          "startLine": 15,
+          "endLine": 17,
+          "params": [
+            "forcexcvr"
+          ]
+        },
+        {
+          "name": "set_ForceXcvr",
+          "startLine": 19,
+          "endLine": 21,
+          "params": [
+            "forcexcvr"
+          ]
+        },
+        {
+          "name": "get_ForceXcvr",
+          "startLine": 23,
+          "endLine": 25,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "SoftwareInformation3",
+          "startLine": 3,
+          "endLine": 27,
+          "methods": [
+            "SoftwareInformation3",
+            "set_ForceXcvr",
+            "get_ForceXcvr"
+          ],
+          "properties": [
+            "EEPROM_GENERIC_MII",
+            "EEPROM_100BASE_T4_MII",
+            "EEPROM_10BASE_T_MII",
+            "EEPROM_100BASE_TX_MII",
+            "EEPROM_10_BASE_T_AUTONEGOTIATION",
+            "EEPROM_100_BASE_TX_AUTONEGOTIATION",
+            "ForceXcvr",
+            "Reserved"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "set_ForceXcvr",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "get_ForceXcvr",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SoftwareInformation3",
+          "callee": "set_ForceXcvr",
+          "lineNumber": 16
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/UndefinedConnectorException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 13,
+      "functions": [
+        {
+          "name": "UndefinedConnectorException",
+          "startLine": 8,
+          "endLine": 10,
+          "params": []
+        },
+        {
+          "name": "UndefinedConnectorException",
+          "startLine": 11,
+          "endLine": 13,
+          "params": [
+            "arg"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "UndefinedConnectorException",
+          "startLine": 7,
+          "endLine": 14,
+          "methods": [
+            "UndefinedConnectorException",
+            "UndefinedConnectorException"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "UndefinedConnectorException",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "UndefinedConnectorException",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/UnknownConnectorType.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 13,
+      "functions": [
+        {
+          "name": "UnknownConnectorType",
+          "startLine": 8,
+          "endLine": 10,
+          "params": []
+        },
+        {
+          "name": "UnknownConnectorType",
+          "startLine": 11,
+          "endLine": 13,
+          "params": [
+            "arg"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "UnknownConnectorType",
+          "startLine": 7,
+          "endLine": 14,
+          "methods": [
+            "UnknownConnectorType",
+            "UnknownConnectorType"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "UnknownConnectorType",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "UnknownConnectorType",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/UnknownLinkState.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 13,
+      "functions": [
+        {
+          "name": "UnknownLinkState",
+          "startLine": 8,
+          "endLine": 10,
+          "params": []
+        },
+        {
+          "name": "UnknownLinkState",
+          "startLine": 11,
+          "endLine": 13,
+          "params": [
+            "arg"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "UnknownLinkState",
+          "startLine": 7,
+          "endLine": 14,
+          "methods": [
+            "UnknownLinkState",
+            "UnknownLinkState"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "UnknownLinkState",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "UnknownLinkState",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/UpdListEntry.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 108,
+      "nonEmptyLines": 97,
+      "functions": [
+        {
+          "name": "UpdListEntry",
+          "startLine": 19,
+          "endLine": 41,
+          "params": [
+            "memMgr"
+          ]
+        },
+        {
+          "name": "StoreMem",
+          "startLine": 43,
+          "endLine": 47,
+          "params": [
+            "mem"
+          ]
+        },
+        {
+          "name": "UpPacketStatus",
+          "startLine": 48,
+          "endLine": 50,
+          "params": [
+            "uppacketstatus"
+          ]
+        },
+        {
+          "name": "UpNextPointer",
+          "startLine": 51,
+          "endLine": 53,
+          "params": [
+            "upnextpointer"
+          ]
+        },
+        {
+          "name": "Next",
+          "startLine": 54,
+          "endLine": 56,
+          "params": [
+            "next"
+          ]
+        },
+        {
+          "name": "Previous",
+          "startLine": 57,
+          "endLine": 59,
+          "params": [
+            "previous"
+          ]
+        },
+        {
+          "name": "UpPacketStatus",
+          "startLine": 61,
+          "endLine": 63,
+          "params": []
+        },
+        {
+          "name": "UpdMemory",
+          "startLine": 64,
+          "endLine": 66,
+          "params": []
+        },
+        {
+          "name": "StoreMem",
+          "startLine": 67,
+          "endLine": 69,
+          "params": []
+        },
+        {
+          "name": "Next",
+          "startLine": 70,
+          "endLine": 72,
+          "params": []
+        },
+        {
+          "name": "Previous",
+          "startLine": 73,
+          "endLine": 75,
+          "params": []
+        },
+        {
+          "name": "UPDPhysicalAddress",
+          "startLine": 76,
+          "endLine": 78,
+          "params": []
+        },
+        {
+          "name": "toString",
+          "startLine": 80,
+          "endLine": 107,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "UpdListEntry",
+          "startLine": 5,
+          "endLine": 108,
+          "methods": [
+            "UpdListEntry",
+            "StoreMem",
+            "UpPacketStatus",
+            "UpNextPointer",
+            "Next",
+            "Previous",
+            "UpPacketStatus",
+            "UpdMemory",
+            "StoreMem",
+            "Next",
+            "Previous",
+            "UPDPhysicalAddress",
+            "toString"
+          ],
+          "properties": [
+            "Next",
+            "Previous",
+            "UpdMemory",
+            "StoreMem",
+            "UPDPhysicalAddress"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "UpdListEntry",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "StoreMem",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "UpPacketStatus",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "UpNextPointer",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "Next",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "Previous",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "UpPacketStatus",
+          "line": 61,
+          "isDefault": false
+        },
+        {
+          "name": "UpdMemory",
+          "line": 64,
+          "isDefault": false
+        },
+        {
+          "name": "StoreMem",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "Next",
+          "line": 70,
+          "isDefault": false
+        },
+        {
+          "name": "Previous",
+          "line": 73,
+          "isDefault": false
+        },
+        {
+          "name": "UPDPhysicalAddress",
+          "line": 76,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 80,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "UpdListEntry",
+          "callee": "memMgr.allocAligned",
+          "lineNumber": 20
+        },
+        {
+          "caller": "UpdListEntry",
+          "callee": "System.out.println",
+          "lineNumber": 22
+        },
+        {
+          "caller": "UpdListEntry",
+          "callee": "UpdMemory.getStartAddress",
+          "lineNumber": 25
+        },
+        {
+          "caller": "UpdListEntry",
+          "callee": "memMgr.alloc",
+          "lineNumber": 27
+        },
+        {
+          "caller": "UpdListEntry",
+          "callee": "System.out.println",
+          "lineNumber": 29
+        },
+        {
+          "caller": "UpdListEntry",
+          "callee": "UpdMemory.set32",
+          "lineNumber": 34
+        },
+        {
+          "caller": "UpdListEntry",
+          "callee": "UpdMemory.set32",
+          "lineNumber": 36
+        },
+        {
+          "caller": "UpdListEntry",
+          "callee": "UpdMemory.set32",
+          "lineNumber": 38
+        },
+        {
+          "caller": "UpdListEntry",
+          "callee": "StoreMem.getStartAddress",
+          "lineNumber": 38
+        },
+        {
+          "caller": "UpdListEntry",
+          "callee": "UpdMemory.set32",
+          "lineNumber": 40
+        },
+        {
+          "caller": "UpdListEntry",
+          "callee": "StoreMem.size",
+          "lineNumber": 40
+        },
+        {
+          "caller": "StoreMem",
+          "callee": "UpdMemory.set32",
+          "lineNumber": 45
+        },
+        {
+          "caller": "StoreMem",
+          "callee": "mem.getStartAddress",
+          "lineNumber": 45
+        },
+        {
+          "caller": "StoreMem",
+          "callee": "UpdMemory.set32",
+          "lineNumber": 46
+        },
+        {
+          "caller": "StoreMem",
+          "callee": "mem.size",
+          "lineNumber": 46
+        },
+        {
+          "caller": "UpPacketStatus",
+          "callee": "UpdMemory.set32",
+          "lineNumber": 49
+        },
+        {
+          "caller": "UpNextPointer",
+          "callee": "UpdMemory.set32",
+          "lineNumber": 52
+        },
+        {
+          "caller": "UpPacketStatus",
+          "callee": "UpdMemory.get32",
+          "lineNumber": 62
+        },
+        {
+          "caller": "toString",
+          "callee": "System.out.println",
+          "lineNumber": 83
+        },
+        {
+          "caller": "toString",
+          "callee": "System.out.println",
+          "lineNumber": 84
+        },
+        {
+          "caller": "toString",
+          "callee": "Integer.toHexString",
+          "lineNumber": 84
+        },
+        {
+          "caller": "toString",
+          "callee": "UpdMemory.get32",
+          "lineNumber": 84
+        },
+        {
+          "caller": "toString",
+          "callee": "System.out.println",
+          "lineNumber": 85
+        },
+        {
+          "caller": "toString",
+          "callee": "Integer.toHexString",
+          "lineNumber": 85
+        },
+        {
+          "caller": "toString",
+          "callee": "System.out.println",
+          "lineNumber": 86
+        },
+        {
+          "caller": "toString",
+          "callee": "System.out.println",
+          "lineNumber": 88
+        },
+        {
+          "caller": "toString",
+          "callee": "UpdMemory.get32",
+          "lineNumber": 88
+        },
+        {
+          "caller": "toString",
+          "callee": "System.out.println",
+          "lineNumber": 89
+        },
+        {
+          "caller": "toString",
+          "callee": "UpdMemory.get32",
+          "lineNumber": 89
+        },
+        {
+          "caller": "toString",
+          "callee": "System.out.println",
+          "lineNumber": 90
+        },
+        {
+          "caller": "toString",
+          "callee": "UpdMemory.get32",
+          "lineNumber": 90
+        },
+        {
+          "caller": "toString",
+          "callee": "System.out.println",
+          "lineNumber": 91
+        },
+        {
+          "caller": "toString",
+          "callee": "UpdMemory.get32",
+          "lineNumber": 91
+        },
+        {
+          "caller": "toString",
+          "callee": "System.out.println",
+          "lineNumber": 92
+        },
+        {
+          "caller": "toString",
+          "callee": "UpdMemory.getStartAddress",
+          "lineNumber": 92
+        },
+        {
+          "caller": "toString",
+          "callee": "UpdMemory.size",
+          "lineNumber": 92
+        },
+        {
+          "caller": "toString",
+          "callee": "System.out.println",
+          "lineNumber": 95
+        },
+        {
+          "caller": "toString",
+          "callee": "System.out.println",
+          "lineNumber": 98
+        },
+        {
+          "caller": "toString",
+          "callee": "StoreMem.size",
+          "lineNumber": 98
+        },
+        {
+          "caller": "toString",
+          "callee": "StoreMem.getStartAddress",
+          "lineNumber": 98
+        },
+        {
+          "caller": "toString",
+          "callee": "System.out.println",
+          "lineNumber": 101
+        },
+        {
+          "caller": "toString",
+          "callee": "System.out.println",
+          "lineNumber": 103
+        }
+      ],
+      "metrics": {
+        "importCount": 13,
+        "exportCount": 13,
+        "functionCount": 13,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/WaitCases.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 17,
+      "nonEmptyLines": 13,
+      "classes": [
+        {
+          "name": "WaitCases",
+          "startLine": 4,
+          "endLine": 17,
+          "methods": [],
+          "properties": [
+            "CHECK_UPLOAD_STATUS",
+            "CHECK_DOWNLOAD_STATUS",
+            "CHECK_DC_CONVERTER",
+            "CHECK_PHY_STATUS",
+            "CHECK_TRANSMIT_IN_PROGRESS",
+            "CHECK_DOWNLOAD_SELFDIRECTED",
+            "AUTONEG_TEST_PACKET",
+            "CHECK_DMA_CONTROL",
+            "CHECK_CARRIER_SENSE"
+          ]
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/WaitTimer.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 162,
+      "nonEmptyLines": 141,
+      "functions": [
+        {
+          "name": "WaitTimer",
+          "startLine": 11,
+          "endLine": 14,
+          "params": [
+            "ports",
+            "timerManager"
+          ]
+        },
+        {
+          "name": "timer",
+          "startLine": 16,
+          "endLine": 156,
+          "params": [
+            "arg"
+          ]
+        },
+        {
+          "name": "equals",
+          "startLine": 158,
+          "endLine": 161,
+          "params": [
+            "obj"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "WaitTimer",
+          "startLine": 6,
+          "endLine": 162,
+          "methods": [
+            "WaitTimer",
+            "timer",
+            "equals"
+          ],
+          "properties": [
+            "ports",
+            "timerManager"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "timer",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "equals",
+          "line": 158,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "timer",
+          "callee": "help.get_NicInfo",
+          "lineNumber": 20
+        },
+        {
+          "caller": "timer",
+          "callee": "WaitTimerGlobal.instance",
+          "lineNumber": 21
+        },
+        {
+          "caller": "timer",
+          "callee": "new Befehl",
+          "lineNumber": 22
+        },
+        {
+          "caller": "timer",
+          "callee": "new Mii",
+          "lineNumber": 23
+        },
+        {
+          "caller": "timer",
+          "callee": "help.get_TimeOut",
+          "lineNumber": 38
+        },
+        {
+          "caller": "timer",
+          "callee": "timerManager.getCurrentTime",
+          "lineNumber": 38
+        },
+        {
+          "caller": "timer",
+          "callee": "Debug.out.println",
+          "lineNumber": 43
+        },
+        {
+          "caller": "timer",
+          "callee": "help.get_TestDPD",
+          "lineNumber": 44
+        },
+        {
+          "caller": "timer",
+          "callee": "dpd.DpdMemory",
+          "lineNumber": 46
+        },
+        {
+          "caller": "timer",
+          "callee": "waitglobal.get_PortV",
+          "lineNumber": 47
+        },
+        {
+          "caller": "timer",
+          "callee": "(dpd.DpdMemory()).getStartAddress",
+          "lineNumber": 47
+        },
+        {
+          "caller": "timer",
+          "callee": "dpd.DpdMemory",
+          "lineNumber": 47
+        },
+        {
+          "caller": "timer",
+          "callee": "befehl.NicReadPortLong",
+          "lineNumber": 48
+        },
+        {
+          "caller": "timer",
+          "callee": "Register.DOWN_LIST_POINTER_REGISTER",
+          "lineNumber": 48
+        },
+        {
+          "caller": "timer",
+          "callee": "waitglobal.set_PortV",
+          "lineNumber": 49
+        },
+        {
+          "caller": "timer",
+          "callee": "waitglobal.get_PortV",
+          "lineNumber": 56
+        },
+        {
+          "caller": "timer",
+          "callee": "Adapter.HeadUPD.UPDPhysicalAddress",
+          "lineNumber": 56
+        },
+        {
+          "caller": "timer",
+          "callee": "Debug.out.println",
+          "lineNumber": 57
+        },
+        {
+          "caller": "timer",
+          "callee": "waitglobal.get_PortV",
+          "lineNumber": 57
+        },
+        {
+          "caller": "timer",
+          "callee": "Adapter.HeadUPD.UPDPhysicalAddress",
+          "lineNumber": 57
+        },
+        {
+          "caller": "timer",
+          "callee": "befehl.NicReadPortLong",
+          "lineNumber": 58
+        },
+        {
+          "caller": "timer",
+          "callee": "Register.UP_LIST_POINTER_REGISTER",
+          "lineNumber": 58
+        },
+        {
+          "caller": "timer",
+          "callee": "waitglobal.set_PortV",
+          "lineNumber": 59
+        },
+        {
+          "caller": "timer",
+          "callee": "Debug.out.println",
+          "lineNumber": 65
+        },
+        {
+          "caller": "timer",
+          "callee": "waitglobal.get_DCConverterEnabledState",
+          "lineNumber": 66
+        },
+        {
+          "caller": "timer",
+          "callee": "waitglobal.get_MediaStatus",
+          "lineNumber": 67
+        },
+        {
+          "caller": "timer",
+          "callee": "Register.MEDIA_STATUS_DC_CONVERTER_ENABLED",
+          "lineNumber": 67
+        },
+        {
+          "caller": "timer",
+          "callee": "waitglobal.get_DCConverterEnabledState",
+          "lineNumber": 68
+        },
+        {
+          "caller": "timer",
+          "callee": "waitglobal.get_MediaStatus",
+          "lineNumber": 69
+        },
+        {
+          "caller": "timer",
+          "callee": "Register.MEDIA_STATUS_DC_CONVERTER_ENABLED",
+          "lineNumber": 69
+        },
+        {
+          "caller": "timer",
+          "callee": "befehl.NicReadPortShort",
+          "lineNumber": 71
+        },
+        {
+          "caller": "timer",
+          "callee": "Register.MEDIA_STATUS_REGISTER",
+          "lineNumber": 71
+        },
+        {
+          "caller": "timer",
+          "callee": "waitglobal.set_MediaStatus",
+          "lineNumber": 72
+        },
+        {
+          "caller": "timer",
+          "callee": "Debug.out.println",
+          "lineNumber": 78
+        },
+        {
+          "caller": "timer",
+          "callee": "waitglobal.get_PhyStatus",
+          "lineNumber": 79
+        },
+        {
+          "caller": "timer",
+          "callee": "mii.ReadMIIPhy",
+          "lineNumber": 83
+        },
+        {
+          "caller": "timer",
+          "callee": "waitglobal.set_PhyStatus",
+          "lineNumber": 88
+        },
+        {
+          "caller": "timer",
+          "callee": "waitglobal.set_PhyResponding",
+          "lineNumber": 89
+        },
+        {
+          "caller": "timer",
+          "callee": "Debug.out.println",
+          "lineNumber": 96
+        },
+        {
+          "caller": "timer",
+          "callee": "waitglobal.get_MediaStatus",
+          "lineNumber": 97
+        },
+        {
+          "caller": "timer",
+          "callee": "Register.MEDIA_STATUS_TX_IN_PROGRESS",
+          "lineNumber": 97
+        },
+        {
+          "caller": "timer",
+          "callee": "befehl.NicReadPortShort",
+          "lineNumber": 99
+        },
+        {
+          "caller": "timer",
+          "callee": "Register.MEDIA_STATUS_REGISTER",
+          "lineNumber": 99
+        },
+        {
+          "caller": "timer",
+          "callee": "waitglobal.set_MediaStatus",
+          "lineNumber": 100
+        },
+        {
+          "caller": "timer",
+          "callee": "Debug.out.println",
+          "lineNumber": 106
+        },
+        {
+          "caller": "timer",
+          "callee": "help.get_TestDPD",
+          "lineNumber": 107
+        },
+        {
+          "caller": "timer",
+          "callee": "waitglobal.get_DownListPointer",
+          "lineNumber": 108
+        },
+        {
+          "caller": "timer",
+          "callee": "dpd.DPDPhysicalAddress",
+          "lineNumber": 108
+        },
+        {
+          "caller": "timer",
+          "callee": "befehl.NicReadPortLong",
+          "lineNumber": 110
+        },
+        {
+          "caller": "timer",
+          "callee": "Register.DOWN_LIST_POINTER_REGISTER",
+          "lineNumber": 110
+        },
+        {
+          "caller": "timer",
+          "callee": "waitglobal.set_DownListPointer",
+          "lineNumber": 111
+        },
+        {
+          "caller": "timer",
+          "callee": "Debug.out.println",
+          "lineNumber": 117
+        },
+        {
+          "caller": "timer",
+          "callee": "waitglobal.get_UpListPointer",
+          "lineNumber": 118
+        },
+        {
+          "caller": "timer",
+          "callee": "Adapter.HeadUPD.UPDPhysicalAddress",
+          "lineNumber": 118
+        },
+        {
+          "caller": "timer",
+          "callee": "befehl.NicReadPortLong",
+          "lineNumber": 120
+        },
+        {
+          "caller": "timer",
+          "callee": "Register.UP_LIST_POINTER_REGISTER",
+          "lineNumber": 120
+        },
+        {
+          "caller": "timer",
+          "callee": "waitglobal.set_UpListPointer",
+          "lineNumber": 121
+        },
+        {
+          "caller": "timer",
+          "callee": "Debug.out.println",
+          "lineNumber": 127
+        },
+        {
+          "caller": "timer",
+          "callee": "waitglobal.get_dmaControl",
+          "lineNumber": 128
+        },
+        {
+          "caller": "timer",
+          "callee": "Register.DMA_CONTROL_DOWN_IN_PROGRESS",
+          "lineNumber": 128
+        },
+        {
+          "caller": "timer",
+          "callee": "befehl.NicReadPortLong",
+          "lineNumber": 130
+        },
+        {
+          "caller": "timer",
+          "callee": "Register.DMA_CONTROL_REGISTER",
+          "lineNumber": 130
+        },
+        {
+          "caller": "timer",
+          "callee": "waitglobal.set_dmaControl",
+          "lineNumber": 131
+        },
+        {
+          "caller": "timer",
+          "callee": "Debug.out.println",
+          "lineNumber": 138
+        },
+        {
+          "caller": "timer",
+          "callee": "waitglobal.get_MediaStatus",
+          "lineNumber": 139
+        },
+        {
+          "caller": "timer",
+          "callee": "Register.MEDIA_STATUS_CARRIER_SENSE",
+          "lineNumber": 139
+        },
+        {
+          "caller": "timer",
+          "callee": "befehl.NicReadPortShort",
+          "lineNumber": 141
+        },
+        {
+          "caller": "timer",
+          "callee": "Register.MEDIA_STATUS_REGISTER",
+          "lineNumber": 141
+        },
+        {
+          "caller": "timer",
+          "callee": "waitglobal.set_MediaStatus",
+          "lineNumber": 142
+        },
+        {
+          "caller": "timer",
+          "callee": "timerManager.addMillisTimer",
+          "lineNumber": 151
+        },
+        {
+          "caller": "timer",
+          "callee": "Debug.out.println",
+          "lineNumber": 155
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/WaitTimerArg.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 25,
+      "nonEmptyLines": 20,
+      "functions": [
+        {
+          "name": "WaitTimerArg",
+          "startLine": 9,
+          "endLine": 13,
+          "params": [
+            "info",
+            "test",
+            "timeout"
+          ]
+        },
+        {
+          "name": "get_NicInfo",
+          "startLine": 15,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "get_TestDPD",
+          "startLine": 18,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "get_TimeOut",
+          "startLine": 21,
+          "endLine": 23,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "WaitTimerArg",
+          "startLine": 3,
+          "endLine": 25,
+          "methods": [
+            "WaitTimerArg",
+            "get_NicInfo",
+            "get_TestDPD",
+            "get_TimeOut"
+          ],
+          "properties": [
+            "Info",
+            "TestDPD",
+            "TimeOut"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "WaitTimerArg",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "get_NicInfo",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "get_TestDPD",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "get_TimeOut",
+          "line": 21,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 4,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/WaitTimerGlobal.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 76,
+      "nonEmptyLines": 69,
+      "functions": [
+        {
+          "name": "WaitTimerGlobal",
+          "startLine": 19,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "instance",
+          "startLine": 23,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "get_DCConverterEnabledState",
+          "startLine": 27,
+          "endLine": 29,
+          "params": []
+        },
+        {
+          "name": "get_MediaStatus",
+          "startLine": 30,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "get_PhyResponding",
+          "startLine": 33,
+          "endLine": 35,
+          "params": []
+        },
+        {
+          "name": "get_PhyStatus",
+          "startLine": 36,
+          "endLine": 38,
+          "params": []
+        },
+        {
+          "name": "get_DownListPointer",
+          "startLine": 39,
+          "endLine": 41,
+          "params": []
+        },
+        {
+          "name": "get_UpListPointer",
+          "startLine": 42,
+          "endLine": 44,
+          "params": []
+        },
+        {
+          "name": "get_PortV",
+          "startLine": 45,
+          "endLine": 47,
+          "params": []
+        },
+        {
+          "name": "get_dmaControl",
+          "startLine": 48,
+          "endLine": 50,
+          "params": []
+        },
+        {
+          "name": "set_DCConverterEnabledState",
+          "startLine": 52,
+          "endLine": 54,
+          "params": [
+            "dc"
+          ]
+        },
+        {
+          "name": "set_MediaStatus",
+          "startLine": 55,
+          "endLine": 57,
+          "params": [
+            "media"
+          ]
+        },
+        {
+          "name": "set_PhyResponding",
+          "startLine": 58,
+          "endLine": 60,
+          "params": [
+            "phyres"
+          ]
+        },
+        {
+          "name": "set_PhyStatus",
+          "startLine": 61,
+          "endLine": 63,
+          "params": [
+            "phystat"
+          ]
+        },
+        {
+          "name": "set_DownListPointer",
+          "startLine": 64,
+          "endLine": 66,
+          "params": [
+            "dlp"
+          ]
+        },
+        {
+          "name": "set_UpListPointer",
+          "startLine": 67,
+          "endLine": 69,
+          "params": [
+            "ulp"
+          ]
+        },
+        {
+          "name": "set_PortV",
+          "startLine": 70,
+          "endLine": 72,
+          "params": [
+            "port"
+          ]
+        },
+        {
+          "name": "set_dmaControl",
+          "startLine": 73,
+          "endLine": 75,
+          "params": [
+            "dma"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "WaitTimerGlobal",
+          "startLine": 6,
+          "endLine": 76,
+          "methods": [
+            "WaitTimerGlobal",
+            "instance",
+            "get_DCConverterEnabledState",
+            "get_MediaStatus",
+            "get_PhyResponding",
+            "get_PhyStatus",
+            "get_DownListPointer",
+            "get_UpListPointer",
+            "get_PortV",
+            "get_dmaControl",
+            "set_DCConverterEnabledState",
+            "set_MediaStatus",
+            "set_PhyResponding",
+            "set_PhyStatus",
+            "set_DownListPointer",
+            "set_UpListPointer",
+            "set_PortV",
+            "set_dmaControl"
+          ],
+          "properties": [
+            "portValue",
+            "DCConverterEnabledState",
+            "MediaStatus",
+            "PhyResponding",
+            "PhyStatus",
+            "DownListPointer",
+            "UpListPointer",
+            "dmaControl",
+            "instance"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "instance",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "get_DCConverterEnabledState",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "get_MediaStatus",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "get_PhyResponding",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "get_PhyStatus",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "get_DownListPointer",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "get_UpListPointer",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "get_PortV",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "get_dmaControl",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "set_DCConverterEnabledState",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "set_MediaStatus",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "set_PhyResponding",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "set_PhyStatus",
+          "line": 61,
+          "isDefault": false
+        },
+        {
+          "name": "set_DownListPointer",
+          "line": 64,
+          "isDefault": false
+        },
+        {
+          "name": "set_UpListPointer",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "set_PortV",
+          "line": 70,
+          "isDefault": false
+        },
+        {
+          "name": "set_dmaControl",
+          "line": 73,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "instance",
+          "callee": "new WaitTimerGlobal",
+          "lineNumber": 24
+        }
+      ],
+      "metrics": {
+        "importCount": 17,
+        "exportCount": 17,
+        "functionCount": 18,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/WrongDate.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 13,
+      "functions": [
+        {
+          "name": "WrongDate",
+          "startLine": 8,
+          "endLine": 10,
+          "params": []
+        },
+        {
+          "name": "WrongDate",
+          "startLine": 11,
+          "endLine": 13,
+          "params": [
+            "arg"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "WrongDate",
+          "startLine": 7,
+          "endLine": 14,
+          "methods": [
+            "WrongDate",
+            "WrongDate"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "WrongDate",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "WrongDate",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/metaxa/os/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/metaxa/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/AbstractDeviceItem.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 49,
+      "nonEmptyLines": 43,
+      "functions": [
+        {
+          "name": "AbstractDeviceItem",
+          "startLine": 38,
+          "endLine": 40,
+          "params": [
+            "device"
+          ]
+        },
+        {
+          "name": "getDevice",
+          "startLine": 45,
+          "endLine": 47,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AbstractDeviceItem",
+          "startLine": 26,
+          "endLine": 49,
+          "methods": [
+            "AbstractDeviceItem",
+            "getDevice"
+          ],
+          "properties": [
+            "device"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AbstractDeviceItem",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "getDevice",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "AbstractDeviceItem",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/ConfigurationDescriptor.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 110,
+      "nonEmptyLines": 95,
+      "functions": [
+        {
+          "name": "ConfigurationDescriptor",
+          "startLine": 36,
+          "endLine": 38,
+          "params": []
+        },
+        {
+          "name": "ConfigurationDescriptor",
+          "startLine": 45,
+          "endLine": 47,
+          "params": [
+            "data",
+            "ofs",
+            "len"
+          ]
+        },
+        {
+          "name": "getTotalLength",
+          "startLine": 52,
+          "endLine": 54,
+          "params": []
+        },
+        {
+          "name": "getNumInterfaces",
+          "startLine": 59,
+          "endLine": 61,
+          "params": []
+        },
+        {
+          "name": "getConfigurationValue",
+          "startLine": 66,
+          "endLine": 68,
+          "params": []
+        },
+        {
+          "name": "getConfigurationStringIndex",
+          "startLine": 73,
+          "endLine": 75,
+          "params": []
+        },
+        {
+          "name": "getConfigurationName",
+          "startLine": 80,
+          "endLine": 82,
+          "params": []
+        },
+        {
+          "name": "loadStrings",
+          "startLine": 89,
+          "endLine": 96,
+          "params": [
+            "dev"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 103,
+          "endLine": 108,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ConfigurationDescriptor",
+          "startLine": 29,
+          "endLine": 110,
+          "methods": [
+            "ConfigurationDescriptor",
+            "ConfigurationDescriptor",
+            "getTotalLength",
+            "getNumInterfaces",
+            "getConfigurationValue",
+            "getConfigurationStringIndex",
+            "getConfigurationName",
+            "loadStrings",
+            "toString"
+          ],
+          "properties": [
+            "configurationName"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ConfigurationDescriptor",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "ConfigurationDescriptor",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "getTotalLength",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "getNumInterfaces",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "getConfigurationValue",
+          "line": 66,
+          "isDefault": false
+        },
+        {
+          "name": "getConfigurationStringIndex",
+          "line": 73,
+          "isDefault": false
+        },
+        {
+          "name": "getConfigurationName",
+          "line": 80,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 103,
+          "isDefault": false
+        },
+        {
+          "name": "ConfigurationDescriptor",
+          "line": 29,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getTotalLength",
+          "callee": "getShort",
+          "lineNumber": 53
+        },
+        {
+          "caller": "getNumInterfaces",
+          "callee": "getByte",
+          "lineNumber": 60
+        },
+        {
+          "caller": "getConfigurationValue",
+          "callee": "getByte",
+          "lineNumber": 67
+        },
+        {
+          "caller": "getConfigurationStringIndex",
+          "callee": "getByte",
+          "lineNumber": 74
+        },
+        {
+          "caller": "loadStrings",
+          "callee": "getConfigurationStringIndex",
+          "lineNumber": 92
+        },
+        {
+          "caller": "loadStrings",
+          "callee": "dev.getString",
+          "lineNumber": 94
+        },
+        {
+          "caller": "toString",
+          "callee": "getTotalLength",
+          "lineNumber": 104
+        },
+        {
+          "caller": "toString",
+          "callee": "getNumInterfaces",
+          "lineNumber": 105
+        },
+        {
+          "caller": "toString",
+          "callee": "getConfigurationValue",
+          "lineNumber": 106
+        },
+        {
+          "caller": "toString",
+          "callee": "getConfigurationStringIndex",
+          "lineNumber": 107
+        }
+      ],
+      "metrics": {
+        "importCount": 9,
+        "exportCount": 9,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/InterfaceDescriptor.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 132,
+      "nonEmptyLines": 115,
+      "functions": [
+        {
+          "name": "InterfaceDescriptor",
+          "startLine": 36,
+          "endLine": 38,
+          "params": []
+        },
+        {
+          "name": "InterfaceDescriptor",
+          "startLine": 45,
+          "endLine": 47,
+          "params": [
+            "data",
+            "ofs",
+            "len"
+          ]
+        },
+        {
+          "name": "getInterfaceNumber",
+          "startLine": 52,
+          "endLine": 54,
+          "params": []
+        },
+        {
+          "name": "getAlternateSetting",
+          "startLine": 59,
+          "endLine": 61,
+          "params": []
+        },
+        {
+          "name": "getNumEndPoints",
+          "startLine": 66,
+          "endLine": 68,
+          "params": []
+        },
+        {
+          "name": "getInterfaceClass",
+          "startLine": 73,
+          "endLine": 75,
+          "params": []
+        },
+        {
+          "name": "getInterfaceSubClass",
+          "startLine": 80,
+          "endLine": 82,
+          "params": []
+        },
+        {
+          "name": "getInterfaceProtocol",
+          "startLine": 87,
+          "endLine": 89,
+          "params": []
+        },
+        {
+          "name": "getInterfaceStringIndex",
+          "startLine": 94,
+          "endLine": 96,
+          "params": []
+        },
+        {
+          "name": "getInterfaceName",
+          "startLine": 101,
+          "endLine": 103,
+          "params": []
+        },
+        {
+          "name": "loadStrings",
+          "startLine": 110,
+          "endLine": 116,
+          "params": [
+            "dev"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 123,
+          "endLine": 131,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "InterfaceDescriptor",
+          "startLine": 29,
+          "endLine": 132,
+          "methods": [
+            "InterfaceDescriptor",
+            "InterfaceDescriptor",
+            "getInterfaceNumber",
+            "getAlternateSetting",
+            "getNumEndPoints",
+            "getInterfaceClass",
+            "getInterfaceSubClass",
+            "getInterfaceProtocol",
+            "getInterfaceStringIndex",
+            "getInterfaceName",
+            "loadStrings",
+            "toString"
+          ],
+          "properties": [
+            "intfName"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "InterfaceDescriptor",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "InterfaceDescriptor",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "getInterfaceNumber",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "getAlternateSetting",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "getNumEndPoints",
+          "line": 66,
+          "isDefault": false
+        },
+        {
+          "name": "getInterfaceClass",
+          "line": 73,
+          "isDefault": false
+        },
+        {
+          "name": "getInterfaceSubClass",
+          "line": 80,
+          "isDefault": false
+        },
+        {
+          "name": "getInterfaceProtocol",
+          "line": 87,
+          "isDefault": false
+        },
+        {
+          "name": "getInterfaceStringIndex",
+          "line": 94,
+          "isDefault": false
+        },
+        {
+          "name": "getInterfaceName",
+          "line": 101,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 123,
+          "isDefault": false
+        },
+        {
+          "name": "InterfaceDescriptor",
+          "line": 29,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getInterfaceNumber",
+          "callee": "getByte",
+          "lineNumber": 53
+        },
+        {
+          "caller": "getAlternateSetting",
+          "callee": "getByte",
+          "lineNumber": 60
+        },
+        {
+          "caller": "getNumEndPoints",
+          "callee": "getByte",
+          "lineNumber": 67
+        },
+        {
+          "caller": "getInterfaceClass",
+          "callee": "getByte",
+          "lineNumber": 74
+        },
+        {
+          "caller": "getInterfaceSubClass",
+          "callee": "getByte",
+          "lineNumber": 81
+        },
+        {
+          "caller": "getInterfaceProtocol",
+          "callee": "getByte",
+          "lineNumber": 88
+        },
+        {
+          "caller": "getInterfaceStringIndex",
+          "callee": "getByte",
+          "lineNumber": 95
+        },
+        {
+          "caller": "loadStrings",
+          "callee": "getInterfaceStringIndex",
+          "lineNumber": 112
+        },
+        {
+          "caller": "loadStrings",
+          "callee": "dev.getString",
+          "lineNumber": 114
+        },
+        {
+          "caller": "toString",
+          "callee": "getInterfaceNumber",
+          "lineNumber": 124
+        },
+        {
+          "caller": "toString",
+          "callee": "getAlternateSetting",
+          "lineNumber": 125
+        },
+        {
+          "caller": "toString",
+          "callee": "getNumEndPoints",
+          "lineNumber": 126
+        },
+        {
+          "caller": "toString",
+          "callee": "getInterfaceClass",
+          "lineNumber": 127
+        },
+        {
+          "caller": "toString",
+          "callee": "getInterfaceSubClass",
+          "lineNumber": 128
+        },
+        {
+          "caller": "toString",
+          "callee": "getInterfaceProtocol",
+          "lineNumber": 129
+        },
+        {
+          "caller": "toString",
+          "callee": "getInterfaceStringIndex",
+          "lineNumber": 130
+        }
+      ],
+      "metrics": {
+        "importCount": 12,
+        "exportCount": 12,
+        "functionCount": 12,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/StringDescriptor.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 65,
+      "nonEmptyLines": 58,
+      "functions": [
+        {
+          "name": "StringDescriptor",
+          "startLine": 40,
+          "endLine": 42,
+          "params": [
+            "data",
+            "ofs",
+            "len"
+          ]
+        },
+        {
+          "name": "StringDescriptor",
+          "startLine": 47,
+          "endLine": 49,
+          "params": [
+            "size"
+          ]
+        },
+        {
+          "name": "getString",
+          "startLine": 54,
+          "endLine": 64,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "StringDescriptor",
+          "startLine": 28,
+          "endLine": 65,
+          "methods": [
+            "StringDescriptor",
+            "StringDescriptor",
+            "getString"
+          ],
+          "properties": [
+            "cachedString"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "StringDescriptor",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "StringDescriptor",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "getString",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "StringDescriptor",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getString",
+          "callee": "getLength",
+          "lineNumber": 56
+        },
+        {
+          "caller": "getString",
+          "callee": "getChar",
+          "lineNumber": 59
+        },
+        {
+          "caller": "getString",
+          "callee": "new String",
+          "lineNumber": 61
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/StringDescriptorZero.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 79,
+      "nonEmptyLines": 70,
+      "functions": [
+        {
+          "name": "StringDescriptorZero",
+          "startLine": 35,
+          "endLine": 37,
+          "params": [
+            "data",
+            "ofs",
+            "len"
+          ]
+        },
+        {
+          "name": "StringDescriptorZero",
+          "startLine": 42,
+          "endLine": 44,
+          "params": [
+            "size"
+          ]
+        },
+        {
+          "name": "getNumLangIDs",
+          "startLine": 51,
+          "endLine": 53,
+          "params": []
+        },
+        {
+          "name": "getLangID",
+          "startLine": 60,
+          "endLine": 62,
+          "params": [
+            "index"
+          ]
+        },
+        {
+          "name": "contains",
+          "startLine": 69,
+          "endLine": 77,
+          "params": [
+            "langID"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "StringDescriptorZero",
+          "startLine": 28,
+          "endLine": 79,
+          "methods": [
+            "StringDescriptorZero",
+            "StringDescriptorZero",
+            "getNumLangIDs",
+            "getLangID",
+            "contains"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "StringDescriptorZero",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "StringDescriptorZero",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "getNumLangIDs",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "getLangID",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "contains",
+          "line": 69,
+          "isDefault": false
+        },
+        {
+          "name": "StringDescriptorZero",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getNumLangIDs",
+          "callee": "getLength",
+          "lineNumber": 52
+        },
+        {
+          "caller": "getLangID",
+          "callee": "getShort",
+          "lineNumber": 61
+        },
+        {
+          "caller": "contains",
+          "callee": "getNumLangIDs",
+          "lineNumber": 70
+        },
+        {
+          "caller": "contains",
+          "callee": "getLangID",
+          "lineNumber": 72
+        }
+      ],
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/AbstractStructure.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 85,
+      "nonEmptyLines": 77,
+      "functions": [
+        {
+          "name": "AbstractStructure",
+          "startLine": 47,
+          "endLine": 58,
+          "params": [
+            "rm",
+            "size",
+            "alignment"
+          ]
+        },
+        {
+          "name": "getInt",
+          "startLine": 65,
+          "endLine": 67,
+          "params": [
+            "ofs"
+          ]
+        },
+        {
+          "name": "setInt",
+          "startLine": 75,
+          "endLine": 77,
+          "params": [
+            "ofs",
+            "value"
+          ]
+        },
+        {
+          "name": "getDescriptorAddress",
+          "startLine": 82,
+          "endLine": 84,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AbstractStructure",
+          "startLine": 33,
+          "endLine": 85,
+          "methods": [
+            "AbstractStructure",
+            "getInt",
+            "setInt",
+            "getDescriptorAddress"
+          ],
+          "properties": [
+            "data",
+            "dataRes",
+            "offset",
+            "descrAddr"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getDescriptorAddress",
+          "line": 82,
+          "isDefault": false
+        },
+        {
+          "name": "AbstractStructure",
+          "line": 33,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AbstractStructure",
+          "callee": "InitialNaming.getInitialNaming().lookup",
+          "lineNumber": 49
+        },
+        {
+          "caller": "AbstractStructure",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 49
+        },
+        {
+          "caller": "AbstractStructure",
+          "callee": "rm.allocAligned",
+          "lineNumber": 50
+        },
+        {
+          "caller": "AbstractStructure",
+          "callee": "dataRes.getStartAddress",
+          "lineNumber": 51
+        },
+        {
+          "caller": "AbstractStructure",
+          "callee": "dataRes.getStartAddress",
+          "lineNumber": 57
+        },
+        {
+          "caller": "getInt",
+          "callee": "dataRes.get32",
+          "lineNumber": 66
+        },
+        {
+          "caller": "setInt",
+          "callee": "dataRes.set32",
+          "lineNumber": 76
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/AbstractTreeStructure.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 38,
+      "nonEmptyLines": 34,
+      "functions": [
+        {
+          "name": "AbstractTreeStructure",
+          "startLine": 35,
+          "endLine": 37,
+          "params": [
+            "rm",
+            "size",
+            "alignment"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AbstractTreeStructure",
+          "startLine": 28,
+          "endLine": 38,
+          "methods": [
+            "AbstractTreeStructure"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AbstractTreeStructure",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "AbstractTreeStructure",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/FrameList.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 99,
+      "nonEmptyLines": 89,
+      "functions": [
+        {
+          "name": "FrameList",
+          "startLine": 40,
+          "endLine": 45,
+          "params": [
+            "rm"
+          ]
+        },
+        {
+          "name": "setListPointer",
+          "startLine": 53,
+          "endLine": 57,
+          "params": [
+            "frame",
+            "td"
+          ]
+        },
+        {
+          "name": "setListPointer",
+          "startLine": 67,
+          "endLine": 71,
+          "params": [
+            "frame",
+            "qh",
+            "depthFirst"
+          ]
+        },
+        {
+          "name": "setListPointerInvalid",
+          "startLine": 78,
+          "endLine": 81,
+          "params": [
+            "frame"
+          ]
+        },
+        {
+          "name": "getListPointer",
+          "startLine": 89,
+          "endLine": 91,
+          "params": [
+            "frame"
+          ]
+        },
+        {
+          "name": "getSize",
+          "startLine": 96,
+          "endLine": 98,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "FrameList",
+          "startLine": 28,
+          "endLine": 99,
+          "methods": [
+            "FrameList",
+            "setListPointer",
+            "setListPointer",
+            "setListPointerInvalid",
+            "getListPointer",
+            "getSize"
+          ],
+          "properties": [
+            "list"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "FrameList",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "setListPointer",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "setListPointer",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "setListPointerInvalid",
+          "line": 78,
+          "isDefault": false
+        },
+        {
+          "name": "getListPointer",
+          "line": 89,
+          "isDefault": false
+        },
+        {
+          "name": "getSize",
+          "line": 96,
+          "isDefault": false
+        },
+        {
+          "name": "FrameList",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "FrameList",
+          "callee": "setListPointerInvalid",
+          "lineNumber": 43
+        },
+        {
+          "caller": "setListPointer",
+          "callee": "td.getDescriptorAddress",
+          "lineNumber": 54
+        },
+        {
+          "caller": "setListPointer",
+          "callee": "setInt",
+          "lineNumber": 56
+        },
+        {
+          "caller": "setListPointer",
+          "callee": "qh.getDescriptorAddress",
+          "lineNumber": 68
+        },
+        {
+          "caller": "setListPointer",
+          "callee": "setInt",
+          "lineNumber": 70
+        },
+        {
+          "caller": "setListPointerInvalid",
+          "callee": "setInt",
+          "lineNumber": 79
+        }
+      ],
+      "metrics": {
+        "importCount": 7,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/UHCIConstants.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 125,
+      "nonEmptyLines": 115,
+      "classes": [
+        {
+          "name": "UHCIConstants",
+          "startLine": 26,
+          "endLine": 125,
+          "methods": [],
+          "properties": [
+            "USBCMD",
+            "USBCMD_RS",
+            "USBCMD_HCRESET",
+            "USBCMD_GRESET",
+            "USBCMD_EGSM",
+            "USBCMD_FGR",
+            "USBCMD_SWDBG",
+            "USBCMD_CF",
+            "USBCMD_MAXP",
+            "USBSTS",
+            "USBSTS_USBINT",
+            "USBSTS_ERROR",
+            "USBSTS_RD",
+            "USBSTS_HSE",
+            "USBSTS_HCPE",
+            "USBSTS_HCH",
+            "USBINTR",
+            "USBINTR_TIMEOUT",
+            "USBINTR_RESUME",
+            "USBINTR_IOC",
+            "USBINTR_SP",
+            "USBFRNUM",
+            "USBFLBASEADD",
+            "USBSOF",
+            "USBPORTSC1",
+            "USBPORTSC2",
+            "USBPORTSC_CCS",
+            "USBPORTSC_CSC",
+            "USBPORTSC_PE",
+            "USBPORTSC_PEC",
+            "USBPORTSC_LS",
+            "USBPORTSC_RD",
+            "USBPORTSC_LSDA",
+            "USBPORTSC_PR",
+            "USBPORTSC_SUSP",
+            "USBLEGSUP",
+            "USBLEGSUP_DEFAULT",
+            "TD_CTRL_SPD",
+            "TD_CTRL_C_ERR_MASK",
+            "TD_CTRL_C_ERR_SHIFT",
+            "TD_CTRL_LS",
+            "TD_CTRL_IOS",
+            "TD_CTRL_IOC",
+            "TD_CTRL_ACTIVE",
+            "TD_CTRL_STALLED",
+            "TD_CTRL_DBUFERR",
+            "TD_CTRL_BABBLE",
+            "TD_CTRL_NAK",
+            "TD_CTRL_CRCTIMEO",
+            "TD_CTRL_BITSTUFF",
+            "TD_CTRL_ACTLEN_MASK",
+            "TD_CTRL_ANY_ERROR"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "UHCIConstants",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/org/jnode/driver/bus/usb/uhci/UHCIIO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 196,
+      "nonEmptyLines": 171,
+      "functions": [
+        {
+          "name": "UHCIIO",
+          "startLine": 39,
+          "endLine": 42,
+          "params": [
+            "base"
+          ]
+        },
+        {
+          "name": "release",
+          "startLine": 47,
+          "endLine": 49,
+          "params": []
+        },
+        {
+          "name": "getCommand",
+          "startLine": 54,
+          "endLine": 56,
+          "params": []
+        },
+        {
+          "name": "getCommandBits",
+          "startLine": 61,
+          "endLine": 63,
+          "params": [
+            "mask"
+          ]
+        },
+        {
+          "name": "setCommand",
+          "startLine": 68,
+          "endLine": 70,
+          "params": [
+            "command"
+          ]
+        },
+        {
+          "name": "setCommandBits",
+          "startLine": 75,
+          "endLine": 83,
+          "params": [
+            "mask",
+            "on"
+          ]
+        },
+        {
+          "name": "getStatus",
+          "startLine": 88,
+          "endLine": 90,
+          "params": []
+        },
+        {
+          "name": "getStatusBits",
+          "startLine": 95,
+          "endLine": 97,
+          "params": [
+            "mask"
+          ]
+        },
+        {
+          "name": "clearStatus",
+          "startLine": 102,
+          "endLine": 104,
+          "params": [
+            "clearMask"
+          ]
+        },
+        {
+          "name": "getInterruptEnable",
+          "startLine": 109,
+          "endLine": 111,
+          "params": []
+        },
+        {
+          "name": "setInterruptEnable",
+          "startLine": 116,
+          "endLine": 118,
+          "params": [
+            "mask"
+          ]
+        },
+        {
+          "name": "getFrameNumber",
+          "startLine": 123,
+          "endLine": 125,
+          "params": []
+        },
+        {
+          "name": "setFrameNumber",
+          "startLine": 130,
+          "endLine": 132,
+          "params": [
+            "frnum"
+          ]
+        },
+        {
+          "name": "getFrameListBaseAddress",
+          "startLine": 137,
+          "endLine": 139,
+          "params": []
+        },
+        {
+          "name": "setFrameListBaseAddress",
+          "startLine": 144,
+          "endLine": 146,
+          "params": [
+            "baseAddress"
+          ]
+        },
+        {
+          "name": "getStartOfFrame",
+          "startLine": 151,
+          "endLine": 153,
+          "params": []
+        },
+        {
+          "name": "setStartOfFrame",
+          "startLine": 158,
+          "endLine": 160,
+          "params": [
+            "sof"
+          ]
+        },
+        {
+          "name": "getPortSC",
+          "startLine": 165,
+          "endLine": 167,
+          "params": [
+            "port"
+          ]
+        },
+        {
+          "name": "getPortSCBits",
+          "startLine": 172,
+          "endLine": 174,
+          "params": [
+            "port",
+            "mask"
+          ]
+        },
+        {
+          "name": "setPortSCBits",
+          "startLine": 179,
+          "endLine": 188,
+          "params": [
+            "port",
+            "mask",
+            "on"
+          ]
+        },
+        {
+          "name": "setPortSC",
+          "startLine": 193,
+          "endLine": 195,
+          "params": [
+            "port",
+            "value"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "UHCIIO",
+          "startLine": 29,
+          "endLine": 196,
+          "methods": [
+            "UHCIIO",
+            "release",
+            "getCommand",
+            "getCommandBits",
+            "setCommand",
+            "setCommandBits",
+            "getStatus",
+            "getStatusBits",
+            "clearStatus",
+            "getInterruptEnable",
+            "setInterruptEnable",
+            "getFrameNumber",
+            "setFrameNumber",
+            "getFrameListBaseAddress",
+            "setFrameListBaseAddress",
+            "getStartOfFrame",
+            "setStartOfFrame",
+            "getPortSC",
+            "getPortSCBits",
+            "setPortSCBits",
+            "setPortSC"
+          ],
+          "properties": [
+            "io",
+            "base"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "UHCIIO",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "release",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "UHCIIO",
+          "line": 29,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "UHCIIO",
+          "callee": "InitialNaming.getInitialNaming().lookup",
+          "lineNumber": 40
+        },
+        {
+          "caller": "UHCIIO",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 40
+        },
+        {
+          "caller": "getCommand",
+          "callee": "io.inw_p",
+          "lineNumber": 55
+        },
+        {
+          "caller": "getCommandBits",
+          "callee": "io.inw_p",
+          "lineNumber": 62
+        },
+        {
+          "caller": "setCommand",
+          "callee": "io.outw_p",
+          "lineNumber": 69
+        },
+        {
+          "caller": "setCommandBits",
+          "callee": "io.inw_p",
+          "lineNumber": 76
+        },
+        {
+          "caller": "setCommandBits",
+          "callee": "io.outw_p",
+          "lineNumber": 82
+        },
+        {
+          "caller": "getStatus",
+          "callee": "io.inw_p",
+          "lineNumber": 89
+        },
+        {
+          "caller": "getStatusBits",
+          "callee": "io.inw_p",
+          "lineNumber": 96
+        },
+        {
+          "caller": "clearStatus",
+          "callee": "io.outw_p",
+          "lineNumber": 103
+        },
+        {
+          "caller": "getInterruptEnable",
+          "callee": "io.inw_p",
+          "lineNumber": 110
+        },
+        {
+          "caller": "setInterruptEnable",
+          "callee": "io.outw_p",
+          "lineNumber": 117
+        },
+        {
+          "caller": "getFrameNumber",
+          "callee": "io.inw_p",
+          "lineNumber": 124
+        },
+        {
+          "caller": "setFrameNumber",
+          "callee": "io.outw_p",
+          "lineNumber": 131
+        },
+        {
+          "caller": "getFrameListBaseAddress",
+          "callee": "io.inl_p",
+          "lineNumber": 138
+        },
+        {
+          "caller": "setFrameListBaseAddress",
+          "callee": "io.outl_p",
+          "lineNumber": 145
+        },
+        {
+          "caller": "getStartOfFrame",
+          "callee": "io.inb_p",
+          "lineNumber": 152
+        },
+        {
+          "caller": "setStartOfFrame",
+          "callee": "io.outb_p",
+          "lineNumber": 159
+        },
+        {
+          "caller": "getPortSC",
+          "callee": "io.inw_p",
+          "lineNumber": 166
+        },
+        {
+          "caller": "getPortSCBits",
+          "callee": "io.inw_p",
+          "lineNumber": 173
+        },
+        {
+          "caller": "setPortSCBits",
+          "callee": "io.inw_p",
+          "lineNumber": 180
+        },
+        {
+          "caller": "setPortSCBits",
+          "callee": "io.outw_p",
+          "lineNumber": 187
+        },
+        {
+          "caller": "setPortSC",
+          "callee": "io.outw_p",
+          "lineNumber": 194
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 3,
+        "functionCount": 21,
+        "classCount": 1
+      }
+    }
+  ]
+}

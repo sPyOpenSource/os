@@ -1,0 +1,1667 @@
+[
+  {
+    "source": "file:src/java/io/InputStreamReader.java",
+    "target": "file:src/gnu/java/io/EncodingManager.java",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:37350b435c15e61b",
+    "target": "file:ffb9b88e710bd673",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:37350b435c15e61b",
+    "target": "file:11825f67f41daf3e",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:37350b435c15e61b",
+    "target": "file:853daf33b02e21d4",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:65b274e0a8d5a6e0",
+    "target": "file:853daf33b02e21d4",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:f20a8c21bbf271dc",
+    "target": "file:853daf33b02e21d4",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:963f34cfcdc137eb",
+    "target": "file:eeca36adfc884473",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:963f34cfcdc137eb",
+    "target": "file:853daf33b02e21d4",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:af4e8b3d8711109b",
+    "target": "file:eeca36adfc884473",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:af4e8b3d8711109b",
+    "target": "file:853daf33b02e21d4",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:de8f964b82ba9be8",
+    "target": "file:eeca36adfc884473",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:de8f964b82ba9be8",
+    "target": "file:853daf33b02e21d4",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:bc7e63ad21a9eac7",
+    "target": "file:eeca36adfc884473",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:bc7e63ad21a9eac7",
+    "target": "file:3c318f196d688583",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:bc7e63ad21a9eac7",
+    "target": "file:853daf33b02e21d4",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:034ec90ad8b9d9d1",
+    "target": "file:eeca36adfc884473",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:034ec90ad8b9d9d1",
+    "target": "file:3c318f196d688583",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:034ec90ad8b9d9d1",
+    "target": "file:853daf33b02e21d4",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:90d7a4fec966bc6d",
+    "target": "file:eeca36adfc884473",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:90d7a4fec966bc6d",
+    "target": "file:853daf33b02e21d4",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:e1600fbf79ff1bc8",
+    "target": "file:eeca36adfc884473",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:bbbea0fa5ea3f6bf",
+    "target": "file:eeca36adfc884473",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:bbbea0fa5ea3f6bf",
+    "target": "file:853daf33b02e21d4",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:9a35378b526ec8ba",
+    "target": "file:eeca36adfc884473",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:9a35378b526ec8ba",
+    "target": "file:853daf33b02e21d4",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:ce4be86699e19e7a",
+    "target": "file:eeca36adfc884473",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:ce4be86699e19e7a",
+    "target": "file:853daf33b02e21d4",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:c36b2832e619ad53",
+    "target": "file:eeca36adfc884473",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:c36b2832e619ad53",
+    "target": "file:853daf33b02e21d4",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:f0188358bf5eeee4",
+    "target": "file:eeca36adfc884473",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:f0188358bf5eeee4",
+    "target": "file:853daf33b02e21d4",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:dfe04fcb8d717814",
+    "target": "file:eeca36adfc884473",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:dfe04fcb8d717814",
+    "target": "file:853daf33b02e21d4",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:f3b9e7bbbcdd4df5",
+    "target": "file:eeca36adfc884473",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:f3b9e7bbbcdd4df5",
+    "target": "file:853daf33b02e21d4",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:7c1109569b7c63f5",
+    "target": "file:eeca36adfc884473",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:7c1109569b7c63f5",
+    "target": "file:853daf33b02e21d4",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:89d73f418b442d2a",
+    "target": "file:eeca36adfc884473",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:89d73f418b442d2a",
+    "target": "file:853daf33b02e21d4",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:eeca36adfc884473",
+    "target": "file:3c318f196d688583",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:853daf33b02e21d4",
+    "target": "file:6247c4c1b4f12945",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:853daf33b02e21d4",
+    "target": "file:3c318f196d688583",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:57d95c13e8218b09",
+    "target": "file:0f3bf9e35e60f5ea",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:af297f278c7a747c",
+    "target": "file:ccdbdd1abdf0422e",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:ab5c5599b45ef690",
+    "target": "file:9f8c27244e4712c4",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:ab5c5599b45ef690",
+    "target": "file:0f3bf9e35e60f5ea",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:e61248f14f0233ec",
+    "target": "file:0f3bf9e35e60f5ea",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:a297a8db9da378b0",
+    "target": "file:0f3bf9e35e60f5ea",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:4a3179f54d007b65",
+    "target": "file:4f152b0b7709d041",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:a297a8db9da378b0",
+    "target": "file:d5474858d84d49c2",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:f310c24c3460c5bf",
+    "target": "file:4922235cb0c65792",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:f310c24c3460c5bf",
+    "target": "file:9d1fdd15641f78a4",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:212497a68449b046",
+    "target": "file:b959d01a8048ba08",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:212497a68449b046",
+    "target": "file:28ba8a28519142b3",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:86136f957d5ff4bc",
+    "target": "file:34543bf778fd1998",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:86136f957d5ff4bc",
+    "target": "file:28ba8a28519142b3",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:437c73b82acb9e7b",
+    "target": "file:13f3002fe28ab615",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:3cceeadf59133e76",
+    "target": "file:f411576d8dbdb282",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:3cceeadf59133e76",
+    "target": "file:fa468b8a651f5b2b",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:3cceeadf59133e76",
+    "target": "file:28ba8a28519142b3",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:3cceeadf59133e76",
+    "target": "file:1590cd89ba611d2b",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:3cceeadf59133e76",
+    "target": "file:304e7f96c408696f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:214d86039fda987b",
+    "target": "file:28ba8a28519142b3",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:214d86039fda987b",
+    "target": "file:1590cd89ba611d2b",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:214d86039fda987b",
+    "target": "file:304e7f96c408696f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:214d86039fda987b",
+    "target": "file:3c318f196d688583",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:5cc067aa3c5005f2",
+    "target": "file:28ba8a28519142b3",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:5cc067aa3c5005f2",
+    "target": "file:1590cd89ba611d2b",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:5cc067aa3c5005f2",
+    "target": "file:304e7f96c408696f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:0f445ceb075828f8",
+    "target": "file:28ba8a28519142b3",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:ab8a716ff6bd21d3",
+    "target": "file:28ba8a28519142b3",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:ab8a716ff6bd21d3",
+    "target": "file:1590cd89ba611d2b",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:ab8a716ff6bd21d3",
+    "target": "file:304e7f96c408696f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:ab8a716ff6bd21d3",
+    "target": "file:4c93a7a49eb3483e",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:7c2b2914de3dd268",
+    "target": "file:28ba8a28519142b3",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:914fa86f8ae0ef40",
+    "target": "file:3c26d2167c08b76c",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:91e1659e244cab0f",
+    "target": "file:28ba8a28519142b3",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:347f9a71bdf9511b",
+    "target": "file:28ba8a28519142b3",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:b56460057705527d",
+    "target": "file:28ba8a28519142b3",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:437c73b82acb9e7b",
+    "target": "file:0882806d77f5e155",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:437c73b82acb9e7b",
+    "target": "file:b1f485210d5fe292",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:1ee5c9cb7d7675ff",
+    "target": "file:ed460fcdcd69fb65",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:d3f16cdaf9e4787e",
+    "target": "file:0882806d77f5e155",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:b76989a1156cf6be",
+    "target": "file:0882806d77f5e155",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:c45f13a05f1133d7",
+    "target": "file:214d86039fda987b",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:914fa86f8ae0ef40",
+    "target": "file:0882806d77f5e155",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:15e5cf7a41421179",
+    "target": "file:4951c0817dfce13f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:15e5cf7a41421179",
+    "target": "file:65aaf1f7e69b8621",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:3e29e7a41c2fa76b",
+    "target": "file:4951c0817dfce13f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:3e29e7a41c2fa76b",
+    "target": "file:65aaf1f7e69b8621",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:f9d024e0be49938f",
+    "target": "file:3c318f196d688583",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:83d6e8d202ce0f80",
+    "target": "file:64e01ca5ff57c94b",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:83d6e8d202ce0f80",
+    "target": "file:3c318f196d688583",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:83d6e8d202ce0f80",
+    "target": "file:16cd9ddcd549eb33",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:83d6e8d202ce0f80",
+    "target": "file:4951c0817dfce13f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:83d6e8d202ce0f80",
+    "target": "file:65aaf1f7e69b8621",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:96b88585cf704d7f",
+    "target": "file:31197486ee5837cc",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:96b88585cf704d7f",
+    "target": "file:67607610ac4dd9d7",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:96b88585cf704d7f",
+    "target": "file:5d31d213e0fdcbdb",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:96b88585cf704d7f",
+    "target": "file:f8e1d2264cf9a85e",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:9f3b06761292c9d5",
+    "target": "file:4951c0817dfce13f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:9f3b06761292c9d5",
+    "target": "file:65aaf1f7e69b8621",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:cd6d6b0ceddcd7bb",
+    "target": "file:4951c0817dfce13f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:cd6d6b0ceddcd7bb",
+    "target": "file:65aaf1f7e69b8621",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:ec1aaed4da4efc15",
+    "target": "file:4951c0817dfce13f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:ec1aaed4da4efc15",
+    "target": "file:65aaf1f7e69b8621",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:01b0df1d6bb6ce85",
+    "target": "file:4951c0817dfce13f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:01b0df1d6bb6ce85",
+    "target": "file:65aaf1f7e69b8621",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:78d0a5031d65be24",
+    "target": "file:4951c0817dfce13f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:78d0a5031d65be24",
+    "target": "file:65aaf1f7e69b8621",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:016b3ec165b751aa",
+    "target": "file:4951c0817dfce13f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:016b3ec165b751aa",
+    "target": "file:65aaf1f7e69b8621",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:5177fc39c19a312b",
+    "target": "file:65aaf1f7e69b8621",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:88609949c42bdba7",
+    "target": "file:4951c0817dfce13f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:88609949c42bdba7",
+    "target": "file:65aaf1f7e69b8621",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:16cd9ddcd549eb33",
+    "target": "file:28ba8a28519142b3",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:4951c0817dfce13f",
+    "target": "file:28ba8a28519142b3",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:65aaf1f7e69b8621",
+    "target": "file:28ba8a28519142b3",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:5d31d213e0fdcbdb",
+    "target": "file:65aaf1f7e69b8621",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:f8e1d2264cf9a85e",
+    "target": "file:f9d024e0be49938f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:f8e1d2264cf9a85e",
+    "target": "file:8a720f18107616d7",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:f8e1d2264cf9a85e",
+    "target": "file:e39116ec046683df",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:de5df7384cc1238e",
+    "target": "file:f9d024e0be49938f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:2699a439daf8414e",
+    "target": "file:d35d17e46dee1e7f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:56dedae5dbc33c8f",
+    "target": "file:8e4ef13d426d1b7b",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:f071f0c0c0125d1e",
+    "target": "file:8e4ef13d426d1b7b",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:f071f0c0c0125d1e",
+    "target": "file:e749832cbdfa0029",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:7c641220d0d10e2e",
+    "target": "file:9286fe08dde4bd9d",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:7c641220d0d10e2e",
+    "target": "file:493ab0c129d8ec92",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:7c641220d0d10e2e",
+    "target": "file:1186eefdf9aa18e2",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:7c641220d0d10e2e",
+    "target": "file:e749832cbdfa0029",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:7c641220d0d10e2e",
+    "target": "file:8e4fe138b530782f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:7c641220d0d10e2e",
+    "target": "file:c6d22b228397aa68",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:7c641220d0d10e2e",
+    "target": "file:774fe2160afbc0ea",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:7c641220d0d10e2e",
+    "target": "file:8e608b786e4c883c",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:660c261233aee0e7",
+    "target": "file:9286fe08dde4bd9d",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:660c261233aee0e7",
+    "target": "file:d35d17e46dee1e7f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:3841dbb65af5486d",
+    "target": "file:d35d17e46dee1e7f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:f3cd470301797f04",
+    "target": "file:8e608b786e4c883c",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:ab44e0ec682c9bcb",
+    "target": "file:8e4ef13d426d1b7b",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:be2b9e5716d5b4a1",
+    "target": "file:9286fe08dde4bd9d",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:be2b9e5716d5b4a1",
+    "target": "file:1186eefdf9aa18e2",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:be2b9e5716d5b4a1",
+    "target": "file:e749832cbdfa0029",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:be2b9e5716d5b4a1",
+    "target": "file:6fee822b7562c082",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:be2b9e5716d5b4a1",
+    "target": "file:d35d17e46dee1e7f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:be2b9e5716d5b4a1",
+    "target": "file:8e608b786e4c883c",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:a9e9cdcaccf9524c",
+    "target": "file:9286fe08dde4bd9d",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:a9e9cdcaccf9524c",
+    "target": "file:8e4ef13d426d1b7b",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:a9e9cdcaccf9524c",
+    "target": "file:8e4fe138b530782f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:a9e9cdcaccf9524c",
+    "target": "file:d35d17e46dee1e7f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:7cf636eb18e9f0c4",
+    "target": "file:493ab0c129d8ec92",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:7cf636eb18e9f0c4",
+    "target": "file:1186eefdf9aa18e2",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:7cf636eb18e9f0c4",
+    "target": "file:e749832cbdfa0029",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:7cf636eb18e9f0c4",
+    "target": "file:6fee822b7562c082",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:7cf636eb18e9f0c4",
+    "target": "file:489624da065e83ab",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:7cf636eb18e9f0c4",
+    "target": "file:c6d22b228397aa68",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:7cf636eb18e9f0c4",
+    "target": "file:993e731cab1f705a",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:3ec6432a0dea8ecd",
+    "target": "file:b65e4b60adfe9d2b",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:3ec6432a0dea8ecd",
+    "target": "file:e749832cbdfa0029",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:3ec6432a0dea8ecd",
+    "target": "file:6fee822b7562c082",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:3ec6432a0dea8ecd",
+    "target": "file:d35d17e46dee1e7f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:3ec6432a0dea8ecd",
+    "target": "file:8e608b786e4c883c",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:f1cbe89e884a428d",
+    "target": "file:8e4ef13d426d1b7b",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:f1cbe89e884a428d",
+    "target": "file:6fee822b7562c082",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:f1cbe89e884a428d",
+    "target": "file:d35d17e46dee1e7f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:32c93eb787e4d117",
+    "target": "file:87d8ee965462a03f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:32c93eb787e4d117",
+    "target": "file:489624da065e83ab",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:e0544a03d69e2b56",
+    "target": "file:e2719b77e9c65b32",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:e0544a03d69e2b56",
+    "target": "file:33c3f6c17232b585",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:e0544a03d69e2b56",
+    "target": "file:8e4ef13d426d1b7b",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:e0544a03d69e2b56",
+    "target": "file:e749832cbdfa0029",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:e0544a03d69e2b56",
+    "target": "file:6fee822b7562c082",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:e0544a03d69e2b56",
+    "target": "file:8e4fe138b530782f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:e0544a03d69e2b56",
+    "target": "file:993e731cab1f705a",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:e0544a03d69e2b56",
+    "target": "file:40321863dd9d50ac",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:e0544a03d69e2b56",
+    "target": "file:8e608b786e4c883c",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:f3cc3bcaac84ef4d",
+    "target": "file:33c3f6c17232b585",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:f3cc3bcaac84ef4d",
+    "target": "file:c8ce90987ddb76f5",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:f3cc3bcaac84ef4d",
+    "target": "file:8e4ef13d426d1b7b",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:f3cc3bcaac84ef4d",
+    "target": "file:1186eefdf9aa18e2",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:f3cc3bcaac84ef4d",
+    "target": "file:e749832cbdfa0029",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:f3cc3bcaac84ef4d",
+    "target": "file:6fee822b7562c082",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:f3cc3bcaac84ef4d",
+    "target": "file:993e731cab1f705a",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:93b9f951963450cc",
+    "target": "file:8e4fe138b530782f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:93b9f951963450cc",
+    "target": "file:8e608b786e4c883c",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:0debc8335c117f2b",
+    "target": "file:493ab0c129d8ec92",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:0debc8335c117f2b",
+    "target": "file:e749832cbdfa0029",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:0debc8335c117f2b",
+    "target": "file:c6d22b228397aa68",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:2699a439daf8414e",
+    "target": "file:eddb37d84b0173c8",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:230c727f1132af1c",
+    "target": "file:eddb37d84b0173c8",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:20f52fd005c3b5e0",
+    "target": "file:eddb37d84b0173c8",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:a9e9cdcaccf9524c",
+    "target": "file:660c261233aee0e7",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:7cf636eb18e9f0c4",
+    "target": "file:eddb37d84b0173c8",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:f1cbe89e884a428d",
+    "target": "file:3841dbb65af5486d",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:e0544a03d69e2b56",
+    "target": "file:f3cd470301797f04",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:e0544a03d69e2b56",
+    "target": "file:eddb37d84b0173c8",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:c52c63caa91ca699",
+    "target": "file:6f998b8d4a347e88",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:c52c63caa91ca699",
+    "target": "file:788965fb666f736a",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:c52c63caa91ca699",
+    "target": "file:a7baa49b860a0f00",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:c52c63caa91ca699",
+    "target": "file:2ae28aef93647710",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:c52c63caa91ca699",
+    "target": "file:d3506882bb32901f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:c52c63caa91ca699",
+    "target": "file:bf14f3a9f41cde47",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:c52c63caa91ca699",
+    "target": "file:66da20169b9a1950",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:c52c63caa91ca699",
+    "target": "file:554cf70df45c1263",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:c52c63caa91ca699",
+    "target": "file:97e3f7829493db7b",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:c52c63caa91ca699",
+    "target": "file:97e6040c3e36f5b4",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:e76b413e69c9d53e",
+    "target": "file:65079c29c55b7d1f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:5d258cdaf44fc1da",
+    "target": "file:65079c29c55b7d1f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:070b8fe60ce8c9b9",
+    "target": "file:cf934dc9c26e1eba",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:070b8fe60ce8c9b9",
+    "target": "file:65079c29c55b7d1f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:b1fdf4b5df452df9",
+    "target": "file:65079c29c55b7d1f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:b1fdf4b5df452df9",
+    "target": "file:2ab118ba7e14d6b8",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:3a4ea380d7439d05",
+    "target": "file:d3029700411727d3",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:e76b413e69c9d53e",
+    "target": "file:0f69c82c0f945e0b",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:4d49ad3d63aaa38d",
+    "target": "file:0f69c82c0f945e0b",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:5d258cdaf44fc1da",
+    "target": "file:d3029700411727d3",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:ea70ec99fefbf24a",
+    "target": "file:0f69c82c0f945e0b",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:070b8fe60ce8c9b9",
+    "target": "file:d3029700411727d3",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:070b8fe60ce8c9b9",
+    "target": "file:0f69c82c0f945e0b",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:070b8fe60ce8c9b9",
+    "target": "file:b222a764decf9a9f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:070b8fe60ce8c9b9",
+    "target": "file:eb24d92c572de841",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:689183eb9eb7aed8",
+    "target": "file:0f69c82c0f945e0b",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:689183eb9eb7aed8",
+    "target": "file:dc00207e1498027a",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:e37f5cfd194c5559",
+    "target": "file:d3029700411727d3",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:6624942b5d145e35",
+    "target": "file:d3029700411727d3",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:9477fc81b1c59ece",
+    "target": "file:d3029700411727d3",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:ac31eb10d2b414a8",
+    "target": "file:d3029700411727d3",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:18966aa2b35d1ab9",
+    "target": "file:d3029700411727d3",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:367335229ac376bf",
+    "target": "file:1a134cde9a98fd9d",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:367335229ac376bf",
+    "target": "file:2ab118ba7e14d6b8",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:718ad4cd63252a10",
+    "target": "file:750f265c221a4a77",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:45c26be49bb013b7",
+    "target": "file:cf934dc9c26e1eba",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:45c26be49bb013b7",
+    "target": "file:d3029700411727d3",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:b3138203f7feb6a3",
+    "target": "file:d16d6c72863cb2bb",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:b3138203f7feb6a3",
+    "target": "file:d3029700411727d3",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:3ff0f7ac7ca01c94",
+    "target": "file:cf934dc9c26e1eba",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:718ad4cd63252a10",
+    "target": "file:d5a7fcdf35ea70ab",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:718ad4cd63252a10",
+    "target": "file:049135ad61667f1f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:6ea8f8b2cc36c869",
+    "target": "file:d5a7fcdf35ea70ab",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:3de07e805f81b837",
+    "target": "file:d5a7fcdf35ea70ab",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:3de07e805f81b837",
+    "target": "file:443d2ddd926caef8",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:45c26be49bb013b7",
+    "target": "file:60507be1dc5721ab",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:45c26be49bb013b7",
+    "target": "file:f58038e50738ad44",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:45c26be49bb013b7",
+    "target": "file:78500481600f84f3",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:45c26be49bb013b7",
+    "target": "file:049135ad61667f1f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:6abe7263e90e6d11",
+    "target": "file:30215c1c17ee87cd",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:6abe7263e90e6d11",
+    "target": "file:a7baa49b860a0f00",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:b3138203f7feb6a3",
+    "target": "file:d5a7fcdf35ea70ab",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:b3138203f7feb6a3",
+    "target": "file:443d2ddd926caef8",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:b3138203f7feb6a3",
+    "target": "file:049135ad61667f1f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:3ff0f7ac7ca01c94",
+    "target": "file:d5a7fcdf35ea70ab",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:3ff0f7ac7ca01c94",
+    "target": "file:b6a04e1f95213228",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:cff1404ec2d88e2d",
+    "target": "file:d3029700411727d3",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:ebf934dabfed3709",
+    "target": "file:8345ed443f929023",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:ebf934dabfed3709",
+    "target": "file:f99ee1619e02f6ac",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:6423328cdf2816a1",
+    "target": "file:c3dbeb2801989de9",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:6423328cdf2816a1",
+    "target": "file:c83931c79627ab96",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:56083ae8f57b6692",
+    "target": "file:c3dbeb2801989de9",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:9d85f31f413fdb9d",
+    "target": "file:c3dbeb2801989de9",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:9d85f31f413fdb9d",
+    "target": "file:c83931c79627ab96",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:cff1404ec2d88e2d",
+    "target": "file:f99ee1619e02f6ac",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:80c355fce1c38c60",
+    "target": "file:c3dbeb2801989de9",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:3dc4510a90f9cff2",
+    "target": "file:c3dbeb2801989de9",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:806018d10c935bf6",
+    "target": "file:c3dbeb2801989de9",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:23b920f998b9a258",
+    "target": "file:a7070ea882871e41",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:7bc11b3193e0e656",
+    "target": "file:cf934dc9c26e1eba",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:27c4f547a7fa7035",
+    "target": "file:5c3bfd8f3ea4773d",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:27c4f547a7fa7035",
+    "target": "file:003ae6b23a1db763",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:7bc11b3193e0e656",
+    "target": "file:5c3bfd8f3ea4773d",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:7baa08f065413def",
+    "target": "file:003ae6b23a1db763",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:b4e10e9ff398fc6d",
+    "target": "file:1e0f5eb2cb7f152e",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:b4e10e9ff398fc6d",
+    "target": "file:9c366dd8c21f712f",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:b4e10e9ff398fc6d",
+    "target": "file:34523abafd1bec29",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:0272f25ed41ee53e",
+    "target": "file:1a41abe31573c944",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:9207d90629a43801",
+    "target": "file:1a41abe31573c944",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:34ee5683f74340d2",
+    "target": "file:b78e72dca21d07b3",
+    "type": "imports",
+    "direction": "forward"
+  },
+  {
+    "source": "file:src/jx/bio/buffercache/BufferFreeList.java",
+    "target": "file:src/jx/buffer/BufferList.java",
+    "type": "imports",
+    "direction": "forward",
+    "weight": 0.7,
+    "recoveredFromImportMap": true
+  }
+]

@@ -1,0 +1,384 @@
+{
+  "batchIndex": 9,
+  "files": [
+    {
+      "path": "src/jx/bio/emulator/Main.java",
+      "language": "java",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/bio/ram/Main.java",
+      "language": "java",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/buffer/multithread/Buffer2.java",
+      "language": "java",
+      "sizeLines": 95,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/buffer/multithread/MultiThreadBufferList.java",
+      "language": "java",
+      "sizeLines": 216,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/buffer/multithread/MultiThreadBufferList2.java",
+      "language": "java",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/devices/net/emulation/EmulNetFinder.java",
+      "language": "java",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/emulation/Init.java",
+      "language": "java",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/net/StartNetDevice.java",
+      "language": "java",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/scheduler/HLRRobin.java",
+      "language": "java",
+      "sizeLines": 176,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/scheduler/HLRRobin_all.java",
+      "language": "java",
+      "sizeLines": 192,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/scheduler/HLRRobin_mini.java",
+      "language": "java",
+      "sizeLines": 136,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/scheduler/HLRRobin_nonpreemptive.java",
+      "language": "java",
+      "sizeLines": 161,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/scheduler/JAVARRobin.java",
+      "language": "java",
+      "sizeLines": 154,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/scheduler/LLMtR.java",
+      "language": "java",
+      "sizeLines": 243,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/scheduler/LLRRobin.java",
+      "language": "java",
+      "sizeLines": 271,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/scheduler/LLRRobinTest.java",
+      "language": "java",
+      "sizeLines": 181,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/zero/debug/DebugInputStream.java",
+      "language": "java",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/zero/debug/DebugOutputStream.java",
+      "language": "java",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/zero/debug/DebugPrintStream.java",
+      "language": "java",
+      "sizeLines": 462,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/ComInit.java",
+      "language": "java",
+      "sizeLines": 436,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/D3C905.java",
+      "language": "java",
+      "sizeLines": 4176,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/metaxa/os/devices/net/DpdListEntry.java",
+      "language": "java",
+      "sizeLines": 133,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/jx/bio/emulator/Main.java": [
+      "src/jx/zero/debug/DebugOutputStream.java",
+      "src/jx/zero/debug/DebugPrintStream.java"
+    ],
+    "src/jx/bio/ram/Main.java": [
+      "src/jx/zero/debug/DebugOutputStream.java",
+      "src/jx/zero/debug/DebugPrintStream.java"
+    ],
+    "src/jx/buffer/multithread/Buffer2.java": [
+      "src/jx/zero/Debug.java"
+    ],
+    "src/jx/buffer/multithread/MultiThreadBufferList.java": [],
+    "src/jx/buffer/multithread/MultiThreadBufferList2.java": [],
+    "src/jx/devices/net/emulation/EmulNetFinder.java": [],
+    "src/jx/emulation/Init.java": [
+      "src/java/lang/reflect/Method.java",
+      "src/jx/zero/Debug.java",
+      "src/jx/zero/debug/DebugInputStream.java",
+      "src/jx/zero/debug/DebugOutputStream.java",
+      "src/jx/zero/debug/DebugPrintStream.java"
+    ],
+    "src/jx/net/StartNetDevice.java": [
+      "src/jx/devices/net/emulation/EmulNetFinder.java",
+      "src/jx/zero/debug/Dump.java",
+      "src/metaxa/os/devices/net/ComInit.java",
+      "src/metaxa/os/devices/net/D3C905.java"
+    ],
+    "src/jx/scheduler/HLRRobin.java": [
+      "src/jx/zero/debug/DebugOutputStream.java",
+      "src/jx/zero/debug/DebugPrintStream.java"
+    ],
+    "src/jx/scheduler/HLRRobin_all.java": [
+      "src/jx/zero/debug/DebugOutputStream.java",
+      "src/jx/zero/debug/DebugPrintStream.java"
+    ],
+    "src/jx/scheduler/HLRRobin_mini.java": [
+      "src/jx/zero/debug/DebugOutputStream.java",
+      "src/jx/zero/debug/DebugPrintStream.java"
+    ],
+    "src/jx/scheduler/HLRRobin_nonpreemptive.java": [
+      "src/jx/zero/debug/DebugOutputStream.java",
+      "src/jx/zero/debug/DebugPrintStream.java"
+    ],
+    "src/jx/scheduler/JAVARRobin.java": [
+      "src/jx/zero/debug/DebugOutputStream.java",
+      "src/jx/zero/debug/DebugPrintStream.java"
+    ],
+    "src/jx/scheduler/LLMtR.java": [
+      "src/jx/zero/debug/DebugOutputStream.java",
+      "src/jx/zero/debug/DebugPrintStream.java"
+    ],
+    "src/jx/scheduler/LLRRobin.java": [
+      "src/jx/zero/debug/DebugPrintStream.java"
+    ],
+    "src/jx/scheduler/LLRRobinTest.java": [
+      "src/jx/zero/debug/DebugOutputStream.java",
+      "src/jx/zero/debug/DebugPrintStream.java"
+    ],
+    "src/jx/zero/debug/DebugInputStream.java": [
+      "src/java/io/IOException.java"
+    ],
+    "src/jx/zero/debug/DebugOutputStream.java": [
+      "src/java/io/IOException.java"
+    ],
+    "src/jx/zero/debug/DebugPrintStream.java": [
+      "src/java/io/IOException.java"
+    ],
+    "src/metaxa/os/devices/net/ComInit.java": [
+      "src/jx/zero/debug/DebugPrintStream.java"
+    ],
+    "src/metaxa/os/devices/net/D3C905.java": [
+      "src/jx/buffer/multithread/Buffer2.java",
+      "src/jx/buffer/multithread/MultiThreadBufferList.java",
+      "src/jx/buffer/multithread/MultiThreadBufferList2.java"
+    ],
+    "src/metaxa/os/devices/net/DpdListEntry.java": [
+      "src/jx/buffer/multithread/Buffer2.java"
+    ]
+  },
+  "neighborMap": {
+    "src/jx/buffer/multithread/Buffer2.java": [
+      {
+        "path": "src/jx/zero/Debug.java",
+        "batchIndex": 3,
+        "symbols": [
+          "debug",
+          "in",
+          "out",
+          "err",
+          "throwError",
+          "throwError",
+          "message",
+          "verbose",
+          "check",
+          "Debug"
+        ]
+      }
+    ],
+    "src/jx/emulation/Init.java": [
+      {
+        "path": "src/java/lang/reflect/Method.java",
+        "batchIndex": 2,
+        "symbols": [
+          "getName",
+          "invoke",
+          "getParameterTypes",
+          "getDeclaringClass",
+          "getExceptionTypes",
+          "getModifiers",
+          "getReturnType",
+          "newInstance",
+          "isAccessible",
+          "Method"
+        ]
+      },
+      {
+        "path": "src/jx/zero/Debug.java",
+        "batchIndex": 3,
+        "symbols": [
+          "debug",
+          "in",
+          "out",
+          "err",
+          "throwError",
+          "throwError",
+          "message",
+          "verbose",
+          "check",
+          "Debug"
+        ]
+      }
+    ],
+    "src/jx/net/StartNetDevice.java": [
+      {
+        "path": "src/jx/zero/debug/Dump.java",
+        "batchIndex": 6,
+        "symbols": [
+          "xdump",
+          "xdump",
+          "xdump",
+          "xdump1",
+          "xdump1",
+          "xdump",
+          "xdump",
+          "xdump",
+          "xdump",
+          "byteToHex",
+          "Dump"
+        ]
+      }
+    ],
+    "src/jx/zero/debug/DebugInputStream.java": [
+      {
+        "path": "src/java/io/IOException.java",
+        "batchIndex": 5,
+        "symbols": [
+          "IOException",
+          "IOException",
+          "IOException",
+          "IOException",
+          "IOException"
+        ]
+      }
+    ],
+    "src/jx/zero/debug/DebugOutputStream.java": [
+      {
+        "path": "src/java/io/IOException.java",
+        "batchIndex": 5,
+        "symbols": [
+          "IOException",
+          "IOException",
+          "IOException",
+          "IOException",
+          "IOException"
+        ]
+      },
+      {
+        "path": "src/java/lang/System.java",
+        "batchIndex": 12,
+        "symbols": [
+          "in",
+          "out",
+          "err",
+          "arraycopy",
+          "setProperties",
+          "getProperties",
+          "getProperty",
+          "getProperty",
+          "currentTimeMillis",
+          "exit",
+          "gc",
+          "load",
+          "loadLibrary",
+          "identityHashCode",
+          "getSecurityManager",
+          "nanoTime",
+          "System"
+        ]
+      },
+      {
+        "path": "src/jx/zero/Debug.java",
+        "batchIndex": 3,
+        "symbols": [
+          "debug",
+          "in",
+          "out",
+          "err",
+          "throwError",
+          "throwError",
+          "message",
+          "verbose",
+          "check",
+          "Debug"
+        ]
+      }
+    ],
+    "src/jx/zero/debug/DebugPrintStream.java": [
+      {
+        "path": "src/java/io/IOException.java",
+        "batchIndex": 5,
+        "symbols": [
+          "IOException",
+          "IOException",
+          "IOException",
+          "IOException",
+          "IOException"
+        ]
+      },
+      {
+        "path": "src/jx/zero/Debug.java",
+        "batchIndex": 3,
+        "symbols": [
+          "debug",
+          "in",
+          "out",
+          "err",
+          "throwError",
+          "throwError",
+          "message",
+          "verbose",
+          "check",
+          "Debug"
+        ]
+      }
+    ]
+  }
+}

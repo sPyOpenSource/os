@@ -1,0 +1,858 @@
+{
+  "batchIndex": 26,
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "cbc1b2c3f48f9610",
+      "type": "file",
+      "name": "EmptyStackException.java",
+      "filePath": "src/java/util/EmptyStackException.java",
+      "language": "java",
+      "totalLines": 46,
+      "nonEmptyLines": 43,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "c29f3609b6404800",
+      "type": "class",
+      "name": "EmptyStackException",
+      "filePath": "src/java/util/EmptyStackException.java",
+      "language": "java",
+      "startLine": 36,
+      "endLine": 46,
+      "totalLines": 11,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 1,
+        "propertyCount": 1
+      }
+    },
+    {
+      "id": "14598f9cd1e3ed18",
+      "type": "file",
+      "name": "EventObject.java",
+      "filePath": "src/java/util/EventObject.java",
+      "language": "java",
+      "totalLines": 66,
+      "nonEmptyLines": 54,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "ef6c3bda38c7a156",
+      "type": "class",
+      "name": "EventObject",
+      "filePath": "src/java/util/EventObject.java",
+      "language": "java",
+      "startLine": 37,
+      "endLine": 66,
+      "totalLines": 30,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 3,
+        "propertyCount": 2
+      }
+    },
+    {
+      "id": "ee9e9b7c6c582400",
+      "type": "file",
+      "name": "LinkedHashSet.java",
+      "filePath": "src/java/util/LinkedHashSet.java",
+      "language": "java",
+      "totalLines": 195,
+      "nonEmptyLines": 186,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "39a6a6664825c11e",
+      "type": "class",
+      "name": "LinkedHashSet",
+      "filePath": "src/java/util/LinkedHashSet.java",
+      "language": "java",
+      "startLine": 118,
+      "endLine": 195,
+      "totalLines": 78,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 5,
+        "propertyCount": 1
+      }
+    },
+    {
+      "id": "0a43f9856aa126ba",
+      "type": "file",
+      "name": "LinkedList.j",
+      "filePath": "src/java/util/LinkedList.j",
+      "language": "j",
+      "totalLines": 677,
+      "nonEmptyLines": 601,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "id": "d86dae2c0184ae7f",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/java/util/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "id": "3481ffec5e5c5bff",
+      "type": "file",
+      "name": "PropertyResourceBundle.java",
+      "filePath": "src/java/util/PropertyResourceBundle.java",
+      "language": "java",
+      "totalLines": 131,
+      "nonEmptyLines": 120,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "9fb7999eb5e25b0a",
+      "type": "class",
+      "name": "PropertyResourceBundle",
+      "filePath": "src/java/util/PropertyResourceBundle.java",
+      "language": "java",
+      "startLine": 91,
+      "endLine": 131,
+      "totalLines": 41,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 3,
+        "propertyCount": 1
+      }
+    },
+    {
+      "id": "1e257abf803b26af",
+      "type": "file",
+      "name": "Stack.java",
+      "filePath": "src/java/util/Stack.java",
+      "language": "java",
+      "totalLines": 27,
+      "nonEmptyLines": 23,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "8f35abcb7fb3beaf",
+      "type": "class",
+      "name": "Stack",
+      "filePath": "src/java/util/Stack.java",
+      "language": "java",
+      "startLine": 3,
+      "endLine": 27,
+      "totalLines": 25,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 6,
+        "propertyCount": 0
+      }
+    },
+    {
+      "id": "e89a37d7b6f38788",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/java/util/stream/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "id": "88452584e167230b",
+      "type": "file",
+      "name": "Streams.j",
+      "filePath": "src/java/util/stream/Streams.j",
+      "language": "j",
+      "totalLines": 896,
+      "nonEmptyLines": 785,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "id": "755e703d59c5d3e9",
+      "type": "file",
+      "name": "Streams.java",
+      "filePath": "src/java/util/stream/Streams.java",
+      "language": "java",
+      "totalLines": 85,
+      "nonEmptyLines": 68,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "b5750cf644c6f67e",
+      "type": "class",
+      "name": "Streams",
+      "filePath": "src/java/util/stream/Streams.java",
+      "language": "java",
+      "startLine": 16,
+      "endLine": 85,
+      "totalLines": 70,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 0,
+        "propertyCount": 1
+      }
+    },
+    {
+      "id": "9223a690c60a43ad",
+      "type": "file",
+      "name": "TooManyListenersException.java",
+      "filePath": "src/java/util/TooManyListenersException.java",
+      "language": "java",
+      "totalLines": 60,
+      "nonEmptyLines": 49,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "0d2a8a6222301a3e",
+      "type": "class",
+      "name": "TooManyListenersException",
+      "filePath": "src/java/util/TooManyListenersException.java",
+      "language": "java",
+      "startLine": 41,
+      "endLine": 60,
+      "totalLines": 20,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 2,
+        "propertyCount": 1
+      }
+    },
+    {
+      "id": "192fee7e91013b66",
+      "type": "file",
+      "name": "TreeSet.java",
+      "filePath": "src/java/util/TreeSet.java",
+      "language": "java",
+      "totalLines": 568,
+      "nonEmptyLines": 517,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 33,
+        "functionCount": 35,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "64ee1779c6913c50",
+      "type": "class",
+      "name": "TreeSet",
+      "filePath": "src/java/util/TreeSet.java",
+      "language": "java",
+      "startLine": 92,
+      "endLine": 568,
+      "totalLines": 477,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 35,
+        "propertyCount": 3
+      }
+    },
+    {
+      "id": "3793609790e2eed4",
+      "type": "file",
+      "name": "UnsupportedOperationException.java",
+      "filePath": "src/java/util/UnsupportedOperationException.java",
+      "language": "java",
+      "totalLines": 12,
+      "nonEmptyLines": 9,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "afb1664dd7033010",
+      "type": "class",
+      "name": "UnsupportedOperationException",
+      "filePath": "src/java/util/UnsupportedOperationException.java",
+      "language": "java",
+      "startLine": 3,
+      "endLine": 12,
+      "totalLines": 10,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 2,
+        "propertyCount": 0
+      }
+    },
+    {
+      "id": "e481fe980ade6222",
+      "type": "file",
+      "name": "InflaterInputStream.java",
+      "filePath": "src/java/util/zip/InflaterInputStream.java",
+      "language": "java",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "941d30051e5ef6c5",
+      "type": "class",
+      "name": "InflaterInputStream",
+      "filePath": "src/java/util/zip/InflaterInputStream.java",
+      "language": "java",
+      "startLine": 2,
+      "endLine": 4,
+      "totalLines": 3,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 1,
+        "propertyCount": 0
+      }
+    },
+    {
+      "id": "9a5746c50d5431fa",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/java/util/zip/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "id": "45fdbe8557e3ff77",
+      "type": "file",
+      "name": "ZipEntry.java",
+      "filePath": "src/java/util/zip/ZipEntry.java",
+      "language": "java",
+      "totalLines": 8,
+      "nonEmptyLines": 8,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "b4d9f98a719f3ae5",
+      "type": "class",
+      "name": "ZipEntry",
+      "filePath": "src/java/util/zip/ZipEntry.java",
+      "language": "java",
+      "startLine": 2,
+      "endLine": 8,
+      "totalLines": 7,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 5,
+        "propertyCount": 0
+      }
+    },
+    {
+      "id": "90bff2a1a15e3d1d",
+      "type": "file",
+      "name": "ZipFile.java",
+      "filePath": "src/java/util/zip/ZipFile.java",
+      "language": "java",
+      "totalLines": 8,
+      "nonEmptyLines": 8,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "88518e8826529a93",
+      "type": "class",
+      "name": "ZipFile",
+      "filePath": "src/java/util/zip/ZipFile.java",
+      "language": "java",
+      "startLine": 2,
+      "endLine": 8,
+      "totalLines": 7,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 5,
+        "propertyCount": 0
+      }
+    },
+    {
+      "id": "e69f0fc6aeb07749",
+      "type": "file",
+      "name": "ZipInputStream.java",
+      "filePath": "src/java/util/zip/ZipInputStream.java",
+      "language": "java",
+      "totalLines": 7,
+      "nonEmptyLines": 7,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "8eeb31de18cbf5bf",
+      "type": "class",
+      "name": "ZipInputStream",
+      "filePath": "src/java/util/zip/ZipInputStream.java",
+      "language": "java",
+      "startLine": 2,
+      "endLine": 7,
+      "totalLines": 6,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 4,
+        "propertyCount": 0
+      }
+    },
+    {
+      "id": "f869cc4b90841d5d",
+      "type": "file",
+      "name": "ZipOutputStream.java",
+      "filePath": "src/java/util/zip/ZipOutputStream.java",
+      "language": "java",
+      "totalLines": 10,
+      "nonEmptyLines": 10,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "bbd4e53456675b4a",
+      "type": "class",
+      "name": "ZipOutputStream",
+      "filePath": "src/java/util/zip/ZipOutputStream.java",
+      "language": "java",
+      "startLine": 2,
+      "endLine": 10,
+      "totalLines": 9,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 7,
+        "propertyCount": 0
+      }
+    },
+    {
+      "id": "c19a7096b881d545",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/javax/net/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "id": "0518c16f57a055bd",
+      "type": "file",
+      "name": "ServerSocketFactory.java",
+      "filePath": "src/javax/net/ServerSocketFactory.java",
+      "language": "java",
+      "totalLines": 6,
+      "nonEmptyLines": 6,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "ffc25b1bc047f393",
+      "type": "class",
+      "name": "ServerSocketFactory",
+      "filePath": "src/javax/net/ServerSocketFactory.java",
+      "language": "java",
+      "startLine": 2,
+      "endLine": 6,
+      "totalLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 3,
+        "propertyCount": 0
+      }
+    },
+    {
+      "id": "87aa8928cc7a6d3b",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/javax/net/ssl/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "id": "27b05125d75229cf",
+      "type": "file",
+      "name": "SSLServerSocket.java",
+      "filePath": "src/javax/net/ssl/SSLServerSocket.java",
+      "language": "java",
+      "totalLines": 6,
+      "nonEmptyLines": 6,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "21d88ea074ebd1f4",
+      "type": "class",
+      "name": "SSLServerSocket",
+      "filePath": "src/javax/net/ssl/SSLServerSocket.java",
+      "language": "java",
+      "startLine": 2,
+      "endLine": 6,
+      "totalLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 3,
+        "propertyCount": 0
+      }
+    },
+    {
+      "id": "7f55224662841bc9",
+      "type": "file",
+      "name": "SSLServerSocketFactory.java",
+      "filePath": "src/javax/net/ssl/SSLServerSocketFactory.java",
+      "language": "java",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "ba6dbda47482af06",
+      "type": "class",
+      "name": "SSLServerSocketFactory",
+      "filePath": "src/javax/net/ssl/SSLServerSocketFactory.java",
+      "language": "java",
+      "startLine": 2,
+      "endLine": 3,
+      "totalLines": 2,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 0,
+        "propertyCount": 0
+      }
+    },
+    {
+      "id": "45c14663c351bca5",
+      "type": "file",
+      "name": "SSLSession.java",
+      "filePath": "src/javax/net/ssl/SSLSession.java",
+      "language": "java",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "fca6b6044224e352",
+      "type": "class",
+      "name": "SSLSession",
+      "filePath": "src/javax/net/ssl/SSLSession.java",
+      "language": "java",
+      "startLine": 2,
+      "endLine": 4,
+      "totalLines": 3,
+      "entryPoint": false,
+      "metrics": {
+        "methodCount": 1,
+        "propertyCount": 0
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "cbc1b2c3f48f9610",
+      "target": "c29f3609b6404800",
+      "type": "contains"
+    },
+    {
+      "source": "c29f3609b6404800",
+      "target": "cbc1b2c3f48f9610",
+      "type": "exports"
+    },
+    {
+      "source": "14598f9cd1e3ed18",
+      "target": "ef6c3bda38c7a156",
+      "type": "contains"
+    },
+    {
+      "source": "ef6c3bda38c7a156",
+      "target": "14598f9cd1e3ed18",
+      "type": "exports"
+    },
+    {
+      "source": "ee9e9b7c6c582400",
+      "target": "39a6a6664825c11e",
+      "type": "contains"
+    },
+    {
+      "source": "39a6a6664825c11e",
+      "target": "ee9e9b7c6c582400",
+      "type": "exports"
+    },
+    {
+      "source": "3481ffec5e5c5bff",
+      "target": "9fb7999eb5e25b0a",
+      "type": "contains"
+    },
+    {
+      "source": "9fb7999eb5e25b0a",
+      "target": "3481ffec5e5c5bff",
+      "type": "exports"
+    },
+    {
+      "source": "1e257abf803b26af",
+      "target": "8f35abcb7fb3beaf",
+      "type": "contains"
+    },
+    {
+      "source": "8f35abcb7fb3beaf",
+      "target": "1e257abf803b26af",
+      "type": "exports"
+    },
+    {
+      "source": "755e703d59c5d3e9",
+      "target": "b5750cf644c6f67e",
+      "type": "contains"
+    },
+    {
+      "source": "b5750cf644c6f67e",
+      "target": "755e703d59c5d3e9",
+      "type": "exports"
+    },
+    {
+      "source": "9223a690c60a43ad",
+      "target": "0d2a8a6222301a3e",
+      "type": "contains"
+    },
+    {
+      "source": "0d2a8a6222301a3e",
+      "target": "9223a690c60a43ad",
+      "type": "exports"
+    },
+    {
+      "source": "192fee7e91013b66",
+      "target": "64ee1779c6913c50",
+      "type": "contains"
+    },
+    {
+      "source": "64ee1779c6913c50",
+      "target": "192fee7e91013b66",
+      "type": "exports"
+    },
+    {
+      "source": "3793609790e2eed4",
+      "target": "afb1664dd7033010",
+      "type": "contains"
+    },
+    {
+      "source": "afb1664dd7033010",
+      "target": "3793609790e2eed4",
+      "type": "exports"
+    },
+    {
+      "source": "e481fe980ade6222",
+      "target": "941d30051e5ef6c5",
+      "type": "contains"
+    },
+    {
+      "source": "941d30051e5ef6c5",
+      "target": "e481fe980ade6222",
+      "type": "exports"
+    },
+    {
+      "source": "45fdbe8557e3ff77",
+      "target": "b4d9f98a719f3ae5",
+      "type": "contains"
+    },
+    {
+      "source": "b4d9f98a719f3ae5",
+      "target": "45fdbe8557e3ff77",
+      "type": "exports"
+    },
+    {
+      "source": "90bff2a1a15e3d1d",
+      "target": "88518e8826529a93",
+      "type": "contains"
+    },
+    {
+      "source": "88518e8826529a93",
+      "target": "90bff2a1a15e3d1d",
+      "type": "exports"
+    },
+    {
+      "source": "e69f0fc6aeb07749",
+      "target": "8eeb31de18cbf5bf",
+      "type": "contains"
+    },
+    {
+      "source": "8eeb31de18cbf5bf",
+      "target": "e69f0fc6aeb07749",
+      "type": "exports"
+    },
+    {
+      "source": "f869cc4b90841d5d",
+      "target": "bbd4e53456675b4a",
+      "type": "contains"
+    },
+    {
+      "source": "bbd4e53456675b4a",
+      "target": "f869cc4b90841d5d",
+      "type": "exports"
+    },
+    {
+      "source": "0518c16f57a055bd",
+      "target": "ffc25b1bc047f393",
+      "type": "contains"
+    },
+    {
+      "source": "ffc25b1bc047f393",
+      "target": "0518c16f57a055bd",
+      "type": "exports"
+    },
+    {
+      "source": "27b05125d75229cf",
+      "target": "21d88ea074ebd1f4",
+      "type": "contains"
+    },
+    {
+      "source": "21d88ea074ebd1f4",
+      "target": "27b05125d75229cf",
+      "type": "exports"
+    },
+    {
+      "source": "7f55224662841bc9",
+      "target": "ba6dbda47482af06",
+      "type": "contains"
+    },
+    {
+      "source": "ba6dbda47482af06",
+      "target": "7f55224662841bc9",
+      "type": "exports"
+    },
+    {
+      "source": "45c14663c351bca5",
+      "target": "fca6b6044224e352",
+      "type": "contains"
+    },
+    {
+      "source": "fca6b6044224e352",
+      "target": "45c14663c351bca5",
+      "type": "exports"
+    }
+  ]
+}

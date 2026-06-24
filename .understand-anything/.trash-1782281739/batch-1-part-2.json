@@ -1,0 +1,1354 @@
+{
+  "schemaVersion": 1,
+  "batchIndex": 1,
+  "part": 2,
+  "nodes": [
+    {
+      "id": "cls:src/java/net/Inet4Address.java:Inet4Address",
+      "type": "class",
+      "label": "Inet4Address",
+      "properties": {
+        "path": "src/java/net/Inet4Address.java",
+        "name": "Inet4Address",
+        "startLine": 85,
+        "endLine": 384,
+        "numMethods": 19
+      }
+    },
+    {
+      "id": "cls:src/java/net/InetAddress.java:InetAddress",
+      "type": "class",
+      "label": "InetAddress",
+      "properties": {
+        "path": "src/java/net/InetAddress.java",
+        "name": "InetAddress",
+        "startLine": 9,
+        "endLine": 238,
+        "numMethods": 17
+      }
+    },
+    {
+      "id": "cls:src/java/util/Bucket.java:Bucket",
+      "type": "class",
+      "label": "Bucket",
+      "properties": {
+        "path": "src/java/util/Bucket.java",
+        "name": "Bucket",
+        "startLine": 41,
+        "endLine": 202,
+        "numMethods": 6
+      }
+    },
+    {
+      "id": "cls:src/jx/buffer/BufferList.java:BufferList",
+      "type": "class",
+      "label": "BufferList",
+      "properties": {
+        "path": "src/jx/buffer/BufferList.java",
+        "name": "BufferList",
+        "startLine": 11,
+        "endLine": 132,
+        "numMethods": 9
+      }
+    },
+    {
+      "id": "file:src/java/net/Inet4Address.java",
+      "type": "file",
+      "label": "Inet4Address.java",
+      "properties": {
+        "path": "src/java/net/Inet4Address.java",
+        "language": "java",
+        "sizeLines": 384,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/net/InetAddress.java",
+      "type": "file",
+      "label": "InetAddress.java",
+      "properties": {
+        "path": "src/java/net/InetAddress.java",
+        "language": "java",
+        "sizeLines": 238,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/java/util/Bucket.java",
+      "type": "file",
+      "label": "Bucket.java",
+      "properties": {
+        "path": "src/java/util/Bucket.java",
+        "language": "java",
+        "sizeLines": 202,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/jx/buffer/BufferList.java",
+      "type": "file",
+      "label": "BufferList.java",
+      "properties": {
+        "path": "src/jx/buffer/BufferList.java",
+        "language": "java",
+        "sizeLines": 132,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "file:src/jx/classfile/constantpool/LookupTable.java",
+      "type": "file",
+      "label": "LookupTable.java",
+      "properties": {
+        "path": "src/jx/classfile/constantpool/LookupTable.java",
+        "language": "java",
+        "sizeLines": 101,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/jx/classfile/constantpool/NameAndTypeConstantData.java",
+      "type": "file",
+      "label": "NameAndTypeConstantData.java",
+      "properties": {
+        "path": "src/jx/classfile/constantpool/NameAndTypeConstantData.java",
+        "language": "java",
+        "sizeLines": 35,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "fn:src/java/net/Inet4Address.java:Inet4Address",
+      "type": "function",
+      "label": "Inet4Address",
+      "properties": {
+        "path": "src/java/net/Inet4Address.java",
+        "name": "Inet4Address",
+        "startLine": 122,
+        "endLine": 127,
+        "params": [
+          "hostName",
+          "address"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/Inet4Address.java:equals",
+      "type": "function",
+      "label": "equals",
+      "properties": {
+        "path": "src/java/net/Inet4Address.java",
+        "name": "equals",
+        "startLine": 359,
+        "endLine": 363,
+        "params": [
+          "obj"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/Inet4Address.java:getAddress",
+      "type": "function",
+      "label": "getAddress",
+      "properties": {
+        "path": "src/java/net/Inet4Address.java",
+        "name": "getAddress",
+        "startLine": 311,
+        "endLine": 321,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/Inet4Address.java:getHostAddress",
+      "type": "function",
+      "label": "getHostAddress",
+      "properties": {
+        "path": "src/java/net/Inet4Address.java",
+        "name": "getHostAddress",
+        "startLine": 329,
+        "endLine": 331,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/Inet4Address.java:hashCode",
+      "type": "function",
+      "label": "hashCode",
+      "properties": {
+        "path": "src/java/net/Inet4Address.java",
+        "name": "hashCode",
+        "startLine": 338,
+        "endLine": 341,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/Inet4Address.java:isAnyLocalAddress",
+      "type": "function",
+      "label": "isAnyLocalAddress",
+      "properties": {
+        "path": "src/java/net/Inet4Address.java",
+        "name": "isAnyLocalAddress",
+        "startLine": 172,
+        "endLine": 175,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/Inet4Address.java:isLinkLocalAddress",
+      "type": "function",
+      "label": "isLinkLocalAddress",
+      "properties": {
+        "path": "src/java/net/Inet4Address.java",
+        "name": "isLinkLocalAddress",
+        "startLine": 197,
+        "endLine": 205,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/Inet4Address.java:isLoopbackAddress",
+      "type": "function",
+      "label": "isLoopbackAddress",
+      "properties": {
+        "path": "src/java/net/Inet4Address.java",
+        "name": "isLoopbackAddress",
+        "startLine": 184,
+        "endLine": 188,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/Inet4Address.java:isMCGlobal",
+      "type": "function",
+      "label": "isMCGlobal",
+      "properties": {
+        "path": "src/java/net/Inet4Address.java",
+        "name": "isMCGlobal",
+        "startLine": 235,
+        "endLine": 241,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/Inet4Address.java:isMCLinkLocal",
+      "type": "function",
+      "label": "isMCLinkLocal",
+      "properties": {
+        "path": "src/java/net/Inet4Address.java",
+        "name": "isMCLinkLocal",
+        "startLine": 264,
+        "endLine": 270,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/Inet4Address.java:isMCNodeLocal",
+      "type": "function",
+      "label": "isMCNodeLocal",
+      "properties": {
+        "path": "src/java/net/Inet4Address.java",
+        "name": "isMCNodeLocal",
+        "startLine": 251,
+        "endLine": 254,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/Inet4Address.java:isMCOrgLocal",
+      "type": "function",
+      "label": "isMCOrgLocal",
+      "properties": {
+        "path": "src/java/net/Inet4Address.java",
+        "name": "isMCOrgLocal",
+        "startLine": 296,
+        "endLine": 302,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/Inet4Address.java:isMCSiteLocal",
+      "type": "function",
+      "label": "isMCSiteLocal",
+      "properties": {
+        "path": "src/java/net/Inet4Address.java",
+        "name": "isMCSiteLocal",
+        "startLine": 280,
+        "endLine": 285,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/Inet4Address.java:isMulticastAddress",
+      "type": "function",
+      "label": "isMulticastAddress",
+      "properties": {
+        "path": "src/java/net/Inet4Address.java",
+        "name": "isMulticastAddress",
+        "startLine": 162,
+        "endLine": 164,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/Inet4Address.java:isSiteLocalAddress",
+      "type": "function",
+      "label": "isSiteLocalAddress",
+      "properties": {
+        "path": "src/java/net/Inet4Address.java",
+        "name": "isSiteLocalAddress",
+        "startLine": 214,
+        "endLine": 225,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/Inet4Address.java:writeReplace",
+      "type": "function",
+      "label": "writeReplace",
+      "properties": {
+        "path": "src/java/net/Inet4Address.java",
+        "name": "writeReplace",
+        "startLine": 137,
+        "endLine": 152,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/InetAddress.java:InetAddress",
+      "type": "function",
+      "label": "InetAddress",
+      "properties": {
+        "path": "src/java/net/InetAddress.java",
+        "name": "InetAddress",
+        "startLine": 227,
+        "endLine": 237,
+        "params": [
+          "addr"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/InetAddress.java:equals",
+      "type": "function",
+      "label": "equals",
+      "properties": {
+        "path": "src/java/net/InetAddress.java",
+        "name": "equals",
+        "startLine": 172,
+        "endLine": 188,
+        "params": [
+          "obj"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/InetAddress.java:getAddress",
+      "type": "function",
+      "label": "getAddress",
+      "properties": {
+        "path": "src/java/net/InetAddress.java",
+        "name": "getAddress",
+        "startLine": 190,
+        "endLine": 192,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/InetAddress.java:getAllByName",
+      "type": "function",
+      "label": "getAllByName",
+      "properties": {
+        "path": "src/java/net/InetAddress.java",
+        "name": "getAllByName",
+        "startLine": 101,
+        "endLine": 105,
+        "params": [
+          "host"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/InetAddress.java:getByAddress",
+      "type": "function",
+      "label": "getByAddress",
+      "properties": {
+        "path": "src/java/net/InetAddress.java",
+        "name": "getByAddress",
+        "startLine": 112,
+        "endLine": 133,
+        "params": [
+          "host",
+          "addr"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/InetAddress.java:getByName",
+      "type": "function",
+      "label": "getByName",
+      "properties": {
+        "path": "src/java/net/InetAddress.java",
+        "name": "getByName",
+        "startLine": 139,
+        "endLine": 148,
+        "params": [
+          "host"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/net/InetAddress.java:getHostName",
+      "type": "function",
+      "label": "getHostName",
+      "properties": {
+        "path": "src/java/net/InetAddress.java",
+        "name": "getHostName",
+        "startLine": 194,
+        "endLine": 196,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/InetAddress.java:getLocalHost",
+      "type": "function",
+      "label": "getLocalHost",
+      "properties": {
+        "path": "src/java/net/InetAddress.java",
+        "name": "getLocalHost",
+        "startLine": 135,
+        "endLine": 137,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/InetAddress.java:hashCode",
+      "type": "function",
+      "label": "hashCode",
+      "properties": {
+        "path": "src/java/net/InetAddress.java",
+        "name": "hashCode",
+        "startLine": 198,
+        "endLine": 210,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/InetAddress.java:isAnyLocalAddress",
+      "type": "function",
+      "label": "isAnyLocalAddress",
+      "properties": {
+        "path": "src/java/net/InetAddress.java",
+        "name": "isAnyLocalAddress",
+        "startLine": 156,
+        "endLine": 158,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/net/InetAddress.java:toString",
+      "type": "function",
+      "label": "toString",
+      "properties": {
+        "path": "src/java/net/InetAddress.java",
+        "name": "toString",
+        "startLine": 212,
+        "endLine": 219,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/java/util/Bucket.java:add",
+      "type": "function",
+      "label": "add",
+      "properties": {
+        "path": "src/java/util/Bucket.java",
+        "name": "add",
+        "startLine": 57,
+        "endLine": 85,
+        "params": [
+          "newNode"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/util/Bucket.java:containsValue",
+      "type": "function",
+      "label": "containsValue",
+      "properties": {
+        "path": "src/java/util/Bucket.java",
+        "name": "containsValue",
+        "startLine": 159,
+        "endLine": 172,
+        "params": [
+          "value"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/util/Bucket.java:getEntryByKey",
+      "type": "function",
+      "label": "getEntryByKey",
+      "properties": {
+        "path": "src/java/util/Bucket.java",
+        "name": "getEntryByKey",
+        "startLine": 138,
+        "endLine": 152,
+        "params": [
+          "key"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/java/util/Bucket.java:removeByKey",
+      "type": "function",
+      "label": "removeByKey",
+      "properties": {
+        "path": "src/java/util/Bucket.java",
+        "name": "removeByKey",
+        "startLine": 93,
+        "endLine": 116,
+        "params": [
+          "key"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/buffer/BufferList.java:BufferList",
+      "type": "function",
+      "label": "BufferList",
+      "properties": {
+        "path": "src/jx/buffer/BufferList.java",
+        "name": "BufferList",
+        "startLine": 24,
+        "endLine": 28,
+        "params": [
+          "bufs"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/buffer/BufferList.java:appendElement",
+      "type": "function",
+      "label": "appendElement",
+      "properties": {
+        "path": "src/jx/buffer/BufferList.java",
+        "name": "appendElement",
+        "startLine": 37,
+        "endLine": 54,
+        "params": [
+          "bh"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/buffer/BufferList.java:checkConsistency",
+      "type": "function",
+      "label": "checkConsistency",
+      "properties": {
+        "path": "src/jx/buffer/BufferList.java",
+        "name": "checkConsistency",
+        "startLine": 111,
+        "endLine": 131,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/buffer/BufferList.java:firstElement",
+      "type": "function",
+      "label": "firstElement",
+      "properties": {
+        "path": "src/jx/buffer/BufferList.java",
+        "name": "firstElement",
+        "startLine": 72,
+        "endLine": 74,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/buffer/BufferList.java:prependElement",
+      "type": "function",
+      "label": "prependElement",
+      "properties": {
+        "path": "src/jx/buffer/BufferList.java",
+        "name": "prependElement",
+        "startLine": 55,
+        "endLine": 70,
+        "params": [
+          "bh"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/buffer/BufferList.java:removeElement",
+      "type": "function",
+      "label": "removeElement",
+      "properties": {
+        "path": "src/jx/buffer/BufferList.java",
+        "name": "removeElement",
+        "startLine": 91,
+        "endLine": 109,
+        "params": [
+          "bh"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/buffer/BufferList.java:size",
+      "type": "function",
+      "label": "size",
+      "properties": {
+        "path": "src/jx/buffer/BufferList.java",
+        "name": "size",
+        "startLine": 30,
+        "endLine": 32,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/buffer/BufferList.java:undockFirstElement",
+      "type": "function",
+      "label": "undockFirstElement",
+      "properties": {
+        "path": "src/jx/buffer/BufferList.java",
+        "name": "undockFirstElement",
+        "startLine": 76,
+        "endLine": 90,
+        "params": []
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "cls:src/java/net/Inet4Address.java:Inet4Address",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "cls:src/java/net/Inet4Address.java:Inet4Address",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:Inet4Address",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:Inet4Address",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:Inet4Address",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:Inet4Address",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:Inet4Address",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:Inet4Address",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:writeReplace",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:isMulticastAddress",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:isMulticastAddress",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:isAnyLocalAddress",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:isAnyLocalAddress",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:isLoopbackAddress",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:isLoopbackAddress",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:isLinkLocalAddress",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:isLinkLocalAddress",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:isSiteLocalAddress",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:isSiteLocalAddress",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:isMCGlobal",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:isMCGlobal",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:isMCNodeLocal",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:isMCNodeLocal",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:isMCLinkLocal",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:isMCLinkLocal",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:isMCSiteLocal",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:isMCSiteLocal",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:isMCOrgLocal",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:isMCOrgLocal",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:getAddress",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:getAddress",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:getHostAddress",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:getHostAddress",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:hashCode",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:hashCode",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:equals",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/Inet4Address.java",
+      "target": "fn:src/java/net/Inet4Address.java:equals",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/Inet4Address.java:isLoopbackAddress",
+      "target": "fn:src/java/net/Inet4Address.java:getAddress",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/Inet4Address.java:isMCGlobal",
+      "target": "fn:src/java/net/Inet4Address.java:getAddress",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/Inet4Address.java:getHostAddress",
+      "target": "fn:src/java/net/Inet4Address.java:getAddress",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "cls:src/java/net/InetAddress.java:InetAddress",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "cls:src/java/net/InetAddress.java:InetAddress",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "fn:src/java/net/InetAddress.java:InetAddress",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "fn:src/java/net/InetAddress.java:InetAddress",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "fn:src/java/net/InetAddress.java:getAllByName",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "fn:src/java/net/InetAddress.java:getAllByName",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "fn:src/java/net/InetAddress.java:getByAddress",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "fn:src/java/net/InetAddress.java:getByAddress",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "fn:src/java/net/InetAddress.java:getByAddress",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "fn:src/java/net/InetAddress.java:getByAddress",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "fn:src/java/net/InetAddress.java:getLocalHost",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "fn:src/java/net/InetAddress.java:getLocalHost",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "fn:src/java/net/InetAddress.java:getByName",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "fn:src/java/net/InetAddress.java:getByName",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "fn:src/java/net/InetAddress.java:isAnyLocalAddress",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "fn:src/java/net/InetAddress.java:isAnyLocalAddress",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "fn:src/java/net/InetAddress.java:equals",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "fn:src/java/net/InetAddress.java:equals",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "fn:src/java/net/InetAddress.java:getAddress",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "fn:src/java/net/InetAddress.java:getAddress",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "fn:src/java/net/InetAddress.java:getHostName",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "fn:src/java/net/InetAddress.java:getHostName",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "fn:src/java/net/InetAddress.java:hashCode",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "fn:src/java/net/InetAddress.java:hashCode",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "fn:src/java/net/InetAddress.java:toString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "fn:src/java/net/InetAddress.java:toString",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "fn:src/java/net/InetAddress.java:InetAddress",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "fn:src/java/net/InetAddress.java:InetAddress",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "fn:src/java/net/InetAddress.java:InetAddress",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/net/InetAddress.java",
+      "target": "fn:src/java/net/InetAddress.java:InetAddress",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/InetAddress.java:getAllByName",
+      "target": "fn:src/java/net/InetAddress.java:getByName",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/InetAddress.java:getByAddress",
+      "target": "fn:src/java/net/InetAddress.java:getByAddress",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/java/util/Bucket.java",
+      "target": "cls:src/java/util/Bucket.java:Bucket",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/util/Bucket.java",
+      "target": "fn:src/java/util/Bucket.java:add",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/util/Bucket.java",
+      "target": "fn:src/java/util/Bucket.java:removeByKey",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/util/Bucket.java",
+      "target": "fn:src/java/util/Bucket.java:getEntryByKey",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/java/util/Bucket.java",
+      "target": "fn:src/java/util/Bucket.java:containsValue",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/buffer/BufferList.java",
+      "target": "cls:src/jx/buffer/BufferList.java:BufferList",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/buffer/BufferList.java",
+      "target": "cls:src/jx/buffer/BufferList.java:BufferList",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/buffer/BufferList.java",
+      "target": "fn:src/jx/buffer/BufferList.java:BufferList",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/buffer/BufferList.java",
+      "target": "fn:src/jx/buffer/BufferList.java:BufferList",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/buffer/BufferList.java",
+      "target": "fn:src/jx/buffer/BufferList.java:BufferList",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/buffer/BufferList.java",
+      "target": "fn:src/jx/buffer/BufferList.java:BufferList",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/buffer/BufferList.java",
+      "target": "fn:src/jx/buffer/BufferList.java:size",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/buffer/BufferList.java",
+      "target": "fn:src/jx/buffer/BufferList.java:size",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/buffer/BufferList.java",
+      "target": "fn:src/jx/buffer/BufferList.java:appendElement",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/buffer/BufferList.java",
+      "target": "fn:src/jx/buffer/BufferList.java:appendElement",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/buffer/BufferList.java",
+      "target": "fn:src/jx/buffer/BufferList.java:prependElement",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/buffer/BufferList.java",
+      "target": "fn:src/jx/buffer/BufferList.java:prependElement",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/buffer/BufferList.java",
+      "target": "fn:src/jx/buffer/BufferList.java:firstElement",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/buffer/BufferList.java",
+      "target": "fn:src/jx/buffer/BufferList.java:firstElement",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/buffer/BufferList.java",
+      "target": "fn:src/jx/buffer/BufferList.java:undockFirstElement",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/buffer/BufferList.java",
+      "target": "fn:src/jx/buffer/BufferList.java:undockFirstElement",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/buffer/BufferList.java",
+      "target": "fn:src/jx/buffer/BufferList.java:removeElement",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/buffer/BufferList.java",
+      "target": "fn:src/jx/buffer/BufferList.java:removeElement",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/buffer/BufferList.java",
+      "target": "fn:src/jx/buffer/BufferList.java:checkConsistency",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "fn:src/jx/buffer/BufferList.java:BufferList",
+      "target": "fn:src/jx/buffer/BufferList.java:appendElement",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/buffer/BufferList.java:appendElement",
+      "target": "fn:src/jx/buffer/BufferList.java:checkConsistency",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/buffer/BufferList.java:prependElement",
+      "target": "fn:src/jx/buffer/BufferList.java:checkConsistency",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/buffer/BufferList.java:undockFirstElement",
+      "target": "fn:src/jx/buffer/BufferList.java:checkConsistency",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/buffer/BufferList.java:removeElement",
+      "target": "fn:src/jx/buffer/BufferList.java:checkConsistency",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/Inet4Address.java:Inet4Address",
+      "target": "fn:src/java/net/Inet4Address.java:holder",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/Inet4Address.java:writeReplace",
+      "target": "fn:src/java/net/Inet4Address.java:new InetAddress",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/Inet4Address.java:writeReplace",
+      "target": "fn:src/java/net/Inet4Address.java:inet.holder",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/Inet4Address.java:writeReplace",
+      "target": "fn:src/java/net/Inet4Address.java:holder().getHostName",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/Inet4Address.java:writeReplace",
+      "target": "fn:src/java/net/Inet4Address.java:holder",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/Inet4Address.java:writeReplace",
+      "target": "fn:src/java/net/Inet4Address.java:holder().getAddress",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/Inet4Address.java:isMulticastAddress",
+      "target": "fn:src/java/net/Inet4Address.java:holder().getAddress",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/Inet4Address.java:isMulticastAddress",
+      "target": "fn:src/java/net/Inet4Address.java:holder",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/Inet4Address.java:isAnyLocalAddress",
+      "target": "fn:src/java/net/Inet4Address.java:holder().getAddress",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/Inet4Address.java:isAnyLocalAddress",
+      "target": "fn:src/java/net/Inet4Address.java:holder",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/Inet4Address.java:isLinkLocalAddress",
+      "target": "fn:src/java/net/Inet4Address.java:holder().getAddress",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/Inet4Address.java:isLinkLocalAddress",
+      "target": "fn:src/java/net/Inet4Address.java:holder",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/Inet4Address.java:isSiteLocalAddress",
+      "target": "fn:src/java/net/Inet4Address.java:holder().getAddress",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/Inet4Address.java:isSiteLocalAddress",
+      "target": "fn:src/java/net/Inet4Address.java:holder",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/Inet4Address.java:isMCLinkLocal",
+      "target": "fn:src/java/net/Inet4Address.java:holder().getAddress",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/Inet4Address.java:isMCLinkLocal",
+      "target": "fn:src/java/net/Inet4Address.java:holder",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/Inet4Address.java:isMCSiteLocal",
+      "target": "fn:src/java/net/Inet4Address.java:holder().getAddress",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/Inet4Address.java:isMCSiteLocal",
+      "target": "fn:src/java/net/Inet4Address.java:holder",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/java/net/Inet4Address.java:isMCOrgLocal",
+      "target": "fn:src/java/net/Inet4Address.java:holder().getAddress",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ],
+  "metadata": {
+    "totalNodesInPart": 49,
+    "totalEdgesInPart": 120,
+    "algorithm": "file-analyzer"
+  }
+}

@@ -1,0 +1,766 @@
+{
+  "batchIndex": 21,
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "c8963b5da1d7a60f",
+      "type": "file",
+      "name": "SimpleMethodHandle.java",
+      "filePath": "src/java/lang/invoke/SimpleMethodHandle.java",
+      "language": "java",
+      "totalLines": 98,
+      "nonEmptyLines": 90,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 10,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "7f0ecce923958dcd",
+      "type": "class",
+      "name": "SimpleMethodHandle",
+      "filePath": "src/java/lang/invoke/SimpleMethodHandle.java",
+      "startLine": 32,
+      "endLine": 98
+    },
+    {
+      "id": "cd825d8ae01b71fc",
+      "type": "file",
+      "name": "ValueConversions.java",
+      "filePath": "src/java/lang/invoke/ValueConversions.java",
+      "language": "java",
+      "totalLines": 22,
+      "nonEmptyLines": 18,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "23c2a8b42e3d47d6",
+      "type": "class",
+      "name": "ValueConversions",
+      "filePath": "src/java/lang/invoke/ValueConversions.java",
+      "startLine": 12,
+      "endLine": 22
+    },
+    {
+      "id": "3eb7e5a0c756c0ec",
+      "type": "file",
+      "name": "VerifyType.java",
+      "filePath": "src/java/lang/invoke/VerifyType.java",
+      "language": "java",
+      "totalLines": 22,
+      "nonEmptyLines": 18,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "39941560856564dc",
+      "type": "class",
+      "name": "VerifyType",
+      "filePath": "src/java/lang/invoke/VerifyType.java",
+      "startLine": 12,
+      "endLine": 22
+    },
+    {
+      "id": "2facc71485101a3e",
+      "type": "file",
+      "name": "Wrapper.java",
+      "filePath": "src/java/lang/invoke/Wrapper.java",
+      "language": "java",
+      "totalLines": 30,
+      "nonEmptyLines": 24,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "b8db8f9040bd02d1",
+      "type": "class",
+      "name": "Wrapper",
+      "filePath": "src/java/lang/invoke/Wrapper.java",
+      "startLine": 12,
+      "endLine": 30
+    },
+    {
+      "id": "8c67bfc0590291b7",
+      "type": "file",
+      "name": "WrongMethodTypeException.java",
+      "filePath": "src/java/lang/invoke/WrongMethodTypeException.java",
+      "language": "java",
+      "totalLines": 85,
+      "nonEmptyLines": 79,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "58495c7d81dbee31",
+      "type": "class",
+      "name": "WrongMethodTypeException",
+      "filePath": "src/java/lang/invoke/WrongMethodTypeException.java",
+      "startLine": 43,
+      "endLine": 85
+    },
+    {
+      "id": "01d9ebc647282aeb",
+      "type": "file",
+      "name": "LinkageError.java",
+      "filePath": "src/java/lang/LinkageError.java",
+      "language": "java",
+      "totalLines": 62,
+      "nonEmptyLines": 51,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "5887469006dc27b5",
+      "type": "class",
+      "name": "LinkageError",
+      "filePath": "src/java/lang/LinkageError.java",
+      "startLine": 39,
+      "endLine": 62
+    },
+    {
+      "id": "94bbf32b6de4225c",
+      "type": "file",
+      "name": "Long.java",
+      "filePath": "src/java/lang/Long.java",
+      "language": "java",
+      "totalLines": 283,
+      "nonEmptyLines": 232,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 28,
+        "functionCount": 27,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "76021d8782136655",
+      "type": "class",
+      "name": "Long",
+      "filePath": "src/java/lang/Long.java",
+      "startLine": 3,
+      "endLine": 283
+    },
+    {
+      "id": "43650ae23c737c52",
+      "type": "file",
+      "name": "NegativeArraySizeException.java",
+      "filePath": "src/java/lang/NegativeArraySizeException.java",
+      "language": "java",
+      "totalLines": 60,
+      "nonEmptyLines": 50,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "62ec217107810659",
+      "type": "class",
+      "name": "NegativeArraySizeException",
+      "filePath": "src/java/lang/NegativeArraySizeException.java",
+      "startLine": 41,
+      "endLine": 60
+    },
+    {
+      "id": "511611cf3ac075e5",
+      "type": "file",
+      "name": "NoClassDefFoundError.java",
+      "filePath": "src/java/lang/NoClassDefFoundError.java",
+      "language": "java",
+      "totalLines": 8,
+      "nonEmptyLines": 6,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "efb6ecd16ac41552",
+      "type": "class",
+      "name": "NoClassDefFoundError",
+      "filePath": "src/java/lang/NoClassDefFoundError.java",
+      "startLine": 3,
+      "endLine": 7
+    },
+    {
+      "id": "d19dd37ba91351ca",
+      "type": "file",
+      "name": "NoSuchFieldError.java",
+      "filePath": "src/java/lang/NoSuchFieldError.java",
+      "language": "java",
+      "totalLines": 58,
+      "nonEmptyLines": 48,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "c4aa78bde4cdad67",
+      "type": "class",
+      "name": "NoSuchFieldError",
+      "filePath": "src/java/lang/NoSuchFieldError.java",
+      "startLine": 39,
+      "endLine": 58
+    },
+    {
+      "id": "ff088eceea95e383",
+      "type": "file",
+      "name": "NoSuchFieldException.java",
+      "filePath": "src/java/lang/NoSuchFieldException.java",
+      "language": "java",
+      "totalLines": 59,
+      "nonEmptyLines": 49,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "8b7abfde2ea6eee7",
+      "type": "class",
+      "name": "NoSuchFieldException",
+      "filePath": "src/java/lang/NoSuchFieldException.java",
+      "startLine": 40,
+      "endLine": 59
+    },
+    {
+      "id": "937560c70bd76c37",
+      "type": "file",
+      "name": "NoSuchMethodError.java",
+      "filePath": "src/java/lang/NoSuchMethodError.java",
+      "language": "java",
+      "totalLines": 58,
+      "nonEmptyLines": 48,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "72e4f935344de501",
+      "type": "class",
+      "name": "NoSuchMethodError",
+      "filePath": "src/java/lang/NoSuchMethodError.java",
+      "startLine": 39,
+      "endLine": 58
+    },
+    {
+      "id": "20ed3544e09474d0",
+      "type": "file",
+      "name": "NoSuchMethodException.java",
+      "filePath": "src/java/lang/NoSuchMethodException.java",
+      "language": "java",
+      "totalLines": 59,
+      "nonEmptyLines": 49,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "a2404825c8b6062e",
+      "type": "class",
+      "name": "NoSuchMethodException",
+      "filePath": "src/java/lang/NoSuchMethodException.java",
+      "startLine": 40,
+      "endLine": 59
+    },
+    {
+      "id": "0f86969ead8f7288",
+      "type": "file",
+      "name": "NullPointerException.java",
+      "filePath": "src/java/lang/NullPointerException.java",
+      "language": "java",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "293ccc0cb7725cb7",
+      "type": "class",
+      "name": "NullPointerException",
+      "filePath": "src/java/lang/NullPointerException.java",
+      "startLine": 3,
+      "endLine": 6
+    },
+    {
+      "id": "757d4caa385f5b77",
+      "type": "file",
+      "name": "NumberFormatException.java",
+      "filePath": "src/java/lang/NumberFormatException.java",
+      "language": "java",
+      "totalLines": 27,
+      "nonEmptyLines": 23,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "d828ea5439547c9f",
+      "type": "class",
+      "name": "NumberFormatException",
+      "filePath": "src/java/lang/NumberFormatException.java",
+      "startLine": 15,
+      "endLine": 26
+    },
+    {
+      "id": "b9b51a6e89db53fc",
+      "type": "file",
+      "name": "Object.java",
+      "filePath": "src/java/lang/Object.java",
+      "language": "java",
+      "totalLines": 76,
+      "nonEmptyLines": 74,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 11,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "173761d6d9003f31",
+      "type": "class",
+      "name": "Object",
+      "filePath": "src/java/lang/Object.java",
+      "startLine": 3,
+      "endLine": 76
+    },
+    {
+      "id": "5b73917d1b8ec159",
+      "type": "file",
+      "name": "OutOfMemoryError.java",
+      "filePath": "src/java/lang/OutOfMemoryError.java",
+      "language": "java",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "f7c178e3e59a2b48",
+      "type": "class",
+      "name": "OutOfMemoryError",
+      "filePath": "src/java/lang/OutOfMemoryError.java",
+      "startLine": 3,
+      "endLine": 9
+    },
+    {
+      "id": "e454697bf4898bab",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/java/lang/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "eb28fb859457aad5",
+      "type": "file",
+      "name": "Process.java",
+      "filePath": "src/java/lang/Process.java",
+      "language": "java",
+      "totalLines": 7,
+      "nonEmptyLines": 7,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "3ecccb794b0b37fc",
+      "type": "class",
+      "name": "Process",
+      "filePath": "src/java/lang/Process.java",
+      "startLine": 2,
+      "endLine": 7
+    },
+    {
+      "id": "d82ec9262d7fb9e6",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/java/lang/ref/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "c4146cb57711c039",
+      "type": "file",
+      "name": "Array.j",
+      "filePath": "src/java/lang/reflect/Array.j",
+      "language": "j",
+      "totalLines": 526,
+      "nonEmptyLines": 489,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "3473c7b034ea99af",
+      "type": "file",
+      "name": "InvocationTargetException.java",
+      "filePath": "src/java/lang/reflect/InvocationTargetException.java",
+      "language": "java",
+      "totalLines": 140,
+      "nonEmptyLines": 119,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "c083e54781fcc15c",
+      "type": "class",
+      "name": "InvocationTargetException",
+      "filePath": "src/java/lang/reflect/InvocationTargetException.java",
+      "startLine": 42,
+      "endLine": 140
+    },
+    {
+      "id": "0f01d6e5ababe3ad",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/java/lang/reflect/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {}
+    },
+    {
+      "id": "92f5490f4b864ecd",
+      "type": "file",
+      "name": "ReflectPermission.java",
+      "filePath": "src/java/lang/reflect/ReflectPermission.java",
+      "language": "java",
+      "totalLines": 105,
+      "nonEmptyLines": 100,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "ada4928a3b8e84fe",
+      "type": "class",
+      "name": "ReflectPermission",
+      "filePath": "src/java/lang/reflect/ReflectPermission.java",
+      "startLine": 74,
+      "endLine": 105
+    },
+    {
+      "id": "3264e3e63ec0d59b",
+      "type": "file",
+      "name": "ReflectiveOperationException.java",
+      "filePath": "src/java/lang/ReflectiveOperationException.java",
+      "language": "java",
+      "totalLines": 91,
+      "nonEmptyLines": 85,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "167568a5d17d5698",
+      "type": "class",
+      "name": "ReflectiveOperationException",
+      "filePath": "src/java/lang/ReflectiveOperationException.java",
+      "startLine": 35,
+      "endLine": 91
+    }
+  ],
+  "edges": [
+    {
+      "source": "c8963b5da1d7a60f",
+      "target": "7f0ecce923958dcd",
+      "type": "contains"
+    },
+    {
+      "source": "7f0ecce923958dcd",
+      "target": "c8963b5da1d7a60f",
+      "type": "exports"
+    },
+    {
+      "source": "cd825d8ae01b71fc",
+      "target": "23c2a8b42e3d47d6",
+      "type": "contains"
+    },
+    {
+      "source": "23c2a8b42e3d47d6",
+      "target": "cd825d8ae01b71fc",
+      "type": "exports"
+    },
+    {
+      "source": "3eb7e5a0c756c0ec",
+      "target": "39941560856564dc",
+      "type": "contains"
+    },
+    {
+      "source": "39941560856564dc",
+      "target": "3eb7e5a0c756c0ec",
+      "type": "exports"
+    },
+    {
+      "source": "2facc71485101a3e",
+      "target": "b8db8f9040bd02d1",
+      "type": "contains"
+    },
+    {
+      "source": "b8db8f9040bd02d1",
+      "target": "2facc71485101a3e",
+      "type": "exports"
+    },
+    {
+      "source": "8c67bfc0590291b7",
+      "target": "58495c7d81dbee31",
+      "type": "contains"
+    },
+    {
+      "source": "58495c7d81dbee31",
+      "target": "8c67bfc0590291b7",
+      "type": "exports"
+    },
+    {
+      "source": "01d9ebc647282aeb",
+      "target": "5887469006dc27b5",
+      "type": "contains"
+    },
+    {
+      "source": "5887469006dc27b5",
+      "target": "01d9ebc647282aeb",
+      "type": "exports"
+    },
+    {
+      "source": "94bbf32b6de4225c",
+      "target": "76021d8782136655",
+      "type": "contains"
+    },
+    {
+      "source": "76021d8782136655",
+      "target": "94bbf32b6de4225c",
+      "type": "exports"
+    },
+    {
+      "source": "43650ae23c737c52",
+      "target": "62ec217107810659",
+      "type": "contains"
+    },
+    {
+      "source": "62ec217107810659",
+      "target": "43650ae23c737c52",
+      "type": "exports"
+    },
+    {
+      "source": "511611cf3ac075e5",
+      "target": "efb6ecd16ac41552",
+      "type": "contains"
+    },
+    {
+      "source": "efb6ecd16ac41552",
+      "target": "511611cf3ac075e5",
+      "type": "exports"
+    },
+    {
+      "source": "d19dd37ba91351ca",
+      "target": "c4aa78bde4cdad67",
+      "type": "contains"
+    },
+    {
+      "source": "c4aa78bde4cdad67",
+      "target": "d19dd37ba91351ca",
+      "type": "exports"
+    },
+    {
+      "source": "ff088eceea95e383",
+      "target": "8b7abfde2ea6eee7",
+      "type": "contains"
+    },
+    {
+      "source": "8b7abfde2ea6eee7",
+      "target": "ff088eceea95e383",
+      "type": "exports"
+    },
+    {
+      "source": "937560c70bd76c37",
+      "target": "72e4f935344de501",
+      "type": "contains"
+    },
+    {
+      "source": "72e4f935344de501",
+      "target": "937560c70bd76c37",
+      "type": "exports"
+    },
+    {
+      "source": "20ed3544e09474d0",
+      "target": "a2404825c8b6062e",
+      "type": "contains"
+    },
+    {
+      "source": "a2404825c8b6062e",
+      "target": "20ed3544e09474d0",
+      "type": "exports"
+    },
+    {
+      "source": "0f86969ead8f7288",
+      "target": "293ccc0cb7725cb7",
+      "type": "contains"
+    },
+    {
+      "source": "293ccc0cb7725cb7",
+      "target": "0f86969ead8f7288",
+      "type": "exports"
+    },
+    {
+      "source": "757d4caa385f5b77",
+      "target": "d828ea5439547c9f",
+      "type": "contains"
+    },
+    {
+      "source": "d828ea5439547c9f",
+      "target": "757d4caa385f5b77",
+      "type": "exports"
+    },
+    {
+      "source": "b9b51a6e89db53fc",
+      "target": "173761d6d9003f31",
+      "type": "contains"
+    },
+    {
+      "source": "173761d6d9003f31",
+      "target": "b9b51a6e89db53fc",
+      "type": "exports"
+    },
+    {
+      "source": "5b73917d1b8ec159",
+      "target": "f7c178e3e59a2b48",
+      "type": "contains"
+    },
+    {
+      "source": "f7c178e3e59a2b48",
+      "target": "5b73917d1b8ec159",
+      "type": "exports"
+    },
+    {
+      "source": "eb28fb859457aad5",
+      "target": "3ecccb794b0b37fc",
+      "type": "contains"
+    },
+    {
+      "source": "3ecccb794b0b37fc",
+      "target": "eb28fb859457aad5",
+      "type": "exports"
+    },
+    {
+      "source": "3473c7b034ea99af",
+      "target": "c083e54781fcc15c",
+      "type": "contains"
+    },
+    {
+      "source": "c083e54781fcc15c",
+      "target": "3473c7b034ea99af",
+      "type": "exports"
+    },
+    {
+      "source": "92f5490f4b864ecd",
+      "target": "ada4928a3b8e84fe",
+      "type": "contains"
+    },
+    {
+      "source": "ada4928a3b8e84fe",
+      "target": "92f5490f4b864ecd",
+      "type": "exports"
+    },
+    {
+      "source": "3264e3e63ec0d59b",
+      "target": "167568a5d17d5698",
+      "type": "contains"
+    },
+    {
+      "source": "167568a5d17d5698",
+      "target": "3264e3e63ec0d59b",
+      "type": "exports"
+    }
+  ]
+}

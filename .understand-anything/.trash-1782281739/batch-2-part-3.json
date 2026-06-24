@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "batchIndex": 2,
+  "part": 3,
+  "nodes": [
+    {
+      "id": "file:src/javax/crypto/MacSpi.java",
+      "type": "file",
+      "label": "MacSpi.java",
+      "properties": {
+        "path": "src/javax/crypto/MacSpi.java",
+        "language": "java",
+        "sizeLines": 5,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/javax/crypto/NoSuchPaddingException.java",
+      "type": "file",
+      "label": "NoSuchPaddingException.java",
+      "properties": {
+        "path": "src/javax/crypto/NoSuchPaddingException.java",
+        "language": "java",
+        "sizeLines": 7,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/javax/crypto/NullCipher.java",
+      "type": "file",
+      "label": "NullCipher.java",
+      "properties": {
+        "path": "src/javax/crypto/NullCipher.java",
+        "language": "java",
+        "sizeLines": 74,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/javax/crypto/SealedObject.java",
+      "type": "file",
+      "label": "SealedObject.java",
+      "properties": {
+        "path": "src/javax/crypto/SealedObject.java",
+        "language": "java",
+        "sizeLines": 208,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/javax/crypto/SecretKey.java",
+      "type": "file",
+      "label": "SecretKey.java",
+      "properties": {
+        "path": "src/javax/crypto/SecretKey.java",
+        "language": "java",
+        "sizeLines": 8,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/javax/crypto/ShortBufferException.java",
+      "type": "file",
+      "label": "ShortBufferException.java",
+      "properties": {
+        "path": "src/javax/crypto/ShortBufferException.java",
+        "language": "java",
+        "sizeLines": 7,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/javax/crypto/spec/IvParameterSpec.java",
+      "type": "file",
+      "label": "IvParameterSpec.java",
+      "properties": {
+        "path": "src/javax/crypto/spec/IvParameterSpec.java",
+        "language": "java",
+        "sizeLines": 88,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/javax/crypto/spec/PBEKeySpec.java",
+      "type": "file",
+      "label": "PBEKeySpec.java",
+      "properties": {
+        "path": "src/javax/crypto/spec/PBEKeySpec.java",
+        "language": "java",
+        "sizeLines": 131,
+        "fileCategory": "code",
+        "exists": false
+      }
+    },
+    {
+      "id": "file:src/javax/crypto/spec/SecretKeySpec.java",
+      "type": "file",
+      "label": "SecretKeySpec.java",
+      "properties": {
+        "path": "src/javax/crypto/spec/SecretKeySpec.java",
+        "language": "java",
+        "sizeLines": 115,
+        "fileCategory": "code",
+        "exists": false
+      }
+    }
+  ],
+  "edges": [],
+  "metadata": {
+    "totalNodesInPart": 9,
+    "totalEdgesInPart": 0,
+    "algorithm": "file-analyzer"
+  }
+}

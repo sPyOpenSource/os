@@ -1,0 +1,182 @@
+{
+  "projectRoot": "/Users/xuyi/Source/OS/armOS/lib/jcore/OS",
+  "batchFiles": [
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadResErrNotDir.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadResError.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadResErrStale.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadResOK.java",
+      "language": "java",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/SAttr.java",
+      "language": "java",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/Stat.java",
+      "language": "java",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/StatFSRes.java",
+      "language": "java",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/StatFSResErrAcces.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/StatFSResErrIO.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/StatFSResErrNoEnt.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/StatFSResErrNotDir.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/StatFSResError.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/StatFSResErrStale.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/StatFSResOK.java",
+      "language": "java",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/Timeval.java",
+      "language": "java",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rpcsvc/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rtc/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rtc/RTC.java",
+      "language": "java",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/rtc/RTCImpl.java",
+      "language": "java",
+      "sizeLines": 141,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/scheduler/LinkedList.java",
+      "language": "java",
+      "sizeLines": 199,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/scheduler/LinkedListCAS.java",
+      "language": "java",
+      "sizeLines": 175,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/scheduler/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/scheduler/SchedulerPortal.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/scheduler/SuperHLRRobin.java",
+      "language": "java",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/jx/scheduler/ThreadList.java",
+      "language": "java",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/jx/rpcsvc/nfs2/ReadResErrNotDir.java": [],
+    "src/jx/rpcsvc/nfs2/ReadResError.java": [],
+    "src/jx/rpcsvc/nfs2/ReadResErrStale.java": [],
+    "src/jx/rpcsvc/nfs2/ReadResOK.java": [],
+    "src/jx/rpcsvc/nfs2/SAttr.java": [],
+    "src/jx/rpcsvc/nfs2/Stat.java": [],
+    "src/jx/rpcsvc/nfs2/StatFSRes.java": [],
+    "src/jx/rpcsvc/nfs2/StatFSResErrAcces.java": [],
+    "src/jx/rpcsvc/nfs2/StatFSResErrIO.java": [],
+    "src/jx/rpcsvc/nfs2/StatFSResErrNoEnt.java": [],
+    "src/jx/rpcsvc/nfs2/StatFSResErrNotDir.java": [],
+    "src/jx/rpcsvc/nfs2/StatFSResError.java": [],
+    "src/jx/rpcsvc/nfs2/StatFSResErrStale.java": [],
+    "src/jx/rpcsvc/nfs2/StatFSResOK.java": [],
+    "src/jx/rpcsvc/nfs2/Timeval.java": [],
+    "src/jx/rpcsvc/package.bluej": [],
+    "src/jx/rtc/package.bluej": [],
+    "src/jx/rtc/RTC.java": [],
+    "src/jx/rtc/RTCImpl.java": [],
+    "src/jx/scheduler/LinkedList.java": [],
+    "src/jx/scheduler/LinkedListCAS.java": [],
+    "src/jx/scheduler/package.bluej": [],
+    "src/jx/scheduler/SchedulerPortal.java": [],
+    "src/jx/scheduler/SuperHLRRobin.java": [],
+    "src/jx/scheduler/ThreadList.java": []
+  }
+}

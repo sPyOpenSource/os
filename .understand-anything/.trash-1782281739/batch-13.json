@@ -1,0 +1,589 @@
+{
+  "batchIndex": 13,
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "af4412cb3816899e",
+      "type": "file",
+      "name": "BufferList.java",
+      "filePath": "src/jx/db/BufferList.java",
+      "language": "java",
+      "totalLines": 49,
+      "nonEmptyLines": 41,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "96249d932da34aa0",
+      "type": "class",
+      "name": "BufferList",
+      "filePath": "src/jx/db/BufferList.java",
+      "startLine": 16,
+      "endLine": 49,
+      "methods": [
+        "moveToFirst",
+        "moveToNext",
+        "addAtEnd",
+        "getCurrent",
+        "delete"
+      ],
+      "properties": [
+        "ERR_LIST_EMPTY"
+      ]
+    },
+    {
+      "id": "16c42249a1233b0c",
+      "type": "file",
+      "name": "CodedException.java",
+      "filePath": "src/jx/db/CodedException.java",
+      "language": "java",
+      "totalLines": 35,
+      "nonEmptyLines": 26,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "b7218b276fd9e679",
+      "type": "class",
+      "name": "CodedException",
+      "filePath": "src/jx/db/CodedException.java",
+      "startLine": 15,
+      "endLine": 34,
+      "methods": [
+        "CodedException",
+        "getErrorCode",
+        "getOriginator"
+      ],
+      "properties": [
+        "m_cOriginator",
+        "m_iErrorCode"
+      ]
+    },
+    {
+      "id": "ebf934dabfed3709",
+      "type": "file",
+      "name": "Database.java",
+      "filePath": "src/jx/db/Database.java",
+      "language": "java",
+      "totalLines": 67,
+      "nonEmptyLines": 48,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "2f287ad4ac420343",
+      "type": "class",
+      "name": "Database",
+      "filePath": "src/jx/db/Database.java",
+      "startLine": 6,
+      "endLine": 67,
+      "methods": [
+        "getTable",
+        "describeTable",
+        "createTable",
+        "dropTable",
+        "flush",
+        "getTypeManager",
+        "getTmpStorage",
+        "getRelationScan",
+        "getRegKeyData",
+        "regKeyExist",
+        "setRegKeyData"
+      ],
+      "properties": []
+    },
+    {
+      "id": "6423328cdf2816a1",
+      "type": "file",
+      "name": "TupleDescriptor.java",
+      "filePath": "src/jx/db/TupleDescriptor.java",
+      "language": "java",
+      "totalLines": 34,
+      "nonEmptyLines": 27,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "ead471baf954a194",
+      "type": "class",
+      "name": "TupleDescriptor",
+      "filePath": "src/jx/db/TupleDescriptor.java",
+      "startLine": 18,
+      "endLine": 34,
+      "methods": [
+        "getCount",
+        "getSegNum",
+        "getRelId",
+        "getAttrSize",
+        "getTupleSize",
+        "getType",
+        "getName",
+        "getFieldOffset",
+        "getConverter"
+      ],
+      "properties": [
+        "ERR_WRONG_OFFSET",
+        "ERR_TD_NOT_INITIALIZED",
+        "ERR_INVALID_IID",
+        "ERR_WRONG_OFFSET_DIM"
+      ]
+    },
+    {
+      "id": "56083ae8f57b6692",
+      "type": "file",
+      "name": "TypeManagerImpl.java",
+      "filePath": "src/jx/db/mytypes/TypeManagerImpl.java",
+      "language": "java",
+      "totalLines": 95,
+      "nonEmptyLines": 73,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "14b6931de740b65b",
+      "type": "class",
+      "name": "TypeManagerImpl",
+      "filePath": "src/jx/db/mytypes/TypeManagerImpl.java",
+      "startLine": 17,
+      "endLine": 95,
+      "methods": [
+        "TypeManagerImpl",
+        "getComparator",
+        "getConverter",
+        "getTypeInfos",
+        "getTypeName"
+      ],
+      "properties": [
+        "m_aiTypeInfos",
+        "m_aszNames"
+      ]
+    },
+    {
+      "id": "9d85f31f413fdb9d",
+      "type": "file",
+      "name": "StringToByteArrayConverter.java",
+      "filePath": "src/jx/db/mytypes/converters/StringToByteArrayConverter.java",
+      "language": "java",
+      "totalLines": 44,
+      "nonEmptyLines": 31,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "7d4b6ccb37bb605a",
+      "type": "class",
+      "name": "StringToByteArrayConverter",
+      "filePath": "src/jx/db/mytypes/converters/StringToByteArrayConverter.java",
+      "startLine": 17,
+      "endLine": 44,
+      "methods": [
+        "StringToByteArrayConverter",
+        "convert",
+        "revert"
+      ],
+      "properties": []
+    },
+    {
+      "id": "cff1404ec2d88e2d",
+      "type": "file",
+      "name": "Parser.java",
+      "filePath": "src/jx/db/parser/Parser.java",
+      "language": "java",
+      "totalLines": 201,
+      "nonEmptyLines": 183,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 6,
+        "functionCount": 9,
+        "classCount": 2
+      }
+    },
+    {
+      "id": "9adecf4f9fb2d3d7",
+      "type": "class",
+      "name": "Parser",
+      "filePath": "src/jx/db/parser/Parser.java",
+      "startLine": 8,
+      "endLine": 139,
+      "methods": [
+        "Parser",
+        "executeUpdate",
+        "executeQuery",
+        "execute"
+      ],
+      "properties": [
+        "db"
+      ]
+    },
+    {
+      "id": "920184257d72bc17",
+      "type": "class",
+      "name": "ParseHelper",
+      "filePath": "src/jx/db/parser/Parser.java",
+      "startLine": 141,
+      "endLine": 201,
+      "methods": [
+        "ParseHelper",
+        "expectToken",
+        "nextToken",
+        "expectParens",
+        "splitByComma"
+      ],
+      "properties": [
+        "stringToParse"
+      ]
+    },
+    {
+      "id": "80c355fce1c38c60",
+      "type": "file",
+      "name": "PageStrategy.java",
+      "filePath": "src/jx/db/systembuffer/strategy/PageStrategy.java",
+      "language": "java",
+      "totalLines": 82,
+      "nonEmptyLines": 75,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "bfa6a5c9251e2bc2",
+      "type": "class",
+      "name": "PageStrategy",
+      "filePath": "src/jx/db/systembuffer/strategy/PageStrategy.java",
+      "startLine": 9,
+      "endLine": 82,
+      "methods": [
+        "fix",
+        "unfix",
+        "setDirty",
+        "pageIn",
+        "pageOut",
+        "copy",
+        "getBestForPageout",
+        "getPageRecord",
+        "getPagesAllocated"
+      ],
+      "properties": [
+        "ERR_ALL_PAGES_FIXED",
+        "ERR_INVALID_PAGE_NUM",
+        "ERR_PAGE_EXISTS",
+        "ERR_PAGE_NOT_FIXED",
+        "ERR_EMPTY_BUFFER",
+        "ERR_INVALID_FIX"
+      ]
+    },
+    {
+      "id": "3dc4510a90f9cff2",
+      "type": "file",
+      "name": "DbConverter.java",
+      "filePath": "src/jx/db/types/DbConverter.java",
+      "language": "java",
+      "totalLines": 19,
+      "nonEmptyLines": 14,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "d05a57dd395df6ab",
+      "type": "class",
+      "name": "DbConverter",
+      "filePath": "src/jx/db/types/DbConverter.java",
+      "startLine": 16,
+      "endLine": 19,
+      "methods": [
+        "convert",
+        "revert"
+      ],
+      "properties": []
+    },
+    {
+      "id": "806018d10c935bf6",
+      "type": "file",
+      "name": "TypeManager.java",
+      "filePath": "src/jx/db/types/TypeManager.java",
+      "language": "java",
+      "totalLines": 36,
+      "nonEmptyLines": 24,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "406ab8e715ef3e7d",
+      "type": "class",
+      "name": "TypeManager",
+      "filePath": "src/jx/db/types/TypeManager.java",
+      "startLine": 5,
+      "endLine": 36,
+      "methods": [
+        "getComparator",
+        "getConverter",
+        "getTypeInfos",
+        "getTypeName"
+      ],
+      "properties": [
+        "ERR_UNSUPPORTED_DID",
+        "DATP_DID_INT",
+        "DATP_DID_STR",
+        "DATP_DNAME_INT",
+        "DATP_DNAME_STR"
+      ]
+    },
+    {
+      "id": "8345ed443f929023",
+      "type": "dependency",
+      "name": "BufferList.java",
+      "filePath": "src/jx/db/BufferList.java"
+    },
+    {
+      "id": "f99ee1619e02f6ac",
+      "type": "dependency",
+      "name": "TypeManager.java",
+      "filePath": "src/jx/db/types/TypeManager.java"
+    },
+    {
+      "id": "c3dbeb2801989de9",
+      "type": "dependency",
+      "name": "CodedException.java",
+      "filePath": "src/jx/db/CodedException.java"
+    },
+    {
+      "id": "c83931c79627ab96",
+      "type": "dependency",
+      "name": "DbConverter.java",
+      "filePath": "src/jx/db/types/DbConverter.java"
+    },
+    {
+      "id": "d3029700411727d3",
+      "type": "dependency",
+      "name": "Vector.java",
+      "filePath": "src/java/util/Vector.java"
+    }
+  ],
+  "edges": [
+    {
+      "source": "af4412cb3816899e",
+      "target": "96249d932da34aa0",
+      "type": "contains"
+    },
+    {
+      "source": "96249d932da34aa0",
+      "target": "af4412cb3816899e",
+      "type": "exports"
+    },
+    {
+      "source": "16c42249a1233b0c",
+      "target": "b7218b276fd9e679",
+      "type": "contains"
+    },
+    {
+      "source": "b7218b276fd9e679",
+      "target": "16c42249a1233b0c",
+      "type": "exports"
+    },
+    {
+      "source": "ebf934dabfed3709",
+      "target": "2f287ad4ac420343",
+      "type": "contains"
+    },
+    {
+      "source": "2f287ad4ac420343",
+      "target": "ebf934dabfed3709",
+      "type": "exports"
+    },
+    {
+      "source": "6423328cdf2816a1",
+      "target": "ead471baf954a194",
+      "type": "contains"
+    },
+    {
+      "source": "ead471baf954a194",
+      "target": "6423328cdf2816a1",
+      "type": "exports"
+    },
+    {
+      "source": "56083ae8f57b6692",
+      "target": "14b6931de740b65b",
+      "type": "contains"
+    },
+    {
+      "source": "14b6931de740b65b",
+      "target": "56083ae8f57b6692",
+      "type": "exports"
+    },
+    {
+      "source": "9d85f31f413fdb9d",
+      "target": "7d4b6ccb37bb605a",
+      "type": "contains"
+    },
+    {
+      "source": "7d4b6ccb37bb605a",
+      "target": "9d85f31f413fdb9d",
+      "type": "exports"
+    },
+    {
+      "source": "cff1404ec2d88e2d",
+      "target": "9adecf4f9fb2d3d7",
+      "type": "contains"
+    },
+    {
+      "source": "9adecf4f9fb2d3d7",
+      "target": "cff1404ec2d88e2d",
+      "type": "exports"
+    },
+    {
+      "source": "cff1404ec2d88e2d",
+      "target": "920184257d72bc17",
+      "type": "contains"
+    },
+    {
+      "source": "920184257d72bc17",
+      "target": "cff1404ec2d88e2d",
+      "type": "exports"
+    },
+    {
+      "source": "80c355fce1c38c60",
+      "target": "bfa6a5c9251e2bc2",
+      "type": "contains"
+    },
+    {
+      "source": "bfa6a5c9251e2bc2",
+      "target": "80c355fce1c38c60",
+      "type": "exports"
+    },
+    {
+      "source": "3dc4510a90f9cff2",
+      "target": "d05a57dd395df6ab",
+      "type": "contains"
+    },
+    {
+      "source": "d05a57dd395df6ab",
+      "target": "3dc4510a90f9cff2",
+      "type": "exports"
+    },
+    {
+      "source": "806018d10c935bf6",
+      "target": "406ab8e715ef3e7d",
+      "type": "contains"
+    },
+    {
+      "source": "406ab8e715ef3e7d",
+      "target": "806018d10c935bf6",
+      "type": "exports"
+    },
+    {
+      "source": "cff1404ec2d88e2d",
+      "target": "d3029700411727d3",
+      "type": "imports"
+    },
+    {
+      "source": "cff1404ec2d88e2d",
+      "target": "d3029700411727d3",
+      "type": "depends_on"
+    },
+    {
+      "source": "ebf934dabfed3709",
+      "target": "8345ed443f929023",
+      "type": "imports"
+    },
+    {
+      "source": "ebf934dabfed3709",
+      "target": "f99ee1619e02f6ac",
+      "type": "imports"
+    },
+    {
+      "source": "6423328cdf2816a1",
+      "target": "c3dbeb2801989de9",
+      "type": "imports"
+    },
+    {
+      "source": "6423328cdf2816a1",
+      "target": "c83931c79627ab96",
+      "type": "imports"
+    },
+    {
+      "source": "56083ae8f57b6692",
+      "target": "c3dbeb2801989de9",
+      "type": "imports"
+    },
+    {
+      "source": "9d85f31f413fdb9d",
+      "target": "c3dbeb2801989de9",
+      "type": "imports"
+    },
+    {
+      "source": "9d85f31f413fdb9d",
+      "target": "c83931c79627ab96",
+      "type": "imports"
+    },
+    {
+      "source": "cff1404ec2d88e2d",
+      "target": "d3029700411727d3",
+      "type": "imports"
+    },
+    {
+      "source": "cff1404ec2d88e2d",
+      "target": "f99ee1619e02f6ac",
+      "type": "imports"
+    },
+    {
+      "source": "80c355fce1c38c60",
+      "target": "c3dbeb2801989de9",
+      "type": "imports"
+    },
+    {
+      "source": "3dc4510a90f9cff2",
+      "target": "c3dbeb2801989de9",
+      "type": "imports"
+    },
+    {
+      "source": "806018d10c935bf6",
+      "target": "c3dbeb2801989de9",
+      "type": "imports"
+    }
+  ]
+}

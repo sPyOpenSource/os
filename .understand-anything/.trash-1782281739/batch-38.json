@@ -1,0 +1,773 @@
+{
+  "batchIndex": 38,
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "8cd540b95e397f",
+      "type": "file",
+      "name": "NFSException.java",
+      "filePath": "src/jx/rpcsvc/nfs2/NFSException.java",
+      "language": "java",
+      "totalLines": 8,
+      "nonEmptyLines": 6,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "bf18ad1b4f2857",
+      "type": "class",
+      "name": "NFSException",
+      "filePath": "src/jx/rpcsvc/nfs2/NFSException.java",
+      "startLine": 5,
+      "endLine": 8
+    },
+    {
+      "id": "cbf251dea43bd7",
+      "type": "file",
+      "name": "NFSMountError.j",
+      "filePath": "src/jx/rpcsvc/nfs2/NFSMountError.j",
+      "language": "j",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "entryPoint": false
+    },
+    {
+      "id": "9fcfe2eacb4bf6",
+      "type": "file",
+      "name": "NFSProc_Impl.java",
+      "filePath": "src/jx/rpcsvc/nfs2/NFSProc_Impl.java",
+      "language": "java",
+      "totalLines": 1259,
+      "nonEmptyLines": 958,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 37,
+        "functionCount": 40,
+        "classCount": 7
+      }
+    },
+    {
+      "id": "5e68653283fa97",
+      "type": "class",
+      "name": "NFSProc_Impl",
+      "filePath": "src/jx/rpcsvc/nfs2/NFSProc_Impl.java",
+      "startLine": 8,
+      "endLine": 1105
+    },
+    {
+      "id": "3929f8bba29de4",
+      "type": "class",
+      "name": "StaleHandleException",
+      "filePath": "src/jx/rpcsvc/nfs2/NFSProc_Impl.java",
+      "startLine": 1108,
+      "endLine": 1112
+    },
+    {
+      "id": "2ca8b8a36dff8b",
+      "type": "class",
+      "name": "LookupCache_Result",
+      "filePath": "src/jx/rpcsvc/nfs2/NFSProc_Impl.java",
+      "startLine": 1115,
+      "endLine": 1122
+    },
+    {
+      "id": "31633d8dad4b29",
+      "type": "class",
+      "name": "LookupCache",
+      "filePath": "src/jx/rpcsvc/nfs2/NFSProc_Impl.java",
+      "startLine": 1125,
+      "endLine": 1131
+    },
+    {
+      "id": "e965a9ac217602",
+      "type": "class",
+      "name": "LookupCache_firstImpl",
+      "filePath": "src/jx/rpcsvc/nfs2/NFSProc_Impl.java",
+      "startLine": 1133,
+      "endLine": 1186
+    },
+    {
+      "id": "28d46843bbc555",
+      "type": "class",
+      "name": "LookupCache_2ndImpl_Entry",
+      "filePath": "src/jx/rpcsvc/nfs2/NFSProc_Impl.java",
+      "startLine": 1188,
+      "endLine": 1196
+    },
+    {
+      "id": "d6b10a2fc95b62",
+      "type": "class",
+      "name": "LookupCache_2ndImpl",
+      "filePath": "src/jx/rpcsvc/nfs2/NFSProc_Impl.java",
+      "startLine": 1198,
+      "endLine": 1259
+    },
+    {
+      "id": "9e5d4205548c9d",
+      "type": "file",
+      "name": "NFSProc.java",
+      "filePath": "src/jx/rpcsvc/nfs2/NFSProc.java",
+      "language": "java",
+      "totalLines": 49,
+      "nonEmptyLines": 45,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "ce49166f018d56",
+      "type": "class",
+      "name": "NFSProc",
+      "filePath": "src/jx/rpcsvc/nfs2/NFSProc.java",
+      "startLine": 8,
+      "endLine": 49
+    },
+    {
+      "id": "c122d1edd0f0e9",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/jx/rpcsvc/nfs2/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false
+    },
+    {
+      "id": "b843aa1d24ff60",
+      "type": "file",
+      "name": "ReadDirRes.java",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadDirRes.java",
+      "language": "java",
+      "totalLines": 20,
+      "nonEmptyLines": 14,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 11,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "f482f0626debff",
+      "type": "class",
+      "name": "ReadDirRes",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadDirRes.java",
+      "startLine": 5,
+      "endLine": 20
+    },
+    {
+      "id": "faa2ff1f2c8527",
+      "type": "file",
+      "name": "ReadDirResErrAcces.java",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadDirResErrAcces.java",
+      "language": "java",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "6db035af911dc0",
+      "type": "class",
+      "name": "ReadDirResErrAcces",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadDirResErrAcces.java",
+      "startLine": 5,
+      "endLine": 7
+    },
+    {
+      "id": "037b094e0f0ef5",
+      "type": "file",
+      "name": "ReadDirResErrIO.java",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadDirResErrIO.java",
+      "language": "java",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "107764481b34e5",
+      "type": "class",
+      "name": "ReadDirResErrIO",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadDirResErrIO.java",
+      "startLine": 5,
+      "endLine": 7
+    },
+    {
+      "id": "d37669106f4559",
+      "type": "file",
+      "name": "ReadDirResErrNoEnt.java",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadDirResErrNoEnt.java",
+      "language": "java",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "83df35d4a0bbd1",
+      "type": "class",
+      "name": "ReadDirResErrNoEnt",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadDirResErrNoEnt.java",
+      "startLine": 5,
+      "endLine": 7
+    },
+    {
+      "id": "5a359824fc745e",
+      "type": "file",
+      "name": "ReadDirResErrNotDir.java",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadDirResErrNotDir.java",
+      "language": "java",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "e5557d647b9147",
+      "type": "class",
+      "name": "ReadDirResErrNotDir",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadDirResErrNotDir.java",
+      "startLine": 5,
+      "endLine": 7
+    },
+    {
+      "id": "89861124fb6613",
+      "type": "file",
+      "name": "ReadDirResError.java",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadDirResError.java",
+      "language": "java",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "cefcf7468d2eb8",
+      "type": "class",
+      "name": "ReadDirResError",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadDirResError.java",
+      "startLine": 5,
+      "endLine": 7
+    },
+    {
+      "id": "e8ae86a1c4f5ee",
+      "type": "file",
+      "name": "ReadDirResErrStale.java",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadDirResErrStale.java",
+      "language": "java",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "5b4567aa47fead",
+      "type": "class",
+      "name": "ReadDirResErrStale",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadDirResErrStale.java",
+      "startLine": 5,
+      "endLine": 7
+    },
+    {
+      "id": "7a518c71113dc3",
+      "type": "file",
+      "name": "ReadDirResOK.java",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadDirResOK.java",
+      "language": "java",
+      "totalLines": 18,
+      "nonEmptyLines": 14,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "925190d98988f8",
+      "type": "class",
+      "name": "ReadDirResOK",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadDirResOK.java",
+      "startLine": 5,
+      "endLine": 18
+    },
+    {
+      "id": "e3a7c9390f7056",
+      "type": "file",
+      "name": "ReadLinkRes.java",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadLinkRes.java",
+      "language": "java",
+      "totalLines": 21,
+      "nonEmptyLines": 14,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 11,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "254ce7fac34b4c",
+      "type": "class",
+      "name": "ReadLinkRes",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadLinkRes.java",
+      "startLine": 5,
+      "endLine": 21
+    },
+    {
+      "id": "f822643ed3ef42",
+      "type": "file",
+      "name": "ReadLinkResErrAcces.java",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadLinkResErrAcces.java",
+      "language": "java",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "8a727fb6f2390b",
+      "type": "class",
+      "name": "ReadLinkResErrAcces",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadLinkResErrAcces.java",
+      "startLine": 5,
+      "endLine": 7
+    },
+    {
+      "id": "c7395d351e4a90",
+      "type": "file",
+      "name": "ReadLinkResErrIO.java",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadLinkResErrIO.java",
+      "language": "java",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "037822449c56ef",
+      "type": "class",
+      "name": "ReadLinkResErrIO",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadLinkResErrIO.java",
+      "startLine": 5,
+      "endLine": 7
+    },
+    {
+      "id": "fa3b4983e1b378",
+      "type": "file",
+      "name": "ReadLinkResErrNoEnt.java",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadLinkResErrNoEnt.java",
+      "language": "java",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "1bb7cc592d3088",
+      "type": "class",
+      "name": "ReadLinkResErrNoEnt",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadLinkResErrNoEnt.java",
+      "startLine": 5,
+      "endLine": 7
+    },
+    {
+      "id": "f34bc8fcd9d020",
+      "type": "file",
+      "name": "ReadLinkResErrNotDir.java",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadLinkResErrNotDir.java",
+      "language": "java",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "13ae7cbe0286ea",
+      "type": "class",
+      "name": "ReadLinkResErrNotDir",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadLinkResErrNotDir.java",
+      "startLine": 5,
+      "endLine": 7
+    },
+    {
+      "id": "c1f1bb938846a1",
+      "type": "file",
+      "name": "ReadLinkResError.java",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadLinkResError.java",
+      "language": "java",
+      "totalLines": 9,
+      "nonEmptyLines": 6,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "83bdf1e8568ec0",
+      "type": "class",
+      "name": "ReadLinkResError",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadLinkResError.java",
+      "startLine": 5,
+      "endLine": 9
+    },
+    {
+      "id": "98461e07c4d3be",
+      "type": "file",
+      "name": "ReadLinkResErrStale.java",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadLinkResErrStale.java",
+      "language": "java",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "926401efd12e8c",
+      "type": "class",
+      "name": "ReadLinkResErrStale",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadLinkResErrStale.java",
+      "startLine": 5,
+      "endLine": 7
+    },
+    {
+      "id": "83aaf35a62e3bb",
+      "type": "file",
+      "name": "ReadLinkResOK.java",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadLinkResOK.java",
+      "language": "java",
+      "totalLines": 17,
+      "nonEmptyLines": 12,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "ef9a3090697bed",
+      "type": "class",
+      "name": "ReadLinkResOK",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadLinkResOK.java",
+      "startLine": 5,
+      "endLine": 17
+    },
+    {
+      "id": "0d84f5c1366d49",
+      "type": "file",
+      "name": "ReadRes.java",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadRes.java",
+      "language": "java",
+      "totalLines": 19,
+      "nonEmptyLines": 14,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 11,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "886028572da272",
+      "type": "class",
+      "name": "ReadRes",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadRes.java",
+      "startLine": 5,
+      "endLine": 19
+    },
+    {
+      "id": "c5ecb82a0c70f6",
+      "type": "file",
+      "name": "ReadResErrAcces.java",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadResErrAcces.java",
+      "language": "java",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "dfcf2acfc6049b",
+      "type": "class",
+      "name": "ReadResErrAcces",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadResErrAcces.java",
+      "startLine": 5,
+      "endLine": 7
+    },
+    {
+      "id": "94ea714b64b5a2",
+      "type": "file",
+      "name": "ReadResErrIO.java",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadResErrIO.java",
+      "language": "java",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "41ca8c8144e768",
+      "type": "class",
+      "name": "ReadResErrIO",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadResErrIO.java",
+      "startLine": 5,
+      "endLine": 7
+    },
+    {
+      "id": "80d84bcbf16164",
+      "type": "file",
+      "name": "ReadResErrNoEnt.java",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadResErrNoEnt.java",
+      "language": "java",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "534568c077121e",
+      "type": "class",
+      "name": "ReadResErrNoEnt",
+      "filePath": "src/jx/rpcsvc/nfs2/ReadResErrNoEnt.java",
+      "startLine": 5,
+      "endLine": 7
+    }
+  ],
+  "edges": [
+    {
+      "source": "8cd540b95e397f",
+      "target": "bf18ad1b4f2857",
+      "type": "contains"
+    },
+    {
+      "source": "9fcfe2eacb4bf6",
+      "target": "5e68653283fa97",
+      "type": "contains"
+    },
+    {
+      "source": "9fcfe2eacb4bf6",
+      "target": "3929f8bba29de4",
+      "type": "contains"
+    },
+    {
+      "source": "9fcfe2eacb4bf6",
+      "target": "2ca8b8a36dff8b",
+      "type": "contains"
+    },
+    {
+      "source": "9fcfe2eacb4bf6",
+      "target": "31633d8dad4b29",
+      "type": "contains"
+    },
+    {
+      "source": "9fcfe2eacb4bf6",
+      "target": "e965a9ac217602",
+      "type": "contains"
+    },
+    {
+      "source": "9fcfe2eacb4bf6",
+      "target": "28d46843bbc555",
+      "type": "contains"
+    },
+    {
+      "source": "9fcfe2eacb4bf6",
+      "target": "d6b10a2fc95b62",
+      "type": "contains"
+    },
+    {
+      "source": "9e5d4205548c9d",
+      "target": "ce49166f018d56",
+      "type": "contains"
+    },
+    {
+      "source": "b843aa1d24ff60",
+      "target": "f482f0626debff",
+      "type": "contains"
+    },
+    {
+      "source": "faa2ff1f2c8527",
+      "target": "6db035af911dc0",
+      "type": "contains"
+    },
+    {
+      "source": "037b094e0f0ef5",
+      "target": "107764481b34e5",
+      "type": "contains"
+    },
+    {
+      "source": "d37669106f4559",
+      "target": "83df35d4a0bbd1",
+      "type": "contains"
+    },
+    {
+      "source": "5a359824fc745e",
+      "target": "e5557d647b9147",
+      "type": "contains"
+    },
+    {
+      "source": "89861124fb6613",
+      "target": "cefcf7468d2eb8",
+      "type": "contains"
+    },
+    {
+      "source": "e8ae86a1c4f5ee",
+      "target": "5b4567aa47fead",
+      "type": "contains"
+    },
+    {
+      "source": "7a518c71113dc3",
+      "target": "925190d98988f8",
+      "type": "contains"
+    },
+    {
+      "source": "e3a7c9390f7056",
+      "target": "254ce7fac34b4c",
+      "type": "contains"
+    },
+    {
+      "source": "f822643ed3ef42",
+      "target": "8a727fb6f2390b",
+      "type": "contains"
+    },
+    {
+      "source": "c7395d351e4a90",
+      "target": "037822449c56ef",
+      "type": "contains"
+    },
+    {
+      "source": "fa3b4983e1b378",
+      "target": "1bb7cc592d3088",
+      "type": "contains"
+    },
+    {
+      "source": "f34bc8fcd9d020",
+      "target": "13ae7cbe0286ea",
+      "type": "contains"
+    },
+    {
+      "source": "c1f1bb938846a1",
+      "target": "83bdf1e8568ec0",
+      "type": "contains"
+    },
+    {
+      "source": "98461e07c4d3be",
+      "target": "926401efd12e8c",
+      "type": "contains"
+    },
+    {
+      "source": "83aaf35a62e3bb",
+      "target": "ef9a3090697bed",
+      "type": "contains"
+    },
+    {
+      "source": "0d84f5c1366d49",
+      "target": "886028572da272",
+      "type": "contains"
+    },
+    {
+      "source": "c5ecb82a0c70f6",
+      "target": "dfcf2acfc6049b",
+      "type": "contains"
+    },
+    {
+      "source": "94ea714b64b5a2",
+      "target": "41ca8c8144e768",
+      "type": "contains"
+    },
+    {
+      "source": "80d84bcbf16164",
+      "target": "534568c077121e",
+      "type": "contains"
+    }
+  ]
+}

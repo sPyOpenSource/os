@@ -1,0 +1,2127 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadResErrNotDir.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "ReadResErrNotDir",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReadResErrNotDir",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "ReadResErrNotDir"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ReadResErrNotDir",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "ReadResErrNotDir",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadResError.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "ReadResError",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReadResError",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "ReadResError"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ReadResError",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "ReadResError",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadResErrStale.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "ReadResErrStale",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReadResErrStale",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "ReadResErrStale"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ReadResErrStale",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "ReadResErrStale",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/ReadResOK.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 14,
+      "functions": [
+        {
+          "name": "ReadResOK",
+          "startLine": 9,
+          "endLine": 11,
+          "params": []
+        },
+        {
+          "name": "ReadResOK",
+          "startLine": 12,
+          "endLine": 16,
+          "params": [
+            "attributes",
+            "data"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReadResOK",
+          "startLine": 5,
+          "endLine": 18,
+          "methods": [
+            "ReadResOK",
+            "ReadResOK"
+          ],
+          "properties": [
+            "attributes",
+            "data"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "attributes",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "data",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "ReadResOK",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "ReadResOK",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "ReadResOK",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/SAttr.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 26,
+      "nonEmptyLines": 20,
+      "functions": [
+        {
+          "name": "SAttr",
+          "startLine": 14,
+          "endLine": 14,
+          "params": []
+        },
+        {
+          "name": "SAttr",
+          "startLine": 17,
+          "endLine": 24,
+          "params": [
+            "mode"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "SAttr",
+          "startLine": 5,
+          "endLine": 26,
+          "methods": [
+            "SAttr",
+            "SAttr"
+          ],
+          "properties": [
+            "mode",
+            "uid",
+            "gid",
+            "size",
+            "atime",
+            "mtime"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "mode",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "uid",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "gid",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "size",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "atime",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "mtime",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "SAttr",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "SAttr",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "SAttr",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SAttr",
+          "callee": "new Timeval",
+          "lineNumber": 22
+        },
+        {
+          "caller": "SAttr",
+          "callee": "new Timeval",
+          "lineNumber": 23
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/Stat.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 100,
+      "nonEmptyLines": 78,
+      "functions": [
+        {
+          "name": "Stat",
+          "startLine": 94,
+          "endLine": 96,
+          "params": []
+        },
+        {
+          "name": "Stat",
+          "startLine": 97,
+          "endLine": 99,
+          "params": [
+            "status"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Stat",
+          "startLine": 72,
+          "endLine": 100,
+          "methods": [
+            "Stat",
+            "Stat"
+          ],
+          "properties": [
+            "NFS_OK",
+            "NFSERR_PERM",
+            "NFSERR_NOENT",
+            "NFSERR_IO",
+            "NFSERR_NXIO",
+            "NFSERR_ACCES",
+            "NFSERR_EXIST",
+            "NFSERR_NODEV",
+            "NFSERR_NOTDIR",
+            "NFSERR_ISDIR",
+            "NFSERR_FBIG",
+            "NFSERR_NOSPC",
+            "NFSERR_ROFS",
+            "NFSERR_NAMETOOLONG",
+            "NFSERR_NOTEMPTY",
+            "NFSERR_DQUOT",
+            "NFSERR_STALE",
+            "NFSERR_WFLUSH",
+            "status"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "NFS_OK",
+          "line": 73,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_PERM",
+          "line": 74,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_NOENT",
+          "line": 75,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_IO",
+          "line": 76,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_NXIO",
+          "line": 77,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_ACCES",
+          "line": 78,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_EXIST",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_NODEV",
+          "line": 80,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_NOTDIR",
+          "line": 81,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_ISDIR",
+          "line": 82,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_FBIG",
+          "line": 83,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_NOSPC",
+          "line": 84,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_ROFS",
+          "line": 85,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_NAMETOOLONG",
+          "line": 86,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_NOTEMPTY",
+          "line": 87,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_DQUOT",
+          "line": 88,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_STALE",
+          "line": 89,
+          "isDefault": false
+        },
+        {
+          "name": "NFSERR_WFLUSH",
+          "line": 90,
+          "isDefault": false
+        },
+        {
+          "name": "status",
+          "line": 92,
+          "isDefault": false
+        },
+        {
+          "name": "Stat",
+          "line": 94,
+          "isDefault": false
+        },
+        {
+          "name": "Stat",
+          "line": 97,
+          "isDefault": false
+        },
+        {
+          "name": "Stat",
+          "line": 72,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 22,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/StatFSRes.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 20,
+      "nonEmptyLines": 14,
+      "functions": [
+        {
+          "name": "StatFSRes",
+          "startLine": 17,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "StatFSRes",
+          "startLine": 18,
+          "endLine": 18,
+          "params": [
+            "status"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "StatFSRes",
+          "startLine": 5,
+          "endLine": 20,
+          "methods": [
+            "StatFSRes",
+            "StatFSRes"
+          ],
+          "properties": [
+            "SWITCH_StatFSResOK",
+            "SWITCH_StatFSResErrNoEnt",
+            "SWITCH_StatFSResErrIO",
+            "SWITCH_StatFSResErrAcces",
+            "SWITCH_StatFSResErrNotDir",
+            "SWITCH_StatFSResErrStale",
+            "SWITCHDEFAULT_StatFSResError",
+            "status"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SWITCH_StatFSResOK",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_StatFSResErrNoEnt",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_StatFSResErrIO",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_StatFSResErrAcces",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_StatFSResErrNotDir",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCH_StatFSResErrStale",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "SWITCHDEFAULT_StatFSResError",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "status",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "StatFSRes",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "StatFSRes",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "StatFSRes",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 11,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/StatFSResErrAcces.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "StatFSResErrAcces",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "StatFSResErrAcces",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "StatFSResErrAcces"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "StatFSResErrAcces",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "StatFSResErrAcces",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/StatFSResErrIO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "StatFSResErrIO",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "StatFSResErrIO",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "StatFSResErrIO"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "StatFSResErrIO",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "StatFSResErrIO",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/StatFSResErrNoEnt.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "StatFSResErrNoEnt",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "StatFSResErrNoEnt",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "StatFSResErrNoEnt"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "StatFSResErrNoEnt",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "StatFSResErrNoEnt",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/StatFSResErrNotDir.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "StatFSResErrNotDir",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "StatFSResErrNotDir",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "StatFSResErrNotDir"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "StatFSResErrNotDir",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "StatFSResErrNotDir",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/StatFSResError.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 4,
+      "classes": [
+        {
+          "name": "StatFSResError",
+          "startLine": 5,
+          "endLine": 6,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "StatFSResError",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/StatFSResErrStale.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "StatFSResErrStale",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "StatFSResErrStale",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "StatFSResErrStale"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "StatFSResErrStale",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "StatFSResErrStale",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/StatFSResOK.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "classes": [
+        {
+          "name": "StatFSResOK",
+          "startLine": 5,
+          "endLine": 11,
+          "methods": [],
+          "properties": [
+            "tsize",
+            "bsize",
+            "blocks",
+            "bfree",
+            "bavail"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "tsize",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "bsize",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "blocks",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "bfree",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "bavail",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "StatFSResOK",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/nfs2/Timeval.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 16,
+      "functions": [
+        {
+          "name": "Timeval",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "Timeval",
+          "startLine": 10,
+          "endLine": 14,
+          "params": [
+            "now"
+          ]
+        },
+        {
+          "name": "Timeval",
+          "startLine": 15,
+          "endLine": 18,
+          "params": [
+            "sec",
+            "usec"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Timeval",
+          "startLine": 5,
+          "endLine": 19,
+          "methods": [
+            "Timeval",
+            "Timeval",
+            "Timeval"
+          ],
+          "properties": [
+            "seconds",
+            "useconds"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "seconds",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "useconds",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "Timeval",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "Timeval",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "Timeval",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "Timeval",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Timeval",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 11
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rpcsvc/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/rtc/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/rtc/RTC.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 19,
+      "classes": [
+        {
+          "name": "RTC",
+          "startLine": 5,
+          "endLine": 22,
+          "methods": [
+            "getTime",
+            "installIntervallTimer"
+          ],
+          "properties": [
+            "HZ_2",
+            "HZ_4",
+            "HZ_8",
+            "HZ_16",
+            "HZ_32",
+            "HZ_64",
+            "HZ_128",
+            "HZ_256",
+            "HZ_512",
+            "HZ_1024",
+            "HZ_2048",
+            "HZ_4096",
+            "HZ_8192"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RTC",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/rtc/RTCImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 141,
+      "nonEmptyLines": 119,
+      "functions": [
+        {
+          "name": "rdReg",
+          "startLine": 53,
+          "endLine": 56,
+          "params": [
+            "register"
+          ]
+        },
+        {
+          "name": "wrReg",
+          "startLine": 57,
+          "endLine": 60,
+          "params": [
+            "register",
+            "value"
+          ]
+        },
+        {
+          "name": "fromBCD",
+          "startLine": 61,
+          "endLine": 65,
+          "params": [
+            "bcd"
+          ]
+        },
+        {
+          "name": "RTCImpl",
+          "startLine": 66,
+          "endLine": 98,
+          "params": [
+            "naming"
+          ]
+        },
+        {
+          "name": "getTime",
+          "startLine": 99,
+          "endLine": 101,
+          "params": []
+        },
+        {
+          "name": "installIntervallTimer",
+          "startLine": 103,
+          "endLine": 116,
+          "params": [
+            "atomic",
+            "state",
+            "frequency"
+          ]
+        },
+        {
+          "name": "interrupt",
+          "startLine": 118,
+          "endLine": 140,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "RTCImpl",
+          "startLine": 11,
+          "endLine": 141,
+          "methods": [
+            "rdReg",
+            "wrReg",
+            "fromBCD",
+            "RTCImpl",
+            "getTime",
+            "installIntervallTimer",
+            "interrupt"
+          ],
+          "properties": [
+            "debug",
+            "IRQ_RTC",
+            "SELECT",
+            "RESULT",
+            "REG_CLOCK_CURR_SEC",
+            "REG_CLOCK_ALARM_SEC",
+            "REG_CLOCK_CURR_MIN",
+            "REG_CLOCK_ALARM_MIN",
+            "REG_CLOCK_CURR_HOUR",
+            "REG_CLOCK_ALARM_HOUR",
+            "REG_CLOCK_CURR_DAY_OF_WEEK",
+            "REG_CLOCK_CURR_DATE_OF_MOUNTH",
+            "REG_CLOCK_CURR_MONTH",
+            "REG_CLOCK_CURR_YEAR",
+            "REG_STATUS_A",
+            "REG_STATUS_B",
+            "REG_STATUS_C",
+            "REG_STATUS_D",
+            "REG_EQUIPMENT",
+            "B_SET",
+            "B_PIE",
+            "B_AIE",
+            "B_UIE",
+            "B_SQWE",
+            "B_DM",
+            "B_24",
+            "B_DSE",
+            "naming",
+            "ports",
+            "irq",
+            "out",
+            "interruptCounter",
+            "state",
+            "cpuManager",
+            "atomic"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "IRQ_RTC",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "RTCImpl",
+          "line": 66,
+          "isDefault": false
+        },
+        {
+          "name": "getTime",
+          "line": 99,
+          "isDefault": false
+        },
+        {
+          "name": "installIntervallTimer",
+          "line": 103,
+          "isDefault": false
+        },
+        {
+          "name": "interrupt",
+          "line": 118,
+          "isDefault": false
+        },
+        {
+          "name": "RTCImpl",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "rdReg",
+          "callee": "ports.outb_p",
+          "lineNumber": 54
+        },
+        {
+          "caller": "rdReg",
+          "callee": "ports.inb_p",
+          "lineNumber": 55
+        },
+        {
+          "caller": "wrReg",
+          "callee": "ports.outb_p",
+          "lineNumber": 58
+        },
+        {
+          "caller": "wrReg",
+          "callee": "ports.outb_p",
+          "lineNumber": 59
+        },
+        {
+          "caller": "RTCImpl",
+          "callee": "naming.lookup",
+          "lineNumber": 68
+        },
+        {
+          "caller": "RTCImpl",
+          "callee": "naming.lookup",
+          "lineNumber": 69
+        },
+        {
+          "caller": "RTCImpl",
+          "callee": "naming.lookup",
+          "lineNumber": 73
+        },
+        {
+          "caller": "RTCImpl",
+          "callee": "out.println",
+          "lineNumber": 76
+        },
+        {
+          "caller": "RTCImpl",
+          "callee": "rdReg",
+          "lineNumber": 76
+        },
+        {
+          "caller": "RTCImpl",
+          "callee": "out.println",
+          "lineNumber": 77
+        },
+        {
+          "caller": "RTCImpl",
+          "callee": "fromBCD",
+          "lineNumber": 77
+        },
+        {
+          "caller": "RTCImpl",
+          "callee": "rdReg",
+          "lineNumber": 77
+        },
+        {
+          "caller": "RTCImpl",
+          "callee": "out.println",
+          "lineNumber": 78
+        },
+        {
+          "caller": "RTCImpl",
+          "callee": "fromBCD",
+          "lineNumber": 78
+        },
+        {
+          "caller": "RTCImpl",
+          "callee": "rdReg",
+          "lineNumber": 78
+        },
+        {
+          "caller": "RTCImpl",
+          "callee": "irq.installFirstLevelHandler",
+          "lineNumber": 81
+        },
+        {
+          "caller": "RTCImpl",
+          "callee": "Debug.out.println",
+          "lineNumber": 82
+        },
+        {
+          "caller": "RTCImpl",
+          "callee": "irq.disableIRQ",
+          "lineNumber": 93
+        },
+        {
+          "caller": "RTCImpl",
+          "callee": "wrReg",
+          "lineNumber": 95
+        },
+        {
+          "caller": "RTCImpl",
+          "callee": "rdReg",
+          "lineNumber": 95
+        },
+        {
+          "caller": "installIntervallTimer",
+          "callee": "Debug.out.println",
+          "lineNumber": 104
+        },
+        {
+          "caller": "installIntervallTimer",
+          "callee": "new Error",
+          "lineNumber": 105
+        },
+        {
+          "caller": "installIntervallTimer",
+          "callee": "wrReg",
+          "lineNumber": 112
+        },
+        {
+          "caller": "installIntervallTimer",
+          "callee": "rdReg",
+          "lineNumber": 112
+        },
+        {
+          "caller": "installIntervallTimer",
+          "callee": "wrReg",
+          "lineNumber": 113
+        },
+        {
+          "caller": "installIntervallTimer",
+          "callee": "rdReg",
+          "lineNumber": 113
+        },
+        {
+          "caller": "installIntervallTimer",
+          "callee": "irq.enableIRQ",
+          "lineNumber": 115
+        },
+        {
+          "caller": "interrupt",
+          "callee": "Debug.out.println",
+          "lineNumber": 119
+        },
+        {
+          "caller": "interrupt",
+          "callee": "rdReg",
+          "lineNumber": 120
+        },
+        {
+          "caller": "interrupt",
+          "callee": "atomic.atomicUpdateUnblock",
+          "lineNumber": 123
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/scheduler/LinkedList.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 199,
+      "nonEmptyLines": 169,
+      "functions": [
+        {
+          "name": "LinkedList",
+          "startLine": 14,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "size",
+          "startLine": 20,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "add",
+          "startLine": 24,
+          "endLine": 47,
+          "params": [
+            "newObj"
+          ]
+        },
+        {
+          "name": "remove",
+          "startLine": 49,
+          "endLine": 79,
+          "params": [
+            "obj"
+          ]
+        },
+        {
+          "name": "removeFirst",
+          "startLine": 81,
+          "endLine": 97,
+          "params": []
+        },
+        {
+          "name": "isEmpty",
+          "startLine": 99,
+          "endLine": 101,
+          "params": []
+        },
+        {
+          "name": "contains",
+          "startLine": 103,
+          "endLine": 105,
+          "params": [
+            "o"
+          ]
+        },
+        {
+          "name": "indexOf",
+          "startLine": 107,
+          "endLine": 115,
+          "params": [
+            "o"
+          ]
+        },
+        {
+          "name": "get",
+          "startLine": 117,
+          "endLine": 124,
+          "params": [
+            "index"
+          ]
+        },
+        {
+          "name": "remove",
+          "startLine": 126,
+          "endLine": 130,
+          "params": [
+            "index"
+          ]
+        },
+        {
+          "name": "dump",
+          "startLine": 132,
+          "endLine": 141,
+          "params": []
+        },
+        {
+          "name": "getFirst",
+          "startLine": 145,
+          "endLine": 153,
+          "params": []
+        },
+        {
+          "name": "getNext",
+          "startLine": 154,
+          "endLine": 163,
+          "params": []
+        },
+        {
+          "name": "getNewContainer",
+          "startLine": 169,
+          "endLine": 182,
+          "params": [
+            "o"
+          ]
+        },
+        {
+          "name": "releaseContainer",
+          "startLine": 184,
+          "endLine": 187,
+          "params": [
+            "c"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "LinkedList",
+          "startLine": 5,
+          "endLine": 199,
+          "methods": [
+            "LinkedList",
+            "size",
+            "add",
+            "remove",
+            "removeFirst",
+            "isEmpty",
+            "contains",
+            "indexOf",
+            "get",
+            "remove",
+            "dump",
+            "getFirst",
+            "getNext",
+            "getNewContainer",
+            "releaseContainer"
+          ],
+          "properties": [
+            "cpuManager",
+            "first",
+            "last",
+            "enumerator",
+            "anzElements",
+            "debug",
+            "ContainerPool",
+            "ContainerPoolSize"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "LinkedList",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "size",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "add",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "remove",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "removeFirst",
+          "line": 81,
+          "isDefault": false
+        },
+        {
+          "name": "dump",
+          "line": 132,
+          "isDefault": false
+        },
+        {
+          "name": "LinkedList",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "add",
+          "callee": "Debug.out.print",
+          "lineNumber": 32
+        },
+        {
+          "caller": "add",
+          "callee": "cpuManager.dump",
+          "lineNumber": 33
+        },
+        {
+          "caller": "add",
+          "callee": "Debug.out.println",
+          "lineNumber": 34
+        },
+        {
+          "caller": "add",
+          "callee": "getNewContainer",
+          "lineNumber": 39
+        },
+        {
+          "caller": "add",
+          "callee": "getNewContainer",
+          "lineNumber": 41
+        },
+        {
+          "caller": "remove",
+          "callee": "Debug.out.println",
+          "lineNumber": 52
+        },
+        {
+          "caller": "remove",
+          "callee": "removeFirst",
+          "lineNumber": 56
+        },
+        {
+          "caller": "remove",
+          "callee": "releaseContainer",
+          "lineNumber": 66
+        },
+        {
+          "caller": "remove",
+          "callee": "Debug.out.println",
+          "lineNumber": 74
+        },
+        {
+          "caller": "remove",
+          "callee": "cpuManager.dump",
+          "lineNumber": 75
+        },
+        {
+          "caller": "remove",
+          "callee": "Debug.out.println",
+          "lineNumber": 76
+        },
+        {
+          "caller": "removeFirst",
+          "callee": "releaseContainer",
+          "lineNumber": 94
+        },
+        {
+          "caller": "isEmpty",
+          "callee": "size",
+          "lineNumber": 100
+        },
+        {
+          "caller": "contains",
+          "callee": "indexOf",
+          "lineNumber": 104
+        },
+        {
+          "caller": "remove",
+          "callee": "get",
+          "lineNumber": 127
+        },
+        {
+          "caller": "remove",
+          "callee": "remove",
+          "lineNumber": 128
+        },
+        {
+          "caller": "dump",
+          "callee": "getFirst",
+          "lineNumber": 133
+        },
+        {
+          "caller": "dump",
+          "callee": "Debug.out.println",
+          "lineNumber": 134
+        },
+        {
+          "caller": "dump",
+          "callee": "Debug.out.println",
+          "lineNumber": 136
+        },
+        {
+          "caller": "dump",
+          "callee": "size",
+          "lineNumber": 136
+        },
+        {
+          "caller": "dump",
+          "callee": "cpuManager.dump",
+          "lineNumber": 138
+        },
+        {
+          "caller": "getNewContainer",
+          "callee": "Debug.out.println",
+          "lineNumber": 174
+        },
+        {
+          "caller": "getNewContainer",
+          "callee": "new ObjectContainer",
+          "lineNumber": 175
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 15,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/scheduler/LinkedListCAS.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 175,
+      "nonEmptyLines": 146,
+      "functions": [
+        {
+          "name": "LinkedListCAS",
+          "startLine": 16,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "size",
+          "startLine": 23,
+          "endLine": 25,
+          "params": []
+        },
+        {
+          "name": "add",
+          "startLine": 27,
+          "endLine": 56,
+          "params": [
+            "newObj"
+          ]
+        },
+        {
+          "name": "removeFirst",
+          "startLine": 58,
+          "endLine": 73,
+          "params": []
+        },
+        {
+          "name": "isEmpty",
+          "startLine": 75,
+          "endLine": 77,
+          "params": []
+        },
+        {
+          "name": "contains",
+          "startLine": 79,
+          "endLine": 81,
+          "params": [
+            "o"
+          ]
+        },
+        {
+          "name": "indexOf",
+          "startLine": 83,
+          "endLine": 91,
+          "params": [
+            "o"
+          ]
+        },
+        {
+          "name": "get",
+          "startLine": 93,
+          "endLine": 100,
+          "params": [
+            "index"
+          ]
+        },
+        {
+          "name": "dump",
+          "startLine": 102,
+          "endLine": 111,
+          "params": []
+        },
+        {
+          "name": "getFirst",
+          "startLine": 114,
+          "endLine": 122,
+          "params": []
+        },
+        {
+          "name": "getNext",
+          "startLine": 123,
+          "endLine": 132,
+          "params": []
+        },
+        {
+          "name": "getNewContainer",
+          "startLine": 138,
+          "endLine": 151,
+          "params": [
+            "o"
+          ]
+        },
+        {
+          "name": "releaseContainer",
+          "startLine": 153,
+          "endLine": 156,
+          "params": [
+            "c"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "LinkedListCAS",
+          "startLine": 6,
+          "endLine": 175,
+          "methods": [
+            "LinkedListCAS",
+            "size",
+            "add",
+            "removeFirst",
+            "isEmpty",
+            "contains",
+            "indexOf",
+            "get",
+            "dump",
+            "getFirst",
+            "getNext",
+            "getNewContainer",
+            "releaseContainer"
+          ],
+          "properties": [
+            "cpuManager",
+            "first",
+            "last",
+            "enumerator",
+            "anzElements",
+            "debug",
+            "cas",
+            "ContainerPool",
+            "ContainerPoolSize"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "LinkedListCAS",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "size",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "add",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "removeFirst",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "dump",
+          "line": 102,
+          "isDefault": false
+        },
+        {
+          "name": "LinkedListCAS",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "LinkedListCAS",
+          "callee": "cpuManager.getCAS",
+          "lineNumber": 20
+        },
+        {
+          "caller": "add",
+          "callee": "Debug.out.print",
+          "lineNumber": 35
+        },
+        {
+          "caller": "add",
+          "callee": "cpuManager.dump",
+          "lineNumber": 36
+        },
+        {
+          "caller": "add",
+          "callee": "Debug.out.println",
+          "lineNumber": 37
+        },
+        {
+          "caller": "add",
+          "callee": "getNewContainer",
+          "lineNumber": 42
+        },
+        {
+          "caller": "add",
+          "callee": "getNewContainer",
+          "lineNumber": 46
+        },
+        {
+          "caller": "add",
+          "callee": "cas.casObject",
+          "lineNumber": 48
+        },
+        {
+          "caller": "add",
+          "callee": "new Error",
+          "lineNumber": 50
+        },
+        {
+          "caller": "removeFirst",
+          "callee": "cas.casObject",
+          "lineNumber": 67
+        },
+        {
+          "caller": "removeFirst",
+          "callee": "releaseContainer",
+          "lineNumber": 70
+        },
+        {
+          "caller": "isEmpty",
+          "callee": "size",
+          "lineNumber": 76
+        },
+        {
+          "caller": "contains",
+          "callee": "indexOf",
+          "lineNumber": 80
+        },
+        {
+          "caller": "dump",
+          "callee": "getFirst",
+          "lineNumber": 103
+        },
+        {
+          "caller": "dump",
+          "callee": "Debug.out.println",
+          "lineNumber": 104
+        },
+        {
+          "caller": "dump",
+          "callee": "Debug.out.println",
+          "lineNumber": 106
+        },
+        {
+          "caller": "dump",
+          "callee": "size",
+          "lineNumber": 106
+        },
+        {
+          "caller": "dump",
+          "callee": "cpuManager.dump",
+          "lineNumber": 108
+        },
+        {
+          "caller": "getNewContainer",
+          "callee": "Debug.out.println",
+          "lineNumber": 143
+        },
+        {
+          "caller": "getNewContainer",
+          "callee": "new ObjectContainer",
+          "lineNumber": 144
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 13,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/scheduler/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/scheduler/SchedulerPortal.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "classes": [
+        {
+          "name": "SchedulerPortal",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "changeScheduler"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SchedulerPortal",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/scheduler/SuperHLRRobin.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 17,
+      "nonEmptyLines": 13,
+      "functions": [
+        {
+          "name": "SuperHLRRobin",
+          "startLine": 5,
+          "endLine": 7,
+          "params": []
+        },
+        {
+          "name": "getThreads",
+          "startLine": 10,
+          "endLine": 12,
+          "params": [
+            "oldSched"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 14,
+          "endLine": 16,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "SuperHLRRobin",
+          "startLine": 3,
+          "endLine": 17,
+          "methods": [
+            "SuperHLRRobin",
+            "getThreads",
+            "toString"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SuperHLRRobin",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "getThreads",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "SuperHLRRobin",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/scheduler/ThreadList.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 13,
+      "functions": [
+        {
+          "name": "dump",
+          "startLine": 8,
+          "endLine": 15,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ThreadList",
+          "startLine": 5,
+          "endLine": 16,
+          "methods": [
+            "dump"
+          ],
+          "properties": [
+            "HLschedulerSupport"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "dump",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "ThreadList",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "dump",
+          "callee": "getFirst",
+          "lineNumber": 9
+        },
+        {
+          "caller": "dump",
+          "callee": "Debug.out.println",
+          "lineNumber": 10
+        },
+        {
+          "caller": "dump",
+          "callee": "getFirst",
+          "lineNumber": 12
+        },
+        {
+          "caller": "dump",
+          "callee": "getNext",
+          "lineNumber": 12
+        },
+        {
+          "caller": "dump",
+          "callee": "HLschedulerSupport.dumpThread",
+          "lineNumber": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    }
+  ]
+}

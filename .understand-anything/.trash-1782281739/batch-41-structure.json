@@ -1,0 +1,5111 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/jx/timer/Timer.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "classes": [
+        {
+          "name": "Timer",
+          "startLine": 3,
+          "endLine": 6,
+          "methods": [
+            "getExpiresFromNow",
+            "getTimerManager"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Timer",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/timer/TimerHandler.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "classes": [
+        {
+          "name": "TimerHandler",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [
+            "timer"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "TimerHandler",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/timerpc/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/timerpc/SleepManagerImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 63,
+      "nonEmptyLines": 55,
+      "functions": [
+        {
+          "name": "SleepManagerImpl",
+          "startLine": 10,
+          "endLine": 12,
+          "params": [
+            "args"
+          ]
+        },
+        {
+          "name": "SleepManagerImpl",
+          "startLine": 13,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "mdelay",
+          "startLine": 18,
+          "endLine": 43,
+          "params": [
+            "milliseconds"
+          ]
+        },
+        {
+          "name": "udelay",
+          "startLine": 45,
+          "endLine": 61,
+          "params": [
+            "microseconds"
+          ]
+        },
+        {
+          "name": "sleep",
+          "startLine": 62,
+          "endLine": 62,
+          "params": [
+            "sec",
+            "usec"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "SleepManagerImpl",
+          "startLine": 6,
+          "endLine": 63,
+          "methods": [
+            "SleepManagerImpl",
+            "SleepManagerImpl",
+            "mdelay",
+            "udelay",
+            "sleep"
+          ],
+          "properties": [
+            "clock",
+            "cpuManager"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SleepManagerImpl",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "SleepManagerImpl",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "mdelay",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "udelay",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "sleep",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "SleepManagerImpl",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SleepManagerImpl",
+          "callee": "InitialNaming.getInitialNaming().lookup",
+          "lineNumber": 14
+        },
+        {
+          "caller": "SleepManagerImpl",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 14
+        },
+        {
+          "caller": "SleepManagerImpl",
+          "callee": "InitialNaming.getInitialNaming().lookup",
+          "lineNumber": 15
+        },
+        {
+          "caller": "SleepManagerImpl",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 15
+        },
+        {
+          "caller": "mdelay",
+          "callee": "clock.getTimeInMillis",
+          "lineNumber": 20
+        },
+        {
+          "caller": "mdelay",
+          "callee": "clock.getTimeInMillis",
+          "lineNumber": 21
+        },
+        {
+          "caller": "sleep",
+          "callee": "new Error",
+          "lineNumber": 62
+        }
+      ],
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/timerpc/TimerEntry.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 85,
+      "nonEmptyLines": 73,
+      "functions": [
+        {
+          "name": "TimerEntry",
+          "startLine": 22,
+          "endLine": 30,
+          "params": [
+            "expires",
+            "interval",
+            "timerManager",
+            "ref",
+            "c"
+          ]
+        },
+        {
+          "name": "getExpiresFromNow",
+          "startLine": 32,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "getInterval",
+          "startLine": 36,
+          "endLine": 38,
+          "params": []
+        },
+        {
+          "name": "getTimerManager",
+          "startLine": 40,
+          "endLine": 42,
+          "params": []
+        },
+        {
+          "name": "set_next",
+          "startLine": 44,
+          "endLine": 46,
+          "params": [
+            "n"
+          ]
+        },
+        {
+          "name": "set_previous",
+          "startLine": 47,
+          "endLine": 49,
+          "params": [
+            "p"
+          ]
+        },
+        {
+          "name": "get_expires",
+          "startLine": 50,
+          "endLine": 52,
+          "params": []
+        },
+        {
+          "name": "set_expires",
+          "startLine": 53,
+          "endLine": 55,
+          "params": [
+            "e"
+          ]
+        },
+        {
+          "name": "get_diffTime",
+          "startLine": 56,
+          "endLine": 58,
+          "params": []
+        },
+        {
+          "name": "get_next",
+          "startLine": 59,
+          "endLine": 62,
+          "params": []
+        },
+        {
+          "name": "get_previous",
+          "startLine": 63,
+          "endLine": 66,
+          "params": []
+        },
+        {
+          "name": "get_arg",
+          "startLine": 67,
+          "endLine": 69,
+          "params": []
+        },
+        {
+          "name": "docall",
+          "startLine": 70,
+          "endLine": 72,
+          "params": []
+        },
+        {
+          "name": "compare",
+          "startLine": 73,
+          "endLine": 75,
+          "params": [
+            "compareto"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 77,
+          "endLine": 82,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "TimerEntry",
+          "startLine": 5,
+          "endLine": 85,
+          "methods": [
+            "TimerEntry",
+            "getExpiresFromNow",
+            "getInterval",
+            "getTimerManager",
+            "set_next",
+            "set_previous",
+            "get_expires",
+            "set_expires",
+            "get_diffTime",
+            "get_next",
+            "get_previous",
+            "get_arg",
+            "docall",
+            "compare",
+            "toString"
+          ],
+          "properties": [
+            "expires",
+            "interval",
+            "diffTime",
+            "next",
+            "previous",
+            "arg",
+            "objref",
+            "timerManager"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "TimerEntry",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "getExpiresFromNow",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "getInterval",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "getTimerManager",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "set_next",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "set_previous",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "get_expires",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "set_expires",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "get_diffTime",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "get_next",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "get_previous",
+          "line": 63,
+          "isDefault": false
+        },
+        {
+          "name": "get_arg",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "docall",
+          "line": 70,
+          "isDefault": false
+        },
+        {
+          "name": "compare",
+          "line": 73,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 77,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getExpiresFromNow",
+          "callee": "timerManager.getCurrentTime",
+          "lineNumber": 33
+        },
+        {
+          "caller": "docall",
+          "callee": "objref.timer",
+          "lineNumber": 71
+        },
+        {
+          "caller": "compare",
+          "callee": "objref.equals",
+          "lineNumber": 74
+        },
+        {
+          "caller": "toString",
+          "callee": "objref.getClass().getName",
+          "lineNumber": 79
+        },
+        {
+          "caller": "toString",
+          "callee": "objref.getClass",
+          "lineNumber": 79
+        }
+      ],
+      "metrics": {
+        "importCount": 15,
+        "exportCount": 15,
+        "functionCount": 15,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/timerpc/TimerManagerImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 221,
+      "nonEmptyLines": 189,
+      "functions": [
+        {
+          "name": "TimerManagerImpl",
+          "startLine": 21,
+          "endLine": 103,
+          "params": []
+        },
+        {
+          "name": "addMillisTimer",
+          "startLine": 105,
+          "endLine": 107,
+          "params": [
+            "expiresFromNowInMillis",
+            "handler",
+            "argument"
+          ]
+        },
+        {
+          "name": "addMillisIntervalTimer",
+          "startLine": 108,
+          "endLine": 111,
+          "params": [
+            "expiresFromNowInMillis",
+            "intervalInMillis",
+            "handler",
+            "argument"
+          ]
+        },
+        {
+          "name": "addTimer",
+          "startLine": 112,
+          "endLine": 116,
+          "params": [
+            "expiresFromNow",
+            "interval",
+            "handler",
+            "argument"
+          ]
+        },
+        {
+          "name": "addTimerEntry",
+          "startLine": 117,
+          "endLine": 134,
+          "params": [
+            "timer"
+          ]
+        },
+        {
+          "name": "deleteTimer",
+          "startLine": 142,
+          "endLine": 171,
+          "params": [
+            "which"
+          ]
+        },
+        {
+          "name": "dumptimers",
+          "startLine": 175,
+          "endLine": 189,
+          "params": []
+        },
+        {
+          "name": "getTimeBaseInMicros",
+          "startLine": 191,
+          "endLine": 194,
+          "params": []
+        },
+        {
+          "name": "getCurrentTime",
+          "startLine": 196,
+          "endLine": 199,
+          "params": []
+        },
+        {
+          "name": "getCurrentTimePlusMillis",
+          "startLine": 201,
+          "endLine": 204,
+          "params": [
+            "milliSeconds"
+          ]
+        },
+        {
+          "name": "getTimeInMillis",
+          "startLine": 207,
+          "endLine": 210,
+          "params": []
+        },
+        {
+          "name": "unblockInMillis",
+          "startLine": 212,
+          "endLine": 215,
+          "params": [
+            "thread",
+            "timeFromNowInMillis"
+          ]
+        },
+        {
+          "name": "unblockInMillisInterval",
+          "startLine": 217,
+          "endLine": 220,
+          "params": [
+            "thread",
+            "expiresFromNowInMillis",
+            "intervalInMillis"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "TimerManagerImpl",
+          "startLine": 8,
+          "endLine": 221,
+          "methods": [
+            "TimerManagerImpl",
+            "addMillisTimer",
+            "addMillisIntervalTimer",
+            "addTimer",
+            "addTimerEntry",
+            "deleteTimer",
+            "dumptimers",
+            "getTimeBaseInMicros",
+            "getCurrentTime",
+            "getCurrentTimePlusMillis",
+            "getTimeInMillis",
+            "unblockInMillis",
+            "unblockInMillisInterval"
+          ],
+          "properties": [
+            "debug",
+            "naming",
+            "clock",
+            "firsttimer",
+            "helptimer",
+            "previous",
+            "ticks",
+            "unblockHandler"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "TimerManagerImpl",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "addMillisTimer",
+          "line": 105,
+          "isDefault": false
+        },
+        {
+          "name": "addMillisIntervalTimer",
+          "line": 108,
+          "isDefault": false
+        },
+        {
+          "name": "addTimer",
+          "line": 112,
+          "isDefault": false
+        },
+        {
+          "name": "addTimerEntry",
+          "line": 117,
+          "isDefault": false
+        },
+        {
+          "name": "deleteTimer",
+          "line": 142,
+          "isDefault": false
+        },
+        {
+          "name": "dumptimers",
+          "line": 175,
+          "isDefault": false
+        },
+        {
+          "name": "getTimeBaseInMicros",
+          "line": 191,
+          "isDefault": false
+        },
+        {
+          "name": "getCurrentTime",
+          "line": 196,
+          "isDefault": false
+        },
+        {
+          "name": "getCurrentTimePlusMillis",
+          "line": 201,
+          "isDefault": false
+        },
+        {
+          "name": "getTimeInMillis",
+          "line": 207,
+          "isDefault": false
+        },
+        {
+          "name": "unblockInMillis",
+          "line": 212,
+          "isDefault": false
+        },
+        {
+          "name": "unblockInMillisInterval",
+          "line": 217,
+          "isDefault": false
+        },
+        {
+          "name": "TimerManagerImpl",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "TimerManagerImpl",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 22
+        },
+        {
+          "caller": "TimerManagerImpl",
+          "callee": "new Object",
+          "lineNumber": 23
+        },
+        {
+          "caller": "TimerManagerImpl",
+          "callee": "naming.lookup",
+          "lineNumber": 24
+        },
+        {
+          "caller": "TimerManagerImpl",
+          "callee": "naming.lookup",
+          "lineNumber": 25
+        },
+        {
+          "caller": "TimerManagerImpl",
+          "callee": "new TimerHandler",
+          "lineNumber": 27
+        },
+        {
+          "caller": "timer",
+          "callee": "cpuManager.unblock",
+          "lineNumber": 30
+        },
+        {
+          "caller": "TimerManagerImpl",
+          "callee": "cpuManager.getAtomicVariable",
+          "lineNumber": 34
+        },
+        {
+          "caller": "TimerManagerImpl",
+          "callee": "atomic.set",
+          "lineNumber": 35
+        },
+        {
+          "caller": "TimerManagerImpl",
+          "callee": "cpuManager.createCPUState",
+          "lineNumber": 36
+        },
+        {
+          "caller": "TimerManagerImpl",
+          "callee": "new ThreadEntry",
+          "lineNumber": 36
+        },
+        {
+          "caller": "run",
+          "callee": "cpuManager.setThreadName",
+          "lineNumber": 39
+        },
+        {
+          "caller": "run",
+          "callee": "atomic.blockIfNotEqual",
+          "lineNumber": 41
+        },
+        {
+          "caller": "run",
+          "callee": "atomic.set",
+          "lineNumber": 42
+        },
+        {
+          "caller": "run",
+          "callee": "Debug.out.println",
+          "lineNumber": 45
+        },
+        {
+          "caller": "run",
+          "callee": "Debug.out.println",
+          "lineNumber": 52
+        },
+        {
+          "caller": "run",
+          "callee": "helptimer.get_expires",
+          "lineNumber": 57
+        },
+        {
+          "caller": "run",
+          "callee": "Debug.out.println",
+          "lineNumber": 60
+        },
+        {
+          "caller": "run",
+          "callee": "helptimer.get_expires",
+          "lineNumber": 60
+        },
+        {
+          "caller": "run",
+          "callee": "helptimer.docall",
+          "lineNumber": 61
+        },
+        {
+          "caller": "run",
+          "callee": "helptimer.get_next",
+          "lineNumber": 62
+        },
+        {
+          "caller": "run",
+          "callee": "Debug.out.println",
+          "lineNumber": 68
+        },
+        {
+          "caller": "run",
+          "callee": "firsttimer.get_next",
+          "lineNumber": 71
+        },
+        {
+          "caller": "run",
+          "callee": "helper.set_previous",
+          "lineNumber": 73
+        },
+        {
+          "caller": "run",
+          "callee": "Debug.out.println",
+          "lineNumber": 76
+        },
+        {
+          "caller": "run",
+          "callee": "ret.getInterval",
+          "lineNumber": 78
+        },
+        {
+          "caller": "run",
+          "callee": "ret.set_expires",
+          "lineNumber": 79
+        },
+        {
+          "caller": "run",
+          "callee": "ret.get_expires",
+          "lineNumber": 79
+        },
+        {
+          "caller": "run",
+          "callee": "addTimerEntry",
+          "lineNumber": 80
+        },
+        {
+          "caller": "TimerManagerImpl",
+          "callee": "cpuManager.start",
+          "lineNumber": 92
+        },
+        {
+          "caller": "TimerManagerImpl",
+          "callee": "naming.lookup",
+          "lineNumber": 94
+        },
+        {
+          "caller": "TimerManagerImpl",
+          "callee": "new RTCImpl",
+          "lineNumber": 96
+        },
+        {
+          "caller": "TimerManagerImpl",
+          "callee": "rtc.installIntervallTimer",
+          "lineNumber": 97
+        },
+        {
+          "caller": "TimerManagerImpl",
+          "callee": "Debug.out.println",
+          "lineNumber": 98
+        },
+        {
+          "caller": "TimerManagerImpl",
+          "callee": "timerEmulation.installIntervallTimer",
+          "lineNumber": 100
+        },
+        {
+          "caller": "TimerManagerImpl",
+          "callee": "Debug.out.println",
+          "lineNumber": 101
+        },
+        {
+          "caller": "addMillisTimer",
+          "callee": "addTimer",
+          "lineNumber": 106
+        },
+        {
+          "caller": "addMillisTimer",
+          "callee": "getTimeBaseInMicros",
+          "lineNumber": 106
+        },
+        {
+          "caller": "addMillisIntervalTimer",
+          "callee": "getTimeBaseInMicros",
+          "lineNumber": 109
+        },
+        {
+          "caller": "addMillisIntervalTimer",
+          "callee": "addTimer",
+          "lineNumber": 110
+        },
+        {
+          "caller": "addTimer",
+          "callee": "new TimerEntry",
+          "lineNumber": 113
+        },
+        {
+          "caller": "addTimer",
+          "callee": "Debug.out.println",
+          "lineNumber": 114
+        },
+        {
+          "caller": "addTimer",
+          "callee": "addTimerEntry",
+          "lineNumber": 115
+        },
+        {
+          "caller": "addTimerEntry",
+          "callee": "helper.get_expires",
+          "lineNumber": 123
+        },
+        {
+          "caller": "addTimerEntry",
+          "callee": "timer.get_expires",
+          "lineNumber": 123
+        },
+        {
+          "caller": "addTimerEntry",
+          "callee": "helper.get_next",
+          "lineNumber": 125
+        },
+        {
+          "caller": "addTimerEntry",
+          "callee": "previous.set_next",
+          "lineNumber": 127
+        },
+        {
+          "caller": "addTimerEntry",
+          "callee": "timer.set_next",
+          "lineNumber": 128
+        },
+        {
+          "caller": "addTimerEntry",
+          "callee": "helper.set_previous",
+          "lineNumber": 129
+        },
+        {
+          "caller": "addTimerEntry",
+          "callee": "timer.set_previous",
+          "lineNumber": 130
+        },
+        {
+          "caller": "addTimerEntry",
+          "callee": "Debug.out.println",
+          "lineNumber": 132
+        },
+        {
+          "caller": "deleteTimer",
+          "callee": "helper.compare",
+          "lineNumber": 150
+        },
+        {
+          "caller": "deleteTimer",
+          "callee": "helper.get_next",
+          "lineNumber": 152
+        },
+        {
+          "caller": "deleteTimer",
+          "callee": "helper.get_previous",
+          "lineNumber": 153
+        },
+        {
+          "caller": "deleteTimer",
+          "callee": "prevone.set_next",
+          "lineNumber": 158
+        },
+        {
+          "caller": "deleteTimer",
+          "callee": "nextone.set_previous",
+          "lineNumber": 161
+        },
+        {
+          "caller": "deleteTimer",
+          "callee": "helper.get_next",
+          "lineNumber": 166
+        },
+        {
+          "caller": "dumptimers",
+          "callee": "Debug.out.println",
+          "lineNumber": 178
+        },
+        {
+          "caller": "dumptimers",
+          "callee": "Debug.out.println",
+          "lineNumber": 179
+        },
+        {
+          "caller": "dumptimers",
+          "callee": "Debug.out.println",
+          "lineNumber": 181
+        },
+        {
+          "caller": "dumptimers",
+          "callee": "Debug.out.println",
+          "lineNumber": 182
+        },
+        {
+          "caller": "dumptimers",
+          "callee": "helper.get_next",
+          "lineNumber": 184
+        },
+        {
+          "caller": "dumptimers",
+          "callee": "Debug.out.println",
+          "lineNumber": 187
+        },
+        {
+          "caller": "dumptimers",
+          "callee": "Debug.out.println",
+          "lineNumber": 188
+        },
+        {
+          "caller": "getTimeInMillis",
+          "callee": "clock.getTimeInMillis",
+          "lineNumber": 209
+        },
+        {
+          "caller": "unblockInMillis",
+          "callee": "addMillisTimer",
+          "lineNumber": 214
+        },
+        {
+          "caller": "unblockInMillisInterval",
+          "callee": "addMillisIntervalTimer",
+          "lineNumber": 219
+        }
+      ],
+      "metrics": {
+        "importCount": 14,
+        "exportCount": 14,
+        "functionCount": 13,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/xdr/FormatMem.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 283,
+      "nonEmptyLines": 241,
+      "functions": [
+        {
+          "name": "FormatMem",
+          "startLine": 11,
+          "endLine": 11,
+          "params": [
+            "buf",
+            "offset"
+          ]
+        },
+        {
+          "name": "FormatMem",
+          "startLine": 12,
+          "endLine": 12,
+          "params": []
+        },
+        {
+          "name": "init",
+          "startLine": 14,
+          "endLine": 14,
+          "params": [
+            "buf",
+            "offset"
+          ]
+        },
+        {
+          "name": "length",
+          "startLine": 16,
+          "endLine": 16,
+          "params": []
+        },
+        {
+          "name": "writeInt",
+          "startLine": 20,
+          "endLine": 25,
+          "params": [
+            "o",
+            "d"
+          ]
+        },
+        {
+          "name": "writeShort",
+          "startLine": 28,
+          "endLine": 31,
+          "params": [
+            "o",
+            "d"
+          ]
+        },
+        {
+          "name": "writeUShort",
+          "startLine": 33,
+          "endLine": 35,
+          "params": [
+            "o",
+            "d"
+          ]
+        },
+        {
+          "name": "writeByte",
+          "startLine": 37,
+          "endLine": 39,
+          "params": [
+            "o",
+            "d"
+          ]
+        },
+        {
+          "name": "writeBytes",
+          "startLine": 41,
+          "endLine": 45,
+          "params": [
+            "o",
+            "d"
+          ]
+        },
+        {
+          "name": "writeString",
+          "startLine": 47,
+          "endLine": 50,
+          "params": [
+            "o",
+            "s"
+          ]
+        },
+        {
+          "name": "writeIntArray",
+          "startLine": 52,
+          "endLine": 57,
+          "params": [
+            "o",
+            "d"
+          ]
+        },
+        {
+          "name": "writeByteArray",
+          "startLine": 59,
+          "endLine": 64,
+          "params": [
+            "o",
+            "d"
+          ]
+        },
+        {
+          "name": "readByte",
+          "startLine": 69,
+          "endLine": 72,
+          "params": [
+            "o"
+          ]
+        },
+        {
+          "name": "readBytes",
+          "startLine": 74,
+          "endLine": 78,
+          "params": [
+            "o",
+            "d"
+          ]
+        },
+        {
+          "name": "readShort",
+          "startLine": 80,
+          "endLine": 85,
+          "params": [
+            "o"
+          ]
+        },
+        {
+          "name": "readByte",
+          "startLine": 87,
+          "endLine": 90,
+          "params": [
+            "buf",
+            "o"
+          ]
+        },
+        {
+          "name": "readShort",
+          "startLine": 92,
+          "endLine": 97,
+          "params": [
+            "buf",
+            "o"
+          ]
+        },
+        {
+          "name": "readInt",
+          "startLine": 99,
+          "endLine": 106,
+          "params": [
+            "o"
+          ]
+        },
+        {
+          "name": "readInt",
+          "startLine": 108,
+          "endLine": 115,
+          "params": [
+            "buf",
+            "o"
+          ]
+        },
+        {
+          "name": "lengthByte",
+          "startLine": 268,
+          "endLine": 268,
+          "params": [
+            "d"
+          ]
+        },
+        {
+          "name": "lengthShort",
+          "startLine": 269,
+          "endLine": 269,
+          "params": [
+            "d"
+          ]
+        },
+        {
+          "name": "lengthInt",
+          "startLine": 270,
+          "endLine": 270,
+          "params": [
+            "d"
+          ]
+        },
+        {
+          "name": "lengthIntArray",
+          "startLine": 271,
+          "endLine": 271,
+          "params": [
+            "d"
+          ]
+        },
+        {
+          "name": "lengthShortArray",
+          "startLine": 272,
+          "endLine": 272,
+          "params": [
+            "d"
+          ]
+        },
+        {
+          "name": "lengthByteArray",
+          "startLine": 273,
+          "endLine": 273,
+          "params": [
+            "d"
+          ]
+        },
+        {
+          "name": "lengthFixByteArray",
+          "startLine": 274,
+          "endLine": 274,
+          "params": [
+            "d",
+            "l"
+          ]
+        },
+        {
+          "name": "lengthString",
+          "startLine": 275,
+          "endLine": 281,
+          "params": [
+            "s"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "FormatMem",
+          "startLine": 6,
+          "endLine": 283,
+          "methods": [
+            "FormatMem",
+            "FormatMem",
+            "init",
+            "length",
+            "writeInt",
+            "writeShort",
+            "writeUShort",
+            "writeByte",
+            "writeBytes",
+            "writeString",
+            "writeIntArray",
+            "writeByteArray",
+            "readByte",
+            "readBytes",
+            "readShort",
+            "readByte",
+            "readShort",
+            "readInt",
+            "readInt",
+            "lengthByte",
+            "lengthShort",
+            "lengthInt",
+            "lengthIntArray",
+            "lengthShortArray",
+            "lengthByteArray",
+            "lengthFixByteArray",
+            "lengthString"
+          ],
+          "properties": [
+            "debug",
+            "buf",
+            "offset"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "debug",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "length",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "lengthByte",
+          "line": 268,
+          "isDefault": false
+        },
+        {
+          "name": "lengthShort",
+          "line": 269,
+          "isDefault": false
+        },
+        {
+          "name": "lengthInt",
+          "line": 270,
+          "isDefault": false
+        },
+        {
+          "name": "lengthIntArray",
+          "line": 271,
+          "isDefault": false
+        },
+        {
+          "name": "lengthShortArray",
+          "line": 272,
+          "isDefault": false
+        },
+        {
+          "name": "lengthByteArray",
+          "line": 273,
+          "isDefault": false
+        },
+        {
+          "name": "lengthFixByteArray",
+          "line": 274,
+          "isDefault": false
+        },
+        {
+          "name": "lengthString",
+          "line": 275,
+          "isDefault": false
+        },
+        {
+          "name": "FormatMem",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "FormatMem",
+          "callee": "init",
+          "lineNumber": 11
+        },
+        {
+          "caller": "writeInt",
+          "callee": "buf.set8",
+          "lineNumber": 21
+        },
+        {
+          "caller": "writeInt",
+          "callee": "buf.set8",
+          "lineNumber": 22
+        },
+        {
+          "caller": "writeInt",
+          "callee": "buf.set8",
+          "lineNumber": 23
+        },
+        {
+          "caller": "writeInt",
+          "callee": "buf.set8",
+          "lineNumber": 24
+        },
+        {
+          "caller": "writeShort",
+          "callee": "buf.set8",
+          "lineNumber": 29
+        },
+        {
+          "caller": "writeShort",
+          "callee": "buf.set8",
+          "lineNumber": 30
+        },
+        {
+          "caller": "writeUShort",
+          "callee": "writeShort",
+          "lineNumber": 34
+        },
+        {
+          "caller": "writeByte",
+          "callee": "buf.set8",
+          "lineNumber": 38
+        },
+        {
+          "caller": "writeBytes",
+          "callee": "buf.set8",
+          "lineNumber": 43
+        },
+        {
+          "caller": "writeString",
+          "callee": "s.getBytes",
+          "lineNumber": 48
+        },
+        {
+          "caller": "writeString",
+          "callee": "writeByteArray",
+          "lineNumber": 49
+        },
+        {
+          "caller": "writeIntArray",
+          "callee": "writeInt",
+          "lineNumber": 53
+        },
+        {
+          "caller": "writeIntArray",
+          "callee": "writeInt",
+          "lineNumber": 55
+        },
+        {
+          "caller": "writeByteArray",
+          "callee": "writeInt",
+          "lineNumber": 60
+        },
+        {
+          "caller": "writeByteArray",
+          "callee": "writeByte",
+          "lineNumber": 62
+        },
+        {
+          "caller": "readByte",
+          "callee": "buf.get8",
+          "lineNumber": 71
+        },
+        {
+          "caller": "readBytes",
+          "callee": "buf.get8",
+          "lineNumber": 76
+        },
+        {
+          "caller": "readShort",
+          "callee": "readByte",
+          "lineNumber": 82
+        },
+        {
+          "caller": "readShort",
+          "callee": "readByte",
+          "lineNumber": 83
+        },
+        {
+          "caller": "readByte",
+          "callee": "buf.get8",
+          "lineNumber": 89
+        },
+        {
+          "caller": "readShort",
+          "callee": "readByte",
+          "lineNumber": 94
+        },
+        {
+          "caller": "readShort",
+          "callee": "readByte",
+          "lineNumber": 95
+        },
+        {
+          "caller": "readInt",
+          "callee": "readByte",
+          "lineNumber": 101
+        },
+        {
+          "caller": "readInt",
+          "callee": "readByte",
+          "lineNumber": 102
+        },
+        {
+          "caller": "readInt",
+          "callee": "readByte",
+          "lineNumber": 103
+        },
+        {
+          "caller": "readInt",
+          "callee": "readByte",
+          "lineNumber": 104
+        },
+        {
+          "caller": "readInt",
+          "callee": "readByte",
+          "lineNumber": 110
+        },
+        {
+          "caller": "readInt",
+          "callee": "readByte",
+          "lineNumber": 111
+        },
+        {
+          "caller": "readInt",
+          "callee": "readByte",
+          "lineNumber": 112
+        },
+        {
+          "caller": "readInt",
+          "callee": "readByte",
+          "lineNumber": 113
+        },
+        {
+          "caller": "lengthString",
+          "callee": "s.length",
+          "lineNumber": 277
+        }
+      ],
+      "metrics": {
+        "importCount": 11,
+        "exportCount": 11,
+        "functionCount": 27,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/xdr/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/xdr/XDRBuffer.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 7,
+      "classes": [
+        {
+          "name": "XDRBuffer",
+          "startLine": 3,
+          "endLine": 8,
+          "methods": [
+            "setByte",
+            "getByte",
+            "getBytes",
+            "advance"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "XDRBuffer",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/zero/debug/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/zero/DomainStarter.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 276,
+      "nonEmptyLines": 221,
+      "functions": [
+        {
+          "name": "createDomain",
+          "startLine": 9,
+          "endLine": 11,
+          "params": [
+            "libName",
+            "mainclass",
+            "gcinfo0"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 13,
+          "endLine": 15,
+          "params": [
+            "libName",
+            "mainclass",
+            "gcinfo0",
+            "gcinfo1",
+            "gcinfo2"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 17,
+          "endLine": 19,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "gcinfo0"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 21,
+          "endLine": 23,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "gcinfo0",
+            "gcinfo1",
+            "gcinfo2"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 25,
+          "endLine": 27,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "gcinfo0",
+            "argv"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 30,
+          "endLine": 32,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "gcinfo0",
+            "gcinfo1",
+            "gcinfo2",
+            "argv"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 34,
+          "endLine": 36,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "schedName",
+            "gcinfo0",
+            "gcinfo1",
+            "gcinfo2"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 38,
+          "endLine": 40,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "schedName",
+            "gcinfo0",
+            "gcinfo1",
+            "gcinfo2",
+            "naming"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 42,
+          "endLine": 44,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "schedName",
+            "gcinfo0",
+            "gcinfo1",
+            "gcinfo2",
+            "argv"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 46,
+          "endLine": 48,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "schedName",
+            "gcinfo0",
+            "gcinfo1",
+            "gcinfo2",
+            "codesize",
+            "argv"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 50,
+          "endLine": 52,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "schedName",
+            "gcinfo0",
+            "argv",
+            "portals"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 53,
+          "endLine": 55,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "schedName",
+            "gcinfo0",
+            "gcinfo1",
+            "gcinfo2",
+            "argv",
+            "portals"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 57,
+          "endLine": 59,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "gcinfo0",
+            "gcinfo1",
+            "gcinfo2",
+            "naming",
+            "interceptorName",
+            "portals"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 61,
+          "endLine": 63,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "gcinfo0",
+            "gcinfo1",
+            "gcinfo2",
+            "codesize",
+            "naming",
+            "interceptorName"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 65,
+          "endLine": 67,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "gcinfo0",
+            "gcinfo1",
+            "gcinfo2",
+            "codesize",
+            "argv",
+            "naming",
+            "interceptorName"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 69,
+          "endLine": 71,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "gcinfo0",
+            "naming"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 73,
+          "endLine": 75,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "schedName",
+            "gcinfo0",
+            "gcinfo1",
+            "gcinfo2",
+            "argv",
+            "naming"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 77,
+          "endLine": 79,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "gcinfo0",
+            "argv",
+            "naming",
+            "interceptorName"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 81,
+          "endLine": 83,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "schedName",
+            "gcinfo0",
+            "gcinfo1",
+            "gcinfo2",
+            "argv",
+            "naming",
+            "interceptorName",
+            "portals"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 85,
+          "endLine": 87,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "schedName",
+            "gcinfo0",
+            "codesize",
+            "naming",
+            "portals"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 89,
+          "endLine": 91,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "schedName",
+            "gcinfo0",
+            "codesize",
+            "argv",
+            "naming",
+            "portals"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 93,
+          "endLine": 95,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "gcinfo0",
+            "codesize"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 97,
+          "endLine": 99,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "gcinfo0",
+            "codesize",
+            "argv"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 101,
+          "endLine": 103,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "gcinfo0",
+            "gcinfo1",
+            "gcinfo2",
+            "codesize",
+            "argv",
+            "portals"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 105,
+          "endLine": 107,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "gcinfo0",
+            "gcinfo1",
+            "gcinfo2",
+            "codesize",
+            "naming",
+            "portals"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 109,
+          "endLine": 111,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "gcinfo0",
+            "gcinfo1",
+            "gcinfo2",
+            "codesize",
+            "garbageCollector"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 113,
+          "endLine": 115,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "gcinfo0",
+            "gcinfo1",
+            "gcinfo2",
+            "codesize",
+            "garbageCollector",
+            "portals"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 117,
+          "endLine": 119,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "gcinfo0",
+            "gcinfo1",
+            "gcinfo2",
+            "gcInfo3",
+            "gcInfo4",
+            "codesize",
+            "naming",
+            "garbageCollector",
+            "portals"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 121,
+          "endLine": 123,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "gcinfo0",
+            "gcinfo1",
+            "gcinfo2",
+            "codesize",
+            "naming",
+            "garbageCollector",
+            "portals"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 125,
+          "endLine": 127,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "gcinfo0",
+            "codesize",
+            "argv",
+            "portals"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 130,
+          "endLine": 132,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "schedName",
+            "gcinfo0",
+            "gcinfo1",
+            "gcinfo2",
+            "codesize",
+            "argv",
+            "naming",
+            "interceptorName",
+            "portals",
+            "garbageCollector"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 135,
+          "endLine": 137,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "schedName",
+            "gcinfo0",
+            "gcinfo1",
+            "gcinfo2",
+            "gcinfo3",
+            "gcinfo4",
+            "codesize",
+            "argv",
+            "naming",
+            "interceptorName",
+            "portals",
+            "garbageCollector"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 139,
+          "endLine": 141,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "gcinfo0",
+            "argv",
+            "schedinfo"
+          ]
+        },
+        {
+          "name": "createDomain",
+          "startLine": 143,
+          "endLine": 222,
+          "params": [
+            "title",
+            "libName",
+            "mainclass",
+            "schedName",
+            "gcinfo0",
+            "gcinfo1",
+            "gcinfo2",
+            "gcinfo3",
+            "gcinfo4",
+            "codesize",
+            "argv",
+            "naming",
+            "interceptorName",
+            "portals",
+            "garbageCollector",
+            "schedinfo"
+          ]
+        },
+        {
+          "name": "initDomainStarter",
+          "startLine": 224,
+          "endLine": 267,
+          "params": []
+        },
+        {
+          "name": "setupDomain",
+          "startLine": 269,
+          "endLine": 275,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DomainStarter",
+          "startLine": 3,
+          "endLine": 276,
+          "methods": [
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "createDomain",
+            "initDomainStarter",
+            "setupDomain"
+          ],
+          "properties": [
+            "bootfs",
+            "onc"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createDomain",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 61,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 65,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 69,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 73,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 77,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 81,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 85,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 89,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 93,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 97,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 101,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 105,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 109,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 113,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 117,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 121,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 125,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 130,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 135,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 139,
+          "isDefault": false
+        },
+        {
+          "name": "createDomain",
+          "line": 143,
+          "isDefault": false
+        },
+        {
+          "name": "initDomainStarter",
+          "line": 224,
+          "isDefault": false
+        },
+        {
+          "name": "setupDomain",
+          "line": 269,
+          "isDefault": false
+        },
+        {
+          "name": "DomainStarter",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 10
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 14
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 18
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 22
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 26
+        },
+        {
+          "caller": "createDomain",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 26
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 31
+        },
+        {
+          "caller": "createDomain",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 31
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 35
+        },
+        {
+          "caller": "createDomain",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 35
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 39
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 43
+        },
+        {
+          "caller": "createDomain",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 43
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 47
+        },
+        {
+          "caller": "createDomain",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 47
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 51
+        },
+        {
+          "caller": "createDomain",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 51
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 54
+        },
+        {
+          "caller": "createDomain",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 54
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 58
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 62
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 66
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 70
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 74
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 78
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 82
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 86
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 90
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 94
+        },
+        {
+          "caller": "createDomain",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 94
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 98
+        },
+        {
+          "caller": "createDomain",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 98
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 102
+        },
+        {
+          "caller": "createDomain",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 102
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 106
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 110
+        },
+        {
+          "caller": "createDomain",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 110
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 114
+        },
+        {
+          "caller": "createDomain",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 114
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 118
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 122
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 126
+        },
+        {
+          "caller": "createDomain",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 126
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 131
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 136
+        },
+        {
+          "caller": "createDomain",
+          "callee": "createDomain",
+          "lineNumber": 140
+        },
+        {
+          "caller": "createDomain",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 140
+        },
+        {
+          "caller": "createDomain",
+          "callee": "setupDomain",
+          "lineNumber": 151
+        },
+        {
+          "caller": "createDomain",
+          "callee": "naming.lookup",
+          "lineNumber": 152
+        },
+        {
+          "caller": "createDomain",
+          "callee": "Debug.out.println",
+          "lineNumber": 154
+        },
+        {
+          "caller": "createDomain",
+          "callee": "libName.indexOf",
+          "lineNumber": 155
+        },
+        {
+          "caller": "createDomain",
+          "callee": "libName.substring",
+          "lineNumber": 156
+        },
+        {
+          "caller": "createDomain",
+          "callee": "libName.indexOf",
+          "lineNumber": 159
+        },
+        {
+          "caller": "createDomain",
+          "callee": "libName.substring",
+          "lineNumber": 160
+        },
+        {
+          "caller": "createDomain",
+          "callee": "libName.indexOf",
+          "lineNumber": 163
+        },
+        {
+          "caller": "createDomain",
+          "callee": "libName.substring",
+          "lineNumber": 164
+        },
+        {
+          "caller": "createDomain",
+          "callee": "bootfs.lookup",
+          "lineNumber": 173
+        },
+        {
+          "caller": "createDomain",
+          "callee": "Debug.message",
+          "lineNumber": 174
+        },
+        {
+          "caller": "createDomain",
+          "callee": "bootfs.lookup",
+          "lineNumber": 175
+        },
+        {
+          "caller": "createDomain",
+          "callee": "initDomainStarter",
+          "lineNumber": 176
+        },
+        {
+          "caller": "createDomain",
+          "callee": "new Error",
+          "lineNumber": 176
+        },
+        {
+          "caller": "createDomain",
+          "callee": "onc.translate",
+          "lineNumber": 178
+        },
+        {
+          "caller": "createDomain",
+          "callee": "new Error",
+          "lineNumber": 180
+        },
+        {
+          "caller": "createDomain",
+          "callee": "ex.getClass().getName",
+          "lineNumber": 180
+        },
+        {
+          "caller": "createDomain",
+          "callee": "ex.getClass",
+          "lineNumber": 180
+        },
+        {
+          "caller": "createDomain",
+          "callee": "new Error",
+          "lineNumber": 184
+        },
+        {
+          "caller": "createDomain",
+          "callee": "Debug.out.println",
+          "lineNumber": 187
+        },
+        {
+          "caller": "createDomain",
+          "callee": "dm.createDomain",
+          "lineNumber": 195
+        },
+        {
+          "caller": "createDomain",
+          "callee": "naming.lookup",
+          "lineNumber": 211
+        },
+        {
+          "caller": "createDomain",
+          "callee": "Debug.out.println",
+          "lineNumber": 213
+        },
+        {
+          "caller": "createDomain",
+          "callee": "dm.getCurrentDomain().getName",
+          "lineNumber": 213
+        },
+        {
+          "caller": "createDomain",
+          "callee": "dm.getCurrentDomain",
+          "lineNumber": 213
+        },
+        {
+          "caller": "createDomain",
+          "callee": "secmgr.inheritPrincipal",
+          "lineNumber": 214
+        },
+        {
+          "caller": "createDomain",
+          "callee": "dm.getCurrentDomain",
+          "lineNumber": 214
+        },
+        {
+          "caller": "createDomain",
+          "callee": "secmgr.inheritInterceptor",
+          "lineNumber": 216
+        },
+        {
+          "caller": "createDomain",
+          "callee": "dm.getCurrentDomain",
+          "lineNumber": 216
+        },
+        {
+          "caller": "createDomain",
+          "callee": "secmgr.installInterceptor",
+          "lineNumber": 218
+        },
+        {
+          "caller": "initDomainStarter",
+          "callee": "setupDomain",
+          "lineNumber": 232
+        },
+        {
+          "caller": "initDomainStarter",
+          "callee": "naming.lookup",
+          "lineNumber": 233
+        },
+        {
+          "caller": "initDomainStarter",
+          "callee": "new Error",
+          "lineNumber": 235
+        },
+        {
+          "caller": "initDomainStarter",
+          "callee": "bootfs.lookup",
+          "lineNumber": 236
+        },
+        {
+          "caller": "initDomainStarter",
+          "callee": "new Error",
+          "lineNumber": 236
+        },
+        {
+          "caller": "initDomainStarter",
+          "callee": "Debug.message",
+          "lineNumber": 238
+        },
+        {
+          "caller": "initDomainStarter",
+          "callee": "dm.createDomain",
+          "lineNumber": 240
+        },
+        {
+          "caller": "initDomainStarter",
+          "callee": "naming.lookup",
+          "lineNumber": 259
+        },
+        {
+          "caller": "initDomainStarter",
+          "callee": "Debug.message",
+          "lineNumber": 260
+        },
+        {
+          "caller": "initDomainStarter",
+          "callee": "c.yield",
+          "lineNumber": 262
+        },
+        {
+          "caller": "initDomainStarter",
+          "callee": "naming.lookup",
+          "lineNumber": 263
+        },
+        {
+          "caller": "setupDomain",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 270
+        },
+        {
+          "caller": "setupDomain",
+          "callee": "naming.lookup",
+          "lineNumber": 272
+        }
+      ],
+      "metrics": {
+        "importCount": 37,
+        "exportCount": 37,
+        "functionCount": 36,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/zero/DomainTerminatedException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 4,
+      "nonEmptyLines": 3,
+      "classes": [
+        {
+          "name": "DomainTerminatedException",
+          "startLine": 3,
+          "endLine": 4,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DomainTerminatedException",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/zero/env/ConditionalVariables.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "impl_wait",
+          "startLine": 4,
+          "endLine": 6,
+          "params": [
+            "obj"
+          ]
+        },
+        {
+          "name": "impl_notify",
+          "startLine": 7,
+          "endLine": 9,
+          "params": [
+            "obj"
+          ]
+        },
+        {
+          "name": "impl_notifyAll",
+          "startLine": 10,
+          "endLine": 12,
+          "params": [
+            "obj"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ConditionalVariables",
+          "startLine": 3,
+          "endLine": 13,
+          "methods": [
+            "impl_wait",
+            "impl_notify",
+            "impl_notifyAll"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "impl_wait",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "impl_notify",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "impl_notifyAll",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "ConditionalVariables",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "impl_wait",
+          "callee": "new Error",
+          "lineNumber": 5
+        },
+        {
+          "caller": "impl_notify",
+          "callee": "new Error",
+          "lineNumber": 8
+        },
+        {
+          "caller": "impl_notifyAll",
+          "callee": "new Error",
+          "lineNumber": 11
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/zero/env/Monitor.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 10,
+      "nonEmptyLines": 9,
+      "functions": [
+        {
+          "name": "enter",
+          "startLine": 4,
+          "endLine": 6,
+          "params": [
+            "obj"
+          ]
+        },
+        {
+          "name": "exit",
+          "startLine": 7,
+          "endLine": 9,
+          "params": [
+            "obj"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Monitor",
+          "startLine": 3,
+          "endLine": 10,
+          "methods": [
+            "enter",
+            "exit"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "enter",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "exit",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "Monitor",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "enter",
+          "callee": "new Error",
+          "lineNumber": 5
+        },
+        {
+          "caller": "exit",
+          "callee": "new Error",
+          "lineNumber": 8
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/zero/env/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/zero/memory/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/zero/MemoryExhaustedException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 4,
+      "nonEmptyLines": 3,
+      "classes": [
+        {
+          "name": "MemoryExhaustedException",
+          "startLine": 3,
+          "endLine": 4,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "MemoryExhaustedException",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/zero/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/zero/timing/Control.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 76,
+      "nonEmptyLines": 55,
+      "functions": [
+        {
+          "name": "timing_empty_method",
+          "startLine": 10,
+          "endLine": 11,
+          "params": []
+        },
+        {
+          "name": "notiming_empty_method",
+          "startLine": 13,
+          "endLine": 14,
+          "params": []
+        },
+        {
+          "name": "timing_adjust_raw",
+          "startLine": 16,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "timing_adjust_boiled",
+          "startLine": 20,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "calibrate_timing",
+          "startLine": 24,
+          "endLine": 66,
+          "params": []
+        },
+        {
+          "name": "startTiming",
+          "startLine": 68,
+          "endLine": 70,
+          "params": []
+        },
+        {
+          "name": "shell",
+          "startLine": 72,
+          "endLine": 75,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "Control",
+          "startLine": 5,
+          "endLine": 76,
+          "methods": [
+            "timing_empty_method",
+            "notiming_empty_method",
+            "timing_adjust_raw",
+            "timing_adjust_boiled",
+            "calibrate_timing",
+            "startTiming",
+            "shell"
+          ],
+          "properties": [
+            "use_standart_value",
+            "cal_rounds"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "startTiming",
+          "line": 68,
+          "isDefault": false
+        },
+        {
+          "name": "shell",
+          "line": 72,
+          "isDefault": false
+        },
+        {
+          "name": "Control",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "timing_adjust_raw",
+          "callee": "notiming_empty_method",
+          "lineNumber": 17
+        },
+        {
+          "caller": "timing_adjust_boiled",
+          "callee": "timing_empty_method",
+          "lineNumber": 21
+        },
+        {
+          "caller": "calibrate_timing",
+          "callee": "InitialNaming.getInitialNaming().lookup",
+          "lineNumber": 25
+        },
+        {
+          "caller": "calibrate_timing",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 25
+        },
+        {
+          "caller": "calibrate_timing",
+          "callee": "p.startCalibration",
+          "lineNumber": 29
+        },
+        {
+          "caller": "calibrate_timing",
+          "callee": "p.endCalibration",
+          "lineNumber": 35
+        },
+        {
+          "caller": "calibrate_timing",
+          "callee": "timing_adjust_boiled",
+          "lineNumber": 37
+        },
+        {
+          "caller": "calibrate_timing",
+          "callee": "timing_adjust_raw",
+          "lineNumber": 38
+        },
+        {
+          "caller": "calibrate_timing",
+          "callee": "p.startCalibration",
+          "lineNumber": 40
+        },
+        {
+          "caller": "calibrate_timing",
+          "callee": "timing_adjust_boiled",
+          "lineNumber": 43
+        },
+        {
+          "caller": "calibrate_timing",
+          "callee": "timing_adjust_raw",
+          "lineNumber": 47
+        },
+        {
+          "caller": "calibrate_timing",
+          "callee": "p.getAverageCyclesOfMethod",
+          "lineNumber": 50
+        },
+        {
+          "caller": "calibrate_timing",
+          "callee": "p.getAverageCyclesOfMethod",
+          "lineNumber": 51
+        },
+        {
+          "caller": "calibrate_timing",
+          "callee": "p.getAverageCyclesOfMethod",
+          "lineNumber": 52
+        },
+        {
+          "caller": "calibrate_timing",
+          "callee": "p.endCalibration",
+          "lineNumber": 54
+        },
+        {
+          "caller": "calibrate_timing",
+          "callee": "timing_adjust_boiled",
+          "lineNumber": 58
+        },
+        {
+          "caller": "calibrate_timing",
+          "callee": "timing_adjust_raw",
+          "lineNumber": 62
+        },
+        {
+          "caller": "startTiming",
+          "callee": "calibrate_timing",
+          "lineNumber": 69
+        },
+        {
+          "caller": "shell",
+          "callee": "InitialNaming.getInitialNaming().lookup",
+          "lineNumber": 73
+        },
+        {
+          "caller": "shell",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 73
+        },
+        {
+          "caller": "shell",
+          "callee": "p.shell",
+          "lineNumber": 74
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 3,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/jx/zero/timing/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/jx/zip/package.bluej",
+      "language": "bluej",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/metaxa/os/devices/net/AdapterLimits.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 69,
+      "nonEmptyLines": 59,
+      "functions": [
+        {
+          "name": "FSH_CRC_APPEND_DISABLE",
+          "startLine": 48,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "FSH_TX_INDICATE",
+          "startLine": 49,
+          "endLine": 49,
+          "params": []
+        },
+        {
+          "name": "FSH_DOWN_COMPLETE",
+          "startLine": 50,
+          "endLine": 50,
+          "params": []
+        },
+        {
+          "name": "FSH_LAST_KEEP_ALIVE_PACKET",
+          "startLine": 51,
+          "endLine": 51,
+          "params": []
+        },
+        {
+          "name": "FSH_ADD_IP_CHECKSUM",
+          "startLine": 52,
+          "endLine": 52,
+          "params": []
+        },
+        {
+          "name": "FSH_ADD_TCP_CHECKSUM",
+          "startLine": 53,
+          "endLine": 53,
+          "params": []
+        },
+        {
+          "name": "FSH_ADD_UDP_CHECKSUM",
+          "startLine": 54,
+          "endLine": 54,
+          "params": []
+        },
+        {
+          "name": "FSH_ROUND_UP_DEFEAT",
+          "startLine": 55,
+          "endLine": 55,
+          "params": []
+        },
+        {
+          "name": "FSH_DPD_EMPTY",
+          "startLine": 56,
+          "endLine": 56,
+          "params": []
+        },
+        {
+          "name": "FSH_DOWN_INDICATE",
+          "startLine": 57,
+          "endLine": 57,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AdapterLimits",
+          "startLine": 5,
+          "endLine": 69,
+          "methods": [
+            "FSH_CRC_APPEND_DISABLE",
+            "FSH_TX_INDICATE",
+            "FSH_DOWN_COMPLETE",
+            "FSH_LAST_KEEP_ALIVE_PACKET",
+            "FSH_ADD_IP_CHECKSUM",
+            "FSH_ADD_TCP_CHECKSUM",
+            "FSH_ADD_UDP_CHECKSUM",
+            "FSH_ROUND_UP_DEFEAT",
+            "FSH_DPD_EMPTY",
+            "FSH_DOWN_INDICATE"
+          ],
+          "properties": [
+            "TRANSMIT_FIFO_SIZE",
+            "RECEIVE_FIFO_SIZE",
+            "ETHERNET_MAXIMUM_FRAME_SIZE",
+            "ETHERNET_MINIMUM_FRAME_SIZE",
+            "ETHERNET_ADDRESS_SIZE",
+            "ETHERNET_HEADER_SIZE",
+            "NIC_FLOW_CONTROL_ADDRESS_0",
+            "NIC_FLOW_CONTROL_ADDRESS_1",
+            "NIC_FLOW_CONTROL_ADDRESS_2",
+            "NIC_FLOW_CONTROL_ADDRESS_3",
+            "NIC_FLOW_CONTROL_ADDRESS_4",
+            "NIC_FLOW_CONTROL_ADDRESS_5",
+            "MAXIMUM_SCATTER_GATHER_LIST",
+            "NIC_DEFAULT_SEND_COUNT",
+            "NIC_DEFAULT_RECEIVE_COUNT",
+            "NIC_MINIMUM_SEND_COUNT",
+            "NIC_MAXIMUM_SEND_COUNT",
+            "NIC_MINIMUM_RECEIVE_COUNT",
+            "NIC_MAXIMUM_RECEIVE_COUNT"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ETHERNET_MAXIMUM_FRAME_SIZE",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "ETHERNET_MINIMUM_FRAME_SIZE",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "ETHERNET_ADDRESS_SIZE",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "ETHERNET_HEADER_SIZE",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "AdapterLimits",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "FSH_CRC_APPEND_DISABLE",
+          "callee": "BitPosition.bit_13",
+          "lineNumber": 48
+        },
+        {
+          "caller": "FSH_TX_INDICATE",
+          "callee": "BitPosition.bit_15",
+          "lineNumber": 49
+        },
+        {
+          "caller": "FSH_DOWN_COMPLETE",
+          "callee": "BitPosition.bit_16",
+          "lineNumber": 50
+        },
+        {
+          "caller": "FSH_LAST_KEEP_ALIVE_PACKET",
+          "callee": "BitPosition.bit_24",
+          "lineNumber": 51
+        },
+        {
+          "caller": "FSH_ADD_IP_CHECKSUM",
+          "callee": "BitPosition.bit_25",
+          "lineNumber": 52
+        },
+        {
+          "caller": "FSH_ADD_TCP_CHECKSUM",
+          "callee": "BitPosition.bit_26",
+          "lineNumber": 53
+        },
+        {
+          "caller": "FSH_ADD_UDP_CHECKSUM",
+          "callee": "BitPosition.bit_27",
+          "lineNumber": 54
+        },
+        {
+          "caller": "FSH_ROUND_UP_DEFEAT",
+          "callee": "BitPosition.bit_28",
+          "lineNumber": 55
+        },
+        {
+          "caller": "FSH_DPD_EMPTY",
+          "callee": "BitPosition.bit_29",
+          "lineNumber": 56
+        },
+        {
+          "caller": "FSH_DOWN_INDICATE",
+          "callee": "BitPosition.bit_31",
+          "lineNumber": 57
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 5,
+        "functionCount": 10,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/Befehl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 210,
+      "nonEmptyLines": 170,
+      "functions": [
+        {
+          "name": "COMMAND_GLOBAL_RESET",
+          "startLine": 19,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "GLOBAL_RESET_MASK_TP_AUI_RESET",
+          "startLine": 20,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "GLOBAL_RESET_MASK_ENDEC_RESET",
+          "startLine": 21,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "GLOBAL_RESET_MASK_NETWORK_RESET",
+          "startLine": 22,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "GLOBAL_RESET_MASK_FIFO_RESET",
+          "startLine": 23,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "GLOBAL_RESET_MASK_AISM_RESET",
+          "startLine": 24,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "GLOBAL_RESET_MASK_HOST_RESET",
+          "startLine": 25,
+          "endLine": 25,
+          "params": []
+        },
+        {
+          "name": "GLOBAL_RESET_MASK_SMB_RESET",
+          "startLine": 26,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "GLOBAL_RESET_MASK_VCO_RESET",
+          "startLine": 27,
+          "endLine": 27,
+          "params": []
+        },
+        {
+          "name": "GLOBAL_RESET_MASK_UP_DOWN_RESET",
+          "startLine": 28,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "COMMAND_SELECT_REGISTER_WINDOW",
+          "startLine": 30,
+          "endLine": 30,
+          "params": []
+        },
+        {
+          "name": "COMMAND_ENABLE_DC_CONVERTER",
+          "startLine": 31,
+          "endLine": 31,
+          "params": []
+        },
+        {
+          "name": "COMMAND_RX_DISABLE",
+          "startLine": 32,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "COMMAND_RX_ENABLE",
+          "startLine": 33,
+          "endLine": 33,
+          "params": []
+        },
+        {
+          "name": "COMMAND_RX_RESET",
+          "startLine": 39,
+          "endLine": 39,
+          "params": []
+        },
+        {
+          "name": "RX_RESET_MASK_TP_AUI_RESET",
+          "startLine": 40,
+          "endLine": 40,
+          "params": []
+        },
+        {
+          "name": "RX_RESET_MASK_ENDEC_RESET",
+          "startLine": 41,
+          "endLine": 41,
+          "params": []
+        },
+        {
+          "name": "RX_RESET_MASK_NETWORK_RESET",
+          "startLine": 42,
+          "endLine": 42,
+          "params": []
+        },
+        {
+          "name": "RX_RESET_MASK_FIFO_RESET",
+          "startLine": 43,
+          "endLine": 43,
+          "params": []
+        },
+        {
+          "name": "RX_RESET_MASK_UP_RESET",
+          "startLine": 44,
+          "endLine": 44,
+          "params": []
+        },
+        {
+          "name": "COMMAND_UP_STALL",
+          "startLine": 46,
+          "endLine": 46,
+          "params": []
+        },
+        {
+          "name": "COMMAND_UP_UNSTALL",
+          "startLine": 47,
+          "endLine": 47,
+          "params": []
+        },
+        {
+          "name": "COMMAND_DOWN_STALL",
+          "startLine": 48,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "COMMAND_DOWN_UNSTALL",
+          "startLine": 49,
+          "endLine": 49,
+          "params": []
+        },
+        {
+          "name": "COMMAND_TX_DONE",
+          "startLine": 50,
+          "endLine": 50,
+          "params": []
+        },
+        {
+          "name": "COMMAND_RX_DISCARD",
+          "startLine": 51,
+          "endLine": 51,
+          "params": []
+        },
+        {
+          "name": "COMMAND_TX_ENABLE",
+          "startLine": 52,
+          "endLine": 52,
+          "params": []
+        },
+        {
+          "name": "COMMAND_TX_DISABLE",
+          "startLine": 53,
+          "endLine": 53,
+          "params": []
+        },
+        {
+          "name": "COMMAND_TX_RESET",
+          "startLine": 59,
+          "endLine": 59,
+          "params": []
+        },
+        {
+          "name": "TX_RESET_MASK_TP_AUI_RESET",
+          "startLine": 60,
+          "endLine": 60,
+          "params": []
+        },
+        {
+          "name": "TX_RESET_MASK_ENDEC_RESET",
+          "startLine": 61,
+          "endLine": 61,
+          "params": []
+        },
+        {
+          "name": "TX_RESET_MASK_NETWORK_RESET",
+          "startLine": 62,
+          "endLine": 62,
+          "params": []
+        },
+        {
+          "name": "TX_RESET_MASK_FIFO_RESET",
+          "startLine": 63,
+          "endLine": 63,
+          "params": []
+        },
+        {
+          "name": "TX_RESET_MASK_DOWN_RESET",
+          "startLine": 64,
+          "endLine": 64,
+          "params": []
+        },
+        {
+          "name": "COMMAND_REQUEST_INTERRUPT",
+          "startLine": 65,
+          "endLine": 65,
+          "params": []
+        },
+        {
+          "name": "COMMAND_ACKNOWLEDGE_INTERRUPT",
+          "startLine": 71,
+          "endLine": 71,
+          "params": []
+        },
+        {
+          "name": "ACKNOWLEDGE_INTERRUPT_LATCH",
+          "startLine": 72,
+          "endLine": 72,
+          "params": []
+        },
+        {
+          "name": "ACKNOWLEDGE_HOST_ERROR",
+          "startLine": 73,
+          "endLine": 73,
+          "params": []
+        },
+        {
+          "name": "ACKNOWLEDGE_TX_COMPLETE",
+          "startLine": 74,
+          "endLine": 74,
+          "params": []
+        },
+        {
+          "name": "ACKNOWLEDGE_RX_COMPLETE",
+          "startLine": 75,
+          "endLine": 75,
+          "params": []
+        },
+        {
+          "name": "ACKNOWLEDGE_RX_EARLY",
+          "startLine": 76,
+          "endLine": 76,
+          "params": []
+        },
+        {
+          "name": "ACKNOWLEDGE_INTERRUPT_REQUESTED",
+          "startLine": 77,
+          "endLine": 77,
+          "params": []
+        },
+        {
+          "name": "ACKNOWLEDGE_UPDATE_STATS",
+          "startLine": 78,
+          "endLine": 78,
+          "params": []
+        },
+        {
+          "name": "ACKNOWLEDGE_LINK_EVENT",
+          "startLine": 79,
+          "endLine": 79,
+          "params": []
+        },
+        {
+          "name": "ACKNOWLEDGE_DOWN_COMPLETE",
+          "startLine": 80,
+          "endLine": 80,
+          "params": []
+        },
+        {
+          "name": "ACKNOWLEDGE_UP_COMPLETE",
+          "startLine": 81,
+          "endLine": 81,
+          "params": []
+        },
+        {
+          "name": "ACKNOWLEDGE_CMD_IN_PROGRESS",
+          "startLine": 82,
+          "endLine": 82,
+          "params": []
+        },
+        {
+          "name": "ACKNOWLEDGE_ALL_INTERRUPT",
+          "startLine": 83,
+          "endLine": 83,
+          "params": []
+        },
+        {
+          "name": "COMMAND_SET_INTERRUPT_ENABLE",
+          "startLine": 84,
+          "endLine": 84,
+          "params": []
+        },
+        {
+          "name": "DISABLE_ALL_INTERRUPT",
+          "startLine": 85,
+          "endLine": 85,
+          "params": []
+        },
+        {
+          "name": "COMMAND_SET_INDICATION_ENABLE",
+          "startLine": 86,
+          "endLine": 86,
+          "params": []
+        },
+        {
+          "name": "ENABLE_ALL_INTERRUPT",
+          "startLine": 90,
+          "endLine": 101,
+          "params": []
+        },
+        {
+          "name": "COMMAND_SET_RX_FILTER",
+          "startLine": 107,
+          "endLine": 107,
+          "params": []
+        },
+        {
+          "name": "RX_FILTER_INDIVIDUAL",
+          "startLine": 108,
+          "endLine": 108,
+          "params": []
+        },
+        {
+          "name": "RX_FILTER_ALL_MULTICAST",
+          "startLine": 109,
+          "endLine": 109,
+          "params": []
+        },
+        {
+          "name": "RX_FILTER_BROADCAST",
+          "startLine": 110,
+          "endLine": 110,
+          "params": []
+        },
+        {
+          "name": "RX_FILTER_PROMISCUOUS",
+          "startLine": 111,
+          "endLine": 111,
+          "params": []
+        },
+        {
+          "name": "RX_FILTER_MULTICAST_HASH",
+          "startLine": 112,
+          "endLine": 112,
+          "params": []
+        },
+        {
+          "name": "COMMAND_TX_AGAIN",
+          "startLine": 113,
+          "endLine": 113,
+          "params": []
+        },
+        {
+          "name": "COMMAND_STATISTICS_ENABLE",
+          "startLine": 114,
+          "endLine": 114,
+          "params": []
+        },
+        {
+          "name": "COMMAND_STATISTICS_DISABLE",
+          "startLine": 115,
+          "endLine": 115,
+          "params": []
+        },
+        {
+          "name": "COMMAND_DISABLE_DC_CONVERTER",
+          "startLine": 116,
+          "endLine": 116,
+          "params": []
+        },
+        {
+          "name": "COMMAND_SET_HASH_FILTER_BIT",
+          "startLine": 117,
+          "endLine": 117,
+          "params": []
+        },
+        {
+          "name": "COMMAND_TX_FIFO_BISECT",
+          "startLine": 118,
+          "endLine": 118,
+          "params": []
+        },
+        {
+          "name": "Befehl",
+          "startLine": 129,
+          "endLine": 133,
+          "params": [
+            "ports",
+            "timerManager"
+          ]
+        },
+        {
+          "name": "NicReadPortByte",
+          "startLine": 135,
+          "endLine": 137,
+          "params": [
+            "Adapter",
+            "Register"
+          ]
+        },
+        {
+          "name": "NicReadPortShort",
+          "startLine": 139,
+          "endLine": 141,
+          "params": [
+            "Adapter",
+            "Register"
+          ]
+        },
+        {
+          "name": "NicReadPortLong",
+          "startLine": 143,
+          "endLine": 145,
+          "params": [
+            "Adapter",
+            "Register"
+          ]
+        },
+        {
+          "name": "NicWritePortByte",
+          "startLine": 147,
+          "endLine": 149,
+          "params": [
+            "Adapter",
+            "Register",
+            "Value"
+          ]
+        },
+        {
+          "name": "NicWritePortShort",
+          "startLine": 151,
+          "endLine": 153,
+          "params": [
+            "Adapter",
+            "Register",
+            "Value"
+          ]
+        },
+        {
+          "name": "NicWritePortLong",
+          "startLine": 155,
+          "endLine": 157,
+          "params": [
+            "Adapter",
+            "Register",
+            "Value"
+          ]
+        },
+        {
+          "name": "NicCommand",
+          "startLine": 159,
+          "endLine": 161,
+          "params": [
+            "Adapter",
+            "Command"
+          ]
+        },
+        {
+          "name": "NicCommandWait",
+          "startLine": 166,
+          "endLine": 185,
+          "params": [
+            "Adapter",
+            "Command"
+          ]
+        },
+        {
+          "name": "NicMaskAllInterrupt",
+          "startLine": 187,
+          "endLine": 190,
+          "params": [
+            "Adapter"
+          ]
+        },
+        {
+          "name": "NicUnmaskAllInterrupt",
+          "startLine": 192,
+          "endLine": 197,
+          "params": [
+            "Adapter"
+          ]
+        },
+        {
+          "name": "NicAcknowledgeAllInterrupt",
+          "startLine": 199,
+          "endLine": 201,
+          "params": [
+            "Adapter"
+          ]
+        },
+        {
+          "name": "NicEnableAllInterruptIndication",
+          "startLine": 203,
+          "endLine": 205,
+          "params": [
+            "Adapter"
+          ]
+        },
+        {
+          "name": "NicDisableAllInterruptIndication",
+          "startLine": 207,
+          "endLine": 209,
+          "params": [
+            "Adapter"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Befehl",
+          "startLine": 13,
+          "endLine": 210,
+          "methods": [
+            "COMMAND_GLOBAL_RESET",
+            "GLOBAL_RESET_MASK_TP_AUI_RESET",
+            "GLOBAL_RESET_MASK_ENDEC_RESET",
+            "GLOBAL_RESET_MASK_NETWORK_RESET",
+            "GLOBAL_RESET_MASK_FIFO_RESET",
+            "GLOBAL_RESET_MASK_AISM_RESET",
+            "GLOBAL_RESET_MASK_HOST_RESET",
+            "GLOBAL_RESET_MASK_SMB_RESET",
+            "GLOBAL_RESET_MASK_VCO_RESET",
+            "GLOBAL_RESET_MASK_UP_DOWN_RESET",
+            "COMMAND_SELECT_REGISTER_WINDOW",
+            "COMMAND_ENABLE_DC_CONVERTER",
+            "COMMAND_RX_DISABLE",
+            "COMMAND_RX_ENABLE",
+            "COMMAND_RX_RESET",
+            "RX_RESET_MASK_TP_AUI_RESET",
+            "RX_RESET_MASK_ENDEC_RESET",
+            "RX_RESET_MASK_NETWORK_RESET",
+            "RX_RESET_MASK_FIFO_RESET",
+            "RX_RESET_MASK_UP_RESET",
+            "COMMAND_UP_STALL",
+            "COMMAND_UP_UNSTALL",
+            "COMMAND_DOWN_STALL",
+            "COMMAND_DOWN_UNSTALL",
+            "COMMAND_TX_DONE",
+            "COMMAND_RX_DISCARD",
+            "COMMAND_TX_ENABLE",
+            "COMMAND_TX_DISABLE",
+            "COMMAND_TX_RESET",
+            "TX_RESET_MASK_TP_AUI_RESET",
+            "TX_RESET_MASK_ENDEC_RESET",
+            "TX_RESET_MASK_NETWORK_RESET",
+            "TX_RESET_MASK_FIFO_RESET",
+            "TX_RESET_MASK_DOWN_RESET",
+            "COMMAND_REQUEST_INTERRUPT",
+            "COMMAND_ACKNOWLEDGE_INTERRUPT",
+            "ACKNOWLEDGE_INTERRUPT_LATCH",
+            "ACKNOWLEDGE_HOST_ERROR",
+            "ACKNOWLEDGE_TX_COMPLETE",
+            "ACKNOWLEDGE_RX_COMPLETE",
+            "ACKNOWLEDGE_RX_EARLY",
+            "ACKNOWLEDGE_INTERRUPT_REQUESTED",
+            "ACKNOWLEDGE_UPDATE_STATS",
+            "ACKNOWLEDGE_LINK_EVENT",
+            "ACKNOWLEDGE_DOWN_COMPLETE",
+            "ACKNOWLEDGE_UP_COMPLETE",
+            "ACKNOWLEDGE_CMD_IN_PROGRESS",
+            "ACKNOWLEDGE_ALL_INTERRUPT",
+            "COMMAND_SET_INTERRUPT_ENABLE",
+            "DISABLE_ALL_INTERRUPT",
+            "COMMAND_SET_INDICATION_ENABLE",
+            "ENABLE_ALL_INTERRUPT",
+            "COMMAND_SET_RX_FILTER",
+            "RX_FILTER_INDIVIDUAL",
+            "RX_FILTER_ALL_MULTICAST",
+            "RX_FILTER_BROADCAST",
+            "RX_FILTER_PROMISCUOUS",
+            "RX_FILTER_MULTICAST_HASH",
+            "COMMAND_TX_AGAIN",
+            "COMMAND_STATISTICS_ENABLE",
+            "COMMAND_STATISTICS_DISABLE",
+            "COMMAND_DISABLE_DC_CONVERTER",
+            "COMMAND_SET_HASH_FILTER_BIT",
+            "COMMAND_TX_FIFO_BISECT",
+            "Befehl",
+            "NicReadPortByte",
+            "NicReadPortShort",
+            "NicReadPortLong",
+            "NicWritePortByte",
+            "NicWritePortShort",
+            "NicWritePortLong",
+            "NicCommand",
+            "NicCommandWait",
+            "NicMaskAllInterrupt",
+            "NicUnmaskAllInterrupt",
+            "NicAcknowledgeAllInterrupt",
+            "NicEnableAllInterruptIndication",
+            "NicDisableAllInterruptIndication"
+          ],
+          "properties": [
+            "INTSTATUS_COMMAND_REGISTER",
+            "ports",
+            "timerManager",
+            "cpuManager"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Befehl",
+          "line": 129,
+          "isDefault": false
+        },
+        {
+          "name": "NicReadPortByte",
+          "line": 135,
+          "isDefault": false
+        },
+        {
+          "name": "NicReadPortShort",
+          "line": 139,
+          "isDefault": false
+        },
+        {
+          "name": "NicReadPortLong",
+          "line": 143,
+          "isDefault": false
+        },
+        {
+          "name": "NicWritePortByte",
+          "line": 147,
+          "isDefault": false
+        },
+        {
+          "name": "NicWritePortShort",
+          "line": 151,
+          "isDefault": false
+        },
+        {
+          "name": "NicWritePortLong",
+          "line": 155,
+          "isDefault": false
+        },
+        {
+          "name": "NicCommand",
+          "line": 159,
+          "isDefault": false
+        },
+        {
+          "name": "NicCommandWait",
+          "line": 166,
+          "isDefault": false
+        },
+        {
+          "name": "NicMaskAllInterrupt",
+          "line": 187,
+          "isDefault": false
+        },
+        {
+          "name": "NicUnmaskAllInterrupt",
+          "line": 192,
+          "isDefault": false
+        },
+        {
+          "name": "NicAcknowledgeAllInterrupt",
+          "line": 199,
+          "isDefault": false
+        },
+        {
+          "name": "NicEnableAllInterruptIndication",
+          "line": 203,
+          "isDefault": false
+        },
+        {
+          "name": "NicDisableAllInterruptIndication",
+          "line": 207,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GLOBAL_RESET_MASK_TP_AUI_RESET",
+          "callee": "BitPosition.bit_0",
+          "lineNumber": 20
+        },
+        {
+          "caller": "GLOBAL_RESET_MASK_ENDEC_RESET",
+          "callee": "BitPosition.bit_1",
+          "lineNumber": 21
+        },
+        {
+          "caller": "GLOBAL_RESET_MASK_NETWORK_RESET",
+          "callee": "BitPosition.bit_2",
+          "lineNumber": 22
+        },
+        {
+          "caller": "GLOBAL_RESET_MASK_FIFO_RESET",
+          "callee": "BitPosition.bit_3",
+          "lineNumber": 23
+        },
+        {
+          "caller": "GLOBAL_RESET_MASK_AISM_RESET",
+          "callee": "BitPosition.bit_4",
+          "lineNumber": 24
+        },
+        {
+          "caller": "GLOBAL_RESET_MASK_HOST_RESET",
+          "callee": "BitPosition.bit_5",
+          "lineNumber": 25
+        },
+        {
+          "caller": "GLOBAL_RESET_MASK_SMB_RESET",
+          "callee": "BitPosition.bit_6",
+          "lineNumber": 26
+        },
+        {
+          "caller": "GLOBAL_RESET_MASK_VCO_RESET",
+          "callee": "BitPosition.bit_7",
+          "lineNumber": 27
+        },
+        {
+          "caller": "GLOBAL_RESET_MASK_UP_DOWN_RESET",
+          "callee": "BitPosition.bit_8",
+          "lineNumber": 28
+        },
+        {
+          "caller": "RX_RESET_MASK_TP_AUI_RESET",
+          "callee": "BitPosition.bit_0",
+          "lineNumber": 40
+        },
+        {
+          "caller": "RX_RESET_MASK_ENDEC_RESET",
+          "callee": "BitPosition.bit_1",
+          "lineNumber": 41
+        },
+        {
+          "caller": "RX_RESET_MASK_NETWORK_RESET",
+          "callee": "BitPosition.bit_2",
+          "lineNumber": 42
+        },
+        {
+          "caller": "RX_RESET_MASK_FIFO_RESET",
+          "callee": "BitPosition.bit_3",
+          "lineNumber": 43
+        },
+        {
+          "caller": "RX_RESET_MASK_UP_RESET",
+          "callee": "BitPosition.bit_8",
+          "lineNumber": 44
+        },
+        {
+          "caller": "TX_RESET_MASK_TP_AUI_RESET",
+          "callee": "BitPosition.bit_0",
+          "lineNumber": 60
+        },
+        {
+          "caller": "TX_RESET_MASK_ENDEC_RESET",
+          "callee": "BitPosition.bit_1",
+          "lineNumber": 61
+        },
+        {
+          "caller": "TX_RESET_MASK_NETWORK_RESET",
+          "callee": "BitPosition.bit_2",
+          "lineNumber": 62
+        },
+        {
+          "caller": "TX_RESET_MASK_FIFO_RESET",
+          "callee": "BitPosition.bit_3",
+          "lineNumber": 63
+        },
+        {
+          "caller": "TX_RESET_MASK_DOWN_RESET",
+          "callee": "BitPosition.bit_8",
+          "lineNumber": 64
+        },
+        {
+          "caller": "ACKNOWLEDGE_INTERRUPT_LATCH",
+          "callee": "BitPosition.bit_0",
+          "lineNumber": 72
+        },
+        {
+          "caller": "ACKNOWLEDGE_HOST_ERROR",
+          "callee": "BitPosition.bit_1",
+          "lineNumber": 73
+        },
+        {
+          "caller": "ACKNOWLEDGE_TX_COMPLETE",
+          "callee": "BitPosition.bit_2",
+          "lineNumber": 74
+        },
+        {
+          "caller": "ACKNOWLEDGE_RX_COMPLETE",
+          "callee": "BitPosition.bit_4",
+          "lineNumber": 75
+        },
+        {
+          "caller": "ACKNOWLEDGE_RX_EARLY",
+          "callee": "BitPosition.bit_5",
+          "lineNumber": 76
+        },
+        {
+          "caller": "ACKNOWLEDGE_INTERRUPT_REQUESTED",
+          "callee": "BitPosition.bit_6",
+          "lineNumber": 77
+        },
+        {
+          "caller": "ACKNOWLEDGE_UPDATE_STATS",
+          "callee": "BitPosition.bit_7",
+          "lineNumber": 78
+        },
+        {
+          "caller": "ACKNOWLEDGE_LINK_EVENT",
+          "callee": "BitPosition.bit_8",
+          "lineNumber": 79
+        },
+        {
+          "caller": "ACKNOWLEDGE_DOWN_COMPLETE",
+          "callee": "BitPosition.bit_9",
+          "lineNumber": 80
+        },
+        {
+          "caller": "ACKNOWLEDGE_UP_COMPLETE",
+          "callee": "BitPosition.bit_10",
+          "lineNumber": 81
+        },
+        {
+          "caller": "ACKNOWLEDGE_CMD_IN_PROGRESS",
+          "callee": "BitPosition.bit_12",
+          "lineNumber": 82
+        },
+        {
+          "caller": "ENABLE_ALL_INTERRUPT",
+          "callee": "ACKNOWLEDGE_HOST_ERROR",
+          "lineNumber": 90
+        },
+        {
+          "caller": "ENABLE_ALL_INTERRUPT",
+          "callee": "ACKNOWLEDGE_TX_COMPLETE",
+          "lineNumber": 91
+        },
+        {
+          "caller": "ENABLE_ALL_INTERRUPT",
+          "callee": "ACKNOWLEDGE_RX_COMPLETE",
+          "lineNumber": 92
+        },
+        {
+          "caller": "ENABLE_ALL_INTERRUPT",
+          "callee": "ACKNOWLEDGE_RX_EARLY",
+          "lineNumber": 93
+        },
+        {
+          "caller": "ENABLE_ALL_INTERRUPT",
+          "callee": "ACKNOWLEDGE_INTERRUPT_REQUESTED",
+          "lineNumber": 94
+        },
+        {
+          "caller": "ENABLE_ALL_INTERRUPT",
+          "callee": "ACKNOWLEDGE_UPDATE_STATS",
+          "lineNumber": 95
+        },
+        {
+          "caller": "ENABLE_ALL_INTERRUPT",
+          "callee": "ACKNOWLEDGE_LINK_EVENT",
+          "lineNumber": 96
+        },
+        {
+          "caller": "ENABLE_ALL_INTERRUPT",
+          "callee": "ACKNOWLEDGE_DOWN_COMPLETE",
+          "lineNumber": 97
+        },
+        {
+          "caller": "ENABLE_ALL_INTERRUPT",
+          "callee": "ACKNOWLEDGE_UP_COMPLETE",
+          "lineNumber": 98
+        },
+        {
+          "caller": "ENABLE_ALL_INTERRUPT",
+          "callee": "ACKNOWLEDGE_CMD_IN_PROGRESS",
+          "lineNumber": 99
+        },
+        {
+          "caller": "RX_FILTER_INDIVIDUAL",
+          "callee": "BitPosition.bit_0",
+          "lineNumber": 108
+        },
+        {
+          "caller": "RX_FILTER_ALL_MULTICAST",
+          "callee": "BitPosition.bit_1",
+          "lineNumber": 109
+        },
+        {
+          "caller": "RX_FILTER_BROADCAST",
+          "callee": "BitPosition.bit_2",
+          "lineNumber": 110
+        },
+        {
+          "caller": "RX_FILTER_PROMISCUOUS",
+          "callee": "BitPosition.bit_3",
+          "lineNumber": 111
+        },
+        {
+          "caller": "RX_FILTER_MULTICAST_HASH",
+          "callee": "BitPosition.bit_4",
+          "lineNumber": 112
+        },
+        {
+          "caller": "Befehl",
+          "callee": "InitialNaming.getInitialNaming().lookup",
+          "lineNumber": 132
+        },
+        {
+          "caller": "Befehl",
+          "callee": "InitialNaming.getInitialNaming",
+          "lineNumber": 132
+        },
+        {
+          "caller": "NicReadPortByte",
+          "callee": "ports.inb",
+          "lineNumber": 136
+        },
+        {
+          "caller": "NicReadPortShort",
+          "callee": "ports.inw",
+          "lineNumber": 140
+        },
+        {
+          "caller": "NicReadPortLong",
+          "callee": "ports.inl",
+          "lineNumber": 144
+        },
+        {
+          "caller": "NicWritePortByte",
+          "callee": "ports.outb",
+          "lineNumber": 148
+        },
+        {
+          "caller": "NicWritePortShort",
+          "callee": "ports.outw",
+          "lineNumber": 152
+        },
+        {
+          "caller": "NicWritePortLong",
+          "callee": "ports.outl",
+          "lineNumber": 156
+        },
+        {
+          "caller": "NicCommand",
+          "callee": "NicWritePortShort",
+          "lineNumber": 160
+        },
+        {
+          "caller": "NicCommandWait",
+          "callee": "NicWritePortShort",
+          "lineNumber": 171
+        },
+        {
+          "caller": "NicCommandWait",
+          "callee": "timerManager.getCurrentTime",
+          "lineNumber": 173
+        },
+        {
+          "caller": "NicCommandWait",
+          "callee": "NicReadPortShort",
+          "lineNumber": 176
+        },
+        {
+          "caller": "NicCommandWait",
+          "callee": "ComInit.udelay",
+          "lineNumber": 177
+        },
+        {
+          "caller": "NicCommandWait",
+          "callee": "Register.INTSTATUS_COMMAND_IN_PROGRESS",
+          "lineNumber": 178
+        },
+        {
+          "caller": "NicCommandWait",
+          "callee": "timerManager.getCurrentTime",
+          "lineNumber": 178
+        },
+        {
+          "caller": "NicCommandWait",
+          "callee": "timerManager.getCurrentTime",
+          "lineNumber": 180
+        },
+        {
+          "caller": "NicCommandWait",
+          "callee": "Debug.out.println",
+          "lineNumber": 181
+        },
+        {
+          "caller": "NicMaskAllInterrupt",
+          "callee": "NicCommand",
+          "lineNumber": 188
+        },
+        {
+          "caller": "NicMaskAllInterrupt",
+          "callee": "COMMAND_SET_INTERRUPT_ENABLE",
+          "lineNumber": 188
+        },
+        {
+          "caller": "NicMaskAllInterrupt",
+          "callee": "DISABLE_ALL_INTERRUPT",
+          "lineNumber": 188
+        },
+        {
+          "caller": "NicMaskAllInterrupt",
+          "callee": "NicReadPortShort",
+          "lineNumber": 189
+        },
+        {
+          "caller": "NicUnmaskAllInterrupt",
+          "callee": "NicCommand",
+          "lineNumber": 195
+        },
+        {
+          "caller": "NicUnmaskAllInterrupt",
+          "callee": "COMMAND_SET_INTERRUPT_ENABLE",
+          "lineNumber": 195
+        },
+        {
+          "caller": "NicUnmaskAllInterrupt",
+          "callee": "ENABLE_ALL_INTERRUPT",
+          "lineNumber": 195
+        },
+        {
+          "caller": "NicUnmaskAllInterrupt",
+          "callee": "NicReadPortShort",
+          "lineNumber": 196
+        },
+        {
+          "caller": "NicAcknowledgeAllInterrupt",
+          "callee": "NicCommand",
+          "lineNumber": 200
+        },
+        {
+          "caller": "NicAcknowledgeAllInterrupt",
+          "callee": "COMMAND_ACKNOWLEDGE_INTERRUPT",
+          "lineNumber": 200
+        },
+        {
+          "caller": "NicAcknowledgeAllInterrupt",
+          "callee": "ACKNOWLEDGE_ALL_INTERRUPT",
+          "lineNumber": 200
+        },
+        {
+          "caller": "NicEnableAllInterruptIndication",
+          "callee": "NicCommand",
+          "lineNumber": 204
+        },
+        {
+          "caller": "NicEnableAllInterruptIndication",
+          "callee": "COMMAND_SET_INDICATION_ENABLE",
+          "lineNumber": 204
+        },
+        {
+          "caller": "NicEnableAllInterruptIndication",
+          "callee": "ENABLE_ALL_INTERRUPT",
+          "lineNumber": 204
+        },
+        {
+          "caller": "NicDisableAllInterruptIndication",
+          "callee": "NicCommand",
+          "lineNumber": 208
+        },
+        {
+          "caller": "NicDisableAllInterruptIndication",
+          "callee": "COMMAND_SET_INDICATION_ENABLE",
+          "lineNumber": 208
+        },
+        {
+          "caller": "NicDisableAllInterruptIndication",
+          "callee": "DISABLE_ALL_INTERRUPT",
+          "lineNumber": 208
+        }
+      ],
+      "metrics": {
+        "importCount": 14,
+        "exportCount": 14,
+        "functionCount": 78,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/BitNotExistingException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 14,
+      "functions": [
+        {
+          "name": "BitNotExistingException",
+          "startLine": 9,
+          "endLine": 11,
+          "params": []
+        },
+        {
+          "name": "BitNotExistingException",
+          "startLine": 12,
+          "endLine": 14,
+          "params": [
+            "arg"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "BitNotExistingException",
+          "startLine": 8,
+          "endLine": 15,
+          "methods": [
+            "BitNotExistingException",
+            "BitNotExistingException"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "BitNotExistingException",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "BitNotExistingException",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/metaxa/os/devices/net/CapabilitiesWord.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 127,
+      "nonEmptyLines": 121,
+      "functions": [
+        {
+          "name": "CapabilitiesWord",
+          "startLine": 20,
+          "endLine": 39,
+          "params": [
+            "supportsplugnplay",
+            "supportsfullduplex",
+            "supportslargepackets",
+            "supportsslavedma",
+            "supportsseconddma",
+            "supportsfullbusmaster",
+            "supportsfragbusmaster",
+            "supportscrcpassthrough",
+            "supportstxdone",
+            "supportsnotxlength",
+            "supportsrxrepeat",
+            "supportssnooping",
+            "supports100mbps",
+            "supportspowermanagement"
+          ]
+        },
+        {
+          "name": "set_SupportsPlugNPlay",
+          "startLine": 41,
+          "endLine": 43,
+          "params": [
+            "supportsplugnplay"
+          ]
+        },
+        {
+          "name": "set_SupportsFullDuplex",
+          "startLine": 44,
+          "endLine": 46,
+          "params": [
+            "supportsfullduplex"
+          ]
+        },
+        {
+          "name": "set_SupportsLargePackets",
+          "startLine": 47,
+          "endLine": 49,
+          "params": [
+            "supportslargepackets"
+          ]
+        },
+        {
+          "name": "set_SupportsSlaveDMA",
+          "startLine": 50,
+          "endLine": 52,
+          "params": [
+            "supportsslavedma"
+          ]
+        },
+        {
+          "name": "set_SupportsSecondDMA",
+          "startLine": 53,
+          "endLine": 55,
+          "params": [
+            "supportsseconddma"
+          ]
+        },
+        {
+          "name": "set_SupportsFullBusMaster",
+          "startLine": 56,
+          "endLine": 58,
+          "params": [
+            "supportsfullbusmaster"
+          ]
+        },
+        {
+          "name": "set_SupportsFragBusMaster",
+          "startLine": 59,
+          "endLine": 61,
+          "params": [
+            "supportsfragbusmaster"
+          ]
+        },
+        {
+          "name": "set_SupportsCRCPassThrough",
+          "startLine": 62,
+          "endLine": 64,
+          "params": [
+            "supportscrcpassthrough"
+          ]
+        },
+        {
+          "name": "set_SupportsTxDone",
+          "startLine": 65,
+          "endLine": 67,
+          "params": [
+            "supportstxdone"
+          ]
+        },
+        {
+          "name": "set_SupportsNoTxLength",
+          "startLine": 68,
+          "endLine": 70,
+          "params": [
+            "supportsnotxlength"
+          ]
+        },
+        {
+          "name": "set_SupportsRxRepeat",
+          "startLine": 71,
+          "endLine": 73,
+          "params": [
+            "supportsrxrepeat"
+          ]
+        },
+        {
+          "name": "set_SupportsSnooping",
+          "startLine": 74,
+          "endLine": 76,
+          "params": [
+            "supportssnooping"
+          ]
+        },
+        {
+          "name": "set_Supports100Mbps",
+          "startLine": 77,
+          "endLine": 79,
+          "params": [
+            "supports100mbps"
+          ]
+        },
+        {
+          "name": "set_SupportsPowerManagement",
+          "startLine": 80,
+          "endLine": 82,
+          "params": [
+            "supportspowermanagement"
+          ]
+        },
+        {
+          "name": "get_SupportsPlugNPlay",
+          "startLine": 84,
+          "endLine": 86,
+          "params": []
+        },
+        {
+          "name": "get_SupportsFullDuplex",
+          "startLine": 87,
+          "endLine": 89,
+          "params": []
+        },
+        {
+          "name": "get_SupportsLargePackets",
+          "startLine": 90,
+          "endLine": 92,
+          "params": []
+        },
+        {
+          "name": "get_SupportsSlaveDMA",
+          "startLine": 93,
+          "endLine": 95,
+          "params": []
+        },
+        {
+          "name": "get_SupportsSecondDMA",
+          "startLine": 96,
+          "endLine": 98,
+          "params": []
+        },
+        {
+          "name": "get_SupportsFullBusMaster",
+          "startLine": 99,
+          "endLine": 101,
+          "params": []
+        },
+        {
+          "name": "get_SupportsFragBusMaster",
+          "startLine": 102,
+          "endLine": 104,
+          "params": []
+        },
+        {
+          "name": "get_SupportsCRCPassThrough",
+          "startLine": 105,
+          "endLine": 107,
+          "params": []
+        },
+        {
+          "name": "get_SupportsTxDone",
+          "startLine": 108,
+          "endLine": 110,
+          "params": []
+        },
+        {
+          "name": "get_SupportsNoTxLength",
+          "startLine": 111,
+          "endLine": 113,
+          "params": []
+        },
+        {
+          "name": "get_SupportsRxRepeat",
+          "startLine": 114,
+          "endLine": 116,
+          "params": []
+        },
+        {
+          "name": "get_SupportsSnnoping",
+          "startLine": 117,
+          "endLine": 119,
+          "params": []
+        },
+        {
+          "name": "get_Supports100Mbps",
+          "startLine": 120,
+          "endLine": 122,
+          "params": []
+        },
+        {
+          "name": "get_SupportsPowerManagement",
+          "startLine": 123,
+          "endLine": 125,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CapabilitiesWord",
+          "startLine": 3,
+          "endLine": 127,
+          "methods": [
+            "CapabilitiesWord",
+            "set_SupportsPlugNPlay",
+            "set_SupportsFullDuplex",
+            "set_SupportsLargePackets",
+            "set_SupportsSlaveDMA",
+            "set_SupportsSecondDMA",
+            "set_SupportsFullBusMaster",
+            "set_SupportsFragBusMaster",
+            "set_SupportsCRCPassThrough",
+            "set_SupportsTxDone",
+            "set_SupportsNoTxLength",
+            "set_SupportsRxRepeat",
+            "set_SupportsSnooping",
+            "set_Supports100Mbps",
+            "set_SupportsPowerManagement",
+            "get_SupportsPlugNPlay",
+            "get_SupportsFullDuplex",
+            "get_SupportsLargePackets",
+            "get_SupportsSlaveDMA",
+            "get_SupportsSecondDMA",
+            "get_SupportsFullBusMaster",
+            "get_SupportsFragBusMaster",
+            "get_SupportsCRCPassThrough",
+            "get_SupportsTxDone",
+            "get_SupportsNoTxLength",
+            "get_SupportsRxRepeat",
+            "get_SupportsSnnoping",
+            "get_Supports100Mbps",
+            "get_SupportsPowerManagement"
+          ],
+          "properties": [
+            "SupportsPlugNPlay",
+            "SupportsFullDuplex",
+            "SupportsLargePackets",
+            "SupportsSlaveDMA",
+            "SupportsSecondDMA",
+            "SupportsFullBusMaster",
+            "SupportsFragBusMaster",
+            "SupportsCRCPassThrough",
+            "SupportsTxDone",
+            "SupportsNoTxLength",
+            "SupportsRxRepeat",
+            "SupportsSnooping",
+            "Supports100Mbps",
+            "SupportsPowerManagement"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "set_SupportsPlugNPlay",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "set_SupportsFullDuplex",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "set_SupportsLargePackets",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "set_SupportsSlaveDMA",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "set_SupportsSecondDMA",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "set_SupportsFullBusMaster",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "set_SupportsFragBusMaster",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "set_SupportsCRCPassThrough",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "set_SupportsTxDone",
+          "line": 65,
+          "isDefault": false
+        },
+        {
+          "name": "set_SupportsNoTxLength",
+          "line": 68,
+          "isDefault": false
+        },
+        {
+          "name": "set_SupportsRxRepeat",
+          "line": 71,
+          "isDefault": false
+        },
+        {
+          "name": "set_SupportsSnooping",
+          "line": 74,
+          "isDefault": false
+        },
+        {
+          "name": "set_Supports100Mbps",
+          "line": 77,
+          "isDefault": false
+        },
+        {
+          "name": "set_SupportsPowerManagement",
+          "line": 80,
+          "isDefault": false
+        },
+        {
+          "name": "get_SupportsPlugNPlay",
+          "line": 84,
+          "isDefault": false
+        },
+        {
+          "name": "get_SupportsFullDuplex",
+          "line": 87,
+          "isDefault": false
+        },
+        {
+          "name": "get_SupportsLargePackets",
+          "line": 90,
+          "isDefault": false
+        },
+        {
+          "name": "get_SupportsSlaveDMA",
+          "line": 93,
+          "isDefault": false
+        },
+        {
+          "name": "get_SupportsSecondDMA",
+          "line": 96,
+          "isDefault": false
+        },
+        {
+          "name": "get_SupportsFullBusMaster",
+          "line": 99,
+          "isDefault": false
+        },
+        {
+          "name": "get_SupportsFragBusMaster",
+          "line": 102,
+          "isDefault": false
+        },
+        {
+          "name": "get_SupportsCRCPassThrough",
+          "line": 105,
+          "isDefault": false
+        },
+        {
+          "name": "get_SupportsTxDone",
+          "line": 108,
+          "isDefault": false
+        },
+        {
+          "name": "get_SupportsNoTxLength",
+          "line": 111,
+          "isDefault": false
+        },
+        {
+          "name": "get_SupportsRxRepeat",
+          "line": 114,
+          "isDefault": false
+        },
+        {
+          "name": "get_SupportsSnnoping",
+          "line": 117,
+          "isDefault": false
+        },
+        {
+          "name": "get_Supports100Mbps",
+          "line": 120,
+          "isDefault": false
+        },
+        {
+          "name": "get_SupportsPowerManagement",
+          "line": 123,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "CapabilitiesWord",
+          "callee": "set_SupportsPlugNPlay",
+          "lineNumber": 25
+        },
+        {
+          "caller": "CapabilitiesWord",
+          "callee": "set_SupportsFullDuplex",
+          "lineNumber": 26
+        },
+        {
+          "caller": "CapabilitiesWord",
+          "callee": "set_SupportsLargePackets",
+          "lineNumber": 27
+        },
+        {
+          "caller": "CapabilitiesWord",
+          "callee": "set_SupportsSlaveDMA",
+          "lineNumber": 28
+        },
+        {
+          "caller": "CapabilitiesWord",
+          "callee": "set_SupportsSecondDMA",
+          "lineNumber": 29
+        },
+        {
+          "caller": "CapabilitiesWord",
+          "callee": "set_SupportsFullBusMaster",
+          "lineNumber": 30
+        },
+        {
+          "caller": "CapabilitiesWord",
+          "callee": "set_SupportsFragBusMaster",
+          "lineNumber": 31
+        },
+        {
+          "caller": "CapabilitiesWord",
+          "callee": "set_SupportsCRCPassThrough",
+          "lineNumber": 32
+        },
+        {
+          "caller": "CapabilitiesWord",
+          "callee": "set_SupportsTxDone",
+          "lineNumber": 33
+        },
+        {
+          "caller": "CapabilitiesWord",
+          "callee": "set_SupportsNoTxLength",
+          "lineNumber": 34
+        },
+        {
+          "caller": "CapabilitiesWord",
+          "callee": "set_SupportsRxRepeat",
+          "lineNumber": 35
+        },
+        {
+          "caller": "CapabilitiesWord",
+          "callee": "set_SupportsSnooping",
+          "lineNumber": 36
+        },
+        {
+          "caller": "CapabilitiesWord",
+          "callee": "set_Supports100Mbps",
+          "lineNumber": 37
+        },
+        {
+          "caller": "CapabilitiesWord",
+          "callee": "set_SupportsPowerManagement",
+          "lineNumber": 38
+        }
+      ],
+      "metrics": {
+        "importCount": 28,
+        "exportCount": 28,
+        "functionCount": 29,
+        "classCount": 1
+      }
+    }
+  ]
+}

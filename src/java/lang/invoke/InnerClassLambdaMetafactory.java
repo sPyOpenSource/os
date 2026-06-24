@@ -67,7 +67,7 @@ package java.lang.invoke;
    // private static final AtomicInteger counter = new AtomicInteger(0);
 
     // For dumping generated classes to disk, for debugging purposes
-    private static ProxyClassesDumper dumper;
+    //private static ProxyClassesDumper dumper;
 
     /*static {
         final String key = "jdk.internal.lambda.dumpProxyClasses";
@@ -158,7 +158,7 @@ package java.lang.invoke;
         } else {
             argNames = argDescs = EMPTY_STRING_ARRAY;
         }*/
-        dumper = null;
+        //dumper = null;
         argNames = null;
         argDescs = null;
     }

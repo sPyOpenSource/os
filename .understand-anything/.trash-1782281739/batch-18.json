@@ -1,0 +1,786 @@
+{
+  "batchIndex": 18,
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "b87fa1f8c1e5b7f8",
+      "type": "file",
+      "name": "Introspector.j",
+      "filePath": "src/java/beans/Introspector.j",
+      "language": "j",
+      "totalLines": 426,
+      "nonEmptyLines": 395,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "id": "94b6cef6a9076ed1",
+      "type": "file",
+      "name": "MethodDescriptor.java",
+      "filePath": "src/java/beans/MethodDescriptor.java",
+      "language": "java",
+      "totalLines": 77,
+      "nonEmptyLines": 63,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "0ca47f942beeca94",
+      "type": "file",
+      "name": "package.bluej",
+      "filePath": "src/java/beans/package.bluej",
+      "language": "bluej",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "fileCategory": "package-marker"
+    },
+    {
+      "id": "c8c45a64aeb5b3ae",
+      "type": "file",
+      "name": "ParameterDescriptor.java",
+      "filePath": "src/java/beans/ParameterDescriptor.java",
+      "language": "java",
+      "totalLines": 41,
+      "nonEmptyLines": 32,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "f9a9766b165b601e",
+      "type": "file",
+      "name": "PropertyChangeEvent.java",
+      "filePath": "src/java/beans/PropertyChangeEvent.java",
+      "language": "java",
+      "totalLines": 113,
+      "nonEmptyLines": 97,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "402fe1641542cdef",
+      "type": "file",
+      "name": "PropertyDescriptor.j",
+      "filePath": "src/java/beans/PropertyDescriptor.j",
+      "language": "j",
+      "totalLines": 332,
+      "nonEmptyLines": 304,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "id": "f89091a392862bdd",
+      "type": "file",
+      "name": "PropertyEditorManager.j",
+      "filePath": "src/java/beans/PropertyEditorManager.j",
+      "language": "j",
+      "totalLines": 150,
+      "nonEmptyLines": 130,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "id": "86f4ab07bbff053a",
+      "type": "file",
+      "name": "PropertyEditorSupport.java",
+      "filePath": "src/java/beans/PropertyEditorSupport.java",
+      "language": "java",
+      "totalLines": 195,
+      "nonEmptyLines": 169,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 14,
+        "functionCount": 15,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "a56659f4cb228937",
+      "type": "file",
+      "name": "PropertyVetoException.java",
+      "filePath": "src/java/beans/PropertyVetoException.java",
+      "language": "java",
+      "totalLines": 57,
+      "nonEmptyLines": 45,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "d921a4fde7f78abc",
+      "type": "file",
+      "name": "SimpleBeanInfo.j",
+      "filePath": "src/java/beans/SimpleBeanInfo.j",
+      "language": "j",
+      "totalLines": 127,
+      "nonEmptyLines": 108,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "id": "dc0fb0284b46e544",
+      "type": "file",
+      "name": "BufferedInputStream.java",
+      "filePath": "src/java/io/BufferedInputStream.java",
+      "language": "java",
+      "totalLines": 577,
+      "nonEmptyLines": 489,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 11,
+        "functionCount": 11,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "6447400f119d67a1",
+      "type": "file",
+      "name": "BufferedOutputStream.java",
+      "filePath": "src/java/io/BufferedOutputStream.java",
+      "language": "java",
+      "totalLines": 222,
+      "nonEmptyLines": 187,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "0fb3fa3d0f43f18f",
+      "type": "file",
+      "name": "CharArrayReader.java",
+      "filePath": "src/java/io/CharArrayReader.java",
+      "language": "java",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "3c0d3bd13cd27c31",
+      "type": "file",
+      "name": "CharArrayWriter.java",
+      "filePath": "src/java/io/CharArrayWriter.java",
+      "language": "java",
+      "totalLines": 11,
+      "nonEmptyLines": 11,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "82df744399714dd2",
+      "type": "file",
+      "name": "CharConversionException.java",
+      "filePath": "src/java/io/CharConversionException.java",
+      "language": "java",
+      "totalLines": 86,
+      "nonEmptyLines": 70,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "fa690e19a1d5dd35",
+      "type": "file",
+      "name": "DataInputStream.java",
+      "filePath": "src/java/io/DataInputStream.java",
+      "language": "java",
+      "totalLines": 256,
+      "nonEmptyLines": 219,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 20,
+        "functionCount": 22,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "4342acf763a6b8c0",
+      "type": "file",
+      "name": "DataOutputStream.java",
+      "filePath": "src/java/io/DataOutputStream.java",
+      "language": "java",
+      "totalLines": 140,
+      "nonEmptyLines": 120,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 17,
+        "functionCount": 16,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "487919ba3e1cbb5f",
+      "type": "file",
+      "name": "EOFException.java",
+      "filePath": "src/java/io/EOFException.java",
+      "language": "java",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "83ddda2ba3d9d571",
+      "type": "file",
+      "name": "FileDescriptor.java",
+      "filePath": "src/java/io/FileDescriptor.java",
+      "language": "java",
+      "totalLines": 15,
+      "nonEmptyLines": 11,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "30433dd6f99ba85c",
+      "type": "file",
+      "name": "FileOutputStream.java",
+      "filePath": "src/java/io/FileOutputStream.java",
+      "language": "java",
+      "totalLines": 68,
+      "nonEmptyLines": 57,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "d7bac1f494fab745",
+      "type": "file",
+      "name": "FilePermission.java",
+      "filePath": "src/java/io/FilePermission.java",
+      "language": "java",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "705c0c2b0f63972f",
+      "type": "file",
+      "name": "FileReader.java",
+      "filePath": "src/java/io/FileReader.java",
+      "language": "java",
+      "totalLines": 66,
+      "nonEmptyLines": 59,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "6f0c905e8397e79a",
+      "type": "file",
+      "name": "FileWriter.java",
+      "filePath": "src/java/io/FileWriter.java",
+      "language": "java",
+      "totalLines": 6,
+      "nonEmptyLines": 6,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "a7fa0f8be5658620",
+      "type": "file",
+      "name": "InterruptedIOException.java",
+      "filePath": "src/java/io/InterruptedIOException.java",
+      "language": "java",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "50696e5a275ab1cc",
+      "type": "file",
+      "name": "InvalidObjectException.java",
+      "filePath": "src/java/io/InvalidObjectException.java",
+      "language": "java",
+      "totalLines": 57,
+      "nonEmptyLines": 45,
+      "entryPoint": false,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "ff0745fb3f8a85be",
+      "type": "class",
+      "name": "MethodDescriptor",
+      "filePath": "src/java/beans/MethodDescriptor.java",
+      "startLine": 40,
+      "endLine": 76,
+      "methods": [
+        "MethodDescriptor",
+        "MethodDescriptor",
+        "getParameterDescriptors",
+        "getMethod"
+      ],
+      "properties": [
+        "m",
+        "parameterDescriptors"
+      ]
+    },
+    {
+      "id": "9fe379e436f1779c",
+      "type": "class",
+      "name": "ParameterDescriptor",
+      "filePath": "src/java/beans/ParameterDescriptor.java",
+      "startLine": 39,
+      "endLine": 41,
+      "methods": [],
+      "properties": []
+    },
+    {
+      "id": "9a2e956a81818d40",
+      "type": "class",
+      "name": "PropertyChangeEvent",
+      "filePath": "src/java/beans/PropertyChangeEvent.java",
+      "startLine": 51,
+      "endLine": 113,
+      "methods": [
+        "PropertyChangeEvent",
+        "getPropertyName",
+        "getOldValue",
+        "getNewValue",
+        "setPropagationId",
+        "getPropagationId"
+      ],
+      "properties": [
+        "propertyName",
+        "oldValue",
+        "newValue",
+        "propagationId",
+        "serialVersionUID"
+      ]
+    },
+    {
+      "id": "db970f9333df27e0",
+      "type": "class",
+      "name": "PropertyEditorSupport",
+      "filePath": "src/java/beans/PropertyEditorSupport.java",
+      "startLine": 46,
+      "endLine": 194,
+      "methods": [
+        "PropertyEditorSupport",
+        "PropertyEditorSupport",
+        "setValue",
+        "getValue",
+        "isPaintable",
+        "paintValue",
+        "getJavaInitializationString",
+        "getAsText",
+        "setAsText",
+        "getTags",
+        "getCustomEditor",
+        "supportsCustomEditor",
+        "addPropertyChangeListener",
+        "removePropertyChangeListener",
+        "firePropertyChange"
+      ],
+      "properties": [
+        "eventSource",
+        "val",
+        "pSupport"
+      ]
+    },
+    {
+      "id": "8aae64fa722c2ee6",
+      "type": "class",
+      "name": "PropertyVetoException",
+      "filePath": "src/java/beans/PropertyVetoException.java",
+      "startLine": 39,
+      "endLine": 57,
+      "methods": [
+        "PropertyVetoException",
+        "getPropertyChangeEvent"
+      ],
+      "properties": [
+        "evt",
+        "serialVersionUID"
+      ]
+    },
+    {
+      "id": "1918c568ac77f680",
+      "type": "class",
+      "name": "BufferedInputStream",
+      "filePath": "src/java/io/BufferedInputStream.java",
+      "startLine": 49,
+      "endLine": 577,
+      "methods": [
+        "BufferedInputStream",
+        "BufferedInputStream",
+        "close",
+        "mark",
+        "markSupported",
+        "reset",
+        "available",
+        "skip",
+        "read",
+        "read",
+        "refillBuffer"
+      ],
+      "properties": [
+        "DEFAULT_BUFFER_SIZE",
+        "buf",
+        "count",
+        "pos",
+        "markpos",
+        "marklimit",
+        "markbuf",
+        "markbufpos",
+        "markbufcount",
+        "doing_reset",
+        "primed"
+      ]
+    },
+    {
+      "id": "9a13bc0729bc32f9",
+      "type": "class",
+      "name": "BufferedOutputStream",
+      "filePath": "src/java/io/BufferedOutputStream.java",
+      "startLine": 42,
+      "endLine": 222,
+      "methods": [
+        "BufferedOutputStream",
+        "BufferedOutputStream",
+        "flush",
+        "write",
+        "write"
+      ],
+      "properties": [
+        "DEFAULT_BUFFER_SIZE",
+        "buf",
+        "count"
+      ]
+    },
+    {
+      "id": "8c034705f5d3ded5",
+      "type": "class",
+      "name": "CharArrayReader",
+      "filePath": "src/java/io/CharArrayReader.java",
+      "startLine": 2,
+      "endLine": 4,
+      "methods": [
+        "CharArrayReader"
+      ],
+      "properties": []
+    },
+    {
+      "id": "7da56c5e5c353525",
+      "type": "class",
+      "name": "CharArrayWriter",
+      "filePath": "src/java/io/CharArrayWriter.java",
+      "startLine": 2,
+      "endLine": 11,
+      "methods": [
+        "CharArrayWriter",
+        "toString",
+        "write",
+        "close",
+        "toCharArray",
+        "write",
+        "write",
+        "writeTo"
+      ],
+      "properties": []
+    },
+    {
+      "id": "85ebb906b3a50d2c",
+      "type": "class",
+      "name": "CharConversionException",
+      "filePath": "src/java/io/CharConversionException.java",
+      "startLine": 56,
+      "endLine": 85,
+      "methods": [
+        "CharConversionException",
+        "CharConversionException"
+      ],
+      "properties": []
+    },
+    {
+      "id": "97a490e5c1be1eac",
+      "type": "class",
+      "name": "DataInputStream",
+      "filePath": "src/java/io/DataInputStream.java",
+      "startLine": 3,
+      "endLine": 255,
+      "methods": [
+        "DataInputStream",
+        "UTFBits",
+        "readUTF",
+        "unread0",
+        "read0",
+        "read",
+        "read",
+        "readFully",
+        "readFully",
+        "readBoolean",
+        "readByte",
+        "readUnsignedByte",
+        "readChar",
+        "readShort",
+        "readUnsignedShort",
+        "readInt",
+        "readLong",
+        "readFloat",
+        "readDouble",
+        "readLine",
+        "readUTF",
+        "skipBytes"
+      ],
+      "properties": [
+        "last"
+      ]
+    },
+    {
+      "id": "22ca8b960c7209dd",
+      "type": "class",
+      "name": "DataOutputStream",
+      "filePath": "src/java/io/DataOutputStream.java",
+      "startLine": 3,
+      "endLine": 140,
+      "methods": [
+        "DataOutputStream",
+        "write",
+        "write",
+        "flush",
+        "writeBoolean",
+        "writeByte",
+        "writeShort",
+        "writeChar",
+        "writeInt",
+        "writeLong",
+        "writeFloat",
+        "writeDouble",
+        "writeBytes",
+        "writeChars",
+        "writeUTF",
+        "size"
+      ],
+      "properties": [
+        "written"
+      ]
+    },
+    {
+      "id": "07a560c3424aa980",
+      "type": "class",
+      "name": "EOFException",
+      "filePath": "src/java/io/EOFException.java",
+      "startLine": 3,
+      "endLine": 6,
+      "methods": [
+        "EOFException",
+        "EOFException"
+      ],
+      "properties": []
+    },
+    {
+      "id": "746fc49e313b7905",
+      "type": "class",
+      "name": "FileDescriptor",
+      "filePath": "src/java/io/FileDescriptor.java",
+      "startLine": 3,
+      "endLine": 14,
+      "methods": [
+        "FileDescriptor",
+        "FileDescriptor",
+        "valid"
+      ],
+      "properties": [
+        "in",
+        "out",
+        "err",
+        "fd"
+      ]
+    },
+    {
+      "id": "ec3e7153fe3e0b9c",
+      "type": "class",
+      "name": "FileOutputStream",
+      "filePath": "src/java/io/FileOutputStream.java",
+      "startLine": 3,
+      "endLine": 67,
+      "methods": [
+        "finalize",
+        "close",
+        "getFD",
+        "write",
+        "write",
+        "write",
+        "FileOutputStream",
+        "FileOutputStream",
+        "FileOutputStream"
+      ],
+      "properties": [
+        "fd"
+      ]
+    },
+    {
+      "id": "f565ac49ca8cb93b",
+      "type": "class",
+      "name": "FilePermission",
+      "filePath": "src/java/io/FilePermission.java",
+      "startLine": 2,
+      "endLine": 4,
+      "methods": [
+        "FilePermission"
+      ],
+      "properties": []
+    },
+    {
+      "id": "24784960ee918ce2",
+      "type": "class",
+      "name": "FileReader",
+      "filePath": "src/java/io/FileReader.java",
+      "startLine": 26,
+      "endLine": 66,
+      "methods": [
+        "FileReader",
+        "FileReader",
+        "FileReader"
+      ],
+      "properties": []
+    },
+    {
+      "id": "32550ebd2a70c9f6",
+      "type": "class",
+      "name": "FileWriter",
+      "filePath": "src/java/io/FileWriter.java",
+      "startLine": 2,
+      "endLine": 6,
+      "methods": [
+        "FileWriter",
+        "FileWriter",
+        "FileWriter"
+      ],
+      "properties": []
+    },
+    {
+      "id": "065bd6a1a736d2c1",
+      "type": "class",
+      "name": "InterruptedIOException",
+      "filePath": "src/java/io/InterruptedIOException.java",
+      "startLine": 3,
+      "endLine": 6,
+      "methods": [
+        "InterruptedIOException",
+        "InterruptedIOException"
+      ],
+      "properties": []
+    },
+    {
+      "id": "d2614fbf5c482fce",
+      "type": "class",
+      "name": "InvalidObjectException",
+      "filePath": "src/java/io/InvalidObjectException.java",
+      "startLine": 38,
+      "endLine": 56,
+      "methods": [
+        "InvalidObjectException"
+      ],
+      "properties": []
+    }
+  ],
+  "edges": []
+}

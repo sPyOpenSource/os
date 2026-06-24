@@ -1,0 +1,182 @@
+{
+  "batchIndex": 18,
+  "files": [
+    {
+      "path": "src/java/beans/Introspector.j",
+      "language": "j",
+      "sizeLines": 426,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/MethodDescriptor.java",
+      "language": "java",
+      "sizeLines": 77,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/package.bluej",
+      "language": "bluej",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/ParameterDescriptor.java",
+      "language": "java",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/PropertyChangeEvent.java",
+      "language": "java",
+      "sizeLines": 113,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/PropertyDescriptor.j",
+      "language": "j",
+      "sizeLines": 332,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/PropertyEditorManager.j",
+      "language": "j",
+      "sizeLines": 150,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/PropertyEditorSupport.java",
+      "language": "java",
+      "sizeLines": 195,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/PropertyVetoException.java",
+      "language": "java",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/beans/SimpleBeanInfo.j",
+      "language": "j",
+      "sizeLines": 127,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/BufferedInputStream.java",
+      "language": "java",
+      "sizeLines": 577,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/BufferedOutputStream.java",
+      "language": "java",
+      "sizeLines": 222,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/CharArrayReader.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/CharArrayWriter.java",
+      "language": "java",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/CharConversionException.java",
+      "language": "java",
+      "sizeLines": 86,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/DataInputStream.java",
+      "language": "java",
+      "sizeLines": 256,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/DataOutputStream.java",
+      "language": "java",
+      "sizeLines": 140,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/EOFException.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/FileDescriptor.java",
+      "language": "java",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/FileOutputStream.java",
+      "language": "java",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/FilePermission.java",
+      "language": "java",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/FileReader.java",
+      "language": "java",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/FileWriter.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/InterruptedIOException.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/java/io/InvalidObjectException.java",
+      "language": "java",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/java/beans/Introspector.j": [],
+    "src/java/beans/MethodDescriptor.java": [],
+    "src/java/beans/package.bluej": [],
+    "src/java/beans/ParameterDescriptor.java": [],
+    "src/java/beans/PropertyChangeEvent.java": [],
+    "src/java/beans/PropertyDescriptor.j": [],
+    "src/java/beans/PropertyEditorManager.j": [],
+    "src/java/beans/PropertyEditorSupport.java": [],
+    "src/java/beans/PropertyVetoException.java": [],
+    "src/java/beans/SimpleBeanInfo.j": [],
+    "src/java/io/BufferedInputStream.java": [],
+    "src/java/io/BufferedOutputStream.java": [],
+    "src/java/io/CharArrayReader.java": [],
+    "src/java/io/CharArrayWriter.java": [],
+    "src/java/io/CharConversionException.java": [],
+    "src/java/io/DataInputStream.java": [],
+    "src/java/io/DataOutputStream.java": [],
+    "src/java/io/EOFException.java": [],
+    "src/java/io/FileDescriptor.java": [],
+    "src/java/io/FileOutputStream.java": [],
+    "src/java/io/FilePermission.java": [],
+    "src/java/io/FileReader.java": [],
+    "src/java/io/FileWriter.java": [],
+    "src/java/io/InterruptedIOException.java": [],
+    "src/java/io/InvalidObjectException.java": []
+  }
+}

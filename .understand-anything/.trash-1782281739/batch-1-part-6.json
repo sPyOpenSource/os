@@ -1,0 +1,1191 @@
+{
+  "schemaVersion": 1,
+  "batchIndex": 1,
+  "part": 6,
+  "nodes": [
+    {
+      "id": "cls:src/jx/classfile/MethodData.java:MethodData",
+      "type": "class",
+      "label": "MethodData",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "MethodData",
+        "startLine": 15,
+        "endLine": 269,
+        "numMethods": 37
+      }
+    },
+    {
+      "id": "file:src/jx/classfile/MethodData.java",
+      "type": "file",
+      "label": "MethodData.java",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "language": "java",
+        "sizeLines": 161,
+        "fileCategory": "code",
+        "exists": true
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:MethodData",
+      "type": "function",
+      "label": "MethodData",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "MethodData",
+        "startLine": 52,
+        "endLine": 73,
+        "params": [
+          "accessFlags",
+          "methodNameCPIndex",
+          "methodTypeCPIndex",
+          "methodNameCPEntry",
+          "methodTypeCPEntry",
+          "numExceptionClasses",
+          "exceptionClassCPIndex",
+          "codeData",
+          "declaringClass",
+          "allowNative"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:copy",
+      "type": "function",
+      "label": "copy",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "copy",
+        "startLine": 75,
+        "endLine": 80,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:getBasicReturnType",
+      "type": "function",
+      "label": "getBasicReturnType",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "getBasicReturnType",
+        "startLine": 112,
+        "endLine": 115,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:getBytecode",
+      "type": "function",
+      "label": "getBytecode",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "getBytecode",
+        "startLine": 136,
+        "endLine": 136,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:getCode",
+      "type": "function",
+      "label": "getCode",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "getCode",
+        "startLine": 131,
+        "endLine": 131,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:getDeclaringClass",
+      "type": "function",
+      "label": "getDeclaringClass",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "getDeclaringClass",
+        "startLine": 31,
+        "endLine": 31,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:getDeclaringClassSource",
+      "type": "function",
+      "label": "getDeclaringClassSource",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "getDeclaringClassSource",
+        "startLine": 32,
+        "endLine": 32,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:getDescription",
+      "type": "function",
+      "label": "getDescription",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "getDescription",
+        "startLine": 222,
+        "endLine": 227,
+        "params": [
+          "cPool"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:getExceptionHandlers",
+      "type": "function",
+      "label": "getExceptionHandlers",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "getExceptionHandlers",
+        "startLine": 151,
+        "endLine": 153,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:getInitialVariableTypes",
+      "type": "function",
+      "label": "getInitialVariableTypes",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "getInitialVariableTypes",
+        "startLine": 98,
+        "endLine": 110,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:getLineNumberTable",
+      "type": "function",
+      "label": "getLineNumberTable",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "getLineNumberTable",
+        "startLine": 154,
+        "endLine": 154,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:getMethodName",
+      "type": "function",
+      "label": "getMethodName",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "getMethodName",
+        "startLine": 85,
+        "endLine": 85,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:getMethodNameCPEntry",
+      "type": "function",
+      "label": "getMethodNameCPEntry",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "getMethodNameCPEntry",
+        "startLine": 34,
+        "endLine": 34,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:getMethodType",
+      "type": "function",
+      "label": "getMethodType",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "getMethodType",
+        "startLine": 86,
+        "endLine": 86,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:getModifiers",
+      "type": "function",
+      "label": "getModifiers",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "getModifiers",
+        "startLine": 234,
+        "endLine": 234,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:getName",
+      "type": "function",
+      "label": "getName",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "getName",
+        "startLine": 82,
+        "endLine": 84,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:getNumInstr",
+      "type": "function",
+      "label": "getNumInstr",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "getNumInstr",
+        "startLine": 139,
+        "endLine": 150,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:getNumLocalVariables",
+      "type": "function",
+      "label": "getNumLocalVariables",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "getNumLocalVariables",
+        "startLine": 137,
+        "endLine": 137,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:getNumStackSlots",
+      "type": "function",
+      "label": "getNumStackSlots",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "getNumStackSlots",
+        "startLine": 138,
+        "endLine": 138,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:getParameterTypes",
+      "type": "function",
+      "label": "getParameterTypes",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "getParameterTypes",
+        "startLine": 122,
+        "endLine": 129,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:getReturnType",
+      "type": "function",
+      "label": "getReturnType",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "getReturnType",
+        "startLine": 117,
+        "endLine": 119,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:getVerifyResult",
+      "type": "function",
+      "label": "getVerifyResult",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "getVerifyResult",
+        "startLine": 254,
+        "endLine": 266,
+        "params": [
+          "type"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:isAbstract",
+      "type": "function",
+      "label": "isAbstract",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "isAbstract",
+        "startLine": 95,
+        "endLine": 95,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:isFinal",
+      "type": "function",
+      "label": "isFinal",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "isFinal",
+        "startLine": 92,
+        "endLine": 92,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:isNative",
+      "type": "function",
+      "label": "isNative",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "isNative",
+        "startLine": 94,
+        "endLine": 94,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:isPrivate",
+      "type": "function",
+      "label": "isPrivate",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "isPrivate",
+        "startLine": 89,
+        "endLine": 89,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:isProtected",
+      "type": "function",
+      "label": "isProtected",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "isProtected",
+        "startLine": 90,
+        "endLine": 90,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:isPublic",
+      "type": "function",
+      "label": "isPublic",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "isPublic",
+        "startLine": 88,
+        "endLine": 88,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:isStatic",
+      "type": "function",
+      "label": "isStatic",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "isStatic",
+        "startLine": 91,
+        "endLine": 91,
+        "params": []
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:readAttribute",
+      "type": "function",
+      "label": "readAttribute",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "readAttribute",
+        "startLine": 190,
+        "endLine": 203,
+        "params": [
+          "input",
+          "cPool"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:readFromClassFile",
+      "type": "function",
+      "label": "readFromClassFile",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "readFromClassFile",
+        "startLine": 156,
+        "endLine": 188,
+        "params": [
+          "input",
+          "cPool"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:setMethodTypeCPEntry",
+      "type": "function",
+      "label": "setMethodTypeCPEntry",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "setMethodTypeCPEntry",
+        "startLine": 35,
+        "endLine": 35,
+        "params": [
+          "newEntry"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:setVerifyResult",
+      "type": "function",
+      "label": "setVerifyResult",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "setVerifyResult",
+        "startLine": 237,
+        "endLine": 253,
+        "params": [
+          "newElm"
+        ]
+      }
+    },
+    {
+      "id": "fn:src/jx/classfile/MethodData.java:toString",
+      "type": "function",
+      "label": "toString",
+      "properties": {
+        "path": "src/jx/classfile/MethodData.java",
+        "name": "toString",
+        "startLine": 215,
+        "endLine": 220,
+        "params": []
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "cls:src/jx/classfile/MethodData.java:MethodData",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "cls:src/jx/classfile/MethodData.java:MethodData",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getDeclaringClass",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getDeclaringClass",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getDeclaringClassSource",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getDeclaringClassSource",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getMethodNameCPEntry",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getMethodNameCPEntry",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:setMethodTypeCPEntry",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:setMethodTypeCPEntry",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:MethodData",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:MethodData",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:MethodData",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:MethodData",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:MethodData",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:MethodData",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:copy",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:copy",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getName",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getName",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getMethodName",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getMethodName",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getMethodType",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getMethodType",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:isPublic",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:isPublic",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:isPrivate",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:isPrivate",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:isProtected",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:isProtected",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:isStatic",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:isStatic",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:isFinal",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:isFinal",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:isNative",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:isNative",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:isAbstract",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:isAbstract",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getInitialVariableTypes",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getInitialVariableTypes",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getBasicReturnType",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getBasicReturnType",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getReturnType",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getReturnType",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getParameterTypes",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getParameterTypes",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getCode",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getCode",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getBytecode",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getBytecode",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getNumLocalVariables",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getNumLocalVariables",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getNumStackSlots",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getNumStackSlots",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getNumInstr",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getNumInstr",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getExceptionHandlers",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getExceptionHandlers",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getLineNumberTable",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getLineNumberTable",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:readFromClassFile",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:readFromClassFile",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:readAttribute",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:toString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:toString",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getDescription",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getDescription",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getModifiers",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getModifiers",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:setVerifyResult",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:setVerifyResult",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getVerifyResult",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "fn:src/jx/classfile/MethodData.java:getVerifyResult",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:MethodData",
+      "target": "fn:src/jx/classfile/MethodData.java:readFromClassFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:getName",
+      "target": "fn:src/jx/classfile/MethodData.java:getMethodName",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:getInitialVariableTypes",
+      "target": "fn:src/jx/classfile/MethodData.java:isStatic",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:readFromClassFile",
+      "target": "fn:src/jx/classfile/MethodData.java:readAttribute",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:readFromClassFile",
+      "target": "fn:src/jx/classfile/MethodData.java:isNative",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:readFromClassFile",
+      "target": "fn:src/jx/classfile/MethodData.java:isAbstract",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:readFromClassFile",
+      "target": "fn:src/jx/classfile/MethodData.java:getDescription",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "file:src/java/util/Vector.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/jx/classfile/MethodData.java",
+      "target": "file:src/jx/zero/Debug.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:MethodData",
+      "target": "fn:src/jx/classfile/MethodData.java:codeData.copy",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:copy",
+      "target": "fn:src/jx/classfile/MethodData.java:new MethodData",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:getMethodName",
+      "target": "fn:src/jx/classfile/MethodData.java:methodNameCPEntry.value",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:getMethodType",
+      "target": "fn:src/jx/classfile/MethodData.java:methodTypeCPEntry.value",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:isPublic",
+      "target": "fn:src/jx/classfile/MethodData.java:ClassData.isPublic",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:isPrivate",
+      "target": "fn:src/jx/classfile/MethodData.java:ClassData.isPrivate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:isProtected",
+      "target": "fn:src/jx/classfile/MethodData.java:ClassData.isProtected",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:isStatic",
+      "target": "fn:src/jx/classfile/MethodData.java:ClassData.isStatic",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:isFinal",
+      "target": "fn:src/jx/classfile/MethodData.java:ClassData.isFinal",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:isNative",
+      "target": "fn:src/jx/classfile/MethodData.java:ClassData.isNative",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:isAbstract",
+      "target": "fn:src/jx/classfile/MethodData.java:ClassData.isAbstract",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:getInitialVariableTypes",
+      "target": "fn:src/jx/classfile/MethodData.java:new MethodTypeDescriptor",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:getInitialVariableTypes",
+      "target": "fn:src/jx/classfile/MethodData.java:methodTypeCPEntry.value",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:getInitialVariableTypes",
+      "target": "fn:src/jx/classfile/MethodData.java:typeDesc.getBasicArgumentTypes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:getBasicReturnType",
+      "target": "fn:src/jx/classfile/MethodData.java:(new MethodTypeDescriptor(methodTypeCPEntry.value())).getBasicReturnType",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:getBasicReturnType",
+      "target": "fn:src/jx/classfile/MethodData.java:new MethodTypeDescriptor",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:getBasicReturnType",
+      "target": "fn:src/jx/classfile/MethodData.java:methodTypeCPEntry.value",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:getReturnType",
+      "target": "fn:src/jx/classfile/MethodData.java:new BasicTypeDescriptor",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:getReturnType",
+      "target": "fn:src/jx/classfile/MethodData.java:new MethodTypeDescriptor(methodTypeCPEntry.value()).getReturnTypeDesc",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:getReturnType",
+      "target": "fn:src/jx/classfile/MethodData.java:new MethodTypeDescriptor",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:getReturnType",
+      "target": "fn:src/jx/classfile/MethodData.java:methodTypeCPEntry.value",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:getParameterTypes",
+      "target": "fn:src/jx/classfile/MethodData.java:new MethodTypeDescriptor(methodTypeCPEntry.value()).getArgumentTypeDesc",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:getParameterTypes",
+      "target": "fn:src/jx/classfile/MethodData.java:new MethodTypeDescriptor",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:getParameterTypes",
+      "target": "fn:src/jx/classfile/MethodData.java:methodTypeCPEntry.value",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:getParameterTypes",
+      "target": "fn:src/jx/classfile/MethodData.java:new BasicTypeDescriptor",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:getBytecode",
+      "target": "fn:src/jx/classfile/MethodData.java:codeData.getBytecode",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:getNumLocalVariables",
+      "target": "fn:src/jx/classfile/MethodData.java:codeData.getNumLocalVariables",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:getNumStackSlots",
+      "target": "fn:src/jx/classfile/MethodData.java:codeData.getNumStackSlots",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:getNumInstr",
+      "target": "fn:src/jx/classfile/MethodData.java:codeData.getBytecodeLength",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:getNumInstr",
+      "target": "fn:src/jx/classfile/MethodData.java:System.err.println",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:getNumInstr",
+      "target": "fn:src/jx/classfile/MethodData.java:ex.printStackTrace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:getNumInstr",
+      "target": "fn:src/jx/classfile/MethodData.java:System.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:getExceptionHandlers",
+      "target": "fn:src/jx/classfile/MethodData.java:codeData.getExceptionHandlers",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:getLineNumberTable",
+      "target": "fn:src/jx/classfile/MethodData.java:codeData.getLineNumberTable",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:readFromClassFile",
+      "target": "fn:src/jx/classfile/MethodData.java:input.readUnsignedShort",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:readFromClassFile",
+      "target": "fn:src/jx/classfile/MethodData.java:cPool.entryAt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:readFromClassFile",
+      "target": "fn:src/jx/classfile/MethodData.java:Debug.out.println",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:src/jx/classfile/MethodData.java:readFromClassFile",
+      "target": "fn:src/jx/classfile/MethodData.java:Debug.throwError",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ],
+  "metadata": {
+    "totalNodesInPart": 36,
+    "totalEdgesInPart": 120,
+    "algorithm": "file-analyzer"
+  }
+}
