@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson: How Classes Are Loaded in JCore OS</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<h1>How Classes Are Loaded in JCore OS</h1>
+<p class="sidenote">Lesson 1 of the Java Internals series. <a href="../MISSION.md">Mission</a></p>
+
+<p>When the JCore OS starts a Java program, it doesn't use a traditional JVM classloader. Instead, it uses a <strong>two-store</strong> architecture designed for AOT (Ahead-of-Time) compilation. This lesson traces the path from a ZIP archive to a parsed <code>ClassData</code> object.</p>
+
+<h2>The Players</h2>
+
+<table>
+  <tr><th>File</th><th>Role</th></tr>
+  <tr><td><code>ClassManager.java</code></td><td>Entry point — orchestrates loading from ZIPs into two stores</td></tr>
+  <tr><td><code>ClassStore.java</code></td><td>Hashtable-backed storage, keyed by internal class name</td></tr>
+  <tr><td><code>MemoryClassSource.java</code></td><td>Adapts kernel <code>Memory</code> to <code>ClassData</code></td></tr>
+  <tr><td><code>ClassFinder.java</code></td><td>Interface: <code>findClass(String name)</code></td></tr>
+  <tr><td><code>ClassData.java</code></td><td>The parsed class — fields, methods, constant pool, etc.</td></tr>
+</table>
+
+<h2>The Flow</h2>
+
+<pre>
+DomainStarter.createDomain()
+  └─&gt; ClassManager.addFromZip(domainZip, libZips)
+        ├─ Iterate ZIP entries, filter by ".class"
+        ├─ MemoryClassSource(memory) → ClassData(DataInput)
+        │     └─ Read magic 0xCAFEBABE, version, constant pool,
+        │        access flags, this/super, interfaces, fields, methods
+        ├─ libClassStore.addClass(name, classData)
+        └─ domClassStore.addClass(name, classData)
+
+  findClass("java/lang/Object")
+        └─ domClassStore.findClass() ?: libClassStore.findClass()
+</pre>
+
+<h2>Step-by-Step</h2>
+
+<h3>1. ZIP Iteration</h3>
+<p><code>ClassManager.addFromZip</code> (<code>src/jx/classstore/ClassManager.java:33</code>) receives a domain ZIP and an array of library ZIPs, all as kernel <code>Memory</code> objects. It unpacks each ZIP using <code>jx.zip.ZipFile</code>, filtering entries whose name contains <code>".class"</code>.</p>
+
+<p>Notice the split: library ZIPs and the domain ZIP are kept separate at line 54-55:</p>
+
+<pre>
+if (i==-1) domdata.addElement(entry.getData());
+else libdata.addElement(entry.getData());
+</pre>
+
+<h3>2. Memory → ClassData</h3>
+<p>Each class file's raw bytes (<code>Memory</code>) are wrapped by <code>MemoryClassSource</code> (<code>src/jx/classstore/MemoryClassSource.java</code>):</p>
+
+<pre>
+new DataInputStream(new MemoryInputStream(input))
+</pre>
+
+<p>This feeds into <code>ClassData</code>'s constructor, which calls <code>readFromClassFile()</code> — a 50-line method that reads the entire binary classfile format sequentially.</p>
+
+<h3>3. Two Stores</h3>
+<p><code>ClassManager</code> maintains two <code>ClassStore</code> instances (<code>src/jx/classstore/ClassStore.java</code>):</p>
+<ul>
+  <li><strong>libClassStore</strong> — framework / library classes</li>
+  <li><strong>domClassStore</strong> — application / domain classes</li>
+</ul>
+
+<p><code>ClassStore</code> is a thin wrapper around a <code>Hashtable</code> (keyed by internal class name like <code>"java/lang/Object"</code>).</p>
+
+<h3>4. Class Lookup</h3>
+<p><code>findClass()</code> (<code>ClassManager.java:202</code>) normalizes dots to slashes, then checks <code>domClassStore</code> first, falling back to <code>libClassStore</code>:</p>
+
+<pre>
+String className = classN.replace('.', '/');
+ClassData cc = domClassStore.findClass(className);
+if (cc == null) cc = libClassStore.findClass(className);
+return cc;
+</pre>
+
+<h3>5. Dependency Validation</h3>
+<p>After loading, <code>computeClassGraph()</code> (<code>ClassManager.java:87</code>) iterates every class's constant pool looking for <code>ClassCPEntry</code> references and <code>throwError</code>s if any referenced class isn't found. This is an <strong>eager</strong> validation step — all dependencies must be resolvable at load time.</p>
+
+<h2>Key Architectural Decisions</h2>
+
+<table>
+  <tr><th>Decision</th><th>Why</th></tr>
+  <tr><td>Two stores instead of parent delegation</td><td>Classes are loaded all at once for AOT compilation, not lazily at runtime</td></tr>
+  <tr><td>Memory → DataInputStream bridge</td><td><code>Memory</code> is the kernel's native buffer type; <code>DataInputStream</code> is the standard Java parsing API</td></tr>
+  <tr><td>Dot-to-slash normalization</td><td>Internal class names use slashes (<code>java/lang/Object</code>); the <code>ClassFinder</code> interface accepts dotted names</td></tr>
+  <tr><td>Eager validation</td><td>Better to fail early at domain-creation time than at runtime</td></tr>
+</table>
+
+<h2>What's Missing?</h2>
+<p>This codebase has <strong>no interpreter</strong>. The parsed <code>ClassData</code> is <em>not</em> used by a runtime JVM — instead, it's fed to <code>ByteCodeTranslater</code> (in a separate compiler domain) which emits native code as a <code>.jll</code> file. The runtime uses <code>VMClass</code> handles (kernel objects), not <code>ClassData</code>.</p>
+
+<div class="sidenote">
+  <strong>Primary source:</strong> <code>src/jx/classstore/ClassManager.java</code> and the
+  <a href="https://docs.oracle.com/javase/specs/jvms/se17/html/jvms-4.html">JVM Spec, Chapter 4 — The class File Format</a>.
+  Read them alongside this lesson.
+</div>
+
+<h2>Quiz</h2>
+
+<div class="quiz">
+  <h3>1. What interface does ClassManager implement?</h3>
+  <details class="quiz-detail"><summary>Reveal answer</summary>
+    <p><code>ClassFinder</code> — provides <code>findClass(String)</code> for looking up classes by name.</p>
+  </details>
+</div>
+
+<div class="quiz">
+  <h3>2. When <code>findClass("java.lang.Object")</code> is called, which store is checked first?</h3>
+  <details class="quiz-detail"><summary>Reveal answer</summary>
+    <p><code>domClassStore</code> — domain store is checked before lib store (ClassManager.java:204).</p>
+  </details>
+</div>
+
+<div class="quiz">
+  <h3>3. Why does MemoryClassSource exist?</h3>
+  <details class="quiz-detail"><summary>Reveal answer</summary>
+    <p>It bridges the kernel's <code>Memory</code> buffer type (raw bytes from ZIP archives) to Java's standard <code>DataInputStream</code> API that <code>ClassData</code> expects.</p>
+  </details>
+</div>
+
+<div class="quiz">
+  <h3>4. True or False: Classes are loaded lazily at runtime, like in a standard JVM.</h3>
+  <details class="quiz-detail"><summary>Reveal answer</summary>
+    <p><strong>False.</strong> All classes are loaded eagerly at domain-creation time for AOT compilation.</p>
+  </details>
+</div>
+
+<h2>Next Steps</h2>
+<p>Ask followup questions about anything unclear — the agent is your teacher and can dive deeper into any part of this pipeline.</p>
+
+<p>When you're ready, the next lesson covers <strong>the classfile binary format</strong> — what's inside that <code>0xCAFEBABE</code> header and how the constant pool works.</p>
+
+</body>
+</html>
