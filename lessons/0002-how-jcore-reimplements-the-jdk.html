@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson: How JCore Reimplements the JDK</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<h1>How JCore Reimplements the JDK</h1>
+<p class="sidenote">Lesson 2 of the Java Internals series. <a href="../MISSION.md">Mission</a> | <a href="0001-how-classes-are-loaded.html">Previous: Class Loading</a></p>
+
+<p>JCore doesn't run on a standard JVM. It ships its <em>own</em> version of <code>java.lang.*</code>, <code>java.io.*</code>, <code>java.util.*</code> — roughly 300 classes across 18 packages. The implementation differs from HotSpot's JDK in three deep architectural ways.</p>
+
+<h2>1. No JNI — Service Lookup Instead</h2>
+
+<p>A standard JDK uses <code>native</code> methods to call into the JVM's C++ internals. JCore has <strong>zero native methods</strong>. Instead, kernel services are looked up at runtime through <code>InitialNaming</code>:</p>
+
+<pre>
+// Standard JDK: native method calls into JVM C++ code
+public static native long currentTimeMillis();
+
+// JCore: service lookup from the kernel naming service
+Clock clock = (Clock) InitialNaming.getInitialNaming().lookup("Clock");
+clock.getTimeInMillis();
+</pre>
+
+<p>This is used everywhere — <code>System.java</code> (line 29):</p>
+
+<pre>
+DebugChannel dc = (DebugChannel)
+    InitialNaming.getInitialNaming().lookup("DebugChannel0");
+System.out = new PrintStream(new DebugOutputStream(dc));
+</pre>
+
+<table>
+  <tr><th>Kernel Service</th><th>Lookup Name</th><th>Used By</th></tr>
+  <tr><td><code>CPUManager</code></td><td><code>"CPUManager"</code></td><td><code>Class</code>, <code>Thread</code>, <code>Throwable</code></td></tr>
+  <tr><td><code>Clock</code></td><td><code>"Clock"</code></td><td><code>System.currentTimeMillis()</code></td></tr>
+  <tr><td><code>DomainManager</code></td><td><code>"DomainManager"</code></td><td><code>System.exit()</code></td></tr>
+  <tr><td><code>DebugChannel</code></td><td><code>"DebugChannel0"</code></td><td><code>System.out</code>, <code>System.err</code></td></tr>
+  <tr><td><code>FS</code></td><td><code>"FS"</code></td><td><code>java.io.File</code></td></tr>
+  <tr><td><code>MemoryManager</code></td><td><code>"MemoryManager"</code></td><td><code>BufferedReader</code></td></tr>
+</table>
+
+<h2>2. <code>java.lang.Object</code> Is a Skeleton</h2>
+
+<p>Every method in <code>Object.java</code> (<code>src/java/lang/Object.java:3</code>) throws an error:</p>
+
+<pre>
+public class Object {
+    public    final Class   getClass() {throw new Error("Object method not implemented");}
+    public          int     hashCode() {throw new Error("Object method not implemented");}
+    public    final void    wait()     {throw new Error("Object method not implemented");}
+    public          String  toString() {throw new Error("Object method not implemented");}
+    public          boolean equals(Object obj) {throw new Error("Object method not implemented");}
+    // ... all 11 methods are the same
+}
+</pre>
+
+<p>This isn't a bug — it's by design. The <strong>AOT compiler</strong> (<code>ByteCodeTranslater</code>) is expected to replace these method bodies with native implementations during compilation to <code>.jll</code> format. The <code>.java</code> file is a specification/skeleton, not the real implementation.</p>
+
+<h2>3. <code>Class.forName()</code> Talks to the Kernel, Not the Classpath</h2>
+
+<p>Standard JDK: <code>Class.forName()</code> uses the classpath, URLClassLoaders, and a delegation hierarchy.</p>
+
+<p>JCore (<code>src/java/lang/Class.java</code>):</p>
+
+<pre>
+static CPUManager cpuManager = (CPUManager)
+    InitialNaming.getInitialNaming().lookup("CPUManager");
+
+public static Class forName(String className) throws ClassNotFoundException {
+    return cpuManager.getClass(className);  // kernel call
+}
+</pre>
+
+<p>Each <code>Class</code> object wraps a kernel <code>VMClass</code> handle:</p>
+
+<pre>
+public final class Class&lt;T&gt; {
+    private VMClass vmclass;   // kernel-level class representation
+    long classHandle;
+    // ...
+}
+</pre>
+
+<h2>What This Means</h2>
+
+<p>Three patterns replaced the standard JDK's architecture:</p>
+
+<table>
+  <tr><th>Standard JDK</th><th>JCore JDK</th></tr>
+  <tr><td><code>native</code> methods + JNI</td><td><code>InitialNaming.lookup()</code> service calls</td></tr>
+  <tr><td>JVM-built Object methods</td><td>AOT compiler replaces skeleton bodies</td></tr>
+  <tr><td>ClassLoader + classpath</td><td><code>CPUManager.getClass()</code> kernel bridge</td></tr>
+</table>
+
+<p>This is also why <strong>reflection is mostly broken</strong> — <code>Method.invoke()</code>, <code>Field.get()</code>, and <code>Constructor.newInstance()</code> all throw <code>Error("NOT IMPLEMENTED")</code>. The AOT compiler doesn't need runtime reflection; it resolves everything at compile time.</p>
+
+<div class="sidenote">
+  <strong>Primary source:</strong> <code>src/java/lang/Object.java</code>, <code>src/java/lang/Class.java</code>, and <code>src/java/lang/System.java</code> — read them side by side with a standard JDK's equivalents.
+</div>
+
+<h2>Quiz</h2>
+
+<div class="quiz">
+  <h3>1. What replaces JNI <code>native</code> methods in JCore?</h3>
+  <details class="quiz-detail"><summary>Reveal answer</summary>
+    <p><code>InitialNaming.getInitialNaming().lookup("ServiceName")</code> — kernel service lookup.</p>
+  </details>
+</div>
+
+<div class="quiz">
+  <h3>2. Why does <code>Object.hashCode()</code> throw <code>Error</code> in the source?</h3>
+  <details class="quiz-detail"><summary>Reveal answer</summary>
+    <p>The method bodies are skeletons; the AOT compiler replaces them during <code>.class → .jll</code> compilation.</p>
+  </details>
+</div>
+
+<div class="quiz">
+  <h3>3. How does <code>Class.forName("java.lang.String")</code> work differently from a standard JVM?</h3>
+  <details class="quiz-detail"><summary>Reveal answer</summary>
+    <p>It calls <code>cpuManager.get(className)</code> — a kernel service call — instead of a classpath-based ClassLoader chain.</p>
+  </details>
+</div>
+
+<h2>Next Steps</h2>
+<p>Ask followup questions about anything unclear. The agent can walk you through any of the <code>java.lang.*</code> source files.</p>
+<p>When ready, the next topic is the <strong>classfile binary format</strong> — what the <code>0xCAFEBABE</code> header actually encodes.</p>
+
+</body>
+</html>
