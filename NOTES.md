@@ -8,11 +8,13 @@
 ## Completed Lessons
 1. ✅ Class loading pipeline
 2. ✅ How JCore reimplements the JDK
+3. ✅ 32-bit vs 64-bit
 
 ## Future Topics (Zone of Proximal Development)
-3. The classfile binary format (constant pool, access flags, etc.)
-4. MemoryClassSource — connecting Memory to DataInputStream
-5. DomainStarter — how class loading connects to kernel domain creation
-6. ByteCodeTranslater — AOT compilation pipeline
-7. How VMClass works on the kernel side
-8. InitialNaming — kernel service lookup internals
+4. The classfile binary format (constant pool, access flags, etc.)
+5. MemoryClassSource — connecting Memory to DataInputStream
+6. DomainStarter — how class loading connects to kernel domain creation
+7. ByteCodeTranslater — AOT compilation pipeline
+8. How VMClass works on the kernel side
+9. InitialNaming — kernel service lookup internals
+10. The C kernel's type system (ObjectDesc, ClassDesc, MethodDesc)

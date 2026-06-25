@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson: 32-bit vs 64-bit in JCore OS</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<h1>32-bit vs 64-bit in JCore OS</h1>
+<p class="sidenote">Lesson 3 of the Java Internals series. <a href="../MISSION.md">Mission</a> | <a href="0002-how-jcore-reimplements-the-jdk.html">Previous: JDK Reimplementation</a></p>
+
+<p>The JVM specification defines type sizes once — they're the same on every architecture. But the <em>runtime</em> (JCore OS) must decide how big a reference actually is in memory. Right now, it's hardcoded to 32-bit.</p>
+
+<h2>Two Layers of Type Sizes</h2>
+
+<table>
+  <tr><th>Layer</th><th>Where</th><th>Reference Size</th><th>Is architecture-dependent?</th></tr>
+  <tr><td>Classfile format</td><td><code>ClassData.java</code></td><td>N/A (format uses indices)</td><td>No — defined by JVM spec</td></tr>
+  <tr><td>Runtime datatypes</td><td><code>BCBasicDatatype.java</code></td><td>4 bytes</td><td>Yes — hardcoded in this codebase</td></tr>
+  <tr><td>C kernel</td><td><code>types.h</code></td><td>4 bytes (<code>u4_t</code>)</td><td>Yes — depends on target architecture</td></tr>
+</table>
+
+<h2>The Hardcoded 32-bit: Line 123</h2>
+
+<p>Open <code>src/jx/classfile/datatypes/BCBasicDatatype.java:117</code>. The <code>sizeInByte()</code> method defines every type's size in bytes:</p>
+
+<pre>
+case INT:       return 4;
+case LONG:      return 8;
+case FLOAT:     return 4;
+case DOUBLE:    return 8;
+case REFERENCE: return 4;   // ← THIS LINE
+case BYTE:      return 1;
+case CHAR:      return 2;
+case SHORT:     return 2;
+</pre>
+
+<p>Notice: <code>int</code>, <code>long</code>, <code>float</code>, <code>double</code> are all defined by the JVM spec and are the same everywhere. But <strong><code>REFERENCE</strong> is a runtime decision</strong> — on a 32-bit machine it's 4 bytes, on 64-bit it's 8.</p>
+
+<p>And in <code>BCReference.java</code>, the reference value is stored as:</p>
+
+<pre>
+private int value;   // always 4 bytes — 32-bit assumption
+</pre>
+
+<h2>Why This Matters</h2>
+
+<p>On a 64-bit ARM system (like your Apple Silicon Mac), each object reference would need 8 bytes instead of 4. That means:</p>
+
+<ul>
+  <li><strong>Heap size</strong> — references double in size, so the same heap holds fewer objects</li>
+  <li><strong>Alignment</strong> — 8-byte pointers need 8-byte alignment; the current 4-byte alignment would break</li>
+  <li><strong>GC overhead</strong> — the garbage collector must scan 8-byte pointers instead of 4-byte</li>
+  <li><strong>Memory layout</strong> — the <code>ObjectDesc</code> struct in the C kernel uses <code>code_t *vtable</code> (pointer) — this doubles in size on 64-bit</li>
+</ul>
+
+<h2>What the JVM Spec Says</h2>
+
+<p>The <a href="https://docs.oracle.com/javase/specs/jvms/se17/html/jvms-2.html#jvms-2.3">JVM Spec §2.3</a> defines these as architecture-independent:</p>
+
+<ul>
+  <li><code>byte</code>: 8 bits, signed, two's complement</li>
+  <li><code>short</code>: 16 bits, signed, two's complement</li>
+  <li><code>int</code>: 32 bits, signed, two's complement</li>
+  <li><code>long</code>: 64 bits, signed, two's complement</li>
+  <li><code>float</code>: 32 bits, IEEE 754 single-precision</li>
+  <li><code>double</code>: 64 bits, IEEE 754 double-precision</li>
+  <li><code>reference</code>: an address that can point to a heap object (size depends on the implementation)</li>
+</ul>
+
+<p>The classfile format itself stores constants at fixed sizes (int=4 bytes, long=8 bytes). References in constant pool entries are stored as 2-byte indices, not raw addresses — so the classfile format is portable across architectures.</p>
+
+<h2>The Build System Targets 32-bit</h2>
+
+<p>The kernel's Makefile (<code>lib/jcore/Makefile:61</code>) explicitly compiles for 32-bit:</p>
+
+<pre>
+CORECCFLAGS = ... -m32 -target i386-pc-linux-gnu ...
+CORELDOPTS = -m elf_i386
+</pre>
+
+<p>And <code>System.java</code> reports itself as 32-bit x86:</p>
+
+<pre>
+properties.put("os.arch", "i586");
+</pre>
+
+<h2>What Would Change for ARM64</h2>
+
+<table>
+  <tr><th>Component</th><th>Current (32-bit)</th><th>64-bit Change</th></tr>
+  <tr><td><code>BCBasicDatatype.REFERENCE</code></td><td><code>return 4</code></td><td><code>return 8</code></td></tr>
+  <tr><td><code>BCReference.value</code></td><td><code>int</code></td><td><code>long</code></td></tr>
+  <tr><td>C kernel <code>addr_t</code></td><td><code>unsigned long</code> (4 bytes)</td><td><code>unsigned long long</code> (8 bytes)</td></tr>
+  <tr><td><code>ALL_ARRAYS_32BIT</code></td><td>enabled in <code>settings.makefile</code></td><td>disabled — arrays use 64-bit indices</td></tr>
+  <tr><td>Object alignment</td><td>4-byte alignment</td><td>8-byte alignment</td></tr>
+  <tr><td>Kernel assembly</td><td>x86-only (<code>lowlevel.S</code>)</td><td>AArch64 assembly</td></tr>
+  <tr><td><code>System.java</code></td><td><code>"i586"</code></td><td><code>"aarch64"</code></td></tr>
+</table>
+
+<p>The README confirms this is future work: ARM and x86_64 support are listed as planned but not implemented.</p>
+
+<div class="sidenote">
+  <strong>Primary sources:</strong> <code>src/jx/classfile/datatypes/BCBasicDatatype.java</code> (line 123) and the
+  <a href="https://docs.oracle.com/javase/specs/jvms/se17/html/jvms-2.html#jvms-2.3">JVM Spec §2.3</a>.
+  See also the <a href="../reference/java-type-sizes.html">Type Sizes Reference</a>.
+</div>
+
+<h2>Quiz</h2>
+
+<div class="quiz">
+  <h3>1. Is the <code>long</code> type 8 bytes on 32-bit and 64-bit JVMs?</h3>
+  <details class="quiz-detail"><summary>Reveal answer</summary>
+    <p>Yes — <code>long</code> is always 8 bytes. Only reference size is architecture-dependent.</p>
+  </details>
+</div>
+
+<div class="quiz">
+  <h3>2. Where is the 32-bit reference assumption hardcoded in JCore?</h3>
+  <details class="quiz-detail"><summary>Reveal answer</summary>
+    <p><code>BCBasicDatatype.sizeInByte()</code> at line 123: <code>case REFERENCE: return 4;</code></p>
+  </details>
+</div>
+
+<div class="quiz">
+  <h3>3. Why doesn't the classfile format break when moving between 32-bit and 64-bit?</h3>
+  <details class="quiz-detail"><summary>Reveal answer</summary>
+    <p>Constant pool entries store indices, not raw addresses. Sizes like int=4, long=8 are fixed by the JVM spec.</p>
+  </details>
+</div>
+
+<h2>Next Steps</h2>
+<p>Ask followup questions about anything unclear — the agent can walk you through the C kernel's type system, the assembly code, or the JVM spec in more detail.</p>
+<p>Next lesson: the <strong>classfile binary format</strong> — what's inside that <code>0xCAFEBABE</code> header.</p>
+
+</body>
+</html>

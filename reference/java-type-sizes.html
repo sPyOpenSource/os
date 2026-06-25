@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reference: Java Type Sizes</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<h1>Java Type Sizes — Quick Reference</h1>
+<p class="sidenote">Reference document for the Java Internals series. <a href="../MISSION.md">Mission</a></p>
+
+<h2>Classfile Format Sizes (Architecture-Independent)</h2>
+<p>These sizes are defined by the JVM specification and are the same on all architectures.</p>
+
+<table>
+  <tr><th>Type</th><th>Bytes</th><th>Slots in Constant Pool</th><th>Example</th></tr>
+  <tr><td><code>byte</code></td><td>1</td><td>1</td><td><code>byte b = 42;</code></td></tr>
+  <tr><td><code>char</code></td><td>2</td><td>1</td><td><code>char c = 'A';</code></td></tr>
+  <tr><td><code>short</code></td><td>2</td><td>1</td><td><code>short s = 100;</code></td></tr>
+  <tr><td><code>int</code></td><td>4</td><td>1</td><td><code>int i = 1;</code></td></tr>
+  <tr><td><code>float</code></td><td>4</td><td>1</td><td><code>float f = 1.0f;</code></td></tr>
+  <tr><td><code>long</code></td><td>8</td><td>2</td><td><code>long l = 1L;</code></td></tr>
+  <tr><td><code>double</code></td><td>8</td><td>2</td><td><code>double d = 1.0;</code></td></tr>
+  <tr><td><code>boolean</code></td><td>1 (in classfile)</td><td>1</td><td><code>boolean b = true;</code></td></tr>
+  <tr><td><strong>reference</strong></td><td><strong>4 (32-bit) or 8 (64-bit)</strong></td><td>1</td><td><code>Object obj = ...;</code></td></tr>
+</table>
+
+<h2>Why Reference Size Varies</h2>
+<ul>
+  <li>On 32-bit: 4-byte addresses → 4-byte references (max heap ~2GB)</li>
+  <li>On 64-bit: 8-byte addresses → 8-byte references (max heap ~16EB)</li>
+  <li>With compressed oops: 64-bit JVM can use 4-byte references if heap < 32GB</li>
+</ul>
+
+<h2>Constant Pool Entry Sizes</h2>
+<table>
+  <tr><th>Tag</th><th>Entry Type</th><th>Bytes</th><th>Slot Count</th></tr>
+  <tr><td>1</td><td>CONSTANT_Utf8</td><td>variable</td><td>1</td></tr>
+  <tr><td>3</td><td>CONSTANT_Integer</td><td>4</td><td>1</td></tr>
+  <tr><td>4</td><td>CONSTANT_Float</td><td>4</td><td>1</td></tr>
+  <tr><td>5</td><td>CONSTANT_Long</td><td>8</td><td>2</td></tr>
+  <tr><td>6</td><td>CONSTANT_Double</td><td>8</td><td>2</td></tr>
+  <tr><td>7</td><td>CONSTANT_Class</td><td>2 (index)</td><td>1</td></tr>
+  <tr><td>8</td><td>CONSTANT_String</td><td>2 (index)</td><td>1</td></tr>
+  <tr><td>9</td><td>CONSTANT_Fieldref</td><td>4 (two indices)</td><td>1</td></tr>
+  <tr><td>10</td><td>CONSTANT_Methodref</td><td>4 (two indices)</td><td>1</td></tr>
+  <tr><td>11</td><td>CONSTANT_InterfaceMethodref</td><td>4 (two indices)</td><td>1</td></tr>
+  <tr><td>12</td><td>CONSTANT_NameAndType</td><td>4 (two indices)</td><td>1</td></tr>
+  <tr><td>15</td><td>CONSTANT_MethodHandle</td><td>3</td><td>1</td></tr>
+  <tr><td>16</td><td>CONSTANT_MethodType</td><td>2</td><td>1</td></tr>
+  <tr><td>18</td><td>CONSTANT_InvokeDynamic</td><td>4</td><td>1</td></tr>
+</table>
+
+<h2>JCore OS (Current State)</h2>
+<table>
+  <tr><th>Component</th><th>Current</th><th>64-bit would need</th></tr>
+  <tr><td><code>BCBasicDatatype.REFERENCE</code></td><td>4 bytes</td><td>8 bytes</td></tr>
+  <tr><td><code>BCReference.value</code></td><td><code>int</code></td><td><code>long</code></td></tr>
+  <tr><td>C kernel <code>u4_t</code></td><td>pointer type</td><td><code>u8_t</code></td></tr>
+  <tr><td><code>ALL_ARRAYS_32BIT</code></td><td>enabled</td><td>disabled</td></tr>
+  <tr><td><code>System.java os.arch</code></td><td><code>"i586"</code></td><td><code>"aarch64"</code></td></tr>
+  <tr><td>Kernel assembly</td><td>x86-only</td><td>ARM64 assembly</td></tr>
+</table>
+
+</body>
+</html>
