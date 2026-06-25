@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson: How the File System Works in JCore OS</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<h1>How the File System Works in JCore OS</h1>
+<p class="sidenote">Lesson 4 of the Java Internals series. <a href="../MISSION.md">Mission</a> | <a href="0003-32bit-vs-64bit.html">Previous: 32-bit vs 64-bit</a></p>
+
+<p>JCore OS has <strong>two file systems</strong>: a simple in-memory one for boot, and a Unix-like one for runtime. Let's trace both.</p>
+
+<h2>BootFS — The Boot File System</h2>
+
+<p>When the kernel starts, it loads essential files into memory. These are accessed through <code>BootFS</code> (<code>src/jx/zero/BootFS.java</code>):</p>
+
+<pre>
+public interface BootFS extends Portal {
+    boolean lookup(String filename);
+    ReadOnlyMemory getFile(String filename);
+    Memory getReadWriteFile(String filename);
+}
+</pre>
+
+<p><code>DomainStarter.java</code> (<code>src/jx/zero/DomainStarter.java</code>) uses BootFS to load libraries when creating new domains:</p>
+
+<pre>
+bootfs = (BootFS)naming.lookup("BootFS");
+
+// Check if compiled .jll exists
+if (bootfs.lookup("mylib.jll")) {
+    libData = bootfs.getReadWriteFile("mylib.jll");
+} else {
+    // Check if source .zip exists, compile it
+    if (bootfs.lookup("mylib.zip")) {
+        onc.translate("mylib.zip", "mylib.jll");
+    }
+}
+</pre>
+
+<p>BootFS stores: compiled libraries (<code>.jll</code>), source archives (<code>.zip</code>), and compiler support files. It's a flat namespace — no directories, just filenames.</p>
+
+<h2>The Runtime FS — Unix-like Operations</h2>
+
+<p>For actual file I/O, JCore uses a Unix-like FS interface (<code>src/jx/fs/</code>). The <code>FS</code> portal provides standard operations:</p>
+
+<pre>
+FS fs = (FS)InitialNaming.getInitialNaming().lookup("FS");
+
+fs.mkdir("/home", 0755);
+fs.create("/home/user/test.txt", 0644);
+fs.write("/home/user/test.txt", data, 0, data.length());
+
+Node node = fs.lookup("/home/user/test.txt");
+int size = node.getLength();
+
+String[] entries = fs.readdirNames("/home");
+</pre>
+
+<h2>The Three-Interface Architecture</h2>
+
+<table>
+  <tr><th>Interface</th><th>Package</th><th>What It Does</th></tr>
+  <tr><td><code>FS</code></td><td><code>jx.fs</code></td><td>Top-level operations: cd, mkdir, read, write, etc.</td></tr>
+  <tr><td><code>Node</code></td><td><code>jx.fs</code></td><td>Inode-level operations: permissions, timestamps, data</td></tr>
+  <tr><td><code>FileSystem</code></td><td><code>jx.fs</code></td><td>Driver-level: init with block device, get root inode</td></tr>
+</table>
+
+<p><code>java.io.File</code> delegates to this chain (<code>src/java/io/File.java</code>):</p>
+
+<pre>
+fs = (FS)InitialNaming.getInitialNaming().lookup("FS");
+fsobj = fs.lookup(path);
+// Then: isFile(), isDirectory(), length(), list() all delegate to fsobj
+</pre>
+
+<h2>Who Implements It?</h2>
+
+<p>Only one filesystem works today: <strong>NFS v2</strong>. The implementation lives in <code>src/jx/rpcsvc/nfs2/NFSInode.java</code> — it implements the <code>Node</code> interface over NFS RPC calls. EXT2 support is planned (permission and attribute classes exist) but not functional.</p>
+
+<pre>
+FileSystem (driver)
+  → NFSInode (extends InodeImpl)
+    → NFS RPC calls
+      → Remote NFS server
+</pre>
+
+<h2>Key Architectural Points</h2>
+
+<ul>
+  <li><strong>Portal-based</strong> — All FS access crosses domain boundaries via portal interfaces (<code>extends Portal</code>)</li>
+  <li><strong>Separation of concerns</strong> — <code>FS</code> handles path operations, <code>Node</code> handles inode data, <code>FileSystem</code> handles the driver</li>
+  <li><strong>BootFS vs FS</strong> — BootFS is for loading code at startup; FS is for runtime file I/O</li>
+  <li><strong>NFS-first</strong> — The OS is designed to run on a network, with remote filesystems as the primary storage</li>
+</ul>
+
+<div class="sidenote">
+  <strong>Primary sources:</strong> <code>src/jx/fs/</code> (interfaces), <code>src/jx/zero/BootFS.java</code>, <code>src/jx/zero/DomainStarter.java</code>, and <code>src/java/io/File.java</code>.
+  See also the <a href="../reference/jcore-fs-interfaces.html">FS Interfaces Reference</a>.
+</div>
+
+<h2>Quiz</h2>
+
+<div class="quiz">
+  <h3>1. What does BootFS store?</h3>
+  <details class="quiz-detail"><summary>Reveal answer</summary>
+    <p>Compiled libraries (.jll), source archives (.zip), and compiler support files — loaded at boot time into memory.</p>
+  </details>
+</div>
+
+<div class="quiz">
+  <h3>2. How does <code>java.io.File</code> access the kernel filesystem?</h3>
+  <details class="quiz-detail"><summary>Reveal answer</summary>
+    <p><code>InitialNaming.getInitialNaming().lookup("FS")</code> — the same portal lookup pattern used everywhere in JCore.</p>
+  </details>
+</div>
+
+<div class="quiz">
+  <h3>3. What is the only working filesystem implementation?</h3>
+  <details class="quiz-detail"><summary>Reveal answer</summary>
+    <p>NFS v2 — implemented in <code>NFSInode.java</code> via RPC calls to a remote server.</p>
+  </details>
+</div>
+
+<h2>Next Steps</h2>
+<p>Ask followup questions about anything unclear — the agent can walk you through the NFS implementation, the inode architecture, or how the block cache works.</p>
+<p>Next lesson: the <strong>constant pool</strong> — the most important data structure inside a <code>.class</code> file.</p>
+
+</body>
+</html>

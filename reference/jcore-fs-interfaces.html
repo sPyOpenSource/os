@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reference: JCore FS Interfaces</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<h1>JCore File System Interfaces — Quick Reference</h1>
+<p class="sidenote">Reference document for the Java Internals series. <a href="../MISSION.md">Mission</a></p>
+
+<h2>Three Layers</h2>
+<table>
+  <tr><th>Layer</th><th>Package</th><th>Purpose</th></tr>
+  <tr><td>Java API</td><td><code>java.io.*</code></td><td>Standard Java file classes — delegate to kernel</td></tr>
+  <tr><td>FS Interface</td><td><code>jx.fs.*</code></td><td>Unix-like FS operations via portal interfaces</td></tr>
+  <tr><td>BootFS</td><td><code>jx.zero.BootFS</code></td><td>Simple in-memory boot filesystem</td></tr>
+</table>
+
+<h2>BootFS</h2>
+<table>
+  <tr><th>Method</th><th>Returns</th><th>Purpose</th></tr>
+  <tr><td><code>lookup(name)</code></td><td><code>boolean</code></td><td>Check if file exists</td></tr>
+  <tr><td><code>getFile(name)</code></td><td><code>ReadOnlyMemory</code></td><td>Read file content</td></tr>
+  <tr><td><code>getReadWriteFile(name)</code></td><td><code>Memory</code></td><td>Read/write file content</td></tr>
+</table>
+<p>Stores: <code>.jll</code> (compiled), <code>.zip</code> (source), compiler libraries. Registered as <code>"BootFS"</code> in InitialNaming.</p>
+
+<h2>FS Interface (Unix-like)</h2>
+<table>
+  <tr><th>Method</th><th>Description</th></tr>
+  <tr><td><code>cd(path)</code></td><td>Change current directory</td></tr>
+  <tr><td><code>mkdir(path, perm)</code></td><td>Create directory</td></tr>
+  <tr><td><code>rmdir(path)</code></td><td>Remove directory</td></tr>
+  <tr><td><code>create(path, perm)</code></td><td>Create file</td></tr>
+  <tr><td><code>unlink(path)</code></td><td>Remove file</td></tr>
+  <tr><td><code>lookup(path)</code></td><td>Get inode for path</td></tr>
+  <tr><td><code>read(path, mem, offset, len)</code></td><td>Read file data</td></tr>
+  <tr><td><code>write(path, mem, offset, len)</code></td><td>Write file data</td></tr>
+  <tr><td><code>rename(old, new)</code></td><td>Rename/move</td></tr>
+  <tr><td><code>symlink(target, link)</code></td><td>Create symbolic link</td></tr>
+  <tr><td><code>available()</code></td><td>Free space in bytes</td></tr>
+  <tr><td><code>mount(fs, path, rw)</code></td><td>Mount filesystem</td></tr>
+</table>
+
+<h2>Node Interface (Inode)</h2>
+<table>
+  <tr><th>Method</th><th>Description</th></tr>
+  <tr><td><code>isFile() / isDirectory() / isSymlink()</code></td><td>Type checks</td></tr>
+  <tr><td><code>isReadable() / isWritable()</code></td><td>Permission checks</td></tr>
+  <tr><td><code>getLength()</code></td><td>File size</td></tr>
+  <tr><td><code>readdirNames()</code></td><td>List directory entries</td></tr>
+  <tr><td><code>lookup(name)</code></td><td>Get child by name</td></tr>
+  <tr><td><code>read(mem, offset, len)</code></td><td>Read data</td></tr>
+  <tr><td><code>write(mem, offset, len)</code></td><td>Write data</td></tr>
+  <tr><td><code>readNode() / writeNode()</code></td><td>Flush to/from disk</td></tr>
+  <tr><td><code>overlay() / removeOverlay()</code></td><td>Mount mechanism</td></tr>
+</table>
+
+<h2>FileSystem Interface (Driver)</h2>
+<table>
+  <tr><th>Method</th><th>Description</th></tr>
+  <tr><td><code>init(blockIO, bufCache, clock)</code></td><td>Initialize with block device</td></tr>
+  <tr><td><code>getRootNode()</code></td><td>Get root inode</td></tr>
+  <tr><td><code>build(name, size)</code></td><td>Create new filesystem</td></tr>
+  <tr><td><code>check()</code></td><td>Check/repair filesystem</td></tr>
+  <tr><td><code>getNode(id)</code></td><td>Get inode by number</td></tr>
+</table>
+
+<h2>Implementations</h2>
+<table>
+  <tr><th>Implementation</th><th>Status</th><th>Notes</th></tr>
+  <tr><td>NFS v2</td><td>Working</td><td><code>NFSInode.java</code>, full client</td></tr>
+  <tr><td>EXT2</td><td>Planned</td><td>Permission/Attribute classes exist</td></tr>
+  <tr><td>JavaFS</td><td>Referenced</td><td>Commented out in code</td></tr>
+  <tr><td>FAT</td><td>Not present</td><td>No implementation found</td></tr>
+</table>
+
+<h2>java.io.File → Kernel Path</h2>
+<pre>
+java.io.File
+  → InitialNaming.lookup("FS")
+    → jx.fs.FS (portal)
+      → NFSInode / EXT2 / etc.
+        → BlockIO (disk driver)
+</pre>
+
+</body>
+</html>
