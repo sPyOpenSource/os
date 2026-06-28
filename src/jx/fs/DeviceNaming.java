@@ -3,10 +3,11 @@ package jx.fs;
 public class DeviceNaming {
 
     /**
+     * Returns the name of the partition with the specified identifier.
      * Gibt den Namen der Partition mit der angegebenen Kennung zur&uuml;ck.
      *
-     * @param  device die Kennung der Partition
-     * @return der Namen der Partition mit dieser Kennung ("hda", "hdb", "hdc" oder "hdd" + Nummer der Partition)
+     * @param  device the identifier of the partition
+     * @return the name of the partition with this identifier ("hda", "hdb", "hdc" or "hdd" + partition number)
      */
     public static String deviceToName(int device) {
 	String retval = null;
@@ -24,10 +25,11 @@ public class DeviceNaming {
 
 
     /**
+     * Returns the identifier of the partition with the specified name.
      * Gibt die Kennung der Partition mit dem angegebenen Namen zur&uuml;ck.
      *
-     * @param  name der Name der Partition (muss entweder "hda", "hdb", "hdc" oder "hdd" sein, gefolgt von einer Nummer)
-     * @return die Kennung der Partition mit diesem Namen
+     * @param  name the name of the partition (must be "hda", "hdb", "hdc" or "hdd", followed by a number)
+     * @return the identifier of the partition with this name
      */
     public static int nameToDevice(String name) {
 	int device = -1, part = 0;

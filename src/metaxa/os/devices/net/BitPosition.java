@@ -2,6 +2,10 @@ package metaxa.os.devices.net;
 
 import jx.zero.Debug;
 
+/* BitPosition class contains definitions of all bits in an int, as well as functions for
+   binary output of various primitive data types and functions for setting and
+   clearing bits in primitive data types and for extracting specific bytes
+*/
 /* Klasse BitPosition enthlt Definitionen aller Bits in einem int, sowie Funktionen zum
    binren Ausgeben von verschiedenen primitiven Datentypen sowie Funktionen zum Setzen und
    Lschen von Bits in primitiven Datentypen sowie zum Abschneiden bestimmter Bytes 
@@ -174,6 +178,9 @@ class BitPosition {
 	
     }
 
+    /* To check whether a bit is set
+       Version for int
+    */
     /* Zur berprfung, ob ein Bit gesetzt ist
        Version fr int
     */
@@ -184,6 +191,9 @@ class BitPosition {
         return ((1 << welches) & arg) != 0;
     }
 
+    /* To set a single bit
+       Version for int
+    */
     /* Zum Setzen eines einzelnen Bits
        Version fr int
     */
@@ -195,6 +205,9 @@ class BitPosition {
 	return arg;
     }
     
+    /* To clear a single bit
+       Version for int
+    */
     /* Zum Lschen eines einzelnen Bits
        Version fr int
     */
@@ -207,6 +220,9 @@ class BitPosition {
 	return arg;
     }
     
+    /* To check whether a bit is set
+       Version for short
+    */
     /* Zur berprfung, ob ein Bit gesetzt ist
        Version fr short
     */
@@ -217,6 +233,9 @@ class BitPosition {
         return ((1 << welches) & arg) != 0;
     }
     
+    /* To set a single bit
+       Version for short
+    */
     /* Zum Setzen eines einzelnen Bits
        Version fr short
     */
@@ -228,6 +247,9 @@ class BitPosition {
 	return arg;
     }
     
+    /* To clear a single bit
+       Version for short
+    */
     /* Zum Lschen eines einzelnen Bits
        Version fr short
     */
@@ -240,6 +262,10 @@ class BitPosition {
 	return arg;
     }
     
+    /* The following functions return the highest or the lowest byte of a short
+       or an int
+       No function yet for the inner two bytes of an int
+    */
     /* Die folgenden Funktionen liefert das oberste oder das niedrigste Byte eines short
        oder eines int zurck
        Noch keine Funktion vorhanden fr die inneren zwei Bytes eines int
@@ -261,6 +287,9 @@ class BitPosition {
 	return (byte)(arg & 0xFF);
     }
     
+    /* unsigned interpretation of a byte value and return as decimal value as String
+     * used in EthernetAdress.java among others
+     */
     /* unsigned Interpretation eines Byte-Wertes und Rckgabe als Dezimal-Wert als String 
      * wird unter anderem in EthernetAdress.java gebraucht
      */

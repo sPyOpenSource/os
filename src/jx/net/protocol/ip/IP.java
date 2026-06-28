@@ -336,7 +336,9 @@ public class IP implements MemoryConsumer, IPProducer, EtherConsumer {
 		if (debugFrag) Debug.out.println("*IP-Fragment "+fid+" complete.");
 		Memory data = assemble(curFrag);
 		//Dump.xdump1(data, 0, 128);
+                // FIXME! Caution: here the entire buffer is passed instead of the actual packet length
                 // FIXME! Vorsicht, hier wird ganzer Puffer statt tatsaechlicher Paketlaenge uebergeben
+                // Checksum calculations on upper layers then do not work with fragmented IP packets
                 // Checksum-Berechnungen auf oberen Schichten funktionieren dann bei fragmentierten IP-Paketen nicht
 		return dispatch(id, data, sourceAddress, destAddress);
 	    }

@@ -3,6 +3,7 @@ package metaxa.os.devices.net;
 import jx.zero.Debug;
 import jx.zero.Memory;
 
+/* Ethernet address with access functions */
 /* Ethernet-Adresse mit Zugriffsfunktionen */
 
 public class EthernetAdress {
@@ -22,6 +23,10 @@ public class EthernetAdress {
     }
 
     /* 
+     * returns the Ethernet address as a byte array, but as a copy of the internal array,
+     * which should not be modifiable from outside
+     */ 
+    /* 
      * gibt die Ethernet-Adresse als Byte-Array zurck, allerdings als Kopie des internen Arrays,
      * das nicht von auen gendert werden knnen soll
      */
@@ -40,6 +45,13 @@ public class EthernetAdress {
     public byte get(int i){
         return Addr[i];
     }
+    /* 
+     * creates a string from the Ethernet address in the usual format as 6 values between 0 and 255
+     * this requires a trick, however, since Java interprets byte values as signed and all
+     * values from 1xxxxxxx (binary) are treated as negative
+     * therefore I use a function that converts the byte values unsigned to decimal numbers
+     * it is thus not particularly fast, but this function is only intended for control purposes anyway
+     */
     /* 
      * erzeugt einen String aus der Ethernet.Adresse im gewohnten Format als 6 Werte zwischen 0 und 255
      * dazu muss jedoch getrickst werden, da Java Byte-Werte vorzeichenbehaftet interpretiert und alle 

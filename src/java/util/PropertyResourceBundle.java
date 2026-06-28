@@ -69,17 +69,26 @@ package java.util;
  * s1=3
  * s2=MeineDisk
  * s3=3. M\u00e4rz 96
+ * s4=The diskette ''{1}'' contains {0} in {2}.
  * s4=Die Diskette ''{1}'' enth\u00e4lt {0} in {2}.
  * s5=0
+ * s6=no files
  * s6=keine Dateien
  * s7=1
+ * s8=one file
  * s8=eine Datei
  * s9=2
+ * s10={0,number} files
  * s10={0,number} Dateien
+ * s11=Formatting threw an exception: {0}
  * s11=Die Formatierung warf eine Exception: {0}
+ * s12=ERROR
  * s12=FEHLER
+ * s13=Result
  * s13=Ergebnis
  * s14=Dialog
+ * s14=Dialog
+ * s15=Selection criterion
  * s15=Auswahlkriterium
  * s16=1,3
  * </pre>

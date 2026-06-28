@@ -20,7 +20,7 @@ public class BufferHead extends jx.fs.buffercache.BufferHead {
 
     /** the block number within the file system */
     int     b_block;
-    /** the block size (1024, 2048 oder 4096 Byte) */
+    /** the block size (1024, 2048 or 4096 bytes) */
     int     b_size;
 
 
@@ -41,9 +41,10 @@ public class BufferHead extends jx.fs.buffercache.BufferHead {
     final public int getSize() { return b_size; }
 
     /**
+     * Marks the BufferHead as "dirty", i.e. its content has changed and no longer matches its image
+     * on the disk (the content of the corresponding block); it must still be written.
      * Markiert den BufferHead als "dirty", d.h. sein Inhalt hat sich ge&auml;ndert und stimmt nicht mehr mit seinem Abbild
      * auf der Festplatte &uuml;berein (dem Inhalt des entsprechenden Blocks); er muss noch geschrieben werden.
-     *
      */
     @Override
     final public void markDirty() { dirty = true; }
@@ -52,9 +53,10 @@ public class BufferHead extends jx.fs.buffercache.BufferHead {
     final public void markClean() { dirty = false; }
 
     /**
+     * Indicates whether the content of the BufferHead has been changed and not yet written to disk.
      * Gibt an, ob der Inhalt des BufferHeads ge&auml;ndert und noch nicht auf die Festplatte geschrieben wurde.
      *
-     * @return <code>true</code>, falls der Inhalt des BufferHeads nicht mit dem auf der Festplatte &uuml;bereinstimmt
+     * @return <code>true</code>, if the content of the BufferHead does not match that on the disk
      */
     @Override
     public final boolean dirty() { return dirty; }
@@ -62,11 +64,12 @@ public class BufferHead extends jx.fs.buffercache.BufferHead {
     final public boolean isDirty() { return dirty; }
 
     /**
+     * Locks the BufferHead or releases the lock of the BufferHead. For the duration of the lock, no other
+     * threads can access it. To wait for the end of the lock, the method <code>waitOn</code> is used; upon
+     * release of the lock, other threads/processes can be reactivated using <code>notifyAll</code>.
      * Sperrt den BufferHead bzw. gibt die Sperre des BufferHeads frei. F&uuml;r die Dauer der Sperre k&ouml;nnen keine anderen
      * Threads darauf zugreifen. Um auf das Ende der Sperre zu warten, dient die Methode <code>waitOn</code>; bei einer Freigabe
      * der Sperre lassen sich andere Threads/Prozesse mittels <code>notifyAll</code> wieder aktivieren.
-     *
-     * @param value der neue Zustand der Sperre
      */
     @Override
     final public void lock() { locked = true; }
@@ -74,9 +77,10 @@ public class BufferHead extends jx.fs.buffercache.BufferHead {
     final public void unlock() { locked = false; }
 
     /**
+     * Returns the state of the lock.
      * Liefert den Zustand der Sperre zur&uuml;ck.
      *
-     * @param value <code>true</code>, falls der BufferHead gesperrt ist
+     * @return <code>true</code>, if the BufferHead is locked
      */
     @Override
     final public boolean isLocked()   { return locked; }
@@ -92,25 +96,26 @@ public class BufferHead extends jx.fs.buffercache.BufferHead {
     }
 
     /**
+     * Sets the state of the BufferHead content. "Uptodate" means that the read operation was successful and the
+     * content is valid.
      * Legt den Zustand des BufferHead-Inhalts fest. "Uptodate" bedeutet, dass die Leseoperation erfolgreich war und der
      * Inhalt g&uuml;ltig ist.
-     *
-     * @param value der neue Zustand des Inhalts: <code>false</code> bedeutet, dass bei der Operation ein Fehler aufgetreten
-     *              und der Inhalt nicht mehr g&uuml;ltig ist
      */
     @Override
     final public void markUptodate() { uptodate = true; }
 
     /**
+     * Returns the state of the BufferHead content.
      * Liefert den Zustand des BufferHead-Inhalts zur&uuml;ck.
      *
-     * @return <code>false</code> bedeutet, dass bei der Operation ein Fehler aufgetreten und der Inhalt nicht mehr
-     *         g&uuml;ltig ist
+     * @return <code>false</code> means that an error occurred during the operation and the content is no longer
+     *         valid
      */
     @Override
     final public boolean isUptodate() { return uptodate; }
 
     /**
+     * Waits until the lock of the BufferHead is released.
      * Wartet, bis die Sperre des BufferHeads aufgehoben wird.
      */
     @Override
@@ -118,17 +123,18 @@ public class BufferHead extends jx.fs.buffercache.BufferHead {
 	if (locked) {
 	    b_count++;
 	    while (locked)
-		Debug.out.println("TODO: implement WAIT QUEUE!");
+	        Debug.out.println("TODO: implement WAIT QUEUE!");
 	    ((CPUManager)InitialNaming.getInitialNaming().lookup("CPUManager")).block();
 	    b_count--;
 	}
     }
 
     /**
+     * Ends the read or write operation. This method is called by the driver.
      * Beendet den Lese- bzw. Schreibevorgang. Diese Methode wird vom Treiber aufgerufen.
      *
-     * @param error zeigt an, ob bei der Operation ein Fehler aufgetreten ist (<code>true</code>)
-     * @param synchronous falls <code>true</code>, wird auf das Ende der Operation (mittels <code>sleep</code>) gewartet
+     * @param error indicates whether an error occurred during the operation (<code>true</code>)
+     * @param synchronous if <code>true</code>, waits for the end of the operation (using <code>sleep</code>)
      */
     @Override
     public void endIo(boolean error, boolean synchronous) {
@@ -153,10 +159,11 @@ public class BufferHead extends jx.fs.buffercache.BufferHead {
     }
 
     /**
+     * Deletes a range of the BufferHead content. The range is set to 0.
      * L&ouml;scht einen Bereich des BufferHeadinhalts. Der Bereich wird auf 0 gesetzt.
      *
-     * @param from das erste zu l&ouml;schende Byte des Inhalts
-     * @param to   das erste Byte des Bereichs, das nicht mehr zu gel&ouml;scht werden soll
+     * @param from the first byte of the content to be deleted
+     * @param to   the first byte of the range that should no longer be deleted
      */
     @Override
     public void clear(int from, int to) {
@@ -164,8 +171,7 @@ public class BufferHead extends jx.fs.buffercache.BufferHead {
 	    return;
 	for (int i = from; i < to; i++)
 	    data.set8(i, (byte)0);
-    }
-
+}
 
     void init(int block) {
         b_count = 1;

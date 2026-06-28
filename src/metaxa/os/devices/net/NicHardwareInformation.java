@@ -87,6 +87,7 @@ class NicHardwareInformation {
     
     private short phys;	/* MII device addr. - for Becker's diag */
     
+    // Access functions
     // Zugriffsfunktionen
 
     public void set_CacheLineSize(byte cachelinesize) {

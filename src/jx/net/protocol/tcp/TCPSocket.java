@@ -63,6 +63,7 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
     public static final  TCPSocketState SYN_SENT    = new TCPSocketState();
     public static final  TCPSocketState ESTABLISHED = new TCPSocketState();
     //  public static final byte CLOSE_WAIT = 6;
+    // Status CLOSE_WAIT not implemented, since half-close of the peer is not supported
     // Status CLOSE_WAIT nicht implementiert, da Half-Close der Gegenseite nicht unterstuetzt
     public static final  TCPSocketState LAST_ACK    = new TCPSocketState();
     public static final  TCPSocketState FIN_WAIT_1  = new TCPSocketState();
@@ -628,6 +629,7 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 	return 0;
     }
     
+    // a method for each state, cf. Stevens, p. 241
     // fuer jeden Zustand ne Methode, vgl. Stevens, S. 241
     private Memory listen(IPData d) {
 	if (debug) Debug.out.println("Accept received packet from input queue");
@@ -635,6 +637,7 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 	
 	TCPFormat packet = new TCPFormat(d, localIP, remoteIP);
 	
+	// SYN packet
 	// SYN-Paket
 	if (packet.areFlagsSet(TCPFormat.SYN)) {
 	    ack = packet.getSequenceNumber() + 1;
@@ -866,6 +869,7 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
     /*  
 	public Memory processTCP(IPData data) {
 	
+	// find a free buffer to return
 	// einen freien Buffer zum zurueckgeben finden
 	Buffer buf = usableBufs.nonblockingUndockFirstElement();
 	if (buf == null) {
@@ -976,6 +980,7 @@ public class TCPSocket implements jx.net.TCPSocket, Service {
 	sendPacket.insertChecksum();
 
 //	Integer rWsz = remoteWindowSize.get();
+// receiver not ready...
 //	while (rWsz.intValue() < size) // Empfnger nicht bereit...
 //	    remoteWindowSize.blockIfEqual(rWsz);
 	while (remoteWindowSize < size)

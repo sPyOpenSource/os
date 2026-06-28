@@ -1,6 +1,7 @@
 package jx.fs;
 
 /**
+ * The inode no longer exists (has been deleted).
  * Die Inode existiert nicht mehr (wurde geloescht).
  */
 public class NotExistException extends FSException {

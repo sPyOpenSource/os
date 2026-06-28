@@ -17,6 +17,7 @@ class ManufacturingData {
 
     ManufacturingData(byte day, byte month, byte year) throws WrongDate {
 	if (day < 1 || day > 31 || month < 1 || month > 12 || year < 0 || year > 99) {
+	    // ManufacturingData: wrong parameters in constructor!
 	    System.out.println("ManufacturingData: falsche Parameter im Konstruktor!");
 	    throw new WrongDate();
 	}

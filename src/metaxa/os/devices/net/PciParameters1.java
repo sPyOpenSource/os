@@ -2,6 +2,7 @@ package metaxa.os.devices.net;
 
 class PciParameters1 {
     
+    // Bit 0 - fastBacktoBack or d3Hot, depending on ASIC
     // Bit 0 - fastBacktoBack oder d3Hot, je nach ASIC
     private byte Bit0;
     // Bit 1

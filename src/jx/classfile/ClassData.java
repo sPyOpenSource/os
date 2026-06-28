@@ -84,6 +84,7 @@ public class ClassData extends ClassSource {
     }
 
 
+    //new, for Verifier
     //neu, fuer Verifier
     public void addMethod(MethodData newMethod) {
 	if (newMethod == null)

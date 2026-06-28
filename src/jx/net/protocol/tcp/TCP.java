@@ -105,6 +105,7 @@ public class TCP implements IPConsumer, Runnable {
     }
 
 
+    // called by sockets to register an existing connection
     // wird von den Sockets aufgerufen, um bestehende Verbindung zu registrieren
     public void registerSocket(TCPSocket s) {
 	if (tcpSockets.contains(s)) throw new Error("TCP: Connection already registered");
@@ -136,6 +137,7 @@ public class TCP implements IPConsumer, Runnable {
 	if (debug) Debug.out.println("TCP: ServerSocket unregistered on port " + s.localPort);
     }
 		       
+    // called by IP when a TCP packet arrives
     // wird von IP aufgerufen, wenn TCP-Paket ankommt
     @Override
     public Memory processIP(IPData data) {

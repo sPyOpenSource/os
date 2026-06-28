@@ -14,6 +14,7 @@ public class NumericCPEntry extends ConstantPoolEntry {
  
   public NumericCPEntry() {}
 
+  // the following constructors should also get arguments for the addresses
   // die folgenden konstruktoren sollten auch noch argumente fuer die
   // adressen bekommen  
   

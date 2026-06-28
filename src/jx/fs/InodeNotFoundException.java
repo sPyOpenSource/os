@@ -1,6 +1,7 @@
 package jx.fs;
 
 /**
+ * The requested inode cannot be found.
  * Die angesprochene Inode kann nicht gefunden werden
  */
 public class InodeNotFoundException extends FSException {

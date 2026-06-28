@@ -298,12 +298,20 @@ public class ConstantPool {
 
 // ***** some private notes ***** 
 
+// Constant Pool must be reconstructable, i.e. one 
+// should be able to convert it back into the format for execution 
 // Constant Pool muss rekonstruierbar sein, d.h. man 
 // sollte ihn wieder in das Format fuer die Ausfuehrung konvertieren koennen 
 
+// Currently, ConstantPoolEntries are referenced via their indices 
+// It would be more efficient to store direct references to CPoolEntries 
+// The CPoolEntries themselves would then also have to access other CPoolEntries 
+// via references. 
 // Momentan wird auf die ConstantPoolEntries ueber ihre Indices verwiesen 
 // effizienter waere es, man wuerde direkte Referenzen auf die CPoolEntries 
 // speichern. Auch die CPoolEntries selbst muessten dann auf andere CPoolEntries 
 // ueber Referenzen zugreifen. 
+// (Linking phase after loading the pool -> internally the indices are still necessary.) 
 // (Linkphase nach Laden des Pools -> intern sind die Indices immer noch notw.) 
+// Problem: line numbers 
 // Problem: Zeilennummern 

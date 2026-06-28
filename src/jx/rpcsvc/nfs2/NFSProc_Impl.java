@@ -156,7 +156,7 @@ public class NFSProc_Impl implements NFSProc {
     
 
     // ToDo:
-    // - siehe setAttr()
+    // - see setAttr() / siehe setAttr()
     public AttrStat setattr(FHandle fh0, SAttr attributes) { 
 
 	Node inode;	
@@ -226,10 +226,10 @@ public class NFSProc_Impl implements NFSProc {
 
 	helperDirMFh.renew(dir0.data);
 	if (debug_nfs) 
-	    Debug.out.println("LOOKUP in fh="+helperDirMFh.deviceIdentifier+"." + 
+	    Debug.out.println("LOOKUP in fh=" + helperDirMFh.deviceIdentifier + "." + 
 			      helperDirMFh.identifier + "." +
 			      helperDirMFh.generation + 
-			  ", suche nach: " + name.data);
+			  ", searching for: " + name.data );
 
  	try {
 

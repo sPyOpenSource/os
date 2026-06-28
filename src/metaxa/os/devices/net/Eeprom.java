@@ -1,6 +1,8 @@
 package metaxa.os.devices.net;
 
+/* Class with the EEPROM offsets and access functions to the EEPROM */
 /* Klasse mit den Offsets des EEPROMs und Zugriffsfunktionen auf das EEPROM */
+/* See also 3COM manual starting from page 80 */
 /* Siehe auch 3COM-Manual ab Seite 80 */
 
 import jx.zero.*;

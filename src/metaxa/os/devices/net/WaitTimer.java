@@ -42,6 +42,7 @@ class WaitTimer extends WaitCases implements TimerHandler {
 	case CHECK_DOWNLOAD_STATUS:
 	    Debug.out.println("CHECK_DOWNLOAD_STATUS");
 		dpd = help.get_TestDPD();
+		// changed 28.4.: the correct value should already be in DPDPhysicalAddress, but to be safe
 		// changed 28.4. : in DPDPhysicalAddress muesste schon das richtige stehen, aber zur Sicherheit
 		Memory mem = dpd.DpdMemory();
 		if(waitglobal.get_PortV() ==  (dpd.DpdMemory()).getStartAddress()) {
@@ -87,6 +88,7 @@ class WaitTimer extends WaitCases implements TimerHandler {
 		    }
 		    waitglobal.set_PhyStatus(PhyStatus);
 		    waitglobal.set_PhyResponding(PhyResponding);
+		    // to speed it up, we only do it every 200ms - Marcus 17.5.00
 		    // um es zu verschnellern, machen wir es nur alle 200ms - Marcus 17.5.00 
 		    NextTick = 500;//10;
 		}
