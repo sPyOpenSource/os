@@ -26,12 +26,9 @@ public class RayTrace {
    * Initializes an instance of the raytracer with the window size and the world
    * description.
    * 
-   * @param int
-   *          image width
-   * @param int
-   *          image height
    * @param s
    *          world description
+   * @param useBGR
    */
   public RayTrace(Scene s, boolean useBGR) {
     scene = s;
@@ -93,7 +90,6 @@ public class RayTrace {
     Ray ray;
     Renderable rayObject;
     Vector3f t1, t2, t3;
-    int x;
     
     if (cTAi.var1 != null) dir = (Vector3f) cTAi.var1;
     else cTAi.var1 = dir = new Vector3f();
@@ -106,8 +102,8 @@ public class RayTrace {
     if (cTAi.var5 != null) t3 = (Vector3f) cTAi.var5;
     else cTAi.var5 = t3 = new Vector3f();
     
-    for (x=0; x<width; x++) {
-      cTAi.x=x;
+    for (int x = 0; x < width; x++) {
+      cTAi.x = x;
       dir.init((float) cTAi.x * Du.x + (float) cTAi.y * Dv.x + Vp.x,
           (float) cTAi.x * Du.y + (float) cTAi.y * Dv.y + Vp.y, (float) cTAi.x
               * Du.z + (float) cTAi.y * Dv.z + Vp.z);

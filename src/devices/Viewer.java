@@ -1,10 +1,10 @@
 package devices;
 
 public class Viewer {
-  private TextDriver disp;
+  private final TextDriver disp;
 
   public Viewer(TextDriver output) {
-    disp=output;
+    disp = output;
   }
   
   public void cls() {
@@ -27,8 +27,8 @@ public class Viewer {
       return;
     }
     if (c=='\u0008') {
-      if (disp.cursorX<=0) return;
-      disp.setCursor(disp.cursorX-1, disp.cursorY);
+      if (disp.cursorX <= 0) return;
+      disp.setCursor(disp.cursorX - 1, disp.cursorY);
       disp.putChar(disp.cursorX, disp.cursorY, ' ');
       return;
     }
@@ -86,9 +86,11 @@ public class Viewer {
   }
 
   public void print(String str) {
-    int i;
-    if (str==null) { print("<null>"); return; }
-    for (i=0; i<str.count; i++) print(str.value[i]);
+    if (str == null) { 
+        print("<null>"); 
+        return; 
+    }
+    for (int i = 0; i < str.count; i++) print(str.value[i]);
   }
   
   public void println() {

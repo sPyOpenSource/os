@@ -8,7 +8,7 @@ public abstract class Renderable {
   /**
    * Checks whether the given ray ever intersects this object.
    * 
-   * @param Ray
+   * @param r
    *          to check against the object
    * @return float the closest t value at intersection, or -1 if there is no
    *         intersection.

@@ -1,0 +1,190 @@
+/* PicOS Boot Sector — shared lesson stylesheet */
+/* Tufte-inspired: clean, readable, print-friendly */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap');
+
+:root {
+  --bg: #fffff8;
+  --fg: #111;
+  --accent: #234e8c;
+  --accent-light: #e8edf5;
+  --code-bg: #f5f5f0;
+  --border: #ccc;
+  --muted: #666;
+  --green: #2a7d2a;
+  --red: #b33;
+  --orange: #c75;
+  --measure: 68ch;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1a1a;
+    --fg: #ddd;
+    --accent: #6b9bd0;
+    --accent-light: #2a2a3a;
+    --code-bg: #222;
+    --border: #444;
+    --muted: #999;
+    --green: #5abf5a;
+    --red: #d66;
+    --orange: #e88;
+  }
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'IBM+Plex+Serif', Georgia, serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--fg);
+  background: var(--bg);
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 2rem 1.5rem 6rem;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'IBM+Plex+Sans', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+h1 { font-size: 2.2rem; border-bottom: 2px solid var(--accent); padding-bottom: 0.3rem; }
+h2 { font-size: 1.5rem; color: var(--accent); }
+h3 { font-size: 1.2rem; }
+
+p, li { margin-bottom: 0.8rem; }
+
+a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+a:hover { opacity: 0.8; }
+
+code, pre {
+  font-family: 'IBM+Plex+Mono', 'SFMono', 'Fira Code', monospace;
+  font-size: 0.85rem;
+}
+
+pre {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1rem;
+  overflow-x: auto;
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+
+code { background: var(--code-bg); padding: 0.1em 0.3em; border-radius: 3px; }
+pre code { background: none; padding: 0; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.7rem;
+  text-align: left;
+}
+
+th {
+  background: var(--accent-light);
+  font-weight: 600;
+}
+
+/* Callout boxes */
+.callout {
+  padding: 0.8rem 1rem;
+  margin: 1rem 0;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-light);
+  border-radius: 0 4px 4px 0;
+}
+
+.callout-warn {
+  border-left-color: var(--orange);
+  background: #fff8f0;
+}
+
+.callout-tip {
+  border-left-color: var(--green);
+  background: #f0f8f0;
+}
+
+/* Quiz widget */
+.quiz {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--accent-light);
+}
+
+.quiz-question { font-weight: 500; margin-bottom: 0.5rem; }
+
+.quiz-option {
+  display: block;
+  padding: 0.4rem 0.7rem;
+  margin: 0.3rem 0;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  background: var(--bg);
+}
+
+.quiz-option:hover { background: var(--accent-light); }
+
+.quiz-correct { border-color: var(--green); background: #e8f5e8; }
+.quiz-wrong { border-color: var(--red); background: #fce8e8; }
+.quiz-explanation { margin-top: 0.5rem; font-size: 0.9rem; color: var(--muted); }
+
+/* Diagrams / ASCII art */
+.diagram {
+  font-family: 'IBM+Plex+Mono', monospace;
+  font-size: 0.75rem;
+  line-height: 1.3;
+  white-space: pre;
+  background: var(--code-bg);
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+blockquote {
+  border-left: 3px solid var(--border);
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: var(--muted);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+
+.sidenote {
+  float: right;
+  clear: right;
+  margin-right: -40%;
+  width: 35%;
+  font-size: 0.8rem;
+  color: var(--muted);
+  position: relative;
+}
+
+@media (max-width: 1000px) {
+  .sidenote { float: none; width: auto; margin-right: 0; }
+}
+
+@media print {
+  body { font-size: 11pt; }
+  pre { white-space: pre-wrap; word-break: break-word; }
+  .quiz { break-inside: avoid; }
+}

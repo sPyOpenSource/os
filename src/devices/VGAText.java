@@ -5,22 +5,22 @@ import kernel.BIOS;
 public class VGAText extends TextDriver {
   public int textmodeAddress;
   
-  private static final int CRTCind=0x03D4;  //VGA-CRTC-index
-  private static final int CRTCdat=0x03D5;  //VGA-CRTC-data
+  private static final int CRTCind = 0x03D4;  //VGA-CRTC-index
+  private static final int CRTCdat = 0x03D5;  //VGA-CRTC-data
   private int colorFG;
   private int colorBG;
   
   public VGAText() {
-    textCols=80;
-    textLines=25;
-    textmodeAddress=0xB8000;
+    textCols = 80;
+    textLines = 25;
+    textmodeAddress = 0xB8000;
     reInit();
   }
   
   private void reInit() {
-    cursorX=cursorY=0;
-    colorFG=0x07;
-    colorBG=0x00;
+    cursorX = cursorY = 0;
+    colorFG = 0x07;
+    colorBG = 0x00;
     enableCursor(true);
   }
   
@@ -30,29 +30,33 @@ public class VGAText extends TextDriver {
     reInit();
   }
   
+  @Override
   public void setColor(int fg, int bg) {
-    colorFG=fg;
-    colorBG=bg;
+    colorFG = fg;
+    colorBG = bg;
   }
 
+  @Override
   public void putChar (int x, int y, char c){
-    int NV=((int)c&0xFF)|((colorFG&0xF)<<8)|((colorBG&7)<<12);
+    int NV = ((int)c & 0xFF) | ((colorFG & 0xF) << 8) | ((colorBG & 7) << 12);
     int offset;
     
-    offset=y*textCols+x;
-    if (offset<0 || offset>=textCols*textLines) return;    //don't try to put characters outside screen
-    MAGIC.wMem16(textmodeAddress+(offset<<1), (short)NV);
+    offset = y * textCols + x;
+    if (offset < 0 || offset >= textCols * textLines) return;    //don't try to put characters outside screen
+    MAGIC.wMem16(textmodeAddress + (offset << 1), (short)NV);
   }
 
+  @Override
   public void enableCursor(boolean on) {
     int dummy;
     
     MAGIC.wIOs8(CRTCind, (byte)0x0A);      //cursor start register
-    dummy=(int)MAGIC.rIOs8(CRTCdat)&0xDF;      //save other bits
-    if (!on) dummy|=0x20;      //bit set means cursor off
+    dummy = (int)MAGIC.rIOs8(CRTCdat) & 0xDF;      //save other bits
+    if (!on) dummy |= 0x20;      //bit set means cursor off
     MAGIC.wIOs8(CRTCdat, (byte)dummy);
   }
 
+  @Override
   public void setCursor(int newX, int newY) {
     int newVal; //cursor position
     
@@ -76,6 +80,7 @@ public class VGAText extends TextDriver {
     }
   }
 
+  @Override
   public void scroll() {
     int i, diff, max;
     
@@ -85,9 +90,8 @@ public class VGAText extends TextDriver {
     clearLine(textLines-1);
   }
 
+  @Override
   public void cls() {
-    int i;
-
-    for (i=0; i<textLines; i++) clearLine(i);
+    for (int i = 0; i < textLines; i++) clearLine(i);
   }
 }

@@ -5,24 +5,24 @@ public class SegmentTables {
   public static void rebuildGDT() {
     //null descriptor
     MAGIC.wMem32(KernelConst.KM_GDTADDR, 0x00000000);
-    MAGIC.wMem32(KernelConst.KM_GDTADDR+4, 0x00000000);
+    MAGIC.wMem32(KernelConst.KM_GDTADDR + 4, 0x00000000);
     //code descriptor
-    MAGIC.wMem32(KernelConst.KM_GDTADDR+8, 0x0000FFFF);
-    if (MAGIC.ptrSize==4) MAGIC.wMem32(KernelConst.KM_GDTADDR+12, 0x00CF9A00); //32 bit code
-    else MAGIC.wMem32(KernelConst.KM_GDTADDR+12, 0x002F9800); //64 bit code
+    MAGIC.wMem32(KernelConst.KM_GDTADDR + 8, 0x0000FFFF);
+    if (MAGIC.ptrSize == 4) MAGIC.wMem32(KernelConst.KM_GDTADDR + 12, 0x00CF9A00); //32 bit code
+    else MAGIC.wMem32(KernelConst.KM_GDTADDR + 12, 0x002F9800); //64 bit code
     //data descriptor
-    MAGIC.wMem32(KernelConst.KM_GDTADDR+16, 0x0000FFFF);
-    MAGIC.wMem32(KernelConst.KM_GDTADDR+20, 0x00CF9200);
+    MAGIC.wMem32(KernelConst.KM_GDTADDR + 16, 0x0000FFFF);
+    MAGIC.wMem32(KernelConst.KM_GDTADDR + 20, 0x00CF9200);
     //descriptor for 16 bit code protected mode code (used in BIOS call)
-    MAGIC.wMem32(KernelConst.KM_GDTADDR+24, 0x0000FFFF|(KernelConst.BIOS_MEMORY<<16));
-    MAGIC.wMem32(KernelConst.KM_GDTADDR+28, 0x008F9A00|(KernelConst.BIOS_MEMORY>>>16));
+    MAGIC.wMem32(KernelConst.KM_GDTADDR + 24, 0x0000FFFF | (KernelConst.BIOS_MEMORY << 16));
+    MAGIC.wMem32(KernelConst.KM_GDTADDR + 28, 0x008F9A00 | (KernelConst.BIOS_MEMORY >>> 16));
     
     //load new gdt
     lgdt(4); //see also KernelConst
     //do a far-jump coded as retf to load the new cs
     MAGIC.inline(0x6A, 0x08);                       //push byte 0x08
     MAGIC.inline(0xE8, 0x00, 0x00, 0x00, 0x00);     //call rel 0
-    if (MAGIC.ptrSize==4) {
+    if (MAGIC.ptrSize == 4) {
       MAGIC.inline(0x83, 0x04, 0x24, 0x05);         //add dword [esp],byte 0x05
       MAGIC.inline(0xCB);                           //retf
     } else {

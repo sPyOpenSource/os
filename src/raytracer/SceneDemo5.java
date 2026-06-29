@@ -14,8 +14,7 @@ public class SceneDemo5 extends Scene {
     background = RGBfCol.create(0.078f, 0.361f, 0.753f);
     // background = RGBfCol.create(0.0f, 0.0f, 0.0f);
     s = new Surface(0.1f, 0.6f, 0.3f, 0.15f, 1.0f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f);
-    objects.addElement(new Sphere(s, new Vector3f(0.0f, 0.0f, -2000.0f),
-        2000.0f));
+    objects.addElement(new Sphere(s, new Vector3f(0.0f, 0.0f, -2000.0f), 2000.0f));
   }
 
   private void createWalls() {

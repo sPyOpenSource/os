@@ -7,9 +7,9 @@ public class VESAGraphics extends VGAText {
   public VESAMode modes, curMode;
   
   private final static VESAControllerInfoStruct contrInfo
-    =(VESAControllerInfoStruct)MAGIC.cast2Struct(KernelConst.KM_SCRATCH);
+    = (VESAControllerInfoStruct)MAGIC.cast2Struct(KernelConst.KM_SCRATCH);
   private final static VESAModeInfoStruct modeInfo
-    =(VESAModeInfoStruct)MAGIC.cast2Struct(KernelConst.KM_SCRATCH);
+    = (VESAModeInfoStruct)MAGIC.cast2Struct(KernelConst.KM_SCRATCH);
   
   public static VESAGraphics detectDevice() {
     int modePtr, modeNr;
@@ -19,48 +19,48 @@ public class VESAGraphics extends VGAText {
     //get information through real mode interrupt
     contrInfo.id = 0x32454256; //VBE2
     MAGIC.wMem16(BIOS.EAX, (short)0x4F00); //get controller information
-    MAGIC.wMem16(BIOS.ES,  (short)(KernelConst.KM_SCRATCH>>>4));
-    MAGIC.wMem16(BIOS.EDI, (short)(KernelConst.KM_SCRATCH&0xF));
+    MAGIC.wMem16(BIOS.ES,  (short)(KernelConst.KM_SCRATCH >>> 4));
+    MAGIC.wMem16(BIOS.EDI, (short)(KernelConst.KM_SCRATCH & 0xF));
     BIOS.rint(0x10);
 
     //check signatures
-    if ((MAGIC.rMem16(BIOS.EAX))!=(short)0x004F) return null;
-    if (contrInfo.id!=0x41534556) return null; //VESA
+    if ((MAGIC.rMem16(BIOS.EAX)) != (short)0x004F) return null;
+    if (contrInfo.id != 0x41534556) return null; //VESA
     
     //VESA detected, get information of controller info struct
-    if (contrInfo.version<(byte)2) return null; //at least version 1.2 required
-    me=new VESAGraphics();
-    modePtr=(((int)contrInfo.videoModePtrSeg&0xFFFF)<<4)+((int)contrInfo.videoModePtrOff&0xFFFF);
+    if (contrInfo.version < (byte)2) return null; //at least version 1.2 required
+    me = new VESAGraphics();
+    modePtr = (((int)contrInfo.videoModePtrSeg & 0xFFFF) << 4) + ((int)contrInfo.videoModePtrOff & 0xFFFF);
     
     //get all available modi
-    while ((modeNr=(int)MAGIC.rMem16(modePtr)&0xFFFF)!=0xFFFF) {
-      mode=new VESAMode();
-      mode.modeNr=modeNr;
-      mode.nextMode=me.modes;
-      me.modes=mode;
-      modePtr+=2;
+    while ((modeNr = (int)MAGIC.rMem16(modePtr) & 0xFFFF) != 0xFFFF) {
+      mode = new VESAMode();
+      mode.modeNr = modeNr;
+      mode.nextMode = me.modes;
+      me.modes = mode;
+      modePtr += 2;
     }
     
     //get information for available modi (cannot be done above because info-struct is overwritten)
-    mode=me.modes;
-    while (mode!=null) {
+    mode = me.modes;
+    while (mode != null) {
       MAGIC.wMem16(BIOS.EAX, (short)0x4F01); //get mode information
       MAGIC.wMem32(BIOS.ECX, mode.modeNr);
-      MAGIC.wMem16(BIOS.ES, (short)(KernelConst.KM_SCRATCH>>>4));
-      MAGIC.wMem16(BIOS.EDI, (short)(KernelConst.KM_SCRATCH&0xF));
+      MAGIC.wMem16(BIOS.ES, (short)(KernelConst.KM_SCRATCH >>> 4));
+      MAGIC.wMem16(BIOS.EDI, (short)(KernelConst.KM_SCRATCH & 0xF));
       BIOS.rint(0x10);
-      if ((modeInfo.attributes&VESAModeInfoStruct.ATTR_LINFRMBUF)==(short)0) { //no linear frame buffer
+      if ((modeInfo.attributes & VESAModeInfoStruct.ATTR_LINFRMBUF) == (short)0) { //no linear frame buffer
         //TODO remove mode from list
-        mode.modeNr=-1;
+        mode.modeNr = -1;
       }
       else { //linear frame buffer supported
-        mode.graphical=(modeInfo.attributes&VESAModeInfoStruct.ATTR_GRAPHICAL)!=(short)0;
-        mode.xRes=(int)modeInfo.xRes&0xFFFF;
-        mode.yRes=(int)modeInfo.yRes&0xFFFF;
-        mode.colDepth=(int)modeInfo.colDepth&0xFF;
-        mode.lfbAddress=modeInfo.lfbAddress;
+        mode.graphical = (modeInfo.attributes & VESAModeInfoStruct.ATTR_GRAPHICAL) != (short)0;
+        mode.xRes = (int)modeInfo.xRes & 0xFFFF;
+        mode.yRes = (int)modeInfo.yRes & 0xFFFF;
+        mode.colDepth = (int)modeInfo.colDepth & 0xFF;
+        mode.lfbAddress = modeInfo.lfbAddress;
       }
-      mode=mode.nextMode;
+      mode = mode.nextMode;
     }
     
     //return driver object

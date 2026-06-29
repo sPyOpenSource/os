@@ -47,28 +47,17 @@ public class Surface {
    * values. Notable parameter is the reflection value, which is divided by 255
    * automatically.
    * 
-   * @param float
-   *          rval red
-   * @param float
-   *          gval green
-   * @param float
-   *          bval blue
-   * @param float
-   *          a ambient coefficient
-   * @param float
-   *          d diffuse coefficient
-   * @param float
-   *          s specular coefficient
-   * @param float
-   *          n shininess
-   * @param float
-   *          r reflectivity
-   * @param float
-   *          t transparency
-   * @param float
-   *          nt refractive index
+   * @param rval red
+   * @param gval green
+   * @param bval blue
+   * @param a ambient coefficient
+   * @param d diffuse coefficient
+   * @param s specular coefficient
+   * @param n shininess
+   * @param r reflectivity
+   * @param t transparency
+   * @param index refractive index
    */
-
   public Surface(float rval, float gval, float bval, float a, float d, float s,
       float n, float r, float t, float index) {
     ir = rval;
@@ -89,13 +78,10 @@ public class Surface {
    * phong illumination model and spawning the appropriate secondary rays.
    * 
    * @return RGBfCol the color of the surface at the intersection pt
-   * @param Vector3f
-   *          p the point of intersection
-   * @param Vector3f
-   *          n the unit-length surface normal
-   * @param Vector3f
-   *          v the unit-length vector towards the ray origin
-   * @param Scene
+   * @param t1 the point of intersection
+   * @param t2 the unit-length surface normal
+   * @param t3 the unit-length vector towards the ray origin
+   * @param scene
    *          lights, objects, color
    */
   public long Shade(Vector3f t1, Vector3f t2, Vector3f t3, Scene scene,

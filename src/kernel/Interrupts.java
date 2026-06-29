@@ -14,19 +14,19 @@ public class Interrupts {
     Interrupts.createTable();
     SegmentTables.lidt();
     //load gdt
-    SegmentTables.lgdt(KernelConst.KC_FIRSTINTINGDT+KernelConst.KC_INTCOUNT);
+    SegmentTables.lgdt(KernelConst.KC_FIRSTINTINGDT + KernelConst.KC_INTCOUNT);
     //instantiate Interrupts, insert Timer and fire
     Kernel.ints = new Interrupts();
   }
   
   private Interrupts() {
     MAGIC.inline(0xFA); //cli
-    cliLevel=1;
+    cliLevel = 1;
   }
   
   public void sti() {
-    if (cliLevel==0) return;
-    if (--cliLevel==0) MAGIC.inline(0xFB);
+    if (cliLevel == 0) return;
+    if (--cliLevel == 0) MAGIC.inline(0xFB);
   }
   
   public void cli() {
@@ -44,7 +44,7 @@ public class Interrupts {
   
   //should only be called with cleared interrupts of course
   public static void createTable() {
-    int i=0, cls, destWOE, destWEC;
+    int i = 0, cls, destWOE, destWEC;
     ExcHandler[] newHandler;
     ExcHandler debug;
     Device[] newDevices;
@@ -57,23 +57,23 @@ public class Interrupts {
     destWEC = MAGIC.rMem32(cls + MAGIC.mthdOff("Interrupts", "firstLevelHandlerWEC"))
       + MAGIC.getCodeOff();
     //create entries for exceptions
-    while (i<=0x07) createEntry(i++, destWOE);
-    while (i<=0x0E) createEntry(i++, destWEC);
-    while (i<=0x10) createEntry(i++, destWOE);
+    while (i <= 0x07) createEntry(i++, destWOE);
+    while (i <= 0x0E) createEntry(i++, destWEC);
+    while (i <= 0x10) createEntry(i++, destWOE);
     createEntry(i++, destWEC);
-    while (i<KernelConst.KC_INTCOUNT) createEntry(i++, destWOE); //also create entries for hardware interrupts
+    while (i < KernelConst.KC_INTCOUNT) createEntry(i++, destWOE); //also create entries for hardware interrupts
     //create new exc-table and copy old entries if existing
-    newHandler=new ExcHandler[0x20];
-    if (handler!=null) for (i=0; i<0x20; i++) newHandler[i]=handler[i];
-    handler=newHandler;
+    newHandler = new ExcHandler[0x20];
+    if (handler != null) for (i = 0; i < 0x20; i++) newHandler[i] = handler[i];
+    handler = newHandler;
     //enter DebugScreen as default
-    debug=new DebugScreen();
+    debug = new DebugScreen();
     //create new irq-table and copy old entries is existing
-    for (i=0; i<0x20; i++) if (handler[i]==null) handler[i]=debug;
-    newDevices=new Device[KernelConst.KC_INTCOUNT-0x20];
-    if (devList!=null) for (i=0; i<KernelConst.KC_INTCOUNT-0x20 && i<devList.length; i++)
-      newDevices[i]=devList[i];
-    devList=newDevices;
+    for (i = 0; i < 0x20; i++) if (handler[i] == null) handler[i] = debug;
+    newDevices = new Device[KernelConst.KC_INTCOUNT - 0x20];
+    if (devList != null) for (i = 0; i < KernelConst.KC_INTCOUNT - 0x20 && i < devList.length; i++)
+      newDevices[i] = devList[i];
+    devList = newDevices;
   }
   
   private static void createEntry(int no, int dest) {

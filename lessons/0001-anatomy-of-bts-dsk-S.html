@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 1: Anatomy of bts_dsk.S — The Boot Boundary</title>
+<link rel="stylesheet" href="../assets/shared.css">
+<style>
+  .phase { margin: 1.5rem 0; }
+  .phase h3 { margin-top: 0; }
+  .offset-map { font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; line-height: 1.5; }
+  .offset-map .loc { color: var(--accent); }
+  .offset-map .desc { color: var(--muted); }
+  .offset-map .active { background: var(--accent-light); }
+  ins { background: #d4edda; text-decoration: none; padding: 0.1em 0.2em; border-radius: 2px; }
+</style>
+</head>
+<body>
+
+<h1>Lesson 1: Anatomy of <code>bts_dsk.S</code></h1>
+<p class="subtitle">The boot boundary — where PicOS wakes up</p>
+
+<hr>
+
+<p>
+  <code>bts_dsk.S</code> is the first code that runs when PicOS boots. It lives in the first
+  512 bytes of the floppy disk image — the <strong>boot sector</strong>. The BIOS loads it to
+  address <code>0x7C00</code> and jumps there in 16-bit real mode. From that tiny footprint,
+  this file must:
+</p>
+
+<ol>
+  <li>Set up the CPU so it can address all of memory (A20 gate)</li>
+  <li>Switch to 32-bit protected mode</li>
+  <li>Jump into the PicOS Java runtime</li>
+</ol>
+
+<p>
+  As of my most recent change, it also supports a second entry path: <strong>Multiboot2</strong>,
+  so GRUB can load PicOS directly. Let's walk through it phase by phase.
+</p>
+
+<h2>Phase 0: The Multiboot2 Header</h2>
+
+<pre>_start:
+    jmp entry_detect
+
+    .balign 8
+multiboot2_header:
+    .long 0xE85250D6         # magic
+    .long 0                  # architecture (i386)
+    .long header_len         # header length (24)
+    .long checksum           # -(magic + 0 + 24) = 0x17ADAF12
+    .word 0                  # end tag type
+    .word 0                  # end tag flags
+    .long 8                  # end tag size</pre>
+
+<p>
+  The very first instruction is <code>jmp entry_detect</code> (2 bytes, assembles to <code>EB 1E</code>).
+  This jumps over the multiboot2 header, which GRUB scans for in the first 32KB of the image.
+  The header is padded to <strong>8-byte alignment</strong> with <code>.balign 8</code>.
+</p>
+
+<div class="callout callout-tip">
+  <strong>Why 8-byte alignment?</strong> The Multiboot2 spec requires it. The
+  <code>.balign 8</code> directive fills with zero bytes up to the next 8-byte boundary.
+</div>
+
+<p>
+  The checksum is computed so that all four 32-bit fields (magic + architecture + length + checksum)
+  sum to zero when added as unsigned 32-bit integers:
+</p>
+
+<pre>0xE85250D6 + 0 + 24 + 0x17ADAF12 = 0x1_0000_0000 → 0 mod 2³² ✓</pre>
+
+<h2>Phase 1: Mode Detection</h2>
+
+<pre>entry_detect:
+    smsw ax
+    test al, 1
+    jnz mb2_entry</pre>
+
+<p>
+  This is the clever bit. The <code>smsw</code> (Store Machine Status Word) instruction reads
+  <strong>CR0</strong> into <code>ax</code> (16-bit mode) or <code>eax</code> (32-bit mode).
+  Bit 0 of CR0 is the <strong>Protection Enable</strong> (PE) bit.
+</p>
+
+<table>
+  <tr><th>Boot path</th><th>CPU mode at entry</th><th>CR0.PE</th><th>Result</th></tr>
+  <tr><td>Legacy BIOS</td><td>16-bit real mode</td><td>0</td><td>Fall through to legacy code</td></tr>
+  <tr><td>GRUB (Multiboot2)</td><td>32-bit protected mode</td><td>1</td><td>Jump to <code>mb2_entry</code></td></tr>
+</table>
+
+<div class="callout">
+  The byte encoding <code>0F 01 E0</code> for <code>smsw ax</code> (in <code>.code16</code>)
+  decodes the <em>same way</em> in 32-bit mode — as <code>smsw eax</code>. Either way,
+  <code>test al, 1</code> checks the PE bit. The encoding is <strong>mode-agnostic</strong>.
+</div>
+
+<h2>Phase 2: Legacy BIOS Boot (16-bit)</h2>
+
+<pre>PIdest:     .long 0
+PICDAddr:   .long 0
+PIExAddr:   .long 0</pre>
+
+<p>
+  These three <strong>dword variables</strong> are placeholders. The PicOS build tool
+  (<code>compile</code> / BootOut) patches them via <code>bootconf.lin</code> with the
+  real addresses: where the Java image was loaded, its class descriptor, and the entry method.
+</p>
+
+<pre>mygdt:
+    .word 0x0000, 0x0000, 0x0000, 0x0000   # null
+    .word 0xFFFF, 0x0000, 0x9A00, 0x00CF   # 4GB 32-bit code
+    .word 0xFFFF, 0x0000, 0x9200, 0x00CF   # 4GB 32-bit data
+    .word 0xFFFF, 0x0000, 0x9A06, 0x008F   # 4GB 16-bit code at 0x60000</pre>
+
+<p>The Global Descriptor Table defines four segments, each 4GB flat:</p>
+
+<table>
+  <tr><th>Selector</th><th>Type</th><th>Base</th><th>Limit</th><th>Flags</th></tr>
+  <tr><td><code>0x00</code></td><td>Null</td><td>—</td><td>—</td><td>Mandatory</td></tr>
+  <tr><td><code>0x08</code></td><td>32-bit code</td><td>0</td><td>4GB</td><td>Present, DPL=0, code, 32-bit</td></tr>
+  <tr><td><code>0x10</code></td><td>32-bit data</td><td>0</td><td>4GB</td><td>Present, DPL=0, R/W</td></tr>
+  <tr><td><code>0x18</code></td><td>16-bit code</td><td>0x60000</td><td>4GB</td><td>Present, DPL=0, 16-bit</td></tr>
+</table>
+
+<p>
+  The fourth descriptor (16-bit code at <code>0x60000</code>) exists so the kernel can
+  call back into real-mode BIOS interrupts. The <strong>ptrgdt</strong> structure holds
+  the limit and linear address that <code>lgdt</code> needs:
+</p>
+
+<pre>ptrgdt:
+    .word endgdt - mygdt    # limit = GDT size in bytes
+    .long mygdt              # linear address of GDT</pre>
+
+<h3>The A20 Gate</h3>
+
+<pre>    mov al, 'A'
+    call PrintChar          # print 'A' so we know we got here
+    call waitKeyboard
+    mov al, 0xD1
+    out 0x64, al             # command: write to keyboard output port
+    call waitKeyboard
+    mov al, 0xDF
+    out 0x60, al             # set A20 bit</pre>
+
+<p>
+  On 8086-compatible CPUs, address line A20 was tied low for compatibility.
+  <code>0xDF</code> written to port <code>0x60</code> enables it, giving access
+  to the full 32-bit address space. The <code>'A'</code> character signals progress.
+</p>
+
+<h3>Protected Mode: The Two-Step Dance</h3>
+
+<pre>    lgdt [ptrgdt]            # load our GDT
+    mov eax, cr0
+    or al, 1
+    mov cr0, eax             # enter protected mode
+    mov dx, 0x10
+    mov fs, dx               # load a big-flat data selector into FS
+    dec ax
+    mov cr0, eax             # back to real mode</pre>
+
+<div class="callout callout-warn">
+  <strong>Why enter protected mode and immediately leave?</strong>
+  The CPU loads segment descriptor caches only when a segment register is
+  <em>reloaded</em>. The BIOS sets CS, DS, ES, SS with limits of 64KB. By briefly
+  entering protected mode and loading <code>FS</code> with the 4GB data selector,
+  <code>FS</code> now caches a 4GB limit — and this cache <strong>persists</strong>
+  after switching back to real mode. This gives the boot code a "big flat" segment
+  (FS) to access memory beyond 1MB.
+</div>
+
+<h2>Phase 3: Call Into Java</h2>
+
+<pre>CallJava:
+    mov al, 'P'
+    call PrintChar           # print 'P' for Protected Mode
+    lgdt [ptrgdt]            # reload GDT
+    mov eax, cr0
+    or al, 1
+    mov cr0, eax             # enter protected mode for real this time
+
+    .byte 0xEA               # far jump opcode
+    .long doit                # 32-bit offset
+    .word 0x0008             # code selector (GDT entry 1)</pre>
+
+<p>
+  The <code>0xEA</code> far jump reloads CS with the 32-bit code segment (<code>0x08</code>)
+  and lands at <code>doit</code>. This is <strong>not</strong> a simple <code>jmp doit</code> —
+  only a far jump can change CS and thus the execution mode.
+</p>
+
+<pre>doit:
+    mov dx, 0x10
+    mov ds, dx; mov es, dx; mov fs, dx; mov gs, dx; mov ss, dx
+    mov esp, INITSTACK        # stack at 0x9BFFC
+    mov edi, [PICDAddr]       # class descriptor
+    mov eax, [PIExAddr]       # method address
+    call eax                  # jump into Java!
+Ready:
+    jmp Ready</pre>
+
+<p>
+  Segments are reloaded with the 32-bit data selector, the stack is set, and then
+  the two patched-in values direct execution into the Java runtime. The <code>call eax</code>
+  is an <strong>indirect call</strong> — the address was computed by the PicOS build tool
+  and written into <code>PIExAddr</code>.
+</p>
+
+<h2>Phase 4: Multiboot2/GRUB Entry</h2>
+
+<pre>mb2_entry:                   # entered via GRUB, already in 32-bit PM
+    lgdt [ptrgdt]
+    mov dx, 0x10
+    mov ds, dx; mov es, dx; mov fs, dx; mov gs, dx; mov ss, dx
+    mov esp, INITSTACK
+    mov edi, [PICDAddr]
+    mov eax, [PIExAddr]
+    call eax
+    jmp Ready</pre>
+
+<p>
+  When GRUB boots PicOS via Multiboot2, the processor is already in 32-bit protected mode
+  with A20 enabled. The <code>mb2_entry</code> path skips all the real-mode setup, reloads
+  our own GDT (GRUB provides one, but we want the 16-bit code segment at <code>0x18</code>),
+  and jumps straight to Java.
+</p>
+
+<h2>Offset Map</h2>
+
+<p>A quick reference of what sits where in the final binary:</p>
+
+<pre class="offset-map">
+Offset  Content
+──────  ──────────────────────────────────────────
+ 0x00   jmp entry_detect (EB 1E)
+ 0x02   padding to 8-byte boundary
+ 0x08   Multiboot2 header (24 bytes)
+ 0x20   entry_detect: smsw / test / jnz
+ 0x29   PIdest (4B)
+ 0x2D   PICDAddr (4B)
+ 0x31   PIExAddr (4B)
+ 0x38   mygdt (32B)
+ 0x58   ptrgdt (6B)
+ 0x5E   PrintChar
+ 0x6C   waitKeyboard
+ 0x74   start: (legacy real-mode setup)
+ 0xA6   CallJava: (enter protected mode again)
+ 0xD2   doit: (32-bit, call Java method)
+ 0xFB   mb2_entry: (GRUB fast path)
+</pre>
+
+<h2>Check Your Understanding</h2>
+
+<div class="quiz">
+  <div class="quiz-question">Q1. Why does the boot sector need two entry paths?</div>
+  <div class="quiz-option" onclick="this.classList.toggle('quiz-correct')">Legacy BIOS enters in 16-bit real mode; GRUB enters in 32-bit protected mode. They need different setup.</div>
+  <div class="quiz-option" onclick="this.classList.toggle('quiz-correct')">One path is for floppy boot, the other for CD-ROM boot.</div>
+  <div class="quiz-option" onclick="this.classList.toggle('quiz-correct')">The second path is a fallback if A20 gate fails.</div>
+  <div class="quiz-explanation">The correct answer is the first one. The <code>smsw</code> detection at <code>entry_detect</code> branches based on CR0.PE, which tells us which bootloader loaded us.</div>
+</div>
+
+<div class="quiz">
+  <div class="quiz-question">Q2. What does the brief protected-mode switch early in the legacy path accomplish?</div>
+  <div class="quiz-option" onclick="this.classList.toggle('quiz-correct')">It loads the GDT so the GDT is in memory.</div>
+  <div class="quiz-option" onclick="this.classList.toggle('quiz-correct')">It loads FS with a segment descriptor that caches a 4GB limit, which persists after returning to real mode.</div>
+  <div class="quiz-option" onclick="this.classList.toggle('quiz-correct')">It tests whether the CPU supports protected mode.</div>
+  <div class="quiz-explanation">The FS register caches the 4GB segment limit (selector 0x10), giving the real-mode code full memory access. See the "unreal mode" trick in OSDev.</div>
+</div>
+
+<div class="quiz">
+  <div class="quiz-question">Q3. Why is <code>0xEA</code> (far jump) used instead of a regular <code>jmp</code> to reach <code>doit</code>?</div>
+  <div class="quiz-option" onclick="this.classList.toggle('quiz-correct')">Because <code>doit</code> is too far away for a short jump.</div>
+  <div class="quiz-option" onclick="this.classList.toggle('quiz-correct')">A far jump reloads CS, which is required to switch from 16-bit to 32-bit execution mode.</div>
+  <div class="quiz-option" onclick="this.classList.toggle('quiz-correct')">Because the assembler doesn't support <code>jmp doit</code> across <code>.code16</code>/<code>.code32</code> boundaries.</div>
+  <div class="quiz-explanation">Only a far jump (opcode <code>0xEA</code>) changes CS. Changing CS is what actually switches the default operand/address size from 16-bit to 32-bit. A near jump (<code>0xE9</code>) only changes EIP and keeps CS unchanged.</div>
+</div>
+
+<p> </p>
+<hr>
+
+<h2>Further Reading</h2>
+
+<ul>
+  <li><a href="https://wiki.osdev.org/Bootloader">OSDev: Bootloader</a> — the canonical reference</li>
+  <li><a href="https://wiki.osdev.org/Multiboot2">OSDev: Multiboot2</a> — header format and entry protocol</li>
+  <li><a href="https://wiki.osdev.org/Unreal_Mode">OSDev: Unreal Mode</a> — the FS 4GB trick in detail</li>
+  <li><a href="https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html">Intel SDM Vol. 3A, Ch. 9</a> — processor management and CR0</li>
+</ul>
+
+<p>
+  <strong>Questions?</strong> Ask me — I'm here as your teacher. We can go deeper on any
+  phase, or trace through the code with a debugger if you'd like.
+</p>
+
+</body>
+</html>

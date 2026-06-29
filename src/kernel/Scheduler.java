@@ -7,7 +7,7 @@ import raytracer.RayTrace;
 import raytracer.SceneDemo5;
 
 public class Scheduler {
-  private final static int XRES=800, YRES=600;
+  private final static int XRES = 800, YRES = 600;
   
   public static void run() {
     DeviceList.out.cls();
@@ -32,7 +32,7 @@ public class Scheduler {
   }
   
   private static boolean initVesa() {
-    if (DeviceList.vesa!=null) {
+    if (DeviceList.vesa != null) {
       if (!DeviceList.vesa.setMode(XRES, YRES, 24, true))
         DeviceList.out.println("installed VESA-card does not support requested mode");
       else return true;                 
@@ -51,10 +51,10 @@ public class Scheduler {
     int image[][] = null, line[];
     
     while (DeviceList.in.eventAvail()) {
-      event=DeviceList.in.fetchEvent();
-      modifier=DeviceList.in.extractCode(event);
-      code=DeviceList.in.extractCodeExt(event);
-      c=DeviceList.kevt.getChar(modifier, code);
+      event = DeviceList.in.fetchEvent();
+      modifier = DeviceList.in.extractCode(event);
+      code = DeviceList.in.extractCodeExt(event);
+      c = DeviceList.kevt.getChar(modifier, code);
       if ((modifier&(KEvT.MD_ANY_CTRL|KEvT.MD_ANY_ALT|KEvT.MD_ANY_SHIFT))==(short)0) { //system key
         switch (DeviceList.kevt.getKey((short)0, code)) {
           case KEvT.KC_F1: //switch to virtual memory
@@ -69,12 +69,12 @@ public class Scheduler {
           	break;
           case KEvT.KC_F6: //switch to VESA mode and calc raytracer picture
             if (initVesa()) {
-              if (image==null) image=new int[YRES][XRES];
-              rt=new RayTrace(new SceneDemo5(), false);
+              if (image == null) image = new int[YRES][XRES];
+              rt = new RayTrace(new SceneDemo5(), false);
               rt.init(XRES, YRES);
-              cTAi=new CalcTAinfo();
-              for (y=0; y<YRES; y++) {
-                rt.renderLine(line=image[cTAi.y=y], cTAi);
+              cTAi = new CalcTAinfo();
+              for (y = 0; y < YRES; y++) {
+                rt.renderLine(line = image[cTAi.y = y], cTAi);
                 DeviceList.vesa.drawLine(y, line);
               }
             }

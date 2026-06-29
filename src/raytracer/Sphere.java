@@ -21,11 +21,11 @@ public class Sphere extends Renderable {
   /**
    * Sole constructor for a sphere
    * 
-   * @param Surface
+   * @param s
    *          the sphere's surface
-   * @param Vector3f
+   * @param c
    *          the center of the sphere
-   * @param float
+   * @param r
    *          the radius of the sphere
    */
   public Sphere(Surface s, Vector3f c, float r) {
@@ -38,7 +38,7 @@ public class Sphere extends Renderable {
   /**
    * Check whether this object intersects with the given ray.
    * 
-   * @param Ray
+   * @param ray
    *          ray to intersect
    * @return float -1 if no intersection, otherwise returns value of parametric
    *         value t at the intersection point
@@ -75,9 +75,9 @@ public class Sphere extends Renderable {
    * surface shader. This function determines the point of intersection, surface
    * normal, and ray origin and passes them to the surface shader.
    * 
-   * @param Ray
+   * @param ray
    *          the intersecting ray
-   * @param Scene
+   * @param scene
    *          lights, objects, background
    * @return RGBfCol the shaded color
    */
@@ -104,4 +104,5 @@ public class Sphere extends Renderable {
 
     return col;
   }
+  
 }

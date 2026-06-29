@@ -32,29 +32,29 @@ public class BasicMemory extends MemIntf {
     Object me;
     
     //prepare 
-    rs=relocEntries*MAGIC.ptrSize;
-    scalarSize=(scalarSize+(MAGIC.ptrSize-1))&~(MAGIC.ptrSize-1);
-    size=rs+scalarSize;
+    rs = relocEntries * MAGIC.ptrSize;
+    scalarSize = (scalarSize + (MAGIC.ptrSize - 1)) & ~(MAGIC.ptrSize - 1);
+    size = rs + scalarSize;
     //prepare object
-    Kernel.setMem32(nextFreeAddress, size>>2, 0); //clear memory
-    objPtr=nextFreeAddress+rs; //pointer to header
-    me=MAGIC.cast2Obj(objPtr);
+    Kernel.setMem32(nextFreeAddress, size >> 2, 0); //clear memory
+    objPtr = nextFreeAddress + rs; //pointer to header
+    me = MAGIC.cast2Obj(objPtr);
     MAGIC.assign(me._r_type, type); //place object and set type
     MAGIC.assign(me._r_relocEntries, relocEntries); //set amount of relocs
     MAGIC.assign(me._r_scalarSize, scalarSize); //set adjusted size in scalars
     //update heap-info-structure
-    if (lastObjectAddress!=0) MAGIC.assign(MAGIC.cast2Obj(lastObjectAddress)._r_next, me); //enter next-object in last object
+    if (lastObjectAddress != 0) MAGIC.assign(MAGIC.cast2Obj(lastObjectAddress)._r_next, me); //enter next-object in last object
     //remember the work
-    lastObjectAddress=objPtr; //remember this object as last object
-    nextFreeAddress+=size; //set next free address behind this object
+    lastObjectAddress = objPtr; //remember this object as last object
+    nextFreeAddress += size; //set next free address behind this object
     return me;
   }
   
   //allocate space for kernel, wrapped in a byte-array
   public static int allocateKernelBlock(int size, int maskBits) {
     SArray dest;
-    int safety=MAGIC.getInstScalarSize("SArray")+maskBits;
-    dest=DynamicRuntime.newArray(safety+size+1, 1, 1, 1, null);
-    return ((int)MAGIC.cast2Ref(dest)+safety)&~maskBits;
+    int safety = MAGIC.getInstScalarSize("SArray") + maskBits;
+    dest = DynamicRuntime.newArray(safety + size + 1, 1, 1, 1, null);
+    return ((int)MAGIC.cast2Ref(dest) + safety) & ~maskBits;
   }
 }

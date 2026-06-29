@@ -9,12 +9,17 @@ public class Kernel {
   public static Interrupts ints;
   
   public static void main() {
+      //MAGIC.inline(0x55, 0x48, 0x89);
+      //MAGIC.inline(0xe5, 0xb8, 0x93);
+      //MAGIC.inline(0x55, 0x05, 0x00);
+      //MAGIC.inline(0x5d, 0xc3);
     MAGIC.inline(0x9B, 0xDB, 0xE3); //FINIT
     directPrintChar('N', 1, 0, 0x07); BasicMemory.init();
     directPrintChar('I', 1, 0, 0x07); Interrupts.init();
     directPrintChar('D', 1, 0, 0x07); DeviceList.initDevices();
     directPrintChar('E', 1, 0, 0x07); ints.sti();
-    directPrintChar('S', 1, 0, 0x07); Scheduler.run(); 
+    directPrintChar('S', 1, 0, 0x07); Scheduler.run();
+    //return 1;
   }
   
   public static void directPrintInt(int val, int base, int len,
@@ -22,27 +27,27 @@ public class Kernel {
     int i, addr, dignum, digchr;
     long uval, ubase;
 
-    if (len<1 || base<2 || base>16 || x<0 || x+len>80 || y<0 || y>24) return; //invalid parameter
-    addr=0xB8000+((y*80+x)<<1); //address of first character
-    col=(col&0xFF)<<8; //color is upper byte -> mask and shift
-    uval=((long)val)&0xFFFFFFFFl;
-    ubase=(long)base;
-    for (i=0; i<len; i++) {
-      dignum=(int)(uval%ubase);
-      uval=uval/ubase;
-      if (dignum==0) {
-        if (leadingZero || i==0 || uval!=0l) digchr=48;
-        else digchr=32;
+    if (len < 1 || base < 2 || base > 16 || x < 0 || x + len > 80 || y < 0 || y > 24) return; //invalid parameter
+    addr = 0xB8000 + ((y * 80 + x) << 1); //address of first character
+    col = (col & 0xFF) << 8; //color is upper byte -> mask and shift
+    uval = ((long)val) & 0xFFFFFFFFl;
+    ubase = (long)base;
+    for (i = 0; i < len; i++) {
+      dignum = (int)(uval % ubase);
+      uval = uval / ubase;
+      if (dignum == 0) {
+        if (leadingZero || i == 0 || uval != 0l) digchr = 48;
+        else digchr = 32;
       }
-      else if (dignum<10) digchr=dignum+48;
-      else digchr=dignum+55;
-      if (i==len-1 && uval!=0l) digchr=0x3E; //">" to show "overflow"
-      MAGIC.wMem16(addr+((len-i-1)<<1), (short)(col|digchr));
+      else if (dignum < 10) digchr = dignum + 48;
+      else digchr = dignum + 55;
+      if (i == len - 1 && uval != 0l) digchr = 0x3E; //">" to show "overflow"
+      MAGIC.wMem16(addr + ((len - i - 1) << 1), (short)(col|digchr));
     }
   }
   
   public static void directPrintChar(char c, int x, int y, int col) {
-    MAGIC.wMem16(0xB8000+((y*80+x)<<1), (short)((((int)c)&0xFF)|(col<<8)));
+    MAGIC.wMem16(0xB8000 + ((y * 80 + x) << 1), (short)((((int)c) & 0xFF) | (col << 8)));
   }
 
   public static void setMem32(int addr, int cnt, int val) {
