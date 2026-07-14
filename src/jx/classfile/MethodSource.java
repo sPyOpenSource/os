@@ -6,7 +6,7 @@ package jx.classfile;
     See subclasses 
 */ 
 
-abstract public class MethodSource {
+abstract public class MethodSource extends jx.zero.classfile.MethodSource {
 
   abstract public ClassSource getDeclaringClassSource();
   abstract public String getMethodName(); 

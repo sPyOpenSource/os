@@ -265,5 +265,10 @@ public class MethodData extends MethodSource {
 	return null;
     }
 
+    @Override
+    public void setVerifyResult(jx.zero.classfile.VerifyResult newElm) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
 
 }      

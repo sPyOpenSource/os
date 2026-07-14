@@ -1,6 +1,6 @@
 package jx.classfile; 
 
-public class LineAttributeData {
+public class LineAttributeData implements jx.zero.classfile.LineAttributeData {
     public int startBytecodepos;
     public int lineNumber;
     public LineAttributeData(int startBytecodepos, int lineNumber) {

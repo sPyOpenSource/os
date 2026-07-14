@@ -11,7 +11,7 @@ import jx.zero.Debug;
     It only reads the data from the class file and 
     stores it. 
 */ 
-public class FieldData {
+public class FieldData implements jx.zero.classfile.FieldData {
     private int accessFlags; 
     private int fieldNameCPIndex; 
     private int fieldTypeCPIndex; 

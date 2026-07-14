@@ -282,7 +282,7 @@ public class Ether  implements PacketsProducer, EtherProducer {
 		}
 	    }
 	}
-	//new EtherQueueConsumerThread().start();
+	new EtherQueueConsumerThread().start();
 
 	
 	class EtherNonBlockingMemoryConsumerImpl implements EtherNonBlockingMemoryConsumer, Service  {

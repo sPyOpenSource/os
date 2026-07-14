@@ -10,7 +10,7 @@ import jx.zero.Debug;
     It only reads the data from the class file and 
     stores it. 
 */ 
-public class ClassData extends ClassSource {
+public class ClassData extends ClassSource implements jx.zero.classstore.ClassData {
 
     final static boolean debugRead = false;
 

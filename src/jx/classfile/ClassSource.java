@@ -8,7 +8,7 @@ import jx.classfile.constantpool.ConstantPool;
     See subclasses. 
 */ 
 
-abstract public class ClassSource {
+abstract public class ClassSource extends jx.zero.classfile.ClassSource {
 
     public static final int ACC_PUBLIC       = 0x0001; 
     public static final int ACC_PRIVATE      = 0x0002; 

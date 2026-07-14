@@ -18,7 +18,7 @@ import jx.zero.Debug;
     referenced by bytecode can be loaded through MetaxaConstantPool 
     (e.g. NameAndTypeCPEntry's can not). 
 */ 
-public class ConstantPool {
+public class ConstantPool implements jx.zero.classfile.ConstantPool {
 
     static boolean noLongs = false;
 

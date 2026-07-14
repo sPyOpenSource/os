@@ -11,7 +11,7 @@ import jx.zero.Debug;
     It only reads the data from the class file and 
     stores it. 
 */ 
-public class ExceptionHandlerData {
+public class ExceptionHandlerData implements jx.zero.classfile.ExceptionHandlerData {
   private int startBCIndex; 
   private int endBCIndex; 
   private int handlerBCIndex; 
