@@ -100,6 +100,10 @@ public final class Boolean implements Serializable
 	return new Boolean(s);
     }
 
+    public static Boolean valueOf(boolean s) {
+	return new Boolean(s);
+    }
+    
     /**
      * Returns the integer <code>1231</code> if this object represents 
      * the primitive <code>true</code> and the integer <code>1237</code>

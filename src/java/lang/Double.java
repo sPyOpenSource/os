@@ -22,32 +22,42 @@ public final class Double extends Number {
     }
     private double value;
 
+    @Override
     public byte byteValue() {
 	return (byte)value;
     }
 
+    @Override
     public short shortValue() {
 	return (short)value;
     }
 
+    @Override
     public int intValue() {
 	return (int)value;
     }
 
+    @Override
     public long longValue() {
 	return (long)value;
     }
 
+    @Override
     public float floatValue() {
 	return (float)value;
     }
 
+    @Override
     public double doubleValue() {
 	return (double)value;
     }
 
     public static Double valueOf(String s) throws NumberFormatException { 
 	return new Double(valueOf0(s));
+    }
+    
+    public static Double valueOf(double s) throws NumberFormatException { 
+	return new Double(s);
     }
 
     static public boolean isNaN(double v) {
@@ -72,16 +82,19 @@ public final class Double extends Number {
 	return isInfinite(value);
     }
 
+    @Override
     public String toString() {
 	return String.valueOf(value);
     }
 
 
+    @Override
     public int hashCode() {
 	long bits = doubleToLongBits(value);
 	return (int)(bits ^ (bits >> 32));
     }
 
+    @Override
     public boolean equals(Object obj) {
 	return (obj != null)
 	       && (obj instanceof Double) 
@@ -92,10 +105,8 @@ public final class Double extends Number {
 
     static double valueOf0(String s) throws NumberFormatException{throw new Error();}
 
-
     private static final long serialVersionUID = -9172774392245257468L;
     
-
     public static long doubleToLongBits(double value) {
 	throw new Error();
     }

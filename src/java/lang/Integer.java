@@ -93,11 +93,13 @@ public class Integer extends Number
 	value = parseInt(s);
     }
 
+    @Override
     public String toString()
     {
 	return toString(value);
     }
 
+    @Override
     public boolean equals(Object obj)
     {
         Debug.out.println("obj");
@@ -108,27 +110,31 @@ public class Integer extends Number
 	return false;
     }
 
+    @Override
     public int hashCode()
     {
 	return value;
     }
 
+    @Override
     public int intValue()
     {
 	return value;
     }
 
+    @Override
     public long longValue()
     {
 	return (long)value;
     }
-
     
+    @Override
     public float floatValue()
     {
         throw new Error(); /*return (float)value;*/
     }
 
+    @Override
     public double doubleValue()
     {
         throw new Error(); /*return (double)value;*/
@@ -237,6 +243,11 @@ public class Integer extends Number
 	return new Integer(parseInt(s));
     }
 
+    public static Integer valueOf(int s) throws NumberFormatException
+    {
+	return new Integer(s);
+    }
+    
     public static Integer valueOf(String s, int radix) throws NumberFormatException
     {
 	return new Integer(parseInt(s, radix));
@@ -274,4 +285,3 @@ public class Integer extends Number
 	return val;
     }
 }
-

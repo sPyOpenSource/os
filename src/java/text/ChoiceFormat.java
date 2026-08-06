@@ -355,7 +355,10 @@ format(double number, StringBuffer sb, FieldPosition status)
 /**
   * I'm not sure what this method is really supposed to do, as it is
   * not documented.
+  * @param text
+  * @param status
   */
+@Override
 public Number
 parse(String text, ParsePosition status)
 {
@@ -367,11 +370,11 @@ parse(String text, ParsePosition status)
         {
           status.setIndex(status.getIndex() + choiceFormats[i].length());
 
-          return(new Double(choiceLimits[i]));
+          return new Double(choiceLimits[i]);
         }
     }
 
-  return(new Double(Double.NaN));
+  return new Double(Double.NaN);
 }
 
 /*************************************************************************/
@@ -452,4 +455,3 @@ clone()
 */
 
 } // class ChoiceFormat
-

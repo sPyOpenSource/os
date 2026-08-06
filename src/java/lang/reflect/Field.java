@@ -10,6 +10,7 @@ public class Field {
     String desc;
     String signature;
     
+    @Override
     public boolean equals(java.lang.Object arg0) { throw new Error("NOT IMPLEMENTED"); }
     public java.lang.Object get(java.lang.Object arg0) { throw new Error("NOT IMPLEMENTED"); }
     public boolean getBoolean(java.lang.Object arg0) { throw new Error("NOT IMPLEMENTED"); }
@@ -24,6 +25,7 @@ public class Field {
     public java.lang.String getName() { throw new Error("NOT IMPLEMENTED"); }
     public short getShort(java.lang.Object arg0) { throw new Error("NOT IMPLEMENTED"); }
     public java.lang.Class getType() { throw new Error("NOT IMPLEMENTED"); }
+    @Override
     public int hashCode() { throw new Error("NOT IMPLEMENTED"); }
     public void set(java.lang.Object arg0, java.lang.Object arg1) { throw new Error("NOT IMPLEMENTED"); }
     public void setBoolean(java.lang.Object arg0, boolean arg1) { throw new Error("NOT IMPLEMENTED"); }
@@ -34,6 +36,7 @@ public class Field {
     public void setInt(java.lang.Object arg0, int arg1) { throw new Error("NOT IMPLEMENTED"); }
     public void setLong(java.lang.Object arg0, long arg1) { throw new Error("NOT IMPLEMENTED"); }
     public void setShort(java.lang.Object arg0, short arg1) { throw new Error("NOT IMPLEMENTED"); }
+    @Override
     public java.lang.String toString() { throw new Error("NOT IMPLEMENTED"); }
 
     public boolean isAccessible() {

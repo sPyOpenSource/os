@@ -232,6 +232,7 @@ public final class Long extends Number
             return val;
     }
 
+    @Override
     public boolean equals(Object obj)
     {
             if (obj == null)
@@ -244,27 +245,31 @@ public final class Long extends Number
             return value == l.longValue();
     }
 
+    @Override
     public int hashCode()
     {
             return (int)(value ^ (value >>> 32));
     }
 
+    @Override
     public int intValue()
     {
             return (int) value;
     }
 
+    @Override
     public long longValue()
     {
             return (long) value;
     }
 
-
+    @Override
     public float floatValue()
     {
         /*return (float) value;*/ throw new Error();
     }
 
+    @Override
     public double doubleValue()
     {
          throw new Error();

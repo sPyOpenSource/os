@@ -25,4 +25,5 @@ public class InternalError extends VirtualMachineError {
     public InternalError(Throwable ex) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+    
 }

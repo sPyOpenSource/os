@@ -10,7 +10,7 @@ import jx.zero.*;
 public class MultiThreadList {
 //    static final boolean debug = false;
 
-    boolean verbose = false;
+    boolean verbose = true;
     MultiThreadListElement first;
     MultiThreadListElement last;
     CAS cas_first, cas_last;
@@ -24,11 +24,12 @@ public class MultiThreadList {
 
     public MultiThreadList() {
 	if (verbose) Debug.out.println("MultiThreadList()");
-	cpuManager = (CPUManager)LookupHelper.waitUntilPortalAvailable(InitialNaming.getInitialNaming(),"CPUManager");
+	cpuManager = (CPUManager)InitialNaming.getInitialNaming().lookup("CPUManager");
 	first = new MultiThreadListElement(null, cpuManager);
 	last = first;
-	cas_first = cpuManager.getCAS(this.getClass().getName(), "first");
-	cas_last  = cpuManager.getCAS(this.getClass().getName(), "last");
+        String name = "jx.buffer.multithread.MultiThreadList";
+	cas_first = cpuManager.getCAS(name, "first");
+	cas_last  = cpuManager.getCAS(name, "last");
 	size = 1;
     }
 

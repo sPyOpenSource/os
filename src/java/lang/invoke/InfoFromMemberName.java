@@ -47,22 +47,27 @@ class InfoFromMemberName implements MethodHandleInfo {
         this.referenceKind = referenceKind;
     }
 
+    @Override
     public Class<?> getDeclaringClass() {
         return member.getDeclaringClass();
     }
 
+    @Override
     public String getName() {
         return member.getName();
     }
 
+    @Override
     public MethodType getMethodType() {
         return member.getMethodOrFieldType();
     }
 
+    @Override
     public int getModifiers() {
         return member.getModifiers();
     }
 
+    @Override
     public int getReferenceKind() {
         return referenceKind;
     }
@@ -72,6 +77,7 @@ class InfoFromMemberName implements MethodHandleInfo {
         return "";//MethodHandleInfo.toString(getReferenceKind(), getDeclaringClass(), getName(), getMethodType());
     }
 
+    @Override
     public <T extends Member> T reflectAs(Class<T> expected, Lookup lookup) {
         if (member.isMethodHandleInvoke() && !member.isVarargs()) {
             // This member is an instance of a signature-polymorphic method, which cannot be reflected
@@ -126,16 +132,16 @@ class InfoFromMemberName implements MethodHandleInfo {
         throw new Error("NOT IMPLEMENTED");
     }
 
-    private static MemberName convertToMemberName(byte refKind, Member mem) throws IllegalAccessException {
+    /*private static MemberName convertToMemberName(byte refKind, Member mem) throws IllegalAccessException {
         if (mem instanceof Method) {
             boolean wantSpecial = (refKind == REF_invokeSpecial);
             return new MemberName((Method) mem, wantSpecial);
         } else if (mem instanceof Constructor) {
             return new MemberName((Constructor) mem);
-        } /*else if (mem instanceof Field) {
+        } else if (mem instanceof Field) {
             boolean isSetter = (refKind == REF_putField || refKind == REF_putStatic);
             return new MemberName((Field) mem, isSetter);
-        }*/
+        }
         throw new InternalError(mem.getClass().getName());
-    }
+    }*/
 }
