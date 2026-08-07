@@ -94,6 +94,7 @@ public class UHCICore implements USBHostControllerAPI, UHCIConstants, FirstLevel
      * Create and initialize a new instance
      *
      * @param device
+     * @param sleepManager
      */
     public UHCICore(PCIDevice device, SleepManager sleepManager) {
         this.device = device;

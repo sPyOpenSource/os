@@ -44,7 +44,6 @@ public class Buffer {
 	moreData = m;
     }
     public void setData(Memory m) {
-	/* debug FIXME HACK */
 	data = m;
 	/*if (data != null && data.size() != 1514) {
 	    throw new Error("Ether: NEED LARGER MEMORY");

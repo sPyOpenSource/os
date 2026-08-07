@@ -50,6 +50,7 @@ public interface USBHostControllerAPI {
 
     /**
      * Gets the API to control the root HUB.
+     * @return 
      */
     public USBHubAPI getRootHUB();
 

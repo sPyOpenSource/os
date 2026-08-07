@@ -291,17 +291,21 @@ getDrivers()
 public static Driver
 getDriver(String url) throws SQLException
 {
-  // FIXME: Limit driver search to the appropriate subset of loaded drivers.
+    // Limit driver search to the appropriate subset of loaded drivers
+    // (those loaded by the same class loader as the caller)
+    ClassLoader cl = Thread.currentThread().getContextClassLoader();
 
-  Enumeration e = drivers.elements();
-  while(e.hasMoreElements())
+    Enumeration e = drivers.elements();
+    while(e.hasMoreElements())
     {
-      Driver d = (Driver)e.nextElement();
-      if (d.acceptsURL(url))
-        return(d);
+	Driver d = (Driver)e.nextElement();
+	if (!d.getClass().getClassLoader().equals(cl))
+	    continue;
+	if (d.acceptsURL(url))
+	    return(d);
     }
 
-  return(null);
+    return(null);
 }
 
 /*************************************************************************/

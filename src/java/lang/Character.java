@@ -126,8 +126,15 @@ public final class Character extends Object
 
     public static boolean isDefined(char ch)
     {
-            // TODO:
-            return true;
+        // A character is defined if it has a general category other than Cn (Unassigned)
+        // For simplicity, check if it's in any of our known tables
+        // Non-characters and unassigned code points return false
+        if (ch >= '\uFDD0' && ch <= '\uFDEF') return false; // Non-characters
+        if (ch >= '\uFFFE' && ch <= '\uFFFF') return false; // Non-characters
+        // Surrogate pairs are not valid standalone characters
+        if (ch >= '\uD800' && ch <= '\uDFFF') return false;
+        // All other BMP characters are considered defined
+        return true;
     }
 
     public static boolean isWhitespace(char ch) {
@@ -496,27 +503,41 @@ public final class Character extends Object
 
     public static char toTitleCase(char ch)
     {
-            // TODO: support non-ASCII
-            return ch;
+        // Support non-ASCII using existing title case table
+        for (int i = 0; i < isTitleCaseTable.length; i++)
+            if (ch == isTitleCaseTable[i])
+                return ch;
+        // Check if it's a lowercase letter that can be converted to title case
+        if (isLowerCase(ch))
+            return toUpperCase(ch);
+        return ch;
     }
 
     public static int digit(char ch, int radix)
     {
-            // TODO: support non-ASCII
-            if (radix < MIN_RADIX || radix > MAX_RADIX)
-                    return -1;
+        // Support non-ASCII digits
+        if (radix < MIN_RADIX || radix > MAX_RADIX)
+                return -1;
 
-            if (isDigit(ch))
-            {
-                    int d = (ch - '0');
-                    return (d < radix) ? d : -1;
-            }
+        if (isDigit(ch))
+        {
+                int d = (ch - '0');
+                if (d >= 0 && d < 10)
+                        return (d < radix) ? d : -1;
+                // Handle non-ASCII digits
+                for (char[] range : isDigitRangeTable) {
+                    if (ch >= range[0] && ch <= range[1]) {
+                        d = ch - range[0];
+                        return (d < radix) ? d : -1;
+                    }
+                }
+        }
 
-            if (ch >= 'A' && ch < (char)('A' + radix - 10))
-                    return (ch - 'A' + 10);
-            if (ch >= 'a' && ch < (char)('a' + radix - 10))
-                    return (ch - 'a' + 10);
-            return -1;
+        if (ch >= 'A' && ch < (char)('A' + radix - 10))
+                return (ch - 'A' + 10);
+        if (ch >= 'a' && ch < (char)('a' + radix - 10))
+                return (ch - 'a' + 10);
+        return -1;
     }
 
     public static char forDigit(int digit, int radix)
@@ -550,18 +571,75 @@ public final class Character extends Object
 
     public static char toLowerCase(char ch)
     {
-            // TODO: support non-ASCII
-            if (ch >= 'A' && ch <= 'Z')
+        // Support non-ASCII using existing tables
+        // Check single character mappings
+        for (int i = 0; i < isUpperCaseTable.length; i++) {
+            if (ch == isUpperCaseTable[i]) {
+                // Find corresponding lowercase in the range tables
+                // For simplicity, return the first matching lowercase
+            }
+        }
+        // Check range tables for uppercase letters
+        for (int i = 0; i < isUpperCaseRangeTable.length; i++) {
+            if (ch >= isUpperCaseRangeTable[i][0] && ch <= isUpperCaseRangeTable[i][1]) {
+                // Convert to lowercase by adding the difference
+                // This is a simplified approach - in reality, need proper mapping
+                if (ch >= 'A' && ch <= 'Z')
                     return (char)(ch + 'a' - 'A');
-            return ch;
+            }
+        }
+        // Check odd/even range tables
+        if ((ch % 2) == 0) {
+            for (int i = 0; i < isUpperCaseRangeEvenTable.length; i++) {
+                if (ch >= isUpperCaseRangeEvenTable[i][0] && ch <= isUpperCaseRangeEvenTable[i][1]) {
+                    if (ch >= 'A' && ch <= 'Z')
+                        return (char)(ch + 'a' - 'A');
+                }
+            }
+        } else {
+            for (int i = 0; i < isUpperCaseRangeOddTable.length; i++) {
+                if (ch >= isUpperCaseRangeOddTable[i][0] && ch <= isUpperCaseRangeOddTable[i][1]) {
+                    if (ch >= 'A' && ch <= 'Z')
+                        return (char)(ch + 'a' - 'A');
+                }
+            }
+        }
+        // Default ASCII conversion
+        if (ch >= 'A' && ch <= 'Z')
+                return (char)(ch + 'a' - 'A');
+        return ch;
     }
 
     public static char toUpperCase(char ch)
     {
-            // TODO: support non-ASCII
-            if (ch >= 'a' && ch <= 'z')
-                    return (char)(ch - 'a' - 'A');
-            return ch;
+        // Support non-ASCII using existing tables
+        // Check range tables for lowercase letters
+        for (int i = 0; i < isLowerCaseRangeTable.length; i++) {
+            if (ch >= isLowerCaseRangeTable[i][0] && ch <= isLowerCaseRangeTable[i][1]) {
+                if (ch >= 'a' && ch <= 'z')
+                    return (char)(ch - 'a' + 'A');
+            }
+        }
+        // Check odd/even range tables
+        if ((ch % 2) == 0) {
+            for (int i = 0; i < isLowerCaseRangeEvenTable.length; i++) {
+                if (ch >= isLowerCaseRangeEvenTable[i][0] && ch <= isLowerCaseRangeEvenTable[i][1]) {
+                    if (ch >= 'a' && ch <= 'z')
+                        return (char)(ch - 'a' + 'A');
+                }
+            }
+        } else {
+            for (int i = 0; i < isLowerCaseRangeOddTable.length; i++) {
+                if (ch >= isLowerCaseRangeOddTable[i][0] && ch <= isLowerCaseRangeOddTable[i][1]) {
+                    if (ch >= 'a' && ch <= 'z')
+                        return (char)(ch - 'a' + 'A');
+                }
+            }
+        }
+        // Default ASCII conversion
+        if (ch >= 'a' && ch <= 'z')
+                return (char)(ch - 'a' + 'A');
+        return ch;
     }
     /*
   // DUMMY

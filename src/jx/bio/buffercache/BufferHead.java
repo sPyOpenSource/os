@@ -2,6 +2,8 @@ package jx.bio.buffercache;
 
 import jx.zero.Debug;
 import jx.zero.*;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.locks.LockSupport;
 
 public class BufferHead extends jx.fs.buffercache.BufferHead {
     static int sequence = 1;
@@ -16,7 +18,9 @@ public class BufferHead extends jx.fs.buffercache.BufferHead {
     /** used by BufferCache */
     int    b_flushtime;
     private  int     b_count, b_list;
-    private boolean dirty, locked, uptodate;  // BufferCache
+    private volatile boolean dirty, locked, uptodate;  // BufferCache
+    private final Object waitLock = new Object();
+    private int waitCount = 0;
 
     /** the block number within the file system */
     int     b_block;
@@ -72,9 +76,20 @@ public class BufferHead extends jx.fs.buffercache.BufferHead {
      * der Sperre lassen sich andere Threads/Prozesse mittels <code>notifyAll</code> wieder aktivieren.
      */
     @Override
-    final public void lock() { locked = true; }
+    final public void lock() {
+	synchronized (waitLock) {
+	    locked = true;
+	}
+    }
     @Override
-    final public void unlock() { locked = false; }
+    final public void unlock() {
+	synchronized (waitLock) {
+	    locked = false;
+	    if (waitCount > 0) {
+		waitLock.notifyAll();
+	    }
+	}
+    }
 
     /**
      * Returns the state of the lock.
@@ -88,11 +103,20 @@ public class BufferHead extends jx.fs.buffercache.BufferHead {
 
     @Override
     public void waitUntilUnlocked() {
-	// TODO: make this atomic!
-	throw new Error("NOT IMPLEMENTED");
-	//	 if (isLocked()) {
-	//  waitOn();
-	//}
+	// Atomic wait for unlock using synchronized block
+	synchronized (waitLock) {
+	    while (locked) {
+		waitCount++;
+		try {
+		    waitLock.wait();
+		} catch (InterruptedException e) {
+		    Thread.currentThread().interrupt();
+		    break;
+		} finally {
+		    waitCount--;
+		}
+	    }
+	}
     }
 
     /**
@@ -122,9 +146,18 @@ public class BufferHead extends jx.fs.buffercache.BufferHead {
     public void waitOn() {
 	if (locked) {
 	    b_count++;
-	    while (locked)
-	        Debug.out.println("TODO: implement WAIT QUEUE!");
-	    ((CPUManager)InitialNaming.getInitialNaming().lookup("CPUManager")).block();
+	    synchronized (waitLock) {
+		waitCount++;
+		try {
+		    while (locked) {
+			waitLock.wait();
+		    }
+		} catch (InterruptedException e) {
+		    Thread.currentThread().interrupt();
+		} finally {
+		    waitCount--;
+		}
+	    }
 	    b_count--;
 	}
     }

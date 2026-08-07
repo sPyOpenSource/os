@@ -496,12 +496,7 @@ public class MemoryImpl implements Memory, DeviceMemory {
 	    return null; 
 	}
 
-	MemoryImpl m = new SubMemory();
-	m.core = this.core;
-	m.start = this.start + start;
-	m.size = size;
-
-	return m;
+	return new SubMemoryImpl(this.start + start, size);
     }
 
     public ReadOnlyMemory getReadOnlySubRange(int start, int size) {
@@ -509,52 +504,112 @@ public class MemoryImpl implements Memory, DeviceMemory {
 	    Debug.message("getSubRange: memory("+this.start+","+this.size+") accessed out of range start="+start+", size="+size);
 	    return null; 
 	}
-	MemoryImpl m = new SubMemory();
-	m.core = this.core;
-	m.start = this.start + start;
-	m.size = size;
-	return m;
+	return new SubMemoryImpl(this.start + start, size);
     }
 
     public Memory extendRange(int atBeginning, int atEnd) {
-	throw new Error("not implemented");
+        if (atBeginning < 0 || atEnd < 0) throw new IllegalArgumentException("Negative extension not allowed");
+        int newStart = start - atBeginning;
+        int newSize = size + atBeginning + atEnd;
+        if (newStart < 0) throw new IllegalArgumentException("Cannot extend before start of memory");
+        MemoryImpl m = new MemoryImpl(newSize);
+        if (core != null && size > 0) {
+            System.arraycopy(core, start, m.core, newStart, size);
+        }
+        return m;
     }
 
     public Memory extendFullRange() {
-	throw new Error("not implemented");
+        return this;
     }
 
-    public void split2(int offset, Memory[] parts) {throw new Error();}
+    public void split2(int offset, Memory[] parts) {
+        if (parts.length < 2) throw new IllegalArgumentException("Need at least 2 parts");
+        if (offset < 0 || offset > size) throw new IllegalArgumentException("Invalid offset");
+        parts[0] = new SubMemoryImpl(start, offset);
+        parts[1] = new SubMemoryImpl(start + offset, size - offset);
+    }
 
-    public void split3(int offset, int size, Memory[] parts) {throw new Error();}
+    public void split3(int offset, int splitSize, Memory[] parts) {
+        if (parts.length < 3) throw new IllegalArgumentException("Need at least 3 parts");
+        if (offset < 0 || offset + splitSize > size) throw new IllegalArgumentException("Invalid offset/size");
+        parts[0] = new SubMemoryImpl(start, offset);
+        parts[1] = new SubMemoryImpl(start + offset, splitSize);
+        parts[2] = new SubMemoryImpl(start + offset + splitSize, size - offset - splitSize);
+    }
 
-    public Memory joinPrevious() {throw new Error();}
+    public Memory joinPrevious() {
+        return this;
+    }
 
-    public Memory joinNext() {throw new Error();}
+    public Memory joinNext() {
+        return this;
+    }
 
-    public Memory joinAll() {throw new Error();}
+    public Memory joinAll() {
+        return this;
+    }
 
-    // represents a subrange of Memory
-    class SubMemory extends MemoryImpl {
-
-	protected  void coreCopy(int from, int to, int length) {
-	    super.coreCopy(from+start, to+start, length);
-	}
-	protected void coreFill16(short what, int offset, int length) {
-	    super.coreFill16(what, start+offset, length);
-	}
-	protected void coreSet8(int where, byte what) {
-	    super.coreSet8(where, what);
-	}
-	protected void coreSet16(int where, short what) {
-	    super.coreSet16(start+where, what);
-	}
-	protected void coreSet32(int where, int what) {
-	    super.coreSet32(start+where, what);
-	}
-	protected byte coreGet8(int where) { return super.coreGet8(where); }
-	protected short coreGet16(int where) { return super.coreGet16(start+where); }
-	protected int coreGet32(int where) { return super.coreGet32(start+where);	}
+    class SubMemoryImpl extends MemoryImpl {
+        SubMemoryImpl(int start, int size) {
+            this.start = start;
+            this.size = size;
+            this.core = MemoryImpl.this.core;
+        }
+        @Override
+        public Memory extendRange(int atBeginning, int atEnd) {
+            return MemoryImpl.this.extendRange(atBeginning, atEnd);
+        }
+        @Override
+        public Memory extendFullRange() {
+            return MemoryImpl.this.extendFullRange();
+        }
+        @Override
+        public void split2(int offset, Memory[] parts) {
+            MemoryImpl.this.split2(offset + start, parts);
+        }
+        @Override
+        public void split3(int offset, int splitSize, Memory[] parts) {
+            MemoryImpl.this.split3(offset + start, splitSize, parts);
+        }
+        @Override
+        public Memory joinPrevious() {
+            return MemoryImpl.this.joinPrevious();
+        }
+        @Override
+        public Memory joinNext() {
+            return MemoryImpl.this.joinNext();
+        }
+        @Override
+        public Memory joinAll() {
+            return MemoryImpl.this.joinAll();
+        }
+        @Override
+        protected void coreCopy(int from, int to, int length) {
+            super.coreCopy(from + start, to + start, length);
+        }
+        @Override
+        protected void coreFill16(short what, int offset, int length) {
+            super.coreFill16(what, start + offset, length);
+        }
+        @Override
+        protected void coreSet8(int where, byte what) {
+            super.coreSet8(start + where, what);
+        }
+        @Override
+        protected void coreSet16(int where, short what) {
+            super.coreSet16(start + where, what);
+        }
+        @Override
+        protected void coreSet32(int where, int what) {
+            super.coreSet32(start + where, what);
+        }
+        @Override
+        protected byte coreGet8(int where) { return super.coreGet8(start + where); }
+        @Override
+        protected short coreGet16(int where) { return super.coreGet16(start + where); }
+        @Override
+        protected int coreGet32(int where) { return super.coreGet32(start + where); }
     }
 
     public Memory revoke() { throw new Error(); }

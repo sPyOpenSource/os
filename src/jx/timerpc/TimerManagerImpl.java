@@ -102,13 +102,16 @@ public class TimerManagerImpl implements TimerManager, Service {
 	}
     }
     
+    @Override
     public Timer addMillisTimer(int expiresFromNowInMillis, TimerHandler handler, Object argument) {
 	return addTimer(expiresFromNowInMillis * 1000 / getTimeBaseInMicros(), -1, handler, argument);
     }
+    @Override
     public Timer addMillisIntervalTimer(int expiresFromNowInMillis, int intervalInMillis, TimerHandler handler, Object argument) {
 	int b = getTimeBaseInMicros();
 	return addTimer(expiresFromNowInMillis * 1000 / b, intervalInMillis * 1000 / b, handler, argument);
     }
+    @Override
     public Timer addTimer(int expiresFromNow, int interval, TimerHandler handler, Object argument) {
 	TimerEntry timer = new TimerEntry(expiresFromNow+ticks, interval, this, handler, argument);
 	if (debug) Debug.out.println("Entering addtimer: "+(expiresFromNow+ticks));

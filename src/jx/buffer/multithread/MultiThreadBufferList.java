@@ -98,15 +98,6 @@ public class MultiThreadBufferList implements BufferProducer, BufferConsumer {
 	if (verbose) Debug.out.println("LIST::appendElement data=" + bh.data);
 	if (requireMoreData && bh.moreData == null) throw new Error("Buffer contains no moreData");
 	if (check) checkConsistency();
-	//if (verbose) cpuManager.dump("MultiThreadBufferList::APPEND",this);
-	/* debug FIXME HACK */
-	/*
-	if (bh.data != null && bh.data.size() != 1514) {
-	    //Debug.out.println("D3C905: error: got="+bh.data.size()+", need=1514");
-	    //throw new Error("Ether: NEED LARGER MEMORY");
-	    bh.data = bh.data.extendFullRange();
-	}
-	*/
 	bh.next.set(null);
 	last.next.atomicUpdateUnblock(bh, consumer);
 	last = bh;

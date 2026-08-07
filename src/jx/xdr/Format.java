@@ -238,26 +238,10 @@ public abstract class Format {
 	int l = readInt(buf);
 	if (debug) Debug.out.println("Stringlen: "+l);
 	if (l > 1024) throw new Error("String too large");
-	//	for (;4 + l > buf.buf.length;) {
-	    /*
-	    buf.cont.rpc.waitForNextReply(buf.cont);
-	    int bytesInOldBuf = buf.buf.length-buf.offset-4;
-	    buf.buf = new byte[bytesInOldBuf + buf.cont.buf.length];
-	    System.arraycopy(buf.buf, buf.offset, buf.buf, 0, bytesInOldBuf);
-	    System.arraycopy(buf.cont.buf, 0, buf.buf, bytesInOldBuf, buf.cont.buf.length);
-	    */
-	//  throw new Error("not implemented");
-	//}
 	byte[] b = new byte[l];
-	for(int i=0; i<l; i++) {
-	    b[i]=(byte)readByte(buf, i);
-	}
-	// TODO: buf.getBytes(b, i, l);
+	buf.getBytes(b, 0, l);
 	buf.advance(l);
-	/*	if (l%4 != 0) //buf.offset += 4-(l%4); //padding
-	    for(int j=0; j<4-(l%4);j++) readByte(buf);
-	*/
-	buf.advance((4-(l%4))%4);  // ??? nicht besser (l + 3) & ~3
+	buf.advance((4-(l%4))%4);  // padding
 	String s = new String(b);
 	if (debug) Debug.out.println("String: "+s);
 	return s;

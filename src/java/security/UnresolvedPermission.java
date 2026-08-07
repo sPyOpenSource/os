@@ -57,17 +57,17 @@ public class UnresolvedPermission extends Permission implements Serializable
 /**
   * The list of actions associated with this permission object
   */
-private String actions;
+private final String actions;
 
 /**
   * The list of <code>Certificates</code> associated with this object
   */
-private Certificate[] certs;
+private final Certificate[] certs;
 
 /**
   * The name of the class this object should be resolved to.
   */
-private String type;
+private final String type;
  
 /*************************************************************************/
 
@@ -108,6 +108,7 @@ UnresolvedPermission(String type, String name, String actions,
   *
   * @return The action list
   */
+@Override
 public String
 getActions()
 {
@@ -125,6 +126,7 @@ getActions()
   *
   * @return <code>false</code> to indicate this permission does not imply the specified permission.
   */
+@Override
 public boolean
 implies(Permission perm)
 {
@@ -152,6 +154,7 @@ implies(Permission perm)
   *
   * @return <code>true</code> if the specified object is equal to this one, <code>false</code> otherwise.
   */
+@Override
 public boolean
 equals(Object obj)
 {
@@ -182,6 +185,7 @@ equals(Object obj)
   *
   * @return A hash value
   */
+@Override
 public int
 hashCode()
 {
@@ -196,6 +200,7 @@ hashCode()
   *
   * @return A <code>String</code> representation of this object
   */
+@Override
 public String
 toString()
 {
@@ -212,6 +217,7 @@ toString()
   *
   * @return A new <code>PermissionCollection</code>.
   */
+@Override
 public PermissionCollection
 newPermissionCollection()
 {
@@ -219,4 +225,3 @@ newPermissionCollection()
 }
 
 } // class UnresolvedPermission
-

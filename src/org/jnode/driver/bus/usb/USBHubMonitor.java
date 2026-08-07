@@ -94,11 +94,13 @@ public class USBHubMonitor implements USBConstants {
      */
     private USBHubMonitorThread thread;
     SleepManager sleepManager;
-    private UHCICore api;
+    private final UHCICore api;
     /**
      * Initialize a new instance.
      *
+     * @param hubDevice
      * @param hub
+     * @param sleepManager
      */
     public USBHubMonitor(Device hubDevice, USBHostControllerAPI hub, SleepManager sleepManager) {
         this.sleepManager = sleepManager;
@@ -110,6 +112,7 @@ public class USBHubMonitor implements USBConstants {
 
     /**
      * Do the actual monitoring.
+     * @param first
      */
     protected void checkStatus(boolean first) {
         try {
@@ -134,6 +137,7 @@ public class USBHubMonitor implements USBConstants {
      * The connection status of a given port has changed.
      *
      * @param port
+     * @throws org.jnode.driver.bus.usb.USBException
      */
     protected void portConnectionStatusChanged(int port) throws USBException {
         //System.out.println("USB hub connection status changed for port " + port);

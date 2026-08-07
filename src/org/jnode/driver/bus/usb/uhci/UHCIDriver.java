@@ -20,8 +20,6 @@
  
 package org.jnode.driver.bus.usb.uhci;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import jx.devices.pci.PCIDevice;
 import jx.zero.timer.SleepManager;
 
@@ -44,6 +42,8 @@ public class UHCIDriver extends AbstractHostControllerDriver {
 
     /**
      * Initialize this instance
+     * @param device
+     * @param sm
      */
     public UHCIDriver(PCIDevice device, SleepManager sm) {
         try {
@@ -54,6 +54,7 @@ public class UHCIDriver extends AbstractHostControllerDriver {
     }
 
     /**
+     * @throws java.lang.Exception
      * @see org.jnode.driver.bus.usb.AbstractHostControllerDriver#claimResources()
      */
     @Override
@@ -76,6 +77,7 @@ public class UHCIDriver extends AbstractHostControllerDriver {
 
     /**
      * Gets the API implementation.
+     * @return 
      */
     @Override
     public USBHostControllerAPI getAPI() {
@@ -84,6 +86,7 @@ public class UHCIDriver extends AbstractHostControllerDriver {
 
     /**
      * Gets the prefix for the device name
+     * @return 
      */
     @Override
     protected String getDevicePrefix() {

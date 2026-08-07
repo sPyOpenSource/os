@@ -32,22 +32,10 @@ public class Buffer2 extends Buffer {
 
     @Override
     public void setData(Memory m) {
-	/*
-	if(1==1)throw new Error("TODO: extendRange -> split"); //
-	setData(m, -1, -1);
-	*/
-	//Memory x = m.extendFullRange();
-
-
-	//Memory x = join(m);
 	setData(m, 0, m.size());
     }
 
     public void setData(Memory m, int offs, int size) {
-        /*
-	if(1==1)throw new Error("TODO: extendRange -> split"); //
-	this.data = m;
-        */
 	//this.data = m.extendFullRange();
 	if (avoidSplitting) {
 	    if (m.size() == 1514) this.data = m;
