@@ -181,6 +181,10 @@ public class IP implements MemoryConsumer, IPProducer, EtherConsumer {
 	addressResolution = a;
 	if (addressResolution != null) addressResolution.register(this);
     }
+    
+    public AddressResolution getAddressResolution() {
+        return addressResolution;
+    }
 
     @Override
     public boolean registerConsumer(IPConsumer consumer, String name) {

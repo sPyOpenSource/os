@@ -8,7 +8,6 @@ import jx.zero.DomainManager;
 import java.io.InputStream;
 import java.io.PrintStream;
 
-
 // DEBUG
 import java.util.Properties;
 import jx.zero.debug.DebugChannel;
@@ -28,7 +27,7 @@ public class System {
     private static Properties properties = null;
     private static final boolean usePlugin = false;
 
-    private static Clock clock = (Clock)InitialNaming.getInitialNaming().lookup("Clock");
+    private static final Clock clock = (Clock)InitialNaming.getInitialNaming().lookup("Clock");
     //    private static long correct;
 
     /**
@@ -115,10 +114,10 @@ public class System {
 			d[dstOffset+i] = s[srcOffset+i];
 		} else {
 		    //dout.println("arraycopyOBJ: src="+src.getClass().getName() + " dst="+dst.getClass().getName());
-		    if (src.getClass().getName().equals("[[B") && dst.getClass().getName().equals("[B")) {
+		    /*if (src.getClass().getName().equals("[[B") && dst.getClass().getName().equals("[B")) {
 			//dout.println(" hash: "+ Integer.toHexString(src.hashCode()));
 			throw new Error("CAST");
-		    }
+		    }*/
 		    Object []s = (Object[])src;
 		    Object []d = (Object[])dst;
 		    if (dstOffset + count >  d.length) throw new Error();

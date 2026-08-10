@@ -4000,13 +4000,13 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	else if ((txStatus & Register.TX_STATUS_MAXIMUM_COLLISION()) > 0) {
 	    Debug.out.println("TxCompleteEvent: Maximum collision");
 	    Adapter.Statistics.TxMaximumCollisions++;
-	    befehl.NicCommand(Adapter, befehl.COMMAND_TX_ENABLE());
+	    befehl.NicCommand(Adapter, Befehl.COMMAND_TX_ENABLE());
     	}
 	else {
 	    if (txStatus != 0 ) {
 		Debug.out.println("TxCompleteEvent: Unknown error");
 		Adapter.Statistics.TxUnknownError++;
-		befehl.NicCommand(Adapter, befehl.COMMAND_TX_ENABLE());
+		befehl.NicCommand(Adapter, Befehl.COMMAND_TX_ENABLE());
 	    }
 	}
 	Debug.out.println("TxCompleteEvent: OUT");
@@ -4025,7 +4025,7 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	// Change the window.
 	//
 	
-	befehl.NicCommand(Adapter, befehl.COMMAND_SELECT_REGISTER_WINDOW() | Register.REGISTER_WINDOW_6());
+	befehl.NicCommand(Adapter, Befehl.COMMAND_SELECT_REGISTER_WINDOW() | Register.REGISTER_WINDOW_6());
 
 	statistics.TxSQEErrors += befehl.NicReadPortByte(Adapter, Register.SQE_ERRORS_REGISTER());
 	statistics.TxMultipleCollisions += befehl.NicReadPortByte(Adapter, Register.MULTIPLE_COLLISIONS_REGISTER());
@@ -4047,7 +4047,7 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	statistics.TxFramesOk += txPackets;
 	rxBytes = befehl.NicReadPortShort(Adapter, Register.BYTES_RECEIVED_OK_REGISTER());
 	txBytes = befehl.NicReadPortShort(Adapter, Register.BYTES_TRANSMITTED_OK_REGISTER());
-	befehl.NicCommand(Adapter, befehl.COMMAND_SELECT_REGISTER_WINDOW() | Register.REGISTER_WINDOW_4());
+	befehl.NicCommand(Adapter, Befehl.COMMAND_SELECT_REGISTER_WINDOW() | Register.REGISTER_WINDOW_4());
 	highBytes = befehl.NicReadPortByte(Adapter, Register.UPPER_BYTES_OK_REGISTER());
 	rxBytes += ((highBytes & 0x0F) << 8);
 	txBytes += ((highBytes & 0xF0) << 4);
@@ -4079,17 +4079,17 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 
 	
 	int hardwareReceiveFilter = 0;
-	hardwareReceiveFilter |= (byte)(1<<0);
+	hardwareReceiveFilter |= (byte)(1);
 	//hardwareReceiveFilter |= befehl.RX_FILTER_PROMISCUOUS;
-	hardwareReceiveFilter |= befehl.RX_FILTER_INDIVIDUAL();
-	hardwareReceiveFilter |= befehl.RX_FILTER_BROADCAST();
-	befehl.NicCommand(Adapter, (short)(befehl.COMMAND_SET_RX_FILTER() | hardwareReceiveFilter)); 
+	hardwareReceiveFilter |= Befehl.RX_FILTER_INDIVIDUAL();
+	hardwareReceiveFilter |= Befehl.RX_FILTER_BROADCAST();
+	befehl.NicCommand(Adapter, (short)(Befehl.COMMAND_SET_RX_FILTER() | hardwareReceiveFilter)); 
 
 
 
 
 
-	befehl.NicCommand(Adapter, befehl.COMMAND_RX_ENABLE());
+	befehl.NicCommand(Adapter, Befehl.COMMAND_RX_ENABLE());
 	befehl.NicUnmaskAllInterrupt(Adapter);
 
 
@@ -4099,9 +4099,9 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	//
 	//	UpdListEntry e = new UpdListEntry(memMgr);
 	UpdListEntry e = Adapter.HeadUPD;
-	befehl.NicCommand(Adapter, befehl.COMMAND_UP_STALL());
+	befehl.NicCommand(Adapter, Befehl.COMMAND_UP_STALL());
 	befehl.NicWritePortLong(Adapter, Register.UP_LIST_POINTER_REGISTER(), e.UPDPhysicalAddress());
-	befehl.NicCommand(Adapter, befehl.COMMAND_UP_UNSTALL());
+	befehl.NicCommand(Adapter, Befehl.COMMAND_UP_UNSTALL());
 
 
 
@@ -4149,6 +4149,7 @@ public class D3C905 implements FirstLevelIrqHandler, NetworkDevice, MemoryProduc
 	Debug.out.println("TestReceive: OUT");
     }
 
+    @Override
     public boolean registerNonBlockingConsumer(NonBlockingMemoryConsumer consumer) {
 	if (this.etherConsumer != null) {
 	    throw new Error("Consumer already registered.");

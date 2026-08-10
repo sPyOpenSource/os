@@ -103,7 +103,7 @@ public class BootRC2 {
     private String readline() {
 	byte b;
 	int i = 0;
-	while(pos < mem.size() && (b = mem.get8(pos)) != NEWLINE) {
+	while(pos < mem.size() && (b = (byte)(mem.get8(pos) & 0xff)) != NEWLINE) {
 	    data[i] = (char)b;
 	    pos++;
 	    i++;

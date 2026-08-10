@@ -99,6 +99,14 @@ public class UHCIPipe implements USBPipe, USBConstants {
     private final int maxPktSize;
 
     /**
+     * Get the MemoryManager used for TD allocation.
+     * @return the MemoryManager
+     */
+    public final MemoryManager getMemoryManager() {
+        return rm;
+    }
+
+    /**
      * Create a new instance
      *
      * @param pm

@@ -74,6 +74,14 @@ import org.jnode.util.NumberUtils;
 public class USBHubMonitor implements USBConstants {
 
     /**
+     * A listener that is notified whenever a device has been fully enumerated on the bus.
+     * Implementations may attach device-specific drivers (e.g. mass storage) to the device.
+     */
+    public interface USBDeviceAttachListener {
+        void deviceAttached(USBDevice device);
+    }
+
+    /**
      * My logger
      */
     //protected final Logger log = Logger.getLogger(getClass());
@@ -95,6 +103,10 @@ public class USBHubMonitor implements USBConstants {
     private USBHubMonitorThread thread;
     SleepManager sleepManager;
     private final UHCICore api;
+    /**
+     * Registered device attach listeners
+     */
+    private USBDeviceAttachListener[] attachListeners = new USBDeviceAttachListener[0];
     /**
      * Initialize a new instance.
      *
@@ -208,6 +220,8 @@ public class USBHubMonitor implements USBConstants {
                 // Register the device with the HUB
                 //log.debug("hub.setDevice");
                 hub.setDevice(dev, port);
+                // Notify device attach listeners (e.g. mass storage drivers)
+                fireDeviceAttached(dev);
                 // Register the device with the device manager
                 //log.debug("dm.register");
                 //dm.register(dev);
@@ -250,7 +264,6 @@ public class USBHubMonitor implements USBConstants {
      * @param confNum
      */
     private final USBConfiguration getConfiguration(USBDevice dev, int confNum) throws USBException {
-
         // First read enough to get the wTotalLength
         final ConfigurationDescriptor initDescr = new ConfigurationDescriptor();
         dev.readDescriptor(USB_RECIP_DEVICE, USB_DT_CONFIG, confNum, 0, USB_DT_CONFIG_SIZE, initDescr);
@@ -309,6 +322,57 @@ MemoryManager rm = (MemoryManager)InitialNaming.getInitialNaming().lookup("Memor
         //} catch (InterruptedException ex) {
             // Ignore
         //}
+    }
+
+    /**
+     * Register a listener that is notified whenever a device has been fully
+     * enumerated on this bus.
+     *
+     * @param listener the listener to add
+     */
+    public synchronized void addAttachListener(USBDeviceAttachListener listener) {
+        final USBDeviceAttachListener[] old = attachListeners;
+        final USBDeviceAttachListener[] nw = new USBDeviceAttachListener[old.length + 1];
+        System.arraycopy(old, 0, nw, 0, old.length);
+        nw[old.length] = listener;
+        attachListeners = nw;
+    }
+
+    /**
+     * Remove a previously registered device attach listener.
+     *
+     * @param listener the listener to remove
+     */
+    public synchronized void removeAttachListener(USBDeviceAttachListener listener) {
+        final USBDeviceAttachListener[] old = attachListeners;
+        for (int i = 0; i < old.length; i++) {
+            if (old[i] == listener) {
+                final USBDeviceAttachListener[] nw = new USBDeviceAttachListener[old.length - 1];
+                System.arraycopy(old, 0, nw, 0, i);
+                System.arraycopy(old, i + 1, nw, i, old.length - i - 1);
+                attachListeners = nw;
+                return;
+            }
+        }
+    }
+
+    /**
+     * Notify all registered listeners that the given device has been enumerated.
+     * Exceptions/Errors thrown by a listener are logged so that enumeration
+     * cleanup continues normally.
+     *
+     * @param dev the fully enumerated device
+     */
+    private void fireDeviceAttached(USBDevice dev) {
+        final USBDeviceAttachListener[] listeners = attachListeners;
+        for (USBDeviceAttachListener listener : listeners) {
+            try {
+                listener.deviceAttached(dev);
+            } catch (Throwable t) {
+                System.out.println("Attach listener " + listener + " failed: " + t);
+                t.printStackTrace();
+            }
+        }
     }
 
     /**

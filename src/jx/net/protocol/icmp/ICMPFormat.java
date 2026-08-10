@@ -56,14 +56,30 @@ public class ICMPFormat extends Format {
         return readShort(2);
     }
     
+    public int getIdentifier() {
+        return readUnsignedShort(4);
+    }
+    
+    public int getSequenceNumber() {
+        return readUnsignedShort(6);
+    }
+    
+    public void setIdentifier(int id) {
+        writeUShort(4, (short)id);
+    }
+    
+    public void setSequenceNumber(int seq) {
+        writeUShort(6, (short)seq);
+    }
+    
     public void CalculateChecksum(){
         writeShort(2, (short)0);
-        final short ccs = IPv4Utils.calcChecksum(buf, 0x22, buf.size() - 0x22);
+        final short ccs = IPv4Utils.calcChecksum(buf, offset, length());
         writeShort(2, (short)(((ccs >> 8) & 0xff) | ((ccs << 8) & 0xff00)));
     }
 
     @Override
     public int length() { 
-        return 16; 
+        return 8;
     }
 }

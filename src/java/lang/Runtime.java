@@ -28,7 +28,7 @@ public class Runtime
 	exitInternal(status);
     }
 
-  private  void exitInternal(int status) { 
+  private void exitInternal(int status) { 
       /*Debug.out.println("EXITINTERNAL!!");*/
     for(;;);
   }

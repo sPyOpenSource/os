@@ -80,11 +80,19 @@ public class ARP implements AddressResolution, MemoryConsumer, EtherConsumer {
 	return arpCache.lookup(ipAddress);
     }
 
-    public void clearCache() {
+public void clearCache() {
 	arpCache.clearAll();
     }
-  
-    private boolean byteCompare(byte[] a1, byte[] a2) {
+   
+   public void sendPacket(Memory packet, byte[] destMAC) {
+       ethernet.transmitSpecial(ownHardwareAddress, destMAC, 0x0800, packet);
+   }
+   
+   public void queuePacket(byte[] ipAddress, Memory packet) {
+       arpCache.queuePacket(ipAddress, packet);
+   }
+   
+   private boolean byteCompare(byte[] a1, byte[] a2) {
 	if (a1.length != a2.length) {
 	    Debug.out.println("ARP.byteCompare: the arrays have different size");
 	    return false;

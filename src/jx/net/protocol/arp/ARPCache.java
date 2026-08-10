@@ -1,6 +1,7 @@
 package jx.net.protocol.arp;
 
 import java.util.Vector;
+import java.util.Hashtable;
 import jx.zero.*;
 import jx.timer.*;
 
@@ -52,82 +53,97 @@ class ARPCache {
     private final Vector ips;
     private final ARP arp;
     private final TimerManager timerManager;
+    // pending packets waiting for ARP resolution: ipAddress -> Vector<Memory>
+    private final Hashtable pendingPackets = new Hashtable();
+    
     ARPCache(ARP a, TimerManager timerManager) {
-	this.timerManager = timerManager;
-	ethers = new Vector();
-	ips = new Vector();
-	arp = a;
-	init();	
+        this.timerManager = timerManager;
+        ethers = new Vector();
+        ips = new Vector();
+        arp = a;
+        init();   
     }
     
     void add(byte[] etherAddress, byte[] ipAddress) {
-	if (!ethers.contains(etherAddress) && !ips.contains(ipAddress)) {
-	    ethers.addElement(etherAddress);
-	    ips.addElement(ipAddress);
-	}
+        if (!ethers.contains(etherAddress) && !ips.contains(ipAddress)) {
+            ethers.addElement(etherAddress);
+            ips.addElement(ipAddress);
+        }
+        // check for pending packets
+        String key = ipKey(ipAddress);
+        Vector pending = (Vector)pendingPackets.remove(key);
+        if (pending != null) {
+            for (int i = 0; i < pending.size(); i++) {
+                Memory pkt = (Memory)pending.elementAt(i);
+                arp.sendPacket(pkt, etherAddress);
+            }
+        }
     }
     
     void clearAll() {
-	ethers.removeAllElements();
-	ips.removeAllElements();
+        ethers.removeAllElements();
+        ips.removeAllElements();
+        pendingPackets.clear();
     }
     
     byte[] lookup(IPAddress ipAddress) throws UnknownAddressException {
-	if (verbose) Debug.out.println("ARPCache.lookup():" + ipAddress);
-	return lookup(ipAddress.getBytes());
+        if (verbose) Debug.out.println("ARPCache.lookup():" + ipAddress);
+        return lookup(ipAddress.getBytes());
     }
 
     byte[] lookup(byte[] ipAddress) throws UnknownAddressException {
-	byte[] hardwareaddress;
-	int time;
-	if ((hardwareaddress = scan(ipAddress)) != null) {
-	    if (verbose) Debug.out.println("   <- OK");
-	    return hardwareaddress;
-	}
-	
-	//if (true) throw new Error();
-
-	arp.sendQuery(ipAddress);
-	
-	time = timerManager.getCurrentTime();
-	int timeout = time + LOOKUPTIME * 1000 / timerManager.getTimeBaseInMicros();
-	while (timerManager.getCurrentTime() < timeout) {
-	    hardwareaddress = scan(ipAddress);
-	    if (hardwareaddress != null)
-		return hardwareaddress;
-	    Thread.yield();
-	}
-
-	throw new UnknownAddressException();
+        byte[] hardwareaddress;
+        if ((hardwareaddress = scan(ipAddress)) != null) {
+            if (verbose) Debug.out.println("   <- OK");
+            return hardwareaddress;
+        }
+        
+        // not in cache - send ARP query and throw exception
+        // caller should queue packet and retry later
+        arp.sendQuery(ipAddress);
+        throw new UnknownAddressException();
+    }
+    
+    void queuePacket(byte[] ipAddress, Memory packet) {
+        String key = ipKey(ipAddress);
+        Vector pending = (Vector)pendingPackets.get(key);
+        if (pending == null) {
+            pending = new Vector();
+            pendingPackets.put(key, pending);
+        }
+        pending.addElement(packet);
+    }
+    
+    private String ipKey(byte[] ip) {
+        return ip[0] + "." + ip[1] + "." + ip[2] + "." + ip[3];
     }
     
     private byte[] scan(byte[] ipAddress) {
-	for(int i = 0; i < ips.size(); i++) {
-	    if (equalIP((byte[])ips.elementAt(i), ipAddress)) {
-		return (byte[])ethers.elementAt(i);
-	    }
-	}
-	return null;
+        for(int i = 0; i < ips.size(); i++) {
+            if (equalIP((byte[])ips.elementAt(i), ipAddress)) {
+                return (byte[])ethers.elementAt(i);
+            }
+        }
+        return null;
     }
     
     private boolean equalIP(byte[] ip1, byte[] ip2) {
-	for(int i = 0; i < 4; i++) {
-	    if (ip1[i] != ip2[i]) return false; 
-	}
-	return true;
+        for(int i = 0; i < 4; i++) {
+            if (ip1[i] != ip2[i]) return false; 
+        }
+        return true;
     }
     
     private void init() {
-	add(broadcastETH, broadcastIP);
-        add(new byte[]{(byte)0x52,(byte)0xed,(byte)0x3c,(byte)0xc0,(byte)0xef,(byte)0x64}, 
-            new byte[]{(byte)192,(byte)168,(byte)64,(byte)1});
-	/*
-	add(faui49aETH, faui49aIP);
-	add(ultra1ETH, ultra1IP);
-	add(pc8ETH, pc8IP);
-	add(pc10ETH, pc10IP);
-	add(pc5ETH, pc5IP);
-	add(notebookETH, notebookIP);
-	*/
+        add(broadcastETH, broadcastIP);
+        add(new byte[]{(byte)0x8e,(byte)0x21,(byte)0x41,(byte)0x1c,(byte)0x7f,(byte)0x4c}, 
+            new byte[]{(byte)192,(byte)168,(byte)1,(byte)192});
+        /*add(faui49aETH, faui49aIP);
+        add(ultra1ETH, ultra1IP);
+        add(pc8ETH, pc8IP);
+        add(pc10ETH, pc10IP);
+        add(pc5ETH, pc5IP);
+        add(notebookETH, notebookIP);
+        */
     }
 }

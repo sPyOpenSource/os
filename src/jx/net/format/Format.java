@@ -79,7 +79,7 @@ public abstract class Format {
 
   protected byte readByte(int o) { 
       //    return buf.get8(offset+o) < 0 ? buf.get8(offset+o)+256 : buf.get8(offset+o);
-      return buf.get8(offset + o);
+      return (byte)(buf.get8(offset + o) & 0xff);
   }
 
   protected int readUnsignedByte(int o) { 

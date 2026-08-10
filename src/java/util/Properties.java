@@ -42,11 +42,13 @@ class PropertiesEnumeration implements Enumeration
 
     // Public Methods
 
+    @Override
     public boolean hasMoreElements()
     {
 	return (next != null);
     }
 
+    @Override
     public Object nextElement() throws NoSuchElementException
     {
 	if (next == null)
@@ -119,7 +121,7 @@ public class Properties extends Hashtable
 
     private String read_key(PushbackInputStream is) throws IOException
     {
-	StringBuffer buff = new StringBuffer();
+	StringBuilder buff = new StringBuilder();
 	int c;
 
     loop:
@@ -220,7 +222,7 @@ public class Properties extends Hashtable
 
     private String read_value(PushbackInputStream is) throws IOException
     {
-	StringBuffer buff = new StringBuffer();
+	StringBuilder buff = new StringBuilder();
 	int c;
 
 	while (true)
@@ -408,4 +410,3 @@ public Properties()
     this.defaults = null;
 }
 }
-
