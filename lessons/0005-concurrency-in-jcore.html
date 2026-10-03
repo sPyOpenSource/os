@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson: Concurrency in JCore — Your synchronized Is a No-op</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<h1>Concurrency in JCore: Your <code>synchronized</code> Is a No-op</h1>
+<p class="sidenote">Lesson 5 of the Java Internals series. <a href="../MISSION.md">Mission</a> | <a href="0004-how-the-file-system-works.html">Previous: File System</a></p>
+
+<p>You already know Java concurrency. That knowledge is <strong>actively wrong here</strong>. In this codebase, 283 <code>synchronized</code> modifiers across 49 files provide exactly zero mutual exclusion. This lesson is about what replaces them.</p>
+
+<h2>The Three Things That Don't Work</h2>
+
+<table>
+  <tr><th>You write</th><th>What actually happens</th></tr>
+  <tr>
+    <td><code>synchronized</code></td>
+    <td><code>vm_monitorenter</code> prints <code>"MONTITORENTER"</code> and returns — <code>src/core/vmsupport.c:398</code></td>
+  </tr>
+  <tr>
+    <td><code>wait()</code> / <code>notify()</code></td>
+    <td><code>sys_panic("not implemented")</code> — the whole kernel dies — <code>src/Interface/zero_object.c:55</code></td>
+  </tr>
+  <tr>
+    <td><code>interrupt()</code></td>
+    <td>Empty method body — <code>src/java/lang/Thread.java:97</code>. <code>isInterrupted()</code> hardcodes <code>return false</code> at line 109</td>
+  </tr>
+</table>
+
+<blockquote class="warn">
+  <strong>Trap.</strong> <code>src/org/jnode/driver/bus/usb/spi/AbstractUSBRequest.java:89</code> is a <code>synchronized void waitUntilComplete(long timeout)</code>. It compiles, it looks correct, and it provides no exclusion whatsoever.
+</blockquote>
+
+<p>This isn't a missing feature — it's a deliberate design choice. JX puts blocking <em>behind</em> the Java line, in the kernel, reachable only through portals. Java code is meant to stay non-blocking and reactive.</p>
+
+<h2>The Scheduler You're Actually Running On</h2>
+
+<p>Before reaching for any lock, you need to know what can preempt you. From <code>settings.makefile</code>:</p>
+
+<pre>
+line 40   #DEFINES += -DSMP          <- OFF: single CPU
+line 41   #DEFINES += -DJAVASCHEDULER <- OFF
+line 45   DEFINES  += -DTIMER_HZ=10  <- 100Hz preemption tick
+line 52   DEFINES  += -DSCHED_GLOBAL_RR
+line 53   DEFINES  += -DSCHED_LOCAL_RR</pre>
+
+<p>So: one CPU, a 100 Hz timer interrupt, and a two-level round-robin. The global level cycles <strong>domains</strong>; each domain's local level cycles its <strong>threads</strong>. There's a lesson here about verifying claims against the build rather than trusting names.</p>
+
+<h2>The Replacement for <code>synchronized</code></h2>
+
+<p>Every working primitive lives in <code>jx.zero</code>, the portal interface package (<code>../../Zero/src/jx/zero/</code>). You get them by name lookup, same as every kernel service:</p>
+
+<pre>
+static CPUManager cpuManager = (CPUManager) InitialNaming.getInitialNaming().lookup("CPUManager");
+static Scheduler  scheduler  = (Scheduler)  InitialNaming.getInitialNaming().lookup("Scheduler");</pre>
+
+<p>Now watch how JCore builds a mutex from scratch, in <code>src/jx/synch/mutex/BlockingLockImpl.java</code> — a real file in this repo:</p>
+
+<pre>
+public void lock() {
+    CPUState mythread = cpuManager.getCPUState();
+    for(;;) {
+        scheduler.disableThreadSwitching();   // no preemption from here on
+        if (owner==null) {
+            owner = mythread;                 // test-and-set, now untearable
+            scheduler.enableThreadSwitching();
+            return;
+        } else {
+            waiting.enqueue(mythread);        // else get in line
+            scheduler.blockAndEnableThreadSwitching();
+        }
+    }
+}
+
+public void unlock() {
+    scheduler.disableThreadSwitching();
+    CPUState next = waiting.dequeue();
+    if (next != null) {
+        owner = next;
+        cpuManager.unblock(next);            // hand ownership over directly
+    } else {
+        owner = null;
+    }
+    scheduler.enableThreadSwitching();
+}</pre>
+
+<p>The trick is that <code>disableThreadSwitching()</code> makes the test-and-set <strong>indivisible</strong>. Without it, your thread could be preempted between reading <code>owner</code> and writing it. That single primitive is the foundation.</p>
+
+<blockquote class="tip">
+  <strong>The general pattern.</strong> <code>disableThreadSwitching()</code> → do the tiny critical bit → <code>enableThreadSwitching()</code>. It's JCore's equivalent of "keep the critical section short."
+</blockquote>
+
+<h2>The Replacement for <code>wait</code> / <code>notify</code></h2>
+
+<p>That was a mutex. A <em>condition variable</em> is <code>AtomicVariable</code>. Look at how a blocking queue uses it — <code>src/jx/synch/blocking/Queue.java</code>, in full:</p>
+
+<pre>
+class Node {
+    Object value;
+    AtomicVariable next = cpuManager.getAtomicVariable();
+}
+
+public void enqueue(Object value) {
+    Node node = new Node();
+    node.value = value;
+    node.next.set(null);
+    tail.next.atomicUpdateUnblock(node, consumer);   // set pointer AND wake waiter
+    tail = node;
+}
+
+public Object dequeue() {
+    Node ret = head;
+    head.next.blockIfEqual(null);                   // sleep until non-null
+    head = (Node)head.next.get();
+    return head.value;
+}</pre>
+
+<p>Read the elegance: each link in the queue <em>is</em> an <code>AtomicVariable</code>, so "the next element exists" and "wake the consumer" are the same operation. No lost-wakeup window, because there is no gap between the check and the set.</p>
+
+<p>The author credits Massalin &amp; Pu's synthesis-kernel work in the file header — this is wait-free synchronization, inherited deliberately.</p>
+
+<h2>What Replaces <code>volatile</code></h2>
+
+<p>There's no Java Memory Model here, and <code>volatile</code> buys you nothing. Visibility comes from the kernel instead. Look at the native <code>AtomicVariable</code> (<code>src/Interface/zero_AtomicVariable.c:49</code>):</p>
+
+<pre>
+void atomicvariable_blockIfEqual(AtomicVariableProxy * self, ObjectDesc * test)
+{
+    DISABLE_IRQ;                        // &lt;- interrupts off: nothing else runs
+
+    if (self-&gt;value == test) {
+        ThreadDesc *thread = curthr();
+        self-&gt;blockedThread = thread;
+        threadblock();
+    }
+    RESTORE_IRQ;
+}</pre>
+
+<p><code>DISABLE_IRQ</code> wraps the check <em>and</em> the block. On a single CPU that makes check-then-act genuinely atomic, and it's why you never need a fence. Interrupts-off <em>is</em> JCore's barrier.</p>
+
+<h2>The Whole Surface, Honestly</h2>
+
+<table>
+  <tr><th>Portal</th><th>Status</th><th>Use it for</th></tr>
+  <tr><td><code>Scheduler</code></td><td>works</td><td>Making a critical section indivisible</td></tr>
+  <tr><td><code>CPUManager</code></td><td>works</td><td><code>block</code>, <code>unblock</code>, <code>yield</code>, <code>sleep</code></td></tr>
+  <tr><td><code>AtomicVariable</code></td><td>works</td><td>Condition variables, blocking hand-off</td></tr>
+  <tr><td><code>Mutex</code></td><td><strong>dead</strong></td><td>Declared at <code>Zero/src/jx/zero/Mutex.java</code>, zero uses in <code>src/</code></td></tr>
+  <tr><td><code>synchronized</code></td><td><strong>dead</strong></td><td>Nothing. Use <code>BlockingLock</code></td></tr>
+</table>
+
+<p class="sidenote">Full method-by-method signatures: <a href="../reference/jcore-concurrency-cheatsheet.html">JCore Concurrency Cheatsheet</a>.</p>
+
+<h2>Check Yourself</h2>
+<p class="quiz-score">Score: <strong data-quiz-score>0 / 0</strong></p>
+
+<div class="mcq" data-why="vm_monitorenter at src/core/vmsupport.c:398 is just a printf. All 283 synchronized modifiers in src/ compile to this no-op.">
+  <p class="mcq-q"><span class="mcq-num">1.</span> A thread reaches a <code>synchronized</code> block. What happens?</p>
+  <ol class="mcq-options">
+    <li data-correct="true">Prints a string, returns</li>
+    <li>Acquires a per-object lock</li>
+    <li>Blocks the calling thread</li>
+    <li>Throws a runtime exception</li>
+  </ol>
+</div>
+
+<div class="mcq" data-why="blockIfEqual suspends the caller until the variable's value changes. disableThreadSwitching does the opposite — it stops preemption.">
+  <p class="mcq-q"><span class="mcq-num">2.</span> Which portal call actually blocks a thread?</p>
+  <ol class="mcq-options">
+    <li data-correct="true">AtomicVariable.blockIfEqual</li>
+    <li>CPUManager.disableInterrupts</li>
+    <li>Scheduler.disableThreadSwitching</li>
+    <li>Mutex.acquireFairly</li>
+  </ol>
+</div>
+
+<div class="mcq" data-why="It blocks only if the value currently equals the test value, so it returns once the value differs. See src/Interface/zero_AtomicVariable.c:49.">
+  <p class="mcq-q"><span class="mcq-num">3.</span> <code>blockIfEqual(x)</code> returns when…</p>
+  <ol class="mcq-options">
+    <li data-correct="true">The value differs from x</li>
+    <li>The value equals x again</li>
+    <li>The variable gets locked</li>
+    <li>The thread is interrupted</li>
+  </ol>
+</div>
+
+<div class="mcq" data-why="SCHED_GLOBAL_RR plus SCHED_LOCAL_RR: a global round-robin over domains, and a per-domain round-robin over threads. SMP is off — one CPU.">
+  <p class="mcq-q"><span class="mcq-num">4.</span> How does the default build pick the next thread?</p>
+  <ol class="mcq-options">
+    <li data-correct="true">Round robin, no priorities</li>
+    <li>Highest priority runs first</li>
+    <li>Round robin, per priority</li>
+    <li>Random, to avoid starvation</li>
+  </ol>
+</div>
+
+<div class="mcq" data-why="setPriority at src/java/lang/Thread.java:125 only writes a field. There is no priority anywhere in the compiled scheduling path — a thread at MAX_PRIORITY gets the same quantum as one at MIN_PRIORITY.">
+  <p class="mcq-q"><span class="mcq-num">5.</span> What does <code>setPriority(10)</code> accomplish?</p>
+  <ol class="mcq-options">
+    <li data-correct="true">Sets a field, nothing more</li>
+    <li>Promotes thread in run queue</li>
+    <li>Locks thread at highest level</li>
+    <li>Prevents timer from preempting</li>
+  </ol>
+</div>
+
+<h2>Read the Primary Source</h2>
+
+<p><strong>Peter Druschel's dissertation</strong>, <em>The Design and Implementation of the JX Operating System</em> — <a href="https://www4.cs.fau.de/Projects/JX/publications/diss.pdf">diss.pdf</a> (FAU Erlangen-Nürnberg).</p>
+
+<p>Read <strong>Chapter 7, §7.4 "Concurrency control"</strong> (p. 80). It is two pages, and it is the design rationale for everything on this page. Chapter 7 §7.2 also covers the scheduler configurations you'll see named in <code>settings.makefile</code>.</p>
+
+<p class="sidenote">Also worth your time: the <a href="https://www4.cs.fau.de/Projects/JX/publications/jx-usenix.pdf">USENIX ATC 2002 paper</a> (Golm, Felser, Wawersich, Kleinöder) — shorter, and §2.1–2.3 sets up domains and portals, which everything here assumes.</p>
+
+<h2>Next Steps</h2>
+
+<p>Ask followup questions about anything unclear — I'm your teacher, and I can walk you through the scheduler code line by line, or why portals are faster than syscalls, or how <code>MultiThreadList</code> builds a lock-free list on top of this.</p>
+
+<p>Next lesson: <strong>why <code>synchronized</code> is a no-op</strong> — tracing a <code>.class</code> file's <code>monitorenter</code> bytecode through the AOT compiler to see exactly where the lock is thrown away.</p>
+
+<script src="../assets/quiz.js"></script>
+</body>
+</html>

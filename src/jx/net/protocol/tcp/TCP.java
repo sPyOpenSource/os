@@ -65,7 +65,7 @@ public class TCP implements IPConsumer, Runnable {
 			    if (tcpServerSockets[i] != null)
 				tcpServerSockets[i].processServerSocket();
 			
-			if (debug) Debug.out.println("check all ClientSockets");
+			//if (debug) Debug.out.println("check all ClientSockets");
 			Enumeration e = tcpSockets.elements();
 			TCPSocket comp;
 			while (e.hasMoreElements()) {
@@ -182,7 +182,6 @@ public class TCP implements IPConsumer, Runnable {
     }
     
     private IPData dispatch(IPData data){
-
 	    IPAddress sourceIP = data.getSourceAddress();
 	    IPAddress destinationIP = data.getDestinationAddress();
             data.setSize(data.Size() - 38);
@@ -193,9 +192,8 @@ public class TCP implements IPConsumer, Runnable {
 	    int tcpDestinationPort = tcpPacket.getDestinationPort();
 	    TCPSocket sock;
 	    
-
 	    if (debug){
-		Debug.out.println("TCP-Packet received from " +  sourceIP + "." + tcpSourcePort +  " to " + destinationIP + "." + tcpDestinationPort+" Flags:"+tcpPacket.Flags2String());
+		Debug.out.println("TCP-Packet received from " +  sourceIP + ":" + tcpSourcePort +  " to " + destinationIP + ":" + tcpDestinationPort+" Flags:"+tcpPacket.Flags2String());
 		byte[] dt = tcpPacket.getData();
 		Debug.out.print("Data: ");
 		if (dt.length == 0) Debug.out.print("none");

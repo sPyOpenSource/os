@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reference: JCore Concurrency Cheatsheet</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<h1>JCore Concurrency Cheatsheet</h1>
+<p class="sidenote">Reference for <a href="../lessons/0005-concurrency-in-jcore.html">Lesson 5: Concurrency in JCore</a>. Verified against this tree; paths relative to the <code>jcore/</code> root.</p>
+
+<h2>Setup — the only boilerplate you need</h2>
+
+<pre>
+import jx.zero.*;
+
+static Naming      naming      = InitialNaming.getInitialNaming();
+static CPUManager  cpuManager  = (CPUManager) naming.lookup("CPUManager");
+static Scheduler   scheduler   = (Scheduler)  naming.lookup("Scheduler");
+static AtomicVariable av       = cpuManager.getAtomicVariable();</pre>
+
+<p>Every synchronization primitive in JCore arrives through one of these four names. If you remember nothing else from this page, remember that line.</p>
+
+<h2>Working primitives — full signatures</h2>
+
+<h3>Scheduler <span class="sidenote" style="display:inline">— preemption control</span></h3>
+<pre>
+void disableThreadSwitching();          // no thread switch until re-enabled
+void enableThreadSwitching();
+void blockAndEnableThreadSwitching();   // park self AND re-enable (use when blocking)</pre>
+<p class="sidenote">Zero/src/jx/zero/Scheduler.java — native impl src/Interface/zero_Scheduler.c</p>
+
+<h3>CPUManager <span class="sidenote" style="display:inline">— thread lifecycle</span></h3>
+<pre>
+CPUState getCPUState();                 // handle to <em>your</em> thread
+void block();                           // park until someone unblocks you
+boolean unblock(CPUState state);        // wake it; returns false if already runnable
+void blockIfNotUnblocked();             // race-free park (avoids lost wakeup)
+void clearUnblockFlag();
+boolean waitUntilBlocked(CPUState t);
+void yield();
+void sleep(int msec, int usec);
+void switchTo(CPUState state);
+void join(CPUState thread);
+CAS     getCAS(String classname, String fieldname);
+AtomicVariable getAtomicVariable();</pre>
+<p class="sidenote">Zero/src/jx/zero/CPUManager.java</p>
+
+<h3>AtomicVariable <span class="sidenote" style="display:inline">— your condition variable</span></h3>
+<pre>
+Object get();
+void   set(Object value);
+void   blockIfEqual(Object testValue);      // park if value == test  → use for wait()
+void   blockIfNotEqual(Object testValue);   // park if value != test
+void   atomicUpdateUnblock(Object v, CPUState s);  // set + wake  → use for notify()
+void   activateListMode();                  // allow MANY waiters, wake all on change</pre>
+
+<table>
+  <tr><th>Java you know</th><th>JCore equivalent</th></tr>
+  <tr><td><code>wait()</code></td><td><code>av.blockIfEqual(null)</code></td></tr>
+  <tr><td><code>notify()</code></td><td><code>av.atomicUpdateUnblock(newValue, consumerState)</code></td></tr>
+  <tr><td><code>notifyAll()</code></td><td>call <code>av.activateListMode()</code> first</td></tr>
+  <tr><td><code>synchronized(x)</code></td><td><code>jx.synch.mutex.BlockingLockImpl</code></td></tr>
+</table>
+
+<blockquote class="warn">
+  <strong>No monitor, no ownership.</strong> Unlike Java's <code>wait()</code>, JCore's <code>blockIfEqual</code> does <em>not</em> require holding a lock, and there is no lock to hold. Atomicity comes from <code>DISABLE_IRQ</code> inside the native call, not from the caller.
+</blockquote>
+
+<h3>Mutex <span class="sidenote" style="display:inline">— DEAD, do not use</span></h3>
+<pre>
+int lock();  int trylock();  int unlock();  int destroy();</pre>
+<p class="sidenote">Zero/src/jx/zero/Mutex.java — zero call sites in <code>OS/src/</code>. The interface exists; nothing implements it in the tree.</p>
+
+<h2>Dead primitives — do not write these</h2>
+
+<table>
+  <tr><th>Construct</th><th>Evidence</th></tr>
+  <tr><td><code>synchronized</code></td><td><code>src/core/vmsupport.c:398</code> — <code>vm_monitorenter</code> body is one <code>printf</code></td></tr>
+  <tr><td><code>wait()</code> / <code>notify()</code> / <code>notifyAll()</code></td><td><code>src/Interface/zero_object.c:55–79</code> — all five call <code>sys_panic("not implemented")</code></td></tr>
+  <tr><td><code>Thread.interrupt()</code></td><td><code>src/java/lang/Thread.java:97</code> — empty body</td></tr>
+  <tr><td><code>Thread.isInterrupted()</code></td><td><code>src/java/lang/Thread.java:109</code> — <code>return false</code></td></tr>
+  <tr><td><code>Thread.setPriority()</code></td><td>writes a field; no priority logic exists in the compiled scheduler</td></tr>
+  <tr><td><code>stop()</code> / <code>suspend()</code> / <code>resume()</code> / <code>destroy()</code></td><td>all empty bodies — <code>src/java/lang/Thread.java:91, 112, 119, 122</code></td></tr>
+  <tr><td><code>volatile</code></td><td>the AOT compiler has <strong>no <code>ACC_VOLATILE</code> handling at all</strong> (<code>Compiler/src/jx/compiler/</code>) — it's parsed as a field flag and ignored. Only two exist in <code>OS/src</code>.</td></tr>
+</table>
+
+<h2>The three canonical patterns</h2>
+
+<h3>1. Mutual exclusion</h3>
+<pre>
+scheduler.disableThreadSwitching();
+  // critical section — must be a few instructions, no blocking, no allocation
+scheduler.enableThreadSwitching();</pre>
+
+<h3>2. Blocking hand-off (lock-free queue)</h3>
+<p>src/jx/synch/blocking/Queue.java — each link is an <code>AtomicVariable</code>:</p>
+<pre>
+enqueue:  node.next.set(null);
+          tail.next.atomicUpdateUnblock(node, consumer);
+dequeue:  head.next.blockIfEqual(null);
+          head = (Node) head.next.get();</pre>
+<p>Set-and-wake in one call ⇒ no lost-wakeup window. Same trick as Massalin &amp; Pu's synthesis-kernel HOOK, credited in the file header.</p>
+
+<h3>3. Lock-free list</h3>
+<p>src/jx/buffer/multithread/MultiThreadList.java — CAS loops over <code>cpuManager.getCAS(...)</code> for the structural updates, <code>AtomicVariable</code> in list mode to park consumers.</p>
+
+<h2>Scheduler configuration</h2>
+
+<table>
+  <tr><th>Flag</th><th>State</th><th>Effect</th></tr>
+  <tr><td><code>-DSMP</code></td><td>off (line 40)</td><td>single CPU</td></tr>
+  <tr><td><code>-DJAVASCHEDULER</code></td><td>off (line 41)</td><td>Java-level scheduler inactive</td></tr>
+  <tr><td><code>-DTIMER_HZ=10</code></td><td>on (line 45)</td><td>100 Hz preemption tick</td></tr>
+  <tr><td><code>-DNEW_SCHED</code></td><td>on (line 51)</td><td><code>Sched_preempted()</code>, not <code>Sched_reschedule()</code></td></tr>
+  <tr><td><code>-DSCHED_GLOBAL_RR</code></td><td>on (line 52)</td><td>global round-robin over domains</td></tr>
+  <tr><td><code>-DSCHED_LOCAL_RR</code></td><td>on (line 53)</td><td>per-domain round-robin over threads</td></tr>
+</table>
+
+<p>Two-level policy, no priorities. <code>src/core/runq.c</code> is dead code under <code>NEW_SCHED</code>; the live path is <code>src/core/sched_global_rr.c</code>.</p>
+
+<h2>CPUState — handle to a thread</h2>
+
+<pre>
+CPUState st = cpuManager.getCPUState();   // who am I
+boolean b = st.isPortalThread();
+int    s = st.getState();</pre>
+
+<blockquote class="warn">
+  <strong>Known bug.</strong> <code>CPUState.java:18</code> declares <code>STATE_BLOCKEDUSER = 9</code>, but the kernel has <code>STATE_PORTAL_WAIT_FOR_RET = 9</code> and <code>STATE_BLOCKEDUSER = 10</code> (src/Headers/core/thread.h:26–27). The constant points at the wrong state. Currently harmless — nothing in <code>OS/src/</code> calls <code>CPUState.getState()</code> — but never write <code>state == STATE_BLOCKEDUSER</code>.
+</blockquote>
+
+<p>Kernel states: 1 INIT, 2 RUNNABLE, 3 ZOMBIE, 5 SLEEPING, 6 WAITING, 7 WAIT_PORTAL_RCV, 8 WAIT_PORTAL_SND, 9 WAIT_PORTAL_RET, 10 BLOCKEDUSER, 11 AVAILABLE, 12 WAIT_ONESHOT, 13 WAIT_PARAMCOPY, 14 WAIT_RETCOPY. (No 4.)</p>
+
+<h2>Source map</h2>
+
+<table>
+  <tr><th>Looking for</th><th>File</th></tr>
+  <tr><td>Portal interfaces (all)</td><td><code>Zero/src/jx/zero/*.java</code></td></tr>
+  <tr><td>Native portal impls</td><td><code>src/Interface/zero_*.c</code></td></tr>
+  <tr><td>Live global scheduler</td><td><code>src/core/sched_global_rr.c</code></td></tr>
+  <tr><td>Preemption entry point</td><td><code>src/core/thread.c</code> — <code>reschedule()</code>, honours <code>disable_threadswitching</code></td></tr>
+  <tr><td>Dead Java concurrency</td><td><code>src/core/vmsupport.c:398</code>, <code>src/Interface/zero_object.c:55</code></td></tr>
+  <tr><td>Working Java patterns</td><td><code>OS/src/jx/synch/</code>, <code>OS/src/jx/buffer/multithread/</code></td></tr>
+</table>
+
+<h2>Glossary</h2>
+
+<p><strong>Domain</strong>:
+JCore's unit of protection, memory, and scheduling. Owns its threads and type space.
+<em>Avoid</em>: process, address space
+
+<p><strong>Portal</strong>:
+A typed, cross-domain reference that behaves like an RPC proxy. The only way domains communicate.
+<em>Avoid</em>: proxy, RPC stub
+
+<p><strong>Domain-local scheduler</strong>:
+The per-domain level that picks among a domain's own threads. Fed by the global level.
+<em>Avoid</em>: local scheduler, second-level scheduler
+
+<p><strong>Disable thread switching</strong>:
+Raising a barrier against preemption for the current thread. JCore's critical-section primitive.
+<em>Avoid</em>: disabling interrupts (broader — also stops IRQ handlers), locking
+
+<p><strong>AtomicVariable</strong>:
+A one-slot condition variable. Test-and-park, or set-and-wake, atomically under <code>DISABLE_IRQ</code>.
+<em>Avoid</em>: atomic reference, lock
+
+<p><strong>List mode</strong>:
+An <code>AtomicVariable</code> mode where many threads may park and all are woken by the next write.
+<em>Avoid</em>: broadcast mode
+
+<p><strong>CPUState</strong>:
+A kernel handle identifying one thread. How you name yourself in order to block or be unblocked.
+<em>Avoid</em>: Thread object
+
+<blockquote class="tip">
+  <strong>Rule of thumb.</strong> On a single CPU with no priorities, every shared-mutable-state bug in JCore is a missing <code>disableThreadSwitching()</code> around a test-and-set, or an <code>AtomicVariable</code> used where a plain field was needed.
+</blockquote>
+
+</body>
+</html>

@@ -64,7 +64,6 @@ public class Ether  implements PacketsProducer, EtherProducer {
 	return dev.getMTU();
     }
 
-    
     public byte[] getMacAddress() {
 	return ownHardwareAddress;
     }
@@ -220,7 +219,7 @@ public class Ether  implements PacketsProducer, EtherProducer {
 			}
 			int id = e.getType();
 			Memory[] arr = new Memory[3];
-			newMem.split3(EtherFormat.requiresSpace(), newMem.size()-EtherFormat.requiresSpace(), arr);
+			newMem.split3(EtherFormat.requiresSpace(), newMem.size() - EtherFormat.requiresSpace(), arr);
 			Memory data = arr[1];
 			newMem = dispatch.dispatch(id, data);
 			//Debug.out.println("Unknown packet type. Ignored.");
@@ -387,7 +386,6 @@ public class Ether  implements PacketsProducer, EtherProducer {
 	return new EtherNonBlockingMemoryConsumerImpl();
     }
     
-
     public byte[] getBroadcastAddr() {
 	return ETHER_BCAST;
     }    
@@ -396,12 +394,10 @@ public class Ether  implements PacketsProducer, EtherProducer {
 	//Memory buf = userbuf.joinPrevious();
 	//Debug.out.println("jx.net.Ether: ARP broadcast");
 	return transmitSpecial(ownHardwareAddress, ETHER_BCAST, dispatch.findID("ARP"), userbuf);
-
     }
 
     // buf already has full range
     public Memory transmitSpecial(byte src[], byte dest[], int type, Memory buf) {
-
 	EtherFormat e = new EtherFormat(buf);
 	e.insertDestAddress(dest);
 	e.insertSourceAddress(src);
@@ -417,7 +413,7 @@ public class Ether  implements PacketsProducer, EtherProducer {
 	private Memory mem;
 	private int offs = 0, size = 0;
 	
-	public PacketContainer(Memory mem) { setMem(mem);}
+	public PacketContainer(Memory mem) { setMem(mem); }
 	public int getOffset() {
 	    if(!avoidSplitting) 
 		throw new Error("when splitting the Memory, an extra offset info is not needed");

@@ -1,19 +1,25 @@
 
 package test;
 
+import AI.util.Sha1;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import jx.emulation.Init;
 import jx.zero.debug.Dump;
-import jx.zero.MemoryManager;
 import jx.fs.buffercache.BufferHead;
 import jx.bio.buffercache.BufferHashtable;
 
 import org.junit.Test;
 import org.junit.Before;
 import static junit.framework.TestCase.assertEquals;
-import jx.zero.InitialNaming;
+
+import java.nio.charset.StandardCharsets;
+import java.security.NoSuchAlgorithmException;
+import java.security.MessageDigest;
+import java.util.Base64;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  *
@@ -64,5 +70,41 @@ public class JUnitTest {
 	//collect.remove(bh2);
 	bh = collect.get(1);
 	//assertEquals(bh, bh1);
+    }
+    
+    @Test
+    public void testSHA1(){
+        String testString = "Hello World";
+        System.out.println("Input:  " + testString);
+        // 1. Get the SHA-1 instance
+        MessageDigest digest = null;
+        try {
+            digest = MessageDigest.getInstance("SHA-1");
+        } catch (NoSuchAlgorithmException ex) {
+            Logger.getLogger(JUnitTest.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        // 2. Perform the hash
+        byte[] hashBytes = digest.digest(testString.getBytes(StandardCharsets.UTF_8));
+        
+        // 3. Convert bytes to Hex string
+        StringBuilder hexString = new StringBuilder();
+        for (byte b : hashBytes) {
+            hexString.append(String.format("%02x", b));
+        }
+        assertEquals(Sha1.hash(testString), hexString.toString());
+        Matcher get = Pattern.compile("^GET").matcher("Sec-WebSocket-Key: 1111");
+        Matcher match = Pattern.compile("Sec-WebSocket-Key: (.*)").matcher("Sec-WebSocket-Key: 1111");
+        match.find();
+        String accept = Base64.getEncoder().encodeToString(
+            digest.digest(
+            (match.group(1) + "258EAFA5-E914-47DA-95CA-C5AB0DC85B11")
+                .getBytes(StandardCharsets.UTF_8)
+            )
+        );
+        String accept2 = AI.util.Base64.encode(
+            Sha1.hexToBytes(Sha1.hash(match.group(1) + "258EAFA5-E914-47DA-95CA-C5AB0DC85B11"))
+        );
+        assertEquals(accept,accept2);
     }
 }

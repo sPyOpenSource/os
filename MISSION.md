@@ -11,5 +11,9 @@ The Java internals pipeline flows through four layers:
 3. **Class Loading** — how `jx.classstore.*` manages classes from ZIP archives and resolves dependencies
 4. **AOT Compilation** — how `ByteCodeTranslater` converts bytecode to native `.jll` files
 
+Plus the layer that makes the other four runnable:
+
+5. **Execution & Concurrency** — how `jx.zero` portals replace the standard Java concurrency primitives: domains and threads, the two-level round-robin scheduler, and the `AtomicVariable` / `Scheduler` / `CPUManager` primitives that substitute for `synchronized`, `wait`/`notify`, and `volatile`.
+
 ## Goal
-Be able to trace the full path a `.class` file takes from disk to execution inside the JCore OS.
+Be able to trace the full path a `.class` file takes from disk to execution inside the JCore OS — and explain, at any point in that path, which primitives actually synchronize threads and which are inert.
